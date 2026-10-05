@@ -476,3 +476,7 @@
   font-size:1rem;
   line-height:1.65;
 }
+
+
+/* Escritorio: la navegación lateral se activa únicamente por media query. */
+.desktop-sidebar{display:none}
