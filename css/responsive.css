@@ -184,13 +184,13 @@
 }
 
 
-/* v0.3.3 — interfaz específica de escritorio */
+/* Escritorio: una única composición específica para PC. */
 @media (min-width:1200px){
 
   /* PORTADA / SELECCIÓN DE PERFIL */
   .gateway{
     display:grid;
-    grid-template-columns:320px minmax(0,1fr);
+    grid-template-columns:clamp(300px,13.3vw,340px) minmax(0,1fr);
     grid-template-rows:1fr auto;
     min-height:100vh;
   }
@@ -201,51 +201,89 @@
     position:sticky;
     top:0;
     align-self:start;
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows:auto auto minmax(0,1fr) auto;
+    align-items:start;
+    justify-items:stretch;
     width:auto;
     min-height:100vh;
     margin:0;
-    padding:48px 36px 34px;
-    display:flex;
-    flex-direction:column;
-    align-items:flex-start;
-    justify-content:flex-start;
-    gap:0;
+    padding:clamp(28px,3.2vh,52px) clamp(24px,2.2vw,42px) 28px;
     background:#081726;
     border:0;
     border-right:1px solid rgba(255,255,255,.12);
   }
 
   .gateway__logo{
-    width:96px;
-    height:96px;
+    grid-row:1;
+    justify-self:center;
+    width:min(250px,100%);
+    height:auto;
+    max-height:250px;
+    object-fit:contain;
+    margin:0 auto;
   }
 
   .gateway__title{
-    margin-top:26px;
+    display:contents;
+  }
+
+  .gateway__title>.gateway__federation{
+    grid-row:2;
+    justify-self:center;
+    width:100%;
+    max-width:260px;
+    margin:18px 0 0;
+    color:var(--gold-soft);
+    font-size:.66rem;
+    line-height:1.5;
+    letter-spacing:.15em;
+    text-align:center;
+  }
+
+  .gateway__academy-name{
+    grid-row:3;
+    align-self:stretch;
+    justify-self:stretch;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:flex-start;
+    width:100%;
+    min-height:0;
+    margin:22px 0 28px;
+    padding:0 4px;
+    color:#fff;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:clamp(1.85rem,2.25vw,2.55rem);
+    line-height:1;
+    letter-spacing:.025em;
     text-align:left;
   }
 
-  .gateway__title span{
-    max-width:210px;
-    color:var(--gold-soft);
-    font-size:.66rem;
-    line-height:1.45;
-    letter-spacing:.17em;
+  .gateway__academy-name span{
+    display:block;
+    width:auto;
+    margin:0;
+    color:inherit;
+    font:inherit;
+    line-height:inherit;
+    letter-spacing:inherit;
+    text-align:left;
   }
 
-  .gateway__title strong{
-    max-width:220px;
-    margin-top:10px;
-    color:#fff;
-    font-size:1.55rem;
-    line-height:1.12;
-    letter-spacing:.025em;
+  .gateway__academy-name span:nth-child(2),
+  .gateway__academy-name span:nth-child(3){
+    font-size:.9em;
   }
 
   .gateway__header .settings-trigger{
+    grid-row:4;
+    align-self:end;
     width:100%;
     min-height:50px;
-    margin-top:auto;
+    margin:0;
     padding:0 4px;
     justify-content:flex-start;
     border:0;
@@ -253,17 +291,14 @@
     border-radius:0;
     background:transparent;
     color:#d7e0e8;
+    text-align:left;
   }
 
-  .gateway__header .settings-trigger span{
-    display:none;
-  }
-
+  .gateway__header .settings-trigger span{display:none}
   .gateway__header .settings-trigger em{
     font-size:.88rem;
     font-weight:750;
   }
-
   .gateway__header .settings-trigger em::before{
     content:"Gestión de perfiles · ";
     color:#8fa1b1;
@@ -273,12 +308,12 @@
   .gateway__main{
     grid-column:2;
     grid-row:1;
-    width:min(calc(100% - 96px),1500px);
+    width:min(calc(100% - clamp(64px,8vw,120px)),1620px);
     max-width:none;
     margin:0 auto;
-    padding:clamp(82px,8vh,140px) 0 72px;
-    grid-template-columns:minmax(430px,.9fr) minmax(560px,1.1fr);
-    gap:clamp(76px,7vw,132px);
+    padding:clamp(64px,8vh,138px) 0 70px;
+    grid-template-columns:minmax(360px,.82fr) minmax(520px,1.18fr);
+    gap:clamp(52px,6vw,120px);
     align-items:center;
   }
 
@@ -286,45 +321,26 @@
     font-size:.78rem;
     letter-spacing:.11em;
   }
-
   .gateway-intro h1{
     max-width:650px;
-    font-size:clamp(5rem,5vw,6.7rem);
+    font-size:clamp(4.3rem,5vw,6.7rem);
   }
-
   .gateway-intro p{
     max-width:620px;
     font-size:1.14rem;
   }
-
   .cadet-access{
-    padding:38px;
+    padding:clamp(30px,2.5vw,42px);
     border-radius:14px;
   }
-
-  .cadet-access__heading h2{
-    font-size:2.15rem;
-  }
-
-  .profile-entry{
-    min-height:78px;
-    padding:16px 18px;
-  }
-
-  .profile-entry__avatar{
-    width:52px;
-    height:52px;
-  }
-
-  .empty-state{
-    min-height:98px;
-    padding:20px;
-  }
-
+  .cadet-access__heading h2{font-size:2.15rem}
+  .profile-entry{min-height:78px;padding:16px 18px}
+  .profile-entry__avatar{width:52px;height:52px}
+  .empty-state{min-height:98px;padding:20px}
   .gateway__footer{
     grid-column:2;
     grid-row:2;
-    width:min(calc(100% - 96px),1500px);
+    width:min(calc(100% - clamp(64px,8vw,120px)),1620px);
     margin:0 auto;
     padding:18px 0 24px;
   }
@@ -626,303 +642,5 @@
 
   .record-grid{
     grid-template-columns:repeat(3,minmax(0,1fr));
-  }
-}
-
-@media (min-width:1600px){
-  .desktop-sidebar{
-    width:320px;
-    padding-left:26px;
-    padding-right:26px;
-  }
-
-  .portal:not([hidden]){
-    grid-template-columns:320px minmax(0,1fr);
-  }
-
-  .portal-main{
-    padding-left:clamp(64px,5vw,112px);
-    padding-right:clamp(64px,5vw,112px);
-  }
-
-  .portal-footer{
-    margin-left:clamp(64px,5vw,112px);
-    margin-right:clamp(64px,5vw,112px);
-  }
-
-  .gateway{
-    grid-template-columns:340px minmax(0,1fr);
-  }
-
-  .gateway__header{
-    padding-left:42px;
-    padding-right:42px;
-  }
-
-  .gateway__main,
-  .gateway__footer{
-    width:min(calc(100% - 120px),1620px);
-  }
-}
-
-
-/* v0.3.4 — identidad institucional de la columna izquierda en PC */
-@media (min-width:1200px){
-  .gateway__header{
-    align-items:center;
-    padding:42px 30px 34px;
-    text-align:center;
-  }
-
-  .gateway__logo{
-    width:min(220px,calc(100% - 22px));
-    height:auto;
-    max-height:220px;
-    object-fit:contain;
-    margin:0 auto;
-  }
-
-  .gateway__title{
-    width:100%;
-    margin-top:20px;
-    text-align:center;
-  }
-
-  .gateway__title>.gateway__federation{
-    display:block;
-    max-width:240px;
-    margin:0 auto;
-    color:var(--gold-soft);
-    font-size:.68rem;
-    line-height:1.5;
-    letter-spacing:.15em;
-  }
-
-  .gateway__academy-name{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:0;
-    width:100%;
-    max-width:none;
-    margin-top:28px;
-    color:#fff;
-    font-size:1.55rem;
-    line-height:1.02;
-    letter-spacing:.055em;
-    text-align:center;
-  }
-
-  .gateway__academy-name span{
-    display:block;
-    width:100%;
-    max-width:none;
-    color:inherit;
-    font:inherit;
-    line-height:inherit;
-    letter-spacing:inherit;
-  }
-
-  .gateway__academy-name span:first-child,
-  .gateway__academy-name span:nth-child(4),
-  .gateway__academy-name span:nth-child(5){
-    font-size:1.12em;
-  }
-
-  .gateway__academy-name span:nth-child(2),
-  .gateway__academy-name span:nth-child(3){
-    font-size:.78em;
-    line-height:1.15;
-  }
-
-  .gateway__header .settings-trigger{
-    text-align:left;
-  }
-}
-
-@media (min-width:1600px){
-  .gateway__logo{
-    width:min(250px,calc(100% - 18px));
-    max-height:250px;
-  }
-
-  .gateway__academy-name{
-    font-size:1.72rem;
-  }
-}
-
-
-/* v0.3.5 — título institucional con presencia real en la columna de PC */
-@media (min-width:1200px){
-  .gateway__title{
-    margin-top:24px;
-  }
-
-  .gateway__academy-name{
-    align-items:flex-start;
-    gap:11px;
-    margin-top:34px;
-    padding:0 8px;
-    font-size:2.02rem;
-    line-height:.92;
-    letter-spacing:.025em;
-    text-align:left;
-  }
-
-  .gateway__academy-name span{
-    width:auto;
-    text-align:left;
-  }
-
-  .gateway__academy-name span:first-child,
-  .gateway__academy-name span:nth-child(4),
-  .gateway__academy-name span:nth-child(5){
-    font-size:1.16em;
-  }
-
-  .gateway__academy-name span:nth-child(2),
-  .gateway__academy-name span:nth-child(3){
-    font-size:.92em;
-    line-height:1;
-  }
-}
-
-@media (min-width:1600px){
-  .gateway__academy-name{
-    gap:14px;
-    margin-top:40px;
-    padding:0 4px;
-    font-size:2.22rem;
-  }
-}
-
-
-/* v0.3.6 — usar toda la altura central de la columna institucional */
-@media (min-width:1200px){
-  .gateway__header{
-    justify-content:flex-start;
-  }
-
-  .gateway__title{
-    flex:1 1 auto;
-    display:flex;
-    flex-direction:column;
-    width:100%;
-    min-height:0;
-    margin-top:22px;
-  }
-
-  .gateway__title>.gateway__federation{
-    flex:0 0 auto;
-    text-align:center;
-  }
-
-  .gateway__academy-name{
-    flex:1 1 auto;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    align-items:flex-start;
-    width:100%;
-    min-height:0;
-    margin:28px 0 34px;
-    padding:0 8px;
-    font-size:2.1rem;
-    line-height:.9;
-    text-align:left;
-  }
-
-  .gateway__academy-name span{
-    flex:0 0 auto;
-    width:auto;
-    margin:0;
-    text-align:left;
-  }
-
-  .gateway__header .settings-trigger{
-    flex:0 0 auto;
-    margin-top:0;
-  }
-}
-
-@media (min-width:1600px){
-  .gateway__academy-name{
-    margin-top:34px;
-    margin-bottom:42px;
-    padding:0 4px;
-    font-size:2.35rem;
-  }
-}
-
-
-/* v0.3.7 — layout determinista de la columna institucional en PC */
-@media (min-width:1200px){
-  .gateway__header{
-    display:grid;
-    grid-template-columns:1fr;
-    grid-template-rows:auto auto minmax(0,1fr) auto;
-    align-items:start;
-    justify-items:stretch;
-    row-gap:0;
-  }
-
-  .gateway__logo{
-    grid-row:1;
-    justify-self:center;
-  }
-
-  .gateway__title{
-    display:contents;
-  }
-
-  .gateway__title>.gateway__federation{
-    grid-row:2;
-    justify-self:center;
-    width:100%;
-    max-width:250px;
-    margin:20px 0 0;
-    text-align:center;
-  }
-
-  .gateway__academy-name{
-    grid-row:3;
-    align-self:stretch;
-    justify-self:stretch;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-evenly;
-    align-items:flex-start;
-    width:100%;
-    min-height:0;
-    margin:18px 0 20px;
-    padding:0 8px;
-    font-size:2.15rem;
-    line-height:.9;
-    letter-spacing:.02em;
-    text-align:left;
-  }
-
-  .gateway__academy-name span{
-    display:block;
-    width:auto;
-    margin:0;
-    color:#fff;
-    text-align:left;
-  }
-
-  .gateway__header .settings-trigger{
-    grid-row:4;
-    align-self:end;
-    width:100%;
-    margin:0;
-  }
-}
-
-@media (min-width:1600px){
-  .gateway__academy-name{
-    margin-top:24px;
-    margin-bottom:28px;
-    padding:0 4px;
-    font-size:2.4rem;
   }
 }
