@@ -1,0 +1,127 @@
+{
+  "code": "SYS-01-TH",
+  "title": "Evaluación teórica de Operaciones de Sensores",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": "q01",
+      "question": "¿Cuál describe correctamente la frontera entre Sensores y Ciencia?",
+      "options": [
+        "Sensores interpreta causas científicas y Ciencia mide las firmas.",
+        "Sensores mide y Ciencia interpreta.",
+        "Ambas consolas realizan exactamente la misma función.",
+        "Ciencia solo interviene si los sensores están averiados."
+      ],
+      "correctIndex": 1,
+      "explanation": "El manual establece la frontera profesional: Sensores mide; Ciencia interpreta."
+    },
+    {
+      "id": "q02",
+      "question": "¿Qué intención corresponde a un barrido?",
+      "options": [
+        "Sé exactamente qué objeto busco y quiero identificarlo.",
+        "Quiero observar una zona y ver qué hay.",
+        "Quiero reparar una matriz sensora.",
+        "Quiero interpretar científicamente una emisión."
+      ],
+      "correctIndex": 1,
+      "explanation": "Un barrido responde a la intención de observar una zona y descubrir qué hay en ella."
+    },
+    {
+      "id": "q03",
+      "question": "¿Qué caracteriza al modo pasivo?",
+      "options": [
+        "Es discreto y depende de emisiones ya presentes.",
+        "Garantiza mayor resolución que el activo.",
+        "Crea una señal para localizar cualquier objetivo.",
+        "Solo funciona en corto alcance."
+      ],
+      "correctIndex": 0,
+      "explanation": "El modo pasivo es discreto y depende de emisiones ya presentes."
+    },
+    {
+      "id": "q04",
+      "question": "¿Qué consecuencia puede tener elevar mucho la sensibilidad en una búsqueda?",
+      "options": [
+        "Elimina los falsos positivos.",
+        "Detecta señales más débiles, pero aumenta ruido y falsos positivos.",
+        "Reduce automáticamente la interferencia ambiental.",
+        "Convierte cualquier candidato en identificación confirmada."
+      ],
+      "correctIndex": 1,
+      "explanation": "Una sensibilidad alta permite captar señales más débiles, a costa de más ruido y falsos positivos."
+    },
+    {
+      "id": "q05",
+      "question": "Al recuperar un contacto perdido, ¿cuándo debe reutilizarse el mismo contact_id?",
+      "options": [
+        "Siempre que aparezca cualquier señal en la zona.",
+        "Solo si la coincidencia supera el umbral de identidad.",
+        "Nunca; cada pérdida obliga a crear un contacto nuevo.",
+        "Cuando Táctica lo solicite, aunque no haya coincidencia."
+      ],
+      "correctIndex": 1,
+      "explanation": "La identidad persiste si la reidentificación es sólida; el procedimiento indica reutilizar el contact_id al superar el umbral de identidad."
+    },
+    {
+      "id": "q06",
+      "question": "Si se cancela una operación larga que ya produjo datos parciales, ¿qué debe ocurrir?",
+      "options": [
+        "Los datos deben borrarse siempre.",
+        "Puede conservarse la lectura, pero nunca etiquetarla como completa.",
+        "Debe marcarse como completa para poder compararla.",
+        "La consola debe inventar el resultado que falta."
+      ],
+      "correctIndex": 1,
+      "explanation": "El manual permite conservar resultados parciales, pero prohíbe etiquetarlos como completos."
+    },
+    {
+      "id": "q07",
+      "question": "Un diagnóstico confirma daño físico en una matriz. ¿Cuál es la actuación correcta?",
+      "options": [
+        "Repararla desde Sensores.",
+        "Solicitar soporte de Ingeniería con la incidencia estructurada.",
+        "Repetir el mismo barrido hasta que funcione.",
+        "Enviar el problema a Ciencia."
+      ],
+      "correctIndex": 1,
+      "explanation": "Sensores diagnostica y recalibra; Ingeniería repara, sustituye y mantiene hardware."
+    },
+    {
+      "id": "q08",
+      "question": "¿Qué afirmación es profesionalmente correcta?",
+      "options": [
+        "No detectado significa que no existe.",
+        "Compatible con significa que está identificado.",
+        "Una predicción es una certeza si la confianza supera 50 %.",
+        "No detectado no significa que no exista."
+      ],
+      "correctIndex": 3,
+      "explanation": "El lenguaje de informe debe conservar la incertidumbre: no detectado no equivale a no existe."
+    },
+    {
+      "id": "q09",
+      "question": "¿Qué hace una prioridad en un barrido?",
+      "options": [
+        "Convierte siempre una firma en filtro exclusivo.",
+        "Mejora la atención a una firma sin hacerla necesariamente exclusiva.",
+        "Aumenta automáticamente toda la potencia disponible.",
+        "Desactiva el resto de matrices."
+      ],
+      "correctIndex": 1,
+      "explanation": "Prioridad y filtro no son lo mismo: la prioridad mejora la atención a una firma sin convertirla necesariamente en filtro exclusivo."
+    },
+    {
+      "id": "q10",
+      "question": "Sensores necesita más energía de la actualmente asignada. ¿A quién debe solicitarla?",
+      "options": [
+        "Ciencia",
+        "Táctica",
+        "OPS",
+        "Ingeniería"
+      ],
+      "correctIndex": 2,
+      "explanation": "Sensores administra la energía ya asignada; las solicitudes de más potencia corresponden a OPS."
+    }
+  ]
+}

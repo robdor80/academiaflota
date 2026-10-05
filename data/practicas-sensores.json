@@ -1,0 +1,42 @@
+{
+  "subject": "Sensores",
+  "source": "Manual de Operador de Sensores v0.1 // Ejercicios de Academia",
+  "items": [
+    {
+      "id": "E-01",
+      "title": "Barrido de largo alcance",
+      "scenario": "Recibes la orden: «Barrido de largo alcance del sector 041. Prioridad a emisiones subespaciales.» Configura y ejecuta sin modificar más parámetros de los necesarios.",
+      "evaluation": "Se evalúan: sector correcto, diferencia filtro/prioridad, modo, duración, revisión antes de ejecutar e informe final."
+    },
+    {
+      "id": "E-02",
+      "title": "Lanzadera desaparecida",
+      "scenario": "Una lanzadera no responde. Última posición conocida hace 11 minutos. Hay interferencia moderada de partículas.",
+      "evaluation": "Se evalúan: tipo de búsqueda, área, sensibilidad, criterios, tratamiento de candidatos y recuperación de señal."
+    },
+    {
+      "id": "E-03",
+      "title": "Recuperación de contacto",
+      "scenario": "Contacto 07 acelera y luego se pierde. Recupera el seguimiento sin crear una identidad nueva de forma arbitraria.",
+      "evaluation": "Se evalúan: uso del historial, área probable, firma elegida y umbral de reidentificación."
+    },
+    {
+      "id": "E-04",
+      "title": "Emisión subespacial desconocida",
+      "scenario": "Detectas una emisión subespacial desconocida. La lectura es sólida, pero no sabes qué fenómeno la causa.",
+      "evaluation": "Se evalúan: frontera Sensores/Ciencia, paquete enviado, prioridad y solicitud de análisis."
+    },
+    {
+      "id": "E-05",
+      "title": "Matriz con lecturas incoherentes",
+      "scenario": "Una matriz lateral muestra lecturas incoherentes. Determina si debes recalibrar, cambiar de matriz o solicitar Ingeniería.",
+      "evaluation": "Se evalúan: diagnóstico, distinción descalibración/daño, coste temporal y handoff a Ingeniería."
+    },
+    {
+      "id": "E-06",
+      "title": "Capacidad de seguimiento",
+      "scenario": "Tienes ocho contactos en seguimiento y entra un noveno de posible interés táctico.",
+      "evaluation": "Se evalúan: gestión de capacidad, prioridades y comunicación con Táctica/Mando."
+    }
+  ]
+}
