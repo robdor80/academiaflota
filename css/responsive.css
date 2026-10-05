@@ -1,109 +1,114 @@
-/* Referencias: MSI Raider GE78 HX 14V; Samsung Galaxy Tab S9+; Realme GT Neo 2 */
+/* Dispositivos de referencia:
+   PC: MSI Raider GE78 HX 14V
+   Tablet: Samsung Galaxy Tab S9+ horizontal y vertical
+   Móvil: Realme GT Neo 2 vertical
+*/
 
 @media (min-width:768px) and (max-width:1199px) and (orientation:landscape){
-  .gateway__header,.gateway__footer{width:calc(100% - 32px)}
-  .gateway__main{width:calc(100% - 32px);grid-template-columns:.7fr 1.3fr;gap:42px;padding:42px 0 54px}
-  .gateway-hero__seal{width:170px}
-  .official-header__inner,.primary-nav,.portal-main,.portal-footer{width:calc(100% - 32px)}
-  .portal-main{padding-top:38px}
+  .gateway__header,.gateway__footer,.official-header__inner,.primary-nav,.portal-main,.portal-footer{width:calc(100% - 32px)}
+  .gateway__main{width:calc(100% - 32px);grid-template-columns:.8fr 1.2fr;gap:42px;padding:54px 0}
+  .gateway-intro h1{font-size:4.2rem}
+  .dashboard-layout{grid-template-columns:1fr}
+  .quick-study-grid{grid-template-columns:repeat(3,1fr)}
   .subject-layout{grid-template-columns:245px minmax(0,1fr);gap:20px}
   .subject-sidebar{top:150px}
   .lesson-content{padding:34px}
-  .dashboard-layout{grid-template-columns:1.4fr .6fr}
+  .term-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
 }
 
 @media (min-width:768px) and (max-width:1199px) and (orientation:portrait){
-  .gateway__header,.gateway__footer{width:calc(100% - 36px)}
-  .gateway__main{width:min(calc(100% - 40px),760px);grid-template-columns:1fr;gap:34px;padding:42px 0 58px}
-  .gateway-hero__seal{width:170px}
-  .gateway-hero h1{font-size:4rem}
-  .cadet-access{padding:26px}
-  .official-header__inner,.primary-nav,.portal-main,.portal-footer{width:calc(100% - 36px)}
+  .gateway__header,.gateway__footer,.official-header__inner,.primary-nav,.portal-main,.portal-footer{width:calc(100% - 36px)}
+  .gateway__header{grid-template-columns:70px minmax(0,1fr) 70px}
+  .gateway__logo{width:62px;height:62px}
+  .gateway__title strong{font-size:1.05rem}
+  .gateway__main{grid-template-columns:1fr;gap:34px;width:min(calc(100% - 40px),760px);padding:46px 0}
+  .gateway-intro{text-align:center}
+  .gateway-intro p{margin-inline:auto}
   .primary-nav{overflow-x:auto}
   .primary-nav button{white-space:nowrap}
   .dashboard-layout{grid-template-columns:1fr}
+  .quick-study-grid{grid-template-columns:1fr}
+  .term-grid{grid-template-columns:1fr}
   .subject-layout{grid-template-columns:1fr}
   .subject-sidebar{position:static}
   .module-list{display:flex;max-height:none;overflow-x:auto;padding-bottom:7px}
   .module-btn{flex:0 0 230px}
   .practice-list{grid-template-columns:1fr}
+  .record-grid{grid-template-columns:1fr}
 }
 
 @media (max-width:767px) and (orientation:portrait){
-  .gateway__header{width:calc(100% - 24px);min-height:78px}
-  .gateway-brand{gap:10px}
-  .gateway-brand img{width:48px;height:48px}
-  .gateway-brand span{font-size:.5rem}
-  .gateway-brand strong{font-size:.78rem;letter-spacing:.1em}
-  .settings-trigger{min-height:38px;padding:0 11px}
+  .gateway__header{width:calc(100% - 24px);grid-template-columns:52px minmax(0,1fr) 42px;gap:8px;min-height:86px}
+  .gateway__logo{width:48px;height:48px}
+  .gateway__title span{font-size:.43rem;letter-spacing:.1em}
+  .gateway__title strong{font-size:.72rem;line-height:1.12}
+  .settings-trigger{width:40px;height:40px;min-height:40px;padding:0;justify-content:center}
   .settings-trigger em{display:none}
 
-  .gateway__main{display:block;width:calc(100% - 20px);padding:28px 0 38px}
-  .gateway-hero{margin-bottom:28px}
-  .gateway-hero__seal{width:132px}
-  .gateway-hero__code{margin-top:16px;font-size:.55rem}
-  .gateway-hero h1{font-size:2.75rem}
-  .gateway-hero p{font-size:.78rem}
-
+  .gateway__main{display:block;width:calc(100% - 20px);padding:32px 0 38px}
+  .gateway-intro{margin-bottom:28px}
+  .gateway-intro h1{font-size:2.7rem}
+  .gateway-intro p{font-size:.94rem}
   .cadet-access{padding:19px 16px}
   .cadet-access__heading{display:block;margin-bottom:16px}
   .cadet-access__heading h2{font-size:1.45rem}
   .access-status{display:block;margin-top:8px}
-  .profile-entry{grid-template-columns:48px minmax(0,1fr);padding:13px}
-  .profile-entry__avatar{width:44px;height:44px}
-  .profile-entry__arrow{grid-column:2;justify-self:start;margin-top:-2px;font-size:.7rem}
-  .empty-state{grid-template-columns:48px 1fr;padding:15px}
-  .empty-state__mark{width:44px;height:44px}
+  .profile-entry{grid-template-columns:46px minmax(0,1fr);padding:13px}
+  .profile-entry__avatar{width:42px;height:42px}
+  .profile-entry__arrow{grid-column:2;justify-self:start;font-size:.7rem}
+  .empty-state{grid-template-columns:44px 1fr}
   .empty-state .text-action{grid-column:2;justify-self:start}
-  .access-footnote{display:block}
-  .access-footnote p{margin-top:6px}
-
-  .gateway__footer{display:block;width:calc(100% - 24px);line-height:1.7;padding-bottom:18px}
+  .gateway__footer{display:block;width:calc(100% - 24px);line-height:1.7}
   .gateway__footer span{display:block}
 
   .official-header{position:static}
   .official-header__inner{width:calc(100% - 20px);min-height:72px}
-  .portal-brand img{width:46px;height:46px}
-  .portal-brand strong{font-size:.82rem}
-  .portal-brand small{font-size:.67rem}
-  .header-actions{gap:7px}
+  .portal-brand img{width:44px;height:44px}
+  .portal-brand strong{font-size:.8rem}
+  .portal-brand small{font-size:.66rem}
+  .header-actions{gap:6px}
   .cadet-chip>span{display:none}
-  .cadet-chip{display:block;max-width:120px}
-  .cadet-chip strong{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:.76rem}
-  .cadet-chip button{font-size:.65rem}
-  .settings-trigger--light{padding:0 9px}
+  .cadet-chip{display:block;max-width:116px}
+  .cadet-chip strong{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:.75rem}
+  .cadet-chip button{font-size:.64rem}
+  .settings-trigger--light{padding:0}
 
   .primary-nav{width:100%;padding:0 8px;overflow-x:auto}
   .primary-nav button{flex:0 0 auto;min-height:45px;padding:0 12px;white-space:nowrap;font-size:.78rem}
+
   .portal-main{width:calc(100% - 20px);padding:30px 0 50px}
   .page-heading{align-items:flex-start;margin-bottom:24px;padding-bottom:18px}
-  .page-heading h1{font-size:2.55rem}
-  .page-heading p{font-size:.95rem}
+  .page-heading h1{font-size:2.45rem}
+  .page-heading p{font-size:.94rem}
   .page-heading__seal{display:none}
   .status-grid{grid-template-columns:1fr;gap:9px}
   .stat-card{padding:18px}
   .stat-card strong{font-size:1.9rem}
   .dashboard-layout{grid-template-columns:1fr}
-  .official-card{padding:19px}
+  .official-card{padding:18px}
   .card-heading{display:block}
   .card-heading .badge{margin-top:8px}
-  .course-row{grid-template-columns:55px 1fr;gap:10px;padding:14px}
-  .course-row__progress{grid-column:1/-1}
-  .course-row>span:last-child{grid-column:2;text-align:right;font-size:.8rem}
-  .catalogue-item{grid-template-columns:48px 1fr;gap:12px;padding:18px}
-  .catalogue-item__number{font-size:2rem}
-  .catalogue-item .badge{grid-column:2;justify-self:start}
-  .catalogue-item h2{font-size:1.35rem}
+  .quick-study-grid{grid-template-columns:1fr}
+  .quick-study{min-height:120px}
+
+  .curriculum-section__header{display:block;padding:18px}
+  .curriculum-section__header h2{font-size:1.45rem}
+  .curriculum-section__body{padding:14px}
+  .term-grid{grid-template-columns:1fr}
+  .term-card__head{padding:16px}
+  .subject-item{padding:11px 13px;font-size:.85rem}
+  .preacademy-list{grid-template-columns:1fr}
+  .supplementary-grid{grid-template-columns:1fr}
 
   .subject-layout{grid-template-columns:1fr;gap:18px}
   .subject-sidebar{position:static}
   .subject-sidebar__title{margin-top:14px}
   .module-list{display:flex;max-height:none;overflow-x:auto;padding-bottom:7px}
-  .module-btn{flex:0 0 64px;display:grid;grid-template-columns:1fr;place-items:center;text-align:center}
+  .module-btn{flex:0 0 68px;display:grid;grid-template-columns:1fr;place-items:center;text-align:center}
   .module-btn__title{display:none}
   .reader__meta{padding:12px 15px}
   .lesson-content{padding:24px 17px}
-  .lesson-content h1{font-size:2.35rem}
+  .lesson-content h1{font-size:2.3rem}
   .reader__controls{grid-template-columns:1fr 1fr;padding:16px}
   #mark-complete{grid-column:1/-1;grid-row:1}
   #prev-module,#next-module{width:100%}
@@ -141,89 +146,7 @@
   .orientation-lock{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;padding:24px;background:var(--navy-950)}
   .orientation-lock__card{max-width:620px;padding:28px;border-top:5px solid var(--gold);background:#fff;text-align:center}
   .orientation-lock__card img{width:78px;height:78px;object-fit:contain;margin-bottom:12px}
-  .orientation-lock__card strong{display:block;color:var(--gold);font-size:.72rem;letter-spacing:.1em}
+  .orientation-lock__card strong{display:block;color:var(--gold);font-size:.72rem;letter-spacing:.08em}
   .orientation-lock__card h1{margin:7px 0;color:var(--navy-900)}
   .orientation-lock__card p{margin:0;color:var(--muted)}
-}
-
-/* v0.2.3 — ajuste de cabecera centrada y LCARS */
-@media (min-width:768px) and (max-width:1199px){
-  .gateway__header{
-    grid-template-columns:76px minmax(0,1fr) 76px;
-    min-height:104px;
-  }
-  .gateway-header__logo img{width:66px;height:66px}
-  .gateway-header__title strong{font-size:1.02rem}
-  .gateway-lcars-strip{width:calc(100% - 36px)}
-  .gateway__main{padding-top:54px}
-}
-
-@media (max-width:767px) and (orientation:portrait){
-  .gateway__header{
-    width:calc(100% - 24px);
-    grid-template-columns:54px minmax(0,1fr) 44px;
-    gap:8px;
-    min-height:88px;
-  }
-  .gateway-header__logo img{
-    width:50px;
-    height:50px;
-  }
-  .gateway-header__title span{
-    font-size:.43rem;
-    letter-spacing:.11em;
-  }
-  .gateway-header__title strong{
-    margin-top:4px;
-    font-size:.72rem;
-    line-height:1.12;
-    letter-spacing:.08em;
-  }
-  .gateway__header .settings-trigger{
-    width:40px;
-    height:40px;
-    min-height:40px;
-    padding:0;
-    justify-content:center;
-    border-radius:16px 5px 16px 5px;
-  }
-  .gateway-lcars-strip{
-    width:calc(100% - 24px);
-    grid-template-columns:20% 9% 17% 1fr;
-    gap:4px;
-    height:7px;
-  }
-  .gateway__main{
-    padding-top:34px;
-  }
-  .gateway-hero{
-    margin-bottom:28px;
-    padding-left:15px;
-    text-align:left;
-    border-left-width:6px;
-  }
-  .gateway-hero::before{
-    width:82px;
-    height:11px;
-    margin:0 0 20px -15px;
-  }
-  .gateway-hero__code{
-    font-size:.54rem;
-    letter-spacing:.11em;
-  }
-  .gateway-hero h1{
-    font-size:2.55rem;
-    line-height:.98;
-  }
-  .gateway-hero p{
-    font-size:.78rem;
-    line-height:1.45;
-  }
-  .cadet-access::after{
-    width:88px;
-    height:10px;
-  }
-  .cadet-access__heading{
-    padding-top:7px;
-  }
 }

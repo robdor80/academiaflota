@@ -1,16 +1,18 @@
 import {
   getProfiles, createProfile, setActiveProfile, clearActiveProfile, getActiveProfile,
   updateProfile, deleteProfile, exportProfile, importProfile
-} from "./storage.js?v=0.2.3";
-import { loadStudyData, renderLesson } from "./study.js?v=0.2.3";
-import { loadEvaluationData, renderExam, gradeExam, renderResult } from "./evaluation.js?v=0.2.3";
+} from "./storage.js?v=0.3.0";
+import { loadStudyData, renderLesson } from "./study.js?v=0.3.0";
+import { loadEvaluationData, renderExam, gradeExam, renderResult } from "./evaluation.js?v=0.3.0";
 
 const app = {
   profile: null,
   study: null,
+  curriculum: null,
   exam: null,
   practices: null,
   route: "dashboard",
+  currentStudyId: "sensores-i",
   activeModule: 0,
   activePractice: null
 };
@@ -22,6 +24,7 @@ const views = Array.from(document.querySelectorAll("[data-view]"));
 const navButtons = Array.from(document.querySelectorAll(".primary-nav [data-route]"));
 const moduleList = document.querySelector("#module-list");
 const lessonContent = document.querySelector("#lesson-content");
+const curriculumContainer = document.querySelector("#curriculum-container");
 
 function profileStudy() { return app.profile.studies.sensores; }
 function profilePractices() { return app.profile.practices.sensores; }
@@ -66,13 +69,12 @@ function renderProfileList() {
     const modules = profile.studies?.sensores?.completedModules?.length || 0;
     const attempts = profile.evaluations?.sensores?.attempts || [];
     const best = attempts.length ? Math.max.apply(null, attempts.map(function(item){ return item.score; })) : null;
-
     const button = document.createElement("button");
     button.className = "profile-entry";
     button.innerHTML =
       '<span class="profile-entry__avatar">' + escapeHtml(profile.name.trim().charAt(0).toUpperCase()) + "</span>" +
-      "<span><strong>" + escapeHtml(profile.name) + "</strong><small>EXPEDIENTE DE CADETE // " +
-      modules + " UNIDADES" + (best === null ? "" : " · MEJOR NOTA " + best + "%") + "</small></span>" +
+      "<span><strong>" + escapeHtml(profile.name) + "</strong><small>" +
+      modules + " unidades estudiadas" + (best === null ? "" : " · mejor test " + best + "%") + "</small></span>" +
       '<span class="profile-entry__arrow">ACCEDER →</span>';
     button.addEventListener("click", function() { enterProfile(profile.id); });
     list.appendChild(button);
@@ -87,6 +89,7 @@ async function enterProfile(id) {
   gateway.hidden = true;
   portal.hidden = false;
   await ensureData();
+  renderCurriculum();
   refreshProfileUI();
   setRoute("dashboard");
 }
@@ -104,8 +107,15 @@ function leaveProfile() {
 async function ensureData() {
   if (!app.study) app.study = await loadStudyData();
   if (!app.exam) app.exam = await loadEvaluationData();
+
+  if (!app.curriculum) {
+    const response = await fetch("data/curriculum.json?v=0.3.0");
+    if (!response.ok) throw new Error("No se pudo cargar el currículo académico.");
+    app.curriculum = await response.json();
+  }
+
   if (!app.practices) {
-    const response = await fetch("data/practicas-sensores.json?v=0.2.3");
+    const response = await fetch("data/practicas-sensores.json?v=0.3.0");
     if (!response.ok) throw new Error("No se pudieron cargar las prácticas.");
     app.practices = await response.json();
   }
@@ -115,6 +125,7 @@ function setRoute(route) {
   app.route = route;
   views.forEach(function(view) { view.classList.toggle("is-active", view.dataset.view === route); });
   navButtons.forEach(function(button) { button.classList.toggle("is-active", button.dataset.route === route); });
+  if (route === "studies") renderCurriculum();
   if (route === "dashboard" || route === "record" || route === "evaluations") refreshProfileUI();
   if (route === "practices") renderPractices();
   window.scrollTo({top:0,behavior:"smooth"});
@@ -123,7 +134,6 @@ function setRoute(route) {
 function refreshProfileUI() {
   if (!app.profile || !app.study || !app.practices) return;
   const name = app.profile.name;
-
   ["#header-cadet-name","#welcome-name","#record-name","#footer-cadet-name"].forEach(function(selector) {
     document.querySelector(selector).textContent = name;
   });
@@ -131,12 +141,8 @@ function refreshProfileUI() {
   const completed = profileStudy().completedModules.length;
   const total = app.study.modules.length;
   const percent = studyPercent();
-
   document.querySelector("#dashboard-study-progress").textContent = percent + "%";
-  document.querySelector("#dashboard-study-copy").textContent = completed + " de " + total + " módulos estudiados.";
-  document.querySelector("#dashboard-progress-bar").style.width = percent + "%";
-  document.querySelector("#catalogue-progress-bar").style.width = percent + "%";
-  document.querySelector("#catalogue-progress-copy").textContent = completed + " de " + total + " unidades estudiadas";
+  document.querySelector("#dashboard-study-copy").textContent = completed + " de " + total + " unidades estudiadas.";
   document.querySelector("#reader-completion").textContent = "PROGRESO " + percent + "%";
 
   const practiced = profilePractices().completed.length;
@@ -156,9 +162,128 @@ function refreshProfileUI() {
   if (moduleList.children.length) syncModuleButtons();
 }
 
+function subjectHtml(subject) {
+  if (typeof subject === "string") {
+    return '<div class="subject-item"><span>' + escapeHtml(subject) + '</span></div>';
+  }
+
+  const meta = subject.specialization ? '<small class="subject-item__meta">' + escapeHtml(subject.specialization) + '</small>' : "";
+  if (subject.available && subject.studyId) {
+    const method = '<small class="subject-item__method">Teoría · Clase con instructor · Práctica · Evaluación continua</small>';
+    return '<button class="subject-item subject-item--available" data-open-study="' + subject.studyId + '">' +
+      '<span><strong>' + escapeHtml(subject.title) + '</strong>' + meta + method + '</span>' +
+      '<span class="subject-item__action">ABRIR MATERIAL →</span></button>';
+  }
+
+  return '<div class="subject-item"><span>' + escapeHtml(subject.title || "") + meta + '</span></div>';
+}
+
+function renderTerm(term) {
+  return '<article class="term-card">' +
+    '<header class="term-card__head"><span>' + escapeHtml(term.title) + '</span><h3>' +
+    escapeHtml(term.subtitle) + '</h3><p>' + escapeHtml(term.objective) + '</p></header>' +
+    '<div class="subject-list">' + term.subjects.map(subjectHtml).join("") + '</div></article>';
+}
+
+function renderCurriculum() {
+  if (!app.curriculum || !curriculumContainer) return;
+
+  const pre = app.curriculum.preAcademia;
+  let html =
+    '<section class="curriculum-section">' +
+      '<header class="curriculum-section__header"><div><span class="overline">ANTES DE LA ACADEMIA</span><h2>' +
+      escapeHtml(pre.title) + '</h2><p>' + escapeHtml(pre.subtitle) + '</p></div><span class="badge">OPCIONAL</span></header>' +
+      '<div class="curriculum-section__body"><ul class="preacademy-list">' +
+      pre.subjects.map(function(item){ return "<li>" + escapeHtml(item) + "</li>"; }).join("") +
+      '</ul></div></section>';
+
+  app.curriculum.years.forEach(function(year) {
+    const specializationText = year.specializations
+      ? '<div class="specialization-note"><strong>Ramas de especialización:</strong> ' +
+        year.specializations.map(escapeHtml).join(" · ") +
+        '. La web no bloquea ninguna rama ni ningún trimestre.</div>'
+      : "";
+
+    const supplementary = year.supplementary
+      ? '<div class="supplementary"><h3>Material complementario de Sensores</h3><div class="supplementary-grid">' +
+        year.supplementary.map(function(item) {
+          return '<button data-open-study="' + item.studyId + '"><strong>' + escapeHtml(item.title) +
+            '</strong><small>Consulta transversal del Manual de Sensores</small></button>';
+        }).join("") + '</div></div>'
+      : "";
+
+    html +=
+      '<section class="curriculum-section">' +
+        '<header class="curriculum-section__header"><div><span class="overline">' + escapeHtml(year.year) +
+        '</span><h2>' + escapeHtml(year.title) + '</h2></div></header>' +
+        '<div class="curriculum-section__body">' + specializationText +
+          '<div class="term-grid">' + year.trimesters.map(renderTerm).join("") + '</div>' +
+          supplementary +
+        '</div></section>';
+  });
+
+  curriculumContainer.innerHTML = html;
+}
+
+function findStudyDefinition(studyId) {
+  if (!app.curriculum) return null;
+
+  for (const year of app.curriculum.years) {
+    for (const term of year.trimesters) {
+      for (const subject of term.subjects) {
+        if (typeof subject === "object" && subject.studyId === studyId) {
+          return {
+            id: subject.studyId,
+            title: subject.title,
+            code: "CIENCIAS / SENSORES",
+            subtitle: year.title + " · " + term.title,
+            units: subject.units
+          };
+        }
+      }
+    }
+
+    for (const item of year.supplementary || []) {
+      if (item.studyId === studyId) {
+        return {
+          id: item.studyId,
+          title: item.title,
+          code: "SENSORES · CONSULTA",
+          subtitle: "Material complementario del Manual de Sensores",
+          units: item.units
+        };
+      }
+    }
+  }
+
+  return null;
+}
+
+function currentModules() {
+  const definition = findStudyDefinition(app.currentStudyId);
+  if (!definition) return [];
+  return definition.units
+    .map(function(id) { return app.study.modules.find(function(module) { return module.id === id; }); })
+    .filter(Boolean);
+}
+
+function openStudy(studyId) {
+  const definition = findStudyDefinition(studyId);
+  if (!definition) return;
+  app.currentStudyId = studyId;
+  app.activeModule = 0;
+  document.querySelector("#subject-code").textContent = definition.code;
+  document.querySelector("#subject-title").textContent = definition.title;
+  document.querySelector("#subject-subtitle").textContent = definition.subtitle;
+  renderModuleList();
+  renderModule(0);
+  setRoute("subject");
+}
+
 function renderModuleList() {
+  const modules = currentModules();
   moduleList.innerHTML = "";
-  app.study.modules.forEach(function(module,index) {
+  modules.forEach(function(module,index) {
     const button = document.createElement("button");
     button.className = "module-btn";
     button.innerHTML =
@@ -172,21 +297,24 @@ function renderModuleList() {
 }
 
 function renderModule(index) {
-  app.activeModule = Math.max(0,Math.min(index,app.study.modules.length-1));
-  const module = app.study.modules[app.activeModule];
+  const modules = currentModules();
+  if (!modules.length) return;
+  app.activeModule = Math.max(0,Math.min(index,modules.length-1));
+  const module = modules[app.activeModule];
   lessonContent.innerHTML = renderLesson(module);
   document.querySelector("#reader-position").textContent =
-    "UNIDAD " + module.id + " / " + app.study.modules[app.study.modules.length - 1].id;
+    "UNIDAD " + module.id + " · " + (app.activeModule + 1) + " de " + modules.length;
   document.querySelector("#prev-module").disabled = app.activeModule === 0;
-  document.querySelector("#next-module").disabled = app.activeModule === app.study.modules.length - 1;
+  document.querySelector("#next-module").disabled = app.activeModule === modules.length - 1;
   document.querySelector("#mark-complete").textContent =
     profileStudy().completedModules.includes(module.id) ? "✓ Unidad estudiada" : "Marcar como estudiado";
   syncModuleButtons();
 }
 
 function syncModuleButtons() {
+  const modules = currentModules();
   Array.from(moduleList.querySelectorAll(".module-btn")).forEach(function(button,index) {
-    const id = app.study.modules[index].id;
+    const id = modules[index].id;
     const done = profileStudy().completedModules.includes(id);
     button.classList.toggle("is-active",index === app.activeModule);
     button.classList.toggle("is-complete",done);
@@ -195,7 +323,9 @@ function syncModuleButtons() {
 }
 
 function toggleModuleComplete() {
-  const id = app.study.modules[app.activeModule].id;
+  const modules = currentModules();
+  if (!modules.length) return;
+  const id = modules[app.activeModule].id;
   const completed = profileStudy().completedModules;
   const index = completed.indexOf(id);
   if (index >= 0) completed.splice(index,1);
@@ -210,7 +340,7 @@ function renderPractices() {
   container.innerHTML = app.practices.items.map(function(item) {
     const done = profilePractices().completed.includes(item.id);
     return '<article class="practice-card ' + (done ? "is-complete" : "") + '">' +
-      '<span class="overline">' + item.id + " // OPERACIONES DE SENSORES</span>" +
+      '<span class="overline">' + item.id + " · OPERACIONES DE SENSORES</span>" +
       "<h2>" + item.title + "</h2><p>" + item.scenario + "</p>" +
       '<div class="practice-card__footer"><span class="practice-card__status">' +
       (done ? "✓ Revisada" : "Pendiente") + '</span><button class="button button--secondary" data-practice-id="' +
@@ -226,13 +356,13 @@ function openPractice(id) {
   const done = profilePractices().completed.includes(id);
 
   document.querySelector("#practice-detail").innerHTML =
-    '<span class="overline">' + item.id + " // PRÁCTICA ACADÉMICA</span>" +
+    '<span class="overline">' + item.id + " · PRÁCTICA DE ESTUDIO</span>" +
     "<h1>" + item.title + '</h1><div class="practice-scenario">' + item.scenario + "</div>" +
-    '<label for="practice-answer">Plan de actuación del cadete</label>' +
+    '<label for="practice-answer">Plan de actuación</label>' +
     '<textarea id="practice-answer" placeholder="Describe cómo configurarías la consola, qué comprobarías y cómo informarías el resultado...">' +
     escapeHtml(answer) + '</textarea><div class="practice-actions">' +
     '<button id="save-practice-answer" class="button button--primary">Guardar respuesta</button>' +
-    '<button id="show-practice-criteria" class="button button--secondary">Mostrar criterios de evaluación</button>' +
+    '<button id="show-practice-criteria" class="button button--secondary">Mostrar criterios</button>' +
     '<button id="complete-practice" class="button button--secondary">' +
     (done ? "✓ Práctica revisada" : "Marcar como revisada") + '</button></div>' +
     '<section id="practice-criteria" class="criteria" hidden><span class="overline">CRITERIOS DEL MANUAL</span>' +
@@ -243,7 +373,7 @@ function openPractice(id) {
 function savePracticeAnswer() {
   profilePractices().answers[app.activePractice] = document.querySelector("#practice-answer").value.trim();
   persistProfile();
-  alert("Respuesta guardada en el expediente local.");
+  alert("Respuesta guardada en el perfil local.");
 }
 
 function togglePracticeComplete() {
@@ -264,7 +394,7 @@ function startEvaluation() {
 function submitEvaluation(form) {
   const data = new FormData(form);
   if (app.exam.questions.some(function(q) { return !data.has(q.id); })) {
-    alert("Debe responder todas las preguntas antes de entregar la evaluación.");
+    alert("Debe responder todas las preguntas antes de entregar el test.");
     return;
   }
 
@@ -291,12 +421,12 @@ function renderRecord() {
   const last = attempts.length ? attempts[attempts.length - 1] : null;
 
   document.querySelector("#record-summary").innerHTML =
-    '<article class="record-item"><span>FORMACIÓN // SENSORES</span><strong>' + modules + "/" + app.study.modules.length +
+    '<article class="record-item"><span>SENSORES · ESTUDIO</span><strong>' + modules + "/" + app.study.modules.length +
     '</strong><p>Unidades marcadas como estudiadas.</p></article>' +
-    '<article class="record-item"><span>PRÁCTICAS // SENSORES</span><strong>' + practices + "/" + app.practices.items.length +
+    '<article class="record-item"><span>PRÁCTICAS</span><strong>' + practices + "/" + app.practices.items.length +
     '</strong><p>Ejercicios revisados.</p></article>' +
-    '<article class="record-item"><span>MEJOR NOTA</span><strong>' + (best === null ? "—" : best + "%") + "</strong><p>" +
-    (last ? "Último intento: " + new Date(last.date).toLocaleDateString("es-ES") : "Sin evaluaciones realizadas.") +
+    '<article class="record-item"><span>MEJOR TEST</span><strong>' + (best === null ? "—" : best + "%") + "</strong><p>" +
+    (last ? "Último intento: " + new Date(last.date).toLocaleDateString("es-ES") : "Sin tests realizados.") +
     "</p></article>";
 }
 
@@ -306,11 +436,8 @@ document.addEventListener("click", function(event) {
   const routeElement = event.target.closest("[data-route]");
   if (routeElement && app.profile) setRoute(routeElement.dataset.route);
 
-  if (event.target.closest("[data-open-subject='sensores']")) {
-    if (!moduleList.children.length) renderModuleList();
-    renderModule(app.activeModule);
-    setRoute("subject");
-  }
+  const studyElement = event.target.closest("[data-open-study]");
+  if (studyElement && app.profile) openStudy(studyElement.dataset.openStudy);
 
   const practiceElement = event.target.closest("[data-practice-id]");
   if (practiceElement) openPractice(practiceElement.dataset.practiceId);

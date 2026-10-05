@@ -1,5 +1,5 @@
 export async function loadStudyData() {
-  const response = await fetch("data/sensores.json?v=0.2.3");
+  const response = await fetch("data/sensores.json?v=0.3.0");
   if (!response.ok) throw new Error("No se pudo cargar el Manual de Sensores.");
   return response.json();
 }
