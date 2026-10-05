@@ -1,283 +1,267 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "course_id": "JDG-303",
-  "status": "generated_from_authoritative_curriculum",
+  "status": "editorially_aligned_with_developed_manual",
+  "source_manual": "gameplay/careers/academy_path/study_materials/third_class/JDG-303/MANUAL_v1_0.md",
   "question_count": 24,
+  "rule": "No question may require knowledge that is not explicitly taught in JDG-303 or established prerequisites.",
   "questions": [
     {
       "id": "JDG-303-Q001",
       "unit_id": "JDG-303-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica evidencia y da un ejemplo operativo.",
+      "type": "compare",
+      "prompt_es": "Diferencia hecho e inferencia.",
       "answer_key_es": [
-        "evidencia",
-        "ejemplo coherente",
-        "límite o contexto"
+        "observado/registrado",
+        "conclusión razonada"
       ]
     },
     {
       "id": "JDG-303-Q002",
       "unit_id": "JDG-303-U01",
-      "type": "relationship",
-      "prompt_es": "Relaciona evidencia con hipótesis. ¿Qué información pasa de uno a otro?",
+      "type": "short_answer",
+      "prompt_es": "¿Qué es supuesto?",
       "answer_key_es": [
-        "evidencia",
-        "hipótesis",
-        "flujo de información o dependencia"
+        "idea adoptada sin evidencia suficiente"
       ]
     },
     {
       "id": "JDG-303-Q003",
       "unit_id": "JDG-303-U01",
-      "type": "scenario",
-      "prompt_es": "Separar capas en un caso. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué distingue hipótesis?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "contrastable",
+        "puede ganar/perder apoyo"
       ]
     },
     {
       "id": "JDG-303-Q004",
       "unit_id": "JDG-303-U01",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Hechos, inferencias y supuestos, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "knowledge",
+      "prompt_es": "Nombra fuentes de sesgo.",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "expectativa",
+        "experiencia",
+        "preferencia",
+        "presión",
+        "información incompleta"
       ]
     },
     {
       "id": "JDG-303-Q005",
       "unit_id": "JDG-303-U02",
       "type": "knowledge",
-      "prompt_es": "Explica probabilidad contextual y da un ejemplo operativo.",
+      "prompt_es": "¿Qué forma riesgo contextual?",
       "answer_key_es": [
-        "probabilidad contextual",
-        "ejemplo coherente",
-        "límite o contexto"
+        "probabilidad",
+        "impacto",
+        "exposición",
+        "tiempo",
+        "respuesta",
+        "incertidumbre"
       ]
     },
     {
       "id": "JDG-303-Q006",
       "unit_id": "JDG-303-U02",
-      "type": "relationship",
-      "prompt_es": "Relaciona probabilidad contextual con impacto. ¿Qué información pasa de uno a otro?",
+      "type": "judgment",
+      "prompt_es": "¿Por qué no inventar precisión?",
       "answer_key_es": [
-        "probabilidad contextual",
-        "impacto",
-        "flujo de información o dependencia"
+        "falsa certeza"
       ]
     },
     {
       "id": "JDG-303-Q007",
       "unit_id": "JDG-303-U02",
-      "type": "scenario",
-      "prompt_es": "Comparar cursos de acción. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "compare",
+      "prompt_es": "Diferencia urgencia y gravedad.",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "tiempo",
+        "impacto"
       ]
     },
     {
       "id": "JDG-303-Q008",
       "unit_id": "JDG-303-U02",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Riesgo y prioridad, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "judgment",
+      "prompt_es": "¿Por qué importa reversibilidad?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "opciones de corrección",
+        "cautela"
       ]
     },
     {
       "id": "JDG-303-Q009",
       "unit_id": "JDG-303-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica umbral y da un ejemplo operativo.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué costes tiene esperar?",
       "answer_key_es": [
-        "umbral",
-        "ejemplo coherente",
-        "límite o contexto"
+        "tiempo",
+        "riesgo",
+        "oportunidad"
       ]
     },
     {
       "id": "JDG-303-Q010",
       "unit_id": "JDG-303-U03",
-      "type": "relationship",
-      "prompt_es": "Relaciona umbral con consulta. ¿Qué información pasa de uno a otro?",
+      "type": "short_answer",
+      "prompt_es": "¿Qué es umbral de decisión?",
       "answer_key_es": [
-        "umbral",
-        "consulta",
-        "flujo de información o dependencia"
+        "información/urgencia suficiente para actuar"
       ]
     },
     {
       "id": "JDG-303-Q011",
       "unit_id": "JDG-303-U03",
-      "type": "scenario",
-      "prompt_es": "Resolver escenario con datos parciales. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "knowledge",
+      "prompt_es": "¿Qué consultas reducen incertidumbre?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "scan",
+        "opinión técnica",
+        "aclaración",
+        "informe",
+        "autoridad"
       ]
     },
     {
       "id": "JDG-303-Q012",
       "unit_id": "JDG-303-U03",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Decisión bajo información incompleta, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "judgment",
+      "prompt_es": "¿Cuándo esperar es correcto?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "mejora información sin riesgo desproporcionado"
       ]
     },
     {
       "id": "JDG-303-Q013",
       "unit_id": "JDG-303-U04",
       "type": "knowledge",
-      "prompt_es": "Explica hechos y da un ejemplo operativo.",
+      "prompt_es": "¿Qué cuatro elementos contiene informe?",
       "answer_key_es": [
         "hechos",
-        "ejemplo coherente",
-        "límite o contexto"
+        "acciones",
+        "resultado",
+        "pendientes"
       ]
     },
     {
       "id": "JDG-303-Q014",
       "unit_id": "JDG-303-U04",
-      "type": "relationship",
-      "prompt_es": "Relaciona hechos con acciones. ¿Qué información pasa de uno a otro?",
+      "type": "short_answer",
+      "prompt_es": "¿Qué se registra de una acción?",
       "answer_key_es": [
-        "hechos",
-        "acciones",
-        "flujo de información o dependencia"
+        "qué",
+        "quién",
+        "autoridad",
+        "cuándo"
       ]
     },
     {
       "id": "JDG-303-Q015",
       "unit_id": "JDG-303-U04",
-      "type": "scenario",
-      "prompt_es": "Redactar informe breve. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "knowledge",
+      "prompt_es": "¿Qué estados de resultado existen?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "completado",
+        "parcial",
+        "fallido",
+        "cancelado",
+        "pendiente"
       ]
     },
     {
       "id": "JDG-303-Q016",
       "unit_id": "JDG-303-U04",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Informe operativo, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "short_answer",
+      "prompt_es": "¿Qué debe tener pendiente?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "responsable",
+        "prioridad",
+        "siguiente acción"
       ]
     },
     {
       "id": "JDG-303-Q017",
       "unit_id": "JDG-303-U05",
-      "type": "knowledge",
-      "prompt_es": "Explica responsabilidad y da un ejemplo operativo.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué es hindsight bias?",
       "answer_key_es": [
-        "responsabilidad",
-        "ejemplo coherente",
-        "límite o contexto"
+        "juzgar con conocimiento futuro"
       ]
     },
     {
       "id": "JDG-303-Q018",
       "unit_id": "JDG-303-U05",
-      "type": "relationship",
-      "prompt_es": "Relaciona responsabilidad con no hindsight bias. ¿Qué información pasa de uno a otro?",
+      "type": "judgment",
+      "prompt_es": "¿Evitar hindsight elimina responsabilidad?",
       "answer_key_es": [
-        "responsabilidad",
-        "no hindsight bias",
-        "flujo de información o dependencia"
+        "no"
       ]
     },
     {
       "id": "JDG-303-Q019",
       "unit_id": "JDG-303-U05",
-      "type": "scenario",
-      "prompt_es": "Debrief oral. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "short_answer",
+      "prompt_es": "¿Para qué analizar alternativas?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "comparar costes",
+        "riesgos",
+        "aprendizaje"
       ]
     },
     {
       "id": "JDG-303-Q020",
       "unit_id": "JDG-303-U05",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Debrief profesional, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "judgment",
+      "prompt_es": "¿Qué hace útil una lección?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "accionable",
+        "específica"
       ]
     },
     {
       "id": "JDG-303-Q021",
       "unit_id": "JDG-303-U06",
       "type": "knowledge",
-      "prompt_es": "Explica situación y da un ejemplo operativo.",
+      "prompt_es": "¿Qué combina caso integrado?",
       "answer_key_es": [
-        "situación",
-        "ejemplo coherente",
-        "límite o contexto"
+        "información",
+        "riesgo",
+        "autoridad",
+        "decisión",
+        "consecuencia",
+        "documentación"
       ]
     },
     {
       "id": "JDG-303-Q022",
       "unit_id": "JDG-303-U06",
-      "type": "relationship",
-      "prompt_es": "Relaciona situación con decisión. ¿Qué información pasa de uno a otro?",
+      "type": "short_answer",
+      "prompt_es": "¿Por qué ordenar línea temporal?",
       "answer_key_es": [
-        "situación",
-        "decisión",
-        "flujo de información o dependencia"
+        "saber qué información existía"
       ]
     },
     {
       "id": "JDG-303-Q023",
       "unit_id": "JDG-303-U06",
-      "type": "scenario",
-      "prompt_es": "Analizar una simulación completa. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "judgment",
+      "prompt_es": "¿Resultado bueno implica decisión buena?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "no"
       ]
     },
     {
       "id": "JDG-303-Q024",
       "unit_id": "JDG-303-U06",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Caso integrado, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "knowledge",
+      "prompt_es": "¿Qué se revisa en documentación?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "log",
+        "inferencias",
+        "debrief",
+        "historia"
       ]
     }
   ]
