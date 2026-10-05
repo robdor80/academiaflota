@@ -242,7 +242,7 @@
     text-align:center;
   }
 
-  .gateway__academy-name{
+  .gateway__title>.gateway__academy-name{
     grid-row:3;
     align-self:stretch;
     justify-self:stretch;
