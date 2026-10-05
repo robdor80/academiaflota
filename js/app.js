@@ -1,9 +1,9 @@
 import {
   getProfiles, createProfile, setActiveProfile, clearActiveProfile, getActiveProfile,
   updateProfile, deleteProfile, exportProfile, importProfile
-} from "./storage.js?v=0.3.1";
+} from "./storage.js?v=0.5.0";
 import { loadStudyData, loadStudyFile, renderLesson } from "./study.js?v=0.5.0";
-import { loadEvaluationData, renderExam, gradeExam, renderResult } from "./evaluation.js?v=0.3.1";
+import { loadEvaluationData, renderExam, gradeExam, renderResult } from "./evaluation.js?v=0.5.0";
 
 const app = {
   profile: null,
@@ -137,7 +137,7 @@ async function ensureData() {
   if (!app.study) app.study = await loadStudyData();
 
   if (!app.accessManual) {
-    const response = await fetch("data/manual-candidato.json?v=0.3.1");
+    const response = await fetch("data/manual-candidato.json?v=0.5.0");
     if (!response.ok) throw new Error("No se pudo cargar el Manual del Candidato.");
     app.accessManual = await response.json();
   }
@@ -145,13 +145,13 @@ async function ensureData() {
   if (!app.exam) app.exam = await loadEvaluationData();
 
   if (!app.curriculum) {
-    const response = await fetch("data/curriculum.json?v=0.3.1");
+    const response = await fetch("data/curriculum.json?v=0.5.0");
     if (!response.ok) throw new Error("No se pudo cargar el currículo académico.");
     app.curriculum = await response.json();
   }
 
   if (!app.practices) {
-    const response = await fetch("data/practicas-sensores.json?v=0.3.1");
+    const response = await fetch("data/practicas-sensores.json?v=0.5.0");
     if (!response.ok) throw new Error("No se pudieron cargar las prácticas.");
     app.practices = await response.json();
   }
