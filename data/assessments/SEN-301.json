@@ -1,283 +1,283 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "course_id": "SEN-301",
-  "status": "generated_from_authoritative_curriculum",
+  "status": "editorially_aligned_with_developed_manual",
+  "source_manual": "gameplay/careers/academy_path/study_materials/third_class/SEN-301/MANUAL_v1_0.md",
   "question_count": 24,
+  "rule": "No question may require knowledge that is not explicitly taught in SEN-301 or established prerequisites.",
   "questions": [
     {
       "id": "SEN-301-Q001",
       "unit_id": "SEN-301-U01",
       "type": "knowledge",
-      "prompt_es": "Explica disponibilidad y da un ejemplo operativo.",
+      "prompt_es": "¿Qué se comprueba antes de operar?",
       "answer_key_es": [
-        "disponibilidad",
-        "ejemplo coherente",
-        "límite o contexto"
+        "estado",
+        "matrices",
+        "alcance",
+        "resolución",
+        "potencia",
+        "daños",
+        "interferencia"
       ]
     },
     {
       "id": "SEN-301-Q002",
       "unit_id": "SEN-301-U01",
-      "type": "relationship",
-      "prompt_es": "Relaciona disponibilidad con canales. ¿Qué información pasa de uno a otro?",
+      "type": "compare",
+      "prompt_es": "Diferencia alcance nominal y efectivo.",
       "answer_key_es": [
-        "disponibilidad",
-        "canales",
-        "flujo de información o dependencia"
+        "perfil teórico",
+        "condiciones reales"
       ]
     },
     {
       "id": "SEN-301-Q003",
       "unit_id": "SEN-301-U01",
-      "type": "scenario",
-      "prompt_es": "Comprobar estado antes de operar. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "judgment",
+      "prompt_es": "¿Puede Sensores apropiarse de energía de otros sistemas?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "no",
+        "solicita a Operaciones"
       ]
     },
     {
       "id": "SEN-301-Q004",
       "unit_id": "SEN-301-U01",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Estado del sistema, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "short_answer",
+      "prompt_es": "¿Por qué importa operación en curso?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "recursos",
+        "compatibilidad",
+        "cancelación/espera"
       ]
     },
     {
       "id": "SEN-301-Q005",
       "unit_id": "SEN-301-U02",
       "type": "knowledge",
-      "prompt_es": "Explica objetivo y da un ejemplo operativo.",
+      "prompt_es": "¿Qué tres tipos de scan existen?",
       "answer_key_es": [
-        "objetivo",
-        "ejemplo coherente",
-        "límite o contexto"
+        "corto",
+        "largo",
+        "focalizado"
       ]
     },
     {
       "id": "SEN-301-Q006",
       "unit_id": "SEN-301-U02",
-      "type": "relationship",
-      "prompt_es": "Relaciona objetivo con alcance. ¿Qué información pasa de uno a otro?",
+      "type": "knowledge",
+      "prompt_es": "¿Qué parámetros se configuran?",
       "answer_key_es": [
+        "modo",
         "objetivo",
-        "alcance",
-        "flujo de información o dependencia"
+        "resolución",
+        "filtros",
+        "prioridad",
+        "duración"
       ]
     },
     {
       "id": "SEN-301-Q007",
       "unit_id": "SEN-301-U02",
-      "type": "scenario",
-      "prompt_es": "Ejecutar barridos estándar. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué exige focalizado?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "objetivo concreto"
       ]
     },
     {
       "id": "SEN-301-Q008",
       "unit_id": "SEN-301-U02",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Scans básicos, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "compare",
+      "prompt_es": "Diferencia traza y resuelto.",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "detección mínima",
+        "clasificación/detalle superior"
       ]
     },
     {
       "id": "SEN-301-Q009",
       "unit_id": "SEN-301-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica zona y da un ejemplo operativo.",
+      "type": "compare",
+      "prompt_es": "Diferencia barrido y búsqueda.",
       "answer_key_es": [
-        "zona",
-        "ejemplo coherente",
-        "límite o contexto"
+        "observar zona",
+        "buscar candidato compatible"
       ]
     },
     {
       "id": "SEN-301-Q010",
       "unit_id": "SEN-301-U03",
-      "type": "relationship",
-      "prompt_es": "Relaciona zona con criterios. ¿Qué información pasa de uno a otro?",
+      "type": "knowledge",
+      "prompt_es": "Nombra cinco objetivos de búsqueda.",
       "answer_key_es": [
-        "zona",
-        "criterios",
-        "flujo de información o dependencia"
+        "nave",
+        "lanzadera",
+        "baliza",
+        "vida",
+        "energía",
+        "warp",
+        "transpondedor"
       ]
     },
     {
       "id": "SEN-301-Q011",
       "unit_id": "SEN-301-U03",
-      "type": "scenario",
-      "prompt_es": "Buscar una firma conocida. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "judgment",
+      "prompt_es": "¿Qué coste tiene sensibilidad alta?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "ruido",
+        "falsos positivos",
+        "candidatos dudosos"
       ]
     },
     {
       "id": "SEN-301-Q012",
       "unit_id": "SEN-301-U03",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Búsqueda y localización, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "judgment",
+      "prompt_es": "¿Una búsqueda garantiza identidad?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "no",
+        "solo candidatos compatibles"
       ]
     },
     {
       "id": "SEN-301-Q013",
       "unit_id": "SEN-301-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica creación y da un ejemplo operativo.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué representa un contacto?",
       "answer_key_es": [
-        "creación",
-        "ejemplo coherente",
-        "límite o contexto"
+        "ficha observacional persistente"
       ]
     },
     {
       "id": "SEN-301-Q014",
       "unit_id": "SEN-301-U04",
-      "type": "relationship",
-      "prompt_es": "Relaciona creación con identificación provisional. ¿Qué información pasa de uno a otro?",
+      "type": "knowledge",
+      "prompt_es": "Nombra cuatro campos de contacto.",
       "answer_key_es": [
-        "creación",
-        "identificación provisional",
-        "flujo de información o dependencia"
+        "posición",
+        "distancia",
+        "vector",
+        "velocidad",
+        "firmas",
+        "confianza"
       ]
     },
     {
       "id": "SEN-301-Q015",
       "unit_id": "SEN-301-U04",
-      "type": "scenario",
-      "prompt_es": "Gestionar varios contactos. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué persiste identidad tras pérdida?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "historial",
+        "trayectoria",
+        "firmas compatibles"
       ]
     },
     {
       "id": "SEN-301-Q016",
       "unit_id": "SEN-301-U04",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Contactos, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "short_answer",
+      "prompt_es": "¿Qué se conserva al perder contacto?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "última posición",
+        "rumbo",
+        "velocidad",
+        "firmas",
+        "hora"
       ]
     },
     {
       "id": "SEN-301-Q017",
       "unit_id": "SEN-301-U05",
-      "type": "knowledge",
-      "prompt_es": "Explica seguimiento y da un ejemplo operativo.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué mejora tracking?",
       "answer_key_es": [
-        "seguimiento",
-        "ejemplo coherente",
-        "límite o contexto"
+        "posición",
+        "rumbo",
+        "velocidad",
+        "trayectoria"
       ]
     },
     {
       "id": "SEN-301-Q018",
       "unit_id": "SEN-301-U05",
-      "type": "relationship",
-      "prompt_es": "Relaciona seguimiento con tendencia. ¿Qué información pasa de uno a otro?",
+      "type": "judgment",
+      "prompt_es": "¿Por qué capacidad de tracking es finita?",
       "answer_key_es": [
-        "seguimiento",
-        "tendencia",
-        "flujo de información o dependencia"
+        "recursos",
+        "matrices",
+        "potencia",
+        "daños"
       ]
     },
     {
       "id": "SEN-301-Q019",
       "unit_id": "SEN-301-U05",
-      "type": "scenario",
-      "prompt_es": "Mantener tracking y emitir readout. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué coste tiene priorizar contacto?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "más recursos",
+        "menos para otros"
       ]
     },
     {
       "id": "SEN-301-Q020",
       "unit_id": "SEN-301-U05",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Tracking y readout, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "judgment",
+      "prompt_es": "¿Por qué predicción no es certeza?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "incertidumbre crece",
+        "contacto puede maniobrar"
       ]
     },
     {
       "id": "SEN-301-Q021",
       "unit_id": "SEN-301-U06",
-      "type": "knowledge",
-      "prompt_es": "Explica ruido y da un ejemplo operativo.",
+      "type": "compare",
+      "prompt_es": "Diferencia interferencia ambiental y deliberada.",
       "answer_key_es": [
-        "ruido",
-        "ejemplo coherente",
-        "límite o contexto"
+        "natural/entorno",
+        "contramedida intencionada"
       ]
     },
     {
       "id": "SEN-301-Q022",
       "unit_id": "SEN-301-U06",
-      "type": "relationship",
-      "prompt_es": "Relaciona ruido con degradación. ¿Qué información pasa de uno a otro?",
+      "type": "knowledge",
+      "prompt_es": "Nombra cuatro compensaciones.",
       "answer_key_es": [
-        "ruido",
-        "degradación",
-        "flujo de información o dependencia"
+        "automática",
+        "banda",
+        "potencia",
+        "resolución",
+        "integración",
+        "recuperar"
       ]
     },
     {
       "id": "SEN-301-Q023",
       "unit_id": "SEN-301-U06",
-      "type": "scenario",
-      "prompt_es": "Repetir búsqueda con interferencia. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "knowledge",
+      "prompt_es": "¿Qué costes puede tener compensar?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "energía",
+        "tiempo",
+        "resolución",
+        "cobertura",
+        "tracking"
       ]
     },
     {
       "id": "SEN-301-Q024",
       "unit_id": "SEN-301-U06",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Interferencia básica, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "judgment",
+      "prompt_es": "¿Compensar elimina la causa?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "no",
+        "reduce efecto"
       ]
     }
   ]
