@@ -1,7 +1,7 @@
 {
   "subject": "Rotaciones operativas e integración",
   "code": "ROT-403",
-  "version": "1.0",
+  "version": "1.1",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/ROT-403/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/ROT-403/MANUAL_v1_0.md",
@@ -21,29 +21,36 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Dar exposición práctica suficiente a las principales áreas profesionales sin seleccionar todavía especialización."
+          "text": "La rotación de Puente y Operaciones muestra cómo una orden atraviesa varias estaciones: Mando define intención, una estación interpreta, el sistema valida, se ejecuta una acción y el resultado se informa."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Coordinación"
+        },
+        {
+          "type": "p",
+          "text": "Operaciones mantiene una imagen funcional de recursos, sistemas, necesidades de departamentos y prioridades de misión."
+        },
+        {
+          "type": "heading",
+          "text": "Estaciones"
         },
         {
           "type": "bullets",
           "items": [
-            "flujo de órdenes",
-            "coordinación",
-            "estaciones"
+            "Mando",
+            "Conn / Navegación",
+            "Ops",
+            "Sensores / Ciencia",
+            "Táctica",
+            "Comunicaciones",
+            "Ingeniería de puente cuando exista"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Rotación breve supervisada."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Informe de observación y tarea."
+          "label": "LÍMITE",
+          "text": "Ocupar temporalmente una estación durante una rotación no concede autoridad general sobre el puente."
         },
         {
           "type": "heading",
@@ -52,25 +59,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras flujo de órdenes.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Rotación breve supervisada.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/field_training_model.json",
-            "gameplay/ship_operations/bridge_station_model.json"
+            "¿Cómo fluye una orden hasta un resultado?",
+            "¿Qué función general cumple Operaciones?",
+            "¿Por qué una estación no funciona aislada?",
+            "¿Qué limita al cadete?",
+            "¿Qué debe contener el informe final?"
           ]
         }
       ]
@@ -82,30 +75,30 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Dar exposición práctica suficiente a las principales áreas profesionales sin seleccionar todavía especialización."
+          "text": "Ingeniería trabaja con estado de sistemas, energía, daños, mantenimiento, recursos y seguridad."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Mantenimiento"
         },
         {
           "type": "bullets",
           "items": [
-            "estado",
-            "energía",
-            "mantenimiento",
-            "seguridad"
+            "Inspección",
+            "Prueba",
+            "Calibración",
+            "Sustitución",
+            "Registro"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Tarea técnica de baja complejidad."
+          "label": "ENERGÍA COMPARTIDA",
+          "text": "Pedir más potencia puede afectar a otros consumidores; no es una mejora gratuita."
         },
         {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Ejecución supervisada."
+          "type": "p",
+          "text": "En una tarea técnica de baja complejidad el cadete sigue procedimiento, usa equipo adecuado y comunica si el estado real no coincide con el esperado."
         },
         {
           "type": "heading",
@@ -114,25 +107,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras estado.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Tarea técnica de baja complejidad.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/field_training_model.json",
-            "gameplay/ship_operations/bridge_station_model.json"
+            "¿Qué observa Ingeniería?",
+            "¿Por qué más potencia tiene coste?",
+            "¿Para qué sirve mantenimiento preventivo?",
+            "¿Qué haces si la tarea difiere del briefing?",
+            "¿Por qué una rotación breve no concede competencia de ingeniero?"
           ]
         }
       ]
@@ -144,30 +123,26 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Dar exposición práctica suficiente a las principales áreas profesionales sin seleccionar todavía especialización."
+          "text": "La rotación refuerza la separación entre obtener datos e interpretarlos: Sensores mide y organiza observaciones; Ciencia construye explicaciones."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Barrido guiado"
         },
         {
-          "type": "bullets",
+          "type": "numbered",
           "items": [
-            "medición",
-            "barrido",
-            "interpretación",
-            "reporte"
+            "Revisar objetivo",
+            "Comprobar modo",
+            "Ejecutar",
+            "Observar resultado",
+            "Guardar o enviar datos"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Barrido y entrega de datos."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Práctica."
+          "label": "REPORTE",
+          "text": "Debe distinguir qué se observó, con qué confianza, qué sigue sin saberse y qué análisis adicional podría ayudar."
         },
         {
           "type": "heading",
@@ -176,25 +151,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras medición.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Barrido y entrega de datos.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/field_training_model.json",
-            "gameplay/ship_operations/bridge_station_model.json"
+            "Diferencia Sensores y Ciencia.",
+            "¿Qué revisas antes de un barrido?",
+            "¿Por qué conservar incertidumbre?",
+            "¿Qué debe incluir el reporte?",
+            "¿Qué error cometes al convertir lectura en certeza?"
           ]
         }
       ]
@@ -206,30 +167,25 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Dar exposición práctica suficiente a las principales áreas profesionales sin seleccionar todavía especialización."
+          "text": "Navegación y vuelo convierten intención de mando en movimiento real mediante una solución de ruta compatible con origen, destino, restricciones, capacidad, riesgos y ETA."
+        },
+        {
+          "type": "definition",
+          "term": "Rumbo",
+          "text": "Dirección operacional de la nave dentro del marco utilizado."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Velocidad"
         },
         {
-          "type": "bullets",
-          "items": [
-            "plotting",
-            "rumbo",
-            "velocidad",
-            "control"
-          ]
+          "type": "p",
+          "text": "Debe ser posible, autorizada, compatible con la misión y coherente con el estado real de la nave."
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Preparar una ruta en simulador."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Práctica."
+          "label": "SI NO PUEDE EJECUTARSE",
+          "text": "El operador informa de la limitación y, cuando corresponda, ofrece una alternativa válida."
         },
         {
           "type": "heading",
@@ -238,25 +194,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras plotting.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Preparar una ruta en simulador.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/field_training_model.json",
-            "gameplay/ship_operations/bridge_station_model.json"
+            "¿Qué necesita una solución de plotting?",
+            "¿Qué representa rumbo?",
+            "¿Por qué validar velocidad?",
+            "¿Qué hacer si la orden no puede ejecutarse?",
+            "Diferencia decidir destino y ejecutar movimiento."
           ]
         }
       ]
@@ -268,30 +210,27 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Dar exposición práctica suficiente a las principales áreas profesionales sin seleccionar todavía especialización."
+          "text": "Seguridad y Medicina intervienen en situaciones críticas, pero con responsabilidades distintas."
         },
         {
-          "type": "heading",
-          "text": "Contenidos"
+          "type": "definition",
+          "term": "Seguridad",
+          "text": "Protección, control de acceso, respuesta a incidentes, evaluación inicial de riesgo y coordinación."
         },
         {
-          "type": "bullets",
-          "items": [
-            "protección",
-            "respuesta",
-            "triaje básico",
-            "límites"
-          ]
+          "type": "definition",
+          "term": "Medicina",
+          "text": "Seguridad de escena, estado observable, triaje básico, asistencia y relevo."
         },
         {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Dos micro-rotaciones con casos controlados."
+          "type": "definition",
+          "term": "Triaje",
+          "text": "Organización de prioridades cuando existen varios pacientes y recursos limitados."
         },
         {
           "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación de conducta y seguridad."
+          "label": "NO ES CUALIFICACIÓN",
+          "text": "Completar una micro-rotación no convierte al cadete en oficial de Seguridad ni en profesional médico."
         },
         {
           "type": "heading",
@@ -300,25 +239,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras protección.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Dos micro-rotaciones con casos controlados.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/field_training_model.json",
-            "gameplay/ship_operations/bridge_station_model.json"
+            "¿Qué observa el cadete en Seguridad?",
+            "¿Qué observa en Medicina?",
+            "¿Para qué sirve el triaje?",
+            "¿Por qué no se exige diagnóstico avanzado?",
+            "¿Qué límite mantiene el cadete?"
           ]
         }
       ]
@@ -330,30 +255,27 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Dar exposición práctica suficiente a las principales áreas profesionales sin seleccionar todavía especialización."
+          "text": "La última unidad sirve para conocerse profesionalmente sin elegir todavía una rama."
         },
         {
-          "type": "heading",
-          "text": "Contenidos"
+          "type": "definition",
+          "term": "Interés",
+          "text": "Qué tareas, problemas y entornos atraen al cadete."
         },
         {
-          "type": "bullets",
-          "items": [
-            "intereses",
-            "fortalezas",
-            "dificultades",
-            "preguntas"
-          ]
+          "type": "definition",
+          "term": "Fortaleza",
+          "text": "Capacidad respaldada por evidencia, no una impresión aislada."
         },
         {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Debrief con instructor."
+          "type": "definition",
+          "term": "Dificultad",
+          "text": "Área que puede orientar entrenamiento, tutoría o nueva exposición."
         },
         {
           "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Registro descriptivo; no elección final."
+          "label": "NO ES ELECCIÓN FINAL",
+          "text": "El debrief genera un registro descriptivo de intereses, fortalezas, dificultades y preguntas. No selecciona automáticamente especialización."
         },
         {
           "type": "heading",
@@ -362,28 +284,15 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras intereses.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Debrief con instructor.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/field_training_model.json",
-            "gameplay/ship_operations/bridge_station_model.json"
+            "¿Por qué ROT-403 no elige especialización?",
+            "Diferencia interés y competencia.",
+            "¿Qué convierte una fortaleza en evidencia?",
+            "¿Por qué una dificultad puede ser útil?",
+            "¿Qué debe producir el debrief final?"
           ]
         }
       ]
     }
-  ]
+  ],
+  "status": "developed_content"
 }
