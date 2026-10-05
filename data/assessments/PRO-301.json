@@ -1,283 +1,279 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "course_id": "PRO-301",
-  "status": "generated_from_authoritative_curriculum",
+  "status": "editorially_aligned_with_developed_manual",
+  "source_manual": "gameplay/careers/academy_path/study_materials/third_class/PRO-301/MANUAL_v1_0.md",
   "question_count": 24,
+  "rule": "No question may require knowledge that is not explicitly taught in PRO-301 or established prerequisites.",
   "questions": [
     {
       "id": "PRO-301-Q001",
       "unit_id": "PRO-301-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica orden y da un ejemplo operativo.",
+      "type": "compare",
+      "prompt_es": "Diferencia orden e intención.",
       "answer_key_es": [
-        "orden",
-        "ejemplo coherente",
-        "límite o contexto"
+        "orden = mandato/tarea",
+        "intención = resultado buscado"
       ]
     },
     {
       "id": "PRO-301-Q002",
       "unit_id": "PRO-301-U01",
-      "type": "relationship",
-      "prompt_es": "Relaciona orden con intención. ¿Qué información pasa de uno a otro?",
+      "type": "short_answer",
+      "prompt_es": "¿Por qué se descompone una orden?",
       "answer_key_es": [
-        "orden",
-        "intención",
-        "flujo de información o dependencia"
+        "claridad",
+        "asignar tareas",
+        "seguimiento"
       ]
     },
     {
       "id": "PRO-301-Q003",
       "unit_id": "PRO-301-U01",
-      "type": "scenario",
-      "prompt_es": "Descomponer una orden en tareas. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "knowledge",
+      "prompt_es": "¿Qué debe tener una tarea?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "responsable",
+        "estado",
+        "resultado esperado"
       ]
     },
     {
       "id": "PRO-301-Q004",
       "unit_id": "PRO-301-U01",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Orden, tarea y responsabilidad, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "short_answer",
+      "prompt_es": "¿Qué confirma el responsable?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "recepción",
+        "comprensión",
+        "capacidad",
+        "bloqueo"
       ]
     },
     {
       "id": "PRO-301-Q005",
       "unit_id": "PRO-301-U02",
       "type": "knowledge",
-      "prompt_es": "Explica hechos y da un ejemplo operativo.",
+      "prompt_es": "¿Qué cuatro capas puede tener un informe?",
       "answer_key_es": [
-        "hechos",
-        "ejemplo coherente",
-        "límite o contexto"
+        "hecho",
+        "estado",
+        "riesgo",
+        "recomendación"
       ]
     },
     {
       "id": "PRO-301-Q006",
       "unit_id": "PRO-301-U02",
-      "type": "relationship",
-      "prompt_es": "Relaciona hechos con estado. ¿Qué información pasa de uno a otro?",
+      "type": "compare",
+      "prompt_es": "Diferencia hecho y estado.",
       "answer_key_es": [
-        "hechos",
-        "estado",
-        "flujo de información o dependencia"
+        "observación",
+        "significado operativo"
       ]
     },
     {
       "id": "PRO-301-Q007",
       "unit_id": "PRO-301-U02",
-      "type": "scenario",
-      "prompt_es": "Emitir informes de 30 segundos. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "judgment",
+      "prompt_es": "¿Una recomendación equivale automáticamente a una orden?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "no",
+        "depende de autoridad"
       ]
     },
     {
       "id": "PRO-301-Q008",
       "unit_id": "PRO-301-U02",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Informes estructurados, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "short_answer",
+      "prompt_es": "¿Qué prioriza un informe breve?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "novedad",
+        "impacto",
+        "decisión"
       ]
     },
     {
       "id": "PRO-301-Q009",
       "unit_id": "PRO-301-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica datos necesarios y da un ejemplo operativo.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué es un handoff?",
       "answer_key_es": [
-        "datos necesarios",
-        "ejemplo coherente",
-        "límite o contexto"
+        "transferencia de tarea/caso/información"
       ]
     },
     {
       "id": "PRO-301-Q010",
       "unit_id": "PRO-301-U03",
-      "type": "relationship",
-      "prompt_es": "Relaciona datos necesarios con formato. ¿Qué información pasa de uno a otro?",
+      "type": "knowledge",
+      "prompt_es": "¿Qué datos mínimos necesita?",
       "answer_key_es": [
-        "datos necesarios",
-        "formato",
-        "flujo de información o dependencia"
+        "identificador",
+        "contexto",
+        "datos",
+        "procedencia",
+        "prioridad",
+        "estado",
+        "petición"
       ]
     },
     {
       "id": "PRO-301-Q011",
       "unit_id": "PRO-301-U03",
-      "type": "scenario",
-      "prompt_es": "Transferir un caso entre departamentos. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué importa la procedencia?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "origen",
+        "confianza",
+        "auditoría"
       ]
     },
     {
       "id": "PRO-301-Q012",
       "unit_id": "PRO-301-U03",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Handoff interdepartamental, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "short_answer",
+      "prompt_es": "¿Cuándo termina la transferencia?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "recepción y responsabilidad confirmadas"
       ]
     },
     {
       "id": "PRO-301-Q013",
       "unit_id": "PRO-301-U04",
       "type": "knowledge",
-      "prompt_es": "Explica misión y da un ejemplo operativo.",
+      "prompt_es": "Nombra criterios de prioridad.",
       "answer_key_es": [
         "misión",
-        "ejemplo coherente",
-        "límite o contexto"
+        "seguridad",
+        "recursos",
+        "tiempo",
+        "reversibilidad",
+        "autoridad"
       ]
     },
     {
       "id": "PRO-301-Q014",
       "unit_id": "PRO-301-U04",
-      "type": "relationship",
-      "prompt_es": "Relaciona misión con seguridad. ¿Qué información pasa de uno a otro?",
+      "type": "judgment",
+      "prompt_es": "¿Por qué no todo conflicto es técnico?",
       "answer_key_es": [
-        "misión",
-        "seguridad",
-        "flujo de información o dependencia"
+        "puede requerir decisión de mando"
       ]
     },
     {
       "id": "PRO-301-Q015",
       "unit_id": "PRO-301-U04",
-      "type": "scenario",
-      "prompt_es": "Resolver prioridades incompatibles. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "procedure",
+      "prompt_es": "¿Cómo se escala un conflicto profesionalmente?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "describir",
+        "impacto",
+        "opciones",
+        "escalar"
       ]
     },
     {
       "id": "PRO-301-Q016",
       "unit_id": "PRO-301-U04",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Prioridades en conflicto, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "short_answer",
+      "prompt_es": "¿Qué hace trazable una decisión?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "información disponible",
+        "autoridad",
+        "contexto"
       ]
     },
     {
       "id": "PRO-301-Q017",
       "unit_id": "PRO-301-U05",
-      "type": "knowledge",
-      "prompt_es": "Explica evento y da un ejemplo operativo.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué registra el Operational Event Log?",
       "answer_key_es": [
-        "evento",
-        "ejemplo coherente",
-        "límite o contexto"
+        "hechos operativos estructurados"
       ]
     },
     {
       "id": "PRO-301-Q018",
       "unit_id": "PRO-301-U05",
-      "type": "relationship",
-      "prompt_es": "Relaciona evento con hora. ¿Qué información pasa de uno a otro?",
+      "type": "knowledge",
+      "prompt_es": "¿Qué no debe asignar?",
       "answer_key_es": [
-        "evento",
-        "hora",
-        "flujo de información o dependencia"
+        "notas",
+        "moralidad",
+        "relaciones",
+        "valoraciones de rendimiento"
       ]
     },
     {
       "id": "PRO-301-Q019",
       "unit_id": "PRO-301-U05",
-      "type": "scenario",
-      "prompt_es": "Crear entrada de log factual. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "compare",
+      "prompt_es": "Diferencia evento y opinión.",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "hecho",
+        "valoración subjetiva"
       ]
     },
     {
       "id": "PRO-301-Q020",
       "unit_id": "PRO-301-U05",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Registro operativo, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "procedure",
+      "prompt_es": "¿Cómo se corrige un evento?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "nuevo evento",
+        "referencia al anterior",
+        "sin reescribir"
       ]
     },
     {
       "id": "PRO-301-Q021",
       "unit_id": "PRO-301-U06",
-      "type": "knowledge",
-      "prompt_es": "Explica orden y da un ejemplo operativo.",
+      "type": "procedure",
+      "prompt_es": "¿Qué fases integra la micro-misión?",
       "answer_key_es": [
         "orden",
-        "ejemplo coherente",
-        "límite o contexto"
+        "tareas",
+        "coordinación",
+        "ejecución",
+        "reporte",
+        "handoff",
+        "registro"
       ]
     },
     {
       "id": "PRO-301-Q022",
       "unit_id": "PRO-301-U06",
-      "type": "relationship",
-      "prompt_es": "Relaciona orden con coordinación. ¿Qué información pasa de uno a otro?",
+      "type": "knowledge",
+      "prompt_es": "¿Qué debe fijarse en briefing?",
       "answer_key_es": [
-        "orden",
-        "coordinación",
-        "flujo de información o dependencia"
+        "objetivo",
+        "roles",
+        "restricciones",
+        "información",
+        "autoridad"
       ]
     },
     {
       "id": "PRO-301-Q023",
       "unit_id": "PRO-301-U06",
-      "type": "scenario",
-      "prompt_es": "Micro-misión de equipo. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "judgment",
+      "prompt_es": "¿Cómo se evita duplicar trabajo?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "responsables claros",
+        "estado compartido",
+        "handoff"
       ]
     },
     {
       "id": "PRO-301-Q024",
       "unit_id": "PRO-301-U06",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Ejercicio integrado, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "short_answer",
+      "prompt_es": "¿Qué cierra profesionalmente la misión?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "resultado",
+        "pendientes",
+        "registro",
+        "relevo/debrief"
       ]
     }
   ]
