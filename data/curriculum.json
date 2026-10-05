@@ -764,9 +764,55 @@
   ],
   "legacySupplementary": [
     {
-      "title": "Manual especializado de Operaciones de Sensores v0.1",
+      "title": "Sensores — Introducción",
       "studyId": "sensores-intro",
-      "source": "sensores"
+      "source": "sensores",
+      "units": [
+        "00"
+      ]
+    },
+    {
+      "title": "Sensores I — Estado, barridos y búsqueda",
+      "studyId": "sensores-i",
+      "source": "sensores",
+      "units": [
+        "01",
+        "02",
+        "03"
+      ]
+    },
+    {
+      "title": "Sensores II — Contactos, seguimiento, lectura e interferencias",
+      "studyId": "sensores-ii",
+      "source": "sensores",
+      "units": [
+        "04",
+        "05",
+        "06",
+        "07"
+      ]
+    },
+    {
+      "title": "Sensores III — Configuración, resultados, diagnóstico e integración",
+      "studyId": "sensores-iii",
+      "source": "sensores",
+      "units": [
+        "08",
+        "09",
+        "10",
+        "11"
+      ]
+    },
+    {
+      "title": "Sensores — Material transversal",
+      "studyId": "sensores-transversal",
+      "source": "sensores",
+      "units": [
+        "12",
+        "13",
+        "14",
+        "15"
+      ]
     }
   ]
 }
