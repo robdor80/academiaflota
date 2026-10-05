@@ -1,283 +1,272 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "course_id": "SCI-403",
-  "status": "generated_from_authoritative_curriculum",
+  "status": "editorially_aligned_with_developed_manual",
+  "source_manual": "gameplay/careers/academy_path/study_materials/fourth_class/SCI-403/MANUAL_v1_0.md",
   "question_count": 24,
+  "rule": "No question may require knowledge that is not explicitly taught in SCI-403 or established prerequisites.",
   "questions": [
     {
       "id": "SCI-403-Q001",
       "unit_id": "SCI-403-U01",
-      "type": "short_answer",
-      "prompt_es": "Explica observación y su relevancia operativa.",
+      "type": "compare",
+      "prompt_es": "Diferencia observación e hipótesis.",
       "answer_key_es": [
-        "observación",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "observación = dato",
+        "hipótesis = explicación provisional"
       ]
     },
     {
       "id": "SCI-403-Q002",
       "unit_id": "SCI-403-U01",
-      "type": "compare",
-      "prompt_es": "Compara observación con pregunta. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué hace útil una hipótesis?",
       "answer_key_es": [
-        "observación",
-        "pregunta",
-        "diferencia aplicada"
+        "puede contrastarse",
+        "predice evidencia",
+        "puede debilitarse/revisarse"
       ]
     },
     {
       "id": "SCI-403-Q003",
       "unit_id": "SCI-403-U01",
-      "type": "scenario",
-      "prompt_es": "Situación: Analizar una observación sencilla. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "judgment",
+      "prompt_es": "¿Una sola lectura demuestra siempre una causa?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "no",
+        "requiere evidencia",
+        "puede haber alternativas"
       ]
     },
     {
       "id": "SCI-403-Q004",
       "unit_id": "SCI-403-U01",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Método científico y cómo lo corregirías.",
+      "type": "procedure",
+      "prompt_es": "¿Qué haces si nueva evidencia contradice tu explicación?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "revisar hipótesis",
+        "no ignorar datos"
       ]
     },
     {
       "id": "SCI-403-Q005",
       "unit_id": "SCI-403-U02",
       "type": "short_answer",
-      "prompt_es": "Explica precisión y su relevancia operativa.",
+      "prompt_es": "¿Qué significa incertidumbre de medición?",
       "answer_key_es": [
-        "precisión",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "límite/margen",
+        "calidad no perfecta"
       ]
     },
     {
       "id": "SCI-403-Q006",
       "unit_id": "SCI-403-U02",
-      "type": "compare",
-      "prompt_es": "Compara precisión con ruido. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "knowledge",
+      "prompt_es": "Nombra tres factores que pueden mejorar precisión.",
       "answer_key_es": [
-        "precisión",
-        "ruido",
-        "diferencia aplicada"
+        "tiempo",
+        "potencia",
+        "resolución",
+        "menos interferencia"
       ]
     },
     {
       "id": "SCI-403-Q007",
       "unit_id": "SCI-403-U02",
-      "type": "scenario",
-      "prompt_es": "Situación: Comparar lecturas con distinta calidad. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué es ruido?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "información no deseada que dificulta señal"
       ]
     },
     {
       "id": "SCI-403-Q008",
       "unit_id": "SCI-403-U02",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Medición e incertidumbre y cómo lo corregirías.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué no detectado no significa inexistente?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "límite de detección",
+        "capacidad/configuración"
       ]
     },
     {
       "id": "SCI-403-Q009",
       "unit_id": "SCI-403-U03",
       "type": "short_answer",
-      "prompt_es": "Explica detección y su relevancia operativa.",
+      "prompt_es": "¿Qué hace un sensor?",
       "answer_key_es": [
-        "detección",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "detectar",
+        "medir",
+        "localizar",
+        "observar"
       ]
     },
     {
       "id": "SCI-403-Q010",
       "unit_id": "SCI-403-U03",
       "type": "compare",
-      "prompt_es": "Compara detección con medición. Indica una diferencia que pueda cambiar una decisión.",
+      "prompt_es": "Diferencia detección y clasificación.",
       "answer_key_es": [
-        "detección",
-        "medición",
-        "diferencia aplicada"
+        "saber que hay señal/contacto",
+        "determinar tipo/identidad con confianza"
       ]
     },
     {
       "id": "SCI-403-Q011",
       "unit_id": "SCI-403-U03",
-      "type": "scenario",
-      "prompt_es": "Situación: Relacionar fenómeno con medición posible. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "knowledge",
+      "prompt_es": "Nombra cuatro tipos de firma.",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "electromagnética",
+        "subespacial",
+        "gravimétrica",
+        "térmica",
+        "biológica",
+        "warp",
+        "transpondedor"
       ]
     },
     {
       "id": "SCI-403-Q012",
       "unit_id": "SCI-403-U03",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Qué es un sensor y cómo lo corregirías.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué una coincidencia de patrón no es certeza?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "puede ser parcial",
+        "confianza",
+        "otras fuentes"
       ]
     },
     {
       "id": "SCI-403-Q013",
       "unit_id": "SCI-403-U04",
-      "type": "short_answer",
-      "prompt_es": "Explica ventajas y su relevancia operativa.",
+      "type": "compare",
+      "prompt_es": "Diferencia modo pasivo y activo.",
       "answer_key_es": [
-        "ventajas",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "pasivo observa emisiones disponibles",
+        "activo emite/interactúa para mejorar observación"
       ]
     },
     {
       "id": "SCI-403-Q014",
       "unit_id": "SCI-403-U04",
-      "type": "compare",
-      "prompt_es": "Compara ventajas con costes. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "knowledge",
+      "prompt_es": "Nombra un coste del modo activo.",
       "answer_key_es": [
-        "ventajas",
-        "costes",
-        "diferencia aplicada"
+        "detectabilidad",
+        "potencia",
+        "tiempo"
       ]
     },
     {
       "id": "SCI-403-Q015",
       "unit_id": "SCI-403-U04",
-      "type": "scenario",
-      "prompt_es": "Situación: Elegir modo en situaciones sencillas. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "judgment",
+      "prompt_es": "¿Existe un modo siempre mejor?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "no",
+        "depende contexto"
       ]
     },
     {
       "id": "SCI-403-Q016",
       "unit_id": "SCI-403-U04",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Activo y pasivo y cómo lo corregirías.",
+      "type": "scenario",
+      "prompt_es": "El operador elige activo cuando debía mantener discreción, pero el modo es técnicamente válido. ¿Qué ocurre?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "se ejecuta",
+        "error profesional",
+        "puede aumentar exposición"
       ]
     },
     {
       "id": "SCI-403-Q017",
       "unit_id": "SCI-403-U05",
       "type": "short_answer",
-      "prompt_es": "Explica contacto y su relevancia operativa.",
+      "prompt_es": "¿Qué representa un contacto?",
       "answer_key_es": [
-        "contacto",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "conocimiento persistente observado",
+        "no entidad oculta"
       ]
     },
     {
       "id": "SCI-403-Q018",
       "unit_id": "SCI-403-U05",
-      "type": "compare",
-      "prompt_es": "Compara contacto con tracking inicial. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "knowledge",
+      "prompt_es": "¿Qué puede mejorar un tracking?",
       "answer_key_es": [
-        "contacto",
-        "tracking inicial",
-        "diferencia aplicada"
+        "posición",
+        "rumbo",
+        "velocidad",
+        "trayectoria"
       ]
     },
     {
       "id": "SCI-403-Q019",
       "unit_id": "SCI-403-U05",
-      "type": "scenario",
-      "prompt_es": "Situación: Distinguir datos de conclusión. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "compare",
+      "prompt_es": "Diferencia Sensores y Ciencia.",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "Sensores mide/organiza",
+        "Ciencia interpreta"
       ]
     },
     {
       "id": "SCI-403-Q020",
       "unit_id": "SCI-403-U05",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Contacto, lectura e interpretación y cómo lo corregirías.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué una ficha compartida no crea omnisciencia?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "cada dato conserva procedencia",
+        "solo conocimiento realmente obtenido"
       ]
     },
     {
       "id": "SCI-403-Q021",
       "unit_id": "SCI-403-U06",
-      "type": "short_answer",
-      "prompt_es": "Explica objetivo y su relevancia operativa.",
+      "type": "procedure",
+      "prompt_es": "Enumera los pasos básicos de configuración de un barrido.",
       "answer_key_es": [
-        "objetivo",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "tipo",
+        "modo",
+        "área/objetivo",
+        "resolución",
+        "filtros",
+        "prioridad",
+        "duración",
+        "revisar",
+        "ejecutar"
       ]
     },
     {
       "id": "SCI-403-Q022",
       "unit_id": "SCI-403-U06",
       "type": "compare",
-      "prompt_es": "Compara objetivo con configuración preparada. Indica una diferencia que pueda cambiar una decisión.",
+      "prompt_es": "Diferencia filtro y prioridad.",
       "answer_key_es": [
-        "objetivo",
-        "configuración preparada",
-        "diferencia aplicada"
+        "filtro define firmas buscadas",
+        "prioridad destaca una sin excluir necesariamente"
       ]
     },
     {
       "id": "SCI-403-Q023",
       "unit_id": "SCI-403-U06",
-      "type": "scenario",
-      "prompt_es": "Situación: Ejecutar un scan guiado en consola real cuando exista. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "judgment",
+      "prompt_es": "¿Repetir el mismo barrido bajo las mismas condiciones debe revelar mágicamente más?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "no",
+        "cambiar configuración/condiciones"
       ]
     },
     {
       "id": "SCI-403-Q024",
       "unit_id": "SCI-403-U06",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Barrido básico y cómo lo corregirías.",
+      "type": "scenario",
+      "prompt_es": "La orden era sector 041 y configuras 014. El sector 014 es válido. ¿Qué debe hacer la consola?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "ejecutar si técnicamente válido",
+        "registrar resultado",
+        "error del operador"
       ]
     }
   ]
