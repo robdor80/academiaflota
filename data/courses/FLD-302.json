@@ -1,7 +1,7 @@
 {
   "subject": "Formación de campo I",
   "code": "FLD-302",
-  "version": "1.0",
+  "version": "1.1",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/FLD-302/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/FLD-302/MANUAL_v1_0.md",
@@ -21,31 +21,26 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Integrar procedimientos, equipo y criterio fuera del entorno controlado de aula/puente."
+          "text": "Una salida empieza con briefing, roles, objetivos, equipo, restricciones, apoyo y criterios de abort."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Cada rol debe conocer"
         },
         {
           "type": "bullets",
           "items": [
-            "briefing",
-            "roles",
-            "objetivos",
-            "equipo",
-            "abort criteria"
+            "Función",
+            "Responsable directo",
+            "Equipo",
+            "Tareas",
+            "Límites"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Preparar salida de entrenamiento."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación de plan."
+          "label": "ABORT CRITERIA",
+          "text": "Definir antes qué condiciones obligan a detener, volver o pedir extracción evita improvisar bajo presión."
         },
         {
           "type": "heading",
@@ -54,25 +49,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica briefing en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Preparar salida de entrenamiento.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/academy_path/field_training_model.json",
-            "gameplay/careers/academy_path/training_asset_model.json",
-            "gameplay/communications/communications_model.json"
+            "¿Qué debe contener briefing?",
+            "¿Qué conoce cada rol?",
+            "¿Por qué el objetivo debe ser observable?",
+            "¿De qué depende el equipo?",
+            "¿Para qué sirven criterios de abort?"
           ]
         }
       ]
@@ -84,30 +65,20 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Integrar procedimientos, equipo y criterio fuera del entorno controlado de aula/puente."
+          "text": "El movimiento de campo usa mapa, sensores portátiles, referencias, coordenadas y comunicaciones."
         },
         {
-          "type": "heading",
-          "text": "Contenidos"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "mapa",
-            "sensores portátiles",
-            "cohesión",
-            "puntos de reunión"
-          ]
+          "type": "p",
+          "text": "El grupo conserva posición actual, dirección, ruta recorrida, destino y punto de retorno."
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Recorrido de campo."
+          "label": "COHESIÓN",
+          "text": "El ritmo debe permitir mantener contacto, compartir información, asistir y reaccionar."
         },
         {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Práctica."
+          "type": "p",
+          "text": "Los puntos de reunión se fijan antes de necesitarlos y los sensores portátiles no deben ser la única fuente si existen alternativas."
         },
         {
           "type": "heading",
@@ -116,25 +87,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica mapa en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Recorrido de campo.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/academy_path/field_training_model.json",
-            "gameplay/careers/academy_path/training_asset_model.json",
-            "gameplay/communications/communications_model.json"
+            "¿Qué herramientas apoyan orientación?",
+            "¿Qué información de posición se conserva?",
+            "¿Por qué importa cohesión?",
+            "¿Para qué sirve punto de reunión?",
+            "¿Por qué no depender de una sola fuente?"
           ]
         }
       ]
@@ -146,30 +103,30 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Integrar procedimientos, equipo y criterio fuera del entorno controlado de aula/puente."
+          "text": "El entorno se evalúa mediante atmósfera, temperatura, presión, radiación contextual, terreno, agentes conocidos y duración de exposición."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Protección"
         },
         {
           "type": "bullets",
           "items": [
-            "atmósfera",
-            "temperatura",
-            "radiación contextual",
-            "trajes"
+            "Ropa o traje",
+            "Respiración asistida",
+            "Protección térmica",
+            "Aislamiento",
+            "Equipo contextual"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Seleccionar protección adecuada."
+          "label": "BIOLOGÍA",
+          "text": "Un entorno compatible con una especie puede no serlo con otra."
         },
         {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Caso."
+          "type": "p",
+          "text": "Si las condiciones cambian, se reevalúa, se informa y se aplica criterio de abort cuando corresponda."
         },
         {
           "type": "heading",
@@ -178,25 +135,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica atmósfera en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Seleccionar protección adecuada.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/academy_path/field_training_model.json",
-            "gameplay/careers/academy_path/training_asset_model.json",
-            "gameplay/communications/communications_model.json"
+            "¿Qué factores ambientales se revisan?",
+            "¿Qué protección puede existir?",
+            "¿Por qué especie importa?",
+            "¿Por qué duración modifica riesgo?",
+            "¿Qué haces si cambian condiciones?"
           ]
         }
       ]
@@ -208,30 +151,26 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Integrar procedimientos, equipo y criterio fuera del entorno controlado de aula/puente."
+          "text": "Antes de salir se fija canal, identificadores, frecuencia de check-in, canal alternativo y procedimiento de pérdida de contacto."
+        },
+        {
+          "type": "definition",
+          "term": "Check-in",
+          "text": "Confirmación breve de posición, estado, progreso e incidencias."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Pérdida de contacto"
         },
         {
           "type": "bullets",
           "items": [
-            "check-ins",
-            "pérdida de contacto",
-            "canal",
-            "reporte"
+            "Aplicar tiempo de espera previsto",
+            "Canal alternativo",
+            "Punto de reunión",
+            "Intento de relay",
+            "Escalado"
           ]
-        },
-        {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Mantener comunicaciones durante ejercicio."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación."
         },
         {
           "type": "heading",
@@ -240,25 +179,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica check-ins en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Mantener comunicaciones durante ejercicio.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/academy_path/field_training_model.json",
-            "gameplay/careers/academy_path/training_asset_model.json",
-            "gameplay/communications/communications_model.json"
+            "¿Qué define plan de comunicaciones?",
+            "¿Qué contiene check-in?",
+            "¿Qué se hace al perder contacto?",
+            "¿Qué prioriza mensaje de campo?",
+            "¿Por qué registrar comunicaciones?"
           ]
         }
       ]
@@ -270,30 +195,16 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Integrar procedimientos, equipo y criterio fuera del entorno controlado de aula/puente."
-        },
-        {
-          "type": "heading",
-          "text": "Contenidos"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "cambio de misión",
-            "herido",
-            "riesgo",
-            "retirada"
-          ]
+          "text": "Un incidente puede modificar objetivo, prioridad, ritmo, recursos y necesidad de retirada."
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Resolver incidente controlado."
+          "label": "HERIDO",
+          "text": "Un herido altera movilidad, comunicaciones, recursos y prioridad; la misión original puede dejar de ser prioritaria."
         },
         {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Juicio y teamwork."
+          "type": "p",
+          "text": "El equipo distingue riesgo conocido, riesgo estimado e incertidumbre. Un cambio de misión debe estar autorizado y comunicado cuando corresponda."
         },
         {
           "type": "heading",
@@ -302,25 +213,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica cambio de misión en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Resolver incidente controlado.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/academy_path/field_training_model.json",
-            "gameplay/careers/academy_path/training_asset_model.json",
-            "gameplay/communications/communications_model.json"
+            "¿Qué puede cambiar un incidente?",
+            "¿Cómo afecta un herido?",
+            "Diferencia riesgo conocido e incertidumbre.",
+            "¿Qué necesita un cambio de misión?",
+            "¿Cuándo retirarse es correcto?"
           ]
         }
       ]
@@ -332,31 +229,26 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Integrar procedimientos, equipo y criterio fuera del entorno controlado de aula/puente."
+          "text": "El cierre incluye recuento de personas, equipo y materiales; extracción; handoff de pacientes, muestras o datos; registro y debrief."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Debrief"
         },
         {
           "type": "bullets",
           "items": [
-            "recuento",
-            "equipo",
-            "handoff",
-            "registro",
-            "lecciones"
+            "Qué se sabía",
+            "Qué ocurrió",
+            "Qué se decidió",
+            "Qué funcionó",
+            "Qué debe cambiar"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Cerrar misión y debrief."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación integrada."
+          "label": "SIN CULPA RETROSPECTIVA",
+          "text": "El debrief reconstruye y aprende; no inventa responsabilidad usando información que no estaba disponible durante la misión."
         },
         {
           "type": "heading",
@@ -365,28 +257,15 @@
         {
           "type": "numbered",
           "items": [
-            "Explica recuento en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Cerrar misión y debrief.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/academy_path/field_training_model.json",
-            "gameplay/careers/academy_path/training_asset_model.json",
-            "gameplay/communications/communications_model.json"
+            "¿Qué incluye recuento?",
+            "¿Qué necesita extracción?",
+            "¿Qué requiere handoff?",
+            "¿Qué debe conservar registro?",
+            "¿Qué busca debrief?"
           ]
         }
       ]
     }
-  ]
+  ],
+  "status": "developed_content"
 }
