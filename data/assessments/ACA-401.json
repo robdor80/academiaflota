@@ -1,283 +1,288 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "course_id": "ACA-401",
-  "status": "generated_from_authoritative_curriculum",
+  "status": "editorially_aligned_with_developed_manual",
+  "source_manual": "gameplay/careers/academy_path/study_materials/fourth_class/ACA-401/MANUAL_v1_0.md",
   "question_count": 24,
+  "rule": "No question may require knowledge that is not explicitly taught in ACA-401 or established prerequisites.",
   "questions": [
     {
       "id": "ACA-401-Q001",
       "unit_id": "ACA-401-U01",
-      "type": "short_answer",
-      "prompt_es": "Explica años y trimestres y su relevancia operativa.",
+      "type": "knowledge",
+      "prompt_es": "¿Cuántos años dura el programa estándar y qué clase corresponde al primer año?",
       "answer_key_es": [
-        "años y trimestres",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "cuatro años",
+        "Cadete de 4.ª clase"
       ]
     },
     {
       "id": "ACA-401-Q002",
       "unit_id": "ACA-401-U01",
-      "type": "compare",
-      "prompt_es": "Compara años y trimestres con matrícula. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "knowledge",
+      "prompt_es": "¿Cuál es el rango comisionado inicial normal tras graduarse?",
       "answer_key_es": [
-        "años y trimestres",
-        "matrícula",
-        "diferencia aplicada"
+        "Alférez"
       ]
     },
     {
       "id": "ACA-401-Q003",
       "unit_id": "ACA-401-U01",
-      "type": "scenario",
-      "prompt_es": "Situación: Consultar calendario y expediente de ejemplo. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "compare",
+      "prompt_es": "Explica por qué teoría y práctica no son equivalentes.",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "teoría = conocimiento",
+        "práctica = ejecución",
+        "conocer no garantiza saber hacer"
       ]
     },
     {
       "id": "ACA-401-Q004",
       "unit_id": "ACA-401-U01",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Ciclo académico y condición de cadete y cómo lo corregirías.",
+      "type": "short_answer",
+      "prompt_es": "Nombra cuatro factores que pueden afectar a la progresión anual.",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "requisitos académicos",
+        "prácticos",
+        "evaluaciones",
+        "conducta",
+        "cualificaciones",
+        "formación de campo"
       ]
     },
     {
       "id": "ACA-401-Q005",
       "unit_id": "ACA-401-U02",
       "type": "short_answer",
-      "prompt_es": "Explica honestidad y su relevancia operativa.",
+      "prompt_es": "¿Por qué la integridad académica afecta a la seguridad profesional futura?",
       "answer_key_es": [
-        "honestidad",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "el expediente debe reflejar competencia real",
+        "responsabilidades futuras dependen de esa evidencia",
+        "fraude puede ocultar carencias"
       ]
     },
     {
       "id": "ACA-401-Q006",
       "unit_id": "ACA-401-U02",
-      "type": "compare",
-      "prompt_es": "Compara honestidad con autoría. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "judgment",
+      "prompt_es": "¿Toda colaboración entre cadetes es fraude?",
       "answer_key_es": [
-        "honestidad",
-        "autoría",
-        "diferencia aplicada"
+        "no",
+        "depende de reglas de actividad",
+        "puede haber colaboración autorizada",
+        "no debe falsear competencia individual"
       ]
     },
     {
       "id": "ACA-401-Q007",
       "unit_id": "ACA-401-U02",
       "type": "scenario",
-      "prompt_es": "Situación: Resolver casos de colaboración válida y fraude. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "prompt_es": "Un cadete usa IA para estudiar y luego resuelve personalmente la práctica. ¿Qué principio se aplica?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "apoyo permitido si no falsea evidencia",
+        "la competencia evaluada debe ser del cadete",
+        "la IA no decide cualificación"
       ]
     },
     {
       "id": "ACA-401-Q008",
       "unit_id": "ACA-401-U02",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Integridad académica y cómo lo corregirías.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué un encubrimiento puede agravar un error?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "impide corrección",
+        "destruye confianza",
+        "falsea el expediente",
+        "puede aumentar consecuencias"
       ]
     },
     {
       "id": "ACA-401-Q009",
       "unit_id": "ACA-401-U03",
       "type": "short_answer",
-      "prompt_es": "Explica normas y su relevancia operativa.",
+      "prompt_es": "¿Por qué no existe una tabla universal «falta = castigo»?",
       "answer_key_es": [
-        "normas",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "importa contexto",
+        "intención",
+        "consecuencias",
+        "órdenes",
+        "antecedentes",
+        "autoridad"
       ]
     },
     {
       "id": "ACA-401-Q010",
       "unit_id": "ACA-401-U03",
       "type": "compare",
-      "prompt_es": "Compara normas con puntualidad. Indica una diferencia que pueda cambiar una decisión.",
+      "prompt_es": "Diferencia error honesto y encubrimiento deliberado.",
       "answer_key_es": [
-        "normas",
-        "puntualidad",
-        "diferencia aplicada"
+        "intención distinta",
+        "encubrimiento oculta hechos",
+        "puede agravar responsabilidad"
       ]
     },
     {
       "id": "ACA-401-Q011",
       "unit_id": "ACA-401-U03",
       "type": "scenario",
-      "prompt_es": "Situación: Responder a una incidencia menor de disciplina. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "prompt_es": "Compara llegar tarde una vez avisando con falsificar un registro para ocultar una falta. ¿Por qué no deben tratarse igual?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "gravedad contextual",
+        "honestidad",
+        "intención",
+        "efecto sobre confianza y registro"
       ]
     },
     {
       "id": "ACA-401-Q012",
       "unit_id": "ACA-401-U03",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Disciplina y conducta y cómo lo corregirías.",
+      "type": "knowledge",
+      "prompt_es": "¿Puede una IA imponer por sí sola una sanción académica?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "no",
+        "requiere hechos registrados",
+        "autoridad competente",
+        "sistemas autoritativos"
       ]
     },
     {
       "id": "ACA-401-Q013",
       "unit_id": "ACA-401-U04",
-      "type": "short_answer",
-      "prompt_es": "Explica aulas y su relevancia operativa.",
+      "type": "knowledge",
+      "prompt_es": "¿En qué área se sitúa la Academia terrestre para las eras jugables?",
       "answer_key_es": [
-        "aulas",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "San Francisco",
+        "Golden Gate",
+        "Presidio/Marin según instalaciones"
       ]
     },
     {
       "id": "ACA-401-Q014",
       "unit_id": "ACA-401-U04",
       "type": "compare",
-      "prompt_es": "Compara aulas con residencias. Indica una diferencia que pueda cambiar una decisión.",
+      "prompt_es": "Nombra dos instalaciones retenidas del lore y dos añadidas para jugabilidad.",
       "answer_key_es": [
-        "aulas",
-        "residencias",
-        "diferencia aplicada"
+        "Escuela de Mando/Escuela de Vuelo/Escuela Táctica/Academia Médica/patio",
+        "alojamiento/comedor/centro de estudio/complejo de simulación/núcleo académico"
       ]
     },
     {
       "id": "ACA-401-Q015",
       "unit_id": "ACA-401-U04",
-      "type": "scenario",
-      "prompt_es": "Situación: Planificar una jornada de cadete. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "planning",
+      "prompt_es": "Diseña una jornada sin solapar clase, práctica, estudio, entrenamiento, comida y descanso.",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "no solapar",
+        "priorizar obligaciones",
+        "reservar recuperación",
+        "tiempo finito"
       ]
     },
     {
       "id": "ACA-401-Q016",
       "unit_id": "ACA-401-U04",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Rutinas y uso de instalaciones y cómo lo corregirías.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué no conviene representar cada rutina diaria como una escena completa?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "evitar repetición",
+        "avance temporal inteligente",
+        "conservar eventos relevantes",
+        "hacer que cuatro años sean jugables"
       ]
     },
     {
       "id": "ACA-401-Q017",
       "unit_id": "ACA-401-U05",
       "type": "short_answer",
-      "prompt_es": "Explica pedir ayuda y su relevancia operativa.",
+      "prompt_es": "¿Cuál es el objetivo de una tutoría?",
       "answer_key_es": [
-        "pedir ayuda",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "identificar carencia",
+        "aportar ayuda concreta",
+        "planificar recuperación",
+        "mejorar evidencia"
       ]
     },
     {
       "id": "ACA-401-Q018",
       "unit_id": "ACA-401-U05",
       "type": "compare",
-      "prompt_es": "Compara pedir ayuda con refuerzo. Indica una diferencia que pueda cambiar una decisión.",
+      "prompt_es": "¿Por qué un fallo teórico y uno de ejecución pueden requerir recuperaciones distintas?",
       "answer_key_es": [
-        "pedir ayuda",
-        "refuerzo",
-        "diferencia aplicada"
+        "causas diferentes",
+        "tutoría conceptual vs práctica",
+        "remediación dirigida"
       ]
     },
     {
       "id": "ACA-401-Q019",
       "unit_id": "ACA-401-U05",
       "type": "scenario",
-      "prompt_es": "Situación: Solicitar una tutoría y acordar plan de recuperación. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "prompt_es": "Un cadete conoce bien la teoría pero falla la práctica. Propón una recuperación proporcionada.",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "práctica adicional",
+        "supervisión/feedback",
+        "reevaluación práctica",
+        "no repetir teoría innecesariamente"
       ]
     },
     {
       "id": "ACA-401-Q020",
       "unit_id": "ACA-401-U05",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Tutorías y recuperación y cómo lo corregirías.",
+      "type": "knowledge",
+      "prompt_es": "¿Una reevaluación borra el intento anterior?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "no",
+        "el historial persiste",
+        "la nueva evidencia se añade"
       ]
     },
     {
       "id": "ACA-401-Q021",
       "unit_id": "ACA-401-U06",
       "type": "short_answer",
-      "prompt_es": "Explica responsabilidad compartida y su relevancia operativa.",
+      "prompt_es": "¿Qué necesita un reparto de tareas eficaz?",
       "answer_key_es": [
-        "responsabilidad compartida",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "objetivo común",
+        "roles claros",
+        "reparto razonable",
+        "comunicación",
+        "seguimiento"
       ]
     },
     {
       "id": "ACA-401-Q022",
       "unit_id": "ACA-401-U06",
       "type": "compare",
-      "prompt_es": "Compara responsabilidad compartida con reparto de tareas. Indica una diferencia que pueda cambiar una decisión.",
+      "prompt_es": "Diferencia responsabilidad del equipo y responsabilidad individual.",
       "answer_key_es": [
-        "responsabilidad compartida",
-        "reparto de tareas",
-        "diferencia aplicada"
+        "resultado/coordinación común",
+        "contribución y conducta propia",
+        "ambas pueden evaluarse"
       ]
     },
     {
       "id": "ACA-401-Q023",
       "unit_id": "ACA-401-U06",
       "type": "scenario",
-      "prompt_es": "Situación: Actividad de equipo con roles definidos. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "prompt_es": "No podrás terminar tu parte de una práctica de equipo. ¿Cuál es la conducta profesional?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "comunicar pronto",
+        "explicar bloqueo",
+        "permitir redistribución/ayuda",
+        "no ocultar hasta el final"
       ]
     },
     {
       "id": "ACA-401-Q024",
       "unit_id": "ACA-401-U06",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Trabajo en equipo académico y cómo lo corregirías.",
+      "type": "debrief",
+      "prompt_es": "¿Qué debería revisar un debrief de trabajo en equipo?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "qué funcionó",
+        "qué falló",
+        "comunicación",
+        "roles",
+        "acciones de mejora"
       ]
     }
   ]

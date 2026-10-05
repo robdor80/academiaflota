@@ -1,14 +1,16 @@
 {
   "subject": "Vida académica, conducta y responsabilidad profesional",
   "code": "ACA-401",
-  "version": "1.0",
+  "version": "1.1",
+  "status": "developed_content",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/ACA-401/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/ACA-401/MANUAL_v1_0.md",
   "sourceRefs": [
-    "gameplay/careers/academy_path/course_resolution.md",
-    "gameplay/careers/academy_path/evaluation_model.json",
-    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "lore/federation/starfleet/academy/cadet_life/README.md",
+    "lore/federation/starfleet/academy/campus/README.md",
+    "lore/federation/starfleet/disciplinary_system/README.md",
+    "lore/federation/starfleet/disciplinary_system/discipline_model.json",
     "gameplay/careers/academy_path/academy_gameplay_loop.md",
     "gameplay/careers/academy_path/exam_model.json",
     "gameplay/careers/academy_path/cadet_progression.json"
@@ -21,30 +23,68 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Enseñar al cadete a vivir, estudiar y responder por su conducta dentro de la Academia."
+          "text": "El programa estándar de formación de oficiales dura cuatro años y la progresión se organiza de Cadete de 4.ª clase a Cadete de 1.ª clase."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Año",
+            "Clase de cadete"
+          ],
+          "rows": [
+            [
+              "1.º",
+              "Cadete de 4.ª clase"
+            ],
+            [
+              "2.º",
+              "Cadete de 3.ª clase"
+            ],
+            [
+              "3.º",
+              "Cadete de 2.ª clase"
+            ],
+            [
+              "4.º",
+              "Cadete de 1.ª clase"
+            ]
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Tras graduarse, el rango comisionado inicial normal del proyecto es Alférez."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Aprender es un ciclo"
+        },
+        {
+          "type": "quote",
+          "text": "TEORÍA → CLASE → PRÁCTICA → EVALUACIÓN"
+        },
+        {
+          "type": "p",
+          "text": "Conocer algo no equivale todavía a saber hacerlo. La progresión puede depender de requisitos académicos, prácticos, evaluaciones, conducta, cualificaciones y formación de campo."
+        },
+        {
+          "type": "heading",
+          "text": "Posibles resultados"
         },
         {
           "type": "bullets",
           "items": [
-            "años y trimestres",
-            "matrícula",
-            "evaluación",
-            "progresión"
+            "Avanzar",
+            "Avanzar con recuperación",
+            "Repetir módulos concretos",
+            "Repetir año",
+            "Excedencia",
+            "Expulsión"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Consultar calendario y expediente de ejemplo."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Comprobación de comprensión."
+          "label": "IDEA CLAVE",
+          "text": "Una dificultad académica no significa automáticamente game over."
         },
         {
           "type": "heading",
@@ -53,25 +93,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras años y trimestres.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Consultar calendario y expediente de ejemplo.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/academy_path/academy_gameplay_loop.md",
-            "gameplay/careers/academy_path/exam_model.json",
-            "gameplay/careers/academy_path/cadet_progression.json"
+            "¿Cuántos años dura el programa estándar?",
+            "¿Qué clase corresponde al primer año?",
+            "¿Cuál es el rango normal tras graduarse?",
+            "¿Por qué teoría y práctica no son equivalentes?",
+            "¿Qué factores además de las notas pueden afectar a la progresión?"
           ]
         }
       ]
@@ -83,30 +109,46 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Enseñar al cadete a vivir, estudiar y responder por su conducta dentro de la Academia."
+          "text": "La integridad académica exige que el expediente represente de forma razonable lo que el cadete realmente sabe, hizo y produjo."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Autoría y colaboración"
+        },
+        {
+          "type": "p",
+          "text": "Usar ayuda no es automáticamente fraude. La diferencia está en qué ayuda está permitida, qué parte debe producir el cadete y si el resultado permite evaluar su competencia real."
         },
         {
           "type": "bullets",
           "items": [
-            "honestidad",
-            "autoría",
-            "fraude",
-            "responsabilidad personal"
+            "Trabajo en equipo autorizado",
+            "Tutoría",
+            "Revisión de un compañero",
+            "Consulta de material permitido",
+            "Discusión de estrategias"
           ]
         },
         {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Resolver casos de colaboración válida y fraude."
+          "type": "heading",
+          "text": "Fraude y encubrimiento"
+        },
+        {
+          "type": "p",
+          "text": "El fraude puede producir un expediente falso y permitir que alguien reciba responsabilidades para las que no está preparado. El encubrimiento agrava una situación porque impide corregirla y destruye confianza."
+        },
+        {
+          "type": "heading",
+          "text": "IA como apoyo"
+        },
+        {
+          "type": "p",
+          "text": "La IA puede explicar, reformular y generar ejemplos de estudio. No puede falsificar evidencia de competencia ni decidir por sí sola notas, cualificaciones o progresión."
         },
         {
           "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Caso de integridad."
+          "label": "CASO",
+          "text": "Usar IA para comprender una materia y resolver después personalmente la práctica es distinto de entregar como propio un trabajo generado íntegramente para una evaluación individual."
         },
         {
           "type": "heading",
@@ -115,25 +157,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras honestidad.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Resolver casos de colaboración válida y fraude.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/academy_path/academy_gameplay_loop.md",
-            "gameplay/careers/academy_path/exam_model.json",
-            "gameplay/careers/academy_path/cadet_progression.json"
+            "¿Por qué la integridad afecta a la seguridad profesional?",
+            "¿Toda colaboración es fraude?",
+            "¿Cuándo una ayuda falsea evidencia?",
+            "¿Por qué encubrir un error puede ser peor que cometerlo?",
+            "¿Puede una IA decidir una cualificación académica?"
           ]
         }
       ]
@@ -145,30 +173,57 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Enseñar al cadete a vivir, estudiar y responder por su conducta dentro de la Academia."
+          "text": "La disciplina sostiene seguridad, responsabilidad y funcionamiento institucional. No se modela como una barra ni como una tabla rígida de «falta X = castigo Y»."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Factores de una incidencia"
         },
         {
           "type": "bullets",
           "items": [
-            "normas",
-            "puntualidad",
-            "respeto",
-            "incidencias"
+            "Conducta",
+            "Intención",
+            "Consecuencias",
+            "Órdenes existentes",
+            "Daños causados",
+            "Antecedentes",
+            "Contexto de misión",
+            "Autoridad competente"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Conducta cotidiana"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Puntualidad",
+            "Asistencia",
+            "Respeto",
+            "Preparación",
+            "Cumplimiento de restricciones",
+            "Uso correcto de instalaciones"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Responder a una incidencia menor de disciplina."
+          "label": "REGLA",
+          "text": "La respuesta disciplinaria debe ser proporcional, estar basada en hechos y proceder de una autoridad competente."
+        },
+        {
+          "type": "heading",
+          "text": "Error frente a deshonestidad"
+        },
+        {
+          "type": "p",
+          "text": "La Academia distingue entre error honesto, negligencia, desobediencia, fraude y encubrimiento. Ocultar deliberadamente un error puede ser más grave que cometerlo."
         },
         {
           "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación situacional."
+          "label": "PRÁCTICA",
+          "text": "Compara llegar tarde avisando, saltarse una restricción de seguridad y falsificar un registro para ocultar un error."
         },
         {
           "type": "heading",
@@ -177,25 +232,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras normas.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Responder a una incidencia menor de disciplina.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/academy_path/academy_gameplay_loop.md",
-            "gameplay/careers/academy_path/exam_model.json",
-            "gameplay/careers/academy_path/cadet_progression.json"
+            "¿Por qué no existe una tabla universal falta=castigo?",
+            "¿Qué factores importan en una incidencia?",
+            "¿Qué diferencia hay entre error y encubrimiento?",
+            "¿Puede una IA sancionar arbitrariamente?",
+            "¿Por qué importa la proporcionalidad?"
           ]
         }
       ]
@@ -207,31 +248,57 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Enseñar al cadete a vivir, estudiar y responder por su conducta dentro de la Academia."
+          "text": "La Academia es un lugar vivido: alojamiento, clases, estudio, simulaciones, entrenamiento, clubes, amistades, tutorías, permisos y tiempo libre forman parte de la experiencia."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Campus"
+        },
+        {
+          "type": "p",
+          "text": "Para las eras jugables, la Academia terrestre se sitúa en el área de San Francisco / Golden Gate, con instalaciones vinculadas al Presidio y terrenos al norte del puente."
+        },
+        {
+          "type": "heading",
+          "text": "Elementos retenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "aulas",
-            "residencias",
-            "biblioteca",
-            "simuladores",
-            "accesos"
+            "Campus y terrenos",
+            "Patio de instrucción",
+            "Escuela de Mando",
+            "Escuela de Vuelo",
+            "Escuela Táctica",
+            "Academia Médica de Starfleet"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Espacios añadidos para jugabilidad"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Alojamiento",
+            "Comedor",
+            "Centro de estudio",
+            "Complejo de simulación",
+            "Núcleo académico"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Planificar una jornada de cadete."
+          "label": "GAME ADDITION",
+          "text": "Los espacios funcionales añadidos existen para hacer jugable la vida académica y no se presentan como canon oculto."
         },
         {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Práctica de navegación académica."
+          "type": "heading",
+          "text": "Tiempo finito"
+        },
+        {
+          "type": "p",
+          "text": "El cadete no puede estar en dos sitios a la vez. Estudio, entrenamiento, relaciones y descanso compiten por tiempo real sin convertirse en simples barras que optimizar."
         },
         {
           "type": "heading",
@@ -240,25 +307,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras aulas.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Planificar una jornada de cadete.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/academy_path/academy_gameplay_loop.md",
-            "gameplay/careers/academy_path/exam_model.json",
-            "gameplay/careers/academy_path/cadet_progression.json"
+            "¿Dónde se sitúa la Academia terrestre?",
+            "Nombra dos instalaciones retenidas y dos añadidas.",
+            "¿Por qué los horarios no son universales?",
+            "¿Qué significa que el tiempo sea finito?",
+            "¿Por qué no conviene convertir cada rutina en una escena completa?"
           ]
         }
       ]
@@ -270,30 +323,51 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Enseñar al cadete a vivir, estudiar y responder por su conducta dentro de la Academia."
+          "text": "Una tutoría sirve para identificar la carencia concreta y decidir qué tipo de ayuda necesita el cadete. Pedir ayuda forma parte de la formación."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Problemas distintos, respuestas distintas"
         },
         {
           "type": "bullets",
           "items": [
-            "pedir ayuda",
-            "refuerzo",
-            "reevaluación",
-            "registro de progreso"
+            "Conocimiento insuficiente",
+            "Mala ejecución",
+            "Falta de práctica",
+            "Error de juicio",
+            "Mala preparación",
+            "Dificultad contextual"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Opciones de recuperación"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Tutoría",
+            "Repetición de práctica",
+            "Trabajo adicional",
+            "Reevaluación",
+            "Repetición de módulo",
+            "Retraso académico cuando sea necesario"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Solicitar una tutoría y acordar plan de recuperación."
+          "label": "RECUPERACIÓN DIRIGIDA",
+          "text": "No se repite todo por defecto. La respuesta debe atacar la causa concreta del fallo."
+        },
+        {
+          "type": "p",
+          "text": "La reevaluación añade nueva evidencia, no borra el historial anterior."
         },
         {
           "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Escena y registro."
+          "label": "PRÁCTICA",
+          "text": "Diseña un plan para un cadete que conoce la teoría pero falla una práctica concreta."
         },
         {
           "type": "heading",
@@ -302,25 +376,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras pedir ayuda.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Solicitar una tutoría y acordar plan de recuperación.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/academy_path/academy_gameplay_loop.md",
-            "gameplay/careers/academy_path/exam_model.json",
-            "gameplay/careers/academy_path/cadet_progression.json"
+            "¿Qué objetivo tiene una tutoría?",
+            "¿Por qué teoría y ejecución pueden requerir recuperaciones distintas?",
+            "¿Una reevaluación borra el intento anterior?",
+            "¿Qué significa recuperación dirigida?",
+            "¿Cuándo podría ser razonable repetir un módulo o un año?"
           ]
         }
       ]
@@ -332,30 +392,54 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Enseñar al cadete a vivir, estudiar y responder por su conducta dentro de la Academia."
+          "text": "La Academia entrena cooperación porque una nave funciona mediante personas que comparten información, responsabilidad y tiempo."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Reparto de tareas"
         },
         {
           "type": "bullets",
           "items": [
-            "responsabilidad compartida",
-            "reparto de tareas",
-            "comunicación",
-            "conflicto"
+            "Objetivo común",
+            "Roles comprensibles",
+            "Reparto razonable",
+            "Comunicación",
+            "Seguimiento",
+            "Entrega coherente"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Responsabilidad individual y compartida"
+        },
+        {
+          "type": "definition",
+          "term": "Responsabilidad del equipo",
+          "text": "Resultado común y calidad de la coordinación."
+        },
+        {
+          "type": "definition",
+          "term": "Responsabilidad individual",
+          "text": "Contribución propia, conducta, honestidad y cumplimiento del rol."
+        },
+        {
+          "type": "heading",
+          "text": "Conflicto"
+        },
+        {
+          "type": "p",
+          "text": "Un desacuerdo no es automáticamente mala conducta. Se vuelve problemático cuando deriva en sabotaje, engaño, ocultación, acoso o incumplimiento deliberado."
+        },
+        {
+          "type": "callout",
+          "label": "CASO",
+          "text": "Si no puedes completar tu parte, informar pronto permite redistribuir trabajo o pedir ayuda. Ocultarlo hasta el final perjudica al equipo."
         },
         {
           "type": "callout",
           "label": "PRÁCTICA",
-          "text": "Actividad de equipo con roles definidos."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación de teamwork e integridad."
+          "text": "Realiza una actividad con roles definidos y termina con un debrief sobre comunicación, bloqueos y mejora."
         },
         {
           "type": "heading",
@@ -364,25 +448,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras responsabilidad compartida.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Actividad de equipo con roles definidos.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/academy_path/academy_gameplay_loop.md",
-            "gameplay/careers/academy_path/exam_model.json",
-            "gameplay/careers/academy_path/cadet_progression.json"
+            "¿Qué necesita un reparto eficaz?",
+            "¿Qué diferencia existe entre responsabilidad de equipo e individual?",
+            "¿Por qué un desacuerdo no es automáticamente mala conducta?",
+            "¿Cuándo debe comunicarse un bloqueo?",
+            "¿Qué debe revisar un debrief de equipo?"
           ]
         }
       ]
