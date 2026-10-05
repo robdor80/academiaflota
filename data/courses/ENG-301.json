@@ -85,7 +85,7 @@
           "items": [
             "¿Qué significa distribuir energía?",
             "¿De dónde vienen prioridades?",
-            "¿Qué ocurre con una ruta dañada?",
+            "¿Qué ocurre si una ruta deja de estar disponible?",
             "¿Para qué sirve aislar?",
             "¿Por qué una reasignación tiene coste?"
           ]
@@ -99,7 +99,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Una orden de vuelo tiene coste técnico. Ingeniería debe informar si es posible, cuánto puede sostenerse, qué riesgo existe y qué efecto tiene sobre otros sistemas."
+          "text": "Una orden de vuelo tiene coste técnico. Ingeniería debe informar si es posible, cuánto puede sostenerse, qué margen existe y qué efecto tiene sobre otros sistemas."
         },
         {
           "type": "definition",
@@ -114,7 +114,7 @@
         {
           "type": "callout",
           "label": "INFORME ÚTIL",
-          "text": "«Warp 8 disponible durante 12 minutos; warp 7 sostenible» es más útil que un simple «no»."
+          "text": "Un informe útil indica capacidad disponible y alternativa sostenible, no un simple sí o no."
         },
         {
           "type": "heading",
@@ -157,7 +157,7 @@
         {
           "type": "callout",
           "label": "EFECTO CASCADA",
-          "text": "Un fallo de distribución puede degradar Sensores y aumentar la incertidumbre de Navegación."
+          "text": "Una degradación en distribución puede reducir Sensores y aumentar la incertidumbre de Navegación."
         },
         {
           "type": "heading",
@@ -182,8 +182,8 @@
       "blocks": [
         {
           "type": "callout",
-          "label": "SÍNTOMA ≠ CAUSA",
-          "text": "«La matriz pierde resolución» describe un síntoma. Daño, potencia, calibración o interferencia pueden ser causas distintas."
+          "label": "SÍNTOMA Y CAUSA",
+          "text": "Un síntoma describe lo observado. Potencia, calibración, entorno o un componente pueden producir efectos parecidos."
         },
         {
           "type": "heading",
@@ -211,8 +211,8 @@
             "Redirigir energía",
             "Aislar",
             "Reiniciar",
-            "Asignar reparación",
-            "Parche temporal",
+            "Asignar mantenimiento",
+            "Ajuste temporal",
             "Sustituir componente",
             "Ejecutar prueba"
           ]
@@ -240,7 +240,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "El puente necesita un informe técnico que describa estado, capacidad, riesgo, tiempo estimado y restricciones."
+          "text": "El puente necesita un informe técnico que describa estado, capacidad, margen, tiempo estimado y restricciones."
         },
         {
           "type": "heading",
@@ -258,7 +258,7 @@
         },
         {
           "type": "p",
-          "text": "Una ETA técnica debe expresar incertidumbre cuando corresponda. Ingeniería puede recomendar una opción; Mando decide cuando la cuestión excede la autoridad técnica."
+          "text": "Una estimación técnica debe expresar incertidumbre cuando corresponda. Ingeniería puede recomendar una opción; Mando decide cuando la cuestión excede la autoridad técnica."
         },
         {
           "type": "heading",
@@ -268,9 +268,9 @@
           "type": "numbered",
           "items": [
             "¿Qué necesita saber el puente?",
-            "¿Por qué «está mal» no sirve?",
+            "¿Por qué una frase vaga no sirve?",
             "¿Qué significa informar capacidad?",
-            "¿Qué acompaña una ETA incierta?",
+            "¿Qué acompaña una estimación incierta?",
             "¿Quién decide cuando excede Ingeniería?"
           ]
         }
