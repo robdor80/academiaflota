@@ -1,0 +1,284 @@
+{
+  "schema_version": "1.0.0",
+  "course_id": "SHP-402",
+  "status": "generated_from_authoritative_curriculum",
+  "question_count": 24,
+  "questions": [
+    {
+      "id": "SHP-402-Q001",
+      "unit_id": "SHP-402-U01",
+      "type": "short_answer",
+      "prompt_es": "Explica puente y su relevancia operativa.",
+      "answer_key_es": [
+        "puente",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "SHP-402-Q002",
+      "unit_id": "SHP-402-U01",
+      "type": "compare",
+      "prompt_es": "Compara puente con Ingeniería. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "puente",
+        "Ingeniería",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "SHP-402-Q003",
+      "unit_id": "SHP-402-U01",
+      "type": "scenario",
+      "prompt_es": "Situación: Recorrido guiado físico o virtual. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "SHP-402-Q004",
+      "unit_id": "SHP-402-U01",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Anatomía funcional de una nave y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "SHP-402-Q005",
+      "unit_id": "SHP-402-U02",
+      "type": "short_answer",
+      "prompt_es": "Explica departamentos y su relevancia operativa.",
+      "answer_key_es": [
+        "departamentos",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "SHP-402-Q006",
+      "unit_id": "SHP-402-U02",
+      "type": "compare",
+      "prompt_es": "Compara departamentos con jefaturas. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "departamentos",
+        "jefaturas",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "SHP-402-Q007",
+      "unit_id": "SHP-402-U02",
+      "type": "scenario",
+      "prompt_es": "Situación: Ubicar funciones en un organigrama de nave. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "SHP-402-Q008",
+      "unit_id": "SHP-402-U02",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Tripulación y departamentos y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "SHP-402-Q009",
+      "unit_id": "SHP-402-U03",
+      "type": "short_answer",
+      "prompt_es": "Explica Mando y su relevancia operativa.",
+      "answer_key_es": [
+        "Mando",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "SHP-402-Q010",
+      "unit_id": "SHP-402-U03",
+      "type": "compare",
+      "prompt_es": "Compara Mando con Conn. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "Mando",
+        "Conn",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "SHP-402-Q011",
+      "unit_id": "SHP-402-U03",
+      "type": "scenario",
+      "prompt_es": "Situación: Visita a puente/simulador y reconocimiento de puestos. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "SHP-402-Q012",
+      "unit_id": "SHP-402-U03",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Puente y estaciones y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "SHP-402-Q013",
+      "unit_id": "SHP-402-U04",
+      "type": "short_answer",
+      "prompt_es": "Explica alojamientos y su relevancia operativa.",
+      "answer_key_es": [
+        "alojamientos",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "SHP-402-Q014",
+      "unit_id": "SHP-402-U04",
+      "type": "compare",
+      "prompt_es": "Compara alojamientos con comedores. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "alojamientos",
+        "comedores",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "SHP-402-Q015",
+      "unit_id": "SHP-402-U04",
+      "type": "scenario",
+      "prompt_es": "Situación: Planificar una jornada a bordo. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "SHP-402-Q016",
+      "unit_id": "SHP-402-U04",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Vida cotidiana y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "SHP-402-Q017",
+      "unit_id": "SHP-402-U05",
+      "type": "short_answer",
+      "prompt_es": "Explica exploración y su relevancia operativa.",
+      "answer_key_es": [
+        "exploración",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "SHP-402-Q018",
+      "unit_id": "SHP-402-U05",
+      "type": "compare",
+      "prompt_es": "Compara exploración con ciencia. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "exploración",
+        "ciencia",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "SHP-402-Q019",
+      "unit_id": "SHP-402-U05",
+      "type": "scenario",
+      "prompt_es": "Situación: Relacionar misión con función de nave sin memorizar catálogos. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "SHP-402-Q020",
+      "unit_id": "SHP-402-U05",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Tipos y funciones de naves y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "SHP-402-Q021",
+      "unit_id": "SHP-402-U06",
+      "type": "short_answer",
+      "prompt_es": "Explica rutas y su relevancia operativa.",
+      "answer_key_es": [
+        "rutas",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "SHP-402-Q022",
+      "unit_id": "SHP-402-U06",
+      "type": "compare",
+      "prompt_es": "Compara rutas con acceso. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "rutas",
+        "acceso",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "SHP-402-Q023",
+      "unit_id": "SHP-402-U06",
+      "type": "scenario",
+      "prompt_es": "Situación: Desplazamiento guiado durante un supuesto. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "SHP-402-Q024",
+      "unit_id": "SHP-402-U06",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Flujo entre espacios y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    }
+  ]
+}

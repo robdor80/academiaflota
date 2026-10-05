@@ -153,11 +153,14 @@ test("los cursos nuevos y los campos futuros sobreviven a edición e importació
   const profile = createProfile("Alumno de cursos");
   profile.studies["STF-401"] = { completedModules: ["STF-401-U01"], customNote: "conservar" };
   profile.studies["ENG-303"] = { completedModules: ["ENG-303-U02"] };
+  profile.studies.catalog["course-STF-401"] = { completedModules: ["STF-401-U01"], customNote: "conservar" };
+  profile.studies.catalog["branch-command"] = { completedModules: ["CMD-201-U01"] };
   profile.futureFeature = { level: 7 };
   profile.schemaVersion = 2;
   updateProfile(profile);
   assert.deepEqual(getProfiles()[0].studies["STF-401"], profile.studies["STF-401"]);
   assert.deepEqual(getProfiles()[0].studies["ENG-303"], profile.studies["ENG-303"]);
+  assert.deepEqual(getProfiles()[0].studies.catalog, profile.studies.catalog);
   assert.deepEqual(getProfiles()[0].futureFeature, profile.futureFeature);
   assert.equal(getProfiles()[0].schemaVersion, 2);
   await importProfile({
@@ -166,6 +169,7 @@ test("los cursos nuevos y los campos futuros sobreviven a edición e importació
   });
   assert.equal(getProfiles().length, 1);
   assert.deepEqual(getProfiles()[0].studies["STF-401"], profile.studies["STF-401"]);
+  assert.deepEqual(getProfiles()[0].studies.catalog, profile.studies.catalog);
   deleteProfile(profile.id);
   assert.deepEqual(changed, [profile.id, profile.id, profile.id, profile.id]);
   assert.equal(getProfiles().length, 0);
@@ -199,14 +203,21 @@ test("todos los cursos publicados en el currículo tienen JSON de unidades", () 
         const material = JSON.parse(readFileSync(new URL("../" + subject.dataFile, import.meta.url), "utf8"));
         assert.equal(material.code, subject.courseId);
         assert.equal(material.modules.length, subject.unitCount);
+        const assessment = JSON.parse(readFileSync(new URL("../data/assessments/" + subject.courseId + ".json", import.meta.url), "utf8"));
+        assert.equal(assessment.course_id, subject.courseId);
+        assert.equal(assessment.questions.length, assessment.question_count);
         courses += 1;
       }
     }
   }
   assert.ok(courses >= 60);
-  for (const branch of curriculum.branches || []) {
+  assert.equal(curriculum.branchLibrary.length, 7);
+  for (const branch of curriculum.branchLibrary) {
     const material = JSON.parse(readFileSync(new URL("../" + branch.dataFile, import.meta.url), "utf8"));
     assert.equal(material.modules.length, branch.unitCount);
+    const assessment = JSON.parse(readFileSync(new URL("../data/assessments/branch-" + branch.branchId + ".json", import.meta.url), "utf8"));
+    assert.equal(assessment.branch_id, branch.branchId);
+    assert.equal(assessment.questions.length, assessment.question_count);
   }
 });
 

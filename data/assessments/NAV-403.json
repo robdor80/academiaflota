@@ -1,0 +1,284 @@
+{
+  "schema_version": "1.0.0",
+  "course_id": "NAV-403",
+  "status": "generated_from_authoritative_curriculum",
+  "question_count": 24,
+  "questions": [
+    {
+      "id": "NAV-403-Q001",
+      "unit_id": "NAV-403-U01",
+      "type": "short_answer",
+      "prompt_es": "Explica sistemas y su relevancia operativa.",
+      "answer_key_es": [
+        "sistemas",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "NAV-403-Q002",
+      "unit_id": "NAV-403-U01",
+      "type": "compare",
+      "prompt_es": "Compara sistemas con sectores. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "sistemas",
+        "sectores",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "NAV-403-Q003",
+      "unit_id": "NAV-403-U01",
+      "type": "scenario",
+      "prompt_es": "Situación: Localizar destinos en mapa de entrenamiento. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "NAV-403-Q004",
+      "unit_id": "NAV-403-U01",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Mapa estelar y referencias y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "NAV-403-Q005",
+      "unit_id": "NAV-403-U02",
+      "type": "short_answer",
+      "prompt_es": "Explica referencias y su relevancia operativa.",
+      "answer_key_es": [
+        "referencias",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "NAV-403-Q006",
+      "unit_id": "NAV-403-U02",
+      "type": "compare",
+      "prompt_es": "Compara referencias con posición relativa. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "referencias",
+        "posición relativa",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "NAV-403-Q007",
+      "unit_id": "NAV-403-U02",
+      "type": "scenario",
+      "prompt_es": "Situación: Interpretar varias posiciones. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "NAV-403-Q008",
+      "unit_id": "NAV-403-U02",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Coordenadas y posición y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "NAV-403-Q009",
+      "unit_id": "NAV-403-U03",
+      "type": "short_answer",
+      "prompt_es": "Explica distancias astronómicas de juego y su relevancia operativa.",
+      "answer_key_es": [
+        "distancias astronómicas de juego",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "NAV-403-Q010",
+      "unit_id": "NAV-403-U03",
+      "type": "compare",
+      "prompt_es": "Compara distancias astronómicas de juego con ETA. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "distancias astronómicas de juego",
+        "ETA",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "NAV-403-Q011",
+      "unit_id": "NAV-403-U03",
+      "type": "scenario",
+      "prompt_es": "Situación: Comparar rutas y tiempos dados por el sistema. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "NAV-403-Q012",
+      "unit_id": "NAV-403-U03",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Distancia y tiempo y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "NAV-403-Q013",
+      "unit_id": "NAV-403-U04",
+      "type": "short_answer",
+      "prompt_es": "Explica régimen subluz y su relevancia operativa.",
+      "answer_key_es": [
+        "régimen subluz",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "NAV-403-Q014",
+      "unit_id": "NAV-403-U04",
+      "type": "compare",
+      "prompt_es": "Compara régimen subluz con régimen warp. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "régimen subluz",
+        "régimen warp",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "NAV-403-Q015",
+      "unit_id": "NAV-403-U04",
+      "type": "scenario",
+      "prompt_es": "Situación: Elegir régimen adecuado en escenarios simples. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "NAV-403-Q016",
+      "unit_id": "NAV-403-U04",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Impulso y warp en navegación y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "NAV-403-Q017",
+      "unit_id": "NAV-403-U05",
+      "type": "short_answer",
+      "prompt_es": "Explica obstáculos y su relevancia operativa.",
+      "answer_key_es": [
+        "obstáculos",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "NAV-403-Q018",
+      "unit_id": "NAV-403-U05",
+      "type": "compare",
+      "prompt_es": "Compara obstáculos con zonas restringidas. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "obstáculos",
+        "zonas restringidas",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "NAV-403-Q019",
+      "unit_id": "NAV-403-U05",
+      "type": "scenario",
+      "prompt_es": "Situación: Trazar una ruta segura básica. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "NAV-403-Q020",
+      "unit_id": "NAV-403-U05",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Rutas y peligros y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "NAV-403-Q021",
+      "unit_id": "NAV-403-U06",
+      "type": "short_answer",
+      "prompt_es": "Explica origen y su relevancia operativa.",
+      "answer_key_es": [
+        "origen",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "NAV-403-Q022",
+      "unit_id": "NAV-403-U06",
+      "type": "compare",
+      "prompt_es": "Compara origen con destino. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "origen",
+        "destino",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "NAV-403-Q023",
+      "unit_id": "NAV-403-U06",
+      "type": "scenario",
+      "prompt_es": "Situación: Preparar y comunicar una ruta básica. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "NAV-403-Q024",
+      "unit_id": "NAV-403-U06",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Ejercicio de astrográfica y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    }
+  ]
+}

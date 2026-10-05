@@ -26,7 +26,7 @@ function emptyProfile(name) {
     name: name.trim(),
     createdAt: now,
     updatedAt: now,
-    studies: { acceso: { completedModules: [] }, sensores: { completedModules: [] } },
+    studies: { acceso: { completedModules: [] }, sensores: { completedModules: [] }, catalog: {} },
     practices: { sensores: { completed: [], answers: {} } },
     evaluations: { sensores: { attempts: [] } }
   };
@@ -44,6 +44,12 @@ function normalizeProfile(profile) {
   p.studies.acceso.completedModules = Array.isArray(p.studies.acceso.completedModules) ? p.studies.acceso.completedModules : [];
   p.studies.sensores = p.studies.sensores && typeof p.studies.sensores === "object" ? p.studies.sensores : { completedModules: [] };
   p.studies.sensores.completedModules = Array.isArray(p.studies.sensores.completedModules) ? p.studies.sensores.completedModules : [];
+  p.studies.catalog = p.studies.catalog && typeof p.studies.catalog === "object" && !Array.isArray(p.studies.catalog) ? p.studies.catalog : {};
+  Object.keys(p.studies.catalog).forEach(function(key) {
+    const item = p.studies.catalog[key];
+    p.studies.catalog[key] = item && typeof item === "object" && !Array.isArray(item) ? item : { completedModules: [] };
+    p.studies.catalog[key].completedModules = Array.isArray(p.studies.catalog[key].completedModules) ? p.studies.catalog[key].completedModules : [];
+  });
   p.practices = p.practices && typeof p.practices === "object" ? p.practices : {};
   p.practices.sensores = p.practices.sensores && typeof p.practices.sensores === "object" ? p.practices.sensores : { completed: [], answers: {} };
   p.practices.sensores.completed = Array.isArray(p.practices.sensores.completed) ? p.practices.sensores.completed : [];

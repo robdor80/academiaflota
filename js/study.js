@@ -1,7 +1,13 @@
-export async function loadStudyData() {
-  const response = await fetch("data/sensores.json?v=0.3.1");
-  if (!response.ok) throw new Error("No se pudo cargar el Manual de Sensores.");
+export async function loadStudyFile(path) {
+  if (!path) throw new Error("El material de estudio no tiene un archivo asociado.");
+  const separator = path.includes("?") ? "&" : "?";
+  const response = await fetch(path + separator + "v=0.5.0");
+  if (!response.ok) throw new Error("No se pudo cargar el material académico.");
   return response.json();
+}
+
+export async function loadStudyData() {
+  return loadStudyFile("data/sensores.json");
 }
 
 function blockHtml(block) {

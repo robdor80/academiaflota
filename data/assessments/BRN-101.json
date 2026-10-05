@@ -1,0 +1,314 @@
+{
+  "schema_version": "1.0.0",
+  "course_id": "BRN-101",
+  "status": "generated_from_authoritative_curriculum",
+  "question_count": 24,
+  "questions": [
+    {
+      "id": "BRN-101-Q001",
+      "unit_id": "BRN-101-U01",
+      "type": "service_readiness",
+      "prompt_es": "Explica fortalezas como se lo explicarías a un Alférez que recibe su primer destino.",
+      "answer_key_es": [
+        "fortalezas",
+        "responsabilidad",
+        "límite",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "BRN-101-Q002",
+      "unit_id": "BRN-101-U01",
+      "type": "scenario",
+      "prompt_es": "Escenario: Analizar resultado de QUA-203. Describe decisión inicial, alternativas y condición de escalado.",
+      "answer_key_es": [
+        "situación",
+        "alternativas",
+        "riesgo",
+        "autoridad",
+        "escalado"
+      ]
+    },
+    {
+      "id": "BRN-101-Q003",
+      "unit_id": "BRN-101-U01",
+      "type": "debrief",
+      "prompt_es": "Tras Revisión de cualificación intermedia, separa hechos, información disponible, decisión y resultado.",
+      "answer_key_es": [
+        "hechos",
+        "información disponible entonces",
+        "decisión",
+        "resultado",
+        "sin hindsight bias"
+      ]
+    },
+    {
+      "id": "BRN-101-Q004",
+      "unit_id": "BRN-101-U01",
+      "type": "handoff",
+      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "answer_key_es": [
+        "estado",
+        "órdenes",
+        "riesgos",
+        "pendientes",
+        "acciones realizadas"
+      ]
+    },
+    {
+      "id": "BRN-101-Q005",
+      "unit_id": "BRN-101-U02",
+      "type": "service_readiness",
+      "prompt_es": "Explica configuración como se lo explicarías a un Alférez que recibe su primer destino.",
+      "answer_key_es": [
+        "configuración",
+        "responsabilidad",
+        "límite",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "BRN-101-Q006",
+      "unit_id": "BRN-101-U02",
+      "type": "scenario",
+      "prompt_es": "Escenario: Práctica avanzada según especialidad. Describe decisión inicial, alternativas y condición de escalado.",
+      "answer_key_es": [
+        "situación",
+        "alternativas",
+        "riesgo",
+        "autoridad",
+        "escalado"
+      ]
+    },
+    {
+      "id": "BRN-101-Q007",
+      "unit_id": "BRN-101-U02",
+      "type": "debrief",
+      "prompt_es": "Tras Herramientas avanzadas de rama, separa hechos, información disponible, decisión y resultado.",
+      "answer_key_es": [
+        "hechos",
+        "información disponible entonces",
+        "decisión",
+        "resultado",
+        "sin hindsight bias"
+      ]
+    },
+    {
+      "id": "BRN-101-Q008",
+      "unit_id": "BRN-101-U02",
+      "type": "handoff",
+      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "answer_key_es": [
+        "estado",
+        "órdenes",
+        "riesgos",
+        "pendientes",
+        "acciones realizadas"
+      ]
+    },
+    {
+      "id": "BRN-101-Q009",
+      "unit_id": "BRN-101-U03",
+      "type": "service_readiness",
+      "prompt_es": "Explica opciones como se lo explicarías a un Alférez que recibe su primer destino.",
+      "answer_key_es": [
+        "opciones",
+        "responsabilidad",
+        "límite",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "BRN-101-Q010",
+      "unit_id": "BRN-101-U03",
+      "type": "scenario",
+      "prompt_es": "Escenario: Resolver caso sin receta. Describe decisión inicial, alternativas y condición de escalado.",
+      "answer_key_es": [
+        "situación",
+        "alternativas",
+        "riesgo",
+        "autoridad",
+        "escalado"
+      ]
+    },
+    {
+      "id": "BRN-101-Q011",
+      "unit_id": "BRN-101-U03",
+      "type": "debrief",
+      "prompt_es": "Tras Decisión profesional, separa hechos, información disponible, decisión y resultado.",
+      "answer_key_es": [
+        "hechos",
+        "información disponible entonces",
+        "decisión",
+        "resultado",
+        "sin hindsight bias"
+      ]
+    },
+    {
+      "id": "BRN-101-Q012",
+      "unit_id": "BRN-101-U03",
+      "type": "handoff",
+      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "answer_key_es": [
+        "estado",
+        "órdenes",
+        "riesgos",
+        "pendientes",
+        "acciones realizadas"
+      ]
+    },
+    {
+      "id": "BRN-101-Q013",
+      "unit_id": "BRN-101-U04",
+      "type": "service_readiness",
+      "prompt_es": "Explica briefing como se lo explicarías a un Alférez que recibe su primer destino.",
+      "answer_key_es": [
+        "briefing",
+        "responsabilidad",
+        "límite",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "BRN-101-Q014",
+      "unit_id": "BRN-101-U04",
+      "type": "scenario",
+      "prompt_es": "Escenario: Supervisar micro-equipo. Describe decisión inicial, alternativas y condición de escalado.",
+      "answer_key_es": [
+        "situación",
+        "alternativas",
+        "riesgo",
+        "autoridad",
+        "escalado"
+      ]
+    },
+    {
+      "id": "BRN-101-Q015",
+      "unit_id": "BRN-101-U04",
+      "type": "debrief",
+      "prompt_es": "Tras Supervisión de tarea, separa hechos, información disponible, decisión y resultado.",
+      "answer_key_es": [
+        "hechos",
+        "información disponible entonces",
+        "decisión",
+        "resultado",
+        "sin hindsight bias"
+      ]
+    },
+    {
+      "id": "BRN-101-Q016",
+      "unit_id": "BRN-101-U04",
+      "type": "handoff",
+      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "answer_key_es": [
+        "estado",
+        "órdenes",
+        "riesgos",
+        "pendientes",
+        "acciones realizadas"
+      ]
+    },
+    {
+      "id": "BRN-101-Q017",
+      "unit_id": "BRN-101-U05",
+      "type": "service_readiness",
+      "prompt_es": "Explica estado como se lo explicarías a un Alférez que recibe su primer destino.",
+      "answer_key_es": [
+        "estado",
+        "responsabilidad",
+        "límite",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "BRN-101-Q018",
+      "unit_id": "BRN-101-U05",
+      "type": "scenario",
+      "prompt_es": "Escenario: Briefing profesional. Describe decisión inicial, alternativas y condición de escalado.",
+      "answer_key_es": [
+        "situación",
+        "alternativas",
+        "riesgo",
+        "autoridad",
+        "escalado"
+      ]
+    },
+    {
+      "id": "BRN-101-Q019",
+      "unit_id": "BRN-101-U05",
+      "type": "debrief",
+      "prompt_es": "Tras Interfaz con mando, separa hechos, información disponible, decisión y resultado.",
+      "answer_key_es": [
+        "hechos",
+        "información disponible entonces",
+        "decisión",
+        "resultado",
+        "sin hindsight bias"
+      ]
+    },
+    {
+      "id": "BRN-101-Q020",
+      "unit_id": "BRN-101-U05",
+      "type": "handoff",
+      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "answer_key_es": [
+        "estado",
+        "órdenes",
+        "riesgos",
+        "pendientes",
+        "acciones realizadas"
+      ]
+    },
+    {
+      "id": "BRN-101-Q021",
+      "unit_id": "BRN-101-U06",
+      "type": "service_readiness",
+      "prompt_es": "Explica situación como se lo explicarías a un Alférez que recibe su primer destino.",
+      "answer_key_es": [
+        "situación",
+        "responsabilidad",
+        "límite",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "BRN-101-Q022",
+      "unit_id": "BRN-101-U06",
+      "type": "scenario",
+      "prompt_es": "Escenario: Caso de rama completo. Describe decisión inicial, alternativas y condición de escalado.",
+      "answer_key_es": [
+        "situación",
+        "alternativas",
+        "riesgo",
+        "autoridad",
+        "escalado"
+      ]
+    },
+    {
+      "id": "BRN-101-Q023",
+      "unit_id": "BRN-101-U06",
+      "type": "debrief",
+      "prompt_es": "Tras Caso avanzado I, separa hechos, información disponible, decisión y resultado.",
+      "answer_key_es": [
+        "hechos",
+        "información disponible entonces",
+        "decisión",
+        "resultado",
+        "sin hindsight bias"
+      ]
+    },
+    {
+      "id": "BRN-101-Q024",
+      "unit_id": "BRN-101-U06",
+      "type": "handoff",
+      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "answer_key_es": [
+        "estado",
+        "órdenes",
+        "riesgos",
+        "pendientes",
+        "acciones realizadas"
+      ]
+    }
+  ]
+}

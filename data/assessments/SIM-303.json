@@ -1,0 +1,284 @@
+{
+  "schema_version": "1.0.0",
+  "course_id": "SIM-303",
+  "status": "generated_from_authoritative_curriculum",
+  "question_count": 24,
+  "questions": [
+    {
+      "id": "SIM-303-Q001",
+      "unit_id": "SIM-303-U01",
+      "type": "knowledge",
+      "prompt_es": "Explica misión y da un ejemplo operativo.",
+      "answer_key_es": [
+        "misión",
+        "ejemplo coherente",
+        "límite o contexto"
+      ]
+    },
+    {
+      "id": "SIM-303-Q002",
+      "unit_id": "SIM-303-U01",
+      "type": "relationship",
+      "prompt_es": "Relaciona misión con roles. ¿Qué información pasa de uno a otro?",
+      "answer_key_es": [
+        "misión",
+        "roles",
+        "flujo de información o dependencia"
+      ]
+    },
+    {
+      "id": "SIM-303-Q003",
+      "unit_id": "SIM-303-U01",
+      "type": "scenario",
+      "prompt_es": "Preparar equipo. Describe preparación, acción, comunicación y criterio de escalado.",
+      "answer_key_es": [
+        "preparación",
+        "acción",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "SIM-303-Q004",
+      "unit_id": "SIM-303-U01",
+      "type": "debrief",
+      "prompt_es": "Tras la práctica de Briefing y preparación, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "answer_key_es": [
+        "información disponible entonces",
+        "decisión",
+        "procedimiento",
+        "resultado separado del proceso"
+      ]
+    },
+    {
+      "id": "SIM-303-Q005",
+      "unit_id": "SIM-303-U02",
+      "type": "knowledge",
+      "prompt_es": "Explica guardia y da un ejemplo operativo.",
+      "answer_key_es": [
+        "guardia",
+        "ejemplo coherente",
+        "límite o contexto"
+      ]
+    },
+    {
+      "id": "SIM-303-Q006",
+      "unit_id": "SIM-303-U02",
+      "type": "relationship",
+      "prompt_es": "Relaciona guardia con coordinación. ¿Qué información pasa de uno a otro?",
+      "answer_key_es": [
+        "guardia",
+        "coordinación",
+        "flujo de información o dependencia"
+      ]
+    },
+    {
+      "id": "SIM-303-Q007",
+      "unit_id": "SIM-303-U02",
+      "type": "scenario",
+      "prompt_es": "Fase rutinaria de misión. Describe preparación, acción, comunicación y criterio de escalado.",
+      "answer_key_es": [
+        "preparación",
+        "acción",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "SIM-303-Q008",
+      "unit_id": "SIM-303-U02",
+      "type": "debrief",
+      "prompt_es": "Tras la práctica de Operación normal, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "answer_key_es": [
+        "información disponible entonces",
+        "decisión",
+        "procedimiento",
+        "resultado separado del proceso"
+      ]
+    },
+    {
+      "id": "SIM-303-Q009",
+      "unit_id": "SIM-303-U03",
+      "type": "knowledge",
+      "prompt_es": "Explica detección y da un ejemplo operativo.",
+      "answer_key_es": [
+        "detección",
+        "ejemplo coherente",
+        "límite o contexto"
+      ]
+    },
+    {
+      "id": "SIM-303-Q010",
+      "unit_id": "SIM-303-U03",
+      "type": "relationship",
+      "prompt_es": "Relaciona detección con informe. ¿Qué información pasa de uno a otro?",
+      "answer_key_es": [
+        "detección",
+        "informe",
+        "flujo de información o dependencia"
+      ]
+    },
+    {
+      "id": "SIM-303-Q011",
+      "unit_id": "SIM-303-U03",
+      "type": "scenario",
+      "prompt_es": "Responder sin guion paso a paso. Describe preparación, acción, comunicación y criterio de escalado.",
+      "answer_key_es": [
+        "preparación",
+        "acción",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "SIM-303-Q012",
+      "unit_id": "SIM-303-U03",
+      "type": "debrief",
+      "prompt_es": "Tras la práctica de Evento inesperado, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "answer_key_es": [
+        "información disponible entonces",
+        "decisión",
+        "procedimiento",
+        "resultado separado del proceso"
+      ]
+    },
+    {
+      "id": "SIM-303-Q013",
+      "unit_id": "SIM-303-U04",
+      "type": "knowledge",
+      "prompt_es": "Explica dependencias y da un ejemplo operativo.",
+      "answer_key_es": [
+        "dependencias",
+        "ejemplo coherente",
+        "límite o contexto"
+      ]
+    },
+    {
+      "id": "SIM-303-Q014",
+      "unit_id": "SIM-303-U04",
+      "type": "relationship",
+      "prompt_es": "Relaciona dependencias con handoff. ¿Qué información pasa de uno a otro?",
+      "answer_key_es": [
+        "dependencias",
+        "handoff",
+        "flujo de información o dependencia"
+      ]
+    },
+    {
+      "id": "SIM-303-Q015",
+      "unit_id": "SIM-303-U04",
+      "type": "scenario",
+      "prompt_es": "Coordinar solución. Describe preparación, acción, comunicación y criterio de escalado.",
+      "answer_key_es": [
+        "preparación",
+        "acción",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "SIM-303-Q016",
+      "unit_id": "SIM-303-U04",
+      "type": "debrief",
+      "prompt_es": "Tras la práctica de Interacción entre departamentos, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "answer_key_es": [
+        "información disponible entonces",
+        "decisión",
+        "procedimiento",
+        "resultado separado del proceso"
+      ]
+    },
+    {
+      "id": "SIM-303-Q017",
+      "unit_id": "SIM-303-U05",
+      "type": "knowledge",
+      "prompt_es": "Explica resultado y da un ejemplo operativo.",
+      "answer_key_es": [
+        "resultado",
+        "ejemplo coherente",
+        "límite o contexto"
+      ]
+    },
+    {
+      "id": "SIM-303-Q018",
+      "unit_id": "SIM-303-U05",
+      "type": "relationship",
+      "prompt_es": "Relaciona resultado con seguridad. ¿Qué información pasa de uno a otro?",
+      "answer_key_es": [
+        "resultado",
+        "seguridad",
+        "flujo de información o dependencia"
+      ]
+    },
+    {
+      "id": "SIM-303-Q019",
+      "unit_id": "SIM-303-U05",
+      "type": "scenario",
+      "prompt_es": "Cerrar operación. Describe preparación, acción, comunicación y criterio de escalado.",
+      "answer_key_es": [
+        "preparación",
+        "acción",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "SIM-303-Q020",
+      "unit_id": "SIM-303-U05",
+      "type": "debrief",
+      "prompt_es": "Tras la práctica de Cierre de misión, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "answer_key_es": [
+        "información disponible entonces",
+        "decisión",
+        "procedimiento",
+        "resultado separado del proceso"
+      ]
+    },
+    {
+      "id": "SIM-303-Q021",
+      "unit_id": "SIM-303-U06",
+      "type": "knowledge",
+      "prompt_es": "Explica hechos y da un ejemplo operativo.",
+      "answer_key_es": [
+        "hechos",
+        "ejemplo coherente",
+        "límite o contexto"
+      ]
+    },
+    {
+      "id": "SIM-303-Q022",
+      "unit_id": "SIM-303-U06",
+      "type": "relationship",
+      "prompt_es": "Relaciona hechos con decisiones. ¿Qué información pasa de uno a otro?",
+      "answer_key_es": [
+        "hechos",
+        "decisiones",
+        "flujo de información o dependencia"
+      ]
+    },
+    {
+      "id": "SIM-303-Q023",
+      "unit_id": "SIM-303-U06",
+      "type": "scenario",
+      "prompt_es": "Debrief con instructor. Describe preparación, acción, comunicación y criterio de escalado.",
+      "answer_key_es": [
+        "preparación",
+        "acción",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "SIM-303-Q024",
+      "unit_id": "SIM-303-U06",
+      "type": "debrief",
+      "prompt_es": "Tras la práctica de Debrief, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "answer_key_es": [
+        "información disponible entonces",
+        "decisión",
+        "procedimiento",
+        "resultado separado del proceso"
+      ]
+    }
+  ]
+}

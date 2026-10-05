@@ -1,0 +1,768 @@
+{
+  "schema_version": "1.0.1",
+  "branch_id": "command",
+  "status": "generated_from_authoritative_branch_curriculum",
+  "question_count": 60,
+  "questions": [
+    {
+      "id": "COMMAND-Q001",
+      "course_id": "CMD-201",
+      "unit_id": "CMD-201-U01",
+      "type": "knowledge",
+      "prompt_es": "Explica autoridad desde la perspectiva de Mando.",
+      "answer_key_es": [
+        "autoridad",
+        "aplicación",
+        "límite o riesgo"
+      ]
+    },
+    {
+      "id": "COMMAND-Q002",
+      "course_id": "CMD-201",
+      "unit_id": "CMD-201-U01",
+      "type": "scenario",
+      "prompt_es": "Resolver cadena de decisión. Describe preparación, decisión, comunicación y escalado.",
+      "answer_key_es": [
+        "preparación",
+        "decisión",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "COMMAND-Q003",
+      "course_id": "CMD-201",
+      "unit_id": "CMD-201-U01",
+      "type": "evidence",
+      "prompt_es": "¿Qué evidencia conservarías tras Función de mando para demostrar competencia real?",
+      "answer_key_es": [
+        "contexto",
+        "acciones",
+        "resultado",
+        "feedback"
+      ]
+    },
+    {
+      "id": "COMMAND-Q004",
+      "course_id": "CMD-201",
+      "unit_id": "CMD-201-U02",
+      "type": "knowledge",
+      "prompt_es": "Explica misión desde la perspectiva de Mando.",
+      "answer_key_es": [
+        "misión",
+        "aplicación",
+        "límite o riesgo"
+      ]
+    },
+    {
+      "id": "COMMAND-Q005",
+      "course_id": "CMD-201",
+      "unit_id": "CMD-201-U02",
+      "type": "scenario",
+      "prompt_es": "Mantener picture de mando. Describe preparación, decisión, comunicación y escalado.",
+      "answer_key_es": [
+        "preparación",
+        "decisión",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "COMMAND-Q006",
+      "course_id": "CMD-201",
+      "unit_id": "CMD-201-U02",
+      "type": "evidence",
+      "prompt_es": "¿Qué evidencia conservarías tras Conciencia situacional para demostrar competencia real?",
+      "answer_key_es": [
+        "contexto",
+        "acciones",
+        "resultado",
+        "feedback"
+      ]
+    },
+    {
+      "id": "COMMAND-Q007",
+      "course_id": "CMD-201",
+      "unit_id": "CMD-201-U03",
+      "type": "knowledge",
+      "prompt_es": "Explica claridad desde la perspectiva de Mando.",
+      "answer_key_es": [
+        "claridad",
+        "aplicación",
+        "límite o riesgo"
+      ]
+    },
+    {
+      "id": "COMMAND-Q008",
+      "course_id": "CMD-201",
+      "unit_id": "CMD-201-U03",
+      "type": "scenario",
+      "prompt_es": "Dirigir micro-equipo. Describe preparación, decisión, comunicación y escalado.",
+      "answer_key_es": [
+        "preparación",
+        "decisión",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "COMMAND-Q009",
+      "course_id": "CMD-201",
+      "unit_id": "CMD-201-U03",
+      "type": "evidence",
+      "prompt_es": "¿Qué evidencia conservarías tras Órdenes para demostrar competencia real?",
+      "answer_key_es": [
+        "contexto",
+        "acciones",
+        "resultado",
+        "feedback"
+      ]
+    },
+    {
+      "id": "COMMAND-Q010",
+      "course_id": "CMD-201",
+      "unit_id": "CMD-201-U04",
+      "type": "knowledge",
+      "prompt_es": "Explica opciones desde la perspectiva de Mando.",
+      "answer_key_es": [
+        "opciones",
+        "aplicación",
+        "límite o riesgo"
+      ]
+    },
+    {
+      "id": "COMMAND-Q011",
+      "course_id": "CMD-201",
+      "unit_id": "CMD-201-U04",
+      "type": "scenario",
+      "prompt_es": "Caso de puente. Describe preparación, decisión, comunicación y escalado.",
+      "answer_key_es": [
+        "preparación",
+        "decisión",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "COMMAND-Q012",
+      "course_id": "CMD-201",
+      "unit_id": "CMD-201-U04",
+      "type": "evidence",
+      "prompt_es": "¿Qué evidencia conservarías tras Decisión básica para demostrar competencia real?",
+      "answer_key_es": [
+        "contexto",
+        "acciones",
+        "resultado",
+        "feedback"
+      ]
+    },
+    {
+      "id": "COMMAND-Q013",
+      "course_id": "CMD-202",
+      "unit_id": "CMD-202-U01",
+      "type": "knowledge",
+      "prompt_es": "Explica vida desde la perspectiva de Mando.",
+      "answer_key_es": [
+        "vida",
+        "aplicación",
+        "límite o riesgo"
+      ]
+    },
+    {
+      "id": "COMMAND-Q014",
+      "course_id": "CMD-202",
+      "unit_id": "CMD-202-U01",
+      "type": "scenario",
+      "prompt_es": "Ordenar acciones. Describe preparación, decisión, comunicación y escalado.",
+      "answer_key_es": [
+        "preparación",
+        "decisión",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "COMMAND-Q015",
+      "course_id": "CMD-202",
+      "unit_id": "CMD-202-U01",
+      "type": "evidence",
+      "prompt_es": "¿Qué evidencia conservarías tras Prioridad en crisis para demostrar competencia real?",
+      "answer_key_es": [
+        "contexto",
+        "acciones",
+        "resultado",
+        "feedback"
+      ]
+    },
+    {
+      "id": "COMMAND-Q016",
+      "course_id": "CMD-202",
+      "unit_id": "CMD-202-U02",
+      "type": "knowledge",
+      "prompt_es": "Explica datos desde la perspectiva de Mando.",
+      "answer_key_es": [
+        "datos",
+        "aplicación",
+        "límite o riesgo"
+      ]
+    },
+    {
+      "id": "COMMAND-Q017",
+      "course_id": "CMD-202",
+      "unit_id": "CMD-202-U02",
+      "type": "scenario",
+      "prompt_es": "Escenario incompleto. Describe preparación, decisión, comunicación y escalado.",
+      "answer_key_es": [
+        "preparación",
+        "decisión",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "COMMAND-Q018",
+      "course_id": "CMD-202",
+      "unit_id": "CMD-202-U02",
+      "type": "evidence",
+      "prompt_es": "¿Qué evidencia conservarías tras Decisión con incertidumbre para demostrar competencia real?",
+      "answer_key_es": [
+        "contexto",
+        "acciones",
+        "resultado",
+        "feedback"
+      ]
+    },
+    {
+      "id": "COMMAND-Q019",
+      "course_id": "CMD-202",
+      "unit_id": "CMD-202-U03",
+      "type": "knowledge",
+      "prompt_es": "Explica recursos desde la perspectiva de Mando.",
+      "answer_key_es": [
+        "recursos",
+        "aplicación",
+        "límite o riesgo"
+      ]
+    },
+    {
+      "id": "COMMAND-Q020",
+      "course_id": "CMD-202",
+      "unit_id": "CMD-202-U03",
+      "type": "scenario",
+      "prompt_es": "Dirigir equipo multiárea. Describe preparación, decisión, comunicación y escalado.",
+      "answer_key_es": [
+        "preparación",
+        "decisión",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "COMMAND-Q021",
+      "course_id": "CMD-202",
+      "unit_id": "CMD-202-U03",
+      "type": "evidence",
+      "prompt_es": "¿Qué evidencia conservarías tras Coordinación de departamentos para demostrar competencia real?",
+      "answer_key_es": [
+        "contexto",
+        "acciones",
+        "resultado",
+        "feedback"
+      ]
+    },
+    {
+      "id": "COMMAND-Q022",
+      "course_id": "CMD-202",
+      "unit_id": "CMD-202-U04",
+      "type": "knowledge",
+      "prompt_es": "Explica desescalada desde la perspectiva de Mando.",
+      "answer_key_es": [
+        "desescalada",
+        "aplicación",
+        "límite o riesgo"
+      ]
+    },
+    {
+      "id": "COMMAND-Q023",
+      "course_id": "CMD-202",
+      "unit_id": "CMD-202-U04",
+      "type": "scenario",
+      "prompt_es": "Escena de contacto. Describe preparación, decisión, comunicación y escalado.",
+      "answer_key_es": [
+        "preparación",
+        "decisión",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "COMMAND-Q024",
+      "course_id": "CMD-202",
+      "unit_id": "CMD-202-U04",
+      "type": "evidence",
+      "prompt_es": "¿Qué evidencia conservarías tras Diplomacia operativa para demostrar competencia real?",
+      "answer_key_es": [
+        "contexto",
+        "acciones",
+        "resultado",
+        "feedback"
+      ]
+    },
+    {
+      "id": "COMMAND-Q025",
+      "course_id": "CMD-203",
+      "unit_id": "CMD-203-U01",
+      "type": "knowledge",
+      "prompt_es": "Explica estado desde la perspectiva de Mando.",
+      "answer_key_es": [
+        "estado",
+        "aplicación",
+        "límite o riesgo"
+      ]
+    },
+    {
+      "id": "COMMAND-Q026",
+      "course_id": "CMD-203",
+      "unit_id": "CMD-203-U01",
+      "type": "scenario",
+      "prompt_es": "Guardia simulada. Describe preparación, decisión, comunicación y escalado.",
+      "answer_key_es": [
+        "preparación",
+        "decisión",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "COMMAND-Q027",
+      "course_id": "CMD-203",
+      "unit_id": "CMD-203-U01",
+      "type": "evidence",
+      "prompt_es": "¿Qué evidencia conservarías tras Oficial de guardia para demostrar competencia real?",
+      "answer_key_es": [
+        "contexto",
+        "acciones",
+        "resultado",
+        "feedback"
+      ]
+    },
+    {
+      "id": "COMMAND-Q028",
+      "course_id": "CMD-203",
+      "unit_id": "CMD-203-U02",
+      "type": "knowledge",
+      "prompt_es": "Explica objetivo desde la perspectiva de Mando.",
+      "answer_key_es": [
+        "objetivo",
+        "aplicación",
+        "límite o riesgo"
+      ]
+    },
+    {
+      "id": "COMMAND-Q029",
+      "course_id": "CMD-203",
+      "unit_id": "CMD-203-U02",
+      "type": "scenario",
+      "prompt_es": "Preparar plan. Describe preparación, decisión, comunicación y escalado.",
+      "answer_key_es": [
+        "preparación",
+        "decisión",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "COMMAND-Q030",
+      "course_id": "CMD-203",
+      "unit_id": "CMD-203-U02",
+      "type": "evidence",
+      "prompt_es": "¿Qué evidencia conservarías tras Plan de misión para demostrar competencia real?",
+      "answer_key_es": [
+        "contexto",
+        "acciones",
+        "resultado",
+        "feedback"
+      ]
+    },
+    {
+      "id": "COMMAND-Q031",
+      "course_id": "CMD-203",
+      "unit_id": "CMD-203-U03",
+      "type": "knowledge",
+      "prompt_es": "Explica brief desde la perspectiva de Mando.",
+      "answer_key_es": [
+        "brief",
+        "aplicación",
+        "límite o riesgo"
+      ]
+    },
+    {
+      "id": "COMMAND-Q032",
+      "course_id": "CMD-203",
+      "unit_id": "CMD-203-U03",
+      "type": "scenario",
+      "prompt_es": "Dirigir incidente. Describe preparación, decisión, comunicación y escalado.",
+      "answer_key_es": [
+        "preparación",
+        "decisión",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "COMMAND-Q033",
+      "course_id": "CMD-203",
+      "unit_id": "CMD-203-U03",
+      "type": "evidence",
+      "prompt_es": "¿Qué evidencia conservarías tras Gestión de incidente para demostrar competencia real?",
+      "answer_key_es": [
+        "contexto",
+        "acciones",
+        "resultado",
+        "feedback"
+      ]
+    },
+    {
+      "id": "COMMAND-Q034",
+      "course_id": "CMD-203",
+      "unit_id": "CMD-203-U04",
+      "type": "knowledge",
+      "prompt_es": "Explica liderazgo desde la perspectiva de Mando.",
+      "answer_key_es": [
+        "liderazgo",
+        "aplicación",
+        "límite o riesgo"
+      ]
+    },
+    {
+      "id": "COMMAND-Q035",
+      "course_id": "CMD-203",
+      "unit_id": "CMD-203-U04",
+      "type": "scenario",
+      "prompt_es": "Panel de mando. Describe preparación, decisión, comunicación y escalado.",
+      "answer_key_es": [
+        "preparación",
+        "decisión",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "COMMAND-Q036",
+      "course_id": "CMD-203",
+      "unit_id": "CMD-203-U04",
+      "type": "evidence",
+      "prompt_es": "¿Qué evidencia conservarías tras Revisión intermedia para demostrar competencia real?",
+      "answer_key_es": [
+        "contexto",
+        "acciones",
+        "resultado",
+        "feedback"
+      ]
+    },
+    {
+      "id": "COMMAND-Q037",
+      "course_id": "CMD-101",
+      "unit_id": "CMD-101-U01",
+      "type": "knowledge",
+      "prompt_es": "Explica equipo desde la perspectiva de Mando.",
+      "answer_key_es": [
+        "equipo",
+        "aplicación",
+        "límite o riesgo"
+      ]
+    },
+    {
+      "id": "COMMAND-Q038",
+      "course_id": "CMD-101",
+      "unit_id": "CMD-101-U01",
+      "type": "scenario",
+      "prompt_es": "Dirigir turno. Describe preparación, decisión, comunicación y escalado.",
+      "answer_key_es": [
+        "preparación",
+        "decisión",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "COMMAND-Q039",
+      "course_id": "CMD-101",
+      "unit_id": "CMD-101-U01",
+      "type": "evidence",
+      "prompt_es": "¿Qué evidencia conservarías tras Supervisión profesional para demostrar competencia real?",
+      "answer_key_es": [
+        "contexto",
+        "acciones",
+        "resultado",
+        "feedback"
+      ]
+    },
+    {
+      "id": "COMMAND-Q040",
+      "course_id": "CMD-101",
+      "unit_id": "CMD-101-U02",
+      "type": "knowledge",
+      "prompt_es": "Explica capacidad desde la perspectiva de Mando.",
+      "answer_key_es": [
+        "capacidad",
+        "aplicación",
+        "límite o riesgo"
+      ]
+    },
+    {
+      "id": "COMMAND-Q041",
+      "course_id": "CMD-101",
+      "unit_id": "CMD-101-U02",
+      "type": "scenario",
+      "prompt_es": "Caso humano. Describe preparación, decisión, comunicación y escalado.",
+      "answer_key_es": [
+        "preparación",
+        "decisión",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "COMMAND-Q042",
+      "course_id": "CMD-101",
+      "unit_id": "CMD-101-U02",
+      "type": "evidence",
+      "prompt_es": "¿Qué evidencia conservarías tras Mando y personal para demostrar competencia real?",
+      "answer_key_es": [
+        "contexto",
+        "acciones",
+        "resultado",
+        "feedback"
+      ]
+    },
+    {
+      "id": "COMMAND-Q043",
+      "course_id": "CMD-101",
+      "unit_id": "CMD-101-U03",
+      "type": "knowledge",
+      "prompt_es": "Explica intención desde la perspectiva de Mando.",
+      "answer_key_es": [
+        "intención",
+        "aplicación",
+        "límite o riesgo"
+      ]
+    },
+    {
+      "id": "COMMAND-Q044",
+      "course_id": "CMD-101",
+      "unit_id": "CMD-101-U03",
+      "type": "scenario",
+      "prompt_es": "Emitir plan de órdenes. Describe preparación, decisión, comunicación y escalado.",
+      "answer_key_es": [
+        "preparación",
+        "decisión",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "COMMAND-Q045",
+      "course_id": "CMD-101",
+      "unit_id": "CMD-101-U03",
+      "type": "evidence",
+      "prompt_es": "¿Qué evidencia conservarías tras Órdenes complejas para demostrar competencia real?",
+      "answer_key_es": [
+        "contexto",
+        "acciones",
+        "resultado",
+        "feedback"
+      ]
+    },
+    {
+      "id": "COMMAND-Q046",
+      "course_id": "CMD-101",
+      "unit_id": "CMD-101-U04",
+      "type": "knowledge",
+      "prompt_es": "Explica cualificaciones desde la perspectiva de Mando.",
+      "answer_key_es": [
+        "cualificaciones",
+        "aplicación",
+        "límite o riesgo"
+      ]
+    },
+    {
+      "id": "COMMAND-Q047",
+      "course_id": "CMD-101",
+      "unit_id": "CMD-101-U04",
+      "type": "scenario",
+      "prompt_es": "Revisión de trayectoria. Describe preparación, decisión, comunicación y escalado.",
+      "answer_key_es": [
+        "preparación",
+        "decisión",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "COMMAND-Q048",
+      "course_id": "CMD-101",
+      "unit_id": "CMD-101-U04",
+      "type": "evidence",
+      "prompt_es": "¿Qué evidencia conservarías tras Preparación de mando para demostrar competencia real?",
+      "answer_key_es": [
+        "contexto",
+        "acciones",
+        "resultado",
+        "feedback"
+      ]
+    },
+    {
+      "id": "COMMAND-Q049",
+      "course_id": "CMD-102",
+      "unit_id": "CMD-102-U01",
+      "type": "knowledge",
+      "prompt_es": "Explica briefing desde la perspectiva de Mando.",
+      "answer_key_es": [
+        "briefing",
+        "aplicación",
+        "límite o riesgo"
+      ]
+    },
+    {
+      "id": "COMMAND-Q050",
+      "course_id": "CMD-102",
+      "unit_id": "CMD-102-U01",
+      "type": "scenario",
+      "prompt_es": "Dirigir misión. Describe preparación, decisión, comunicación y escalado.",
+      "answer_key_es": [
+        "preparación",
+        "decisión",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "COMMAND-Q051",
+      "course_id": "CMD-102",
+      "unit_id": "CMD-102-U01",
+      "type": "evidence",
+      "prompt_es": "¿Qué evidencia conservarías tras Misión completa para demostrar competencia real?",
+      "answer_key_es": [
+        "contexto",
+        "acciones",
+        "resultado",
+        "feedback"
+      ]
+    },
+    {
+      "id": "COMMAND-Q052",
+      "course_id": "CMD-102",
+      "unit_id": "CMD-102-U02",
+      "type": "knowledge",
+      "prompt_es": "Explica consecuencias desde la perspectiva de Mando.",
+      "answer_key_es": [
+        "consecuencias",
+        "aplicación",
+        "límite o riesgo"
+      ]
+    },
+    {
+      "id": "COMMAND-Q053",
+      "course_id": "CMD-102",
+      "unit_id": "CMD-102-U02",
+      "type": "scenario",
+      "prompt_es": "Caso complejo. Describe preparación, decisión, comunicación y escalado.",
+      "answer_key_es": [
+        "preparación",
+        "decisión",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "COMMAND-Q054",
+      "course_id": "CMD-102",
+      "unit_id": "CMD-102-U02",
+      "type": "evidence",
+      "prompt_es": "¿Qué evidencia conservarías tras Riesgo estratégico local para demostrar competencia real?",
+      "answer_key_es": [
+        "contexto",
+        "acciones",
+        "resultado",
+        "feedback"
+      ]
+    },
+    {
+      "id": "COMMAND-Q055",
+      "course_id": "CMD-102",
+      "unit_id": "CMD-102-U03",
+      "type": "knowledge",
+      "prompt_es": "Explica autoridad desde la perspectiva de Mando.",
+      "answer_key_es": [
+        "autoridad",
+        "aplicación",
+        "límite o riesgo"
+      ]
+    },
+    {
+      "id": "COMMAND-Q056",
+      "course_id": "CMD-102",
+      "unit_id": "CMD-102-U03",
+      "type": "scenario",
+      "prompt_es": "Escena diplomática. Describe preparación, decisión, comunicación y escalado.",
+      "answer_key_es": [
+        "preparación",
+        "decisión",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "COMMAND-Q057",
+      "course_id": "CMD-102",
+      "unit_id": "CMD-102-U03",
+      "type": "evidence",
+      "prompt_es": "¿Qué evidencia conservarías tras Interacción externa para demostrar competencia real?",
+      "answer_key_es": [
+        "contexto",
+        "acciones",
+        "resultado",
+        "feedback"
+      ]
+    },
+    {
+      "id": "COMMAND-Q058",
+      "course_id": "CMD-102",
+      "unit_id": "CMD-102-U04",
+      "type": "knowledge",
+      "prompt_es": "Explica estado desde la perspectiva de Mando.",
+      "answer_key_es": [
+        "estado",
+        "aplicación",
+        "límite o riesgo"
+      ]
+    },
+    {
+      "id": "COMMAND-Q059",
+      "course_id": "CMD-102",
+      "unit_id": "CMD-102-U04",
+      "type": "scenario",
+      "prompt_es": "Transferir control. Describe preparación, decisión, comunicación y escalado.",
+      "answer_key_es": [
+        "preparación",
+        "decisión",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "COMMAND-Q060",
+      "course_id": "CMD-102",
+      "unit_id": "CMD-102-U04",
+      "type": "evidence",
+      "prompt_es": "¿Qué evidencia conservarías tras Handover de mando para demostrar competencia real?",
+      "answer_key_es": [
+        "contexto",
+        "acciones",
+        "resultado",
+        "feedback"
+      ]
+    }
+  ]
+}

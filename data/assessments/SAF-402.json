@@ -1,0 +1,284 @@
+{
+  "schema_version": "1.0.0",
+  "course_id": "SAF-402",
+  "status": "generated_from_authoritative_curriculum",
+  "question_count": 24,
+  "questions": [
+    {
+      "id": "SAF-402-Q001",
+      "unit_id": "SAF-402-U01",
+      "type": "short_answer",
+      "prompt_es": "Explica estados de alerta y su relevancia operativa.",
+      "answer_key_es": [
+        "estados de alerta",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "SAF-402-Q002",
+      "unit_id": "SAF-402-U01",
+      "type": "compare",
+      "prompt_es": "Compara estados de alerta con alarmas locales. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "estados de alerta",
+        "alarmas locales",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "SAF-402-Q003",
+      "unit_id": "SAF-402-U01",
+      "type": "scenario",
+      "prompt_es": "Situación: Reconocer y responder a señales de entrenamiento. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "SAF-402-Q004",
+      "unit_id": "SAF-402-U01",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Alertas y señales y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "SAF-402-Q005",
+      "unit_id": "SAF-402-U02",
+      "type": "short_answer",
+      "prompt_es": "Explica sellado y su relevancia operativa.",
+      "answer_key_es": [
+        "sellado",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "SAF-402-Q006",
+      "unit_id": "SAF-402-U02",
+      "type": "compare",
+      "prompt_es": "Compara sellado con rutas. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "sellado",
+        "rutas",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "SAF-402-Q007",
+      "unit_id": "SAF-402-U02",
+      "type": "scenario",
+      "prompt_es": "Situación: Ejercicio de evacuación. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "SAF-402-Q008",
+      "unit_id": "SAF-402-U02",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Evacuación y pérdida de presión y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "SAF-402-Q009",
+      "unit_id": "SAF-402-U03",
+      "type": "short_answer",
+      "prompt_es": "Explica fuego y su relevancia operativa.",
+      "answer_key_es": [
+        "fuego",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "SAF-402-Q010",
+      "unit_id": "SAF-402-U03",
+      "type": "compare",
+      "prompt_es": "Compara fuego con humo. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "fuego",
+        "humo",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "SAF-402-Q011",
+      "unit_id": "SAF-402-U03",
+      "type": "scenario",
+      "prompt_es": "Situación: Respuesta inicial en simulador. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "SAF-402-Q012",
+      "unit_id": "SAF-402-U03",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Incendio y ambiente y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "SAF-402-Q013",
+      "unit_id": "SAF-402-U04",
+      "type": "short_answer",
+      "prompt_es": "Explica seguridad de escena y su relevancia operativa.",
+      "answer_key_es": [
+        "seguridad de escena",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "SAF-402-Q014",
+      "unit_id": "SAF-402-U04",
+      "type": "compare",
+      "prompt_es": "Compara seguridad de escena con aviso médico. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "seguridad de escena",
+        "aviso médico",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "SAF-402-Q015",
+      "unit_id": "SAF-402-U04",
+      "type": "scenario",
+      "prompt_es": "Situación: Atender un supuesto hasta relevo médico. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "SAF-402-Q016",
+      "unit_id": "SAF-402-U04",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Heridos y primera respuesta y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "SAF-402-Q017",
+      "unit_id": "SAF-402-U05",
+      "type": "short_answer",
+      "prompt_es": "Explica aislamiento y su relevancia operativa.",
+      "answer_key_es": [
+        "aislamiento",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "SAF-402-Q018",
+      "unit_id": "SAF-402-U05",
+      "type": "compare",
+      "prompt_es": "Compara aislamiento con prioridades. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "aislamiento",
+        "prioridades",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "SAF-402-Q019",
+      "unit_id": "SAF-402-U05",
+      "type": "scenario",
+      "prompt_es": "Situación: Apoyar un equipo sin asumir funciones técnicas no cualificadas. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "SAF-402-Q020",
+      "unit_id": "SAF-402-U05",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Control de daños: conciencia básica y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "SAF-402-Q021",
+      "unit_id": "SAF-402-U06",
+      "type": "short_answer",
+      "prompt_es": "Explica alarma y su relevancia operativa.",
+      "answer_key_es": [
+        "alarma",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "SAF-402-Q022",
+      "unit_id": "SAF-402-U06",
+      "type": "compare",
+      "prompt_es": "Compara alarma con movimiento. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "alarma",
+        "movimiento",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "SAF-402-Q023",
+      "unit_id": "SAF-402-U06",
+      "type": "scenario",
+      "prompt_es": "Situación: Simulación corta de emergencia. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "SAF-402-Q024",
+      "unit_id": "SAF-402-U06",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Ejercicio integrado y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    }
+  ]
+}
