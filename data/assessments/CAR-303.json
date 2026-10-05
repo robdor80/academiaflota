@@ -1,283 +1,261 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "course_id": "CAR-303",
-  "status": "generated_from_authoritative_curriculum",
+  "status": "editorially_aligned_with_developed_manual",
+  "source_manual": "gameplay/careers/academy_path/study_materials/third_class/CAR-303/MANUAL_v1_0.md",
   "question_count": 24,
+  "rule": "No question may require knowledge that is not explicitly taught in CAR-303 or established prerequisites.",
   "questions": [
     {
       "id": "CAR-303-Q001",
       "unit_id": "CAR-303-U01",
       "type": "knowledge",
-      "prompt_es": "Explica fortalezas y da un ejemplo operativo.",
+      "prompt_es": "¿Qué forma perfil académico?",
       "answer_key_es": [
         "fortalezas",
-        "ejemplo coherente",
-        "límite o contexto"
+        "carencias",
+        "evidencia",
+        "preferencias",
+        "conducta",
+        "experiencias"
       ]
     },
     {
       "id": "CAR-303-Q002",
       "unit_id": "CAR-303-U01",
-      "type": "relationship",
-      "prompt_es": "Relaciona fortalezas con carencias. ¿Qué información pasa de uno a otro?",
+      "type": "short_answer",
+      "prompt_es": "¿Qué convierte capacidad en fortaleza?",
       "answer_key_es": [
-        "fortalezas",
-        "carencias",
-        "flujo de información o dependencia"
+        "evidencia repetida",
+        "práctica",
+        "observación"
       ]
     },
     {
       "id": "CAR-303-Q003",
       "unit_id": "CAR-303-U01",
-      "type": "scenario",
-      "prompt_es": "Revisar expediente. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "judgment",
+      "prompt_es": "¿Carencia significa incompatibilidad?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "no"
       ]
     },
     {
       "id": "CAR-303-Q004",
       "unit_id": "CAR-303-U01",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Perfil académico actual, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "judgment",
+      "prompt_es": "¿Expediente determina destino?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "no"
       ]
     },
     {
       "id": "CAR-303-Q005",
       "unit_id": "CAR-303-U02",
       "type": "knowledge",
-      "prompt_es": "Explica tipo de trabajo y da un ejemplo operativo.",
+      "prompt_es": "¿Qué rama coordina recursos?",
       "answer_key_es": [
-        "tipo de trabajo",
-        "ejemplo coherente",
-        "límite o contexto"
+        "Operaciones"
       ]
     },
     {
       "id": "CAR-303-Q006",
       "unit_id": "CAR-303-U02",
-      "type": "relationship",
-      "prompt_es": "Relaciona tipo de trabajo con responsabilidades. ¿Qué información pasa de uno a otro?",
+      "type": "knowledge",
+      "prompt_es": "¿Qué rama prioriza análisis científico?",
       "answer_key_es": [
-        "tipo de trabajo",
-        "responsabilidades",
-        "flujo de información o dependencia"
+        "Ciencia/Sensores"
       ]
     },
     {
       "id": "CAR-303-Q007",
       "unit_id": "CAR-303-U02",
-      "type": "scenario",
-      "prompt_es": "Comparar ramas con ejemplos. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué combina competencia profesional?",
       "answer_key_es": [
-        "preparación",
-        "acción",
+        "técnica",
+        "procedimiento",
         "comunicación",
-        "escalado"
+        "juicio",
+        "teamwork"
       ]
     },
     {
       "id": "CAR-303-Q008",
       "unit_id": "CAR-303-U02",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Qué exige cada rama, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "judgment",
+      "prompt_es": "¿Por qué importa estilo de servicio?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "tipo de trabajo/responsabilidad/ritmo"
       ]
     },
     {
       "id": "CAR-303-Q009",
       "unit_id": "CAR-303-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica recomendación y da un ejemplo operativo.",
+      "type": "compare",
+      "prompt_es": "Diferencia aptitud y preferencia.",
       "answer_key_es": [
-        "recomendación",
-        "ejemplo coherente",
-        "límite o contexto"
+        "capacidad",
+        "deseo"
       ]
     },
     {
       "id": "CAR-303-Q010",
       "unit_id": "CAR-303-U03",
-      "type": "relationship",
-      "prompt_es": "Relaciona recomendación con motivación. ¿Qué información pasa de uno a otro?",
+      "type": "knowledge",
+      "prompt_es": "¿Qué puede expresar recomendación?",
       "answer_key_es": [
-        "recomendación",
-        "motivación",
-        "flujo de información o dependencia"
+        "favorable",
+        "desarrollo",
+        "prudencia",
+        "más exposición"
       ]
     },
     {
       "id": "CAR-303-Q011",
       "unit_id": "CAR-303-U03",
-      "type": "scenario",
-      "prompt_es": "Contrastar deseo y evidencia sin bloquear por puntuación oculta. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "judgment",
+      "prompt_es": "¿Recomendación obliga?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "no"
       ]
     },
     {
       "id": "CAR-303-Q012",
       "unit_id": "CAR-303-U03",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Aptitud y preferencia, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "knowledge",
+      "prompt_es": "¿Qué puede bloquear objetivamente?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "prerequisitos",
+        "mínimos",
+        "cualificaciones"
       ]
     },
     {
       "id": "CAR-303-Q013",
       "unit_id": "CAR-303-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica largo plazo y da un ejemplo operativo.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué es objetivo profesional?",
       "answer_key_es": [
-        "largo plazo",
-        "ejemplo coherente",
-        "límite o contexto"
+        "dirección de trayectoria"
       ]
     },
     {
       "id": "CAR-303-Q014",
       "unit_id": "CAR-303-U04",
-      "type": "relationship",
-      "prompt_es": "Relaciona largo plazo con medio plazo. ¿Qué información pasa de uno a otro?",
+      "type": "judgment",
+      "prompt_es": "¿Objetivo crea puesto?",
       "answer_key_es": [
-        "largo plazo",
-        "medio plazo",
-        "flujo de información o dependencia"
+        "no"
       ]
     },
     {
       "id": "CAR-303-Q015",
       "unit_id": "CAR-303-U04",
-      "type": "scenario",
-      "prompt_es": "Actualizar trayectoria. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "judgment",
+      "prompt_es": "¿Puede haber rutas múltiples?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "sí"
       ]
     },
     {
       "id": "CAR-303-Q016",
       "unit_id": "CAR-303-U04",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Objetivos de carrera, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "knowledge",
+      "prompt_es": "¿Qué determina coherencia?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "objetivo",
+        "acciones",
+        "requisitos",
+        "oportunidades"
       ]
     },
     {
       "id": "CAR-303-Q017",
       "unit_id": "CAR-303-U05",
-      "type": "knowledge",
-      "prompt_es": "Explica feedback y da un ejemplo operativo.",
+      "type": "short_answer",
+      "prompt_es": "¿Para qué sirve orientación?",
       "answer_key_es": [
-        "feedback",
-        "ejemplo coherente",
-        "límite o contexto"
+        "interpretar evidencia",
+        "intereses",
+        "dudas",
+        "desarrollo"
       ]
     },
     {
       "id": "CAR-303-Q018",
       "unit_id": "CAR-303-U05",
-      "type": "relationship",
-      "prompt_es": "Relaciona feedback con preguntas. ¿Qué información pasa de uno a otro?",
+      "type": "knowledge",
+      "prompt_es": "¿Qué debe separar feedback?",
       "answer_key_es": [
-        "feedback",
-        "preguntas",
-        "flujo de información o dependencia"
+        "observación",
+        "evaluación",
+        "recomendación",
+        "opinión"
       ]
     },
     {
       "id": "CAR-303-Q019",
       "unit_id": "CAR-303-U05",
-      "type": "scenario",
-      "prompt_es": "Hablar con instructores/mentores. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "knowledge",
+      "prompt_es": "Nombra apoyos posibles.",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "tutoría",
+        "optativas",
+        "práctica",
+        "rotación",
+        "catch-up"
       ]
     },
     {
       "id": "CAR-303-Q020",
       "unit_id": "CAR-303-U05",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Entrevistas de orientación, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "judgment",
+      "prompt_es": "¿Por qué no porcentaje oculto?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "evitar simplificación/score secreto"
       ]
     },
     {
       "id": "CAR-303-Q021",
       "unit_id": "CAR-303-U06",
-      "type": "knowledge",
-      "prompt_es": "Explica decisión del jugador y da un ejemplo operativo.",
+      "type": "short_answer",
+      "prompt_es": "¿Quién decide especialización?",
       "answer_key_es": [
-        "decisión del jugador",
-        "ejemplo coherente",
-        "límite o contexto"
+        "jugador"
       ]
     },
     {
       "id": "CAR-303-Q022",
       "unit_id": "CAR-303-U06",
-      "type": "relationship",
-      "prompt_es": "Relaciona decisión del jugador con requisitos objetivos. ¿Qué información pasa de uno a otro?",
+      "type": "knowledge",
+      "prompt_es": "¿Qué valida sistema?",
       "answer_key_es": [
-        "decisión del jugador",
-        "requisitos objetivos",
-        "flujo de información o dependencia"
+        "requisitos",
+        "cualificaciones",
+        "prerequisitos",
+        "restricciones"
       ]
     },
     {
       "id": "CAR-303-Q023",
       "unit_id": "CAR-303-U06",
-      "type": "scenario",
-      "prompt_es": "Confirmar especialización. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "judgment",
+      "prompt_es": "¿Especialización garantiza destino?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "no"
       ]
     },
     {
       "id": "CAR-303-Q024",
       "unit_id": "CAR-303-U06",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Selección final, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "knowledge",
+      "prompt_es": "¿Qué puede requerir cambio futuro?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "tutoría",
+        "catch-up",
+        "evaluación",
+        "tiempo"
       ]
     }
   ]
