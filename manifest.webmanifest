@@ -2,21 +2,23 @@
   "name": "Academia de la Flota Estelar",
   "short_name": "Academia Flota",
   "description": "Portal de estudio de la Academia de la Flota Estelar.",
-  "id": "./",
-  "start_url": "./",
-  "scope": "./",
+  "id": "/academiaflota/",
+  "start_url": "/academiaflota/",
+  "scope": "/academiaflota/",
   "display": "standalone",
+  "orientation": "portrait-primary",
   "background_color": "#0b1b2e",
   "theme_color": "#0b1b2e",
+  "prefer_related_applications": false,
   "icons": [
     {
-      "src": "starfleet-app-icon.svg",
+      "src": "starfleet-app-icon.svg?v=0.6.2",
       "sizes": "192x192",
       "type": "image/svg+xml",
       "purpose": "any"
     },
     {
-      "src": "starfleet-app-icon.svg",
+      "src": "starfleet-app-icon.svg?v=0.6.2",
       "sizes": "512x512",
       "type": "image/svg+xml",
       "purpose": "any maskable"
