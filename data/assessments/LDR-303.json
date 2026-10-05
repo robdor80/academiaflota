@@ -1,283 +1,281 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "course_id": "LDR-303",
-  "status": "generated_from_authoritative_curriculum",
+  "status": "editorially_aligned_with_developed_manual",
+  "source_manual": "gameplay/careers/academy_path/study_materials/third_class/LDR-303/MANUAL_v1_0.md",
   "question_count": 24,
+  "rule": "No question may require knowledge that is not explicitly taught in LDR-303 or established prerequisites.",
   "questions": [
     {
       "id": "LDR-303-Q001",
       "unit_id": "LDR-303-U01",
       "type": "knowledge",
-      "prompt_es": "Explica tarea y da un ejemplo operativo.",
+      "prompt_es": "¿Qué debe quedar claro al aceptar responsabilidad?",
       "answer_key_es": [
         "tarea",
-        "ejemplo coherente",
-        "límite o contexto"
+        "objetivo",
+        "personas",
+        "recursos",
+        "límites",
+        "cierre"
       ]
     },
     {
       "id": "LDR-303-Q002",
       "unit_id": "LDR-303-U01",
-      "type": "relationship",
-      "prompt_es": "Relaciona tarea con equipo. ¿Qué información pasa de uno a otro?",
+      "type": "short_answer",
+      "prompt_es": "¿Qué implica seguimiento?",
       "answer_key_es": [
-        "tarea",
-        "equipo",
-        "flujo de información o dependencia"
+        "progreso",
+        "bloqueos",
+        "apoyo",
+        "ajuste",
+        "cierre"
       ]
     },
     {
       "id": "LDR-303-Q003",
       "unit_id": "LDR-303-U01",
-      "type": "scenario",
-      "prompt_es": "Aceptar y definir una responsabilidad. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "judgment",
+      "prompt_es": "¿Mal resultado prueba siempre mal liderazgo?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "no",
+        "depende contexto"
       ]
     },
     {
       "id": "LDR-303-Q004",
       "unit_id": "LDR-303-U01",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Responsabilidad, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "short_answer",
+      "prompt_es": "¿Qué significa rendición de cuentas?",
       "answer_key_es": [
-        "información disponible entonces",
+        "explicar información",
         "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "motivo",
+        "resultado",
+        "aprendizaje"
       ]
     },
     {
       "id": "LDR-303-Q005",
       "unit_id": "LDR-303-U02",
       "type": "knowledge",
-      "prompt_es": "Explica claridad y da un ejemplo operativo.",
+      "prompt_es": "¿Qué incluye instrucción clara?",
       "answer_key_es": [
-        "claridad",
-        "ejemplo coherente",
-        "límite o contexto"
+        "objetivo",
+        "acción",
+        "límite",
+        "prioridad",
+        "tiempo",
+        "cierre"
       ]
     },
     {
       "id": "LDR-303-Q006",
       "unit_id": "LDR-303-U02",
-      "type": "relationship",
-      "prompt_es": "Relaciona claridad con intención. ¿Qué información pasa de uno a otro?",
+      "type": "short_answer",
+      "prompt_es": "¿Para qué sirve explicar intención?",
       "answer_key_es": [
-        "claridad",
-        "intención",
-        "flujo de información o dependencia"
+        "adaptar ejecución"
       ]
     },
     {
       "id": "LDR-303-Q007",
       "unit_id": "LDR-303-U02",
-      "type": "scenario",
-      "prompt_es": "Dirigir tarea breve. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "knowledge",
+      "prompt_es": "¿Qué respuestas puede dar receptor?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "acuse",
+        "aclarar",
+        "imposibilidad",
+        "confirmar"
       ]
     },
     {
       "id": "LDR-303-Q008",
       "unit_id": "LDR-303-U02",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Dar instrucciones, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "judgment",
+      "prompt_es": "¿Cambiar una instrucción es siempre debilidad?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "no",
+        "nueva información"
       ]
     },
     {
       "id": "LDR-303-Q009",
       "unit_id": "LDR-303-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica capacidad y da un ejemplo operativo.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué significa delegar?",
       "answer_key_es": [
-        "capacidad",
-        "ejemplo coherente",
-        "límite o contexto"
+        "asignar tarea manteniendo seguimiento"
       ]
     },
     {
       "id": "LDR-303-Q010",
       "unit_id": "LDR-303-U03",
-      "type": "relationship",
-      "prompt_es": "Relaciona capacidad con carga. ¿Qué información pasa de uno a otro?",
+      "type": "knowledge",
+      "prompt_es": "¿Qué determina capacidad?",
       "answer_key_es": [
-        "capacidad",
-        "carga",
-        "flujo de información o dependencia"
+        "formación",
+        "experiencia",
+        "autoridad",
+        "estado",
+        "supervisión"
       ]
     },
     {
       "id": "LDR-303-Q011",
       "unit_id": "LDR-303-U03",
-      "type": "scenario",
-      "prompt_es": "Repartir trabajo en equipo. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué carga importa?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "persona puede estar saturada"
       ]
     },
     {
       "id": "LDR-303-Q012",
       "unit_id": "LDR-303-U03",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Delegar, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "judgment",
+      "prompt_es": "¿Confianza elimina verificación?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "no"
       ]
     },
     {
       "id": "LDR-303-Q013",
       "unit_id": "LDR-303-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica hecho y da un ejemplo operativo.",
+      "type": "procedure",
+      "prompt_es": "¿Qué haces ante riesgo inmediato?",
       "answer_key_es": [
-        "hecho",
-        "ejemplo coherente",
-        "límite o contexto"
+        "corregir situación primero",
+        "feedback después"
       ]
     },
     {
       "id": "LDR-303-Q014",
       "unit_id": "LDR-303-U04",
-      "type": "relationship",
-      "prompt_es": "Relaciona hecho con riesgo. ¿Qué información pasa de uno a otro?",
+      "type": "knowledge",
+      "prompt_es": "¿Qué contiene feedback útil?",
       "answer_key_es": [
-        "hecho",
-        "riesgo",
-        "flujo de información o dependencia"
+        "conducta",
+        "efecto",
+        "alternativa",
+        "expectativa"
       ]
     },
     {
       "id": "LDR-303-Q015",
       "unit_id": "LDR-303-U04",
-      "type": "scenario",
-      "prompt_es": "Responder a error de compañero. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué no humillar?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "no mejora seguridad/aprendizaje"
       ]
     },
     {
       "id": "LDR-303-Q016",
       "unit_id": "LDR-303-U04",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Corregir errores, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "knowledge",
+      "prompt_es": "¿Cuándo escalar error?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "autoridad",
+        "repetición",
+        "ocultación",
+        "seguridad",
+        "formalidad"
       ]
     },
     {
       "id": "LDR-303-Q017",
       "unit_id": "LDR-303-U05",
-      "type": "knowledge",
-      "prompt_es": "Explica desacuerdo y da un ejemplo operativo.",
+      "type": "judgment",
+      "prompt_es": "¿Desacuerdo es insubordinación automática?",
       "answer_key_es": [
-        "desacuerdo",
-        "ejemplo coherente",
-        "límite o contexto"
+        "no"
       ]
     },
     {
       "id": "LDR-303-Q018",
       "unit_id": "LDR-303-U05",
-      "type": "relationship",
-      "prompt_es": "Relaciona desacuerdo con prioridad. ¿Qué información pasa de uno a otro?",
+      "type": "knowledge",
+      "prompt_es": "¿Qué provoca presión?",
       "answer_key_es": [
-        "desacuerdo",
-        "prioridad",
-        "flujo de información o dependencia"
+        "menos escucha",
+        "conclusiones rápidas",
+        "tono",
+        "menos opciones"
       ]
     },
     {
       "id": "LDR-303-Q019",
       "unit_id": "LDR-303-U05",
-      "type": "scenario",
-      "prompt_es": "Resolver conflicto operativo moderado. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "knowledge",
+      "prompt_es": "Nombra técnicas de desescalada.",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "resumir",
+        "volver hechos",
+        "separar emoción",
+        "alternativas",
+        "autoridad"
       ]
     },
     {
       "id": "LDR-303-Q020",
       "unit_id": "LDR-303-U05",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Conflicto y presión, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "judgment",
+      "prompt_es": "¿Por qué puede haber conversación posterior?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "no todo se resuelve durante crisis"
       ]
     },
     {
       "id": "LDR-303-Q021",
       "unit_id": "LDR-303-U06",
       "type": "knowledge",
-      "prompt_es": "Explica briefing y da un ejemplo operativo.",
+      "prompt_es": "¿Qué hace líder en briefing?",
       "answer_key_es": [
-        "briefing",
-        "ejemplo coherente",
-        "límite o contexto"
+        "objetivo",
+        "roles",
+        "restricciones",
+        "reportes",
+        "dudas"
       ]
     },
     {
       "id": "LDR-303-Q022",
       "unit_id": "LDR-303-U06",
-      "type": "relationship",
-      "prompt_es": "Relaciona briefing con ejecución. ¿Qué información pasa de uno a otro?",
+      "type": "judgment",
+      "prompt_es": "¿Por qué evitar micromanagement?",
       "answer_key_es": [
-        "briefing",
-        "ejecución",
-        "flujo de información o dependencia"
+        "delegación",
+        "atención general",
+        "autonomía"
       ]
     },
     {
       "id": "LDR-303-Q023",
       "unit_id": "LDR-303-U06",
-      "type": "scenario",
-      "prompt_es": "Liderar equipo pequeño. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "knowledge",
+      "prompt_es": "¿Qué se comprueba en cierre?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "resultado",
+        "pendientes",
+        "personas",
+        "handoffs",
+        "registros"
       ]
     },
     {
       "id": "LDR-303-Q024",
       "unit_id": "LDR-303-U06",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Liderazgo en simulación, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "short_answer",
+      "prompt_es": "¿En qué evidencia se basa valoración?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "observación",
+        "eventos",
+        "informes",
+        "resultados",
+        "patrón"
       ]
     }
   ]
