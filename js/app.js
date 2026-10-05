@@ -1,9 +1,15 @@
 import {
   getProfiles, createProfile, setActiveProfile, clearActiveProfile, getActiveProfile,
-  updateProfile, deleteProfile, exportProfile, importProfile
-} from "./storage.js?v=0.3.1";
+  updateProfile, deleteProfile, exportProfile, importProfile,
+  setStorageOwner, getStorageOwner, onProfileChange
+} from "./storage.js?v=0.5.0";
 import { loadStudyData, renderLesson } from "./study.js?v=0.3.1";
 import { loadEvaluationData, renderExam, gradeExam, renderResult } from "./evaluation.js?v=0.3.1";
+import { firebaseConfigured } from "./firebase-config.js";
+import { createFirebaseClient } from "./firebase-client.js";
+import { observeUser, signInWithGoogle, signOutGoogle } from "./firebase-auth.js";
+import { createCloudStorage } from "./cloud-storage.js";
+import { createSyncManager } from "./sync.js";
 
 const app = {
   profile: null,
@@ -26,6 +32,91 @@ const navButtons = Array.from(document.querySelectorAll(".primary-nav [data-rout
 const moduleList = document.querySelector("#module-list");
 const lessonContent = document.querySelector("#lesson-content");
 const curriculumContainer = document.querySelector("#curriculum-container");
+let firebaseClient = null;
+let syncManager = null;
+let accountUser = null;
+let syncState = "loading";
+let syncError = "";
+
+function renderAccount() {
+  const name = accountUser ? (accountUser.displayName || accountUser.email || "Cuenta Google") :
+    (firebaseConfigured ? "Sin sesión iniciada" : "Modo local");
+  const labels = {
+    loading: "Comprobando sesión…",
+    unconfigured: "Sincronización en la nube no configurada.",
+    signedOut: "Inicie sesión para sincronizar entre dispositivos.",
+    syncing: "Sincronizando perfiles…",
+    ready: "Sincronización activa.",
+    offline: "Sin conexión. Se usa la caché local; se reintentará al volver.",
+    error: "Error de sincronización. Los cambios siguen guardados en este dispositivo."
+  };
+  const status = labels[syncState] + (syncState === "error" && syncError ? " " + syncError : "");
+  document.querySelectorAll("[data-account-name]").forEach(function(node) { node.textContent = name; });
+  document.querySelectorAll("[data-sync-status]").forEach(function(node) { node.textContent = status; });
+  document.querySelectorAll("[data-google-signin]").forEach(function(node) { node.hidden = !firebaseClient || !!accountUser; });
+  document.querySelectorAll("[data-google-signout]").forEach(function(node) { node.hidden = !accountUser; });
+  document.querySelector("[data-storage-explanation]").textContent = accountUser
+    ? "El progreso se guarda en esta cuenta y en la caché de este dispositivo."
+    : "El progreso se guarda en este dispositivo hasta que sincronice sus perfiles.";
+  document.querySelector("[data-sidebar-sync-status]").textContent = status;
+  const candidates = accountUser && syncManager && syncState !== "syncing" ? syncManager.legacyCandidates() : [];
+  document.querySelectorAll("[data-migration-notice]").forEach(function(node) { node.hidden = !candidates.length; });
+}
+
+function setSyncState(state, error) {
+  syncState = state;
+  syncError = error?.message || "";
+  renderAccount();
+}
+
+function refreshFromSync() {
+  renderProfileList();
+  if (!app.profile) { renderAccount(); return; }
+  const current = getProfiles().find(function(profile) { return profile.id === app.profile.id; });
+  if (!current) { leaveProfile(); return; }
+  app.profile = current;
+  refreshProfileUI();
+  if (app.route === "subject") renderModule(app.activeModule);
+  if (app.route === "practices") renderPractices();
+  renderAccount();
+}
+
+async function handleAuthUser(user) {
+  if (syncManager) syncManager.stop();
+  app.profile = null;
+  portal.hidden = true;
+  gateway.hidden = false;
+  closeSettings();
+  accountUser = user;
+  setStorageOwner(user?.uid || null);
+  renderProfileList();
+  setSyncState(user ? "syncing" : "signedOut");
+  if (user) syncManager.start(user.uid);
+  const active = getActiveProfile();
+  if (active) await enterProfile(active.id);
+}
+
+async function startFirebase() {
+  if (!firebaseConfigured) {
+    renderProfileList();
+    setSyncState("unconfigured");
+    const active = getActiveProfile();
+    if (active) await enterProfile(active.id);
+    return;
+  }
+  try {
+    firebaseClient = await createFirebaseClient();
+    syncManager = createSyncManager(createCloudStorage(firebaseClient), setSyncState, refreshFromSync);
+    onProfileChange(function() { syncManager.schedule(); });
+    observeUser(firebaseClient, function(user) { void handleAuthUser(user); }, function(error) {
+      setSyncState("error", error);
+    });
+  } catch (error) {
+    firebaseClient = null;
+    renderProfileList();
+    setSyncState("error", error);
+  }
+}
 
 function profileStudy() { return app.profile.studies.sensores; }
 function profileAccessStudy() { return app.profile.studies.acceso; }
@@ -86,6 +177,7 @@ function renderProfileList() {
 }
 
 async function enterProfile(id) {
+  const owner = getStorageOwner();
   setActiveProfile(id);
   app.profile = getActiveProfile();
   if (!app.profile) return;
@@ -93,6 +185,7 @@ async function enterProfile(id) {
   gateway.hidden = true;
   portal.hidden = false;
   await ensureData();
+  if (owner !== getStorageOwner() || app.profile?.id !== id) return;
   renderCurriculum();
   refreshProfileUI();
   setRoute("dashboard");
@@ -500,6 +593,21 @@ document.addEventListener("click", function(event) {
   if (event.target.id === "complete-practice") togglePracticeComplete();
 });
 
+document.addEventListener("click", async function(event) {
+  if (event.target.closest("[data-google-signin]")) {
+    try { await signInWithGoogle(firebaseClient); }
+    catch (error) { if (error.code !== "auth/popup-closed-by-user") setSyncState("error", error); }
+  }
+  if (event.target.closest("[data-google-signout]")) {
+    try { await signOutGoogle(firebaseClient); }
+    catch (error) { setSyncState("error", error); }
+  }
+  if (event.target.closest("[data-migrate-profiles]")) {
+    const count = syncManager.migrateLegacy();
+    if (count) setSyncState("syncing");
+  }
+});
+
 document.querySelector("#close-settings").addEventListener("click", closeSettings);
 settingsBackdrop.addEventListener("click", function(event) {
   if (event.target === settingsBackdrop) closeSettings();
@@ -549,11 +657,10 @@ document.addEventListener("submit", function(event) {
 
 document.querySelector("#export-profile").addEventListener("click", function() { exportProfile(app.profile); });
 document.querySelector("#delete-profile").addEventListener("click", function() {
-  if (!confirm("¿Eliminar definitivamente el perfil local de " + app.profile.name + "? Esta acción no puede deshacerse salvo que exista una copia JSON exportada.")) return;
+  if (!confirm("¿Eliminar el perfil " + app.profile.name + "? Si hay sesión iniciada, el borrado se sincronizará con la cuenta. Esta acción no puede deshacerse salvo que exista una copia JSON exportada.")) return;
   deleteProfile(app.profile.id);
   leaveProfile();
 });
 
-renderProfileList();
-const active = getActiveProfile();
-if (active) enterProfile(active.id);
+renderAccount();
+void startFirebase();

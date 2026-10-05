@@ -7,9 +7,9 @@
   <meta name="description" content="Portal de estudio de la Academia de la Flota Estelar. Consulta, práctica y evaluación del currículo del videojuego.">
   <title>Academia de la Flota Estelar</title>
   <link rel="stylesheet" href="css/base.css?v=0.4.0">
-  <link rel="stylesheet" href="css/academy.css?v=0.4.0">
+  <link rel="stylesheet" href="css/academy.css?v=0.5.0">
   <link rel="stylesheet" href="css/responsive.css?v=0.4.0">
-  <script type="module" src="js/app.js?v=0.3.3"></script>
+  <script type="module" src="js/app.js?v=0.5.0"></script>
 </head>
 <body>
   <div class="orientation-lock" aria-hidden="true">
@@ -47,6 +47,15 @@
       </section>
 
       <section class="cadet-access" aria-labelledby="profiles-title">
+        <div class="cloud-account" aria-live="polite">
+          <div><span class="eyebrow">CUENTA Y SINCRONIZACIÓN</span><strong data-account-name>Comprobando sesión…</strong><small data-sync-status>Preparando el acceso.</small></div>
+          <button class="button button--secondary" type="button" data-google-signin hidden>Iniciar sesión con Google</button>
+          <button class="text-button" type="button" data-google-signout hidden>Cerrar sesión</button>
+        </div>
+        <div class="migration-notice" data-migration-notice hidden>
+          <p>Se han encontrado perfiles locales. ¿Desea sincronizarlos con su cuenta?</p>
+          <button class="button button--secondary" type="button" data-migrate-profiles>Sincronizar perfiles</button>
+        </div>
         <div class="cadet-access__heading">
           <div>
             <span class="eyebrow">PERFIL DE ESTUDIO</span>
@@ -60,15 +69,15 @@
         <div id="empty-profiles" class="empty-state" hidden>
           <div class="empty-state__mark">AF</div>
           <div>
-            <strong>No hay perfiles locales</strong>
+            <strong>No hay perfiles en esta cuenta</strong>
             <p>Abra Ajustes para crear o importar uno.</p>
           </div>
           <button class="text-action" type="button" data-open-settings>Abrir Ajustes →</button>
         </div>
 
         <div class="access-footnote">
-          <strong>Acceso local sin contraseña</strong>
-          <p>El perfil solo guarda su progreso de estudio, prácticas y resultados de test en este dispositivo.</p>
+          <strong>Perfiles de estudio</strong>
+          <p data-storage-explanation>El progreso se guarda en este dispositivo.</p>
         </div>
       </section>
     </main>
@@ -123,6 +132,7 @@
       </div>
 
       <div class="desktop-sidebar__account">
+        <small data-sidebar-sync-status>Sincronización local</small>
         <span class="desktop-sidebar__label">PERFIL ACTIVO</span>
         <strong id="desktop-cadet-name">—</strong>
         <div class="desktop-sidebar__account-actions">
@@ -318,7 +328,7 @@
           <div>
             <span class="overline">PERFIL LOCAL DE ESTUDIO</span>
             <h1 id="record-name">Roberto</h1>
-            <p>Resumen de lo estudiado, las prácticas realizadas y los tests completados en este navegador.</p>
+            <p>Resumen de lo estudiado, las prácticas realizadas y los tests completados.</p>
           </div>
         </div>
 
@@ -332,7 +342,7 @@
           </div>
           <div class="record-management__actions">
             <button id="export-profile" class="button button--primary">Exportar perfil JSON</button>
-            <button id="delete-profile" class="button button--danger">Eliminar perfil local</button>
+            <button id="delete-profile" class="button button--danger">Eliminar perfil</button>
           </div>
         </section>
       </section>
@@ -340,7 +350,7 @@
 
     <footer class="portal-footer">
       <span>ACADEMIA DE LA FLOTA ESTELAR · PORTAL DE ESTUDIO</span>
-      <span>Perfil local · <strong id="footer-cadet-name">—</strong></span>
+      <span>Perfil de estudio · <strong id="footer-cadet-name">—</strong></span>
     </footer>
   </div>
 
@@ -355,7 +365,19 @@
       </header>
 
       <section class="settings-section">
-        <span class="settings-section__code">PERFILES LOCALES</span>
+        <span class="settings-section__code">CUENTA Y SINCRONIZACIÓN</span>
+        <h3 data-account-name>Comprobando sesión…</h3>
+        <p data-sync-status>Preparando el acceso.</p>
+        <button class="button button--primary" type="button" data-google-signin hidden>Iniciar sesión con Google</button>
+        <button class="button button--secondary" type="button" data-google-signout hidden>Cerrar sesión</button>
+        <div class="migration-notice" data-migration-notice hidden>
+          <p>Se han encontrado perfiles locales. ¿Desea sincronizarlos con su cuenta?</p>
+          <button class="button button--secondary" type="button" data-migrate-profiles>Sincronizar perfiles</button>
+        </div>
+      </section>
+
+      <section class="settings-section">
+        <span class="settings-section__code">PERFILES DE ESTUDIO</span>
         <h3>Crear nuevo perfil</h3>
         <p>Cree un perfil independiente para conservar progreso, prácticas y resultados.</p>
         <form id="create-profile-form" class="profile-form">
@@ -376,7 +398,7 @@
       </section>
 
       <footer class="settings-panel__footer">
-        <span>Los perfiles se almacenan localmente y no forman parte de la partida del videojuego.</span>
+        <span>Los perfiles son independientes de la partida del videojuego.</span>
       </footer>
     </aside>
   </div>
