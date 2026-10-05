@@ -1,0 +1,314 @@
+{
+  "schema_version": "1.0.0",
+  "course_id": "OPS-102",
+  "status": "generated_from_authoritative_curriculum",
+  "question_count": 24,
+  "questions": [
+    {
+      "id": "OPS-102-Q001",
+      "unit_id": "OPS-102-U01",
+      "type": "service_readiness",
+      "prompt_es": "Explica objetivos como se lo explicarías a un Alférez que recibe su primer destino.",
+      "answer_key_es": [
+        "objetivos",
+        "responsabilidad",
+        "límite",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "OPS-102-Q002",
+      "unit_id": "OPS-102-U01",
+      "type": "scenario",
+      "prompt_es": "Escenario: Preparación multi-rama. Describe decisión inicial, alternativas y condición de escalado.",
+      "answer_key_es": [
+        "situación",
+        "alternativas",
+        "riesgo",
+        "autoridad",
+        "escalado"
+      ]
+    },
+    {
+      "id": "OPS-102-Q003",
+      "unit_id": "OPS-102-U01",
+      "type": "debrief",
+      "prompt_es": "Tras Briefing de misión, separa hechos, información disponible, decisión y resultado.",
+      "answer_key_es": [
+        "hechos",
+        "información disponible entonces",
+        "decisión",
+        "resultado",
+        "sin hindsight bias"
+      ]
+    },
+    {
+      "id": "OPS-102-Q004",
+      "unit_id": "OPS-102-U01",
+      "type": "handoff",
+      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "answer_key_es": [
+        "estado",
+        "órdenes",
+        "riesgos",
+        "pendientes",
+        "acciones realizadas"
+      ]
+    },
+    {
+      "id": "OPS-102-Q005",
+      "unit_id": "OPS-102-U02",
+      "type": "service_readiness",
+      "prompt_es": "Explica configuración como se lo explicarías a un Alférez que recibe su primer destino.",
+      "answer_key_es": [
+        "configuración",
+        "responsabilidad",
+        "límite",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "OPS-102-Q006",
+      "unit_id": "OPS-102-U02",
+      "type": "scenario",
+      "prompt_es": "Escenario: Preparar salida. Describe decisión inicial, alternativas y condición de escalado.",
+      "answer_key_es": [
+        "situación",
+        "alternativas",
+        "riesgo",
+        "autoridad",
+        "escalado"
+      ]
+    },
+    {
+      "id": "OPS-102-Q007",
+      "unit_id": "OPS-102-U02",
+      "type": "debrief",
+      "prompt_es": "Tras Preparación de nave/equipo, separa hechos, información disponible, decisión y resultado.",
+      "answer_key_es": [
+        "hechos",
+        "información disponible entonces",
+        "decisión",
+        "resultado",
+        "sin hindsight bias"
+      ]
+    },
+    {
+      "id": "OPS-102-Q008",
+      "unit_id": "OPS-102-U02",
+      "type": "handoff",
+      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "answer_key_es": [
+        "estado",
+        "órdenes",
+        "riesgos",
+        "pendientes",
+        "acciones realizadas"
+      ]
+    },
+    {
+      "id": "OPS-102-Q009",
+      "unit_id": "OPS-102-U03",
+      "type": "service_readiness",
+      "prompt_es": "Explica guardias como se lo explicarías a un Alférez que recibe su primer destino.",
+      "answer_key_es": [
+        "guardias",
+        "responsabilidad",
+        "límite",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "OPS-102-Q010",
+      "unit_id": "OPS-102-U03",
+      "type": "scenario",
+      "prompt_es": "Escenario: Operación sostenida. Describe decisión inicial, alternativas y condición de escalado.",
+      "answer_key_es": [
+        "situación",
+        "alternativas",
+        "riesgo",
+        "autoridad",
+        "escalado"
+      ]
+    },
+    {
+      "id": "OPS-102-Q011",
+      "unit_id": "OPS-102-U03",
+      "type": "debrief",
+      "prompt_es": "Tras Tránsito y rutina, separa hechos, información disponible, decisión y resultado.",
+      "answer_key_es": [
+        "hechos",
+        "información disponible entonces",
+        "decisión",
+        "resultado",
+        "sin hindsight bias"
+      ]
+    },
+    {
+      "id": "OPS-102-Q012",
+      "unit_id": "OPS-102-U03",
+      "type": "handoff",
+      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "answer_key_es": [
+        "estado",
+        "órdenes",
+        "riesgos",
+        "pendientes",
+        "acciones realizadas"
+      ]
+    },
+    {
+      "id": "OPS-102-Q013",
+      "unit_id": "OPS-102-U04",
+      "type": "service_readiness",
+      "prompt_es": "Explica ciencia/diplomacia/logística/exploración contextual como se lo explicarías a un Alférez que recibe su primer destino.",
+      "answer_key_es": [
+        "ciencia/diplomacia/logística/exploración contextual",
+        "responsabilidad",
+        "límite",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "OPS-102-Q014",
+      "unit_id": "OPS-102-U04",
+      "type": "scenario",
+      "prompt_es": "Escenario: Ejecutar misión. Describe decisión inicial, alternativas y condición de escalado.",
+      "answer_key_es": [
+        "situación",
+        "alternativas",
+        "riesgo",
+        "autoridad",
+        "escalado"
+      ]
+    },
+    {
+      "id": "OPS-102-Q015",
+      "unit_id": "OPS-102-U04",
+      "type": "debrief",
+      "prompt_es": "Tras Objetivo principal, separa hechos, información disponible, decisión y resultado.",
+      "answer_key_es": [
+        "hechos",
+        "información disponible entonces",
+        "decisión",
+        "resultado",
+        "sin hindsight bias"
+      ]
+    },
+    {
+      "id": "OPS-102-Q016",
+      "unit_id": "OPS-102-U04",
+      "type": "handoff",
+      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "answer_key_es": [
+        "estado",
+        "órdenes",
+        "riesgos",
+        "pendientes",
+        "acciones realizadas"
+      ]
+    },
+    {
+      "id": "OPS-102-Q017",
+      "unit_id": "OPS-102-U05",
+      "type": "service_readiness",
+      "prompt_es": "Explica evento como se lo explicarías a un Alférez que recibe su primer destino.",
+      "answer_key_es": [
+        "evento",
+        "responsabilidad",
+        "límite",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "OPS-102-Q018",
+      "unit_id": "OPS-102-U05",
+      "type": "scenario",
+      "prompt_es": "Escenario: Responder sin guion fijo. Describe decisión inicial, alternativas y condición de escalado.",
+      "answer_key_es": [
+        "situación",
+        "alternativas",
+        "riesgo",
+        "autoridad",
+        "escalado"
+      ]
+    },
+    {
+      "id": "OPS-102-Q019",
+      "unit_id": "OPS-102-U05",
+      "type": "debrief",
+      "prompt_es": "Tras Cambio de condiciones, separa hechos, información disponible, decisión y resultado.",
+      "answer_key_es": [
+        "hechos",
+        "información disponible entonces",
+        "decisión",
+        "resultado",
+        "sin hindsight bias"
+      ]
+    },
+    {
+      "id": "OPS-102-Q020",
+      "unit_id": "OPS-102-U05",
+      "type": "handoff",
+      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "answer_key_es": [
+        "estado",
+        "órdenes",
+        "riesgos",
+        "pendientes",
+        "acciones realizadas"
+      ]
+    },
+    {
+      "id": "OPS-102-Q021",
+      "unit_id": "OPS-102-U06",
+      "type": "service_readiness",
+      "prompt_es": "Explica handoff como se lo explicarías a un Alférez que recibe su primer destino.",
+      "answer_key_es": [
+        "handoff",
+        "responsabilidad",
+        "límite",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "OPS-102-Q022",
+      "unit_id": "OPS-102-U06",
+      "type": "scenario",
+      "prompt_es": "Escenario: Cerrar misión. Describe decisión inicial, alternativas y condición de escalado.",
+      "answer_key_es": [
+        "situación",
+        "alternativas",
+        "riesgo",
+        "autoridad",
+        "escalado"
+      ]
+    },
+    {
+      "id": "OPS-102-Q023",
+      "unit_id": "OPS-102-U06",
+      "type": "debrief",
+      "prompt_es": "Tras Regreso y cierre, separa hechos, información disponible, decisión y resultado.",
+      "answer_key_es": [
+        "hechos",
+        "información disponible entonces",
+        "decisión",
+        "resultado",
+        "sin hindsight bias"
+      ]
+    },
+    {
+      "id": "OPS-102-Q024",
+      "unit_id": "OPS-102-U06",
+      "type": "handoff",
+      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "answer_key_es": [
+        "estado",
+        "órdenes",
+        "riesgos",
+        "pendientes",
+        "acciones realizadas"
+      ]
+    }
+  ]
+}

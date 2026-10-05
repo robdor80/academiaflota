@@ -1,0 +1,314 @@
+{
+  "schema_version": "1.0.0",
+  "course_id": "GRD-103",
+  "status": "generated_from_authoritative_curriculum",
+  "question_count": 24,
+  "questions": [
+    {
+      "id": "GRD-103-Q001",
+      "unit_id": "GRD-103-U01",
+      "type": "service_readiness",
+      "prompt_es": "Explica cierres como se lo explicarías a un Alférez que recibe su primer destino.",
+      "answer_key_es": [
+        "cierres",
+        "responsabilidad",
+        "límite",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "GRD-103-Q002",
+      "unit_id": "GRD-103-U01",
+      "type": "scenario",
+      "prompt_es": "Escenario: Escenas relevantes. Describe decisión inicial, alternativas y condición de escalado.",
+      "answer_key_es": [
+        "situación",
+        "alternativas",
+        "riesgo",
+        "autoridad",
+        "escalado"
+      ]
+    },
+    {
+      "id": "GRD-103-Q003",
+      "unit_id": "GRD-103-U01",
+      "type": "debrief",
+      "prompt_es": "Tras Últimos días, separa hechos, información disponible, decisión y resultado.",
+      "answer_key_es": [
+        "hechos",
+        "información disponible entonces",
+        "decisión",
+        "resultado",
+        "sin hindsight bias"
+      ]
+    },
+    {
+      "id": "GRD-103-Q004",
+      "unit_id": "GRD-103-U01",
+      "type": "handoff",
+      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "answer_key_es": [
+        "estado",
+        "órdenes",
+        "riesgos",
+        "pendientes",
+        "acciones realizadas"
+      ]
+    },
+    {
+      "id": "GRD-103-Q005",
+      "unit_id": "GRD-103-U02",
+      "type": "service_readiness",
+      "prompt_es": "Explica especialidad como se lo explicarías a un Alférez que recibe su primer destino.",
+      "answer_key_es": [
+        "especialidad",
+        "responsabilidad",
+        "límite",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "GRD-103-Q006",
+      "unit_id": "GRD-103-U02",
+      "type": "scenario",
+      "prompt_es": "Escenario: Sellar registro. Describe decisión inicial, alternativas y condición de escalado.",
+      "answer_key_es": [
+        "situación",
+        "alternativas",
+        "riesgo",
+        "autoridad",
+        "escalado"
+      ]
+    },
+    {
+      "id": "GRD-103-Q007",
+      "unit_id": "GRD-103-U02",
+      "type": "debrief",
+      "prompt_es": "Tras Expediente académico final, separa hechos, información disponible, decisión y resultado.",
+      "answer_key_es": [
+        "hechos",
+        "información disponible entonces",
+        "decisión",
+        "resultado",
+        "sin hindsight bias"
+      ]
+    },
+    {
+      "id": "GRD-103-Q008",
+      "unit_id": "GRD-103-U02",
+      "type": "handoff",
+      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "answer_key_es": [
+        "estado",
+        "órdenes",
+        "riesgos",
+        "pendientes",
+        "acciones realizadas"
+      ]
+    },
+    {
+      "id": "GRD-103-Q009",
+      "unit_id": "GRD-103-U03",
+      "type": "service_readiness",
+      "prompt_es": "Explica protocolo como se lo explicarías a un Alférez que recibe su primer destino.",
+      "answer_key_es": [
+        "protocolo",
+        "responsabilidad",
+        "límite",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "GRD-103-Q010",
+      "unit_id": "GRD-103-U03",
+      "type": "scenario",
+      "prompt_es": "Escenario: Evento jugable. Describe decisión inicial, alternativas y condición de escalado.",
+      "answer_key_es": [
+        "situación",
+        "alternativas",
+        "riesgo",
+        "autoridad",
+        "escalado"
+      ]
+    },
+    {
+      "id": "GRD-103-Q011",
+      "unit_id": "GRD-103-U03",
+      "type": "debrief",
+      "prompt_es": "Tras Ceremonia, separa hechos, información disponible, decisión y resultado.",
+      "answer_key_es": [
+        "hechos",
+        "información disponible entonces",
+        "decisión",
+        "resultado",
+        "sin hindsight bias"
+      ]
+    },
+    {
+      "id": "GRD-103-Q012",
+      "unit_id": "GRD-103-U03",
+      "type": "handoff",
+      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "answer_key_es": [
+        "estado",
+        "órdenes",
+        "riesgos",
+        "pendientes",
+        "acciones realizadas"
+      ]
+    },
+    {
+      "id": "GRD-103-Q013",
+      "unit_id": "GRD-103-U04",
+      "type": "service_readiness",
+      "prompt_es": "Explica rango de Alférez como se lo explicarías a un Alférez que recibe su primer destino.",
+      "answer_key_es": [
+        "rango de Alférez",
+        "responsabilidad",
+        "límite",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "GRD-103-Q014",
+      "unit_id": "GRD-103-U04",
+      "type": "scenario",
+      "prompt_es": "Escenario: Aplicar cambio de estado. Describe decisión inicial, alternativas y condición de escalado.",
+      "answer_key_es": [
+        "situación",
+        "alternativas",
+        "riesgo",
+        "autoridad",
+        "escalado"
+      ]
+    },
+    {
+      "id": "GRD-103-Q015",
+      "unit_id": "GRD-103-U04",
+      "type": "debrief",
+      "prompt_es": "Tras Comisión, separa hechos, información disponible, decisión y resultado.",
+      "answer_key_es": [
+        "hechos",
+        "información disponible entonces",
+        "decisión",
+        "resultado",
+        "sin hindsight bias"
+      ]
+    },
+    {
+      "id": "GRD-103-Q016",
+      "unit_id": "GRD-103-U04",
+      "type": "handoff",
+      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "answer_key_es": [
+        "estado",
+        "órdenes",
+        "riesgos",
+        "pendientes",
+        "acciones realizadas"
+      ]
+    },
+    {
+      "id": "GRD-103-Q017",
+      "unit_id": "GRD-103-U05",
+      "type": "service_readiness",
+      "prompt_es": "Explica primer destino como se lo explicarías a un Alférez que recibe su primer destino.",
+      "answer_key_es": [
+        "primer destino",
+        "responsabilidad",
+        "límite",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "GRD-103-Q018",
+      "unit_id": "GRD-103-U05",
+      "type": "scenario",
+      "prompt_es": "Escenario: Recibir órdenes. Describe decisión inicial, alternativas y condición de escalado.",
+      "answer_key_es": [
+        "situación",
+        "alternativas",
+        "riesgo",
+        "autoridad",
+        "escalado"
+      ]
+    },
+    {
+      "id": "GRD-103-Q019",
+      "unit_id": "GRD-103-U05",
+      "type": "debrief",
+      "prompt_es": "Tras Órdenes, separa hechos, información disponible, decisión y resultado.",
+      "answer_key_es": [
+        "hechos",
+        "información disponible entonces",
+        "decisión",
+        "resultado",
+        "sin hindsight bias"
+      ]
+    },
+    {
+      "id": "GRD-103-Q020",
+      "unit_id": "GRD-103-U05",
+      "type": "handoff",
+      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "answer_key_es": [
+        "estado",
+        "órdenes",
+        "riesgos",
+        "pendientes",
+        "acciones realizadas"
+      ]
+    },
+    {
+      "id": "GRD-103-Q021",
+      "unit_id": "GRD-103-U06",
+      "type": "service_readiness",
+      "prompt_es": "Explica relaciones como se lo explicarías a un Alférez que recibe su primer destino.",
+      "answer_key_es": [
+        "relaciones",
+        "responsabilidad",
+        "límite",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "GRD-103-Q022",
+      "unit_id": "GRD-103-U06",
+      "type": "scenario",
+      "prompt_es": "Escenario: Transición a servicio activo. Describe decisión inicial, alternativas y condición de escalado.",
+      "answer_key_es": [
+        "situación",
+        "alternativas",
+        "riesgo",
+        "autoridad",
+        "escalado"
+      ]
+    },
+    {
+      "id": "GRD-103-Q023",
+      "unit_id": "GRD-103-U06",
+      "type": "debrief",
+      "prompt_es": "Tras Salida de Academia, separa hechos, información disponible, decisión y resultado.",
+      "answer_key_es": [
+        "hechos",
+        "información disponible entonces",
+        "decisión",
+        "resultado",
+        "sin hindsight bias"
+      ]
+    },
+    {
+      "id": "GRD-103-Q024",
+      "unit_id": "GRD-103-U06",
+      "type": "handoff",
+      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "answer_key_es": [
+        "estado",
+        "órdenes",
+        "riesgos",
+        "pendientes",
+        "acciones realizadas"
+      ]
+    }
+  ]
+}

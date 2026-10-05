@@ -1,0 +1,314 @@
+{
+  "schema_version": "1.0.0",
+  "course_id": "DEB-102",
+  "status": "generated_from_authoritative_curriculum",
+  "question_count": 24,
+  "questions": [
+    {
+      "id": "DEB-102-Q001",
+      "unit_id": "DEB-102-U01",
+      "type": "service_readiness",
+      "prompt_es": "Explica timeline como se lo explicarías a un Alférez que recibe su primer destino.",
+      "answer_key_es": [
+        "timeline",
+        "responsabilidad",
+        "límite",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "DEB-102-Q002",
+      "unit_id": "DEB-102-U01",
+      "type": "scenario",
+      "prompt_es": "Escenario: Reconstruir misión. Describe decisión inicial, alternativas y condición de escalado.",
+      "answer_key_es": [
+        "situación",
+        "alternativas",
+        "riesgo",
+        "autoridad",
+        "escalado"
+      ]
+    },
+    {
+      "id": "DEB-102-Q003",
+      "unit_id": "DEB-102-U01",
+      "type": "debrief",
+      "prompt_es": "Tras Reconstrucción factual, separa hechos, información disponible, decisión y resultado.",
+      "answer_key_es": [
+        "hechos",
+        "información disponible entonces",
+        "decisión",
+        "resultado",
+        "sin hindsight bias"
+      ]
+    },
+    {
+      "id": "DEB-102-Q004",
+      "unit_id": "DEB-102-U01",
+      "type": "handoff",
+      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "answer_key_es": [
+        "estado",
+        "órdenes",
+        "riesgos",
+        "pendientes",
+        "acciones realizadas"
+      ]
+    },
+    {
+      "id": "DEB-102-Q005",
+      "unit_id": "DEB-102-U02",
+      "type": "service_readiness",
+      "prompt_es": "Explica conocimiento como se lo explicarías a un Alférez que recibe su primer destino.",
+      "answer_key_es": [
+        "conocimiento",
+        "responsabilidad",
+        "límite",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "DEB-102-Q006",
+      "unit_id": "DEB-102-U02",
+      "type": "scenario",
+      "prompt_es": "Escenario: Separar hindsight. Describe decisión inicial, alternativas y condición de escalado.",
+      "answer_key_es": [
+        "situación",
+        "alternativas",
+        "riesgo",
+        "autoridad",
+        "escalado"
+      ]
+    },
+    {
+      "id": "DEB-102-Q007",
+      "unit_id": "DEB-102-U02",
+      "type": "debrief",
+      "prompt_es": "Tras Información disponible entonces, separa hechos, información disponible, decisión y resultado.",
+      "answer_key_es": [
+        "hechos",
+        "información disponible entonces",
+        "decisión",
+        "resultado",
+        "sin hindsight bias"
+      ]
+    },
+    {
+      "id": "DEB-102-Q008",
+      "unit_id": "DEB-102-U02",
+      "type": "handoff",
+      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "answer_key_es": [
+        "estado",
+        "órdenes",
+        "riesgos",
+        "pendientes",
+        "acciones realizadas"
+      ]
+    },
+    {
+      "id": "DEB-102-Q009",
+      "unit_id": "DEB-102-U03",
+      "type": "service_readiness",
+      "prompt_es": "Explica proceso como se lo explicarías a un Alférez que recibe su primer destino.",
+      "answer_key_es": [
+        "proceso",
+        "responsabilidad",
+        "límite",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "DEB-102-Q010",
+      "unit_id": "DEB-102-U03",
+      "type": "scenario",
+      "prompt_es": "Escenario: Evaluar decisión sin confundirla con resultado. Describe decisión inicial, alternativas y condición de escalado.",
+      "answer_key_es": [
+        "situación",
+        "alternativas",
+        "riesgo",
+        "autoridad",
+        "escalado"
+      ]
+    },
+    {
+      "id": "DEB-102-Q011",
+      "unit_id": "DEB-102-U03",
+      "type": "debrief",
+      "prompt_es": "Tras Calidad de decisión, separa hechos, información disponible, decisión y resultado.",
+      "answer_key_es": [
+        "hechos",
+        "información disponible entonces",
+        "decisión",
+        "resultado",
+        "sin hindsight bias"
+      ]
+    },
+    {
+      "id": "DEB-102-Q012",
+      "unit_id": "DEB-102-U03",
+      "type": "handoff",
+      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "answer_key_es": [
+        "estado",
+        "órdenes",
+        "riesgos",
+        "pendientes",
+        "acciones realizadas"
+      ]
+    },
+    {
+      "id": "DEB-102-Q013",
+      "unit_id": "DEB-102-U04",
+      "type": "service_readiness",
+      "prompt_es": "Explica acción propia como se lo explicarías a un Alférez que recibe su primer destino.",
+      "answer_key_es": [
+        "acción propia",
+        "responsabilidad",
+        "límite",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "DEB-102-Q014",
+      "unit_id": "DEB-102-U04",
+      "type": "scenario",
+      "prompt_es": "Escenario: Asumir y explicar decisiones. Describe decisión inicial, alternativas y condición de escalado.",
+      "answer_key_es": [
+        "situación",
+        "alternativas",
+        "riesgo",
+        "autoridad",
+        "escalado"
+      ]
+    },
+    {
+      "id": "DEB-102-Q015",
+      "unit_id": "DEB-102-U04",
+      "type": "debrief",
+      "prompt_es": "Tras Responsabilidad, separa hechos, información disponible, decisión y resultado.",
+      "answer_key_es": [
+        "hechos",
+        "información disponible entonces",
+        "decisión",
+        "resultado",
+        "sin hindsight bias"
+      ]
+    },
+    {
+      "id": "DEB-102-Q016",
+      "unit_id": "DEB-102-U04",
+      "type": "handoff",
+      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "answer_key_es": [
+        "estado",
+        "órdenes",
+        "riesgos",
+        "pendientes",
+        "acciones realizadas"
+      ]
+    },
+    {
+      "id": "DEB-102-Q017",
+      "unit_id": "DEB-102-U05",
+      "type": "service_readiness",
+      "prompt_es": "Explica procedimiento como se lo explicarías a un Alférez que recibe su primer destino.",
+      "answer_key_es": [
+        "procedimiento",
+        "responsabilidad",
+        "límite",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "DEB-102-Q018",
+      "unit_id": "DEB-102-U05",
+      "type": "scenario",
+      "prompt_es": "Escenario: Proponer mejora. Describe decisión inicial, alternativas y condición de escalado.",
+      "answer_key_es": [
+        "situación",
+        "alternativas",
+        "riesgo",
+        "autoridad",
+        "escalado"
+      ]
+    },
+    {
+      "id": "DEB-102-Q019",
+      "unit_id": "DEB-102-U05",
+      "type": "debrief",
+      "prompt_es": "Tras Lecciones y cambio, separa hechos, información disponible, decisión y resultado.",
+      "answer_key_es": [
+        "hechos",
+        "información disponible entonces",
+        "decisión",
+        "resultado",
+        "sin hindsight bias"
+      ]
+    },
+    {
+      "id": "DEB-102-Q020",
+      "unit_id": "DEB-102-U05",
+      "type": "handoff",
+      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "answer_key_es": [
+        "estado",
+        "órdenes",
+        "riesgos",
+        "pendientes",
+        "acciones realizadas"
+      ]
+    },
+    {
+      "id": "DEB-102-Q021",
+      "unit_id": "DEB-102-U06",
+      "type": "service_readiness",
+      "prompt_es": "Explica evidencia como se lo explicarías a un Alférez que recibe su primer destino.",
+      "answer_key_es": [
+        "evidencia",
+        "responsabilidad",
+        "límite",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "DEB-102-Q022",
+      "unit_id": "DEB-102-U06",
+      "type": "scenario",
+      "prompt_es": "Escenario: Sesión final. Describe decisión inicial, alternativas y condición de escalado.",
+      "answer_key_es": [
+        "situación",
+        "alternativas",
+        "riesgo",
+        "autoridad",
+        "escalado"
+      ]
+    },
+    {
+      "id": "DEB-102-Q023",
+      "unit_id": "DEB-102-U06",
+      "type": "debrief",
+      "prompt_es": "Tras Debrief de prácticum, separa hechos, información disponible, decisión y resultado.",
+      "answer_key_es": [
+        "hechos",
+        "información disponible entonces",
+        "decisión",
+        "resultado",
+        "sin hindsight bias"
+      ]
+    },
+    {
+      "id": "DEB-102-Q024",
+      "unit_id": "DEB-102-U06",
+      "type": "handoff",
+      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "answer_key_es": [
+        "estado",
+        "órdenes",
+        "riesgos",
+        "pendientes",
+        "acciones realizadas"
+      ]
+    }
+  ]
+}
