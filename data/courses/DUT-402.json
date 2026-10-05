@@ -1,7 +1,7 @@
 {
   "subject": "Servicio, guardias y trabajo profesional",
   "code": "DUT-402",
-  "version": "1.0",
+  "version": "1.1",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/DUT-402/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/DUT-402/MANUAL_v1_0.md",
@@ -21,30 +21,38 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Introducir la disciplina cotidiana del servicio y la continuidad de una guardia."
+          "text": "Una guardia es una franja de responsabilidad: el tripulante está asignado a una función, mantiene continuidad y responde dentro de su autoridad."
+        },
+        {
+          "type": "definition",
+          "term": "Turno",
+          "text": "Franja temporal de servicio."
+        },
+        {
+          "type": "definition",
+          "term": "Puesto",
+          "text": "Función desempeñada durante esa franja."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Patrones de guardia"
         },
         {
           "type": "bullets",
           "items": [
-            "turno",
-            "puesto",
-            "responsabilidad",
-            "supervisión"
+            "Tres turnos",
+            "Cuatro turnos",
+            "Patrón personalizado"
           ]
         },
         {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Leer una asignación de guardia."
+          "type": "p",
+          "text": "No existe una única distribución horaria universal para todas las eras y clases de nave."
         },
         {
           "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Comprobación práctica."
+          "label": "SUPERVISIÓN",
+          "text": "Estar supervisado no elimina responsabilidad: hay que atender, informar, seguir procedimiento y reconocer límites."
         },
         {
           "type": "heading",
@@ -53,25 +61,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras turno.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Leer una asignación de guardia.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/federation/starfleet/duty_shifts/shift_model.json",
-            "lore/federation/starfleet/command_structure/succession_rules.json",
-            "gameplay/ship_operations/operational_event_log/README.md"
+            "Diferencia turno y puesto.",
+            "¿Qué convierte una franja en una guardia profesional?",
+            "¿Qué patrones admite el proyecto?",
+            "¿Por qué la supervisión no elimina responsabilidad?",
+            "¿Qué debes conocer antes de asumir una guardia?"
           ]
         }
       ]
@@ -83,30 +77,35 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Introducir la disciplina cotidiana del servicio y la continuidad de una guardia."
+          "text": "La presentación al puesto empieza antes de sentarse ante una consola: puntualidad, estado personal, equipo, conocimiento de la asignación y briefing."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Puntualidad y estado personal"
+        },
+        {
+          "type": "p",
+          "text": "Llegar tarde puede prolongar la guardia de otra persona o dejar una función sin cubrir. Enfermedad, lesión o fatiga extrema deben comunicarse."
+        },
+        {
+          "type": "heading",
+          "text": "Briefing"
         },
         {
           "type": "bullets",
           "items": [
-            "puntualidad",
-            "estado personal",
-            "briefing",
-            "órdenes vigentes"
+            "Estado actual",
+            "Órdenes vigentes",
+            "Incidencias",
+            "Pendientes",
+            "Riesgos",
+            "Cambios relevantes"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Escena de incorporación."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Disciplina y comunicación."
+          "label": "IMPORTANTE",
+          "text": "Una nueva guardia no borra las órdenes que siguen activas."
         },
         {
           "type": "heading",
@@ -115,25 +114,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras puntualidad.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Escena de incorporación.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/federation/starfleet/duty_shifts/shift_model.json",
-            "lore/federation/starfleet/command_structure/succession_rules.json",
-            "gameplay/ship_operations/operational_event_log/README.md"
+            "¿Por qué la puntualidad tiene efecto operativo?",
+            "¿Qué debes hacer si no estás apto?",
+            "¿Qué incluye un briefing?",
+            "¿Una nueva guardia cancela órdenes vigentes?",
+            "¿Por qué ocultar fatiga puede ser una mala decisión?"
           ]
         }
       ]
@@ -145,30 +130,41 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Introducir la disciplina cotidiana del servicio y la continuidad de una guardia."
+          "text": "Un relevo es una transferencia estructurada de responsabilidad que debe preservar el contexto."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Contenido mínimo"
         },
         {
           "type": "bullets",
           "items": [
-            "entrega/recepción",
-            "estado del puesto",
-            "pendientes",
-            "incidencias"
+            "Estado del puesto",
+            "Órdenes activas",
+            "Tareas pendientes",
+            "Incidencias abiertas",
+            "Riesgos conocidos",
+            "Cambios relevantes"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Quien recibe"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Escucha",
+            "Comprueba puntos críticos",
+            "Pregunta",
+            "Confirma comprensión",
+            "Asume el puesto"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Realizar un relevo básico."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Checklist evaluada."
+          "label": "BREVEDAD ÚTIL",
+          "text": "El relevo no narra cada minuto: transmite lo necesario para continuar sin perder contexto."
         },
         {
           "type": "heading",
@@ -177,25 +173,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras entrega/recepción.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Realizar un relevo básico.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/federation/starfleet/duty_shifts/shift_model.json",
-            "lore/federation/starfleet/command_structure/succession_rules.json",
-            "gameplay/ship_operations/operational_event_log/README.md"
+            "¿Qué objetivo tiene el relevo?",
+            "Nombra cinco elementos que deben transferirse.",
+            "¿Qué debe hacer quien recibe?",
+            "¿Por qué no debe ser excesivamente narrativo?",
+            "¿Qué puede causar una incidencia omitida?"
           ]
         }
       ]
@@ -207,30 +189,31 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Introducir la disciplina cotidiana del servicio y la continuidad de una guardia."
+          "text": "Informar es convertir una observación en información útil para que otra persona comprenda la situación y pueda decidir."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Qué informar"
         },
         {
           "type": "bullets",
           "items": [
-            "qué informar",
-            "a quién",
-            "claridad",
-            "confirmación"
+            "Hecho observado",
+            "Cambio de estado",
+            "Impedimento",
+            "Riesgo",
+            "Resultado",
+            "Necesidad de apoyo"
           ]
         },
         {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Emitir un informe breve."
+          "type": "p",
+          "text": "El destinatario depende del puesto, la cadena de responsabilidad, la gravedad y el departamento afectado. No todo debe llegar al Capitán."
         },
         {
           "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación de precisión y brevedad."
+          "label": "REGLA",
+          "text": "Separar hecho, interpretación y solicitud. No afirmar como cierto lo que todavía es una conclusión."
         },
         {
           "type": "heading",
@@ -239,25 +222,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras qué informar.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Emitir un informe breve.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/federation/starfleet/duty_shifts/shift_model.json",
-            "lore/federation/starfleet/command_structure/succession_rules.json",
-            "gameplay/ship_operations/operational_event_log/README.md"
+            "¿Qué debe lograr un informe?",
+            "¿Qué cambios deben informarse?",
+            "¿Por qué no todo se informa al Capitán?",
+            "¿Qué problema causa una conclusión no demostrada?",
+            "¿Cuándo puede ser necesaria confirmación?"
           ]
         }
       ]
@@ -269,30 +238,32 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Introducir la disciplina cotidiana del servicio y la continuidad de una guardia."
+          "text": "La cadena de responsabilidad permite saber quién actúa, quién supervisa, quién necesita saber, quién autoriza y cuándo escalar."
         },
         {
-          "type": "heading",
-          "text": "Contenidos"
+          "type": "definition",
+          "term": "Responsable de puesto",
+          "text": "Resuelve lo que entra dentro de su función, capacidad y autoridad."
         },
         {
-          "type": "bullets",
-          "items": [
-            "responsable de puesto",
-            "supervisor",
-            "jefe de departamento",
-            "mando"
-          ]
+          "type": "definition",
+          "term": "Supervisor",
+          "text": "Apoya, revisa, autoriza e interviene cuando la situación excede al operador."
+        },
+        {
+          "type": "definition",
+          "term": "Jefe de departamento",
+          "text": "Gestiona problemas de alcance departamental: recursos, personal, prioridades y fallos importantes."
+        },
+        {
+          "type": "definition",
+          "term": "Mando",
+          "text": "Interviene cuando la situación afecta a la misión, cruza departamentos o requiere autoridad de mando."
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Escalar tres incidencias de distinta gravedad."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Caso aplicado."
+          "label": "ESCALAR NO ES FRACASAR",
+          "text": "La competencia está en escalar ni demasiado pronto por miedo ni demasiado tarde por orgullo."
         },
         {
           "type": "heading",
@@ -301,25 +272,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras responsable de puesto.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Escalar tres incidencias de distinta gravedad.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/federation/starfleet/duty_shifts/shift_model.json",
-            "lore/federation/starfleet/command_structure/succession_rules.json",
-            "gameplay/ship_operations/operational_event_log/README.md"
+            "Diferencia responsable y supervisor.",
+            "¿Qué corresponde al jefe de departamento?",
+            "¿Cuándo interviene Mando?",
+            "¿Por qué escalar es una competencia?",
+            "¿Qué problemas causa escalar demasiado o demasiado poco?"
           ]
         }
       ]
@@ -331,30 +288,48 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Introducir la disciplina cotidiana del servicio y la continuidad de una guardia."
+          "text": "Una guardia sin crisis sigue siendo trabajo profesional: monitorización, verificaciones, tareas periódicas, registros, pequeñas incidencias y relevo."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Monitorización activa"
+        },
+        {
+          "type": "p",
+          "text": "Monitorizar significa conocer el estado normal, detectar cambios, reconocer qué importa y saber cuándo actuar."
+        },
+        {
+          "type": "heading",
+          "text": "Tareas periódicas"
         },
         {
           "type": "bullets",
           "items": [
-            "monitorización",
-            "tareas periódicas",
-            "registro",
-            "fin de turno"
+            "Verificaciones",
+            "Informes",
+            "Mantenimiento programado",
+            "Actualización de registros",
+            "Comprobaciones de estado"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Fin de turno"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Cerrar o marcar pendientes",
+            "Actualizar estado",
+            "Preparar relevo",
+            "Transferir incidencias",
+            "Confirmar entrega"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Simulación de una guardia sin crisis."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación de constancia y handoff."
+          "label": "CONSTANCIA",
+          "text": "La calidad profesional también se demuestra cuando no ocurre nada espectacular."
         },
         {
           "type": "heading",
@@ -363,28 +338,15 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras monitorización.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Simulación de una guardia sin crisis.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/federation/starfleet/duty_shifts/shift_model.json",
-            "lore/federation/starfleet/command_structure/succession_rules.json",
-            "gameplay/ship_operations/operational_event_log/README.md"
+            "¿Por qué una guardia rutinaria genera evidencia?",
+            "¿Qué significa monitorizar activamente?",
+            "¿Para qué sirven las tareas periódicas?",
+            "¿Qué se hace antes del fin de turno?",
+            "¿Por qué importa la constancia?"
           ]
         }
       ]
     }
-  ]
+  ],
+  "status": "developed_content"
 }
