@@ -1,5 +1,5 @@
 {
-  "title": "Manual del Candidato — Academia de la Flota Estelar",
+  "title": "Manual del Candidato — Starfleet Academy",
   "version": "1.0",
   "scope": "orientación general para el acceso",
   "status": "contenido base aprobado",
@@ -12,6 +12,10 @@
       "title": "Antes de empezar",
       "subtitle": "ORIENTACIÓN GENERAL PARA EL ACCESO",
       "blocks": [
+        {
+          "type": "quote",
+          "text": "Este manual no pretende convertir al candidato en oficial. Presenta la institución a la que desea entrar. La formación profesional comienza después de la admisión."
+        },
         {
           "type": "p",
           "text": "Starfleet Academy selecciona personas con capacidad para aprender, colaborar, asumir responsabilidad y desarrollarse dentro de Starfleet."
@@ -413,9 +417,8 @@
           "text": "El resto del proceso busca comprobar si el candidato <strong>puede aprender y desarrollarse</strong>, no si ya es un oficial."
         },
         {
-          "type": "callout",
-          "label": "CIERRE",
-          "text": "La Academia empieza después."
+          "type": "p",
+          "text": "<strong>La Academia empieza después.</strong>"
         }
       ]
     }
