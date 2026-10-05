@@ -100,7 +100,7 @@
   .preacademy-list{grid-template-columns:1fr}
   .supplementary-grid{grid-template-columns:1fr}
 
-  .subject-layout{grid-template-columns:1fr;gap:18px}
+  .subject-layout{grid-template-columns:minmax(0,1fr);gap:18px}
   .subject-sidebar{position:static}
   .subject-sidebar__title{margin-top:14px}
   .module-list{display:flex;max-height:none;overflow-x:auto;padding-bottom:7px}
