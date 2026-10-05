@@ -1,283 +1,280 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "course_id": "SEC-302",
-  "status": "generated_from_authoritative_curriculum",
+  "status": "editorially_aligned_with_developed_manual",
+  "source_manual": "gameplay/careers/academy_path/study_materials/third_class/SEC-302/MANUAL_v1_0.md",
   "question_count": 24,
+  "rule": "No question may require knowledge that is not explicitly taught in SEC-302 or established prerequisites.",
   "questions": [
     {
       "id": "SEC-302-Q001",
       "unit_id": "SEC-302-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica entorno y da un ejemplo operativo.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué significa conciencia de amenaza?",
       "answer_key_es": [
-        "entorno",
-        "ejemplo coherente",
-        "límite o contexto"
+        "observar cambios relevantes"
       ]
     },
     {
       "id": "SEC-302-Q002",
       "unit_id": "SEC-302-U01",
-      "type": "relationship",
-      "prompt_es": "Relaciona entorno con personas. ¿Qué información pasa de uno a otro?",
+      "type": "short_answer",
+      "prompt_es": "¿Para qué sirve baseline?",
       "answer_key_es": [
-        "entorno",
-        "personas",
-        "flujo de información o dependencia"
+        "distinguir normal de anomalía"
       ]
     },
     {
       "id": "SEC-302-Q003",
       "unit_id": "SEC-302-U01",
-      "type": "scenario",
-      "prompt_es": "Detectar riesgos en escenario. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "judgment",
+      "prompt_es": "¿Una señal aislada demuestra hostilidad?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "no"
       ]
     },
     {
       "id": "SEC-302-Q004",
       "unit_id": "SEC-302-U01",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Conciencia de amenaza, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "knowledge",
+      "prompt_es": "¿Qué conviene identificar antes de operar?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "salidas",
+        "reunión",
+        "zonas protegidas",
+        "comunicaciones"
       ]
     },
     {
       "id": "SEC-302-Q005",
       "unit_id": "SEC-302-U02",
       "type": "knowledge",
-      "prompt_es": "Explica manejo seguro y da un ejemplo operativo.",
+      "prompt_es": "¿Qué limita uso de phaser?",
       "answer_key_es": [
-        "manejo seguro",
-        "ejemplo coherente",
-        "límite o contexto"
+        "autoridad",
+        "entrenamiento",
+        "configuración",
+        "contexto"
       ]
     },
     {
       "id": "SEC-302-Q006",
       "unit_id": "SEC-302-U02",
-      "type": "relationship",
-      "prompt_es": "Relaciona manejo seguro con autoridad. ¿Qué información pasa de uno a otro?",
+      "type": "judgment",
+      "prompt_es": "¿Acceso físico equivale a autoridad?",
       "answer_key_es": [
-        "manejo seguro",
-        "autoridad",
-        "flujo de información o dependencia"
+        "no"
       ]
     },
     {
       "id": "SEC-302-Q007",
       "unit_id": "SEC-302-U02",
-      "type": "scenario",
-      "prompt_es": "Práctica controlada en simulador. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué significa proporcionalidad?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "respuesta acorde al riesgo"
       ]
     },
     {
       "id": "SEC-302-Q008",
       "unit_id": "SEC-302-U02",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Phaser: seguridad y límites, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "judgment",
+      "prompt_es": "¿Por qué el uso debe ser trazable?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "responsabilidad",
+        "registro",
+        "evaluación"
       ]
     },
     {
       "id": "SEC-302-Q009",
       "unit_id": "SEC-302-U03",
       "type": "knowledge",
-      "prompt_es": "Explica accesos y da un ejemplo operativo.",
+      "prompt_es": "¿Qué forma seguridad a bordo?",
       "answer_key_es": [
-        "accesos",
-        "ejemplo coherente",
-        "límite o contexto"
+        "acceso",
+        "zonas",
+        "identidad",
+        "incidentes",
+        "coordinación"
       ]
     },
     {
       "id": "SEC-302-Q010",
       "unit_id": "SEC-302-U03",
-      "type": "relationship",
-      "prompt_es": "Relaciona accesos con zonas restringidas. ¿Qué información pasa de uno a otro?",
+      "type": "short_answer",
+      "prompt_es": "¿Por qué restringir una zona?",
       "answer_key_es": [
-        "accesos",
-        "zonas restringidas",
-        "flujo de información o dependencia"
+        "clasificación",
+        "riesgo",
+        "privacidad",
+        "emergencia",
+        "investigación"
       ]
     },
     {
       "id": "SEC-302-Q011",
       "unit_id": "SEC-302-U03",
-      "type": "scenario",
-      "prompt_es": "Responder a intrusión simulada. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "procedure",
+      "prompt_es": "¿Qué haces ante intrusión?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "confirmar",
+        "informar",
+        "proteger",
+        "seguir instrucciones"
       ]
     },
     {
       "id": "SEC-302-Q012",
       "unit_id": "SEC-302-U03",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Seguridad a bordo, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "judgment",
+      "prompt_es": "¿Por qué preservar información importa?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "evidencia",
+        "registros",
+        "trazabilidad"
       ]
     },
     {
       "id": "SEC-302-Q013",
       "unit_id": "SEC-302-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica rol y da un ejemplo operativo.",
+      "type": "short_answer",
+      "prompt_es": "¿De qué depende loadout?",
       "answer_key_es": [
+        "objetivo",
+        "entorno",
+        "duración",
         "rol",
-        "ejemplo coherente",
-        "límite o contexto"
+        "riesgo",
+        "comunicaciones"
       ]
     },
     {
       "id": "SEC-302-Q014",
       "unit_id": "SEC-302-U04",
-      "type": "relationship",
-      "prompt_es": "Relaciona rol con equipo. ¿Qué información pasa de uno a otro?",
+      "type": "judgment",
+      "prompt_es": "¿Por qué roles llevan equipo distinto?",
       "answer_key_es": [
-        "rol",
-        "equipo",
-        "flujo de información o dependencia"
+        "funciones diferentes"
       ]
     },
     {
       "id": "SEC-302-Q015",
       "unit_id": "SEC-302-U04",
-      "type": "scenario",
-      "prompt_es": "Preparar loadout según misión. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "knowledge",
+      "prompt_es": "¿Qué incluye plan de comunicaciones?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "canal",
+        "check-in",
+        "emergencia",
+        "pérdida contacto"
       ]
     },
     {
       "id": "SEC-302-Q016",
       "unit_id": "SEC-302-U04",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Equipo de salida, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "judgment",
+      "prompt_es": "¿Por qué más equipo no siempre es mejor?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "carga",
+        "complejidad",
+        "tiempo",
+        "pérdida"
       ]
     },
     {
       "id": "SEC-302-Q017",
       "unit_id": "SEC-302-U05",
       "type": "knowledge",
-      "prompt_es": "Explica refugio y da un ejemplo operativo.",
+      "prompt_es": "Nombra prioridades de supervivencia.",
       "answer_key_es": [
+        "seguridad",
         "refugio",
-        "ejemplo coherente",
-        "límite o contexto"
+        "recursos",
+        "orientación",
+        "comunicación"
       ]
     },
     {
       "id": "SEC-302-Q018",
       "unit_id": "SEC-302-U05",
-      "type": "relationship",
-      "prompt_es": "Relaciona refugio con recursos. ¿Qué información pasa de uno a otro?",
+      "type": "short_answer",
+      "prompt_es": "¿Qué debe proporcionar refugio?",
       "answer_key_es": [
-        "refugio",
-        "recursos",
-        "flujo de información o dependencia"
+        "protección entorno"
       ]
     },
     {
       "id": "SEC-302-Q019",
       "unit_id": "SEC-302-U05",
-      "type": "scenario",
-      "prompt_es": "Ejercicio de campo. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "knowledge",
+      "prompt_es": "¿Qué recursos deben controlarse?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "agua",
+        "alimentos",
+        "energía",
+        "suministros",
+        "herramientas"
       ]
     },
     {
       "id": "SEC-302-Q020",
       "unit_id": "SEC-302-U05",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Supervivencia básica, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "short_answer",
+      "prompt_es": "¿Qué hace útil una señal de rescate?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "detectable",
+        "persistente",
+        "compatible",
+        "segura"
       ]
     },
     {
       "id": "SEC-302-Q021",
       "unit_id": "SEC-302-U06",
-      "type": "knowledge",
-      "prompt_es": "Explica formación y da un ejemplo operativo.",
+      "type": "short_answer",
+      "prompt_es": "¿De qué depende formación?",
       "answer_key_es": [
-        "formación",
-        "ejemplo coherente",
-        "límite o contexto"
+        "terreno",
+        "misión",
+        "visibilidad",
+        "riesgo",
+        "equipo"
       ]
     },
     {
       "id": "SEC-302-Q022",
       "unit_id": "SEC-302-U06",
-      "type": "relationship",
-      "prompt_es": "Relaciona formación con cobertura. ¿Qué información pasa de uno a otro?",
+      "type": "judgment",
+      "prompt_es": "¿Cuándo retirarse puede ser correcto?",
       "answer_key_es": [
-        "formación",
-        "cobertura",
-        "flujo de información o dependencia"
+        "riesgo",
+        "pérdida apoyo",
+        "herido",
+        "capacidad superada"
       ]
     },
     {
       "id": "SEC-302-Q023",
       "unit_id": "SEC-302-U06",
-      "type": "scenario",
-      "prompt_es": "Simulación corta. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "short_answer",
+      "prompt_es": "¿Cómo cambia la misión un herido?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "ritmo",
+        "movilidad",
+        "recursos",
+        "prioridad"
       ]
     },
     {
       "id": "SEC-302-Q024",
       "unit_id": "SEC-302-U06",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Equipo de salida bajo riesgo, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "judgment",
+      "prompt_es": "¿Por qué cohesión importa?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "evitar aislamiento",
+        "comunicación",
+        "apoyo"
       ]
     }
   ]
