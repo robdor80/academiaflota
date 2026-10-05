@@ -7,9 +7,9 @@
   <meta name="description" content="Portal de estudio de la Academia de la Flota Estelar. Consulta, práctica y evaluación del currículo del videojuego.">
   <title>Academia de la Flota Estelar</title>
   <link rel="stylesheet" href="css/base.css?v=0.3.1">
-  <link rel="stylesheet" href="css/academy.css?v=0.3.1">
-  <link rel="stylesheet" href="css/responsive.css?v=0.3.2">
-  <script type="module" src="js/app.js?v=0.3.1"></script>
+  <link rel="stylesheet" href="css/academy.css?v=0.3.3">
+  <link rel="stylesheet" href="css/responsive.css?v=0.3.3">
+  <script type="module" src="js/app.js?v=0.3.3"></script>
 </head>
 <body>
   <div class="orientation-lock" aria-hidden="true">
@@ -74,6 +74,57 @@
   </section>
 
   <div id="academy-portal" class="portal" hidden>
+
+    <aside class="desktop-sidebar" aria-label="Navegación de escritorio">
+      <div class="desktop-sidebar__brand">
+        <img src="assets/img/academia-flota-estelar.svg?v=0.3.1" alt="">
+        <div>
+          <span>FEDERACIÓN UNIDA DE PLANETAS</span>
+          <strong>ACADEMIA DE LA<br>FLOTA ESTELAR</strong>
+          <small>Portal de estudio</small>
+        </div>
+      </div>
+
+      <div class="desktop-sidebar__section">
+        <span class="desktop-sidebar__label">NAVEGACIÓN</span>
+        <nav class="desktop-sidebar__nav">
+          <button data-route="dashboard" class="is-active"><b>01</b><span>Inicio</span></button>
+          <button data-route="studies"><b>02</b><span>Plan de estudios</span></button>
+          <button data-route="practices"><b>03</b><span>Prácticas</span></button>
+          <button data-route="evaluations"><b>04</b><span>Tests</span></button>
+          <button data-route="record"><b>05</b><span>Perfil de estudio</span></button>
+        </nav>
+      </div>
+
+      <div class="desktop-sidebar__section desktop-sidebar__section--library">
+        <span class="desktop-sidebar__label">ACCESOS DIRECTOS</span>
+        <button class="desktop-library-link" data-open-study="manual-candidato">
+          <strong>Manual del Candidato</strong>
+          <small>Preparación para el acceso</small>
+        </button>
+        <button class="desktop-library-link" data-open-study="sensores-i">
+          <strong>Sensores I</strong>
+          <small>2.ª clase · Trimestre 1</small>
+        </button>
+        <button class="desktop-library-link" data-open-study="sensores-ii">
+          <strong>Sensores II</strong>
+          <small>2.ª clase · Trimestre 2</small>
+        </button>
+        <button class="desktop-library-link" data-open-study="sensores-iii">
+          <strong>Sensores III</strong>
+          <small>2.ª clase · Trimestre 3</small>
+        </button>
+      </div>
+
+      <div class="desktop-sidebar__account">
+        <span class="desktop-sidebar__label">PERFIL ACTIVO</span>
+        <strong id="desktop-cadet-name">—</strong>
+        <div class="desktop-sidebar__account-actions">
+          <button type="button" data-switch-profile>Cambiar perfil</button>
+          <button type="button" data-open-settings>Ajustes</button>
+        </div>
+      </div>
+    </aside>
     <header class="official-header">
       <div class="official-header__inner">
         <button class="portal-brand" data-route="dashboard" aria-label="Inicio">
