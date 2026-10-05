@@ -761,3 +761,11 @@ document.querySelector("#delete-profile").addEventListener("click", function() {
 
 renderAccount();
 void startFirebase();
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function() {
+    navigator.serviceWorker.register("./service-worker.js", { scope: "./" }).catch(function(error) {
+      console.warn("No se pudo registrar el service worker:", error);
+    });
+  });
+}
