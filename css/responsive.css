@@ -1,20 +1,24 @@
 /* Referencias: MSI Raider GE78 HX 14V; Samsung Galaxy Tab S9+; Realme GT Neo 2 */
+
 @media (min-width:768px) and (max-width:1199px) and (orientation:landscape){
-  .gateway__main{grid-template-columns:.85fr 1.15fr;gap:38px;padding:48px 0}
-  .gateway__intro h1{font-size:4rem}
-  .official-header__inner,.primary-nav,.portal-main,.public-footer,.portal-footer{width:calc(100% - 32px)}
+  .gateway__header,.gateway__footer{width:calc(100% - 32px)}
+  .gateway__main{width:calc(100% - 32px);grid-template-columns:.7fr 1.3fr;gap:42px;padding:42px 0 54px}
+  .gateway-hero__seal{width:170px}
+  .official-header__inner,.primary-nav,.portal-main,.portal-footer{width:calc(100% - 32px)}
   .portal-main{padding-top:38px}
   .subject-layout{grid-template-columns:245px minmax(0,1fr);gap:20px}
   .subject-sidebar{top:150px}
   .lesson-content{padding:34px}
   .dashboard-layout{grid-template-columns:1.4fr .6fr}
 }
+
 @media (min-width:768px) and (max-width:1199px) and (orientation:portrait){
-  .gateway__masthead{padding:14px 22px}
-  .gateway__system{display:none}
-  .gateway__main{grid-template-columns:1fr;gap:34px;width:calc(100% - 40px);padding:46px 0}
-  .gateway__intro h1{font-size:4.3rem}
-  .official-header__inner,.primary-nav,.portal-main,.public-footer,.portal-footer{width:calc(100% - 36px)}
+  .gateway__header,.gateway__footer{width:calc(100% - 36px)}
+  .gateway__main{width:min(calc(100% - 40px),760px);grid-template-columns:1fr;gap:34px;padding:42px 0 58px}
+  .gateway-hero__seal{width:170px}
+  .gateway-hero h1{font-size:4rem}
+  .cadet-access{padding:26px}
+  .official-header__inner,.primary-nav,.portal-main,.portal-footer{width:calc(100% - 36px)}
   .primary-nav{overflow-x:auto}
   .primary-nav button{white-space:nowrap}
   .dashboard-layout{grid-template-columns:1fr}
@@ -24,32 +28,51 @@
   .module-btn{flex:0 0 230px}
   .practice-list{grid-template-columns:1fr}
 }
+
 @media (max-width:767px) and (orientation:portrait){
-  .gateway__masthead{min-height:86px;padding:10px 14px}
-  .institution{gap:10px}
-  .institution__seal{width:54px;height:54px}
-  .institution strong{font-size:.95rem}
-  .institution span,.gateway__system{display:none}
-  .institution small{font-size:.72rem}
-  .gateway__main{display:block;width:calc(100% - 20px);padding:34px 0}
-  .gateway__intro h1{font-size:2.8rem}
-  .gateway__intro>p{font-size:.98rem}
-  .official-note{margin:24px 0}
-  .profile-access{padding:18px}
-  .section-title-row{align-items:flex-start}
-  .section-title-row h2{font-size:1.6rem}
-  .profile-form__row{grid-template-columns:1fr}
-  .import-row{align-items:flex-start;flex-direction:column}
-  .public-footer,.portal-footer{display:block;width:calc(100% - 24px);line-height:1.7}
+  .gateway__header{width:calc(100% - 24px);min-height:78px}
+  .gateway-brand{gap:10px}
+  .gateway-brand img{width:48px;height:48px}
+  .gateway-brand span{font-size:.5rem}
+  .gateway-brand strong{font-size:.78rem;letter-spacing:.1em}
+  .settings-trigger{min-height:38px;padding:0 11px}
+  .settings-trigger em{display:none}
+
+  .gateway__main{display:block;width:calc(100% - 20px);padding:28px 0 38px}
+  .gateway-hero{margin-bottom:28px}
+  .gateway-hero__seal{width:132px}
+  .gateway-hero__code{margin-top:16px;font-size:.55rem}
+  .gateway-hero h1{font-size:2.75rem}
+  .gateway-hero p{font-size:.78rem}
+
+  .cadet-access{padding:19px 16px}
+  .cadet-access__heading{display:block;margin-bottom:16px}
+  .cadet-access__heading h2{font-size:1.45rem}
+  .access-status{display:block;margin-top:8px}
+  .profile-entry{grid-template-columns:48px minmax(0,1fr);padding:13px}
+  .profile-entry__avatar{width:44px;height:44px}
+  .profile-entry__arrow{grid-column:2;justify-self:start;margin-top:-2px;font-size:.7rem}
+  .empty-state{grid-template-columns:48px 1fr;padding:15px}
+  .empty-state__mark{width:44px;height:44px}
+  .empty-state .text-action{grid-column:2;justify-self:start}
+  .access-footnote{display:block}
+  .access-footnote p{margin-top:6px}
+
+  .gateway__footer{display:block;width:calc(100% - 24px);line-height:1.7;padding-bottom:18px}
+  .gateway__footer span{display:block}
+
   .official-header{position:static}
   .official-header__inner{width:calc(100% - 20px);min-height:72px}
   .portal-brand img{width:46px;height:46px}
   .portal-brand strong{font-size:.82rem}
   .portal-brand small{font-size:.67rem}
+  .header-actions{gap:7px}
   .cadet-chip>span{display:none}
-  .cadet-chip{display:block;max-width:125px}
-  .cadet-chip strong{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:.78rem}
-  .cadet-chip button{font-size:.68rem}
+  .cadet-chip{display:block;max-width:120px}
+  .cadet-chip strong{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:.76rem}
+  .cadet-chip button{font-size:.65rem}
+  .settings-trigger--light{padding:0 9px}
+
   .primary-nav{width:100%;padding:0 8px;overflow-x:auto}
   .primary-nav button{flex:0 0 auto;min-height:45px;padding:0 12px;white-space:nowrap;font-size:.78rem}
   .portal-main{width:calc(100% - 20px);padding:30px 0 50px}
@@ -71,6 +94,7 @@
   .catalogue-item__number{font-size:2rem}
   .catalogue-item .badge{grid-column:2;justify-self:start}
   .catalogue-item h2{font-size:1.35rem}
+
   .subject-layout{grid-template-columns:1fr;gap:18px}
   .subject-sidebar{position:static}
   .subject-sidebar__title{margin-top:14px}
@@ -83,27 +107,41 @@
   .reader__controls{grid-template-columns:1fr 1fr;padding:16px}
   #mark-complete{grid-column:1/-1;grid-row:1}
   #prev-module,#next-module{width:100%}
+
   .practice-list{grid-template-columns:1fr}
   .practice-card{min-height:220px;padding:19px}
   .practice-detail{padding:20px}
   .practice-actions .button{width:100%}
+
   .evaluation-card{align-items:flex-start;flex-direction:column;padding:21px}
   .evaluation-card .button{width:100%}
   .question-card{padding:18px}
   .exam-header{padding:20px}
   .exam-result{padding:20px}
   .exam-result__score{font-size:3.2rem}
+
   .record-grid{grid-template-columns:1fr}
   .record-management{align-items:flex-start;flex-direction:column}
   .record-management__actions{width:100%}
   .record-management__actions .button{width:100%}
+  .portal-footer{display:block;width:calc(100% - 24px);line-height:1.7}
+
+  .settings-panel{width:100%}
+  .settings-panel__header{padding:22px 18px 18px}
+  .settings-section{padding:22px 18px}
+  .settings-panel__footer{padding:18px}
+  .profile-form__row{grid-template-columns:1fr}
+  .profile-form__row .button{width:100%}
+  .settings-import{width:100%;justify-content:center}
 }
+
 @media (max-width:767px) and (orientation:landscape){
   body{overflow:hidden}
-  .gateway,.portal{display:none!important}
+  .gateway,.portal,.settings-backdrop{display:none!important}
   .orientation-lock{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;padding:24px;background:var(--navy-950)}
-  .orientation-lock__card{max-width:620px;padding:28px;border-top:5px solid var(--gold);background:#fff}
-  .orientation-lock__card strong{color:var(--gold);font-size:.72rem;letter-spacing:.1em}
+  .orientation-lock__card{max-width:620px;padding:28px;border-top:5px solid var(--gold);background:#fff;text-align:center}
+  .orientation-lock__card img{width:78px;height:78px;object-fit:contain;margin-bottom:12px}
+  .orientation-lock__card strong{display:block;color:var(--gold);font-size:.72rem;letter-spacing:.1em}
   .orientation-lock__card h1{margin:7px 0;color:var(--navy-900)}
   .orientation-lock__card p{margin:0;color:var(--muted)}
 }
