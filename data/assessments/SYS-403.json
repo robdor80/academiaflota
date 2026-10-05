@@ -1,283 +1,267 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "course_id": "SYS-403",
-  "status": "generated_from_authoritative_curriculum",
+  "status": "editorially_aligned_with_developed_manual",
+  "source_manual": "gameplay/careers/academy_path/study_materials/fourth_class/SYS-403/MANUAL_v1_0.md",
   "question_count": 24,
+  "rule": "No question may require knowledge that is not explicitly taught in SYS-403 or established prerequisites.",
   "questions": [
     {
       "id": "SYS-403-Q001",
       "unit_id": "SYS-403-U01",
       "type": "short_answer",
-      "prompt_es": "Explica fuentes y su relevancia operativa.",
+      "prompt_es": "¿Por qué una nave debe entenderse como una red de sistemas?",
       "answer_key_es": [
-        "fuentes",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "dependencias",
+        "recursos compartidos",
+        "fallos pueden propagarse"
       ]
     },
     {
       "id": "SYS-403-Q002",
       "unit_id": "SYS-403-U01",
       "type": "compare",
-      "prompt_es": "Compara fuentes con distribución. Indica una diferencia que pueda cambiar una decisión.",
+      "prompt_es": "Diferencia fuente, distribución y carga.",
       "answer_key_es": [
-        "fuentes",
-        "distribución",
-        "diferencia aplicada"
+        "fuente aporta energía",
+        "distribución la entrega/prioriza",
+        "carga consume"
       ]
     },
     {
       "id": "SYS-403-Q003",
       "unit_id": "SYS-403-U01",
-      "type": "scenario",
-      "prompt_es": "Situación: Seguir un diagrama funcional simplificado. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "judgment",
+      "prompt_es": "¿Puede una consola intacta dejar de funcionar?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "sí",
+        "energía/red/sistema remoto/autorización"
       ]
     },
     {
       "id": "SYS-403-Q004",
       "unit_id": "SYS-403-U01",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Arquitectura de sistemas y energía y cómo lo corregirías.",
+      "type": "short_answer",
+      "prompt_es": "¿Por qué la prioridad energética depende del contexto?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "misión",
+        "vidas",
+        "daños",
+        "autoridad",
+        "capacidad restante"
       ]
     },
     {
       "id": "SYS-403-Q005",
       "unit_id": "SYS-403-U02",
       "type": "short_answer",
-      "prompt_es": "Explica función y su relevancia operativa.",
+      "prompt_es": "¿Qué función general cumple la propulsión de impulso?",
       "answer_key_es": [
-        "función",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "movimiento subluz",
+        "maniobras locales"
       ]
     },
     {
       "id": "SYS-403-Q006",
       "unit_id": "SYS-403-U02",
-      "type": "compare",
-      "prompt_es": "Compara función con uso subluz. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "knowledge",
+      "prompt_es": "¿Qué significa régimen subluz?",
       "answer_key_es": [
-        "función",
-        "uso subluz",
-        "diferencia aplicada"
+        "por debajo de velocidad de la luz en modelo del juego"
       ]
     },
     {
       "id": "SYS-403-Q007",
       "unit_id": "SYS-403-U02",
-      "type": "scenario",
-      "prompt_es": "Situación: Interpretar estado básico de propulsión. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "compare",
+      "prompt_es": "¿Qué diferencia existe entre Propulsión y Navegación?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "propulsión aporta capacidad",
+        "navegación define/ejecuta solución de movimiento"
       ]
     },
     {
       "id": "SYS-403-Q008",
       "unit_id": "SYS-403-U02",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Propulsión de impulso y cómo lo corregirías.",
+      "type": "knowledge",
+      "prompt_es": "Nombra tres factores que pueden limitar impulso.",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "daño",
+        "energía",
+        "maniobra",
+        "seguridad",
+        "condiciones locales"
       ]
     },
     {
       "id": "SYS-403-Q009",
       "unit_id": "SYS-403-U03",
       "type": "short_answer",
-      "prompt_es": "Explica función y su relevancia operativa.",
+      "prompt_es": "¿Qué función cumple warp?",
       "answer_key_es": [
-        "función",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "viaje superlumínico",
+        "navegación interestelar"
       ]
     },
     {
       "id": "SYS-403-Q010",
       "unit_id": "SYS-403-U03",
-      "type": "compare",
-      "prompt_es": "Compara función con campo warp. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué no existe una única conversión universal de factor warp a velocidad?",
       "answer_key_es": [
-        "función",
-        "campo warp",
-        "diferencia aplicada"
+        "eras/naves/condiciones diferentes",
+        "regla del proyecto"
       ]
     },
     {
       "id": "SYS-403-Q011",
       "unit_id": "SYS-403-U03",
-      "type": "scenario",
-      "prompt_es": "Situación: Relacionar misión, distancia y uso de warp sin cálculo avanzado. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "compare",
+      "prompt_es": "Diferencia capacidad máxima y sostenible.",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "pico permitido",
+        "capacidad mantenible en el tiempo"
       ]
     },
     {
       "id": "SYS-403-Q012",
       "unit_id": "SYS-403-U03",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Propulsión warp y cómo lo corregirías.",
+      "type": "knowledge",
+      "prompt_es": "Nombra cuatro factores que condicionan viaje warp.",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "daño",
+        "energía",
+        "navegación",
+        "subespacio",
+        "peligros",
+        "restricciones"
       ]
     },
     {
       "id": "SYS-403-Q013",
       "unit_id": "SYS-403-U04",
       "type": "short_answer",
-      "prompt_es": "Explica soporte vital y su relevancia operativa.",
+      "prompt_es": "¿Qué función general cumple soporte vital?",
       "answer_key_es": [
-        "soporte vital",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "mantener condiciones habitables",
+        "atmósfera/temperatura/ambiente"
       ]
     },
     {
       "id": "SYS-403-Q014",
       "unit_id": "SYS-403-U04",
       "type": "compare",
-      "prompt_es": "Compara soporte vital con replicadores. Indica una diferencia que pueda cambiar una decisión.",
+      "prompt_es": "Diferencia sintetizador de alimentos y replicador del siglo XXIV.",
       "answer_key_es": [
-        "soporte vital",
-        "replicadores",
-        "diferencia aplicada"
+        "tecnologías/eras distintas",
+        "no retrotraer replicador completo"
       ]
     },
     {
       "id": "SYS-403-Q015",
       "unit_id": "SYS-403-U04",
-      "type": "scenario",
-      "prompt_es": "Situación: Resolver qué sistema soporta una necesidad concreta. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "knowledge",
+      "prompt_es": "¿Qué puede limitar un replicador?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "energía",
+        "patrones",
+        "reservas",
+        "seguridad"
       ]
     },
     {
       "id": "SYS-403-Q016",
       "unit_id": "SYS-403-U04",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Habitabilidad y servicios y cómo lo corregirías.",
+      "type": "judgment",
+      "prompt_es": "¿Qué se exige saber del transportador en 4.ª clase?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "función",
+        "dependencias",
+        "límites generales",
+        "no operación/mantenimiento avanzado"
       ]
     },
     {
       "id": "SYS-403-Q017",
       "unit_id": "SYS-403-U05",
-      "type": "short_answer",
-      "prompt_es": "Explica escudos y su relevancia operativa.",
+      "type": "knowledge",
+      "prompt_es": "Nombra cuatro sistemas que pueden contribuir a defensa.",
       "answer_key_es": [
         "escudos",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "armamento",
+        "sensores",
+        "maniobra",
+        "comunicaciones",
+        "control de daños"
       ]
     },
     {
       "id": "SYS-403-Q018",
       "unit_id": "SYS-403-U05",
-      "type": "compare",
-      "prompt_es": "Compara escudos con armamento. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "judgment",
+      "prompt_es": "¿Tener armamento disponible concede permiso para usarlo?",
       "answer_key_es": [
-        "escudos",
-        "armamento",
-        "diferencia aplicada"
+        "no",
+        "requiere autoridad/contexto"
       ]
     },
     {
       "id": "SYS-403-Q019",
       "unit_id": "SYS-403-U05",
-      "type": "scenario",
-      "prompt_es": "Situación: Analizar dependencias generales. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "short_answer",
+      "prompt_es": "¿Por qué Sensores es consumidor y proveedor?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "consume energía/capacidad",
+        "produce conocimiento para otras estaciones"
       ]
     },
     {
       "id": "SYS-403-Q020",
       "unit_id": "SYS-403-U05",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Defensa y entorno de misión y cómo lo corregirías.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué no puede asumirse holodeck en todas las eras?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "tecnología depende de era/nave"
       ]
     },
     {
       "id": "SYS-403-Q021",
       "unit_id": "SYS-403-U06",
       "type": "short_answer",
-      "prompt_es": "Explica degradación y su relevancia operativa.",
+      "prompt_es": "¿Qué significa sistema degradado?",
       "answer_key_es": [
-        "degradación",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "funciona con menos capacidad/restricciones/riesgo"
       ]
     },
     {
       "id": "SYS-403-Q022",
       "unit_id": "SYS-403-U06",
       "type": "compare",
-      "prompt_es": "Compara degradación con sistema primario/secundario. Indica una diferencia que pueda cambiar una decisión.",
+      "prompt_es": "Diferencia sistema primario y respaldo.",
       "answer_key_es": [
-        "degradación",
-        "sistema primario/secundario",
-        "diferencia aplicada"
+        "principal",
+        "alternativa parcial/no necesariamente equivalente"
       ]
     },
     {
       "id": "SYS-403-Q023",
       "unit_id": "SYS-403-U06",
-      "type": "scenario",
-      "prompt_es": "Situación: Seguir una avería sencilla entre sistemas. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué es un efecto cascada?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "fallo inicial afecta sistemas dependientes",
+        "consecuencias indirectas"
       ]
     },
     {
       "id": "SYS-403-Q024",
       "unit_id": "SYS-403-U06",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Fallos y dependencias y cómo lo corregirías.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué un síntoma no demuestra automáticamente la causa?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "causas múltiples",
+        "requiere diagnóstico",
+        "separar observación de explicación"
       ]
     }
   ]
