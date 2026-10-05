@@ -7,6 +7,10 @@ export async function loadStudyData() {
 function blockHtml(block) {
   if (block.type === "p") return "<p>" + block.text + "</p>";
 
+  if (block.type === "quote") {
+    return '<blockquote class="lesson-quote">' + block.text + "</blockquote>";
+  }
+
   if (block.type === "heading") {
     return '<h2 class="lesson-section-title">' + block.text + "</h2>";
   }
