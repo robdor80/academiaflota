@@ -1,0 +1,195 @@
+{
+  "subject": "Sensores",
+  "version": "0.1",
+  "date": "04 OCT 2026",
+  "source": "Manual_Operador_Sensores_Flota_Estelar_v0.1.pdf",
+  "modules": [
+    {
+      "id": "00",
+      "title": "Misión y filosofía de Sensores",
+      "subtitle": "VER ANTES DE CONCLUIR",
+      "blocks": [
+        {"type":"p","text":"La consola de Sensores convierte órdenes de puente en observaciones estructuradas del universo materializado. Su función es detectar, buscar, localizar, medir, seguir y volver a observar. No inventa qué existe: el mundo ya existe antes del barrido."},
+        {"type":"p","text":"La regla operativa fundamental es sencilla: primero se genera la realidad; después se observa. Sensores solo puede mostrar información obtenida por medios disponibles para la nave, con las limitaciones de alcance, resolución, potencia, daños, interferencias, tiempo y configuración."},
+        {"type":"p","text":"Sensores mide. Ciencia interpreta. Táctica evalúa la amenaza. CONN/Navegación traza el movimiento de la nave. Ingeniería repara hardware. OPS gestiona prioridades globales de recursos. Compartir datos entre estaciones no elimina estas fronteras."},
+        {"type":"callout","label":"PRINCIPIO","text":"El universo decide qué existe. Los sensores deciden qué puedes detectar. La IA puede ayudar a expresarlo, pero no puede inventar hechos del mundo."},
+        {"type":"callout","label":"DISCIPLINA","text":"Una configuración errónea pero técnicamente válida se ejecuta. La consola no corrige silenciosamente una orden mal introducida."}
+      ]
+    },
+    {
+      "id": "01",
+      "title": "Estado de sensores",
+      "subtitle": "ANTES DE OPERAR, CONOCE TU INSTRUMENTO",
+      "blocks": [
+        {"type":"p","text":"La pantalla de Estado resume la capacidad real disponible en este momento. Es el punto de partida antes de una guardia, tras una alerta, después de daños o cuando una lectura parece sospechosa."},
+        {"type":"bullets","items":["Estado general: nominal, degradado, parcialmente disponible u offline.","Matrices disponibles: qué conjuntos sensores existen y cuáles pueden utilizarse.","Alcance efectivo: capacidad real en las condiciones actuales, no el valor ideal de catálogo.","Resolución disponible: detalle máximo razonable con el hardware, potencia y estado actuales.","Potencia asignada: energía que OPS ha puesto a disposición de Sensores.","Integridad / daños: estado físico de matrices y componentes relevantes.","Interferencias detectadas: degradaciones ambientales o deliberadas actualmente observadas.","Operación en curso: barrido, búsqueda, seguimiento, calibración u otra tarea activa."]},
+        {"type":"callout","label":"HÁBITO PROFESIONAL","text":"No empieces una operación importante sin comprobar al menos potencia, matriz disponible, interferencias y operación en curso."}
+      ]
+    },
+    {
+      "id": "02",
+      "title": "Barridos",
+      "subtitle": "OBSERVAR UNA ZONA Y DESCUBRIR QUÉ HAY",
+      "blocks": [
+        {"type":"p","text":"Un barrido responde a la pregunta: «quiero observar esta zona y ver qué hay». Puede ser de corto alcance, largo alcance o focalizado. Cada barrido parte de valores predeterminados razonables; el operador cambia únicamente lo necesario para cumplir la orden."},
+        {"type":"bullets","items":["Modo pasivo: discreto; depende de emisiones ya presentes.","Modo activo: mejora capacidad de detección, pero puede hacer perceptible que estamos escaneando.","Resolución general / estándar / alta: el intento de detalle solicitado; no garantiza el resultado.","Filtros: pueden combinarse varias firmas. Cuanto más específica sea la búsqueda, menor cobertura general.","Prioridad: mejora la atención a una firma sin convertirla necesariamente en filtro exclusivo.","Duración rápida / estándar / extendida / personalizada: consume tiempo de juego y afecta la calidad potencial."]},
+        {"type":"table","headers":["Tipo","Uso principal","Condición clave"],"rows":[["Corto alcance","Entorno próximo, alta actualización","Cobertura local"],["Largo alcance","Exploración de sector/sistema","Más alcance, menor detalle potencial"],["Focalizado","Extraer más información de un objetivo","Exige contacto, coordenadas o zona definida"]]},
+        {"type":"procedure","title":"Barrido de largo alcance del sector 041, prioridad subespacio","steps":["Abrir SENSORES > BARRIDOS > LARGO ALCANCE.","Área / objetivo: SECTOR 041.","Mantener o cambiar modo activo/pasivo según la orden y la situación.","Elegir filtros pertinentes y PRIORIDAD: SUBESPACIO.","Seleccionar duración y resolución.","Revisar configuración.","EJECUTAR y esperar al resultado."]},
+        {"type":"callout","label":"NO HAY TIRADA MÁGICA","text":"Repetir exactamente el mismo barrido bajo las mismas condiciones produce un resultado esencialmente equivalente. Para mejorar, cambia algo real: tiempo, resolución, potencia, filtros, posición, entorno o información disponible."}
+      ]
+    },
+    {
+      "id": "03",
+      "title": "Búsqueda / localización",
+      "subtitle": "SABES MÁS O MENOS QUÉ BUSCAS",
+      "blocks": [
+        {"type":"p","text":"Una búsqueda responde a una intención distinta del barrido: «sé más o menos qué estoy buscando; intenta encontrarlo». El sistema consulta el universo real y devuelve candidatos compatibles; nunca crea el objetivo por el hecho de buscarlo."},
+        {"type":"p","text":"El resultado puede ser uno, varios, ninguno o una colección de coincidencias dudosas. La identificación garantizada no forma parte de esta función."},
+        {"type":"bullets","items":["Área de búsqueda: delimita dónde buscar.","Sensibilidad: valores altos detectan señales más débiles, pero elevan ruido y falsos positivos.","Resolución: detalle que se intentará obtener de los candidatos.","Criterios: propiedades adicionales para clasificar o ponderar candidatos."]},
+        {"type":"table","headers":["Objetivo","Qué prioriza"],"rows":[["Nave","Firmas artificiales compatibles con nave, energía, propulsión, warp o transpondedor"],["Lanzadera","Firmas más pequeñas y débiles"],["Sonda / baliza","Dispositivos pequeños, transmisiones o emisiones intermitentes"],["Forma de vida","Firmas biológicas"],["Objeto artificial","Construcciones, restos, plataformas, dispositivos"],["Fuente de energía","Emisiones energéticas sin exigir conocer la fuente"],["Firma warp","Actividad warp actual o residual"],["Emisión subespacial","Actividad o fenómeno subespacial"],["Señal / transpondedor","Transmisión, baliza o código concreto"],["Radiación / partículas","Fuentes o regiones emisoras"],["Firma definida","Combinación avanzada definida por el operador"]]},
+        {"type":"procedure","title":"Localizar una lanzadera desaparecida","steps":["Seleccionar BÚSQUEDA / LOCALIZACIÓN > LANZADERA.","Definir el área desde la última posición conocida.","Añadir criterios: energía y/o transpondedor si son conocidos.","Ajustar sensibilidad y resolución según distancia e interferencias.","INICIAR BÚSQUEDA.","Revisar candidatos y sus niveles de coincidencia antes de informar una identificación."]},
+        {"type":"callout","label":"FALSOS POSITIVOS","text":"Un falso positivo es un artefacto de observación, no un objeto nuevo creado en el universo. Debe poder desaparecer o degradarse con mejores datos."}
+      ]
+    },
+    {
+      "id": "04",
+      "title": "Contactos y memoria de la nave",
+      "subtitle": "UNA DETECCIÓN SE CONVIERTE EN EXPEDIENTE",
+      "blocks": [
+        {"type":"p","text":"Cuando una detección alcanza suficiente entidad operacional, se mantiene como contacto. Un contacto no significa que sepamos exactamente qué es; significa que existe una ficha observacional que la nave puede actualizar y consultar."},
+        {"type":"p","text":"La identidad del contacto persiste mientras posición, trayectoria, firmas y continuidad temporal permitan justificar que seguimos observando el mismo objeto."},
+        {"type":"bullets","items":["Vistas: Todos, No identificados, Identificados, Marcados y Perdidos recientemente.","Ficha: posición estimada, distancia, vector, velocidad, firmas, confianza, clasificación, historial y estado.","Acciones: barrido focalizado, aumentar resolución, iniciar seguimiento, marcar, comparar y enviar datos.","Pérdida temporal no obliga a crear un contacto nuevo si la reidentificación es sólida."]},
+        {"type":"table","headers":["Sistema","Aporta a la ficha común"],"rows":[["Sensores","Firmas, posición, movimiento, clasificación sensorial"],["Táctica","Escudos, armamento, postura y datos de combate"],["Ciencia","Interpretación científica y física"],["Comunicaciones","Transpondedor, canales, señales y autenticación"],["Ordenador","Coincidencias históricas y base de datos"]]},
+        {"type":"callout","label":"MEMORIA PERSISTENTE","text":"La ficha conserva primera y última detección, observaciones, clasificaciones, fuentes, confianza, notas y estado. Un encuentro futuro puede compararse con registros anteriores de la misma nave."},
+        {"type":"callout","label":"SIN OMNISCIENCIA","text":"La ficha común no convierte a todas las consolas en omniscientes. Cada dato conserva su procedencia y confianza."}
+      ]
+    },
+    {
+      "id": "05",
+      "title": "Seguimiento",
+      "subtitle": "MANTENER UN CONTACTO BAJO OBSERVACIÓN",
+      "blocks": [
+        {"type":"p","text":"Seguimiento mantiene y actualiza la solución de movimiento de uno o varios contactos. El conocimiento mejora por acumulación de observaciones, pero no revela automáticamente la identidad del objetivo."},
+        {"type":"p","text":"La capacidad de seguimiento es finita. Depende de clase de nave, era, sensores, integridad, potencia e interferencias."},
+        {"type":"bullets","items":["Seguimiento normal: actualización continua con consumo estándar.","Seguimiento prioritario: más recursos para mejorar frecuencia/precisión.","Seguimiento múltiple: reparte capacidad; saturar el sistema degrada actualización y precisión.","Seguir firma concreta: mantiene una firma particular cuando el contacto completo es difícil de sostener.","Recuperar contacto perdido: usa última posición, vector, velocidad, firma y tiempo desde pérdida."]},
+        {"type":"procedure","title":"Recuperar un contacto perdido","steps":["Abrir CONTACTOS > PERDIDOS RECIENTEMENTE o SEGUIMIENTO > RECUPERAR CONTACTO.","Revisar última posición, vector, velocidad, firmas y tiempo desde pérdida.","Generar el área probable de búsqueda.","Elegir la firma o criterio con mayor valor para la reacquisición.","Ejecutar la búsqueda/barrido correspondiente.","Si la coincidencia supera el umbral de identidad, reutilizar el mismo contact_id."]},
+        {"type":"callout","label":"PREDICCIÓN, NO PROFECÍA","text":"Las posiciones futuras llevan incertidumbre creciente. Una maniobra, aceleración o cambio de firma puede invalidar la predicción."}
+      ]
+    },
+    {
+      "id": "06",
+      "title": "Lectura sensorial",
+      "subtitle": "MEDIR SIN INTERPRETAR DE MÁS",
+      "blocks": [
+        {"type":"p","text":"Lectura sensorial abre los datos físicos observados o estimados de un contacto. La consola puede medir, derivar y comparar; la explicación científica profunda corresponde a Ciencia. Toda cifra estimada debe poder expresar margen de error o confianza cuando proceda."},
+        {"type":"bullets","items":["Intensidad de señal: fuerza observada; no equivale por sí sola a distancia.","Tipo de firma: electromagnética, subespacial, gravimétrica, térmica, biológica, warp, etc.","Banda / frecuencia: rango en el que aparece una emisión.","Firma energética y firma subespacial: patrones observados.","Masa y dimensiones aproximadas: estimaciones con incertidumbre.","Vector / velocidad: movimiento relativo observado o derivado.","Formas de vida detectables: presencia, estimación de cantidad o distribución cuando la capacidad lo permita.","Coincidencia con patrones conocidos: comparación con la base de datos de la nave."]},
+        {"type":"procedure","title":"Enviar una lectura a Ciencia","steps":["Abrir contacto, lectura o resultado.","Seleccionar ENVIAR DATOS A > CIENCIA.","Elegir las observaciones que forman el paquete.","Asignar prioridad y escribir el análisis solicitado.","Confirmar envío.","Ciencia puede aceptar, analizar, pedir más datos, completar o cancelar.","Los hallazgos científicos vuelven a la ficha común con source_system = science."]},
+        {"type":"callout","label":"FRONTERA","text":"Sensores puede decir «emisión subespacial irregular». Decir «fractura subespacial causada por una reacción concreta» requiere Ciencia, salvo identificación sustentada por conocimiento previo válido."}
+      ]
+    },
+    {
+      "id": "07",
+      "title": "Interferencias / compensación",
+      "subtitle": "SEPARAR SEÑAL DE RUIDO",
+      "blocks": [
+        {"type":"p","text":"La compensación permite trabajar cuando el entorno o un adversario degradan la lectura. No borra la causa física: reduce sus efectos a cambio de costes o sacrificios. Las interferencias pueden afectar de forma distinta a cada firma o banda."},
+        {"type":"bullets","items":["Ambiental: ruido subespacial, partículas cargadas, turbulencia gravimétrica, radiación, actividad electromagnética natural.","Deliberada: jamming, enmascaramiento, contramedidas electrónicas, reducción intencionada de emisiones o tecnologías de ocultación válidas para la era."]},
+        {"type":"table","headers":["Método","Ventaja","Coste típico"],"rows":[["Automática","Rápida y segura","No siempre óptima"],["Ajuste manual","Puede superar a la automática","Riesgo de error del operador"],["Cambiar banda","Evita una región ruidosa","Puede perder otras firmas"],["Aumentar potencia","Mejora margen de señal","Consume energía asignada"],["Reducir resolución","Estabiliza el contacto","Pierde detalle"],["Prolongar integración","Acumula señal","Consume tiempo"],["Recuperar señal","Usa historial del contacto","Depende de datos previos y entorno"]]},
+        {"type":"callout","label":"ATRIBUCIÓN","text":"Detectar interferencia no significa saber si es natural o deliberada. La atribución puede necesitar Ciencia, Táctica u otra especialidad."},
+        {"type":"callout","label":"ENTORNO CAMBIANTE","text":"Una compensación que funcionaba puede dejar de hacerlo si cambian el contacto, la nave o el entorno."}
+      ]
+    },
+    {
+      "id": "08",
+      "title": "Configuración",
+      "subtitle": "PREPARAR LA CONSOLA ANTES DE ACTUAR",
+      "blocks": [
+        {"type":"p","text":"Configuración define el comportamiento base de Sensores. No ejecuta operaciones. Una operación concreta puede sobrescribir temporalmente esos valores sin alterar los predeterminados. La jerarquía es: estándar de la nave → perfil del operador → override temporal de la operación."},
+        {"type":"bullets","items":["Sensibilidad: baja / estándar / alta según el equilibrio entre señales débiles y ruido.","Resolución predeterminada: general / estándar / alta.","Potencia: Sensores solo administra la energía ya asignada. Más potencia se solicita a OPS.","Matriz: solo pueden elegirse conjuntos instalados, disponibles y compatibles con la era/clase.","Banda / frecuencia: preferencia operativa que puede cambiarse por situación.","Frecuencia de actualización: más actualización consume más capacidad.","Filtros y prioridades predeterminados: punto de partida, no reglas inmutables.","Perfiles: conjuntos de ajustes, nunca bonificaciones ocultas."]},
+        {"type":"table","headers":["Perfil","Intención"],"rows":[["Estándar","Operación general equilibrada"],["Navegación","Entorno y seguridad de ruta"],["Búsqueda y rescate","Biológicas, térmicas, transpondedores"],["Ciencia","Datos físicos y firmas relevantes"],["Seguimiento","Actualización y continuidad de contactos"],["Bajo ruido","Discreción / filtrado"],["Largo alcance","Cobertura distante"]]},
+        {"type":"callout","label":"RESTAURAR","text":"Siempre debe existir RESTAURAR CONFIGURACIÓN ESTÁNDAR para regresar al baseline autorizado de la nave."},
+        {"type":"callout","label":"ERROR HUMANO","text":"Una banda, filtro o prioridad mal escogidos pero técnicamente válidos se aplican. El sistema no adivina la intención del operador."}
+      ]
+    },
+    {
+      "id": "09",
+      "title": "Resultados",
+      "subtitle": "CONSERVAR, COMPARAR Y DISTRIBUIR OBSERVACIONES",
+      "blocks": [
+        {"type":"p","text":"Resultados es el historial operativo inmediato de los productos de Sensores. Conserva la instantánea obtenida, su configuración, hora, procedencia y confianza. Una observación nueva no reescribe una antigua. Las lecturas importantes pueden guardarse en la memoria de la nave y compararse posteriormente."},
+        {"type":"bullets","items":["Operación actual: progreso y resultados parciales permitidos.","Último barrido: acceso directo al último barrido completado.","Resultados recientes: historial cronológico inmediato.","Lecturas guardadas: resultados persistentes seleccionados.","Comparar lecturas: muestra diferencias medidas; no interpreta intenciones.","Repetir operación: copia la configuración, pero ejecuta de nuevo contra el mundo actual."]},
+        {"type":"procedure","title":"Comparar dos lecturas del mismo contacto","steps":["Seleccionar dos resultados compatibles.","Comparar distancia, velocidad, intensidad, firmas y estado de transpondedor u otros campos compartidos.","Registrar el cambio observado.","Si se necesita interpretar el significado, enviar a la consola adecuada: Ciencia, Táctica, OPS, CONN, Mando u Ordenador."]},
+        {"type":"callout","label":"PARCIAL","text":"Una operación larga puede producir un resultado parcial. Si se cancela, la lectura puede conservarse, pero nunca se etiqueta como completa."},
+        {"type":"callout","label":"NO CONFUNDIR","text":"RESULTADOS conserva datos sensoriales. El Operational Event Log conservará acciones, decisiones y responsabilidad del personal."}
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Diagnóstico",
+      "subtitle": "COMPROBAR SI EL PROBLEMA ESTÁ EN LOS SENSORES",
+      "blocks": [
+        {"type":"p","text":"Diagnóstico inspecciona la propia instalación sensora. Es la respuesta correcta cuando una lectura parece imposible, una matriz rinde por debajo de lo esperado o una avería puede estar contaminando observaciones. Un diagnóstico nominal puede descartar fallos conocidos del equipo, pero no demuestra que la interpretación de una señal externa sea correcta."},
+        {"type":"bullets","items":["Autodiagnóstico: alimentación, matrices, canales, sincronización, calibración y errores internos.","Estado por matriz: integridad, disponibilidad y rendimiento de cada conjunto.","Calibración: corrige desajustes dentro del ámbito de Sensores.","Rendimiento: capacidad efectiva frente al nominal disponible.","Errores / degradación: historial técnico inmediato.","Solicitar soporte de Ingeniería: incidencia estructurada cuando se necesita reparación física."]},
+        {"type":"procedure","title":"Lectura extraña: verificar el instrumento","steps":["Abrir DIAGNÓSTICO > AUTODIAGNÓSTICO.","Revisar matriz, banda, calibración y rendimiento.","Si hay descalibración y es corregible por Sensores, iniciar recalibración.","Si existe daño físico, generar SOLICITUD A INGENIERÍA con diagnóstico, componente, gravedad y prioridad.","Si el sistema queda nominal, tratar la lectura externa como un fenómeno real pendiente de análisis, no como certeza de interpretación."]},
+        {"type":"callout","label":"INGENIERÍA","text":"Sensores diagnostica y recalibra. Ingeniería repara, sustituye y mantiene hardware."},
+        {"type":"callout","label":"TIEMPO","text":"Una recalibración consume tiempo y puede dejar temporalmente una matriz fuera de servicio."}
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Procedimientos operativos estándar",
+      "subtitle": "SECUENCIAS QUE DEBES DOMINAR",
+      "blocks": [
+        {"type":"p","text":"Los siguientes SOP sintetizan el uso de varias ramas. En juego deben resolverse con las mismas operaciones reales de la consola, no con un minijuego separado."},
+        {"type":"procedure","title":"SOP-01: Barrido inicial de guardia","steps":["Comprobar ESTADO: potencia, matrices, interferencias y operación en curso.","Cargar el perfil estándar de la nave o el autorizado para la misión.","Ejecutar barrido pasivo de corto alcance.","Revisar contactos, trazas e interferencias.","Informar cualquier desviación significativa."]},
+        {"type":"procedure","title":"SOP-02: Contacto desconocido","steps":["Abrir la ficha del contacto.","Revisar confianza y firmas realmente observadas.","Iniciar seguimiento normal o prioritario según orden.","Ejecutar barrido focalizado si se necesita más detalle.","Comparar con patrones conocidos.","Enviar a Ciencia/Táctica si la pregunta excede Sensores."]},
+        {"type":"procedure","title":"SOP-03: Búsqueda y rescate","steps":["Definir última posición conocida y ventana temporal.","Seleccionar objetivo apropiado: lanzadera, formas de vida, señal/transpondedor.","Aumentar sensibilidad si el entorno lo permite.","Priorizar biológica, térmica y transpondedor según contexto.","Revisar candidatos y falsos positivos.","Marcar y seguir los candidatos relevantes."]},
+        {"type":"procedure","title":"SOP-04: Interferencia intensa","steps":["Identificar qué firmas/bandas están degradadas.","Probar compensación automática si la situación lo permite.","Aplicar ajuste manual: banda, potencia, resolución o integración.","Registrar el coste de la compensación.","Si hay indicios de contramedida deliberada, enviar datos a Táctica/Ciencia."]},
+        {"type":"procedure","title":"SOP-05: Fallo de sensor","steps":["Ejecutar autodiagnóstico.","Aislar matriz/banda/capacidad afectada.","Recalibrar si procede.","Cambiar a matriz alternativa si está disponible.","Solicitar soporte de Ingeniería cuando exista daño físico."]}
+      ]
+    },
+    {
+      "id": "12",
+      "title": "Lenguaje de informe",
+      "subtitle": "DECIR EXACTAMENTE LO QUE SABES",
+      "blocks": [
+        {"type":"p","text":"Un buen operador no solo obtiene datos: los comunica sin inflar la certeza. La forma del informe debe reflejar el nivel real de evidencia."},
+        {"type":"table","headers":["Situación","Informe correcto"],"rows":[["Traza débil","«Traza subespacial intermitente, baja confianza.»"],["Candidato probable","«Posible nave, coincidencia 72 %, sin transpondedor.»"],["Identificación sólida","«Contacto clasificado como crucero de clase conocida, confianza alta.»"],["Incertidumbre de vida","«Entre 48 y 63 formas de vida detectables; confianza 71 %.»"],["Predicción","«Posición estimada a +30 s, confianza 82 %; a +5 min, 31 %.»"],["Sensor nominal","«Autodiagnóstico nominal; no se detecta fallo conocido que explique la lectura.»"]]},
+        {"type":"callout","label":"EVITA","text":"No conviertas «compatible con» en «es». No conviertas «no detectado» en «no existe». No conviertas una predicción en una certeza."}
+      ]
+    },
+    {
+      "id": "13",
+      "title": "Errores de operador",
+      "subtitle": "LA CONSOLA OBEDECE; TÚ ERES RESPONSABLE",
+      "blocks": [
+        {"type":"bullets","items":["Escanear el sector equivocado y asumir que no hay contactos en el sector correcto.","Usar filtros demasiado estrechos y perder firmas relevantes.","Confundir prioridad con filtro exclusivo.","Elevar sensibilidad al máximo sin considerar ruido y falsos positivos.","Saturar seguimiento múltiple y degradar contactos prioritarios.","Interpretar un patrón como causa científica sin enviarlo a Ciencia.","Repetir el mismo barrido esperando una mejora gratuita.","Confundir «sin transpondedor detectado» con «sin transpondedor».","No comprobar daños/calibración ante una lectura anómala.","Solicitar más potencia sin pasar por OPS.","Reparar mentalmente un problema de hardware desde Sensores en vez de solicitar Ingeniería.","Sobrescribir mentalmente una lectura antigua en lugar de conservar el historial y comparar."]},
+        {"type":"callout","label":"REGLA PROFESIONAL","text":"Un error técnicamente válido no es un error de interfaz. Forma parte de la evaluación del operador."}
+      ]
+    },
+    {
+      "id": "14",
+      "title": "Ejercicios de Academia",
+      "subtitle": "ENTRENAMIENTO PRÁCTICO CON EL SISTEMA REAL",
+      "blocks": [
+        {"type":"p","text":"Estos ejercicios están pensados para el modo de estudio de la Academia. El cadete opera la misma lógica que una nave real, con UX pedagógica y evaluación posterior."},
+        {"type":"procedure","title":"E-01 // Barrido de largo alcance","steps":["Orden: «Barrido de largo alcance del sector 041. Prioridad a emisiones subespaciales.»","Configura y ejecuta sin modificar más parámetros de los necesarios.","Evaluación: sector correcto, diferencia filtro/prioridad, modo, duración, revisión antes de ejecutar e informe final."]},
+        {"type":"procedure","title":"E-02 // Lanzadera desaparecida","steps":["Una lanzadera no responde. Última posición conocida hace 11 minutos. Hay interferencia moderada de partículas.","Evaluación: tipo de búsqueda, área, sensibilidad, criterios, tratamiento de candidatos y recuperación de señal."]},
+        {"type":"procedure","title":"E-03 // Contacto perdido","steps":["Contacto 07 acelera y luego se pierde. Recupera el seguimiento sin crear una identidad nueva de forma arbitraria.","Evaluación: uso del historial, área probable, firma elegida y umbral de reidentificación."]},
+        {"type":"procedure","title":"E-04 // Emisión desconocida","steps":["Detectas una emisión subespacial desconocida. La lectura es sólida, pero no sabes qué fenómeno la causa.","Evaluación: frontera Sensores/Ciencia, paquete enviado, prioridad y solicitud de análisis."]},
+        {"type":"procedure","title":"E-05 // Matriz incoherente","steps":["Una matriz lateral muestra lecturas incoherentes. Determina si debes recalibrar, cambiar de matriz o solicitar Ingeniería.","Evaluación: diagnóstico, distinción descalibración/daño, coste temporal y handoff a Ingeniería."]},
+        {"type":"procedure","title":"E-06 // Capacidad de seguimiento","steps":["Tienes ocho contactos en seguimiento y entra un noveno de posible interés táctico.","Evaluación: gestión de capacidad, prioridades y comunicación con Táctica/Mando."]}
+      ]
+    },
+    {
+      "id": "15",
+      "title": "Referencia rápida",
+      "subtitle": "UNA PÁGINA PARA VOLVER A ESTAR OPERATIVO",
+      "blocks": [
+        {"type":"table","headers":["Necesidad","Ruta"],"rows":[["Ver qué hay","BARRIDOS"],["Encontrar algo conocido por características","BÚSQUEDA / LOCALIZACIÓN"],["Abrir la ficha de algo detectado","CONTACTOS"],["Mantenerlo bajo observación","SEGUIMIENTO"],["Ver medidas y firmas","LECTURA SENSORIAL"],["Limpiar una lectura degradada","INTERFERENCIAS / COMPENSACIÓN"],["Cambiar valores base","CONFIGURACIÓN"],["Revisar/guardar/comparar lo obtenido","RESULTADOS"],["Comprobar si falla el equipo","DIAGNÓSTICO"]]},
+        {"type":"table","headers":["Pregunta","Destino"],"rows":[["¿Qué fenómeno científico es?","CIENCIA"],["¿Es una amenaza / qué armas tiene?","TÁCTICA"],["¿Qué rumbo debe seguir la nave?","CONN / NAVEGACIÓN"],["¿Necesitamos más energía?","OPS"],["¿Hay que reparar hardware?","INGENIERÍA"],["¿Coincide con registros históricos?","ORDENADOR / BASE DE DATOS"]]},
+        {"type":"callout","label":"MANTRA","text":"Detecta. Mide. Conserva la incertidumbre. Comparte los datos. No inventes la conclusión."}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#090b12">
+  <meta name="description" content="Academia de la Flota Estelar — terminal de estudio del proyecto Videojuego Star Trek.">
+  <title>Academia de la Flota Estelar</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/lcars.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <div class="orientation-lock" aria-hidden="true">
+    <div class="orientation-lock__panel">
+      <span class="eyebrow">STARFLEET ACADEMY // TERMINAL MÓVIL</span>
+      <h1>REORIENTE EL TERMINAL</h1>
+      <p>La interfaz móvil de la Academia está optimizada para orientación vertical.</p>
+    </div>
+  </div>
+
+  <div class="app-shell">
+    <header class="topbar">
+      <button class="brand" data-route="home" aria-label="Volver al inicio">
+        <span class="brand__mark" aria-hidden="true">⌁</span>
+        <span>
+          <strong>STARFLEET ACADEMY</strong>
+          <small>SISTEMA ACADÉMICO // TERMINAL 01</small>
+        </span>
+      </button>
+
+      <div class="topbar__status" aria-label="Estado del sistema">
+        <span><i class="status-dot"></i>SISTEMA EN LÍNEA</span>
+        <span id="stardate">FECHA ESTELAR —</span>
+      </div>
+    </header>
+
+    <div class="lcars-frame">
+      <aside class="side-rail" aria-label="Navegación principal">
+        <div class="rail-cap rail-cap--top"></div>
+        <nav class="rail-nav">
+          <button class="rail-btn is-active" data-route="home"><span>01</span>ACADEMIA</button>
+          <button class="rail-btn" data-route="studies"><span>02</span>ESTUDIOS</button>
+          <button class="rail-btn" data-route="progress"><span>03</span>PROGRESO</button>
+        </nav>
+        <div class="rail-fill"></div>
+        <div class="rail-label">SF<br>2399</div>
+        <div class="rail-cap rail-cap--bottom"></div>
+      </aside>
+
+      <main id="app" class="main-stage" tabindex="-1">
+        <section class="view is-active" id="view-home" data-view="home">
+          <div class="hero">
+            <div class="hero__copy">
+              <span class="eyebrow">FEDERACIÓN UNIDA DE PLANETAS // FORMACIÓN DE CADETES</span>
+              <h1>ACADEMIA DE LA<br><em>FLOTA ESTELAR</em></h1>
+              <p class="hero__lead">Material de entrenamiento operativo transformado en una interfaz de estudio diseñada para aprender sistemas reales de una nave estelar.</p>
+              <div class="hero__actions">
+                <button class="cta cta--primary" data-route="studies">ENTRAR EN ESTUDIOS</button>
+                <button class="cta cta--ghost" data-open-subject="sensores">CONTINUAR: SENSORES</button>
+              </div>
+            </div>
+
+            <div class="hero__terminal" aria-hidden="true">
+              <div class="scanner">
+                <div class="scanner__grid"></div>
+                <div class="scanner__sweep"></div>
+                <div class="scanner__core"></div>
+                <span class="scanner__label scanner__label--a">ACADEMY NET</span>
+                <span class="scanner__label scanner__label--b">CADET ACCESS</span>
+                <span class="scanner__label scanner__label--c">LCARS EDU</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="dashboard-grid">
+            <article class="panel panel--accent">
+              <span class="panel__code">CURR // 001</span>
+              <h2>Sistemas de Nave</h2>
+              <p>Entrenamiento orientado al uso real de consolas, procedimientos y toma de decisiones.</p>
+            </article>
+            <article class="panel">
+              <span class="panel__code">STATUS</span>
+              <h2>1 manual disponible</h2>
+              <p>Sensores v0.1 es el primer módulo académico operativo.</p>
+            </article>
+            <article class="panel">
+              <span class="panel__code">METHOD</span>
+              <h2>Aprender haciendo</h2>
+              <p>Teoría, procedimientos, lenguaje profesional, errores típicos y ejercicios.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="view" id="view-studies" data-view="studies">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">CATÁLOGO ACADÉMICO</span>
+              <h1>SISTEMAS DE NAVE</h1>
+            </div>
+            <span class="section-heading__code">ACADEMY // SHIP OPS</span>
+          </div>
+
+          <div class="subject-grid">
+            <button class="subject-card subject-card--live" data-open-subject="sensores">
+              <span class="subject-card__id">SYS-01</span>
+              <span class="subject-card__status">DISPONIBLE</span>
+              <strong>SENSORES</strong>
+              <small>Manual de Operador v0.1</small>
+              <span class="subject-card__progress"><i id="sensor-progress-bar"></i></span>
+              <span id="sensor-progress-label">0 % COMPLETADO</span>
+            </button>
+
+            <article class="subject-card is-locked">
+              <span class="subject-card__id">SYS-02</span>
+              <span class="subject-card__status">PRÓXIMAMENTE</span>
+              <strong>NAVEGACIÓN / CONN</strong>
+              <small>Módulo en desarrollo</small>
+            </article>
+
+            <article class="subject-card is-locked">
+              <span class="subject-card__id">SYS-03</span>
+              <span class="subject-card__status">PRÓXIMAMENTE</span>
+              <strong>INGENIERÍA</strong>
+              <small>Módulo en desarrollo</small>
+            </article>
+
+            <article class="subject-card is-locked">
+              <span class="subject-card__id">SYS-04</span>
+              <span class="subject-card__status">PRÓXIMAMENTE</span>
+              <strong>TÁCTICA</strong>
+              <small>Módulo en desarrollo</small>
+            </article>
+          </div>
+        </section>
+
+        <section class="view" id="view-subject" data-view="subject">
+          <div class="subject-shell">
+            <aside class="subject-index">
+              <div class="subject-index__header">
+                <span class="eyebrow">MANUAL OPERATIVO</span>
+                <h2>SENSORES</h2>
+                <p>v0.1 // 04 OCT 2026</p>
+              </div>
+              <div id="module-list" class="module-list" aria-label="Índice del manual"></div>
+            </aside>
+
+            <article class="study-reader">
+              <div class="reader-head">
+                <button class="back-link" data-route="studies">← CATÁLOGO</button>
+                <div class="reader-head__meta">
+                  <span id="reader-position">MÓDULO 00 / 15</span>
+                  <span id="reader-completion">PROGRESO 0 %</span>
+                </div>
+              </div>
+
+              <div id="lesson-content" class="lesson-content" aria-live="polite"></div>
+
+              <div class="reader-controls">
+                <button id="prev-module" class="cta cta--ghost">← ANTERIOR</button>
+                <button id="mark-complete" class="cta cta--primary">MARCAR COMO ESTUDIADO</button>
+                <button id="next-module" class="cta cta--ghost">SIGUIENTE →</button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="view" id="view-progress" data-view="progress">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">EXPEDIENTE LOCAL DEL CADETE</span>
+              <h1>PROGRESO</h1>
+            </div>
+            <span class="section-heading__code">LOCAL STORAGE // DEVICE</span>
+          </div>
+          <div class="progress-panel">
+            <div class="progress-ring" id="progress-ring"><span id="progress-big">0%</span></div>
+            <div>
+              <h2>Sensores</h2>
+              <p id="progress-copy">Aún no has marcado ningún módulo como estudiado.</p>
+              <button id="reset-progress" class="cta cta--danger">REINICIAR PROGRESO LOCAL</button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="footer">
+      <span>STARFLEET ACADEMY // EDUCATIONAL TERMINAL</span>
+      <span>PROYECTO FAN // VIDEOJUEGO STAR TREK</span>
+    </footer>
+  </div>
+</body>
+</html>
