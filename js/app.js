@@ -169,8 +169,9 @@ function subjectHtml(subject) {
 
   const meta = subject.specialization ? '<small class="subject-item__meta">' + escapeHtml(subject.specialization) + '</small>' : "";
   if (subject.available && subject.studyId) {
+    const method = '<small class="subject-item__method">Teoría · Clase con instructor · Práctica · Evaluación continua</small>';
     return '<button class="subject-item subject-item--available" data-open-study="' + subject.studyId + '">' +
-      '<span><strong>' + escapeHtml(subject.title) + '</strong>' + meta + '</span>' +
+      '<span><strong>' + escapeHtml(subject.title) + '</strong>' + meta + method + '</span>' +
       '<span class="subject-item__action">ABRIR MATERIAL →</span></button>';
   }
 
