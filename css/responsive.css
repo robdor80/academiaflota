@@ -210,7 +210,7 @@
     min-height:100vh;
     margin:0;
     padding:clamp(28px,3.2vh,52px) clamp(24px,2.2vw,42px) 28px;
-    background:#081726;
+    background:linear-gradient(to bottom,#4F729C 0%,#294562 38%,#081726 100%);
     border:0;
     border-right:1px solid rgba(255,255,255,.12);
   }
@@ -367,7 +367,7 @@
     height:100vh;
     padding:28px 22px 22px;
     overflow-y:auto;
-    background:#0b1b2e;
+    background:linear-gradient(to bottom,#4F729C 0%,#2c4764 38%,#0b1b2e 100%);
     color:#fff;
     border-right:1px solid #19344f;
   }
