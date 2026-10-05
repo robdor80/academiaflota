@@ -2,7 +2,9 @@
 
 Portal de consulta y estudio para el proyecto **Videojuego Star Trek**.
 
-## v0.3.1 — Manual del Candidato y currículo oficial compartido con el juego
+## v0.5.0 — Currículo completo de cuatro años publicado
+
+La web ya expone el currículo aprobado completo: 60 asignaturas/procesos principales y 7 manuales de rama profesional, derivados del repositorio fuente `robdor80/Videojuego_StarTrek`.
 
 La web no simula la carrera del videojuego. Su función es permitir consultar, estudiar, practicar y hacer tests fuera del juego usando exactamente el mismo currículo y los mismos manuales.
 
@@ -14,11 +16,13 @@ La web no simula la carrera del videojuego. Su función es permitir consultar, e
 - Cadete de 2.ª clase — 3 trimestres y especialización.
 - Cadete de 1.ª clase — 3 trimestres.
 
-La estructura canónica se almacena en `data/curriculum.json`.
+La estructura autoritativa vive en `Videojuego_StarTrek/gameplay/careers/academy_path/curriculum/`. `data/curriculum.json` es una vista web derivada y no debe convertirse en una fuente paralela.
 
-### Sensores
+### Material académico completo
 
-El Manual de Operador de Sensores se presenta en la estructura oficial del juego:
+Cada asignatura del plan de estudios tiene un JSON web derivado bajo `data/courses/`, y cada rama profesional bajo `data/branches/`.
+
+La web conserva además el **Manual de Operador de Sensores v0.1** como material especializado complementario:
 
 - Sensores I — Estado de sensores, Barridos, Búsqueda / Localización.
 - Sensores II — Contactos, Seguimiento, Lectura sensorial, Interferencias / Compensación.
@@ -72,3 +76,32 @@ En la web se estructura como:
 - Prepararse para la admisión
 
 El contenido mostrado procede del manual aprobado; la interfaz no añade conocimientos externos al temario.
+
+
+## Cobertura v0.5.0
+
+- 4.ª clase: 15 asignaturas publicadas.
+- 3.ª clase: 15 asignaturas publicadas.
+- 2.ª clase: 15 asignaturas/procesos publicados.
+- 1.ª clase: 15 asignaturas/procesos publicados.
+- 7 ramas profesionales publicadas.
+- Progreso local genérico por asignatura.
+- Manual del Candidato conservado.
+- Manual especializado de Sensores conservado.
+- Las prácticas y el test interactivo existentes de Sensores siguen disponibles como primer vertical slice; la generalización de evaluaciones interactivas se hará a partir de los bancos autoritativos del repositorio fuente.
+
+## Fuente única
+
+La web **no crea currículo**.
+
+```text
+Videojuego_StarTrek / curriculum
+        ↓
+course.json + branch_curriculum_v1_0.json
+        ↓
+material de estudio / bancos / guías
+        ↓
+academiaflota / data
+```
+
+Cualquier discrepancia se resuelve a favor del repositorio fuente.
