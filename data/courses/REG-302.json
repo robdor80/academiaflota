@@ -1,7 +1,7 @@
 {
   "subject": "Regulaciones, Directiva Principal y responsabilidad",
   "code": "REG-302",
-  "version": "1.0",
+  "version": "1.1",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/REG-302/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/REG-302/MANUAL_v1_0.md",
@@ -21,30 +21,25 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Aplicar restricciones legales, éticas e institucionales básicas a decisiones operativas."
+          "text": "Que una acción sea físicamente posible no significa que esté autorizada. Deben separarse capacidad técnica, autoridad, regulación y responsabilidad."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Ante una duda"
         },
         {
-          "type": "bullets",
+          "type": "numbered",
           "items": [
-            "órdenes",
-            "reglamentos",
-            "responsabilidad",
-            "escalado"
+            "Identificar el problema",
+            "Pedir aclaración",
+            "Consultar norma o autoridad",
+            "Escalar si excede competencia"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Analizar autoridad en tres casos."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación de criterio."
+          "label": "RANGO ≠ AUTORIDAD UNIVERSAL",
+          "text": "Función, misión, regulación y autoridades especiales también importan."
         },
         {
           "type": "heading",
@@ -53,25 +48,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica órdenes en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Analizar autoridad en tres casos.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/federation/starfleet/prime_directive/prime_directive.json",
-            "lore/federation/starfleet/regulations/medical_authority.json",
-            "lore/federation/starfleet/command_structure/succession_rules.json"
+            "Diferencia capacidad y autoridad.",
+            "¿Qué influye en una orden?",
+            "¿Cumplirla elimina responsabilidad?",
+            "¿Qué haces ante duda?",
+            "¿Por qué el rango no resuelve todo?"
           ]
         }
       ]
@@ -83,30 +64,25 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Aplicar restricciones legales, éticas e institucionales básicas a decisiones operativas."
+          "text": "La Primera Directiva / General Order 1 aplica el principio de no interferencia a desarrollo cultural, contaminación tecnológica, interferencia social, política interna y Primer Contacto."
+        },
+        {
+          "type": "callout",
+          "label": "NO ES UN MURO INVISIBLE",
+          "text": "La norma puede desobedecerse; el mundo reacciona con consecuencias institucionales o diplomáticas."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Riesgo de interferencia"
         },
         {
           "type": "bullets",
           "items": [
-            "finalidad",
-            "no interferencia",
-            "reconocimiento de riesgo",
-            "límites de cadete"
+            "Alterar desarrollo interno",
+            "Introducir tecnología o conocimiento",
+            "Favorecer una facción",
+            "Modificar evolución cultural"
           ]
-        },
-        {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Resolver casos introductorios."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Caso escrito/oral."
         },
         {
           "type": "heading",
@@ -115,25 +91,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica finalidad en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Resolver casos introductorios.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/federation/starfleet/prime_directive/prime_directive.json",
-            "lore/federation/starfleet/regulations/medical_authority.json",
-            "lore/federation/starfleet/command_structure/succession_rules.json"
+            "¿Cuál es el principio central?",
+            "¿Qué ámbitos contempla?",
+            "¿Bloquea físicamente?",
+            "¿Qué consecuencias puede tener una infracción?",
+            "¿Qué hace un cadete ante interpretación compleja?"
           ]
         }
       ]
@@ -145,30 +107,16 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Aplicar restricciones legales, éticas e institucionales básicas a decisiones operativas."
-        },
-        {
-          "type": "heading",
-          "text": "Contenidos"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "duda",
-            "aclaración",
-            "conflicto",
-            "procedimiento de escalado"
-          ]
+          "text": "Una orden puede ser ambigua, contradictoria, imposible, incompatible con otra instrucción o potencialmente contraria a regulación."
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Responder a una orden discutible sin improvisar doctrina."
+          "label": "NO INVENTAR DOCTRINA",
+          "text": "El cadete trabaja con normas conocidas y autoridad real; no crea excepciones o permisos."
         },
         {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Escena."
+          "type": "p",
+          "text": "Si dos órdenes parecen incompatibles, se revisan fecha, prioridad, autoridad y si una sustituye a la otra."
         },
         {
           "type": "heading",
@@ -177,25 +125,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica duda en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Responder a una orden discutible sin improvisar doctrina.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/federation/starfleet/prime_directive/prime_directive.json",
-            "lore/federation/starfleet/regulations/medical_authority.json",
-            "lore/federation/starfleet/command_structure/succession_rules.json"
+            "¿Qué hace problemática una orden?",
+            "¿Por qué no inventar doctrina?",
+            "¿Qué busca una aclaración?",
+            "¿Qué datos ayudan a resolver conflicto?",
+            "¿Cuándo escalar?"
           ]
         }
       ]
@@ -207,30 +141,21 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Aplicar restricciones legales, éticas e institucionales básicas a decisiones operativas."
+          "text": "Algunas posiciones poseen autoridad especial en ámbitos concretos; eso no las convierte en autoridad universal."
         },
         {
-          "type": "heading",
-          "text": "Contenidos"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "médica",
-            "seguridad",
-            "mando",
-            "clasificación"
-          ]
+          "type": "definition",
+          "term": "Autoridad médica",
+          "text": "El Chief Medical Officer puede declarar no apta para servicio a una persona, incluso al oficial al mando, cuando existe base médica profesional."
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Identificar ámbitos de autoridad."
+          "label": "IMPORTANTE",
+          "text": "Relevar al CO por aptitud médica no convierte al CMO en capitán; se activa la sucesión normal."
         },
         {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Caso comparado."
+          "type": "p",
+          "text": "Seguridad, clasificación y Mando también poseen ámbitos específicos con límites."
         },
         {
           "type": "heading",
@@ -239,25 +164,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica médica en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Identificar ámbitos de autoridad.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/federation/starfleet/prime_directive/prime_directive.json",
-            "lore/federation/starfleet/regulations/medical_authority.json",
-            "lore/federation/starfleet/command_structure/succession_rules.json"
+            "¿Qué significa autoridad especial?",
+            "¿Qué puede hacer el CMO?",
+            "¿Asume mando automáticamente?",
+            "¿Qué puede limitar clasificación?",
+            "¿Por qué ninguna autoridad es universal?"
           ]
         }
       ]
@@ -268,31 +179,32 @@
       "subtitle": "UNIDAD 05 · REG-302",
       "blocks": [
         {
+          "type": "definition",
+          "term": "Need-to-know",
+          "text": "Necesidad funcional real de acceder a información restringida."
+        },
+        {
           "type": "p",
-          "text": "Aplicar restricciones legales, éticas e institucionales básicas a decisiones operativas."
+          "text": "Rango o acceso técnico no bastan: pueden requerirse función, clearance, misión y autorización específica."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Antes de divulgar"
         },
         {
           "type": "bullets",
           "items": [
-            "need-to-know",
-            "clasificación",
-            "registro",
-            "divulgación"
+            "Destinatario",
+            "Necesidad",
+            "Nivel",
+            "Contexto",
+            "Medio seguro"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Resolver una petición improcedente."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación situacional."
+          "label": "NEGATIVA SEGURA",
+          "text": "No hace falta revelar contenido protegido para explicar que el acceso no está autorizado."
         },
         {
           "type": "heading",
@@ -301,25 +213,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica need-to-know en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Resolver una petición improcedente.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/federation/starfleet/prime_directive/prime_directive.json",
-            "lore/federation/starfleet/regulations/medical_authority.json",
-            "lore/federation/starfleet/command_structure/succession_rules.json"
+            "¿Qué significa need-to-know?",
+            "¿Por qué rango no basta?",
+            "¿Para qué sirve registrar accesos?",
+            "¿Qué se comprueba antes de divulgar?",
+            "¿Qué problema existe al explicar demasiado?"
           ]
         }
       ]
@@ -330,32 +228,17 @@
       "subtitle": "UNIDAD 06 · REG-302",
       "blocks": [
         {
+          "type": "quote",
+          "text": "hechos → norma → autoridad → decisión → registro"
+        },
+        {
           "type": "p",
-          "text": "Aplicar restricciones legales, éticas e institucionales básicas a decisiones operativas."
-        },
-        {
-          "type": "heading",
-          "text": "Contenidos"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "hechos",
-            "regla",
-            "autoridad",
-            "decisión",
-            "registro"
-          ]
+          "text": "Un caso complejo se analiza separando primero lo ocurrido, después qué regla aplica, quién tiene autoridad, qué decisión se toma y qué debe quedar registrado."
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Analizar caso complejo moderado."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación final de curso."
+          "label": "SIN HINDSIGHT",
+          "text": "La decisión se valora con la información disponible en ese momento, no solo con lo que se supo después."
         },
         {
           "type": "heading",
@@ -364,28 +247,15 @@
         {
           "type": "numbered",
           "items": [
-            "Explica hechos en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Analizar caso complejo moderado.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/federation/starfleet/prime_directive/prime_directive.json",
-            "lore/federation/starfleet/regulations/medical_authority.json",
-            "lore/federation/starfleet/command_structure/succession_rules.json"
+            "¿Qué cinco capas se separan?",
+            "¿Por qué empezar por hechos?",
+            "¿Qué papel cumple autoridad?",
+            "¿Por qué evitar hindsight?",
+            "¿Qué debe quedar registrado?"
           ]
         }
       ]
     }
-  ]
+  ],
+  "status": "developed_content"
 }
