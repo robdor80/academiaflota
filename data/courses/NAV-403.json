@@ -1,7 +1,7 @@
 {
   "subject": "Navegación y astrográfica I",
   "code": "NAV-403",
-  "version": "1.0",
+  "version": "1.1",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/NAV-403/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/NAV-403/MANUAL_v1_0.md",
@@ -22,30 +22,29 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Dar una alfabetización espacial suficiente para comprender rutas, posiciones y movimiento de una nave."
+          "text": "Una carta estelar representa conocimiento disponible: sistemas, sectores, regiones, rutas, fronteras, peligros conocidos e instalaciones. No representa toda la verdad del universo."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Cartografía y conocimiento"
         },
         {
           "type": "bullets",
           "items": [
-            "sistemas",
-            "sectores",
-            "regiones",
-            "cartografía"
+            "Detallada",
+            "Incompleta",
+            "Desactualizada",
+            "Incierta"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Localizar destinos en mapa de entrenamiento."
+          "label": "IDEA CLAVE",
+          "text": "El mapa disponible al personaje refleja conocimiento de la nave, no World Truth completa."
         },
         {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Práctica."
+          "type": "p",
+          "text": "La política también importa: fronteras, jurisdicciones, conflictos y apoyo disponible cambian según fecha y campaña."
         },
         {
           "type": "heading",
@@ -54,26 +53,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras sistemas.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Localizar destinos en mapa de entrenamiento.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/navigation/README.md",
-            "gameplay/navigation/route_context_model.json",
-            "gameplay/warp_travel/route_planning_model.json",
-            "gameplay/warp_travel/eta_resolution_model.json"
+            "¿Por qué un mapa no muestra toda la verdad?",
+            "¿Qué información puede contener?",
+            "¿Qué función cumplen sectores y regiones?",
+            "¿Por qué puede quedar desactualizado?",
+            "¿Cómo afecta la política a una ruta?"
           ]
         }
       ]
@@ -84,31 +68,27 @@
       "subtitle": "UNIDAD 02 · NAV-403",
       "blocks": [
         {
-          "type": "p",
-          "text": "Dar una alfabetización espacial suficiente para comprender rutas, posiciones y movimiento de una nave."
+          "type": "definition",
+          "term": "Posición absoluta",
+          "text": "Ubicación expresada dentro de un marco de referencia."
+        },
+        {
+          "type": "definition",
+          "term": "Posición relativa",
+          "text": "Ubicación respecto a otro objeto o referencia."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Vectores"
         },
         {
-          "type": "bullets",
-          "items": [
-            "referencias",
-            "posición relativa",
-            "vectores conceptuales",
-            "orientación"
-          ]
+          "type": "p",
+          "text": "Un vector describe dirección y magnitud. En este nivel se interpreta conceptualmente: aproximarse, alejarse, cruzar trayectoria o mantener vector paralelo."
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Interpretar varias posiciones."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Ejercicio aplicado."
+          "label": "IMPORTANTE",
+          "text": "Orientación y movimiento no son necesariamente lo mismo: una nave puede apuntar en una dirección y desplazarse en otra."
         },
         {
           "type": "heading",
@@ -117,26 +97,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras referencias.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Interpretar varias posiciones.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/navigation/README.md",
-            "gameplay/navigation/route_context_model.json",
-            "gameplay/warp_travel/route_planning_model.json",
-            "gameplay/warp_travel/eta_resolution_model.json"
+            "Diferencia posición absoluta y relativa.",
+            "¿Por qué una coordenada necesita referencia?",
+            "¿Cuándo es útil la posición relativa?",
+            "¿Qué representa un vector?",
+            "¿Orientación y movimiento son siempre iguales?"
           ]
         }
       ]
@@ -148,30 +113,35 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Dar una alfabetización espacial suficiente para comprender rutas, posiciones y movimiento de una nave."
+          "text": "La distancia puede proceder de cartografía, geometría de ruta, sensores o datos históricos, y su precisión puede variar."
+        },
+        {
+          "type": "definition",
+          "term": "ETA",
+          "text": "Hora o tiempo estimado de llegada; no es necesariamente una promesa exacta."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Qué puede cambiar una ETA"
         },
         {
           "type": "bullets",
           "items": [
-            "distancias astronómicas de juego",
-            "ETA",
-            "orden de magnitud",
-            "incertidumbre"
+            "Velocidad",
+            "Ruta",
+            "Daño",
+            "Energía",
+            "Condiciones subespaciales",
+            "Fronteras",
+            "Esperas",
+            "Encuentros",
+            "Nueva información"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Comparar rutas y tiempos dados por el sistema."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Problemas básicos."
+          "label": "INCERTIDUMBRE",
+          "text": "Cuando la confianza es menor, la ventana estimada de llegada debe ser más amplia."
         },
         {
           "type": "heading",
@@ -180,26 +150,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras distancias astronómicas de juego.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Comparar rutas y tiempos dados por el sistema.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/navigation/README.md",
-            "gameplay/navigation/route_context_model.json",
-            "gameplay/warp_travel/route_planning_model.json",
-            "gameplay/warp_travel/eta_resolution_model.json"
+            "¿De dónde puede proceder una distancia?",
+            "¿Qué significa ETA?",
+            "¿Por qué ETA puede ser un rango?",
+            "Nombra cuatro causas de cambio.",
+            "¿Cómo afecta la confianza cartográfica?"
           ]
         }
       ]
@@ -210,31 +165,37 @@
       "subtitle": "UNIDAD 04 · NAV-403",
       "blocks": [
         {
+          "type": "definition",
+          "term": "Impulso",
+          "text": "Régimen subluz y maniobras locales."
+        },
+        {
+          "type": "definition",
+          "term": "Warp",
+          "text": "Viaje superlumínico interestelar cuando nave, ruta y condiciones lo permiten."
+        },
+        {
           "type": "p",
-          "text": "Dar una alfabetización espacial suficiente para comprender rutas, posiciones y movimiento de una nave."
+          "text": "Elegir régimen depende de distancia, objetivo, entorno, seguridad, capacidad, restricciones y misión."
+        },
+        {
+          "type": "callout",
+          "label": "NO ES TELETRANSPORTE",
+          "text": "Entrar en warp no cambia la localización instantáneamente: la ruta tiene segmentos, progreso, ETA y posibles eventos."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Validación de warp"
         },
         {
           "type": "bullets",
           "items": [
-            "régimen subluz",
-            "régimen warp",
-            "transición",
-            "restricciones"
+            "Capacidad actual",
+            "Límite sostenible",
+            "Energía",
+            "Daño",
+            "Condiciones"
           ]
-        },
-        {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Elegir régimen adecuado en escenarios simples."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Caso de decisión."
         },
         {
           "type": "heading",
@@ -243,26 +204,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras régimen subluz.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Elegir régimen adecuado en escenarios simples.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/navigation/README.md",
-            "gameplay/navigation/route_context_model.json",
-            "gameplay/warp_travel/route_planning_model.json",
-            "gameplay/warp_travel/eta_resolution_model.json"
+            "¿Para qué se usa impulso?",
+            "¿Para qué se usa warp?",
+            "¿Por qué warp no es teletransporte de mapa?",
+            "¿Qué valida un factor solicitado?",
+            "¿Qué restricciones pueden afectar el régimen?"
           ]
         }
       ]
@@ -274,30 +220,44 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Dar una alfabetización espacial suficiente para comprender rutas, posiciones y movimiento de una nave."
+          "text": "La ruta más corta no siempre es la mejor. Puede optimizar tiempo, seguridad, soporte, discreción o respeto de restricciones."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Preferencias"
         },
         {
           "type": "bullets",
           "items": [
-            "obstáculos",
-            "zonas restringidas",
-            "anomalías",
-            "fronteras"
+            "Más rápida",
+            "Más segura",
+            "Evitar espacio hostil",
+            "Evitar espacio restringido",
+            "Preferir rutas cartografiadas",
+            "Preferir apoyo de bases",
+            "Bajo contacto"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Peligros"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Anomalías",
+            "Inestabilidad",
+            "Conflictos",
+            "Patrullas hostiles",
+            "Fronteras",
+            "Poco soporte",
+            "Incertidumbre de sensores"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Trazar una ruta segura básica."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Práctica de plotting."
+          "label": "NO FILTRAR EL MUNDO OCULTO",
+          "text": "Un peligro desconocido puede existir en World State sin aparecer como advertencia para el jugador."
         },
         {
           "type": "heading",
@@ -306,26 +266,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras obstáculos.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Trazar una ruta segura básica.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/navigation/README.md",
-            "gameplay/navigation/route_context_model.json",
-            "gameplay/warp_travel/route_planning_model.json",
-            "gameplay/warp_travel/eta_resolution_model.json"
+            "¿Por qué la ruta más corta no siempre es mejor?",
+            "Nombra tres preferencias.",
+            "Diferencia peligro conocido y oculto.",
+            "¿Debe avisarse de un peligro no detectado?",
+            "¿Qué consecuencias puede tener una frontera?"
           ]
         }
       ]
@@ -336,32 +281,25 @@
       "subtitle": "UNIDAD 06 · NAV-403",
       "blocks": [
         {
+          "type": "quote",
+          "text": "origen → destino → restricciones → rutas candidatas → selección → ETA → reporte"
+        },
+        {
           "type": "p",
-          "text": "Dar una alfabetización espacial suficiente para comprender rutas, posiciones y movimiento de una nave."
+          "text": "Una orden ambigua debe aclararse antes de ejecutar. La solución considera nave, propulsión, daño, fronteras, peligros conocidos, permisos y prioridad de misión."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Reporte"
         },
         {
-          "type": "bullets",
-          "items": [
-            "origen",
-            "destino",
-            "restricciones",
-            "ETA",
-            "reporte"
-          ]
+          "type": "p",
+          "text": "Debe ser útil para decidir: ruta, ETA, restricción o riesgo principal y confianza cuando sea relevante."
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Preparar y comunicar una ruta básica."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación integrada."
+          "label": "REEVALUACIÓN",
+          "text": "La ruta puede cambiar si cambian velocidad, daño, energía, subespacio, frontera, encuentros o nueva detección de peligro."
         },
         {
           "type": "heading",
@@ -370,29 +308,15 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras origen.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Preparar y comunicar una ruta básica.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/navigation/README.md",
-            "gameplay/navigation/route_context_model.json",
-            "gameplay/warp_travel/route_planning_model.json",
-            "gameplay/warp_travel/eta_resolution_model.json"
+            "¿Qué pasos sigue una solución básica?",
+            "¿Qué haces si destino es ambiguo?",
+            "¿Por qué generar rutas candidatas?",
+            "¿Qué contiene un reporte breve?",
+            "¿Qué cambios obligan a reevaluar?"
           ]
         }
       ]
     }
-  ]
+  ],
+  "status": "developed_content"
 }
