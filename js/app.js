@@ -37,6 +37,8 @@ let syncManager = null;
 let accountUser = null;
 let syncState = "loading";
 let syncError = "";
+const loadedStudyMaterials = new Map();
+let studyRequest = 0;
 
 function renderAccount() {
   const name = accountUser ? (accountUser.displayName || accountUser.email || "Cuenta Google") :
@@ -82,6 +84,7 @@ function refreshFromSync() {
 }
 
 async function handleAuthUser(user) {
+  studyRequest += 1;
   if (syncManager) syncManager.stop();
   app.profile = null;
   portal.hidden = true;
@@ -192,6 +195,7 @@ async function enterProfile(id) {
 }
 
 function leaveProfile() {
+  studyRequest += 1;
   clearActiveProfile();
   app.profile = null;
   portal.hidden = true;
@@ -213,7 +217,7 @@ async function ensureData() {
   if (!app.exam) app.exam = await loadEvaluationData();
 
   if (!app.curriculum) {
-    const response = await fetch("data/curriculum.json?v=0.3.1");
+    const response = await fetch("data/curriculum.json?v=2.0");
     if (!response.ok) throw new Error("No se pudo cargar el currículo académico.");
     app.curriculum = await response.json();
   }
@@ -357,6 +361,17 @@ function findStudyDefinition(studyId) {
     for (const term of year.trimesters) {
       for (const subject of term.subjects) {
         if (typeof subject === "object" && subject.studyId === studyId) {
+          if (subject.source === "course" && subject.dataFile) {
+            return {
+              id: subject.studyId,
+              title: subject.title,
+              code: subject.courseId,
+              subtitle: year.title + " · " + term.title,
+              dataFile: subject.dataFile,
+              source: "course",
+              label: subject.title.toUpperCase()
+            };
+          }
           return {
             id: subject.studyId,
             title: subject.title,
@@ -391,6 +406,7 @@ function findStudyDefinition(studyId) {
 function currentModules() {
   const definition = findStudyDefinition(app.currentStudyId);
   if (!definition) return [];
+  if (definition.source === "course") return loadedStudyMaterials.get(definition.id)?.modules || [];
   const sourceModules = definition.source === "acceso" ? app.accessManual.modules : app.study.modules;
   return definition.units
     .map(function(id) { return sourceModules.find(function(module) { return module.id === id; }); })
@@ -399,6 +415,11 @@ function currentModules() {
 
 function currentStudyProgress() {
   const definition = findStudyDefinition(app.currentStudyId);
+  if (definition?.source === "course") {
+    const progress = app.profile.studies[definition.code] ||= { completedModules: [] };
+    if (!Array.isArray(progress.completedModules)) progress.completedModules = [];
+    return progress;
+  }
   return definition && definition.source === "acceso" ? profileAccessStudy() : profileStudy();
 }
 
@@ -410,9 +431,25 @@ function currentStudyPercent() {
   return Math.round(done / modules.length * 100);
 }
 
-function openStudy(studyId) {
+async function openStudy(studyId) {
   const definition = findStudyDefinition(studyId);
   if (!definition) return;
+  const request = ++studyRequest;
+  const profileId = app.profile?.id;
+  const owner = getStorageOwner();
+  if (definition.dataFile && !loadedStudyMaterials.has(studyId)) {
+    try {
+      const response = await fetch(definition.dataFile + "?v=2.0");
+      if (!response.ok) throw new Error("No se pudo cargar el curso.");
+      const material = await response.json();
+      if (!Array.isArray(material.modules)) throw new Error("El curso no contiene unidades válidas.");
+      loadedStudyMaterials.set(studyId, material);
+    } catch (error) {
+      if (request === studyRequest && app.profile?.id === profileId && owner === getStorageOwner()) alert(error.message);
+      return;
+    }
+  }
+  if (request !== studyRequest || app.profile?.id !== profileId || owner !== getStorageOwner()) return;
   app.currentStudyId = studyId;
   app.activeModule = 0;
   document.querySelector("#subject-code").textContent = definition.code;

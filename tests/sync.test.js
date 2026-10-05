@@ -1,10 +1,13 @@
 import test from "node:test";
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import { reconcile, createSyncManager } from "../js/sync.js";
 import {
-  setStorageOwner, getProfiles, getSyncRecords, getLegacyProfiles,
-  createProfile, updateProfile, deleteProfile, setActiveProfile, getActiveProfile
+  setStorageOwner, getStorageOwner, getProfiles, getSyncRecords, getLegacyProfiles,
+  createProfile, updateProfile, deleteProfile, setActiveProfile, getActiveProfile,
+  importProfile, onProfileChange, replaceSyncRecords, rotateGuestProfiles
 } from "../js/storage.js";
+import { firebaseConfigured, firebaseConfig } from "../js/firebase-config.js";
 
 function browserStore() {
   const items = new Map();
@@ -134,5 +137,112 @@ test("un cambio sin conexión permanece local y se sube al reanudar", async () =
   await done;
   assert.equal(uploaded.length, 1);
   assert.deepEqual(uploaded[0].studies.sensores.completedModules, ["02"]);
+  manager.stop();
+});
+
+test("la configuración Firebase está completa y apunta al proyecto previsto", () => {
+  assert.equal(firebaseConfigured, true);
+  assert.equal(firebaseConfig.projectId, "webacademiastarfleet");
+  assert.equal(firebaseConfig.authDomain, "webacademiastarfleet.firebaseapp.com");
+});
+
+test("los cursos nuevos y los campos futuros sobreviven a edición e importación", async () => {
+  setStorageOwner("user-courses");
+  const changed = [];
+  onProfileChange(profile => changed.push(profile.id));
+  const profile = createProfile("Alumno de cursos");
+  profile.studies["STF-401"] = { completedModules: ["STF-401-U01"], customNote: "conservar" };
+  profile.studies["ENG-303"] = { completedModules: ["ENG-303-U02"] };
+  profile.futureFeature = { level: 7 };
+  profile.schemaVersion = 2;
+  updateProfile(profile);
+  assert.deepEqual(getProfiles()[0].studies["STF-401"], profile.studies["STF-401"]);
+  assert.deepEqual(getProfiles()[0].studies["ENG-303"], profile.studies["ENG-303"]);
+  assert.deepEqual(getProfiles()[0].futureFeature, profile.futureFeature);
+  assert.equal(getProfiles()[0].schemaVersion, 2);
+  await importProfile({
+    size: 100,
+    text: async () => JSON.stringify({ format: "starfleet-academy-profile", profile })
+  });
+  assert.equal(getProfiles().length, 1);
+  assert.deepEqual(getProfiles()[0].studies["STF-401"], profile.studies["STF-401"]);
+  deleteProfile(profile.id);
+  assert.deepEqual(changed, [profile.id, profile.id, profile.id, profile.id]);
+  assert.equal(getProfiles().length, 0);
+  assert.ok(getSyncRecords()[0].deletedAt);
+  onProfileChange(null);
+});
+
+test("migrar un profileId ya existente no duplica ni pisa la versión más reciente", async () => {
+  setStorageOwner(null);
+  rotateGuestProfiles();
+  const legacy = createProfile("Perfil existente");
+  const newer = { ...legacy, updatedAt: "2099-01-01T00:00:00.000Z", futureFeature: true };
+  setStorageOwner("user-existing");
+  replaceSyncRecords([newer]);
+  const manager = createSyncManager({ load: async () => [newer], save: async () => {} }, () => {}, () => {});
+  manager.start("user-existing");
+  assert.equal(manager.migrateLegacy(), 1);
+  assert.equal(getSyncRecords().length, 1);
+  assert.equal(getSyncRecords()[0].futureFeature, true);
+  assert.equal(manager.legacyCandidates().length, 0);
+  manager.stop();
+});
+
+test("todos los cursos publicados en el currículo tienen JSON de unidades", () => {
+  const curriculum = JSON.parse(readFileSync(new URL("../data/curriculum.json", import.meta.url), "utf8"));
+  let courses = 0;
+  for (const year of curriculum.years) {
+    for (const term of year.trimesters) {
+      for (const subject of term.subjects) {
+        if (subject.source !== "course") continue;
+        const material = JSON.parse(readFileSync(new URL("../" + subject.dataFile, import.meta.url), "utf8"));
+        assert.equal(material.code, subject.courseId);
+        assert.equal(material.modules.length, subject.unitCount);
+        courses += 1;
+      }
+    }
+  }
+  assert.ok(courses >= 60);
+  for (const branch of curriculum.branches || []) {
+    const material = JSON.parse(readFileSync(new URL("../" + branch.dataFile, import.meta.url), "utf8"));
+    assert.equal(material.modules.length, branch.unitCount);
+  }
+});
+
+test("una respuesta tardía de la cuenta A no contamina la caché de B", async () => {
+  setStorageOwner("user-race-a");
+  const profileA = createProfile("Solo A");
+  let resolveA;
+  let readyB;
+  const statuses = [];
+  const finishedB = new Promise(resolve => { readyB = resolve; });
+  const manager = createSyncManager({
+    load: uid => uid === "user-race-a"
+      ? new Promise(resolve => { resolveA = resolve; })
+      : Promise.resolve([]),
+    save: async () => {}
+  }, state => {
+    statuses.push(state);
+    if (state === "ready" && getStorageOwner() === "user-race-b") readyB();
+  }, () => {});
+  manager.start("user-race-a");
+  setStorageOwner("user-race-b");
+  manager.start("user-race-b");
+  resolveA([{ ...profileA, name: "Filtrado" }]);
+  let timeout;
+  try {
+    await Promise.race([
+      finishedB,
+      new Promise((_, reject) => {
+        timeout = setTimeout(() => reject(new Error("B no terminó: " + statuses.join(","))), 1000);
+      })
+    ]);
+  } finally {
+    clearTimeout(timeout);
+  }
+  assert.deepEqual(getProfiles(), []);
+  setStorageOwner("user-race-a");
+  assert.equal(getProfiles()[0].name, "Solo A");
   manager.stop();
 });

@@ -1,10 +1,10 @@
-// Copia aquí los valores de "Configuración del SDK" de tu aplicación Web.
-// Son identificadores públicos; nunca pongas aquí claves privadas de servicio.
 export const firebaseConfig = {
-  apiKey: "",
-  authDomain: "",
-  projectId: "",
-  appId: ""
+  apiKey: "AIzaSyACq3sA4RjJzERPegCGO9bzfiegs2ZxrLA",
+  authDomain: "webacademiastarfleet.firebaseapp.com",
+  projectId: "webacademiastarfleet",
+  storageBucket: "webacademiastarfleet.firebasestorage.app",
+  messagingSenderId: "690204685140",
+  appId: "1:690204685140:web:acc17aac56799ec4bf0ec1"
 };
 
 export const firebaseConfigured = ["apiKey", "authDomain", "projectId", "appId"]

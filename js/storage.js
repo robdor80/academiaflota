@@ -38,7 +38,7 @@ function normalizeProfile(profile) {
       typeof p.name !== "string" || !p.name.trim()) {
     throw new Error("El perfil tiene un identificador o nombre inválido.");
   }
-  p.schemaVersion = 1;
+  p.schemaVersion ??= 1;
   p.studies = p.studies && typeof p.studies === "object" ? p.studies : {};
   p.studies.acceso = p.studies.acceso && typeof p.studies.acceso === "object" ? p.studies.acceso : { completedModules: [] };
   p.studies.acceso.completedModules = Array.isArray(p.studies.acceso.completedModules) ? p.studies.acceso.completedModules : [];

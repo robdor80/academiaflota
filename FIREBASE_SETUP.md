@@ -1,12 +1,12 @@
 # Firebase para Academia de la Flota Estelar
 
-La web funciona en modo local mientras `js/firebase-config.js` esté vacío. Los perfiles existentes permanecen en el navegador. Para activar sincronización, complete estos pasos con una cuenta que administre el proyecto Firebase.
+`js/firebase-config.js` ya contiene los identificadores públicos del proyecto `webacademiastarfleet`. La web conserva el modo local si Firebase no está disponible. Antes de la primera migración real, publique las reglas de este repositorio en Firebase Console y despliegue esta rama mediante el PR correspondiente; no migre perfiles desde una versión anterior de la web.
 
 ## 1. Crear proyecto y aplicación Web
 
 1. Entre en [Firebase Console](https://console.firebase.google.com/) y cree un proyecto.
 2. En «Configuración del proyecto» → «Tus apps», registre una aplicación Web (`</>`).
-3. Copie los valores de «Configuración del SDK» a `js/firebase-config.js`: `apiKey`, `authDomain`, `projectId` y `appId`. Puede conservar también otros campos públicos del objeto si Firebase se los muestra.
+3. Compruebe que los valores de «Configuración del SDK» coinciden con `js/firebase-config.js`.
 4. El objeto de configuración Web contiene identificadores públicos; nunca incluya claves privadas de cuentas de servicio.
 
 El SDK modular se carga desde el CDN oficial de Firebase solo cuando la configuración está completa. No se necesita npm ni backend propio.
@@ -48,7 +48,7 @@ La migración no borra los perfiles antiguos del navegador. Compara identificado
 
 ## 6. Comprobación manual
 
-1. **Móvil → PC:** cree «Kazan Rise» en móvil, estudie una unidad y espere «Sincronización activa». En PC, con la misma cuenta, compruebe nombre y unidad.
+1. **Móvil → PC:** en el móvil que ya contiene «Kazan Rise», exporte primero su JSON como respaldo, inicie sesión y pulse «Sincronizar perfiles» una sola vez. Espere «Sincronización activa». En PC, con la misma cuenta, compruebe nombre y progreso; no cree otro perfil con ese nombre.
 2. **PC → móvil:** complete un test en PC; en móvil abra la web de nuevo y compruebe la puntuación.
 3. **Práctica:** guarde una respuesta y marque E-01 revisada en móvil; compruebe ambos datos en PC.
 4. **Migración:** en un navegador con perfil anterior, inicie sesión y pulse «Sincronizar perfiles»; compruebe que conserva progreso y que aparece en otro dispositivo.
