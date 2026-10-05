@@ -1,7 +1,8 @@
 {
   "subject": "Organización y protocolo de Starfleet",
   "code": "STF-401",
-  "version": "1.0",
+  "version": "1.1",
+  "status": "developed_content",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/STF-401/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/STF-401/MANUAL_v1_0.md",
@@ -23,29 +24,70 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Dominar la estructura institucional y el protocolo básico necesarios para funcionar como cadete y futuro oficial."
+          "text": "Starfleet es un servicio de la Federación Unida de Planetas. No es la Federación en sí misma y no sustituye al gobierno civil. La Federación dispone de instituciones civiles propias; Starfleet ejerce funciones operativas, científicas, exploratorias, diplomáticas, de asistencia y de defensa dentro de su marco de autoridad."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "La misión general de Starfleet"
+        },
+        {
+          "type": "p",
+          "text": "La misión general de Starfleet puede entenderse como una combinación de cinco grandes funciones. Una misma misión puede contener varias a la vez."
+        },
+        {
+          "type": "definition",
+          "term": "Exploración",
+          "text": "Ampliar el conocimiento disponible: estudiar regiones desconocidas, cartografiar espacio, localizar fenómenos y entrar en contacto con nuevos entornos o sociedades cuando las reglas aplicables lo permitan."
+        },
+        {
+          "type": "definition",
+          "term": "Ciencia",
+          "text": "Observar, medir e investigar fenómenos físicos, biológicos, astronómicos o tecnológicos. La ciencia informa las decisiones, pero no sustituye automáticamente a la autoridad que debe tomarlas."
+        },
+        {
+          "type": "definition",
+          "term": "Diplomacia",
+          "text": "Participar en contacto, representación, mediación y apoyo diplomático dentro de la autoridad recibida. Un oficial no adquiere competencia política ilimitada por estar a bordo de una nave."
+        },
+        {
+          "type": "definition",
+          "term": "Asistencia",
+          "text": "Prestar ayuda en rescates, evacuaciones, desastres, crisis médicas y otras situaciones donde la capacidad de Starfleet puede proteger vidas."
+        },
+        {
+          "type": "definition",
+          "term": "Defensa",
+          "text": "Proteger tripulaciones, población, instalaciones y espacio federado cuando sea necesario. Defensa no equivale a buscar combate."
+        },
+        {
+          "type": "heading",
+          "text": "Starfleet y la Federación"
         },
         {
           "type": "bullets",
           "items": [
-            "misión general",
-            "exploración, ciencia, diplomacia, asistencia y defensa",
-            "relación funcional con la Federación"
+            "Starfleet está sujeta a autoridad civil.",
+            "Una nave no es un gobierno independiente.",
+            "La autoridad operativa puede estar limitada por leyes, políticas, misión y órdenes superiores."
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Clasificar situaciones por función institucional sin recurrir a trivia."
+          "label": "IDEA CLAVE",
+          "text": "Federación y Starfleet no son lo mismo. Starfleet sirve a la Federación."
+        },
+        {
+          "type": "heading",
+          "text": "Ejemplo"
+        },
+        {
+          "type": "p",
+          "text": "Una nave entra en un sistema desconocido, analiza una anomalía, rescata a una tripulación civil y transmite después un informe a una autoridad diplomática. La misión combina exploración, ciencia, asistencia y posiblemente diplomacia."
         },
         {
           "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Preguntas aplicadas y breve caso de misión."
+          "label": "PRÁCTICA",
+          "text": "Clasifica cinco casos por función principal y secundaria: cartografiar un sistema, investigar una anomalía, evacuar una colonia, escoltar una nave civil y transportar una delegación."
         },
         {
           "type": "heading",
@@ -54,27 +96,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras misión general.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Clasificar situaciones por función institucional sin recurrir a trivia.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/federation/starfleet/ranks/officer_ranks.json",
-            "lore/federation/starfleet/ranks/rank_insignia_standard.json",
-            "lore/federation/starfleet/departments/divisions_and_departments.json",
-            "lore/federation/starfleet/positions/positions.json",
-            "lore/federation/starfleet/command_structure/succession_rules.json"
+            "Explica con tus palabras cuál es la misión general de Starfleet.",
+            "¿Por qué Starfleet y la Federación no son la misma institución?",
+            "¿Puede una misión pertenecer a más de una función? Pon un ejemplo.",
+            "¿Por qué defensa no significa que Starfleet se defina únicamente como una fuerza de guerra?",
+            "¿Qué error podría cometer un oficial si confundiera autoridad operativa con autoridad política?"
           ]
         }
       ]
@@ -86,29 +112,138 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Dominar la estructura institucional y el protocolo básico necesarios para funcionar como cadete y futuro oficial."
+          "text": "El rango expresa la posición jerárquica del oficial dentro de Starfleet. Ayuda a ordenar responsabilidad, precedencia y progresión profesional, pero no describe por sí solo el trabajo exacto que una persona realiza en cada momento."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Escala de oficiales del proyecto"
         },
         {
-          "type": "bullets",
-          "items": [
-            "jerarquía de oficiales",
-            "divisas del estándar del proyecto",
-            "diferencia entre rango y puesto"
+          "type": "table",
+          "headers": [
+            "Orden",
+            "Rango"
+          ],
+          "rows": [
+            [
+              "1",
+              "Alférez"
+            ],
+            [
+              "2",
+              "Teniente júnior"
+            ],
+            [
+              "3",
+              "Teniente"
+            ],
+            [
+              "4",
+              "Teniente comandante"
+            ],
+            [
+              "5",
+              "Comandante"
+            ],
+            [
+              "6",
+              "Capitán"
+            ],
+            [
+              "7",
+              "Comodoro"
+            ],
+            [
+              "8",
+              "Contraalmirante"
+            ],
+            [
+              "9",
+              "Vicealmirante"
+            ],
+            [
+              "10",
+              "Almirante"
+            ],
+            [
+              "11",
+              "Almirante de Flota"
+            ]
           ]
+        },
+        {
+          "type": "p",
+          "text": "El cadete constituye una vía separada y todavía no posee una comisión de oficial."
+        },
+        {
+          "type": "heading",
+          "text": "Divisas"
+        },
+        {
+          "type": "p",
+          "text": "El proyecto utiliza un estándar visual común inspirado en los pips de la era TNG para facilitar el reconocimiento entre las tres eras jugables. Esta uniformización es una decisión del juego: las insignias históricas variaron según la época."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Rango",
+            "Divisa de proyecto"
+          ],
+          "rows": [
+            [
+              "Alférez",
+              "●"
+            ],
+            [
+              "Teniente júnior",
+              "●○"
+            ],
+            [
+              "Teniente",
+              "●●"
+            ],
+            [
+              "Teniente comandante",
+              "●●○"
+            ],
+            [
+              "Comandante",
+              "●●●"
+            ],
+            [
+              "Capitán",
+              "●●●●"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Rango, puesto y autoridad"
+        },
+        {
+          "type": "definition",
+          "term": "Rango",
+          "text": "Posición jerárquica general del oficial."
+        },
+        {
+          "type": "definition",
+          "term": "Puesto",
+          "text": "Responsabilidad concreta asignada: por ejemplo, Primer Oficial, Oficial de Operaciones o Jefe de Ingeniería."
+        },
+        {
+          "type": "definition",
+          "term": "Autoridad",
+          "text": "Capacidad válida para ordenar, decidir o autorizar algo en un contexto determinado."
+        },
+        {
+          "type": "callout",
+          "label": "NO CONFUNDIR",
+          "text": "El rango influye en la autoridad, pero no la determina por sí solo. Puesto, cualificación, órdenes y contexto también importan."
         },
         {
           "type": "callout",
           "label": "PRÁCTICA",
-          "text": "Identificar rango, puesto y autoridad en ejemplos de tripulación."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Reconocimiento y razonamiento de precedencia básica."
+          "text": "Identifica por separado rango, puesto y autoridad en varios ejemplos de tripulación."
         },
         {
           "type": "heading",
@@ -117,27 +252,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras jerarquía de oficiales.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Identificar rango, puesto y autoridad en ejemplos de tripulación.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/federation/starfleet/ranks/officer_ranks.json",
-            "lore/federation/starfleet/ranks/rank_insignia_standard.json",
-            "lore/federation/starfleet/departments/divisions_and_departments.json",
-            "lore/federation/starfleet/positions/positions.json",
-            "lore/federation/starfleet/command_structure/succession_rules.json"
+            "¿Qué diferencia existe entre rango y puesto?",
+            "¿Por qué el oficial de mayor rango no decide necesariamente cada cuestión técnica?",
+            "¿Cuál es el rango comisionado inicial normal tras graduarse?",
+            "¿Qué parte del sistema de divisas es una estandarización del proyecto?",
+            "¿Qué información adicional necesitas antes de decidir quién tiene autoridad sobre una acción?"
           ]
         }
       ]
@@ -149,29 +268,57 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Dominar la estructura institucional y el protocolo básico necesarios para funcionar como cadete y futuro oficial."
+          "text": "El protocolo verbal no existe para recitar frases ceremoniales: existe para reducir ambigüedad. Una comunicación profesional debe dejar claro a quién se habla, en qué calidad, qué se informa o solicita y quién asume responsabilidad."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Rango y cargo"
+        },
+        {
+          "type": "p",
+          "text": "En un contexto formal puede ser apropiado identificar a una persona por su rango. En un contexto funcional puede ser más útil emplear su cargo. «Teniente» destaca rango; «Jefe de Ingeniería» destaca función; «Primer Oficial» identifica una responsabilidad dentro de la cadena de mando."
+        },
+        {
+          "type": "callout",
+          "label": "REGLA DEL PROYECTO",
+          "text": "No se impone una fórmula verbal única para todas las eras cuando el lore validado no la exige. La regla estable es claridad profesional y respeto a rango, cargo y contexto."
+        },
+        {
+          "type": "heading",
+          "text": "Superiores, iguales y subordinados"
         },
         {
           "type": "bullets",
           "items": [
-            "tratamiento a superiores, iguales y subordinados",
-            "uso de rango y cargo",
-            "contexto formal e informal"
+            "Con un superior: comunicar con claridad, reconocer autoridad válida y pedir aclaración si la instrucción es ambigua.",
+            "Con un igual: coordinar sin inventar autoridad y compartir la información necesaria.",
+            "Con un subordinado: dar instrucciones comprensibles, respetar su competencia y asumir responsabilidad por las órdenes propias."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Formal e informal"
+        },
+        {
+          "type": "p",
+          "text": "Una relación personal o un tono informal fuera de servicio no elimina las responsabilidades cuando vuelve a existir una situación profesional."
+        },
+        {
+          "type": "heading",
+          "text": "Pedir permiso y reportar"
+        },
+        {
+          "type": "quote",
+          "text": "«Teniente, solicito autorización para repetir el barrido con mayor resolución. La primera lectura está degradada por interferencia.»"
+        },
+        {
+          "type": "quote",
+          "text": "«Contacto detectado a larga distancia. Identidad no confirmada. Solicito análisis adicional.»"
         },
         {
           "type": "callout",
           "label": "PRÁCTICA",
-          "text": "Diálogos de presentación, reporte y petición de permiso."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Escena breve evaluada por corrección y contexto."
+          "text": "Representa una presentación ante un instructor, un reporte a un superior y una coordinación con otro departamento."
         },
         {
           "type": "heading",
@@ -180,27 +327,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras tratamiento a superiores, iguales y subordinados.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Diálogos de presentación, reporte y petición de permiso.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/federation/starfleet/ranks/officer_ranks.json",
-            "lore/federation/starfleet/ranks/rank_insignia_standard.json",
-            "lore/federation/starfleet/departments/divisions_and_departments.json",
-            "lore/federation/starfleet/positions/positions.json",
-            "lore/federation/starfleet/command_structure/succession_rules.json"
+            "¿Para qué sirve realmente el protocolo verbal?",
+            "¿Cuándo puede ser más útil emplear un cargo que un rango?",
+            "¿Qué diferencia existe entre respeto profesional y obediencia ciega?",
+            "¿Qué debe contener una petición de permiso útil?",
+            "¿Por qué un tono informal no elimina necesariamente las responsabilidades del servicio?"
           ]
         }
       ]
@@ -212,30 +343,60 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Dominar la estructura institucional y el protocolo básico necesarios para funcionar como cadete y futuro oficial."
+          "text": "La cadena de mando organiza autoridad y responsabilidad. Permite saber quién debe recibir un informe, quién puede autorizar una acción, quién responde por una decisión y quién sustituye a quién cuando alguien no puede ejercer su función."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Sucesión básica"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Oficial al Mando",
+            "Primer Oficial",
+            "Segundo Oficial",
+            "Sucesor cualificado designado"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Después intervienen factores como rango, antigüedad, cualificación, disponibilidad, aptitud médica, órdenes específicas y el roster local de sucesión. Por tanto, la sucesión no se resuelve buscando simplemente a la persona con más galones."
+        },
+        {
+          "type": "heading",
+          "text": "Autoridad ordinaria y temporal"
+        },
+        {
+          "type": "p",
+          "text": "La autoridad puede depender del puesto, la misión, la cualificación y las órdenes. Puede ser permanente mientras se ocupa un puesto, limitada a una guardia, temporal durante una emergencia o específica para una misión."
+        },
+        {
+          "type": "callout",
+          "label": "IMPORTANTE",
+          "text": "Asumir mando temporal no cambia automáticamente el rango permanente del personaje."
+        },
+        {
+          "type": "heading",
+          "text": "Antes de ejecutar una orden relevante"
         },
         {
           "type": "bullets",
           "items": [
-            "autoridad ordinaria",
-            "sucesión básica",
-            "órdenes válidas",
-            "límites de autoridad"
+            "Comprueba quién la da.",
+            "Comprueba si posee autoridad en ese contexto.",
+            "Asegúrate de que la instrucción se entiende.",
+            "Comprueba si existe una restricción conocida.",
+            "Verifica si hace falta autorización adicional."
           ]
+        },
+        {
+          "type": "p",
+          "text": "En 4.ª clase no se estudian todas las excepciones reglamentarias. Sí se aprende una regla básica: si la autoridad o la instrucción no están claras, se pide aclaración en lugar de improvisar."
         },
         {
           "type": "callout",
           "label": "PRÁCTICA",
-          "text": "Resolver a quién informar y de quién aceptar una orden en casos simples."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Casos de cadena de mando."
+          "text": "Resuelve a quién informarías y de quién aceptarías instrucciones en varios casos de guardia ordinaria."
         },
         {
           "type": "heading",
@@ -244,27 +405,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras autoridad ordinaria.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Resolver a quién informar y de quién aceptar una orden en casos simples.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/federation/starfleet/ranks/officer_ranks.json",
-            "lore/federation/starfleet/ranks/rank_insignia_standard.json",
-            "lore/federation/starfleet/departments/divisions_and_departments.json",
-            "lore/federation/starfleet/positions/positions.json",
-            "lore/federation/starfleet/command_structure/succession_rules.json"
+            "¿Cuál es la secuencia básica de sucesión?",
+            "¿Por qué el rango por sí solo no basta para resolver una sucesión?",
+            "¿Qué significa autoridad temporal?",
+            "¿Qué harías si recibes una instrucción ambigua?",
+            "Pon un ejemplo de autoridad limitada a un ámbito concreto."
           ]
         }
       ]
@@ -275,32 +420,85 @@
       "subtitle": "UNIDAD 05 · STF-401",
       "blocks": [
         {
+          "type": "heading",
+          "text": "Tres grandes divisiones"
+        },
+        {
+          "type": "definition",
+          "term": "Mando",
+          "text": "Incluye funciones de dirección y, habitualmente, control de vuelo y navegación."
+        },
+        {
+          "type": "definition",
+          "term": "Operaciones",
+          "text": "Incluye áreas como gestión de operaciones, Ingeniería, Seguridad, Táctica y Comunicaciones."
+        },
+        {
+          "type": "definition",
+          "term": "Ciencias",
+          "text": "Incluye Ciencia, Medicina y Consejería."
+        },
+        {
           "type": "p",
-          "text": "Dominar la estructura institucional y el protocolo básico necesarios para funcionar como cadete y futuro oficial."
+          "text": "Las divisiones organizan grandes familias profesionales. No significan que todas las personas de una misma división sepan realizar el trabajo de todos los departamentos incluidos en ella."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Departamento"
+        },
+        {
+          "type": "p",
+          "text": "Un departamento agrupa trabajo profesional especializado: Ingeniería, Seguridad, Táctica, Ciencia, Medicina, Operaciones o Comunicaciones, entre otros. Una nave concreta puede adaptar su organización a tamaño, época y misión."
+        },
+        {
+          "type": "heading",
+          "text": "Puesto"
+        },
+        {
+          "type": "p",
+          "text": "El puesto es la responsabilidad concreta que una persona desempeña."
         },
         {
           "type": "bullets",
           "items": [
-            "Mando",
-            "Operaciones",
-            "Ciencias",
-            "departamentos y estaciones",
-            "puesto frente a especialidad"
+            "Oficial al Mando",
+            "Primer Oficial",
+            "Segundo Oficial",
+            "Oficial de Operaciones",
+            "Oficial de Control de Vuelo",
+            "Jefe Táctico",
+            "Jefe de Seguridad",
+            "Jefe de Ingeniería",
+            "Jefe Científico",
+            "Jefe Médico",
+            "Oficial de Comunicaciones"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Estación de trabajo"
+        },
+        {
+          "type": "p",
+          "text": "Una estación es un punto funcional desde el que se accede a sistemas autorizados. Un mismo puesto puede usar estaciones distintas según la clase de nave y la era."
+        },
+        {
+          "type": "callout",
+          "label": "NO CONFUNDIR",
+          "text": "persona ≠ puesto ≠ estación ≠ sistema"
+        },
+        {
+          "type": "heading",
+          "text": "Especialidad"
+        },
+        {
+          "type": "p",
+          "text": "La especialidad describe la formación profesional del personaje. Un oficial puede poseer una especialidad determinada y encontrarse temporalmente en otro puesto si tiene la cualificación y autoridad necesarias."
         },
         {
           "type": "callout",
           "label": "PRÁCTICA",
-          "text": "Construir el organigrama básico de una nave de ejemplo."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Ejercicio de asignación de funciones."
+          "text": "Construye un organigrama básico diferenciando división, departamento, puesto, rango y estación."
         },
         {
           "type": "heading",
@@ -309,27 +507,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras Mando.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Construir el organigrama básico de una nave de ejemplo.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/federation/starfleet/ranks/officer_ranks.json",
-            "lore/federation/starfleet/ranks/rank_insignia_standard.json",
-            "lore/federation/starfleet/departments/divisions_and_departments.json",
-            "lore/federation/starfleet/positions/positions.json",
-            "lore/federation/starfleet/command_structure/succession_rules.json"
+            "Nombra las tres grandes divisiones del proyecto.",
+            "¿Por qué división y departamento no son exactamente lo mismo?",
+            "¿Qué diferencia existe entre puesto y estación?",
+            "¿Pueden dos personas con la misma especialidad ocupar puestos distintos?",
+            "¿Por qué «Operaciones» puede significar una división amplia y también un puesto o departamento concreto según el contexto?"
           ]
         }
       ]
@@ -341,29 +523,85 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Dominar la estructura institucional y el protocolo básico necesarios para funcionar como cadete y futuro oficial."
+          "text": "La última unidad integra lo anterior en una situación de servicio sencilla: llegar a una unidad, presentarse, recibir una instrucción, reconocer la supervisión y actuar sin exceder la propia autoridad."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Llegar a una unidad"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Identificar a quién debes presentarte.",
+            "Confirmar identidad y destino.",
+            "Recibir la asignación.",
+            "Reconocer quién supervisa tu actividad.",
+            "Preguntar cuando algo no está claro."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Recibir una instrucción"
+        },
+        {
+          "type": "definition",
+          "term": "Escuchar",
+          "text": "No interrumpir ni anticipar lo que crees que el superior va a decir."
+        },
+        {
+          "type": "definition",
+          "term": "Comprender",
+          "text": "Identificar objetivo, tarea, restricciones, prioridad y plazo cuando exista."
+        },
+        {
+          "type": "definition",
+          "term": "Confirmar",
+          "text": "Repetir o resumir cuando sea necesario para comprobar que se ha entendido."
+        },
+        {
+          "type": "definition",
+          "term": "Ejecutar",
+          "text": "Actuar dentro de la propia autoridad y capacidad."
+        },
+        {
+          "type": "definition",
+          "term": "Informar",
+          "text": "Comunicar resultado, impedimento, cambio de situación o necesidad de apoyo."
+        },
+        {
+          "type": "callout",
+          "label": "ACUSE ≠ OBEDIENCIA CIEGA",
+          "text": "Confirmar una orden significa que la has recibido y entendido. No significa fingir una cualificación, ocultar un impedimento o ignorar una duda legítima de autoridad."
+        },
+        {
+          "type": "heading",
+          "text": "Conducta profesional básica"
         },
         {
           "type": "bullets",
           "items": [
-            "presentación al servicio",
-            "recepción y acuse de órdenes",
-            "conducta profesional básica"
+            "puntualidad",
+            "preparación",
+            "claridad",
+            "honestidad",
+            "respeto",
+            "responsabilidad",
+            "reconocimiento de límites",
+            "comunicación de errores"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Caso integrado"
+        },
+        {
+          "type": "p",
+          "text": "Llegas a una nave de entrenamiento. Un Alférez te indica que debes incorporarte a una práctica en una estación que nunca has utilizado y el instructor responsable no está presente. Lo profesional es confirmar la instrucción, explicar que no estás cualificado para operar de forma autónoma, preguntar quién supervisará la práctica y no ejecutar acciones fuera del entrenamiento autorizado."
         },
         {
           "type": "callout",
           "label": "PRÁCTICA",
-          "text": "Mini-simulación de llegada a una unidad y primera instrucción."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación integrada de conocimiento, comunicación y disciplina."
+          "text": "Mini-simulación completa de llegada, presentación, recepción de instrucción, aclaración, ejecución y reporte final."
         },
         {
           "type": "heading",
@@ -372,27 +610,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras presentación al servicio.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Mini-simulación de llegada a una unidad y primera instrucción.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/federation/starfleet/ranks/officer_ranks.json",
-            "lore/federation/starfleet/ranks/rank_insignia_standard.json",
-            "lore/federation/starfleet/departments/divisions_and_departments.json",
-            "lore/federation/starfleet/positions/positions.json",
-            "lore/federation/starfleet/command_structure/succession_rules.json"
+            "¿Qué debes identificar al recibir una instrucción?",
+            "¿Qué diferencia existe entre confirmar y obedecer ciegamente?",
+            "¿Cuándo debes informar de un impedimento?",
+            "¿Por qué reconocer un límite profesional es una fortaleza y no una debilidad?",
+            "Describe una llegada correcta a una unidad de entrenamiento."
           ]
         }
       ]
