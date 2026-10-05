@@ -1,17 +1,17 @@
 {
   "subject": "Sistemas de información Starfleet",
   "code": "INF-401",
-  "version": "1.0",
+  "version": "1.1",
+  "status": "developed_content",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/INF-401/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/INF-401/MANUAL_v1_0.md",
   "sourceRefs": [
-    "gameplay/careers/academy_path/course_resolution.md",
-    "gameplay/careers/academy_path/evaluation_model.json",
-    "gameplay/careers/academy_path/academy_era_profiles.json",
     "gameplay/ship_operations/ship_computer/README.md",
     "gameplay/ship_operations/ship_computer/access_control_rules.json",
-    "gameplay/ship_operations/ship_computer/computer_query_action_catalog.json"
+    "gameplay/ship_operations/ship_computer/computer_query_action_catalog.json",
+    "gameplay/records_and_logs/README.md",
+    "gameplay/ship_operations/operational_event_log/README.md"
   ],
   "modules": [
     {
@@ -21,30 +21,42 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Dar al cadete autonomía básica para consultar, registrar y manejar información autorizada."
+          "text": "La computadora de una nave es un servicio distribuido, no una única consola. Puede accederse desde estaciones, terminales, alojamientos, PADD, interfaces de voz y otros puntos autorizados."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Consulta frente a acción"
         },
         {
-          "type": "bullets",
-          "items": [
-            "servicio de computadora",
-            "terminales",
-            "interfaces de era",
-            "consultas autorizadas"
-          ]
+          "type": "definition",
+          "term": "Consulta",
+          "text": "Recupera o procesa información: hora, roster, curso, ETA, estado de sistema, historial autorizado."
         },
         {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Realizar consultas simples al sistema."
+          "type": "definition",
+          "term": "Acción",
+          "text": "Solicita cambiar algo: contactar un departamento, reservar un recurso, iniciar un diagnóstico, transferir datos o cambiar una configuración permitida."
         },
         {
           "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Práctica guiada."
+          "label": "REGLA",
+          "text": "Las acciones importantes pasan por validación de identidad, autoridad, contexto, capacidad y estado."
+        },
+        {
+          "type": "heading",
+          "text": "El ordenador no es omnisciente"
+        },
+        {
+          "type": "p",
+          "text": "«No se han detectado naves romulanas» describe conocimiento disponible. No equivale a afirmar que no existan."
+        },
+        {
+          "type": "heading",
+          "text": "IA como capa de interpretación"
+        },
+        {
+          "type": "p",
+          "text": "La IA puede entender lenguaje complejo o resumir datos, pero no muta por sí sola el mundo. Los sistemas autoritativos validan y ejecutan."
         },
         {
           "type": "heading",
@@ -53,25 +65,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras servicio de computadora.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Realizar consultas simples al sistema.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/ship_operations/ship_computer/README.md",
-            "gameplay/ship_operations/ship_computer/access_control_rules.json",
-            "gameplay/ship_operations/ship_computer/computer_query_action_catalog.json"
+            "¿Por qué la computadora no es una única consola?",
+            "Diferencia consulta y acción.",
+            "¿Por qué «no detectado» no significa «no existe»?",
+            "¿Puede una IA cambiar directamente el estado de la nave?",
+            "Pon dos ejemplos de consulta rutinaria."
           ]
         }
       ]
@@ -83,30 +81,52 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Dar al cadete autonomía básica para consultar, registrar y manejar información autorizada."
+          "text": "El PADD es una interfaz portátil para trabajar con información autorizada. El documento importante persiste en el sistema; no pertenece físicamente al dispositivo desde el que se consulta."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Usos habituales"
         },
         {
           "type": "bullets",
           "items": [
-            "documentos",
-            "material académico",
-            "anotaciones",
-            "sincronización contextual"
+            "Material académico",
+            "Documentos",
+            "Anotaciones",
+            "Tareas",
+            "Borradores",
+            "Datos transferidos",
+            "Servicios personales autorizados"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Sincronización contextual"
+        },
+        {
+          "type": "p",
+          "text": "Sincronizar no significa copiarlo todo a todas partes. Identidad, permisos, contexto, conectividad, privacidad y tipo de dato condicionan la disponibilidad."
+        },
+        {
+          "type": "heading",
+          "text": "Flujo académico"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Abrir tarea",
+            "Consultar instrucciones",
+            "Trabajar o anotar",
+            "Guardar borrador",
+            "Revisar",
+            "Entregar",
+            "Conservar referencia"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Abrir, consultar y entregar material académico."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Tarea práctica."
+          "label": "NO CONFUNDIR",
+          "text": "Un borrador puede editarse. Un registro final o hecho autoritativo no debe reescribirse silenciosamente."
         },
         {
           "type": "heading",
@@ -115,25 +135,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras documentos.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Abrir, consultar y entregar material académico.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/ship_operations/ship_computer/README.md",
-            "gameplay/ship_operations/ship_computer/access_control_rules.json",
-            "gameplay/ship_operations/ship_computer/computer_query_action_catalog.json"
+            "¿Por qué el PADD es una interfaz?",
+            "¿Qué factores pueden limitar sincronización?",
+            "Diferencia borrador y registro final.",
+            "¿Por qué no aparece automáticamente información restringida?",
+            "Describe un flujo académico básico."
           ]
         }
       ]
@@ -144,31 +150,55 @@
       "subtitle": "UNIDAD 03 · INF-401",
       "blocks": [
         {
-          "type": "p",
-          "text": "Dar al cadete autonomía básica para consultar, registrar y manejar información autorizada."
+          "type": "definition",
+          "term": "Autenticación",
+          "text": "Responde a «¿quién eres?»."
+        },
+        {
+          "type": "definition",
+          "term": "Autorización",
+          "text": "Responde a «¿puedes hacer esto?»."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Señales y factores"
         },
         {
           "type": "bullets",
           "items": [
-            "perfil",
-            "autenticación",
-            "niveles de acceso",
-            "principio de mínimo acceso"
+            "Sesión activa",
+            "Terminal",
+            "Comunicador o voz cuando proceda",
+            "Localización",
+            "Asignación de servicio",
+            "Rango",
+            "Puesto",
+            "Departamento",
+            "Clearance",
+            "Estado de alerta",
+            "Autorización temporal"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Intentar accesos válidos e inválidos en entorno de entrenamiento."
+          "label": "RANGO ≠ ACCESO UNIVERSAL",
+          "text": "Un rango superior no abre automáticamente historiales médicos, Seguridad, Inteligencia, registros privados o información clasificada."
         },
         {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación práctica de permisos."
+          "type": "heading",
+          "text": "Principio de mínimo acceso"
+        },
+        {
+          "type": "p",
+          "text": "Debe concederse acceso suficiente para realizar la función, no acceso universal «por si acaso»."
+        },
+        {
+          "type": "heading",
+          "text": "Acciones sensibles"
+        },
+        {
+          "type": "p",
+          "text": "Pueden requerir confirmación, código, doble autorización u override válido. Los overrides de emergencia deben ser auditables."
         },
         {
           "type": "heading",
@@ -177,25 +207,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras perfil.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Intentar accesos válidos e inválidos en entorno de entrenamiento.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/ship_operations/ship_computer/README.md",
-            "gameplay/ship_operations/ship_computer/access_control_rules.json",
-            "gameplay/ship_operations/ship_computer/computer_query_action_catalog.json"
+            "Diferencia autenticación y autorización.",
+            "¿Por qué el rango no concede acceso universal?",
+            "Nombra cuatro factores de autorización.",
+            "¿Qué significa mínimo acceso?",
+            "¿Por qué un override debe quedar auditado?"
           ]
         }
       ]
@@ -207,30 +223,46 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Dar al cadete autonomía básica para consultar, registrar y manejar información autorizada."
+          "text": "Buscar no es preguntar a un oráculo. Una consulta útil define qué quieres encontrar, en qué ámbito, con qué filtros y dentro de qué fuentes autorizadas."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Fuentes y dominios"
         },
         {
           "type": "bullets",
           "items": [
-            "consulta",
-            "filtros",
-            "fuentes",
-            "resultado frente a interpretación"
+            "Horarios",
+            "Roster",
+            "Sistemas",
+            "Mantenimiento",
+            "Navegación",
+            "Sensores",
+            "Registros",
+            "Base de datos",
+            "Regulaciones autorizadas"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Resultado frente a interpretación"
+        },
+        {
+          "type": "p",
+          "text": "«Tres lecturas muestran aumento de radiación» es un resultado. Concluir que la causa es un arma enemiga exige evidencia adicional."
+        },
+        {
+          "type": "heading",
+          "text": "Consultas complejas"
+        },
+        {
+          "type": "p",
+          "text": "Una correlación puede requerir recuperar fuentes, comprobar permisos, comparar datos y resumir incertidumbre. La IA puede expresar el resumen sin inventar eventos."
         },
         {
           "type": "callout",
           "label": "PRÁCTICA",
-          "text": "Encontrar información concreta sin pedir al sistema que invente respuesta."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Práctica de búsqueda."
+          "text": "Formula búsquedas para localizar un reglamento, una incidencia técnica y un resultado de sensores sin pedir conclusiones no contenidas en la fuente."
         },
         {
           "type": "heading",
@@ -239,25 +271,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras consulta.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Encontrar información concreta sin pedir al sistema que invente respuesta.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/ship_operations/ship_computer/README.md",
-            "gameplay/ship_operations/ship_computer/access_control_rules.json",
-            "gameplay/ship_operations/ship_computer/computer_query_action_catalog.json"
+            "¿Qué debe especificar una buena consulta?",
+            "¿Por qué importa la fuente?",
+            "Diferencia resultado e interpretación.",
+            "¿Puede un resumen incluir hechos no registrados?",
+            "Pon un ejemplo de búsqueda compleja legítima."
           ]
         }
       ]
@@ -269,30 +287,48 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Dar al cadete autonomía básica para consultar, registrar y manejar información autorizada."
+          "text": "Los registros permiten continuidad, debrief, evaluación, investigación, mantenimiento y responsabilidad."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Dos capas distintas"
+        },
+        {
+          "type": "definition",
+          "term": "Operational Event Log",
+          "text": "Conserva hechos operativos autoritativos de forma estructurada."
+        },
+        {
+          "type": "definition",
+          "term": "Logs personales o institucionales",
+          "text": "Conservan lo que una persona o institución decidió registrar sobre esos hechos."
+        },
+        {
+          "type": "callout",
+          "label": "EJEMPLO",
+          "text": "El Event Log puede registrar que se inició un barrido. Un log personal puede decir «pensé que el contacto era hostil». La segunda frase es interpretación, no verdad objetiva."
+        },
+        {
+          "type": "heading",
+          "text": "Historia append-only"
+        },
+        {
+          "type": "p",
+          "text": "Si una información era incorrecta, se registra una corrección posterior. El pasado no se reescribe silenciosamente."
+        },
+        {
+          "type": "heading",
+          "text": "Metadatos"
         },
         {
           "type": "bullets",
           "items": [
-            "registros académicos",
-            "logs",
-            "autoría",
-            "marca temporal"
+            "Autor",
+            "Marca temporal",
+            "Tipo de registro",
+            "Referencias",
+            "Permisos"
           ]
-        },
-        {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Crear y consultar un registro permitido."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Comprobación práctica."
         },
         {
           "type": "heading",
@@ -301,25 +337,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras registros académicos.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Crear y consultar un registro permitido.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/ship_operations/ship_computer/README.md",
-            "gameplay/ship_operations/ship_computer/access_control_rules.json",
-            "gameplay/ship_operations/ship_computer/computer_query_action_catalog.json"
+            "¿Para qué sirve la trazabilidad?",
+            "Diferencia Event Log y log personal.",
+            "¿Se borra un registro antiguo al corregirlo?",
+            "¿Por qué importan autoría y hora?",
+            "¿Puede una opinión convertirse automáticamente en verdad?"
           ]
         }
       ]
@@ -331,30 +353,55 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Dar al cadete autonomía básica para consultar, registrar y manejar información autorizada."
+          "text": "Poder consultar técnicamente un dato no significa estar autorizado para hacerlo."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Información restringida"
         },
         {
           "type": "bullets",
           "items": [
-            "datos personales",
-            "restricciones",
-            "uso indebido",
-            "auditoría"
+            "Médica",
+            "Seguridad",
+            "Inteligencia",
+            "Clasificada",
+            "Logs personales",
+            "Expedientes sensibles"
           ]
         },
         {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Resolver casos de acceso por curiosidad frente a necesidad de servicio."
+          "type": "p",
+          "text": "La computadora debe evitar incluso filtrar contenido protegido mediante mensajes de error o fragmentos de búsqueda."
+        },
+        {
+          "type": "heading",
+          "text": "Curiosidad no es necesidad de servicio"
+        },
+        {
+          "type": "p",
+          "text": "Un dato no se vuelve accesible porque sea interesante, porque el usuario tenga más rango o porque pudiera resultar útil algún día."
+        },
+        {
+          "type": "heading",
+          "text": "Auditoría"
+        },
+        {
+          "type": "p",
+          "text": "Los accesos sensibles pueden registrar quién accedió, cuándo, desde dónde, a qué función y bajo qué autorización."
+        },
+        {
+          "type": "heading",
+          "text": "IA y privacidad"
+        },
+        {
+          "type": "p",
+          "text": "La IA no puede reconstruir contenido restringido, revelar secretos desde fuentes no autorizadas ni convertir información privada de un NPC en conocimiento universal."
         },
         {
           "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Caso de juicio."
+          "label": "CASO",
+          "text": "Saber que existe un log privado de un instructor no concede derecho a leerlo."
         },
         {
           "type": "heading",
@@ -363,25 +410,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras datos personales.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Resolver casos de acceso por curiosidad frente a necesidad de servicio.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/ship_operations/ship_computer/README.md",
-            "gameplay/ship_operations/ship_computer/access_control_rules.json",
-            "gameplay/ship_operations/ship_computer/computer_query_action_catalog.json"
+            "Diferencia acceso técnico y autorización.",
+            "Nombra cuatro datos restringidos.",
+            "¿Por qué un acceso denegado no debe filtrar contenido?",
+            "¿Para qué sirve auditar accesos?",
+            "¿Puede la IA reconstruir información privada para ayudar?"
           ]
         }
       ]

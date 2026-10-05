@@ -1,283 +1,294 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "course_id": "INF-401",
-  "status": "generated_from_authoritative_curriculum",
+  "status": "editorially_aligned_with_developed_manual",
+  "source_manual": "gameplay/careers/academy_path/study_materials/fourth_class/INF-401/MANUAL_v1_0.md",
   "question_count": 24,
+  "rule": "No question may require knowledge that is not explicitly taught in INF-401 or established prerequisites.",
   "questions": [
     {
       "id": "INF-401-Q001",
       "unit_id": "INF-401-U01",
       "type": "short_answer",
-      "prompt_es": "Explica servicio de computadora y su relevancia operativa.",
+      "prompt_es": "¿Por qué la computadora no debe tratarse como una única consola?",
       "answer_key_es": [
-        "servicio de computadora",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "es un servicio distribuido",
+        "múltiples puntos de acceso",
+        "la autoridad no depende solo del terminal"
       ]
     },
     {
       "id": "INF-401-Q002",
       "unit_id": "INF-401-U01",
       "type": "compare",
-      "prompt_es": "Compara servicio de computadora con terminales. Indica una diferencia que pueda cambiar una decisión.",
+      "prompt_es": "Diferencia consulta y acción.",
       "answer_key_es": [
-        "servicio de computadora",
-        "terminales",
-        "diferencia aplicada"
+        "consulta recupera información",
+        "acción solicita cambiar algo",
+        "acciones requieren validación"
       ]
     },
     {
       "id": "INF-401-Q003",
       "unit_id": "INF-401-U01",
-      "type": "scenario",
-      "prompt_es": "Situación: Realizar consultas simples al sistema. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué «no detectado» no significa «no existe»?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "conocimiento limitado",
+        "sensores/estado pueden no detectar",
+        "no afirmar verdad universal"
       ]
     },
     {
       "id": "INF-401-Q004",
       "unit_id": "INF-401-U01",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Computadora y terminales y cómo lo corregirías.",
+      "type": "knowledge",
+      "prompt_es": "¿Puede una IA cambiar directamente el estado de la nave?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "no",
+        "interpreta/estructura",
+        "sistemas autoritativos validan y ejecutan"
       ]
     },
     {
       "id": "INF-401-Q005",
       "unit_id": "INF-401-U02",
       "type": "short_answer",
-      "prompt_es": "Explica documentos y su relevancia operativa.",
+      "prompt_es": "¿Por qué un PADD se modela como interfaz y no como dueño del documento?",
       "answer_key_es": [
-        "documentos",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "información persiste fuera del dispositivo",
+        "puede accederse desde otras interfaces",
+        "el registro pertenece al sistema/persona/institución"
       ]
     },
     {
       "id": "INF-401-Q006",
       "unit_id": "INF-401-U02",
-      "type": "compare",
-      "prompt_es": "Compara documentos con material académico. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "knowledge",
+      "prompt_es": "Nombra cuatro factores que pueden limitar sincronización o acceso.",
       "answer_key_es": [
-        "documentos",
-        "material académico",
-        "diferencia aplicada"
+        "identidad",
+        "permisos",
+        "contexto",
+        "conectividad",
+        "privacidad",
+        "tipo de dato"
       ]
     },
     {
       "id": "INF-401-Q007",
       "unit_id": "INF-401-U02",
-      "type": "scenario",
-      "prompt_es": "Situación: Abrir, consultar y entregar material académico. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "compare",
+      "prompt_es": "Diferencia borrador y registro final.",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "borrador puede editarse",
+        "registro final conserva estado aprobado",
+        "no reescribir hechos autoritativos silenciosamente"
       ]
     },
     {
       "id": "INF-401-Q008",
       "unit_id": "INF-401-U02",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con PADD y flujo personal y cómo lo corregirías.",
+      "type": "procedure",
+      "prompt_es": "Describe un flujo básico de trabajo académico con PADD.",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "abrir",
+        "consultar",
+        "trabajar/anotar",
+        "guardar",
+        "revisar",
+        "entregar"
       ]
     },
     {
       "id": "INF-401-Q009",
       "unit_id": "INF-401-U03",
-      "type": "short_answer",
-      "prompt_es": "Explica perfil y su relevancia operativa.",
+      "type": "compare",
+      "prompt_es": "Diferencia autenticación y autorización.",
       "answer_key_es": [
-        "perfil",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "autenticación = quién eres",
+        "autorización = qué puedes hacer"
       ]
     },
     {
       "id": "INF-401-Q010",
       "unit_id": "INF-401-U03",
-      "type": "compare",
-      "prompt_es": "Compara perfil con autenticación. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué el rango no concede acceso universal?",
       "answer_key_es": [
-        "perfil",
-        "autenticación",
-        "diferencia aplicada"
+        "datos restringidos",
+        "puesto/departamento/clearance importan",
+        "necesidad funcional"
       ]
     },
     {
       "id": "INF-401-Q011",
       "unit_id": "INF-401-U03",
-      "type": "scenario",
-      "prompt_es": "Situación: Intentar accesos válidos e inválidos en entorno de entrenamiento. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "knowledge",
+      "prompt_es": "Nombra cuatro factores que pueden influir en autorización.",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "rango",
+        "puesto",
+        "departamento",
+        "duty status",
+        "clearance",
+        "alerta",
+        "ubicación",
+        "función",
+        "autorización temporal"
       ]
     },
     {
       "id": "INF-401-Q012",
       "unit_id": "INF-401-U03",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Identidad y acceso y cómo lo corregirías.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué significa principio de mínimo acceso?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "acceso suficiente para función",
+        "no acceso universal",
+        "reducir riesgo/exposición"
       ]
     },
     {
       "id": "INF-401-Q013",
       "unit_id": "INF-401-U04",
       "type": "short_answer",
-      "prompt_es": "Explica consulta y su relevancia operativa.",
+      "prompt_es": "¿Qué debe especificar una buena consulta de información?",
       "answer_key_es": [
-        "consulta",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "objetivo",
+        "ámbito",
+        "filtros",
+        "fuentes autorizadas"
       ]
     },
     {
       "id": "INF-401-Q014",
       "unit_id": "INF-401-U04",
-      "type": "compare",
-      "prompt_es": "Compara consulta con filtros. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué importa conservar la fuente de un resultado?",
       "answer_key_es": [
-        "consulta",
-        "filtros",
-        "diferencia aplicada"
+        "procedencia condiciona significado",
+        "distinguir medición/informe/opinión",
+        "permite auditar"
       ]
     },
     {
       "id": "INF-401-Q015",
       "unit_id": "INF-401-U04",
-      "type": "scenario",
-      "prompt_es": "Situación: Encontrar información concreta sin pedir al sistema que invente respuesta. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "compare",
+      "prompt_es": "Diferencia resultado e interpretación.",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "resultado = dato recuperado",
+        "interpretación = explicación/conclusión",
+        "requiere evidencia adicional"
       ]
     },
     {
       "id": "INF-401-Q016",
       "unit_id": "INF-401-U04",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Búsqueda de información y cómo lo corregirías.",
+      "type": "scenario",
+      "prompt_es": "Pides resumir eventos de seis horas para explicar una pérdida de potencia. ¿Qué límites debe respetar el sistema?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "fuentes autorizadas",
+        "no inventar eventos",
+        "conservar incertidumbre",
+        "separar correlación de certeza"
       ]
     },
     {
       "id": "INF-401-Q017",
       "unit_id": "INF-401-U05",
       "type": "short_answer",
-      "prompt_es": "Explica registros académicos y su relevancia operativa.",
+      "prompt_es": "¿Para qué sirve la trazabilidad?",
       "answer_key_es": [
-        "registros académicos",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "reconstruir qué ocurrió",
+        "continuidad",
+        "debrief",
+        "evaluación",
+        "investigación",
+        "responsabilidad"
       ]
     },
     {
       "id": "INF-401-Q018",
       "unit_id": "INF-401-U05",
       "type": "compare",
-      "prompt_es": "Compara registros académicos con logs. Indica una diferencia que pueda cambiar una decisión.",
+      "prompt_es": "Diferencia Operational Event Log y log personal.",
       "answer_key_es": [
-        "registros académicos",
-        "logs",
-        "diferencia aplicada"
+        "event log = hechos autoritativos",
+        "personal log = registro subjetivo",
+        "opinión no equivale a verdad"
       ]
     },
     {
       "id": "INF-401-Q019",
       "unit_id": "INF-401-U05",
-      "type": "scenario",
-      "prompt_es": "Situación: Crear y consultar un registro permitido. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "judgment",
+      "prompt_es": "¿Debe borrarse un registro antiguo cuando aparece una corrección?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "no",
+        "append-only",
+        "registrar corrección posterior",
+        "preservar historia"
       ]
     },
     {
       "id": "INF-401-Q020",
       "unit_id": "INF-401-U05",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Registros y trazabilidad y cómo lo corregirías.",
+      "type": "knowledge",
+      "prompt_es": "¿Qué metadatos básicos ayudan a auditar un registro?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "autor",
+        "hora",
+        "tipo",
+        "referencias",
+        "permisos"
       ]
     },
     {
       "id": "INF-401-Q021",
       "unit_id": "INF-401-U06",
-      "type": "short_answer",
-      "prompt_es": "Explica datos personales y su relevancia operativa.",
+      "type": "compare",
+      "prompt_es": "Diferencia acceso técnico y autorización.",
       "answer_key_es": [
-        "datos personales",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "ser técnicamente posible no implica permiso",
+        "autorización depende de reglas/contexto"
       ]
     },
     {
       "id": "INF-401-Q022",
       "unit_id": "INF-401-U06",
-      "type": "compare",
-      "prompt_es": "Compara datos personales con restricciones. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "knowledge",
+      "prompt_es": "Nombra cuatro tipos de información que pueden estar restringidos.",
       "answer_key_es": [
-        "datos personales",
-        "restricciones",
-        "diferencia aplicada"
+        "médica",
+        "Seguridad",
+        "Inteligencia",
+        "clasificada",
+        "logs personales",
+        "expedientes sensibles"
       ]
     },
     {
       "id": "INF-401-Q023",
       "unit_id": "INF-401-U06",
-      "type": "scenario",
-      "prompt_es": "Situación: Resolver casos de acceso por curiosidad frente a necesidad de servicio. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué un mensaje de acceso denegado no debe filtrar contenido protegido?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "evitar fuga indirecta",
+        "privacidad",
+        "seguridad"
       ]
     },
     {
       "id": "INF-401-Q024",
       "unit_id": "INF-401-U06",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Privacidad y uso responsable y cómo lo corregirías.",
+      "type": "scenario",
+      "prompt_es": "Sabes que existe un log privado de un instructor. ¿Te concede eso derecho a leerlo?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "no",
+        "existencia no equivale a permiso",
+        "requiere autorización válida"
       ]
     }
   ]
