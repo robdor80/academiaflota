@@ -150,3 +150,35 @@
   .orientation-lock__card h1{margin:7px 0;color:var(--navy-900)}
   .orientation-lock__card p{margin:0;color:var(--muted)}
 }
+
+
+@media (max-width:767px) and (orientation:portrait){
+  .access-dashboard-card{
+    margin-bottom:12px;
+  }
+  .access-dashboard-card .button{
+    width:100%;
+  }
+  .access-manual-card{
+    grid-template-columns:48px minmax(0,1fr);
+    gap:12px;
+    padding:15px;
+  }
+  .access-manual-card__icon{
+    width:44px;
+    height:44px;
+    font-size:1.15rem;
+  }
+  .access-manual-card__action{
+    grid-column:2;
+    justify-self:start;
+    margin-top:-2px;
+  }
+  .lesson-section-title{
+    margin-top:28px;
+    font-size:1.25rem;
+  }
+  .definition-block{
+    padding:14px;
+  }
+}
