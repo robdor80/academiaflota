@@ -1,283 +1,305 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "course_id": "SHP-402",
-  "status": "generated_from_authoritative_curriculum",
+  "status": "editorially_aligned_with_developed_manual",
+  "source_manual": "gameplay/careers/academy_path/study_materials/fourth_class/SHP-402/MANUAL_v1_0.md",
   "question_count": 24,
+  "rule": "No question may require knowledge that is not explicitly taught in SHP-402 or established prerequisites.",
   "questions": [
     {
       "id": "SHP-402-Q001",
       "unit_id": "SHP-402-U01",
       "type": "short_answer",
-      "prompt_es": "Explica puente y su relevancia operativa.",
+      "prompt_es": "¿Por qué conviene aprender una nave por funciones y no solo por planos?",
       "answer_key_es": [
-        "puente",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "clases distintas distribuyen espacios distinto",
+        "funciones transfieren entre naves",
+        "evita memorizar un único layout"
       ]
     },
     {
       "id": "SHP-402-Q002",
       "unit_id": "SHP-402-U01",
-      "type": "compare",
-      "prompt_es": "Compara puente con Ingeniería. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "knowledge",
+      "prompt_es": "¿Qué función general cumple el puente?",
       "answer_key_es": [
-        "puente",
-        "Ingeniería",
-        "diferencia aplicada"
+        "mando",
+        "coordinación",
+        "información",
+        "órdenes",
+        "supervisión"
       ]
     },
     {
       "id": "SHP-402-Q003",
       "unit_id": "SHP-402-U01",
-      "type": "scenario",
-      "prompt_es": "Situación: Recorrido guiado físico o virtual. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "judgment",
+      "prompt_es": "¿Estar físicamente en Ingeniería autoriza a reparar cualquier sistema?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "no",
+        "requiere cualificación/autoridad",
+        "puede existir riesgo"
       ]
     },
     {
       "id": "SHP-402-Q004",
       "unit_id": "SHP-402-U01",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Anatomía funcional de una nave y cómo lo corregirías.",
+      "type": "compare",
+      "prompt_es": "Diferencia dato médico y realidad completa del paciente.",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "dato = observación/conocimiento",
+        "estado real puede incluir información desconocida",
+        "pruebas revelan información gradualmente"
       ]
     },
     {
       "id": "SHP-402-Q005",
       "unit_id": "SHP-402-U02",
       "type": "short_answer",
-      "prompt_es": "Explica departamentos y su relevancia operativa.",
+      "prompt_es": "¿Qué significa que una nave sea una organización?",
       "answer_key_es": [
         "departamentos",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "puestos",
+        "guardias",
+        "apoyo",
+        "responsabilidades distribuidas"
       ]
     },
     {
       "id": "SHP-402-Q006",
       "unit_id": "SHP-402-U02",
-      "type": "compare",
-      "prompt_es": "Compara departamentos con jefaturas. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "knowledge",
+      "prompt_es": "Nombra cuatro departamentos del modelo.",
       "answer_key_es": [
-        "departamentos",
-        "jefaturas",
-        "diferencia aplicada"
+        "Mando",
+        "Control de vuelo",
+        "Operaciones",
+        "Ingeniería",
+        "Seguridad",
+        "Táctica",
+        "Comunicaciones",
+        "Ciencia",
+        "Medicina"
       ]
     },
     {
       "id": "SHP-402-Q007",
       "unit_id": "SHP-402-U02",
-      "type": "scenario",
-      "prompt_es": "Situación: Ubicar funciones en un organigrama de nave. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué implica una jefatura?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "organizar",
+        "supervisar",
+        "priorizar",
+        "responder por el área",
+        "no hacer cada tarea personalmente"
       ]
     },
     {
       "id": "SHP-402-Q008",
       "unit_id": "SHP-402-U02",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Tripulación y departamentos y cómo lo corregirías.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué la tripulación visible en una escena no representa a toda la dotación?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "guardias",
+        "descanso",
+        "mantenimiento",
+        "apoyo",
+        "otras ubicaciones"
       ]
     },
     {
       "id": "SHP-402-Q009",
       "unit_id": "SHP-402-U03",
-      "type": "short_answer",
-      "prompt_es": "Explica Mando y su relevancia operativa.",
+      "type": "knowledge",
+      "prompt_es": "¿Qué cuatro elementos definen una estación según el proyecto?",
       "answer_key_es": [
-        "Mando",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "función",
+        "sistemas accesibles",
+        "autoridad",
+        "información disponible/POV"
       ]
     },
     {
       "id": "SHP-402-Q010",
       "unit_id": "SHP-402-U03",
-      "type": "compare",
-      "prompt_es": "Compara Mando con Conn. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "judgment",
+      "prompt_es": "¿Sentarse en una consola concede automáticamente acceso a sus sistemas?",
       "answer_key_es": [
-        "Mando",
-        "Conn",
-        "diferencia aplicada"
+        "no",
+        "puesto",
+        "cualificación",
+        "autoridad",
+        "estado/permisos"
       ]
     },
     {
       "id": "SHP-402-Q011",
       "unit_id": "SHP-402-U03",
-      "type": "scenario",
-      "prompt_es": "Situación: Visita a puente/simulador y reconocimiento de puestos. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "compare",
+      "prompt_es": "Indica una diferencia general entre configuraciones de puente del siglo XXIII y XXIV.",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "Timón/Navegación separados frente a Conn/Ops",
+        "Comunicaciones separada en siglo XXIII",
+        "configuración depende de era/clase"
       ]
     },
     {
       "id": "SHP-402-Q012",
       "unit_id": "SHP-402-U03",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Puente y estaciones y cómo lo corregirías.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué significa POV profesional?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "cada estación ve información relevante a su función",
+        "ninguna estación posee toda la realidad",
+        "requiere coordinación"
       ]
     },
     {
       "id": "SHP-402-Q013",
       "unit_id": "SHP-402-U04",
       "type": "short_answer",
-      "prompt_es": "Explica alojamientos y su relevancia operativa.",
+      "prompt_es": "¿Por qué una nave necesita espacios de vida además de espacios técnicos?",
       "answer_key_es": [
-        "alojamientos",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "misiones prolongadas",
+        "descanso",
+        "alimentación",
+        "privacidad",
+        "recuperación"
       ]
     },
     {
       "id": "SHP-402-Q014",
       "unit_id": "SHP-402-U04",
-      "type": "compare",
-      "prompt_es": "Compara alojamientos con comedores. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "knowledge",
+      "prompt_es": "Nombra tres funciones de los alojamientos o servicios cotidianos.",
       "answer_key_es": [
-        "alojamientos",
-        "comedores",
-        "diferencia aplicada"
+        "descanso",
+        "privacidad",
+        "almacenamiento",
+        "higiene",
+        "alimentación",
+        "socialización"
       ]
     },
     {
       "id": "SHP-402-Q015",
       "unit_id": "SHP-402-U04",
-      "type": "scenario",
-      "prompt_es": "Situación: Planificar una jornada a bordo. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "judgment",
+      "prompt_es": "¿Vivir en una nave elimina la privacidad?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "no",
+        "acceso sigue condicionado",
+        "logs/datos médicos/alojamientos no son públicos automáticamente"
       ]
     },
     {
       "id": "SHP-402-Q016",
       "unit_id": "SHP-402-U04",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Vida cotidiana y cómo lo corregirías.",
+      "type": "planning",
+      "prompt_es": "Planifica una jornada con guardia, comida, descanso y actividad personal sin solapar obligaciones.",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "horario coherente",
+        "descanso",
+        "cumplimiento",
+        "tiempo personal"
       ]
     },
     {
       "id": "SHP-402-Q017",
       "unit_id": "SHP-402-U05",
       "type": "short_answer",
-      "prompt_es": "Explica exploración y su relevancia operativa.",
+      "prompt_es": "¿Por qué no se exige memorizar catálogos de clases de nave?",
       "answer_key_es": [
-        "exploración",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "se enseña relación misión-capacidad",
+        "principios transferibles",
+        "evita trivia"
       ]
     },
     {
       "id": "SHP-402-Q018",
       "unit_id": "SHP-402-U05",
-      "type": "compare",
-      "prompt_es": "Compara exploración con ciencia. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "knowledge",
+      "prompt_es": "Nombra tres capacidades útiles para una misión de exploración.",
       "answer_key_es": [
-        "exploración",
+        "autonomía",
+        "sensores",
         "ciencia",
-        "diferencia aplicada"
+        "diplomacia",
+        "apoyo médico",
+        "flexibilidad"
       ]
     },
     {
       "id": "SHP-402-Q019",
       "unit_id": "SHP-402-U05",
-      "type": "scenario",
-      "prompt_es": "Situación: Relacionar misión con función de nave sin memorizar catálogos. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "judgment",
+      "prompt_es": "¿Una nave de exploración puede realizar rescates?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "sí",
+        "las funciones no son cajas absolutas",
+        "depende de capacidades/contexto"
       ]
     },
     {
       "id": "SHP-402-Q020",
       "unit_id": "SHP-402-U05",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Tipos y funciones de naves y cómo lo corregirías.",
+      "type": "scenario",
+      "prompt_es": "Una misión exige estudiar un fenómeno durante semanas con equipo especializado. ¿Qué capacidades priorizarías?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "ciencia",
+        "sensores",
+        "autonomía",
+        "laboratorios/instrumentación",
+        "soporte adecuado"
       ]
     },
     {
       "id": "SHP-402-Q021",
       "unit_id": "SHP-402-U06",
-      "type": "short_answer",
-      "prompt_es": "Explica rutas y su relevancia operativa.",
+      "type": "knowledge",
+      "prompt_es": "Nombra cuatro factores que pueden cambiar una ruta a bordo.",
       "answer_key_es": [
-        "rutas",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "accesos",
+        "daños",
+        "compartimentos",
+        "órdenes",
+        "restricciones",
+        "emergencia"
       ]
     },
     {
       "id": "SHP-402-Q022",
       "unit_id": "SHP-402-U06",
-      "type": "compare",
-      "prompt_es": "Compara rutas con acceso. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "judgment",
+      "prompt_es": "¿Qué debe prevalecer: la ruta habitual o la ruta segura vigente?",
       "answer_key_es": [
-        "rutas",
-        "acceso",
-        "diferencia aplicada"
+        "ruta segura vigente",
+        "seguir instrucciones",
+        "estado real de la nave"
       ]
     },
     {
       "id": "SHP-402-Q023",
       "unit_id": "SHP-402-U06",
-      "type": "scenario",
-      "prompt_es": "Situación: Desplazamiento guiado durante un supuesto. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "short_answer",
+      "prompt_es": "¿Para qué sirve el recuento durante una evacuación?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "saber quién falta",
+        "evitar búsquedas duplicadas",
+        "confirmar evacuación",
+        "asignar ayuda"
       ]
     },
     {
       "id": "SHP-402-Q024",
       "unit_id": "SHP-402-U06",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Flujo entre espacios y cómo lo corregirías.",
+      "type": "scenario",
+      "prompt_es": "Llegas a una zona dañada antes que un equipo técnico. ¿Qué NO debes asumir?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "que puedes intervenir técnicamente",
+        "que tienes autoridad/cualificación",
+        "debes informar y seguir instrucciones"
       ]
     }
   ]

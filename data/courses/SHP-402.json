@@ -1,18 +1,18 @@
 {
   "subject": "Organización y vida a bordo",
   "code": "SHP-402",
-  "version": "1.0",
+  "version": "1.1",
+  "status": "developed_content",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/SHP-402/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/SHP-402/MANUAL_v1_0.md",
   "sourceRefs": [
-    "gameplay/careers/academy_path/course_resolution.md",
-    "gameplay/careers/academy_path/evaluation_model.json",
-    "gameplay/careers/academy_path/academy_era_profiles.json",
     "lore/starships/bridge_stations/README.md",
     "gameplay/ship_operations/bridge_station_model.json",
     "lore/federation/starfleet/departments/divisions_and_departments.json",
-    "lore/federation/starfleet/positions/positions.json"
+    "lore/federation/starfleet/positions/positions.json",
+    "gameplay/medical/medical_state_model.json",
+    "gameplay/ship_operations/ship_computer/access_control_rules.json"
   ],
   "modules": [
     {
@@ -22,32 +22,46 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Comprender una nave como lugar de trabajo, vivienda y organización."
+          "text": "Una nave debe entenderse por funciones, no solo por planos memorizados. Las clases distribuyen sus espacios de forma distinta, pero las necesidades de mando, Ingeniería, Medicina, Seguridad, Ciencia, Operaciones y vida cotidiana permanecen."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Áreas funcionales"
         },
         {
-          "type": "bullets",
-          "items": [
-            "puente",
-            "Ingeniería",
-            "Enfermería",
-            "Seguridad",
-            "Ciencias",
-            "Operaciones"
-          ]
+          "type": "definition",
+          "term": "Puente",
+          "text": "Centro de mando y coordinación: recibe información, emite órdenes y conecta estaciones."
+        },
+        {
+          "type": "definition",
+          "term": "Ingeniería",
+          "text": "Control, mantenimiento y recuperación de sistemas técnicos. Estar allí no concede por sí solo autoridad para intervenir."
+        },
+        {
+          "type": "definition",
+          "term": "Enfermería",
+          "text": "Evaluación y asistencia médica. Los datos conocidos no equivalen siempre al estado real completo del paciente."
+        },
+        {
+          "type": "definition",
+          "term": "Seguridad",
+          "text": "Protección de personas, instalaciones y procedimientos."
+        },
+        {
+          "type": "definition",
+          "term": "Ciencia",
+          "text": "Análisis de fenómenos y datos."
+        },
+        {
+          "type": "definition",
+          "term": "Operaciones",
+          "text": "Coordinación de recursos, sistemas internos y apoyo de misión."
         },
         {
           "type": "callout",
           "label": "PRÁCTICA",
-          "text": "Recorrido guiado físico o virtual."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Identificación funcional de espacios."
+          "text": "Recorrido guiado por una nave o simulador identificando áreas por función."
         },
         {
           "type": "heading",
@@ -56,26 +70,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras puente.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Recorrido guiado físico o virtual.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/starships/bridge_stations/README.md",
-            "gameplay/ship_operations/bridge_station_model.json",
-            "lore/federation/starfleet/departments/divisions_and_departments.json",
-            "lore/federation/starfleet/positions/positions.json"
+            "¿Por qué no basta memorizar un plano?",
+            "¿Qué función general cumple el puente?",
+            "¿Por qué estar en Ingeniería no concede autoridad técnica?",
+            "¿Qué diferencia hay entre un dato médico y toda la realidad del paciente?",
+            "¿Qué papel general cumplen Ciencia y Operaciones?"
           ]
         }
       ]
@@ -87,30 +86,47 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Comprender una nave como lugar de trabajo, vivienda y organización."
+          "text": "Una nave es una organización. La tripulación se distribuye en departamentos, puestos, equipos y guardias; el puente no lo hace todo."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Departamentos habituales"
         },
         {
           "type": "bullets",
           "items": [
-            "departamentos",
-            "jefaturas",
-            "personal de guardia",
-            "apoyo"
+            "Mando",
+            "Control de vuelo / Navegación",
+            "Operaciones",
+            "Ingeniería",
+            "Seguridad",
+            "Táctica",
+            "Comunicaciones",
+            "Ciencia",
+            "Medicina",
+            "Consejería"
           ]
         },
         {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Ubicar funciones en un organigrama de nave."
+          "type": "heading",
+          "text": "Jefaturas"
+        },
+        {
+          "type": "p",
+          "text": "Una jefatura organiza, supervisa, prioriza y responde por un área profesional. Ser jefe no significa hacer personalmente cada tarea."
+        },
+        {
+          "type": "heading",
+          "text": "Personal de guardia y apoyo"
+        },
+        {
+          "type": "p",
+          "text": "La nave funciona de forma continua. En cada momento hay personal de servicio, descanso, mantenimiento, formación y apoyo."
         },
         {
           "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Ejercicio de organización."
+          "label": "IDEA CLAVE",
+          "text": "La tripulación visible en una escena no representa necesariamente a toda la dotación."
         },
         {
           "type": "heading",
@@ -119,26 +135,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras departamentos.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Ubicar funciones en un organigrama de nave.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/starships/bridge_stations/README.md",
-            "gameplay/ship_operations/bridge_station_model.json",
-            "lore/federation/starfleet/departments/divisions_and_departments.json",
-            "lore/federation/starfleet/positions/positions.json"
+            "¿Por qué una nave no es solo el puente?",
+            "¿Qué significa una jefatura?",
+            "¿Qué diferencia hay entre departamento y personal de guardia?",
+            "¿Por qué no toda la tripulación está simultáneamente de servicio?",
+            "Pon un ejemplo de una función de apoyo."
           ]
         }
       ]
@@ -149,34 +150,52 @@
       "subtitle": "UNIDAD 03 · SHP-402",
       "blocks": [
         {
-          "type": "p",
-          "text": "Comprender una nave como lugar de trabajo, vivienda y organización."
+          "type": "callout",
+          "label": "DEFINICIÓN",
+          "text": "Una estación se define por FUNCIÓN, SISTEMAS ACCESIBLES, AUTORIDAD e INFORMACIÓN DISPONIBLE."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Familias de estación"
         },
         {
           "type": "bullets",
           "items": [
             "Mando",
-            "Conn",
+            "Conn / Control de vuelo",
+            "Navegación",
             "Operaciones",
             "Sensores",
             "Ciencia",
             "Táctica",
-            "Comunicaciones según era"
+            "Comunicaciones",
+            "Ingeniería de puente",
+            "Auxiliares"
           ]
         },
         {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Visita a puente/simulador y reconocimiento de puestos."
+          "type": "heading",
+          "text": "Diferencias por era"
         },
         {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Práctica supervisada."
+          "type": "p",
+          "text": "En el siglo XXIII Timón y Navegación pueden aparecer separados y Comunicaciones puede ser un puesto visible propio. En configuraciones del siglo XXIV Conn y Ops suelen ocupar las posiciones delanteras y Táctica una consola dedicada."
+        },
+        {
+          "type": "heading",
+          "text": "Acceso real"
+        },
+        {
+          "type": "p",
+          "text": "Sentarse ante una consola no basta. Importan estación, puesto, cualificación, autoridad, estado de la nave y permisos."
+        },
+        {
+          "type": "heading",
+          "text": "POV profesional"
+        },
+        {
+          "type": "p",
+          "text": "Cada estación conoce una parte del problema. Sensores detecta, Ciencia interpreta, Mando decide, Conn maniobra e Ingeniería informa de capacidad técnica."
         },
         {
           "type": "heading",
@@ -185,26 +204,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras Mando.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Visita a puente/simulador y reconocimiento de puestos.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/starships/bridge_stations/README.md",
-            "gameplay/ship_operations/bridge_station_model.json",
-            "lore/federation/starfleet/departments/divisions_and_departments.json",
-            "lore/federation/starfleet/positions/positions.json"
+            "¿Qué cuatro elementos definen una estación?",
+            "¿Por qué sentarse no concede acceso?",
+            "Indica una diferencia entre puentes del siglo XXIII y XXIV.",
+            "¿Qué significa POV profesional?",
+            "¿Por qué ninguna estación debe conocer toda la realidad?"
           ]
         }
       ]
@@ -216,31 +220,43 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Comprender una nave como lugar de trabajo, vivienda y organización."
+          "text": "Una nave también es un hogar temporal. Misiones largas necesitan alojamiento, alimentación, higiene, descanso, ocio y privacidad."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Alojamiento"
+        },
+        {
+          "type": "p",
+          "text": "Proporciona descanso, privacidad, almacenamiento personal y recuperación fuera de servicio. Su configuración depende de clase, era y rango."
+        },
+        {
+          "type": "heading",
+          "text": "Servicios y recreo"
         },
         {
           "type": "bullets",
           "items": [
-            "alojamientos",
-            "comedores",
-            "recreo",
-            "servicios",
-            "privacidad"
+            "Alimentación",
+            "Higiene",
+            "Zonas de descanso",
+            "Espacios sociales",
+            "Ejercicio",
+            "Ocio"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Privacidad"
+        },
+        {
+          "type": "p",
+          "text": "Vivir en una nave no concede acceso automático a alojamientos, logs privados, datos médicos o pertenencias de otros tripulantes."
         },
         {
           "type": "callout",
           "label": "PRÁCTICA",
-          "text": "Planificar una jornada a bordo."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Actividad contextual."
+          "text": "Planifica una jornada a bordo con guardia, comida, descanso, actividad personal y preparación."
         },
         {
           "type": "heading",
@@ -249,26 +265,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras alojamientos.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Planificar una jornada a bordo.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/starships/bridge_stations/README.md",
-            "gameplay/ship_operations/bridge_station_model.json",
-            "lore/federation/starfleet/departments/divisions_and_departments.json",
-            "lore/federation/starfleet/positions/positions.json"
+            "¿Por qué una nave necesita espacios de vida?",
+            "¿Qué funciones cumplen los alojamientos?",
+            "¿Por qué el ocio puede ser funcional?",
+            "¿Qué significa privacidad a bordo?",
+            "¿Debe toda rutina convertirse en escena?"
           ]
         }
       ]
@@ -280,31 +281,37 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Comprender una nave como lugar de trabajo, vivienda y organización."
+          "text": "No se estudian catálogos de memoria. Se estudia la relación misión ↔ capacidades necesarias."
         },
         {
-          "type": "heading",
-          "text": "Contenidos"
+          "type": "definition",
+          "term": "Exploración",
+          "text": "Puede priorizar autonomía, sensores, ciencia, capacidad diplomática, apoyo médico y flexibilidad."
         },
         {
-          "type": "bullets",
-          "items": [
-            "exploración",
-            "ciencia",
-            "patrulla",
-            "transporte",
-            "apoyo"
-          ]
+          "type": "definition",
+          "term": "Ciencia",
+          "text": "Puede priorizar laboratorios, sensores especializados, personal científico e instrumentación."
+        },
+        {
+          "type": "definition",
+          "term": "Patrulla",
+          "text": "Puede priorizar presencia, vigilancia, reacción, comunicaciones y autonomía regional."
+        },
+        {
+          "type": "definition",
+          "term": "Transporte",
+          "text": "Puede priorizar carga, pasajeros, soporte logístico, rutas y protección contextual."
+        },
+        {
+          "type": "definition",
+          "term": "Apoyo",
+          "text": "Puede incluir reparación, remolque, evacuación, asistencia médica o reabastecimiento."
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Relacionar misión con función de nave sin memorizar catálogos."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Caso aplicado."
+          "label": "IMPORTANTE",
+          "text": "Una misma nave puede cumplir más de una función. Las etiquetas describen énfasis, no cajas absolutas."
         },
         {
           "type": "heading",
@@ -313,26 +320,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras exploración.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Relacionar misión con función de nave sin memorizar catálogos.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/starships/bridge_stations/README.md",
-            "gameplay/ship_operations/bridge_station_model.json",
-            "lore/federation/starfleet/departments/divisions_and_departments.json",
-            "lore/federation/starfleet/positions/positions.json"
+            "¿Por qué se evita memorizar catálogos?",
+            "¿Qué capacidades son útiles en exploración?",
+            "¿Qué puede priorizar una nave científica?",
+            "¿Una nave tiene una sola función?",
+            "¿Qué significa diseñar desde misión hacia capacidad?"
           ]
         }
       ]
@@ -344,30 +336,47 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Comprender una nave como lugar de trabajo, vivienda y organización."
+          "text": "Moverse por una nave también es una competencia. En emergencia, una mala ruta puede cruzar zonas peligrosas, violar restricciones o retrasar una evacuación."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Qué modifica una ruta"
         },
         {
           "type": "bullets",
           "items": [
-            "rutas",
-            "acceso",
-            "zonas restringidas",
-            "movimiento en emergencia"
+            "Origen y destino",
+            "Accesos disponibles",
+            "Estado de compartimentos",
+            "Daños",
+            "Órdenes de emergencia",
+            "Restricciones"
           ]
         },
         {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Desplazamiento guiado durante un supuesto."
+          "type": "heading",
+          "text": "Movimiento en emergencia"
         },
         {
           "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación práctica."
+          "label": "REGLA",
+          "text": "Seguir la ruta segura y la instrucción vigente, no la ruta habitual por costumbre."
+        },
+        {
+          "type": "heading",
+          "text": "Recuento"
+        },
+        {
+          "type": "p",
+          "text": "Saber quién ha llegado y quién falta permite confirmar evacuación, localizar desaparecidos y evitar búsquedas duplicadas."
+        },
+        {
+          "type": "heading",
+          "text": "No improvisar funciones técnicas"
+        },
+        {
+          "type": "p",
+          "text": "Llegar a una zona dañada no convierte al cadete en técnico de control de daños. Puede informar, evacuar, transportar equipo o ayudar bajo instrucciones."
         },
         {
           "type": "heading",
@@ -376,26 +385,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras rutas.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Desplazamiento guiado durante un supuesto.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/starships/bridge_stations/README.md",
-            "gameplay/ship_operations/bridge_station_model.json",
-            "lore/federation/starfleet/departments/divisions_and_departments.json",
-            "lore/federation/starfleet/positions/positions.json"
+            "¿Qué factores pueden cambiar una ruta?",
+            "¿Por qué una zona puede estar restringida?",
+            "¿Qué prioridad tiene la ruta segura?",
+            "¿Para qué sirve el recuento?",
+            "¿Por qué llegar a una zona dañada no autoriza a intervenir técnicamente?"
           ]
         }
       ]
