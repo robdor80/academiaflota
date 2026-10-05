@@ -1,7 +1,7 @@
 {
   "subject": "Navegación y control de vuelo I",
   "code": "NAV-301",
-  "version": "1.0",
+  "version": "1.1",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/NAV-301/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/NAV-301/MANUAL_v1_0.md",
@@ -21,30 +21,29 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Pasar de entender rutas a operar navegación y vuelo básico bajo supervisión."
+          "text": "La estación de vuelo transforma una intención de mando en una solución validada de movimiento. Trabaja con rumbo, velocidad, propulsión, maniobra y ejecución."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Acciones funcionales mínimas"
         },
         {
           "type": "bullets",
           "items": [
-            "controles",
-            "rumbo",
-            "velocidad",
-            "estado de propulsión"
+            "Fijar rumbo",
+            "Seleccionar velocidad",
+            "Entrar/salir de warp",
+            "Interceptar",
+            "Entrar en órbita",
+            "Aproximarse",
+            "Atracar cuando proceda",
+            "Abortar o cancelar"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Familiarización con consola real/simulada."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Prueba de manejo básico."
+          "label": "VALIDACIÓN",
+          "text": "Una orden puede ser válida como intención pero no ejecutable con el estado actual de la nave."
         },
         {
           "type": "heading",
@@ -53,25 +52,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica controles en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Familiarización con consola real/simulada.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/navigation/navigation_order_contract.json",
-            "gameplay/navigation/route_cost_model.json",
-            "gameplay/warp_travel/route_planning_model.json"
+            "¿Qué controla la estación de vuelo?",
+            "¿Qué información necesita?",
+            "Nombra cuatro acciones mínimas.",
+            "Diferencia orden válida y ejecutable.",
+            "¿Qué haces si la nave no puede cumplir?"
           ]
         }
       ]
@@ -83,31 +68,32 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Pasar de entender rutas a operar navegación y vuelo básico bajo supervisión."
+          "text": "Plotting construye una solución de navegación entre origen y destino teniendo en cuenta waypoints, restricciones, peligros conocidos, preferencias y ETA."
+        },
+        {
+          "type": "definition",
+          "term": "Waypoint",
+          "text": "Punto intermedio que estructura una ruta para evitar zonas, buscar apoyo o cumplir condiciones."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Preferencias"
         },
         {
           "type": "bullets",
           "items": [
-            "origen",
-            "destino",
-            "waypoints",
-            "restricciones",
-            "ETA"
+            "Más rápida",
+            "Más segura",
+            "Evitar espacio hostil",
+            "Evitar espacio restringido",
+            "Preferir apoyo",
+            "Bajo contacto"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Preparar un plan de vuelo."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación de ruta."
+          "label": "FÍSICA Y POLÍTICA",
+          "text": "Una ruta puede ser físicamente posible y aun así estar políticamente restringida."
         },
         {
           "type": "heading",
@@ -116,25 +102,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica origen en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Preparar un plan de vuelo.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/navigation/navigation_order_contract.json",
-            "gameplay/navigation/route_cost_model.json",
-            "gameplay/warp_travel/route_planning_model.json"
+            "¿Qué significa plotting?",
+            "¿Para qué sirve un waypoint?",
+            "Nombra tres preferencias.",
+            "¿Por qué la ruta corta no siempre es mejor?",
+            "Diferencia posibilidad física y legalidad."
           ]
         }
       ]
@@ -146,30 +118,30 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Pasar de entender rutas a operar navegación y vuelo básico bajo supervisión."
+          "text": "La maniobra a impulso cubre control subluz cercano: cambios de rumbo, velocidad, aproximación, separación y otras maniobras locales."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Qué se valida"
         },
         {
           "type": "bullets",
           "items": [
-            "cambios de rumbo",
-            "velocidad",
-            "aproximación",
-            "separación"
+            "Capacidad de maniobra",
+            "Obstáculos",
+            "Trayectorias",
+            "Estado de propulsión",
+            "Restricciones"
           ]
         },
         {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Ejecutar maniobras básicas."
+          "type": "p",
+          "text": "Aumentar velocidad puede reducir margen de reacción y dificultar una aproximación segura."
         },
         {
           "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Práctica."
+          "label": "CANCELACIÓN",
+          "text": "Toda maniobra debe poder modificarse o cancelarse si cambia la situación."
         },
         {
           "type": "heading",
@@ -178,25 +150,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica cambios de rumbo en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Ejecutar maniobras básicas.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/navigation/navigation_order_contract.json",
-            "gameplay/navigation/route_cost_model.json",
-            "gameplay/warp_travel/route_planning_model.json"
+            "¿Qué tareas pertenecen a impulso?",
+            "¿Qué valida un cambio de rumbo?",
+            "¿Qué puede empeorar al aumentar velocidad?",
+            "¿De qué dependen los márgenes?",
+            "¿Por qué debe existir cancelación?"
           ]
         }
       ]
@@ -208,30 +166,32 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Pasar de entender rutas a operar navegación y vuelo básico bajo supervisión."
+          "text": "Entrar en warp exige destino, ruta, factor solicitado, capacidad sostenible, energía, estado de daños, restricciones y autorización."
+        },
+        {
+          "type": "callout",
+          "label": "TRÁNSITO PERSISTENTE",
+          "text": "Entrar en warp inicia el viaje; no completa el trayecto instantáneamente."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Monitorización"
         },
         {
           "type": "bullets",
           "items": [
-            "selección de ruta",
-            "entrada/salida",
-            "restricciones",
-            "monitorización"
+            "Posición",
+            "Progreso",
+            "ETA",
+            "Propulsión",
+            "Condiciones",
+            "Cambios de ruta",
+            "Nuevos peligros conocidos"
           ]
         },
         {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Preparar y ejecutar salto supervisado."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación procedural."
+          "type": "p",
+          "text": "Daño, energía, condiciones subespaciales, fronteras o cambios de misión pueden obligar a replanificar."
         },
         {
           "type": "heading",
@@ -240,25 +200,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica selección de ruta en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Preparar y ejecutar salto supervisado.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/navigation/navigation_order_contract.json",
-            "gameplay/navigation/route_cost_model.json",
-            "gameplay/warp_travel/route_planning_model.json"
+            "¿Qué se comprueba antes de warp?",
+            "¿Por qué no completa el viaje?",
+            "¿Qué se monitoriza?",
+            "Nombra causas de salida o replanificación.",
+            "¿Qué cambia una ETA?"
           ]
         }
       ]
@@ -269,31 +215,30 @@
       "subtitle": "UNIDAD 05 · NAV-301",
       "blocks": [
         {
+          "type": "definition",
+          "term": "Interceptación",
+          "text": "Trayectoria destinada a encontrarse con un objetivo móvil."
+        },
+        {
           "type": "p",
-          "text": "Pasar de entender rutas a operar navegación y vuelo básico bajo supervisión."
+          "text": "La aproximación controla velocidad relativa, separación, orientación, tráfico e instrucciones del destino."
+        },
+        {
+          "type": "p",
+          "text": "Entrar en órbita requiere cuerpo objetivo, solución válida y capacidad de control. No se exige calcular mecánica orbital real manualmente."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Acoplamiento"
         },
         {
           "type": "bullets",
           "items": [
-            "interceptación",
-            "órbita",
-            "acoplamiento como contexto",
-            "márgenes"
+            "Instalación válida",
+            "Puerto asignado cuando proceda",
+            "Aproximación segura",
+            "Autorización"
           ]
-        },
-        {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Simulación de llegada."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Práctica."
         },
         {
           "type": "heading",
@@ -302,25 +247,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica interceptación en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Simulación de llegada.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/navigation/navigation_order_contract.json",
-            "gameplay/navigation/route_cost_model.json",
-            "gameplay/warp_travel/route_planning_model.json"
+            "¿Qué datos requiere interceptar?",
+            "¿Qué controla una aproximación?",
+            "¿Qué necesita una orden de órbita?",
+            "¿Qué añade el acoplamiento?",
+            "¿Para qué sirven los márgenes?"
           ]
         }
       ]
@@ -332,30 +263,31 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Pasar de entender rutas a operar navegación y vuelo básico bajo supervisión."
+          "text": "Una anomalía aparece cuando la nave se desvía de la solución prevista o cuando la ruta deja de ser válida."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Causas"
         },
         {
           "type": "bullets",
           "items": [
-            "desviación",
-            "obstáculos",
-            "datos incompletos",
-            "abort"
+            "Daño",
+            "Error",
+            "Nueva información",
+            "Cambio de condiciones",
+            "Obstáculo",
+            "Orden modificada"
           ]
         },
         {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Resolver una desviación de ruta."
+          "type": "p",
+          "text": "Con datos incompletos se reduce confianza, se amplían márgenes y se solicita información; no se finge precisión."
         },
         {
           "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Caso de juicio."
+          "label": "ABORTAR PUEDE SER CORRECTO",
+          "text": "Si continuar deja de ser seguro o autorizado, abortar es una decisión profesional, no un fracaso automático."
         },
         {
           "type": "heading",
@@ -364,28 +296,15 @@
         {
           "type": "numbered",
           "items": [
-            "Explica desviación en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Resolver una desviación de ruta.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/navigation/navigation_order_contract.json",
-            "gameplay/navigation/route_cost_model.json",
-            "gameplay/warp_travel/route_planning_model.json"
+            "¿Qué causa una desviación?",
+            "¿Cómo trabajas con datos incompletos?",
+            "¿Qué consideras ante un obstáculo?",
+            "¿Cuándo es correcto abortar?",
+            "¿Qué incluye el reporte de anomalía?"
           ]
         }
       ]
     }
-  ]
+  ],
+  "status": "developed_content"
 }
