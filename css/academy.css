@@ -207,3 +207,189 @@ button.catalogue-item{cursor:pointer}button.catalogue-item:hover{box-shadow:var(
 .profile-form label{display:block;margin-bottom:8px;font-weight:750}.profile-form__row{display:grid;grid-template-columns:1fr auto;gap:8px}
 .profile-form input{min-height:44px;padding:0 12px;border:1px solid #aebbc8;border-radius:6px;background:#fff}
 .settings-import{display:inline-flex;align-items:center}.settings-panel__footer{padding:22px 28px;color:#7a8794;font-size:.75rem}
+
+
+/* v0.2.3 — cabecera institucional + acento LCARS */
+.gateway__header{
+  position:relative;
+  display:grid;
+  grid-template-columns:88px minmax(0,1fr) 88px;
+  align-items:center;
+  gap:18px;
+  min-height:116px;
+  border-bottom:0;
+}
+.gateway-header__logo{
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+}
+.gateway-header__logo img{
+  display:block;
+  width:74px;
+  height:74px;
+  object-fit:contain;
+  filter:drop-shadow(0 8px 16px rgba(0,0,0,.24));
+}
+.gateway-header__title{
+  min-width:0;
+  text-align:center;
+}
+.gateway-header__title span{
+  display:block;
+  color:#d9b363;
+  font-size:.62rem;
+  font-weight:850;
+  letter-spacing:.19em;
+}
+.gateway-header__title strong{
+  display:block;
+  margin-top:6px;
+  color:#f7f9fb;
+  font-size:1.18rem;
+  line-height:1.15;
+  letter-spacing:.16em;
+}
+.gateway__header .settings-trigger{
+  justify-self:end;
+}
+.gateway-lcars-strip{
+  display:grid;
+  grid-template-columns:minmax(74px,11%) minmax(42px,6%) minmax(95px,14%) 1fr;
+  gap:7px;
+  width:min(calc(100% - 48px),var(--max));
+  height:10px;
+  margin:0 auto;
+}
+.gateway-lcars-strip i{
+  display:block;
+  min-width:0;
+}
+.gateway-lcars-strip i:nth-child(1){
+  background:#d2a24a;
+  border-radius:8px 0 0 8px;
+}
+.gateway-lcars-strip i:nth-child(2){
+  background:#9e344a;
+}
+.gateway-lcars-strip i:nth-child(3){
+  background:#6f6aa7;
+}
+.gateway-lcars-strip i:nth-child(4){
+  background:#2f6986;
+  border-radius:0 8px 8px 0;
+}
+
+.gateway__main{
+  padding-top:72px;
+}
+.gateway-hero{
+  text-align:left;
+  padding-left:22px;
+  border-left:8px solid #d2a24a;
+}
+.gateway-hero::before{
+  content:"";
+  display:block;
+  width:112px;
+  height:15px;
+  margin:0 0 28px -22px;
+  border-radius:0 10px 10px 0;
+  background:linear-gradient(90deg,#d2a24a 0 58%,#9e344a 58% 76%,#6f6aa7 76%);
+}
+.gateway-hero__code{
+  margin-top:0;
+  color:#d2ad63;
+}
+.gateway-hero h1{
+  margin-top:10px;
+}
+.cadet-access{
+  border-radius:18px 18px 18px 6px;
+  border-color:rgba(255,255,255,.14);
+}
+.cadet-access::before{
+  width:7px;
+  border-radius:14px 0 0 6px;
+  background:#d2a24a;
+}
+.cadet-access::after{
+  content:"";
+  position:absolute;
+  top:-1px;
+  left:-1px;
+  width:118px;
+  height:14px;
+  border-radius:14px 10px 10px 0;
+  background:linear-gradient(90deg,#d2a24a 0 58%,#9e344a 58% 77%,#6f6aa7 77%);
+}
+.cadet-access__heading{
+  padding-top:8px;
+}
+.profile-entry{
+  position:relative;
+  overflow:hidden;
+}
+.profile-entry::before{
+  content:"";
+  position:absolute;
+  inset:0 auto 0 0;
+  width:5px;
+  background:#2f6986;
+  opacity:.9;
+}
+.profile-entry:hover::before{
+  background:#d2a24a;
+}
+.profile-entry__avatar{
+  border-radius:18px 5px 18px 5px;
+}
+.text-action,
+.profile-entry__arrow{
+  color:#e0ba69;
+}
+.settings-trigger{
+  border-radius:20px 5px 20px 5px;
+}
+.access-status i{
+  background:#6fd2a0;
+}
+.gateway__footer{
+  position:relative;
+}
+.gateway__footer::before{
+  content:"";
+  position:absolute;
+  top:-1px;
+  left:0;
+  width:82px;
+  height:7px;
+  border-radius:0 8px 8px 0;
+  background:#9e344a;
+}
+
+/* La cabecera del portal mantiene el mismo lenguaje visual */
+.official-header__inner{
+  position:relative;
+}
+.portal-brand img{
+  content:url("../assets/img/academia-flota-estelar.svg?v=0.2.3");
+}
+.academy-stripe{
+  grid-template-columns:12% 7% 16% 1fr;
+  gap:5px;
+  padding:0 max(12px,calc((100vw - var(--max))/2 + 24px));
+  background:#fff;
+}
+.academy-stripe i{
+  border-radius:8px;
+}
+.academy-stripe i:nth-child(1){background:#d2a24a}
+.academy-stripe i:nth-child(2){background:#9e344a}
+.academy-stripe i:nth-child(3){background:#6f6aa7}
+.academy-stripe::after{
+  content:"";
+  display:block;
+  background:#2f6986;
+  border-radius:8px;
+}

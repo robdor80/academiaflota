@@ -1,9 +1,9 @@
 import {
   getProfiles, createProfile, setActiveProfile, clearActiveProfile, getActiveProfile,
   updateProfile, deleteProfile, exportProfile, importProfile
-} from "./storage.js?v=0.2.2";
-import { loadStudyData, renderLesson } from "./study.js?v=0.2.2";
-import { loadEvaluationData, renderExam, gradeExam, renderResult } from "./evaluation.js?v=0.2.2";
+} from "./storage.js?v=0.2.3";
+import { loadStudyData, renderLesson } from "./study.js?v=0.2.3";
+import { loadEvaluationData, renderExam, gradeExam, renderResult } from "./evaluation.js?v=0.2.3";
 
 const app = {
   profile: null,
@@ -71,7 +71,7 @@ function renderProfileList() {
     button.className = "profile-entry";
     button.innerHTML =
       '<span class="profile-entry__avatar">' + escapeHtml(profile.name.trim().charAt(0).toUpperCase()) + "</span>" +
-      "<span><strong>" + escapeHtml(profile.name) + "</strong><small>CADET RECORD // " +
+      "<span><strong>" + escapeHtml(profile.name) + "</strong><small>EXPEDIENTE DE CADETE // " +
       modules + " UNIDADES" + (best === null ? "" : " · MEJOR NOTA " + best + "%") + "</small></span>" +
       '<span class="profile-entry__arrow">ACCEDER →</span>';
     button.addEventListener("click", function() { enterProfile(profile.id); });
@@ -105,7 +105,7 @@ async function ensureData() {
   if (!app.study) app.study = await loadStudyData();
   if (!app.exam) app.exam = await loadEvaluationData();
   if (!app.practices) {
-    const response = await fetch("data/practicas-sensores.json?v=0.2.2");
+    const response = await fetch("data/practicas-sensores.json?v=0.2.3");
     if (!response.ok) throw new Error("No se pudieron cargar las prácticas.");
     app.practices = await response.json();
   }
