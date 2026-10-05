@@ -1,0 +1,394 @@
+{
+  "subject": "Preparación física III",
+  "code": "PHY-403",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/PHY-403/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/PHY-403/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/characters/wellbeing/README.md",
+    "gameplay/characters/wellbeing/activity_effect_contract.json",
+    "gameplay/characters/wellbeing/habit_formation_rules.json",
+    "gameplay/characters/development/development_rules.md"
+  ],
+  "modules": [
+    {
+      "id": "PHY-403-U01",
+      "title": "Revisión de progreso",
+      "subtitle": "UNIDAD 01 · PHY-403",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Cerrar el primer año con una condición funcional sostenible y capacidad de autogestión."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "estado inicial",
+            "evidencia acumulada",
+            "cambios"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Comparar registros del año."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación descriptiva."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras estado inicial.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Comparar registros del año.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/characters/wellbeing/README.md",
+            "gameplay/characters/wellbeing/activity_effect_contract.json",
+            "gameplay/characters/wellbeing/habit_formation_rules.json",
+            "gameplay/characters/development/development_rules.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PHY-403-U02",
+      "title": "Condición funcional",
+      "subtitle": "UNIDAD 02 · PHY-403",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Cerrar el primer año con una condición funcional sostenible y capacidad de autogestión."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "resistencia",
+            "fuerza",
+            "movilidad",
+            "coordinación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Sesión integrada."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Adecuación al servicio y biología."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras resistencia.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Sesión integrada.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/characters/wellbeing/README.md",
+            "gameplay/characters/wellbeing/activity_effect_contract.json",
+            "gameplay/characters/wellbeing/habit_formation_rules.json",
+            "gameplay/characters/development/development_rules.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PHY-403-U03",
+      "title": "Autogestión",
+      "subtitle": "UNIDAD 03 · PHY-403",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Cerrar el primer año con una condición funcional sostenible y capacidad de autogestión."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "planificación",
+            "carga",
+            "recuperación",
+            "señales de riesgo"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Diseñar semana realista."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Criterio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras planificación.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Diseñar semana realista.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/characters/wellbeing/README.md",
+            "gameplay/characters/wellbeing/activity_effect_contract.json",
+            "gameplay/characters/wellbeing/habit_formation_rules.json",
+            "gameplay/characters/development/development_rules.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PHY-403-U04",
+      "title": "Entrenamiento bajo carga académica",
+      "subtitle": "UNIDAD 04 · PHY-403",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Cerrar el primer año con una condición funcional sostenible y capacidad de autogestión."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "prioridades",
+            "ajuste",
+            "consistencia"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Adaptar rutina durante exámenes."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Decisión contextual."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras prioridades.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Adaptar rutina durante exámenes.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/characters/wellbeing/README.md",
+            "gameplay/characters/wellbeing/activity_effect_contract.json",
+            "gameplay/characters/wellbeing/habit_formation_rules.json",
+            "gameplay/characters/development/development_rules.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PHY-403-U05",
+      "title": "Actividad personal y Academia",
+      "subtitle": "UNIDAD 05 · PHY-403",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Cerrar el primer año con una condición funcional sostenible y capacidad de autogestión."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "aficiones",
+            "evidencia",
+            "separación de currículo",
+            "transferencia"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Registrar actividad personal sin convertirla en nota de PHY."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Corrección de registro."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras aficiones.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Registrar actividad personal sin convertirla en nota de PHY.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/characters/wellbeing/README.md",
+            "gameplay/characters/wellbeing/activity_effect_contract.json",
+            "gameplay/characters/wellbeing/habit_formation_rules.json",
+            "gameplay/characters/development/development_rules.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PHY-403-U06",
+      "title": "Cierre anual",
+      "subtitle": "UNIDAD 06 · PHY-403",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Cerrar el primer año con una condición funcional sostenible y capacidad de autogestión."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "continuidad futura",
+            "hábitos",
+            "áreas de mejora"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Plan longitudinal para 3.ª clase."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Apto / apoyo recomendado, sin XP."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras continuidad futura.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Plan longitudinal para 3.ª clase.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/characters/wellbeing/README.md",
+            "gameplay/characters/wellbeing/activity_effect_contract.json",
+            "gameplay/characters/wellbeing/habit_formation_rules.json",
+            "gameplay/characters/development/development_rules.md"
+          ]
+        }
+      ]
+    }
+  ]
+}

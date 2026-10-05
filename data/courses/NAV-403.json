@@ -1,0 +1,398 @@
+{
+  "subject": "Navegación y astrográfica I",
+  "code": "NAV-403",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/NAV-403/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/NAV-403/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/navigation/README.md",
+    "gameplay/navigation/route_context_model.json",
+    "gameplay/warp_travel/route_planning_model.json",
+    "gameplay/warp_travel/eta_resolution_model.json"
+  ],
+  "modules": [
+    {
+      "id": "NAV-403-U01",
+      "title": "Mapa estelar y referencias",
+      "subtitle": "UNIDAD 01 · NAV-403",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dar una alfabetización espacial suficiente para comprender rutas, posiciones y movimiento de una nave."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "sistemas",
+            "sectores",
+            "regiones",
+            "cartografía"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Localizar destinos en mapa de entrenamiento."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras sistemas.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Localizar destinos en mapa de entrenamiento.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/navigation/README.md",
+            "gameplay/navigation/route_context_model.json",
+            "gameplay/warp_travel/route_planning_model.json",
+            "gameplay/warp_travel/eta_resolution_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NAV-403-U02",
+      "title": "Coordenadas y posición",
+      "subtitle": "UNIDAD 02 · NAV-403",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dar una alfabetización espacial suficiente para comprender rutas, posiciones y movimiento de una nave."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "referencias",
+            "posición relativa",
+            "vectores conceptuales",
+            "orientación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Interpretar varias posiciones."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Ejercicio aplicado."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras referencias.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Interpretar varias posiciones.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/navigation/README.md",
+            "gameplay/navigation/route_context_model.json",
+            "gameplay/warp_travel/route_planning_model.json",
+            "gameplay/warp_travel/eta_resolution_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NAV-403-U03",
+      "title": "Distancia y tiempo",
+      "subtitle": "UNIDAD 03 · NAV-403",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dar una alfabetización espacial suficiente para comprender rutas, posiciones y movimiento de una nave."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "distancias astronómicas de juego",
+            "ETA",
+            "orden de magnitud",
+            "incertidumbre"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Comparar rutas y tiempos dados por el sistema."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Problemas básicos."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras distancias astronómicas de juego.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Comparar rutas y tiempos dados por el sistema.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/navigation/README.md",
+            "gameplay/navigation/route_context_model.json",
+            "gameplay/warp_travel/route_planning_model.json",
+            "gameplay/warp_travel/eta_resolution_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NAV-403-U04",
+      "title": "Impulso y warp en navegación",
+      "subtitle": "UNIDAD 04 · NAV-403",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dar una alfabetización espacial suficiente para comprender rutas, posiciones y movimiento de una nave."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "régimen subluz",
+            "régimen warp",
+            "transición",
+            "restricciones"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Elegir régimen adecuado en escenarios simples."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Caso de decisión."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras régimen subluz.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Elegir régimen adecuado en escenarios simples.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/navigation/README.md",
+            "gameplay/navigation/route_context_model.json",
+            "gameplay/warp_travel/route_planning_model.json",
+            "gameplay/warp_travel/eta_resolution_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NAV-403-U05",
+      "title": "Rutas y peligros",
+      "subtitle": "UNIDAD 05 · NAV-403",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dar una alfabetización espacial suficiente para comprender rutas, posiciones y movimiento de una nave."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "obstáculos",
+            "zonas restringidas",
+            "anomalías",
+            "fronteras"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Trazar una ruta segura básica."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica de plotting."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras obstáculos.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Trazar una ruta segura básica.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/navigation/README.md",
+            "gameplay/navigation/route_context_model.json",
+            "gameplay/warp_travel/route_planning_model.json",
+            "gameplay/warp_travel/eta_resolution_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NAV-403-U06",
+      "title": "Ejercicio de astrográfica",
+      "subtitle": "UNIDAD 06 · NAV-403",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dar una alfabetización espacial suficiente para comprender rutas, posiciones y movimiento de una nave."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "origen",
+            "destino",
+            "restricciones",
+            "ETA",
+            "reporte"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Preparar y comunicar una ruta básica."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación integrada."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras origen.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Preparar y comunicar una ruta básica.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/navigation/README.md",
+            "gameplay/navigation/route_context_model.json",
+            "gameplay/warp_travel/route_planning_model.json",
+            "gameplay/warp_travel/eta_resolution_model.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,404 @@
+{
+  "subject": "Organización y vida a bordo",
+  "code": "SHP-402",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/SHP-402/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/SHP-402/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "lore/starships/bridge_stations/README.md",
+    "gameplay/ship_operations/bridge_station_model.json",
+    "lore/federation/starfleet/departments/divisions_and_departments.json",
+    "lore/federation/starfleet/positions/positions.json"
+  ],
+  "modules": [
+    {
+      "id": "SHP-402-U01",
+      "title": "Anatomía funcional de una nave",
+      "subtitle": "UNIDAD 01 · SHP-402",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Comprender una nave como lugar de trabajo, vivienda y organización."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "puente",
+            "Ingeniería",
+            "Enfermería",
+            "Seguridad",
+            "Ciencias",
+            "Operaciones"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Recorrido guiado físico o virtual."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Identificación funcional de espacios."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras puente.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Recorrido guiado físico o virtual.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/starships/bridge_stations/README.md",
+            "gameplay/ship_operations/bridge_station_model.json",
+            "lore/federation/starfleet/departments/divisions_and_departments.json",
+            "lore/federation/starfleet/positions/positions.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SHP-402-U02",
+      "title": "Tripulación y departamentos",
+      "subtitle": "UNIDAD 02 · SHP-402",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Comprender una nave como lugar de trabajo, vivienda y organización."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "departamentos",
+            "jefaturas",
+            "personal de guardia",
+            "apoyo"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Ubicar funciones en un organigrama de nave."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Ejercicio de organización."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras departamentos.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Ubicar funciones en un organigrama de nave.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/starships/bridge_stations/README.md",
+            "gameplay/ship_operations/bridge_station_model.json",
+            "lore/federation/starfleet/departments/divisions_and_departments.json",
+            "lore/federation/starfleet/positions/positions.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SHP-402-U03",
+      "title": "Puente y estaciones",
+      "subtitle": "UNIDAD 03 · SHP-402",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Comprender una nave como lugar de trabajo, vivienda y organización."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Mando",
+            "Conn",
+            "Operaciones",
+            "Sensores",
+            "Ciencia",
+            "Táctica",
+            "Comunicaciones según era"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Visita a puente/simulador y reconocimiento de puestos."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica supervisada."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras Mando.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Visita a puente/simulador y reconocimiento de puestos.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/starships/bridge_stations/README.md",
+            "gameplay/ship_operations/bridge_station_model.json",
+            "lore/federation/starfleet/departments/divisions_and_departments.json",
+            "lore/federation/starfleet/positions/positions.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SHP-402-U04",
+      "title": "Vida cotidiana",
+      "subtitle": "UNIDAD 04 · SHP-402",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Comprender una nave como lugar de trabajo, vivienda y organización."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "alojamientos",
+            "comedores",
+            "recreo",
+            "servicios",
+            "privacidad"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Planificar una jornada a bordo."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Actividad contextual."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras alojamientos.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Planificar una jornada a bordo.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/starships/bridge_stations/README.md",
+            "gameplay/ship_operations/bridge_station_model.json",
+            "lore/federation/starfleet/departments/divisions_and_departments.json",
+            "lore/federation/starfleet/positions/positions.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SHP-402-U05",
+      "title": "Tipos y funciones de naves",
+      "subtitle": "UNIDAD 05 · SHP-402",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Comprender una nave como lugar de trabajo, vivienda y organización."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "exploración",
+            "ciencia",
+            "patrulla",
+            "transporte",
+            "apoyo"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Relacionar misión con función de nave sin memorizar catálogos."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Caso aplicado."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras exploración.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Relacionar misión con función de nave sin memorizar catálogos.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/starships/bridge_stations/README.md",
+            "gameplay/ship_operations/bridge_station_model.json",
+            "lore/federation/starfleet/departments/divisions_and_departments.json",
+            "lore/federation/starfleet/positions/positions.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SHP-402-U06",
+      "title": "Flujo entre espacios",
+      "subtitle": "UNIDAD 06 · SHP-402",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Comprender una nave como lugar de trabajo, vivienda y organización."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "rutas",
+            "acceso",
+            "zonas restringidas",
+            "movimiento en emergencia"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Desplazamiento guiado durante un supuesto."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras rutas.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Desplazamiento guiado durante un supuesto.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/starships/bridge_stations/README.md",
+            "gameplay/ship_operations/bridge_station_model.json",
+            "lore/federation/starfleet/departments/divisions_and_departments.json",
+            "lore/federation/starfleet/positions/positions.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,389 @@
+{
+  "subject": "Rotaciones operativas e integración",
+  "code": "ROT-403",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/ROT-403/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/ROT-403/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/careers/academy_path/specializations.json",
+    "gameplay/careers/academy_path/field_training_model.json",
+    "gameplay/ship_operations/bridge_station_model.json"
+  ],
+  "modules": [
+    {
+      "id": "ROT-403-U01",
+      "title": "Puente y Operaciones",
+      "subtitle": "UNIDAD 01 · ROT-403",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dar exposición práctica suficiente a las principales áreas profesionales sin seleccionar todavía especialización."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "flujo de órdenes",
+            "coordinación",
+            "estaciones"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Rotación breve supervisada."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Informe de observación y tarea."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras flujo de órdenes.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Rotación breve supervisada.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/field_training_model.json",
+            "gameplay/ship_operations/bridge_station_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ROT-403-U02",
+      "title": "Ingeniería",
+      "subtitle": "UNIDAD 02 · ROT-403",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dar exposición práctica suficiente a las principales áreas profesionales sin seleccionar todavía especialización."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "estado",
+            "energía",
+            "mantenimiento",
+            "seguridad"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Tarea técnica de baja complejidad."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Ejecución supervisada."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras estado.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Tarea técnica de baja complejidad.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/field_training_model.json",
+            "gameplay/ship_operations/bridge_station_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ROT-403-U03",
+      "title": "Ciencia y Sensores",
+      "subtitle": "UNIDAD 03 · ROT-403",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dar exposición práctica suficiente a las principales áreas profesionales sin seleccionar todavía especialización."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "medición",
+            "barrido",
+            "interpretación",
+            "reporte"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Barrido y entrega de datos."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras medición.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Barrido y entrega de datos.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/field_training_model.json",
+            "gameplay/ship_operations/bridge_station_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ROT-403-U04",
+      "title": "Navegación y vuelo",
+      "subtitle": "UNIDAD 04 · ROT-403",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dar exposición práctica suficiente a las principales áreas profesionales sin seleccionar todavía especialización."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "plotting",
+            "rumbo",
+            "velocidad",
+            "control"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Preparar una ruta en simulador."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras plotting.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Preparar una ruta en simulador.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/field_training_model.json",
+            "gameplay/ship_operations/bridge_station_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ROT-403-U05",
+      "title": "Seguridad y Medicina",
+      "subtitle": "UNIDAD 05 · ROT-403",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dar exposición práctica suficiente a las principales áreas profesionales sin seleccionar todavía especialización."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "protección",
+            "respuesta",
+            "triaje básico",
+            "límites"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Dos micro-rotaciones con casos controlados."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación de conducta y seguridad."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras protección.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Dos micro-rotaciones con casos controlados.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/field_training_model.json",
+            "gameplay/ship_operations/bridge_station_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ROT-403-U06",
+      "title": "Reflexión profesional",
+      "subtitle": "UNIDAD 06 · ROT-403",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dar exposición práctica suficiente a las principales áreas profesionales sin seleccionar todavía especialización."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "intereses",
+            "fortalezas",
+            "dificultades",
+            "preguntas"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Debrief con instructor."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Registro descriptivo; no elección final."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras intereses.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Debrief con instructor.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/field_training_model.json",
+            "gameplay/ship_operations/bridge_station_model.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

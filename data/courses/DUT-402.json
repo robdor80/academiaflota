@@ -1,0 +1,390 @@
+{
+  "subject": "Servicio, guardias y trabajo profesional",
+  "code": "DUT-402",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/DUT-402/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/DUT-402/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "lore/federation/starfleet/duty_shifts/shift_model.json",
+    "lore/federation/starfleet/command_structure/succession_rules.json",
+    "gameplay/ship_operations/operational_event_log/README.md"
+  ],
+  "modules": [
+    {
+      "id": "DUT-402-U01",
+      "title": "Qué es una guardia",
+      "subtitle": "UNIDAD 01 · DUT-402",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Introducir la disciplina cotidiana del servicio y la continuidad de una guardia."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "turno",
+            "puesto",
+            "responsabilidad",
+            "supervisión"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Leer una asignación de guardia."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Comprobación práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras turno.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Leer una asignación de guardia.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/federation/starfleet/duty_shifts/shift_model.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json",
+            "gameplay/ship_operations/operational_event_log/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DUT-402-U02",
+      "title": "Presentación al puesto",
+      "subtitle": "UNIDAD 02 · DUT-402",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Introducir la disciplina cotidiana del servicio y la continuidad de una guardia."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "puntualidad",
+            "estado personal",
+            "briefing",
+            "órdenes vigentes"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Escena de incorporación."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Disciplina y comunicación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras puntualidad.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Escena de incorporación.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/federation/starfleet/duty_shifts/shift_model.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json",
+            "gameplay/ship_operations/operational_event_log/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DUT-402-U03",
+      "title": "Relevo",
+      "subtitle": "UNIDAD 03 · DUT-402",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Introducir la disciplina cotidiana del servicio y la continuidad de una guardia."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "entrega/recepción",
+            "estado del puesto",
+            "pendientes",
+            "incidencias"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Realizar un relevo básico."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Checklist evaluada."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras entrega/recepción.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Realizar un relevo básico.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/federation/starfleet/duty_shifts/shift_model.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json",
+            "gameplay/ship_operations/operational_event_log/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DUT-402-U04",
+      "title": "Informes básicos",
+      "subtitle": "UNIDAD 04 · DUT-402",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Introducir la disciplina cotidiana del servicio y la continuidad de una guardia."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "qué informar",
+            "a quién",
+            "claridad",
+            "confirmación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Emitir un informe breve."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación de precisión y brevedad."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras qué informar.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Emitir un informe breve.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/federation/starfleet/duty_shifts/shift_model.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json",
+            "gameplay/ship_operations/operational_event_log/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DUT-402-U05",
+      "title": "Cadena de responsabilidad",
+      "subtitle": "UNIDAD 05 · DUT-402",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Introducir la disciplina cotidiana del servicio y la continuidad de una guardia."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "responsable de puesto",
+            "supervisor",
+            "jefe de departamento",
+            "mando"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Escalar tres incidencias de distinta gravedad."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Caso aplicado."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras responsable de puesto.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Escalar tres incidencias de distinta gravedad.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/federation/starfleet/duty_shifts/shift_model.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json",
+            "gameplay/ship_operations/operational_event_log/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DUT-402-U06",
+      "title": "Guardia rutinaria",
+      "subtitle": "UNIDAD 06 · DUT-402",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Introducir la disciplina cotidiana del servicio y la continuidad de una guardia."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "monitorización",
+            "tareas periódicas",
+            "registro",
+            "fin de turno"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Simulación de una guardia sin crisis."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación de constancia y handoff."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras monitorización.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Simulación de una guardia sin crisis.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/federation/starfleet/duty_shifts/shift_model.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json",
+            "gameplay/ship_operations/operational_event_log/README.md"
+          ]
+        }
+      ]
+    }
+  ]
+}

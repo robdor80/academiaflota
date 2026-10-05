@@ -1,0 +1,391 @@
+{
+  "subject": "Seguridad y respuesta a emergencias I",
+  "code": "SAF-402",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/SAF-402/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/SAF-402/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/engineering/engineering_loop.json",
+    "gameplay/medical/medical_state_model.json",
+    "gameplay/security/README.md"
+  ],
+  "modules": [
+    {
+      "id": "SAF-402-U01",
+      "title": "Alertas y señales",
+      "subtitle": "UNIDAD 01 · SAF-402",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Evitar que un cadete sea un riesgo para sí mismo o para otros durante emergencias comunes."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "estados de alerta",
+            "alarmas locales",
+            "instrucciones",
+            "prioridad"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Reconocer y responder a señales de entrenamiento."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Prueba práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras estados de alerta.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Reconocer y responder a señales de entrenamiento.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/engineering/engineering_loop.json",
+            "gameplay/medical/medical_state_model.json",
+            "gameplay/security/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SAF-402-U02",
+      "title": "Evacuación y pérdida de presión",
+      "subtitle": "UNIDAD 02 · SAF-402",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Evitar que un cadete sea un riesgo para sí mismo o para otros durante emergencias comunes."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "sellado",
+            "rutas",
+            "compartimentos",
+            "recuento"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Ejercicio de evacuación."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Tiempo, seguridad y disciplina."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras sellado.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Ejercicio de evacuación.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/engineering/engineering_loop.json",
+            "gameplay/medical/medical_state_model.json",
+            "gameplay/security/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SAF-402-U03",
+      "title": "Incendio y ambiente",
+      "subtitle": "UNIDAD 03 · SAF-402",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Evitar que un cadete sea un riesgo para sí mismo o para otros durante emergencias comunes."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "fuego",
+            "humo",
+            "atmósfera",
+            "aislamiento"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Respuesta inicial en simulador."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica de procedimiento."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras fuego.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Respuesta inicial en simulador.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/engineering/engineering_loop.json",
+            "gameplay/medical/medical_state_model.json",
+            "gameplay/security/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SAF-402-U04",
+      "title": "Heridos y primera respuesta",
+      "subtitle": "UNIDAD 04 · SAF-402",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Evitar que un cadete sea un riesgo para sí mismo o para otros durante emergencias comunes."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "seguridad de escena",
+            "aviso médico",
+            "asistencia básica",
+            "no exceder competencia"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Atender un supuesto hasta relevo médico."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras seguridad de escena.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Atender un supuesto hasta relevo médico.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/engineering/engineering_loop.json",
+            "gameplay/medical/medical_state_model.json",
+            "gameplay/security/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SAF-402-U05",
+      "title": "Control de daños: conciencia básica",
+      "subtitle": "UNIDAD 05 · SAF-402",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Evitar que un cadete sea un riesgo para sí mismo o para otros durante emergencias comunes."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "aislamiento",
+            "prioridades",
+            "riesgo secundario",
+            "cooperación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Apoyar un equipo sin asumir funciones técnicas no cualificadas."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Caso práctico."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras aislamiento.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Apoyar un equipo sin asumir funciones técnicas no cualificadas.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/engineering/engineering_loop.json",
+            "gameplay/medical/medical_state_model.json",
+            "gameplay/security/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SAF-402-U06",
+      "title": "Ejercicio integrado",
+      "subtitle": "UNIDAD 06 · SAF-402",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Evitar que un cadete sea un riesgo para sí mismo o para otros durante emergencias comunes."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "alarma",
+            "movimiento",
+            "comunicación",
+            "asistencia",
+            "registro"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Simulación corta de emergencia."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación integrada."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras alarma.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Simulación corta de emergencia.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/engineering/engineering_loop.json",
+            "gameplay/medical/medical_state_model.json",
+            "gameplay/security/README.md"
+          ]
+        }
+      ]
+    }
+  ]
+}

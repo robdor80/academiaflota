@@ -1,0 +1,403 @@
+{
+  "subject": "Sistemas fundamentales de una nave estelar",
+  "code": "SYS-403",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/SYS-403/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/SYS-403/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "lore/starships/ship_systems/warp/README.md",
+    "lore/starships/ship_systems/transporters/README.md",
+    "lore/starships/ship_systems/shields/README.md",
+    "lore/technology/replicators/README.md",
+    "gameplay/ship_operations/bridge_station_model.json"
+  ],
+  "modules": [
+    {
+      "id": "SYS-403-U01",
+      "title": "Arquitectura de sistemas y energía",
+      "subtitle": "UNIDAD 01 · SYS-403",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Comprender la función, relación y limitaciones generales de los principales sistemas de una nave."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "fuentes",
+            "distribución",
+            "cargas",
+            "dependencias"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Seguir un diagrama funcional simplificado."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación de relaciones."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras fuentes.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Seguir un diagrama funcional simplificado.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/starships/ship_systems/warp/README.md",
+            "lore/starships/ship_systems/transporters/README.md",
+            "lore/starships/ship_systems/shields/README.md",
+            "lore/technology/replicators/README.md",
+            "gameplay/ship_operations/bridge_station_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SYS-403-U02",
+      "title": "Propulsión de impulso",
+      "subtitle": "UNIDAD 02 · SYS-403",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Comprender la función, relación y limitaciones generales de los principales sistemas de una nave."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "función",
+            "uso subluz",
+            "limitaciones generales"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Interpretar estado básico de propulsión."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Caso conceptual."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras función.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Interpretar estado básico de propulsión.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/starships/ship_systems/warp/README.md",
+            "lore/starships/ship_systems/transporters/README.md",
+            "lore/starships/ship_systems/shields/README.md",
+            "lore/technology/replicators/README.md",
+            "gameplay/ship_operations/bridge_station_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SYS-403-U03",
+      "title": "Propulsión warp",
+      "subtitle": "UNIDAD 03 · SYS-403",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Comprender la función, relación y limitaciones generales de los principales sistemas de una nave."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "función",
+            "campo warp",
+            "factor de curvatura como concepto",
+            "riesgos generales"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Relacionar misión, distancia y uso de warp sin cálculo avanzado."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Preguntas aplicadas."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras función.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Relacionar misión, distancia y uso de warp sin cálculo avanzado.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/starships/ship_systems/warp/README.md",
+            "lore/starships/ship_systems/transporters/README.md",
+            "lore/starships/ship_systems/shields/README.md",
+            "lore/technology/replicators/README.md",
+            "gameplay/ship_operations/bridge_station_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SYS-403-U04",
+      "title": "Habitabilidad y servicios",
+      "subtitle": "UNIDAD 04 · SYS-403",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Comprender la función, relación y limitaciones generales de los principales sistemas de una nave."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "soporte vital",
+            "replicadores",
+            "transportadores",
+            "computer service"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Resolver qué sistema soporta una necesidad concreta."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Caso de sistema."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras soporte vital.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Resolver qué sistema soporta una necesidad concreta.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/starships/ship_systems/warp/README.md",
+            "lore/starships/ship_systems/transporters/README.md",
+            "lore/starships/ship_systems/shields/README.md",
+            "lore/technology/replicators/README.md",
+            "gameplay/ship_operations/bridge_station_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SYS-403-U05",
+      "title": "Defensa y entorno de misión",
+      "subtitle": "UNIDAD 05 · SYS-403",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Comprender la función, relación y limitaciones generales de los principales sistemas de una nave."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "escudos",
+            "armamento",
+            "sensores como consumidor/proveedor",
+            "holodeck cuando proceda"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Analizar dependencias generales."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Ejercicio integrado."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras escudos.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Analizar dependencias generales.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/starships/ship_systems/warp/README.md",
+            "lore/starships/ship_systems/transporters/README.md",
+            "lore/starships/ship_systems/shields/README.md",
+            "lore/technology/replicators/README.md",
+            "gameplay/ship_operations/bridge_station_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SYS-403-U06",
+      "title": "Fallos y dependencias",
+      "subtitle": "UNIDAD 06 · SYS-403",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Comprender la función, relación y limitaciones generales de los principales sistemas de una nave."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "degradación",
+            "sistema primario/secundario",
+            "efecto cascada",
+            "prioridad"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Seguir una avería sencilla entre sistemas."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación de razonamiento."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras degradación.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Seguir una avería sencilla entre sistemas.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/starships/ship_systems/warp/README.md",
+            "lore/starships/ship_systems/transporters/README.md",
+            "lore/starships/ship_systems/shields/README.md",
+            "lore/technology/replicators/README.md",
+            "gameplay/ship_operations/bridge_station_model.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

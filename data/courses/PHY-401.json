@@ -1,0 +1,395 @@
+{
+  "subject": "Preparación física I",
+  "code": "PHY-401",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/PHY-401/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/PHY-401/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/characters/wellbeing/README.md",
+    "gameplay/characters/wellbeing/activity_effect_contract.json",
+    "gameplay/characters/wellbeing/habit_formation_rules.json",
+    "gameplay/characters/development/development_rules.md"
+  ],
+  "modules": [
+    {
+      "id": "PHY-401-U01",
+      "title": "Evaluación funcional inicial",
+      "subtitle": "UNIDAD 01 · PHY-401",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Establecer una base funcional y una rutina sostenible adaptada a la biología y contexto del cadete."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "movilidad",
+            "resistencia",
+            "fuerza funcional",
+            "coordinación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Sesión inicial del personaje registrada como evidencia."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Comparación con mínimos funcionales individualizados."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras movilidad.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Sesión inicial del personaje registrada como evidencia.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/characters/wellbeing/README.md",
+            "gameplay/characters/wellbeing/activity_effect_contract.json",
+            "gameplay/characters/wellbeing/habit_formation_rules.json",
+            "gameplay/characters/development/development_rules.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PHY-401-U02",
+      "title": "Movilidad y técnica segura",
+      "subtitle": "UNIDAD 02 · PHY-401",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Establecer una base funcional y una rutina sostenible adaptada a la biología y contexto del cadete."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "movilidad",
+            "calentamiento",
+            "técnica",
+            "prevención"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Rutina supervisada."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evidencia de ejecución segura."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras movilidad.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Rutina supervisada.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/characters/wellbeing/README.md",
+            "gameplay/characters/wellbeing/activity_effect_contract.json",
+            "gameplay/characters/wellbeing/habit_formation_rules.json",
+            "gameplay/characters/development/development_rules.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PHY-401-U03",
+      "title": "Resistencia básica",
+      "subtitle": "UNIDAD 03 · PHY-401",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Establecer una base funcional y una rutina sostenible adaptada a la biología y contexto del cadete."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "capacidad aeróbica",
+            "ritmo",
+            "progresión"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Sesiones programadas por calendario."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Regularidad y progresión razonable."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras capacidad aeróbica.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Sesiones programadas por calendario.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/characters/wellbeing/README.md",
+            "gameplay/characters/wellbeing/activity_effect_contract.json",
+            "gameplay/characters/wellbeing/habit_formation_rules.json",
+            "gameplay/characters/development/development_rules.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PHY-401-U04",
+      "title": "Fuerza funcional",
+      "subtitle": "UNIDAD 04 · PHY-401",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Establecer una base funcional y una rutina sostenible adaptada a la biología y contexto del cadete."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "patrones básicos",
+            "control corporal",
+            "carga progresiva contextual"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Entrenamiento supervisado del personaje."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Seguridad y consistencia."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras patrones básicos.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Entrenamiento supervisado del personaje.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/characters/wellbeing/README.md",
+            "gameplay/characters/wellbeing/activity_effect_contract.json",
+            "gameplay/characters/wellbeing/habit_formation_rules.json",
+            "gameplay/characters/development/development_rules.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PHY-401-U05",
+      "title": "Recuperación",
+      "subtitle": "UNIDAD 05 · PHY-401",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Establecer una base funcional y una rutina sostenible adaptada a la biología y contexto del cadete."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "descanso",
+            "fatiga",
+            "lesión",
+            "adaptación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Elegir recuperación adecuada tras cargas distintas."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Decisión contextual."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras descanso.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Elegir recuperación adecuada tras cargas distintas.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/characters/wellbeing/README.md",
+            "gameplay/characters/wellbeing/activity_effect_contract.json",
+            "gameplay/characters/wellbeing/habit_formation_rules.json",
+            "gameplay/characters/development/development_rules.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PHY-401-U06",
+      "title": "Rutina personal",
+      "subtitle": "UNIDAD 06 · PHY-401",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Establecer una base funcional y una rutina sostenible adaptada a la biología y contexto del cadete."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "frecuencia",
+            "sostenibilidad",
+            "hábitos",
+            "compatibilidad académica"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Configurar rutina longitudinal."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Adherencia y ajuste, no puntuación RPG."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras frecuencia.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Configurar rutina longitudinal.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/characters/wellbeing/README.md",
+            "gameplay/characters/wellbeing/activity_effect_contract.json",
+            "gameplay/characters/wellbeing/habit_formation_rules.json",
+            "gameplay/characters/development/development_rules.md"
+          ]
+        }
+      ]
+    }
+  ]
+}

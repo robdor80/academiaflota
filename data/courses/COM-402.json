@@ -1,0 +1,390 @@
+{
+  "subject": "Comunicaciones y equipo personal",
+  "code": "COM-402",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/COM-402/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/COM-402/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/communications/communications_model.json",
+    "lore/technology/tricorders/README.md",
+    "lore/technology/communications/README.md"
+  ],
+  "modules": [
+    {
+      "id": "COM-402-U01",
+      "title": "Comunicador",
+      "subtitle": "UNIDAD 01 · COM-402",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Usar correctamente el equipo cotidiano de Starfleet y comunicarse de forma profesional."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "llamada",
+            "canal",
+            "prioridad",
+            "identificación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Realizar comunicaciones internas sencillas."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras llamada.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Realizar comunicaciones internas sencillas.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/communications/communications_model.json",
+            "lore/technology/tricorders/README.md",
+            "lore/technology/communications/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "COM-402-U02",
+      "title": "Tricorder: familiarización",
+      "subtitle": "UNIDAD 02 · COM-402",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Usar correctamente el equipo cotidiano de Starfleet y comunicarse de forma profesional."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "función",
+            "modos generales",
+            "lectura",
+            "limitaciones"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Obtener una lectura preparada."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica de equipo."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras función.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Obtener una lectura preparada.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/communications/communications_model.json",
+            "lore/technology/tricorders/README.md",
+            "lore/technology/communications/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "COM-402-U03",
+      "title": "Comunicaciones internas",
+      "subtitle": "UNIDAD 03 · COM-402",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Usar correctamente el equipo cotidiano de Starfleet y comunicarse de forma profesional."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "destinatario",
+            "mensaje",
+            "confirmación",
+            "brevedad"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Coordinar una tarea con otro departamento."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación de claridad."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras destinatario.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Coordinar una tarea con otro departamento.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/communications/communications_model.json",
+            "lore/technology/tricorders/README.md",
+            "lore/technology/communications/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "COM-402-U04",
+      "title": "Comunicaciones externas básicas",
+      "subtitle": "UNIDAD 04 · COM-402",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Usar correctamente el equipo cotidiano de Starfleet y comunicarse de forma profesional."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "apertura",
+            "identificación",
+            "registro",
+            "autoridad"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Simular una llamada no táctica."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Escena guiada."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras apertura.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Simular una llamada no táctica.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/communications/communications_model.json",
+            "lore/technology/tricorders/README.md",
+            "lore/technology/communications/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "COM-402-U05",
+      "title": "Formato de mensajes",
+      "subtitle": "UNIDAD 05 · COM-402",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Usar correctamente el equipo cotidiano de Starfleet y comunicarse de forma profesional."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "hecho",
+            "solicitud",
+            "estado",
+            "urgencia"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Convertir información desordenada en un mensaje profesional."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Ejercicio escrito/oral."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras hecho.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Convertir información desordenada en un mensaje profesional.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/communications/communications_model.json",
+            "lore/technology/tricorders/README.md",
+            "lore/technology/communications/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "COM-402-U06",
+      "title": "Equipo de salida básico",
+      "subtitle": "UNIDAD 06 · COM-402",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Usar correctamente el equipo cotidiano de Starfleet y comunicarse de forma profesional."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "comunicador",
+            "tricorder",
+            "kit contextual",
+            "responsabilidad sobre equipo"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Preparar un equipo sencillo para una salida."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Checklist razonada."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras comunicador.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Preparar un equipo sencillo para una salida.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/communications/communications_model.json",
+            "lore/technology/tricorders/README.md",
+            "lore/technology/communications/README.md"
+          ]
+        }
+      ]
+    }
+  ]
+}

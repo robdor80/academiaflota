@@ -1,0 +1,381 @@
+{
+  "subject": "Federación: fundamentos políticos y sociales",
+  "code": "FED-401",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/FED-401/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/FED-401/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "lore/federation/government/federation_government.json",
+    "lore/federation/member_worlds/founding_members.json"
+  ],
+  "modules": [
+    {
+      "id": "FED-401-U01",
+      "title": "Qué es la Federación",
+      "subtitle": "UNIDAD 01 · FED-401",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Comprender la sociedad e instituciones a las que sirve Starfleet sin convertir la materia en historia enciclopédica."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "naturaleza política general",
+            "cooperación entre mundos miembros",
+            "ámbito civil"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Distinguir Federación, Starfleet y gobiernos miembros."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Preguntas conceptuales aplicadas."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras naturaleza política general.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Distinguir Federación, Starfleet y gobiernos miembros.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/federation/government/federation_government.json",
+            "lore/federation/member_worlds/founding_members.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FED-401-U02",
+      "title": "Instituciones fundamentales",
+      "subtitle": "UNIDAD 02 · FED-401",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Comprender la sociedad e instituciones a las que sirve Starfleet sin convertir la materia en historia enciclopédica."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gobierno civil",
+            "representación",
+            "autoridades federales",
+            "separación de funciones"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Identificar qué tipo de asunto corresponde a autoridad civil o Starfleet."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Casos institucionales sencillos."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras gobierno civil.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Identificar qué tipo de asunto corresponde a autoridad civil o Starfleet.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/federation/government/federation_government.json",
+            "lore/federation/member_worlds/founding_members.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FED-401-U03",
+      "title": "Mundos miembros y ciudadanía",
+      "subtitle": "UNIDAD 03 · FED-401",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Comprender la sociedad e instituciones a las que sirve Starfleet sin convertir la materia en historia enciclopédica."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "pertenencia",
+            "ciudadanía",
+            "jurisdicción básica",
+            "diversidad de mundos"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Analizar un caso de ciudadano, visitante y personal de Starfleet."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Caso breve."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras pertenencia.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Analizar un caso de ciudadano, visitante y personal de Starfleet.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/federation/government/federation_government.json",
+            "lore/federation/member_worlds/founding_members.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FED-401-U04",
+      "title": "Federación y Starfleet",
+      "subtitle": "UNIDAD 04 · FED-401",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Comprender la sociedad e instituciones a las que sirve Starfleet sin convertir la materia en historia enciclopédica."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "servicio público",
+            "autoridad militar-científica",
+            "subordinación a estructuras civiles",
+            "misiones"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Resolver quién decide en situaciones no operativas."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Ejercicio de competencia institucional."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras servicio público.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Resolver quién decide en situaciones no operativas.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/federation/government/federation_government.json",
+            "lore/federation/member_worlds/founding_members.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FED-401-U05",
+      "title": "Pluralidad cultural",
+      "subtitle": "UNIDAD 05 · FED-401",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Comprender la sociedad e instituciones a las que sirve Starfleet sin convertir la materia en historia enciclopédica."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "diversidad cultural",
+            "no asumir normas humanas como universales",
+            "respeto y cooperación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Comparar dos respuestas posibles a una diferencia cultural."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación de criterio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras diversidad cultural.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Comparar dos respuestas posibles a una diferencia cultural.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/federation/government/federation_government.json",
+            "lore/federation/member_worlds/founding_members.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FED-401-U06",
+      "title": "Derechos y responsabilidades básicas",
+      "subtitle": "UNIDAD 06 · FED-401",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Comprender la sociedad e instituciones a las que sirve Starfleet sin convertir la materia en historia enciclopédica."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "protección de vida",
+            "responsabilidad pública",
+            "debido proceso general",
+            "límites de autoridad"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Debatir un caso simple de intervención y responsabilidad."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Caso escrito/oral."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras protección de vida.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Debatir un caso simple de intervención y responsabilidad.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/federation/government/federation_government.json",
+            "lore/federation/member_worlds/founding_members.json"
+          ]
+        }
+      ]
+    }
+  ]
+}
