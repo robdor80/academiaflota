@@ -1,7 +1,7 @@
 {
   "subject": "Juicio operativo, informes y debriefing",
   "code": "JDG-303",
-  "version": "1.0",
+  "version": "1.1",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/JDG-303/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/JDG-303/MANUAL_v1_0.md",
@@ -20,30 +20,27 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Enseñar a valorar decisiones por la información disponible en el momento y a documentarlas profesionalmente."
+          "text": "Hecho, inferencia, supuesto e hipótesis son capas distintas. Mezclarlas produce falsa certeza."
         },
         {
-          "type": "heading",
-          "text": "Contenidos"
+          "type": "definition",
+          "term": "Hecho",
+          "text": "Observación o registro con procedencia."
         },
         {
-          "type": "bullets",
-          "items": [
-            "evidencia",
-            "hipótesis",
-            "sesgo",
-            "incertidumbre"
-          ]
+          "type": "definition",
+          "term": "Inferencia",
+          "text": "Conclusión razonada a partir de hechos."
         },
         {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Separar capas en un caso."
+          "type": "definition",
+          "term": "Supuesto",
+          "text": "Idea adoptada temporalmente sin evidencia suficiente."
         },
         {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Ejercicio."
+          "type": "definition",
+          "term": "Hipótesis",
+          "text": "Explicación contrastable."
         },
         {
           "type": "heading",
@@ -52,24 +49,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica evidencia en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Separar capas en un caso.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/ship_operations/operational_event_log/README.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json"
+            "Diferencia hecho e inferencia.",
+            "¿Qué es supuesto?",
+            "¿Qué distingue hipótesis?",
+            "Nombra sesgos.",
+            "¿Por qué expresar incertidumbre?"
           ]
         }
       ]
@@ -81,30 +65,22 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Enseñar a valorar decisiones por la información disponible en el momento y a documentarlas profesionalmente."
+          "text": "El riesgo es contextual: combina probabilidad estimada, impacto, exposición, tiempo, capacidad de respuesta e incertidumbre."
         },
         {
-          "type": "heading",
-          "text": "Contenidos"
+          "type": "definition",
+          "term": "Urgencia",
+          "text": "Cuánto importa actuar ahora."
         },
         {
-          "type": "bullets",
-          "items": [
-            "probabilidad contextual",
-            "impacto",
-            "urgencia",
-            "reversibilidad"
-          ]
+          "type": "definition",
+          "term": "Reversibilidad",
+          "text": "Capacidad de corregir o deshacer una decisión después."
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Comparar cursos de acción."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Caso."
+          "label": "SIN FALSA PRECISIÓN",
+          "text": "Una probabilidad desconocida no debe convertirse en un número inventado."
         },
         {
           "type": "heading",
@@ -113,24 +89,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica probabilidad contextual en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Comparar cursos de acción.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/ship_operations/operational_event_log/README.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json"
+            "¿Qué forma riesgo contextual?",
+            "¿Por qué no inventar precisión?",
+            "Diferencia impacto y probabilidad.",
+            "Diferencia urgencia y gravedad.",
+            "¿Por qué importa reversibilidad?"
           ]
         }
       ]
@@ -142,30 +105,26 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Enseñar a valorar decisiones por la información disponible en el momento y a documentarlas profesionalmente."
+          "text": "Con información incompleta, esperar y actuar tienen costes. El cadete debe reconocer cuándo consultar, cuándo actuar y cuándo conservar opciones."
+        },
+        {
+          "type": "definition",
+          "term": "Umbral de decisión",
+          "text": "Nivel de información o urgencia suficiente para actuar en ese contexto."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Consultas útiles"
         },
         {
           "type": "bullets",
           "items": [
-            "umbral",
-            "consulta",
-            "acción",
-            "espera"
+            "Nuevo scan",
+            "Opinión técnica",
+            "Aclaración",
+            "Informe",
+            "Autoridad"
           ]
-        },
-        {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Resolver escenario con datos parciales."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación."
         },
         {
           "type": "heading",
@@ -174,24 +133,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica umbral en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Resolver escenario con datos parciales.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/ship_operations/operational_event_log/README.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json"
+            "¿Qué costes tiene esperar?",
+            "¿Qué costes tiene actuar?",
+            "¿Qué es umbral?",
+            "¿Qué consultas reducen incertidumbre?",
+            "¿Cuándo esperar puede ser correcto?"
           ]
         }
       ]
@@ -203,30 +149,26 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Enseñar a valorar decisiones por la información disponible en el momento y a documentarlas profesionalmente."
+          "text": "Un informe operativo documenta hechos, acciones, resultado y pendientes."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Resultado"
         },
         {
           "type": "bullets",
           "items": [
-            "hechos",
-            "acciones",
-            "resultado",
-            "pendientes"
+            "Completado",
+            "Parcial",
+            "Fallido",
+            "Cancelado",
+            "Pendiente"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Redactar informe breve."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Revisión."
+          "label": "PENDIENTES",
+          "text": "Cada pendiente debe conservar responsable, prioridad y siguiente acción."
         },
         {
           "type": "heading",
@@ -235,24 +177,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica hechos en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Redactar informe breve.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/ship_operations/operational_event_log/README.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json"
+            "¿Qué contiene informe?",
+            "¿Por qué procedencia importa?",
+            "¿Qué se registra de acción?",
+            "¿Qué estados puede tener resultado?",
+            "¿Qué debe tener pendiente?"
           ]
         }
       ]
@@ -263,31 +192,18 @@
       "subtitle": "UNIDAD 05 · JDG-303",
       "blocks": [
         {
+          "type": "definition",
+          "term": "Hindsight bias",
+          "text": "Juzgar una decisión pasada como si la persona hubiera conocido el resultado futuro."
+        },
+        {
           "type": "p",
-          "text": "Enseñar a valorar decisiones por la información disponible en el momento y a documentarlas profesionalmente."
-        },
-        {
-          "type": "heading",
-          "text": "Contenidos"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "responsabilidad",
-            "no hindsight bias",
-            "alternativas",
-            "lecciones"
-          ]
+          "text": "Evitar hindsight no elimina responsabilidad: se revisa qué se sabía, qué debía saberse, qué procedimiento existía y si la decisión era defendible."
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Debrief oral."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación."
+          "label": "LECCIÓN ÚTIL",
+          "text": "Una lección debe ser específica y accionable, no «hacerlo mejor»."
         },
         {
           "type": "heading",
@@ -296,24 +212,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica responsabilidad en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Debrief oral.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/ship_operations/operational_event_log/README.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json"
+            "¿Qué busca debrief?",
+            "¿Qué es hindsight?",
+            "¿Evitarlo elimina responsabilidad?",
+            "¿Para qué analizar alternativas?",
+            "¿Qué hace útil una lección?"
           ]
         }
       ]
@@ -325,30 +228,16 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Enseñar a valorar decisiones por la información disponible en el momento y a documentarlas profesionalmente."
-        },
-        {
-          "type": "heading",
-          "text": "Contenidos"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "situación",
-            "decisión",
-            "consecuencia",
-            "documentación"
-          ]
+          "text": "El caso integrado combina situación, decisión, consecuencia y documentación. Primero se reconstruye qué información existía en cada momento."
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Analizar una simulación completa."
+          "label": "RESULTADO ≠ CALIDAD DE DECISIÓN",
+          "text": "Una decisión bien fundada puede tener mal resultado y una mala decisión puede tener suerte."
         },
         {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación final."
+          "type": "p",
+          "text": "La documentación debe conservar hechos, separar inferencias y evitar reescribir la historia."
         },
         {
           "type": "heading",
@@ -357,27 +246,15 @@
         {
           "type": "numbered",
           "items": [
-            "Explica situación en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Analizar una simulación completa.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/ship_operations/operational_event_log/README.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json"
+            "¿Qué combina el caso?",
+            "¿Por qué ordenar línea temporal?",
+            "¿Con qué se compara una decisión?",
+            "¿Resultado bueno implica decisión buena?",
+            "¿Qué se revisa en documentación?"
           ]
         }
       ]
     }
-  ]
+  ],
+  "status": "developed_content"
 }
