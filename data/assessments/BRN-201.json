@@ -1,307 +1,284 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "course_id": "BRN-201",
-  "status": "generated_from_authoritative_curriculum",
+  "status": "editorially_aligned_with_developed_manual",
+  "source_manual": "gameplay/careers/academy_path/study_materials/second_class/BRN-201/MANUAL_v1_0.md",
   "question_count": 24,
+  "rule": "No question may require knowledge that is not explicitly taught in BRN-201 or established prerequisites.",
   "questions": [
     {
       "id": "BRN-201-Q001",
       "unit_id": "BRN-201-U01",
-      "type": "professional_knowledge",
-      "prompt_es": "Explica el principio profesional de rol profesional y cuándo condiciona una decisión.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué cambia al comenzar especialización formal?",
       "answer_key_es": [
-        "rol profesional",
-        "contexto",
-        "impacto en decisión"
+        "formación sostenida",
+        "responsabilidades profesionales",
+        "evidencia"
       ]
     },
     {
       "id": "BRN-201-Q002",
       "unit_id": "BRN-201-U01",
-      "type": "planning",
-      "prompt_es": "Planifica esta tarea: Briefing de rama y revisión de expectativas.",
+      "type": "knowledge",
+      "prompt_es": "Nombra tres responsabilidades comunes.",
       "answer_key_es": [
-        "objetivo",
-        "riesgos",
-        "recursos",
-        "autoridad",
-        "criterio de éxito"
+        "preparación",
+        "procedimiento",
+        "comunicación",
+        "límites",
+        "escalado"
       ]
     },
     {
       "id": "BRN-201-Q003",
       "unit_id": "BRN-201-U01",
-      "type": "contingency",
-      "prompt_es": "Durante Entrada en especialidad aparece una degradación inesperada. ¿Cómo decides si continuar, modificar el plan o escalar?",
+      "type": "judgment",
+      "prompt_es": "¿Elegir una rama concede competencia avanzada?",
       "answer_key_es": [
-        "seguridad",
-        "capacidad restante",
-        "misión",
-        "alternativa",
-        "escalado"
+        "no"
       ]
     },
     {
       "id": "BRN-201-Q004",
       "unit_id": "BRN-201-U01",
-      "type": "handoff",
-      "prompt_es": "¿Qué información mínima dejarías al relevo o supervisor tras esta unidad?",
+      "type": "short_answer",
+      "prompt_es": "¿Qué significa estándar profesional?",
       "answer_key_es": [
-        "estado",
-        "acciones",
-        "resultado",
-        "riesgos",
-        "pendientes"
+        "regularidad",
+        "precisión",
+        "seguridad",
+        "fiabilidad"
       ]
     },
     {
       "id": "BRN-201-Q005",
       "unit_id": "BRN-201-U02",
-      "type": "professional_knowledge",
-      "prompt_es": "Explica el principio profesional de sistemas y cuándo condiciona una decisión.",
+      "type": "knowledge",
+      "prompt_es": "¿Qué puede ser una herramienta profesional?",
       "answer_key_es": [
-        "sistemas",
-        "contexto",
-        "impacto en decisión"
+        "consola",
+        "sistema",
+        "instrumento",
+        "procedimiento",
+        "checklist",
+        "registro"
       ]
     },
     {
       "id": "BRN-201-Q006",
       "unit_id": "BRN-201-U02",
-      "type": "planning",
-      "prompt_es": "Planifica esta tarea: Familiarización con herramientas reales de la rama.",
+      "type": "short_answer",
+      "prompt_es": "¿Por qué terminología importa?",
       "answer_key_es": [
-        "objetivo",
-        "riesgos",
-        "recursos",
-        "autoridad",
-        "criterio de éxito"
+        "reduce ambigüedad",
+        "mejora operación"
       ]
     },
     {
       "id": "BRN-201-Q007",
       "unit_id": "BRN-201-U02",
-      "type": "contingency",
-      "prompt_es": "Durante Herramientas profesionales aparece una degradación inesperada. ¿Cómo decides si continuar, modificar el plan o escalar?",
+      "type": "knowledge",
+      "prompt_es": "¿Qué se comprueba antes de usar herramienta?",
       "answer_key_es": [
-        "seguridad",
-        "capacidad restante",
-        "misión",
-        "alternativa",
-        "escalado"
+        "estado",
+        "autoridad",
+        "límites",
+        "riesgos",
+        "cancelación"
       ]
     },
     {
       "id": "BRN-201-Q008",
       "unit_id": "BRN-201-U02",
-      "type": "handoff",
-      "prompt_es": "¿Qué información mínima dejarías al relevo o supervisor tras esta unidad?",
+      "type": "judgment",
+      "prompt_es": "¿Por qué interfaz puede cambiar entre eras?",
       "answer_key_es": [
-        "estado",
-        "acciones",
-        "resultado",
-        "riesgos",
-        "pendientes"
+        "presentación distinta",
+        "función subyacente estable"
       ]
     },
     {
       "id": "BRN-201-Q009",
       "unit_id": "BRN-201-U03",
-      "type": "professional_knowledge",
-      "prompt_es": "Explica el principio profesional de flujo normal y cuándo condiciona una decisión.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué es procedimiento nuclear?",
       "answer_key_es": [
-        "flujo normal",
-        "contexto",
-        "impacto en decisión"
+        "secuencia recurrente de trabajo normal"
       ]
     },
     {
       "id": "BRN-201-Q010",
       "unit_id": "BRN-201-U03",
-      "type": "planning",
-      "prompt_es": "Planifica esta tarea: Ejecutar procedimiento estándar.",
+      "type": "procedure",
+      "prompt_es": "Nombra pasos comunes.",
       "answer_key_es": [
+        "estado",
         "objetivo",
-        "riesgos",
-        "recursos",
-        "autoridad",
-        "criterio de éxito"
+        "configuración",
+        "límites",
+        "ejecutar",
+        "resultado",
+        "informar"
       ]
     },
     {
       "id": "BRN-201-Q011",
       "unit_id": "BRN-201-U03",
-      "type": "contingency",
-      "prompt_es": "Durante Procedimientos nucleares aparece una degradación inesperada. ¿Cómo decides si continuar, modificar el plan o escalar?",
+      "type": "judgment",
+      "prompt_es": "¿Checklist sustituye juicio?",
       "answer_key_es": [
-        "seguridad",
-        "capacidad restante",
-        "misión",
-        "alternativa",
-        "escalado"
+        "no"
       ]
     },
     {
       "id": "BRN-201-Q012",
       "unit_id": "BRN-201-U03",
-      "type": "handoff",
-      "prompt_es": "¿Qué información mínima dejarías al relevo o supervisor tras esta unidad?",
+      "type": "knowledge",
+      "prompt_es": "¿Qué conserva handoff?",
       "answer_key_es": [
-        "estado",
-        "acciones",
-        "resultado",
-        "riesgos",
-        "pendientes"
+        "procedencia",
+        "contexto",
+        "datos",
+        "prioridad",
+        "petición"
       ]
     },
     {
       "id": "BRN-201-Q013",
       "unit_id": "BRN-201-U04",
-      "type": "professional_knowledge",
-      "prompt_es": "Explica el principio profesional de síntomas y cuándo condiciona una decisión.",
+      "type": "compare",
+      "prompt_es": "Diferencia síntoma y causa.",
       "answer_key_es": [
-        "síntomas",
-        "contexto",
-        "impacto en decisión"
+        "observación",
+        "explicación"
       ]
     },
     {
       "id": "BRN-201-Q014",
       "unit_id": "BRN-201-U04",
-      "type": "planning",
-      "prompt_es": "Planifica esta tarea: Resolver caso supervisado.",
+      "type": "knowledge",
+      "prompt_es": "¿Qué preguntas ayudan a priorizar?",
       "answer_key_es": [
-        "objetivo",
-        "riesgos",
-        "recursos",
-        "autoridad",
-        "criterio de éxito"
+        "vidas",
+        "misión",
+        "capacidad",
+        "reversibilidad",
+        "riesgo",
+        "autoridad"
       ]
     },
     {
       "id": "BRN-201-Q015",
       "unit_id": "BRN-201-U04",
-      "type": "contingency",
-      "prompt_es": "Durante Problemas típicos aparece una degradación inesperada. ¿Cómo decides si continuar, modificar el plan o escalar?",
+      "type": "judgment",
+      "prompt_es": "¿Cuándo escalar?",
       "answer_key_es": [
-        "seguridad",
-        "capacidad restante",
-        "misión",
-        "alternativa",
-        "escalado"
+        "fuera competencia",
+        "autoridad superior",
+        "riesgo",
+        "otras áreas"
       ]
     },
     {
       "id": "BRN-201-Q016",
       "unit_id": "BRN-201-U04",
-      "type": "handoff",
-      "prompt_es": "¿Qué información mínima dejarías al relevo o supervisor tras esta unidad?",
+      "type": "procedure",
+      "prompt_es": "¿Qué hacer ante error propio?",
       "answer_key_es": [
-        "estado",
-        "acciones",
-        "resultado",
-        "riesgos",
-        "pendientes"
+        "informar",
+        "contener",
+        "corregir",
+        "registrar",
+        "aprender"
       ]
     },
     {
       "id": "BRN-201-Q017",
       "unit_id": "BRN-201-U05",
-      "type": "professional_knowledge",
-      "prompt_es": "Explica el principio profesional de dependencias y cuándo condiciona una decisión.",
+      "type": "short_answer",
+      "prompt_es": "¿Por qué ninguna rama trabaja sola?",
       "answer_key_es": [
-        "dependencias",
-        "contexto",
-        "impacto en decisión"
+        "interdependencia de información/recursos"
       ]
     },
     {
       "id": "BRN-201-Q018",
       "unit_id": "BRN-201-U05",
-      "type": "planning",
-      "prompt_es": "Planifica esta tarea: Coordinar una tarea con otro departamento.",
+      "type": "knowledge",
+      "prompt_es": "¿Qué contiene solicitud útil?",
       "answer_key_es": [
-        "objetivo",
-        "riesgos",
-        "recursos",
-        "autoridad",
-        "criterio de éxito"
+        "necesidad",
+        "motivo",
+        "prioridad",
+        "plazo",
+        "impacto"
       ]
     },
     {
       "id": "BRN-201-Q019",
       "unit_id": "BRN-201-U05",
-      "type": "contingency",
-      "prompt_es": "Durante Integración departamental aparece una degradación inesperada. ¿Cómo decides si continuar, modificar el plan o escalar?",
+      "type": "judgment",
+      "prompt_es": "¿Coordinar significa ejecutar trabajo de otra rama?",
       "answer_key_es": [
-        "seguridad",
-        "capacidad restante",
-        "misión",
-        "alternativa",
-        "escalado"
+        "no"
       ]
     },
     {
       "id": "BRN-201-Q020",
       "unit_id": "BRN-201-U05",
-      "type": "handoff",
-      "prompt_es": "¿Qué información mínima dejarías al relevo o supervisor tras esta unidad?",
+      "type": "short_answer",
+      "prompt_es": "¿Cómo afecta decisión local a misión?",
       "answer_key_es": [
-        "estado",
-        "acciones",
-        "resultado",
-        "riesgos",
-        "pendientes"
+        "recursos",
+        "tiempo",
+        "riesgo",
+        "capacidad"
       ]
     },
     {
       "id": "BRN-201-Q021",
       "unit_id": "BRN-201-U06",
-      "type": "professional_knowledge",
-      "prompt_es": "Explica el principio profesional de conocimiento y cuándo condiciona una decisión.",
+      "type": "knowledge",
+      "prompt_es": "¿Qué evidencia se revisa?",
       "answer_key_es": [
-        "conocimiento",
-        "contexto",
-        "impacto en decisión"
+        "teoría",
+        "práctica",
+        "reportes",
+        "handoffs",
+        "conducta",
+        "juicio"
       ]
     },
     {
       "id": "BRN-201-Q022",
       "unit_id": "BRN-201-U06",
-      "type": "planning",
-      "prompt_es": "Planifica esta tarea: Caso integrado de rama.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué no basta un examen único?",
       "answer_key_es": [
-        "objetivo",
-        "riesgos",
-        "recursos",
-        "autoridad",
-        "criterio de éxito"
+        "competencia requiere evidencia longitudinal"
       ]
     },
     {
       "id": "BRN-201-Q023",
       "unit_id": "BRN-201-U06",
-      "type": "contingency",
-      "prompt_es": "Durante Cierre de núcleo I aparece una degradación inesperada. ¿Cómo decides si continuar, modificar el plan o escalar?",
+      "type": "knowledge",
+      "prompt_es": "¿Qué contiene plan de mejora?",
       "answer_key_es": [
-        "seguridad",
-        "capacidad restante",
-        "misión",
-        "alternativa",
-        "escalado"
+        "fortaleza",
+        "carencia",
+        "práctica",
+        "nueva evidencia"
       ]
     },
     {
       "id": "BRN-201-Q024",
       "unit_id": "BRN-201-U06",
-      "type": "handoff",
-      "prompt_es": "¿Qué información mínima dejarías al relevo o supervisor tras esta unidad?",
+      "type": "short_answer",
+      "prompt_es": "¿Qué significa preparado para continuar?",
       "answer_key_es": [
-        "estado",
-        "acciones",
-        "resultado",
-        "riesgos",
-        "pendientes"
+        "base suficiente para BRN-202",
+        "refuerzos identificados"
       ]
     }
   ]
