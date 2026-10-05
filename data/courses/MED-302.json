@@ -1,7 +1,7 @@
 {
   "subject": "Medicina de emergencia y primeros auxilios",
   "code": "MED-302",
-  "version": "1.0",
+  "version": "1.1",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/MED-302/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/MED-302/MANUAL_v1_0.md",
@@ -21,30 +21,28 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Permitir que cualquier cadete responda correctamente hasta la llegada de personal médico cualificado."
+          "text": "Antes de atender a un paciente se evalúa la escena para evitar que quien ayuda se convierta en otra víctima."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Qué revisar"
         },
         {
           "type": "bullets",
           "items": [
-            "riesgo",
-            "protección",
-            "alerta médica",
-            "prioridad"
+            "Ambiente",
+            "Sistemas activos",
+            "Atmósfera",
+            "Estructura",
+            "Amenaza",
+            "Contaminación",
+            "Acceso y salida"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Evaluar escenario antes de intervenir."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Práctica."
+          "label": "ALERTA MÉDICA",
+          "text": "Debe indicar localización, número aproximado de afectados, riesgo visible, acceso y estado general observable."
         },
         {
           "type": "heading",
@@ -53,25 +51,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica riesgo en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Evaluar escenario antes de intervenir.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/medical/medical_state_model.json",
-            "gameplay/medical/species_medical_hooks.json",
-            "lore/medicine/medical_capability_contract.json"
+            "¿Qué se evalúa antes de acercarse?",
+            "¿Qué formas de protección existen?",
+            "¿Qué incluye una alerta médica?",
+            "¿Por qué asegurar escena puede preceder a asistir?",
+            "¿Qué haces si el riesgo excede tu competencia?"
           ]
         }
       ]
@@ -83,31 +67,16 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Permitir que cualquier cadete responda correctamente hasta la llegada de personal médico cualificado."
+          "text": "La valoración inicial identifica problemas urgentes con la información disponible; no establece automáticamente un diagnóstico definitivo."
         },
         {
-          "type": "heading",
-          "text": "Contenidos"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "respuesta",
-            "respiración/circulación contextual",
-            "hemorragia",
-            "dolor",
-            "datos"
-          ]
+          "type": "p",
+          "text": "El modelo debe considerar especie, fisiología, contexto, historial conocido y equipo disponible. El humano no es un estándar universal."
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Valorar paciente simulado."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Checklist."
+          "label": "SÍNTOMA ≠ DIAGNÓSTICO",
+          "text": "Dolor, debilidad o confusión son datos observables; no prueban por sí solos una causa."
         },
         {
           "type": "heading",
@@ -116,25 +85,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica respuesta en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Valorar paciente simulado.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/medical/medical_state_model.json",
-            "gameplay/medical/species_medical_hooks.json",
-            "lore/medicine/medical_capability_contract.json"
+            "¿Cuál es el objetivo de valoración inicial?",
+            "¿Por qué importa la especie?",
+            "¿Síntoma equivale a diagnóstico?",
+            "¿Qué debe registrarse?",
+            "¿Qué limita la asistencia del cadete?"
           ]
         }
       ]
@@ -146,29 +101,25 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Permitir que cualquier cadete responda correctamente hasta la llegada de personal médico cualificado."
+          "text": "El triaje organiza prioridad cuando existen varios pacientes y recursos limitados."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Niveles del modelo"
         },
         {
           "type": "bullets",
           "items": [
-            "prioridad",
-            "múltiples heridos",
-            "recursos"
+            "Minor",
+            "Delayed",
+            "Urgent",
+            "Immediate",
+            "Expectant or deceased"
           ]
         },
         {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Ordenar atención en supuesto sencillo."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Caso."
+          "type": "p",
+          "text": "La prioridad puede cambiar cuando cambia el estado del paciente. El triaje organiza recursos; no decide quién merece ayuda."
         },
         {
           "type": "heading",
@@ -177,25 +128,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica prioridad en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Ordenar atención en supuesto sencillo.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/medical/medical_state_model.json",
-            "gameplay/medical/species_medical_hooks.json",
-            "lore/medicine/medical_capability_contract.json"
+            "¿Para qué sirve triaje?",
+            "¿Qué niveles usa el modelo?",
+            "¿Qué influye en prioridad?",
+            "¿Puede cambiar una categoría?",
+            "¿Qué límite mantiene el cadete?"
           ]
         }
       ]
@@ -207,30 +144,26 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Permitir que cualquier cadete responda correctamente hasta la llegada de personal médico cualificado."
+          "text": "Estabilizar significa evitar que la situación empeore mientras llega ayuda o se prepara traslado."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Principios"
         },
         {
           "type": "bullets",
           "items": [
-            "hemorragia",
-            "inmovilización contextual",
-            "posición",
-            "monitorización"
+            "Actuar dentro de entrenamiento",
+            "Adaptar a especie y lesión",
+            "Reevaluar tras intervenir",
+            "Registrar cambios",
+            "Preparar handoff"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Aplicar medidas autorizadas."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Práctica."
+          "label": "NO HAY TÉCNICA UNIVERSAL",
+          "text": "Inmovilización o posición dependen del contexto, del paciente y de la situación."
         },
         {
           "type": "heading",
@@ -239,25 +172,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica hemorragia en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Aplicar medidas autorizadas.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/medical/medical_state_model.json",
-            "gameplay/medical/species_medical_hooks.json",
-            "lore/medicine/medical_capability_contract.json"
+            "¿Qué significa estabilizar?",
+            "¿Qué puede hacer un cadete dentro de competencia?",
+            "¿Por qué inmovilización depende del contexto?",
+            "¿Existe posición universal?",
+            "¿Qué hacer después de intervenir?"
           ]
         }
       ]
@@ -269,30 +188,16 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Permitir que cualquier cadete responda correctamente hasta la llegada de personal médico cualificado."
+          "text": "El tricorder médico obtiene datos, pero una capacidad diagnóstica no garantiza certeza."
         },
         {
-          "type": "heading",
-          "text": "Contenidos"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "tricorder médico",
-            "kit",
-            "comunicaciones",
-            "límites"
-          ]
+          "type": "p",
+          "text": "El sistema debe utilizar el perfil de especie del paciente y la disponibilidad real de equipo, personal y suministros."
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Preparar equipo y obtener datos."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación práctica."
+          "label": "EQUIPO ≠ CUALIFICACIÓN",
+          "text": "Tener una herramienta médica no concede formación avanzada ni autoridad para tratamientos especializados."
         },
         {
           "type": "heading",
@@ -301,25 +206,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica tricorder médico en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Preparar equipo y obtener datos.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/medical/medical_state_model.json",
-            "gameplay/medical/species_medical_hooks.json",
-            "lore/medicine/medical_capability_contract.json"
+            "¿Qué función cumple tricorder médico?",
+            "¿Garantiza diagnóstico?",
+            "¿Por qué importa la especie?",
+            "¿De qué depende el kit?",
+            "¿Qué no concede poseer equipo?"
           ]
         }
       ]
@@ -331,30 +222,16 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Permitir que cualquier cadete responda correctamente hasta la llegada de personal médico cualificado."
-        },
-        {
-          "type": "heading",
-          "text": "Contenidos"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "estado",
-            "intervenciones",
-            "cambios",
-            "tiempo"
-          ]
+          "text": "El handoff a Medicina debe transferir identidad si se conoce, contexto, estado inicial, síntomas observados, cambios, intervenciones y secuencia temporal."
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Entregar paciente a profesional."
+          "label": "HECHOS ANTES QUE TEORÍA",
+          "text": "«Presentaba dificultad respiratoria» es una observación; afirmar una enfermedad concreta exige evidencia."
         },
         {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Informe evaluado."
+          "type": "p",
+          "text": "Una entrega clara evita que el personal médico tenga que reconstruir desde cero lo ya observado."
         },
         {
           "type": "heading",
@@ -363,28 +240,15 @@
         {
           "type": "numbered",
           "items": [
-            "Explica estado en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Entregar paciente a profesional.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/medical/medical_state_model.json",
-            "gameplay/medical/species_medical_hooks.json",
-            "lore/medicine/medical_capability_contract.json"
+            "¿Qué debe contener un handoff?",
+            "¿Por qué separar síntomas y diagnóstico?",
+            "¿Qué cambios deben informarse?",
+            "¿Por qué importa la secuencia temporal?",
+            "¿Qué objetivo tiene la entrega?"
           ]
         }
       ]
     }
-  ]
+  ],
+  "status": "developed_content"
 }
