@@ -1,7 +1,7 @@
 {
   "subject": "Sistemas fundamentales de una nave estelar",
   "code": "SYS-403",
-  "version": "1.0",
+  "version": "1.1",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/SYS-403/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/SYS-403/MANUAL_v1_0.md",
@@ -23,30 +23,27 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Comprender la función, relación y limitaciones generales de los principales sistemas de una nave."
+          "text": "Una nave es una red de sistemas interdependientes. Propulsión, sensores, soporte vital, comunicaciones, defensa y servicios comparten recursos y pueden afectarse entre sí."
         },
         {
-          "type": "heading",
-          "text": "Contenidos"
+          "type": "definition",
+          "term": "Fuente",
+          "text": "Aporta energía utilizable."
         },
         {
-          "type": "bullets",
-          "items": [
-            "fuentes",
-            "distribución",
-            "cargas",
-            "dependencias"
-          ]
+          "type": "definition",
+          "term": "Distribución",
+          "text": "Entrega, prioriza, limita o redirige energía."
         },
         {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Seguir un diagrama funcional simplificado."
+          "type": "definition",
+          "term": "Carga",
+          "text": "Sistema o función que consume recursos."
         },
         {
           "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación de relaciones."
+          "label": "DEPENDENCIAS",
+          "text": "Una consola puede estar intacta y fallar si pierde energía, red de datos, el sistema remoto que controla o la autorización necesaria."
         },
         {
           "type": "heading",
@@ -55,27 +52,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras fuentes.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Seguir un diagrama funcional simplificado.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/starships/ship_systems/warp/README.md",
-            "lore/starships/ship_systems/transporters/README.md",
-            "lore/starships/ship_systems/shields/README.md",
-            "lore/technology/replicators/README.md",
-            "gameplay/ship_operations/bridge_station_model.json"
+            "¿Por qué una nave es una red de sistemas?",
+            "Diferencia fuente, distribución y carga.",
+            "¿Puede una consola intacta no funcionar?",
+            "¿Qué significa dependencia?",
+            "¿Por qué la prioridad depende del contexto?"
           ]
         }
       ]
@@ -87,29 +68,44 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Comprender la función, relación y limitaciones generales de los principales sistemas de una nave."
+          "text": "La propulsión de impulso permite el movimiento normal de la nave en régimen subluz y sostiene gran parte de las maniobras locales."
+        },
+        {
+          "type": "definition",
+          "term": "Subluz",
+          "text": "Movimiento por debajo de la velocidad de la luz dentro del modelo del juego."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Estado de propulsión"
         },
         {
           "type": "bullets",
           "items": [
-            "función",
-            "uso subluz",
-            "limitaciones generales"
+            "Disponible",
+            "Degradado",
+            "Limitado",
+            "No disponible"
           ]
         },
         {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Interpretar estado básico de propulsión."
+          "type": "p",
+          "text": "Navegación/Conn interpreta órdenes de movimiento y utiliza la capacidad real disponible. Propulsión no decide el destino."
         },
         {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Caso conceptual."
+          "type": "heading",
+          "text": "Limitaciones"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Daño",
+            "Energía",
+            "Maniobra",
+            "Seguridad",
+            "Condiciones locales",
+            "Restricciones de misión"
+          ]
         },
         {
           "type": "heading",
@@ -118,27 +114,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras función.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Interpretar estado básico de propulsión.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/starships/ship_systems/warp/README.md",
-            "lore/starships/ship_systems/transporters/README.md",
-            "lore/starships/ship_systems/shields/README.md",
-            "lore/technology/replicators/README.md",
-            "gameplay/ship_operations/bridge_station_model.json"
+            "¿Qué función cumple impulso?",
+            "¿Qué significa subluz?",
+            "Diferencia propulsión y navegación.",
+            "¿Qué factores pueden limitar impulso?",
+            "¿Por qué no puede ignorarse el estado real de la nave?"
           ]
         }
       ]
@@ -150,30 +130,40 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Comprender la función, relación y limitaciones generales de los principales sistemas de una nave."
+          "text": "La propulsión warp permite el viaje superlumínico. En 4.ª clase se estudia como capacidad de navegación interestelar, no como ingeniería de campo avanzada."
+        },
+        {
+          "type": "definition",
+          "term": "Factor warp",
+          "text": "Selección de régimen de velocidad dentro del sistema warp."
+        },
+        {
+          "type": "callout",
+          "label": "REGLA DEL PROYECTO",
+          "text": "No existe una única conversión universal e inmutable de factor warp a velocidad para todas las eras, naves y condiciones."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Máximo y sostenible"
+        },
+        {
+          "type": "p",
+          "text": "La capacidad máxima puede ser superior a la que una nave puede mantener durante largo tiempo. Navegación debe considerar velocidad solicitada, capacidad disponible, límite sostenible y ETA."
+        },
+        {
+          "type": "heading",
+          "text": "Factores de riesgo"
         },
         {
           "type": "bullets",
           "items": [
-            "función",
-            "campo warp",
-            "factor de curvatura como concepto",
-            "riesgos generales"
+            "Daño",
+            "Energía",
+            "Navegación",
+            "Condiciones subespaciales",
+            "Peligros",
+            "Restricciones de ruta"
           ]
-        },
-        {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Relacionar misión, distancia y uso de warp sin cálculo avanzado."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Preguntas aplicadas."
         },
         {
           "type": "heading",
@@ -182,27 +172,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras función.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Relacionar misión, distancia y uso de warp sin cálculo avanzado.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/starships/ship_systems/warp/README.md",
-            "lore/starships/ship_systems/transporters/README.md",
-            "lore/starships/ship_systems/shields/README.md",
-            "lore/technology/replicators/README.md",
-            "gameplay/ship_operations/bridge_station_model.json"
+            "¿Qué función cumple warp?",
+            "¿Qué significa factor de curvatura a este nivel?",
+            "¿Por qué no hay una ecuación universal única?",
+            "Diferencia máximo y sostenible.",
+            "¿Qué factores condicionan un viaje warp?"
           ]
         }
       ]
@@ -214,30 +188,34 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Comprender la función, relación y limitaciones generales de los principales sistemas de una nave."
+          "text": "Habitabilidad y servicios hacen posible que una tripulación viva y trabaje durante la misión."
+        },
+        {
+          "type": "definition",
+          "term": "Soporte vital",
+          "text": "Mantiene condiciones habitables como atmósfera, temperatura y ambiente básico."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Síntesis y replicación"
         },
         {
-          "type": "bullets",
-          "items": [
-            "soporte vital",
-            "replicadores",
-            "transportadores",
-            "computer service"
-          ]
+          "type": "p",
+          "text": "En el siglo XXIII se distinguen sintetizadores de alimentos y sistemas de producción. En el siglo XXIV los replicadores son una tecnología más madura para alimentos y muchos objetos."
         },
         {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Resolver qué sistema soporta una necesidad concreta."
+          "type": "p",
+          "text": "El uso de replicadores depende de energía, patrones autorizados, reservas y restricciones."
         },
         {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Caso de sistema."
+          "type": "definition",
+          "term": "Transportador",
+          "text": "Sistema de traslado de personas o materia; en 4.ª clase se estudian función y dependencias, no operación avanzada."
+        },
+        {
+          "type": "definition",
+          "term": "Computer service",
+          "text": "Servicio distribuido de consulta y acciones autorizadas; no es omnipotente."
         },
         {
           "type": "heading",
@@ -246,27 +224,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras soporte vital.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Resolver qué sistema soporta una necesidad concreta.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/starships/ship_systems/warp/README.md",
-            "lore/starships/ship_systems/transporters/README.md",
-            "lore/starships/ship_systems/shields/README.md",
-            "lore/technology/replicators/README.md",
-            "gameplay/ship_operations/bridge_station_model.json"
+            "¿Qué función cumple soporte vital?",
+            "Diferencia sintetizador y replicador.",
+            "¿Qué limita un replicador?",
+            "¿Qué se exige saber del transportador?",
+            "¿Por qué la computadora no soluciona cualquier fallo?"
           ]
         }
       ]
@@ -278,30 +240,38 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Comprender la función, relación y limitaciones generales de los principales sistemas de una nave."
+          "text": "La defensa de una nave puede combinar escudos, armamento, sensores, maniobra, comunicaciones y control de daños."
+        },
+        {
+          "type": "definition",
+          "term": "Escudos",
+          "text": "Protegen la nave frente a amenazas o fenómenos compatibles con sus capacidades."
+        },
+        {
+          "type": "definition",
+          "term": "Armamento",
+          "text": "Permite aplicar fuerza cuando existe autoridad y contexto para ello."
+        },
+        {
+          "type": "callout",
+          "label": "DISPONIBLE ≠ AUTORIZADO",
+          "text": "Tener armamento disponible no concede permiso para usarlo."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Sensores"
         },
         {
-          "type": "bullets",
-          "items": [
-            "escudos",
-            "armamento",
-            "sensores como consumidor/proveedor",
-            "holodeck cuando proceda"
-          ]
+          "type": "p",
+          "text": "Sensores consume energía y capacidad, pero produce conocimiento para Navegación, Ciencia, Táctica, Mando y otras funciones."
         },
         {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Analizar dependencias generales."
+          "type": "heading",
+          "text": "Holodeck"
         },
         {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Ejercicio integrado."
+          "type": "p",
+          "text": "Es dependiente de era y nave; no se retrotrae automáticamente a Pike o Kirk."
         },
         {
           "type": "heading",
@@ -310,27 +280,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras escudos.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Analizar dependencias generales.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/starships/ship_systems/warp/README.md",
-            "lore/starships/ship_systems/transporters/README.md",
-            "lore/starships/ship_systems/shields/README.md",
-            "lore/technology/replicators/README.md",
-            "gameplay/ship_operations/bridge_station_model.json"
+            "¿Qué sistemas contribuyen a defensa?",
+            "¿Tener armamento concede permiso?",
+            "¿Por qué Sensores es consumidor y proveedor?",
+            "¿Qué problema causa información pobre?",
+            "¿Por qué holodeck no se asume en todas las eras?"
           ]
         }
       ]
@@ -342,30 +296,45 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Comprender la función, relación y limitaciones generales de los principales sistemas de una nave."
+          "text": "Un sistema degradado puede seguir funcionando con menos capacidad, precisión o velocidad, o con restricciones y riesgo adicional."
+        },
+        {
+          "type": "definition",
+          "term": "Primario",
+          "text": "Sistema principal de una función."
+        },
+        {
+          "type": "definition",
+          "term": "Respaldo",
+          "text": "Alternativa que puede ofrecer capacidad parcial o distinta."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Efecto cascada"
+        },
+        {
+          "type": "p",
+          "text": "Un fallo inicial puede producir consecuencias indirectas. Ejemplo: menos energía → menos sensores → menor conocimiento → navegación más incierta."
+        },
+        {
+          "type": "heading",
+          "text": "Prioridad de recuperación"
         },
         {
           "type": "bullets",
           "items": [
-            "degradación",
-            "sistema primario/secundario",
-            "efecto cascada",
-            "prioridad"
+            "Vidas",
+            "Misión",
+            "Peligro",
+            "Capacidad restante",
+            "Tiempo",
+            "Recursos"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Seguir una avería sencilla entre sistemas."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación de razonamiento."
+          "label": "SÍNTOMA ≠ CAUSA",
+          "text": "Una misma pérdida de función puede tener causas distintas. Ingeniería diagnostica; otras estaciones reportan efectos."
         },
         {
           "type": "heading",
@@ -374,30 +343,15 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras degradación.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Seguir una avería sencilla entre sistemas.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/starships/ship_systems/warp/README.md",
-            "lore/starships/ship_systems/transporters/README.md",
-            "lore/starships/ship_systems/shields/README.md",
-            "lore/technology/replicators/README.md",
-            "gameplay/ship_operations/bridge_station_model.json"
+            "¿Qué significa degradación?",
+            "Diferencia primario y respaldo.",
+            "¿Qué es efecto cascada?",
+            "¿Qué factores influyen en prioridad?",
+            "¿Por qué un síntoma no demuestra la causa?"
           ]
         }
       ]
     }
-  ]
+  ],
+  "status": "developed_content"
 }
