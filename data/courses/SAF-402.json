@@ -1,7 +1,7 @@
 {
   "subject": "Seguridad y respuesta a emergencias I",
   "code": "SAF-402",
-  "version": "1.0",
+  "version": "1.1",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/SAF-402/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/SAF-402/MANUAL_v1_0.md",
@@ -21,30 +21,25 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Evitar que un cadete sea un riesgo para sí mismo o para otros durante emergencias comunes."
+          "text": "Una alerta cambia prioridades. Puede afectar movimiento, acceso, tareas, comunicaciones y supervisión."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Qué reconocer"
         },
         {
           "type": "bullets",
           "items": [
-            "estados de alerta",
-            "alarmas locales",
-            "instrucciones",
-            "prioridad"
+            "Que existe una alerta",
+            "Su prioridad",
+            "Si es general o local",
+            "Qué instrucción acompaña a la señal"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Reconocer y responder a señales de entrenamiento."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Prueba práctica."
+          "label": "NO ADIVINAR",
+          "text": "Si una señal no se entiende, se consulta o se pide aclaración; no se inventa su significado."
         },
         {
           "type": "heading",
@@ -53,25 +48,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras estados de alerta.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Reconocer y responder a señales de entrenamiento.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/engineering/engineering_loop.json",
-            "gameplay/medical/medical_state_model.json",
-            "gameplay/security/README.md"
+            "¿Qué cambia con una alerta?",
+            "¿Una alarma local implica evacuar toda la nave?",
+            "¿Qué haces si no entiendes una señal?",
+            "¿Qué significa prioridad?",
+            "¿Por qué la presentación puede variar por era?"
           ]
         }
       ]
@@ -83,30 +64,36 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Evitar que un cadete sea un riesgo para sí mismo o para otros durante emergencias comunes."
+          "text": "Evacuar significa mover personas desde una zona peligrosa hacia una zona más segura de forma controlada."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Compartimentos y sellado"
+        },
+        {
+          "type": "p",
+          "text": "El aislamiento puede limitar propagación de pérdida de presión, contaminación o daño. Un cadete no debe anular un sellado solo porque bloquee su ruta habitual."
+        },
+        {
+          "type": "heading",
+          "text": "Rutas y recuento"
         },
         {
           "type": "bullets",
           "items": [
-            "sellado",
-            "rutas",
-            "compartimentos",
-            "recuento"
+            "Estado de compartimentos",
+            "Órdenes activas",
+            "Accesos",
+            "Daños",
+            "Zonas restringidas",
+            "Punto de reunión",
+            "Quién llegó y quién falta"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Ejercicio de evacuación."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Tiempo, seguridad y disciplina."
+          "label": "LÍMITE",
+          "text": "En 4.ª clase se aprende a alejarse del peligro, respetar cierres e informar; no a reparar una brecha estructural."
         },
         {
           "type": "heading",
@@ -115,25 +102,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras sellado.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Ejercicio de evacuación.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/engineering/engineering_loop.json",
-            "gameplay/medical/medical_state_model.json",
-            "gameplay/security/README.md"
+            "¿Cuál es el objetivo de una evacuación?",
+            "¿Para qué sirve aislar compartimentos?",
+            "¿Por qué no abrir un cierre por costumbre?",
+            "¿Para qué sirve el recuento?",
+            "¿Qué límites tiene un cadete ante una zona despresurizada?"
           ]
         }
       ]
@@ -145,30 +118,35 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Evitar que un cadete sea un riesgo para sí mismo o para otros durante emergencias comunes."
+          "text": "Un incendio puede implicar calor, humo, atmósfera degradada, daño de sistemas, propagación y pérdida de visibilidad."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Seguridad de escena"
         },
         {
           "type": "bullets",
           "items": [
-            "fuego",
-            "humo",
-            "atmósfera",
-            "aislamiento"
+            "Accesibilidad",
+            "Ruta de salida",
+            "Atmósfera",
+            "Equipo disponible",
+            "Autorización",
+            "Llegada de equipo especializado"
           ]
         },
         {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Respuesta inicial en simulador."
+          "type": "heading",
+          "text": "Aislamiento"
+        },
+        {
+          "type": "p",
+          "text": "Cerrar una zona puede contener humo, limitar propagación y proteger otras áreas."
         },
         {
           "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Práctica de procedimiento."
+          "label": "PRIMERA RESPUESTA",
+          "text": "Alertar, proteger a personas, aislar si procede y está autorizado, retirarse a zona segura y cooperar con personal cualificado."
         },
         {
           "type": "heading",
@@ -177,25 +155,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras fuego.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Respuesta inicial en simulador.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/engineering/engineering_loop.json",
-            "gameplay/medical/medical_state_model.json",
-            "gameplay/security/README.md"
+            "¿Qué riesgos adicionales produce un incendio?",
+            "¿Qué debes comprobar antes de acercarte?",
+            "¿Por qué aislar puede ser mejor que entrar?",
+            "¿Puede una zona aparentemente limpia tener atmósfera peligrosa?",
+            "¿Cuál es la prioridad de un cadete no especialista?"
           ]
         }
       ]
@@ -207,30 +171,38 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Evitar que un cadete sea un riesgo para sí mismo o para otros durante emergencias comunes."
+          "text": "Antes de ayudar a una persona herida, el cadete debe evitar convertirse en otra víctima: primero se valora la seguridad de escena."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Aviso médico"
         },
         {
           "type": "bullets",
           "items": [
-            "seguridad de escena",
-            "aviso médico",
-            "asistencia básica",
-            "no exceder competencia"
+            "Localización",
+            "Número aproximado de afectados",
+            "Riesgo visible",
+            "Estado observable básico",
+            "Acceso a la zona"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Atender un supuesto hasta relevo médico."
+          "label": "NO DIAGNOSTICAR POR INTUICIÓN",
+          "text": "Síntoma observado y diagnóstico conocido son cosas distintas."
         },
         {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación práctica."
+          "type": "p",
+          "text": "La asistencia debe limitarse a lo que el personaje esté entrenado y autorizado para hacer."
+        },
+        {
+          "type": "heading",
+          "text": "Relevo médico"
+        },
+        {
+          "type": "p",
+          "text": "Al llegar personal cualificado, se transmite qué ocurrió, qué se observó, qué ayuda se prestó y qué cambió."
         },
         {
           "type": "heading",
@@ -239,25 +211,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras seguridad de escena.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Atender un supuesto hasta relevo médico.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/engineering/engineering_loop.json",
-            "gameplay/medical/medical_state_model.json",
-            "gameplay/security/README.md"
+            "¿Qué debes comprobar antes de acercarte?",
+            "¿Qué información conviene transmitir a Medicina?",
+            "Diferencia síntoma y diagnóstico.",
+            "¿Qué significa no exceder competencia?",
+            "¿Qué debe incluir el relevo?"
           ]
         }
       ]
@@ -269,30 +227,40 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Evitar que un cadete sea un riesgo para sí mismo o para otros durante emergencias comunes."
+          "text": "El control de daños es trabajo técnico coordinado. Una avería puede generar efectos encadenados sobre energía, ambiente, estructura y otros sistemas."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Prioridades"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Proteger vidas",
+            "Contener el riesgo",
+            "Preservar funciones esenciales",
+            "Recuperar capacidad cuando sea seguro"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Cómo puede ayudar un cadete"
         },
         {
           "type": "bullets",
           "items": [
-            "aislamiento",
-            "prioridades",
-            "riesgo secundario",
-            "cooperación"
+            "Transportar material",
+            "Comunicar",
+            "Controlar acceso",
+            "Evacuar",
+            "Seguir instrucciones",
+            "Observar y reportar"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Apoyar un equipo sin asumir funciones técnicas no cualificadas."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Caso práctico."
+          "label": "IMPROVISACIÓN",
+          "text": "Una idea técnica solo funciona si recursos, conocimiento, compatibilidad y riesgo permiten validarla."
         },
         {
           "type": "heading",
@@ -301,25 +269,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras aislamiento.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Apoyar un equipo sin asumir funciones técnicas no cualificadas.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/engineering/engineering_loop.json",
-            "gameplay/medical/medical_state_model.json",
-            "gameplay/security/README.md"
+            "¿Qué prioridades orientan el control de daños?",
+            "¿Qué es un riesgo secundario?",
+            "¿Cómo puede ayudar un cadete sin reparar?",
+            "¿Por qué una improvisación no funciona automáticamente?",
+            "¿Qué debe validarse?"
           ]
         }
       ]
@@ -331,31 +285,50 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Evitar que un cadete sea un riesgo para sí mismo o para otros durante emergencias comunes."
+          "text": "El ejercicio integrado combina alerta, movimiento, comunicación, asistencia y registro. No se trata de ganar, sino de actuar con seguridad."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Secuencia básica"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Recibir alerta",
+            "Identificar instrucción",
+            "Moverse con seguridad",
+            "Informar cambios",
+            "Asistir dentro de competencia",
+            "Registrar o entregar información",
+            "Confirmar cierre o relevo"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Mensaje de emergencia"
+        },
+        {
+          "type": "p",
+          "text": "Debe priorizar lugar, hecho, riesgo y necesidad."
+        },
+        {
+          "type": "callout",
+          "label": "NO HEROÍSMO IMPROCEDENTE",
+          "text": "Una acción no se vuelve correcta por ser peligrosa. El riesgo debe estar justificado por contexto, misión y alternativas."
+        },
+        {
+          "type": "heading",
+          "text": "Debrief"
         },
         {
           "type": "bullets",
           "items": [
-            "alarma",
-            "movimiento",
-            "comunicación",
-            "asistencia",
-            "registro"
+            "Qué se sabía",
+            "Qué se hizo",
+            "Qué se comunicó",
+            "Qué riesgo se asumió",
+            "Qué puede mejorarse"
           ]
-        },
-        {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Simulación corta de emergencia."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación integrada."
         },
         {
           "type": "heading",
@@ -364,28 +337,15 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras alarma.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Simulación corta de emergencia.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/engineering/engineering_loop.json",
-            "gameplay/medical/medical_state_model.json",
-            "gameplay/security/README.md"
+            "¿Qué fases componen una respuesta integrada?",
+            "¿Qué prioriza un mensaje de emergencia?",
+            "¿Por qué peligro no equivale a heroísmo?",
+            "¿Qué límites siguen existiendo?",
+            "¿Qué debe revisarse en debrief?"
           ]
         }
       ]
     }
-  ]
+  ],
+  "status": "developed_content"
 }
