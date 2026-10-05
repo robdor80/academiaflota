@@ -1,7 +1,7 @@
 {
   "subject": "Seguridad, supervivencia y equipos de salida",
   "code": "SEC-302",
-  "version": "1.0",
+  "version": "1.1",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/SEC-302/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/SEC-302/MANUAL_v1_0.md",
@@ -21,31 +21,17 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Dar una base común de autoprotección, seguridad operativa y supervivencia sin convertir a todos en especialistas tácticos."
+          "text": "Conciencia de amenaza significa detectar cambios relevantes en entorno, personas, accesos, salidas, comunicaciones y estado de alerta."
         },
         {
-          "type": "heading",
-          "text": "Contenidos"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "entorno",
-            "personas",
-            "salidas",
-            "cambios",
-            "alerta"
-          ]
+          "type": "definition",
+          "term": "Baseline",
+          "text": "Lo normal en un contexto; permite reconocer anomalías sin convertir cada detalle en amenaza."
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Detectar riesgos en escenario."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación."
+          "label": "PROPORCIONALIDAD",
+          "text": "Una señal aislada no demuestra hostilidad. Puede justificar observar, informar o aumentar preparación."
         },
         {
           "type": "heading",
@@ -54,25 +40,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica entorno en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Detectar riesgos en escenario.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/security/README.md",
-            "lore/federation/starfleet/regulations/README.md",
-            "gameplay/ship_operations/bridge_station_model.json"
+            "¿Qué significa conciencia de amenaza?",
+            "¿Para qué sirve baseline?",
+            "¿Una señal aislada demuestra hostilidad?",
+            "¿Qué conviene identificar antes?",
+            "¿Qué significa alerta proporcional?"
           ]
         }
       ]
@@ -84,30 +56,30 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Dar una base común de autoprotección, seguridad operativa y supervivencia sin convertir a todos en especialistas tácticos."
+          "text": "El phaser es una herramienta controlada: su uso depende de autorización, entrenamiento, configuración, contexto y reglas."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Principios de seguridad"
         },
         {
           "type": "bullets",
           "items": [
-            "manejo seguro",
-            "autoridad",
-            "escalada",
-            "proporcionalidad"
+            "Comprobar estado",
+            "Mantener control",
+            "Seguir instrucciones",
+            "No alterar configuraciones fuera de autorización",
+            "Comunicar anomalías"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Práctica controlada en simulador."
+          "label": "ACCESO ≠ AUTORIDAD",
+          "text": "Tener acceso físico no autoriza su uso en cualquier situación."
         },
         {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Seguridad y disciplina."
+          "type": "p",
+          "text": "La respuesta debe ser proporcional al riesgo; una situación tensa no obliga a escalar."
         },
         {
           "type": "heading",
@@ -116,25 +88,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica manejo seguro en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Práctica controlada en simulador.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/security/README.md",
-            "lore/federation/starfleet/regulations/README.md",
-            "gameplay/ship_operations/bridge_station_model.json"
+            "¿Qué limita el uso?",
+            "¿Qué principios de seguridad se enseñan?",
+            "¿Acceso equivale a autoridad?",
+            "¿Qué significa proporcionalidad?",
+            "¿Por qué el uso debe ser trazable?"
           ]
         }
       ]
@@ -146,30 +104,30 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Dar una base común de autoprotección, seguridad operativa y supervivencia sin convertir a todos en especialistas tácticos."
+          "text": "Seguridad a bordo incluye control de accesos, zonas restringidas, verificación de identidad, respuesta a incidencias y coordinación con Mando."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Ante una intrusión"
         },
         {
-          "type": "bullets",
+          "type": "numbered",
           "items": [
-            "accesos",
-            "zonas restringidas",
-            "incidente",
-            "detención básica contextual"
+            "Confirmar lo observado",
+            "Informar",
+            "Proteger personas",
+            "Evitar escalada innecesaria",
+            "Seguir instrucciones"
           ]
         },
         {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Responder a intrusión simulada."
+          "type": "p",
+          "text": "Una intervención sobre una persona depende de autoridad, riesgo, contexto y procedimiento."
         },
         {
           "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Caso práctico."
+          "label": "PRESERVAR INFORMACIÓN",
+          "text": "Una respuesta desordenada puede destruir registros, contexto o trazabilidad."
         },
         {
           "type": "heading",
@@ -178,25 +136,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica accesos en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Responder a intrusión simulada.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/security/README.md",
-            "lore/federation/starfleet/regulations/README.md",
-            "gameplay/ship_operations/bridge_station_model.json"
+            "¿Qué forma seguridad a bordo?",
+            "¿Por qué restringir zonas?",
+            "¿Qué pasos siguen a intrusión?",
+            "¿Qué limita una intervención?",
+            "¿Por qué preservar información?"
           ]
         }
       ]
@@ -208,30 +152,25 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Dar una base común de autoprotección, seguridad operativa y supervivencia sin convertir a todos en especialistas tácticos."
+          "text": "El equipo de salida depende de objetivo, entorno, duración, rol, riesgo y comunicaciones."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Responsabilidad individual"
         },
         {
           "type": "bullets",
           "items": [
-            "rol",
-            "equipo",
-            "comunicaciones",
-            "responsabilidad"
+            "Comprobar equipo",
+            "Saber qué se lleva",
+            "Informar fallos",
+            "Conservarlo",
+            "Devolver o registrar"
           ]
         },
         {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Preparar loadout según misión."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Checklist razonada."
+          "type": "p",
+          "text": "Roles distintos priorizan herramientas distintas. Más equipo puede aumentar carga, complejidad y tiempo."
         },
         {
           "type": "heading",
@@ -240,25 +179,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica rol en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Preparar loadout según misión.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/security/README.md",
-            "lore/federation/starfleet/regulations/README.md",
-            "gameplay/ship_operations/bridge_station_model.json"
+            "¿De qué depende loadout?",
+            "¿Por qué roles llevan equipo distinto?",
+            "¿Qué incluye plan de comunicaciones?",
+            "¿Qué responsabilidad tiene cada miembro?",
+            "¿Por qué más equipo no siempre es mejor?"
           ]
         }
       ]
@@ -270,30 +195,31 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Dar una base común de autoprotección, seguridad operativa y supervivencia sin convertir a todos en especialistas tácticos."
+          "text": "En aislamiento, las prioridades pueden incluir seguridad inmediata, refugio, recursos, orientación, comunicación y señalización."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Recursos"
         },
         {
           "type": "bullets",
           "items": [
-            "refugio",
-            "recursos",
-            "orientación",
-            "señalización"
+            "Agua",
+            "Alimentos",
+            "Energía",
+            "Suministros",
+            "Herramientas",
+            "Capacidad médica"
           ]
         },
         {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Ejercicio de campo."
+          "type": "p",
+          "text": "La orientación conserva posición conocida, dirección, referencias, ruta de retorno y puntos de reunión."
         },
         {
           "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación práctica."
+          "label": "SEÑALIZACIÓN",
+          "text": "Una señal de rescate debe ser detectable, compatible, persistente y segura para el contexto."
         },
         {
           "type": "heading",
@@ -302,25 +228,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica refugio en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Ejercicio de campo.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/security/README.md",
-            "lore/federation/starfleet/regulations/README.md",
-            "gameplay/ship_operations/bridge_station_model.json"
+            "¿Qué prioridades aparecen?",
+            "¿Qué debe proporcionar refugio?",
+            "¿Qué recursos se controlan?",
+            "¿Qué mantiene orientación?",
+            "¿Qué hace útil una señal?"
           ]
         }
       ]
@@ -332,30 +244,20 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Dar una base común de autoprotección, seguridad operativa y supervivencia sin convertir a todos en especialistas tácticos."
+          "text": "Una formación organiza posiciones y responsabilidades según terreno, misión, visibilidad, riesgo, equipo y número de personas."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Cobertura y retirada"
         },
         {
-          "type": "bullets",
-          "items": [
-            "formación",
-            "cobertura",
-            "retirada",
-            "herido"
-          ]
+          "type": "p",
+          "text": "El equipo debe conservar capacidad de observar, comunicar, apoyar y retirarse. Retirarse puede ser correcto cuando cambia el riesgo o se supera la capacidad."
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Simulación corta."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación integrada."
+          "label": "HERIDO",
+          "text": "Un herido cambia ritmo, movilidad, recursos, prioridad y posibilidad de continuar."
         },
         {
           "type": "heading",
@@ -364,28 +266,15 @@
         {
           "type": "numbered",
           "items": [
-            "Explica formación en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Simulación corta.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/security/README.md",
-            "lore/federation/starfleet/regulations/README.md",
-            "gameplay/ship_operations/bridge_station_model.json"
+            "¿De qué depende una formación?",
+            "¿Qué significa cobertura?",
+            "¿Cuándo retirarse puede ser correcto?",
+            "¿Cómo cambia la misión un herido?",
+            "¿Por qué cohesión importa?"
           ]
         }
       ]
     }
-  ]
+  ],
+  "status": "developed_content"
 }
