@@ -1,7 +1,7 @@
 {
   "subject": "Comunicaciones y equipo personal",
   "code": "COM-402",
-  "version": "1.0",
+  "version": "1.1",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/COM-402/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/COM-402/MANUAL_v1_0.md",
@@ -21,30 +21,42 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Usar correctamente el equipo cotidiano de Starfleet y comunicarse de forma profesional."
+          "text": "Un comunicador no es solo un botón para hablar: una comunicación necesita origen, destino, canal, estado del enlace y contenido transmitido."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Tipos y prioridad"
         },
         {
           "type": "bullets",
           "items": [
-            "llamada",
-            "canal",
-            "prioridad",
-            "identificación"
+            "Interno",
+            "Subespacio directo",
+            "Relay",
+            "Haz estrecho",
+            "Broadcast",
+            "Distress"
           ]
         },
         {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Realizar comunicaciones internas sencillas."
+          "type": "p",
+          "text": "La prioridad debe reflejar urgencia real. Un mensaje rutinario no debe competir con una emergencia."
         },
         {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Práctica."
+          "type": "heading",
+          "text": "Estado del enlace"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Conectando",
+            "Abierto",
+            "Degradado",
+            "Bloqueado",
+            "Interferido",
+            "Perdido",
+            "Cerrado"
+          ]
         },
         {
           "type": "heading",
@@ -53,25 +65,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras llamada.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Realizar comunicaciones internas sencillas.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/communications/communications_model.json",
-            "lore/technology/tricorders/README.md",
-            "lore/technology/communications/README.md"
+            "¿Qué elementos forman un enlace?",
+            "¿Por qué importa identificar origen y destino?",
+            "Diferencia canal y contenido.",
+            "¿Por qué la prioridad debe usarse con criterio?",
+            "¿Qué significa enlace degradado?"
           ]
         }
       ]
@@ -83,30 +81,41 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Usar correctamente el equipo cotidiano de Starfleet y comunicarse de forma profesional."
+          "text": "El tricorder se introduce como herramienta portátil de adquisición y consulta. En esta etapa no se exige dominar modos especializados."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Funciones generales"
         },
         {
           "type": "bullets",
           "items": [
-            "función",
-            "modos generales",
-            "lectura",
-            "limitaciones"
+            "Observación",
+            "Medición",
+            "Consulta",
+            "Registro",
+            "Análisis preliminar"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Obtener una lectura preparada."
+          "label": "LECTURA ≠ EXPLICACIÓN",
+          "text": "«Radiación elevada» es un dato. «Existe sabotaje» es una hipótesis que necesita evidencia adicional."
         },
         {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Práctica de equipo."
+          "type": "heading",
+          "text": "Limitaciones"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Alcance",
+            "Resolución",
+            "Interferencia",
+            "Calibración",
+            "Entorno",
+            "Calidad de señal"
+          ]
         },
         {
           "type": "heading",
@@ -115,25 +124,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras función.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Obtener una lectura preparada.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/communications/communications_model.json",
-            "lore/technology/tricorders/README.md",
-            "lore/technology/communications/README.md"
+            "¿Qué función general cumple un tricorder?",
+            "¿Por qué una lectura no es automáticamente una explicación?",
+            "Nombra tres limitaciones.",
+            "¿Qué metadatos pueden acompañar una medición?",
+            "¿Por qué los modelos pueden diferir?"
           ]
         }
       ]
@@ -145,30 +140,34 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Usar correctamente el equipo cotidiano de Starfleet y comunicarse de forma profesional."
+          "text": "Una comunicación interna debe dirigirse a la persona, puesto, departamento o equipo que realmente pueda actuar."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Estructura mínima"
         },
         {
-          "type": "bullets",
+          "type": "numbered",
           "items": [
-            "destinatario",
-            "mensaje",
-            "confirmación",
-            "brevedad"
+            "Destinatario",
+            "Hecho o situación",
+            "Solicitud si existe",
+            "Prioridad si procede",
+            "Confirmación cuando sea necesaria"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Coordinar una tarea con otro departamento."
+          "label": "BREVEDAD",
+          "text": "Breve no significa incompleto. El mensaje debe ser corto y suficiente para actuar."
         },
         {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación de claridad."
+          "type": "heading",
+          "text": "Entre departamentos"
+        },
+        {
+          "type": "p",
+          "text": "Debe quedar claro qué necesitas, por qué, qué información compartes y qué responsabilidad sigue siendo propia."
         },
         {
           "type": "heading",
@@ -177,25 +176,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras destinatario.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Coordinar una tarea con otro departamento.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/communications/communications_model.json",
-            "lore/technology/tricorders/README.md",
-            "lore/technology/communications/README.md"
+            "¿Cómo eliges destinatario?",
+            "¿Qué elementos contiene un mensaje útil?",
+            "¿Brevedad significa omitir información?",
+            "¿Cuándo conviene pedir confirmación?",
+            "¿Qué debe quedar claro entre departamentos?"
           ]
         }
       ]
@@ -207,30 +192,39 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Usar correctamente el equipo cotidiano de Starfleet y comunicarse de forma profesional."
+          "text": "Contactar con otra nave, estación o autoridad representa a la unidad y exige más cuidado que un mensaje interno rutinario."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Apertura"
         },
         {
           "type": "bullets",
           "items": [
-            "apertura",
-            "identificación",
-            "registro",
-            "autoridad"
+            "Identificación propia",
+            "Destinatario",
+            "Intención básica",
+            "Petición de enlace"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Simular una llamada no táctica."
+          "label": "AUTORIDAD",
+          "text": "Poder abrir un canal no autoriza a negociar tratados, declarar hostilidad, prometer recursos o revelar información restringida."
         },
         {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Escena guiada."
+          "type": "heading",
+          "text": "Calidad del enlace"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Interferencia",
+            "Latencia",
+            "Traducción imperfecta",
+            "Cifrado",
+            "Relay"
+          ]
         },
         {
           "type": "heading",
@@ -239,25 +233,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras apertura.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Simular una llamada no táctica.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/communications/communications_model.json",
-            "lore/technology/tricorders/README.md",
-            "lore/technology/communications/README.md"
+            "¿Por qué una comunicación externa exige cuidado?",
+            "¿Qué incluye una apertura?",
+            "¿Abrir un canal concede autoridad diplomática?",
+            "¿Por qué registrar comunicaciones relevantes?",
+            "¿Qué problemas introducen traducción o interferencia?"
           ]
         }
       ]
@@ -269,30 +249,32 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Usar correctamente el equipo cotidiano de Starfleet y comunicarse de forma profesional."
+          "text": "Un mensaje profesional convierte información desordenada en hecho, estado, solicitud y urgencia."
         },
         {
-          "type": "heading",
-          "text": "Contenidos"
+          "type": "definition",
+          "term": "Hecho",
+          "text": "Lo observado directamente."
         },
         {
-          "type": "bullets",
-          "items": [
-            "hecho",
-            "solicitud",
-            "estado",
-            "urgencia"
-          ]
+          "type": "definition",
+          "term": "Estado",
+          "text": "La situación actual relevante."
+        },
+        {
+          "type": "definition",
+          "term": "Solicitud",
+          "text": "Lo que necesitas del destinatario."
+        },
+        {
+          "type": "definition",
+          "term": "Urgencia",
+          "text": "La prioridad real de respuesta."
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Convertir información desordenada en un mensaje profesional."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Ejercicio escrito/oral."
+          "label": "HECHO ≠ HIPÓTESIS",
+          "text": "«La puerta no responde» es un hecho. «La han saboteado» es una explicación no demostrada."
         },
         {
           "type": "heading",
@@ -301,25 +283,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras hecho.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Convertir información desordenada en un mensaje profesional.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/communications/communications_model.json",
-            "lore/technology/tricorders/README.md",
-            "lore/technology/communications/README.md"
+            "¿Qué cuatro elementos estructuran un mensaje?",
+            "Diferencia hecho y estado.",
+            "¿Cuándo incluir una solicitud?",
+            "¿Por qué no inflar urgencia?",
+            "¿Cómo distingues hecho e hipótesis?"
           ]
         }
       ]
@@ -331,30 +299,45 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Usar correctamente el equipo cotidiano de Starfleet y comunicarse de forma profesional."
+          "text": "Una salida empieza antes de abandonar la nave: objetivo, entorno, duración, riesgos, comunicación y equipo."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Equipo contextual"
         },
         {
           "type": "bullets",
           "items": [
-            "comunicador",
-            "tricorder",
-            "kit contextual",
-            "responsabilidad sobre equipo"
+            "Comunicador",
+            "Tricorder",
+            "Suministros",
+            "Protección",
+            "Herramientas",
+            "Equipo especializado según misión"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Responsabilidad"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Comprobar estado",
+            "Saber para qué sirve",
+            "Mantenerlo",
+            "Informar fallos",
+            "Devolver o registrar"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Preparar un equipo sencillo para una salida."
+          "label": "MÁS NO SIEMPRE ES MEJOR",
+          "text": "El equipo extra añade peso, complejidad y dependencia. Debe responder a la misión."
         },
         {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Checklist razonada."
+          "type": "p",
+          "text": "Llevar una herramienta no concede automáticamente competencia para todas sus funciones."
         },
         {
           "type": "heading",
@@ -363,28 +346,15 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras comunicador.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Preparar un equipo sencillo para una salida.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/communications/communications_model.json",
-            "lore/technology/tricorders/README.md",
-            "lore/technology/communications/README.md"
+            "¿Qué debes conocer antes de preparar equipo?",
+            "¿Por qué no existe kit universal?",
+            "¿Qué responsabilidades asumes?",
+            "¿Por qué más equipo no siempre es mejor?",
+            "¿Tener una herramienta concede competencia?"
           ]
         }
       ]
     }
-  ]
+  ],
+  "status": "developed_content"
 }
