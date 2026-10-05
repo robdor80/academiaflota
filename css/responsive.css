@@ -750,3 +750,48 @@
     font-size:1.72rem;
   }
 }
+
+
+/* v0.3.5 — título institucional con presencia real en la columna de PC */
+@media (min-width:1200px){
+  .gateway__title{
+    margin-top:24px;
+  }
+
+  .gateway__academy-name{
+    align-items:flex-start;
+    gap:11px;
+    margin-top:34px;
+    padding:0 8px;
+    font-size:2.02rem;
+    line-height:.92;
+    letter-spacing:.025em;
+    text-align:left;
+  }
+
+  .gateway__academy-name span{
+    width:auto;
+    text-align:left;
+  }
+
+  .gateway__academy-name span:first-child,
+  .gateway__academy-name span:nth-child(4),
+  .gateway__academy-name span:nth-child(5){
+    font-size:1.16em;
+  }
+
+  .gateway__academy-name span:nth-child(2),
+  .gateway__academy-name span:nth-child(3){
+    font-size:.92em;
+    line-height:1;
+  }
+}
+
+@media (min-width:1600px){
+  .gateway__academy-name{
+    gap:14px;
+    margin-top:40px;
+    padding:0 4px;
+    font-size:2.22rem;
+  }
+}
