@@ -145,3 +145,85 @@
   .orientation-lock__card h1{margin:7px 0;color:var(--navy-900)}
   .orientation-lock__card p{margin:0;color:var(--muted)}
 }
+
+/* v0.2.3 — ajuste de cabecera centrada y LCARS */
+@media (min-width:768px) and (max-width:1199px){
+  .gateway__header{
+    grid-template-columns:76px minmax(0,1fr) 76px;
+    min-height:104px;
+  }
+  .gateway-header__logo img{width:66px;height:66px}
+  .gateway-header__title strong{font-size:1.02rem}
+  .gateway-lcars-strip{width:calc(100% - 36px)}
+  .gateway__main{padding-top:54px}
+}
+
+@media (max-width:767px) and (orientation:portrait){
+  .gateway__header{
+    width:calc(100% - 24px);
+    grid-template-columns:54px minmax(0,1fr) 44px;
+    gap:8px;
+    min-height:88px;
+  }
+  .gateway-header__logo img{
+    width:50px;
+    height:50px;
+  }
+  .gateway-header__title span{
+    font-size:.43rem;
+    letter-spacing:.11em;
+  }
+  .gateway-header__title strong{
+    margin-top:4px;
+    font-size:.72rem;
+    line-height:1.12;
+    letter-spacing:.08em;
+  }
+  .gateway__header .settings-trigger{
+    width:40px;
+    height:40px;
+    min-height:40px;
+    padding:0;
+    justify-content:center;
+    border-radius:16px 5px 16px 5px;
+  }
+  .gateway-lcars-strip{
+    width:calc(100% - 24px);
+    grid-template-columns:20% 9% 17% 1fr;
+    gap:4px;
+    height:7px;
+  }
+  .gateway__main{
+    padding-top:34px;
+  }
+  .gateway-hero{
+    margin-bottom:28px;
+    padding-left:15px;
+    text-align:left;
+    border-left-width:6px;
+  }
+  .gateway-hero::before{
+    width:82px;
+    height:11px;
+    margin:0 0 20px -15px;
+  }
+  .gateway-hero__code{
+    font-size:.54rem;
+    letter-spacing:.11em;
+  }
+  .gateway-hero h1{
+    font-size:2.55rem;
+    line-height:.98;
+  }
+  .gateway-hero p{
+    font-size:.78rem;
+    line-height:1.45;
+  }
+  .cadet-access::after{
+    width:88px;
+    height:10px;
+  }
+  .cadet-access__heading{
+    padding-top:7px;
+  }
+}
