@@ -2,12 +2,13 @@ import {
   getProfiles, createProfile, setActiveProfile, clearActiveProfile, getActiveProfile,
   updateProfile, deleteProfile, exportProfile, importProfile
 } from "./storage.js?v=0.3.1";
-import { loadStudyData, renderLesson } from "./study.js?v=0.3.1";
+import { loadStudyData, loadStudyFile, renderLesson } from "./study.js?v=0.5.0";
 import { loadEvaluationData, renderExam, gradeExam, renderResult } from "./evaluation.js?v=0.3.1";
 
 const app = {
   profile: null,
   study: null,
+  studyCache: {},
   accessManual: null,
   curriculum: null,
   exam: null,
@@ -31,6 +32,27 @@ function profileStudy() { return app.profile.studies.sensores; }
 function profileAccessStudy() { return app.profile.studies.acceso; }
 function profilePractices() { return app.profile.practices.sensores; }
 function profileEvaluations() { return app.profile.evaluations.sensores; }
+function profileCatalogStudy(studyId) {
+  app.profile.studies.catalog = app.profile.studies.catalog || {};
+  app.profile.studies.catalog[studyId] = app.profile.studies.catalog[studyId] || { completedModules: [] };
+  return app.profile.studies.catalog[studyId];
+}
+
+function curriculumStudyStats() {
+  if (!app.curriculum || !app.profile) return { completed: 0, total: 0, percent: 0 };
+  let total = 0;
+  let completed = 0;
+  app.curriculum.years.forEach(function(year) {
+    year.trimesters.forEach(function(term) {
+      term.subjects.forEach(function(subject) {
+        if (typeof subject !== "object" || !subject.studyId) return;
+        total += Number(subject.unitCount || 0);
+        completed += (app.profile.studies?.catalog?.[subject.studyId]?.completedModules || []).length;
+      });
+    });
+  });
+  return { completed: completed, total: total, percent: total ? Math.round(completed / total * 100) : 0 };
+}
 
 function persistProfile() {
   app.profile = updateProfile(app.profile);
@@ -70,7 +92,10 @@ function renderProfileList() {
   }).forEach(function(profile) {
     const sensorModules = profile.studies?.sensores?.completedModules?.length || 0;
     const accessModules = profile.studies?.acceso?.completedModules?.length || 0;
-    const modules = sensorModules + accessModules;
+    const catalogModules = Object.values(profile.studies?.catalog || {}).reduce(function(sum,item) {
+      return sum + (item?.completedModules?.length || 0);
+    }, 0);
+    const modules = sensorModules + accessModules + catalogModules;
     const attempts = profile.evaluations?.sensores?.attempts || [];
     const best = attempts.length ? Math.max.apply(null, attempts.map(function(item){ return item.score; })) : null;
     const button = document.createElement("button");
@@ -149,12 +174,10 @@ function refreshProfileUI() {
     document.querySelector(selector).textContent = name;
   });
 
-  const completed = profileStudy().completedModules.length;
-  const total = app.study.modules.length;
-  const percent = studyPercent();
-  document.querySelector("#dashboard-study-progress").textContent = percent + "%";
-  document.querySelector("#dashboard-study-copy").textContent = completed + " de " + total + " unidades estudiadas.";
-  document.querySelector("#reader-completion").textContent = "PROGRESO " + percent + "%";
+  const curriculumStats = curriculumStudyStats();
+  document.querySelector("#dashboard-study-progress").textContent = curriculumStats.percent + "%";
+  document.querySelector("#dashboard-study-copy").textContent = curriculumStats.completed + " de " + curriculumStats.total + " unidades curriculares estudiadas.";
+  document.querySelector("#reader-completion").textContent = "PROGRESO " + currentStudyPercent() + "%";
 
   const practiced = profilePractices().completed.length;
   document.querySelector("#dashboard-practice-progress").textContent = practiced + "/" + app.practices.items.length;
@@ -225,10 +248,10 @@ function renderCurriculum() {
       : "";
 
     const supplementary = year.supplementary
-      ? '<div class="supplementary"><h3>Material complementario de Sensores</h3><div class="supplementary-grid">' +
+      ? '<div class="supplementary"><h3>Material complementario</h3><div class="supplementary-grid">' +
         year.supplementary.map(function(item) {
           return '<button data-open-study="' + item.studyId + '"><strong>' + escapeHtml(item.title) +
-            '</strong><small>Consulta transversal del Manual de Sensores</small></button>';
+            '</strong><small>Material académico complementario</small></button>';
         }).join("") + '</div></div>'
       : "";
 
@@ -241,6 +264,17 @@ function renderCurriculum() {
           supplementary +
         '</div></section>';
   });
+
+  if (app.curriculum.branchLibrary?.length) {
+    html += '<section class="curriculum-section"><header class="curriculum-section__header"><div>' +
+      '<span class="overline">BIBLIOTECA PROFESIONAL</span><h2>Ramas de especialización</h2>' +
+      '<p>Manuales completos de rama para 2.ª y 1.ª clase. Consultables sin bloquear el perfil.</p></div></header>' +
+      '<div class="curriculum-section__body"><div class="supplementary-grid">' +
+      app.curriculum.branchLibrary.map(function(item) {
+        return '<button data-open-study="' + item.studyId + '"><strong>' + escapeHtml(item.title) +
+          '</strong><small>' + item.unitCount + ' unidades profesionales · 2.ª y 1.ª clase</small></button>';
+      }).join("") + '</div></div></section>';
+  }
 
   curriculumContainer.innerHTML = html;
 }
@@ -267,11 +301,12 @@ function findStudyDefinition(studyId) {
           return {
             id: subject.studyId,
             title: subject.title,
-            code: "CIENCIAS / SENSORES",
-            subtitle: year.title + " · " + term.title,
-            units: subject.units,
-            source: "sensores",
-            label: "OPERACIONES DE SENSORES"
+            code: subject.courseId || "ACADEMIA",
+            subtitle: year.title + " · " + term.title + " · " + term.subtitle,
+            units: null,
+            source: subject.source || "course",
+            dataFile: subject.dataFile || null,
+            label: subject.courseId || "MATERIAL ACADÉMICO"
           };
         }
       }
@@ -292,21 +327,45 @@ function findStudyDefinition(studyId) {
     }
   }
 
+  for (const item of app.curriculum.branchLibrary || []) {
+    if (item.studyId === studyId) {
+      return {
+        id: item.studyId,
+        title: item.title,
+        code: "RAMA PROFESIONAL",
+        subtitle: "2.ª y 1.ª clase · Currículo de especialización",
+        units: null,
+        source: "branch",
+        dataFile: item.dataFile,
+        label: item.title.toUpperCase()
+      };
+    }
+  }
+
   return null;
 }
 
 function currentModules() {
   const definition = findStudyDefinition(app.currentStudyId);
   if (!definition) return [];
-  const sourceModules = definition.source === "acceso" ? app.accessManual.modules : app.study.modules;
-  return definition.units
-    .map(function(id) { return sourceModules.find(function(module) { return module.id === id; }); })
-    .filter(Boolean);
+  if (definition.source === "acceso") {
+    return definition.units.map(function(id) {
+      return app.accessManual.modules.find(function(module) { return module.id === id; });
+    }).filter(Boolean);
+  }
+  if (definition.source === "sensores") {
+    return definition.units.map(function(id) {
+      return app.study.modules.find(function(module) { return module.id === id; });
+    }).filter(Boolean);
+  }
+  return app.studyCache[app.currentStudyId]?.modules || [];
 }
 
 function currentStudyProgress() {
   const definition = findStudyDefinition(app.currentStudyId);
-  return definition && definition.source === "acceso" ? profileAccessStudy() : profileStudy();
+  if (definition?.source === "acceso") return profileAccessStudy();
+  if (definition?.source === "sensores") return profileStudy();
+  return profileCatalogStudy(app.currentStudyId);
 }
 
 function currentStudyPercent() {
@@ -317,9 +376,12 @@ function currentStudyPercent() {
   return Math.round(done / modules.length * 100);
 }
 
-function openStudy(studyId) {
+async function openStudy(studyId) {
   const definition = findStudyDefinition(studyId);
   if (!definition) return;
+  if ((definition.source === "course" || definition.source === "branch") && !app.studyCache[studyId]) {
+    app.studyCache[studyId] = await loadStudyFile(definition.dataFile);
+  }
   app.currentStudyId = studyId;
   app.activeModule = 0;
   document.querySelector("#subject-code").textContent = definition.code;
@@ -466,15 +528,16 @@ function submitEvaluation(form) {
 
 function renderRecord() {
   if (!app.profile || !app.study || !app.practices) return;
-  const modules = profileStudy().completedModules.length;
+  const stats = curriculumStudyStats();
+  const modules = stats.completed;
   const practices = profilePractices().completed.length;
   const attempts = profileEvaluations().attempts;
   const best = attempts.length ? Math.max.apply(null, attempts.map(function(a) { return a.score; })) : null;
   const last = attempts.length ? attempts[attempts.length - 1] : null;
 
   document.querySelector("#record-summary").innerHTML =
-    '<article class="record-item"><span>SENSORES · ESTUDIO</span><strong>' + modules + "/" + app.study.modules.length +
-    '</strong><p>Unidades marcadas como estudiadas.</p></article>' +
+    '<article class="record-item"><span>CURRÍCULO · ESTUDIO</span><strong>' + modules + "/" + stats.total +
+    '</strong><p>Unidades curriculares marcadas como estudiadas.</p></article>' +
     '<article class="record-item"><span>PRÁCTICAS</span><strong>' + practices + "/" + app.practices.items.length +
     '</strong><p>Ejercicios revisados.</p></article>' +
     '<article class="record-item"><span>MEJOR TEST</span><strong>' + (best === null ? "—" : best + "%") + "</strong><p>" +
@@ -490,7 +553,9 @@ document.addEventListener("click", function(event) {
   if (routeElement && app.profile) setRoute(routeElement.dataset.route);
 
   const studyElement = event.target.closest("[data-open-study]");
-  if (studyElement && app.profile) openStudy(studyElement.dataset.openStudy);
+  if (studyElement && app.profile) {
+    openStudy(studyElement.dataset.openStudy).catch(function(error) { alert(error.message); });
+  }
 
   const practiceElement = event.target.closest("[data-practice-id]");
   if (practiceElement) openPractice(practiceElement.dataset.practiceId);
