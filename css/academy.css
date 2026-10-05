@@ -229,6 +229,7 @@
 }
 .subject-item--available:hover{background:#eef7f2}
 .subject-item__meta{display:block;margin-top:3px;color:var(--muted);font-size:.72rem}
+.subject-item__method{display:block;margin-top:6px;color:#667687;font-size:.68rem;line-height:1.35}
 .subject-item__action{color:#2f7354;font-size:.72rem;font-weight:800;white-space:nowrap}
 .preacademy-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 18px;margin:0;padding:0;list-style:none}
 .preacademy-list li{padding:10px 12px;border-bottom:1px solid #edf1f4}
