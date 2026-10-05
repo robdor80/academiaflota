@@ -1,283 +1,283 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "course_id": "ROT-403",
-  "status": "generated_from_authoritative_curriculum",
+  "status": "editorially_aligned_with_developed_manual",
+  "source_manual": "gameplay/careers/academy_path/study_materials/fourth_class/ROT-403/MANUAL_v1_0.md",
   "question_count": 24,
+  "rule": "No question may require knowledge that is not explicitly taught in ROT-403 or established prerequisites.",
   "questions": [
     {
       "id": "ROT-403-Q001",
       "unit_id": "ROT-403-U01",
-      "type": "short_answer",
-      "prompt_es": "Explica flujo de órdenes y su relevancia operativa.",
+      "type": "procedure",
+      "prompt_es": "¿Cómo fluye una orden desde Mando hasta un resultado?",
       "answer_key_es": [
-        "flujo de órdenes",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "intención",
+        "interpretación",
+        "validación",
+        "ejecución",
+        "reporte"
       ]
     },
     {
       "id": "ROT-403-Q002",
       "unit_id": "ROT-403-U01",
-      "type": "compare",
-      "prompt_es": "Compara flujo de órdenes con coordinación. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué función general cumple Operaciones?",
       "answer_key_es": [
-        "flujo de órdenes",
-        "coordinación",
-        "diferencia aplicada"
+        "coordinar recursos",
+        "sistemas",
+        "apoyo de misión",
+        "prioridades"
       ]
     },
     {
       "id": "ROT-403-Q003",
       "unit_id": "ROT-403-U01",
-      "type": "scenario",
-      "prompt_es": "Situación: Rotación breve supervisada. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué una estación no funciona aislada?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "depende de otras",
+        "comparte información",
+        "coordina"
       ]
     },
     {
       "id": "ROT-403-Q004",
       "unit_id": "ROT-403-U01",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Puente y Operaciones y cómo lo corregirías.",
+      "type": "judgment",
+      "prompt_es": "¿Ocupar temporalmente una estación concede autoridad general?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "no",
+        "rotación supervisada",
+        "límites"
       ]
     },
     {
       "id": "ROT-403-Q005",
       "unit_id": "ROT-403-U02",
-      "type": "short_answer",
-      "prompt_es": "Explica estado y su relevancia operativa.",
+      "type": "knowledge",
+      "prompt_es": "¿Qué información observa Ingeniería?",
       "answer_key_es": [
-        "estado",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "sistemas",
+        "energía",
+        "daños",
+        "recursos",
+        "seguridad"
       ]
     },
     {
       "id": "ROT-403-Q006",
       "unit_id": "ROT-403-U02",
-      "type": "compare",
-      "prompt_es": "Compara estado con energía. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué más potencia tiene coste?",
       "answer_key_es": [
-        "estado",
-        "energía",
-        "diferencia aplicada"
+        "recurso compartido",
+        "afecta otros sistemas"
       ]
     },
     {
       "id": "ROT-403-Q007",
       "unit_id": "ROT-403-U02",
-      "type": "scenario",
-      "prompt_es": "Situación: Tarea técnica de baja complejidad. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "short_answer",
+      "prompt_es": "¿Para qué sirve mantenimiento preventivo?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "evitar fallos",
+        "detectar degradación",
+        "conservar capacidad"
       ]
     },
     {
       "id": "ROT-403-Q008",
       "unit_id": "ROT-403-U02",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Ingeniería y cómo lo corregirías.",
+      "type": "scenario",
+      "prompt_es": "La tarea real no coincide con el briefing. ¿Qué haces?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "detener/consultar",
+        "informar",
+        "no improvisar fuera de competencia"
       ]
     },
     {
       "id": "ROT-403-Q009",
       "unit_id": "ROT-403-U03",
-      "type": "short_answer",
-      "prompt_es": "Explica medición y su relevancia operativa.",
+      "type": "compare",
+      "prompt_es": "Diferencia Sensores y Ciencia.",
       "answer_key_es": [
         "medición",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "interpretación"
       ]
     },
     {
       "id": "ROT-403-Q010",
       "unit_id": "ROT-403-U03",
-      "type": "compare",
-      "prompt_es": "Compara medición con barrido. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "procedure",
+      "prompt_es": "¿Qué pasos revisas antes de un barrido guiado?",
       "answer_key_es": [
-        "medición",
-        "barrido",
-        "diferencia aplicada"
+        "objetivo",
+        "modo",
+        "configuración",
+        "ejecución",
+        "resultado"
       ]
     },
     {
       "id": "ROT-403-Q011",
       "unit_id": "ROT-403-U03",
-      "type": "scenario",
-      "prompt_es": "Situación: Barrido y entrega de datos. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué conservar incertidumbre?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "no exagerar conocimiento",
+        "decisiones correctas"
       ]
     },
     {
       "id": "ROT-403-Q012",
       "unit_id": "ROT-403-U03",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Ciencia y Sensores y cómo lo corregirías.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué debe contener un reporte inicial?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "observación",
+        "confianza",
+        "desconocidos",
+        "necesidad de análisis"
       ]
     },
     {
       "id": "ROT-403-Q013",
       "unit_id": "ROT-403-U04",
-      "type": "short_answer",
-      "prompt_es": "Explica plotting y su relevancia operativa.",
+      "type": "knowledge",
+      "prompt_es": "¿Qué necesita una solución de plotting?",
       "answer_key_es": [
-        "plotting",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "origen",
+        "destino",
+        "restricciones",
+        "capacidad",
+        "riesgos",
+        "ETA"
       ]
     },
     {
       "id": "ROT-403-Q014",
       "unit_id": "ROT-403-U04",
-      "type": "compare",
-      "prompt_es": "Compara plotting con rumbo. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué representa rumbo?",
       "answer_key_es": [
-        "plotting",
-        "rumbo",
-        "diferencia aplicada"
+        "dirección operacional"
       ]
     },
     {
       "id": "ROT-403-Q015",
       "unit_id": "ROT-403-U04",
-      "type": "scenario",
-      "prompt_es": "Situación: Preparar una ruta en simulador. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "judgment",
+      "prompt_es": "¿Qué haces si una orden de movimiento no puede ejecutarse?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "informar",
+        "explicar limitación",
+        "proponer alternativa si procede"
       ]
     },
     {
       "id": "ROT-403-Q016",
       "unit_id": "ROT-403-U04",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Navegación y vuelo y cómo lo corregirías.",
+      "type": "compare",
+      "prompt_es": "Diferencia decidir destino y ejecutar movimiento.",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "Mando/intención",
+        "Conn/Navegación/ejecución"
       ]
     },
     {
       "id": "ROT-403-Q017",
       "unit_id": "ROT-403-U05",
       "type": "short_answer",
-      "prompt_es": "Explica protección y su relevancia operativa.",
+      "prompt_es": "¿Qué observa el cadete en Seguridad?",
       "answer_key_es": [
         "protección",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "acceso",
+        "incidentes",
+        "riesgo",
+        "coordinación"
       ]
     },
     {
       "id": "ROT-403-Q018",
       "unit_id": "ROT-403-U05",
-      "type": "compare",
-      "prompt_es": "Compara protección con respuesta. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué observa en Medicina?",
       "answer_key_es": [
-        "protección",
-        "respuesta",
-        "diferencia aplicada"
+        "seguridad de escena",
+        "estado",
+        "triage",
+        "asistencia",
+        "relevo"
       ]
     },
     {
       "id": "ROT-403-Q019",
       "unit_id": "ROT-403-U05",
-      "type": "scenario",
-      "prompt_es": "Situación: Dos micro-rotaciones con casos controlados. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "knowledge",
+      "prompt_es": "¿Para qué sirve el triaje?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "priorizar pacientes",
+        "recursos limitados",
+        "urgencia"
       ]
     },
     {
       "id": "ROT-403-Q020",
       "unit_id": "ROT-403-U05",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Seguridad y Medicina y cómo lo corregirías.",
+      "type": "judgment",
+      "prompt_es": "¿Una micro-rotación concede cualificación profesional?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "no"
       ]
     },
     {
       "id": "ROT-403-Q021",
       "unit_id": "ROT-403-U06",
-      "type": "short_answer",
-      "prompt_es": "Explica intereses y su relevancia operativa.",
+      "type": "compare",
+      "prompt_es": "Diferencia interés y competencia.",
       "answer_key_es": [
-        "intereses",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "preferencia/motivación",
+        "capacidad demostrada"
       ]
     },
     {
       "id": "ROT-403-Q022",
       "unit_id": "ROT-403-U06",
-      "type": "compare",
-      "prompt_es": "Compara intereses con fortalezas. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué convierte una fortaleza en evidencia?",
       "answer_key_es": [
-        "intereses",
-        "fortalezas",
-        "diferencia aplicada"
+        "observaciones repetidas",
+        "resultados",
+        "feedback",
+        "contexto"
       ]
     },
     {
       "id": "ROT-403-Q023",
       "unit_id": "ROT-403-U06",
-      "type": "scenario",
-      "prompt_es": "Situación: Debrief con instructor. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué una dificultad puede ser útil?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "orienta entrenamiento",
+        "tutoría",
+        "autoconocimiento"
       ]
     },
     {
       "id": "ROT-403-Q024",
       "unit_id": "ROT-403-U06",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Reflexión profesional y cómo lo corregirías.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué produce el debrief final?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "registro descriptivo",
+        "intereses",
+        "fortalezas",
+        "dificultades",
+        "preguntas",
+        "no elección final"
       ]
     }
   ]
