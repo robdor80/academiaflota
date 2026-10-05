@@ -1,283 +1,277 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "course_id": "PHY-403",
-  "status": "generated_from_authoritative_curriculum",
+  "status": "editorially_aligned_with_developed_manual",
+  "source_manual": "gameplay/careers/academy_path/study_materials/fourth_class/PHY-403/MANUAL_v1_0.md",
   "question_count": 24,
+  "rule": "No question may require knowledge that is not explicitly taught in PHY-403 or established prerequisites.",
   "questions": [
     {
       "id": "PHY-403-Q001",
       "unit_id": "PHY-403-U01",
       "type": "short_answer",
-      "prompt_es": "Explica estado inicial y su relevancia operativa.",
+      "prompt_es": "¿Contra qué debe compararse el progreso?",
       "answer_key_es": [
         "estado inicial",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "historial propio"
       ]
     },
     {
       "id": "PHY-403-Q002",
       "unit_id": "PHY-403-U01",
-      "type": "compare",
-      "prompt_es": "Compara estado inicial con evidencia acumulada. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "judgment",
+      "prompt_es": "¿Una semana peor demuestra regresión?",
       "answer_key_es": [
-        "estado inicial",
-        "evidencia acumulada",
-        "diferencia aplicada"
+        "no",
+        "puede ser fluctuación",
+        "contexto"
       ]
     },
     {
       "id": "PHY-403-Q003",
       "unit_id": "PHY-403-U01",
-      "type": "scenario",
-      "prompt_es": "Situación: Comparar registros del año. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "knowledge",
+      "prompt_es": "Nombra tres tipos de evidencia acumulada.",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "sesiones",
+        "evaluaciones",
+        "actividad personal",
+        "incidencias",
+        "lesiones",
+        "descanso"
       ]
     },
     {
       "id": "PHY-403-Q004",
       "unit_id": "PHY-403-U01",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Revisión de progreso y cómo lo corregirías.",
+      "type": "compare",
+      "prompt_es": "Diferencia fluctuación y tendencia.",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "cambio corto plazo",
+        "patrón longitudinal"
       ]
     },
     {
       "id": "PHY-403-Q005",
       "unit_id": "PHY-403-U02",
-      "type": "short_answer",
-      "prompt_es": "Explica resistencia y su relevancia operativa.",
+      "type": "knowledge",
+      "prompt_es": "¿Qué dimensiones forman condición funcional?",
       "answer_key_es": [
         "resistencia",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "fuerza",
+        "movilidad",
+        "coordinación"
       ]
     },
     {
       "id": "PHY-403-Q006",
       "unit_id": "PHY-403-U02",
-      "type": "compare",
-      "prompt_es": "Compara resistencia con fuerza. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué no se resume todo en una cifra?",
       "answer_key_es": [
-        "resistencia",
-        "fuerza",
-        "diferencia aplicada"
+        "dimensiones distintas",
+        "contexto",
+        "biología"
       ]
     },
     {
       "id": "PHY-403-Q007",
       "unit_id": "PHY-403-U02",
-      "type": "scenario",
-      "prompt_es": "Situación: Sesión integrada. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué significa adecuación al servicio?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "capacidad segura/razonable para demandas comunes"
       ]
     },
     {
       "id": "PHY-403-Q008",
       "unit_id": "PHY-403-U02",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Condición funcional y cómo lo corregirías.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué biología modifica evaluación?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "especies/fisiología diferentes",
+        "estándar contextual"
       ]
     },
     {
       "id": "PHY-403-Q009",
       "unit_id": "PHY-403-U03",
       "type": "short_answer",
-      "prompt_es": "Explica planificación y su relevancia operativa.",
+      "prompt_es": "¿Qué significa autogestión?",
       "answer_key_es": [
-        "planificación",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "planificar carga",
+        "descanso",
+        "recuperación",
+        "prioridades",
+        "riesgos"
       ]
     },
     {
       "id": "PHY-403-Q010",
       "unit_id": "PHY-403-U03",
-      "type": "compare",
-      "prompt_es": "Compara planificación con carga. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "knowledge",
+      "prompt_es": "Nombra tres señales de riesgo.",
       "answer_key_es": [
-        "planificación",
-        "carga",
-        "diferencia aplicada"
+        "fatiga persistente",
+        "dolor",
+        "peor técnica",
+        "poco sueño",
+        "caída rendimiento"
       ]
     },
     {
       "id": "PHY-403-Q011",
       "unit_id": "PHY-403-U03",
-      "type": "scenario",
-      "prompt_es": "Situación: Diseñar semana realista. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué no existe un horario perfecto universal?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "contexto individual",
+        "obligaciones",
+        "recuperación"
       ]
     },
     {
       "id": "PHY-403-Q012",
       "unit_id": "PHY-403-U03",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Autogestión y cómo lo corregirías.",
+      "type": "scenario",
+      "prompt_es": "¿Cuándo debe pedirse ayuda?",
       "answer_key_es": [
-        "identificación del error",
+        "dolor/lesión",
+        "fatiga persistente",
         "riesgo",
-        "corrección",
-        "prevención"
+        "necesidad de ajuste"
       ]
     },
     {
       "id": "PHY-403-Q013",
       "unit_id": "PHY-403-U04",
       "type": "short_answer",
-      "prompt_es": "Explica prioridades y su relevancia operativa.",
+      "prompt_es": "¿Qué significa ajustar sin abandonar?",
       "answer_key_es": [
-        "prioridades",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "reducir carga manteniendo continuidad"
       ]
     },
     {
       "id": "PHY-403-Q014",
       "unit_id": "PHY-403-U04",
-      "type": "compare",
-      "prompt_es": "Compara prioridades con ajuste. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "knowledge",
+      "prompt_es": "¿Qué puede reducirse en semana de exámenes?",
       "answer_key_es": [
-        "prioridades",
-        "ajuste",
-        "diferencia aplicada"
+        "duración",
+        "intensidad",
+        "frecuencia"
       ]
     },
     {
       "id": "PHY-403-Q015",
       "unit_id": "PHY-403-U04",
-      "type": "scenario",
-      "prompt_es": "Situación: Adaptar rutina durante exámenes. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué significa consistencia?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "continuidad sostenible",
+        "no repetir exactamente"
       ]
     },
     {
       "id": "PHY-403-Q016",
       "unit_id": "PHY-403-U04",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Entrenamiento bajo carga académica y cómo lo corregirías.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué proteger sueño puede ser prioritario?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "recuperación",
+        "rendimiento académico/físico"
       ]
     },
     {
       "id": "PHY-403-Q017",
       "unit_id": "PHY-403-U05",
-      "type": "short_answer",
-      "prompt_es": "Explica aficiones y su relevancia operativa.",
+      "type": "judgment",
+      "prompt_es": "¿Una actividad personal se convierte automáticamente en nota?",
       "answer_key_es": [
-        "aficiones",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "no",
+        "evidencia separada"
       ]
     },
     {
       "id": "PHY-403-Q018",
       "unit_id": "PHY-403-U05",
-      "type": "compare",
-      "prompt_es": "Compara aficiones con evidencia. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué significa transferencia?",
       "answer_key_es": [
-        "aficiones",
-        "evidencia",
-        "diferencia aplicada"
+        "una capacidad ayuda a otra",
+        "no cualificación automática"
       ]
     },
     {
       "id": "PHY-403-Q019",
       "unit_id": "PHY-403-U05",
-      "type": "scenario",
-      "prompt_es": "Situación: Registrar actividad personal sin convertirla en nota de PHY. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "knowledge",
+      "prompt_es": "¿Qué debe contener un registro de actividad personal?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "actividad",
+        "duración",
+        "regularidad",
+        "contexto",
+        "relevancia"
       ]
     },
     {
       "id": "PHY-403-Q020",
       "unit_id": "PHY-403-U05",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Actividad personal y Academia y cómo lo corregirías.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué una afición puede ser valiosa aunque no sea obligatoria?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "motivación",
+        "continuidad",
+        "evidencia",
+        "vida del personaje"
       ]
     },
     {
       "id": "PHY-403-Q021",
       "unit_id": "PHY-403-U06",
-      "type": "short_answer",
-      "prompt_es": "Explica continuidad futura y su relevancia operativa.",
+      "type": "knowledge",
+      "prompt_es": "¿Qué persiste al cerrar el año?",
       "answer_key_es": [
-        "continuidad futura",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "hábitos",
+        "experiencia",
+        "estado",
+        "fortalezas",
+        "mejoras"
       ]
     },
     {
       "id": "PHY-403-Q022",
       "unit_id": "PHY-403-U06",
-      "type": "compare",
-      "prompt_es": "Compara continuidad futura con hábitos. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "knowledge",
+      "prompt_es": "¿Qué resultados descriptivos puede producir el curso?",
       "answer_key_es": [
-        "continuidad futura",
-        "hábitos",
-        "diferencia aplicada"
+        "apto",
+        "apto con apoyo recomendado",
+        "recuperación concreta"
       ]
     },
     {
       "id": "PHY-403-Q023",
       "unit_id": "PHY-403-U06",
-      "type": "scenario",
-      "prompt_es": "Situación: Plan longitudinal para 3.ª clase. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué una recomendación no es una etiqueta permanente?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "orienta",
+        "puede cambiar con progreso"
       ]
     },
     {
       "id": "PHY-403-Q024",
       "unit_id": "PHY-403-U06",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Cierre anual y cómo lo corregirías.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué puede incluir un plan para 3.ª clase?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "mantener rutina",
+        "corregir debilidad",
+        "afición",
+        "apoyo",
+        "adaptar carga"
       ]
     }
   ]
