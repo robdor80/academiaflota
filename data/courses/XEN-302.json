@@ -1,7 +1,7 @@
 {
   "subject": "Relaciones interespecies y contacto",
   "code": "XEN-302",
-  "version": "1.0",
+  "version": "1.1",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/XEN-302/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/XEN-302/MANUAL_v1_0.md",
@@ -20,30 +20,27 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Trabajar con personas y culturas distintas sin suponer que los patrones humanos son universales."
+          "text": "Biología, cultura, costumbre e individuo son capas distintas. Una tendencia cultural puede orientar una pregunta, pero no predecir automáticamente a la persona."
         },
         {
-          "type": "heading",
-          "text": "Contenidos"
+          "type": "definition",
+          "term": "Biología",
+          "text": "Características fisiológicas de una especie."
         },
         {
-          "type": "bullets",
-          "items": [
-            "biología",
-            "cultura",
-            "costumbre",
-            "individuo"
-          ]
+          "type": "definition",
+          "term": "Cultura",
+          "text": "Valores, normas y prácticas compartidas."
         },
         {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Separar hechos de estereotipos."
+          "type": "definition",
+          "term": "Costumbre",
+          "text": "Práctica concreta dentro de un grupo."
         },
         {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Ejercicio."
+          "type": "definition",
+          "term": "Individuo",
+          "text": "Persona con historia y decisiones propias."
         },
         {
           "type": "heading",
@@ -52,24 +49,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica biología en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Separar hechos de estereotipos.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/federation/member_worlds/founding_members.json",
-            "localization/terminology/starfleet_terms.json"
+            "Diferencia las cuatro capas.",
+            "¿Qué convierte una generalización en estereotipo?",
+            "¿Por qué existe variación interna?",
+            "¿Qué error aparece al confundir biología y cultura?",
+            "¿Cómo se usa conocimiento cultural previo?"
           ]
         }
       ]
@@ -81,30 +65,26 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Trabajar con personas y culturas distintas sin suponer que los patrones humanos son universales."
+          "text": "El contexto, jerarquía, formalidad, relación y situación pueden cambiar el significado social de un mensaje."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Ante un malentendido"
         },
         {
-          "type": "bullets",
+          "type": "numbered",
           "items": [
-            "contexto",
-            "tono",
-            "tabúes",
-            "malentendidos"
+            "No atribuir intención negativa de inmediato",
+            "Revisar contexto",
+            "Pedir aclaración",
+            "Adaptar forma",
+            "Registrar si es operativamente relevante"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Escena de conversación."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación de comunicación."
+          "label": "ESCUCHA",
+          "text": "Escuchar implica confirmar, resumir, preguntar y reconocer ambigüedad."
         },
         {
           "type": "heading",
@@ -113,24 +93,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica contexto en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Escena de conversación.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/federation/member_worlds/founding_members.json",
-            "localization/terminology/starfleet_terms.json"
+            "¿Qué cambia el significado social?",
+            "¿Por qué tono puede variar?",
+            "Nombra tabúes posibles.",
+            "¿Qué pasos ayudan ante malentendido?",
+            "¿Qué implica escucha profesional?"
           ]
         }
       ]
@@ -142,30 +109,20 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Trabajar con personas y culturas distintas sin suponer que los patrones humanos son universales."
+          "text": "Antes de un encuentro formal conviene revisar participantes, autoridad, propósito, protocolo conocido, símbolos relevantes y límites de seguridad."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Hospitalidad y símbolos"
         },
         {
-          "type": "bullets",
-          "items": [
-            "presentación",
-            "hospitalidad",
-            "símbolos",
-            "espacio personal contextual"
-          ]
+          "type": "p",
+          "text": "Comida, regalos, emblemas o posición en una sala pueden tener significado ritual o político; no se presumen neutrales."
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Preparar encuentro formal."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Caso práctico."
+          "label": "PRUDENCIA",
+          "text": "Cuando existe duda, es preferible una forma formal y prudente hasta confirmar el protocolo."
         },
         {
           "type": "heading",
@@ -174,24 +131,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica presentación en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Preparar encuentro formal.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/federation/member_worlds/founding_members.json",
-            "localization/terminology/starfleet_terms.json"
+            "¿Qué conviene conocer antes de un encuentro?",
+            "¿Por qué una forma prudente ayuda?",
+            "¿Qué significados puede tener hospitalidad?",
+            "¿Por qué importan símbolos?",
+            "¿Es universal el espacio personal?"
           ]
         }
       ]
@@ -203,30 +147,26 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Trabajar con personas y culturas distintas sin suponer que los patrones humanos son universales."
+          "text": "El Traductor Universal ayuda a convertir lenguaje, pero no garantiza equivalencia perfecta, comprensión cultural o intención correcta."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Fuentes de ambigüedad"
         },
         {
           "type": "bullets",
           "items": [
-            "traducción",
-            "ambigüedad",
-            "conceptos no equivalentes",
-            "fallo"
+            "Polisemia",
+            "Ironía",
+            "Uso ritual",
+            "Referencia histórica",
+            "Conceptos sin equivalente"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Resolver malentendido de traducción."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Práctica."
+          "label": "SEÑAL DE ALERTA",
+          "text": "Una respuesta ilógica o un término que cambia de sentido puede indicar problema de traducción."
         },
         {
           "type": "heading",
@@ -235,24 +175,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica traducción en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Resolver malentendido de traducción.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/federation/member_worlds/founding_members.json",
-            "localization/terminology/starfleet_terms.json"
+            "¿Qué no garantiza el Traductor Universal?",
+            "¿Qué crea ambigüedad?",
+            "¿Qué hacer con concepto sin equivalente?",
+            "¿Por qué puede fallar?",
+            "¿Qué señales sugieren problema?"
           ]
         }
       ]
@@ -264,30 +191,16 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Trabajar con personas y culturas distintas sin suponer que los patrones humanos son universales."
-        },
-        {
-          "type": "heading",
-          "text": "Contenidos"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "observación",
-            "autoridad",
-            "preparación",
-            "riesgo cultural"
-          ]
+          "text": "Primer Contacto exige observar antes de intervenir y revisar datos, misión, Primera Directiva, equipo, traducción, protocolo y contingencias."
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Planificar fase inicial supervisada."
+          "label": "AUTORIDAD",
+          "text": "Un cadete no inicia una política de Primer Contacto por decisión propia; participa dentro de una misión y supervisión."
         },
         {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación de criterio."
+          "type": "p",
+          "text": "Una acción pequeña puede revelar tecnología, alterar poder interno o ser interpretada como compromiso."
         },
         {
           "type": "heading",
@@ -296,24 +209,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica observación en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Planificar fase inicial supervisada.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/federation/member_worlds/founding_members.json",
-            "localization/terminology/starfleet_terms.json"
+            "¿Por qué observar antes de intervenir?",
+            "¿Qué se revisa antes del contacto?",
+            "¿Puede un cadete iniciarlo por su cuenta?",
+            "¿Qué riesgos culturales puede crear una acción pequeña?",
+            "¿Qué hacer cuando falta información?"
           ]
         }
       ]
@@ -324,31 +224,33 @@
       "subtitle": "UNIDAD 06 · XEN-302",
       "blocks": [
         {
-          "type": "p",
-          "text": "Trabajar con personas y culturas distintas sin suponer que los patrones humanos son universales."
+          "type": "definition",
+          "term": "Posición",
+          "text": "Lo que una parte dice que quiere."
+        },
+        {
+          "type": "definition",
+          "term": "Interés",
+          "text": "La necesidad o motivo que intenta proteger."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Desescalada"
         },
         {
           "type": "bullets",
           "items": [
-            "intereses",
-            "posición",
-            "escucha",
-            "desescalada"
+            "Bajar tono",
+            "Aclarar intención",
+            "Ofrecer pausa",
+            "Separar problema técnico de político",
+            "Proponer opción reversible"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Negociación breve controlada."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Debrief."
+          "label": "LÍMITES",
+          "text": "Un cadete no puede prometer tratados, recursos importantes o compromisos políticos sin autoridad."
         },
         {
           "type": "heading",
@@ -357,27 +259,15 @@
         {
           "type": "numbered",
           "items": [
-            "Explica intereses en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Negociación breve controlada.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/federation/member_worlds/founding_members.json",
-            "localization/terminology/starfleet_terms.json"
+            "Diferencia posición e interés.",
+            "¿Qué busca una buena escucha?",
+            "Nombra técnicas de desescalada.",
+            "¿Qué no puede prometer un cadete?",
+            "¿Por qué no acuerdo no siempre es fracaso?"
           ]
         }
       ]
     }
-  ]
+  ],
+  "status": "developed_content"
 }
