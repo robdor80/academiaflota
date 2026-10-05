@@ -1,7 +1,7 @@
 {
   "subject": "Ciencia, sensores y método científico I",
   "code": "SCI-403",
-  "version": "1.0",
+  "version": "1.1",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/SCI-403/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/SCI-403/MANUAL_v1_0.md",
@@ -21,31 +21,16 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Separar medición de interpretación y enseñar los fundamentos de observación científica y sensores."
+          "text": "SCI-403 empieza separando observación de explicación. Observar describe lo detectado; una hipótesis propone una causa que debe poder contrastarse."
         },
         {
-          "type": "heading",
-          "text": "Contenidos"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "observación",
-            "pregunta",
-            "hipótesis",
-            "evidencia",
-            "revisión"
-          ]
+          "type": "quote",
+          "text": "observación → pregunta → hipótesis → evidencia → revisión"
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Analizar una observación sencilla."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Ejercicio razonado."
+          "label": "REGLA",
+          "text": "El objetivo no es acertar a la primera, sino construir una explicación compatible con los datos y revisarla cuando cambian."
         },
         {
           "type": "heading",
@@ -54,25 +39,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras observación.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Analizar una observación sencilla.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/science/sensor_analysis_model.json",
-            "gameplay/ship_operations/consoles/sensors/README.md",
-            "gameplay/ship_operations/sensor_resolution/README.md"
+            "Diferencia observación e hipótesis.",
+            "¿Para qué sirve formular una pregunta?",
+            "¿Qué hace útil una hipótesis?",
+            "¿Una sola lectura demuestra siempre una causa?",
+            "¿Qué haces si nueva evidencia contradice tu explicación?"
           ]
         }
       ]
@@ -84,30 +55,29 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Separar medición de interpretación y enseñar los fundamentos de observación científica y sensores."
+          "text": "Toda medición tiene límites. El cadete debe leer valor, calidad, confianza, incertidumbre y condiciones de observación."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Factores"
         },
         {
           "type": "bullets",
           "items": [
-            "precisión",
-            "ruido",
-            "error",
-            "límite de detección"
+            "Precisión",
+            "Ruido",
+            "Error/margen",
+            "Límite de detección"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Comparar lecturas con distinta calidad."
+          "label": "NO DETECTADO ≠ INEXISTENTE",
+          "text": "Una señal puede existir y ser demasiado débil para la configuración disponible."
         },
         {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación aplicada."
+          "type": "p",
+          "text": "El proyecto admite resultados confirmado, alta confianza, estimado, hipótesis, desconocido o contradictorio."
         },
         {
           "type": "heading",
@@ -116,25 +86,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras precisión.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Comparar lecturas con distinta calidad.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/science/sensor_analysis_model.json",
-            "gameplay/ship_operations/consoles/sensors/README.md",
-            "gameplay/ship_operations/sensor_resolution/README.md"
+            "¿Por qué una medición no es perfecta?",
+            "¿Qué puede mejorar precisión?",
+            "¿Qué es ruido?",
+            "¿Qué significa límite de detección?",
+            "¿Por qué debe mostrarse confianza?"
           ]
         }
       ]
@@ -146,30 +102,44 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Separar medición de interpretación y enseñar los fundamentos de observación científica y sensores."
+          "text": "Un sensor detecta y mide propiedades observables: existencia de señal, procedencia, cambio, firmas y confianza."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Estados de detección"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "No detectado",
+            "Traza detectada",
+            "Detectado sin clasificar",
+            "Parcialmente resuelto",
+            "Resuelto"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Firmas"
         },
         {
           "type": "bullets",
           "items": [
-            "detección",
-            "medición",
-            "firma",
-            "canales generales"
+            "Electromagnética",
+            "Subespacial",
+            "Gravimétrica",
+            "Térmica",
+            "Radiación",
+            "Partículas",
+            "Biológica",
+            "Warp",
+            "Transpondedor artificial"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Relacionar fenómeno con medición posible."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Caso conceptual."
+          "label": "DETECCIÓN ≠ IDENTIDAD",
+          "text": "Una firma compatible con una nave no demuestra automáticamente una nave concreta."
         },
         {
           "type": "heading",
@@ -178,25 +148,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras detección.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Relacionar fenómeno con medición posible.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/science/sensor_analysis_model.json",
-            "gameplay/ship_operations/consoles/sensors/README.md",
-            "gameplay/ship_operations/sensor_resolution/README.md"
+            "¿Qué hace un sensor?",
+            "Diferencia detección y clasificación.",
+            "¿Qué es una firma?",
+            "¿Por qué una coincidencia no es certeza?",
+            "¿Qué riesgo tiene filtrar demasiado?"
           ]
         }
       ]
@@ -207,31 +163,23 @@
       "subtitle": "UNIDAD 04 · SCI-403",
       "blocks": [
         {
+          "type": "definition",
+          "term": "Pasivo",
+          "text": "Observa señales disponibles con menor exposición, pero puede obtener menos información."
+        },
+        {
+          "type": "definition",
+          "term": "Activo",
+          "text": "Usa una emisión o interacción deliberada para mejorar observación, con costes de recursos o detectabilidad."
+        },
+        {
+          "type": "callout",
+          "label": "NO HAY MODO SIEMPRE MEJOR",
+          "text": "La elección depende de misión, riesgo, distancia, interferencia, discreción y necesidad de detalle."
+        },
+        {
           "type": "p",
-          "text": "Separar medición de interpretación y enseñar los fundamentos de observación científica y sensores."
-        },
-        {
-          "type": "heading",
-          "text": "Contenidos"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "ventajas",
-            "costes",
-            "exposición",
-            "contexto"
-          ]
-        },
-        {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Elegir modo en situaciones sencillas."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Caso de decisión."
+          "text": "Una opción técnicamente válida pero inapropiada puede ejecutarse: eso es un error profesional del operador, no de interfaz."
         },
         {
           "type": "heading",
@@ -240,25 +188,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras ventajas.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Elegir modo en situaciones sencillas.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/science/sensor_analysis_model.json",
-            "gameplay/ship_operations/consoles/sensors/README.md",
-            "gameplay/ship_operations/sensor_resolution/README.md"
+            "¿Qué caracteriza al pasivo?",
+            "¿Qué puede aportar el activo?",
+            "¿Qué coste estratégico puede tener?",
+            "¿Por qué no existe un modo siempre mejor?",
+            "¿Qué ocurre con una elección válida pero poco adecuada?"
           ]
         }
       ]
@@ -270,30 +204,37 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Separar medición de interpretación y enseñar los fundamentos de observación científica y sensores."
+          "text": "Un contacto representa conocimiento persistente sobre algo detectado; no es una copia de la entidad oculta del World State."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Ficha de contacto"
         },
         {
           "type": "bullets",
           "items": [
-            "contacto",
-            "tracking inicial",
-            "readout",
-            "Science como interpretación"
+            "Posición estimada",
+            "Distancia",
+            "Vector",
+            "Velocidad estimada",
+            "Firmas",
+            "Confianza",
+            "Clasificación",
+            "Historial"
           ]
         },
         {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Distinguir datos de conclusión."
+          "type": "heading",
+          "text": "Tracking"
+        },
+        {
+          "type": "p",
+          "text": "Seguimiento actualiza posición, rumbo, velocidad y trayectoria probable sin revelar mágicamente la naturaleza del contacto."
         },
         {
           "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Práctica con lecturas."
+          "label": "SENSORES MIDE · CIENCIA INTERPRETA",
+          "text": "La interpretación científica se añade a la ficha común sin borrar las lecturas originales ni su procedencia."
         },
         {
           "type": "heading",
@@ -302,25 +243,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras contacto.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Distinguir datos de conclusión.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/science/sensor_analysis_model.json",
-            "gameplay/ship_operations/consoles/sensors/README.md",
-            "gameplay/ship_operations/sensor_resolution/README.md"
+            "¿Qué representa un contacto?",
+            "¿Qué puede mejorar un tracking?",
+            "¿Qué conserva un readout?",
+            "Diferencia Sensores y Ciencia.",
+            "¿Por qué una ficha compartida no crea omnisciencia?"
           ]
         }
       ]
@@ -332,30 +259,55 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Separar medición de interpretación y enseñar los fundamentos de observación científica y sensores."
+          "text": "Esta unidad conecta directamente con la consola funcional de Sensores del juego."
+        },
+        {
+          "type": "quote",
+          "text": "tipo → modo → área/objetivo → resolución → filtros → prioridad → duración → revisar → ejecutar"
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Tipos y objetivo"
         },
         {
           "type": "bullets",
           "items": [
-            "objetivo",
-            "configuración preparada",
-            "resultado",
-            "registro"
+            "Corto alcance",
+            "Largo alcance",
+            "Focalizado: requiere objetivo concreto"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Filtros y prioridad"
+        },
+        {
+          "type": "p",
+          "text": "El filtro define qué firmas se buscan. La prioridad indica cuál recibe atención preferente sin excluir necesariamente las demás."
+        },
+        {
+          "type": "heading",
+          "text": "Resultados válidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Traza",
+            "Posible contacto",
+            "Señal intermitente",
+            "Lectura insuficiente",
+            "Detectado sin clasificar"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Ejecutar un scan guiado en consola real cuando exista."
+          "label": "REPETIR NO ES MAGIA",
+          "text": "Con la misma configuración y condiciones, repetir el mismo barrido no debe revelar mágicamente más."
         },
         {
           "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación práctica."
+          "label": "ERROR HUMANO",
+          "text": "Si la orden era sector 041 y el operador configura 014, la consola puede ejecutar 014 si es técnicamente válido."
         },
         {
           "type": "heading",
@@ -364,28 +316,16 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras objetivo.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Ejecutar un scan guiado en consola real cuando exista.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/science/sensor_analysis_model.json",
-            "gameplay/ship_operations/consoles/sensors/README.md",
-            "gameplay/ship_operations/sensor_resolution/README.md"
+            "¿Qué pasos configuran un barrido?",
+            "¿Qué exige un focalizado?",
+            "Diferencia filtro y prioridad.",
+            "¿Por qué la duración importa?",
+            "¿Repetir lo mismo revela más?",
+            "¿Qué ocurre ante un sector válido pero equivocado?"
           ]
         }
       ]
     }
-  ]
+  ],
+  "status": "developed_content"
 }
