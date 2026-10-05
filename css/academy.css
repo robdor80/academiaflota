@@ -102,6 +102,17 @@
 .access-footnote{margin-top:20px;padding-top:18px;border-top:1px solid rgba(255,255,255,.1)}
 .access-footnote strong{display:block;color:#e8edf2;font-size:.78rem}
 .access-footnote p{margin:5px 0 0;color:#91a1af;font-size:.77rem;line-height:1.5}
+.cloud-account{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:24px;padding-bottom:20px;border-bottom:1px solid rgba(255,255,255,.12)}
+.cloud-account strong,.cloud-account small{display:block}
+.cloud-account strong{margin-top:5px;color:#fff;font-size:.95rem}
+.cloud-account small{margin-top:4px;color:#aebbc7;font-size:.77rem;line-height:1.4}
+.cloud-account .button{flex:0 0 auto}
+.cloud-account .text-button{color:var(--gold-soft);white-space:nowrap}
+.migration-notice{margin:0 0 22px;padding:16px;border:1px solid rgba(210,173,99,.4);border-radius:8px;background:rgba(210,173,99,.09)}
+.migration-notice p{margin:0 0 12px;color:inherit;font-size:.85rem;line-height:1.5}
+.migration-notice .button{min-height:38px}
+.settings-section .migration-notice{margin:18px 0 0;background:#fff8e9;color:var(--ink)}
+.desktop-sidebar__account>[data-sidebar-sync-status]{display:block;margin:0 0 18px;color:var(--gold-soft);font-size:.7rem;line-height:1.4}
 .gateway__footer{
   display:flex;
   justify-content:space-between;
@@ -353,6 +364,11 @@
 .profile-form input{min-height:44px;padding:0 12px;border:1px solid #aebbc8;border-radius:6px;background:#fff}
 .settings-import{display:inline-flex;align-items:center}
 .settings-panel__footer{padding:22px 28px;color:#7a8794;font-size:.75rem}
+
+@media (max-width:767px){
+  .cloud-account{align-items:flex-start;flex-direction:column}
+  .cloud-account .button{width:100%}
+}
 
 
 /* v0.3.1 — Manual del Candidato / preparación para el acceso */

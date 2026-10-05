@@ -45,6 +45,8 @@ Cada bloque muestra el ciclo académico:
 
 Los perfiles locales guardan únicamente progreso de estudio, prácticas y resultados de test. No forman parte de la partida del videojuego.
 
+La sincronización opcional entre dispositivos utiliza Google Authentication y Cloud Firestore. Mientras Firebase no esté configurado, la web continúa en modo local. Configuración y migración: [FIREBASE_SETUP.md](FIREBASE_SETUP.md).
+
 ### Responsive
 
 Diseñado y adaptado para:
