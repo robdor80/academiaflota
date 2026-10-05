@@ -1,7 +1,7 @@
 {
   "subject": "Operaciones de puente y coordinación",
   "code": "OPS-301",
-  "version": "1.0",
+  "version": "1.1",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/OPS-301/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/OPS-301/MANUAL_v1_0.md",
@@ -21,30 +21,26 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Participar de forma supervisada en el flujo operativo de un puente."
+          "text": "El puente es un sistema de trabajo distribuido: la información, la autoridad y la capacidad de actuar están repartidas entre estaciones y personas."
         },
         {
-          "type": "heading",
-          "text": "Contenidos"
+          "type": "quote",
+          "text": "detección → interpretación → decisión → ejecución → resultado → actualización"
         },
         {
-          "type": "bullets",
-          "items": [
-            "roles",
-            "estaciones",
-            "mando",
-            "flujo de información"
-          ]
+          "type": "definition",
+          "term": "Rol",
+          "text": "Responsabilidad profesional del personaje."
         },
         {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Observar y reconstruir el flujo de una guardia."
+          "type": "definition",
+          "term": "Estación",
+          "text": "Interfaz desde la que se ejercen determinadas funciones."
         },
         {
           "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Mapa de responsabilidades."
+          "label": "MANDO",
+          "text": "Mando mantiene intención y prioridad, asigna tareas y resuelve decisiones que exceden a una estación individual."
         },
         {
           "type": "heading",
@@ -53,25 +49,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica roles en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Observar y reconstruir el flujo de una guardia.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/ship_operations/bridge_station_model.json",
-            "gameplay/ship_operations/operational_event_log/README.md",
-            "gameplay/orders/starfleet_mission_tasking_order.json"
+            "¿Por qué el puente es distribuido?",
+            "Diferencia rol y estación.",
+            "¿Qué conserva Mando?",
+            "¿Qué hace útil el flujo de información?",
+            "¿Cómo reconstruyes un evento?"
           ]
         }
       ]
@@ -83,30 +65,29 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Participar de forma supervisada en el flujo operativo de un puente."
+          "text": "Una orden debe poder recibirse, comprenderse, ejecutarse y cerrarse. El acuse confirma recepción; no equivale a finalización."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Si la orden no es clara"
         },
         {
           "type": "bullets",
           "items": [
-            "emisión",
-            "acuse",
-            "ejecución",
-            "reporte de finalización"
+            "Pedir aclaración",
+            "Informar limitación",
+            "Ofrecer alternativa cuando proceda",
+            "No adivinar"
           ]
         },
         {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Ejecutar órdenes simples en simulador."
+          "type": "p",
+          "text": "Durante la ejecución deben comunicarse bloqueos, demoras o cambios que alteren la intención de mando."
         },
         {
           "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Práctica de precisión."
+          "label": "CIERRE",
+          "text": "El reporte final indica qué se hizo, qué resultado hubo, anomalías y pendientes."
         },
         {
           "type": "heading",
@@ -115,25 +96,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica emisión en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Ejecutar órdenes simples en simulador.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/ship_operations/bridge_station_model.json",
-            "gameplay/ship_operations/operational_event_log/README.md",
-            "gameplay/orders/starfleet_mission_tasking_order.json"
+            "Diferencia acuse y finalización.",
+            "¿Qué haces ante ambigüedad?",
+            "¿Qué bloqueos deben reportarse?",
+            "¿Qué incluye cierre?",
+            "¿Por qué no se debe fingir cumplimiento imposible?"
           ]
         }
       ]
@@ -145,30 +112,31 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Participar de forma supervisada en el flujo operativo de un puente."
+          "text": "Muchas tareas requieren varias estaciones. Una petición interconsola debe indicar necesidad, motivo, prioridad, contexto mínimo y momento."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Bloqueos"
         },
         {
           "type": "bullets",
           "items": [
-            "dependencias",
-            "peticiones",
-            "prioridades",
-            "bloqueos"
+            "Técnico",
+            "Energético",
+            "Operativo",
+            "Legal",
+            "Autorización",
+            "Información"
           ]
         },
         {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Resolver una tarea que requiere tres estaciones."
+          "type": "p",
+          "text": "Si dos estaciones compiten por recursos o autoridad, el operador identifica el conflicto y lo eleva a quien pueda decidir."
         },
         {
           "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación de teamwork."
+          "label": "HANDOFF",
+          "text": "Cuando otra estación asume parte del problema recibe contexto, datos, procedencia, prioridad y estado actual."
         },
         {
           "type": "heading",
@@ -177,25 +145,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica dependencias en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Resolver una tarea que requiere tres estaciones.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/ship_operations/bridge_station_model.json",
-            "gameplay/ship_operations/operational_event_log/README.md",
-            "gameplay/orders/starfleet_mission_tasking_order.json"
+            "¿Qué es una dependencia?",
+            "¿Qué contiene una petición?",
+            "¿Quién resuelve prioridades superiores?",
+            "Nombra tres bloqueos.",
+            "¿Qué conserva un handoff?"
           ]
         }
       ]
@@ -207,30 +161,34 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Participar de forma supervisada en el flujo operativo de un puente."
+          "text": "La imagen operativa común resume lo relevante para la misión: estado de nave, contactos, riesgos, tareas, restricciones e incidencias."
+        },
+        {
+          "type": "p",
+          "text": "No es una copia de todos los datos. Debe evitar ruido y conservar incertidumbre."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Contactos y riesgos"
+        },
+        {
+          "type": "p",
+          "text": "Un contacto provisional sigue siendo provisional. Los peligros ocultos del World State no aparecen si la tripulación no los conoce."
+        },
+        {
+          "type": "heading",
+          "text": "Orden de misión"
         },
         {
           "type": "bullets",
           "items": [
-            "estado de nave",
-            "contactos",
-            "misión",
-            "riesgos"
+            "Autoridad",
+            "Objetivo",
+            "Prioridad",
+            "Área o destino",
+            "Restricciones",
+            "Requisitos de informe"
           ]
-        },
-        {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Mantener un resumen de situación."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Práctica de actualización."
         },
         {
           "type": "heading",
@@ -239,25 +197,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica estado de nave en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Mantener un resumen de situación.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/ship_operations/bridge_station_model.json",
-            "gameplay/ship_operations/operational_event_log/README.md",
-            "gameplay/orders/starfleet_mission_tasking_order.json"
+            "¿Qué es imagen operativa común?",
+            "¿Por qué no incluye todo?",
+            "¿Cómo presentas contacto incierto?",
+            "¿Qué contiene una orden?",
+            "¿Puede mostrar un peligro oculto?"
           ]
         }
       ]
@@ -269,29 +213,22 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Participar de forma supervisada en el flujo operativo de un puente."
+          "text": "Una incidencia se resuelve localmente si está dentro de función, autoridad y riesgo controlable. Se escala cuando excede autoridad, cruza departamentos o afecta misión o seguridad."
         },
         {
-          "type": "heading",
-          "text": "Contenidos"
+          "type": "definition",
+          "term": "Urgencia",
+          "text": "Cuánto importa el tiempo de respuesta."
         },
         {
-          "type": "bullets",
-          "items": [
-            "qué resolver localmente",
-            "qué informar",
-            "urgencia"
-          ]
-        },
-        {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Clasificar y escalar incidencias."
+          "type": "definition",
+          "term": "Gravedad",
+          "text": "Magnitud potencial del impacto."
         },
         {
           "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Caso aplicado."
+          "label": "EQUILIBRIO",
+          "text": "Escalar todo satura; no escalar nada oculta riesgos y fuerza decisiones fuera de autoridad."
         },
         {
           "type": "heading",
@@ -300,25 +237,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica qué resolver localmente en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Clasificar y escalar incidencias.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/ship_operations/bridge_station_model.json",
-            "gameplay/ship_operations/operational_event_log/README.md",
-            "gameplay/orders/starfleet_mission_tasking_order.json"
+            "¿Cuándo resolver localmente?",
+            "¿Cuándo informar?",
+            "¿Cuándo escalar?",
+            "Diferencia urgencia y gravedad.",
+            "¿Qué causa escalar demasiado o poco?"
           ]
         }
       ]
@@ -330,30 +253,31 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Participar de forma supervisada en el flujo operativo de un puente."
+          "text": "La guardia supervisada integra rutina, órdenes, contactos, coordinación, un evento inesperado y relevo."
+        },
+        {
+          "type": "p",
+          "text": "No siempre existe una única respuesta correcta: varias decisiones pueden ser defendibles si respetan información, autoridad, seguridad y misión."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Qué se evalúa"
         },
         {
           "type": "bullets",
           "items": [
-            "rutina",
-            "evento",
-            "coordinación",
-            "relevo"
+            "Precisión",
+            "Juicio",
+            "Comunicación",
+            "Disciplina",
+            "Trabajo en equipo",
+            "Ejecución"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Turno corto en simulador."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación integrada."
+          "label": "RELEVO",
+          "text": "Debe transferir estado, pendientes, órdenes, incidencias y restricciones."
         },
         {
           "type": "heading",
@@ -362,28 +286,15 @@
         {
           "type": "numbered",
           "items": [
-            "Explica rutina en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Turno corto en simulador.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/ship_operations/bridge_station_model.json",
-            "gameplay/ship_operations/operational_event_log/README.md",
-            "gameplay/orders/starfleet_mission_tasking_order.json"
+            "¿Qué integra la guardia?",
+            "¿Por qué puede haber varias respuestas correctas?",
+            "¿Qué muestra buena coordinación?",
+            "¿Qué debe incluir el relevo?",
+            "¿Qué se evalúa además del resultado?"
           ]
         }
       ]
     }
-  ]
+  ],
+  "status": "developed_content"
 }
