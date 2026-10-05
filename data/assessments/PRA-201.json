@@ -1,0 +1,308 @@
+{
+  "schema_version": "1.0.0",
+  "course_id": "PRA-201",
+  "status": "generated_from_authoritative_curriculum",
+  "question_count": 24,
+  "questions": [
+    {
+      "id": "PRA-201-Q001",
+      "unit_id": "PRA-201-U01",
+      "type": "professional_knowledge",
+      "prompt_es": "Explica el principio profesional de estado y cuándo condiciona una decisión.",
+      "answer_key_es": [
+        "estado",
+        "contexto",
+        "impacto en decisión"
+      ]
+    },
+    {
+      "id": "PRA-201-Q002",
+      "unit_id": "PRA-201-U01",
+      "type": "planning",
+      "prompt_es": "Planifica esta tarea: Preparar estación/espacio de trabajo.",
+      "answer_key_es": [
+        "objetivo",
+        "riesgos",
+        "recursos",
+        "autoridad",
+        "criterio de éxito"
+      ]
+    },
+    {
+      "id": "PRA-201-Q003",
+      "unit_id": "PRA-201-U01",
+      "type": "contingency",
+      "prompt_es": "Durante Preparación de puesto aparece una degradación inesperada. ¿Cómo decides si continuar, modificar el plan o escalar?",
+      "answer_key_es": [
+        "seguridad",
+        "capacidad restante",
+        "misión",
+        "alternativa",
+        "escalado"
+      ]
+    },
+    {
+      "id": "PRA-201-Q004",
+      "unit_id": "PRA-201-U01",
+      "type": "handoff",
+      "prompt_es": "¿Qué información mínima dejarías al relevo o supervisor tras esta unidad?",
+      "answer_key_es": [
+        "estado",
+        "acciones",
+        "resultado",
+        "riesgos",
+        "pendientes"
+      ]
+    },
+    {
+      "id": "PRA-201-Q005",
+      "unit_id": "PRA-201-U02",
+      "type": "professional_knowledge",
+      "prompt_es": "Explica el principio profesional de secuencia y cuándo condiciona una decisión.",
+      "answer_key_es": [
+        "secuencia",
+        "contexto",
+        "impacto en decisión"
+      ]
+    },
+    {
+      "id": "PRA-201-Q006",
+      "unit_id": "PRA-201-U02",
+      "type": "planning",
+      "prompt_es": "Planifica esta tarea: Práctica paso a paso.",
+      "answer_key_es": [
+        "objetivo",
+        "riesgos",
+        "recursos",
+        "autoridad",
+        "criterio de éxito"
+      ]
+    },
+    {
+      "id": "PRA-201-Q007",
+      "unit_id": "PRA-201-U02",
+      "type": "contingency",
+      "prompt_es": "Durante Procedimiento guiado aparece una degradación inesperada. ¿Cómo decides si continuar, modificar el plan o escalar?",
+      "answer_key_es": [
+        "seguridad",
+        "capacidad restante",
+        "misión",
+        "alternativa",
+        "escalado"
+      ]
+    },
+    {
+      "id": "PRA-201-Q008",
+      "unit_id": "PRA-201-U02",
+      "type": "handoff",
+      "prompt_es": "¿Qué información mínima dejarías al relevo o supervisor tras esta unidad?",
+      "answer_key_es": [
+        "estado",
+        "acciones",
+        "resultado",
+        "riesgos",
+        "pendientes"
+      ]
+    },
+    {
+      "id": "PRA-201-Q009",
+      "unit_id": "PRA-201-U03",
+      "type": "professional_knowledge",
+      "prompt_es": "Explica el principio profesional de autonomía parcial y cuándo condiciona una decisión.",
+      "answer_key_es": [
+        "autonomía parcial",
+        "contexto",
+        "impacto en decisión"
+      ]
+    },
+    {
+      "id": "PRA-201-Q010",
+      "unit_id": "PRA-201-U03",
+      "type": "planning",
+      "prompt_es": "Planifica esta tarea: Repetir con menos ayuda.",
+      "answer_key_es": [
+        "objetivo",
+        "riesgos",
+        "recursos",
+        "autoridad",
+        "criterio de éxito"
+      ]
+    },
+    {
+      "id": "PRA-201-Q011",
+      "unit_id": "PRA-201-U03",
+      "type": "contingency",
+      "prompt_es": "Durante Procedimiento supervisado aparece una degradación inesperada. ¿Cómo decides si continuar, modificar el plan o escalar?",
+      "answer_key_es": [
+        "seguridad",
+        "capacidad restante",
+        "misión",
+        "alternativa",
+        "escalado"
+      ]
+    },
+    {
+      "id": "PRA-201-Q012",
+      "unit_id": "PRA-201-U03",
+      "type": "handoff",
+      "prompt_es": "¿Qué información mínima dejarías al relevo o supervisor tras esta unidad?",
+      "answer_key_es": [
+        "estado",
+        "acciones",
+        "resultado",
+        "riesgos",
+        "pendientes"
+      ]
+    },
+    {
+      "id": "PRA-201-Q013",
+      "unit_id": "PRA-201-U04",
+      "type": "professional_knowledge",
+      "prompt_es": "Explica el principio profesional de cambio de condición y cuándo condiciona una decisión.",
+      "answer_key_es": [
+        "cambio de condición",
+        "contexto",
+        "impacto en decisión"
+      ]
+    },
+    {
+      "id": "PRA-201-Q014",
+      "unit_id": "PRA-201-U04",
+      "type": "planning",
+      "prompt_es": "Planifica esta tarea: Resolver variante.",
+      "answer_key_es": [
+        "objetivo",
+        "riesgos",
+        "recursos",
+        "autoridad",
+        "criterio de éxito"
+      ]
+    },
+    {
+      "id": "PRA-201-Q015",
+      "unit_id": "PRA-201-U04",
+      "type": "contingency",
+      "prompt_es": "Durante Caso con variación aparece una degradación inesperada. ¿Cómo decides si continuar, modificar el plan o escalar?",
+      "answer_key_es": [
+        "seguridad",
+        "capacidad restante",
+        "misión",
+        "alternativa",
+        "escalado"
+      ]
+    },
+    {
+      "id": "PRA-201-Q016",
+      "unit_id": "PRA-201-U04",
+      "type": "handoff",
+      "prompt_es": "¿Qué información mínima dejarías al relevo o supervisor tras esta unidad?",
+      "answer_key_es": [
+        "estado",
+        "acciones",
+        "resultado",
+        "riesgos",
+        "pendientes"
+      ]
+    },
+    {
+      "id": "PRA-201-Q017",
+      "unit_id": "PRA-201-U05",
+      "type": "professional_knowledge",
+      "prompt_es": "Explica el principio profesional de acciones y cuándo condiciona una decisión.",
+      "answer_key_es": [
+        "acciones",
+        "contexto",
+        "impacto en decisión"
+      ]
+    },
+    {
+      "id": "PRA-201-Q018",
+      "unit_id": "PRA-201-U05",
+      "type": "planning",
+      "prompt_es": "Planifica esta tarea: Completar log de práctica.",
+      "answer_key_es": [
+        "objetivo",
+        "riesgos",
+        "recursos",
+        "autoridad",
+        "criterio de éxito"
+      ]
+    },
+    {
+      "id": "PRA-201-Q019",
+      "unit_id": "PRA-201-U05",
+      "type": "contingency",
+      "prompt_es": "Durante Registro profesional aparece una degradación inesperada. ¿Cómo decides si continuar, modificar el plan o escalar?",
+      "answer_key_es": [
+        "seguridad",
+        "capacidad restante",
+        "misión",
+        "alternativa",
+        "escalado"
+      ]
+    },
+    {
+      "id": "PRA-201-Q020",
+      "unit_id": "PRA-201-U05",
+      "type": "handoff",
+      "prompt_es": "¿Qué información mínima dejarías al relevo o supervisor tras esta unidad?",
+      "answer_key_es": [
+        "estado",
+        "acciones",
+        "resultado",
+        "riesgos",
+        "pendientes"
+      ]
+    },
+    {
+      "id": "PRA-201-Q021",
+      "unit_id": "PRA-201-U06",
+      "type": "professional_knowledge",
+      "prompt_es": "Explica el principio profesional de error y cuándo condiciona una decisión.",
+      "answer_key_es": [
+        "error",
+        "contexto",
+        "impacto en decisión"
+      ]
+    },
+    {
+      "id": "PRA-201-Q022",
+      "unit_id": "PRA-201-U06",
+      "type": "planning",
+      "prompt_es": "Planifica esta tarea: Debrief con instructor.",
+      "answer_key_es": [
+        "objetivo",
+        "riesgos",
+        "recursos",
+        "autoridad",
+        "criterio de éxito"
+      ]
+    },
+    {
+      "id": "PRA-201-Q023",
+      "unit_id": "PRA-201-U06",
+      "type": "contingency",
+      "prompt_es": "Durante Debrief aparece una degradación inesperada. ¿Cómo decides si continuar, modificar el plan o escalar?",
+      "answer_key_es": [
+        "seguridad",
+        "capacidad restante",
+        "misión",
+        "alternativa",
+        "escalado"
+      ]
+    },
+    {
+      "id": "PRA-201-Q024",
+      "unit_id": "PRA-201-U06",
+      "type": "handoff",
+      "prompt_es": "¿Qué información mínima dejarías al relevo o supervisor tras esta unidad?",
+      "answer_key_es": [
+        "estado",
+        "acciones",
+        "resultado",
+        "riesgos",
+        "pendientes"
+      ]
+    }
+  ]
+}

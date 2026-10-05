@@ -1,0 +1,308 @@
+{
+  "schema_version": "1.0.0",
+  "course_id": "FLD-202",
+  "status": "generated_from_authoritative_curriculum",
+  "question_count": 24,
+  "questions": [
+    {
+      "id": "FLD-202-Q001",
+      "unit_id": "FLD-202-U01",
+      "type": "professional_knowledge",
+      "prompt_es": "Explica el principio profesional de objetivos y cuándo condiciona una decisión.",
+      "answer_key_es": [
+        "objetivos",
+        "contexto",
+        "impacto en decisión"
+      ]
+    },
+    {
+      "id": "FLD-202-Q002",
+      "unit_id": "FLD-202-U01",
+      "type": "planning",
+      "prompt_es": "Planifica esta tarea: Preparar misión.",
+      "answer_key_es": [
+        "objetivo",
+        "riesgos",
+        "recursos",
+        "autoridad",
+        "criterio de éxito"
+      ]
+    },
+    {
+      "id": "FLD-202-Q003",
+      "unit_id": "FLD-202-U01",
+      "type": "contingency",
+      "prompt_es": "Durante Plan avanzado de salida aparece una degradación inesperada. ¿Cómo decides si continuar, modificar el plan o escalar?",
+      "answer_key_es": [
+        "seguridad",
+        "capacidad restante",
+        "misión",
+        "alternativa",
+        "escalado"
+      ]
+    },
+    {
+      "id": "FLD-202-Q004",
+      "unit_id": "FLD-202-U01",
+      "type": "handoff",
+      "prompt_es": "¿Qué información mínima dejarías al relevo o supervisor tras esta unidad?",
+      "answer_key_es": [
+        "estado",
+        "acciones",
+        "resultado",
+        "riesgos",
+        "pendientes"
+      ]
+    },
+    {
+      "id": "FLD-202-Q005",
+      "unit_id": "FLD-202-U02",
+      "type": "professional_knowledge",
+      "prompt_es": "Explica el principio profesional de integridad y cuándo condiciona una decisión.",
+      "answer_key_es": [
+        "integridad",
+        "contexto",
+        "impacto en decisión"
+      ]
+    },
+    {
+      "id": "FLD-202-Q006",
+      "unit_id": "FLD-202-U02",
+      "type": "planning",
+      "prompt_es": "Planifica esta tarea: Preparación de equipo ambiental/EVA según era.",
+      "answer_key_es": [
+        "objetivo",
+        "riesgos",
+        "recursos",
+        "autoridad",
+        "criterio de éxito"
+      ]
+    },
+    {
+      "id": "FLD-202-Q007",
+      "unit_id": "FLD-202-U02",
+      "type": "contingency",
+      "prompt_es": "Durante Traje y entorno aparece una degradación inesperada. ¿Cómo decides si continuar, modificar el plan o escalar?",
+      "answer_key_es": [
+        "seguridad",
+        "capacidad restante",
+        "misión",
+        "alternativa",
+        "escalado"
+      ]
+    },
+    {
+      "id": "FLD-202-Q008",
+      "unit_id": "FLD-202-U02",
+      "type": "handoff",
+      "prompt_es": "¿Qué información mínima dejarías al relevo o supervisor tras esta unidad?",
+      "answer_key_es": [
+        "estado",
+        "acciones",
+        "resultado",
+        "riesgos",
+        "pendientes"
+      ]
+    },
+    {
+      "id": "FLD-202-Q009",
+      "unit_id": "FLD-202-U03",
+      "type": "professional_knowledge",
+      "prompt_es": "Explica el principio profesional de desplazamiento y cuándo condiciona una decisión.",
+      "answer_key_es": [
+        "desplazamiento",
+        "contexto",
+        "impacto en decisión"
+      ]
+    },
+    {
+      "id": "FLD-202-Q010",
+      "unit_id": "FLD-202-U03",
+      "type": "planning",
+      "prompt_es": "Planifica esta tarea: Ejercicio EVA simulado/real autorizado.",
+      "answer_key_es": [
+        "objetivo",
+        "riesgos",
+        "recursos",
+        "autoridad",
+        "criterio de éxito"
+      ]
+    },
+    {
+      "id": "FLD-202-Q011",
+      "unit_id": "FLD-202-U03",
+      "type": "contingency",
+      "prompt_es": "Durante EVA básica operativa aparece una degradación inesperada. ¿Cómo decides si continuar, modificar el plan o escalar?",
+      "answer_key_es": [
+        "seguridad",
+        "capacidad restante",
+        "misión",
+        "alternativa",
+        "escalado"
+      ]
+    },
+    {
+      "id": "FLD-202-Q012",
+      "unit_id": "FLD-202-U03",
+      "type": "handoff",
+      "prompt_es": "¿Qué información mínima dejarías al relevo o supervisor tras esta unidad?",
+      "answer_key_es": [
+        "estado",
+        "acciones",
+        "resultado",
+        "riesgos",
+        "pendientes"
+      ]
+    },
+    {
+      "id": "FLD-202-Q013",
+      "unit_id": "FLD-202-U04",
+      "type": "professional_knowledge",
+      "prompt_es": "Explica el principio profesional de herramientas y cuándo condiciona una decisión.",
+      "answer_key_es": [
+        "herramientas",
+        "contexto",
+        "impacto en decisión"
+      ]
+    },
+    {
+      "id": "FLD-202-Q014",
+      "unit_id": "FLD-202-U04",
+      "type": "planning",
+      "prompt_es": "Planifica esta tarea: Tarea de rama en exterior.",
+      "answer_key_es": [
+        "objetivo",
+        "riesgos",
+        "recursos",
+        "autoridad",
+        "criterio de éxito"
+      ]
+    },
+    {
+      "id": "FLD-202-Q015",
+      "unit_id": "FLD-202-U04",
+      "type": "contingency",
+      "prompt_es": "Durante Trabajo técnico/científico exterior aparece una degradación inesperada. ¿Cómo decides si continuar, modificar el plan o escalar?",
+      "answer_key_es": [
+        "seguridad",
+        "capacidad restante",
+        "misión",
+        "alternativa",
+        "escalado"
+      ]
+    },
+    {
+      "id": "FLD-202-Q016",
+      "unit_id": "FLD-202-U04",
+      "type": "handoff",
+      "prompt_es": "¿Qué información mínima dejarías al relevo o supervisor tras esta unidad?",
+      "answer_key_es": [
+        "estado",
+        "acciones",
+        "resultado",
+        "riesgos",
+        "pendientes"
+      ]
+    },
+    {
+      "id": "FLD-202-Q017",
+      "unit_id": "FLD-202-U05",
+      "type": "professional_knowledge",
+      "prompt_es": "Explica el principio profesional de pérdida de contacto y cuándo condiciona una decisión.",
+      "answer_key_es": [
+        "pérdida de contacto",
+        "contexto",
+        "impacto en decisión"
+      ]
+    },
+    {
+      "id": "FLD-202-Q018",
+      "unit_id": "FLD-202-U05",
+      "type": "planning",
+      "prompt_es": "Planifica esta tarea: Incidente simulado.",
+      "answer_key_es": [
+        "objetivo",
+        "riesgos",
+        "recursos",
+        "autoridad",
+        "criterio de éxito"
+      ]
+    },
+    {
+      "id": "FLD-202-Q019",
+      "unit_id": "FLD-202-U05",
+      "type": "contingency",
+      "prompt_es": "Durante Emergencia de campo/EVA aparece una degradación inesperada. ¿Cómo decides si continuar, modificar el plan o escalar?",
+      "answer_key_es": [
+        "seguridad",
+        "capacidad restante",
+        "misión",
+        "alternativa",
+        "escalado"
+      ]
+    },
+    {
+      "id": "FLD-202-Q020",
+      "unit_id": "FLD-202-U05",
+      "type": "handoff",
+      "prompt_es": "¿Qué información mínima dejarías al relevo o supervisor tras esta unidad?",
+      "answer_key_es": [
+        "estado",
+        "acciones",
+        "resultado",
+        "riesgos",
+        "pendientes"
+      ]
+    },
+    {
+      "id": "FLD-202-Q021",
+      "unit_id": "FLD-202-U06",
+      "type": "professional_knowledge",
+      "prompt_es": "Explica el principio profesional de ventanas y cuándo condiciona una decisión.",
+      "answer_key_es": [
+        "ventanas",
+        "contexto",
+        "impacto en decisión"
+      ]
+    },
+    {
+      "id": "FLD-202-Q022",
+      "unit_id": "FLD-202-U06",
+      "type": "planning",
+      "prompt_es": "Planifica esta tarea: Cerrar operación.",
+      "answer_key_es": [
+        "objetivo",
+        "riesgos",
+        "recursos",
+        "autoridad",
+        "criterio de éxito"
+      ]
+    },
+    {
+      "id": "FLD-202-Q023",
+      "unit_id": "FLD-202-U06",
+      "type": "contingency",
+      "prompt_es": "Durante Coordinación con nave aparece una degradación inesperada. ¿Cómo decides si continuar, modificar el plan o escalar?",
+      "answer_key_es": [
+        "seguridad",
+        "capacidad restante",
+        "misión",
+        "alternativa",
+        "escalado"
+      ]
+    },
+    {
+      "id": "FLD-202-Q024",
+      "unit_id": "FLD-202-U06",
+      "type": "handoff",
+      "prompt_es": "¿Qué información mínima dejarías al relevo o supervisor tras esta unidad?",
+      "answer_key_es": [
+        "estado",
+        "acciones",
+        "resultado",
+        "riesgos",
+        "pendientes"
+      ]
+    }
+  ]
+}

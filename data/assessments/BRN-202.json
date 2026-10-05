@@ -1,0 +1,308 @@
+{
+  "schema_version": "1.0.0",
+  "course_id": "BRN-202",
+  "status": "generated_from_authoritative_curriculum",
+  "question_count": 24,
+  "questions": [
+    {
+      "id": "BRN-202-Q001",
+      "unit_id": "BRN-202-U01",
+      "type": "professional_knowledge",
+      "prompt_es": "Explica el principio profesional de variantes y cuándo condiciona una decisión.",
+      "answer_key_es": [
+        "variantes",
+        "contexto",
+        "impacto en decisión"
+      ]
+    },
+    {
+      "id": "BRN-202-Q002",
+      "unit_id": "BRN-202-U01",
+      "type": "planning",
+      "prompt_es": "Planifica esta tarea: Caso avanzado guiado.",
+      "answer_key_es": [
+        "objetivo",
+        "riesgos",
+        "recursos",
+        "autoridad",
+        "criterio de éxito"
+      ]
+    },
+    {
+      "id": "BRN-202-Q003",
+      "unit_id": "BRN-202-U01",
+      "type": "contingency",
+      "prompt_es": "Durante Procedimientos avanzados aparece una degradación inesperada. ¿Cómo decides si continuar, modificar el plan o escalar?",
+      "answer_key_es": [
+        "seguridad",
+        "capacidad restante",
+        "misión",
+        "alternativa",
+        "escalado"
+      ]
+    },
+    {
+      "id": "BRN-202-Q004",
+      "unit_id": "BRN-202-U01",
+      "type": "handoff",
+      "prompt_es": "¿Qué información mínima dejarías al relevo o supervisor tras esta unidad?",
+      "answer_key_es": [
+        "estado",
+        "acciones",
+        "resultado",
+        "riesgos",
+        "pendientes"
+      ]
+    },
+    {
+      "id": "BRN-202-Q005",
+      "unit_id": "BRN-202-U02",
+      "type": "professional_knowledge",
+      "prompt_es": "Explica el principio profesional de datos incompletos y cuándo condiciona una decisión.",
+      "answer_key_es": [
+        "datos incompletos",
+        "contexto",
+        "impacto en decisión"
+      ]
+    },
+    {
+      "id": "BRN-202-Q006",
+      "unit_id": "BRN-202-U02",
+      "type": "planning",
+      "prompt_es": "Planifica esta tarea: Resolver problema ambiguo.",
+      "answer_key_es": [
+        "objetivo",
+        "riesgos",
+        "recursos",
+        "autoridad",
+        "criterio de éxito"
+      ]
+    },
+    {
+      "id": "BRN-202-Q007",
+      "unit_id": "BRN-202-U02",
+      "type": "contingency",
+      "prompt_es": "Durante Incertidumbre aparece una degradación inesperada. ¿Cómo decides si continuar, modificar el plan o escalar?",
+      "answer_key_es": [
+        "seguridad",
+        "capacidad restante",
+        "misión",
+        "alternativa",
+        "escalado"
+      ]
+    },
+    {
+      "id": "BRN-202-Q008",
+      "unit_id": "BRN-202-U02",
+      "type": "handoff",
+      "prompt_es": "¿Qué información mínima dejarías al relevo o supervisor tras esta unidad?",
+      "answer_key_es": [
+        "estado",
+        "acciones",
+        "resultado",
+        "riesgos",
+        "pendientes"
+      ]
+    },
+    {
+      "id": "BRN-202-Q009",
+      "unit_id": "BRN-202-U03",
+      "type": "professional_knowledge",
+      "prompt_es": "Explica el principio profesional de prioridad y cuándo condiciona una decisión.",
+      "answer_key_es": [
+        "prioridad",
+        "contexto",
+        "impacto en decisión"
+      ]
+    },
+    {
+      "id": "BRN-202-Q010",
+      "unit_id": "BRN-202-U03",
+      "type": "planning",
+      "prompt_es": "Planifica esta tarea: Gestionar carga concurrente.",
+      "answer_key_es": [
+        "objetivo",
+        "riesgos",
+        "recursos",
+        "autoridad",
+        "criterio de éxito"
+      ]
+    },
+    {
+      "id": "BRN-202-Q011",
+      "unit_id": "BRN-202-U03",
+      "type": "contingency",
+      "prompt_es": "Durante Múltiples demandas aparece una degradación inesperada. ¿Cómo decides si continuar, modificar el plan o escalar?",
+      "answer_key_es": [
+        "seguridad",
+        "capacidad restante",
+        "misión",
+        "alternativa",
+        "escalado"
+      ]
+    },
+    {
+      "id": "BRN-202-Q012",
+      "unit_id": "BRN-202-U03",
+      "type": "handoff",
+      "prompt_es": "¿Qué información mínima dejarías al relevo o supervisor tras esta unidad?",
+      "answer_key_es": [
+        "estado",
+        "acciones",
+        "resultado",
+        "riesgos",
+        "pendientes"
+      ]
+    },
+    {
+      "id": "BRN-202-Q013",
+      "unit_id": "BRN-202-U04",
+      "type": "professional_knowledge",
+      "prompt_es": "Explica el principio profesional de detección y cuándo condiciona una decisión.",
+      "answer_key_es": [
+        "detección",
+        "contexto",
+        "impacto en decisión"
+      ]
+    },
+    {
+      "id": "BRN-202-Q014",
+      "unit_id": "BRN-202-U04",
+      "type": "planning",
+      "prompt_es": "Planifica esta tarea: Recuperar de fallo inducido.",
+      "answer_key_es": [
+        "objetivo",
+        "riesgos",
+        "recursos",
+        "autoridad",
+        "criterio de éxito"
+      ]
+    },
+    {
+      "id": "BRN-202-Q015",
+      "unit_id": "BRN-202-U04",
+      "type": "contingency",
+      "prompt_es": "Durante Error y recuperación aparece una degradación inesperada. ¿Cómo decides si continuar, modificar el plan o escalar?",
+      "answer_key_es": [
+        "seguridad",
+        "capacidad restante",
+        "misión",
+        "alternativa",
+        "escalado"
+      ]
+    },
+    {
+      "id": "BRN-202-Q016",
+      "unit_id": "BRN-202-U04",
+      "type": "handoff",
+      "prompt_es": "¿Qué información mínima dejarías al relevo o supervisor tras esta unidad?",
+      "answer_key_es": [
+        "estado",
+        "acciones",
+        "resultado",
+        "riesgos",
+        "pendientes"
+      ]
+    },
+    {
+      "id": "BRN-202-Q017",
+      "unit_id": "BRN-202-U05",
+      "type": "professional_knowledge",
+      "prompt_es": "Explica el principio profesional de dependencias y cuándo condiciona una decisión.",
+      "answer_key_es": [
+        "dependencias",
+        "contexto",
+        "impacto en decisión"
+      ]
+    },
+    {
+      "id": "BRN-202-Q018",
+      "unit_id": "BRN-202-U05",
+      "type": "planning",
+      "prompt_es": "Planifica esta tarea: Trabajar con dos departamentos.",
+      "answer_key_es": [
+        "objetivo",
+        "riesgos",
+        "recursos",
+        "autoridad",
+        "criterio de éxito"
+      ]
+    },
+    {
+      "id": "BRN-202-Q019",
+      "unit_id": "BRN-202-U05",
+      "type": "contingency",
+      "prompt_es": "Durante Coordinación avanzada aparece una degradación inesperada. ¿Cómo decides si continuar, modificar el plan o escalar?",
+      "answer_key_es": [
+        "seguridad",
+        "capacidad restante",
+        "misión",
+        "alternativa",
+        "escalado"
+      ]
+    },
+    {
+      "id": "BRN-202-Q020",
+      "unit_id": "BRN-202-U05",
+      "type": "handoff",
+      "prompt_es": "¿Qué información mínima dejarías al relevo o supervisor tras esta unidad?",
+      "answer_key_es": [
+        "estado",
+        "acciones",
+        "resultado",
+        "riesgos",
+        "pendientes"
+      ]
+    },
+    {
+      "id": "BRN-202-Q021",
+      "unit_id": "BRN-202-U06",
+      "type": "professional_knowledge",
+      "prompt_es": "Explica el principio profesional de misión y cuándo condiciona una decisión.",
+      "answer_key_es": [
+        "misión",
+        "contexto",
+        "impacto en decisión"
+      ]
+    },
+    {
+      "id": "BRN-202-Q022",
+      "unit_id": "BRN-202-U06",
+      "type": "planning",
+      "prompt_es": "Planifica esta tarea: Caso integrado.",
+      "answer_key_es": [
+        "objetivo",
+        "riesgos",
+        "recursos",
+        "autoridad",
+        "criterio de éxito"
+      ]
+    },
+    {
+      "id": "BRN-202-Q023",
+      "unit_id": "BRN-202-U06",
+      "type": "contingency",
+      "prompt_es": "Durante Caso de rama II aparece una degradación inesperada. ¿Cómo decides si continuar, modificar el plan o escalar?",
+      "answer_key_es": [
+        "seguridad",
+        "capacidad restante",
+        "misión",
+        "alternativa",
+        "escalado"
+      ]
+    },
+    {
+      "id": "BRN-202-Q024",
+      "unit_id": "BRN-202-U06",
+      "type": "handoff",
+      "prompt_es": "¿Qué información mínima dejarías al relevo o supervisor tras esta unidad?",
+      "answer_key_es": [
+        "estado",
+        "acciones",
+        "resultado",
+        "riesgos",
+        "pendientes"
+      ]
+    }
+  ]
+}

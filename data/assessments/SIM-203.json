@@ -1,0 +1,308 @@
+{
+  "schema_version": "1.0.0",
+  "course_id": "SIM-203",
+  "status": "generated_from_authoritative_curriculum",
+  "question_count": 24,
+  "questions": [
+    {
+      "id": "SIM-203-Q001",
+      "unit_id": "SIM-203-U01",
+      "type": "professional_knowledge",
+      "prompt_es": "Explica el principio profesional de datos conocidos y cuándo condiciona una decisión.",
+      "answer_key_es": [
+        "datos conocidos",
+        "contexto",
+        "impacto en decisión"
+      ]
+    },
+    {
+      "id": "SIM-203-Q002",
+      "unit_id": "SIM-203-U01",
+      "type": "planning",
+      "prompt_es": "Planifica esta tarea: Preparar misión.",
+      "answer_key_es": [
+        "objetivo",
+        "riesgos",
+        "recursos",
+        "autoridad",
+        "criterio de éxito"
+      ]
+    },
+    {
+      "id": "SIM-203-Q003",
+      "unit_id": "SIM-203-U01",
+      "type": "contingency",
+      "prompt_es": "Durante Briefing incompleto aparece una degradación inesperada. ¿Cómo decides si continuar, modificar el plan o escalar?",
+      "answer_key_es": [
+        "seguridad",
+        "capacidad restante",
+        "misión",
+        "alternativa",
+        "escalado"
+      ]
+    },
+    {
+      "id": "SIM-203-Q004",
+      "unit_id": "SIM-203-U01",
+      "type": "handoff",
+      "prompt_es": "¿Qué información mínima dejarías al relevo o supervisor tras esta unidad?",
+      "answer_key_es": [
+        "estado",
+        "acciones",
+        "resultado",
+        "riesgos",
+        "pendientes"
+      ]
+    },
+    {
+      "id": "SIM-203-Q005",
+      "unit_id": "SIM-203-U02",
+      "type": "professional_knowledge",
+      "prompt_es": "Explica el principio profesional de rutina y cuándo condiciona una decisión.",
+      "answer_key_es": [
+        "rutina",
+        "contexto",
+        "impacto en decisión"
+      ]
+    },
+    {
+      "id": "SIM-203-Q006",
+      "unit_id": "SIM-203-U02",
+      "type": "planning",
+      "prompt_es": "Planifica esta tarea: Operar durante periodo sostenido.",
+      "answer_key_es": [
+        "objetivo",
+        "riesgos",
+        "recursos",
+        "autoridad",
+        "criterio de éxito"
+      ]
+    },
+    {
+      "id": "SIM-203-Q007",
+      "unit_id": "SIM-203-U02",
+      "type": "contingency",
+      "prompt_es": "Durante Fase normal extendida aparece una degradación inesperada. ¿Cómo decides si continuar, modificar el plan o escalar?",
+      "answer_key_es": [
+        "seguridad",
+        "capacidad restante",
+        "misión",
+        "alternativa",
+        "escalado"
+      ]
+    },
+    {
+      "id": "SIM-203-Q008",
+      "unit_id": "SIM-203-U02",
+      "type": "handoff",
+      "prompt_es": "¿Qué información mínima dejarías al relevo o supervisor tras esta unidad?",
+      "answer_key_es": [
+        "estado",
+        "acciones",
+        "resultado",
+        "riesgos",
+        "pendientes"
+      ]
+    },
+    {
+      "id": "SIM-203-Q009",
+      "unit_id": "SIM-203-U03",
+      "type": "professional_knowledge",
+      "prompt_es": "Explica el principio profesional de detección y cuándo condiciona una decisión.",
+      "answer_key_es": [
+        "detección",
+        "contexto",
+        "impacto en decisión"
+      ]
+    },
+    {
+      "id": "SIM-203-Q010",
+      "unit_id": "SIM-203-U03",
+      "type": "planning",
+      "prompt_es": "Planifica esta tarea: Resolver evento.",
+      "answer_key_es": [
+        "objetivo",
+        "riesgos",
+        "recursos",
+        "autoridad",
+        "criterio de éxito"
+      ]
+    },
+    {
+      "id": "SIM-203-Q011",
+      "unit_id": "SIM-203-U03",
+      "type": "contingency",
+      "prompt_es": "Durante Primer incidente aparece una degradación inesperada. ¿Cómo decides si continuar, modificar el plan o escalar?",
+      "answer_key_es": [
+        "seguridad",
+        "capacidad restante",
+        "misión",
+        "alternativa",
+        "escalado"
+      ]
+    },
+    {
+      "id": "SIM-203-Q012",
+      "unit_id": "SIM-203-U03",
+      "type": "handoff",
+      "prompt_es": "¿Qué información mínima dejarías al relevo o supervisor tras esta unidad?",
+      "answer_key_es": [
+        "estado",
+        "acciones",
+        "resultado",
+        "riesgos",
+        "pendientes"
+      ]
+    },
+    {
+      "id": "SIM-203-Q013",
+      "unit_id": "SIM-203-U04",
+      "type": "professional_knowledge",
+      "prompt_es": "Explica el principio profesional de segundo problema y cuándo condiciona una decisión.",
+      "answer_key_es": [
+        "segundo problema",
+        "contexto",
+        "impacto en decisión"
+      ]
+    },
+    {
+      "id": "SIM-203-Q014",
+      "unit_id": "SIM-203-U04",
+      "type": "planning",
+      "prompt_es": "Planifica esta tarea: Adaptar plan.",
+      "answer_key_es": [
+        "objetivo",
+        "riesgos",
+        "recursos",
+        "autoridad",
+        "criterio de éxito"
+      ]
+    },
+    {
+      "id": "SIM-203-Q015",
+      "unit_id": "SIM-203-U04",
+      "type": "contingency",
+      "prompt_es": "Durante Escalada aparece una degradación inesperada. ¿Cómo decides si continuar, modificar el plan o escalar?",
+      "answer_key_es": [
+        "seguridad",
+        "capacidad restante",
+        "misión",
+        "alternativa",
+        "escalado"
+      ]
+    },
+    {
+      "id": "SIM-203-Q016",
+      "unit_id": "SIM-203-U04",
+      "type": "handoff",
+      "prompt_es": "¿Qué información mínima dejarías al relevo o supervisor tras esta unidad?",
+      "answer_key_es": [
+        "estado",
+        "acciones",
+        "resultado",
+        "riesgos",
+        "pendientes"
+      ]
+    },
+    {
+      "id": "SIM-203-Q017",
+      "unit_id": "SIM-203-U05",
+      "type": "professional_knowledge",
+      "prompt_es": "Explica el principio profesional de éxito parcial y cuándo condiciona una decisión.",
+      "answer_key_es": [
+        "éxito parcial",
+        "contexto",
+        "impacto en decisión"
+      ]
+    },
+    {
+      "id": "SIM-203-Q018",
+      "unit_id": "SIM-203-U05",
+      "type": "planning",
+      "prompt_es": "Planifica esta tarea: Cerrar escenario.",
+      "answer_key_es": [
+        "objetivo",
+        "riesgos",
+        "recursos",
+        "autoridad",
+        "criterio de éxito"
+      ]
+    },
+    {
+      "id": "SIM-203-Q019",
+      "unit_id": "SIM-203-U05",
+      "type": "contingency",
+      "prompt_es": "Durante Resolución y consecuencias aparece una degradación inesperada. ¿Cómo decides si continuar, modificar el plan o escalar?",
+      "answer_key_es": [
+        "seguridad",
+        "capacidad restante",
+        "misión",
+        "alternativa",
+        "escalado"
+      ]
+    },
+    {
+      "id": "SIM-203-Q020",
+      "unit_id": "SIM-203-U05",
+      "type": "handoff",
+      "prompt_es": "¿Qué información mínima dejarías al relevo o supervisor tras esta unidad?",
+      "answer_key_es": [
+        "estado",
+        "acciones",
+        "resultado",
+        "riesgos",
+        "pendientes"
+      ]
+    },
+    {
+      "id": "SIM-203-Q021",
+      "unit_id": "SIM-203-U06",
+      "type": "professional_knowledge",
+      "prompt_es": "Explica el principio profesional de información disponible y cuándo condiciona una decisión.",
+      "answer_key_es": [
+        "información disponible",
+        "contexto",
+        "impacto en decisión"
+      ]
+    },
+    {
+      "id": "SIM-203-Q022",
+      "unit_id": "SIM-203-U06",
+      "type": "planning",
+      "prompt_es": "Planifica esta tarea: Debrief con evidencias.",
+      "answer_key_es": [
+        "objetivo",
+        "riesgos",
+        "recursos",
+        "autoridad",
+        "criterio de éxito"
+      ]
+    },
+    {
+      "id": "SIM-203-Q023",
+      "unit_id": "SIM-203-U06",
+      "type": "contingency",
+      "prompt_es": "Durante Debrief avanzado aparece una degradación inesperada. ¿Cómo decides si continuar, modificar el plan o escalar?",
+      "answer_key_es": [
+        "seguridad",
+        "capacidad restante",
+        "misión",
+        "alternativa",
+        "escalado"
+      ]
+    },
+    {
+      "id": "SIM-203-Q024",
+      "unit_id": "SIM-203-U06",
+      "type": "handoff",
+      "prompt_es": "¿Qué información mínima dejarías al relevo o supervisor tras esta unidad?",
+      "answer_key_es": [
+        "estado",
+        "acciones",
+        "resultado",
+        "riesgos",
+        "pendientes"
+      ]
+    }
+  ]
+}
