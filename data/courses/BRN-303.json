@@ -1,7 +1,7 @@
 {
   "subject": "Exploración profesional y rotaciones de rama",
   "code": "BRN-303",
-  "version": "1.0",
+  "version": "1.1",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/BRN-303/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/BRN-303/MANUAL_v1_0.md",
@@ -20,56 +20,25 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Dar suficiente exposición realista a las siete ramas para que la elección sea informada."
-        },
-        {
-          "type": "heading",
-          "text": "Contenidos"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "coordinación",
-            "decisión",
-            "puente",
-            "responsabilidad"
-          ]
+          "text": "Coordinación, decisiones, prioridades y responsabilidad. No se reduce a dar órdenes; exige escuchar, integrar información y asumir consecuencias."
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Rotación guiada."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Informe reflexivo."
+          "label": "ROTACIÓN",
+          "text": "La finalidad es conocer el trabajo real y generar evidencia descriptiva; una sola rotación no concede cualificación ni bloquea automáticamente esta rama."
         },
         {
           "type": "heading",
-          "text": "Autoevaluación"
+          "text": "Reflexión"
         },
         {
           "type": "numbered",
           "items": [
-            "Explica coordinación en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Rotación guiada.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md"
+            "¿Qué tareas te resultaron naturales?",
+            "¿Qué responsabilidad te atrajo?",
+            "¿Qué parte te costó?",
+            "¿Qué evidencia real produjo la rotación?",
+            "¿Quieres más exposición a esta rama?"
           ]
         }
       ]
@@ -81,56 +50,25 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Dar suficiente exposición realista a las siete ramas para que la elección sea informada."
-        },
-        {
-          "type": "heading",
-          "text": "Contenidos"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "helm",
-            "plotting",
-            "maniobra",
-            "seguridad"
-          ]
+          "text": "Conn, plotting, maniobra y seguridad de movimiento. Se observa razonamiento espacial, precisión y comunicación de límites."
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Rotación guiada."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evidencia práctica."
+          "label": "ROTACIÓN",
+          "text": "La finalidad es conocer el trabajo real y generar evidencia descriptiva; una sola rotación no concede cualificación ni bloquea automáticamente esta rama."
         },
         {
           "type": "heading",
-          "text": "Autoevaluación"
+          "text": "Reflexión"
         },
         {
           "type": "numbered",
           "items": [
-            "Explica helm en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Rotación guiada.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md"
+            "¿Qué tareas te resultaron naturales?",
+            "¿Qué responsabilidad te atrajo?",
+            "¿Qué parte te costó?",
+            "¿Qué evidencia real produjo la rotación?",
+            "¿Quieres más exposición a esta rama?"
           ]
         }
       ]
@@ -142,56 +80,25 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Dar suficiente exposición realista a las siete ramas para que la elección sea informada."
-        },
-        {
-          "type": "heading",
-          "text": "Contenidos"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "recursos",
-            "sistemas",
-            "coordinación",
-            "logística"
-          ]
+          "text": "Coordina recursos, sistemas, prioridades y logística. Conecta necesidades sin sustituir a los especialistas."
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Rotación guiada."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evidencia práctica."
+          "label": "ROTACIÓN",
+          "text": "La finalidad es conocer el trabajo real y generar evidencia descriptiva; una sola rotación no concede cualificación ni bloquea automáticamente esta rama."
         },
         {
           "type": "heading",
-          "text": "Autoevaluación"
+          "text": "Reflexión"
         },
         {
           "type": "numbered",
           "items": [
-            "Explica recursos en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Rotación guiada.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md"
+            "¿Qué tareas te resultaron naturales?",
+            "¿Qué responsabilidad te atrajo?",
+            "¿Qué parte te costó?",
+            "¿Qué evidencia real produjo la rotación?",
+            "¿Quieres más exposición a esta rama?"
           ]
         }
       ]
@@ -203,56 +110,25 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Dar suficiente exposición realista a las siete ramas para que la elección sea informada."
-        },
-        {
-          "type": "heading",
-          "text": "Contenidos"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "energía",
-            "diagnóstico",
-            "mantenimiento",
-            "daños"
-          ]
+          "text": "Energía, diagnóstico, mantenimiento, propulsión y recuperación. El trabajo rutinario es tan importante como la respuesta a fallos."
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Rotación guiada."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evidencia práctica."
+          "label": "ROTACIÓN",
+          "text": "La finalidad es conocer el trabajo real y generar evidencia descriptiva; una sola rotación no concede cualificación ni bloquea automáticamente esta rama."
         },
         {
           "type": "heading",
-          "text": "Autoevaluación"
+          "text": "Reflexión"
         },
         {
           "type": "numbered",
           "items": [
-            "Explica energía en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Rotación guiada.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md"
+            "¿Qué tareas te resultaron naturales?",
+            "¿Qué responsabilidad te atrajo?",
+            "¿Qué parte te costó?",
+            "¿Qué evidencia real produjo la rotación?",
+            "¿Quieres más exposición a esta rama?"
           ]
         }
       ]
@@ -264,56 +140,25 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Dar suficiente exposición realista a las siete ramas para que la elección sea informada."
-        },
-        {
-          "type": "heading",
-          "text": "Contenidos"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "protección",
-            "amenaza",
-            "armamento",
-            "procedimiento"
-          ]
+          "text": "Protección, control, amenaza y defensa con autoridad y proporcionalidad. No es simplemente la rama del armamento."
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Rotación guiada."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evidencia práctica."
+          "label": "ROTACIÓN",
+          "text": "La finalidad es conocer el trabajo real y generar evidencia descriptiva; una sola rotación no concede cualificación ni bloquea automáticamente esta rama."
         },
         {
           "type": "heading",
-          "text": "Autoevaluación"
+          "text": "Reflexión"
         },
         {
           "type": "numbered",
           "items": [
-            "Explica protección en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Rotación guiada.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md"
+            "¿Qué tareas te resultaron naturales?",
+            "¿Qué responsabilidad te atrajo?",
+            "¿Qué parte te costó?",
+            "¿Qué evidencia real produjo la rotación?",
+            "¿Quieres más exposición a esta rama?"
           ]
         }
       ]
@@ -325,56 +170,25 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Dar suficiente exposición realista a las siete ramas para que la elección sea informada."
-        },
-        {
-          "type": "heading",
-          "text": "Contenidos"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "detección",
-            "análisis",
-            "método",
-            "reporte"
-          ]
+          "text": "Sensores obtiene observaciones; Ciencia interpreta. Se valoran método, incertidumbre y calidad de reporte."
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Rotación guiada."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evidencia práctica."
+          "label": "ROTACIÓN",
+          "text": "La finalidad es conocer el trabajo real y generar evidencia descriptiva; una sola rotación no concede cualificación ni bloquea automáticamente esta rama."
         },
         {
           "type": "heading",
-          "text": "Autoevaluación"
+          "text": "Reflexión"
         },
         {
           "type": "numbered",
           "items": [
-            "Explica detección en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Rotación guiada.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md"
+            "¿Qué tareas te resultaron naturales?",
+            "¿Qué responsabilidad te atrajo?",
+            "¿Qué parte te costó?",
+            "¿Qué evidencia real produjo la rotación?",
+            "¿Quieres más exposición a esta rama?"
           ]
         }
       ]
@@ -386,59 +200,29 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Dar suficiente exposición realista a las siete ramas para que la elección sea informada."
-        },
-        {
-          "type": "heading",
-          "text": "Contenidos"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "paciente",
-            "diagnóstico",
-            "triaje",
-            "ética"
-          ]
+          "text": "Paciente, diagnóstico, tratamiento, triaje, privacidad, ética y xenomedicina. Una prueba no garantiza certeza."
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Rotación guiada."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evidencia práctica."
+          "label": "ROTACIÓN",
+          "text": "La finalidad es conocer el trabajo real y generar evidencia descriptiva; una sola rotación no concede cualificación ni bloquea automáticamente esta rama."
         },
         {
           "type": "heading",
-          "text": "Autoevaluación"
+          "text": "Reflexión"
         },
         {
           "type": "numbered",
           "items": [
-            "Explica paciente en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Rotación guiada.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md"
+            "¿Qué tareas te resultaron naturales?",
+            "¿Qué responsabilidad te atrajo?",
+            "¿Qué parte te costó?",
+            "¿Qué evidencia real produjo la rotación?",
+            "¿Quieres más exposición a esta rama?"
           ]
         }
       ]
     }
-  ]
+  ],
+  "status": "developed_content"
 }
