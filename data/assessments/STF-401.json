@@ -1,283 +1,286 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "course_id": "STF-401",
-  "status": "generated_from_authoritative_curriculum",
+  "status": "editorially_aligned_with_developed_manual",
+  "source_manual": "gameplay/careers/academy_path/study_materials/fourth_class/STF-401/MANUAL_v1_0.md",
   "question_count": 24,
+  "rule": "No question may require knowledge that is not explicitly taught in STF-401 or its prerequisites.",
   "questions": [
     {
       "id": "STF-401-Q001",
       "unit_id": "STF-401-U01",
       "type": "short_answer",
-      "prompt_es": "Explica misión general y su relevancia operativa.",
+      "prompt_es": "Explica con tus palabras cuál es la misión general de Starfleet.",
       "answer_key_es": [
-        "misión general",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "Starfleet es un servicio de la Federación",
+        "combina exploración, ciencia, diplomacia, asistencia y defensa",
+        "no es el gobierno de la Federación"
       ]
     },
     {
       "id": "STF-401-Q002",
       "unit_id": "STF-401-U01",
-      "type": "compare",
-      "prompt_es": "Compara misión general con exploración, ciencia, diplomacia, asistencia y defensa. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "classification",
+      "prompt_es": "Una nave cartografía un sistema, investiga una anomalía y evacua a civiles. ¿Qué funciones de Starfleet están presentes?",
       "answer_key_es": [
-        "misión general",
-        "exploración, ciencia, diplomacia, asistencia y defensa",
-        "diferencia aplicada"
+        "exploración",
+        "ciencia",
+        "asistencia",
+        "puede haber más de una función simultánea"
       ]
     },
     {
       "id": "STF-401-Q003",
       "unit_id": "STF-401-U01",
-      "type": "scenario",
-      "prompt_es": "Situación: Clasificar situaciones por función institucional sin recurrir a trivia. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "compare",
+      "prompt_es": "Explica la diferencia entre Federación y Starfleet.",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "Federación = entidad política/civil",
+        "Starfleet = servicio de la Federación",
+        "Starfleet está sujeta a autoridad civil"
       ]
     },
     {
       "id": "STF-401-Q004",
       "unit_id": "STF-401-U01",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Starfleet como institución y cómo lo corregirías.",
+      "type": "scenario",
+      "prompt_es": "Un oficial afirma que, por estar al mando de una nave, puede decidir por sí solo una cuestión política de la Federación. ¿Qué problema hay en ese razonamiento?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "confunde autoridad operativa con autoridad política",
+        "una nave no es un gobierno independiente",
+        "debe respetar misión, órdenes y autoridad civil"
       ]
     },
     {
       "id": "STF-401-Q005",
       "unit_id": "STF-401-U02",
       "type": "short_answer",
-      "prompt_es": "Explica jerarquía de oficiales y su relevancia operativa.",
+      "prompt_es": "¿Qué diferencia existe entre rango, puesto y autoridad?",
       "answer_key_es": [
-        "jerarquía de oficiales",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "rango = posición jerárquica",
+        "puesto = responsabilidad asignada",
+        "autoridad = capacidad válida para decidir/ordenar en contexto"
       ]
     },
     {
       "id": "STF-401-Q006",
       "unit_id": "STF-401-U02",
-      "type": "compare",
-      "prompt_es": "Compara jerarquía de oficiales con divisas del estándar del proyecto. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "knowledge",
+      "prompt_es": "Ordena de menor a mayor estos rangos: Capitán, Alférez, Comandante, Teniente.",
       "answer_key_es": [
-        "jerarquía de oficiales",
-        "divisas del estándar del proyecto",
-        "diferencia aplicada"
+        "Alférez",
+        "Teniente",
+        "Comandante",
+        "Capitán"
       ]
     },
     {
       "id": "STF-401-Q007",
       "unit_id": "STF-401-U02",
       "type": "scenario",
-      "prompt_es": "Situación: Identificar rango, puesto y autoridad en ejemplos de tripulación. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "prompt_es": "Un Comandante y un Teniente trabajan en una tarea técnica dirigida formalmente por el Teniente especialista. ¿Puede asumirse que el Comandante debe decidir cada detalle por tener mayor rango?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "no",
+        "el rango no determina por sí solo toda autoridad",
+        "puesto/cualificación/órdenes/contexto importan"
       ]
     },
     {
       "id": "STF-401-Q008",
       "unit_id": "STF-401-U02",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Rangos y divisas y cómo lo corregirías.",
+      "type": "knowledge",
+      "prompt_es": "¿Qué parte del sistema de divisas del proyecto es una estandarización de diseño?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "uso común del lenguaje visual de pips inspirado en TNG",
+        "se aplica a las tres eras jugables",
+        "las insignias históricas variaron"
       ]
     },
     {
       "id": "STF-401-Q009",
       "unit_id": "STF-401-U03",
       "type": "short_answer",
-      "prompt_es": "Explica tratamiento a superiores, iguales y subordinados y su relevancia operativa.",
+      "prompt_es": "¿Cuál es la función principal del protocolo verbal en Starfleet?",
       "answer_key_es": [
-        "tratamiento a superiores, iguales y subordinados",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "reducir ambigüedad",
+        "identificar interlocutor y función",
+        "dejar clara la información o solicitud y responsabilidad"
       ]
     },
     {
       "id": "STF-401-Q010",
       "unit_id": "STF-401-U03",
       "type": "compare",
-      "prompt_es": "Compara tratamiento a superiores, iguales y subordinados con uso de rango y cargo. Indica una diferencia que pueda cambiar una decisión.",
+      "prompt_es": "¿Cuándo puede ser más útil dirigirse a alguien por su cargo que por su rango?",
       "answer_key_es": [
-        "tratamiento a superiores, iguales y subordinados",
-        "uso de rango y cargo",
-        "diferencia aplicada"
+        "cuando la función concreta es relevante",
+        "el cargo identifica responsabilidad operativa",
+        "el contexto decide qué referencia es más útil"
       ]
     },
     {
       "id": "STF-401-Q011",
       "unit_id": "STF-401-U03",
       "type": "scenario",
-      "prompt_es": "Situación: Diálogos de presentación, reporte y petición de permiso. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "prompt_es": "Debes pedir repetir un barrido porque la lectura está degradada. Formula una petición profesional.",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "destinatario claro",
+        "solicitud concreta",
+        "motivo relevante",
+        "sin afirmar más de lo observado"
       ]
     },
     {
       "id": "STF-401-Q012",
       "unit_id": "STF-401-U03",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Formas de tratamiento y cómo lo corregirías.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué respeto profesional no equivale a obediencia ciega?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "se reconoce autoridad válida",
+        "puede pedirse aclaración",
+        "deben comunicarse impedimentos o límites",
+        "no se inventa competencia"
       ]
     },
     {
       "id": "STF-401-Q013",
       "unit_id": "STF-401-U04",
-      "type": "short_answer",
-      "prompt_es": "Explica autoridad ordinaria y su relevancia operativa.",
+      "type": "knowledge",
+      "prompt_es": "Indica la secuencia básica de sucesión de mando del proyecto.",
       "answer_key_es": [
-        "autoridad ordinaria",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "Oficial al Mando",
+        "Primer Oficial",
+        "Segundo Oficial",
+        "sucesor cualificado designado"
       ]
     },
     {
       "id": "STF-401-Q014",
       "unit_id": "STF-401-U04",
-      "type": "compare",
-      "prompt_es": "Compara autoridad ordinaria con sucesión básica. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "short_answer",
+      "prompt_es": "¿Por qué el rango por sí solo no basta para resolver una sucesión?",
       "answer_key_es": [
-        "autoridad ordinaria",
-        "sucesión básica",
-        "diferencia aplicada"
+        "también importan puesto",
+        "cualificación",
+        "disponibilidad",
+        "órdenes específicas",
+        "roster local y otros factores"
       ]
     },
     {
       "id": "STF-401-Q015",
       "unit_id": "STF-401-U04",
       "type": "scenario",
-      "prompt_es": "Situación: Resolver a quién informar y de quién aceptar una orden en casos simples. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "prompt_es": "Recibes una instrucción ambigua de una persona que parece tener autoridad. ¿Qué haces?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "pedir aclaración",
+        "no improvisar la intención",
+        "confirmar autoridad/contexto si es necesario",
+        "comunicar impedimentos"
       ]
     },
     {
       "id": "STF-401-Q016",
       "unit_id": "STF-401-U04",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Cadena de mando y cómo lo corregirías.",
+      "type": "knowledge",
+      "prompt_es": "¿Asumir mando temporal cambia automáticamente el rango permanente del personaje?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "no",
+        "la autoridad temporal puede ser de guardia, emergencia o misión",
+        "rango y mando temporal son conceptos distintos"
       ]
     },
     {
       "id": "STF-401-Q017",
       "unit_id": "STF-401-U05",
-      "type": "short_answer",
-      "prompt_es": "Explica Mando y su relevancia operativa.",
+      "type": "knowledge",
+      "prompt_es": "Nombra las tres grandes divisiones utilizadas por el proyecto.",
       "answer_key_es": [
         "Mando",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "Operaciones",
+        "Ciencias"
       ]
     },
     {
       "id": "STF-401-Q018",
       "unit_id": "STF-401-U05",
       "type": "compare",
-      "prompt_es": "Compara Mando con Operaciones. Indica una diferencia que pueda cambiar una decisión.",
+      "prompt_es": "Diferencia división, departamento y puesto.",
       "answer_key_es": [
-        "Mando",
-        "Operaciones",
-        "diferencia aplicada"
+        "división = gran familia funcional",
+        "departamento = trabajo especializado",
+        "puesto = responsabilidad concreta de una persona"
       ]
     },
     {
       "id": "STF-401-Q019",
       "unit_id": "STF-401-U05",
-      "type": "scenario",
-      "prompt_es": "Situación: Construir el organigrama básico de una nave de ejemplo. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "short_answer",
+      "prompt_es": "Explica la regla: persona ≠ puesto ≠ estación ≠ sistema.",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "una persona ocupa un puesto",
+        "el puesto puede usar una estación",
+        "la estación da acceso a sistemas",
+        "no son entidades intercambiables"
       ]
     },
     {
       "id": "STF-401-Q020",
       "unit_id": "STF-401-U05",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Divisiones, departamentos y puestos y cómo lo corregirías.",
+      "type": "scenario",
+      "prompt_es": "Dos oficiales tienen la misma especialidad, pero uno es Jefe de Ingeniería y el otro está asignado a otra función. ¿Tienen necesariamente la misma autoridad?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "no",
+        "el puesto concreto importa",
+        "la autoridad depende del contexto y asignación"
       ]
     },
     {
       "id": "STF-401-Q021",
       "unit_id": "STF-401-U06",
-      "type": "short_answer",
-      "prompt_es": "Explica presentación al servicio y su relevancia operativa.",
+      "type": "procedure",
+      "prompt_es": "Enumera las fases básicas para recibir una instrucción profesional.",
       "answer_key_es": [
-        "presentación al servicio",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "escuchar",
+        "comprender",
+        "confirmar cuando sea necesario",
+        "ejecutar dentro de autoridad/capacidad",
+        "informar"
       ]
     },
     {
       "id": "STF-401-Q022",
       "unit_id": "STF-401-U06",
-      "type": "compare",
-      "prompt_es": "Compara presentación al servicio con recepción y acuse de órdenes. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "scenario",
+      "prompt_es": "Te ordenan operar una estación que nunca has utilizado sin instructor presente. ¿Cuál es la respuesta profesional?",
       "answer_key_es": [
-        "presentación al servicio",
-        "recepción y acuse de órdenes",
-        "diferencia aplicada"
+        "confirmar instrucción",
+        "declarar falta de cualificación para operar autónomamente",
+        "preguntar por supervisión",
+        "no exceder entrenamiento autorizado"
       ]
     },
     {
       "id": "STF-401-Q023",
       "unit_id": "STF-401-U06",
-      "type": "scenario",
-      "prompt_es": "Situación: Mini-simulación de llegada a una unidad y primera instrucción. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué significa acusar recibo de una orden?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "confirmar que se recibió",
+        "confirmar que se entendió",
+        "no implica obediencia ciega ni fingir capacidad"
       ]
     },
     {
       "id": "STF-401-Q024",
       "unit_id": "STF-401-U06",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Protocolo integrado y cómo lo corregirías.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué comunicar un error o impedimento forma parte de la conducta profesional?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "permite corregir o adaptar la operación",
+        "evita ocultar riesgo",
+        "mantiene trazabilidad y responsabilidad",
+        "ocultar puede agravar el problema"
       ]
     }
   ]
