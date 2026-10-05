@@ -632,6 +632,37 @@
     top:28px;
   }
 
+  .module-list{
+    grid-auto-rows:max-content;
+  }
+
+  .module-btn{
+    grid-template-columns:minmax(0,1fr) 18px;
+    row-gap:2px;
+  }
+
+  .module-btn__num{
+    grid-column:1;
+    grid-row:1;
+    overflow-wrap:anywhere;
+  }
+
+  .module-btn__title{
+    grid-column:1;
+    grid-row:2;
+    min-width:0;
+    overflow:visible;
+    text-overflow:clip;
+    white-space:normal;
+    overflow-wrap:anywhere;
+  }
+
+  .module-btn__done{
+    grid-column:2;
+    grid-row:1 / 3;
+    align-self:center;
+  }
+
   .reader{
     min-width:0;
   }
