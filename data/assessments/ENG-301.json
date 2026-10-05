@@ -1,283 +1,279 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "course_id": "ENG-301",
-  "status": "generated_from_authoritative_curriculum",
+  "status": "editorially_aligned_with_developed_manual",
+  "source_manual": "gameplay/careers/academy_path/study_materials/third_class/ENG-301/MANUAL_v1_0.md",
   "question_count": 24,
+  "rule": "No question may require knowledge that is not explicitly taught in ENG-301 or established prerequisites.",
   "questions": [
     {
       "id": "ENG-301-Q001",
       "unit_id": "ENG-301-U01",
       "type": "knowledge",
-      "prompt_es": "Explica fuentes y da un ejemplo operativo.",
+      "prompt_es": "¿Qué datos forman un estado energético?",
       "answer_key_es": [
         "fuentes",
-        "ejemplo coherente",
-        "límite o contexto"
+        "reservas",
+        "consumo",
+        "margen",
+        "prioridades",
+        "degradación"
       ]
     },
     {
       "id": "ENG-301-Q002",
       "unit_id": "ENG-301-U01",
-      "type": "relationship",
-      "prompt_es": "Relaciona fuentes con reservas. ¿Qué información pasa de uno a otro?",
+      "type": "short_answer",
+      "prompt_es": "¿Qué función cumplen reservas?",
       "answer_key_es": [
-        "fuentes",
-        "reservas",
-        "flujo de información o dependencia"
+        "absorber picos",
+        "contingencia",
+        "sostener sistemas"
       ]
     },
     {
       "id": "ENG-301-Q003",
       "unit_id": "ENG-301-U01",
-      "type": "scenario",
-      "prompt_es": "Leer estado energético. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué no son infinitas?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "consumo futuro",
+        "capacidad limitada"
       ]
     },
     {
       "id": "ENG-301-Q004",
       "unit_id": "ENG-301-U01",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Producción y reservas, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "short_answer",
+      "prompt_es": "¿Qué significa margen energético?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "capacidad disponible antes de comprometer otros"
       ]
     },
     {
       "id": "ENG-301-Q005",
       "unit_id": "ENG-301-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica prioridades y da un ejemplo operativo.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué significa distribuir energía?",
       "answer_key_es": [
-        "prioridades",
-        "ejemplo coherente",
-        "límite o contexto"
+        "asignar/priorizar cargas"
       ]
     },
     {
       "id": "ENG-301-Q006",
       "unit_id": "ENG-301-U02",
-      "type": "relationship",
-      "prompt_es": "Relaciona prioridades con rutas. ¿Qué información pasa de uno a otro?",
+      "type": "knowledge",
+      "prompt_es": "¿De dónde puede venir una prioridad?",
       "answer_key_es": [
-        "prioridades",
-        "rutas",
-        "flujo de información o dependencia"
+        "seguridad",
+        "misión",
+        "Mando",
+        "emergencia",
+        "estado"
       ]
     },
     {
       "id": "ENG-301-Q007",
       "unit_id": "ENG-301-U02",
-      "type": "scenario",
-      "prompt_es": "Asignar energía en escenario simple. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "short_answer",
+      "prompt_es": "¿Para qué sirve aislar?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "contener fallo",
+        "proteger resto"
       ]
     },
     {
       "id": "ENG-301-Q008",
       "unit_id": "ENG-301-U02",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Distribución de energía, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "judgment",
+      "prompt_es": "¿Por qué aumentar un sistema afecta a otro?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "recursos compartidos"
       ]
     },
     {
       "id": "ENG-301-Q009",
       "unit_id": "ENG-301-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica impulso y da un ejemplo operativo.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué responde Ingeniería ante una orden de vuelo?",
       "answer_key_es": [
-        "impulso",
-        "ejemplo coherente",
-        "límite o contexto"
+        "posible",
+        "duración",
+        "riesgo",
+        "impacto"
       ]
     },
     {
       "id": "ENG-301-Q010",
       "unit_id": "ENG-301-U03",
-      "type": "relationship",
-      "prompt_es": "Relaciona impulso con warp. ¿Qué información pasa de uno a otro?",
+      "type": "compare",
+      "prompt_es": "Diferencia máximo y sostenible.",
       "answer_key_es": [
-        "impulso",
-        "warp",
-        "flujo de información o dependencia"
+        "pico",
+        "mantenible"
       ]
     },
     {
       "id": "ENG-301-Q011",
       "unit_id": "ENG-301-U03",
-      "type": "scenario",
-      "prompt_es": "Relacionar orden de vuelo con capacidad técnica. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "knowledge",
+      "prompt_es": "Nombra tres limitaciones warp.",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "factor",
+        "daño",
+        "potencia",
+        "condiciones",
+        "sostenibilidad"
       ]
     },
     {
       "id": "ENG-301-Q012",
       "unit_id": "ENG-301-U03",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Propulsión y energía, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "judgment",
+      "prompt_es": "¿Cómo se reporta una limitación útil?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "capacidad disponible",
+        "alternativa",
+        "riesgo"
       ]
     },
     {
       "id": "ENG-301-Q013",
       "unit_id": "ENG-301-U04",
       "type": "knowledge",
-      "prompt_es": "Explica sensores y da un ejemplo operativo.",
+      "prompt_es": "Nombra cuatro dependencias posibles.",
       "answer_key_es": [
-        "sensores",
-        "ejemplo coherente",
-        "límite o contexto"
+        "energía",
+        "datos",
+        "refrigeración",
+        "control",
+        "hardware",
+        "autorización"
       ]
     },
     {
       "id": "ENG-301-Q014",
       "unit_id": "ENG-301-U04",
-      "type": "relationship",
-      "prompt_es": "Relaciona sensores con escudos. ¿Qué información pasa de uno a otro?",
+      "type": "short_answer",
+      "prompt_es": "¿De qué depende Sensores?",
       "answer_key_es": [
-        "sensores",
-        "escudos",
-        "flujo de información o dependencia"
+        "matrices",
+        "potencia",
+        "integridad",
+        "procesamiento",
+        "entorno"
       ]
     },
     {
       "id": "ENG-301-Q015",
       "unit_id": "ENG-301-U04",
-      "type": "scenario",
-      "prompt_es": "Trazar dependencias. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué soporte vital tiene alta prioridad?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "habitabilidad",
+        "vidas"
       ]
     },
     {
       "id": "ENG-301-Q016",
       "unit_id": "ENG-301-U04",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Dependencias de sistemas, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "short_answer",
+      "prompt_es": "Explica efecto cascada.",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "fallo inicial produce consecuencias en dependientes"
       ]
     },
     {
       "id": "ENG-301-Q017",
       "unit_id": "ENG-301-U05",
-      "type": "knowledge",
-      "prompt_es": "Explica síntoma y da un ejemplo operativo.",
+      "type": "compare",
+      "prompt_es": "Diferencia síntoma y causa.",
       "answer_key_es": [
-        "síntoma",
-        "ejemplo coherente",
-        "límite o contexto"
+        "observación",
+        "explicación"
       ]
     },
     {
       "id": "ENG-301-Q018",
       "unit_id": "ENG-301-U05",
-      "type": "relationship",
-      "prompt_es": "Relaciona síntoma con lectura. ¿Qué información pasa de uno a otro?",
+      "type": "procedure",
+      "prompt_es": "¿Qué pasos sigue diagnóstico?",
       "answer_key_es": [
-        "síntoma",
-        "lectura",
-        "flujo de información o dependencia"
+        "confirmar",
+        "estado",
+        "prueba",
+        "comparar",
+        "aislar",
+        "actuar"
       ]
     },
     {
       "id": "ENG-301-Q019",
       "unit_id": "ENG-301-U05",
-      "type": "scenario",
-      "prompt_es": "Diagnosticar fallo preparado. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "knowledge",
+      "prompt_es": "Nombra cuatro acciones de Ingeniería.",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "diagnose",
+        "reroute",
+        "isolate",
+        "restart",
+        "repair",
+        "patch",
+        "replace",
+        "test"
       ]
     },
     {
       "id": "ENG-301-Q020",
       "unit_id": "ENG-301-U05",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Mantenimiento y diagnóstico básico, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "judgment",
+      "prompt_es": "¿Cuándo escalar?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "riesgo",
+        "incertidumbre",
+        "sistema crítico",
+        "recursos mayores"
       ]
     },
     {
       "id": "ENG-301-Q021",
       "unit_id": "ENG-301-U06",
       "type": "knowledge",
-      "prompt_es": "Explica estado y da un ejemplo operativo.",
+      "prompt_es": "¿Qué necesita saber el puente?",
       "answer_key_es": [
         "estado",
-        "ejemplo coherente",
-        "límite o contexto"
+        "capacidad",
+        "riesgo",
+        "ETA",
+        "restricciones"
       ]
     },
     {
       "id": "ENG-301-Q022",
       "unit_id": "ENG-301-U06",
-      "type": "relationship",
-      "prompt_es": "Relaciona estado con capacidad. ¿Qué información pasa de uno a otro?",
+      "type": "judgment",
+      "prompt_es": "¿Por qué «está mal» no sirve?",
       "answer_key_es": [
-        "estado",
-        "capacidad",
-        "flujo de información o dependencia"
+        "no cuantifica capacidad",
+        "no orienta decisión"
       ]
     },
     {
       "id": "ENG-301-Q023",
       "unit_id": "ENG-301-U06",
-      "type": "scenario",
-      "prompt_es": "Emitir informe al puente. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué acompaña una ETA incierta?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "rango/confianza"
       ]
     },
     {
       "id": "ENG-301-Q024",
       "unit_id": "ENG-301-U06",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Informe de Ingeniería, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "judgment",
+      "prompt_es": "¿Quién decide si la opción excede Ingeniería?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "Mando/autoridad competente"
       ]
     }
   ]
