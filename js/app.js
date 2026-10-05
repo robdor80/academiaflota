@@ -1,9 +1,9 @@
 import {
   getProfiles, createProfile, setActiveProfile, clearActiveProfile, getActiveProfile,
   updateProfile, deleteProfile, exportProfile, importProfile
-} from "./storage.js";
-import { loadStudyData, renderLesson } from "./study.js";
-import { loadEvaluationData, renderExam, gradeExam, renderResult } from "./evaluation.js";
+} from "./storage.js?v=0.2.2";
+import { loadStudyData, renderLesson } from "./study.js?v=0.2.2";
+import { loadEvaluationData, renderExam, gradeExam, renderResult } from "./evaluation.js?v=0.2.2";
 
 const app = {
   profile: null,
@@ -105,7 +105,7 @@ async function ensureData() {
   if (!app.study) app.study = await loadStudyData();
   if (!app.exam) app.exam = await loadEvaluationData();
   if (!app.practices) {
-    const response = await fetch("data/practicas-sensores.json");
+    const response = await fetch("data/practicas-sensores.json?v=0.2.2");
     if (!response.ok) throw new Error("No se pudieron cargar las prácticas.");
     app.practices = await response.json();
   }

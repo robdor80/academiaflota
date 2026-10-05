@@ -1,5 +1,5 @@
 export async function loadEvaluationData() {
-  const response = await fetch("data/evaluacion-sensores.json");
+  const response = await fetch("data/evaluacion-sensores.json?v=0.2.2");
   if (!response.ok) throw new Error("No se pudo cargar la evaluación.");
   return response.json();
 }
