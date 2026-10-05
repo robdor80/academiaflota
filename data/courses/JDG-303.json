@@ -1,0 +1,383 @@
+{
+  "subject": "Juicio operativo, informes y debriefing",
+  "code": "JDG-303",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/JDG-303/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/JDG-303/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/ship_operations/operational_event_log/README.md",
+    "gameplay/careers/starfleet_service/professional_evidence_model.json"
+  ],
+  "modules": [
+    {
+      "id": "JDG-303-U01",
+      "title": "Hechos, inferencias y supuestos",
+      "subtitle": "UNIDAD 01 · JDG-303",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Enseñar a valorar decisiones por la información disponible en el momento y a documentarlas profesionalmente."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "evidencia",
+            "hipótesis",
+            "sesgo",
+            "incertidumbre"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Separar capas en un caso."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Ejercicio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica evidencia en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Separar capas en un caso.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/ship_operations/operational_event_log/README.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JDG-303-U02",
+      "title": "Riesgo y prioridad",
+      "subtitle": "UNIDAD 02 · JDG-303",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Enseñar a valorar decisiones por la información disponible en el momento y a documentarlas profesionalmente."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "probabilidad contextual",
+            "impacto",
+            "urgencia",
+            "reversibilidad"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Comparar cursos de acción."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Caso."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica probabilidad contextual en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Comparar cursos de acción.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/ship_operations/operational_event_log/README.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JDG-303-U03",
+      "title": "Decisión bajo información incompleta",
+      "subtitle": "UNIDAD 03 · JDG-303",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Enseñar a valorar decisiones por la información disponible en el momento y a documentarlas profesionalmente."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "umbral",
+            "consulta",
+            "acción",
+            "espera"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Resolver escenario con datos parciales."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica umbral en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Resolver escenario con datos parciales.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/ship_operations/operational_event_log/README.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JDG-303-U04",
+      "title": "Informe operativo",
+      "subtitle": "UNIDAD 04 · JDG-303",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Enseñar a valorar decisiones por la información disponible en el momento y a documentarlas profesionalmente."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "hechos",
+            "acciones",
+            "resultado",
+            "pendientes"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Redactar informe breve."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Revisión."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica hechos en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Redactar informe breve.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/ship_operations/operational_event_log/README.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JDG-303-U05",
+      "title": "Debrief profesional",
+      "subtitle": "UNIDAD 05 · JDG-303",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Enseñar a valorar decisiones por la información disponible en el momento y a documentarlas profesionalmente."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "responsabilidad",
+            "no hindsight bias",
+            "alternativas",
+            "lecciones"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Debrief oral."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica responsabilidad en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Debrief oral.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/ship_operations/operational_event_log/README.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JDG-303-U06",
+      "title": "Caso integrado",
+      "subtitle": "UNIDAD 06 · JDG-303",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Enseñar a valorar decisiones por la información disponible en el momento y a documentarlas profesionalmente."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "situación",
+            "decisión",
+            "consecuencia",
+            "documentación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Analizar una simulación completa."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación final."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica situación en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Analizar una simulación completa.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/ship_operations/operational_event_log/README.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

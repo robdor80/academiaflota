@@ -1,0 +1,390 @@
+{
+  "subject": "Desarrollo profesional y elección de especialización",
+  "code": "CAR-303",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/CAR-303/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/CAR-303/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/careers/academy_path/specialization_rules.md",
+    "gameplay/characters/objectives/trajectory_coherence_rules.md",
+    "gameplay/careers/starfleet_service/career_progression_rules.json"
+  ],
+  "modules": [
+    {
+      "id": "CAR-303-U01",
+      "title": "Perfil académico actual",
+      "subtitle": "UNIDAD 01 · CAR-303",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Convertir experiencia, intereses y evidencia en una elección de especialización consciente del jugador."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "fortalezas",
+            "carencias",
+            "evidencia",
+            "preferencias"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Revisar expediente."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Tutoría."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica fortalezas en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Revisar expediente.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/characters/objectives/trajectory_coherence_rules.md",
+            "gameplay/careers/starfleet_service/career_progression_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CAR-303-U02",
+      "title": "Qué exige cada rama",
+      "subtitle": "UNIDAD 02 · CAR-303",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Convertir experiencia, intereses y evidencia en una elección de especialización consciente del jugador."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "tipo de trabajo",
+            "responsabilidades",
+            "competencias",
+            "estilo de servicio"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Comparar ramas con ejemplos."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Comprobación de comprensión."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica tipo de trabajo en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Comparar ramas con ejemplos.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/characters/objectives/trajectory_coherence_rules.md",
+            "gameplay/careers/starfleet_service/career_progression_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CAR-303-U03",
+      "title": "Aptitud y preferencia",
+      "subtitle": "UNIDAD 03 · CAR-303",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Convertir experiencia, intereses y evidencia en una elección de especialización consciente del jugador."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "recomendación",
+            "motivación",
+            "capacidad",
+            "objetivos"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Contrastar deseo y evidencia sin bloquear por puntuación oculta."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Entrevista."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica recomendación en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Contrastar deseo y evidencia sin bloquear por puntuación oculta.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/characters/objectives/trajectory_coherence_rules.md",
+            "gameplay/careers/starfleet_service/career_progression_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CAR-303-U04",
+      "title": "Objetivos de carrera",
+      "subtitle": "UNIDAD 04 · CAR-303",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Convertir experiencia, intereses y evidencia en una elección de especialización consciente del jugador."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "largo plazo",
+            "medio plazo",
+            "rutas múltiples",
+            "cambio futuro"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Actualizar trayectoria."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Revisión."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica largo plazo en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Actualizar trayectoria.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/characters/objectives/trajectory_coherence_rules.md",
+            "gameplay/careers/starfleet_service/career_progression_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CAR-303-U05",
+      "title": "Entrevistas de orientación",
+      "subtitle": "UNIDAD 05 · CAR-303",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Convertir experiencia, intereses y evidencia en una elección de especialización consciente del jugador."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "feedback",
+            "preguntas",
+            "recomendaciones",
+            "apoyos"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Hablar con instructores/mentores."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Registro cualitativo."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica feedback en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Hablar con instructores/mentores.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/characters/objectives/trajectory_coherence_rules.md",
+            "gameplay/careers/starfleet_service/career_progression_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CAR-303-U06",
+      "title": "Selección final",
+      "subtitle": "UNIDAD 06 · CAR-303",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Convertir experiencia, intereses y evidencia en una elección de especialización consciente del jugador."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "decisión del jugador",
+            "requisitos objetivos",
+            "consecuencias",
+            "catch-up futuro"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Confirmar especialización."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Validación de requisitos y registro."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica decisión del jugador en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Confirmar especialización.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/characters/objectives/trajectory_coherence_rules.md",
+            "gameplay/careers/starfleet_service/career_progression_rules.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

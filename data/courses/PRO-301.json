@@ -1,0 +1,391 @@
+{
+  "subject": "Procedimientos operativos y trabajo interdepartamental",
+  "code": "PRO-301",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/PRO-301/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/PRO-301/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/ship_operations/operational_event_log/operational_event_contract.json",
+    "lore/federation/starfleet/duty_shifts/shift_model.json",
+    "gameplay/orders/starfleet_mission_tasking_order.json"
+  ],
+  "modules": [
+    {
+      "id": "PRO-301-U01",
+      "title": "Orden, tarea y responsabilidad",
+      "subtitle": "UNIDAD 01 · PRO-301",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Convertir acciones aisladas en trabajo coordinado, trazable y profesional."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "orden",
+            "intención",
+            "responsable",
+            "confirmación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Descomponer una orden en tareas."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Ejercicio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica orden en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Descomponer una orden en tareas.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/ship_operations/operational_event_log/operational_event_contract.json",
+            "lore/federation/starfleet/duty_shifts/shift_model.json",
+            "gameplay/orders/starfleet_mission_tasking_order.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PRO-301-U02",
+      "title": "Informes estructurados",
+      "subtitle": "UNIDAD 02 · PRO-301",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Convertir acciones aisladas en trabajo coordinado, trazable y profesional."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "hechos",
+            "estado",
+            "riesgo",
+            "recomendación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Emitir informes de 30 segundos."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación oral."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica hechos en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Emitir informes de 30 segundos.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/ship_operations/operational_event_log/operational_event_contract.json",
+            "lore/federation/starfleet/duty_shifts/shift_model.json",
+            "gameplay/orders/starfleet_mission_tasking_order.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PRO-301-U03",
+      "title": "Handoff interdepartamental",
+      "subtitle": "UNIDAD 03 · PRO-301",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Convertir acciones aisladas en trabajo coordinado, trazable y profesional."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "datos necesarios",
+            "formato",
+            "recepción",
+            "confirmación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Transferir un caso entre departamentos."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica datos necesarios en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Transferir un caso entre departamentos.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/ship_operations/operational_event_log/operational_event_contract.json",
+            "lore/federation/starfleet/duty_shifts/shift_model.json",
+            "gameplay/orders/starfleet_mission_tasking_order.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PRO-301-U04",
+      "title": "Prioridades en conflicto",
+      "subtitle": "UNIDAD 04 · PRO-301",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Convertir acciones aisladas en trabajo coordinado, trazable y profesional."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "misión",
+            "seguridad",
+            "recursos",
+            "autoridad"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Resolver prioridades incompatibles."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Caso."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica misión en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Resolver prioridades incompatibles.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/ship_operations/operational_event_log/operational_event_contract.json",
+            "lore/federation/starfleet/duty_shifts/shift_model.json",
+            "gameplay/orders/starfleet_mission_tasking_order.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PRO-301-U05",
+      "title": "Registro operativo",
+      "subtitle": "UNIDAD 05 · PRO-301",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Convertir acciones aisladas en trabajo coordinado, trazable y profesional."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "evento",
+            "hora",
+            "acción",
+            "resultado"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Crear entrada de log factual."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Revisión."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica evento en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Crear entrada de log factual.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/ship_operations/operational_event_log/operational_event_contract.json",
+            "lore/federation/starfleet/duty_shifts/shift_model.json",
+            "gameplay/orders/starfleet_mission_tasking_order.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PRO-301-U06",
+      "title": "Ejercicio integrado",
+      "subtitle": "UNIDAD 06 · PRO-301",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Convertir acciones aisladas en trabajo coordinado, trazable y profesional."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "orden",
+            "coordinación",
+            "reporte",
+            "handoff",
+            "registro"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Micro-misión de equipo."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación integrada."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica orden en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Micro-misión de equipo.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/ship_operations/operational_event_log/operational_event_contract.json",
+            "lore/federation/starfleet/duty_shifts/shift_model.json",
+            "gameplay/orders/starfleet_mission_tasking_order.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

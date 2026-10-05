@@ -1,0 +1,383 @@
+{
+  "subject": "Servicio operativo avanzado",
+  "code": "DUT-101",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/first_class/courses/DUT-101/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/first_class/DUT-101/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/careers/starfleet_service/professional_evidence_model.json",
+    "lore/federation/starfleet/duty_shifts/shift_model.json"
+  ],
+  "modules": [
+    {
+      "id": "DUT-101-U01",
+      "title": "Incorporación avanzada",
+      "subtitle": "UNIDAD 01 · DUT-101",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Convertir el servicio supervisado previo en guardias largas y realistas con intervención mínima del instructor."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "órdenes vigentes",
+            "estado",
+            "pendientes",
+            "riesgos"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Tomar puesto con briefing realista."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica órdenes vigentes como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Tomar puesto con briefing realista.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "lore/federation/starfleet/duty_shifts/shift_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DUT-101-U02",
+      "title": "Rutina sostenida",
+      "subtitle": "UNIDAD 02 · DUT-101",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Convertir el servicio supervisado previo en guardias largas y realistas con intervención mínima del instructor."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "monitorización",
+            "tareas periódicas",
+            "registros",
+            "comunicaciones"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Guardia prolongada sin incidentes forzados."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Constancia."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica monitorización como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Guardia prolongada sin incidentes forzados.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "lore/federation/starfleet/duty_shifts/shift_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DUT-101-U03",
+      "title": "Incidencia operativa",
+      "subtitle": "UNIDAD 03 · DUT-101",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Convertir el servicio supervisado previo en guardias largas y realistas con intervención mínima del instructor."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "detección",
+            "respuesta",
+            "escalado",
+            "seguimiento"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Resolver evento contextual."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Juicio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica detección como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Resolver evento contextual.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "lore/federation/starfleet/duty_shifts/shift_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DUT-101-U04",
+      "title": "Interrupciones y carga",
+      "subtitle": "UNIDAD 04 · DUT-101",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Convertir el servicio supervisado previo en guardias largas y realistas con intervención mínima del instructor."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "prioridades",
+            "multitarea",
+            "delegación",
+            "fatiga"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Gestionar varias demandas."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica prioridades como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Gestionar varias demandas.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "lore/federation/starfleet/duty_shifts/shift_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DUT-101-U05",
+      "title": "Relevo profesional",
+      "subtitle": "UNIDAD 05 · DUT-101",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Convertir el servicio supervisado previo en guardias largas y realistas con intervención mínima del instructor."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "estado",
+            "pendientes",
+            "órdenes",
+            "riesgo"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Entregar puesto."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Calidad del handoff."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica estado como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Entregar puesto.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "lore/federation/starfleet/duty_shifts/shift_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DUT-101-U06",
+      "title": "Informe de supervisor",
+      "subtitle": "UNIDAD 06 · DUT-101",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Convertir el servicio supervisado previo en guardias largas y realistas con intervención mínima del instructor."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "competencia",
+            "conducta",
+            "autonomía",
+            "límites"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Debrief formal."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Registro en expediente."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica competencia como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Debrief formal.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "lore/federation/starfleet/duty_shifts/shift_model.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

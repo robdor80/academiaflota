@@ -1,0 +1,390 @@
+{
+  "subject": "Prácticum / crucero de formación",
+  "code": "PRC-102",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/first_class/courses/PRC-102/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/first_class/PRC-102/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/careers/starfleet_service/professional_evidence_model.json",
+    "gameplay/careers/academy_path/field_training_model.json",
+    "gameplay/careers/academy_path/training_asset_model.json"
+  ],
+  "modules": [
+    {
+      "id": "PRC-102-U01",
+      "title": "Asignación de prácticum",
+      "subtitle": "UNIDAD 01 · PRC-102",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Exponer al cadete a servicio real o casi real durante un periodo significativo en una unidad o instalación apropiada."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "unidad",
+            "supervisor",
+            "puesto",
+            "alcance",
+            "reglas"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Recibir órdenes de incorporación."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Validación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica unidad como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Recibir órdenes de incorporación.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/field_training_model.json",
+            "gameplay/careers/academy_path/training_asset_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PRC-102-U02",
+      "title": "Integración en tripulación",
+      "subtitle": "UNIDAD 02 · PRC-102",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Exponer al cadete a servicio real o casi real durante un periodo significativo en una unidad o instalación apropiada."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "alojamiento",
+            "guardias",
+            "cultura de unidad",
+            "cadena"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Primeros días jugables o resumidos según relevancia."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Observación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica alojamiento como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Primeros días jugables o resumidos según relevancia.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/field_training_model.json",
+            "gameplay/careers/academy_path/training_asset_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PRC-102-U03",
+      "title": "Servicio ordinario",
+      "subtitle": "UNIDAD 03 · PRC-102",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Exponer al cadete a servicio real o casi real durante un periodo significativo en una unidad o instalación apropiada."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "rutina",
+            "tareas",
+            "tiempo libre",
+            "relaciones profesionales"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Bloques de servicio realista."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evidencia longitudinal."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica rutina como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Bloques de servicio realista.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/field_training_model.json",
+            "gameplay/careers/academy_path/training_asset_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PRC-102-U04",
+      "title": "Misión/actividad de unidad",
+      "subtitle": "UNIDAD 04 · PRC-102",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Exponer al cadete a servicio real o casi real durante un periodo significativo en una unidad o instalación apropiada."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "objetivo",
+            "rol",
+            "supervisión",
+            "consecuencias"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Participar en actividad real o equivalente."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica objetivo como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Participar en actividad real o equivalente.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/field_training_model.json",
+            "gameplay/careers/academy_path/training_asset_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PRC-102-U05",
+      "title": "Incidencias emergentes",
+      "subtitle": "UNIDAD 05 · PRC-102",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Exponer al cadete a servicio real o casi real durante un periodo significativo en una unidad o instalación apropiada."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "mundo vivo",
+            "no crisis garantizada",
+            "respuesta"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Resolver lo que ocurra si ocurre."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evidencia contextual."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica mundo vivo como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Resolver lo que ocurra si ocurre.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/field_training_model.json",
+            "gameplay/careers/academy_path/training_asset_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PRC-102-U06",
+      "title": "Informe final de prácticum",
+      "subtitle": "UNIDAD 06 · PRC-102",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Exponer al cadete a servicio real o casi real durante un periodo significativo en una unidad o instalación apropiada."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "desempeño",
+            "conducta",
+            "autonomía",
+            "recomendaciones"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Entrevista de cierre."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Registro persistente."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica desempeño como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Entrevista de cierre.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/field_training_model.json",
+            "gameplay/careers/academy_path/training_asset_model.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,391 @@
+{
+  "subject": "Regulaciones, Directiva Principal y responsabilidad",
+  "code": "REG-302",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/REG-302/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/REG-302/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "lore/federation/starfleet/prime_directive/prime_directive.json",
+    "lore/federation/starfleet/regulations/medical_authority.json",
+    "lore/federation/starfleet/command_structure/succession_rules.json"
+  ],
+  "modules": [
+    {
+      "id": "REG-302-U01",
+      "title": "Autoridad y regulación",
+      "subtitle": "UNIDAD 01 · REG-302",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Aplicar restricciones legales, éticas e institucionales básicas a decisiones operativas."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "órdenes",
+            "reglamentos",
+            "responsabilidad",
+            "escalado"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Analizar autoridad en tres casos."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación de criterio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica órdenes en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Analizar autoridad en tres casos.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/federation/starfleet/prime_directive/prime_directive.json",
+            "lore/federation/starfleet/regulations/medical_authority.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "REG-302-U02",
+      "title": "Directiva Principal",
+      "subtitle": "UNIDAD 02 · REG-302",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Aplicar restricciones legales, éticas e institucionales básicas a decisiones operativas."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "finalidad",
+            "no interferencia",
+            "reconocimiento de riesgo",
+            "límites de cadete"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Resolver casos introductorios."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Caso escrito/oral."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica finalidad en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Resolver casos introductorios.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/federation/starfleet/prime_directive/prime_directive.json",
+            "lore/federation/starfleet/regulations/medical_authority.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "REG-302-U03",
+      "title": "Órdenes problemáticas",
+      "subtitle": "UNIDAD 03 · REG-302",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Aplicar restricciones legales, éticas e institucionales básicas a decisiones operativas."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "duda",
+            "aclaración",
+            "conflicto",
+            "procedimiento de escalado"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Responder a una orden discutible sin improvisar doctrina."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Escena."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica duda en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Responder a una orden discutible sin improvisar doctrina.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/federation/starfleet/prime_directive/prime_directive.json",
+            "lore/federation/starfleet/regulations/medical_authority.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "REG-302-U04",
+      "title": "Autoridad especial",
+      "subtitle": "UNIDAD 04 · REG-302",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Aplicar restricciones legales, éticas e institucionales básicas a decisiones operativas."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "médica",
+            "seguridad",
+            "mando",
+            "clasificación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Identificar ámbitos de autoridad."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Caso comparado."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica médica en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Identificar ámbitos de autoridad.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/federation/starfleet/prime_directive/prime_directive.json",
+            "lore/federation/starfleet/regulations/medical_authority.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "REG-302-U05",
+      "title": "Información restringida",
+      "subtitle": "UNIDAD 05 · REG-302",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Aplicar restricciones legales, éticas e institucionales básicas a decisiones operativas."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "need-to-know",
+            "clasificación",
+            "registro",
+            "divulgación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Resolver una petición improcedente."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación situacional."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica need-to-know en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Resolver una petición improcedente.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/federation/starfleet/prime_directive/prime_directive.json",
+            "lore/federation/starfleet/regulations/medical_authority.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "REG-302-U06",
+      "title": "Caso integrado de responsabilidad",
+      "subtitle": "UNIDAD 06 · REG-302",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Aplicar restricciones legales, éticas e institucionales básicas a decisiones operativas."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "hechos",
+            "regla",
+            "autoridad",
+            "decisión",
+            "registro"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Analizar caso complejo moderado."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación final de curso."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica hechos en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Analizar caso complejo moderado.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/federation/starfleet/prime_directive/prime_directive.json",
+            "lore/federation/starfleet/regulations/medical_authority.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

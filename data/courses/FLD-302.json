@@ -1,0 +1,392 @@
+{
+  "subject": "Formación de campo I",
+  "code": "FLD-302",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/FLD-302/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/FLD-302/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/careers/academy_path/field_training_model.json",
+    "gameplay/careers/academy_path/training_asset_model.json",
+    "gameplay/communications/communications_model.json"
+  ],
+  "modules": [
+    {
+      "id": "FLD-302-U01",
+      "title": "Preparación de misión",
+      "subtitle": "UNIDAD 01 · FLD-302",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Integrar procedimientos, equipo y criterio fuera del entorno controlado de aula/puente."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "briefing",
+            "roles",
+            "objetivos",
+            "equipo",
+            "abort criteria"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Preparar salida de entrenamiento."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación de plan."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica briefing en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Preparar salida de entrenamiento.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/academy_path/field_training_model.json",
+            "gameplay/careers/academy_path/training_asset_model.json",
+            "gameplay/communications/communications_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FLD-302-U02",
+      "title": "Movimiento y orientación",
+      "subtitle": "UNIDAD 02 · FLD-302",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Integrar procedimientos, equipo y criterio fuera del entorno controlado de aula/puente."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "mapa",
+            "sensores portátiles",
+            "cohesión",
+            "puntos de reunión"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Recorrido de campo."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica mapa en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Recorrido de campo.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/academy_path/field_training_model.json",
+            "gameplay/careers/academy_path/training_asset_model.json",
+            "gameplay/communications/communications_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FLD-302-U03",
+      "title": "Ambiente y protección",
+      "subtitle": "UNIDAD 03 · FLD-302",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Integrar procedimientos, equipo y criterio fuera del entorno controlado de aula/puente."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "atmósfera",
+            "temperatura",
+            "radiación contextual",
+            "trajes"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Seleccionar protección adecuada."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Caso."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica atmósfera en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Seleccionar protección adecuada.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/academy_path/field_training_model.json",
+            "gameplay/careers/academy_path/training_asset_model.json",
+            "gameplay/communications/communications_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FLD-302-U04",
+      "title": "Comunicaciones de campo",
+      "subtitle": "UNIDAD 04 · FLD-302",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Integrar procedimientos, equipo y criterio fuera del entorno controlado de aula/puente."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "check-ins",
+            "pérdida de contacto",
+            "canal",
+            "reporte"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Mantener comunicaciones durante ejercicio."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica check-ins en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Mantener comunicaciones durante ejercicio.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/academy_path/field_training_model.json",
+            "gameplay/careers/academy_path/training_asset_model.json",
+            "gameplay/communications/communications_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FLD-302-U05",
+      "title": "Incidente de campo",
+      "subtitle": "UNIDAD 05 · FLD-302",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Integrar procedimientos, equipo y criterio fuera del entorno controlado de aula/puente."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "cambio de misión",
+            "herido",
+            "riesgo",
+            "retirada"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Resolver incidente controlado."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Juicio y teamwork."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica cambio de misión en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Resolver incidente controlado.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/academy_path/field_training_model.json",
+            "gameplay/careers/academy_path/training_asset_model.json",
+            "gameplay/communications/communications_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FLD-302-U06",
+      "title": "Extracción y debrief",
+      "subtitle": "UNIDAD 06 · FLD-302",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Integrar procedimientos, equipo y criterio fuera del entorno controlado de aula/puente."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "recuento",
+            "equipo",
+            "handoff",
+            "registro",
+            "lecciones"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Cerrar misión y debrief."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación integrada."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica recuento en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Cerrar misión y debrief.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/academy_path/field_training_model.json",
+            "gameplay/careers/academy_path/training_asset_model.json",
+            "gameplay/communications/communications_model.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

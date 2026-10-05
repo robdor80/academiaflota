@@ -1,0 +1,401 @@
+{
+  "subject": "Organización y protocolo de Starfleet",
+  "code": "STF-401",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/STF-401/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/STF-401/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "lore/federation/starfleet/ranks/officer_ranks.json",
+    "lore/federation/starfleet/ranks/rank_insignia_standard.json",
+    "lore/federation/starfleet/departments/divisions_and_departments.json",
+    "lore/federation/starfleet/positions/positions.json",
+    "lore/federation/starfleet/command_structure/succession_rules.json"
+  ],
+  "modules": [
+    {
+      "id": "STF-401-U01",
+      "title": "Starfleet como institución",
+      "subtitle": "UNIDAD 01 · STF-401",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dominar la estructura institucional y el protocolo básico necesarios para funcionar como cadete y futuro oficial."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "misión general",
+            "exploración, ciencia, diplomacia, asistencia y defensa",
+            "relación funcional con la Federación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Clasificar situaciones por función institucional sin recurrir a trivia."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Preguntas aplicadas y breve caso de misión."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras misión general.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Clasificar situaciones por función institucional sin recurrir a trivia.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/federation/starfleet/ranks/officer_ranks.json",
+            "lore/federation/starfleet/ranks/rank_insignia_standard.json",
+            "lore/federation/starfleet/departments/divisions_and_departments.json",
+            "lore/federation/starfleet/positions/positions.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "STF-401-U02",
+      "title": "Rangos y divisas",
+      "subtitle": "UNIDAD 02 · STF-401",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dominar la estructura institucional y el protocolo básico necesarios para funcionar como cadete y futuro oficial."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "jerarquía de oficiales",
+            "divisas del estándar del proyecto",
+            "diferencia entre rango y puesto"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Identificar rango, puesto y autoridad en ejemplos de tripulación."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Reconocimiento y razonamiento de precedencia básica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras jerarquía de oficiales.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Identificar rango, puesto y autoridad en ejemplos de tripulación.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/federation/starfleet/ranks/officer_ranks.json",
+            "lore/federation/starfleet/ranks/rank_insignia_standard.json",
+            "lore/federation/starfleet/departments/divisions_and_departments.json",
+            "lore/federation/starfleet/positions/positions.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "STF-401-U03",
+      "title": "Formas de tratamiento",
+      "subtitle": "UNIDAD 03 · STF-401",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dominar la estructura institucional y el protocolo básico necesarios para funcionar como cadete y futuro oficial."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "tratamiento a superiores, iguales y subordinados",
+            "uso de rango y cargo",
+            "contexto formal e informal"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Diálogos de presentación, reporte y petición de permiso."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Escena breve evaluada por corrección y contexto."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras tratamiento a superiores, iguales y subordinados.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Diálogos de presentación, reporte y petición de permiso.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/federation/starfleet/ranks/officer_ranks.json",
+            "lore/federation/starfleet/ranks/rank_insignia_standard.json",
+            "lore/federation/starfleet/departments/divisions_and_departments.json",
+            "lore/federation/starfleet/positions/positions.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "STF-401-U04",
+      "title": "Cadena de mando",
+      "subtitle": "UNIDAD 04 · STF-401",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dominar la estructura institucional y el protocolo básico necesarios para funcionar como cadete y futuro oficial."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "autoridad ordinaria",
+            "sucesión básica",
+            "órdenes válidas",
+            "límites de autoridad"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Resolver a quién informar y de quién aceptar una orden en casos simples."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Casos de cadena de mando."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras autoridad ordinaria.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Resolver a quién informar y de quién aceptar una orden en casos simples.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/federation/starfleet/ranks/officer_ranks.json",
+            "lore/federation/starfleet/ranks/rank_insignia_standard.json",
+            "lore/federation/starfleet/departments/divisions_and_departments.json",
+            "lore/federation/starfleet/positions/positions.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "STF-401-U05",
+      "title": "Divisiones, departamentos y puestos",
+      "subtitle": "UNIDAD 05 · STF-401",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dominar la estructura institucional y el protocolo básico necesarios para funcionar como cadete y futuro oficial."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Mando",
+            "Operaciones",
+            "Ciencias",
+            "departamentos y estaciones",
+            "puesto frente a especialidad"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Construir el organigrama básico de una nave de ejemplo."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Ejercicio de asignación de funciones."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras Mando.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Construir el organigrama básico de una nave de ejemplo.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/federation/starfleet/ranks/officer_ranks.json",
+            "lore/federation/starfleet/ranks/rank_insignia_standard.json",
+            "lore/federation/starfleet/departments/divisions_and_departments.json",
+            "lore/federation/starfleet/positions/positions.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "STF-401-U06",
+      "title": "Protocolo integrado",
+      "subtitle": "UNIDAD 06 · STF-401",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dominar la estructura institucional y el protocolo básico necesarios para funcionar como cadete y futuro oficial."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "presentación al servicio",
+            "recepción y acuse de órdenes",
+            "conducta profesional básica"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Mini-simulación de llegada a una unidad y primera instrucción."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación integrada de conocimiento, comunicación y disciplina."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras presentación al servicio.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Mini-simulación de llegada a una unidad y primera instrucción.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/federation/starfleet/ranks/officer_ranks.json",
+            "lore/federation/starfleet/ranks/rank_insignia_standard.json",
+            "lore/federation/starfleet/departments/divisions_and_departments.json",
+            "lore/federation/starfleet/positions/positions.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

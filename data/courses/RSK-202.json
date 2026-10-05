@@ -1,0 +1,395 @@
+{
+  "subject": "Operaciones degradadas y contingencias",
+  "code": "RSK-202",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/second_class/courses/RSK-202/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/second_class/RSK-202/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/careers/starfleet_service/professional_evidence_model.json",
+    "gameplay/engineering/engineering_loop.json",
+    "gameplay/ship_operations/operational_event_log/README.md",
+    "gameplay/characters/wellbeing/cognitive_assistance_rules.json"
+  ],
+  "modules": [
+    {
+      "id": "RSK-202-U01",
+      "title": "Degradación y redundancia",
+      "subtitle": "UNIDAD 01 · RSK-202",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Trabajar de forma segura cuando sistemas, información o personal no están disponibles en condiciones normales."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "capacidad reducida",
+            "backup",
+            "aislamiento",
+            "margen"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Interpretar estado degradado."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Caso."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica capacidad reducida desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Interpretar estado degradado.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/engineering/engineering_loop.json",
+            "gameplay/ship_operations/operational_event_log/README.md",
+            "gameplay/characters/wellbeing/cognitive_assistance_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RSK-202-U02",
+      "title": "Información incompleta",
+      "subtitle": "UNIDAD 02 · RSK-202",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Trabajar de forma segura cuando sistemas, información o personal no están disponibles en condiciones normales."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "calidad",
+            "confirmación",
+            "supuestos",
+            "riesgo"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Decidir con datos parciales."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica calidad desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Decidir con datos parciales.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/engineering/engineering_loop.json",
+            "gameplay/ship_operations/operational_event_log/README.md",
+            "gameplay/characters/wellbeing/cognitive_assistance_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RSK-202-U03",
+      "title": "Pérdida de sistemas",
+      "subtitle": "UNIDAD 03 · RSK-202",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Trabajar de forma segura cuando sistemas, información o personal no están disponibles en condiciones normales."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "prioridades",
+            "servicio mínimo",
+            "procedimiento alternativo"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Continuar misión limitada."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Simulación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica prioridades desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Continuar misión limitada.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/engineering/engineering_loop.json",
+            "gameplay/ship_operations/operational_event_log/README.md",
+            "gameplay/characters/wellbeing/cognitive_assistance_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RSK-202-U04",
+      "title": "Personal insuficiente",
+      "subtitle": "UNIDAD 04 · RSK-202",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Trabajar de forma segura cuando sistemas, información o personal no están disponibles en condiciones normales."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "reparto",
+            "cross-training",
+            "fatiga",
+            "seguridad"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Reconfigurar equipo."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Caso."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica reparto desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Reconfigurar equipo.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/engineering/engineering_loop.json",
+            "gameplay/ship_operations/operational_event_log/README.md",
+            "gameplay/characters/wellbeing/cognitive_assistance_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RSK-202-U05",
+      "title": "Contingencias encadenadas",
+      "subtitle": "UNIDAD 05 · RSK-202",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Trabajar de forma segura cuando sistemas, información o personal no están disponibles en condiciones normales."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "efecto cascada",
+            "triage operacional",
+            "escalado"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Resolver secuencia de fallos."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica efecto cascada desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Resolver secuencia de fallos.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/engineering/engineering_loop.json",
+            "gameplay/ship_operations/operational_event_log/README.md",
+            "gameplay/characters/wellbeing/cognitive_assistance_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "RSK-202-U06",
+      "title": "Recuperación y retorno a normalidad",
+      "subtitle": "UNIDAD 06 · RSK-202",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Trabajar de forma segura cuando sistemas, información o personal no están disponibles en condiciones normales."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "verificación",
+            "handoff",
+            "logs",
+            "lecciones"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Cerrar contingencia."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación integrada."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica verificación desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Cerrar contingencia.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/engineering/engineering_loop.json",
+            "gameplay/ship_operations/operational_event_log/README.md",
+            "gameplay/characters/wellbeing/cognitive_assistance_rules.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

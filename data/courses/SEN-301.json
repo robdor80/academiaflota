@@ -1,0 +1,397 @@
+{
+  "subject": "Sensores y adquisición de situación I",
+  "code": "SEN-301",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/SEN-301/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/SEN-301/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/ship_operations/consoles/sensors/README.md",
+    "gameplay/ship_operations/consoles/sensors/sensor_menu_tree.json",
+    "gameplay/ship_operations/sensor_resolution/sensor_detection_rules.json",
+    "gameplay/careers/academy_path/study_materials/sensors/SENSORS_OPERATOR_MANUAL_v0.1.md"
+  ],
+  "modules": [
+    {
+      "id": "SEN-301-U01",
+      "title": "Estado del sistema",
+      "subtitle": "UNIDAD 01 · SEN-301",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Operar funciones básicas de sensores y construir una imagen de situación confiable."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "disponibilidad",
+            "canales",
+            "cobertura",
+            "limitaciones"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Comprobar estado antes de operar."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Checklist práctico."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica disponibilidad en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Comprobar estado antes de operar.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/ship_operations/consoles/sensors/README.md",
+            "gameplay/ship_operations/consoles/sensors/sensor_menu_tree.json",
+            "gameplay/ship_operations/sensor_resolution/sensor_detection_rules.json",
+            "gameplay/careers/academy_path/study_materials/sensors/SENSORS_OPERATOR_MANUAL_v0.1.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SEN-301-U02",
+      "title": "Scans básicos",
+      "subtitle": "UNIDAD 02 · SEN-301",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Operar funciones básicas de sensores y construir una imagen de situación confiable."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "objetivo",
+            "alcance",
+            "resolución",
+            "resultado"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Ejecutar barridos estándar."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación en consola."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica objetivo en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Ejecutar barridos estándar.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/ship_operations/consoles/sensors/README.md",
+            "gameplay/ship_operations/consoles/sensors/sensor_menu_tree.json",
+            "gameplay/ship_operations/sensor_resolution/sensor_detection_rules.json",
+            "gameplay/careers/academy_path/study_materials/sensors/SENSORS_OPERATOR_MANUAL_v0.1.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SEN-301-U03",
+      "title": "Búsqueda y localización",
+      "subtitle": "UNIDAD 03 · SEN-301",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Operar funciones básicas de sensores y construir una imagen de situación confiable."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "zona",
+            "criterios",
+            "patrón",
+            "detección"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Buscar una firma conocida."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Tiempo y procedimiento."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica zona en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Buscar una firma conocida.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/ship_operations/consoles/sensors/README.md",
+            "gameplay/ship_operations/consoles/sensors/sensor_menu_tree.json",
+            "gameplay/ship_operations/sensor_resolution/sensor_detection_rules.json",
+            "gameplay/careers/academy_path/study_materials/sensors/SENSORS_OPERATOR_MANUAL_v0.1.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SEN-301-U04",
+      "title": "Contactos",
+      "subtitle": "UNIDAD 04 · SEN-301",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Operar funciones básicas de sensores y construir una imagen de situación confiable."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "creación",
+            "identificación provisional",
+            "actualización",
+            "pérdida"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Gestionar varios contactos."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica creación en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Gestionar varios contactos.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/ship_operations/consoles/sensors/README.md",
+            "gameplay/ship_operations/consoles/sensors/sensor_menu_tree.json",
+            "gameplay/ship_operations/sensor_resolution/sensor_detection_rules.json",
+            "gameplay/careers/academy_path/study_materials/sensors/SENSORS_OPERATOR_MANUAL_v0.1.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SEN-301-U05",
+      "title": "Tracking y readout",
+      "subtitle": "UNIDAD 05 · SEN-301",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Operar funciones básicas de sensores y construir una imagen de situación confiable."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "seguimiento",
+            "tendencia",
+            "lectura",
+            "calidad"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Mantener tracking y emitir readout."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación de precisión."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica seguimiento en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Mantener tracking y emitir readout.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/ship_operations/consoles/sensors/README.md",
+            "gameplay/ship_operations/consoles/sensors/sensor_menu_tree.json",
+            "gameplay/ship_operations/sensor_resolution/sensor_detection_rules.json",
+            "gameplay/careers/academy_path/study_materials/sensors/SENSORS_OPERATOR_MANUAL_v0.1.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SEN-301-U06",
+      "title": "Interferencia básica",
+      "subtitle": "UNIDAD 06 · SEN-301",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Operar funciones básicas de sensores y construir una imagen de situación confiable."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "ruido",
+            "degradación",
+            "compensación elemental",
+            "límites"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Repetir búsqueda con interferencia."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Caso práctico."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica ruido en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Repetir búsqueda con interferencia.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/ship_operations/consoles/sensors/README.md",
+            "gameplay/ship_operations/consoles/sensors/sensor_menu_tree.json",
+            "gameplay/ship_operations/sensor_resolution/sensor_detection_rules.json",
+            "gameplay/careers/academy_path/study_materials/sensors/SENSORS_OPERATOR_MANUAL_v0.1.md"
+          ]
+        }
+      ]
+    }
+  ]
+}

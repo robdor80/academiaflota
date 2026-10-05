@@ -1,0 +1,1218 @@
+{
+  "subject": "Ciencia / Sensores",
+  "code": "SCIENCE_SENSORS",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/branches/science_sensors/branch_curriculum_v1_0.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/branches/science_sensors/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/specializations.json",
+    "gameplay/careers/academy_path/specialization_rules.md",
+    "gameplay/careers/starfleet_service/professional_evidence_model.json",
+    "gameplay/careers/starfleet_service/career_progression_rules.json",
+    "gameplay/ship_operations/consoles/sensors/README.md",
+    "gameplay/ship_operations/consoles/sensors/sensor_menu_tree.json",
+    "gameplay/science/sensor_analysis_model.json",
+    "gameplay/careers/academy_path/study_materials/sensors/SENSORS_OPERATOR_MANUAL_v0.1.md"
+  ],
+  "modules": [
+    {
+      "id": "SCI-201-U01",
+      "title": "Configuración de sensores",
+      "subtitle": "SCI-201 · Ciencia y Sensores II — adquisición",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "objetivo",
+            "canales",
+            "resolución",
+            "alcance"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Configurar barrido."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica objetivo desde la perspectiva de Ciencia / Sensores.",
+            "Resuelve: Configurar barrido.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/ship_operations/consoles/sensors/README.md",
+            "gameplay/ship_operations/consoles/sensors/sensor_menu_tree.json",
+            "gameplay/science/sensor_analysis_model.json",
+            "gameplay/careers/academy_path/study_materials/sensors/SENSORS_OPERATOR_MANUAL_v0.1.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCI-201-U02",
+      "title": "Búsqueda avanzada",
+      "subtitle": "SCI-201 · Ciencia y Sensores II — adquisición",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "patrones",
+            "firmas",
+            "filtros",
+            "cobertura"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Localizar objetivo débil."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica patrones desde la perspectiva de Ciencia / Sensores.",
+            "Resuelve: Localizar objetivo débil.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/ship_operations/consoles/sensors/README.md",
+            "gameplay/ship_operations/consoles/sensors/sensor_menu_tree.json",
+            "gameplay/science/sensor_analysis_model.json",
+            "gameplay/careers/academy_path/study_materials/sensors/SENSORS_OPERATOR_MANUAL_v0.1.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCI-201-U03",
+      "title": "Caracterización",
+      "subtitle": "SCI-201 · Ciencia y Sensores II — adquisición",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "medidas",
+            "calidad",
+            "comparación",
+            "registro"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Construir readout."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica medidas desde la perspectiva de Ciencia / Sensores.",
+            "Resuelve: Construir readout.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/ship_operations/consoles/sensors/README.md",
+            "gameplay/ship_operations/consoles/sensors/sensor_menu_tree.json",
+            "gameplay/science/sensor_analysis_model.json",
+            "gameplay/careers/academy_path/study_materials/sensors/SENSORS_OPERATOR_MANUAL_v0.1.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCI-201-U04",
+      "title": "Método científico operacional",
+      "subtitle": "SCI-201 · Ciencia y Sensores II — adquisición",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "hipótesis",
+            "medición",
+            "prueba",
+            "límite"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Diseñar observación."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Juicio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica hipótesis desde la perspectiva de Ciencia / Sensores.",
+            "Resuelve: Diseñar observación.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/ship_operations/consoles/sensors/README.md",
+            "gameplay/ship_operations/consoles/sensors/sensor_menu_tree.json",
+            "gameplay/science/sensor_analysis_model.json",
+            "gameplay/careers/academy_path/study_materials/sensors/SENSORS_OPERATOR_MANUAL_v0.1.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCI-202-U01",
+      "title": "Gestión de contactos",
+      "subtitle": "SCI-202 · Ciencia y Sensores III — tracking e interferencia",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "prioridad",
+            "identidad",
+            "historial",
+            "pérdida"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Gestionar tráfico."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica prioridad desde la perspectiva de Ciencia / Sensores.",
+            "Resuelve: Gestionar tráfico.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/ship_operations/consoles/sensors/README.md",
+            "gameplay/ship_operations/consoles/sensors/sensor_menu_tree.json",
+            "gameplay/science/sensor_analysis_model.json",
+            "gameplay/careers/academy_path/study_materials/sensors/SENSORS_OPERATOR_MANUAL_v0.1.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCI-202-U02",
+      "title": "Tracking",
+      "subtitle": "SCI-202 · Ciencia y Sensores III — tracking e interferencia",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "actualización",
+            "predicción",
+            "incertidumbre"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Mantener varios tracks."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica actualización desde la perspectiva de Ciencia / Sensores.",
+            "Resuelve: Mantener varios tracks.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/ship_operations/consoles/sensors/README.md",
+            "gameplay/ship_operations/consoles/sensors/sensor_menu_tree.json",
+            "gameplay/science/sensor_analysis_model.json",
+            "gameplay/careers/academy_path/study_materials/sensors/SENSORS_OPERATOR_MANUAL_v0.1.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCI-202-U03",
+      "title": "Interferencia y compensación",
+      "subtitle": "SCI-202 · Ciencia y Sensores III — tracking e interferencia",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "ruido",
+            "fuente",
+            "filtros",
+            "trade-offs"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Recuperar señal."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Juicio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica ruido desde la perspectiva de Ciencia / Sensores.",
+            "Resuelve: Recuperar señal.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/ship_operations/consoles/sensors/README.md",
+            "gameplay/ship_operations/consoles/sensors/sensor_menu_tree.json",
+            "gameplay/science/sensor_analysis_model.json",
+            "gameplay/careers/academy_path/study_materials/sensors/SENSORS_OPERATOR_MANUAL_v0.1.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCI-202-U04",
+      "title": "Correlación",
+      "subtitle": "SCI-202 · Ciencia y Sensores III — tracking e interferencia",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "sensores",
+            "bases de datos",
+            "otras estaciones",
+            "consistencia"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Fusionar evidencias."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica sensores desde la perspectiva de Ciencia / Sensores.",
+            "Resuelve: Fusionar evidencias.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/ship_operations/consoles/sensors/README.md",
+            "gameplay/ship_operations/consoles/sensors/sensor_menu_tree.json",
+            "gameplay/science/sensor_analysis_model.json",
+            "gameplay/careers/academy_path/study_materials/sensors/SENSORS_OPERATOR_MANUAL_v0.1.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCI-203-U01",
+      "title": "Resultados y trazabilidad",
+      "subtitle": "SCI-203 · Ciencia operacional integrada",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "datos",
+            "procesamiento",
+            "conclusión",
+            "registro"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Emitir resultado reproducible."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica datos desde la perspectiva de Ciencia / Sensores.",
+            "Resuelve: Emitir resultado reproducible.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/ship_operations/consoles/sensors/README.md",
+            "gameplay/ship_operations/consoles/sensors/sensor_menu_tree.json",
+            "gameplay/science/sensor_analysis_model.json",
+            "gameplay/careers/academy_path/study_materials/sensors/SENSORS_OPERATOR_MANUAL_v0.1.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCI-203-U02",
+      "title": "Diagnóstico de sensores",
+      "subtitle": "SCI-203 · Ciencia operacional integrada",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "anomalía",
+            "self-test",
+            "degradación",
+            "handoff a Ingeniería"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Resolver fallo."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica anomalía desde la perspectiva de Ciencia / Sensores.",
+            "Resuelve: Resolver fallo.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/ship_operations/consoles/sensors/README.md",
+            "gameplay/ship_operations/consoles/sensors/sensor_menu_tree.json",
+            "gameplay/science/sensor_analysis_model.json",
+            "gameplay/careers/academy_path/study_materials/sensors/SENSORS_OPERATOR_MANUAL_v0.1.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCI-203-U03",
+      "title": "Guardia científica",
+      "subtitle": "SCI-203 · Ciencia operacional integrada",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "observación",
+            "prioridad",
+            "reporte",
+            "consulta"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Turno supervisado."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica observación desde la perspectiva de Ciencia / Sensores.",
+            "Resuelve: Turno supervisado.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/ship_operations/consoles/sensors/README.md",
+            "gameplay/ship_operations/consoles/sensors/sensor_menu_tree.json",
+            "gameplay/science/sensor_analysis_model.json",
+            "gameplay/careers/academy_path/study_materials/sensors/SENSORS_OPERATOR_MANUAL_v0.1.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCI-203-U04",
+      "title": "Cualificación intermedia",
+      "subtitle": "SCI-203 · Ciencia operacional integrada",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "medición",
+            "interpretación",
+            "incertidumbre",
+            "comunicación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Caso integrado."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evidencia."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica medición desde la perspectiva de Ciencia / Sensores.",
+            "Resuelve: Caso integrado.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/ship_operations/consoles/sensors/README.md",
+            "gameplay/ship_operations/consoles/sensors/sensor_menu_tree.json",
+            "gameplay/science/sensor_analysis_model.json",
+            "gameplay/careers/academy_path/study_materials/sensors/SENSORS_OPERATOR_MANUAL_v0.1.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCI-101-U01",
+      "title": "Diseño de observación",
+      "subtitle": "SCI-101 · Ciencia/Sensores avanzada I",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "objetivo",
+            "instrumento",
+            "estrategia",
+            "validación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Plan científico."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Revisión."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica objetivo desde la perspectiva de Ciencia / Sensores.",
+            "Resuelve: Plan científico.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/ship_operations/consoles/sensors/README.md",
+            "gameplay/ship_operations/consoles/sensors/sensor_menu_tree.json",
+            "gameplay/science/sensor_analysis_model.json",
+            "gameplay/careers/academy_path/study_materials/sensors/SENSORS_OPERATOR_MANUAL_v0.1.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCI-101-U02",
+      "title": "Fenómenos complejos",
+      "subtitle": "SCI-101 · Ciencia/Sensores avanzada I",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "múltiples firmas",
+            "cambios",
+            "modelos",
+            "incertidumbre"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Caso avanzado."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Juicio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica múltiples firmas desde la perspectiva de Ciencia / Sensores.",
+            "Resuelve: Caso avanzado.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/ship_operations/consoles/sensors/README.md",
+            "gameplay/ship_operations/consoles/sensors/sensor_menu_tree.json",
+            "gameplay/science/sensor_analysis_model.json",
+            "gameplay/careers/academy_path/study_materials/sensors/SENSORS_OPERATOR_MANUAL_v0.1.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCI-101-U03",
+      "title": "Supervisión de estación",
+      "subtitle": "SCI-101 · Ciencia/Sensores avanzada I",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "equipo",
+            "prioridades",
+            "calidad",
+            "logs"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Dirigir turno."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica equipo desde la perspectiva de Ciencia / Sensores.",
+            "Resuelve: Dirigir turno.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/ship_operations/consoles/sensors/README.md",
+            "gameplay/ship_operations/consoles/sensors/sensor_menu_tree.json",
+            "gameplay/science/sensor_analysis_model.json",
+            "gameplay/careers/academy_path/study_materials/sensors/SENSORS_OPERATOR_MANUAL_v0.1.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCI-101-U04",
+      "title": "Asesoramiento científico",
+      "subtitle": "SCI-101 · Ciencia/Sensores avanzada I",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "dato",
+            "interpretación",
+            "confianza",
+            "recomendación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Briefing al mando."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica dato desde la perspectiva de Ciencia / Sensores.",
+            "Resuelve: Briefing al mando.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/ship_operations/consoles/sensors/README.md",
+            "gameplay/ship_operations/consoles/sensors/sensor_menu_tree.json",
+            "gameplay/science/sensor_analysis_model.json",
+            "gameplay/careers/academy_path/study_materials/sensors/SENSORS_OPERATOR_MANUAL_v0.1.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCI-102-U01",
+      "title": "Misión científica completa",
+      "subtitle": "SCI-102 · Ciencia/Sensores avanzada II",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "pregunta",
+            "adquisición",
+            "análisis",
+            "resultado"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Ejecutar misión."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica pregunta desde la perspectiva de Ciencia / Sensores.",
+            "Resuelve: Ejecutar misión.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/ship_operations/consoles/sensors/README.md",
+            "gameplay/ship_operations/consoles/sensors/sensor_menu_tree.json",
+            "gameplay/science/sensor_analysis_model.json",
+            "gameplay/careers/academy_path/study_materials/sensors/SENSORS_OPERATOR_MANUAL_v0.1.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCI-102-U02",
+      "title": "Sensores degradados",
+      "subtitle": "SCI-102 · Ciencia/Sensores avanzada II",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "cobertura",
+            "ruido",
+            "alternativas",
+            "riesgo"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Escenario."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica cobertura desde la perspectiva de Ciencia / Sensores.",
+            "Resuelve: Escenario.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/ship_operations/consoles/sensors/README.md",
+            "gameplay/ship_operations/consoles/sensors/sensor_menu_tree.json",
+            "gameplay/science/sensor_analysis_model.json",
+            "gameplay/careers/academy_path/study_materials/sensors/SENSORS_OPERATOR_MANUAL_v0.1.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCI-102-U03",
+      "title": "Descubrimiento inesperado",
+      "subtitle": "SCI-102 · Ciencia/Sensores avanzada II",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "anomalía",
+            "verificación",
+            "prioridad"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Caso complejo."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Juicio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica anomalía desde la perspectiva de Ciencia / Sensores.",
+            "Resuelve: Caso complejo.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/ship_operations/consoles/sensors/README.md",
+            "gameplay/ship_operations/consoles/sensors/sensor_menu_tree.json",
+            "gameplay/science/sensor_analysis_model.json",
+            "gameplay/careers/academy_path/study_materials/sensors/SENSORS_OPERATOR_MANUAL_v0.1.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCI-102-U04",
+      "title": "Handoff científico",
+      "subtitle": "SCI-102 · Ciencia/Sensores avanzada II",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "datos",
+            "hipótesis",
+            "pendientes",
+            "calidad"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Relevo profesional."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica datos desde la perspectiva de Ciencia / Sensores.",
+            "Resuelve: Relevo profesional.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/ship_operations/consoles/sensors/README.md",
+            "gameplay/ship_operations/consoles/sensors/sensor_menu_tree.json",
+            "gameplay/science/sensor_analysis_model.json",
+            "gameplay/careers/academy_path/study_materials/sensors/SENSORS_OPERATOR_MANUAL_v0.1.md"
+          ]
+        }
+      ]
+    }
+  ]
+}

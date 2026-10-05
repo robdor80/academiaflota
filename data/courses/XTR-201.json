@@ -1,0 +1,386 @@
+{
+  "subject": "Formación cruzada I",
+  "code": "XTR-201",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/second_class/courses/XTR-201/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/second_class/XTR-201/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/careers/starfleet_service/professional_evidence_model.json",
+    "gameplay/careers/academy_path/specialization_rules.md",
+    "gameplay/characters/development/development_rules.md"
+  ],
+  "modules": [
+    {
+      "id": "XTR-201-U01",
+      "title": "Elección de foco secundario",
+      "subtitle": "UNIDAD 01 · XTR-201",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Abrir un foco secundario real sin confundir familiarización con cualificación completa."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "interés",
+            "utilidad",
+            "prerrequisitos",
+            "carga"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Seleccionar área secundaria."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Validación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica interés desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Seleccionar área secundaria.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/characters/development/development_rules.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "XTR-201-U02",
+      "title": "Lenguaje y herramientas",
+      "subtitle": "UNIDAD 02 · XTR-201",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Abrir un foco secundario real sin confundir familiarización con cualificación completa."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "terminología",
+            "sistemas",
+            "roles",
+            "límites"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Familiarización."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Comprobación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica terminología desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Familiarización.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/characters/development/development_rules.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "XTR-201-U03",
+      "title": "Fundamentos teóricos",
+      "subtitle": "UNIDAD 03 · XTR-201",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Abrir un foco secundario real sin confundir familiarización con cualificación completa."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "principios",
+            "riesgos",
+            "interfaz con rama principal"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Estudio guiado."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación ligera."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica principios desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Estudio guiado.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/characters/development/development_rules.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "XTR-201-U04",
+      "title": "Práctica inicial",
+      "subtitle": "UNIDAD 04 · XTR-201",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Abrir un foco secundario real sin confundir familiarización con cualificación completa."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "tarea segura",
+            "supervisión",
+            "reporte"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Ejecutar tarea básica."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evidencia práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica tarea segura desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Ejecutar tarea básica.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/characters/development/development_rules.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "XTR-201-U05",
+      "title": "Transferencia de experiencia",
+      "subtitle": "UNIDAD 05 · XTR-201",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Abrir un foco secundario real sin confundir familiarización con cualificación completa."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "habilidades relacionadas",
+            "límites",
+            "no equivalencia"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Analizar qué experiencia previa ayuda y cuál no."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Caso."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica habilidades relacionadas desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Analizar qué experiencia previa ayuda y cuál no.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/characters/development/development_rules.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "XTR-201-U06",
+      "title": "Plan de continuidad",
+      "subtitle": "UNIDAD 06 · XTR-201",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Abrir un foco secundario real sin confundir familiarización con cualificación completa."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "objetivo",
+            "práctica futura",
+            "límites de autoridad"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Definir continuación XTR-202."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Tutoría."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica objetivo desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Definir continuación XTR-202.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/characters/development/development_rules.md"
+          ]
+        }
+      ]
+    }
+  ]
+}

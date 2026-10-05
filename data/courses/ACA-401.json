@@ -1,0 +1,391 @@
+{
+  "subject": "Vida académica, conducta y responsabilidad profesional",
+  "code": "ACA-401",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/ACA-401/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/ACA-401/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/careers/academy_path/academy_gameplay_loop.md",
+    "gameplay/careers/academy_path/exam_model.json",
+    "gameplay/careers/academy_path/cadet_progression.json"
+  ],
+  "modules": [
+    {
+      "id": "ACA-401-U01",
+      "title": "Ciclo académico y condición de cadete",
+      "subtitle": "UNIDAD 01 · ACA-401",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Enseñar al cadete a vivir, estudiar y responder por su conducta dentro de la Academia."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "años y trimestres",
+            "matrícula",
+            "evaluación",
+            "progresión"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Consultar calendario y expediente de ejemplo."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Comprobación de comprensión."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras años y trimestres.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Consultar calendario y expediente de ejemplo.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/academy_path/academy_gameplay_loop.md",
+            "gameplay/careers/academy_path/exam_model.json",
+            "gameplay/careers/academy_path/cadet_progression.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ACA-401-U02",
+      "title": "Integridad académica",
+      "subtitle": "UNIDAD 02 · ACA-401",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Enseñar al cadete a vivir, estudiar y responder por su conducta dentro de la Academia."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "honestidad",
+            "autoría",
+            "fraude",
+            "responsabilidad personal"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Resolver casos de colaboración válida y fraude."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Caso de integridad."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras honestidad.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Resolver casos de colaboración válida y fraude.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/academy_path/academy_gameplay_loop.md",
+            "gameplay/careers/academy_path/exam_model.json",
+            "gameplay/careers/academy_path/cadet_progression.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ACA-401-U03",
+      "title": "Disciplina y conducta",
+      "subtitle": "UNIDAD 03 · ACA-401",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Enseñar al cadete a vivir, estudiar y responder por su conducta dentro de la Academia."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "normas",
+            "puntualidad",
+            "respeto",
+            "incidencias"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Responder a una incidencia menor de disciplina."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación situacional."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras normas.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Responder a una incidencia menor de disciplina.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/academy_path/academy_gameplay_loop.md",
+            "gameplay/careers/academy_path/exam_model.json",
+            "gameplay/careers/academy_path/cadet_progression.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ACA-401-U04",
+      "title": "Rutinas y uso de instalaciones",
+      "subtitle": "UNIDAD 04 · ACA-401",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Enseñar al cadete a vivir, estudiar y responder por su conducta dentro de la Academia."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "aulas",
+            "residencias",
+            "biblioteca",
+            "simuladores",
+            "accesos"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Planificar una jornada de cadete."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica de navegación académica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras aulas.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Planificar una jornada de cadete.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/academy_path/academy_gameplay_loop.md",
+            "gameplay/careers/academy_path/exam_model.json",
+            "gameplay/careers/academy_path/cadet_progression.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ACA-401-U05",
+      "title": "Tutorías y recuperación",
+      "subtitle": "UNIDAD 05 · ACA-401",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Enseñar al cadete a vivir, estudiar y responder por su conducta dentro de la Academia."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "pedir ayuda",
+            "refuerzo",
+            "reevaluación",
+            "registro de progreso"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Solicitar una tutoría y acordar plan de recuperación."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Escena y registro."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras pedir ayuda.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Solicitar una tutoría y acordar plan de recuperación.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/academy_path/academy_gameplay_loop.md",
+            "gameplay/careers/academy_path/exam_model.json",
+            "gameplay/careers/academy_path/cadet_progression.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ACA-401-U06",
+      "title": "Trabajo en equipo académico",
+      "subtitle": "UNIDAD 06 · ACA-401",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Enseñar al cadete a vivir, estudiar y responder por su conducta dentro de la Academia."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "responsabilidad compartida",
+            "reparto de tareas",
+            "comunicación",
+            "conflicto"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Actividad de equipo con roles definidos."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación de teamwork e integridad."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras responsabilidad compartida.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Actividad de equipo con roles definidos.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/academy_path/academy_gameplay_loop.md",
+            "gameplay/careers/academy_path/exam_model.json",
+            "gameplay/careers/academy_path/cadet_progression.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

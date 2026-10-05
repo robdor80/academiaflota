@@ -1,0 +1,391 @@
+{
+  "subject": "Ciencia, sensores y método científico I",
+  "code": "SCI-403",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/SCI-403/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/SCI-403/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/science/sensor_analysis_model.json",
+    "gameplay/ship_operations/consoles/sensors/README.md",
+    "gameplay/ship_operations/sensor_resolution/README.md"
+  ],
+  "modules": [
+    {
+      "id": "SCI-403-U01",
+      "title": "Método científico",
+      "subtitle": "UNIDAD 01 · SCI-403",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Separar medición de interpretación y enseñar los fundamentos de observación científica y sensores."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "observación",
+            "pregunta",
+            "hipótesis",
+            "evidencia",
+            "revisión"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Analizar una observación sencilla."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Ejercicio razonado."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras observación.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Analizar una observación sencilla.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/science/sensor_analysis_model.json",
+            "gameplay/ship_operations/consoles/sensors/README.md",
+            "gameplay/ship_operations/sensor_resolution/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCI-403-U02",
+      "title": "Medición e incertidumbre",
+      "subtitle": "UNIDAD 02 · SCI-403",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Separar medición de interpretación y enseñar los fundamentos de observación científica y sensores."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "precisión",
+            "ruido",
+            "error",
+            "límite de detección"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Comparar lecturas con distinta calidad."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación aplicada."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras precisión.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Comparar lecturas con distinta calidad.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/science/sensor_analysis_model.json",
+            "gameplay/ship_operations/consoles/sensors/README.md",
+            "gameplay/ship_operations/sensor_resolution/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCI-403-U03",
+      "title": "Qué es un sensor",
+      "subtitle": "UNIDAD 03 · SCI-403",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Separar medición de interpretación y enseñar los fundamentos de observación científica y sensores."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "detección",
+            "medición",
+            "firma",
+            "canales generales"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Relacionar fenómeno con medición posible."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Caso conceptual."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras detección.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Relacionar fenómeno con medición posible.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/science/sensor_analysis_model.json",
+            "gameplay/ship_operations/consoles/sensors/README.md",
+            "gameplay/ship_operations/sensor_resolution/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCI-403-U04",
+      "title": "Activo y pasivo",
+      "subtitle": "UNIDAD 04 · SCI-403",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Separar medición de interpretación y enseñar los fundamentos de observación científica y sensores."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "ventajas",
+            "costes",
+            "exposición",
+            "contexto"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Elegir modo en situaciones sencillas."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Caso de decisión."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras ventajas.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Elegir modo en situaciones sencillas.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/science/sensor_analysis_model.json",
+            "gameplay/ship_operations/consoles/sensors/README.md",
+            "gameplay/ship_operations/sensor_resolution/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCI-403-U05",
+      "title": "Contacto, lectura e interpretación",
+      "subtitle": "UNIDAD 05 · SCI-403",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Separar medición de interpretación y enseñar los fundamentos de observación científica y sensores."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "contacto",
+            "tracking inicial",
+            "readout",
+            "Science como interpretación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Distinguir datos de conclusión."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica con lecturas."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras contacto.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Distinguir datos de conclusión.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/science/sensor_analysis_model.json",
+            "gameplay/ship_operations/consoles/sensors/README.md",
+            "gameplay/ship_operations/sensor_resolution/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SCI-403-U06",
+      "title": "Barrido básico",
+      "subtitle": "UNIDAD 06 · SCI-403",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Separar medición de interpretación y enseñar los fundamentos de observación científica y sensores."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "objetivo",
+            "configuración preparada",
+            "resultado",
+            "registro"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Ejecutar un scan guiado en consola real cuando exista."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras objetivo.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Ejecutar un scan guiado en consola real cuando exista.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/science/sensor_analysis_model.json",
+            "gameplay/ship_operations/consoles/sensors/README.md",
+            "gameplay/ship_operations/sensor_resolution/README.md"
+          ]
+        }
+      ]
+    }
+  ]
+}

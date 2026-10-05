@@ -1,0 +1,391 @@
+{
+  "subject": "Seguridad, supervivencia y equipos de salida",
+  "code": "SEC-302",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/SEC-302/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/SEC-302/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/security/README.md",
+    "lore/federation/starfleet/regulations/README.md",
+    "gameplay/ship_operations/bridge_station_model.json"
+  ],
+  "modules": [
+    {
+      "id": "SEC-302-U01",
+      "title": "Conciencia de amenaza",
+      "subtitle": "UNIDAD 01 · SEC-302",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dar una base común de autoprotección, seguridad operativa y supervivencia sin convertir a todos en especialistas tácticos."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "entorno",
+            "personas",
+            "salidas",
+            "cambios",
+            "alerta"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Detectar riesgos en escenario."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica entorno en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Detectar riesgos en escenario.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/security/README.md",
+            "lore/federation/starfleet/regulations/README.md",
+            "gameplay/ship_operations/bridge_station_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SEC-302-U02",
+      "title": "Phaser: seguridad y límites",
+      "subtitle": "UNIDAD 02 · SEC-302",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dar una base común de autoprotección, seguridad operativa y supervivencia sin convertir a todos en especialistas tácticos."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "manejo seguro",
+            "autoridad",
+            "escalada",
+            "proporcionalidad"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Práctica controlada en simulador."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Seguridad y disciplina."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica manejo seguro en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Práctica controlada en simulador.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/security/README.md",
+            "lore/federation/starfleet/regulations/README.md",
+            "gameplay/ship_operations/bridge_station_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SEC-302-U03",
+      "title": "Seguridad a bordo",
+      "subtitle": "UNIDAD 03 · SEC-302",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dar una base común de autoprotección, seguridad operativa y supervivencia sin convertir a todos en especialistas tácticos."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "accesos",
+            "zonas restringidas",
+            "incidente",
+            "detención básica contextual"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Responder a intrusión simulada."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Caso práctico."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica accesos en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Responder a intrusión simulada.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/security/README.md",
+            "lore/federation/starfleet/regulations/README.md",
+            "gameplay/ship_operations/bridge_station_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SEC-302-U04",
+      "title": "Equipo de salida",
+      "subtitle": "UNIDAD 04 · SEC-302",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dar una base común de autoprotección, seguridad operativa y supervivencia sin convertir a todos en especialistas tácticos."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "rol",
+            "equipo",
+            "comunicaciones",
+            "responsabilidad"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Preparar loadout según misión."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Checklist razonada."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica rol en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Preparar loadout según misión.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/security/README.md",
+            "lore/federation/starfleet/regulations/README.md",
+            "gameplay/ship_operations/bridge_station_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SEC-302-U05",
+      "title": "Supervivencia básica",
+      "subtitle": "UNIDAD 05 · SEC-302",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dar una base común de autoprotección, seguridad operativa y supervivencia sin convertir a todos en especialistas tácticos."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "refugio",
+            "recursos",
+            "orientación",
+            "señalización"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Ejercicio de campo."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica refugio en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Ejercicio de campo.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/security/README.md",
+            "lore/federation/starfleet/regulations/README.md",
+            "gameplay/ship_operations/bridge_station_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SEC-302-U06",
+      "title": "Equipo de salida bajo riesgo",
+      "subtitle": "UNIDAD 06 · SEC-302",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dar una base común de autoprotección, seguridad operativa y supervivencia sin convertir a todos en especialistas tácticos."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "formación",
+            "cobertura",
+            "retirada",
+            "herido"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Simulación corta."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación integrada."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica formación en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Simulación corta.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/security/README.md",
+            "lore/federation/starfleet/regulations/README.md",
+            "gameplay/ship_operations/bridge_station_model.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

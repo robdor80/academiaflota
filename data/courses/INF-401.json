@@ -1,0 +1,390 @@
+{
+  "subject": "Sistemas de información Starfleet",
+  "code": "INF-401",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/INF-401/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/INF-401/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/ship_operations/ship_computer/README.md",
+    "gameplay/ship_operations/ship_computer/access_control_rules.json",
+    "gameplay/ship_operations/ship_computer/computer_query_action_catalog.json"
+  ],
+  "modules": [
+    {
+      "id": "INF-401-U01",
+      "title": "Computadora y terminales",
+      "subtitle": "UNIDAD 01 · INF-401",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dar al cadete autonomía básica para consultar, registrar y manejar información autorizada."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "servicio de computadora",
+            "terminales",
+            "interfaces de era",
+            "consultas autorizadas"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Realizar consultas simples al sistema."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica guiada."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras servicio de computadora.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Realizar consultas simples al sistema.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/ship_operations/ship_computer/README.md",
+            "gameplay/ship_operations/ship_computer/access_control_rules.json",
+            "gameplay/ship_operations/ship_computer/computer_query_action_catalog.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "INF-401-U02",
+      "title": "PADD y flujo personal",
+      "subtitle": "UNIDAD 02 · INF-401",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dar al cadete autonomía básica para consultar, registrar y manejar información autorizada."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "documentos",
+            "material académico",
+            "anotaciones",
+            "sincronización contextual"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Abrir, consultar y entregar material académico."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Tarea práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras documentos.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Abrir, consultar y entregar material académico.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/ship_operations/ship_computer/README.md",
+            "gameplay/ship_operations/ship_computer/access_control_rules.json",
+            "gameplay/ship_operations/ship_computer/computer_query_action_catalog.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "INF-401-U03",
+      "title": "Identidad y acceso",
+      "subtitle": "UNIDAD 03 · INF-401",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dar al cadete autonomía básica para consultar, registrar y manejar información autorizada."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "perfil",
+            "autenticación",
+            "niveles de acceso",
+            "principio de mínimo acceso"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Intentar accesos válidos e inválidos en entorno de entrenamiento."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación práctica de permisos."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras perfil.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Intentar accesos válidos e inválidos en entorno de entrenamiento.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/ship_operations/ship_computer/README.md",
+            "gameplay/ship_operations/ship_computer/access_control_rules.json",
+            "gameplay/ship_operations/ship_computer/computer_query_action_catalog.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "INF-401-U04",
+      "title": "Búsqueda de información",
+      "subtitle": "UNIDAD 04 · INF-401",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dar al cadete autonomía básica para consultar, registrar y manejar información autorizada."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "consulta",
+            "filtros",
+            "fuentes",
+            "resultado frente a interpretación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Encontrar información concreta sin pedir al sistema que invente respuesta."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica de búsqueda."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras consulta.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Encontrar información concreta sin pedir al sistema que invente respuesta.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/ship_operations/ship_computer/README.md",
+            "gameplay/ship_operations/ship_computer/access_control_rules.json",
+            "gameplay/ship_operations/ship_computer/computer_query_action_catalog.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "INF-401-U05",
+      "title": "Registros y trazabilidad",
+      "subtitle": "UNIDAD 05 · INF-401",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dar al cadete autonomía básica para consultar, registrar y manejar información autorizada."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "registros académicos",
+            "logs",
+            "autoría",
+            "marca temporal"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Crear y consultar un registro permitido."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Comprobación práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras registros académicos.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Crear y consultar un registro permitido.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/ship_operations/ship_computer/README.md",
+            "gameplay/ship_operations/ship_computer/access_control_rules.json",
+            "gameplay/ship_operations/ship_computer/computer_query_action_catalog.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "INF-401-U06",
+      "title": "Privacidad y uso responsable",
+      "subtitle": "UNIDAD 06 · INF-401",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dar al cadete autonomía básica para consultar, registrar y manejar información autorizada."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "datos personales",
+            "restricciones",
+            "uso indebido",
+            "auditoría"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Resolver casos de acceso por curiosidad frente a necesidad de servicio."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Caso de juicio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras datos personales.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Resolver casos de acceso por curiosidad frente a necesidad de servicio.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/ship_operations/ship_computer/README.md",
+            "gameplay/ship_operations/ship_computer/access_control_rules.json",
+            "gameplay/ship_operations/ship_computer/computer_query_action_catalog.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

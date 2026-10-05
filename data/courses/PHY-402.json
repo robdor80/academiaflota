@@ -1,0 +1,392 @@
+{
+  "subject": "Preparación física II",
+  "code": "PHY-402",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/PHY-402/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/PHY-402/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/characters/wellbeing/README.md",
+    "gameplay/characters/wellbeing/activity_effect_contract.json",
+    "gameplay/characters/wellbeing/habit_formation_rules.json",
+    "gameplay/characters/development/development_rules.md"
+  ],
+  "modules": [
+    {
+      "id": "PHY-402-U01",
+      "title": "Continuidad y carga",
+      "subtitle": "UNIDAD 01 · PHY-402",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Consolidar la rutina física y añadir trabajo funcional y cooperativo."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "frecuencia",
+            "progresión",
+            "adaptación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Mantener calendario de entrenamiento."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evidencia longitudinal."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras frecuencia.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Mantener calendario de entrenamiento.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/characters/wellbeing/README.md",
+            "gameplay/characters/wellbeing/activity_effect_contract.json",
+            "gameplay/characters/wellbeing/habit_formation_rules.json",
+            "gameplay/characters/development/development_rules.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PHY-402-U02",
+      "title": "Resistencia aplicada",
+      "subtitle": "UNIDAD 02 · PHY-402",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Consolidar la rutina física y añadir trabajo funcional y cooperativo."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "esfuerzo sostenido",
+            "recuperación",
+            "ritmo"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Sesión funcional del personaje."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Progresión individual."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras esfuerzo sostenido.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Sesión funcional del personaje.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/characters/wellbeing/README.md",
+            "gameplay/characters/wellbeing/activity_effect_contract.json",
+            "gameplay/characters/wellbeing/habit_formation_rules.json",
+            "gameplay/characters/development/development_rules.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PHY-402-U03",
+      "title": "Fuerza y coordinación",
+      "subtitle": "UNIDAD 03 · PHY-402",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Consolidar la rutina física y añadir trabajo funcional y cooperativo."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "fuerza funcional",
+            "equilibrio",
+            "coordinación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Circuito supervisado."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Ejecución segura."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras fuerza funcional.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Circuito supervisado.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/characters/wellbeing/README.md",
+            "gameplay/characters/wellbeing/activity_effect_contract.json",
+            "gameplay/characters/wellbeing/habit_formation_rules.json",
+            "gameplay/characters/development/development_rules.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PHY-402-U04",
+      "title": "Trabajo en equipo",
+      "subtitle": "UNIDAD 04 · PHY-402",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Consolidar la rutina física y añadir trabajo funcional y cooperativo."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "cooperación",
+            "ritmo de grupo",
+            "seguridad"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Actividad colectiva."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Teamwork y disciplina."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras cooperación.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Actividad colectiva.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/characters/wellbeing/README.md",
+            "gameplay/characters/wellbeing/activity_effect_contract.json",
+            "gameplay/characters/wellbeing/habit_formation_rules.json",
+            "gameplay/characters/development/development_rules.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PHY-402-U05",
+      "title": "Actividad acuática o equivalente",
+      "subtitle": "UNIDAD 05 · PHY-402",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Consolidar la rutina física y añadir trabajo funcional y cooperativo."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "seguridad",
+            "adaptación fisiológica",
+            "capacidad funcional"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Sesión adaptada a especie/contexto."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Competencia funcional, no comparación interespecies."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras seguridad.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Sesión adaptada a especie/contexto.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/characters/wellbeing/README.md",
+            "gameplay/characters/wellbeing/activity_effect_contract.json",
+            "gameplay/characters/wellbeing/habit_formation_rules.json",
+            "gameplay/characters/development/development_rules.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PHY-402-U06",
+      "title": "Revisión de rutina",
+      "subtitle": "UNIDAD 06 · PHY-402",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Consolidar la rutina física y añadir trabajo funcional y cooperativo."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "fatiga",
+            "estudio",
+            "descanso",
+            "ajuste"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Modificar rutina ante carga académica."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Criterio y sostenibilidad."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica con tus palabras fatiga.",
+            "¿Qué información necesitarías antes de actuar?",
+            "Resuelve de forma razonada: Modificar rutina ante carga académica.",
+            "¿Qué deberías comunicar, registrar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/characters/wellbeing/README.md",
+            "gameplay/characters/wellbeing/activity_effect_contract.json",
+            "gameplay/characters/wellbeing/habit_formation_rules.json",
+            "gameplay/characters/development/development_rules.md"
+          ]
+        }
+      ]
+    }
+  ]
+}

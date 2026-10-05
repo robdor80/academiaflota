@@ -1,0 +1,1210 @@
+{
+  "subject": "Mando",
+  "code": "COMMAND",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/branches/command/branch_curriculum_v1_0.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/branches/command/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/specializations.json",
+    "gameplay/careers/academy_path/specialization_rules.md",
+    "gameplay/careers/starfleet_service/professional_evidence_model.json",
+    "gameplay/careers/starfleet_service/career_progression_rules.json",
+    "lore/federation/starfleet/command_structure/succession_rules.json",
+    "lore/federation/starfleet/qualifications/command_qualification.json",
+    "lore/federation/starfleet/prime_directive/prime_directive.json",
+    "gameplay/orders/starfleet_mission_tasking_order.json"
+  ],
+  "modules": [
+    {
+      "id": "CMD-201-U01",
+      "title": "Función de mando",
+      "subtitle": "CMD-201 · Mando I — autoridad y puente",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "autoridad",
+            "responsabilidad",
+            "intención"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Resolver cadena de decisión."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Caso."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica autoridad desde la perspectiva de Mando.",
+            "Resuelve: Resolver cadena de decisión.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json",
+            "lore/federation/starfleet/qualifications/command_qualification.json",
+            "lore/federation/starfleet/prime_directive/prime_directive.json",
+            "gameplay/orders/starfleet_mission_tasking_order.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CMD-201-U02",
+      "title": "Conciencia situacional",
+      "subtitle": "CMD-201 · Mando I — autoridad y puente",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "misión",
+            "nave",
+            "tripulación",
+            "entorno"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Mantener picture de mando."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica misión desde la perspectiva de Mando.",
+            "Resuelve: Mantener picture de mando.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json",
+            "lore/federation/starfleet/qualifications/command_qualification.json",
+            "lore/federation/starfleet/prime_directive/prime_directive.json",
+            "gameplay/orders/starfleet_mission_tasking_order.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CMD-201-U03",
+      "title": "Órdenes",
+      "subtitle": "CMD-201 · Mando I — autoridad y puente",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "claridad",
+            "delegación",
+            "confirmación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Dirigir micro-equipo."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica claridad desde la perspectiva de Mando.",
+            "Resuelve: Dirigir micro-equipo.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json",
+            "lore/federation/starfleet/qualifications/command_qualification.json",
+            "lore/federation/starfleet/prime_directive/prime_directive.json",
+            "gameplay/orders/starfleet_mission_tasking_order.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CMD-201-U04",
+      "title": "Decisión básica",
+      "subtitle": "CMD-201 · Mando I — autoridad y puente",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "opciones",
+            "riesgo",
+            "reglas",
+            "tiempo"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Caso de puente."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Juicio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica opciones desde la perspectiva de Mando.",
+            "Resuelve: Caso de puente.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json",
+            "lore/federation/starfleet/qualifications/command_qualification.json",
+            "lore/federation/starfleet/prime_directive/prime_directive.json",
+            "gameplay/orders/starfleet_mission_tasking_order.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CMD-202-U01",
+      "title": "Prioridad en crisis",
+      "subtitle": "CMD-202 · Mando II — crisis y coordinación",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "vida",
+            "misión",
+            "nave",
+            "regulación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Ordenar acciones."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Caso."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica vida desde la perspectiva de Mando.",
+            "Resuelve: Ordenar acciones.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json",
+            "lore/federation/starfleet/qualifications/command_qualification.json",
+            "lore/federation/starfleet/prime_directive/prime_directive.json",
+            "gameplay/orders/starfleet_mission_tasking_order.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CMD-202-U02",
+      "title": "Decisión con incertidumbre",
+      "subtitle": "CMD-202 · Mando II — crisis y coordinación",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "datos",
+            "supuestos",
+            "consulta",
+            "tiempo"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Escenario incompleto."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica datos desde la perspectiva de Mando.",
+            "Resuelve: Escenario incompleto.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json",
+            "lore/federation/starfleet/qualifications/command_qualification.json",
+            "lore/federation/starfleet/prime_directive/prime_directive.json",
+            "gameplay/orders/starfleet_mission_tasking_order.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CMD-202-U03",
+      "title": "Coordinación de departamentos",
+      "subtitle": "CMD-202 · Mando II — crisis y coordinación",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "recursos",
+            "conflictos",
+            "handoff"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Dirigir equipo multiárea."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica recursos desde la perspectiva de Mando.",
+            "Resuelve: Dirigir equipo multiárea.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json",
+            "lore/federation/starfleet/qualifications/command_qualification.json",
+            "lore/federation/starfleet/prime_directive/prime_directive.json",
+            "gameplay/orders/starfleet_mission_tasking_order.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CMD-202-U04",
+      "title": "Diplomacia operativa",
+      "subtitle": "CMD-202 · Mando II — crisis y coordinación",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "desescalada",
+            "intereses",
+            "autoridad"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Escena de contacto."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Debrief."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica desescalada desde la perspectiva de Mando.",
+            "Resuelve: Escena de contacto.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json",
+            "lore/federation/starfleet/qualifications/command_qualification.json",
+            "lore/federation/starfleet/prime_directive/prime_directive.json",
+            "gameplay/orders/starfleet_mission_tasking_order.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CMD-203-U01",
+      "title": "Oficial de guardia",
+      "subtitle": "CMD-203 · Mando III — guardia integrada",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "estado",
+            "órdenes",
+            "autoridad delegada"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Guardia simulada."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica estado desde la perspectiva de Mando.",
+            "Resuelve: Guardia simulada.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json",
+            "lore/federation/starfleet/qualifications/command_qualification.json",
+            "lore/federation/starfleet/prime_directive/prime_directive.json",
+            "gameplay/orders/starfleet_mission_tasking_order.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CMD-203-U02",
+      "title": "Plan de misión",
+      "subtitle": "CMD-203 · Mando III — guardia integrada",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "objetivo",
+            "riesgo",
+            "recursos",
+            "contingencia"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Preparar plan."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Revisión."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica objetivo desde la perspectiva de Mando.",
+            "Resuelve: Preparar plan.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json",
+            "lore/federation/starfleet/qualifications/command_qualification.json",
+            "lore/federation/starfleet/prime_directive/prime_directive.json",
+            "gameplay/orders/starfleet_mission_tasking_order.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CMD-203-U03",
+      "title": "Gestión de incidente",
+      "subtitle": "CMD-203 · Mando III — guardia integrada",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "brief",
+            "órdenes",
+            "seguimiento",
+            "cierre"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Dirigir incidente."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica brief desde la perspectiva de Mando.",
+            "Resuelve: Dirigir incidente.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json",
+            "lore/federation/starfleet/qualifications/command_qualification.json",
+            "lore/federation/starfleet/prime_directive/prime_directive.json",
+            "gameplay/orders/starfleet_mission_tasking_order.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CMD-203-U04",
+      "title": "Revisión intermedia",
+      "subtitle": "CMD-203 · Mando III — guardia integrada",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "liderazgo",
+            "juicio",
+            "comunicación",
+            "ética"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Panel de mando."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evidencia."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica liderazgo desde la perspectiva de Mando.",
+            "Resuelve: Panel de mando.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json",
+            "lore/federation/starfleet/qualifications/command_qualification.json",
+            "lore/federation/starfleet/prime_directive/prime_directive.json",
+            "gameplay/orders/starfleet_mission_tasking_order.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CMD-101-U01",
+      "title": "Supervisión profesional",
+      "subtitle": "CMD-101 · Mando avanzado I",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "equipo",
+            "estándares",
+            "feedback"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Dirigir turno."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica equipo desde la perspectiva de Mando.",
+            "Resuelve: Dirigir turno.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json",
+            "lore/federation/starfleet/qualifications/command_qualification.json",
+            "lore/federation/starfleet/prime_directive/prime_directive.json",
+            "gameplay/orders/starfleet_mission_tasking_order.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CMD-101-U02",
+      "title": "Mando y personal",
+      "subtitle": "CMD-101 · Mando avanzado I",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "capacidad",
+            "fatiga",
+            "conflicto",
+            "delegación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Caso humano."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Juicio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica capacidad desde la perspectiva de Mando.",
+            "Resuelve: Caso humano.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json",
+            "lore/federation/starfleet/qualifications/command_qualification.json",
+            "lore/federation/starfleet/prime_directive/prime_directive.json",
+            "gameplay/orders/starfleet_mission_tasking_order.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CMD-101-U03",
+      "title": "Órdenes complejas",
+      "subtitle": "CMD-101 · Mando avanzado I",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "intención",
+            "condiciones",
+            "autonomía"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Emitir plan de órdenes."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica intención desde la perspectiva de Mando.",
+            "Resuelve: Emitir plan de órdenes.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json",
+            "lore/federation/starfleet/qualifications/command_qualification.json",
+            "lore/federation/starfleet/prime_directive/prime_directive.json",
+            "gameplay/orders/starfleet_mission_tasking_order.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CMD-101-U04",
+      "title": "Preparación de mando",
+      "subtitle": "CMD-101 · Mando avanzado I",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "cualificaciones",
+            "puente",
+            "responsabilidad"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Revisión de trayectoria."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Informe."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica cualificaciones desde la perspectiva de Mando.",
+            "Resuelve: Revisión de trayectoria.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json",
+            "lore/federation/starfleet/qualifications/command_qualification.json",
+            "lore/federation/starfleet/prime_directive/prime_directive.json",
+            "gameplay/orders/starfleet_mission_tasking_order.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CMD-102-U01",
+      "title": "Misión completa",
+      "subtitle": "CMD-102 · Mando avanzado II",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "briefing",
+            "ejecución",
+            "adaptación",
+            "cierre"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Dirigir misión."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica briefing desde la perspectiva de Mando.",
+            "Resuelve: Dirigir misión.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json",
+            "lore/federation/starfleet/qualifications/command_qualification.json",
+            "lore/federation/starfleet/prime_directive/prime_directive.json",
+            "gameplay/orders/starfleet_mission_tasking_order.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CMD-102-U02",
+      "title": "Riesgo estratégico local",
+      "subtitle": "CMD-102 · Mando avanzado II",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "consecuencias",
+            "regulación",
+            "tripulación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Caso complejo."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Juicio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica consecuencias desde la perspectiva de Mando.",
+            "Resuelve: Caso complejo.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json",
+            "lore/federation/starfleet/qualifications/command_qualification.json",
+            "lore/federation/starfleet/prime_directive/prime_directive.json",
+            "gameplay/orders/starfleet_mission_tasking_order.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CMD-102-U03",
+      "title": "Interacción externa",
+      "subtitle": "CMD-102 · Mando avanzado II",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "autoridad",
+            "negociación",
+            "representación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Escena diplomática."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica autoridad desde la perspectiva de Mando.",
+            "Resuelve: Escena diplomática.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json",
+            "lore/federation/starfleet/qualifications/command_qualification.json",
+            "lore/federation/starfleet/prime_directive/prime_directive.json",
+            "gameplay/orders/starfleet_mission_tasking_order.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "CMD-102-U04",
+      "title": "Handover de mando",
+      "subtitle": "CMD-102 · Mando avanzado II",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "estado",
+            "órdenes",
+            "pendientes",
+            "responsabilidad"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Transferir control."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica estado desde la perspectiva de Mando.",
+            "Resuelve: Transferir control.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json",
+            "lore/federation/starfleet/qualifications/command_qualification.json",
+            "lore/federation/starfleet/prime_directive/prime_directive.json",
+            "gameplay/orders/starfleet_mission_tasking_order.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

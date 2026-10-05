@@ -1,0 +1,386 @@
+{
+  "subject": "Formación cruzada II",
+  "code": "XTR-202",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/second_class/courses/XTR-202/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/second_class/XTR-202/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/careers/starfleet_service/professional_evidence_model.json",
+    "gameplay/careers/academy_path/specialization_rules.md",
+    "gameplay/characters/development/development_rules.md"
+  ],
+  "modules": [
+    {
+      "id": "XTR-202-U01",
+      "title": "Repaso y brechas",
+      "subtitle": "UNIDAD 01 · XTR-202",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Convertir el foco secundario en capacidad útil y demostrable sin otorgar cualificación completa automática."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "evidencia",
+            "recencia",
+            "carencias",
+            "objetivo"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Revisar XTR-201."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Tutoría."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica evidencia desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Revisar XTR-201.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/characters/development/development_rules.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "XTR-202-U02",
+      "title": "Procedimiento secundario",
+      "subtitle": "UNIDAD 02 · XTR-202",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Convertir el foco secundario en capacidad útil y demostrable sin otorgar cualificación completa automática."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "tarea",
+            "límites",
+            "seguridad",
+            "reporte"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Práctica supervisada."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica tarea desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Práctica supervisada.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/characters/development/development_rules.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "XTR-202-U03",
+      "title": "Caso aplicado",
+      "subtitle": "UNIDAD 03 · XTR-202",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Convertir el foco secundario en capacidad útil y demostrable sin otorgar cualificación completa automática."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "integración con rama principal",
+            "prioridad",
+            "handoff"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Resolver caso mixto."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica integración con rama principal desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Resolver caso mixto.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/characters/development/development_rules.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "XTR-202-U04",
+      "title": "Trabajo en equipo secundario",
+      "subtitle": "UNIDAD 04 · XTR-202",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Convertir el foco secundario en capacidad útil y demostrable sin otorgar cualificación completa automática."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "rol auxiliar",
+            "autoridad",
+            "comunicación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Participar en equipo de otra rama."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Observación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica rol auxiliar desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Participar en equipo de otra rama.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/characters/development/development_rules.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "XTR-202-U05",
+      "title": "Límites de competencia",
+      "subtitle": "UNIDAD 05 · XTR-202",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Convertir el foco secundario en capacidad útil y demostrable sin otorgar cualificación completa automática."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "qué puede hacer",
+            "qué debe escalar",
+            "qué requiere certificación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Resolver casos fronterizos."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación de juicio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica qué puede hacer desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Resolver casos fronterizos.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/characters/development/development_rules.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "XTR-202-U06",
+      "title": "Resultado de cross-training",
+      "subtitle": "UNIDAD 06 · XTR-202",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Convertir el foco secundario en capacidad útil y demostrable sin otorgar cualificación completa automática."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "capacidad demostrada",
+            "próximos pasos",
+            "sin equivalencia automática"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Cerrar bloque."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Registro de evidencia."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica capacidad demostrada desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Cerrar bloque.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/characters/development/development_rules.md"
+          ]
+        }
+      ]
+    }
+  ]
+}

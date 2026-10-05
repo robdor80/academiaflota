@@ -1,0 +1,391 @@
+{
+  "subject": "Graduación y comisión",
+  "code": "GRD-103",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/first_class/courses/GRD-103/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/first_class/GRD-103/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/careers/starfleet_service/professional_evidence_model.json",
+    "gameplay/careers/academy_path/graduation_model.json",
+    "gameplay/careers/career_bridge.md"
+  ],
+  "modules": [
+    {
+      "id": "GRD-103-U01",
+      "title": "Últimos días",
+      "subtitle": "UNIDAD 01 · GRD-103",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Cerrar la vida académica mediante una ceremonia jugable, comisión y transición biográfica al servicio."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "cierres",
+            "despedidas",
+            "documentación",
+            "relaciones"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Escenas relevantes."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Persistencia social."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica cierres como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Escenas relevantes.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/graduation_model.json",
+            "gameplay/careers/career_bridge.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GRD-103-U02",
+      "title": "Expediente académico final",
+      "subtitle": "UNIDAD 02 · GRD-103",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Cerrar la vida académica mediante una ceremonia jugable, comisión y transición biográfica al servicio."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "especialidad",
+            "fortalezas",
+            "cualificaciones",
+            "evaluaciones",
+            "incidentes"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Sellar registro."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Validación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica especialidad como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Sellar registro.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/graduation_model.json",
+            "gameplay/careers/career_bridge.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GRD-103-U03",
+      "title": "Ceremonia",
+      "subtitle": "UNIDAD 03 · GRD-103",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Cerrar la vida académica mediante una ceremonia jugable, comisión y transición biográfica al servicio."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "protocolo",
+            "compañeros",
+            "instructores",
+            "familia cuando proceda"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Evento jugable."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Sin recompensa XP."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica protocolo como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Evento jugable.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/graduation_model.json",
+            "gameplay/careers/career_bridge.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GRD-103-U04",
+      "title": "Comisión",
+      "subtitle": "UNIDAD 04 · GRD-103",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Cerrar la vida académica mediante una ceremonia jugable, comisión y transición biográfica al servicio."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "rango de Alférez",
+            "autoridad",
+            "responsabilidad",
+            "documento"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Aplicar cambio de estado."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Validación de carrera."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica rango de Alférez como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Aplicar cambio de estado.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/graduation_model.json",
+            "gameplay/careers/career_bridge.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GRD-103-U05",
+      "title": "Órdenes",
+      "subtitle": "UNIDAD 05 · GRD-103",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Cerrar la vida académica mediante una ceremonia jugable, comisión y transición biográfica al servicio."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "primer destino",
+            "fecha",
+            "puesto",
+            "viaje"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Recibir órdenes."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Persistencia."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica primer destino como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Recibir órdenes.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/graduation_model.json",
+            "gameplay/careers/career_bridge.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "GRD-103-U06",
+      "title": "Salida de Academia",
+      "subtitle": "UNIDAD 06 · GRD-103",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Cerrar la vida académica mediante una ceremonia jugable, comisión y transición biográfica al servicio."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "relaciones",
+            "objetivos",
+            "historial",
+            "nuevo lifecycle"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Transición a servicio activo."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Cierre del arco académico."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica relaciones como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Transición a servicio activo.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/graduation_model.json",
+            "gameplay/careers/career_bridge.md"
+          ]
+        }
+      ]
+    }
+  ]
+}

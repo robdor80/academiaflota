@@ -1,19 +1,18 @@
 {
-  "version": "1.0",
-  "philosophy": "La web organiza el mismo currículo del videojuego para consulta, estudio, práctica y test. No simula ni bloquea la progresión del jugador.",
+  "version": "2.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceManifest": "gameplay/careers/academy_path/curriculum/curriculum_manifest_v1_0.json",
+  "philosophy": "La web publica una vista derivada del currículo autoritativo del videojuego. No simula ni desbloquea la carrera del personaje.",
   "preAcademia": {
     "id": "preacademia",
     "title": "Preparación para el acceso",
     "subtitle": "Estudio opcional previo a las pruebas de acceso",
     "subjects": [
-      "Introducción a la Flota Estelar",
-      "Fundamentos de la Federación",
-      "Razonamiento científico básico",
-      "Razonamiento espacial",
-      "Comunicación",
-      "Preparación física",
-      "Introducción a rangos y divisiones",
-      "Cultura tecnológica general"
+      "Federación y Flota Estelar",
+      "Cómo se organiza Starfleet",
+      "Vida a bordo de una nave",
+      "Tecnología básica de Starfleet",
+      "Principios del servicio en Starfleet"
     ],
     "materials": [
       {
@@ -21,7 +20,7 @@
         "title": "Manual del Candidato",
         "subtitle": "Orientación general para el acceso",
         "version": "1.0",
-        "status": "Contenido base aprobado",
+        "status": "Aprobado",
         "studyId": "manual-candidato"
       }
     ]
@@ -31,56 +30,165 @@
       "id": "4-clase",
       "title": "Cadete de 4.ª clase",
       "year": "Año 1 — Fundamentos y descubrimiento",
+      "unitCount": 90,
       "trimesters": [
         {
           "id": "4-t1",
           "title": "Trimestre 1",
           "subtitle": "Convertirse en cadete",
-          "objective": "Que el cadete entienda dónde está, cómo funciona la Flota Estelar y cómo debe comportarse profesionalmente.",
+          "objective": "Sé dónde estoy, qué es Starfleet, cómo se organiza y qué se espera de mí como cadete.",
           "subjects": [
-            "Estructura, misión y valores de la Flota Estelar",
-            "Rangos, insignias y formas de dirigirse a superiores/subordinados",
-            "Cadena de mando",
-            "Divisiones, departamentos y puestos habituales",
-            "Normas y conducta de la Academia",
-            "Fundamentos de la Federación",
-            "Preparación física",
-            "Introducción a la Computadora de la nave y uso de PADD"
+            {
+              "courseId": "STF-401",
+              "title": "Organización y protocolo de Starfleet",
+              "available": true,
+              "studyId": "course-STF-401",
+              "dataFile": "data/courses/STF-401.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "FED-401",
+              "title": "Federación: fundamentos políticos y sociales",
+              "available": true,
+              "studyId": "course-FED-401",
+              "dataFile": "data/courses/FED-401.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "ACA-401",
+              "title": "Vida académica, conducta y responsabilidad profesional",
+              "available": true,
+              "studyId": "course-ACA-401",
+              "dataFile": "data/courses/ACA-401.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "INF-401",
+              "title": "Sistemas de información Starfleet",
+              "available": true,
+              "studyId": "course-INF-401",
+              "dataFile": "data/courses/INF-401.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "PHY-401",
+              "title": "Preparación física I",
+              "available": true,
+              "studyId": "course-PHY-401",
+              "dataFile": "data/courses/PHY-401.json",
+              "source": "course",
+              "unitCount": 6
+            }
           ]
         },
         {
           "id": "4-t2",
           "title": "Trimestre 2",
-          "subtitle": "Vida a bordo de una nave",
-          "objective": "Entender cómo es un día normal de servicio a bordo.",
+          "subtitle": "Vida y trabajo a bordo",
+          "objective": "Entiendo cómo funciona una nave como organización humana y puedo desenvolverme en ella sin ser todavía operador especializado.",
           "subjects": [
-            "Organización interna de una nave",
-            "Turnos/guardias, relevos e informes",
-            "Introducción a los puestos del puente",
-            "Tipos y funciones generales de naves",
-            "Alertas y emergencias",
-            "Comunicaciones básicas",
-            "Tricorder y equipamiento personal",
-            "Sistemas ambientales y soporte vital",
-            "Seguridad básica / control de daños"
+            {
+              "courseId": "SHP-402",
+              "title": "Organización y vida a bordo",
+              "available": true,
+              "studyId": "course-SHP-402",
+              "dataFile": "data/courses/SHP-402.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "DUT-402",
+              "title": "Servicio, guardias y trabajo profesional",
+              "available": true,
+              "studyId": "course-DUT-402",
+              "dataFile": "data/courses/DUT-402.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "SAF-402",
+              "title": "Seguridad y respuesta a emergencias I",
+              "available": true,
+              "studyId": "course-SAF-402",
+              "dataFile": "data/courses/SAF-402.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "COM-402",
+              "title": "Comunicaciones y equipo personal",
+              "available": true,
+              "studyId": "course-COM-402",
+              "dataFile": "data/courses/COM-402.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "PHY-402",
+              "title": "Preparación física II",
+              "available": true,
+              "studyId": "course-PHY-402",
+              "dataFile": "data/courses/PHY-402.json",
+              "source": "course",
+              "unitCount": 6
+            }
           ]
         },
         {
           "id": "4-t3",
           "title": "Trimestre 3",
           "subtitle": "Fundamentos tecnológicos y operativos",
-          "objective": "Que el cadete conozca los grandes sistemas con los que trabajará durante su carrera.",
+          "objective": "Reconozco los grandes sistemas de una nave, entiendo sus funciones y puedo realizar prácticas introductorias sin ser todavía especialista.",
           "subjects": [
-            "Fundamentos de impulso y curvatura",
-            "Navegación y astrográfica básica",
-            "Fundamentos de Sensores",
-            "Transportadores",
-            "Replicadores",
-            "Holocubiertas",
-            "Escudos y armamento: introducción",
-            "Método científico",
-            "Práctica de emergencias",
-            "Rotaciones por divisiones"
+            {
+              "courseId": "SYS-403",
+              "title": "Sistemas fundamentales de una nave estelar",
+              "available": true,
+              "studyId": "course-SYS-403",
+              "dataFile": "data/courses/SYS-403.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "NAV-403",
+              "title": "Navegación y astrográfica I",
+              "available": true,
+              "studyId": "course-NAV-403",
+              "dataFile": "data/courses/NAV-403.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "SCI-403",
+              "title": "Ciencia, sensores y método científico I",
+              "available": true,
+              "studyId": "course-SCI-403",
+              "dataFile": "data/courses/SCI-403.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "ROT-403",
+              "title": "Rotaciones operativas e integración",
+              "available": true,
+              "studyId": "course-ROT-403",
+              "dataFile": "data/courses/ROT-403.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "PHY-403",
+              "title": "Preparación física III",
+              "available": true,
+              "studyId": "course-PHY-403",
+              "dataFile": "data/courses/PHY-403.json",
+              "source": "course",
+              "unitCount": 6
+            }
           ]
         }
       ]
@@ -89,53 +197,165 @@
       "id": "3-clase",
       "title": "Cadete de 3.ª clase",
       "year": "Año 2 — Exploración profesional",
+      "unitCount": 91,
       "trimesters": [
         {
           "id": "3-t1",
           "title": "Trimestre 1",
-          "subtitle": "Operaciones de nave aplicadas",
-          "objective": "Empezar a operar sistemas reales de forma coordinada.",
+          "subtitle": "Operaciones de nave supervisadas",
+          "objective": "Puedo participar de forma supervisada en la operación de una nave y entiendo cómo se coordinan sus puestos y departamentos.",
           "subjects": [
-            "Operaciones de puente",
-            "Coordinación de OPS",
-            "Fundamentos de energía/potencia",
-            "Fundamentos de Ingeniería",
-            "Sensores y búsquedas básicas",
-            "Trazado de navegación",
-            "Elaboración de informes",
-            "Transferencia de información entre departamentos",
-            "Trabajo en equipo"
+            {
+              "courseId": "OPS-301",
+              "title": "Operaciones de puente y coordinación",
+              "available": true,
+              "studyId": "course-OPS-301",
+              "dataFile": "data/courses/OPS-301.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "NAV-301",
+              "title": "Navegación y control de vuelo I",
+              "available": true,
+              "studyId": "course-NAV-301",
+              "dataFile": "data/courses/NAV-301.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "SEN-301",
+              "title": "Sensores y adquisición de situación I",
+              "available": true,
+              "studyId": "course-SEN-301",
+              "dataFile": "data/courses/SEN-301.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "ENG-301",
+              "title": "Ingeniería y gestión de energía I",
+              "available": true,
+              "studyId": "course-ENG-301",
+              "dataFile": "data/courses/ENG-301.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "PRO-301",
+              "title": "Procedimientos operativos y trabajo interdepartamental",
+              "available": true,
+              "studyId": "course-PRO-301",
+              "dataFile": "data/courses/PRO-301.json",
+              "source": "course",
+              "unitCount": 6
+            }
           ]
         },
         {
           "id": "3-t2",
           "title": "Trimestre 2",
-          "subtitle": "Personas, riesgo y Federación",
-          "objective": "Comprender que la Flota Estelar no es solamente manejar una consola.",
+          "subtitle": "Personas, riesgo y actuación exterior",
+          "objective": "Puedo actuar con criterio básico fuera de una consola: con personas, normas, riesgos, heridos y entornos operativos.",
           "subjects": [
-            "Protocolo interespecies",
-            "Fundamentos de Primer Contacto",
-            "Directiva Principal y reglamentos",
-            "Diplomacia básica",
-            "Medicina y triaje básicos",
-            "Seguridad básica",
-            "Supervivencia",
-            "Fundamentos de equipos de desembarco",
-            "Prácticas de campo / EVA cuando corresponda a la era"
+            {
+              "courseId": "REG-302",
+              "title": "Regulaciones, Directiva Principal y responsabilidad",
+              "available": true,
+              "studyId": "course-REG-302",
+              "dataFile": "data/courses/REG-302.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "XEN-302",
+              "title": "Relaciones interespecies y contacto",
+              "available": true,
+              "studyId": "course-XEN-302",
+              "dataFile": "data/courses/XEN-302.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "MED-302",
+              "title": "Medicina de emergencia y primeros auxilios",
+              "available": true,
+              "studyId": "course-MED-302",
+              "dataFile": "data/courses/MED-302.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "SEC-302",
+              "title": "Seguridad, supervivencia y equipos de salida",
+              "available": true,
+              "studyId": "course-SEC-302",
+              "dataFile": "data/courses/SEC-302.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "FLD-302",
+              "title": "Formación de campo I",
+              "available": true,
+              "studyId": "course-FLD-302",
+              "dataFile": "data/courses/FLD-302.json",
+              "source": "course",
+              "unitCount": 6
+            }
           ]
         },
         {
           "id": "3-t3",
           "title": "Trimestre 3",
-          "subtitle": "Ventana de elección profesional",
-          "objective": "Explorar ramas profesionales antes de elegir especialización. Los instructores aconsejan; el jugador elige.",
+          "subtitle": "Integración, liderazgo y elección profesional",
+          "objective": "Integro lo aprendido, comienzo a asumir responsabilidad y dispongo de suficiente experiencia para elegir especialización.",
           "subjects": [
-            "Simulaciones integradas",
-            "Fundamentos de liderazgo",
-            "Informes avanzados",
-            "Autoevaluación profesional",
-            "Orientación de instructores",
-            "Prácticas de exposición a diferentes ramas"
+            {
+              "courseId": "SIM-303",
+              "title": "Operaciones integradas y simulación I",
+              "available": true,
+              "studyId": "course-SIM-303",
+              "dataFile": "data/courses/SIM-303.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "LDR-303",
+              "title": "Liderazgo y responsabilidad I",
+              "available": true,
+              "studyId": "course-LDR-303",
+              "dataFile": "data/courses/LDR-303.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "BRN-303",
+              "title": "Exploración profesional y rotaciones de rama",
+              "available": true,
+              "studyId": "course-BRN-303",
+              "dataFile": "data/courses/BRN-303.json",
+              "source": "course",
+              "unitCount": 7
+            },
+            {
+              "courseId": "JDG-303",
+              "title": "Juicio operativo, informes y debriefing",
+              "available": true,
+              "studyId": "course-JDG-303",
+              "dataFile": "data/courses/JDG-303.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "CAR-303",
+              "title": "Desarrollo profesional y elección de especialización",
+              "available": true,
+              "studyId": "course-CAR-303",
+              "dataFile": "data/courses/CAR-303.json",
+              "source": "course",
+              "unitCount": 6
+            }
           ]
         }
       ]
@@ -144,110 +364,174 @@
       "id": "2-clase",
       "title": "Cadete de 2.ª clase",
       "year": "Año 3 — Especialización",
+      "unitCount": 90,
       "specializations": [
         "Mando",
-        "Control de vuelo / Navegación",
+        "Vuelo / Navegación",
         "Operaciones",
         "Ingeniería",
         "Seguridad / Táctica",
-        "Ciencias / Sensores",
+        "Ciencia / Sensores",
         "Medicina"
       ],
       "trimesters": [
         {
           "id": "2-t1",
           "title": "Trimestre 1",
-          "subtitle": "Especialización I",
-          "objective": "Inicio formal de la formación profesional elegida.",
+          "subtitle": "Fundamentos profesionales de especialización",
+          "objective": "La especialización elegida queda formalmente activa y comienza el trabajo profesional supervisado.",
           "subjects": [
             {
-              "title": "Sensores I",
-              "specialization": "Ciencias / Sensores",
+              "courseId": "BRN-201",
+              "title": "Especialización profesional I",
               "available": true,
-              "studyId": "sensores-i",
-              "units": [
-                "01",
-                "02",
-                "03"
-              ]
+              "studyId": "course-BRN-201",
+              "dataFile": "data/courses/BRN-201.json",
+              "source": "course",
+              "unitCount": 6
             },
-            "Formación específica de Mando",
-            "Formación específica de Control de vuelo / Navegación",
-            "Formación específica de Operaciones",
-            "Formación específica de Ingeniería",
-            "Formación específica de Seguridad / Táctica",
-            "Formación específica de Medicina"
+            {
+              "courseId": "PRA-201",
+              "title": "Práctica de especialidad I",
+              "available": true,
+              "studyId": "course-PRA-201",
+              "dataFile": "data/courses/PRA-201.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "INT-201",
+              "title": "Operaciones integradas de nave II",
+              "available": true,
+              "studyId": "course-INT-201",
+              "dataFile": "data/courses/INT-201.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "LDR-201",
+              "title": "Liderazgo y responsabilidad de equipo II",
+              "available": true,
+              "studyId": "course-LDR-201",
+              "dataFile": "data/courses/LDR-201.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "XTR-201",
+              "title": "Formación cruzada I",
+              "available": true,
+              "studyId": "course-XTR-201",
+              "dataFile": "data/courses/XTR-201.json",
+              "source": "course",
+              "unitCount": 6
+            }
           ]
         },
         {
           "id": "2-t2",
           "title": "Trimestre 2",
-          "subtitle": "Especialización II",
-          "objective": "Procedimientos más complejos, interacción entre sistemas y trabajo independiente supervisado.",
+          "subtitle": "Operaciones complejas y condiciones adversas",
+          "objective": "Puedo ejercer mi especialidad cuando existen fallos, incertidumbre, presión y condiciones no ideales.",
           "subjects": [
             {
-              "title": "Sensores II",
-              "specialization": "Ciencias / Sensores",
+              "courseId": "BRN-202",
+              "title": "Especialización profesional II",
               "available": true,
-              "studyId": "sensores-ii",
-              "units": [
-                "04",
-                "05",
-                "06",
-                "07"
-              ]
+              "studyId": "course-BRN-202",
+              "dataFile": "data/courses/BRN-202.json",
+              "source": "course",
+              "unitCount": 6
             },
-            "Procedimientos más complejos",
-            "Interacción entre sistemas",
-            "Trabajo independiente supervisado",
-            "Recuperación ante errores",
-            "Coordinación con otros departamentos",
-            "Optativas y formación cruzada"
+            {
+              "courseId": "PRA-202",
+              "title": "Práctica de especialidad II",
+              "available": true,
+              "studyId": "course-PRA-202",
+              "dataFile": "data/courses/PRA-202.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "RSK-202",
+              "title": "Operaciones degradadas y contingencias",
+              "available": true,
+              "studyId": "course-RSK-202",
+              "dataFile": "data/courses/RSK-202.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "FLD-202",
+              "title": "Operaciones de campo y EVA II",
+              "available": true,
+              "studyId": "course-FLD-202",
+              "dataFile": "data/courses/FLD-202.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "XTR-202",
+              "title": "Formación cruzada II",
+              "available": true,
+              "studyId": "course-XTR-202",
+              "dataFile": "data/courses/XTR-202.json",
+              "source": "course",
+              "unitCount": 6
+            }
           ]
         },
         {
           "id": "2-t3",
           "title": "Trimestre 3",
-          "subtitle": "Especialización III",
-          "objective": "Trabajo práctico sostenido, situaciones complejas y mayor responsabilidad.",
+          "subtitle": "Competencia profesional supervisada",
+          "objective": "Todavía soy cadete, pero puedo ocupar temporalmente un puesto de mi especialidad bajo supervisión.",
           "subjects": [
             {
-              "title": "Sensores III",
-              "specialization": "Ciencias / Sensores",
+              "courseId": "BRN-203",
+              "title": "Especialización profesional III",
               "available": true,
-              "studyId": "sensores-iii",
-              "units": [
-                "08",
-                "09",
-                "10",
-                "11"
-              ]
+              "studyId": "course-BRN-203",
+              "dataFile": "data/courses/BRN-203.json",
+              "source": "course",
+              "unitCount": 6
             },
-            "Trabajo práctico sostenido",
-            "Situaciones complejas",
-            "Operación con incertidumbre",
-            "Gestión de carga de trabajo",
-            "Mayor responsabilidad",
-            "Cualificación intermedia"
-          ]
-        }
-      ],
-      "supplementary": [
-        {
-          "title": "Introducción general a Sensores",
-          "studyId": "sensores-intro",
-          "units": [
-            "00"
-          ]
-        },
-        {
-          "title": "Material transversal de Sensores",
-          "studyId": "sensores-transversal",
-          "units": [
-            "12",
-            "13",
-            "14",
-            "15"
+            {
+              "courseId": "DUT-203",
+              "title": "Servicio supervisado de especialidad",
+              "available": true,
+              "studyId": "course-DUT-203",
+              "dataFile": "data/courses/DUT-203.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "SIM-203",
+              "title": "Simulación operacional compleja II",
+              "available": true,
+              "studyId": "course-SIM-203",
+              "dataFile": "data/courses/SIM-203.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "PRJ-203",
+              "title": "Trabajo aplicado de especialidad",
+              "available": true,
+              "studyId": "course-PRJ-203",
+              "dataFile": "data/courses/PRJ-203.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "QUA-203",
+              "title": "Cualificación intermedia",
+              "available": true,
+              "studyId": "course-QUA-203",
+              "dataFile": "data/courses/QUA-203.json",
+              "source": "course",
+              "unitCount": 6
+            }
           ]
         }
       ]
@@ -256,102 +540,233 @@
       "id": "1-clase",
       "title": "Cadete de 1.ª clase",
       "year": "Año 4 — Preparación para el servicio",
+      "unitCount": 90,
       "trimesters": [
         {
           "id": "1-t1",
           "title": "Trimestre 1",
-          "subtitle": "Especialización avanzada",
-          "objective": "Formación avanzada de la rama y guardias supervisadas similares al servicio real.",
+          "subtitle": "Especialización avanzada y responsabilidad profesional",
+          "objective": "Consolido mi profesión y trabajo con una autonomía cada vez más parecida al servicio real.",
           "subjects": [
-            "Formación avanzada de la rama",
-            "Procedimientos profesionales",
-            "Familiarización con clases/sistemas",
-            "Juicio operativo",
-            "Liderazgo según rama",
-            "Simulaciones avanzadas",
-            "Guardias supervisadas similares al servicio real"
+            {
+              "courseId": "BRN-101",
+              "title": "Especialización profesional avanzada I",
+              "available": true,
+              "studyId": "course-BRN-101",
+              "dataFile": "data/courses/BRN-101.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "DUT-101",
+              "title": "Servicio operativo avanzado",
+              "available": true,
+              "studyId": "course-DUT-101",
+              "dataFile": "data/courses/DUT-101.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "LDR-101",
+              "title": "Liderazgo profesional y supervisión III",
+              "available": true,
+              "studyId": "course-LDR-101",
+              "dataFile": "data/courses/LDR-101.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "INT-101",
+              "title": "Operaciones integradas de nave III",
+              "available": true,
+              "studyId": "course-INT-101",
+              "dataFile": "data/courses/INT-101.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "DEV-101",
+              "title": "Desarrollo profesional avanzado",
+              "available": true,
+              "studyId": "course-DEV-101",
+              "dataFile": "data/courses/DEV-101.json",
+              "source": "course",
+              "unitCount": 6
+            }
           ]
         },
         {
           "id": "1-t2",
           "title": "Trimestre 2",
-          "subtitle": "Operaciones integradas de nave",
-          "objective": "Todas las ramas trabajan conjuntamente y el entrenamiento empieza a sentirse como una nave real.",
+          "subtitle": "Operaciones integradas y servicio casi real",
+          "objective": "Puedo cumplir mi función profesional dentro de una misión completa y durante periodos prolongados con supervisión decreciente.",
           "subjects": [
-            "Operaciones de puente integradas",
-            "Ingeniería",
-            "Ciencia",
-            "Sensores",
-            "Navegación",
-            "Táctica",
-            "Seguridad",
-            "Medicina",
-            "OPS",
-            "Comunicaciones",
-            "Órdenes",
-            "Informes",
-            "Handoffs entre departamentos",
-            "Continuidad de guardias",
-            "Simulaciones largas",
-            "Debriefing"
+            {
+              "courseId": "BRN-102",
+              "title": "Especialización profesional avanzada II",
+              "available": true,
+              "studyId": "course-BRN-102",
+              "dataFile": "data/courses/BRN-102.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "OPS-102",
+              "title": "Operaciones integradas de misión",
+              "available": true,
+              "studyId": "course-OPS-102",
+              "dataFile": "data/courses/OPS-102.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "WCH-102",
+              "title": "Continuidad de guardia y responsabilidad de puesto",
+              "available": true,
+              "studyId": "course-WCH-102",
+              "dataFile": "data/courses/WCH-102.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "PRC-102",
+              "title": "Prácticum / crucero de formación",
+              "available": true,
+              "studyId": "course-PRC-102",
+              "dataFile": "data/courses/PRC-102.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "DEB-102",
+              "title": "Análisis operativo y debriefing avanzado",
+              "available": true,
+              "studyId": "course-DEB-102",
+              "dataFile": "data/courses/DEB-102.json",
+              "source": "course",
+              "unitCount": 6
+            }
           ]
         },
         {
           "id": "1-t3",
           "title": "Trimestre 3",
-          "subtitle": "Capstone / Comisión",
-          "objective": "Evaluar preparación para servicio y cerrar la formación inicial antes de la graduación.",
+          "subtitle": "Comisión y preparación para el servicio",
+          "objective": "Demuestro que estoy preparado para recibir la comisión de Alférez.",
           "subjects": [
-            "Evaluaciones finales de especialidad",
-            "Evaluación de preparación para servicio",
-            "Simulaciones finales",
-            "Kobayashi Maru",
-            "Crucero/prácticas de entrenamiento cuando corresponda",
-            "Preferencias de primer destino",
-            "Evaluación final",
-            "Preparación para graduación"
+            {
+              "courseId": "CAP-103",
+              "title": "Evaluación final de especialidad",
+              "available": true,
+              "studyId": "course-CAP-103",
+              "dataFile": "data/courses/CAP-103.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "KM-103",
+              "title": "Kobayashi Maru",
+              "available": true,
+              "studyId": "course-KM-103",
+              "dataFile": "data/courses/KM-103.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "SVC-103",
+              "title": "Evaluación integral de preparación para el servicio",
+              "available": true,
+              "studyId": "course-SVC-103",
+              "dataFile": "data/courses/SVC-103.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "ASS-103",
+              "title": "Primer destino y transición a servicio activo",
+              "available": true,
+              "studyId": "course-ASS-103",
+              "dataFile": "data/courses/ASS-103.json",
+              "source": "course",
+              "unitCount": 6
+            },
+            {
+              "courseId": "GRD-103",
+              "title": "Graduación y comisión",
+              "available": true,
+              "studyId": "course-GRD-103",
+              "dataFile": "data/courses/GRD-103.json",
+              "source": "course",
+              "unitCount": 6
+            }
           ]
         }
       ]
     }
   ],
-  "sensorStructure": {
-    "theoryClassPracticeEvaluation": [
-      "Teoría",
-      "Clase con instructor",
-      "Práctica con el sistema real",
-      "Evaluación continua"
-    ],
-    "groups": [
-      {
-        "id": "sensores-i",
-        "title": "Sensores I",
-        "units": [
-          "Estado de sensores",
-          "Barridos",
-          "Búsqueda / Localización"
-        ]
-      },
-      {
-        "id": "sensores-ii",
-        "title": "Sensores II",
-        "units": [
-          "Contactos",
-          "Seguimiento",
-          "Lectura sensorial",
-          "Interferencias / Compensación"
-        ]
-      },
-      {
-        "id": "sensores-iii",
-        "title": "Sensores III",
-        "units": [
-          "Configuración",
-          "Resultados",
-          "Diagnóstico",
-          "Operaciones integradas"
-        ]
-      }
-    ]
-  }
+  "branchLibrary": [
+    {
+      "branchId": "command",
+      "title": "Mando",
+      "studyId": "branch-command",
+      "dataFile": "data/branches/command.json",
+      "available": true,
+      "unitCount": 20
+    },
+    {
+      "branchId": "flight_navigation",
+      "title": "Vuelo / Navegación",
+      "studyId": "branch-flight_navigation",
+      "dataFile": "data/branches/flight_navigation.json",
+      "available": true,
+      "unitCount": 20
+    },
+    {
+      "branchId": "operations",
+      "title": "Operaciones",
+      "studyId": "branch-operations",
+      "dataFile": "data/branches/operations.json",
+      "available": true,
+      "unitCount": 20
+    },
+    {
+      "branchId": "engineering",
+      "title": "Ingeniería",
+      "studyId": "branch-engineering",
+      "dataFile": "data/branches/engineering.json",
+      "available": true,
+      "unitCount": 20
+    },
+    {
+      "branchId": "security_tactical",
+      "title": "Seguridad / Táctica",
+      "studyId": "branch-security_tactical",
+      "dataFile": "data/branches/security_tactical.json",
+      "available": true,
+      "unitCount": 20
+    },
+    {
+      "branchId": "science_sensors",
+      "title": "Ciencia / Sensores",
+      "studyId": "branch-science_sensors",
+      "dataFile": "data/branches/science_sensors.json",
+      "available": true,
+      "unitCount": 20
+    },
+    {
+      "branchId": "medical",
+      "title": "Medicina",
+      "studyId": "branch-medical",
+      "dataFile": "data/branches/medical.json",
+      "available": true,
+      "unitCount": 20
+    }
+  ],
+  "legacySupplementary": [
+    {
+      "title": "Manual especializado de Operaciones de Sensores v0.1",
+      "studyId": "sensores-intro",
+      "source": "sensores"
+    }
+  ]
 }

@@ -1,0 +1,389 @@
+{
+  "subject": "Operaciones de puente y coordinación",
+  "code": "OPS-301",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/OPS-301/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/OPS-301/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/ship_operations/bridge_station_model.json",
+    "gameplay/ship_operations/operational_event_log/README.md",
+    "gameplay/orders/starfleet_mission_tasking_order.json"
+  ],
+  "modules": [
+    {
+      "id": "OPS-301-U01",
+      "title": "Puente como sistema de trabajo",
+      "subtitle": "UNIDAD 01 · OPS-301",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Participar de forma supervisada en el flujo operativo de un puente."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "roles",
+            "estaciones",
+            "mando",
+            "flujo de información"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Observar y reconstruir el flujo de una guardia."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Mapa de responsabilidades."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica roles en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Observar y reconstruir el flujo de una guardia.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/ship_operations/bridge_station_model.json",
+            "gameplay/ship_operations/operational_event_log/README.md",
+            "gameplay/orders/starfleet_mission_tasking_order.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OPS-301-U02",
+      "title": "Órdenes y confirmaciones",
+      "subtitle": "UNIDAD 02 · OPS-301",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Participar de forma supervisada en el flujo operativo de un puente."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "emisión",
+            "acuse",
+            "ejecución",
+            "reporte de finalización"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Ejecutar órdenes simples en simulador."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica de precisión."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica emisión en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Ejecutar órdenes simples en simulador.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/ship_operations/bridge_station_model.json",
+            "gameplay/ship_operations/operational_event_log/README.md",
+            "gameplay/orders/starfleet_mission_tasking_order.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OPS-301-U03",
+      "title": "Coordinación entre estaciones",
+      "subtitle": "UNIDAD 03 · OPS-301",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Participar de forma supervisada en el flujo operativo de un puente."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "dependencias",
+            "peticiones",
+            "prioridades",
+            "bloqueos"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Resolver una tarea que requiere tres estaciones."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación de teamwork."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica dependencias en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Resolver una tarea que requiere tres estaciones.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/ship_operations/bridge_station_model.json",
+            "gameplay/ship_operations/operational_event_log/README.md",
+            "gameplay/orders/starfleet_mission_tasking_order.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OPS-301-U04",
+      "title": "Imagen operativa común",
+      "subtitle": "UNIDAD 04 · OPS-301",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Participar de forma supervisada en el flujo operativo de un puente."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "estado de nave",
+            "contactos",
+            "misión",
+            "riesgos"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Mantener un resumen de situación."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica de actualización."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica estado de nave en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Mantener un resumen de situación.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/ship_operations/bridge_station_model.json",
+            "gameplay/ship_operations/operational_event_log/README.md",
+            "gameplay/orders/starfleet_mission_tasking_order.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OPS-301-U05",
+      "title": "Escalado de incidencias",
+      "subtitle": "UNIDAD 05 · OPS-301",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Participar de forma supervisada en el flujo operativo de un puente."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "qué resolver localmente",
+            "qué informar",
+            "urgencia"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Clasificar y escalar incidencias."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Caso aplicado."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica qué resolver localmente en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Clasificar y escalar incidencias.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/ship_operations/bridge_station_model.json",
+            "gameplay/ship_operations/operational_event_log/README.md",
+            "gameplay/orders/starfleet_mission_tasking_order.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OPS-301-U06",
+      "title": "Guardia de puente supervisada",
+      "subtitle": "UNIDAD 06 · OPS-301",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Participar de forma supervisada en el flujo operativo de un puente."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "rutina",
+            "evento",
+            "coordinación",
+            "relevo"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Turno corto en simulador."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación integrada."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica rutina en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Turno corto en simulador.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/ship_operations/bridge_station_model.json",
+            "gameplay/ship_operations/operational_event_log/README.md",
+            "gameplay/orders/starfleet_mission_tasking_order.json"
+          ]
+        }
+      ]
+    }
+  ]
+}
