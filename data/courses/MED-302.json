@@ -1,0 +1,390 @@
+{
+  "subject": "Medicina de emergencia y primeros auxilios",
+  "code": "MED-302",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/MED-302/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/MED-302/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/medical/medical_state_model.json",
+    "gameplay/medical/species_medical_hooks.json",
+    "lore/medicine/medical_capability_contract.json"
+  ],
+  "modules": [
+    {
+      "id": "MED-302-U01",
+      "title": "Seguridad de escena",
+      "subtitle": "UNIDAD 01 · MED-302",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Permitir que cualquier cadete responda correctamente hasta la llegada de personal médico cualificado."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "riesgo",
+            "protección",
+            "alerta médica",
+            "prioridad"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Evaluar escenario antes de intervenir."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica riesgo en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Evaluar escenario antes de intervenir.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/medical/medical_state_model.json",
+            "gameplay/medical/species_medical_hooks.json",
+            "lore/medicine/medical_capability_contract.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MED-302-U02",
+      "title": "Valoración inicial",
+      "subtitle": "UNIDAD 02 · MED-302",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Permitir que cualquier cadete responda correctamente hasta la llegada de personal médico cualificado."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "respuesta",
+            "respiración/circulación contextual",
+            "hemorragia",
+            "dolor",
+            "datos"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Valorar paciente simulado."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Checklist."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica respuesta en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Valorar paciente simulado.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/medical/medical_state_model.json",
+            "gameplay/medical/species_medical_hooks.json",
+            "lore/medicine/medical_capability_contract.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MED-302-U03",
+      "title": "Triaje básico",
+      "subtitle": "UNIDAD 03 · MED-302",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Permitir que cualquier cadete responda correctamente hasta la llegada de personal médico cualificado."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "prioridad",
+            "múltiples heridos",
+            "recursos"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Ordenar atención en supuesto sencillo."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Caso."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica prioridad en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Ordenar atención en supuesto sencillo.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/medical/medical_state_model.json",
+            "gameplay/medical/species_medical_hooks.json",
+            "lore/medicine/medical_capability_contract.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MED-302-U04",
+      "title": "Estabilización básica",
+      "subtitle": "UNIDAD 04 · MED-302",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Permitir que cualquier cadete responda correctamente hasta la llegada de personal médico cualificado."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "hemorragia",
+            "inmovilización contextual",
+            "posición",
+            "monitorización"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Aplicar medidas autorizadas."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica hemorragia en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Aplicar medidas autorizadas.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/medical/medical_state_model.json",
+            "gameplay/medical/species_medical_hooks.json",
+            "lore/medicine/medical_capability_contract.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MED-302-U05",
+      "title": "Equipo médico básico",
+      "subtitle": "UNIDAD 05 · MED-302",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Permitir que cualquier cadete responda correctamente hasta la llegada de personal médico cualificado."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "tricorder médico",
+            "kit",
+            "comunicaciones",
+            "límites"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Preparar equipo y obtener datos."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica tricorder médico en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Preparar equipo y obtener datos.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/medical/medical_state_model.json",
+            "gameplay/medical/species_medical_hooks.json",
+            "lore/medicine/medical_capability_contract.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "MED-302-U06",
+      "title": "Handoff a Medicina",
+      "subtitle": "UNIDAD 06 · MED-302",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Permitir que cualquier cadete responda correctamente hasta la llegada de personal médico cualificado."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "estado",
+            "intervenciones",
+            "cambios",
+            "tiempo"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Entregar paciente a profesional."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Informe evaluado."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica estado en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Entregar paciente a profesional.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/medical/medical_state_model.json",
+            "gameplay/medical/species_medical_hooks.json",
+            "lore/medicine/medical_capability_contract.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

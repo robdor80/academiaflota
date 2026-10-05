@@ -1,0 +1,444 @@
+{
+  "subject": "Exploración profesional y rotaciones de rama",
+  "code": "BRN-303",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/BRN-303/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/BRN-303/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/careers/academy_path/specializations.json",
+    "gameplay/careers/academy_path/specialization_rules.md"
+  ],
+  "modules": [
+    {
+      "id": "BRN-303-U01",
+      "title": "Mando",
+      "subtitle": "UNIDAD 01 · BRN-303",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dar suficiente exposición realista a las siete ramas para que la elección sea informada."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "coordinación",
+            "decisión",
+            "puente",
+            "responsabilidad"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Rotación guiada."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Informe reflexivo."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica coordinación en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Rotación guiada.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BRN-303-U02",
+      "title": "Vuelo / Navegación",
+      "subtitle": "UNIDAD 02 · BRN-303",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dar suficiente exposición realista a las siete ramas para que la elección sea informada."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "helm",
+            "plotting",
+            "maniobra",
+            "seguridad"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Rotación guiada."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evidencia práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica helm en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Rotación guiada.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BRN-303-U03",
+      "title": "Operaciones",
+      "subtitle": "UNIDAD 03 · BRN-303",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dar suficiente exposición realista a las siete ramas para que la elección sea informada."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "recursos",
+            "sistemas",
+            "coordinación",
+            "logística"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Rotación guiada."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evidencia práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica recursos en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Rotación guiada.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BRN-303-U04",
+      "title": "Ingeniería",
+      "subtitle": "UNIDAD 04 · BRN-303",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dar suficiente exposición realista a las siete ramas para que la elección sea informada."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "energía",
+            "diagnóstico",
+            "mantenimiento",
+            "daños"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Rotación guiada."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evidencia práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica energía en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Rotación guiada.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BRN-303-U05",
+      "title": "Seguridad / Táctica",
+      "subtitle": "UNIDAD 05 · BRN-303",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dar suficiente exposición realista a las siete ramas para que la elección sea informada."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "protección",
+            "amenaza",
+            "armamento",
+            "procedimiento"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Rotación guiada."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evidencia práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica protección en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Rotación guiada.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BRN-303-U06",
+      "title": "Ciencia / Sensores",
+      "subtitle": "UNIDAD 06 · BRN-303",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dar suficiente exposición realista a las siete ramas para que la elección sea informada."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "detección",
+            "análisis",
+            "método",
+            "reporte"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Rotación guiada."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evidencia práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica detección en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Rotación guiada.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BRN-303-U07",
+      "title": "Medicina",
+      "subtitle": "UNIDAD 07 · BRN-303",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Dar suficiente exposición realista a las siete ramas para que la elección sea informada."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "paciente",
+            "diagnóstico",
+            "triaje",
+            "ética"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Rotación guiada."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evidencia práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica paciente en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Rotación guiada.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md"
+          ]
+        }
+      ]
+    }
+  ]
+}

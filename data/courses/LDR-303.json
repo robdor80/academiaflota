@@ -1,0 +1,383 @@
+{
+  "subject": "Liderazgo y responsabilidad I",
+  "code": "LDR-303",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/LDR-303/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/LDR-303/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/careers/starfleet_service/professional_evidence_model.json",
+    "lore/federation/starfleet/command_structure/succession_rules.json"
+  ],
+  "modules": [
+    {
+      "id": "LDR-303-U01",
+      "title": "Responsabilidad",
+      "subtitle": "UNIDAD 01 · LDR-303",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Introducir liderazgo como responsabilidad por personas, tareas y comunicación, no como autoridad ornamental."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "tarea",
+            "equipo",
+            "resultado",
+            "rendición de cuentas"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Aceptar y definir una responsabilidad."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Caso."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica tarea en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Aceptar y definir una responsabilidad.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LDR-303-U02",
+      "title": "Dar instrucciones",
+      "subtitle": "UNIDAD 02 · LDR-303",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Introducir liderazgo como responsabilidad por personas, tareas y comunicación, no como autoridad ornamental."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "claridad",
+            "intención",
+            "confirmación",
+            "límites"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Dirigir tarea breve."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica claridad en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Dirigir tarea breve.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LDR-303-U03",
+      "title": "Delegar",
+      "subtitle": "UNIDAD 03 · LDR-303",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Introducir liderazgo como responsabilidad por personas, tareas y comunicación, no como autoridad ornamental."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "capacidad",
+            "carga",
+            "seguimiento",
+            "confianza"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Repartir trabajo en equipo."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica capacidad en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Repartir trabajo en equipo.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LDR-303-U04",
+      "title": "Corregir errores",
+      "subtitle": "UNIDAD 04 · LDR-303",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Introducir liderazgo como responsabilidad por personas, tareas y comunicación, no como autoridad ornamental."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "hecho",
+            "riesgo",
+            "feedback",
+            "escalado"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Responder a error de compañero."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Escena."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica hecho en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Responder a error de compañero.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LDR-303-U05",
+      "title": "Conflicto y presión",
+      "subtitle": "UNIDAD 05 · LDR-303",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Introducir liderazgo como responsabilidad por personas, tareas y comunicación, no como autoridad ornamental."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "desacuerdo",
+            "prioridad",
+            "desescalada",
+            "decisión"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Resolver conflicto operativo moderado."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Caso."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica desacuerdo en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Resolver conflicto operativo moderado.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LDR-303-U06",
+      "title": "Liderazgo en simulación",
+      "subtitle": "UNIDAD 06 · LDR-303",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Introducir liderazgo como responsabilidad por personas, tareas y comunicación, no como autoridad ornamental."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "briefing",
+            "ejecución",
+            "cierre",
+            "debrief"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Liderar equipo pequeño."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación integrada."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica briefing en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Liderar equipo pequeño.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

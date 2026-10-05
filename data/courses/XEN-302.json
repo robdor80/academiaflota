@@ -1,0 +1,383 @@
+{
+  "subject": "Relaciones interespecies y contacto",
+  "code": "XEN-302",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/XEN-302/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/XEN-302/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "lore/federation/member_worlds/founding_members.json",
+    "localization/terminology/starfleet_terms.json"
+  ],
+  "modules": [
+    {
+      "id": "XEN-302-U01",
+      "title": "Diferencia biológica y cultural",
+      "subtitle": "UNIDAD 01 · XEN-302",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Trabajar con personas y culturas distintas sin suponer que los patrones humanos son universales."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "biología",
+            "cultura",
+            "costumbre",
+            "individuo"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Separar hechos de estereotipos."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Ejercicio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica biología en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Separar hechos de estereotipos.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/federation/member_worlds/founding_members.json",
+            "localization/terminology/starfleet_terms.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "XEN-302-U02",
+      "title": "Comunicación intercultural",
+      "subtitle": "UNIDAD 02 · XEN-302",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Trabajar con personas y culturas distintas sin suponer que los patrones humanos son universales."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "contexto",
+            "tono",
+            "tabúes",
+            "malentendidos"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Escena de conversación."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación de comunicación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica contexto en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Escena de conversación.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/federation/member_worlds/founding_members.json",
+            "localization/terminology/starfleet_terms.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "XEN-302-U03",
+      "title": "Protocolo básico",
+      "subtitle": "UNIDAD 03 · XEN-302",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Trabajar con personas y culturas distintas sin suponer que los patrones humanos son universales."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "presentación",
+            "hospitalidad",
+            "símbolos",
+            "espacio personal contextual"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Preparar encuentro formal."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Caso práctico."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica presentación en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Preparar encuentro formal.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/federation/member_worlds/founding_members.json",
+            "localization/terminology/starfleet_terms.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "XEN-302-U04",
+      "title": "Traductor Universal y límites",
+      "subtitle": "UNIDAD 04 · XEN-302",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Trabajar con personas y culturas distintas sin suponer que los patrones humanos son universales."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "traducción",
+            "ambigüedad",
+            "conceptos no equivalentes",
+            "fallo"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Resolver malentendido de traducción."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica traducción en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Resolver malentendido de traducción.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/federation/member_worlds/founding_members.json",
+            "localization/terminology/starfleet_terms.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "XEN-302-U05",
+      "title": "Primer Contacto: fundamentos",
+      "subtitle": "UNIDAD 05 · XEN-302",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Trabajar con personas y culturas distintas sin suponer que los patrones humanos son universales."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "observación",
+            "autoridad",
+            "preparación",
+            "riesgo cultural"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Planificar fase inicial supervisada."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación de criterio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica observación en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Planificar fase inicial supervisada.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/federation/member_worlds/founding_members.json",
+            "localization/terminology/starfleet_terms.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "XEN-302-U06",
+      "title": "Diplomacia básica",
+      "subtitle": "UNIDAD 06 · XEN-302",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Trabajar con personas y culturas distintas sin suponer que los patrones humanos son universales."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "intereses",
+            "posición",
+            "escucha",
+            "desescalada"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Negociación breve controlada."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Debrief."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica intereses en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Negociación breve controlada.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "lore/federation/member_worlds/founding_members.json",
+            "localization/terminology/starfleet_terms.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

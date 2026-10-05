@@ -1,0 +1,383 @@
+{
+  "subject": "Ingeniería y gestión de energía I",
+  "code": "ENG-301",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/ENG-301/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/ENG-301/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/engineering/engineering_loop.json",
+    "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json"
+  ],
+  "modules": [
+    {
+      "id": "ENG-301-U01",
+      "title": "Producción y reservas",
+      "subtitle": "UNIDAD 01 · ENG-301",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Comprender y operar de forma supervisada los fundamentos de energía y sistemas de nave."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "fuentes",
+            "reservas",
+            "consumo",
+            "margen"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Leer estado energético."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Preguntas aplicadas."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica fuentes en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Leer estado energético.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/engineering/engineering_loop.json",
+            "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENG-301-U02",
+      "title": "Distribución de energía",
+      "subtitle": "UNIDAD 02 · ENG-301",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Comprender y operar de forma supervisada los fundamentos de energía y sistemas de nave."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "prioridades",
+            "rutas",
+            "cargas",
+            "aislamiento"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Asignar energía en escenario simple."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica prioridades en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Asignar energía en escenario simple.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/engineering/engineering_loop.json",
+            "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENG-301-U03",
+      "title": "Propulsión y energía",
+      "subtitle": "UNIDAD 03 · ENG-301",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Comprender y operar de forma supervisada los fundamentos de energía y sistemas de nave."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "impulso",
+            "warp",
+            "demanda",
+            "limitaciones"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Relacionar orden de vuelo con capacidad técnica."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Caso."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica impulso en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Relacionar orden de vuelo con capacidad técnica.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/engineering/engineering_loop.json",
+            "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENG-301-U04",
+      "title": "Dependencias de sistemas",
+      "subtitle": "UNIDAD 04 · ENG-301",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Comprender y operar de forma supervisada los fundamentos de energía y sistemas de nave."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "sensores",
+            "escudos",
+            "transportadores",
+            "soporte vital"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Trazar dependencias."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación de razonamiento."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica sensores en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Trazar dependencias.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/engineering/engineering_loop.json",
+            "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENG-301-U05",
+      "title": "Mantenimiento y diagnóstico básico",
+      "subtitle": "UNIDAD 05 · ENG-301",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Comprender y operar de forma supervisada los fundamentos de energía y sistemas de nave."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "síntoma",
+            "lectura",
+            "causa probable",
+            "escalado"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Diagnosticar fallo preparado."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica supervisada."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica síntoma en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Diagnosticar fallo preparado.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/engineering/engineering_loop.json",
+            "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENG-301-U06",
+      "title": "Informe de Ingeniería",
+      "subtitle": "UNIDAD 06 · ENG-301",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Comprender y operar de forma supervisada los fundamentos de energía y sistemas de nave."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "estado",
+            "capacidad",
+            "riesgo",
+            "ETA técnica"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Emitir informe al puente."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación de claridad."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica estado en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Emitir informe al puente.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/engineering/engineering_loop.json",
+            "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

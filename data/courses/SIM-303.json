@@ -1,0 +1,382 @@
+{
+  "subject": "Operaciones integradas y simulación I",
+  "code": "SIM-303",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/SIM-303/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/SIM-303/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/careers/academy_path/simulation_model.json",
+    "gameplay/ship_operations/operational_event_log/README.md"
+  ],
+  "modules": [
+    {
+      "id": "SIM-303-U01",
+      "title": "Briefing y preparación",
+      "subtitle": "UNIDAD 01 · SIM-303",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Unir conocimientos de dos años en misiones multiestación con consecuencias y debrief."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "misión",
+            "roles",
+            "información conocida",
+            "restricciones"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Preparar equipo."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación de preparación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica misión en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Preparar equipo.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/academy_path/simulation_model.json",
+            "gameplay/ship_operations/operational_event_log/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIM-303-U02",
+      "title": "Operación normal",
+      "subtitle": "UNIDAD 02 · SIM-303",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Unir conocimientos de dos años en misiones multiestación con consecuencias y debrief."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "guardia",
+            "coordinación",
+            "ritmo",
+            "registro"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Fase rutinaria de misión."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Observación continua."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica guardia en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Fase rutinaria de misión.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/academy_path/simulation_model.json",
+            "gameplay/ship_operations/operational_event_log/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIM-303-U03",
+      "title": "Evento inesperado",
+      "subtitle": "UNIDAD 03 · SIM-303",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Unir conocimientos de dos años en misiones multiestación con consecuencias y debrief."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "detección",
+            "informe",
+            "priorización",
+            "adaptación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Responder sin guion paso a paso."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Juicio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica detección en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Responder sin guion paso a paso.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/academy_path/simulation_model.json",
+            "gameplay/ship_operations/operational_event_log/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIM-303-U04",
+      "title": "Interacción entre departamentos",
+      "subtitle": "UNIDAD 04 · SIM-303",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Unir conocimientos de dos años en misiones multiestación con consecuencias y debrief."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "dependencias",
+            "handoff",
+            "conflictos"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Coordinar solución."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Teamwork."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica dependencias en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Coordinar solución.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/academy_path/simulation_model.json",
+            "gameplay/ship_operations/operational_event_log/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIM-303-U05",
+      "title": "Cierre de misión",
+      "subtitle": "UNIDAD 05 · SIM-303",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Unir conocimientos de dos años en misiones multiestación con consecuencias y debrief."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "resultado",
+            "seguridad",
+            "retorno",
+            "logs"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Cerrar operación."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica resultado en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Cerrar operación.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/academy_path/simulation_model.json",
+            "gameplay/ship_operations/operational_event_log/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SIM-303-U06",
+      "title": "Debrief",
+      "subtitle": "UNIDAD 06 · SIM-303",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Unir conocimientos de dos años en misiones multiestación con consecuencias y debrief."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "hechos",
+            "decisiones",
+            "alternativas",
+            "aprendizaje"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Debrief con instructor."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación descriptiva."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica hechos en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Debrief con instructor.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/academy_path/simulation_model.json",
+            "gameplay/ship_operations/operational_event_log/README.md"
+          ]
+        }
+      ]
+    }
+  ]
+}

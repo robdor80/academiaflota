@@ -1,0 +1,391 @@
+{
+  "subject": "Navegación y control de vuelo I",
+  "code": "NAV-301",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/NAV-301/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/NAV-301/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/navigation/navigation_order_contract.json",
+    "gameplay/navigation/route_cost_model.json",
+    "gameplay/warp_travel/route_planning_model.json"
+  ],
+  "modules": [
+    {
+      "id": "NAV-301-U01",
+      "title": "Estación de vuelo",
+      "subtitle": "UNIDAD 01 · NAV-301",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Pasar de entender rutas a operar navegación y vuelo básico bajo supervisión."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "controles",
+            "rumbo",
+            "velocidad",
+            "estado de propulsión"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Familiarización con consola real/simulada."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Prueba de manejo básico."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica controles en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Familiarización con consola real/simulada.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/navigation/navigation_order_contract.json",
+            "gameplay/navigation/route_cost_model.json",
+            "gameplay/warp_travel/route_planning_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NAV-301-U02",
+      "title": "Plotting operativo",
+      "subtitle": "UNIDAD 02 · NAV-301",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Pasar de entender rutas a operar navegación y vuelo básico bajo supervisión."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "origen",
+            "destino",
+            "waypoints",
+            "restricciones",
+            "ETA"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Preparar un plan de vuelo."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación de ruta."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica origen en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Preparar un plan de vuelo.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/navigation/navigation_order_contract.json",
+            "gameplay/navigation/route_cost_model.json",
+            "gameplay/warp_travel/route_planning_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NAV-301-U03",
+      "title": "Maniobra a impulso",
+      "subtitle": "UNIDAD 03 · NAV-301",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Pasar de entender rutas a operar navegación y vuelo básico bajo supervisión."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "cambios de rumbo",
+            "velocidad",
+            "aproximación",
+            "separación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Ejecutar maniobras básicas."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica cambios de rumbo en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Ejecutar maniobras básicas.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/navigation/navigation_order_contract.json",
+            "gameplay/navigation/route_cost_model.json",
+            "gameplay/warp_travel/route_planning_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NAV-301-U04",
+      "title": "Curso warp",
+      "subtitle": "UNIDAD 04 · NAV-301",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Pasar de entender rutas a operar navegación y vuelo básico bajo supervisión."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "selección de ruta",
+            "entrada/salida",
+            "restricciones",
+            "monitorización"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Preparar y ejecutar salto supervisado."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación procedural."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica selección de ruta en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Preparar y ejecutar salto supervisado.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/navigation/navigation_order_contract.json",
+            "gameplay/navigation/route_cost_model.json",
+            "gameplay/warp_travel/route_planning_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NAV-301-U05",
+      "title": "Aproximación y órbita",
+      "subtitle": "UNIDAD 05 · NAV-301",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Pasar de entender rutas a operar navegación y vuelo básico bajo supervisión."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "interceptación",
+            "órbita",
+            "acoplamiento como contexto",
+            "márgenes"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Simulación de llegada."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica interceptación en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Simulación de llegada.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/navigation/navigation_order_contract.json",
+            "gameplay/navigation/route_cost_model.json",
+            "gameplay/warp_travel/route_planning_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NAV-301-U06",
+      "title": "Anomalías de navegación",
+      "subtitle": "UNIDAD 06 · NAV-301",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Pasar de entender rutas a operar navegación y vuelo básico bajo supervisión."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "desviación",
+            "obstáculos",
+            "datos incompletos",
+            "abort"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Resolver una desviación de ruta."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Caso de juicio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica desviación en contexto operativo.",
+            "¿Qué información necesitas antes de actuar?",
+            "Resuelve: Resolver una desviación de ruta.",
+            "¿Qué debes comunicar o escalar?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/navigation/navigation_order_contract.json",
+            "gameplay/navigation/route_cost_model.json",
+            "gameplay/warp_travel/route_planning_model.json"
+          ]
+        }
+      ]
+    }
+  ]
+}
