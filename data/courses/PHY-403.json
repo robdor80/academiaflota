@@ -1,7 +1,7 @@
 {
   "subject": "Preparación física III",
   "code": "PHY-403",
-  "version": "1.0",
+  "version": "1.1",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/PHY-403/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/PHY-403/MANUAL_v1_0.md",
@@ -22,29 +22,24 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Cerrar el primer año con una condición funcional sostenible y capacidad de autogestión."
+          "text": "La revisión compara el punto de partida del cadete con la evidencia acumulada durante el año. El sistema distingue cambios puntuales de tendencias longitudinales."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Conceptos clave"
         },
         {
           "type": "bullets",
           "items": [
-            "estado inicial",
+            "punto de partida",
             "evidencia acumulada",
-            "cambios"
+            "tendencia"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Comparar registros del año."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación descriptiva."
+          "label": "IDEA CLAVE",
+          "text": "La preparación física se modela como evidencia longitudinal del personaje, no como una barra de XP."
         },
         {
           "type": "heading",
@@ -53,26 +48,10 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras estado inicial.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Comparar registros del año.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/characters/wellbeing/README.md",
-            "gameplay/characters/wellbeing/activity_effect_contract.json",
-            "gameplay/characters/wellbeing/habit_formation_rules.json",
-            "gameplay/characters/development/development_rules.md"
+            "Resume el objetivo de esta unidad.",
+            "¿Qué evidencia sería relevante?",
+            "¿Qué decisión debe tomar el personaje?",
+            "¿Qué no debe convertir el sistema en una bonificación arcade?"
           ]
         }
       ]
@@ -84,11 +63,11 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Cerrar el primer año con una condición funcional sostenible y capacidad de autogestión."
+          "text": "La condición funcional reúne resistencia, fuerza, movilidad y coordinación. La evaluación es contextual y no se reduce a una única cifra."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Conceptos clave"
         },
         {
           "type": "bullets",
@@ -101,13 +80,8 @@
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Sesión integrada."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Adecuación al servicio y biología."
+          "label": "IDEA CLAVE",
+          "text": "La preparación física se modela como evidencia longitudinal del personaje, no como una barra de XP."
         },
         {
           "type": "heading",
@@ -116,26 +90,10 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras resistencia.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Sesión integrada.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/characters/wellbeing/README.md",
-            "gameplay/characters/wellbeing/activity_effect_contract.json",
-            "gameplay/characters/wellbeing/habit_formation_rules.json",
-            "gameplay/characters/development/development_rules.md"
+            "Resume el objetivo de esta unidad.",
+            "¿Qué evidencia sería relevante?",
+            "¿Qué decisión debe tomar el personaje?",
+            "¿Qué no debe convertir el sistema en una bonificación arcade?"
           ]
         }
       ]
@@ -147,30 +105,25 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Cerrar el primer año con una condición funcional sostenible y capacidad de autogestión."
+          "text": "La autogestión consiste en planificar de forma razonable actividad, obligaciones académicas y recuperación dentro del calendario del personaje."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Conceptos clave"
         },
         {
           "type": "bullets",
           "items": [
             "planificación",
-            "carga",
+            "prioridades",
             "recuperación",
             "señales de riesgo"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Diseñar semana realista."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Criterio."
+          "label": "IDEA CLAVE",
+          "text": "La preparación física se modela como evidencia longitudinal del personaje, no como una barra de XP."
         },
         {
           "type": "heading",
@@ -179,26 +132,10 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras planificación.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Diseñar semana realista.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/characters/wellbeing/README.md",
-            "gameplay/characters/wellbeing/activity_effect_contract.json",
-            "gameplay/characters/wellbeing/habit_formation_rules.json",
-            "gameplay/characters/development/development_rules.md"
+            "Resume el objetivo de esta unidad.",
+            "¿Qué evidencia sería relevante?",
+            "¿Qué decisión debe tomar el personaje?",
+            "¿Qué no debe convertir el sistema en una bonificación arcade?"
           ]
         }
       ]
@@ -210,29 +147,24 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Cerrar el primer año con una condición funcional sostenible y capacidad de autogestión."
+          "text": "La rutina puede adaptarse cuando aumenta la carga académica. La consistencia significa mantener continuidad sostenible, no repetir exactamente el mismo plan."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Conceptos clave"
         },
         {
           "type": "bullets",
           "items": [
-            "prioridades",
             "ajuste",
+            "prioridades",
             "consistencia"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Adaptar rutina durante exámenes."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Decisión contextual."
+          "label": "IDEA CLAVE",
+          "text": "La preparación física se modela como evidencia longitudinal del personaje, no como una barra de XP."
         },
         {
           "type": "heading",
@@ -241,26 +173,10 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras prioridades.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Adaptar rutina durante exámenes.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/characters/wellbeing/README.md",
-            "gameplay/characters/wellbeing/activity_effect_contract.json",
-            "gameplay/characters/wellbeing/habit_formation_rules.json",
-            "gameplay/characters/development/development_rules.md"
+            "Resume el objetivo de esta unidad.",
+            "¿Qué evidencia sería relevante?",
+            "¿Qué decisión debe tomar el personaje?",
+            "¿Qué no debe convertir el sistema en una bonificación arcade?"
           ]
         }
       ]
@@ -272,30 +188,25 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Cerrar el primer año con una condición funcional sostenible y capacidad de autogestión."
+          "text": "Las actividades personales pueden generar evidencia de hábitos y capacidades, pero no se convierten automáticamente en una nota de la asignatura."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Conceptos clave"
         },
         {
           "type": "bullets",
           "items": [
-            "aficiones",
+            "actividad personal",
             "evidencia",
-            "separación de currículo",
-            "transferencia"
+            "transferencia",
+            "separación del currículo"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Registrar actividad personal sin convertirla en nota de PHY."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Corrección de registro."
+          "label": "IDEA CLAVE",
+          "text": "La preparación física se modela como evidencia longitudinal del personaje, no como una barra de XP."
         },
         {
           "type": "heading",
@@ -304,26 +215,10 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras aficiones.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Registrar actividad personal sin convertirla en nota de PHY.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/characters/wellbeing/README.md",
-            "gameplay/characters/wellbeing/activity_effect_contract.json",
-            "gameplay/characters/wellbeing/habit_formation_rules.json",
-            "gameplay/characters/development/development_rules.md"
+            "Resume el objetivo de esta unidad.",
+            "¿Qué evidencia sería relevante?",
+            "¿Qué decisión debe tomar el personaje?",
+            "¿Qué no debe convertir el sistema en una bonificación arcade?"
           ]
         }
       ]
@@ -335,29 +230,24 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Cerrar el primer año con una condición funcional sostenible y capacidad de autogestión."
+          "text": "El cierre anual conserva hábitos, experiencia, fortalezas y áreas de mejora para el curso siguiente. No existe un reinicio ni una recompensa de XP."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Conceptos clave"
         },
         {
           "type": "bullets",
           "items": [
-            "continuidad futura",
+            "continuidad",
             "hábitos",
             "áreas de mejora"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Plan longitudinal para 3.ª clase."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Apto / apoyo recomendado, sin XP."
+          "label": "IDEA CLAVE",
+          "text": "La preparación física se modela como evidencia longitudinal del personaje, no como una barra de XP."
         },
         {
           "type": "heading",
@@ -366,29 +256,14 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras continuidad futura.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Plan longitudinal para 3.ª clase.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/characters/wellbeing/README.md",
-            "gameplay/characters/wellbeing/activity_effect_contract.json",
-            "gameplay/characters/wellbeing/habit_formation_rules.json",
-            "gameplay/characters/development/development_rules.md"
+            "Resume el objetivo de esta unidad.",
+            "¿Qué evidencia sería relevante?",
+            "¿Qué decisión debe tomar el personaje?",
+            "¿Qué no debe convertir el sistema en una bonificación arcade?"
           ]
         }
       ]
     }
-  ]
+  ],
+  "status": "developed_content"
 }
