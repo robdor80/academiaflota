@@ -1,5 +1,5 @@
 export async function loadEvaluationData() {
-  const response = await fetch("data/evaluacion-sensores.json?v=0.2.3");
+  const response = await fetch("data/evaluacion-sensores.json?v=0.3.0");
   if (!response.ok) throw new Error("No se pudo cargar la evaluación.");
   return response.json();
 }
@@ -13,12 +13,12 @@ export function renderExam(exam) {
   }).join("");
 
   return '<header class="exam-header">' +
-    '<span class="overline">EVALUACIÓN ACADÉMICA // ' + exam.code + "</span>" +
+    '<span class="overline">TEST DE ESTUDIO // ' + exam.code + "</span>" +
     "<h1>" + exam.title + "</h1>" +
     "<p>" + exam.questions.length + " preguntas. Para aprobar se requiere un mínimo del " + exam.passingScore + " %. Todas las respuestas deben completarse antes de entregar.</p>" +
     "</header>" +
     '<form id="exam-form">' + questions +
-    '<div class="exam-submit"><button class="button button--primary" type="submit">Entregar evaluación</button></div></form>';
+    '<div class="exam-submit"><button class="button button--primary" type="submit">Entregar test</button></div></form>';
 }
 
 export function gradeExam(exam, formData) {
@@ -43,7 +43,7 @@ export function renderResult(result) {
   return '<section class="exam-result ' + (result.passed ? "" : "is-failed") + '">' +
     '<span class="overline">RESULTADO REGISTRADO</span>' +
     '<div class="exam-result__score">' + result.score + "%</div>" +
-    "<h2>" + (result.passed ? "Evaluación superada" : "Evaluación no superada") + "</h2>" +
+    "<h2>" + (result.passed ? "Test superado" : "Test no superado") + "</h2>" +
     "<p>" + result.correct + " respuestas correctas de " + result.total + ".</p>" +
     review +
     '<p><button class="button button--secondary" data-route="evaluations">Volver a evaluaciones</button></p></section>';
