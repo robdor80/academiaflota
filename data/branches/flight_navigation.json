@@ -1,0 +1,1205 @@
+{
+  "subject": "Vuelo / Navegación",
+  "code": "FLIGHT_NAVIGATION",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/branches/flight_navigation/branch_curriculum_v1_0.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/branches/flight_navigation/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/specializations.json",
+    "gameplay/careers/academy_path/specialization_rules.md",
+    "gameplay/careers/starfleet_service/professional_evidence_model.json",
+    "gameplay/careers/starfleet_service/career_progression_rules.json",
+    "gameplay/navigation/navigation_order_contract.json",
+    "gameplay/navigation/route_cost_model.json",
+    "gameplay/warp_travel/route_planning_model.json",
+    "gameplay/warp_travel/eta_resolution_model.json"
+  ],
+  "modules": [
+    {
+      "id": "NAV-201-U01",
+      "title": "Helm de precisión",
+      "subtitle": "NAV-201 · Vuelo y navegación II",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "rumbo",
+            "velocidad",
+            "vector",
+            "márgenes"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Maniobra precisa."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica rumbo desde la perspectiva de Vuelo / Navegación.",
+            "Resuelve: Maniobra precisa.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/navigation/navigation_order_contract.json",
+            "gameplay/navigation/route_cost_model.json",
+            "gameplay/warp_travel/route_planning_model.json",
+            "gameplay/warp_travel/eta_resolution_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NAV-201-U02",
+      "title": "Astrogación",
+      "subtitle": "NAV-201 · Vuelo y navegación II",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "rutas",
+            "waypoints",
+            "ETA",
+            "restricciones"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Plan avanzado."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica rutas desde la perspectiva de Vuelo / Navegación.",
+            "Resuelve: Plan avanzado.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/navigation/navigation_order_contract.json",
+            "gameplay/navigation/route_cost_model.json",
+            "gameplay/warp_travel/route_planning_model.json",
+            "gameplay/warp_travel/eta_resolution_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NAV-201-U03",
+      "title": "Warp routing",
+      "subtitle": "NAV-201 · Vuelo y navegación II",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "entrada",
+            "salida",
+            "zonas",
+            "ajuste"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Ejecutar ruta."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica entrada desde la perspectiva de Vuelo / Navegación.",
+            "Resuelve: Ejecutar ruta.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/navigation/navigation_order_contract.json",
+            "gameplay/navigation/route_cost_model.json",
+            "gameplay/warp_travel/route_planning_model.json",
+            "gameplay/warp_travel/eta_resolution_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NAV-201-U04",
+      "title": "Aproximaciones",
+      "subtitle": "NAV-201 · Vuelo y navegación II",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "órbita",
+            "rendezvous",
+            "acoplamiento contextual"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Simulación."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica órbita desde la perspectiva de Vuelo / Navegación.",
+            "Resuelve: Simulación.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/navigation/navigation_order_contract.json",
+            "gameplay/navigation/route_cost_model.json",
+            "gameplay/warp_travel/route_planning_model.json",
+            "gameplay/warp_travel/eta_resolution_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NAV-202-U01",
+      "title": "Navegación degradada",
+      "subtitle": "NAV-202 · Vuelo y navegación III",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "sensores parciales",
+            "estimación",
+            "margen"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Ruta con datos pobres."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Juicio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica sensores parciales desde la perspectiva de Vuelo / Navegación.",
+            "Resuelve: Ruta con datos pobres.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/navigation/navigation_order_contract.json",
+            "gameplay/navigation/route_cost_model.json",
+            "gameplay/warp_travel/route_planning_model.json",
+            "gameplay/warp_travel/eta_resolution_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NAV-202-U02",
+      "title": "Maniobra de emergencia",
+      "subtitle": "NAV-202 · Vuelo y navegación III",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "abort",
+            "evasión",
+            "propulsión limitada"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Escenario."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica abort desde la perspectiva de Vuelo / Navegación.",
+            "Resuelve: Escenario.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/navigation/navigation_order_contract.json",
+            "gameplay/navigation/route_cost_model.json",
+            "gameplay/warp_travel/route_planning_model.json",
+            "gameplay/warp_travel/eta_resolution_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NAV-202-U03",
+      "title": "Entornos complejos",
+      "subtitle": "NAV-202 · Vuelo y navegación III",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "anomalías",
+            "gravedad",
+            "tráfico"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Plotting complejo."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica anomalías desde la perspectiva de Vuelo / Navegación.",
+            "Resuelve: Plotting complejo.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/navigation/navigation_order_contract.json",
+            "gameplay/navigation/route_cost_model.json",
+            "gameplay/warp_travel/route_planning_model.json",
+            "gameplay/warp_travel/eta_resolution_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NAV-202-U04",
+      "title": "Coordinación con sensores/ingeniería",
+      "subtitle": "NAV-202 · Vuelo y navegación III",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "datos",
+            "potencia",
+            "capacidad"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Misión integrada."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Teamwork."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica datos desde la perspectiva de Vuelo / Navegación.",
+            "Resuelve: Misión integrada.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/navigation/navigation_order_contract.json",
+            "gameplay/navigation/route_cost_model.json",
+            "gameplay/warp_travel/route_planning_model.json",
+            "gameplay/warp_travel/eta_resolution_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NAV-203-U01",
+      "title": "Guardia de vuelo",
+      "subtitle": "NAV-203 · Vuelo integrado",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "rutina",
+            "relevo",
+            "monitorización"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Turno supervisado."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica rutina desde la perspectiva de Vuelo / Navegación.",
+            "Resuelve: Turno supervisado.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/navigation/navigation_order_contract.json",
+            "gameplay/navigation/route_cost_model.json",
+            "gameplay/warp_travel/route_planning_model.json",
+            "gameplay/warp_travel/eta_resolution_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NAV-203-U02",
+      "title": "Misión multi-tramo",
+      "subtitle": "NAV-203 · Vuelo integrado",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "rutas",
+            "cambios",
+            "reserva"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Plan y ejecución."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica rutas desde la perspectiva de Vuelo / Navegación.",
+            "Resuelve: Plan y ejecución.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/navigation/navigation_order_contract.json",
+            "gameplay/navigation/route_cost_model.json",
+            "gameplay/warp_travel/route_planning_model.json",
+            "gameplay/warp_travel/eta_resolution_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NAV-203-U03",
+      "title": "Incidente de navegación",
+      "subtitle": "NAV-203 · Vuelo integrado",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "desvío",
+            "riesgo",
+            "reporte"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Resolver evento."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Juicio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica desvío desde la perspectiva de Vuelo / Navegación.",
+            "Resuelve: Resolver evento.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/navigation/navigation_order_contract.json",
+            "gameplay/navigation/route_cost_model.json",
+            "gameplay/warp_travel/route_planning_model.json",
+            "gameplay/warp_travel/eta_resolution_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NAV-203-U04",
+      "title": "Cualificación intermedia",
+      "subtitle": "NAV-203 · Vuelo integrado",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "precisión",
+            "seguridad",
+            "comunicación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Checkride académico."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evidencia."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica precisión desde la perspectiva de Vuelo / Navegación.",
+            "Resuelve: Checkride académico.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/navigation/navigation_order_contract.json",
+            "gameplay/navigation/route_cost_model.json",
+            "gameplay/warp_travel/route_planning_model.json",
+            "gameplay/warp_travel/eta_resolution_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NAV-101-U01",
+      "title": "Comportamiento por clase",
+      "subtitle": "NAV-101 · Vuelo avanzado I",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "masa",
+            "respuesta",
+            "límites",
+            "sistemas"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Familiarización de clase."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica masa desde la perspectiva de Vuelo / Navegación.",
+            "Resuelve: Familiarización de clase.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/navigation/navigation_order_contract.json",
+            "gameplay/navigation/route_cost_model.json",
+            "gameplay/warp_travel/route_planning_model.json",
+            "gameplay/warp_travel/eta_resolution_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NAV-101-U02",
+      "title": "Vuelo con daños",
+      "subtitle": "NAV-101 · Vuelo avanzado I",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "propulsión degradada",
+            "control",
+            "margen"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Simulación."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica propulsión degradada desde la perspectiva de Vuelo / Navegación.",
+            "Resuelve: Simulación.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/navigation/navigation_order_contract.json",
+            "gameplay/navigation/route_cost_model.json",
+            "gameplay/warp_travel/route_planning_model.json",
+            "gameplay/warp_travel/eta_resolution_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NAV-101-U03",
+      "title": "Operaciones cercanas",
+      "subtitle": "NAV-101 · Vuelo avanzado I",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "formación",
+            "rendezvous",
+            "espacio congestionado"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Maniobra."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica formación desde la perspectiva de Vuelo / Navegación.",
+            "Resuelve: Maniobra.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/navigation/navigation_order_contract.json",
+            "gameplay/navigation/route_cost_model.json",
+            "gameplay/warp_travel/route_planning_model.json",
+            "gameplay/warp_travel/eta_resolution_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NAV-101-U04",
+      "title": "Liderazgo de vuelo",
+      "subtitle": "NAV-101 · Vuelo avanzado I",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "relevo",
+            "instrucción",
+            "coordinación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Supervisar puesto."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Observación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica relevo desde la perspectiva de Vuelo / Navegación.",
+            "Resuelve: Supervisar puesto.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/navigation/navigation_order_contract.json",
+            "gameplay/navigation/route_cost_model.json",
+            "gameplay/warp_travel/route_planning_model.json",
+            "gameplay/warp_travel/eta_resolution_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NAV-102-U01",
+      "title": "Plan de misión",
+      "subtitle": "NAV-102 · Vuelo avanzado II",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "ruta",
+            "tiempo",
+            "riesgos",
+            "alternativas"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Plan completo."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Revisión."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica ruta desde la perspectiva de Vuelo / Navegación.",
+            "Resuelve: Plan completo.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/navigation/navigation_order_contract.json",
+            "gameplay/navigation/route_cost_model.json",
+            "gameplay/warp_travel/route_planning_model.json",
+            "gameplay/warp_travel/eta_resolution_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NAV-102-U02",
+      "title": "Ejecución prolongada",
+      "subtitle": "NAV-102 · Vuelo avanzado II",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "continuidad",
+            "cambios",
+            "logs"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Misión extendida."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica continuidad desde la perspectiva de Vuelo / Navegación.",
+            "Resuelve: Misión extendida.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/navigation/navigation_order_contract.json",
+            "gameplay/navigation/route_cost_model.json",
+            "gameplay/warp_travel/route_planning_model.json",
+            "gameplay/warp_travel/eta_resolution_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NAV-102-U03",
+      "title": "Crisis de vuelo",
+      "subtitle": "NAV-102 · Vuelo avanzado II",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "prioridad",
+            "comunicación",
+            "abort"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Escenario complejo."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Juicio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica prioridad desde la perspectiva de Vuelo / Navegación.",
+            "Resuelve: Escenario complejo.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/navigation/navigation_order_contract.json",
+            "gameplay/navigation/route_cost_model.json",
+            "gameplay/warp_travel/route_planning_model.json",
+            "gameplay/warp_travel/eta_resolution_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "NAV-102-U04",
+      "title": "Entrega de navegación",
+      "subtitle": "NAV-102 · Vuelo avanzado II",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "estado",
+            "pendientes",
+            "riesgos"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Handoff profesional."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica estado desde la perspectiva de Vuelo / Navegación.",
+            "Resuelve: Handoff profesional.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/navigation/navigation_order_contract.json",
+            "gameplay/navigation/route_cost_model.json",
+            "gameplay/warp_travel/route_planning_model.json",
+            "gameplay/warp_travel/eta_resolution_model.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

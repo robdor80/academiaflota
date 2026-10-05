@@ -1,0 +1,1212 @@
+{
+  "subject": "Seguridad / Táctica",
+  "code": "SECURITY_TACTICAL",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/branches/security_tactical/branch_curriculum_v1_0.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/branches/security_tactical/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/specializations.json",
+    "gameplay/careers/academy_path/specialization_rules.md",
+    "gameplay/careers/starfleet_service/professional_evidence_model.json",
+    "gameplay/careers/starfleet_service/career_progression_rules.json",
+    "gameplay/security/README.md",
+    "gameplay/ship_operations/bridge_station_model.json",
+    "lore/federation/starfleet/regulations/README.md",
+    "lore/federation/starfleet/prime_directive/prime_directive.json"
+  ],
+  "modules": [
+    {
+      "id": "SEC-201-U01",
+      "title": "Sistemas defensivos",
+      "subtitle": "SEC-201 · Seguridad y Táctica II",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "escudos",
+            "armamento",
+            "estado",
+            "seguridad"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Familiarización."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica escudos desde la perspectiva de Seguridad / Táctica.",
+            "Resuelve: Familiarización.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/security/README.md",
+            "gameplay/ship_operations/bridge_station_model.json",
+            "lore/federation/starfleet/regulations/README.md",
+            "lore/federation/starfleet/prime_directive/prime_directive.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SEC-201-U02",
+      "title": "Análisis de amenaza",
+      "subtitle": "SEC-201 · Seguridad y Táctica II",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "capacidad",
+            "intención",
+            "posición",
+            "incertidumbre"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Clasificar contacto."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Caso."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica capacidad desde la perspectiva de Seguridad / Táctica.",
+            "Resuelve: Clasificar contacto.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/security/README.md",
+            "gameplay/ship_operations/bridge_station_model.json",
+            "lore/federation/starfleet/regulations/README.md",
+            "lore/federation/starfleet/prime_directive/prime_directive.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SEC-201-U03",
+      "title": "Seguridad interna",
+      "subtitle": "SEC-201 · Seguridad y Táctica II",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "accesos",
+            "patrulla",
+            "incidente",
+            "custodia"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Simulación."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica accesos desde la perspectiva de Seguridad / Táctica.",
+            "Resuelve: Simulación.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/security/README.md",
+            "gameplay/ship_operations/bridge_station_model.json",
+            "lore/federation/starfleet/regulations/README.md",
+            "lore/federation/starfleet/prime_directive/prime_directive.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SEC-201-U04",
+      "title": "Uso proporcional de fuerza",
+      "subtitle": "SEC-201 · Seguridad y Táctica II",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "autoridad",
+            "escalada",
+            "alternativas",
+            "registro"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Caso situacional."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Juicio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica autoridad desde la perspectiva de Seguridad / Táctica.",
+            "Resuelve: Caso situacional.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/security/README.md",
+            "gameplay/ship_operations/bridge_station_model.json",
+            "lore/federation/starfleet/regulations/README.md",
+            "lore/federation/starfleet/prime_directive/prime_directive.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SEC-202-U01",
+      "title": "Táctica defensiva",
+      "subtitle": "SEC-202 · Seguridad y Táctica III",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "posición",
+            "escudos",
+            "maniobra",
+            "fuego"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Simulación."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica posición desde la perspectiva de Seguridad / Táctica.",
+            "Resuelve: Simulación.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/security/README.md",
+            "gameplay/ship_operations/bridge_station_model.json",
+            "lore/federation/starfleet/regulations/README.md",
+            "lore/federation/starfleet/prime_directive/prime_directive.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SEC-202-U02",
+      "title": "Respuesta a abordaje",
+      "subtitle": "SEC-202 · Seguridad y Táctica III",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "detección",
+            "contención",
+            "equipo",
+            "mando"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Ejercicio."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica detección desde la perspectiva de Seguridad / Táctica.",
+            "Resuelve: Ejercicio.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/security/README.md",
+            "gameplay/ship_operations/bridge_station_model.json",
+            "lore/federation/starfleet/regulations/README.md",
+            "lore/federation/starfleet/prime_directive/prime_directive.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SEC-202-U03",
+      "title": "Amenazas múltiples",
+      "subtitle": "SEC-202 · Seguridad y Táctica III",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "prioridad",
+            "protección",
+            "misión"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Escenario."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Juicio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica prioridad desde la perspectiva de Seguridad / Táctica.",
+            "Resuelve: Escenario.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/security/README.md",
+            "gameplay/ship_operations/bridge_station_model.json",
+            "lore/federation/starfleet/regulations/README.md",
+            "lore/federation/starfleet/prime_directive/prime_directive.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SEC-202-U04",
+      "title": "Equipo de seguridad",
+      "subtitle": "SEC-202 · Seguridad y Táctica III",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "roles",
+            "comunicación",
+            "detención",
+            "handoff"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Dirigir célula."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica roles desde la perspectiva de Seguridad / Táctica.",
+            "Resuelve: Dirigir célula.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/security/README.md",
+            "gameplay/ship_operations/bridge_station_model.json",
+            "lore/federation/starfleet/regulations/README.md",
+            "lore/federation/starfleet/prime_directive/prime_directive.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SEC-203-U01",
+      "title": "Guardia táctica",
+      "subtitle": "SEC-203 · Operaciones tácticas integradas",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "estado",
+            "contactos",
+            "reglas",
+            "relevo"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Turno supervisado."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica estado desde la perspectiva de Seguridad / Táctica.",
+            "Resuelve: Turno supervisado.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/security/README.md",
+            "gameplay/ship_operations/bridge_station_model.json",
+            "lore/federation/starfleet/regulations/README.md",
+            "lore/federation/starfleet/prime_directive/prime_directive.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SEC-203-U02",
+      "title": "Plan de seguridad",
+      "subtitle": "SEC-203 · Operaciones tácticas integradas",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "amenaza",
+            "zonas",
+            "personal",
+            "contingencia"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Diseñar plan."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Revisión."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica amenaza desde la perspectiva de Seguridad / Táctica.",
+            "Resuelve: Diseñar plan.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/security/README.md",
+            "gameplay/ship_operations/bridge_station_model.json",
+            "lore/federation/starfleet/regulations/README.md",
+            "lore/federation/starfleet/prime_directive/prime_directive.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SEC-203-U03",
+      "title": "Incidente complejo",
+      "subtitle": "SEC-203 · Operaciones tácticas integradas",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "externo",
+            "interno",
+            "coordinación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Simulación."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Juicio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica externo desde la perspectiva de Seguridad / Táctica.",
+            "Resuelve: Simulación.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/security/README.md",
+            "gameplay/ship_operations/bridge_station_model.json",
+            "lore/federation/starfleet/regulations/README.md",
+            "lore/federation/starfleet/prime_directive/prime_directive.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SEC-203-U04",
+      "title": "Cualificación intermedia",
+      "subtitle": "SEC-203 · Operaciones tácticas integradas",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "disciplina",
+            "proporcionalidad",
+            "comunicación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Evaluación integrada."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evidencia."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica disciplina desde la perspectiva de Seguridad / Táctica.",
+            "Resuelve: Evaluación integrada.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/security/README.md",
+            "gameplay/ship_operations/bridge_station_model.json",
+            "lore/federation/starfleet/regulations/README.md",
+            "lore/federation/starfleet/prime_directive/prime_directive.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SEC-101-U01",
+      "title": "Supervisión de seguridad",
+      "subtitle": "SEC-101 · Seguridad/Táctica avanzada I",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "equipo",
+            "turnos",
+            "riesgo",
+            "estándares"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Dirigir servicio."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica equipo desde la perspectiva de Seguridad / Táctica.",
+            "Resuelve: Dirigir servicio.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/security/README.md",
+            "gameplay/ship_operations/bridge_station_model.json",
+            "lore/federation/starfleet/regulations/README.md",
+            "lore/federation/starfleet/prime_directive/prime_directive.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SEC-101-U02",
+      "title": "Táctica bajo daño",
+      "subtitle": "SEC-101 · Seguridad/Táctica avanzada I",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "sensores/escudos degradados",
+            "prioridad",
+            "coordinación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Simulación."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica sensores/escudos degradados desde la perspectiva de Seguridad / Táctica.",
+            "Resuelve: Simulación.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/security/README.md",
+            "gameplay/ship_operations/bridge_station_model.json",
+            "lore/federation/starfleet/regulations/README.md",
+            "lore/federation/starfleet/prime_directive/prime_directive.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SEC-101-U03",
+      "title": "Protección de misión",
+      "subtitle": "SEC-101 · Seguridad/Táctica avanzada I",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "personal",
+            "instalación",
+            "away team"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Plan avanzado."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Revisión."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica personal desde la perspectiva de Seguridad / Táctica.",
+            "Resuelve: Plan avanzado.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/security/README.md",
+            "gameplay/ship_operations/bridge_station_model.json",
+            "lore/federation/starfleet/regulations/README.md",
+            "lore/federation/starfleet/prime_directive/prime_directive.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SEC-101-U04",
+      "title": "Asesoramiento al mando",
+      "subtitle": "SEC-101 · Seguridad/Táctica avanzada I",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "amenaza",
+            "opciones",
+            "consecuencias"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Briefing."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Juicio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica amenaza desde la perspectiva de Seguridad / Táctica.",
+            "Resuelve: Briefing.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/security/README.md",
+            "gameplay/ship_operations/bridge_station_model.json",
+            "lore/federation/starfleet/regulations/README.md",
+            "lore/federation/starfleet/prime_directive/prime_directive.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SEC-102-U01",
+      "title": "Misión táctica completa",
+      "subtitle": "SEC-102 · Seguridad/Táctica avanzada II",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "brief",
+            "reglas",
+            "ejecución",
+            "cierre"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Operar misión."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica brief desde la perspectiva de Seguridad / Táctica.",
+            "Resuelve: Operar misión.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/security/README.md",
+            "gameplay/ship_operations/bridge_station_model.json",
+            "lore/federation/starfleet/regulations/README.md",
+            "lore/federation/starfleet/prime_directive/prime_directive.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SEC-102-U02",
+      "title": "Crisis de seguridad",
+      "subtitle": "SEC-102 · Seguridad/Táctica avanzada II",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "abordaje",
+            "rehén contextual",
+            "evacuación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Escenario complejo."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Juicio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica abordaje desde la perspectiva de Seguridad / Táctica.",
+            "Resuelve: Escenario complejo.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/security/README.md",
+            "gameplay/ship_operations/bridge_station_model.json",
+            "lore/federation/starfleet/regulations/README.md",
+            "lore/federation/starfleet/prime_directive/prime_directive.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SEC-102-U03",
+      "title": "Desescalada",
+      "subtitle": "SEC-102 · Seguridad/Táctica avanzada II",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "comunicación",
+            "posición",
+            "alternativas"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Caso."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica comunicación desde la perspectiva de Seguridad / Táctica.",
+            "Resuelve: Caso.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/security/README.md",
+            "gameplay/ship_operations/bridge_station_model.json",
+            "lore/federation/starfleet/regulations/README.md",
+            "lore/federation/starfleet/prime_directive/prime_directive.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SEC-102-U04",
+      "title": "Handoff táctico",
+      "subtitle": "SEC-102 · Seguridad/Táctica avanzada II",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "amenazas",
+            "estado",
+            "órdenes",
+            "pendientes"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Relevo profesional."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica amenazas desde la perspectiva de Seguridad / Táctica.",
+            "Resuelve: Relevo profesional.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/security/README.md",
+            "gameplay/ship_operations/bridge_station_model.json",
+            "lore/federation/starfleet/regulations/README.md",
+            "lore/federation/starfleet/prime_directive/prime_directive.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

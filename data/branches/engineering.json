@@ -1,0 +1,1212 @@
+{
+  "subject": "Ingeniería",
+  "code": "ENGINEERING",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/branches/engineering/branch_curriculum_v1_0.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/branches/engineering/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/specializations.json",
+    "gameplay/careers/academy_path/specialization_rules.md",
+    "gameplay/careers/starfleet_service/professional_evidence_model.json",
+    "gameplay/careers/starfleet_service/career_progression_rules.json",
+    "gameplay/engineering/engineering_loop.json",
+    "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json",
+    "lore/starships/ship_systems/warp/README.md",
+    "lore/starships/ship_systems/transporters/README.md"
+  ],
+  "modules": [
+    {
+      "id": "ENG-201-U01",
+      "title": "Generación y distribución",
+      "subtitle": "ENG-201 · Ingeniería II — potencia y propulsión",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "fuentes",
+            "buses",
+            "reservas",
+            "cargas"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Configurar energía."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica fuentes desde la perspectiva de Ingeniería.",
+            "Resuelve: Configurar energía.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/engineering/engineering_loop.json",
+            "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json",
+            "lore/starships/ship_systems/warp/README.md",
+            "lore/starships/ship_systems/transporters/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENG-201-U02",
+      "title": "Propulsión warp",
+      "subtitle": "ENG-201 · Ingeniería II — potencia y propulsión",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "subsistemas",
+            "estado",
+            "demanda",
+            "seguridad"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Caso operativo."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica subsistemas desde la perspectiva de Ingeniería.",
+            "Resuelve: Caso operativo.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/engineering/engineering_loop.json",
+            "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json",
+            "lore/starships/ship_systems/warp/README.md",
+            "lore/starships/ship_systems/transporters/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENG-201-U03",
+      "title": "Impulso y maniobra",
+      "subtitle": "ENG-201 · Ingeniería II — potencia y propulsión",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "potencia",
+            "refrigeración contextual",
+            "capacidad"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Coordinar con vuelo."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica potencia desde la perspectiva de Ingeniería.",
+            "Resuelve: Coordinar con vuelo.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/engineering/engineering_loop.json",
+            "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json",
+            "lore/starships/ship_systems/warp/README.md",
+            "lore/starships/ship_systems/transporters/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENG-201-U04",
+      "title": "Diagnóstico sistemático",
+      "subtitle": "ENG-201 · Ingeniería II — potencia y propulsión",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "síntoma",
+            "telemetría",
+            "hipótesis",
+            "prueba"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Diagnosticar fallo."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Juicio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica síntoma desde la perspectiva de Ingeniería.",
+            "Resuelve: Diagnosticar fallo.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/engineering/engineering_loop.json",
+            "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json",
+            "lore/starships/ship_systems/warp/README.md",
+            "lore/starships/ship_systems/transporters/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENG-202-U01",
+      "title": "Aislamiento de fallos",
+      "subtitle": "ENG-202 · Ingeniería III — reparación y daños",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "sección",
+            "riesgo",
+            "bypass",
+            "seguridad"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Práctica."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica sección desde la perspectiva de Ingeniería.",
+            "Resuelve: Práctica.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/engineering/engineering_loop.json",
+            "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json",
+            "lore/starships/ship_systems/warp/README.md",
+            "lore/starships/ship_systems/transporters/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENG-202-U02",
+      "title": "Reparación priorizada",
+      "subtitle": "ENG-202 · Ingeniería III — reparación y daños",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "misión",
+            "vida",
+            "propulsión",
+            "defensa"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Planificar reparación."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Juicio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica misión desde la perspectiva de Ingeniería.",
+            "Resuelve: Planificar reparación.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/engineering/engineering_loop.json",
+            "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json",
+            "lore/starships/ship_systems/warp/README.md",
+            "lore/starships/ship_systems/transporters/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENG-202-U03",
+      "title": "Control de daños",
+      "subtitle": "ENG-202 · Ingeniería III — reparación y daños",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "equipo",
+            "sellado",
+            "energía",
+            "restauración"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Simulación."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica equipo desde la perspectiva de Ingeniería.",
+            "Resuelve: Simulación.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/engineering/engineering_loop.json",
+            "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json",
+            "lore/starships/ship_systems/warp/README.md",
+            "lore/starships/ship_systems/transporters/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENG-202-U04",
+      "title": "Sistemas encadenados",
+      "subtitle": "ENG-202 · Ingeniería III — reparación y daños",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "cascada",
+            "causa raíz",
+            "recuperación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Caso complejo."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica cascada desde la perspectiva de Ingeniería.",
+            "Resuelve: Caso complejo.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/engineering/engineering_loop.json",
+            "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json",
+            "lore/starships/ship_systems/warp/README.md",
+            "lore/starships/ship_systems/transporters/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENG-203-U01",
+      "title": "Guardia de Ingeniería",
+      "subtitle": "ENG-203 · Ingeniería operacional",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "estado",
+            "mantenimiento",
+            "avisos"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Turno supervisado."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica estado desde la perspectiva de Ingeniería.",
+            "Resuelve: Turno supervisado.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/engineering/engineering_loop.json",
+            "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json",
+            "lore/starships/ship_systems/warp/README.md",
+            "lore/starships/ship_systems/transporters/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENG-203-U02",
+      "title": "Carga sostenida",
+      "subtitle": "ENG-203 · Ingeniería operacional",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "temperatura contextual",
+            "potencia",
+            "margen",
+            "reserva"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Misión extendida."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica temperatura contextual desde la perspectiva de Ingeniería.",
+            "Resuelve: Misión extendida.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/engineering/engineering_loop.json",
+            "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json",
+            "lore/starships/ship_systems/warp/README.md",
+            "lore/starships/ship_systems/transporters/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENG-203-U03",
+      "title": "Emergencia técnica",
+      "subtitle": "ENG-203 · Ingeniería operacional",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "diagnóstico",
+            "prioridad",
+            "coordinación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Simulación."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Juicio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica diagnóstico desde la perspectiva de Ingeniería.",
+            "Resuelve: Simulación.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/engineering/engineering_loop.json",
+            "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json",
+            "lore/starships/ship_systems/warp/README.md",
+            "lore/starships/ship_systems/transporters/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENG-203-U04",
+      "title": "Cualificación intermedia",
+      "subtitle": "ENG-203 · Ingeniería operacional",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "seguridad",
+            "diagnóstico",
+            "ejecución",
+            "reporte"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Evaluación integrada."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evidencia."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica seguridad desde la perspectiva de Ingeniería.",
+            "Resuelve: Evaluación integrada.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/engineering/engineering_loop.json",
+            "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json",
+            "lore/starships/ship_systems/warp/README.md",
+            "lore/starships/ship_systems/transporters/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENG-101-U01",
+      "title": "Sistemas complejos",
+      "subtitle": "ENG-101 · Ingeniería avanzada I",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "interdependencias",
+            "configuración",
+            "limitaciones"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Caso de clase."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica interdependencias desde la perspectiva de Ingeniería.",
+            "Resuelve: Caso de clase.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/engineering/engineering_loop.json",
+            "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json",
+            "lore/starships/ship_systems/warp/README.md",
+            "lore/starships/ship_systems/transporters/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENG-101-U02",
+      "title": "Supervisión técnica",
+      "subtitle": "ENG-101 · Ingeniería avanzada I",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "equipo",
+            "trabajo",
+            "seguridad",
+            "ETA"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Dirigir reparación."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica equipo desde la perspectiva de Ingeniería.",
+            "Resuelve: Dirigir reparación.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/engineering/engineering_loop.json",
+            "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json",
+            "lore/starships/ship_systems/warp/README.md",
+            "lore/starships/ship_systems/transporters/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENG-101-U03",
+      "title": "Decisión técnica",
+      "subtitle": "ENG-101 · Ingeniería avanzada I",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "opciones",
+            "riesgo",
+            "misión",
+            "recomendación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Briefing al mando."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Juicio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica opciones desde la perspectiva de Ingeniería.",
+            "Resuelve: Briefing al mando.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/engineering/engineering_loop.json",
+            "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json",
+            "lore/starships/ship_systems/warp/README.md",
+            "lore/starships/ship_systems/transporters/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENG-101-U04",
+      "title": "Mantenimiento avanzado",
+      "subtitle": "ENG-101 · Ingeniería avanzada I",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "tendencia",
+            "prevención",
+            "planificación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Plan de mantenimiento."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Revisión."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica tendencia desde la perspectiva de Ingeniería.",
+            "Resuelve: Plan de mantenimiento.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/engineering/engineering_loop.json",
+            "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json",
+            "lore/starships/ship_systems/warp/README.md",
+            "lore/starships/ship_systems/transporters/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENG-102-U01",
+      "title": "Misión completa",
+      "subtitle": "ENG-102 · Ingeniería avanzada II",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "demanda",
+            "reservas",
+            "configuración",
+            "continuidad"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Operar misión."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica demanda desde la perspectiva de Ingeniería.",
+            "Resuelve: Operar misión.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/engineering/engineering_loop.json",
+            "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json",
+            "lore/starships/ship_systems/warp/README.md",
+            "lore/starships/ship_systems/transporters/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENG-102-U02",
+      "title": "Crisis técnica",
+      "subtitle": "ENG-102 · Ingeniería avanzada II",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "fallos múltiples",
+            "personal",
+            "prioridad"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Escenario complejo."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Juicio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica fallos múltiples desde la perspectiva de Ingeniería.",
+            "Resuelve: Escenario complejo.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/engineering/engineering_loop.json",
+            "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json",
+            "lore/starships/ship_systems/warp/README.md",
+            "lore/starships/ship_systems/transporters/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENG-102-U03",
+      "title": "Recuperación",
+      "subtitle": "ENG-102 · Ingeniería avanzada II",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "restauración",
+            "verificación",
+            "logs"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Cerrar incidente."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica restauración desde la perspectiva de Ingeniería.",
+            "Resuelve: Cerrar incidente.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/engineering/engineering_loop.json",
+            "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json",
+            "lore/starships/ship_systems/warp/README.md",
+            "lore/starships/ship_systems/transporters/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENG-102-U04",
+      "title": "Handoff de Ingeniería",
+      "subtitle": "ENG-102 · Ingeniería avanzada II",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "estado",
+            "ETA",
+            "riesgos",
+            "pendientes"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Relevo profesional."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica estado desde la perspectiva de Ingeniería.",
+            "Resuelve: Relevo profesional.",
+            "¿Qué límite de competencia o autoridad debes respetar?",
+            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/engineering/engineering_loop.json",
+            "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json",
+            "lore/starships/ship_systems/warp/README.md",
+            "lore/starships/ship_systems/transporters/README.md"
+          ]
+        }
+      ]
+    }
+  ]
+}
