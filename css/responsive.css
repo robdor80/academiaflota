@@ -664,3 +664,89 @@
     width:min(calc(100% - 120px),1620px);
   }
 }
+
+
+/* v0.3.4 — identidad institucional de la columna izquierda en PC */
+@media (min-width:1200px){
+  .gateway__header{
+    align-items:center;
+    padding:42px 30px 34px;
+    text-align:center;
+  }
+
+  .gateway__logo{
+    width:min(220px,calc(100% - 22px));
+    height:auto;
+    max-height:220px;
+    object-fit:contain;
+    margin:0 auto;
+  }
+
+  .gateway__title{
+    width:100%;
+    margin-top:20px;
+    text-align:center;
+  }
+
+  .gateway__title>.gateway__federation{
+    display:block;
+    max-width:240px;
+    margin:0 auto;
+    color:var(--gold-soft);
+    font-size:.68rem;
+    line-height:1.5;
+    letter-spacing:.15em;
+  }
+
+  .gateway__academy-name{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:0;
+    width:100%;
+    max-width:none;
+    margin-top:28px;
+    color:#fff;
+    font-size:1.55rem;
+    line-height:1.02;
+    letter-spacing:.055em;
+    text-align:center;
+  }
+
+  .gateway__academy-name span{
+    display:block;
+    width:100%;
+    max-width:none;
+    color:inherit;
+    font:inherit;
+    line-height:inherit;
+    letter-spacing:inherit;
+  }
+
+  .gateway__academy-name span:first-child,
+  .gateway__academy-name span:nth-child(4),
+  .gateway__academy-name span:nth-child(5){
+    font-size:1.12em;
+  }
+
+  .gateway__academy-name span:nth-child(2),
+  .gateway__academy-name span:nth-child(3){
+    font-size:.78em;
+    line-height:1.15;
+  }
+
+  .gateway__header .settings-trigger{
+    text-align:left;
+  }
+}
+
+@media (min-width:1600px){
+  .gateway__logo{
+    width:min(250px,calc(100% - 18px));
+    max-height:250px;
+  }
+
+  .gateway__academy-name{
+    font-size:1.72rem;
+  }
+}
