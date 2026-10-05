@@ -1,283 +1,287 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "course_id": "PHY-402",
-  "status": "generated_from_authoritative_curriculum",
+  "status": "editorially_aligned_with_developed_manual",
+  "source_manual": "gameplay/careers/academy_path/study_materials/fourth_class/PHY-402/MANUAL_v1_0.md",
   "question_count": 24,
+  "rule": "No question may require knowledge that is not explicitly taught in PHY-402 or established prerequisites.",
   "questions": [
     {
       "id": "PHY-402-Q001",
       "unit_id": "PHY-402-U01",
       "type": "short_answer",
-      "prompt_es": "Explica frecuencia y su relevancia operativa.",
+      "prompt_es": "¿Por qué continuidad importa más que una sesión espectacular?",
       "answer_key_es": [
-        "frecuencia",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "adaptación longitudinal",
+        "regularidad",
+        "carga y recuperación"
       ]
     },
     {
       "id": "PHY-402-Q002",
       "unit_id": "PHY-402-U01",
-      "type": "compare",
-      "prompt_es": "Compara frecuencia con progresión. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "knowledge",
+      "prompt_es": "¿Qué significa frecuencia?",
       "answer_key_es": [
-        "frecuencia",
-        "progresión",
-        "diferencia aplicada"
+        "número de sesiones/estímulos por periodo"
       ]
     },
     {
       "id": "PHY-402-Q003",
       "unit_id": "PHY-402-U01",
-      "type": "scenario",
-      "prompt_es": "Situación: Mantener calendario de entrenamiento. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "knowledge",
+      "prompt_es": "Nombra tres formas de progresar sin subir solo intensidad.",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "duración",
+        "complejidad",
+        "resistencia",
+        "densidad",
+        "autonomía",
+        "especificidad"
       ]
     },
     {
       "id": "PHY-402-Q004",
       "unit_id": "PHY-402-U01",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Continuidad y carga y cómo lo corregirías.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué la mejor sesión no siempre es la más dura?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "contexto",
+        "fatiga",
+        "recuperación",
+        "carga académica"
       ]
     },
     {
       "id": "PHY-402-Q005",
       "unit_id": "PHY-402-U02",
       "type": "short_answer",
-      "prompt_es": "Explica esfuerzo sostenido y su relevancia operativa.",
+      "prompt_es": "¿Qué significa resistencia aplicada?",
       "answer_key_es": [
-        "esfuerzo sostenido",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "sostener esfuerzo en tarea funcional",
+        "mantener control"
       ]
     },
     {
       "id": "PHY-402-Q006",
       "unit_id": "PHY-402-U02",
-      "type": "compare",
-      "prompt_es": "Compara esfuerzo sostenido con recuperación. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "judgment",
+      "prompt_es": "¿Qué puede ocurrir si se empieza demasiado rápido?",
       "answer_key_es": [
-        "esfuerzo sostenido",
-        "recuperación",
-        "diferencia aplicada"
+        "fatiga",
+        "peor técnica",
+        "abandono",
+        "peor recuperación"
       ]
     },
     {
       "id": "PHY-402-Q007",
       "unit_id": "PHY-402-U02",
-      "type": "scenario",
-      "prompt_es": "Situación: Sesión funcional del personaje. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "short_answer",
+      "prompt_es": "¿Por qué importa recuperarse entre esfuerzos?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "mantener función",
+        "continuar tarea",
+        "medir adaptación"
       ]
     },
     {
       "id": "PHY-402-Q008",
       "unit_id": "PHY-402-U02",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Resistencia aplicada y cómo lo corregirías.",
+      "type": "compare",
+      "prompt_es": "¿Con qué se compara principalmente el progreso individual?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "punto de partida",
+        "historial",
+        "estado actual",
+        "demandas razonables"
       ]
     },
     {
       "id": "PHY-402-Q009",
       "unit_id": "PHY-402-U03",
       "type": "short_answer",
-      "prompt_es": "Explica fuerza funcional y su relevancia operativa.",
+      "prompt_es": "¿Por qué fuerza y coordinación se trabajan juntas?",
       "answer_key_es": [
-        "fuerza funcional",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "aplicar fuerza con dirección/tiempo/control"
       ]
     },
     {
       "id": "PHY-402-Q010",
       "unit_id": "PHY-402-U03",
-      "type": "compare",
-      "prompt_es": "Compara fuerza funcional con equilibrio. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "knowledge",
+      "prompt_es": "Nombra dos funciones del equilibrio.",
       "answer_key_es": [
-        "fuerza funcional",
-        "equilibrio",
-        "diferencia aplicada"
+        "estabilidad",
+        "cambiar dirección",
+        "superficies difíciles",
+        "control bajo carga"
       ]
     },
     {
       "id": "PHY-402-Q011",
       "unit_id": "PHY-402-U03",
-      "type": "scenario",
-      "prompt_es": "Situación: Circuito supervisado. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "knowledge",
+      "prompt_es": "¿Qué puede incluir un circuito funcional?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "empuje",
+        "tracción",
+        "transporte",
+        "desplazamiento",
+        "estabilidad",
+        "coordinación"
       ]
     },
     {
       "id": "PHY-402-Q012",
       "unit_id": "PHY-402-U03",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Fuerza y coordinación y cómo lo corregirías.",
+      "type": "judgment",
+      "prompt_es": "¿Qué señales justifican reducir o detener una tarea?",
       "answer_key_es": [
-        "identificación del error",
+        "pérdida de técnica",
         "riesgo",
-        "corrección",
-        "prevención"
+        "fatiga excesiva",
+        "dolor/limitación"
       ]
     },
     {
       "id": "PHY-402-Q013",
       "unit_id": "PHY-402-U04",
       "type": "short_answer",
-      "prompt_es": "Explica cooperación y su relevancia operativa.",
+      "prompt_es": "¿Qué significa ritmo de grupo?",
       "answer_key_es": [
-        "cooperación",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "ritmo sostenible para objetivo común",
+        "adaptado al grupo"
       ]
     },
     {
       "id": "PHY-402-Q014",
       "unit_id": "PHY-402-U04",
-      "type": "compare",
-      "prompt_es": "Compara cooperación con ritmo de grupo. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "knowledge",
+      "prompt_es": "Nombra tres formas de cooperación física.",
       "answer_key_es": [
-        "cooperación",
-        "ritmo de grupo",
-        "diferencia aplicada"
+        "repartir peso",
+        "alternar esfuerzo",
+        "guiar",
+        "asegurar",
+        "informar"
       ]
     },
     {
       "id": "PHY-402-Q015",
       "unit_id": "PHY-402-U04",
-      "type": "scenario",
-      "prompt_es": "Situación: Actividad colectiva. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué significa seguridad compartida?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "vigilar propio estado",
+        "compañeros",
+        "entorno",
+        "instrucciones"
       ]
     },
     {
       "id": "PHY-402-Q016",
       "unit_id": "PHY-402-U04",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Trabajo en equipo y cómo lo corregirías.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué una actividad colectiva no debe convertirse en competición innecesaria?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "objetivo común",
+        "seguridad",
+        "coordinación"
       ]
     },
     {
       "id": "PHY-402-Q017",
       "unit_id": "PHY-402-U05",
-      "type": "short_answer",
-      "prompt_es": "Explica seguridad y su relevancia operativa.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué la actividad acuática no puede ser universal?",
       "answer_key_es": [
-        "seguridad",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "biología/contexto distintos",
+        "riesgo",
+        "adaptación"
       ]
     },
     {
       "id": "PHY-402-Q018",
       "unit_id": "PHY-402-U05",
-      "type": "compare",
-      "prompt_es": "Compara seguridad con adaptación fisiológica. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "knowledge",
+      "prompt_es": "¿Qué factores deben revisarse antes de la sesión?",
       "answer_key_es": [
-        "seguridad",
-        "adaptación fisiológica",
-        "diferencia aplicada"
+        "capacidad previa",
+        "entorno",
+        "supervisión",
+        "equipo",
+        "riesgos"
       ]
     },
     {
       "id": "PHY-402-Q019",
       "unit_id": "PHY-402-U05",
-      "type": "scenario",
-      "prompt_es": "Situación: Sesión adaptada a especie/contexto. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué se evalúa principalmente en una actividad acuática o equivalente?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "seguridad",
+        "control",
+        "instrucciones",
+        "capacidad funcional"
       ]
     },
     {
       "id": "PHY-402-Q020",
       "unit_id": "PHY-402-U05",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Actividad acuática o equivalente y cómo lo corregirías.",
+      "type": "judgment",
+      "prompt_es": "¿Qué debe conservar una actividad equivalente?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "capacidad funcional comparable",
+        "objetivo de entrenamiento"
       ]
     },
     {
       "id": "PHY-402-Q021",
       "unit_id": "PHY-402-U06",
       "type": "short_answer",
-      "prompt_es": "Explica fatiga y su relevancia operativa.",
+      "prompt_es": "¿Por qué una rutina debe poder cambiar?",
       "answer_key_es": [
+        "carga académica",
         "fatiga",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "obligaciones",
+        "lesión/contexto"
       ]
     },
     {
       "id": "PHY-402-Q022",
       "unit_id": "PHY-402-U06",
-      "type": "compare",
-      "prompt_es": "Compara fatiga con estudio. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "knowledge",
+      "prompt_es": "¿Qué variables pueden reducirse ante fatiga?",
       "answer_key_es": [
-        "fatiga",
-        "estudio",
-        "diferencia aplicada"
+        "intensidad",
+        "duración",
+        "frecuencia",
+        "complejidad"
       ]
     },
     {
       "id": "PHY-402-Q023",
       "unit_id": "PHY-402-U06",
-      "type": "scenario",
-      "prompt_es": "Situación: Modificar rutina ante carga académica. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "judgment",
+      "prompt_es": "¿Reducir entrenamiento una semana implica perder todo progreso?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "no",
+        "ajuste temporal",
+        "adaptación longitudinal"
       ]
     },
     {
       "id": "PHY-402-Q024",
       "unit_id": "PHY-402-U06",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Revisión de rutina y cómo lo corregirías.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué preguntas ayudan a revisar una rutina?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "qué funciona",
+        "qué fatiga",
+        "qué cambió",
+        "qué mantener",
+        "qué modificar"
       ]
     }
   ]
