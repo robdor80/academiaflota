@@ -1,0 +1,423 @@
+{
+  "title": "Manual del Candidato — Academia de la Flota Estelar",
+  "version": "1.0",
+  "scope": "orientación general para el acceso",
+  "status": "contenido base aprobado",
+  "source": "gameplay/careers/academy_path/access/candidate_manual_v1_0.md",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "intro": "Este manual no pretende convertir al candidato en oficial. Presenta la institución a la que desea entrar. La formación profesional comienza después de la admisión.",
+  "modules": [
+    {
+      "id": "00",
+      "title": "Antes de empezar",
+      "subtitle": "ORIENTACIÓN GENERAL PARA EL ACCESO",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Starfleet Academy selecciona personas con capacidad para aprender, colaborar, asumir responsabilidad y desarrollarse dentro de Starfleet."
+        },
+        {
+          "type": "p",
+          "text": "La prueba de acceso no exige dominar una consola, conocer ingeniería warp, memorizar regulaciones completas ni resolver ciencia ficticia avanzada. Sí puede comprobar que el candidato comprende los conceptos generales explicados aquí y que sabe razonar ante situaciones nuevas."
+        },
+        {
+          "type": "p",
+          "text": "El proceso puede incluir conocimientos generales, razonamiento, trabajo con otras personas, evaluación psicológica, una prueba práctica general y una entrevista."
+        },
+        {
+          "type": "p",
+          "text": "Una respuesta equivocada no define por sí sola la candidatura. La Academia revisa el conjunto."
+        }
+      ]
+    },
+    {
+      "id": "ACC-01",
+      "title": "Federación y Flota Estelar",
+      "subtitle": "LA INSTITUCIÓN A LA QUE DESEA ENTRAR",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "La Federación"
+        },
+        {
+          "type": "p",
+          "text": "La Federación Unida de Planetas es una unión política interestelar formada por múltiples mundos y sociedades que cooperan bajo instituciones comunes."
+        },
+        {
+          "type": "p",
+          "text": "Para el acceso basta con comprender que <strong>la Federación no es Starfleet</strong>. La Federación es la entidad política y civil. Starfleet es una de sus grandes instituciones de servicio."
+        },
+        {
+          "type": "p",
+          "text": "No se exige memorizar gobiernos, tratados, fechas o listas de mundos."
+        },
+        {
+          "type": "heading",
+          "text": "Starfleet"
+        },
+        {
+          "type": "p",
+          "text": "Starfleet desarrolla funciones de exploración, ciencia, diplomacia, asistencia, transporte especializado, protección y defensa."
+        },
+        {
+          "type": "p",
+          "text": "Sus naves pueden:"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "explorar regiones desconocidas;",
+            "estudiar fenómenos;",
+            "mantener contacto con otros mundos;",
+            "prestar ayuda ante emergencias;",
+            "realizar misiones diplomáticas;",
+            "proteger vidas, instalaciones y espacio federado cuando sea necesario."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Starfleet dispone de capacidad militar, pero no se define únicamente como una fuerza de guerra. Su identidad combina exploración, ciencia y servicio público con la responsabilidad de defender a la Federación."
+        },
+        {
+          "type": "heading",
+          "text": "Qué debe retener el candidato"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Federación y Starfleet no son lo mismo.",
+            "Starfleet sirve a la Federación.",
+            "Explorar, aprender, cooperar, asistir y proteger forman parte de su misión."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ACC-02",
+      "title": "Cómo se organiza Starfleet",
+      "subtitle": "ESTRUCTURA, RESPONSABILIDAD Y COORDINACIÓN",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Una organización jerarquizada"
+        },
+        {
+          "type": "p",
+          "text": "Starfleet trabaja mediante una estructura de responsabilidades."
+        },
+        {
+          "type": "p",
+          "text": "Existen rangos, cadena de mando, divisiones, departamentos y puestos concretos."
+        },
+        {
+          "type": "p",
+          "text": "El candidato <strong>no necesita memorizar todavía</strong> la tabla completa de rangos, sus divisas o sus tratamientos. Eso forma parte de la formación académica."
+        },
+        {
+          "type": "p",
+          "text": "Debe entender únicamente que las decisiones y responsabilidades no son intercambiables: una persona ocupa un puesto, responde ante otras y puede tener autoridad definida sobre determinados asuntos."
+        },
+        {
+          "type": "heading",
+          "text": "Grandes familias funcionales"
+        },
+        {
+          "type": "p",
+          "text": "El proyecto utiliza tres grandes familias visuales y organizativas:"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Mando",
+            "Operaciones",
+            "Ciencias"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Dentro de ellas existen profesiones y especialidades diferentes."
+        },
+        {
+          "type": "p",
+          "text": "Ser de una división no significa saber hacer todo lo que pertenece a ella. Un ingeniero, un oficial de operaciones o un especialista de seguridad pueden compartir familia funcional y desarrollar carreras muy distintas."
+        },
+        {
+          "type": "heading",
+          "text": "Departamentos y puestos"
+        },
+        {
+          "type": "p",
+          "text": "Una nave distribuye su trabajo entre departamentos y puestos. El candidato verá después cómo se relacionan Ingeniería, Ciencia, Medicina, Seguridad, Operaciones, Navegación, Mando y otras funciones."
+        },
+        {
+          "type": "p",
+          "text": "Por ahora basta con entender que Starfleet trabaja de forma coordinada: ninguna consola ni profesión constituye por sí sola una nave."
+        }
+      ]
+    },
+    {
+      "id": "ACC-03",
+      "title": "Vida a bordo de una nave",
+      "subtitle": "TRABAJO, VIDA Y SERVICIO A BORDO",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Una nave es también un lugar de trabajo y de vida"
+        },
+        {
+          "type": "p",
+          "text": "Una nave de Starfleet no es únicamente un vehículo. Durante una misión puede ser simultáneamente centro de trabajo, laboratorio, instalación médica, hogar temporal o permanente, plataforma diplomática, medio de transporte e instalación de respuesta a emergencias."
+        },
+        {
+          "type": "heading",
+          "text": "Áreas que el candidato reconocerá"
+        },
+        {
+          "type": "definition",
+          "term": "Puente",
+          "text": "Centro principal de coordinación y mando de muchas naves."
+        },
+        {
+          "type": "definition",
+          "term": "Ingeniería",
+          "text": "Área asociada a propulsión, energía, sistemas técnicos y mantenimiento."
+        },
+        {
+          "type": "definition",
+          "term": "Enfermería",
+          "text": "Centro de asistencia médica."
+        },
+        {
+          "type": "definition",
+          "term": "Seguridad",
+          "text": "Función relacionada con protección, control de amenazas e investigación dentro de sus competencias."
+        },
+        {
+          "type": "definition",
+          "term": "Transportadores",
+          "text": "Instalaciones que permiten el transporte mediante la tecnología correspondiente."
+        },
+        {
+          "type": "definition",
+          "term": "Alojamientos y espacios comunes",
+          "text": "Las tripulaciones también comen, descansan, estudian, entrenan y se relacionan."
+        },
+        {
+          "type": "heading",
+          "text": "Guardia y puesto asignado"
+        },
+        {
+          "type": "p",
+          "text": "Starfleet mantiene actividad durante periodos prolongados. Por eso el servicio se organiza mediante turnos o guardias."
+        },
+        {
+          "type": "p",
+          "text": "Tener un puesto significa asumir unas funciones durante el periodo correspondiente."
+        },
+        {
+          "type": "p",
+          "text": "El candidato no necesita aprender todavía cómo se realiza un relevo, cómo se redacta un informe o quién asume el mando en cada excepción. Eso se estudiará en la Academia."
+        }
+      ]
+    },
+    {
+      "id": "ACC-04",
+      "title": "Tecnología básica de Starfleet",
+      "subtitle": "RECONOCER QUÉ ES CADA SISTEMA Y PARA QUÉ SIRVE",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Esta sección solo exige reconocer <strong>qué es cada sistema y para qué sirve en términos generales</strong>."
+        },
+        {
+          "type": "definition",
+          "term": "Impulso",
+          "text": "Sistema de propulsión utilizado para desplazamiento sublumínico y maniobra, según nave y contexto."
+        },
+        {
+          "type": "definition",
+          "term": "Curvatura",
+          "text": "Tecnología que permite a las naves viajar a velocidades efectivas superiores a la luz mediante propulsión warp."
+        },
+        {
+          "type": "p",
+          "text": "No se exige conocer ecuaciones, factores detallados o ingeniería del motor."
+        },
+        {
+          "type": "definition",
+          "term": "Sensores",
+          "text": "Sistemas que permiten observar, medir y detectar objetos, emisiones, condiciones y fenómenos."
+        },
+        {
+          "type": "p",
+          "text": "Aprender a configurar barridos, interpretar calidad de señal o trabajar con interferencias pertenece a la Academia."
+        },
+        {
+          "type": "definition",
+          "term": "Computadora",
+          "text": "Sistema de información y control que ayuda a consultar datos, coordinar funciones y operar capacidades de la nave dentro de los permisos correspondientes."
+        },
+        {
+          "type": "definition",
+          "term": "Comunicadores",
+          "text": "Permiten comunicación personal o remota según el equipo y la época."
+        },
+        {
+          "type": "definition",
+          "term": "Tricorder",
+          "text": "Instrumento portátil de exploración y medición. Existen usos generales y especializados."
+        },
+        {
+          "type": "definition",
+          "term": "Transportadores",
+          "text": "Tecnología capaz de transportar personas u objetos mediante el proceso tecnológico propio de Starfleet."
+        },
+        {
+          "type": "definition",
+          "term": "Replicadores",
+          "text": "Sistemas capaces de producir determinados objetos y alimentos dentro de sus límites tecnológicos."
+        },
+        {
+          "type": "definition",
+          "term": "Escudos",
+          "text": "Sistemas defensivos destinados a proteger una nave u otra instalación frente a determinadas amenazas."
+        },
+        {
+          "type": "definition",
+          "term": "Fáseres",
+          "text": "Familia de sistemas de energía dirigida utilizada en herramientas y armamento según el dispositivo y el contexto."
+        },
+        {
+          "type": "heading",
+          "text": "Qué no se evalúa aquí"
+        },
+        {
+          "type": "p",
+          "text": "El candidato no necesita saber cómo configurar, reparar, alimentar, diagnosticar o mantener estos sistemas."
+        }
+      ]
+    },
+    {
+      "id": "ACC-05",
+      "title": "Principios del servicio en Starfleet",
+      "subtitle": "RESPONSABILIDAD, COOPERACIÓN E INTEGRIDAD",
+      "blocks": [
+        {
+          "type": "definition",
+          "term": "Responsabilidad",
+          "text": "Una decisión profesional puede afectar a otras personas. Formar parte de Starfleet implica asumir las consecuencias de las propias actuaciones."
+        },
+        {
+          "type": "definition",
+          "term": "Cooperación",
+          "text": "La exploración espacial y la operación de una nave son trabajos colectivos. Saber colaborar importa tanto como destacar individualmente."
+        },
+        {
+          "type": "definition",
+          "term": "Disciplina",
+          "text": "Starfleet utiliza procedimientos, autoridad y coordinación porque una organización compleja necesita consistencia."
+        },
+        {
+          "type": "p",
+          "text": "Disciplina no significa obediencia ciega. La Academia enseñará posteriormente cómo se gestionan órdenes, reglamentos, responsabilidades y situaciones problemáticas."
+        },
+        {
+          "type": "definition",
+          "term": "Integridad",
+          "text": "La confianza profesional depende de actuar con honestidad y asumir los propios errores."
+        },
+        {
+          "type": "p",
+          "text": "Ocultar deliberadamente una actuación relevante puede ser más grave que haberse equivocado."
+        },
+        {
+          "type": "definition",
+          "term": "Protección de la vida",
+          "text": "Starfleet valora la vida y procura reducir daños evitables. Las situaciones reales pueden plantear conflictos y decisiones difíciles; este manual no pretende resolverlos por adelantado."
+        },
+        {
+          "type": "definition",
+          "term": "Exploración pacífica",
+          "text": "El contacto con lo desconocido no convierte automáticamente lo desconocido en una amenaza. La exploración, el conocimiento y la comunicación son principios centrales."
+        },
+        {
+          "type": "heading",
+          "text": "La Directiva Principal"
+        },
+        {
+          "type": "p",
+          "text": "Starfleet dispone de una Directiva Principal que limita determinadas formas de interferencia con otras civilizaciones."
+        },
+        {
+          "type": "p",
+          "text": "Para el acceso solo se exige conocer <strong>que existe y que tiene gran importancia</strong>."
+        },
+        {
+          "type": "p",
+          "text": "Su aplicación, alcance, conflictos, excepciones y casos complejos pertenecen a la Academia."
+        }
+      ]
+    },
+    {
+      "id": "TEMARIO",
+      "title": "Qué NO forma parte del temario de acceso",
+      "subtitle": "LÍMITES DEL CONOCIMIENTO EXIGIDO",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No se exige memorizar:"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "episodios, películas o personajes;",
+            "fechas de la franquicia;",
+            "listas completas de naves;",
+            "divisas y rangos en detalle;",
+            "fórmulas;",
+            "física warp;",
+            "procedimientos de consola;",
+            "técnicas de sensores;",
+            "navegación profesional;",
+            "ingeniería;",
+            "medicina;",
+            "tácticas;",
+            "reglamentos avanzados;",
+            "protocolo detallado;",
+            "casos de la Directiva Principal."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ADMISIÓN",
+      "title": "Prepararse para la admisión",
+      "subtitle": "LA BASE CONCEPTUAL CORRECTA",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Un candidato que comprende las cinco ideas siguientes ya posee la base conceptual correcta:"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Sabe distinguir Federación y Starfleet.",
+            "Entiende que Starfleet es una organización profesional y jerarquizada.",
+            "Comprende que una nave es un entorno coordinado de trabajo y vida.",
+            "Reconoce para qué sirven las tecnologías más comunes sin pretender operarlas.",
+            "Entiende que responsabilidad, cooperación, integridad y protección de la vida importan en el servicio."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "El resto del proceso busca comprobar si el candidato <strong>puede aprender y desarrollarse</strong>, no si ya es un oficial."
+        },
+        {
+          "type": "callout",
+          "label": "CIERRE",
+          "text": "La Academia empieza después."
+        }
+      ]
+    }
+  ]
+}
