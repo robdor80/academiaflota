@@ -1,0 +1,389 @@
+{
+  "subject": "Práctica de especialidad II",
+  "code": "PRA-202",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/second_class/courses/PRA-202/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/second_class/PRA-202/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/careers/starfleet_service/professional_evidence_model.json",
+    "gameplay/careers/academy_path/simulation_model.json",
+    "gameplay/ship_operations/operational_event_log/README.md"
+  ],
+  "modules": [
+    {
+      "id": "PRA-202-U01",
+      "title": "Preparación autónoma",
+      "subtitle": "UNIDAD 01 · PRA-202",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Aumentar autonomía, variabilidad y carga de trabajo en la ejecución profesional."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "objetivo",
+            "estado",
+            "riesgos",
+            "recursos"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Preparar tarea con briefing mínimo."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica objetivo desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Preparar tarea con briefing mínimo.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/simulation_model.json",
+            "gameplay/ship_operations/operational_event_log/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PRA-202-U02",
+      "title": "Caso no guionizado",
+      "subtitle": "UNIDAD 02 · PRA-202",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Aumentar autonomía, variabilidad y carga de trabajo en la ejecución profesional."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "problema",
+            "diagnóstico",
+            "opciones",
+            "acción"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Resolver sin receta explícita."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Juicio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica problema desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Resolver sin receta explícita.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/simulation_model.json",
+            "gameplay/ship_operations/operational_event_log/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PRA-202-U03",
+      "title": "Trabajo bajo presión",
+      "subtitle": "UNIDAD 03 · PRA-202",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Aumentar autonomía, variabilidad y carga de trabajo en la ejecución profesional."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "tiempo",
+            "interrupciones",
+            "prioridad",
+            "comunicación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Práctica cronometrada contextual."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Observación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica tiempo desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Práctica cronometrada contextual.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/simulation_model.json",
+            "gameplay/ship_operations/operational_event_log/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PRA-202-U04",
+      "title": "Fallo secundario",
+      "subtitle": "UNIDAD 04 · PRA-202",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Aumentar autonomía, variabilidad y carga de trabajo en la ejecución profesional."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "cascada",
+            "contención",
+            "escalado"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Gestionar degradación añadida."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica cascada desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Gestionar degradación añadida.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/simulation_model.json",
+            "gameplay/ship_operations/operational_event_log/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PRA-202-U05",
+      "title": "Handoff de especialidad",
+      "subtitle": "UNIDAD 05 · PRA-202",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Aumentar autonomía, variabilidad y carga de trabajo en la ejecución profesional."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "estado",
+            "pendientes",
+            "riesgo",
+            "recomendación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Entregar puesto/caso."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación de continuidad."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica estado desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Entregar puesto/caso.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/simulation_model.json",
+            "gameplay/ship_operations/operational_event_log/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PRA-202-U06",
+      "title": "Debrief comparativo",
+      "subtitle": "UNIDAD 06 · PRA-202",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Aumentar autonomía, variabilidad y carga de trabajo en la ejecución profesional."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "decisión",
+            "alternativa",
+            "resultado",
+            "sesgo retrospectivo"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Comparar ejecuciones."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica decisión desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Comparar ejecuciones.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/simulation_model.json",
+            "gameplay/ship_operations/operational_event_log/README.md"
+          ]
+        }
+      ]
+    }
+  ]
+}

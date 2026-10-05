@@ -1,0 +1,381 @@
+{
+  "subject": "Cualificación intermedia",
+  "code": "QUA-203",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/second_class/courses/QUA-203/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/second_class/QUA-203/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/careers/starfleet_service/professional_evidence_model.json",
+    "gameplay/careers/post_academy/qualification_and_mentorship_model.json"
+  ],
+  "modules": [
+    {
+      "id": "QUA-203-U01",
+      "title": "Revisión de evidencia",
+      "subtitle": "UNIDAD 01 · QUA-203",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Determinar mediante evidencia si el cadete está preparado para entrar en 1.ª clase con trabajo profesional avanzado."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "cursos",
+            "prácticas",
+            "simulaciones",
+            "servicio",
+            "proyecto"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Compilar expediente."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Validación de integridad."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica cursos desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Compilar expediente.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/post_academy/qualification_and_mentorship_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QUA-203-U02",
+      "title": "Conocimiento de rama",
+      "subtitle": "UNIDAD 02 · QUA-203",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Determinar mediante evidencia si el cadete está preparado para entrar en 1.ª clase con trabajo profesional avanzado."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "conceptos",
+            "procedimientos",
+            "límites"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Evaluación escrita/oral focalizada."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Resultado por áreas."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica conceptos desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Evaluación escrita/oral focalizada.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/post_academy/qualification_and_mentorship_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QUA-203-U03",
+      "title": "Ejecución práctica",
+      "subtitle": "UNIDAD 03 · QUA-203",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Determinar mediante evidencia si el cadete está preparado para entrar en 1.ª clase con trabajo profesional avanzado."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "procedimiento",
+            "seguridad",
+            "comunicación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Prueba práctica."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evidencia."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica procedimiento desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Prueba práctica.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/post_academy/qualification_and_mentorship_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QUA-203-U04",
+      "title": "Juicio",
+      "subtitle": "UNIDAD 04 · QUA-203",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Determinar mediante evidencia si el cadete está preparado para entrar en 1.ª clase con trabajo profesional avanzado."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "incertidumbre",
+            "prioridad",
+            "escalado",
+            "responsabilidad"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Caso situacional."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica incertidumbre desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Caso situacional.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/post_academy/qualification_and_mentorship_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QUA-203-U05",
+      "title": "Revisión de supervisor",
+      "subtitle": "UNIDAD 05 · QUA-203",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Determinar mediante evidencia si el cadete está preparado para entrar en 1.ª clase con trabajo profesional avanzado."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "fortalezas",
+            "carencias",
+            "consistencia",
+            "conducta"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Panel académico."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Informe cualitativo."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica fortalezas desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Panel académico.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/post_academy/qualification_and_mentorship_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "QUA-203-U06",
+      "title": "Resultado y plan",
+      "subtitle": "UNIDAD 06 · QUA-203",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Determinar mediante evidencia si el cadete está preparado para entrar en 1.ª clase con trabajo profesional avanzado."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "qualified",
+            "targeted_remediation",
+            "reassessment"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Definir siguiente paso."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "No se repite automáticamente el año por una carencia localizada."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica qualified desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Definir siguiente paso.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/post_academy/qualification_and_mentorship_model.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

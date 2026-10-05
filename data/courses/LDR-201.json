@@ -1,0 +1,390 @@
+{
+  "subject": "Liderazgo y responsabilidad de equipo II",
+  "code": "LDR-201",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/second_class/courses/LDR-201/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/second_class/LDR-201/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/careers/starfleet_service/professional_evidence_model.json",
+    "gameplay/careers/starfleet_service/career_progression_rules.json",
+    "lore/federation/starfleet/command_structure/succession_rules.json"
+  ],
+  "modules": [
+    {
+      "id": "LDR-201-U01",
+      "title": "Estándares y expectativas",
+      "subtitle": "UNIDAD 01 · LDR-201",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Supervisar pequeñas tareas y personas manteniendo estándares, seguridad y responsabilidad."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "objetivo",
+            "criterio",
+            "seguridad",
+            "plazo"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Dar briefing de tarea."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica objetivo desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Dar briefing de tarea.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LDR-201-U02",
+      "title": "Delegación con seguimiento",
+      "subtitle": "UNIDAD 02 · LDR-201",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Supervisar pequeñas tareas y personas manteniendo estándares, seguridad y responsabilidad."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "capacidad",
+            "carga",
+            "checkpoints",
+            "intervención"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Repartir trabajo y monitorizar."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica capacidad desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Repartir trabajo y monitorizar.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LDR-201-U03",
+      "title": "Corrección y feedback",
+      "subtitle": "UNIDAD 03 · LDR-201",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Supervisar pequeñas tareas y personas manteniendo estándares, seguridad y responsabilidad."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "hecho",
+            "impacto",
+            "corrección",
+            "respeto"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Dar feedback tras error."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Escena."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica hecho desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Dar feedback tras error.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LDR-201-U04",
+      "title": "Carga y prioridades",
+      "subtitle": "UNIDAD 04 · LDR-201",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Supervisar pequeñas tareas y personas manteniendo estándares, seguridad y responsabilidad."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "multitarea",
+            "urgencia",
+            "fatiga",
+            "recurso humano"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Reasignar equipo ante cambios."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Caso."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica multitarea desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Reasignar equipo ante cambios.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LDR-201-U05",
+      "title": "Responsabilidad por el equipo",
+      "subtitle": "UNIDAD 05 · LDR-201",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Supervisar pequeñas tareas y personas manteniendo estándares, seguridad y responsabilidad."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "supervisión",
+            "escalado",
+            "registro",
+            "aprendizaje"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Gestionar incidencia de subordinado simulado."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica supervisión desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Gestionar incidencia de subordinado simulado.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LDR-201-U06",
+      "title": "Liderazgo en práctica de rama",
+      "subtitle": "UNIDAD 06 · LDR-201",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Supervisar pequeñas tareas y personas manteniendo estándares, seguridad y responsabilidad."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "briefing",
+            "ejecución",
+            "control",
+            "debrief"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Dirigir micro-equipo."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación integrada."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica briefing desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Dirigir micro-equipo.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

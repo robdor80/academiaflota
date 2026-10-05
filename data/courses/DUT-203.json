@@ -1,0 +1,383 @@
+{
+  "subject": "Servicio supervisado de especialidad",
+  "code": "DUT-203",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/second_class/courses/DUT-203/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/second_class/DUT-203/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/careers/starfleet_service/professional_evidence_model.json",
+    "lore/federation/starfleet/duty_shifts/shift_model.json"
+  ],
+  "modules": [
+    {
+      "id": "DUT-203-U01",
+      "title": "Asignación y briefing",
+      "subtitle": "UNIDAD 01 · DUT-203",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Ocupar temporalmente un puesto de la rama bajo supervisión y generar evidencia profesional real."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "puesto",
+            "supervisor",
+            "órdenes",
+            "límites"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Incorporación a turno."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación de preparación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica puesto desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Incorporación a turno.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "lore/federation/starfleet/duty_shifts/shift_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DUT-203-U02",
+      "title": "Rutina de puesto",
+      "subtitle": "UNIDAD 02 · DUT-203",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Ocupar temporalmente un puesto de la rama bajo supervisión y generar evidencia profesional real."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "monitorización",
+            "tareas",
+            "registro",
+            "comunicación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Bloque de servicio normal."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Observación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica monitorización desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Bloque de servicio normal.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "lore/federation/starfleet/duty_shifts/shift_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DUT-203-U03",
+      "title": "Incidencia",
+      "subtitle": "UNIDAD 03 · DUT-203",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Ocupar temporalmente un puesto de la rama bajo supervisión y generar evidencia profesional real."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "detección",
+            "acción",
+            "escalado",
+            "seguimiento"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Responder a evento contextual."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Juicio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica detección desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Responder a evento contextual.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "lore/federation/starfleet/duty_shifts/shift_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DUT-203-U04",
+      "title": "Continuidad",
+      "subtitle": "UNIDAD 04 · DUT-203",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Ocupar temporalmente un puesto de la rama bajo supervisión y generar evidencia profesional real."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "pendientes",
+            "relevo",
+            "estado",
+            "riesgo"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Entregar puesto."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación de handoff."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica pendientes desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Entregar puesto.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "lore/federation/starfleet/duty_shifts/shift_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DUT-203-U05",
+      "title": "Conducta profesional",
+      "subtitle": "UNIDAD 05 · DUT-203",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Ocupar temporalmente un puesto de la rama bajo supervisión y generar evidencia profesional real."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "disciplina",
+            "integridad",
+            "teamwork",
+            "límites"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Evaluación longitudinal."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Informe de supervisor."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica disciplina desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Evaluación longitudinal.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "lore/federation/starfleet/duty_shifts/shift_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DUT-203-U06",
+      "title": "Revisión de servicio",
+      "subtitle": "UNIDAD 06 · DUT-203",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Ocupar temporalmente un puesto de la rama bajo supervisión y generar evidencia profesional real."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "evidencia",
+            "fortalezas",
+            "carencias",
+            "plan"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Debrief formal."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Registro en expediente."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica evidencia desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Debrief formal.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "lore/federation/starfleet/duty_shifts/shift_model.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

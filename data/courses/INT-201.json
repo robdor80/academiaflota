@@ -1,0 +1,396 @@
+{
+  "subject": "Operaciones integradas de nave II",
+  "code": "INT-201",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/second_class/courses/INT-201/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/second_class/INT-201/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/careers/starfleet_service/professional_evidence_model.json",
+    "gameplay/ship_operations/bridge_station_model.json",
+    "gameplay/ship_operations/interconsole/sensor_to_science_analysis_handoff.json",
+    "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json"
+  ],
+  "modules": [
+    {
+      "id": "INT-201-U01",
+      "title": "Mapa de dependencias",
+      "subtitle": "UNIDAD 01 · INT-201",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Entender cómo la especialidad propia consume, modifica y entrega información o recursos al resto de la nave."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "entradas",
+            "salidas",
+            "recursos",
+            "autoridad"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Modelar dependencias de la rama."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Ejercicio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica entradas desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Modelar dependencias de la rama.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/ship_operations/bridge_station_model.json",
+            "gameplay/ship_operations/interconsole/sensor_to_science_analysis_handoff.json",
+            "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "INT-201-U02",
+      "title": "Peticiones entre departamentos",
+      "subtitle": "UNIDAD 02 · INT-201",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Entender cómo la especialidad propia consume, modifica y entrega información o recursos al resto de la nave."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "formato",
+            "prioridad",
+            "capacidad",
+            "confirmación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Coordinar petición realista."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica formato desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Coordinar petición realista.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/ship_operations/bridge_station_model.json",
+            "gameplay/ship_operations/interconsole/sensor_to_science_analysis_handoff.json",
+            "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "INT-201-U03",
+      "title": "Conflicto de recursos",
+      "subtitle": "UNIDAD 03 · INT-201",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Entender cómo la especialidad propia consume, modifica y entrega información o recursos al resto de la nave."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "energía",
+            "tiempo",
+            "personal",
+            "riesgo"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Negociar prioridad operacional."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Caso."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica energía desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Negociar prioridad operacional.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/ship_operations/bridge_station_model.json",
+            "gameplay/ship_operations/interconsole/sensor_to_science_analysis_handoff.json",
+            "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "INT-201-U04",
+      "title": "Impacto de decisiones",
+      "subtitle": "UNIDAD 04 · INT-201",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Entender cómo la especialidad propia consume, modifica y entrega información o recursos al resto de la nave."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "efecto local",
+            "efecto sistémico",
+            "efecto en misión"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Analizar consecuencias."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica efecto local desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Analizar consecuencias.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/ship_operations/bridge_station_model.json",
+            "gameplay/ship_operations/interconsole/sensor_to_science_analysis_handoff.json",
+            "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "INT-201-U05",
+      "title": "Imagen común de situación",
+      "subtitle": "UNIDAD 05 · INT-201",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Entender cómo la especialidad propia consume, modifica y entrega información o recursos al resto de la nave."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "estado",
+            "riesgos",
+            "cambios",
+            "recomendaciones"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Actualizar briefing común."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica estado desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Actualizar briefing común.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/ship_operations/bridge_station_model.json",
+            "gameplay/ship_operations/interconsole/sensor_to_science_analysis_handoff.json",
+            "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "INT-201-U06",
+      "title": "Ejercicio integrado",
+      "subtitle": "UNIDAD 06 · INT-201",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Entender cómo la especialidad propia consume, modifica y entrega información o recursos al resto de la nave."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "misión",
+            "dependencias",
+            "incidente",
+            "recuperación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Simulación multi-departamento."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación integrada."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica misión desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Simulación multi-departamento.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/ship_operations/bridge_station_model.json",
+            "gameplay/ship_operations/interconsole/sensor_to_science_analysis_handoff.json",
+            "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

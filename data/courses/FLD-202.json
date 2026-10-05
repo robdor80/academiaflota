@@ -1,0 +1,392 @@
+{
+  "subject": "Operaciones de campo y EVA II",
+  "code": "FLD-202",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/second_class/courses/FLD-202/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/second_class/FLD-202/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/careers/starfleet_service/professional_evidence_model.json",
+    "gameplay/careers/academy_path/field_training_model.json",
+    "gameplay/careers/academy_path/training_asset_model.json"
+  ],
+  "modules": [
+    {
+      "id": "FLD-202-U01",
+      "title": "Plan avanzado de salida",
+      "subtitle": "UNIDAD 01 · FLD-202",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Ejecutar operaciones de campo y extravehiculares con mayor autonomía, riesgo y coordinación nave-equipo."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "objetivos",
+            "amenazas",
+            "equipo",
+            "abort criteria",
+            "reserva"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Preparar misión."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica objetivos desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Preparar misión.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/field_training_model.json",
+            "gameplay/careers/academy_path/training_asset_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FLD-202-U02",
+      "title": "Traje y entorno",
+      "subtitle": "UNIDAD 02 · FLD-202",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Ejecutar operaciones de campo y extravehiculares con mayor autonomía, riesgo y coordinación nave-equipo."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "integridad",
+            "soporte",
+            "movilidad",
+            "limitaciones"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Preparación de equipo ambiental/EVA según era."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Checklist."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica integridad desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Preparación de equipo ambiental/EVA según era.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/field_training_model.json",
+            "gameplay/careers/academy_path/training_asset_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FLD-202-U03",
+      "title": "EVA básica operativa",
+      "subtitle": "UNIDAD 03 · FLD-202",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Ejecutar operaciones de campo y extravehiculares con mayor autonomía, riesgo y coordinación nave-equipo."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "desplazamiento",
+            "anclaje",
+            "comunicación",
+            "orientación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Ejercicio EVA simulado/real autorizado."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica desplazamiento desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Ejercicio EVA simulado/real autorizado.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/field_training_model.json",
+            "gameplay/careers/academy_path/training_asset_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FLD-202-U04",
+      "title": "Trabajo técnico/científico exterior",
+      "subtitle": "UNIDAD 04 · FLD-202",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Ejecutar operaciones de campo y extravehiculares con mayor autonomía, riesgo y coordinación nave-equipo."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "herramientas",
+            "muestras",
+            "reparación contextual",
+            "seguridad"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Tarea de rama en exterior."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica herramientas desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Tarea de rama en exterior.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/field_training_model.json",
+            "gameplay/careers/academy_path/training_asset_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FLD-202-U05",
+      "title": "Emergencia de campo/EVA",
+      "subtitle": "UNIDAD 05 · FLD-202",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Ejecutar operaciones de campo y extravehiculares con mayor autonomía, riesgo y coordinación nave-equipo."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "pérdida de contacto",
+            "fallo de equipo",
+            "herido",
+            "extracción"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Incidente simulado."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Juicio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica pérdida de contacto desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Incidente simulado.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/field_training_model.json",
+            "gameplay/careers/academy_path/training_asset_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "FLD-202-U06",
+      "title": "Coordinación con nave",
+      "subtitle": "UNIDAD 06 · FLD-202",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Ejecutar operaciones de campo y extravehiculares con mayor autonomía, riesgo y coordinación nave-equipo."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "ventanas",
+            "transportador",
+            "lanzadera",
+            "reporte",
+            "recuperación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Cerrar operación."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación integrada."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica ventanas desde el punto de vista profesional.",
+            "¿Qué riesgo o límite condiciona esta tarea?",
+            "Resuelve: Cerrar operación.",
+            "¿Qué evidencia dejarías en el expediente o relevo?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/field_training_model.json",
+            "gameplay/careers/academy_path/training_asset_model.json"
+          ]
+        }
+      ]
+    }
+  ]
+}
