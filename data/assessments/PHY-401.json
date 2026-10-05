@@ -1,283 +1,294 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "course_id": "PHY-401",
-  "status": "generated_from_authoritative_curriculum",
+  "status": "editorially_aligned_with_developed_manual",
+  "source_manual": "gameplay/careers/academy_path/study_materials/fourth_class/PHY-401/MANUAL_v1_0.md",
   "question_count": 24,
+  "rule": "No question may require knowledge that is not explicitly taught in PHY-401 or established prerequisites.",
   "questions": [
     {
       "id": "PHY-401-Q001",
       "unit_id": "PHY-401-U01",
       "type": "short_answer",
-      "prompt_es": "Explica movilidad y su relevancia operativa.",
+      "prompt_es": "¿Para qué sirve la evaluación funcional inicial?",
       "answer_key_es": [
-        "movilidad",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "establecer referencia",
+        "detectar limitaciones/riesgos",
+        "orientar rutina",
+        "comparar progreso"
       ]
     },
     {
       "id": "PHY-401-Q002",
       "unit_id": "PHY-401-U01",
-      "type": "compare",
-      "prompt_es": "Compara movilidad con resistencia. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "knowledge",
+      "prompt_es": "Nombra las cuatro áreas básicas observadas al inicio.",
       "answer_key_es": [
         "movilidad",
         "resistencia",
-        "diferencia aplicada"
+        "fuerza funcional",
+        "coordinación"
       ]
     },
     {
       "id": "PHY-401-Q003",
       "unit_id": "PHY-401-U01",
-      "type": "scenario",
-      "prompt_es": "Situación: Sesión inicial del personaje registrada como evidencia. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué no se comparan directamente especies físicamente distintas?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "biología distinta",
+        "evaluación contextual",
+        "funcionalidad individualizada"
       ]
     },
     {
       "id": "PHY-401-Q004",
       "unit_id": "PHY-401-U01",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Evaluación funcional inicial y cómo lo corregirías.",
+      "type": "compare",
+      "prompt_es": "Diferencia evidencia de estado y recompensa RPG.",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "evidencia describe lo ocurrido/estado",
+        "no asigna puntos manuales",
+        "capacidad deriva de vida y práctica"
       ]
     },
     {
       "id": "PHY-401-Q005",
       "unit_id": "PHY-401-U02",
       "type": "short_answer",
-      "prompt_es": "Explica movilidad y su relevancia operativa.",
+      "prompt_es": "¿Qué significa movilidad funcional?",
       "answer_key_es": [
-        "movilidad",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "rango útil",
+        "control",
+        "ejecutar tarea sin compensación innecesaria"
       ]
     },
     {
       "id": "PHY-401-Q006",
       "unit_id": "PHY-401-U02",
-      "type": "compare",
-      "prompt_es": "Compara movilidad con calentamiento. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "knowledge",
+      "prompt_es": "¿Para qué sirve un calentamiento?",
       "answer_key_es": [
-        "movilidad",
-        "calentamiento",
-        "diferencia aplicada"
+        "preparar progresivamente",
+        "movilidad específica",
+        "incrementar intensidad",
+        "ensayar técnica"
       ]
     },
     {
       "id": "PHY-401-Q007",
       "unit_id": "PHY-401-U02",
-      "type": "scenario",
-      "prompt_es": "Situación: Rutina supervisada. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué prevención no significa riesgo cero?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "el riesgo no desaparece",
+        "se reduce riesgo evitable",
+        "preparación/equipo/progresión/descanso"
       ]
     },
     {
       "id": "PHY-401-Q008",
       "unit_id": "PHY-401-U02",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Movilidad y técnica segura y cómo lo corregirías.",
+      "type": "scenario",
+      "prompt_es": "Un instructor corrige tu técnica. ¿Qué evidencia positiva puede generar una buena respuesta?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "aceptar feedback",
+        "corregir ejecución",
+        "priorizar seguridad",
+        "aprendizaje"
       ]
     },
     {
       "id": "PHY-401-Q009",
       "unit_id": "PHY-401-U03",
       "type": "short_answer",
-      "prompt_es": "Explica capacidad aeróbica y su relevancia operativa.",
+      "prompt_es": "¿Qué significa resistencia básica?",
       "answer_key_es": [
-        "capacidad aeróbica",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "sostener actividad razonable",
+        "evitar deterioro excesivo",
+        "capacidad funcional prolongada"
       ]
     },
     {
       "id": "PHY-401-Q010",
       "unit_id": "PHY-401-U03",
-      "type": "compare",
-      "prompt_es": "Compara capacidad aeróbica con ritmo. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué una sola sesión intensa no demuestra adaptación?",
       "answer_key_es": [
-        "capacidad aeróbica",
-        "ritmo",
-        "diferencia aplicada"
+        "adaptación requiere tiempo",
+        "regularidad",
+        "recuperación",
+        "repetición"
       ]
     },
     {
       "id": "PHY-401-Q011",
       "unit_id": "PHY-401-U03",
-      "type": "scenario",
-      "prompt_es": "Situación: Sesiones programadas por calendario. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "compare",
+      "prompt_es": "Relaciona ritmo y sostenibilidad.",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "ritmo permite completar",
+        "reduce riesgo",
+        "facilita continuidad y recuperación"
       ]
     },
     {
       "id": "PHY-401-Q012",
       "unit_id": "PHY-401-U03",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Resistencia básica y cómo lo corregirías.",
+      "type": "knowledge",
+      "prompt_es": "Nombra cuatro variables que el sistema puede observar en sesiones programadas.",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "frecuencia",
+        "duración",
+        "intensidad",
+        "continuidad",
+        "descanso/estudio"
       ]
     },
     {
       "id": "PHY-401-Q013",
       "unit_id": "PHY-401-U04",
-      "type": "short_answer",
-      "prompt_es": "Explica patrones básicos y su relevancia operativa.",
+      "type": "compare",
+      "prompt_es": "Diferencia fuerza máxima y fuerza funcional.",
       "answer_key_es": [
-        "patrones básicos",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "máxima = producir pico de fuerza",
+        "funcional = fuerza útil/controlada para tareas",
+        "contexto importa"
       ]
     },
     {
       "id": "PHY-401-Q014",
       "unit_id": "PHY-401-U04",
-      "type": "compare",
-      "prompt_es": "Compara patrones básicos con control corporal. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "knowledge",
+      "prompt_es": "Nombra cuatro patrones básicos de fuerza funcional.",
       "answer_key_es": [
-        "patrones básicos",
-        "control corporal",
-        "diferencia aplicada"
+        "empujar",
+        "tirar",
+        "levantarse",
+        "agacharse",
+        "transportar",
+        "estabilizar",
+        "rotar/resistir rotación"
       ]
     },
     {
       "id": "PHY-401-Q015",
       "unit_id": "PHY-401-U04",
-      "type": "scenario",
-      "prompt_es": "Situación: Entrenamiento supervisado del personaje. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué el control corporal forma parte de la evaluación?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "seguridad",
+        "coordinación",
+        "calidad de ejecución",
+        "repetibilidad"
       ]
     },
     {
       "id": "PHY-401-Q016",
       "unit_id": "PHY-401-U04",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Fuerza funcional y cómo lo corregirías.",
+      "type": "short_answer",
+      "prompt_es": "¿Cómo puede progresar una tarea sin aumentar únicamente el peso?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "duración",
+        "complejidad",
+        "menos ayuda",
+        "situación específica",
+        "resistencia contextual"
       ]
     },
     {
       "id": "PHY-401-Q017",
       "unit_id": "PHY-401-U05",
-      "type": "short_answer",
-      "prompt_es": "Explica descanso y su relevancia operativa.",
+      "type": "compare",
+      "prompt_es": "Diferencia fatiga aguda y carga acumulada.",
       "answer_key_es": [
-        "descanso",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "aguda = corto plazo",
+        "acumulada = patrón de semanas/meses",
+        "efectos y recuperación distintos"
       ]
     },
     {
       "id": "PHY-401-Q018",
       "unit_id": "PHY-401-U05",
-      "type": "compare",
-      "prompt_es": "Compara descanso con fatiga. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "judgment",
+      "prompt_es": "¿Una buena noche elimina un mes de sobrecarga?",
       "answer_key_es": [
-        "descanso",
-        "fatiga",
-        "diferencia aplicada"
+        "no",
+        "mejora estado inmediato",
+        "patrón longitudinal persiste parcialmente"
       ]
     },
     {
       "id": "PHY-401-Q019",
       "unit_id": "PHY-401-U05",
       "type": "scenario",
-      "prompt_es": "Situación: Elegir recuperación adecuada tras cargas distintas. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "prompt_es": "Una lesión impide seguir la rutina normal. ¿Qué opciones coherentes existen?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "reducir/cambiar actividad",
+        "tratamiento",
+        "recuperación médica",
+        "reintroducción progresiva"
       ]
     },
     {
       "id": "PHY-401-Q020",
       "unit_id": "PHY-401-U05",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Recuperación y cómo lo corregirías.",
+      "type": "knowledge",
+      "prompt_es": "¿Cómo trata el sistema una interrupción breve frente a meses de inactividad?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "días no penalizan absurdamente",
+        "periodos largos pueden reducir adaptación",
+        "experiencia profunda persiste mejor"
       ]
     },
     {
       "id": "PHY-401-Q021",
       "unit_id": "PHY-401-U06",
       "type": "short_answer",
-      "prompt_es": "Explica frecuencia y su relevancia operativa.",
+      "prompt_es": "¿Cómo se forma una rutina en el sistema?",
       "answer_key_es": [
+        "repetición real",
         "frecuencia",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "continuidad",
+        "patrón observado",
+        "no perk seleccionado"
       ]
     },
     {
       "id": "PHY-401-Q022",
       "unit_id": "PHY-401-U06",
-      "type": "compare",
-      "prompt_es": "Compara frecuencia con sostenibilidad. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "judgment",
+      "prompt_es": "¿Qué hace sostenible una rutina?",
       "answer_key_es": [
-        "frecuencia",
-        "sostenibilidad",
-        "diferencia aplicada"
+        "compatible con clases",
+        "sueño",
+        "estudio",
+        "relaciones",
+        "recuperación",
+        "obligaciones"
       ]
     },
     {
       "id": "PHY-401-Q023",
       "unit_id": "PHY-401-U06",
       "type": "scenario",
-      "prompt_es": "Situación: Configurar rutina longitudinal. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "prompt_es": "Una nueva práctica académica rompe tu horario habitual de entrenamiento. ¿Qué ocurre con el hábito?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "no se borra instantáneamente",
+        "puede adaptarse/decadencia gradual",
+        "el jugador puede reorganizar"
       ]
     },
     {
       "id": "PHY-401-Q024",
       "unit_id": "PHY-401-U06",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Rutina personal y cómo lo corregirías.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué decide el jugador y qué observa el sistema en preparación física?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "jugador decide prioridades/rutinas",
+        "personaje realiza actividad",
+        "sistema registra evidencia/consecuencias",
+        "sin repartir puntos"
       ]
     }
   ]

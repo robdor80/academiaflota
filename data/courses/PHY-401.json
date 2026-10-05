@@ -1,18 +1,17 @@
 {
   "subject": "Preparación física I",
   "code": "PHY-401",
-  "version": "1.0",
+  "version": "1.1",
+  "status": "developed_content",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/PHY-401/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/PHY-401/MANUAL_v1_0.md",
   "sourceRefs": [
-    "gameplay/careers/academy_path/course_resolution.md",
-    "gameplay/careers/academy_path/evaluation_model.json",
-    "gameplay/careers/academy_path/academy_era_profiles.json",
     "gameplay/characters/wellbeing/README.md",
     "gameplay/characters/wellbeing/activity_effect_contract.json",
     "gameplay/characters/wellbeing/habit_formation_rules.json",
-    "gameplay/characters/development/development_rules.md"
+    "gameplay/characters/development/development_rules.md",
+    "gameplay/careers/academy_path/curriculum/fourth_class/README.md"
   ],
   "modules": [
     {
@@ -22,30 +21,43 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Establecer una base funcional y una rutina sostenible adaptada a la biología y contexto del cadete."
+          "text": "La evaluación inicial establece una referencia funcional. No busca descubrir quién es el cadete más fuerte, sino conocer estado, limitaciones, riesgos y punto de partida."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Áreas observadas"
         },
         {
           "type": "bullets",
           "items": [
-            "movilidad",
-            "resistencia",
-            "fuerza funcional",
-            "coordinación"
+            "Movilidad",
+            "Resistencia",
+            "Fuerza funcional",
+            "Coordinación"
           ]
         },
         {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Sesión inicial del personaje registrada como evidencia."
+          "type": "p",
+          "text": "La evaluación se adapta a biología, estado previo, seguridad y demandas razonables del servicio. No se comparan directamente capacidades brutas entre especies distintas."
         },
         {
           "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Comparación con mínimos funcionales individualizados."
+          "label": "NO HAY +2 FUERZA",
+          "text": "La sesión genera evidencia del estado del personaje. Las capacidades derivan de vida, práctica y tiempo; no de puntos asignados."
+        },
+        {
+          "type": "heading",
+          "text": "Posibles resultados"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Base adecuada",
+            "Área a vigilar",
+            "Necesidad de adaptación",
+            "Recomendación de rutina",
+            "Revisión adicional"
+          ]
         },
         {
           "type": "heading",
@@ -54,26 +66,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras movilidad.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Sesión inicial del personaje registrada como evidencia.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/characters/wellbeing/README.md",
-            "gameplay/characters/wellbeing/activity_effect_contract.json",
-            "gameplay/characters/wellbeing/habit_formation_rules.json",
-            "gameplay/characters/development/development_rules.md"
+            "¿Para qué sirve la evaluación inicial?",
+            "¿Qué cuatro áreas observa?",
+            "¿Por qué no se comparan directamente especies distintas?",
+            "¿Qué significa producir evidencia?",
+            "Diferencia condición funcional y puntuación RPG."
           ]
         }
       ]
@@ -85,30 +82,48 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Establecer una base funcional y una rutina sostenible adaptada a la biología y contexto del cadete."
+          "text": "Movilidad funcional significa disponer del rango útil para ejecutar una tarea con control suficiente. No significa alcanzar posiciones extremas."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Calentamiento"
         },
         {
           "type": "bullets",
           "items": [
-            "movilidad",
-            "calentamiento",
-            "técnica",
-            "prevención"
+            "Movimiento general",
+            "Movilidad específica",
+            "Incremento gradual de intensidad",
+            "Ensayo técnico con baja carga"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Técnica segura"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Control",
+            "Estabilidad",
+            "Coordinación",
+            "Carga apropiada",
+            "Adaptación al equipo",
+            "Respeto de limitaciones conocidas"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Prevención"
+        },
+        {
+          "type": "p",
+          "text": "Prevenir no elimina todo riesgo. Reduce riesgo evitable mediante preparación, equipo, progresión, descanso, comunicación y supervisión."
         },
         {
           "type": "callout",
           "label": "PRÁCTICA",
-          "text": "Rutina supervisada."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evidencia de ejecución segura."
+          "text": "Rutina supervisada centrada en movilidad y técnica. El objetivo es ejecutar correctamente, no terminar antes que otros."
         },
         {
           "type": "heading",
@@ -117,26 +132,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras movilidad.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Rutina supervisada.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/characters/wellbeing/README.md",
-            "gameplay/characters/wellbeing/activity_effect_contract.json",
-            "gameplay/characters/wellbeing/habit_formation_rules.json",
-            "gameplay/characters/development/development_rules.md"
+            "¿Qué significa movilidad funcional?",
+            "¿Para qué sirve un calentamiento?",
+            "¿Qué factores definen técnica segura?",
+            "¿Por qué prevención no significa riesgo cero?",
+            "¿Qué valor tiene responder bien al feedback?"
           ]
         }
       ]
@@ -148,29 +148,45 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Establecer una base funcional y una rutina sostenible adaptada a la biología y contexto del cadete."
+          "text": "La resistencia básica es la capacidad de sostener actividad durante un periodo razonable sin un deterioro excesivo del rendimiento."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Adaptación"
+        },
+        {
+          "type": "quote",
+          "text": "carga apropiada + recuperación + repetición → adaptación"
+        },
+        {
+          "type": "p",
+          "text": "Una sesión excepcional no sustituye semanas de regularidad."
+        },
+        {
+          "type": "heading",
+          "text": "Ritmo"
+        },
+        {
+          "type": "p",
+          "text": "Controlar el ritmo ayuda a completar el trabajo, acumular práctica, reducir riesgo y recuperarse de forma sostenible."
+        },
+        {
+          "type": "heading",
+          "text": "Calendario"
         },
         {
           "type": "bullets",
           "items": [
-            "capacidad aeróbica",
-            "ritmo",
-            "progresión"
+            "Frecuencia",
+            "Duración",
+            "Intensidad",
+            "Continuidad",
+            "Interferencia con descanso o estudio"
           ]
         },
         {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Sesiones programadas por calendario."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Regularidad y progresión razonable."
+          "type": "p",
+          "text": "El progreso no tiene que ser lineal: fatiga, enfermedad, lesión o carga académica pueden alterar temporalmente el rendimiento."
         },
         {
           "type": "heading",
@@ -179,26 +195,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras capacidad aeróbica.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Sesiones programadas por calendario.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/characters/wellbeing/README.md",
-            "gameplay/characters/wellbeing/activity_effect_contract.json",
-            "gameplay/characters/wellbeing/habit_formation_rules.json",
-            "gameplay/characters/development/development_rules.md"
+            "¿Qué significa resistencia básica?",
+            "¿Por qué una sesión intensa no demuestra adaptación?",
+            "¿Qué relación existe entre ritmo y sostenibilidad?",
+            "¿Qué variables observa el sistema?",
+            "¿Por qué el progreso no tiene que ser lineal?"
           ]
         }
       ]
@@ -210,29 +211,51 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Establecer una base funcional y una rutina sostenible adaptada a la biología y contexto del cadete."
+          "text": "La fuerza funcional es capacidad de producir y controlar fuerza útil para tareas reales. No se limita a levantar el mayor peso posible."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Patrones básicos"
         },
         {
           "type": "bullets",
           "items": [
-            "patrones básicos",
-            "control corporal",
-            "carga progresiva contextual"
+            "Empujar",
+            "Tirar",
+            "Levantarse",
+            "Agacharse",
+            "Transportar",
+            "Estabilizar",
+            "Rotar o resistir rotación",
+            "Desplazarse bajo carga"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Control corporal"
+        },
+        {
+          "type": "p",
+          "text": "Mover más carga con peor control no es automáticamente mejor. La Academia valora estabilidad, coordinación, seguridad y capacidad de repetir el esfuerzo."
+        },
+        {
+          "type": "heading",
+          "text": "Progresión contextual"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Más resistencia",
+            "Más duración",
+            "Mayor complejidad",
+            "Menos ayuda",
+            "Situación más específica"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Entrenamiento supervisado del personaje."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Seguridad y consistencia."
+          "label": "TRANSFERENCIA",
+          "text": "La fuerza general puede ayudar a otras tareas, pero no concede automáticamente una cualificación de Seguridad, EVA o Ingeniería."
         },
         {
           "type": "heading",
@@ -241,26 +264,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras patrones básicos.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Entrenamiento supervisado del personaje.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/characters/wellbeing/README.md",
-            "gameplay/characters/wellbeing/activity_effect_contract.json",
-            "gameplay/characters/wellbeing/habit_formation_rules.json",
-            "gameplay/characters/development/development_rules.md"
+            "Diferencia fuerza máxima y funcional.",
+            "Nombra cuatro patrones básicos.",
+            "¿Por qué importa el control?",
+            "¿Cómo puede progresar una tarea sin subir solo peso?",
+            "¿Por qué fuerza general no concede cualificación profesional?"
           ]
         }
       ]
@@ -272,30 +280,40 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Establecer una base funcional y una rutina sostenible adaptada a la biología y contexto del cadete."
+          "text": "La recuperación forma parte del entrenamiento. El sistema distingue el estado agudo de los patrones acumulados a lo largo de días, semanas y meses."
+        },
+        {
+          "type": "definition",
+          "term": "Fatiga aguda",
+          "text": "Estado de corto plazo tras esfuerzo, poco sueño, actividad prolongada o estrés."
+        },
+        {
+          "type": "definition",
+          "term": "Carga acumulada",
+          "text": "Efecto longitudinal de semanas de poco descanso, entrenamiento excesivo, estudio intenso, emergencias o lesión mal gestionada."
+        },
+        {
+          "type": "callout",
+          "label": "NO ES UNA POCIÓN",
+          "text": "Una buena noche puede mejorar mucho el estado inmediato, pero no borra automáticamente un mes de sobrecarga."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Lesión y adaptación"
         },
         {
           "type": "bullets",
           "items": [
-            "descanso",
-            "fatiga",
-            "lesión",
-            "adaptación"
+            "Reducir actividad",
+            "Cambiar ejercicio",
+            "Tratamiento",
+            "Recuperación médica",
+            "Reintroducción progresiva"
           ]
         },
         {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Elegir recuperación adecuada tras cargas distintas."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Decisión contextual."
+          "type": "p",
+          "text": "Una interrupción breve no castiga de forma absurda. Periodos prolongados sí pueden afectar adaptación."
         },
         {
           "type": "heading",
@@ -304,26 +322,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras descanso.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Elegir recuperación adecuada tras cargas distintas.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/characters/wellbeing/README.md",
-            "gameplay/characters/wellbeing/activity_effect_contract.json",
-            "gameplay/characters/wellbeing/habit_formation_rules.json",
-            "gameplay/characters/development/development_rules.md"
+            "¿Por qué recuperación forma parte del entrenamiento?",
+            "Diferencia fatiga aguda y carga acumulada.",
+            "¿Una buena noche borra un mes de sobrecarga?",
+            "¿Por qué una lesión puede cambiar la rutina?",
+            "¿Qué diferencia hay entre una pausa breve y meses de inactividad?"
           ]
         }
       ]
@@ -335,30 +338,58 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Establecer una base funcional y una rutina sostenible adaptada a la biología y contexto del cadete."
+          "text": "Una rutina se forma por comportamiento repetido. No se selecciona como perk."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Qué observa el sistema"
         },
         {
           "type": "bullets",
           "items": [
-            "frecuencia",
-            "sostenibilidad",
-            "hábitos",
-            "compatibilidad académica"
+            "Frecuencia",
+            "Continuidad",
+            "Horario típico",
+            "Lugar",
+            "Actividad",
+            "Participantes cuando sean relevantes"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Sostenibilidad"
+        },
+        {
+          "type": "p",
+          "text": "Una buena rutina debe convivir con clases, estudio, sueño, relaciones, prácticas y recuperación."
+        },
+        {
+          "type": "heading",
+          "text": "Preferencias"
+        },
+        {
+          "type": "p",
+          "text": "Correr, nadar, gimnasio, artes marciales o deportes de equipo pueden ser elecciones distintas. Una actividad agradable puede facilitar continuidad, pero no produce una bonificación universal."
+        },
+        {
+          "type": "heading",
+          "text": "Cambio de rutina"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Horario académico",
+            "Lesión",
+            "Viaje",
+            "Entrenamiento especial",
+            "Decisión del jugador",
+            "Cambio de destino"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Configurar rutina longitudinal."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Adherencia y ajuste, no puntuación RPG."
+          "label": "AGENCIA",
+          "text": "La Academia fija obligaciones. El jugador decide prioridades y rutina; el personaje realiza la actividad y el sistema observa evidencia y consecuencias."
         },
         {
           "type": "heading",
@@ -367,26 +398,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras frecuencia.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Configurar rutina longitudinal.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/characters/wellbeing/README.md",
-            "gameplay/characters/wellbeing/activity_effect_contract.json",
-            "gameplay/characters/wellbeing/habit_formation_rules.json",
-            "gameplay/characters/development/development_rules.md"
+            "¿Cómo se forma una rutina?",
+            "¿Qué significa sostenibilidad?",
+            "¿Por qué una actividad agradable no da una bonificación universal?",
+            "Nombra tres causas de interrupción.",
+            "¿Qué decide el jugador y qué observa el sistema?"
           ]
         }
       ]
