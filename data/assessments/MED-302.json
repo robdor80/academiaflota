@@ -1,283 +1,270 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "course_id": "MED-302",
-  "status": "generated_from_authoritative_curriculum",
+  "status": "editorially_aligned_with_developed_manual",
+  "source_manual": "gameplay/careers/academy_path/study_materials/third_class/MED-302/MANUAL_v1_0.md",
   "question_count": 24,
+  "rule": "No question may require knowledge that is not explicitly taught in MED-302 or established prerequisites.",
   "questions": [
     {
       "id": "MED-302-Q001",
       "unit_id": "MED-302-U01",
       "type": "knowledge",
-      "prompt_es": "Explica riesgo y da un ejemplo operativo.",
+      "prompt_es": "¿Qué debe evaluarse antes de acercarse?",
       "answer_key_es": [
-        "riesgo",
-        "ejemplo coherente",
-        "límite o contexto"
+        "ambiente",
+        "sistemas",
+        "atmósfera",
+        "estructura",
+        "amenaza",
+        "acceso"
       ]
     },
     {
       "id": "MED-302-Q002",
       "unit_id": "MED-302-U01",
-      "type": "relationship",
-      "prompt_es": "Relaciona riesgo con protección. ¿Qué información pasa de uno a otro?",
+      "type": "short_answer",
+      "prompt_es": "¿Qué puede incluir protección?",
       "answer_key_es": [
-        "riesgo",
-        "protección",
-        "flujo de información o dependencia"
+        "equipo",
+        "distancia",
+        "aislamiento",
+        "Seguridad",
+        "espera"
       ]
     },
     {
       "id": "MED-302-Q003",
       "unit_id": "MED-302-U01",
-      "type": "scenario",
-      "prompt_es": "Evaluar escenario antes de intervenir. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "knowledge",
+      "prompt_es": "¿Qué debe incluir alerta médica?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "localización",
+        "afectados",
+        "riesgo",
+        "acceso",
+        "estado"
       ]
     },
     {
       "id": "MED-302-Q004",
       "unit_id": "MED-302-U01",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Seguridad de escena, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "judgment",
+      "prompt_es": "¿Qué haces si riesgo excede tu competencia?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "no exponerse",
+        "pedir apoyo"
       ]
     },
     {
       "id": "MED-302-Q005",
       "unit_id": "MED-302-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica respuesta y da un ejemplo operativo.",
+      "type": "short_answer",
+      "prompt_es": "¿Cuál es objetivo de valoración inicial?",
       "answer_key_es": [
-        "respuesta",
-        "ejemplo coherente",
-        "límite o contexto"
+        "detectar problemas urgentes",
+        "no diagnóstico final"
       ]
     },
     {
       "id": "MED-302-Q006",
       "unit_id": "MED-302-U02",
-      "type": "relationship",
-      "prompt_es": "Relaciona respuesta con respiración/circulación contextual. ¿Qué información pasa de uno a otro?",
+      "type": "judgment",
+      "prompt_es": "¿Por qué especie importa?",
       "answer_key_es": [
-        "respuesta",
-        "respiración/circulación contextual",
-        "flujo de información o dependencia"
+        "fisiología distinta",
+        "humano no universal"
       ]
     },
     {
       "id": "MED-302-Q007",
       "unit_id": "MED-302-U02",
-      "type": "scenario",
-      "prompt_es": "Valorar paciente simulado. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "compare",
+      "prompt_es": "Diferencia síntoma y diagnóstico.",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "observación",
+        "causa interpretada"
       ]
     },
     {
       "id": "MED-302-Q008",
       "unit_id": "MED-302-U02",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Valoración inicial, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "knowledge",
+      "prompt_es": "¿Qué debe registrarse?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "observaciones",
+        "hora",
+        "cambios",
+        "intervenciones"
       ]
     },
     {
       "id": "MED-302-Q009",
       "unit_id": "MED-302-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica prioridad y da un ejemplo operativo.",
+      "type": "short_answer",
+      "prompt_es": "¿Para qué sirve triaje?",
       "answer_key_es": [
-        "prioridad",
-        "ejemplo coherente",
-        "límite o contexto"
+        "priorizar atención con recursos limitados"
       ]
     },
     {
       "id": "MED-302-Q010",
       "unit_id": "MED-302-U03",
-      "type": "relationship",
-      "prompt_es": "Relaciona prioridad con múltiples heridos. ¿Qué información pasa de uno a otro?",
+      "type": "knowledge",
+      "prompt_es": "¿Qué niveles usa el modelo?",
       "answer_key_es": [
-        "prioridad",
-        "múltiples heridos",
-        "flujo de información o dependencia"
+        "minor",
+        "delayed",
+        "urgent",
+        "immediate",
+        "expectant_or_deceased"
       ]
     },
     {
       "id": "MED-302-Q011",
       "unit_id": "MED-302-U03",
-      "type": "scenario",
-      "prompt_es": "Ordenar atención en supuesto sencillo. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "judgment",
+      "prompt_es": "¿Puede cambiar la categoría?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "sí",
+        "estado cambia"
       ]
     },
     {
       "id": "MED-302-Q012",
       "unit_id": "MED-302-U03",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Triaje básico, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "short_answer",
+      "prompt_es": "¿Qué límite mantiene cadete?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "protocolo",
+        "supervisión",
+        "no sustituye profesional"
       ]
     },
     {
       "id": "MED-302-Q013",
       "unit_id": "MED-302-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica hemorragia y da un ejemplo operativo.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué significa estabilizar?",
       "answer_key_es": [
-        "hemorragia",
-        "ejemplo coherente",
-        "límite o contexto"
+        "evitar empeoramiento hasta ayuda/traslado"
       ]
     },
     {
       "id": "MED-302-Q014",
       "unit_id": "MED-302-U04",
-      "type": "relationship",
-      "prompt_es": "Relaciona hemorragia con inmovilización contextual. ¿Qué información pasa de uno a otro?",
+      "type": "judgment",
+      "prompt_es": "¿Existe técnica universal de inmovilización?",
       "answer_key_es": [
-        "hemorragia",
-        "inmovilización contextual",
-        "flujo de información o dependencia"
+        "no",
+        "depende lesión/especie/contexto"
       ]
     },
     {
       "id": "MED-302-Q015",
       "unit_id": "MED-302-U04",
-      "type": "scenario",
-      "prompt_es": "Aplicar medidas autorizadas. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "judgment",
+      "prompt_es": "¿Existe posición universal para pacientes?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "no"
       ]
     },
     {
       "id": "MED-302-Q016",
       "unit_id": "MED-302-U04",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Estabilización básica, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "procedure",
+      "prompt_es": "¿Qué haces tras una medida?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "reevaluar",
+        "registrar",
+        "handoff"
       ]
     },
     {
       "id": "MED-302-Q017",
       "unit_id": "MED-302-U05",
-      "type": "knowledge",
-      "prompt_es": "Explica tricorder médico y da un ejemplo operativo.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué función cumple tricorder médico?",
       "answer_key_es": [
-        "tricorder médico",
-        "ejemplo coherente",
-        "límite o contexto"
+        "obtener datos"
       ]
     },
     {
       "id": "MED-302-Q018",
       "unit_id": "MED-302-U05",
-      "type": "relationship",
-      "prompt_es": "Relaciona tricorder médico con kit. ¿Qué información pasa de uno a otro?",
+      "type": "judgment",
+      "prompt_es": "¿Garantiza diagnóstico?",
       "answer_key_es": [
-        "tricorder médico",
-        "kit",
-        "flujo de información o dependencia"
+        "no"
       ]
     },
     {
       "id": "MED-302-Q019",
       "unit_id": "MED-302-U05",
-      "type": "scenario",
-      "prompt_es": "Preparar equipo y obtener datos. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "knowledge",
+      "prompt_es": "¿De qué depende kit?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "misión",
+        "inventario",
+        "era",
+        "necesidad"
       ]
     },
     {
       "id": "MED-302-Q020",
       "unit_id": "MED-302-U05",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Equipo médico básico, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "judgment",
+      "prompt_es": "¿Tener equipo concede competencia avanzada?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "no"
       ]
     },
     {
       "id": "MED-302-Q021",
       "unit_id": "MED-302-U06",
       "type": "knowledge",
-      "prompt_es": "Explica estado y da un ejemplo operativo.",
+      "prompt_es": "¿Qué debe contener handoff?",
       "answer_key_es": [
+        "identidad",
+        "contexto",
         "estado",
-        "ejemplo coherente",
-        "límite o contexto"
+        "síntomas",
+        "cambios",
+        "intervenciones",
+        "tiempo"
       ]
     },
     {
       "id": "MED-302-Q022",
       "unit_id": "MED-302-U06",
-      "type": "relationship",
-      "prompt_es": "Relaciona estado con intervenciones. ¿Qué información pasa de uno a otro?",
+      "type": "compare",
+      "prompt_es": "Diferencia hecho clínico observable y diagnóstico.",
       "answer_key_es": [
-        "estado",
-        "intervenciones",
-        "flujo de información o dependencia"
+        "signo/síntoma",
+        "interpretación profesional"
       ]
     },
     {
       "id": "MED-302-Q023",
       "unit_id": "MED-302-U06",
-      "type": "scenario",
-      "prompt_es": "Entregar paciente a profesional. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué cambios deben informarse?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "mejora",
+        "empeora",
+        "sin cambio",
+        "nuevo signo"
       ]
     },
     {
       "id": "MED-302-Q024",
       "unit_id": "MED-302-U06",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Handoff a Medicina, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "short_answer",
+      "prompt_es": "¿Qué objetivo tiene handoff?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "continuidad",
+        "ahorrar reconstrucción",
+        "preservar información"
       ]
     }
   ]
