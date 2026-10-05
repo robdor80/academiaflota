@@ -1,16 +1,18 @@
 {
   "subject": "Federación: fundamentos políticos y sociales",
   "code": "FED-401",
-  "version": "1.0",
+  "version": "1.1",
+  "status": "developed_content",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/FED-401/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/FED-401/MANUAL_v1_0.md",
   "sourceRefs": [
-    "gameplay/careers/academy_path/course_resolution.md",
-    "gameplay/careers/academy_path/evaluation_model.json",
-    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "lore/federation/government/README.md",
     "lore/federation/government/federation_government.json",
-    "lore/federation/member_worlds/founding_members.json"
+    "lore/federation/member_worlds/README.md",
+    "lore/federation/member_worlds/founding_members.json",
+    "gameplay/diplomacy/federation_political_state.json",
+    "validation/consistency/federation_political_state_rules.md"
   ],
   "modules": [
     {
@@ -20,29 +22,50 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Comprender la sociedad e instituciones a las que sirve Starfleet sin convertir la materia en historia enciclopédica."
+          "text": "La Federación Unida de Planetas es una república federal interestelar formada por mundos miembros que cooperan bajo instituciones comunes. No es una alianza militar ni una extensión de Starfleet: es una entidad política civil."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Fundación y miembros fundadores"
+        },
+        {
+          "type": "p",
+          "text": "El proyecto fija la fundación en 2161, con ceremonia fundacional en San Francisco, Tierra."
         },
         {
           "type": "bullets",
           "items": [
-            "naturaleza política general",
-            "cooperación entre mundos miembros",
-            "ámbito civil"
+            "Tierra",
+            "Vulcano",
+            "Andoria",
+            "Tellar Prime"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Federación no significa uniformidad"
+        },
+        {
+          "type": "p",
+          "text": "Los mundos miembros pueden conservar gobiernos, culturas, tradiciones e identidades distintas. Cooperar bajo instituciones comunes no obliga a compartir una cultura única."
+        },
+        {
+          "type": "heading",
+          "text": "Una Federación que cambia con el tiempo"
+        },
+        {
+          "type": "p",
+          "text": "La composición y la situación política dependen de la fecha de campaña. La escala conocida del siglo XXIV tardío no se extrapola hacia atrás a Pike o Kirk."
+        },
+        {
+          "type": "callout",
+          "label": "IDEA CLAVE",
+          "text": "La Federación es una entidad política histórica y cambiante, no una fotografía eterna."
         },
         {
           "type": "callout",
           "label": "PRÁCTICA",
-          "text": "Distinguir Federación, Starfleet y gobiernos miembros."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Preguntas conceptuales aplicadas."
+          "text": "Decide cuáles de varias afirmaciones describen correctamente a la Federación y justifica la respuesta."
         },
         {
           "type": "heading",
@@ -51,24 +74,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras naturaleza política general.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Distinguir Federación, Starfleet y gobiernos miembros.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/federation/government/federation_government.json",
-            "lore/federation/member_worlds/founding_members.json"
+            "¿Qué tipo de entidad política es la Federación?",
+            "¿En qué año se funda según el proyecto?",
+            "¿Cuáles son los cuatro miembros fundadores retenidos?",
+            "¿Por qué no debe extrapolarse la escala de 2373 a la era de Pike?",
+            "¿Por qué pertenecer a la Federación no elimina la diversidad cultural?"
           ]
         }
       ]
@@ -80,30 +90,63 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Comprender la sociedad e instituciones a las que sirve Starfleet sin convertir la materia en historia enciclopédica."
+          "text": "La Federación posee un gobierno civil propio. Starfleet está subordinada a esa autoridad civil y no sustituye al gobierno."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Instituciones mínimas retenidas"
         },
         {
           "type": "bullets",
           "items": [
-            "gobierno civil",
-            "representación",
-            "autoridades federales",
-            "separación de funciones"
+            "Presidente de la Federación",
+            "Consejo de la Federación",
+            "Participación de los mundos miembros en la gobernanza federal"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Lo que no inventamos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Duración exacta de mandatos",
+            "Fórmula electoral completa",
+            "Reparto exacto de escaños",
+            "Fiscalidad detallada",
+            "Procedimiento completo de adhesión",
+            "Competencias constitucionales exhaustivas"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Identificar qué tipo de asunto corresponde a autoridad civil o Starfleet."
+          "label": "DISCIPLINA DE LORE",
+          "text": "La ausencia de un detalle no autoriza a inventarlo y presentarlo como canon."
+        },
+        {
+          "type": "heading",
+          "text": "Separación de funciones"
+        },
+        {
+          "type": "definition",
+          "term": "Autoridad civil federal",
+          "text": "Toma decisiones políticas y civiles dentro de las competencias de la Federación."
+        },
+        {
+          "type": "definition",
+          "term": "Gobiernos miembros",
+          "text": "Conservan su existencia política y competencias locales."
+        },
+        {
+          "type": "definition",
+          "term": "Starfleet",
+          "text": "Ejecuta funciones operativas dentro de su autoridad y misión."
         },
         {
           "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Casos institucionales sencillos."
+          "label": "PRÁCTICA",
+          "text": "Clasifica varios asuntos como civil, planetario/local, Starfleet/operativo o dependiente de coordinación."
         },
         {
           "type": "heading",
@@ -112,24 +155,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras gobierno civil.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Identificar qué tipo de asunto corresponde a autoridad civil o Starfleet.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/federation/government/federation_government.json",
-            "lore/federation/member_worlds/founding_members.json"
+            "¿Qué dos instituciones federales mínimas retiene el proyecto?",
+            "¿Por qué no se detallan elecciones o mandatos sin base suficiente?",
+            "¿Qué significa que Starfleet esté subordinada a autoridad civil?",
+            "¿Puede un capitán sustituir automáticamente a una autoridad política?",
+            "¿Qué debes hacer cuando la competencia institucional no está clara?"
           ]
         }
       ]
@@ -140,31 +170,58 @@
       "subtitle": "UNIDAD 03 · FED-401",
       "blocks": [
         {
+          "type": "callout",
+          "label": "REGLA CENTRAL",
+          "text": "ESPECIE ≠ MUNDO ≠ GOBIERNO ≠ FEDERACIÓN ≠ STARFLEET, y ESPECIE ≠ CIUDADANÍA."
+        },
+        {
           "type": "p",
-          "text": "Comprender la sociedad e instituciones a las que sirve Starfleet sin convertir la materia en historia enciclopédica."
+          "text": "Ser vulcano, humano, andoriano o tellarita no demuestra por sí solo ciudadanía, lealtad política, autoridad gubernamental ni pertenencia a Starfleet."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Mundo y gobierno"
+        },
+        {
+          "type": "p",
+          "text": "Un mundo es una localización y comunidad; su gobierno es la entidad política que ejerce autoridad en un momento histórico. Se modelan por separado porque un gobierno puede cambiar mientras el planeta sigue siendo el mismo."
+        },
+        {
+          "type": "heading",
+          "text": "Qué puede afectar la membresía"
         },
         {
           "type": "bullets",
           "items": [
-            "pertenencia",
-            "ciudadanía",
-            "jurisdicción básica",
-            "diversidad de mundos"
+            "Jurisdicción",
+            "Tránsito",
+            "Tratados",
+            "Acceso diplomático",
+            "Respuesta de Starfleet",
+            "Derechos y obligaciones reconocidos",
+            "Destinos y misiones"
           ]
         },
         {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Analizar un caso de ciudadano, visitante y personal de Starfleet."
+          "type": "heading",
+          "text": "Ciudadano, visitante y personal de Starfleet"
+        },
+        {
+          "type": "p",
+          "text": "Son relaciones distintas con una autoridad. Una misma persona puede combinar varias sin que una sustituya automáticamente a las demás."
+        },
+        {
+          "type": "heading",
+          "text": "Jurisdicción básica"
+        },
+        {
+          "type": "p",
+          "text": "La pregunta clave es: ¿qué autoridad tiene competencia legítima sobre este asunto? En 4.ª clase se aprende a no deducirla solo por especie, uniforme, lugar de nacimiento o rango."
         },
         {
           "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Caso breve."
+          "label": "CASO",
+          "text": "Una oficial vulcana de Starfleet en otro mundo miembro no representa automáticamente al gobierno vulcano ni posee autoridad civil local."
         },
         {
           "type": "heading",
@@ -173,24 +230,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras pertenencia.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Analizar un caso de ciudadano, visitante y personal de Starfleet.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/federation/government/federation_government.json",
-            "lore/federation/member_worlds/founding_members.json"
+            "Explica la regla «especie ≠ ciudadanía».",
+            "¿Por qué mundo y gobierno se modelan por separado?",
+            "¿Qué puede cambiar cuando un mundo entra o sale de una estructura política?",
+            "¿Ser oficial de Starfleet concede autoridad civil universal?",
+            "¿Qué datos necesitarías antes de decidir qué jurisdicción se aplica?"
           ]
         }
       ]
@@ -201,31 +245,48 @@
       "subtitle": "UNIDAD 04 · FED-401",
       "blocks": [
         {
-          "type": "p",
-          "text": "Comprender la sociedad e instituciones a las que sirve Starfleet sin convertir la materia en historia enciclopédica."
+          "type": "definition",
+          "term": "Federación",
+          "text": "Entidad política y civil."
+        },
+        {
+          "type": "definition",
+          "term": "Starfleet",
+          "text": "Servicio federal con funciones operativas, científicas, exploratorias, diplomáticas, de asistencia y defensa."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Subordinación civil"
         },
         {
-          "type": "bullets",
-          "items": [
-            "servicio público",
-            "autoridad militar-científica",
-            "subordinación a estructuras civiles",
-            "misiones"
-          ]
+          "type": "p",
+          "text": "La cadena operativa de Starfleet existe dentro de un marco político. Órdenes civiles, autorizaciones de misión, restricciones diplomáticas y directivas de emergencia pueden condicionar operaciones."
+        },
+        {
+          "type": "heading",
+          "text": "World State tras el inicio de campaña"
+        },
+        {
+          "type": "p",
+          "text": "La campaña se inicializa con la historia retenida hasta su fecha de comienzo. Después, el estado político vivo es autoritativo: tratados, guerras, crisis o membresías pueden evolucionar de forma distinta al canon conocido por el jugador."
+        },
+        {
+          "type": "callout",
+          "label": "NO HAY DESTINO FUTURO",
+          "text": "Los acontecimientos canónicos posteriores al inicio de campaña no se aplican automáticamente."
+        },
+        {
+          "type": "heading",
+          "text": "La IA no decide política real"
+        },
+        {
+          "type": "p",
+          "text": "La IA puede expresar una negociación, amenaza o propuesta. Los sistemas autoritativos deciden y registran las consecuencias políticas."
         },
         {
           "type": "callout",
           "label": "PRÁCTICA",
-          "text": "Resolver quién decide en situaciones no operativas."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Ejercicio de competencia institucional."
+          "text": "Distingue en varios casos decisión política, ejecución operativa, negociación y consecuencia de World State."
         },
         {
           "type": "heading",
@@ -234,24 +295,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras servicio público.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Resolver quién decide en situaciones no operativas.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/federation/government/federation_government.json",
-            "lore/federation/member_worlds/founding_members.json"
+            "Resume en una frase la relación entre Federación y Starfleet.",
+            "¿Qué significa subordinación civil?",
+            "¿Puede una conversación generada por IA cambiar un tratado por sí sola?",
+            "¿Qué ocurre con los eventos canónicos posteriores al inicio de campaña?",
+            "Pon un ejemplo de una decisión civil que limite una operación de Starfleet."
           ]
         }
       ]
@@ -263,29 +311,43 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Comprender la sociedad e instituciones a las que sirve Starfleet sin convertir la materia en historia enciclopédica."
+          "text": "La Federación no debe representarse como «humanidad ampliada». La pluralidad cultural es estructural y obliga a distinguir biología, cultura e individuo."
+        },
+        {
+          "type": "definition",
+          "term": "Especie",
+          "text": "Biología y, cuando proceda, tradiciones ampliamente asociadas."
+        },
+        {
+          "type": "definition",
+          "term": "Cultura",
+          "text": "Normas, prácticas, valores y costumbres compartidas por un grupo concreto."
+        },
+        {
+          "type": "definition",
+          "term": "Individuo",
+          "text": "Persona concreta con historia, personalidad y decisiones propias."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Evitar el antropocentrismo"
         },
         {
-          "type": "bullets",
-          "items": [
-            "diversidad cultural",
-            "no asumir normas humanas como universales",
-            "respeto y cooperación"
-          ]
+          "type": "p",
+          "text": "Una costumbre humana no se convierte en estándar universal por parecer normal al jugador. Ante una diferencia, lo profesional es observar, preguntar y evitar suposiciones innecesarias."
+        },
+        {
+          "type": "heading",
+          "text": "Diversidad dentro del mismo grupo"
+        },
+        {
+          "type": "p",
+          "text": "Dos personas de la misma especie o mundo pueden discrepar política, social o personalmente y aplicar de forma distinta una misma tradición."
         },
         {
           "type": "callout",
           "label": "PRÁCTICA",
-          "text": "Comparar dos respuestas posibles a una diferencia cultural."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación de criterio."
+          "text": "Compara «son de esa especie; ya sé cómo funcionan» con «conozco una tradición asociada, pero confirmaré cómo la aplica esta persona y este contexto»."
         },
         {
           "type": "heading",
@@ -294,24 +356,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras diversidad cultural.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Comparar dos respuestas posibles a una diferencia cultural.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/federation/government/federation_government.json",
-            "lore/federation/member_worlds/founding_members.json"
+            "¿Por qué la Federación no debe representarse como una cultura única?",
+            "Diferencia especie, cultura e individuo.",
+            "¿Qué es una suposición antropocéntrica?",
+            "¿Por qué conocer una tradición no permite predecir automáticamente a una persona?",
+            "¿Qué harías ante una norma cultural que no comprendes?"
           ]
         }
       ]
@@ -323,30 +372,59 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Comprender la sociedad e instituciones a las que sirve Starfleet sin convertir la materia en historia enciclopédica."
+          "text": "FED-401 trabaja principios generales. No inventa una constitución completa ni procedimientos judiciales exhaustivos."
+        },
+        {
+          "type": "definition",
+          "term": "Protección de la vida",
+          "text": "Las decisiones profesionales deben reconocer el coste humano y evitar daño innecesario cuando sea posible."
+        },
+        {
+          "type": "definition",
+          "term": "Responsabilidad pública",
+          "text": "Quien ejerce autoridad debe responder por sus decisiones, registrar acciones relevantes y reconocer límites y errores."
+        },
+        {
+          "type": "definition",
+          "term": "Debido proceso — nivel introductorio",
+          "text": "Las actuaciones con consecuencias importantes no deben depender del capricho de una persona: requieren autoridad competente, una base reconocible y un procedimiento apropiado al contexto."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Límites de autoridad"
         },
         {
           "type": "bullets",
           "items": [
-            "protección de vida",
-            "responsabilidad pública",
-            "debido proceso general",
-            "límites de autoridad"
+            "Jurisdicción",
+            "Misión",
+            "Leyes",
+            "Reglamentos",
+            "Órdenes",
+            "Cualificación",
+            "Derechos de otras personas",
+            "Autoridad civil superior"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Antes de intervenir"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "¿Qué está ocurriendo realmente?",
+            "¿Quién tiene competencia?",
+            "¿Existe riesgo inmediato para la vida?",
+            "¿Qué autoridad tengo?",
+            "¿Qué debo registrar o comunicar?",
+            "¿Necesito escalar?"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Debatir un caso simple de intervención y responsabilidad."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Caso escrito/oral."
+          "label": "CASO",
+          "text": "Un cadete presencia una disputa civil en un mundo miembro. Su uniforme no le concede automáticamente autoridad local; puede proteger una vida ante una emergencia, pedir ayuda y comunicar la situación sin inventar competencias."
         },
         {
           "type": "heading",
@@ -355,24 +433,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras protección de vida.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Debatir un caso simple de intervención y responsabilidad.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "lore/federation/government/federation_government.json",
-            "lore/federation/member_worlds/founding_members.json"
+            "¿Por qué esta asignatura no enumera una constitución completa?",
+            "¿Qué significa responsabilidad pública para un cadete?",
+            "Explica «debido proceso» a nivel introductorio.",
+            "¿Por qué un uniforme de Starfleet no concede autoridad ilimitada?",
+            "¿Qué preguntas debes hacerte antes de intervenir en un asunto civil?"
           ]
         }
       ]

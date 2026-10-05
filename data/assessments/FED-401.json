@@ -1,283 +1,296 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "course_id": "FED-401",
-  "status": "generated_from_authoritative_curriculum",
+  "status": "editorially_aligned_with_developed_manual",
+  "source_manual": "gameplay/careers/academy_path/study_materials/fourth_class/FED-401/MANUAL_v1_0.md",
   "question_count": 24,
+  "rule": "No question may require knowledge that is not explicitly taught in FED-401 or established prerequisites.",
   "questions": [
     {
       "id": "FED-401-Q001",
       "unit_id": "FED-401-U01",
       "type": "short_answer",
-      "prompt_es": "Explica naturaleza política general y su relevancia operativa.",
+      "prompt_es": "¿Qué tipo de entidad política es la Federación Unida de Planetas?",
       "answer_key_es": [
-        "naturaleza política general",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "república federal interestelar",
+        "unión política de mundos miembros",
+        "instituciones comunes"
       ]
     },
     {
       "id": "FED-401-Q002",
       "unit_id": "FED-401-U01",
-      "type": "compare",
-      "prompt_es": "Compara naturaleza política general con cooperación entre mundos miembros. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "knowledge",
+      "prompt_es": "Indica el año de fundación retenido y los cuatro miembros fundadores del proyecto.",
       "answer_key_es": [
-        "naturaleza política general",
-        "cooperación entre mundos miembros",
-        "diferencia aplicada"
+        "2161",
+        "Tierra",
+        "Vulcano",
+        "Andoria",
+        "Tellar Prime"
       ]
     },
     {
       "id": "FED-401-Q003",
       "unit_id": "FED-401-U01",
-      "type": "scenario",
-      "prompt_es": "Situación: Distinguir Federación, Starfleet y gobiernos miembros. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué no debe extrapolarse la escala de la Federación en 2373 a la era de Pike?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "la Federación cambia con el tiempo",
+        "no retrotraer datos tardíos",
+        "la campaña debe resolver membresía según fecha"
       ]
     },
     {
       "id": "FED-401-Q004",
       "unit_id": "FED-401-U01",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Qué es la Federación y cómo lo corregirías.",
+      "type": "compare",
+      "prompt_es": "Explica por qué pertenecer a la Federación no implica compartir una única cultura.",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "federalismo",
+        "mundos miembros distintos",
+        "gobiernos/culturas propias",
+        "cooperación no equivale a uniformidad"
       ]
     },
     {
       "id": "FED-401-Q005",
       "unit_id": "FED-401-U02",
-      "type": "short_answer",
-      "prompt_es": "Explica gobierno civil y su relevancia operativa.",
+      "type": "knowledge",
+      "prompt_es": "¿Qué instituciones federales mínimas retiene el proyecto con suficiente base?",
       "answer_key_es": [
-        "gobierno civil",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "Presidente de la Federación",
+        "Consejo de la Federación",
+        "participación de mundos miembros"
       ]
     },
     {
       "id": "FED-401-Q006",
       "unit_id": "FED-401-U02",
-      "type": "compare",
-      "prompt_es": "Compara gobierno civil con representación. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué significa que Starfleet esté subordinada a autoridad civil?",
       "answer_key_es": [
-        "gobierno civil",
-        "representación",
-        "diferencia aplicada"
+        "Starfleet no sustituye al gobierno",
+        "opera dentro de autoridad federal",
+        "decisiones políticas pueden condicionar operaciones"
       ]
     },
     {
       "id": "FED-401-Q007",
       "unit_id": "FED-401-U02",
-      "type": "scenario",
-      "prompt_es": "Situación: Identificar qué tipo de asunto corresponde a autoridad civil o Starfleet. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué el curso no fija duración de mandatos, reparto de escaños o sistema electoral completo?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "no inventar precisión constitucional",
+        "falta de base suficiente",
+        "solo añadir cuando exista evidencia o GAME_ADDITION explícita"
       ]
     },
     {
       "id": "FED-401-Q008",
       "unit_id": "FED-401-U02",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Instituciones fundamentales y cómo lo corregirías.",
+      "type": "scenario",
+      "prompt_es": "Una decisión afecta a una autoridad planetaria y a una nave de Starfleet. ¿Qué enfoque institucional debe seguir el cadete?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "distinguir competencias",
+        "coordinar",
+        "consultar cadena de mando/autoridad civil",
+        "no asumir competencia automática"
       ]
     },
     {
       "id": "FED-401-Q009",
       "unit_id": "FED-401-U03",
       "type": "short_answer",
-      "prompt_es": "Explica pertenencia y su relevancia operativa.",
+      "prompt_es": "Explica la regla «especie ≠ ciudadanía».",
       "answer_key_es": [
-        "pertenencia",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "la biología no determina ciudadanía",
+        "no determina lealtad",
+        "no determina autoridad política"
       ]
     },
     {
       "id": "FED-401-Q010",
       "unit_id": "FED-401-U03",
       "type": "compare",
-      "prompt_es": "Compara pertenencia con ciudadanía. Indica una diferencia que pueda cambiar una decisión.",
+      "prompt_es": "¿Por qué mundo y gobierno se modelan por separado?",
       "answer_key_es": [
-        "pertenencia",
-        "ciudadanía",
-        "diferencia aplicada"
+        "el mundo es una localización/comunidad",
+        "el gobierno es una entidad política",
+        "el gobierno puede cambiar con el tiempo"
       ]
     },
     {
       "id": "FED-401-Q011",
       "unit_id": "FED-401-U03",
       "type": "scenario",
-      "prompt_es": "Situación: Analizar un caso de ciudadano, visitante y personal de Starfleet. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "prompt_es": "Una oficial vulcana de Starfleet visita otro mundo miembro. ¿Qué NO puedes deducir solo por su especie y uniforme?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "que represente al gobierno vulcano",
+        "que tenga autoridad civil local",
+        "que comparta todas las costumbres vulcanas",
+        "que Starfleet le dé autoridad política universal"
       ]
     },
     {
       "id": "FED-401-Q012",
       "unit_id": "FED-401-U03",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Mundos miembros y ciudadanía y cómo lo corregirías.",
+      "type": "knowledge",
+      "prompt_es": "Nombra tres cosas que la membresía de un mundo en la Federación puede afectar.",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "jurisdicción",
+        "tránsito",
+        "tratados",
+        "acceso diplomático",
+        "respuesta de Starfleet",
+        "destinos/misiones",
+        "derechos/obligaciones reconocidos"
       ]
     },
     {
       "id": "FED-401-Q013",
       "unit_id": "FED-401-U04",
       "type": "short_answer",
-      "prompt_es": "Explica servicio público y su relevancia operativa.",
+      "prompt_es": "Resume la relación entre Federación y Starfleet.",
       "answer_key_es": [
-        "servicio público",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "Federación = entidad política/civil",
+        "Starfleet = servicio federal",
+        "Starfleet sujeta a autoridad civil"
       ]
     },
     {
       "id": "FED-401-Q014",
       "unit_id": "FED-401-U04",
-      "type": "compare",
-      "prompt_es": "Compara servicio público con autoridad militar-científica. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "knowledge",
+      "prompt_es": "¿Qué elementos del estado político pueden condicionar una misión de Starfleet?",
       "answer_key_es": [
-        "servicio público",
-        "autoridad militar-científica",
-        "diferencia aplicada"
+        "órdenes civiles",
+        "autorizaciones de misión",
+        "restricciones diplomáticas",
+        "directivas de emergencia",
+        "tratados/relaciones activas"
       ]
     },
     {
       "id": "FED-401-Q015",
       "unit_id": "FED-401-U04",
-      "type": "scenario",
-      "prompt_es": "Situación: Resolver quién decide en situaciones no operativas. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "judgment",
+      "prompt_es": "¿Puede una negociación generada por IA cambiar por sí sola un tratado?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "no",
+        "la IA puede presentar/proponer",
+        "el sistema autoritativo resuelve y registra consecuencias"
       ]
     },
     {
       "id": "FED-401-Q016",
       "unit_id": "FED-401-U04",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Federación y Starfleet y cómo lo corregirías.",
+      "type": "scenario",
+      "prompt_es": "La campaña comienza antes de una guerra conocida por el jugador. ¿Debe el juego imponer automáticamente esa guerra cuando llegue la fecha?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "no",
+        "no future destiny",
+        "World State autoritativo después del inicio",
+        "el resultado puede cambiar"
       ]
     },
     {
       "id": "FED-401-Q017",
       "unit_id": "FED-401-U05",
-      "type": "short_answer",
-      "prompt_es": "Explica diversidad cultural y su relevancia operativa.",
+      "type": "compare",
+      "prompt_es": "Diferencia especie, cultura e individuo.",
       "answer_key_es": [
-        "diversidad cultural",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "especie = biología/agrupación",
+        "cultura = normas/prácticas compartidas",
+        "individuo = persona concreta con historia propia"
       ]
     },
     {
       "id": "FED-401-Q018",
       "unit_id": "FED-401-U05",
-      "type": "compare",
-      "prompt_es": "Compara diversidad cultural con no asumir normas humanas como universales. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "judgment",
+      "prompt_es": "¿Qué problema existe en decir «son de esa especie; ya sé cómo funcionan»?",
       "answer_key_es": [
-        "diversidad cultural",
-        "no asumir normas humanas como universales",
-        "diferencia aplicada"
+        "estereotipo",
+        "confunde tendencia cultural con individuo",
+        "ignora variación interna",
+        "puede producir error profesional"
       ]
     },
     {
       "id": "FED-401-Q019",
       "unit_id": "FED-401-U05",
-      "type": "scenario",
-      "prompt_es": "Situación: Comparar dos respuestas posibles a una diferencia cultural. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué significa evitar el antropocentrismo en una misión?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "no asumir normas humanas como universales",
+        "preguntar/observar",
+        "distinguir costumbre propia de norma general"
       ]
     },
     {
       "id": "FED-401-Q020",
       "unit_id": "FED-401-U05",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Pluralidad cultural y cómo lo corregirías.",
+      "type": "scenario",
+      "prompt_es": "Encuentras una costumbre que no entiendes. ¿Cuál es la respuesta profesional básica?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "no asumir",
+        "preguntar o consultar",
+        "observar contexto",
+        "evitar estereotipos",
+        "respetar límites"
       ]
     },
     {
       "id": "FED-401-Q021",
       "unit_id": "FED-401-U06",
       "type": "short_answer",
-      "prompt_es": "Explica protección de vida y su relevancia operativa.",
+      "prompt_es": "¿Qué significa responsabilidad pública para un cadete?",
       "answer_key_es": [
-        "protección de vida",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "responder por decisiones",
+        "no ocultar errores",
+        "registrar acciones relevantes",
+        "aceptar revisión",
+        "reconocer límites"
       ]
     },
     {
       "id": "FED-401-Q022",
       "unit_id": "FED-401-U06",
-      "type": "compare",
-      "prompt_es": "Compara protección de vida con responsabilidad pública. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "knowledge",
+      "prompt_es": "Explica «debido proceso» al nivel introductorio de FED-401.",
       "answer_key_es": [
-        "protección de vida",
-        "responsabilidad pública",
-        "diferencia aplicada"
+        "no actuar por capricho",
+        "autoridad competente",
+        "base reconocible",
+        "procedimiento apropiado",
+        "sin exigir detalle judicial avanzado"
       ]
     },
     {
       "id": "FED-401-Q023",
       "unit_id": "FED-401-U06",
       "type": "scenario",
-      "prompt_es": "Situación: Debatir un caso simple de intervención y responsabilidad. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "prompt_es": "Un cadete presencia una disputa civil durante una visita a un mundo miembro. ¿Le concede el uniforme autoridad civil automática?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "no",
+        "puede proteger vida ante emergencia",
+        "debe pedir ayuda/comunicar",
+        "no inventar competencias"
       ]
     },
     {
       "id": "FED-401-Q024",
       "unit_id": "FED-401-U06",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Derechos y responsabilidades básicas y cómo lo corregirías.",
+      "type": "procedure",
+      "prompt_es": "Antes de intervenir en un asunto civil, ¿qué preguntas básicas debe hacerse el cadete?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "qué ocurre",
+        "quién tiene competencia",
+        "riesgo para la vida",
+        "qué autoridad posee",
+        "qué debe comunicar/registrar",
+        "si debe escalar"
       ]
     }
   ]
