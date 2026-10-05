@@ -465,3 +465,14 @@
   line-height:1.75;
 }
 .lesson-content>ol li+li{margin-top:8px}
+
+.lesson-quote{
+  max-width:950px;
+  margin:0 0 28px;
+  padding:18px 20px;
+  border-left:4px solid var(--gold);
+  background:#faf7f0;
+  color:#46515d;
+  font-size:1rem;
+  line-height:1.65;
+}
