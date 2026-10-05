@@ -1,7 +1,7 @@
 {
   "subject": "Desarrollo profesional y elección de especialización",
   "code": "CAR-303",
-  "version": "1.0",
+  "version": "1.1",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/CAR-303/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/CAR-303/MANUAL_v1_0.md",
@@ -21,30 +21,12 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Convertir experiencia, intereses y evidencia en una elección de especialización consciente del jugador."
-        },
-        {
-          "type": "heading",
-          "text": "Contenidos"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "fortalezas",
-            "carencias",
-            "evidencia",
-            "preferencias"
-          ]
+          "text": "El perfil académico reúne fortalezas, carencias, evidencia, preferencias, conducta y experiencias."
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Revisar expediente."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Tutoría."
+          "label": "EVIDENCIA",
+          "text": "Una fortaleza debe apoyarse en práctica, observación y resultados repetidos; una carencia no implica incompatibilidad automática."
         },
         {
           "type": "heading",
@@ -53,25 +35,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica fortalezas en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Revisar expediente.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/characters/objectives/trajectory_coherence_rules.md",
-            "gameplay/careers/starfleet_service/career_progression_rules.json"
+            "¿Qué forma el perfil?",
+            "¿Qué convierte una capacidad en fortaleza?",
+            "¿Carencia significa incompatibilidad?",
+            "¿Puede una preferencia seguir siendo objetivo?",
+            "¿Por qué expediente no es destino?"
           ]
         }
       ]
@@ -83,30 +51,19 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Convertir experiencia, intereses y evidencia en una elección de especialización consciente del jugador."
-        },
-        {
-          "type": "heading",
-          "text": "Contenidos"
+          "text": "Cada rama combina un tipo de trabajo, responsabilidades, competencias y estilo de servicio distinto."
         },
         {
           "type": "bullets",
           "items": [
-            "tipo de trabajo",
-            "responsabilidades",
-            "competencias",
-            "estilo de servicio"
+            "Mando: coordinación y liderazgo",
+            "Vuelo/Navegación: rutas y maniobra",
+            "Operaciones: recursos y sistemas",
+            "Ingeniería: energía y diagnóstico",
+            "Seguridad/Táctica: protección y riesgo",
+            "Ciencia/Sensores: medición y análisis",
+            "Medicina: paciente y xenomedicina"
           ]
-        },
-        {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Comparar ramas con ejemplos."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Comprobación de comprensión."
         },
         {
           "type": "heading",
@@ -115,25 +72,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica tipo de trabajo en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Comparar ramas con ejemplos.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/characters/objectives/trajectory_coherence_rules.md",
-            "gameplay/careers/starfleet_service/career_progression_rules.json"
+            "¿Qué diferencia las ramas?",
+            "¿Qué combina competencia profesional?",
+            "¿Por qué importa estilo de servicio?",
+            "¿Qué rama coordina recursos?",
+            "¿Qué rama prioriza análisis científico?"
           ]
         }
       ]
@@ -144,31 +87,23 @@
       "subtitle": "UNIDAD 03 · CAR-303",
       "blocks": [
         {
+          "type": "definition",
+          "term": "Aptitud",
+          "text": "Capacidad demostrada o razonablemente desarrollable."
+        },
+        {
+          "type": "definition",
+          "term": "Preferencia",
+          "text": "Lo que el personaje quiere hacer."
+        },
+        {
+          "type": "callout",
+          "label": "SIN SCORE OCULTO",
+          "text": "La recomendación puede orientar, pero no convertirse en una orden invisible."
+        },
+        {
           "type": "p",
-          "text": "Convertir experiencia, intereses y evidencia en una elección de especialización consciente del jugador."
-        },
-        {
-          "type": "heading",
-          "text": "Contenidos"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "recomendación",
-            "motivación",
-            "capacidad",
-            "objetivos"
-          ]
-        },
-        {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Contrastar deseo y evidencia sin bloquear por puntuación oculta."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Entrevista."
+          "text": "Los requisitos objetivos sí pueden bloquear temporalmente una ruta hasta completar formación o recuperación."
         },
         {
           "type": "heading",
@@ -177,25 +112,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica recomendación en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Contrastar deseo y evidencia sin bloquear por puntuación oculta.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/characters/objectives/trajectory_coherence_rules.md",
-            "gameplay/careers/starfleet_service/career_progression_rules.json"
+            "Diferencia aptitud y preferencia.",
+            "¿Qué expresa recomendación?",
+            "¿Obliga al jugador?",
+            "¿Qué papel tiene motivación?",
+            "¿Qué puede bloquear objetivamente?"
           ]
         }
       ]
@@ -207,30 +128,16 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Convertir experiencia, intereses y evidencia en una elección de especialización consciente del jugador."
+          "text": "Los objetivos de carrera marcan dirección, pero no crean puestos, promociones ni vacantes."
         },
         {
-          "type": "heading",
-          "text": "Contenidos"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "largo plazo",
-            "medio plazo",
-            "rutas múltiples",
-            "cambio futuro"
-          ]
+          "type": "p",
+          "text": "Un mismo objetivo puede alcanzarse desde rutas distintas y puede cambiar, pausarse o abandonarse sin borrar la historia previa."
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Actualizar trayectoria."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Revisión."
+          "label": "COHERENCIA",
+          "text": "La trayectoria se valora con objetivo, acciones realizadas, requisitos y oportunidades reales."
         },
         {
           "type": "heading",
@@ -239,25 +146,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica largo plazo en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Actualizar trayectoria.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/characters/objectives/trajectory_coherence_rules.md",
-            "gameplay/careers/starfleet_service/career_progression_rules.json"
+            "¿Qué es objetivo profesional?",
+            "¿Garantiza puesto?",
+            "¿Puede haber rutas múltiples?",
+            "¿Qué ocurre al cambiar objetivo?",
+            "¿Qué determina coherencia?"
           ]
         }
       ]
@@ -269,30 +162,27 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Convertir experiencia, intereses y evidencia en una elección de especialización consciente del jugador."
+          "text": "La entrevista de orientación ayuda a interpretar evidencia, intereses, dudas y oportunidades de desarrollo."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Apoyos posibles"
         },
         {
           "type": "bullets",
           "items": [
-            "feedback",
-            "preguntas",
-            "recomendaciones",
-            "apoyos"
+            "Tutoría",
+            "Optativas",
+            "Práctica adicional",
+            "Rotación",
+            "Curso cruzado",
+            "Catch-up"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Hablar con instructores/mentores."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Registro cualitativo."
+          "label": "REGISTRO CUALITATIVO",
+          "text": "La orientación no genera un porcentaje oculto de compatibilidad."
         },
         {
           "type": "heading",
@@ -301,25 +191,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica feedback en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Hablar con instructores/mentores.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/characters/objectives/trajectory_coherence_rules.md",
-            "gameplay/careers/starfleet_service/career_progression_rules.json"
+            "¿Para qué sirve orientación?",
+            "¿Qué debe separar feedback?",
+            "Nombra preguntas útiles.",
+            "¿Qué apoyos existen?",
+            "¿Por qué no usar porcentaje oculto?"
           ]
         }
       ]
@@ -331,30 +207,33 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Convertir experiencia, intereses y evidencia en una elección de especialización consciente del jugador."
+          "text": "La decisión final pertenece al jugador y se valida contra requisitos académicos, cualificaciones y restricciones reales."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Efectos de la elección"
         },
         {
           "type": "bullets",
           "items": [
-            "decisión del jugador",
-            "requisitos objetivos",
-            "consecuencias",
-            "catch-up futuro"
+            "Horario",
+            "Clases",
+            "Instructores",
+            "Simulaciones",
+            "Prácticas",
+            "Compañeros",
+            "Cualificaciones",
+            "Candidatos a destino"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Confirmar especialización."
+          "label": "NO GARANTIZA DESTINO",
+          "text": "La especialización influye en la trayectoria, pero no determina automáticamente el primer destino."
         },
         {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Validación de requisitos y registro."
+          "type": "p",
+          "text": "Cambiar de rama después puede exigir tutoría, catch-up, evaluación o tiempo adicional sin borrar conocimientos previos."
         },
         {
           "type": "heading",
@@ -363,28 +242,15 @@
         {
           "type": "numbered",
           "items": [
-            "Explica decisión del jugador en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Confirmar especialización.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/characters/objectives/trajectory_coherence_rules.md",
-            "gameplay/careers/starfleet_service/career_progression_rules.json"
+            "¿Quién decide especialización?",
+            "¿Qué valida sistema?",
+            "¿Qué cambia?",
+            "¿Garantiza destino?",
+            "¿Qué puede exigir cambiar después?"
           ]
         }
       ]
     }
-  ]
+  ],
+  "status": "developed_content"
 }
