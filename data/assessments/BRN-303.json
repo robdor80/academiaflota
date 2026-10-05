@@ -1,329 +1,272 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "course_id": "BRN-303",
-  "status": "generated_from_authoritative_curriculum",
-  "question_count": 28,
+  "status": "editorially_aligned_with_developed_manual",
+  "source_manual": "gameplay/careers/academy_path/study_materials/third_class/BRN-303/MANUAL_v1_0.md",
+  "question_count": 24,
+  "rule": "No question may require knowledge that is not explicitly taught in BRN-303 or established prerequisites.",
   "questions": [
     {
       "id": "BRN-303-Q001",
       "unit_id": "BRN-303-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica coordinación y da un ejemplo operativo.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué caracteriza Mando?",
       "answer_key_es": [
         "coordinación",
-        "ejemplo coherente",
-        "límite o contexto"
+        "decisión",
+        "prioridades",
+        "responsabilidad"
       ]
     },
     {
       "id": "BRN-303-Q002",
       "unit_id": "BRN-303-U01",
-      "type": "relationship",
-      "prompt_es": "Relaciona coordinación con decisión. ¿Qué información pasa de uno a otro?",
+      "type": "judgment",
+      "prompt_es": "¿Por qué no se reduce a dar órdenes?",
       "answer_key_es": [
-        "coordinación",
-        "decisión",
-        "flujo de información o dependencia"
+        "escuchar",
+        "integrar",
+        "responsabilidad"
       ]
     },
     {
       "id": "BRN-303-Q003",
       "unit_id": "BRN-303-U01",
-      "type": "scenario",
-      "prompt_es": "Rotación guiada. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "knowledge",
+      "prompt_es": "¿Qué evidencia se observa?",
       "answer_key_es": [
-        "preparación",
-        "acción",
+        "claridad",
+        "juicio",
         "comunicación",
-        "escalado"
+        "responsabilidad"
       ]
     },
     {
       "id": "BRN-303-Q004",
-      "unit_id": "BRN-303-U01",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Mando, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "unit_id": "BRN-303-U02",
+      "type": "knowledge",
+      "prompt_es": "¿Qué funciones cubre Vuelo/Navegación?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "Conn",
+        "plotting",
+        "maniobra",
+        "astrogación"
       ]
     },
     {
       "id": "BRN-303-Q005",
       "unit_id": "BRN-303-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica helm y da un ejemplo operativo.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué debe anticipar el operador?",
       "answer_key_es": [
-        "helm",
-        "ejemplo coherente",
-        "límite o contexto"
+        "posición futura",
+        "restricciones",
+        "resultado maniobra"
       ]
     },
     {
       "id": "BRN-303-Q006",
       "unit_id": "BRN-303-U02",
-      "type": "relationship",
-      "prompt_es": "Relaciona helm con plotting. ¿Qué información pasa de uno a otro?",
+      "type": "compare",
+      "prompt_es": "Diferencia plotting y maniobra.",
       "answer_key_es": [
-        "helm",
-        "plotting",
-        "flujo de información o dependencia"
+        "plan de ruta",
+        "ejecución de movimiento"
       ]
     },
     {
       "id": "BRN-303-Q007",
-      "unit_id": "BRN-303-U02",
-      "type": "scenario",
-      "prompt_es": "Rotación guiada. Describe preparación, acción, comunicación y criterio de escalado.",
+      "unit_id": "BRN-303-U03",
+      "type": "short_answer",
+      "prompt_es": "¿Qué coordina Operaciones?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "recursos",
+        "sistemas",
+        "prioridades",
+        "logística"
       ]
     },
     {
       "id": "BRN-303-Q008",
-      "unit_id": "BRN-303-U02",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Vuelo / Navegación, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "unit_id": "BRN-303-U03",
+      "type": "judgment",
+      "prompt_es": "¿Por qué Ops no sustituye Ingeniería?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "ámbitos diferentes",
+        "coordina no repara"
       ]
     },
     {
       "id": "BRN-303-Q009",
       "unit_id": "BRN-303-U03",
       "type": "knowledge",
-      "prompt_es": "Explica recursos y da un ejemplo operativo.",
+      "prompt_es": "¿Qué evidencia se observa en Ops?",
       "answer_key_es": [
-        "recursos",
-        "ejemplo coherente",
-        "límite o contexto"
+        "organización",
+        "priorización",
+        "comunicación",
+        "trazabilidad"
       ]
     },
     {
       "id": "BRN-303-Q010",
-      "unit_id": "BRN-303-U03",
-      "type": "relationship",
-      "prompt_es": "Relaciona recursos con sistemas. ¿Qué información pasa de uno a otro?",
+      "unit_id": "BRN-303-U04",
+      "type": "knowledge",
+      "prompt_es": "¿Qué cubre Ingeniería?",
       "answer_key_es": [
-        "recursos",
-        "sistemas",
-        "flujo de información o dependencia"
+        "energía",
+        "diagnóstico",
+        "mantenimiento",
+        "propulsión",
+        "sistemas"
       ]
     },
     {
       "id": "BRN-303-Q011",
-      "unit_id": "BRN-303-U03",
-      "type": "scenario",
-      "prompt_es": "Rotación guiada. Describe preparación, acción, comunicación y criterio de escalado.",
+      "unit_id": "BRN-303-U04",
+      "type": "judgment",
+      "prompt_es": "¿Por qué síntoma no equivale a causa?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "causas múltiples"
       ]
     },
     {
       "id": "BRN-303-Q012",
-      "unit_id": "BRN-303-U03",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Operaciones, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "unit_id": "BRN-303-U04",
+      "type": "short_answer",
+      "prompt_es": "¿Por qué mantenimiento rutinario importa?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "prevención",
+        "fiabilidad"
       ]
     },
     {
       "id": "BRN-303-Q013",
-      "unit_id": "BRN-303-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica energía y da un ejemplo operativo.",
+      "unit_id": "BRN-303-U05",
+      "type": "compare",
+      "prompt_es": "Diferencia Seguridad y Táctica.",
       "answer_key_es": [
-        "energía",
-        "ejemplo coherente",
-        "límite o contexto"
+        "protección/accesos",
+        "amenaza/defensa"
       ]
     },
     {
       "id": "BRN-303-Q014",
-      "unit_id": "BRN-303-U04",
-      "type": "relationship",
-      "prompt_es": "Relaciona energía con diagnóstico. ¿Qué información pasa de uno a otro?",
+      "unit_id": "BRN-303-U05",
+      "type": "judgment",
+      "prompt_es": "¿Por qué no se reduce a armamento?",
       "answer_key_es": [
-        "energía",
-        "diagnóstico",
-        "flujo de información o dependencia"
+        "prevención",
+        "disciplina",
+        "evaluación"
       ]
     },
     {
       "id": "BRN-303-Q015",
-      "unit_id": "BRN-303-U04",
-      "type": "scenario",
-      "prompt_es": "Rotación guiada. Describe preparación, acción, comunicación y criterio de escalado.",
+      "unit_id": "BRN-303-U05",
+      "type": "short_answer",
+      "prompt_es": "¿Qué limita uso táctico?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "Mando",
+        "reglas",
+        "situación",
+        "permisos"
       ]
     },
     {
       "id": "BRN-303-Q016",
-      "unit_id": "BRN-303-U04",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Ingeniería, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "unit_id": "BRN-303-U06",
+      "type": "compare",
+      "prompt_es": "Diferencia Sensores y Ciencia.",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "medir",
+        "interpretar"
       ]
     },
     {
       "id": "BRN-303-Q017",
-      "unit_id": "BRN-303-U05",
+      "unit_id": "BRN-303-U06",
       "type": "knowledge",
-      "prompt_es": "Explica protección y da un ejemplo operativo.",
+      "prompt_es": "¿Qué exige método?",
       "answer_key_es": [
-        "protección",
-        "ejemplo coherente",
-        "límite o contexto"
+        "evidencia",
+        "hipótesis",
+        "incertidumbre",
+        "revisión"
       ]
     },
     {
       "id": "BRN-303-Q018",
-      "unit_id": "BRN-303-U05",
-      "type": "relationship",
-      "prompt_es": "Relaciona protección con amenaza. ¿Qué información pasa de uno a otro?",
+      "unit_id": "BRN-303-U06",
+      "type": "judgment",
+      "prompt_es": "¿Por qué incertidumbre explícita es fortaleza?",
       "answer_key_es": [
-        "protección",
-        "amenaza",
-        "flujo de información o dependencia"
+        "honestidad de conocimiento",
+        "mejor decisión"
       ]
     },
     {
       "id": "BRN-303-Q019",
-      "unit_id": "BRN-303-U05",
-      "type": "scenario",
-      "prompt_es": "Rotación guiada. Describe preparación, acción, comunicación y criterio de escalado.",
+      "unit_id": "BRN-303-U07",
+      "type": "knowledge",
+      "prompt_es": "¿Qué cubre Medicina?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "diagnóstico",
+        "tratamiento",
+        "triaje",
+        "prevención",
+        "aptitud",
+        "xenomedicina"
       ]
     },
     {
       "id": "BRN-303-Q020",
-      "unit_id": "BRN-303-U05",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Seguridad / Táctica, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "unit_id": "BRN-303-U07",
+      "type": "judgment",
+      "prompt_es": "¿Por qué una prueba no garantiza certeza?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "limitaciones diagnósticas"
       ]
     },
     {
       "id": "BRN-303-Q021",
-      "unit_id": "BRN-303-U06",
-      "type": "knowledge",
-      "prompt_es": "Explica detección y da un ejemplo operativo.",
+      "unit_id": "BRN-303-U07",
+      "type": "short_answer",
+      "prompt_es": "¿Por qué especie importa?",
       "answer_key_es": [
-        "detección",
-        "ejemplo coherente",
-        "límite o contexto"
+        "fisiología distinta"
       ]
     },
     {
       "id": "BRN-303-Q022",
-      "unit_id": "BRN-303-U06",
-      "type": "relationship",
-      "prompt_es": "Relaciona detección con análisis. ¿Qué información pasa de uno a otro?",
+      "unit_id": "BRN-303-U07",
+      "type": "knowledge",
+      "prompt_es": "¿Qué evidencia se observa?",
       "answer_key_es": [
-        "detección",
-        "análisis",
-        "flujo de información o dependencia"
+        "observación",
+        "prudencia",
+        "comunicación",
+        "ética"
       ]
     },
     {
       "id": "BRN-303-Q023",
-      "unit_id": "BRN-303-U06",
-      "type": "scenario",
-      "prompt_es": "Rotación guiada. Describe preparación, acción, comunicación y criterio de escalado.",
+      "unit_id": "BRN-303-U01",
+      "type": "compare",
+      "prompt_es": "Diferencia interés por rama y competencia.",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "preferencia",
+        "evidencia de capacidad"
       ]
     },
     {
       "id": "BRN-303-Q024",
-      "unit_id": "BRN-303-U06",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Ciencia / Sensores, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
-      "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
-      ]
-    },
-    {
-      "id": "BRN-303-Q025",
       "unit_id": "BRN-303-U07",
-      "type": "knowledge",
-      "prompt_es": "Explica paciente y da un ejemplo operativo.",
+      "type": "judgment",
+      "prompt_es": "¿Una mala rotación bloquea automáticamente una rama?",
       "answer_key_es": [
-        "paciente",
-        "ejemplo coherente",
-        "límite o contexto"
-      ]
-    },
-    {
-      "id": "BRN-303-Q026",
-      "unit_id": "BRN-303-U07",
-      "type": "relationship",
-      "prompt_es": "Relaciona paciente con diagnóstico. ¿Qué información pasa de uno a otro?",
-      "answer_key_es": [
-        "paciente",
-        "diagnóstico",
-        "flujo de información o dependencia"
-      ]
-    },
-    {
-      "id": "BRN-303-Q027",
-      "unit_id": "BRN-303-U07",
-      "type": "scenario",
-      "prompt_es": "Rotación guiada. Describe preparación, acción, comunicación y criterio de escalado.",
-      "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "BRN-303-Q028",
-      "unit_id": "BRN-303-U07",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Medicina, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
-      "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "no",
+        "evidencia descriptiva"
       ]
     }
   ]
