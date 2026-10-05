@@ -1,283 +1,276 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "course_id": "XEN-302",
-  "status": "generated_from_authoritative_curriculum",
+  "status": "editorially_aligned_with_developed_manual",
+  "source_manual": "gameplay/careers/academy_path/study_materials/third_class/XEN-302/MANUAL_v1_0.md",
   "question_count": 24,
+  "rule": "No question may require knowledge that is not explicitly taught in XEN-302 or established prerequisites.",
   "questions": [
     {
       "id": "XEN-302-Q001",
       "unit_id": "XEN-302-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica biología y da un ejemplo operativo.",
+      "type": "compare",
+      "prompt_es": "Diferencia biología, cultura, costumbre e individuo.",
       "answer_key_es": [
-        "biología",
-        "ejemplo coherente",
-        "límite o contexto"
+        "fisiología",
+        "valores compartidos",
+        "práctica concreta",
+        "persona"
       ]
     },
     {
       "id": "XEN-302-Q002",
       "unit_id": "XEN-302-U01",
-      "type": "relationship",
-      "prompt_es": "Relaciona biología con cultura. ¿Qué información pasa de uno a otro?",
+      "type": "judgment",
+      "prompt_es": "¿Qué convierte una generalización en estereotipo?",
       "answer_key_es": [
-        "biología",
-        "cultura",
-        "flujo de información o dependencia"
+        "tratarla como predicción absoluta"
       ]
     },
     {
       "id": "XEN-302-Q003",
       "unit_id": "XEN-302-U01",
-      "type": "scenario",
-      "prompt_es": "Separar hechos de estereotipos. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "knowledge",
+      "prompt_es": "Nombra fuentes de variación interna.",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "región",
+        "generación",
+        "religión",
+        "política",
+        "clase",
+        "profesión"
       ]
     },
     {
       "id": "XEN-302-Q004",
       "unit_id": "XEN-302-U01",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Diferencia biológica y cultural, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "judgment",
+      "prompt_es": "¿Cómo se usa conocimiento cultural previo?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "orienta preguntas",
+        "no sustituye observar individuo"
       ]
     },
     {
       "id": "XEN-302-Q005",
       "unit_id": "XEN-302-U02",
       "type": "knowledge",
-      "prompt_es": "Explica contexto y da un ejemplo operativo.",
+      "prompt_es": "¿Qué factores cambian significado social?",
       "answer_key_es": [
-        "contexto",
-        "ejemplo coherente",
-        "límite o contexto"
+        "jerarquía",
+        "formalidad",
+        "relación",
+        "situación",
+        "lugar"
       ]
     },
     {
       "id": "XEN-302-Q006",
       "unit_id": "XEN-302-U02",
-      "type": "relationship",
-      "prompt_es": "Relaciona contexto con tono. ¿Qué información pasa de uno a otro?",
+      "type": "short_answer",
+      "prompt_es": "¿Por qué tono puede variar culturalmente?",
       "answer_key_es": [
-        "contexto",
-        "tono",
-        "flujo de información o dependencia"
+        "interpretaciones distintas"
       ]
     },
     {
       "id": "XEN-302-Q007",
       "unit_id": "XEN-302-U02",
-      "type": "scenario",
-      "prompt_es": "Escena de conversación. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "procedure",
+      "prompt_es": "¿Qué haces ante malentendido?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "no asumir",
+        "revisar",
+        "aclarar",
+        "adaptar"
       ]
     },
     {
       "id": "XEN-302-Q008",
       "unit_id": "XEN-302-U02",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Comunicación intercultural, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "short_answer",
+      "prompt_es": "¿Qué implica escuchar profesionalmente?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "confirmar",
+        "resumir",
+        "preguntar",
+        "reconocer ambigüedad"
       ]
     },
     {
       "id": "XEN-302-Q009",
       "unit_id": "XEN-302-U03",
       "type": "knowledge",
-      "prompt_es": "Explica presentación y da un ejemplo operativo.",
+      "prompt_es": "¿Qué conviene preparar antes de encuentro formal?",
       "answer_key_es": [
-        "presentación",
-        "ejemplo coherente",
-        "límite o contexto"
+        "participantes",
+        "autoridad",
+        "propósito",
+        "protocolo",
+        "símbolos"
       ]
     },
     {
       "id": "XEN-302-Q010",
       "unit_id": "XEN-302-U03",
-      "type": "relationship",
-      "prompt_es": "Relaciona presentación con hospitalidad. ¿Qué información pasa de uno a otro?",
+      "type": "judgment",
+      "prompt_es": "¿Por qué usar forma prudente ante dudas?",
       "answer_key_es": [
-        "presentación",
-        "hospitalidad",
-        "flujo de información o dependencia"
+        "evitar familiaridad/título incorrecto"
       ]
     },
     {
       "id": "XEN-302-Q011",
       "unit_id": "XEN-302-U03",
-      "type": "scenario",
-      "prompt_es": "Preparar encuentro formal. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué significado puede tener hospitalidad?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "cortesía",
+        "ritual",
+        "obligación",
+        "contexto"
       ]
     },
     {
       "id": "XEN-302-Q012",
       "unit_id": "XEN-302-U03",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Protocolo básico, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "judgment",
+      "prompt_es": "¿Es universal el espacio personal?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "no"
       ]
     },
     {
       "id": "XEN-302-Q013",
       "unit_id": "XEN-302-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica traducción y da un ejemplo operativo.",
+      "type": "judgment",
+      "prompt_es": "¿Qué no garantiza el Traductor Universal?",
       "answer_key_es": [
-        "traducción",
-        "ejemplo coherente",
-        "límite o contexto"
+        "equivalencia perfecta",
+        "cultura",
+        "intención"
       ]
     },
     {
       "id": "XEN-302-Q014",
       "unit_id": "XEN-302-U04",
-      "type": "relationship",
-      "prompt_es": "Relaciona traducción con ambigüedad. ¿Qué información pasa de uno a otro?",
+      "type": "knowledge",
+      "prompt_es": "¿Qué crea ambigüedad?",
       "answer_key_es": [
-        "traducción",
-        "ambigüedad",
-        "flujo de información o dependencia"
+        "polisemia",
+        "ironía",
+        "ritual",
+        "historia"
       ]
     },
     {
       "id": "XEN-302-Q015",
       "unit_id": "XEN-302-U04",
-      "type": "scenario",
-      "prompt_es": "Resolver malentendido de traducción. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "procedure",
+      "prompt_es": "¿Qué hacer con concepto sin equivalente?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "explicar",
+        "contextualizar",
+        "parafrasear"
       ]
     },
     {
       "id": "XEN-302-Q016",
       "unit_id": "XEN-302-U04",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Traductor Universal y límites, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "knowledge",
+      "prompt_es": "¿Qué señales sugieren fallo?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "ilógica",
+        "sentido cambia",
+        "término extraño",
+        "confusión"
       ]
     },
     {
       "id": "XEN-302-Q017",
       "unit_id": "XEN-302-U05",
-      "type": "knowledge",
-      "prompt_es": "Explica observación y da un ejemplo operativo.",
+      "type": "short_answer",
+      "prompt_es": "¿Por qué observar antes de intervenir?",
       "answer_key_es": [
-        "observación",
-        "ejemplo coherente",
-        "límite o contexto"
+        "reducir interferencia",
+        "comprender contexto"
       ]
     },
     {
       "id": "XEN-302-Q018",
       "unit_id": "XEN-302-U05",
-      "type": "relationship",
-      "prompt_es": "Relaciona observación con autoridad. ¿Qué información pasa de uno a otro?",
+      "type": "knowledge",
+      "prompt_es": "¿Qué se revisa antes de contacto?",
       "answer_key_es": [
-        "observación",
-        "autoridad",
-        "flujo de información o dependencia"
+        "datos",
+        "misión",
+        "Directiva",
+        "equipo",
+        "traducción",
+        "protocolo"
       ]
     },
     {
       "id": "XEN-302-Q019",
       "unit_id": "XEN-302-U05",
-      "type": "scenario",
-      "prompt_es": "Planificar fase inicial supervisada. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "judgment",
+      "prompt_es": "¿Puede cadete iniciar contacto por su cuenta?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "no",
+        "requiere autoridad"
       ]
     },
     {
       "id": "XEN-302-Q020",
       "unit_id": "XEN-302-U05",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Primer Contacto: fundamentos, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "short_answer",
+      "prompt_es": "¿Qué hacer cuando falta información?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "declarar incertidumbre",
+        "actuar conservadoramente"
       ]
     },
     {
       "id": "XEN-302-Q021",
       "unit_id": "XEN-302-U06",
-      "type": "knowledge",
-      "prompt_es": "Explica intereses y da un ejemplo operativo.",
+      "type": "compare",
+      "prompt_es": "Diferencia posición e interés.",
       "answer_key_es": [
-        "intereses",
-        "ejemplo coherente",
-        "límite o contexto"
+        "lo que dice querer",
+        "motivo subyacente"
       ]
     },
     {
       "id": "XEN-302-Q022",
       "unit_id": "XEN-302-U06",
-      "type": "relationship",
-      "prompt_es": "Relaciona intereses con posición. ¿Qué información pasa de uno a otro?",
+      "type": "knowledge",
+      "prompt_es": "Nombra tres técnicas de desescalada.",
       "answer_key_es": [
-        "intereses",
-        "posición",
-        "flujo de información o dependencia"
+        "bajar tono",
+        "aclarar",
+        "pausa",
+        "opción reversible"
       ]
     },
     {
       "id": "XEN-302-Q023",
       "unit_id": "XEN-302-U06",
-      "type": "scenario",
-      "prompt_es": "Negociación breve controlada. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "judgment",
+      "prompt_es": "¿Qué no puede prometer un cadete?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "tratados",
+        "recursos",
+        "compromisos políticos"
       ]
     },
     {
       "id": "XEN-302-Q024",
       "unit_id": "XEN-302-U06",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Diplomacia básica, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "judgment",
+      "prompt_es": "¿No acuerdo equivale a fracaso?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "no",
+        "puede evitar escalada"
       ]
     }
   ]
