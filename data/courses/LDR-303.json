@@ -1,7 +1,7 @@
 {
   "subject": "Liderazgo y responsabilidad I",
   "code": "LDR-303",
-  "version": "1.0",
+  "version": "1.1",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/LDR-303/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/LDR-303/MANUAL_v1_0.md",
@@ -20,30 +20,12 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Introducir liderazgo como responsabilidad por personas, tareas y comunicación, no como autoridad ornamental."
-        },
-        {
-          "type": "heading",
-          "text": "Contenidos"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "tarea",
-            "equipo",
-            "resultado",
-            "rendición de cuentas"
-          ]
+          "text": "Liderar empieza por aceptar una responsabilidad con tarea, objetivo, personas, recursos, límites y condición de cierre claros."
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Aceptar y definir una responsabilidad."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Caso."
+          "label": "RENDICIÓN DE CUENTAS",
+          "text": "El responsable debe poder explicar qué sabía, qué decidió, por qué, qué ocurrió y qué aprendió."
         },
         {
           "type": "heading",
@@ -52,24 +34,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica tarea en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Aceptar y definir una responsabilidad.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "lore/federation/starfleet/command_structure/succession_rules.json"
+            "¿Qué debe quedar claro al aceptar responsabilidad?",
+            "¿Qué implica seguimiento?",
+            "¿Qué significa responsabilidad sobre equipo?",
+            "¿Un mal resultado prueba mal liderazgo?",
+            "¿Qué significa rendición de cuentas?"
           ]
         }
       ]
@@ -81,30 +50,16 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Introducir liderazgo como responsabilidad por personas, tareas y comunicación, no como autoridad ornamental."
+          "text": "Una instrucción clara puede incluir objetivo, acción, límite, prioridad, tiempo y criterio de finalización."
         },
         {
-          "type": "heading",
-          "text": "Contenidos"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "claridad",
-            "intención",
-            "confirmación",
-            "límites"
-          ]
+          "type": "p",
+          "text": "Explicar intención permite que el receptor adapte la ejecución si cambia el contexto."
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Dirigir tarea breve."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Práctica."
+          "label": "ACTUALIZAR NO ES DEBILIDAD",
+          "text": "Una instrucción puede cambiar cuando aparece nueva información."
         },
         {
           "type": "heading",
@@ -113,24 +68,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica claridad en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Dirigir tarea breve.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "lore/federation/starfleet/command_structure/succession_rules.json"
+            "¿Qué incluye una instrucción clara?",
+            "¿Para qué sirve intención?",
+            "¿Qué puede responder el receptor?",
+            "¿Qué límites existen?",
+            "¿Por qué cambiar una instrucción puede ser correcto?"
           ]
         }
       ]
@@ -142,30 +84,27 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Introducir liderazgo como responsabilidad por personas, tareas y comunicación, no como autoridad ornamental."
+          "text": "Delegar es asignar una tarea manteniendo responsabilidad de seguimiento."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Qué revisar"
         },
         {
           "type": "bullets",
           "items": [
-            "capacidad",
-            "carga",
-            "seguimiento",
-            "confianza"
+            "Formación",
+            "Experiencia",
+            "Autoridad",
+            "Estado",
+            "Carga actual",
+            "Supervisión disponible"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Repartir trabajo en equipo."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación."
+          "label": "CONFIANZA",
+          "text": "Confiar no significa ausencia total de verificación; el seguimiento depende de riesgo, experiencia y complejidad."
         },
         {
           "type": "heading",
@@ -174,24 +113,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica capacidad en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Repartir trabajo en equipo.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "lore/federation/starfleet/command_structure/succession_rules.json"
+            "¿Qué significa delegar?",
+            "¿Qué determina capacidad?",
+            "¿Por qué carga importa?",
+            "¿Qué fija seguimiento?",
+            "¿Confianza elimina verificación?"
           ]
         }
       ]
@@ -203,30 +129,29 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Introducir liderazgo como responsabilidad por personas, tareas y comunicación, no como autoridad ornamental."
+          "text": "Corregir un error empieza por establecer qué ocurrió y qué riesgo creó."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Feedback útil"
         },
         {
           "type": "bullets",
           "items": [
-            "hecho",
-            "riesgo",
-            "feedback",
-            "escalado"
+            "Conducta observada",
+            "Efecto",
+            "Alternativa",
+            "Expectativa futura"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Responder a error de compañero."
+          "label": "RIESGO INMEDIATO",
+          "text": "Primero se corrige la situación; después se explica."
         },
         {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Escena."
+          "type": "p",
+          "text": "Humillar no mejora seguridad ni aprendizaje."
         },
         {
           "type": "heading",
@@ -235,24 +160,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica hecho en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Responder a error de compañero.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "lore/federation/starfleet/command_structure/succession_rules.json"
+            "¿Por qué empezar por hechos?",
+            "¿Qué cambia si hay riesgo inmediato?",
+            "¿Qué contiene feedback útil?",
+            "¿Por qué no humillar?",
+            "¿Cuándo escalar error?"
           ]
         }
       ]
@@ -264,30 +176,26 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Introducir liderazgo como responsabilidad por personas, tareas y comunicación, no como autoridad ornamental."
+          "text": "Un desacuerdo profesional no es insubordinación automática. Bajo presión pueden empeorar escucha, tono y calidad de decisión."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Desescalada"
         },
         {
           "type": "bullets",
           "items": [
-            "desacuerdo",
-            "prioridad",
-            "desescalada",
-            "decisión"
+            "Resumir desacuerdo",
+            "Volver a hechos",
+            "Separar urgencia de emoción",
+            "Pedir alternativas",
+            "Fijar autoridad de decisión"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Resolver conflicto operativo moderado."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Caso."
+          "label": "DECISIÓN",
+          "text": "Cuando hay que decidir, no se espera consenso infinito: se explica criterio y se mantienen opciones de revisión."
         },
         {
           "type": "heading",
@@ -296,24 +204,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica desacuerdo en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Resolver conflicto operativo moderado.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "lore/federation/starfleet/command_structure/succession_rules.json"
+            "¿Por qué desacuerdo no es insubordinación?",
+            "¿Qué efectos tiene presión?",
+            "Nombra técnicas de desescalada.",
+            "¿Cuándo debe cerrarse una decisión?",
+            "¿Por qué puede haber conversación posterior?"
           ]
         }
       ]
@@ -325,30 +220,16 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Introducir liderazgo como responsabilidad por personas, tareas y comunicación, no como autoridad ornamental."
-        },
-        {
-          "type": "heading",
-          "text": "Contenidos"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "briefing",
-            "ejecución",
-            "cierre",
-            "debrief"
-          ]
+          "text": "En simulación, el líder prepara objetivo y roles, mantiene imagen general durante la ejecución y cierra con pendientes, handoffs y debrief."
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Liderar equipo pequeño."
+          "label": "NO MICROMANAGEMENT",
+          "text": "Liderar un equipo pequeño no significa ejecutar personalmente todas sus tareas."
         },
         {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación integrada."
+          "type": "p",
+          "text": "La valoración usa observación, eventos, informes, resultados y comportamiento repetido."
         },
         {
           "type": "heading",
@@ -357,27 +238,15 @@
         {
           "type": "numbered",
           "items": [
-            "Explica briefing en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Liderar equipo pequeño.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "lore/federation/starfleet/command_structure/succession_rules.json"
+            "¿Qué hace líder en briefing?",
+            "¿Por qué no micromanejar?",
+            "¿Qué obliga a redistribuir?",
+            "¿Qué se comprueba al cerrar?",
+            "¿En qué evidencia se basa valoración?"
           ]
         }
       ]
     }
-  ]
+  ],
+  "status": "developed_content"
 }
