@@ -2,7 +2,7 @@
 
 Portal de consulta y estudio para el proyecto **Videojuego Star Trek**.
 
-## v0.3 — currículo oficial compartido con el juego
+## v0.3.1 — Manual del Candidato y currículo oficial compartido con el juego
 
 La web no simula la carrera del videojuego. Su función es permitir consultar, estudiar, practicar y hacer tests fuera del juego usando exactamente el mismo currículo y los mismos manuales.
 
@@ -48,3 +48,27 @@ Diseñado y adaptado para:
 - MSI Raider GE78 HX 14V — horizontal.
 - Samsung Galaxy Tab S9+ — horizontal y vertical.
 - Realme GT Neo 2 — vertical.
+
+
+## Preparación para el acceso
+
+La web incorpora el **Manual del Candidato v1.0** como material previo a la admisión.
+
+Fuente canónica del videojuego:
+
+`gameplay/careers/academy_path/access/candidate_manual_v1_0.md`
+
+Repositorio fuente: `robdor80/Videojuego_StarTrek`.
+
+En la web se estructura como:
+
+- 00 — Antes de empezar
+- ACC-01 — Federación y Flota Estelar
+- ACC-02 — Cómo se organiza Starfleet
+- ACC-03 — Vida a bordo de una nave
+- ACC-04 — Tecnología básica de Starfleet
+- ACC-05 — Principios del servicio en Starfleet
+- Qué NO forma parte del temario de acceso
+- Prepararse para la admisión
+
+El contenido mostrado procede del manual aprobado; la interfaz no añade conocimientos externos al temario.

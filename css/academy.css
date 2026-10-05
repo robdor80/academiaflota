@@ -353,3 +353,126 @@
 .profile-form input{min-height:44px;padding:0 12px;border:1px solid #aebbc8;border-radius:6px;background:#fff}
 .settings-import{display:inline-flex;align-items:center}
 .settings-panel__footer{padding:22px 28px;color:#7a8794;font-size:.75rem}
+
+
+/* v0.3.1 — Manual del Candidato / preparación para el acceso */
+.access-dashboard-card{
+  margin-bottom:18px;
+  border-top:4px solid var(--gold);
+}
+.access-dashboard-card>p{
+  max-width:900px;
+  margin:0 0 18px;
+}
+
+.curriculum-section--access{
+  border-top:4px solid var(--gold);
+}
+.access-manual-card{
+  display:grid;
+  grid-template-columns:58px minmax(0,1fr) auto;
+  align-items:center;
+  gap:16px;
+  width:100%;
+  margin-bottom:20px;
+  padding:18px;
+  border:1px solid #cfd7df;
+  border-radius:8px;
+  background:linear-gradient(180deg,#fbfcfd,#f6f8fa);
+  text-align:left;
+  cursor:pointer;
+}
+.access-manual-card:hover{
+  border-color:#9eacba;
+  background:#fff;
+  box-shadow:0 8px 24px rgba(20,32,45,.06);
+}
+.access-manual-card__icon{
+  display:grid;
+  place-items:center;
+  width:52px;
+  height:52px;
+  border-radius:50%;
+  background:var(--navy-900);
+  color:var(--gold-soft);
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:1.4rem;
+  font-weight:800;
+}
+.access-manual-card__body small{
+  display:block;
+  color:var(--blue);
+  font-size:.68rem;
+  font-weight:800;
+  letter-spacing:.08em;
+}
+.access-manual-card__body strong{
+  display:block;
+  margin-top:4px;
+  color:var(--navy-900);
+  font-size:1.18rem;
+}
+.access-manual-card__body em{
+  display:block;
+  margin-top:4px;
+  color:var(--muted);
+  font-size:.82rem;
+  font-style:normal;
+}
+.access-manual-card__action{
+  color:#2f7354;
+  font-size:.72rem;
+  font-weight:850;
+  white-space:nowrap;
+}
+.preacademy-heading{
+  margin:4px 0 10px;
+  color:var(--navy-900);
+  font-size:1rem;
+}
+
+.lesson-section-title{
+  max-width:950px;
+  margin:34px 0 12px;
+  padding-top:20px;
+  border-top:1px solid var(--line);
+  color:var(--navy-900);
+  font-size:1.45rem;
+}
+.definition-block{
+  max-width:950px;
+  margin:16px 0;
+  padding:16px 18px;
+  border:1px solid var(--line);
+  border-left:4px solid var(--navy-700);
+  border-radius:6px;
+  background:#f8fafb;
+}
+.definition-block strong{
+  display:block;
+  margin-bottom:5px;
+  color:var(--navy-900);
+}
+.definition-block p{
+  margin:0;
+  color:#3c4a58;
+  line-height:1.65;
+}
+.lesson-content>ol{
+  max-width:950px;
+  color:#3c4a58;
+  font-size:1.02rem;
+  line-height:1.75;
+}
+.lesson-content>ol li+li{margin-top:8px}
+
+.lesson-quote{
+  max-width:950px;
+  margin:0 0 28px;
+  padding:18px 20px;
+  border-left:4px solid var(--gold);
+  background:#faf7f0;
+  color:#46515d;
+  font-size:1rem;
+  line-height:1.65;
+}
