@@ -3,30 +3,28 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#071421">
-  <meta name="description" content="Portal académico de la Academia de la Flota Estelar. Formación, prácticas, evaluaciones y expediente de cadetes.">
+  <meta name="theme-color" content="#0b1b2e">
+  <meta name="description" content="Portal de estudio de la Academia de la Flota Estelar. Consulta, práctica y evaluación del currículo del videojuego.">
   <title>Academia de la Flota Estelar</title>
-  <link rel="stylesheet" href="css/base.css?v=0.2.3">
-  <link rel="stylesheet" href="css/academy.css?v=0.2.3">
-  <link rel="stylesheet" href="css/responsive.css?v=0.2.3">
-  <script type="module" src="js/app.js?v=0.2.3"></script>
+  <link rel="stylesheet" href="css/base.css?v=0.3.0">
+  <link rel="stylesheet" href="css/academy.css?v=0.3.0">
+  <link rel="stylesheet" href="css/responsive.css?v=0.3.0">
+  <script type="module" src="js/app.js?v=0.3.0"></script>
 </head>
 <body>
   <div class="orientation-lock" aria-hidden="true">
     <div class="orientation-lock__card">
-      <img src="assets/img/academia-flota-estelar.svg?v=0.2.3" alt="">
+      <img src="assets/img/academia-flota-estelar.svg?v=0.3.0" alt="">
       <strong>ACADEMIA DE LA FLOTA ESTELAR</strong>
-      <h1>Reoriente el terminal</h1>
-      <p>El acceso móvil está diseñado para orientación vertical.</p>
+      <h1>Reoriente el dispositivo</h1>
+      <p>La versión móvil está diseñada para orientación vertical.</p>
     </div>
   </div>
 
   <section id="profile-gateway" class="gateway">
     <header class="gateway__header">
-      <div class="gateway-header__logo">
-        <img src="assets/img/academia-flota-estelar.svg?v=0.2.3" alt="Insignia de la Academia de la Flota Estelar">
-      </div>
-      <div class="gateway-header__title">
+      <img class="gateway__logo" src="assets/img/academia-flota-estelar.svg?v=0.3.0" alt="Insignia de la Academia de la Flota Estelar">
+      <div class="gateway__title">
         <span>FEDERACIÓN UNIDA DE PLANETAS</span>
         <strong>ACADEMIA DE LA FLOTA ESTELAR</strong>
       </div>
@@ -34,64 +32,63 @@
         <span aria-hidden="true">⚙</span><em>Ajustes</em>
       </button>
     </header>
-    <div class="gateway-lcars-strip" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
 
     <main class="gateway__main">
-      <section class="gateway-hero">
-        <span class="gateway-hero__code">RED ACADÉMICA // ACCESO DE CADETES</span>
-        <h1>Portal de Cadetes</h1>
-        <p>Academia de la Flota Estelar · Campus de San Francisco</p>
+      <section class="gateway-intro">
+        <span class="eyebrow">PORTAL ACADÉMICO</span>
+        <h1>Consulta y estudio</h1>
+        <p>El mismo currículo y los mismos manuales del videojuego, disponibles para estudiar y practicar desde cualquier dispositivo.</p>
       </section>
 
       <section class="cadet-access" aria-labelledby="profiles-title">
         <div class="cadet-access__heading">
           <div>
-            <span class="access-kicker">IDENTIFICACIÓN ACADÉMICA</span>
-            <h2 id="profiles-title">Seleccione su expediente</h2>
+            <span class="eyebrow">PERFIL DE ESTUDIO</span>
+            <h2 id="profiles-title">Seleccione un perfil</h2>
           </div>
-          <span class="access-status"><i></i> SISTEMA DISPONIBLE</span>
+          <span class="access-status"><i></i> Disponible</span>
         </div>
 
         <div id="profile-list" class="profile-list"></div>
 
         <div id="empty-profiles" class="empty-state" hidden>
-          <div class="empty-state__mark">SF</div>
+          <div class="empty-state__mark">AF</div>
           <div>
-            <strong>No hay expedientes locales disponibles</strong>
-            <p>Abra Ajustes para registrar o importar un cadete.</p>
+            <strong>No hay perfiles locales</strong>
+            <p>Abra Ajustes para crear o importar uno.</p>
           </div>
           <button class="text-action" type="button" data-open-settings>Abrir Ajustes →</button>
         </div>
 
         <div class="access-footnote">
-          <span>ACCESO LOCAL</span>
-          <p>No se requiere contraseña. Cada expediente mantiene su progreso, prácticas y evaluaciones de forma independiente en este dispositivo.</p>
+          <strong>Acceso local sin contraseña</strong>
+          <p>El perfil solo guarda su progreso de estudio, prácticas y resultados de test en este dispositivo.</p>
         </div>
       </section>
     </main>
 
     <footer class="gateway__footer">
-      <span>ACADEMIA DE LA FLOTA ESTELAR // SISTEMA DE INFORMACIÓN ACADÉMICA</span>
-      <span>NODO LOCAL · EXPEDIENTES DE CADETES</span>
+      <span>ACADEMIA DE LA FLOTA ESTELAR · SISTEMA ACADÉMICO DE CONSULTA</span>
+      <span>Currículo compartido con el videojuego</span>
     </footer>
   </section>
 
   <div id="academy-portal" class="portal" hidden>
     <header class="official-header">
       <div class="official-header__inner">
-        <button class="portal-brand" data-route="dashboard" aria-label="Inicio de la Academia">
-          <img src="assets/img/academia-flota-estelar.svg?v=0.2.3" alt="">
+        <button class="portal-brand" data-route="dashboard" aria-label="Inicio">
+          <img src="assets/img/academia-flota-estelar.svg?v=0.3.0" alt="">
           <span>
             <strong>ACADEMIA DE LA FLOTA ESTELAR</strong>
-            <small>Portal académico</small>
+            <small>Portal de estudio</small>
           </span>
         </button>
 
         <div class="header-actions">
           <div class="cadet-chip">
-            <span>CADETE</span>
+            <span>PERFIL</span>
             <strong id="header-cadet-name">—</strong>
-            <button id="switch-profile" type="button">Cambiar alumno</button>
+            <button id="switch-profile" type="button">Cambiar perfil</button>
           </div>
           <button class="settings-trigger settings-trigger--light" type="button" data-open-settings aria-label="Ajustes">
             <span aria-hidden="true">⚙</span><em>Ajustes</em>
@@ -99,77 +96,103 @@
         </div>
       </div>
 
-      <nav class="primary-nav" aria-label="Navegación académica">
+      <nav class="primary-nav" aria-label="Navegación principal">
         <button data-route="dashboard" class="is-active">Inicio</button>
         <button data-route="studies">Plan de estudios</button>
         <button data-route="practices">Prácticas</button>
-        <button data-route="evaluations">Evaluaciones</button>
-        <button data-route="record">Expediente</button>
+        <button data-route="evaluations">Tests</button>
+        <button data-route="record">Perfil</button>
       </nav>
-      <div class="academy-stripe" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="header-rule" aria-hidden="true"></div>
     </header>
 
     <main id="portal-main" class="portal-main">
       <section class="view is-active" data-view="dashboard">
         <div class="page-heading page-heading--welcome">
           <div>
-            <span class="overline">PORTAL DEL CADETE</span>
-            <h1>Bienvenido, <span id="welcome-name">Cadete</span></h1>
-            <p>Acceda a su formación, continúe el temario pendiente y consulte su expediente académico.</p>
+            <span class="overline">BIBLIOTECA ACADÉMICA</span>
+            <h1>Hola, <span id="welcome-name">Roberto</span></h1>
+            <p>Consulta el currículo, continúa el estudio de Sensores o practica antes de volver al videojuego.</p>
           </div>
-          <img class="page-heading__seal" src="assets/img/academia-flota-estelar.svg?v=0.2.3" alt="">
+          <img class="page-heading__seal" src="assets/img/academia-flota-estelar.svg?v=0.3.0" alt="">
         </div>
 
         <div class="status-grid">
-          <article class="stat-card"><span>PROGRESO // SENSORES</span><strong id="dashboard-study-progress">0%</strong><p id="dashboard-study-copy">0 de 16 módulos estudiados.</p></article>
-          <article class="stat-card"><span>PRÁCTICAS</span><strong id="dashboard-practice-progress">0/6</strong><p>Ejercicios de Academia revisados.</p></article>
-          <article class="stat-card"><span>MEJOR EVALUACIÓN</span><strong id="dashboard-best-score">—</strong><p id="dashboard-attempts-copy">Sin intentos registrados.</p></article>
+          <article class="stat-card">
+            <span>SENSORES // ESTUDIO</span>
+            <strong id="dashboard-study-progress">0%</strong>
+            <p id="dashboard-study-copy">0 de 16 unidades estudiadas.</p>
+          </article>
+          <article class="stat-card">
+            <span>PRÁCTICAS</span>
+            <strong id="dashboard-practice-progress">0/6</strong>
+            <p>Ejercicios revisados.</p>
+          </article>
+          <article class="stat-card">
+            <span>MEJOR TEST</span>
+            <strong id="dashboard-best-score">—</strong>
+            <p id="dashboard-attempts-copy">Sin intentos registrados.</p>
+          </article>
         </div>
 
         <div class="dashboard-layout">
           <section class="official-card">
             <div class="card-heading">
-              <div><span class="overline">FORMACIÓN ACTIVA</span><h2>Sistemas de nave</h2></div>
-              <span class="badge badge--open">1 MÓDULO DISPONIBLE</span>
+              <div>
+                <span class="overline">MATERIAL DISPONIBLE</span>
+                <h2>Operaciones de Sensores</h2>
+              </div>
+              <span class="badge badge--open">MANUAL DISPONIBLE</span>
             </div>
-            <button class="course-row" data-open-subject="sensores">
-              <span class="course-row__code">SYS-01</span>
-              <span class="course-row__main"><strong>Operaciones de Sensores</strong><small>Manual de Operador v0.1 · 16 unidades</small></span>
-              <span class="course-row__progress"><i id="dashboard-progress-bar"></i></span>
-              <span>Continuar →</span>
-            </button>
+            <div class="quick-study-grid">
+              <button class="quick-study" data-open-study="sensores-i">
+                <span>2.ª clase · Trimestre 1</span><strong>Sensores I</strong><small>Estado · Barridos · Búsqueda</small>
+              </button>
+              <button class="quick-study" data-open-study="sensores-ii">
+                <span>2.ª clase · Trimestre 2</span><strong>Sensores II</strong><small>Contactos · Seguimiento · Lectura · Interferencias</small>
+              </button>
+              <button class="quick-study" data-open-study="sensores-iii">
+                <span>2.ª clase · Trimestre 3</span><strong>Sensores III</strong><small>Configuración · Resultados · Diagnóstico · Operaciones integradas</small>
+              </button>
+            </div>
           </section>
 
           <aside class="official-card official-card--notice">
-            <span class="overline">PROGRAMA ACADÉMICO</span>
-            <h2>Estudiar. Practicar. Evaluar.</h2>
-            <p>La formación teórica, las prácticas y las evaluaciones forman un único expediente académico que prepara al cadete para operar en el RPG.</p>
+            <span class="overline">CÓMO USAR ESTA WEB</span>
+            <h2>El juego marca la carrera. Aquí estudias.</h2>
+            <p>Todo el currículo permanece consultable. La web no desbloquea cursos ni simula la progresión del personaje.</p>
           </aside>
         </div>
       </section>
 
       <section class="view" data-view="studies">
-        <div class="page-heading"><div><span class="overline">FORMACIÓN ACADÉMICA</span><h1>Plan de estudios</h1><p>Programas de formación técnica para operaciones a bordo.</p></div></div>
-        <div class="catalogue">
-          <button class="catalogue-item catalogue-item--active" data-open-subject="sensores">
-            <span class="catalogue-item__number">01</span>
-            <div><span class="overline">SISTEMAS DE NAVE</span><h2>Operaciones de Sensores</h2><p>Detección, barridos, búsqueda, seguimiento, lectura sensorial, interferencias, diagnóstico y procedimientos.</p><div class="progress-line"><i id="catalogue-progress-bar"></i></div><small id="catalogue-progress-copy">0 de 16 unidades estudiadas</small></div>
-            <span class="badge badge--open">DISPONIBLE</span>
-          </button>
-          <article class="catalogue-item catalogue-item--locked"><span class="catalogue-item__number">02</span><div><span class="overline">SISTEMAS DE NAVE</span><h2>Navegación / CONN</h2><p>Programa pendiente de incorporación.</p></div><span class="badge">PRÓXIMAMENTE</span></article>
-          <article class="catalogue-item catalogue-item--locked"><span class="catalogue-item__number">03</span><div><span class="overline">SISTEMAS DE NAVE</span><h2>Ingeniería</h2><p>Programa pendiente de incorporación.</p></div><span class="badge">PRÓXIMAMENTE</span></article>
+        <div class="page-heading">
+          <div>
+            <span class="overline">CURRÍCULO OFICIAL DEL JUEGO</span>
+            <h1>Plan de estudios</h1>
+            <p>Los contenidos se organizan exactamente por clase, trimestre, materia y unidad. Nada está bloqueado por el perfil.</p>
+          </div>
         </div>
+        <div id="curriculum-container" class="curriculum"></div>
       </section>
 
       <section class="view" data-view="subject">
         <div class="subject-layout">
           <aside class="subject-sidebar">
             <button class="text-button" data-route="studies">← Volver al plan de estudios</button>
-            <div class="subject-sidebar__title"><span class="overline">SYS-01</span><h2>Operaciones de Sensores</h2><p>Manual de Operador v0.1</p></div>
+            <div class="subject-sidebar__title">
+              <span class="overline" id="subject-code">SENSORES</span>
+              <h2 id="subject-title">Sensores I</h2>
+              <p id="subject-subtitle">Cadete de 2.ª clase · Trimestre 1</p>
+            </div>
             <div id="module-list" class="module-list"></div>
           </aside>
+
           <article class="reader">
-            <div class="reader__meta"><span id="reader-position">UNIDAD 00 / 15</span><span id="reader-completion">PROGRESO 0%</span></div>
+            <div class="reader__meta">
+              <span id="reader-position">UNIDAD 01</span>
+              <span id="reader-completion">PROGRESO 0%</span>
+            </div>
             <div id="lesson-content" class="lesson-content"></div>
             <div class="reader__controls">
               <button id="prev-module" class="button button--secondary">← Anterior</button>
@@ -181,7 +204,13 @@
       </section>
 
       <section class="view" data-view="practices">
-        <div class="page-heading"><div><span class="overline">ENTRENAMIENTO PREVIO</span><h1>Prácticas</h1><p>Ejercicios para razonar procedimientos antes de ejecutarlos en una nave del RPG.</p></div></div>
+        <div class="page-heading">
+          <div>
+            <span class="overline">PRÁCTICA FUERA DEL JUEGO</span>
+            <h1>Prácticas</h1>
+            <p>Ejercicios del mismo material académico para preparar procedimientos antes de ejecutarlos en el juego.</p>
+          </div>
+        </div>
         <div id="practice-list" class="practice-list"></div>
       </section>
 
@@ -191,64 +220,94 @@
       </section>
 
       <section class="view" data-view="evaluations">
-        <div class="page-heading"><div><span class="overline">CONTROL DE CONOCIMIENTOS</span><h1>Evaluaciones</h1><p>Pruebas académicas vinculadas al expediente del alumno.</p></div></div>
+        <div class="page-heading">
+          <div>
+            <span class="overline">AUTOEVALUACIÓN</span>
+            <h1>Tests</h1>
+            <p>Pruebas de estudio basadas en los mismos manuales que utiliza el videojuego.</p>
+          </div>
+        </div>
+
         <article class="evaluation-card">
-          <div><span class="overline">EVALUACIÓN TEÓRICA // SYS-01</span><h2>Operaciones de Sensores</h2><p>10 preguntas · aprobado: 80 % · resultado guardado en el expediente.</p><small id="evaluation-history-summary">Sin intentos previos.</small></div>
-          <button id="start-evaluation" class="button button--primary">Iniciar evaluación</button>
+          <div>
+            <span class="overline">TEST DE SENSORES</span>
+            <h2>Operaciones de Sensores</h2>
+            <p>10 preguntas · aprobado orientativo: 80 % · resultado guardado en este perfil.</p>
+            <small id="evaluation-history-summary">Sin intentos previos.</small>
+          </div>
+          <button id="start-evaluation" class="button button--primary">Iniciar test</button>
         </article>
       </section>
 
       <section class="view" data-view="evaluation">
-        <button class="text-button" data-route="evaluations">← Salir de la evaluación</button>
+        <button class="text-button" data-route="evaluations">← Salir del test</button>
         <div id="evaluation-container" class="evaluation-container"></div>
       </section>
 
       <section class="view" data-view="record">
-        <div class="page-heading"><div><span class="overline">EXPEDIENTE ACADÉMICO LOCAL</span><h1 id="record-name">Cadete</h1><p>Resumen de formación registrado en este dispositivo.</p></div></div>
+        <div class="page-heading">
+          <div>
+            <span class="overline">PERFIL LOCAL DE ESTUDIO</span>
+            <h1 id="record-name">Roberto</h1>
+            <p>Resumen de lo estudiado, las prácticas realizadas y los tests completados en este navegador.</p>
+          </div>
+        </div>
+
         <div id="record-summary" class="record-grid"></div>
+
         <section class="official-card record-management">
-          <div><span class="overline">GESTIÓN DEL EXPEDIENTE</span><h2>Portabilidad del perfil</h2><p>Exporte una copia JSON para conservar el progreso o trasladarlo a otro dispositivo.</p></div>
-          <div class="record-management__actions"><button id="export-profile" class="button button--primary">Exportar perfil JSON</button><button id="delete-profile" class="button button--danger">Eliminar perfil local</button></div>
+          <div>
+            <span class="overline">COPIA Y TRASLADO</span>
+            <h2>Portabilidad del perfil</h2>
+            <p>Exporte una copia JSON para conservar su progreso o trasladarlo a otro dispositivo.</p>
+          </div>
+          <div class="record-management__actions">
+            <button id="export-profile" class="button button--primary">Exportar perfil JSON</button>
+            <button id="delete-profile" class="button button--danger">Eliminar perfil local</button>
+          </div>
         </section>
       </section>
     </main>
 
     <footer class="portal-footer">
-      <span>ACADEMIA DE LA FLOTA ESTELAR // SISTEMA DE INFORMACIÓN ACADÉMICA</span>
-      <span>Sesión local · <strong id="footer-cadet-name">—</strong></span>
+      <span>ACADEMIA DE LA FLOTA ESTELAR · PORTAL DE ESTUDIO</span>
+      <span>Perfil local · <strong id="footer-cadet-name">—</strong></span>
     </footer>
   </div>
 
   <div id="settings-backdrop" class="settings-backdrop" hidden>
     <aside class="settings-panel" role="dialog" aria-modal="true" aria-labelledby="settings-title">
       <header class="settings-panel__header">
-        <div><span>ACADEMIA DE LA FLOTA ESTELAR</span><h2 id="settings-title">Ajustes</h2></div>
+        <div>
+          <span>ACADEMIA DE LA FLOTA ESTELAR</span>
+          <h2 id="settings-title">Ajustes</h2>
+        </div>
         <button id="close-settings" class="settings-close" type="button" aria-label="Cerrar ajustes">×</button>
       </header>
 
       <section class="settings-section">
-        <span class="settings-section__code">ALUMNADO // GESTIÓN LOCAL</span>
-        <h3>Registrar nuevo alumno</h3>
-        <p>Cree un expediente independiente en este dispositivo.</p>
+        <span class="settings-section__code">PERFILES LOCALES</span>
+        <h3>Crear nuevo perfil</h3>
+        <p>Cree un perfil independiente para conservar progreso, prácticas y resultados.</p>
         <form id="create-profile-form" class="profile-form">
-          <label for="profile-name">Nombre del alumno</label>
+          <label for="profile-name">Nickname</label>
           <div class="profile-form__row">
-            <input id="profile-name" name="profileName" maxlength="48" autocomplete="off" placeholder="Nombre del cadete" required>
-            <button class="button button--primary" type="submit">Crear expediente</button>
+            <input id="profile-name" name="profileName" maxlength="48" autocomplete="off" placeholder="Ej. Roberto" required>
+            <button class="button button--primary" type="submit">Crear perfil</button>
           </div>
         </form>
       </section>
 
       <section class="settings-section">
-        <span class="settings-section__code">TRANSFERENCIA // JSON</span>
-        <h3>Importar expediente</h3>
+        <span class="settings-section__code">TRANSFERENCIA DE PERFIL</span>
+        <h3>Importar expediente JSON</h3>
         <p>Recupere un perfil exportado previamente desde otro navegador o dispositivo.</p>
         <label class="button button--secondary settings-import" for="import-profile">Seleccionar archivo JSON</label>
         <input id="import-profile" type="file" accept=".json,application/json" hidden>
       </section>
 
       <footer class="settings-panel__footer">
-        <span>Los perfiles se almacenan localmente. No se utilizan contraseñas.</span>
+        <span>Los perfiles se almacenan localmente y no forman parte de la partida del videojuego.</span>
       </footer>
     </aside>
   </div>
