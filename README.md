@@ -1,37 +1,45 @@
 # Academia de la Flota Estelar
 
-Web de estudio inmersiva para el proyecto **Videojuego Star Trek**.
+Portal académico inmersivo y utilizable para el proyecto **Videojuego Star Trek**.
 
-## v0.1
+## v0.2 — Portal institucional y perfiles de cadete
 
-Primera versión funcional de la Academia:
+La Academia deja de plantearse como una consola de nave y pasa a funcionar como un portal académico oficial.
 
-- Interfaz LCARS/Starfleet Academy.
-- HTML, CSS, JavaScript y datos separados.
-- Responsive orientado a:
-  - MSI Raider GE78 HX 14V — escritorio horizontal.
-  - Samsung Galaxy Tab S9+ — horizontal y vertical.
-  - Realme GT Neo 2 — móvil vertical.
-- Móvil horizontal muestra aviso de reorientación.
-- Catálogo inicial de Sistemas de Nave.
-- Manual de Operador de Sensores v0.1 convertido desde el PDF fuente a contenido web estructurado.
-- Índice navegable de 16 módulos.
-- Progreso local por módulo mediante localStorage.
-- Sin PDF embebido ni visor documental.
+### Funcionalidad
 
-## Estructura
+- Acceso inicial de alumnado.
+- Múltiples perfiles locales sin contraseña.
+- Cada cadete conserva de forma independiente:
+  - módulos estudiados;
+  - prácticas realizadas y respuestas escritas;
+  - intentos y notas de evaluación.
+- Exportación e importación de perfiles en JSON.
+- Diseño institucional Starfleet Academy, limpio y sobrio.
+- Insignia de la Academia en el acceso y cabecera.
+- Plan de estudios.
+- Manual completo de Operaciones de Sensores v0.1.
+- Seis prácticas basadas en los ejercicios oficiales del manual.
+- Evaluación teórica de Sensores de 10 preguntas, con aprobado al 80 %.
+- Expediente académico individual.
+- Responsive para PC, tablet horizontal/vertical y móvil vertical.
 
-```text
-/
-├── index.html
-├── css/
-│   ├── base.css
-│   ├── lcars.css
-│   └── responsive.css
-├── js/
-│   └── app.js
-└── data/
-    └── sensores.json
-```
+### Persistencia
 
-El PDF es material fuente. La web representa su información como contenido nativo HTML/CSS/JS.
+Los perfiles se almacenan mediante localStorage y la sesión activa mediante sessionStorage. El JSON exportable permite copia de seguridad y traslado entre dispositivos.
+
+### Estructura
+
+- index.html
+- css/base.css
+- css/academy.css
+- css/responsive.css
+- js/app.js
+- js/storage.js
+- js/study.js
+- js/evaluation.js
+- data/sensores.json
+- data/practicas-sensores.json
+- data/evaluacion-sensores.json
+
+El PDF de Sensores no se publica ni se incrusta: actúa únicamente como fuente del contenido académico.
