@@ -1,283 +1,269 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "course_id": "REG-302",
-  "status": "generated_from_authoritative_curriculum",
+  "status": "editorially_aligned_with_developed_manual",
+  "source_manual": "gameplay/careers/academy_path/study_materials/third_class/REG-302/MANUAL_v1_0.md",
   "question_count": 24,
+  "rule": "No question may require knowledge that is not explicitly taught in REG-302 or established prerequisites.",
   "questions": [
     {
       "id": "REG-302-Q001",
       "unit_id": "REG-302-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica órdenes y da un ejemplo operativo.",
+      "type": "compare",
+      "prompt_es": "Diferencia capacidad técnica y autoridad.",
       "answer_key_es": [
-        "órdenes",
-        "ejemplo coherente",
-        "límite o contexto"
+        "posibilidad física",
+        "permiso/competencia"
       ]
     },
     {
       "id": "REG-302-Q002",
       "unit_id": "REG-302-U01",
-      "type": "relationship",
-      "prompt_es": "Relaciona órdenes con reglamentos. ¿Qué información pasa de uno a otro?",
+      "type": "knowledge",
+      "prompt_es": "¿Qué factores influyen en una orden?",
       "answer_key_es": [
-        "órdenes",
-        "reglamentos",
-        "flujo de información o dependencia"
+        "función",
+        "cadena",
+        "misión",
+        "regulación",
+        "autoridad especial"
       ]
     },
     {
       "id": "REG-302-Q003",
       "unit_id": "REG-302-U01",
-      "type": "scenario",
-      "prompt_es": "Analizar autoridad en tres casos. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "judgment",
+      "prompt_es": "¿Cumplir una orden elimina responsabilidad?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "no"
       ]
     },
     {
       "id": "REG-302-Q004",
       "unit_id": "REG-302-U01",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Autoridad y regulación, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "procedure",
+      "prompt_es": "¿Qué haces ante duda razonable?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "identificar",
+        "aclarar",
+        "consultar",
+        "escalar"
       ]
     },
     {
       "id": "REG-302-Q005",
       "unit_id": "REG-302-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica finalidad y da un ejemplo operativo.",
+      "type": "short_answer",
+      "prompt_es": "¿Cuál es el principio central de la Primera Directiva?",
       "answer_key_es": [
-        "finalidad",
-        "ejemplo coherente",
-        "límite o contexto"
+        "no interferencia"
       ]
     },
     {
       "id": "REG-302-Q006",
       "unit_id": "REG-302-U02",
-      "type": "relationship",
-      "prompt_es": "Relaciona finalidad con no interferencia. ¿Qué información pasa de uno a otro?",
+      "type": "knowledge",
+      "prompt_es": "Nombra ámbitos de interferencia.",
       "answer_key_es": [
-        "finalidad",
-        "no interferencia",
-        "flujo de información o dependencia"
+        "cultural",
+        "tecnológica",
+        "social",
+        "política",
+        "primer contacto"
       ]
     },
     {
       "id": "REG-302-Q007",
       "unit_id": "REG-302-U02",
-      "type": "scenario",
-      "prompt_es": "Resolver casos introductorios. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "judgment",
+      "prompt_es": "¿La Directiva bloquea físicamente una acción?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "no",
+        "puede desobedecerse con consecuencias"
       ]
     },
     {
       "id": "REG-302-Q008",
       "unit_id": "REG-302-U02",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Directiva Principal, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "knowledge",
+      "prompt_es": "Nombra consecuencias de infracción.",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "advertencia",
+        "investigación",
+        "disciplina",
+        "diplomacia",
+        "reputación"
       ]
     },
     {
       "id": "REG-302-Q009",
       "unit_id": "REG-302-U03",
       "type": "knowledge",
-      "prompt_es": "Explica duda y da un ejemplo operativo.",
+      "prompt_es": "¿Qué puede hacer problemática una orden?",
       "answer_key_es": [
-        "duda",
-        "ejemplo coherente",
-        "límite o contexto"
+        "ambigua",
+        "contradictoria",
+        "imposible",
+        "conflicto",
+        "regulación",
+        "autoridad"
       ]
     },
     {
       "id": "REG-302-Q010",
       "unit_id": "REG-302-U03",
-      "type": "relationship",
-      "prompt_es": "Relaciona duda con aclaración. ¿Qué información pasa de uno a otro?",
+      "type": "judgment",
+      "prompt_es": "¿Por qué no inventar doctrina?",
       "answer_key_es": [
-        "duda",
-        "aclaración",
-        "flujo de información o dependencia"
+        "solo normas validadas",
+        "evitar falsas excepciones"
       ]
     },
     {
       "id": "REG-302-Q011",
       "unit_id": "REG-302-U03",
-      "type": "scenario",
-      "prompt_es": "Responder a una orden discutible sin improvisar doctrina. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "procedure",
+      "prompt_es": "¿Qué busca una aclaración?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "resolver ambigüedad/conflicto"
       ]
     },
     {
       "id": "REG-302-Q012",
       "unit_id": "REG-302-U03",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Órdenes problemáticas, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "knowledge",
+      "prompt_es": "¿Qué datos ayudan a resolver conflicto entre órdenes?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "fecha",
+        "prioridad",
+        "autoridad",
+        "sustitución"
       ]
     },
     {
       "id": "REG-302-Q013",
       "unit_id": "REG-302-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica médica y da un ejemplo operativo.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué significa autoridad especial?",
       "answer_key_es": [
-        "médica",
-        "ejemplo coherente",
-        "límite o contexto"
+        "competencia limitada a ámbito"
       ]
     },
     {
       "id": "REG-302-Q014",
       "unit_id": "REG-302-U04",
-      "type": "relationship",
-      "prompt_es": "Relaciona médica con seguridad. ¿Qué información pasa de uno a otro?",
+      "type": "knowledge",
+      "prompt_es": "¿Qué puede hacer el CMO?",
       "answer_key_es": [
-        "médica",
-        "seguridad",
-        "flujo de información o dependencia"
+        "declarar no apto",
+        "incluido CO",
+        "documentación"
       ]
     },
     {
       "id": "REG-302-Q015",
       "unit_id": "REG-302-U04",
-      "type": "scenario",
-      "prompt_es": "Identificar ámbitos de autoridad. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "judgment",
+      "prompt_es": "¿El CMO asume mando automáticamente?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "no",
+        "sucesión normal"
       ]
     },
     {
       "id": "REG-302-Q016",
       "unit_id": "REG-302-U04",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Autoridad especial, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "short_answer",
+      "prompt_es": "¿Por qué ninguna autoridad es universal?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "ámbitos y límites distintos"
       ]
     },
     {
       "id": "REG-302-Q017",
       "unit_id": "REG-302-U05",
-      "type": "knowledge",
-      "prompt_es": "Explica need-to-know y da un ejemplo operativo.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué significa need-to-know?",
       "answer_key_es": [
-        "need-to-know",
-        "ejemplo coherente",
-        "límite o contexto"
+        "necesidad funcional real"
       ]
     },
     {
       "id": "REG-302-Q018",
       "unit_id": "REG-302-U05",
-      "type": "relationship",
-      "prompt_es": "Relaciona need-to-know con clasificación. ¿Qué información pasa de uno a otro?",
+      "type": "judgment",
+      "prompt_es": "¿Por qué rango no basta?",
       "answer_key_es": [
-        "need-to-know",
-        "clasificación",
-        "flujo de información o dependencia"
+        "clearance",
+        "función",
+        "misión",
+        "autorización"
       ]
     },
     {
       "id": "REG-302-Q019",
       "unit_id": "REG-302-U05",
-      "type": "scenario",
-      "prompt_es": "Resolver una petición improcedente. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "knowledge",
+      "prompt_es": "¿Qué debe comprobarse antes de divulgar?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "destinatario",
+        "necesidad",
+        "nivel",
+        "contexto",
+        "medio"
       ]
     },
     {
       "id": "REG-302-Q020",
       "unit_id": "REG-302-U05",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Información restringida, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "judgment",
+      "prompt_es": "¿Por qué una negativa no debe revelar detalles?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "evitar fuga indirecta"
       ]
     },
     {
       "id": "REG-302-Q021",
       "unit_id": "REG-302-U06",
       "type": "knowledge",
-      "prompt_es": "Explica hechos y da un ejemplo operativo.",
+      "prompt_es": "¿Qué cinco capas se separan?",
       "answer_key_es": [
         "hechos",
-        "ejemplo coherente",
-        "límite o contexto"
+        "norma",
+        "autoridad",
+        "decisión",
+        "registro"
       ]
     },
     {
       "id": "REG-302-Q022",
       "unit_id": "REG-302-U06",
-      "type": "relationship",
-      "prompt_es": "Relaciona hechos con regla. ¿Qué información pasa de uno a otro?",
+      "type": "judgment",
+      "prompt_es": "¿Por qué empezar por hechos?",
       "answer_key_es": [
-        "hechos",
-        "regla",
-        "flujo de información o dependencia"
+        "evitar suposiciones"
       ]
     },
     {
       "id": "REG-302-Q023",
       "unit_id": "REG-302-U06",
-      "type": "scenario",
-      "prompt_es": "Analizar caso complejo moderado. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué evitar hindsight?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "decisión se valora con información disponible"
       ]
     },
     {
       "id": "REG-302-Q024",
       "unit_id": "REG-302-U06",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Caso integrado de responsabilidad, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "short_answer",
+      "prompt_es": "¿Qué debe quedar registrado?",
       "answer_key_es": [
-        "información disponible entonces",
+        "hechos",
+        "autoridad",
         "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "resultado",
+        "correcciones"
       ]
     }
   ]
