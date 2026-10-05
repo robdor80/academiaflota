@@ -1,283 +1,292 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "course_id": "DUT-402",
-  "status": "generated_from_authoritative_curriculum",
+  "status": "editorially_aligned_with_developed_manual",
+  "source_manual": "gameplay/careers/academy_path/study_materials/fourth_class/DUT-402/MANUAL_v1_0.md",
   "question_count": 24,
+  "rule": "No question may require knowledge that is not explicitly taught in DUT-402 or established prerequisites.",
   "questions": [
     {
       "id": "DUT-402-Q001",
       "unit_id": "DUT-402-U01",
-      "type": "short_answer",
-      "prompt_es": "Explica turno y su relevancia operativa.",
+      "type": "compare",
+      "prompt_es": "Diferencia turno y puesto.",
       "answer_key_es": [
-        "turno",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "turno = franja temporal",
+        "puesto = función"
       ]
     },
     {
       "id": "DUT-402-Q002",
       "unit_id": "DUT-402-U01",
-      "type": "compare",
-      "prompt_es": "Compara turno con puesto. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "knowledge",
+      "prompt_es": "¿Qué patrones de guardia admite el proyecto?",
       "answer_key_es": [
-        "turno",
-        "puesto",
-        "diferencia aplicada"
+        "tres turnos",
+        "cuatro turnos",
+        "personalizado"
       ]
     },
     {
       "id": "DUT-402-Q003",
       "unit_id": "DUT-402-U01",
-      "type": "scenario",
-      "prompt_es": "Situación: Leer una asignación de guardia. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué convierte una franja horaria en una guardia profesional?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "asignación",
+        "responsabilidad",
+        "función",
+        "continuidad",
+        "autoridad"
       ]
     },
     {
       "id": "DUT-402-Q004",
       "unit_id": "DUT-402-U01",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Qué es una guardia y cómo lo corregirías.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué la supervisión no elimina responsabilidad?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "el cadete debe atender",
+        "informar",
+        "seguir procedimiento",
+        "reconocer límites"
       ]
     },
     {
       "id": "DUT-402-Q005",
       "unit_id": "DUT-402-U02",
-      "type": "short_answer",
-      "prompt_es": "Explica puntualidad y su relevancia operativa.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué llegar tarde puede afectar a otra persona?",
       "answer_key_es": [
-        "puntualidad",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "prolonga relevo",
+        "deja puesto sin cubrir",
+        "rompe continuidad"
       ]
     },
     {
       "id": "DUT-402-Q006",
       "unit_id": "DUT-402-U02",
-      "type": "compare",
-      "prompt_es": "Compara puntualidad con estado personal. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "scenario",
+      "prompt_es": "Si estás lesionado o extremadamente fatigado antes de una guardia, ¿qué debes hacer?",
       "answer_key_es": [
-        "puntualidad",
-        "estado personal",
-        "diferencia aplicada"
+        "comunicar estado",
+        "no ocultarlo",
+        "permitir evaluación/sustitución"
       ]
     },
     {
       "id": "DUT-402-Q007",
       "unit_id": "DUT-402-U02",
-      "type": "scenario",
-      "prompt_es": "Situación: Escena de incorporación. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "knowledge",
+      "prompt_es": "¿Qué debe incluir un briefing de incorporación?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "estado",
+        "órdenes",
+        "incidencias",
+        "pendientes",
+        "riesgos",
+        "cambios"
       ]
     },
     {
       "id": "DUT-402-Q008",
       "unit_id": "DUT-402-U02",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Presentación al puesto y cómo lo corregirías.",
+      "type": "judgment",
+      "prompt_es": "¿Una nueva guardia cancela órdenes vigentes?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "no",
+        "deben transferirse",
+        "siguen hasta cancelación/cambio"
       ]
     },
     {
       "id": "DUT-402-Q009",
       "unit_id": "DUT-402-U03",
       "type": "short_answer",
-      "prompt_es": "Explica entrega/recepción y su relevancia operativa.",
+      "prompt_es": "¿Cuál es el objetivo de un relevo?",
       "answer_key_es": [
-        "entrega/recepción",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "transferir responsabilidad",
+        "preservar contexto",
+        "continuidad"
       ]
     },
     {
       "id": "DUT-402-Q010",
       "unit_id": "DUT-402-U03",
-      "type": "compare",
-      "prompt_es": "Compara entrega/recepción con estado del puesto. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "knowledge",
+      "prompt_es": "Nombra cinco elementos que debe contener un relevo.",
       "answer_key_es": [
-        "entrega/recepción",
-        "estado del puesto",
-        "diferencia aplicada"
+        "estado",
+        "órdenes",
+        "pendientes",
+        "incidencias",
+        "riesgos",
+        "cambios"
       ]
     },
     {
       "id": "DUT-402-Q011",
       "unit_id": "DUT-402-U03",
-      "type": "scenario",
-      "prompt_es": "Situación: Realizar un relevo básico. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "procedure",
+      "prompt_es": "¿Qué debe hacer quien recibe el relevo?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "escuchar",
+        "comprobar",
+        "preguntar",
+        "confirmar",
+        "asumir"
       ]
     },
     {
       "id": "DUT-402-Q012",
       "unit_id": "DUT-402-U03",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Relevo y cómo lo corregirías.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué un relevo no debe narrar cada minuto del turno?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "debe ser relevante",
+        "evitar ruido",
+        "centrarse en continuidad"
       ]
     },
     {
       "id": "DUT-402-Q013",
       "unit_id": "DUT-402-U04",
       "type": "short_answer",
-      "prompt_es": "Explica qué informar y su relevancia operativa.",
+      "prompt_es": "¿Qué debe lograr un informe profesional?",
       "answer_key_es": [
-        "qué informar",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "transmitir hecho/cambio útil",
+        "permitir decisión",
+        "claridad"
       ]
     },
     {
       "id": "DUT-402-Q014",
       "unit_id": "DUT-402-U04",
-      "type": "compare",
-      "prompt_es": "Compara qué informar con a quién. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué no todo se informa al Capitán?",
       "answer_key_es": [
-        "qué informar",
-        "a quién",
-        "diferencia aplicada"
+        "cadena de responsabilidad",
+        "destinatario adecuado",
+        "evitar saturación"
       ]
     },
     {
       "id": "DUT-402-Q015",
       "unit_id": "DUT-402-U04",
       "type": "scenario",
-      "prompt_es": "Situación: Emitir un informe breve. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "prompt_es": "Convierte «creo que algo raro pasa con los sensores» en un informe profesional.",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "hecho observado",
+        "calidad/estado",
+        "sin conclusión no demostrada",
+        "solicitud si procede"
       ]
     },
     {
       "id": "DUT-402-Q016",
       "unit_id": "DUT-402-U04",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Informes básicos y cómo lo corregirías.",
+      "type": "knowledge",
+      "prompt_es": "¿Cuándo puede ser necesaria confirmación de recepción?",
       "answer_key_es": [
-        "identificación del error",
+        "información importante",
         "riesgo",
-        "corrección",
-        "prevención"
+        "continuidad",
+        "orden crítica"
       ]
     },
     {
       "id": "DUT-402-Q017",
       "unit_id": "DUT-402-U05",
-      "type": "short_answer",
-      "prompt_es": "Explica responsable de puesto y su relevancia operativa.",
+      "type": "compare",
+      "prompt_es": "Diferencia responsable de puesto, supervisor y jefe de departamento.",
       "answer_key_es": [
-        "responsable de puesto",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "operación directa",
+        "supervisión/autorización",
+        "gestión del área"
       ]
     },
     {
       "id": "DUT-402-Q018",
       "unit_id": "DUT-402-U05",
-      "type": "compare",
-      "prompt_es": "Compara responsable de puesto con supervisor. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "scenario",
+      "prompt_es": "Una avería afecta a todo tu departamento. ¿A qué nivel debe escalarse normalmente?",
       "answer_key_es": [
-        "responsable de puesto",
-        "supervisor",
-        "diferencia aplicada"
+        "jefatura departamental",
+        "supervisor según contexto",
+        "Mando si afecta misión"
       ]
     },
     {
       "id": "DUT-402-Q019",
       "unit_id": "DUT-402-U05",
-      "type": "scenario",
-      "prompt_es": "Situación: Escalar tres incidencias de distinta gravedad. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué escalar no es fracasar?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "reconoce límites",
+        "protege misión",
+        "usa autoridad correcta"
       ]
     },
     {
       "id": "DUT-402-Q020",
       "unit_id": "DUT-402-U05",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Cadena de responsabilidad y cómo lo corregirías.",
+      "type": "judgment",
+      "prompt_es": "¿Qué problemas causa escalar todo?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "saturación",
+        "ralentiza",
+        "evita responsabilidad propia"
       ]
     },
     {
       "id": "DUT-402-Q021",
       "unit_id": "DUT-402-U06",
       "type": "short_answer",
-      "prompt_es": "Explica monitorización y su relevancia operativa.",
+      "prompt_es": "¿Qué significa monitorizar activamente?",
       "answer_key_es": [
-        "monitorización",
-        "relación con la práctica de la unidad",
-        "límites o contexto"
+        "conocer normal",
+        "detectar cambios",
+        "valorar relevancia",
+        "actuar cuando corresponde"
       ]
     },
     {
       "id": "DUT-402-Q022",
       "unit_id": "DUT-402-U06",
-      "type": "compare",
-      "prompt_es": "Compara monitorización con tareas periódicas. Indica una diferencia que pueda cambiar una decisión.",
+      "type": "knowledge",
+      "prompt_es": "Nombra tres tareas propias de una guardia rutinaria.",
       "answer_key_es": [
-        "monitorización",
-        "tareas periódicas",
-        "diferencia aplicada"
+        "verificaciones",
+        "informes",
+        "mantenimiento programado",
+        "registros",
+        "monitorización"
       ]
     },
     {
       "id": "DUT-402-Q023",
       "unit_id": "DUT-402-U06",
-      "type": "scenario",
-      "prompt_es": "Situación: Simulación de una guardia sin crisis. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "type": "procedure",
+      "prompt_es": "¿Qué debe hacerse antes de terminar un turno?",
       "answer_key_es": [
-        "acción inicial coherente",
-        "información necesaria",
-        "escalado/autoridad",
-        "comunicación"
+        "cerrar/marcar pendientes",
+        "actualizar estado",
+        "preparar relevo",
+        "transferir incidencias",
+        "confirmar entrega"
       ]
     },
     {
       "id": "DUT-402-Q024",
       "unit_id": "DUT-402-U06",
-      "type": "error_analysis",
-      "prompt_es": "Describe un error plausible relacionado con Guardia rutinaria y cómo lo corregirías.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué una guardia sin crisis sigue siendo evaluable?",
       "answer_key_es": [
-        "identificación del error",
-        "riesgo",
-        "corrección",
-        "prevención"
+        "constancia",
+        "disciplina",
+        "continuidad",
+        "atención",
+        "procedimiento"
       ]
     }
   ]
