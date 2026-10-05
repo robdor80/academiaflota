@@ -1,7 +1,7 @@
 {
   "subject": "Ingeniería y gestión de energía I",
   "code": "ENG-301",
-  "version": "1.0",
+  "version": "1.1",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/ENG-301/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/ENG-301/MANUAL_v1_0.md",
@@ -20,30 +20,17 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Comprender y operar de forma supervisada los fundamentos de energía y sistemas de nave."
+          "text": "El estado energético se entiende mediante fuentes activas, reservas, consumo, margen disponible, prioridades y degradaciones."
         },
         {
-          "type": "heading",
-          "text": "Contenidos"
+          "type": "definition",
+          "term": "Reservas",
+          "text": "Capacidad para absorber picos y contingencias; no son infinitas."
         },
         {
-          "type": "bullets",
-          "items": [
-            "fuentes",
-            "reservas",
-            "consumo",
-            "margen"
-          ]
-        },
-        {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Leer estado energético."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Preguntas aplicadas."
+          "type": "definition",
+          "term": "Margen",
+          "text": "Capacidad disponible antes de comprometer estabilidad, reservas u otros consumidores."
         },
         {
           "type": "heading",
@@ -52,24 +39,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica fuentes en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Leer estado energético.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/engineering/engineering_loop.json",
-            "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json"
+            "¿Qué forma el estado energético?",
+            "¿Para qué sirven reservas?",
+            "¿Por qué no son infinitas?",
+            "Nombra consumidores importantes.",
+            "¿Qué significa margen?"
           ]
         }
       ]
@@ -81,30 +55,26 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Comprender y operar de forma supervisada los fundamentos de energía y sistemas de nave."
+          "text": "Distribuir energía significa mantener, aumentar, reducir, aislar o redirigir capacidad hacia cargas concretas."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Prioridades"
         },
         {
           "type": "bullets",
           "items": [
-            "prioridades",
-            "rutas",
-            "cargas",
-            "aislamiento"
+            "Seguridad",
+            "Misión",
+            "Mando",
+            "Emergencia",
+            "Estado técnico"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Asignar energía en escenario simple."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Práctica."
+          "label": "RECURSO COMPARTIDO",
+          "text": "Aumentar un sistema puede reducir capacidad disponible para otro."
         },
         {
           "type": "heading",
@@ -113,24 +83,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica prioridades en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Asignar energía en escenario simple.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/engineering/engineering_loop.json",
-            "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json"
+            "¿Qué significa distribuir energía?",
+            "¿De dónde vienen prioridades?",
+            "¿Qué ocurre con una ruta dañada?",
+            "¿Para qué sirve aislar?",
+            "¿Por qué una reasignación tiene coste?"
           ]
         }
       ]
@@ -142,30 +99,22 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Comprender y operar de forma supervisada los fundamentos de energía y sistemas de nave."
+          "text": "Una orden de vuelo tiene coste técnico. Ingeniería debe informar si es posible, cuánto puede sostenerse, qué riesgo existe y qué efecto tiene sobre otros sistemas."
         },
         {
-          "type": "heading",
-          "text": "Contenidos"
+          "type": "definition",
+          "term": "Máximo",
+          "text": "Capacidad pico disponible en condiciones concretas."
         },
         {
-          "type": "bullets",
-          "items": [
-            "impulso",
-            "warp",
-            "demanda",
-            "limitaciones"
-          ]
+          "type": "definition",
+          "term": "Sostenible",
+          "text": "Capacidad que puede mantenerse durante un periodo razonable."
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Relacionar orden de vuelo con capacidad técnica."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Caso."
+          "label": "INFORME ÚTIL",
+          "text": "«Warp 8 disponible durante 12 minutos; warp 7 sostenible» es más útil que un simple «no»."
         },
         {
           "type": "heading",
@@ -174,24 +123,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica impulso en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Relacionar orden de vuelo con capacidad técnica.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/engineering/engineering_loop.json",
-            "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json"
+            "¿Qué debe responder Ingeniería?",
+            "Diferencia máximo y sostenible.",
+            "¿Qué limita warp?",
+            "¿Qué es capacidad de emergencia?",
+            "¿Cómo se reporta una limitación?"
           ]
         }
       ]
@@ -203,30 +139,25 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Comprender y operar de forma supervisada los fundamentos de energía y sistemas de nave."
+          "text": "Los sistemas dependen de energía, datos, refrigeración, control, hardware y autorización."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Ejemplos"
         },
         {
           "type": "bullets",
           "items": [
-            "sensores",
-            "escudos",
-            "transportadores",
-            "soporte vital"
+            "Sensores: matrices, potencia, integridad y procesamiento",
+            "Escudos: recursos y estado",
+            "Transportadores: energía, condiciones, objetivo y autorización",
+            "Soporte vital: habitabilidad y seguridad"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Trazar dependencias."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación de razonamiento."
+          "label": "EFECTO CASCADA",
+          "text": "Un fallo de distribución puede degradar Sensores y aumentar la incertidumbre de Navegación."
         },
         {
           "type": "heading",
@@ -235,24 +166,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica sensores en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Trazar dependencias.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/engineering/engineering_loop.json",
-            "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json"
+            "Nombra dependencias posibles.",
+            "¿De qué depende Sensores?",
+            "¿Por qué soporte vital tiene alta prioridad?",
+            "¿Qué limita transportadores?",
+            "Explica un efecto cascada."
           ]
         }
       ]
@@ -263,31 +181,41 @@
       "subtitle": "UNIDAD 05 · ENG-301",
       "blocks": [
         {
-          "type": "p",
-          "text": "Comprender y operar de forma supervisada los fundamentos de energía y sistemas de nave."
+          "type": "callout",
+          "label": "SÍNTOMA ≠ CAUSA",
+          "text": "«La matriz pierde resolución» describe un síntoma. Daño, potencia, calibración o interferencia pueden ser causas distintas."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Diagnóstico básico"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Confirmar síntoma",
+            "Consultar estado",
+            "Ejecutar prueba",
+            "Comparar",
+            "Aislar causa probable",
+            "Actuar o escalar"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Acciones"
         },
         {
           "type": "bullets",
           "items": [
-            "síntoma",
-            "lectura",
-            "causa probable",
-            "escalado"
+            "Diagnosticar",
+            "Redirigir energía",
+            "Aislar",
+            "Reiniciar",
+            "Asignar reparación",
+            "Parche temporal",
+            "Sustituir componente",
+            "Ejecutar prueba"
           ]
-        },
-        {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Diagnosticar fallo preparado."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Práctica supervisada."
         },
         {
           "type": "heading",
@@ -296,24 +224,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica síntoma en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Diagnosticar fallo preparado.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/engineering/engineering_loop.json",
-            "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json"
+            "Diferencia síntoma y causa.",
+            "¿Qué pasos sigue diagnóstico?",
+            "Nombra cuatro acciones.",
+            "¿Qué limita al cadete?",
+            "¿Cuándo debe escalar?"
           ]
         }
       ]
@@ -325,30 +240,25 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Comprender y operar de forma supervisada los fundamentos de energía y sistemas de nave."
+          "text": "El puente necesita un informe técnico que describa estado, capacidad, riesgo, tiempo estimado y restricciones."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Estados útiles"
         },
         {
           "type": "bullets",
           "items": [
-            "estado",
-            "capacidad",
-            "riesgo",
-            "ETA técnica"
+            "Normal",
+            "Degradado",
+            "Limitado",
+            "Crítico",
+            "Fuera de servicio"
           ]
         },
         {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Emitir informe al puente."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación de claridad."
+          "type": "p",
+          "text": "Una ETA técnica debe expresar incertidumbre cuando corresponda. Ingeniería puede recomendar una opción; Mando decide cuando la cuestión excede la autoridad técnica."
         },
         {
           "type": "heading",
@@ -357,27 +267,15 @@
         {
           "type": "numbered",
           "items": [
-            "Explica estado en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Emitir informe al puente.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/engineering/engineering_loop.json",
-            "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json"
+            "¿Qué necesita saber el puente?",
+            "¿Por qué «está mal» no sirve?",
+            "¿Qué significa informar capacidad?",
+            "¿Qué acompaña una ETA incierta?",
+            "¿Quién decide cuando excede Ingeniería?"
           ]
         }
       ]
     }
-  ]
+  ],
+  "status": "developed_content"
 }
