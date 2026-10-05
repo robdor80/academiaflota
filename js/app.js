@@ -1,9 +1,9 @@
 import {
   getProfiles, createProfile, setActiveProfile, clearActiveProfile, getActiveProfile,
   updateProfile, deleteProfile, exportProfile, importProfile
-} from "./storage.js?v=0.3.0";
-import { loadStudyData, renderLesson } from "./study.js?v=0.3.0";
-import { loadEvaluationData, renderExam, gradeExam, renderResult } from "./evaluation.js?v=0.3.0";
+} from "./storage.js?v=0.3.1";
+import { loadStudyData, renderLesson } from "./study.js?v=0.3.1";
+import { loadEvaluationData, renderExam, gradeExam, renderResult } from "./evaluation.js?v=0.3.1";
 
 const app = {
   profile: null,
@@ -367,7 +367,7 @@ function syncModuleButtons() {
   const modules = currentModules();
   Array.from(moduleList.querySelectorAll(".module-btn")).forEach(function(button,index) {
     const id = modules[index].id;
-    const done = profileStudy().completedModules.includes(id);
+    const done = currentStudyProgress().completedModules.includes(id);
     button.classList.toggle("is-active",index === app.activeModule);
     button.classList.toggle("is-complete",done);
     button.querySelector(".module-btn__done").textContent = done ? "✓" : "";
