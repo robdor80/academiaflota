@@ -1,0 +1,284 @@
+{
+  "schema_version": "1.0.0",
+  "course_id": "ACA-401",
+  "status": "generated_from_authoritative_curriculum",
+  "question_count": 24,
+  "questions": [
+    {
+      "id": "ACA-401-Q001",
+      "unit_id": "ACA-401-U01",
+      "type": "short_answer",
+      "prompt_es": "Explica años y trimestres y su relevancia operativa.",
+      "answer_key_es": [
+        "años y trimestres",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "ACA-401-Q002",
+      "unit_id": "ACA-401-U01",
+      "type": "compare",
+      "prompt_es": "Compara años y trimestres con matrícula. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "años y trimestres",
+        "matrícula",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "ACA-401-Q003",
+      "unit_id": "ACA-401-U01",
+      "type": "scenario",
+      "prompt_es": "Situación: Consultar calendario y expediente de ejemplo. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "ACA-401-Q004",
+      "unit_id": "ACA-401-U01",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Ciclo académico y condición de cadete y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "ACA-401-Q005",
+      "unit_id": "ACA-401-U02",
+      "type": "short_answer",
+      "prompt_es": "Explica honestidad y su relevancia operativa.",
+      "answer_key_es": [
+        "honestidad",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "ACA-401-Q006",
+      "unit_id": "ACA-401-U02",
+      "type": "compare",
+      "prompt_es": "Compara honestidad con autoría. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "honestidad",
+        "autoría",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "ACA-401-Q007",
+      "unit_id": "ACA-401-U02",
+      "type": "scenario",
+      "prompt_es": "Situación: Resolver casos de colaboración válida y fraude. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "ACA-401-Q008",
+      "unit_id": "ACA-401-U02",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Integridad académica y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "ACA-401-Q009",
+      "unit_id": "ACA-401-U03",
+      "type": "short_answer",
+      "prompt_es": "Explica normas y su relevancia operativa.",
+      "answer_key_es": [
+        "normas",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "ACA-401-Q010",
+      "unit_id": "ACA-401-U03",
+      "type": "compare",
+      "prompt_es": "Compara normas con puntualidad. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "normas",
+        "puntualidad",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "ACA-401-Q011",
+      "unit_id": "ACA-401-U03",
+      "type": "scenario",
+      "prompt_es": "Situación: Responder a una incidencia menor de disciplina. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "ACA-401-Q012",
+      "unit_id": "ACA-401-U03",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Disciplina y conducta y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "ACA-401-Q013",
+      "unit_id": "ACA-401-U04",
+      "type": "short_answer",
+      "prompt_es": "Explica aulas y su relevancia operativa.",
+      "answer_key_es": [
+        "aulas",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "ACA-401-Q014",
+      "unit_id": "ACA-401-U04",
+      "type": "compare",
+      "prompt_es": "Compara aulas con residencias. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "aulas",
+        "residencias",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "ACA-401-Q015",
+      "unit_id": "ACA-401-U04",
+      "type": "scenario",
+      "prompt_es": "Situación: Planificar una jornada de cadete. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "ACA-401-Q016",
+      "unit_id": "ACA-401-U04",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Rutinas y uso de instalaciones y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "ACA-401-Q017",
+      "unit_id": "ACA-401-U05",
+      "type": "short_answer",
+      "prompt_es": "Explica pedir ayuda y su relevancia operativa.",
+      "answer_key_es": [
+        "pedir ayuda",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "ACA-401-Q018",
+      "unit_id": "ACA-401-U05",
+      "type": "compare",
+      "prompt_es": "Compara pedir ayuda con refuerzo. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "pedir ayuda",
+        "refuerzo",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "ACA-401-Q019",
+      "unit_id": "ACA-401-U05",
+      "type": "scenario",
+      "prompt_es": "Situación: Solicitar una tutoría y acordar plan de recuperación. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "ACA-401-Q020",
+      "unit_id": "ACA-401-U05",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Tutorías y recuperación y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "ACA-401-Q021",
+      "unit_id": "ACA-401-U06",
+      "type": "short_answer",
+      "prompt_es": "Explica responsabilidad compartida y su relevancia operativa.",
+      "answer_key_es": [
+        "responsabilidad compartida",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "ACA-401-Q022",
+      "unit_id": "ACA-401-U06",
+      "type": "compare",
+      "prompt_es": "Compara responsabilidad compartida con reparto de tareas. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "responsabilidad compartida",
+        "reparto de tareas",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "ACA-401-Q023",
+      "unit_id": "ACA-401-U06",
+      "type": "scenario",
+      "prompt_es": "Situación: Actividad de equipo con roles definidos. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "ACA-401-Q024",
+      "unit_id": "ACA-401-U06",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Trabajo en equipo académico y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    }
+  ]
+}

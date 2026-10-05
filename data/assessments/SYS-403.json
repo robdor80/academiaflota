@@ -1,0 +1,284 @@
+{
+  "schema_version": "1.0.0",
+  "course_id": "SYS-403",
+  "status": "generated_from_authoritative_curriculum",
+  "question_count": 24,
+  "questions": [
+    {
+      "id": "SYS-403-Q001",
+      "unit_id": "SYS-403-U01",
+      "type": "short_answer",
+      "prompt_es": "Explica fuentes y su relevancia operativa.",
+      "answer_key_es": [
+        "fuentes",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "SYS-403-Q002",
+      "unit_id": "SYS-403-U01",
+      "type": "compare",
+      "prompt_es": "Compara fuentes con distribución. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "fuentes",
+        "distribución",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "SYS-403-Q003",
+      "unit_id": "SYS-403-U01",
+      "type": "scenario",
+      "prompt_es": "Situación: Seguir un diagrama funcional simplificado. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "SYS-403-Q004",
+      "unit_id": "SYS-403-U01",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Arquitectura de sistemas y energía y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "SYS-403-Q005",
+      "unit_id": "SYS-403-U02",
+      "type": "short_answer",
+      "prompt_es": "Explica función y su relevancia operativa.",
+      "answer_key_es": [
+        "función",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "SYS-403-Q006",
+      "unit_id": "SYS-403-U02",
+      "type": "compare",
+      "prompt_es": "Compara función con uso subluz. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "función",
+        "uso subluz",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "SYS-403-Q007",
+      "unit_id": "SYS-403-U02",
+      "type": "scenario",
+      "prompt_es": "Situación: Interpretar estado básico de propulsión. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "SYS-403-Q008",
+      "unit_id": "SYS-403-U02",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Propulsión de impulso y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "SYS-403-Q009",
+      "unit_id": "SYS-403-U03",
+      "type": "short_answer",
+      "prompt_es": "Explica función y su relevancia operativa.",
+      "answer_key_es": [
+        "función",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "SYS-403-Q010",
+      "unit_id": "SYS-403-U03",
+      "type": "compare",
+      "prompt_es": "Compara función con campo warp. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "función",
+        "campo warp",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "SYS-403-Q011",
+      "unit_id": "SYS-403-U03",
+      "type": "scenario",
+      "prompt_es": "Situación: Relacionar misión, distancia y uso de warp sin cálculo avanzado. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "SYS-403-Q012",
+      "unit_id": "SYS-403-U03",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Propulsión warp y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "SYS-403-Q013",
+      "unit_id": "SYS-403-U04",
+      "type": "short_answer",
+      "prompt_es": "Explica soporte vital y su relevancia operativa.",
+      "answer_key_es": [
+        "soporte vital",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "SYS-403-Q014",
+      "unit_id": "SYS-403-U04",
+      "type": "compare",
+      "prompt_es": "Compara soporte vital con replicadores. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "soporte vital",
+        "replicadores",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "SYS-403-Q015",
+      "unit_id": "SYS-403-U04",
+      "type": "scenario",
+      "prompt_es": "Situación: Resolver qué sistema soporta una necesidad concreta. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "SYS-403-Q016",
+      "unit_id": "SYS-403-U04",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Habitabilidad y servicios y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "SYS-403-Q017",
+      "unit_id": "SYS-403-U05",
+      "type": "short_answer",
+      "prompt_es": "Explica escudos y su relevancia operativa.",
+      "answer_key_es": [
+        "escudos",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "SYS-403-Q018",
+      "unit_id": "SYS-403-U05",
+      "type": "compare",
+      "prompt_es": "Compara escudos con armamento. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "escudos",
+        "armamento",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "SYS-403-Q019",
+      "unit_id": "SYS-403-U05",
+      "type": "scenario",
+      "prompt_es": "Situación: Analizar dependencias generales. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "SYS-403-Q020",
+      "unit_id": "SYS-403-U05",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Defensa y entorno de misión y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "SYS-403-Q021",
+      "unit_id": "SYS-403-U06",
+      "type": "short_answer",
+      "prompt_es": "Explica degradación y su relevancia operativa.",
+      "answer_key_es": [
+        "degradación",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "SYS-403-Q022",
+      "unit_id": "SYS-403-U06",
+      "type": "compare",
+      "prompt_es": "Compara degradación con sistema primario/secundario. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "degradación",
+        "sistema primario/secundario",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "SYS-403-Q023",
+      "unit_id": "SYS-403-U06",
+      "type": "scenario",
+      "prompt_es": "Situación: Seguir una avería sencilla entre sistemas. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "SYS-403-Q024",
+      "unit_id": "SYS-403-U06",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Fallos y dependencias y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    }
+  ]
+}

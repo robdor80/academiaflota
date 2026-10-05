@@ -1,0 +1,284 @@
+{
+  "schema_version": "1.0.0",
+  "course_id": "STF-401",
+  "status": "generated_from_authoritative_curriculum",
+  "question_count": 24,
+  "questions": [
+    {
+      "id": "STF-401-Q001",
+      "unit_id": "STF-401-U01",
+      "type": "short_answer",
+      "prompt_es": "Explica misión general y su relevancia operativa.",
+      "answer_key_es": [
+        "misión general",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "STF-401-Q002",
+      "unit_id": "STF-401-U01",
+      "type": "compare",
+      "prompt_es": "Compara misión general con exploración, ciencia, diplomacia, asistencia y defensa. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "misión general",
+        "exploración, ciencia, diplomacia, asistencia y defensa",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "STF-401-Q003",
+      "unit_id": "STF-401-U01",
+      "type": "scenario",
+      "prompt_es": "Situación: Clasificar situaciones por función institucional sin recurrir a trivia. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "STF-401-Q004",
+      "unit_id": "STF-401-U01",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Starfleet como institución y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "STF-401-Q005",
+      "unit_id": "STF-401-U02",
+      "type": "short_answer",
+      "prompt_es": "Explica jerarquía de oficiales y su relevancia operativa.",
+      "answer_key_es": [
+        "jerarquía de oficiales",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "STF-401-Q006",
+      "unit_id": "STF-401-U02",
+      "type": "compare",
+      "prompt_es": "Compara jerarquía de oficiales con divisas del estándar del proyecto. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "jerarquía de oficiales",
+        "divisas del estándar del proyecto",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "STF-401-Q007",
+      "unit_id": "STF-401-U02",
+      "type": "scenario",
+      "prompt_es": "Situación: Identificar rango, puesto y autoridad en ejemplos de tripulación. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "STF-401-Q008",
+      "unit_id": "STF-401-U02",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Rangos y divisas y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "STF-401-Q009",
+      "unit_id": "STF-401-U03",
+      "type": "short_answer",
+      "prompt_es": "Explica tratamiento a superiores, iguales y subordinados y su relevancia operativa.",
+      "answer_key_es": [
+        "tratamiento a superiores, iguales y subordinados",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "STF-401-Q010",
+      "unit_id": "STF-401-U03",
+      "type": "compare",
+      "prompt_es": "Compara tratamiento a superiores, iguales y subordinados con uso de rango y cargo. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "tratamiento a superiores, iguales y subordinados",
+        "uso de rango y cargo",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "STF-401-Q011",
+      "unit_id": "STF-401-U03",
+      "type": "scenario",
+      "prompt_es": "Situación: Diálogos de presentación, reporte y petición de permiso. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "STF-401-Q012",
+      "unit_id": "STF-401-U03",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Formas de tratamiento y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "STF-401-Q013",
+      "unit_id": "STF-401-U04",
+      "type": "short_answer",
+      "prompt_es": "Explica autoridad ordinaria y su relevancia operativa.",
+      "answer_key_es": [
+        "autoridad ordinaria",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "STF-401-Q014",
+      "unit_id": "STF-401-U04",
+      "type": "compare",
+      "prompt_es": "Compara autoridad ordinaria con sucesión básica. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "autoridad ordinaria",
+        "sucesión básica",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "STF-401-Q015",
+      "unit_id": "STF-401-U04",
+      "type": "scenario",
+      "prompt_es": "Situación: Resolver a quién informar y de quién aceptar una orden en casos simples. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "STF-401-Q016",
+      "unit_id": "STF-401-U04",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Cadena de mando y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "STF-401-Q017",
+      "unit_id": "STF-401-U05",
+      "type": "short_answer",
+      "prompt_es": "Explica Mando y su relevancia operativa.",
+      "answer_key_es": [
+        "Mando",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "STF-401-Q018",
+      "unit_id": "STF-401-U05",
+      "type": "compare",
+      "prompt_es": "Compara Mando con Operaciones. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "Mando",
+        "Operaciones",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "STF-401-Q019",
+      "unit_id": "STF-401-U05",
+      "type": "scenario",
+      "prompt_es": "Situación: Construir el organigrama básico de una nave de ejemplo. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "STF-401-Q020",
+      "unit_id": "STF-401-U05",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Divisiones, departamentos y puestos y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "STF-401-Q021",
+      "unit_id": "STF-401-U06",
+      "type": "short_answer",
+      "prompt_es": "Explica presentación al servicio y su relevancia operativa.",
+      "answer_key_es": [
+        "presentación al servicio",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "STF-401-Q022",
+      "unit_id": "STF-401-U06",
+      "type": "compare",
+      "prompt_es": "Compara presentación al servicio con recepción y acuse de órdenes. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "presentación al servicio",
+        "recepción y acuse de órdenes",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "STF-401-Q023",
+      "unit_id": "STF-401-U06",
+      "type": "scenario",
+      "prompt_es": "Situación: Mini-simulación de llegada a una unidad y primera instrucción. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "STF-401-Q024",
+      "unit_id": "STF-401-U06",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Protocolo integrado y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    }
+  ]
+}

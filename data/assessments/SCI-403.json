@@ -1,0 +1,284 @@
+{
+  "schema_version": "1.0.0",
+  "course_id": "SCI-403",
+  "status": "generated_from_authoritative_curriculum",
+  "question_count": 24,
+  "questions": [
+    {
+      "id": "SCI-403-Q001",
+      "unit_id": "SCI-403-U01",
+      "type": "short_answer",
+      "prompt_es": "Explica observación y su relevancia operativa.",
+      "answer_key_es": [
+        "observación",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "SCI-403-Q002",
+      "unit_id": "SCI-403-U01",
+      "type": "compare",
+      "prompt_es": "Compara observación con pregunta. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "observación",
+        "pregunta",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "SCI-403-Q003",
+      "unit_id": "SCI-403-U01",
+      "type": "scenario",
+      "prompt_es": "Situación: Analizar una observación sencilla. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "SCI-403-Q004",
+      "unit_id": "SCI-403-U01",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Método científico y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "SCI-403-Q005",
+      "unit_id": "SCI-403-U02",
+      "type": "short_answer",
+      "prompt_es": "Explica precisión y su relevancia operativa.",
+      "answer_key_es": [
+        "precisión",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "SCI-403-Q006",
+      "unit_id": "SCI-403-U02",
+      "type": "compare",
+      "prompt_es": "Compara precisión con ruido. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "precisión",
+        "ruido",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "SCI-403-Q007",
+      "unit_id": "SCI-403-U02",
+      "type": "scenario",
+      "prompt_es": "Situación: Comparar lecturas con distinta calidad. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "SCI-403-Q008",
+      "unit_id": "SCI-403-U02",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Medición e incertidumbre y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "SCI-403-Q009",
+      "unit_id": "SCI-403-U03",
+      "type": "short_answer",
+      "prompt_es": "Explica detección y su relevancia operativa.",
+      "answer_key_es": [
+        "detección",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "SCI-403-Q010",
+      "unit_id": "SCI-403-U03",
+      "type": "compare",
+      "prompt_es": "Compara detección con medición. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "detección",
+        "medición",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "SCI-403-Q011",
+      "unit_id": "SCI-403-U03",
+      "type": "scenario",
+      "prompt_es": "Situación: Relacionar fenómeno con medición posible. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "SCI-403-Q012",
+      "unit_id": "SCI-403-U03",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Qué es un sensor y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "SCI-403-Q013",
+      "unit_id": "SCI-403-U04",
+      "type": "short_answer",
+      "prompt_es": "Explica ventajas y su relevancia operativa.",
+      "answer_key_es": [
+        "ventajas",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "SCI-403-Q014",
+      "unit_id": "SCI-403-U04",
+      "type": "compare",
+      "prompt_es": "Compara ventajas con costes. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "ventajas",
+        "costes",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "SCI-403-Q015",
+      "unit_id": "SCI-403-U04",
+      "type": "scenario",
+      "prompt_es": "Situación: Elegir modo en situaciones sencillas. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "SCI-403-Q016",
+      "unit_id": "SCI-403-U04",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Activo y pasivo y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "SCI-403-Q017",
+      "unit_id": "SCI-403-U05",
+      "type": "short_answer",
+      "prompt_es": "Explica contacto y su relevancia operativa.",
+      "answer_key_es": [
+        "contacto",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "SCI-403-Q018",
+      "unit_id": "SCI-403-U05",
+      "type": "compare",
+      "prompt_es": "Compara contacto con tracking inicial. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "contacto",
+        "tracking inicial",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "SCI-403-Q019",
+      "unit_id": "SCI-403-U05",
+      "type": "scenario",
+      "prompt_es": "Situación: Distinguir datos de conclusión. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "SCI-403-Q020",
+      "unit_id": "SCI-403-U05",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Contacto, lectura e interpretación y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "SCI-403-Q021",
+      "unit_id": "SCI-403-U06",
+      "type": "short_answer",
+      "prompt_es": "Explica objetivo y su relevancia operativa.",
+      "answer_key_es": [
+        "objetivo",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "SCI-403-Q022",
+      "unit_id": "SCI-403-U06",
+      "type": "compare",
+      "prompt_es": "Compara objetivo con configuración preparada. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "objetivo",
+        "configuración preparada",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "SCI-403-Q023",
+      "unit_id": "SCI-403-U06",
+      "type": "scenario",
+      "prompt_es": "Situación: Ejecutar un scan guiado en consola real cuando exista. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "SCI-403-Q024",
+      "unit_id": "SCI-403-U06",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Barrido básico y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    }
+  ]
+}

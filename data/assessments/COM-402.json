@@ -1,0 +1,284 @@
+{
+  "schema_version": "1.0.0",
+  "course_id": "COM-402",
+  "status": "generated_from_authoritative_curriculum",
+  "question_count": 24,
+  "questions": [
+    {
+      "id": "COM-402-Q001",
+      "unit_id": "COM-402-U01",
+      "type": "short_answer",
+      "prompt_es": "Explica llamada y su relevancia operativa.",
+      "answer_key_es": [
+        "llamada",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "COM-402-Q002",
+      "unit_id": "COM-402-U01",
+      "type": "compare",
+      "prompt_es": "Compara llamada con canal. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "llamada",
+        "canal",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "COM-402-Q003",
+      "unit_id": "COM-402-U01",
+      "type": "scenario",
+      "prompt_es": "Situación: Realizar comunicaciones internas sencillas. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "COM-402-Q004",
+      "unit_id": "COM-402-U01",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Comunicador y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "COM-402-Q005",
+      "unit_id": "COM-402-U02",
+      "type": "short_answer",
+      "prompt_es": "Explica función y su relevancia operativa.",
+      "answer_key_es": [
+        "función",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "COM-402-Q006",
+      "unit_id": "COM-402-U02",
+      "type": "compare",
+      "prompt_es": "Compara función con modos generales. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "función",
+        "modos generales",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "COM-402-Q007",
+      "unit_id": "COM-402-U02",
+      "type": "scenario",
+      "prompt_es": "Situación: Obtener una lectura preparada. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "COM-402-Q008",
+      "unit_id": "COM-402-U02",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Tricorder: familiarización y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "COM-402-Q009",
+      "unit_id": "COM-402-U03",
+      "type": "short_answer",
+      "prompt_es": "Explica destinatario y su relevancia operativa.",
+      "answer_key_es": [
+        "destinatario",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "COM-402-Q010",
+      "unit_id": "COM-402-U03",
+      "type": "compare",
+      "prompt_es": "Compara destinatario con mensaje. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "destinatario",
+        "mensaje",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "COM-402-Q011",
+      "unit_id": "COM-402-U03",
+      "type": "scenario",
+      "prompt_es": "Situación: Coordinar una tarea con otro departamento. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "COM-402-Q012",
+      "unit_id": "COM-402-U03",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Comunicaciones internas y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "COM-402-Q013",
+      "unit_id": "COM-402-U04",
+      "type": "short_answer",
+      "prompt_es": "Explica apertura y su relevancia operativa.",
+      "answer_key_es": [
+        "apertura",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "COM-402-Q014",
+      "unit_id": "COM-402-U04",
+      "type": "compare",
+      "prompt_es": "Compara apertura con identificación. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "apertura",
+        "identificación",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "COM-402-Q015",
+      "unit_id": "COM-402-U04",
+      "type": "scenario",
+      "prompt_es": "Situación: Simular una llamada no táctica. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "COM-402-Q016",
+      "unit_id": "COM-402-U04",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Comunicaciones externas básicas y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "COM-402-Q017",
+      "unit_id": "COM-402-U05",
+      "type": "short_answer",
+      "prompt_es": "Explica hecho y su relevancia operativa.",
+      "answer_key_es": [
+        "hecho",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "COM-402-Q018",
+      "unit_id": "COM-402-U05",
+      "type": "compare",
+      "prompt_es": "Compara hecho con solicitud. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "hecho",
+        "solicitud",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "COM-402-Q019",
+      "unit_id": "COM-402-U05",
+      "type": "scenario",
+      "prompt_es": "Situación: Convertir información desordenada en un mensaje profesional. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "COM-402-Q020",
+      "unit_id": "COM-402-U05",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Formato de mensajes y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    },
+    {
+      "id": "COM-402-Q021",
+      "unit_id": "COM-402-U06",
+      "type": "short_answer",
+      "prompt_es": "Explica comunicador y su relevancia operativa.",
+      "answer_key_es": [
+        "comunicador",
+        "relación con la práctica de la unidad",
+        "límites o contexto"
+      ]
+    },
+    {
+      "id": "COM-402-Q022",
+      "unit_id": "COM-402-U06",
+      "type": "compare",
+      "prompt_es": "Compara comunicador con tricorder. Indica una diferencia que pueda cambiar una decisión.",
+      "answer_key_es": [
+        "comunicador",
+        "tricorder",
+        "diferencia aplicada"
+      ]
+    },
+    {
+      "id": "COM-402-Q023",
+      "unit_id": "COM-402-U06",
+      "type": "scenario",
+      "prompt_es": "Situación: Preparar un equipo sencillo para una salida. Explica qué harías primero, qué información necesitas y cuándo escalarías.",
+      "answer_key_es": [
+        "acción inicial coherente",
+        "información necesaria",
+        "escalado/autoridad",
+        "comunicación"
+      ]
+    },
+    {
+      "id": "COM-402-Q024",
+      "unit_id": "COM-402-U06",
+      "type": "error_analysis",
+      "prompt_es": "Describe un error plausible relacionado con Equipo de salida básico y cómo lo corregirías.",
+      "answer_key_es": [
+        "identificación del error",
+        "riesgo",
+        "corrección",
+        "prevención"
+      ]
+    }
+  ]
+}
