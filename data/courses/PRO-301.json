@@ -1,7 +1,7 @@
 {
   "subject": "Procedimientos operativos y trabajo interdepartamental",
   "code": "PRO-301",
-  "version": "1.0",
+  "version": "1.1",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/PRO-301/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/PRO-301/MANUAL_v1_0.md",
@@ -21,30 +21,12 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Convertir acciones aisladas en trabajo coordinado, trazable y profesional."
-        },
-        {
-          "type": "heading",
-          "text": "Contenidos"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "orden",
-            "intención",
-            "responsable",
-            "confirmación"
-          ]
+          "text": "Una orden expresa qué debe lograrse y bajo qué límites. Puede dividirse en tareas con responsable, estado y resultado esperado."
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Descomponer una orden en tareas."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Ejercicio."
+          "label": "RESPONSABILIDAD",
+          "text": "El responsable confirma recepción, comprensión, capacidad y cualquier bloqueo relevante."
         },
         {
           "type": "heading",
@@ -53,25 +35,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica orden en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Descomponer una orden en tareas.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/ship_operations/operational_event_log/operational_event_contract.json",
-            "lore/federation/starfleet/duty_shifts/shift_model.json",
-            "gameplay/orders/starfleet_mission_tasking_order.json"
+            "Diferencia orden e intención.",
+            "¿Por qué se descompone una orden?",
+            "¿Qué debe tener una tarea?",
+            "¿Qué confirma el responsable?",
+            "¿Qué significa responsabilidad profesional?"
           ]
         }
       ]
@@ -83,30 +51,27 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Convertir acciones aisladas en trabajo coordinado, trazable y profesional."
+          "text": "Un informe operativo debe ayudar a decidir. Una estructura útil separa hecho, estado, riesgo y recomendación."
         },
         {
-          "type": "heading",
-          "text": "Contenidos"
+          "type": "definition",
+          "term": "Hecho",
+          "text": "Lo observado directamente."
         },
         {
-          "type": "bullets",
-          "items": [
-            "hechos",
-            "estado",
-            "riesgo",
-            "recomendación"
-          ]
+          "type": "definition",
+          "term": "Estado",
+          "text": "Qué significa ahora para la operación."
         },
         {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Emitir informes de 30 segundos."
+          "type": "definition",
+          "term": "Riesgo",
+          "text": "Qué consecuencia razonable puede aparecer."
         },
         {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación oral."
+          "type": "definition",
+          "term": "Recomendación",
+          "text": "Curso de acción propuesto; no es automáticamente una orden."
         },
         {
           "type": "heading",
@@ -115,25 +80,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica hechos en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Emitir informes de 30 segundos.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/ship_operations/operational_event_log/operational_event_contract.json",
-            "lore/federation/starfleet/duty_shifts/shift_model.json",
-            "gameplay/orders/starfleet_mission_tasking_order.json"
+            "¿Qué cuatro capas puede tener un informe?",
+            "Diferencia hecho y estado.",
+            "¿Qué significa riesgo?",
+            "¿Quién convierte recomendación en decisión?",
+            "¿Qué prioriza un informe breve?"
           ]
         }
       ]
@@ -145,30 +96,28 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Convertir acciones aisladas en trabajo coordinado, trazable y profesional."
+          "text": "Un handoff transfiere una tarea, caso o paquete de información entre responsables."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Contenido mínimo"
         },
         {
           "type": "bullets",
           "items": [
-            "datos necesarios",
-            "formato",
-            "recepción",
-            "confirmación"
+            "Identificador",
+            "Contexto",
+            "Datos relevantes",
+            "Procedencia",
+            "Prioridad",
+            "Estado",
+            "Petición concreta"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Transferir un caso entre departamentos."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Práctica."
+          "label": "CONFIRMACIÓN",
+          "text": "La transferencia no termina al enviar: debe existir recepción y responsabilidad confirmadas."
         },
         {
           "type": "heading",
@@ -177,25 +126,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica datos necesarios en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Transferir un caso entre departamentos.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/ship_operations/operational_event_log/operational_event_contract.json",
-            "lore/federation/starfleet/duty_shifts/shift_model.json",
-            "gameplay/orders/starfleet_mission_tasking_order.json"
+            "¿Qué es un handoff?",
+            "¿Qué datos necesita?",
+            "¿Por qué importa procedencia?",
+            "¿Qué respuestas puede dar el receptor?",
+            "¿Cuándo se completa la transferencia?"
           ]
         }
       ]
@@ -207,30 +142,36 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Convertir acciones aisladas en trabajo coordinado, trazable y profesional."
+          "text": "Dos necesidades legítimas pueden competir por recursos, tiempo o autoridad."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Criterios"
         },
         {
           "type": "bullets",
           "items": [
-            "misión",
-            "seguridad",
-            "recursos",
-            "autoridad"
+            "Misión",
+            "Seguridad",
+            "Recursos",
+            "Tiempo",
+            "Reversibilidad",
+            "Autoridad"
+          ]
+        },
+        {
+          "type": "procedure",
+          "steps": [
+            "Describir el conflicto",
+            "Explicar impacto",
+            "Presentar opciones",
+            "Escalar si excede autoridad"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Resolver prioridades incompatibles."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Caso."
+          "label": "TRAZABILIDAD",
+          "text": "La decisión debe poder relacionarse con información disponible, contexto y autoridad."
         },
         {
           "type": "heading",
@@ -239,25 +180,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica misión en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Resolver prioridades incompatibles.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/ship_operations/operational_event_log/operational_event_contract.json",
-            "lore/federation/starfleet/duty_shifts/shift_model.json",
-            "gameplay/orders/starfleet_mission_tasking_order.json"
+            "¿Qué causa conflicto de prioridades?",
+            "¿Qué criterios se valoran?",
+            "¿Por qué no todo conflicto es técnico?",
+            "¿Cómo se escala?",
+            "¿Qué hace trazable una decisión?"
           ]
         }
       ]
@@ -269,30 +196,34 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Convertir acciones aisladas en trabajo coordinado, trazable y profesional."
+          "text": "El Operational Event Log conserva hechos estructurados. No asigna notas, moralidad, relaciones ni valoraciones de rendimiento."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Campos típicos"
         },
         {
           "type": "bullets",
           "items": [
-            "evento",
-            "hora",
-            "acción",
-            "resultado"
+            "Identificador",
+            "Tipo",
+            "Hora",
+            "Alcance",
+            "Actores",
+            "Sujetos",
+            "Procedencia",
+            "Visibilidad",
+            "Resultado"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Crear entrada de log factual."
+          "label": "APPEND-ONLY",
+          "text": "Una corrección se añade como nuevo evento que referencia al anterior; la historia no se reescribe silenciosamente."
         },
         {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Revisión."
+          "type": "p",
+          "text": "Que un evento exista no significa que todos los personajes conozcan su contenido."
         },
         {
           "type": "heading",
@@ -301,25 +232,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica evento en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Crear entrada de log factual.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/ship_operations/operational_event_log/operational_event_contract.json",
-            "lore/federation/starfleet/duty_shifts/shift_model.json",
-            "gameplay/orders/starfleet_mission_tasking_order.json"
+            "¿Qué registra el Event Log?",
+            "¿Qué no debe asignar?",
+            "Diferencia evento y opinión.",
+            "¿Cómo se corrige un evento?",
+            "¿Por qué registrar no implica conocimiento universal?"
           ]
         }
       ]
@@ -330,32 +247,25 @@
       "subtitle": "UNIDAD 06 · PRO-301",
       "blocks": [
         {
+          "type": "quote",
+          "text": "orden → tareas → coordinación → ejecución → reporte → handoff → registro"
+        },
+        {
           "type": "p",
-          "text": "Convertir acciones aisladas en trabajo coordinado, trazable y profesional."
+          "text": "La micro-misión integra objetivo, roles, restricciones, información conocida y autoridad. Durante la ejecución deben mantenerse responsables claros y comunicarse bloqueos."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Cierre"
         },
         {
           "type": "bullets",
           "items": [
-            "orden",
-            "coordinación",
-            "reporte",
-            "handoff",
-            "registro"
+            "Resultado",
+            "Pendientes",
+            "Registro",
+            "Relevo o debrief"
           ]
-        },
-        {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Micro-misión de equipo."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evaluación integrada."
         },
         {
           "type": "heading",
@@ -364,28 +274,15 @@
         {
           "type": "numbered",
           "items": [
-            "Explica orden en contexto operativo.",
-            "¿Qué información necesitas antes de actuar?",
-            "Resuelve: Micro-misión de equipo.",
-            "¿Qué debes comunicar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/ship_operations/operational_event_log/operational_event_contract.json",
-            "lore/federation/starfleet/duty_shifts/shift_model.json",
-            "gameplay/orders/starfleet_mission_tasking_order.json"
+            "¿Qué fases integra el ejercicio?",
+            "¿Qué se fija en briefing?",
+            "¿Cómo evitar duplicar trabajo?",
+            "¿Qué debe verificarse en handoff?",
+            "¿Qué cierra la misión?"
           ]
         }
       ]
     }
-  ]
+  ],
+  "status": "developed_content"
 }
