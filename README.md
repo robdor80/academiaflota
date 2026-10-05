@@ -2,44 +2,16 @@
 
 Portal académico inmersivo y utilizable para el proyecto **Videojuego Star Trek**.
 
-## v0.2 — Portal institucional y perfiles de cadete
+## v0.2.1 — acceso oficial y ajustes
 
-La Academia deja de plantearse como una consola de nave y pasa a funcionar como un portal académico oficial.
+- Portada de acceso rediseñada como portal oficial de la Academia.
+- Insignia almacenada dentro del repositorio en `assets/img/starfleet-academy-insignia.png`.
+- La portada muestra únicamente expedientes existentes.
+- Crear e importar alumnos se traslada a un panel de **Ajustes**.
+- Ajustes accesible desde la portada y desde el portal del cadete.
+- Se mantiene la persistencia individual por alumno, prácticas, evaluaciones y exportación JSON.
+- Responsive conservado para MSI Raider GE78 HX, Samsung Galaxy Tab S9+ y Realme GT Neo 2.
 
-### Funcionalidad
+## Persistencia
 
-- Acceso inicial de alumnado.
-- Múltiples perfiles locales sin contraseña.
-- Cada cadete conserva de forma independiente:
-  - módulos estudiados;
-  - prácticas realizadas y respuestas escritas;
-  - intentos y notas de evaluación.
-- Exportación e importación de perfiles en JSON.
-- Diseño institucional Starfleet Academy, limpio y sobrio.
-- Insignia de la Academia en el acceso y cabecera.
-- Plan de estudios.
-- Manual completo de Operaciones de Sensores v0.1.
-- Seis prácticas basadas en los ejercicios oficiales del manual.
-- Evaluación teórica de Sensores de 10 preguntas, con aprobado al 80 %.
-- Expediente académico individual.
-- Responsive para PC, tablet horizontal/vertical y móvil vertical.
-
-### Persistencia
-
-Los perfiles se almacenan mediante localStorage y la sesión activa mediante sessionStorage. El JSON exportable permite copia de seguridad y traslado entre dispositivos.
-
-### Estructura
-
-- index.html
-- css/base.css
-- css/academy.css
-- css/responsive.css
-- js/app.js
-- js/storage.js
-- js/study.js
-- js/evaluation.js
-- data/sensores.json
-- data/practicas-sensores.json
-- data/evaluacion-sensores.json
-
-El PDF de Sensores no se publica ni se incrusta: actúa únicamente como fuente del contenido académico.
+Los expedientes se almacenan mediante `localStorage` y la sesión activa mediante `sessionStorage`. La exportación/importación JSON permite trasladarlos entre dispositivos.

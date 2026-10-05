@@ -17,22 +17,15 @@ const app = {
 
 const gateway = document.querySelector("#profile-gateway");
 const portal = document.querySelector("#academy-portal");
+const settingsBackdrop = document.querySelector("#settings-backdrop");
 const views = Array.from(document.querySelectorAll("[data-view]"));
 const navButtons = Array.from(document.querySelectorAll(".primary-nav [data-route]"));
 const moduleList = document.querySelector("#module-list");
 const lessonContent = document.querySelector("#lesson-content");
 
-function profileStudy() {
-  return app.profile.studies.sensores;
-}
-
-function profilePractices() {
-  return app.profile.practices.sensores;
-}
-
-function profileEvaluations() {
-  return app.profile.evaluations.sensores;
-}
+function profileStudy() { return app.profile.studies.sensores; }
+function profilePractices() { return app.profile.practices.sensores; }
+function profileEvaluations() { return app.profile.evaluations.sensores; }
 
 function persistProfile() {
   app.profile = updateProfile(app.profile);
@@ -50,6 +43,16 @@ function escapeHtml(value) {
   return div.innerHTML;
 }
 
+function openSettings() {
+  settingsBackdrop.hidden = false;
+  document.body.style.overflow = "hidden";
+}
+
+function closeSettings() {
+  settingsBackdrop.hidden = true;
+  document.body.style.overflow = "";
+}
+
 function renderProfileList() {
   const profiles = getProfiles();
   const list = document.querySelector("#profile-list");
@@ -60,17 +63,18 @@ function renderProfileList() {
   profiles.sort(function(a,b) {
     return a.name.localeCompare(b.name, "es");
   }).forEach(function(profile) {
-    const modules = profile.studies && profile.studies.sensores && profile.studies.sensores.completedModules
-      ? profile.studies.sensores.completedModules.length : 0;
+    const modules = profile.studies?.sensores?.completedModules?.length || 0;
+    const attempts = profile.evaluations?.sensores?.attempts || [];
+    const best = attempts.length ? Math.max.apply(null, attempts.map(function(item){ return item.score; })) : null;
+
     const button = document.createElement("button");
     button.className = "profile-entry";
     button.innerHTML =
       '<span class="profile-entry__avatar">' + escapeHtml(profile.name.trim().charAt(0).toUpperCase()) + "</span>" +
-      "<span><strong>" + escapeHtml(profile.name) + "</strong><small>" + modules + " unidades de Sensores estudiadas</small></span>" +
-      '<span class="profile-entry__arrow">Acceder →</span>';
-    button.addEventListener("click", function() {
-      enterProfile(profile.id);
-    });
+      "<span><strong>" + escapeHtml(profile.name) + "</strong><small>CADET RECORD // " +
+      modules + " UNIDADES" + (best === null ? "" : " · MEJOR NOTA " + best + "%") + "</small></span>" +
+      '<span class="profile-entry__arrow">ACCEDER →</span>';
+    button.addEventListener("click", function() { enterProfile(profile.id); });
     list.appendChild(button);
   });
 }
@@ -79,6 +83,7 @@ async function enterProfile(id) {
   setActiveProfile(id);
   app.profile = getActiveProfile();
   if (!app.profile) return;
+  closeSettings();
   gateway.hidden = true;
   portal.hidden = false;
   await ensureData();
@@ -91,7 +96,7 @@ function leaveProfile() {
   app.profile = null;
   portal.hidden = true;
   gateway.hidden = false;
-  document.querySelector("#create-profile-form").hidden = true;
+  closeSettings();
   renderProfileList();
   window.scrollTo({top:0});
 }
@@ -108,12 +113,8 @@ async function ensureData() {
 
 function setRoute(route) {
   app.route = route;
-  views.forEach(function(view) {
-    view.classList.toggle("is-active", view.dataset.view === route);
-  });
-  navButtons.forEach(function(button) {
-    button.classList.toggle("is-active", button.dataset.route === route);
-  });
+  views.forEach(function(view) { view.classList.toggle("is-active", view.dataset.view === route); });
+  navButtons.forEach(function(button) { button.classList.toggle("is-active", button.dataset.route === route); });
   if (route === "dashboard" || route === "record" || route === "evaluations") refreshProfileUI();
   if (route === "practices") renderPractices();
   window.scrollTo({top:0,behavior:"smooth"});
@@ -164,9 +165,7 @@ function renderModuleList() {
       '<span class="module-btn__num">' + module.id + "</span>" +
       '<span class="module-btn__title">' + module.title + "</span>" +
       '<span class="module-btn__done"></span>';
-    button.addEventListener("click", function() {
-      renderModule(index);
-    });
+    button.addEventListener("click", function() { renderModule(index); });
     moduleList.appendChild(button);
   });
   syncModuleButtons();
@@ -176,7 +175,8 @@ function renderModule(index) {
   app.activeModule = Math.max(0,Math.min(index,app.study.modules.length-1));
   const module = app.study.modules[app.activeModule];
   lessonContent.innerHTML = renderLesson(module);
-  document.querySelector("#reader-position").textContent = "UNIDAD " + module.id + " / " + app.study.modules[app.study.modules.length - 1].id;
+  document.querySelector("#reader-position").textContent =
+    "UNIDAD " + module.id + " / " + app.study.modules[app.study.modules.length - 1].id;
   document.querySelector("#prev-module").disabled = app.activeModule === 0;
   document.querySelector("#next-module").disabled = app.activeModule === app.study.modules.length - 1;
   document.querySelector("#mark-complete").textContent =
@@ -211,12 +211,10 @@ function renderPractices() {
     const done = profilePractices().completed.includes(item.id);
     return '<article class="practice-card ' + (done ? "is-complete" : "") + '">' +
       '<span class="overline">' + item.id + " // OPERACIONES DE SENSORES</span>" +
-      "<h2>" + item.title + "</h2>" +
-      "<p>" + item.scenario + "</p>" +
-      '<div class="practice-card__footer">' +
-      '<span class="practice-card__status">' + (done ? "✓ Revisada" : "Pendiente") + "</span>" +
-      '<button class="button button--secondary" data-practice-id="' + item.id + '">Abrir práctica</button>' +
-      "</div></article>";
+      "<h2>" + item.title + "</h2><p>" + item.scenario + "</p>" +
+      '<div class="practice-card__footer"><span class="practice-card__status">' +
+      (done ? "✓ Revisada" : "Pendiente") + '</span><button class="button button--secondary" data-practice-id="' +
+      item.id + '">Abrir práctica</button></div></article>';
   }).join("");
 }
 
@@ -229,25 +227,21 @@ function openPractice(id) {
 
   document.querySelector("#practice-detail").innerHTML =
     '<span class="overline">' + item.id + " // PRÁCTICA ACADÉMICA</span>" +
-    "<h1>" + item.title + "</h1>" +
-    '<div class="practice-scenario">' + item.scenario + "</div>" +
+    "<h1>" + item.title + '</h1><div class="practice-scenario">' + item.scenario + "</div>" +
     '<label for="practice-answer">Plan de actuación del cadete</label>' +
-    '<textarea id="practice-answer" placeholder="Describe cómo configurarías la consola, qué comprobarías y cómo informarías el resultado...">' + escapeHtml(answer) + "</textarea>" +
-    '<div class="practice-actions">' +
+    '<textarea id="practice-answer" placeholder="Describe cómo configurarías la consola, qué comprobarías y cómo informarías el resultado...">' +
+    escapeHtml(answer) + '</textarea><div class="practice-actions">' +
     '<button id="save-practice-answer" class="button button--primary">Guardar respuesta</button>' +
     '<button id="show-practice-criteria" class="button button--secondary">Mostrar criterios de evaluación</button>' +
-    '<button id="complete-practice" class="button button--secondary">' + (done ? "✓ Práctica revisada" : "Marcar como revisada") + "</button>" +
-    "</div>" +
-    '<section id="practice-criteria" class="criteria" hidden>' +
-    '<span class="overline">CRITERIOS DEL MANUAL</span>' +
+    '<button id="complete-practice" class="button button--secondary">' +
+    (done ? "✓ Práctica revisada" : "Marcar como revisada") + '</button></div>' +
+    '<section id="practice-criteria" class="criteria" hidden><span class="overline">CRITERIOS DEL MANUAL</span>' +
     "<h3>Qué se evalúa</h3><p>" + item.evaluation + "</p></section>";
-
   setRoute("practice");
 }
 
 function savePracticeAnswer() {
-  const field = document.querySelector("#practice-answer");
-  profilePractices().answers[app.activePractice] = field.value.trim();
+  profilePractices().answers[app.activePractice] = document.querySelector("#practice-answer").value.trim();
   persistProfile();
   alert("Respuesta guardada en el expediente local.");
 }
@@ -269,8 +263,7 @@ function startEvaluation() {
 
 function submitEvaluation(form) {
   const data = new FormData(form);
-  const unanswered = app.exam.questions.some(function(q) { return !data.has(q.id); });
-  if (unanswered) {
+  if (app.exam.questions.some(function(q) { return !data.has(q.id); })) {
     alert("Debe responder todas las preguntas antes de entregar la evaluación.");
     return;
   }
@@ -298,14 +291,18 @@ function renderRecord() {
   const last = attempts.length ? attempts[attempts.length - 1] : null;
 
   document.querySelector("#record-summary").innerHTML =
-    '<article class="record-item"><span>FORMACIÓN // SENSORES</span><strong>' + modules + "/" + app.study.modules.length + "</strong><p>Unidades marcadas como estudiadas.</p></article>" +
-    '<article class="record-item"><span>PRÁCTICAS // SENSORES</span><strong>' + practices + "/" + app.practices.items.length + "</strong><p>Ejercicios revisados.</p></article>" +
+    '<article class="record-item"><span>FORMACIÓN // SENSORES</span><strong>' + modules + "/" + app.study.modules.length +
+    '</strong><p>Unidades marcadas como estudiadas.</p></article>' +
+    '<article class="record-item"><span>PRÁCTICAS // SENSORES</span><strong>' + practices + "/" + app.practices.items.length +
+    '</strong><p>Ejercicios revisados.</p></article>' +
     '<article class="record-item"><span>MEJOR NOTA</span><strong>' + (best === null ? "—" : best + "%") + "</strong><p>" +
     (last ? "Último intento: " + new Date(last.date).toLocaleDateString("es-ES") : "Sin evaluaciones realizadas.") +
     "</p></article>";
 }
 
 document.addEventListener("click", function(event) {
+  if (event.target.closest("[data-open-settings]")) openSettings();
+
   const routeElement = event.target.closest("[data-route]");
   if (routeElement && app.profile) setRoute(routeElement.dataset.route);
 
@@ -323,13 +320,12 @@ document.addEventListener("click", function(event) {
   if (event.target.id === "complete-practice") togglePracticeComplete();
 });
 
-document.querySelector("#show-create-profile").addEventListener("click", function() {
-  document.querySelector("#create-profile-form").hidden = false;
-  document.querySelector("#profile-name").focus();
+document.querySelector("#close-settings").addEventListener("click", closeSettings);
+settingsBackdrop.addEventListener("click", function(event) {
+  if (event.target === settingsBackdrop) closeSettings();
 });
-
-document.querySelector("#cancel-create-profile").addEventListener("click", function() {
-  document.querySelector("#create-profile-form").hidden = true;
+document.addEventListener("keydown", function(event) {
+  if (event.key === "Escape" && !settingsBackdrop.hidden) closeSettings();
 });
 
 document.querySelector("#create-profile-form").addEventListener("submit", function(event) {
@@ -337,7 +333,6 @@ document.querySelector("#create-profile-form").addEventListener("submit", functi
   try {
     const profile = createProfile(document.querySelector("#profile-name").value);
     event.target.reset();
-    event.target.hidden = true;
     renderProfileList();
     enterProfile(profile.id);
   } catch (error) {
@@ -372,10 +367,7 @@ document.addEventListener("submit", function(event) {
   }
 });
 
-document.querySelector("#export-profile").addEventListener("click", function() {
-  exportProfile(app.profile);
-});
-
+document.querySelector("#export-profile").addEventListener("click", function() { exportProfile(app.profile); });
 document.querySelector("#delete-profile").addEventListener("click", function() {
   if (!confirm("¿Eliminar definitivamente el perfil local de " + app.profile.name + "? Esta acción no puede deshacerse salvo que exista una copia JSON exportada.")) return;
   deleteProfile(app.profile.id);
@@ -383,3 +375,5 @@ document.querySelector("#delete-profile").addEventListener("click", function() {
 });
 
 renderProfileList();
+const active = getActiveProfile();
+if (active) enterProfile(active.id);
