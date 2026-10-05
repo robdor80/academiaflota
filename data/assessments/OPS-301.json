@@ -1,0 +1,284 @@
+{
+  "schema_version": "1.0.0",
+  "course_id": "OPS-301",
+  "status": "generated_from_authoritative_curriculum",
+  "question_count": 24,
+  "questions": [
+    {
+      "id": "OPS-301-Q001",
+      "unit_id": "OPS-301-U01",
+      "type": "knowledge",
+      "prompt_es": "Explica roles y da un ejemplo operativo.",
+      "answer_key_es": [
+        "roles",
+        "ejemplo coherente",
+        "límite o contexto"
+      ]
+    },
+    {
+      "id": "OPS-301-Q002",
+      "unit_id": "OPS-301-U01",
+      "type": "relationship",
+      "prompt_es": "Relaciona roles con estaciones. ¿Qué información pasa de uno a otro?",
+      "answer_key_es": [
+        "roles",
+        "estaciones",
+        "flujo de información o dependencia"
+      ]
+    },
+    {
+      "id": "OPS-301-Q003",
+      "unit_id": "OPS-301-U01",
+      "type": "scenario",
+      "prompt_es": "Observar y reconstruir el flujo de una guardia. Describe preparación, acción, comunicación y criterio de escalado.",
+      "answer_key_es": [
+        "preparación",
+        "acción",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "OPS-301-Q004",
+      "unit_id": "OPS-301-U01",
+      "type": "debrief",
+      "prompt_es": "Tras la práctica de Puente como sistema de trabajo, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "answer_key_es": [
+        "información disponible entonces",
+        "decisión",
+        "procedimiento",
+        "resultado separado del proceso"
+      ]
+    },
+    {
+      "id": "OPS-301-Q005",
+      "unit_id": "OPS-301-U02",
+      "type": "knowledge",
+      "prompt_es": "Explica emisión y da un ejemplo operativo.",
+      "answer_key_es": [
+        "emisión",
+        "ejemplo coherente",
+        "límite o contexto"
+      ]
+    },
+    {
+      "id": "OPS-301-Q006",
+      "unit_id": "OPS-301-U02",
+      "type": "relationship",
+      "prompt_es": "Relaciona emisión con acuse. ¿Qué información pasa de uno a otro?",
+      "answer_key_es": [
+        "emisión",
+        "acuse",
+        "flujo de información o dependencia"
+      ]
+    },
+    {
+      "id": "OPS-301-Q007",
+      "unit_id": "OPS-301-U02",
+      "type": "scenario",
+      "prompt_es": "Ejecutar órdenes simples en simulador. Describe preparación, acción, comunicación y criterio de escalado.",
+      "answer_key_es": [
+        "preparación",
+        "acción",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "OPS-301-Q008",
+      "unit_id": "OPS-301-U02",
+      "type": "debrief",
+      "prompt_es": "Tras la práctica de Órdenes y confirmaciones, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "answer_key_es": [
+        "información disponible entonces",
+        "decisión",
+        "procedimiento",
+        "resultado separado del proceso"
+      ]
+    },
+    {
+      "id": "OPS-301-Q009",
+      "unit_id": "OPS-301-U03",
+      "type": "knowledge",
+      "prompt_es": "Explica dependencias y da un ejemplo operativo.",
+      "answer_key_es": [
+        "dependencias",
+        "ejemplo coherente",
+        "límite o contexto"
+      ]
+    },
+    {
+      "id": "OPS-301-Q010",
+      "unit_id": "OPS-301-U03",
+      "type": "relationship",
+      "prompt_es": "Relaciona dependencias con peticiones. ¿Qué información pasa de uno a otro?",
+      "answer_key_es": [
+        "dependencias",
+        "peticiones",
+        "flujo de información o dependencia"
+      ]
+    },
+    {
+      "id": "OPS-301-Q011",
+      "unit_id": "OPS-301-U03",
+      "type": "scenario",
+      "prompt_es": "Resolver una tarea que requiere tres estaciones. Describe preparación, acción, comunicación y criterio de escalado.",
+      "answer_key_es": [
+        "preparación",
+        "acción",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "OPS-301-Q012",
+      "unit_id": "OPS-301-U03",
+      "type": "debrief",
+      "prompt_es": "Tras la práctica de Coordinación entre estaciones, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "answer_key_es": [
+        "información disponible entonces",
+        "decisión",
+        "procedimiento",
+        "resultado separado del proceso"
+      ]
+    },
+    {
+      "id": "OPS-301-Q013",
+      "unit_id": "OPS-301-U04",
+      "type": "knowledge",
+      "prompt_es": "Explica estado de nave y da un ejemplo operativo.",
+      "answer_key_es": [
+        "estado de nave",
+        "ejemplo coherente",
+        "límite o contexto"
+      ]
+    },
+    {
+      "id": "OPS-301-Q014",
+      "unit_id": "OPS-301-U04",
+      "type": "relationship",
+      "prompt_es": "Relaciona estado de nave con contactos. ¿Qué información pasa de uno a otro?",
+      "answer_key_es": [
+        "estado de nave",
+        "contactos",
+        "flujo de información o dependencia"
+      ]
+    },
+    {
+      "id": "OPS-301-Q015",
+      "unit_id": "OPS-301-U04",
+      "type": "scenario",
+      "prompt_es": "Mantener un resumen de situación. Describe preparación, acción, comunicación y criterio de escalado.",
+      "answer_key_es": [
+        "preparación",
+        "acción",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "OPS-301-Q016",
+      "unit_id": "OPS-301-U04",
+      "type": "debrief",
+      "prompt_es": "Tras la práctica de Imagen operativa común, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "answer_key_es": [
+        "información disponible entonces",
+        "decisión",
+        "procedimiento",
+        "resultado separado del proceso"
+      ]
+    },
+    {
+      "id": "OPS-301-Q017",
+      "unit_id": "OPS-301-U05",
+      "type": "knowledge",
+      "prompt_es": "Explica qué resolver localmente y da un ejemplo operativo.",
+      "answer_key_es": [
+        "qué resolver localmente",
+        "ejemplo coherente",
+        "límite o contexto"
+      ]
+    },
+    {
+      "id": "OPS-301-Q018",
+      "unit_id": "OPS-301-U05",
+      "type": "relationship",
+      "prompt_es": "Relaciona qué resolver localmente con qué informar. ¿Qué información pasa de uno a otro?",
+      "answer_key_es": [
+        "qué resolver localmente",
+        "qué informar",
+        "flujo de información o dependencia"
+      ]
+    },
+    {
+      "id": "OPS-301-Q019",
+      "unit_id": "OPS-301-U05",
+      "type": "scenario",
+      "prompt_es": "Clasificar y escalar incidencias. Describe preparación, acción, comunicación y criterio de escalado.",
+      "answer_key_es": [
+        "preparación",
+        "acción",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "OPS-301-Q020",
+      "unit_id": "OPS-301-U05",
+      "type": "debrief",
+      "prompt_es": "Tras la práctica de Escalado de incidencias, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "answer_key_es": [
+        "información disponible entonces",
+        "decisión",
+        "procedimiento",
+        "resultado separado del proceso"
+      ]
+    },
+    {
+      "id": "OPS-301-Q021",
+      "unit_id": "OPS-301-U06",
+      "type": "knowledge",
+      "prompt_es": "Explica rutina y da un ejemplo operativo.",
+      "answer_key_es": [
+        "rutina",
+        "ejemplo coherente",
+        "límite o contexto"
+      ]
+    },
+    {
+      "id": "OPS-301-Q022",
+      "unit_id": "OPS-301-U06",
+      "type": "relationship",
+      "prompt_es": "Relaciona rutina con evento. ¿Qué información pasa de uno a otro?",
+      "answer_key_es": [
+        "rutina",
+        "evento",
+        "flujo de información o dependencia"
+      ]
+    },
+    {
+      "id": "OPS-301-Q023",
+      "unit_id": "OPS-301-U06",
+      "type": "scenario",
+      "prompt_es": "Turno corto en simulador. Describe preparación, acción, comunicación y criterio de escalado.",
+      "answer_key_es": [
+        "preparación",
+        "acción",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "OPS-301-Q024",
+      "unit_id": "OPS-301-U06",
+      "type": "debrief",
+      "prompt_es": "Tras la práctica de Guardia de puente supervisada, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "answer_key_es": [
+        "información disponible entonces",
+        "decisión",
+        "procedimiento",
+        "resultado separado del proceso"
+      ]
+    }
+  ]
+}

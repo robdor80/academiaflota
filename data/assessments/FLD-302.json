@@ -1,0 +1,284 @@
+{
+  "schema_version": "1.0.0",
+  "course_id": "FLD-302",
+  "status": "generated_from_authoritative_curriculum",
+  "question_count": 24,
+  "questions": [
+    {
+      "id": "FLD-302-Q001",
+      "unit_id": "FLD-302-U01",
+      "type": "knowledge",
+      "prompt_es": "Explica briefing y da un ejemplo operativo.",
+      "answer_key_es": [
+        "briefing",
+        "ejemplo coherente",
+        "límite o contexto"
+      ]
+    },
+    {
+      "id": "FLD-302-Q002",
+      "unit_id": "FLD-302-U01",
+      "type": "relationship",
+      "prompt_es": "Relaciona briefing con roles. ¿Qué información pasa de uno a otro?",
+      "answer_key_es": [
+        "briefing",
+        "roles",
+        "flujo de información o dependencia"
+      ]
+    },
+    {
+      "id": "FLD-302-Q003",
+      "unit_id": "FLD-302-U01",
+      "type": "scenario",
+      "prompt_es": "Preparar salida de entrenamiento. Describe preparación, acción, comunicación y criterio de escalado.",
+      "answer_key_es": [
+        "preparación",
+        "acción",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "FLD-302-Q004",
+      "unit_id": "FLD-302-U01",
+      "type": "debrief",
+      "prompt_es": "Tras la práctica de Preparación de misión, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "answer_key_es": [
+        "información disponible entonces",
+        "decisión",
+        "procedimiento",
+        "resultado separado del proceso"
+      ]
+    },
+    {
+      "id": "FLD-302-Q005",
+      "unit_id": "FLD-302-U02",
+      "type": "knowledge",
+      "prompt_es": "Explica mapa y da un ejemplo operativo.",
+      "answer_key_es": [
+        "mapa",
+        "ejemplo coherente",
+        "límite o contexto"
+      ]
+    },
+    {
+      "id": "FLD-302-Q006",
+      "unit_id": "FLD-302-U02",
+      "type": "relationship",
+      "prompt_es": "Relaciona mapa con sensores portátiles. ¿Qué información pasa de uno a otro?",
+      "answer_key_es": [
+        "mapa",
+        "sensores portátiles",
+        "flujo de información o dependencia"
+      ]
+    },
+    {
+      "id": "FLD-302-Q007",
+      "unit_id": "FLD-302-U02",
+      "type": "scenario",
+      "prompt_es": "Recorrido de campo. Describe preparación, acción, comunicación y criterio de escalado.",
+      "answer_key_es": [
+        "preparación",
+        "acción",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "FLD-302-Q008",
+      "unit_id": "FLD-302-U02",
+      "type": "debrief",
+      "prompt_es": "Tras la práctica de Movimiento y orientación, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "answer_key_es": [
+        "información disponible entonces",
+        "decisión",
+        "procedimiento",
+        "resultado separado del proceso"
+      ]
+    },
+    {
+      "id": "FLD-302-Q009",
+      "unit_id": "FLD-302-U03",
+      "type": "knowledge",
+      "prompt_es": "Explica atmósfera y da un ejemplo operativo.",
+      "answer_key_es": [
+        "atmósfera",
+        "ejemplo coherente",
+        "límite o contexto"
+      ]
+    },
+    {
+      "id": "FLD-302-Q010",
+      "unit_id": "FLD-302-U03",
+      "type": "relationship",
+      "prompt_es": "Relaciona atmósfera con temperatura. ¿Qué información pasa de uno a otro?",
+      "answer_key_es": [
+        "atmósfera",
+        "temperatura",
+        "flujo de información o dependencia"
+      ]
+    },
+    {
+      "id": "FLD-302-Q011",
+      "unit_id": "FLD-302-U03",
+      "type": "scenario",
+      "prompt_es": "Seleccionar protección adecuada. Describe preparación, acción, comunicación y criterio de escalado.",
+      "answer_key_es": [
+        "preparación",
+        "acción",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "FLD-302-Q012",
+      "unit_id": "FLD-302-U03",
+      "type": "debrief",
+      "prompt_es": "Tras la práctica de Ambiente y protección, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "answer_key_es": [
+        "información disponible entonces",
+        "decisión",
+        "procedimiento",
+        "resultado separado del proceso"
+      ]
+    },
+    {
+      "id": "FLD-302-Q013",
+      "unit_id": "FLD-302-U04",
+      "type": "knowledge",
+      "prompt_es": "Explica check-ins y da un ejemplo operativo.",
+      "answer_key_es": [
+        "check-ins",
+        "ejemplo coherente",
+        "límite o contexto"
+      ]
+    },
+    {
+      "id": "FLD-302-Q014",
+      "unit_id": "FLD-302-U04",
+      "type": "relationship",
+      "prompt_es": "Relaciona check-ins con pérdida de contacto. ¿Qué información pasa de uno a otro?",
+      "answer_key_es": [
+        "check-ins",
+        "pérdida de contacto",
+        "flujo de información o dependencia"
+      ]
+    },
+    {
+      "id": "FLD-302-Q015",
+      "unit_id": "FLD-302-U04",
+      "type": "scenario",
+      "prompt_es": "Mantener comunicaciones durante ejercicio. Describe preparación, acción, comunicación y criterio de escalado.",
+      "answer_key_es": [
+        "preparación",
+        "acción",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "FLD-302-Q016",
+      "unit_id": "FLD-302-U04",
+      "type": "debrief",
+      "prompt_es": "Tras la práctica de Comunicaciones de campo, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "answer_key_es": [
+        "información disponible entonces",
+        "decisión",
+        "procedimiento",
+        "resultado separado del proceso"
+      ]
+    },
+    {
+      "id": "FLD-302-Q017",
+      "unit_id": "FLD-302-U05",
+      "type": "knowledge",
+      "prompt_es": "Explica cambio de misión y da un ejemplo operativo.",
+      "answer_key_es": [
+        "cambio de misión",
+        "ejemplo coherente",
+        "límite o contexto"
+      ]
+    },
+    {
+      "id": "FLD-302-Q018",
+      "unit_id": "FLD-302-U05",
+      "type": "relationship",
+      "prompt_es": "Relaciona cambio de misión con herido. ¿Qué información pasa de uno a otro?",
+      "answer_key_es": [
+        "cambio de misión",
+        "herido",
+        "flujo de información o dependencia"
+      ]
+    },
+    {
+      "id": "FLD-302-Q019",
+      "unit_id": "FLD-302-U05",
+      "type": "scenario",
+      "prompt_es": "Resolver incidente controlado. Describe preparación, acción, comunicación y criterio de escalado.",
+      "answer_key_es": [
+        "preparación",
+        "acción",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "FLD-302-Q020",
+      "unit_id": "FLD-302-U05",
+      "type": "debrief",
+      "prompt_es": "Tras la práctica de Incidente de campo, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "answer_key_es": [
+        "información disponible entonces",
+        "decisión",
+        "procedimiento",
+        "resultado separado del proceso"
+      ]
+    },
+    {
+      "id": "FLD-302-Q021",
+      "unit_id": "FLD-302-U06",
+      "type": "knowledge",
+      "prompt_es": "Explica recuento y da un ejemplo operativo.",
+      "answer_key_es": [
+        "recuento",
+        "ejemplo coherente",
+        "límite o contexto"
+      ]
+    },
+    {
+      "id": "FLD-302-Q022",
+      "unit_id": "FLD-302-U06",
+      "type": "relationship",
+      "prompt_es": "Relaciona recuento con equipo. ¿Qué información pasa de uno a otro?",
+      "answer_key_es": [
+        "recuento",
+        "equipo",
+        "flujo de información o dependencia"
+      ]
+    },
+    {
+      "id": "FLD-302-Q023",
+      "unit_id": "FLD-302-U06",
+      "type": "scenario",
+      "prompt_es": "Cerrar misión y debrief. Describe preparación, acción, comunicación y criterio de escalado.",
+      "answer_key_es": [
+        "preparación",
+        "acción",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "FLD-302-Q024",
+      "unit_id": "FLD-302-U06",
+      "type": "debrief",
+      "prompt_es": "Tras la práctica de Extracción y debrief, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "answer_key_es": [
+        "información disponible entonces",
+        "decisión",
+        "procedimiento",
+        "resultado separado del proceso"
+      ]
+    }
+  ]
+}

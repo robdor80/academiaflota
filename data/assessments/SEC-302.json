@@ -1,0 +1,284 @@
+{
+  "schema_version": "1.0.0",
+  "course_id": "SEC-302",
+  "status": "generated_from_authoritative_curriculum",
+  "question_count": 24,
+  "questions": [
+    {
+      "id": "SEC-302-Q001",
+      "unit_id": "SEC-302-U01",
+      "type": "knowledge",
+      "prompt_es": "Explica entorno y da un ejemplo operativo.",
+      "answer_key_es": [
+        "entorno",
+        "ejemplo coherente",
+        "límite o contexto"
+      ]
+    },
+    {
+      "id": "SEC-302-Q002",
+      "unit_id": "SEC-302-U01",
+      "type": "relationship",
+      "prompt_es": "Relaciona entorno con personas. ¿Qué información pasa de uno a otro?",
+      "answer_key_es": [
+        "entorno",
+        "personas",
+        "flujo de información o dependencia"
+      ]
+    },
+    {
+      "id": "SEC-302-Q003",
+      "unit_id": "SEC-302-U01",
+      "type": "scenario",
+      "prompt_es": "Detectar riesgos en escenario. Describe preparación, acción, comunicación y criterio de escalado.",
+      "answer_key_es": [
+        "preparación",
+        "acción",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "SEC-302-Q004",
+      "unit_id": "SEC-302-U01",
+      "type": "debrief",
+      "prompt_es": "Tras la práctica de Conciencia de amenaza, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "answer_key_es": [
+        "información disponible entonces",
+        "decisión",
+        "procedimiento",
+        "resultado separado del proceso"
+      ]
+    },
+    {
+      "id": "SEC-302-Q005",
+      "unit_id": "SEC-302-U02",
+      "type": "knowledge",
+      "prompt_es": "Explica manejo seguro y da un ejemplo operativo.",
+      "answer_key_es": [
+        "manejo seguro",
+        "ejemplo coherente",
+        "límite o contexto"
+      ]
+    },
+    {
+      "id": "SEC-302-Q006",
+      "unit_id": "SEC-302-U02",
+      "type": "relationship",
+      "prompt_es": "Relaciona manejo seguro con autoridad. ¿Qué información pasa de uno a otro?",
+      "answer_key_es": [
+        "manejo seguro",
+        "autoridad",
+        "flujo de información o dependencia"
+      ]
+    },
+    {
+      "id": "SEC-302-Q007",
+      "unit_id": "SEC-302-U02",
+      "type": "scenario",
+      "prompt_es": "Práctica controlada en simulador. Describe preparación, acción, comunicación y criterio de escalado.",
+      "answer_key_es": [
+        "preparación",
+        "acción",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "SEC-302-Q008",
+      "unit_id": "SEC-302-U02",
+      "type": "debrief",
+      "prompt_es": "Tras la práctica de Phaser: seguridad y límites, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "answer_key_es": [
+        "información disponible entonces",
+        "decisión",
+        "procedimiento",
+        "resultado separado del proceso"
+      ]
+    },
+    {
+      "id": "SEC-302-Q009",
+      "unit_id": "SEC-302-U03",
+      "type": "knowledge",
+      "prompt_es": "Explica accesos y da un ejemplo operativo.",
+      "answer_key_es": [
+        "accesos",
+        "ejemplo coherente",
+        "límite o contexto"
+      ]
+    },
+    {
+      "id": "SEC-302-Q010",
+      "unit_id": "SEC-302-U03",
+      "type": "relationship",
+      "prompt_es": "Relaciona accesos con zonas restringidas. ¿Qué información pasa de uno a otro?",
+      "answer_key_es": [
+        "accesos",
+        "zonas restringidas",
+        "flujo de información o dependencia"
+      ]
+    },
+    {
+      "id": "SEC-302-Q011",
+      "unit_id": "SEC-302-U03",
+      "type": "scenario",
+      "prompt_es": "Responder a intrusión simulada. Describe preparación, acción, comunicación y criterio de escalado.",
+      "answer_key_es": [
+        "preparación",
+        "acción",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "SEC-302-Q012",
+      "unit_id": "SEC-302-U03",
+      "type": "debrief",
+      "prompt_es": "Tras la práctica de Seguridad a bordo, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "answer_key_es": [
+        "información disponible entonces",
+        "decisión",
+        "procedimiento",
+        "resultado separado del proceso"
+      ]
+    },
+    {
+      "id": "SEC-302-Q013",
+      "unit_id": "SEC-302-U04",
+      "type": "knowledge",
+      "prompt_es": "Explica rol y da un ejemplo operativo.",
+      "answer_key_es": [
+        "rol",
+        "ejemplo coherente",
+        "límite o contexto"
+      ]
+    },
+    {
+      "id": "SEC-302-Q014",
+      "unit_id": "SEC-302-U04",
+      "type": "relationship",
+      "prompt_es": "Relaciona rol con equipo. ¿Qué información pasa de uno a otro?",
+      "answer_key_es": [
+        "rol",
+        "equipo",
+        "flujo de información o dependencia"
+      ]
+    },
+    {
+      "id": "SEC-302-Q015",
+      "unit_id": "SEC-302-U04",
+      "type": "scenario",
+      "prompt_es": "Preparar loadout según misión. Describe preparación, acción, comunicación y criterio de escalado.",
+      "answer_key_es": [
+        "preparación",
+        "acción",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "SEC-302-Q016",
+      "unit_id": "SEC-302-U04",
+      "type": "debrief",
+      "prompt_es": "Tras la práctica de Equipo de salida, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "answer_key_es": [
+        "información disponible entonces",
+        "decisión",
+        "procedimiento",
+        "resultado separado del proceso"
+      ]
+    },
+    {
+      "id": "SEC-302-Q017",
+      "unit_id": "SEC-302-U05",
+      "type": "knowledge",
+      "prompt_es": "Explica refugio y da un ejemplo operativo.",
+      "answer_key_es": [
+        "refugio",
+        "ejemplo coherente",
+        "límite o contexto"
+      ]
+    },
+    {
+      "id": "SEC-302-Q018",
+      "unit_id": "SEC-302-U05",
+      "type": "relationship",
+      "prompt_es": "Relaciona refugio con recursos. ¿Qué información pasa de uno a otro?",
+      "answer_key_es": [
+        "refugio",
+        "recursos",
+        "flujo de información o dependencia"
+      ]
+    },
+    {
+      "id": "SEC-302-Q019",
+      "unit_id": "SEC-302-U05",
+      "type": "scenario",
+      "prompt_es": "Ejercicio de campo. Describe preparación, acción, comunicación y criterio de escalado.",
+      "answer_key_es": [
+        "preparación",
+        "acción",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "SEC-302-Q020",
+      "unit_id": "SEC-302-U05",
+      "type": "debrief",
+      "prompt_es": "Tras la práctica de Supervivencia básica, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "answer_key_es": [
+        "información disponible entonces",
+        "decisión",
+        "procedimiento",
+        "resultado separado del proceso"
+      ]
+    },
+    {
+      "id": "SEC-302-Q021",
+      "unit_id": "SEC-302-U06",
+      "type": "knowledge",
+      "prompt_es": "Explica formación y da un ejemplo operativo.",
+      "answer_key_es": [
+        "formación",
+        "ejemplo coherente",
+        "límite o contexto"
+      ]
+    },
+    {
+      "id": "SEC-302-Q022",
+      "unit_id": "SEC-302-U06",
+      "type": "relationship",
+      "prompt_es": "Relaciona formación con cobertura. ¿Qué información pasa de uno a otro?",
+      "answer_key_es": [
+        "formación",
+        "cobertura",
+        "flujo de información o dependencia"
+      ]
+    },
+    {
+      "id": "SEC-302-Q023",
+      "unit_id": "SEC-302-U06",
+      "type": "scenario",
+      "prompt_es": "Simulación corta. Describe preparación, acción, comunicación y criterio de escalado.",
+      "answer_key_es": [
+        "preparación",
+        "acción",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "SEC-302-Q024",
+      "unit_id": "SEC-302-U06",
+      "type": "debrief",
+      "prompt_es": "Tras la práctica de Equipo de salida bajo riesgo, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "answer_key_es": [
+        "información disponible entonces",
+        "decisión",
+        "procedimiento",
+        "resultado separado del proceso"
+      ]
+    }
+  ]
+}

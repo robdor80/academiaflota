@@ -1,0 +1,284 @@
+{
+  "schema_version": "1.0.0",
+  "course_id": "MED-302",
+  "status": "generated_from_authoritative_curriculum",
+  "question_count": 24,
+  "questions": [
+    {
+      "id": "MED-302-Q001",
+      "unit_id": "MED-302-U01",
+      "type": "knowledge",
+      "prompt_es": "Explica riesgo y da un ejemplo operativo.",
+      "answer_key_es": [
+        "riesgo",
+        "ejemplo coherente",
+        "límite o contexto"
+      ]
+    },
+    {
+      "id": "MED-302-Q002",
+      "unit_id": "MED-302-U01",
+      "type": "relationship",
+      "prompt_es": "Relaciona riesgo con protección. ¿Qué información pasa de uno a otro?",
+      "answer_key_es": [
+        "riesgo",
+        "protección",
+        "flujo de información o dependencia"
+      ]
+    },
+    {
+      "id": "MED-302-Q003",
+      "unit_id": "MED-302-U01",
+      "type": "scenario",
+      "prompt_es": "Evaluar escenario antes de intervenir. Describe preparación, acción, comunicación y criterio de escalado.",
+      "answer_key_es": [
+        "preparación",
+        "acción",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "MED-302-Q004",
+      "unit_id": "MED-302-U01",
+      "type": "debrief",
+      "prompt_es": "Tras la práctica de Seguridad de escena, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "answer_key_es": [
+        "información disponible entonces",
+        "decisión",
+        "procedimiento",
+        "resultado separado del proceso"
+      ]
+    },
+    {
+      "id": "MED-302-Q005",
+      "unit_id": "MED-302-U02",
+      "type": "knowledge",
+      "prompt_es": "Explica respuesta y da un ejemplo operativo.",
+      "answer_key_es": [
+        "respuesta",
+        "ejemplo coherente",
+        "límite o contexto"
+      ]
+    },
+    {
+      "id": "MED-302-Q006",
+      "unit_id": "MED-302-U02",
+      "type": "relationship",
+      "prompt_es": "Relaciona respuesta con respiración/circulación contextual. ¿Qué información pasa de uno a otro?",
+      "answer_key_es": [
+        "respuesta",
+        "respiración/circulación contextual",
+        "flujo de información o dependencia"
+      ]
+    },
+    {
+      "id": "MED-302-Q007",
+      "unit_id": "MED-302-U02",
+      "type": "scenario",
+      "prompt_es": "Valorar paciente simulado. Describe preparación, acción, comunicación y criterio de escalado.",
+      "answer_key_es": [
+        "preparación",
+        "acción",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "MED-302-Q008",
+      "unit_id": "MED-302-U02",
+      "type": "debrief",
+      "prompt_es": "Tras la práctica de Valoración inicial, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "answer_key_es": [
+        "información disponible entonces",
+        "decisión",
+        "procedimiento",
+        "resultado separado del proceso"
+      ]
+    },
+    {
+      "id": "MED-302-Q009",
+      "unit_id": "MED-302-U03",
+      "type": "knowledge",
+      "prompt_es": "Explica prioridad y da un ejemplo operativo.",
+      "answer_key_es": [
+        "prioridad",
+        "ejemplo coherente",
+        "límite o contexto"
+      ]
+    },
+    {
+      "id": "MED-302-Q010",
+      "unit_id": "MED-302-U03",
+      "type": "relationship",
+      "prompt_es": "Relaciona prioridad con múltiples heridos. ¿Qué información pasa de uno a otro?",
+      "answer_key_es": [
+        "prioridad",
+        "múltiples heridos",
+        "flujo de información o dependencia"
+      ]
+    },
+    {
+      "id": "MED-302-Q011",
+      "unit_id": "MED-302-U03",
+      "type": "scenario",
+      "prompt_es": "Ordenar atención en supuesto sencillo. Describe preparación, acción, comunicación y criterio de escalado.",
+      "answer_key_es": [
+        "preparación",
+        "acción",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "MED-302-Q012",
+      "unit_id": "MED-302-U03",
+      "type": "debrief",
+      "prompt_es": "Tras la práctica de Triaje básico, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "answer_key_es": [
+        "información disponible entonces",
+        "decisión",
+        "procedimiento",
+        "resultado separado del proceso"
+      ]
+    },
+    {
+      "id": "MED-302-Q013",
+      "unit_id": "MED-302-U04",
+      "type": "knowledge",
+      "prompt_es": "Explica hemorragia y da un ejemplo operativo.",
+      "answer_key_es": [
+        "hemorragia",
+        "ejemplo coherente",
+        "límite o contexto"
+      ]
+    },
+    {
+      "id": "MED-302-Q014",
+      "unit_id": "MED-302-U04",
+      "type": "relationship",
+      "prompt_es": "Relaciona hemorragia con inmovilización contextual. ¿Qué información pasa de uno a otro?",
+      "answer_key_es": [
+        "hemorragia",
+        "inmovilización contextual",
+        "flujo de información o dependencia"
+      ]
+    },
+    {
+      "id": "MED-302-Q015",
+      "unit_id": "MED-302-U04",
+      "type": "scenario",
+      "prompt_es": "Aplicar medidas autorizadas. Describe preparación, acción, comunicación y criterio de escalado.",
+      "answer_key_es": [
+        "preparación",
+        "acción",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "MED-302-Q016",
+      "unit_id": "MED-302-U04",
+      "type": "debrief",
+      "prompt_es": "Tras la práctica de Estabilización básica, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "answer_key_es": [
+        "información disponible entonces",
+        "decisión",
+        "procedimiento",
+        "resultado separado del proceso"
+      ]
+    },
+    {
+      "id": "MED-302-Q017",
+      "unit_id": "MED-302-U05",
+      "type": "knowledge",
+      "prompt_es": "Explica tricorder médico y da un ejemplo operativo.",
+      "answer_key_es": [
+        "tricorder médico",
+        "ejemplo coherente",
+        "límite o contexto"
+      ]
+    },
+    {
+      "id": "MED-302-Q018",
+      "unit_id": "MED-302-U05",
+      "type": "relationship",
+      "prompt_es": "Relaciona tricorder médico con kit. ¿Qué información pasa de uno a otro?",
+      "answer_key_es": [
+        "tricorder médico",
+        "kit",
+        "flujo de información o dependencia"
+      ]
+    },
+    {
+      "id": "MED-302-Q019",
+      "unit_id": "MED-302-U05",
+      "type": "scenario",
+      "prompt_es": "Preparar equipo y obtener datos. Describe preparación, acción, comunicación y criterio de escalado.",
+      "answer_key_es": [
+        "preparación",
+        "acción",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "MED-302-Q020",
+      "unit_id": "MED-302-U05",
+      "type": "debrief",
+      "prompt_es": "Tras la práctica de Equipo médico básico, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "answer_key_es": [
+        "información disponible entonces",
+        "decisión",
+        "procedimiento",
+        "resultado separado del proceso"
+      ]
+    },
+    {
+      "id": "MED-302-Q021",
+      "unit_id": "MED-302-U06",
+      "type": "knowledge",
+      "prompt_es": "Explica estado y da un ejemplo operativo.",
+      "answer_key_es": [
+        "estado",
+        "ejemplo coherente",
+        "límite o contexto"
+      ]
+    },
+    {
+      "id": "MED-302-Q022",
+      "unit_id": "MED-302-U06",
+      "type": "relationship",
+      "prompt_es": "Relaciona estado con intervenciones. ¿Qué información pasa de uno a otro?",
+      "answer_key_es": [
+        "estado",
+        "intervenciones",
+        "flujo de información o dependencia"
+      ]
+    },
+    {
+      "id": "MED-302-Q023",
+      "unit_id": "MED-302-U06",
+      "type": "scenario",
+      "prompt_es": "Entregar paciente a profesional. Describe preparación, acción, comunicación y criterio de escalado.",
+      "answer_key_es": [
+        "preparación",
+        "acción",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "MED-302-Q024",
+      "unit_id": "MED-302-U06",
+      "type": "debrief",
+      "prompt_es": "Tras la práctica de Handoff a Medicina, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "answer_key_es": [
+        "información disponible entonces",
+        "decisión",
+        "procedimiento",
+        "resultado separado del proceso"
+      ]
+    }
+  ]
+}

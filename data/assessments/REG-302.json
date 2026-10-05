@@ -1,0 +1,284 @@
+{
+  "schema_version": "1.0.0",
+  "course_id": "REG-302",
+  "status": "generated_from_authoritative_curriculum",
+  "question_count": 24,
+  "questions": [
+    {
+      "id": "REG-302-Q001",
+      "unit_id": "REG-302-U01",
+      "type": "knowledge",
+      "prompt_es": "Explica órdenes y da un ejemplo operativo.",
+      "answer_key_es": [
+        "órdenes",
+        "ejemplo coherente",
+        "límite o contexto"
+      ]
+    },
+    {
+      "id": "REG-302-Q002",
+      "unit_id": "REG-302-U01",
+      "type": "relationship",
+      "prompt_es": "Relaciona órdenes con reglamentos. ¿Qué información pasa de uno a otro?",
+      "answer_key_es": [
+        "órdenes",
+        "reglamentos",
+        "flujo de información o dependencia"
+      ]
+    },
+    {
+      "id": "REG-302-Q003",
+      "unit_id": "REG-302-U01",
+      "type": "scenario",
+      "prompt_es": "Analizar autoridad en tres casos. Describe preparación, acción, comunicación y criterio de escalado.",
+      "answer_key_es": [
+        "preparación",
+        "acción",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "REG-302-Q004",
+      "unit_id": "REG-302-U01",
+      "type": "debrief",
+      "prompt_es": "Tras la práctica de Autoridad y regulación, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "answer_key_es": [
+        "información disponible entonces",
+        "decisión",
+        "procedimiento",
+        "resultado separado del proceso"
+      ]
+    },
+    {
+      "id": "REG-302-Q005",
+      "unit_id": "REG-302-U02",
+      "type": "knowledge",
+      "prompt_es": "Explica finalidad y da un ejemplo operativo.",
+      "answer_key_es": [
+        "finalidad",
+        "ejemplo coherente",
+        "límite o contexto"
+      ]
+    },
+    {
+      "id": "REG-302-Q006",
+      "unit_id": "REG-302-U02",
+      "type": "relationship",
+      "prompt_es": "Relaciona finalidad con no interferencia. ¿Qué información pasa de uno a otro?",
+      "answer_key_es": [
+        "finalidad",
+        "no interferencia",
+        "flujo de información o dependencia"
+      ]
+    },
+    {
+      "id": "REG-302-Q007",
+      "unit_id": "REG-302-U02",
+      "type": "scenario",
+      "prompt_es": "Resolver casos introductorios. Describe preparación, acción, comunicación y criterio de escalado.",
+      "answer_key_es": [
+        "preparación",
+        "acción",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "REG-302-Q008",
+      "unit_id": "REG-302-U02",
+      "type": "debrief",
+      "prompt_es": "Tras la práctica de Directiva Principal, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "answer_key_es": [
+        "información disponible entonces",
+        "decisión",
+        "procedimiento",
+        "resultado separado del proceso"
+      ]
+    },
+    {
+      "id": "REG-302-Q009",
+      "unit_id": "REG-302-U03",
+      "type": "knowledge",
+      "prompt_es": "Explica duda y da un ejemplo operativo.",
+      "answer_key_es": [
+        "duda",
+        "ejemplo coherente",
+        "límite o contexto"
+      ]
+    },
+    {
+      "id": "REG-302-Q010",
+      "unit_id": "REG-302-U03",
+      "type": "relationship",
+      "prompt_es": "Relaciona duda con aclaración. ¿Qué información pasa de uno a otro?",
+      "answer_key_es": [
+        "duda",
+        "aclaración",
+        "flujo de información o dependencia"
+      ]
+    },
+    {
+      "id": "REG-302-Q011",
+      "unit_id": "REG-302-U03",
+      "type": "scenario",
+      "prompt_es": "Responder a una orden discutible sin improvisar doctrina. Describe preparación, acción, comunicación y criterio de escalado.",
+      "answer_key_es": [
+        "preparación",
+        "acción",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "REG-302-Q012",
+      "unit_id": "REG-302-U03",
+      "type": "debrief",
+      "prompt_es": "Tras la práctica de Órdenes problemáticas, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "answer_key_es": [
+        "información disponible entonces",
+        "decisión",
+        "procedimiento",
+        "resultado separado del proceso"
+      ]
+    },
+    {
+      "id": "REG-302-Q013",
+      "unit_id": "REG-302-U04",
+      "type": "knowledge",
+      "prompt_es": "Explica médica y da un ejemplo operativo.",
+      "answer_key_es": [
+        "médica",
+        "ejemplo coherente",
+        "límite o contexto"
+      ]
+    },
+    {
+      "id": "REG-302-Q014",
+      "unit_id": "REG-302-U04",
+      "type": "relationship",
+      "prompt_es": "Relaciona médica con seguridad. ¿Qué información pasa de uno a otro?",
+      "answer_key_es": [
+        "médica",
+        "seguridad",
+        "flujo de información o dependencia"
+      ]
+    },
+    {
+      "id": "REG-302-Q015",
+      "unit_id": "REG-302-U04",
+      "type": "scenario",
+      "prompt_es": "Identificar ámbitos de autoridad. Describe preparación, acción, comunicación y criterio de escalado.",
+      "answer_key_es": [
+        "preparación",
+        "acción",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "REG-302-Q016",
+      "unit_id": "REG-302-U04",
+      "type": "debrief",
+      "prompt_es": "Tras la práctica de Autoridad especial, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "answer_key_es": [
+        "información disponible entonces",
+        "decisión",
+        "procedimiento",
+        "resultado separado del proceso"
+      ]
+    },
+    {
+      "id": "REG-302-Q017",
+      "unit_id": "REG-302-U05",
+      "type": "knowledge",
+      "prompt_es": "Explica need-to-know y da un ejemplo operativo.",
+      "answer_key_es": [
+        "need-to-know",
+        "ejemplo coherente",
+        "límite o contexto"
+      ]
+    },
+    {
+      "id": "REG-302-Q018",
+      "unit_id": "REG-302-U05",
+      "type": "relationship",
+      "prompt_es": "Relaciona need-to-know con clasificación. ¿Qué información pasa de uno a otro?",
+      "answer_key_es": [
+        "need-to-know",
+        "clasificación",
+        "flujo de información o dependencia"
+      ]
+    },
+    {
+      "id": "REG-302-Q019",
+      "unit_id": "REG-302-U05",
+      "type": "scenario",
+      "prompt_es": "Resolver una petición improcedente. Describe preparación, acción, comunicación y criterio de escalado.",
+      "answer_key_es": [
+        "preparación",
+        "acción",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "REG-302-Q020",
+      "unit_id": "REG-302-U05",
+      "type": "debrief",
+      "prompt_es": "Tras la práctica de Información restringida, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "answer_key_es": [
+        "información disponible entonces",
+        "decisión",
+        "procedimiento",
+        "resultado separado del proceso"
+      ]
+    },
+    {
+      "id": "REG-302-Q021",
+      "unit_id": "REG-302-U06",
+      "type": "knowledge",
+      "prompt_es": "Explica hechos y da un ejemplo operativo.",
+      "answer_key_es": [
+        "hechos",
+        "ejemplo coherente",
+        "límite o contexto"
+      ]
+    },
+    {
+      "id": "REG-302-Q022",
+      "unit_id": "REG-302-U06",
+      "type": "relationship",
+      "prompt_es": "Relaciona hechos con regla. ¿Qué información pasa de uno a otro?",
+      "answer_key_es": [
+        "hechos",
+        "regla",
+        "flujo de información o dependencia"
+      ]
+    },
+    {
+      "id": "REG-302-Q023",
+      "unit_id": "REG-302-U06",
+      "type": "scenario",
+      "prompt_es": "Analizar caso complejo moderado. Describe preparación, acción, comunicación y criterio de escalado.",
+      "answer_key_es": [
+        "preparación",
+        "acción",
+        "comunicación",
+        "escalado"
+      ]
+    },
+    {
+      "id": "REG-302-Q024",
+      "unit_id": "REG-302-U06",
+      "type": "debrief",
+      "prompt_es": "Tras la práctica de Caso integrado de responsabilidad, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "answer_key_es": [
+        "información disponible entonces",
+        "decisión",
+        "procedimiento",
+        "resultado separado del proceso"
+      ]
+    }
+  ]
+}
