@@ -1,0 +1,397 @@
+{
+  "subject": "Especialización profesional avanzada II",
+  "code": "BRN-102",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/first_class/courses/BRN-102/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/first_class/BRN-102/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/careers/starfleet_service/professional_evidence_model.json",
+    "gameplay/careers/academy_path/specializations.json",
+    "gameplay/careers/academy_path/specialization_rules.md",
+    "gameplay/careers/academy_path/curriculum/branches"
+  ],
+  "modules": [
+    {
+      "id": "BRN-102-U01",
+      "title": "Preparación de misión de rama",
+      "subtitle": "UNIDAD 01 · BRN-102",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Cerrar la formación académica intensa de rama mediante operación avanzada de misión."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "objetivo",
+            "recursos",
+            "riesgos",
+            "contingencias"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Plan de especialidad."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Revisión."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica objetivo como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Plan de especialidad.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/academy_path/curriculum/branches"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BRN-102-U02",
+      "title": "Operación prolongada",
+      "subtitle": "UNIDAD 02 · BRN-102",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Cerrar la formación académica intensa de rama mediante operación avanzada de misión."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "continuidad",
+            "carga",
+            "calidad",
+            "registro"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Ejecutar bloque extenso."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica continuidad como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Ejecutar bloque extenso.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/academy_path/curriculum/branches"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BRN-102-U03",
+      "title": "Problema complejo",
+      "subtitle": "UNIDAD 03 · BRN-102",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Cerrar la formación académica intensa de rama mediante operación avanzada de misión."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "incertidumbre",
+            "fallos",
+            "personas",
+            "tiempo"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Resolver incidente."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Juicio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica incertidumbre como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Resolver incidente.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/academy_path/curriculum/branches"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BRN-102-U04",
+      "title": "Asesoramiento profesional",
+      "subtitle": "UNIDAD 04 · BRN-102",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Cerrar la formación académica intensa de rama mediante operación avanzada de misión."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "dato",
+            "opciones",
+            "riesgo",
+            "recomendación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Briefing a mando."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica dato como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Briefing a mando.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/academy_path/curriculum/branches"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BRN-102-U05",
+      "title": "Recuperación y handoff",
+      "subtitle": "UNIDAD 05 · BRN-102",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Cerrar la formación académica intensa de rama mediante operación avanzada de misión."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "restauración",
+            "pendientes",
+            "evidencia",
+            "relevo"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Cerrar operación."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica restauración como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Cerrar operación.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/academy_path/curriculum/branches"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BRN-102-U06",
+      "title": "Caso avanzado II",
+      "subtitle": "UNIDAD 06 · BRN-102",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Cerrar la formación académica intensa de rama mediante operación avanzada de misión."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "misión completa",
+            "cambios",
+            "resultado",
+            "debrief"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Caso final de rama antes de CAP-103."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación continua."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica misión completa como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Caso final de rama antes de CAP-103.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/academy_path/curriculum/branches"
+          ]
+        }
+      ]
+    }
+  ]
+}

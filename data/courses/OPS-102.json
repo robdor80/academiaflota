@@ -1,0 +1,395 @@
+{
+  "subject": "Operaciones integradas de misión",
+  "code": "OPS-102",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/first_class/courses/OPS-102/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/first_class/OPS-102/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/careers/starfleet_service/professional_evidence_model.json",
+    "gameplay/orders/starfleet_mission_tasking_order.json",
+    "gameplay/ship_operations/operational_event_log/operational_event_contract.json",
+    "gameplay/navigation/route_context_model.json"
+  ],
+  "modules": [
+    {
+      "id": "OPS-102-U01",
+      "title": "Briefing de misión",
+      "subtitle": "UNIDAD 01 · OPS-102",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Vivir una misión completa desde briefing hasta debrief, con varias guardias y eventos emergentes."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "objetivos",
+            "autoridad",
+            "restricciones",
+            "riesgos"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Preparación multi-rama."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica objetivos como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Preparación multi-rama.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/orders/starfleet_mission_tasking_order.json",
+            "gameplay/ship_operations/operational_event_log/operational_event_contract.json",
+            "gameplay/navigation/route_context_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OPS-102-U02",
+      "title": "Preparación de nave/equipo",
+      "subtitle": "UNIDAD 02 · OPS-102",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Vivir una misión completa desde briefing hasta debrief, con varias guardias y eventos emergentes."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "configuración",
+            "personal",
+            "recursos",
+            "checklists"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Preparar salida."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica configuración como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Preparar salida.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/orders/starfleet_mission_tasking_order.json",
+            "gameplay/ship_operations/operational_event_log/operational_event_contract.json",
+            "gameplay/navigation/route_context_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OPS-102-U03",
+      "title": "Tránsito y rutina",
+      "subtitle": "UNIDAD 03 · OPS-102",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Vivir una misión completa desde briefing hasta debrief, con varias guardias y eventos emergentes."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "guardias",
+            "registros",
+            "mantenimiento",
+            "observación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Operación sostenida."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación longitudinal."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica guardias como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Operación sostenida.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/orders/starfleet_mission_tasking_order.json",
+            "gameplay/ship_operations/operational_event_log/operational_event_contract.json",
+            "gameplay/navigation/route_context_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OPS-102-U04",
+      "title": "Objetivo principal",
+      "subtitle": "UNIDAD 04 · OPS-102",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Vivir una misión completa desde briefing hasta debrief, con varias guardias y eventos emergentes."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "ciencia/diplomacia/logística/exploración contextual",
+            "coordinación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Ejecutar misión."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica ciencia/diplomacia/logística/exploración contextual como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Ejecutar misión.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/orders/starfleet_mission_tasking_order.json",
+            "gameplay/ship_operations/operational_event_log/operational_event_contract.json",
+            "gameplay/navigation/route_context_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OPS-102-U05",
+      "title": "Cambio de condiciones",
+      "subtitle": "UNIDAD 05 · OPS-102",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Vivir una misión completa desde briefing hasta debrief, con varias guardias y eventos emergentes."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "evento",
+            "prioridad",
+            "adaptación",
+            "consecuencia"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Responder sin guion fijo."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Juicio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica evento como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Responder sin guion fijo.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/orders/starfleet_mission_tasking_order.json",
+            "gameplay/ship_operations/operational_event_log/operational_event_contract.json",
+            "gameplay/navigation/route_context_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "OPS-102-U06",
+      "title": "Regreso y cierre",
+      "subtitle": "UNIDAD 06 · OPS-102",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Vivir una misión completa desde briefing hasta debrief, con varias guardias y eventos emergentes."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "handoff",
+            "logs",
+            "pendientes",
+            "debrief"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Cerrar misión."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación integrada."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica handoff como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Cerrar misión.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/orders/starfleet_mission_tasking_order.json",
+            "gameplay/ship_operations/operational_event_log/operational_event_contract.json",
+            "gameplay/navigation/route_context_model.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

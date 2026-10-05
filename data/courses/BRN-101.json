@@ -1,0 +1,397 @@
+{
+  "subject": "Especialización profesional avanzada I",
+  "code": "BRN-101",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/first_class/courses/BRN-101/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/first_class/BRN-101/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/careers/starfleet_service/professional_evidence_model.json",
+    "gameplay/careers/academy_path/specializations.json",
+    "gameplay/careers/academy_path/specialization_rules.md",
+    "gameplay/careers/academy_path/curriculum/branches"
+  ],
+  "modules": [
+    {
+      "id": "BRN-101-U01",
+      "title": "Revisión de cualificación intermedia",
+      "subtitle": "UNIDAD 01 · BRN-101",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Consolidar la rama elegida en problemas avanzados, supervisión y criterio profesional."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "fortalezas",
+            "carencias",
+            "evidencia",
+            "objetivos"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Analizar resultado de QUA-203."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Plan individual."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica fortalezas como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Analizar resultado de QUA-203.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/academy_path/curriculum/branches"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BRN-101-U02",
+      "title": "Herramientas avanzadas de rama",
+      "subtitle": "UNIDAD 02 · BRN-101",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Consolidar la rama elegida en problemas avanzados, supervisión y criterio profesional."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "configuración",
+            "límites",
+            "fallos",
+            "seguridad"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Práctica avanzada según especialidad."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica configuración como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Práctica avanzada según especialidad.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/academy_path/curriculum/branches"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BRN-101-U03",
+      "title": "Decisión profesional",
+      "subtitle": "UNIDAD 03 · BRN-101",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Consolidar la rama elegida en problemas avanzados, supervisión y criterio profesional."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "opciones",
+            "riesgo",
+            "misión",
+            "recomendación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Resolver caso sin receta."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Juicio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica opciones como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Resolver caso sin receta.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/academy_path/curriculum/branches"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BRN-101-U04",
+      "title": "Supervisión de tarea",
+      "subtitle": "UNIDAD 04 · BRN-101",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Consolidar la rama elegida en problemas avanzados, supervisión y criterio profesional."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "briefing",
+            "delegación",
+            "control",
+            "cierre"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Supervisar micro-equipo."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica briefing como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Supervisar micro-equipo.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/academy_path/curriculum/branches"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BRN-101-U05",
+      "title": "Interfaz con mando",
+      "subtitle": "UNIDAD 05 · BRN-101",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Consolidar la rama elegida en problemas avanzados, supervisión y criterio profesional."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "estado",
+            "riesgo",
+            "opciones",
+            "ETA/recomendación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Briefing profesional."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Comunicación y criterio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica estado como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Briefing profesional.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/academy_path/curriculum/branches"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "BRN-101-U06",
+      "title": "Caso avanzado I",
+      "subtitle": "UNIDAD 06 · BRN-101",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Consolidar la rama elegida en problemas avanzados, supervisión y criterio profesional."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "situación",
+            "ejecución",
+            "cambio",
+            "debrief"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Caso de rama completo."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación continua."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica situación como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Caso de rama completo.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/specializations.json",
+            "gameplay/careers/academy_path/specialization_rules.md",
+            "gameplay/careers/academy_path/curriculum/branches"
+          ]
+        }
+      ]
+    }
+  ]
+}

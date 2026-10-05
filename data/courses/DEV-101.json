@@ -1,0 +1,396 @@
+{
+  "subject": "Desarrollo profesional avanzado",
+  "code": "DEV-101",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/first_class/courses/DEV-101/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/first_class/DEV-101/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/careers/starfleet_service/professional_evidence_model.json",
+    "gameplay/characters/objectives/trajectory_coherence_rules.md",
+    "gameplay/careers/starfleet_service/career_progression_rules.json",
+    "gameplay/careers/post_academy/qualification_and_mentorship_model.json"
+  ],
+  "modules": [
+    {
+      "id": "DEV-101-U01",
+      "title": "Expediente acumulado",
+      "subtitle": "UNIDAD 01 · DEV-101",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Preparar la transición de cadete a oficial usando expediente, objetivos, cualificaciones y áreas reales de desarrollo."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "cuatro años",
+            "fortalezas",
+            "incidentes",
+            "cualificaciones"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Revisar historial."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Tutoría."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica cuatro años como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Revisar historial.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/characters/objectives/trajectory_coherence_rules.md",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/careers/post_academy/qualification_and_mentorship_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DEV-101-U02",
+      "title": "Objetivos de carrera",
+      "subtitle": "UNIDAD 02 · DEV-101",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Preparar la transición de cadete a oficial usando expediente, objetivos, cualificaciones y áreas reales de desarrollo."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "largo plazo",
+            "medio plazo",
+            "rutas alternativas"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Actualizar objetivos."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Revisión."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica largo plazo como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Actualizar objetivos.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/characters/objectives/trajectory_coherence_rules.md",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/careers/post_academy/qualification_and_mentorship_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DEV-101-U03",
+      "title": "Brechas de preparación",
+      "subtitle": "UNIDAD 03 · DEV-101",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Preparar la transición de cadete a oficial usando expediente, objetivos, cualificaciones y áreas reales de desarrollo."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "conocimiento",
+            "experiencia",
+            "liderazgo",
+            "cross-training"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Identificar carencias."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Plan."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica conocimiento como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Identificar carencias.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/characters/objectives/trajectory_coherence_rules.md",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/careers/post_academy/qualification_and_mentorship_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DEV-101-U04",
+      "title": "Preferencias de servicio",
+      "subtitle": "UNIDAD 04 · DEV-101",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Preparar la transición de cadete a oficial usando expediente, objetivos, cualificaciones y áreas reales de desarrollo."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "tipo de unidad",
+            "misión",
+            "entorno",
+            "ubicación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Registrar preferencias no vinculantes."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Validación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica tipo de unidad como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Registrar preferencias no vinculantes.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/characters/objectives/trajectory_coherence_rules.md",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/careers/post_academy/qualification_and_mentorship_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DEV-101-U05",
+      "title": "Recomendaciones",
+      "subtitle": "UNIDAD 05 · DEV-101",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Preparar la transición de cadete a oficial usando expediente, objetivos, cualificaciones y áreas reales de desarrollo."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "instructores",
+            "mentores",
+            "evidencia",
+            "límites"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Entrevista profesional."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Registro."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica instructores como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Entrevista profesional.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/characters/objectives/trajectory_coherence_rules.md",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/careers/post_academy/qualification_and_mentorship_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DEV-101-U06",
+      "title": "Plan post-Academia",
+      "subtitle": "UNIDAD 06 · DEV-101",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Preparar la transición de cadete a oficial usando expediente, objetivos, cualificaciones y áreas reales de desarrollo."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "primer destino",
+            "mentoría",
+            "cualificaciones futuras",
+            "desarrollo"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Crear plan inicial."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación cualitativa."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica primer destino como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Crear plan inicial.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/characters/objectives/trajectory_coherence_rules.md",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "gameplay/careers/post_academy/qualification_and_mentorship_model.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

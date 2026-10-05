@@ -1,0 +1,390 @@
+{
+  "subject": "Liderazgo profesional y supervisión III",
+  "code": "LDR-101",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/first_class/courses/LDR-101/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/first_class/LDR-101/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/careers/starfleet_service/professional_evidence_model.json",
+    "gameplay/careers/starfleet_service/career_progression_rules.json",
+    "lore/federation/starfleet/command_structure/succession_rules.json"
+  ],
+  "modules": [
+    {
+      "id": "LDR-101-U01",
+      "title": "Liderazgo de turno",
+      "subtitle": "UNIDAD 01 · LDR-101",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Ejercer liderazgo sobre trabajo realista, personas con capacidades distintas y consecuencias profesionales."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "objetivos",
+            "roles",
+            "estándares",
+            "seguimiento"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Dirigir un turno simulado."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica objetivos como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Dirigir un turno simulado.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LDR-101-U02",
+      "title": "Personal con distinta experiencia",
+      "subtitle": "UNIDAD 02 · LDR-101",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Ejercer liderazgo sobre trabajo realista, personas con capacidades distintas y consecuencias profesionales."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "novato",
+            "competente",
+            "experto",
+            "delegación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Asignar tareas razonadamente."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Caso."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica novato como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Asignar tareas razonadamente.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LDR-101-U03",
+      "title": "Error de subordinado",
+      "subtitle": "UNIDAD 03 · LDR-101",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Ejercer liderazgo sobre trabajo realista, personas con capacidades distintas y consecuencias profesionales."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "seguridad",
+            "corrección",
+            "responsabilidad",
+            "registro"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Gestionar un error."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Escena."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica seguridad como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Gestionar un error.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LDR-101-U04",
+      "title": "Conflicto profesional",
+      "subtitle": "UNIDAD 04 · LDR-101",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Ejercer liderazgo sobre trabajo realista, personas con capacidades distintas y consecuencias profesionales."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "desacuerdo",
+            "autoridad",
+            "escucha",
+            "decisión"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Resolver conflicto."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica desacuerdo como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Resolver conflicto.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LDR-101-U05",
+      "title": "Fatiga y capacidad",
+      "subtitle": "UNIDAD 05 · LDR-101",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Ejercer liderazgo sobre trabajo realista, personas con capacidades distintas y consecuencias profesionales."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "riesgo",
+            "relevo",
+            "prioridad",
+            "bienestar"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Tomar decisión sobre personal."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Juicio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica riesgo como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Tomar decisión sobre personal.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "LDR-101-U06",
+      "title": "Debrief de liderazgo",
+      "subtitle": "UNIDAD 06 · LDR-101",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Ejercer liderazgo sobre trabajo realista, personas con capacidades distintas y consecuencias profesionales."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "resultado",
+            "proceso",
+            "equipo",
+            "mejora"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Revisar desempeño."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación longitudinal."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica resultado como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Revisar desempeño.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/starfleet_service/career_progression_rules.json",
+            "lore/federation/starfleet/command_structure/succession_rules.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

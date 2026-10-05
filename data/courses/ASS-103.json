@@ -1,0 +1,399 @@
+{
+  "subject": "Primer destino y transición a servicio activo",
+  "code": "ASS-103",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/first_class/courses/ASS-103/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/first_class/ASS-103/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/careers/starfleet_service/professional_evidence_model.json",
+    "gameplay/careers/academy_path/first_assignment_model.json",
+    "gameplay/careers/career_bridge.md",
+    "gameplay/careers/starfleet_service/career_progression_rules.json"
+  ],
+  "modules": [
+    {
+      "id": "ASS-103-U01",
+      "title": "Preferencias del jugador",
+      "subtitle": "UNIDAD 01 · ASS-103",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Cruzar el perfil real del graduando con necesidades y vacantes del mundo vivo sin garantizar destino concreto."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "tipo de unidad",
+            "misión",
+            "tamaño",
+            "región",
+            "puesto"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Registrar preferencias."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "No son órdenes garantizadas."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica tipo de unidad como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Registrar preferencias.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/first_assignment_model.json",
+            "gameplay/careers/career_bridge.md",
+            "gameplay/careers/starfleet_service/career_progression_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ASS-103-U02",
+      "title": "Perfil de asignación",
+      "subtitle": "UNIDAD 02 · ASS-103",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Cruzar el perfil real del graduando con necesidades y vacantes del mundo vivo sin garantizar destino concreto."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "especialidad",
+            "cualificaciones",
+            "recomendaciones",
+            "restricciones"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Construir perfil."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Validación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica especialidad como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Construir perfil.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/first_assignment_model.json",
+            "gameplay/careers/career_bridge.md",
+            "gameplay/careers/starfleet_service/career_progression_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ASS-103-U03",
+      "title": "Vacantes y necesidades",
+      "subtitle": "UNIDAD 03 · ASS-103",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Cruzar el perfil real del graduando con necesidades y vacantes del mundo vivo sin garantizar destino concreto."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "estado del mundo",
+            "fecha",
+            "unidades",
+            "puestos",
+            "prioridad"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Consultar candidatos generados por sistema."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Sin crear vacantes por deseo."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica estado del mundo como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Consultar candidatos generados por sistema.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/first_assignment_model.json",
+            "gameplay/careers/career_bridge.md",
+            "gameplay/careers/starfleet_service/career_progression_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ASS-103-U04",
+      "title": "Entrevistas/órdenes preliminares",
+      "subtitle": "UNIDAD 04 · ASS-103",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Cruzar el perfil real del graduando con necesidades y vacantes del mundo vivo sin garantizar destino concreto."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "contacto",
+            "preguntas",
+            "encaje",
+            "condiciones"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Escenas cuando correspondan."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evidencia contextual."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica contacto como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Escenas cuando correspondan.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/first_assignment_model.json",
+            "gameplay/careers/career_bridge.md",
+            "gameplay/careers/starfleet_service/career_progression_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ASS-103-U05",
+      "title": "Selección institucional",
+      "subtitle": "UNIDAD 05 · ASS-103",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Cruzar el perfil real del graduando con necesidades y vacantes del mundo vivo sin garantizar destino concreto."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "necesidad",
+            "encaje",
+            "disponibilidad",
+            "preferencias"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Resolver asignación por reglas."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Resultado persistente."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica necesidad como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Resolver asignación por reglas.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/first_assignment_model.json",
+            "gameplay/careers/career_bridge.md",
+            "gameplay/careers/starfleet_service/career_progression_rules.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ASS-103-U06",
+      "title": "Transición",
+      "subtitle": "UNIDAD 06 · ASS-103",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Cruzar el perfil real del graduando con necesidades y vacantes del mundo vivo sin garantizar destino concreto."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "órdenes",
+            "fecha",
+            "viaje",
+            "presentación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Preparar incorporación."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Cierre."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica órdenes como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Preparar incorporación.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/first_assignment_model.json",
+            "gameplay/careers/career_bridge.md",
+            "gameplay/careers/starfleet_service/career_progression_rules.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,391 @@
+{
+  "subject": "Kobayashi Maru",
+  "code": "KM-103",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/first_class/courses/KM-103/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/first_class/KM-103/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/careers/starfleet_service/professional_evidence_model.json",
+    "gameplay/careers/academy_path/kobayashi_maru_design.md",
+    "gameplay/careers/academy_path/simulation_model.json"
+  ],
+  "modules": [
+    {
+      "id": "KM-103-U01",
+      "title": "Briefing",
+      "subtitle": "UNIDAD 01 · KM-103",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Evaluar comportamiento profesional ante una situación sin solución satisfactoria garantizada."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "misión aparente",
+            "rol de rama",
+            "reglas visibles",
+            "incertidumbre"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Preparar puesto sin conocer ejes ocultos."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "No se revelan criterios ocultos."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica misión aparente como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Preparar puesto sin conocer ejes ocultos.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/kobayashi_maru_design.md",
+            "gameplay/careers/academy_path/simulation_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "KM-103-U02",
+      "title": "Desarrollo inicial",
+      "subtitle": "UNIDAD 02 · KM-103",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Evaluar comportamiento profesional ante una situación sin solución satisfactoria garantizada."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "información",
+            "decisiones",
+            "comunicación",
+            "equipo"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Operar escenario."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Observación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica información como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Operar escenario.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/kobayashi_maru_design.md",
+            "gameplay/careers/academy_path/simulation_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "KM-103-U03",
+      "title": "Escalada",
+      "subtitle": "UNIDAD 03 · KM-103",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Evaluar comportamiento profesional ante una situación sin solución satisfactoria garantizada."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "pérdida de opciones",
+            "riesgo",
+            "presión",
+            "conflicto"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Continuar desde el rol real."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación contextual."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica pérdida de opciones como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Continuar desde el rol real.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/kobayashi_maru_design.md",
+            "gameplay/careers/academy_path/simulation_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "KM-103-U04",
+      "title": "Situación no ganable",
+      "subtitle": "UNIDAD 04 · KM-103",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Evaluar comportamiento profesional ante una situación sin solución satisfactoria garantizada."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "limitaciones",
+            "consecuencias",
+            "responsabilidad",
+            "ética"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Tomar decisiones sin solución perfecta."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "No se evalúa 'salvar la nave' como condición de aprobado."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica limitaciones como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Tomar decisiones sin solución perfecta.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/kobayashi_maru_design.md",
+            "gameplay/careers/academy_path/simulation_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "KM-103-U05",
+      "title": "Cierre",
+      "subtitle": "UNIDAD 05 · KM-103",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Evaluar comportamiento profesional ante una situación sin solución satisfactoria garantizada."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "resultado",
+            "conducta",
+            "registro",
+            "impacto"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Finalizar escenario."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evidencia."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica resultado como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Finalizar escenario.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/kobayashi_maru_design.md",
+            "gameplay/careers/academy_path/simulation_model.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "KM-103-U06",
+      "title": "Debrief",
+      "subtitle": "UNIDAD 06 · KM-103",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Evaluar comportamiento profesional ante una situación sin solución satisfactoria garantizada."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "juicio",
+            "comunicación",
+            "ética",
+            "disciplina",
+            "autoconocimiento"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Debrief individual y de equipo."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación narrativa respaldada por eventos."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica juicio como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Debrief individual y de equipo.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "gameplay/careers/academy_path/kobayashi_maru_design.md",
+            "gameplay/careers/academy_path/simulation_model.json"
+          ]
+        }
+      ]
+    }
+  ]
+}

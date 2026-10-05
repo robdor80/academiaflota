@@ -1,0 +1,389 @@
+{
+  "subject": "Continuidad de guardia y responsabilidad de puesto",
+  "code": "WCH-102",
+  "version": "1.0",
+  "sourceRepository": "robdor80/Videojuego_StarTrek",
+  "sourceCourse": "gameplay/careers/academy_path/curriculum/first_class/courses/WCH-102/course.json",
+  "sourceManual": "gameplay/careers/academy_path/study_materials/first_class/WCH-102/MANUAL_v1_0.md",
+  "sourceRefs": [
+    "gameplay/careers/academy_path/course_resolution.md",
+    "gameplay/careers/academy_path/evaluation_model.json",
+    "gameplay/careers/academy_path/academy_era_profiles.json",
+    "gameplay/careers/starfleet_service/professional_evidence_model.json",
+    "lore/federation/starfleet/duty_shifts/shift_model.json",
+    "gameplay/ship_operations/operational_event_log/README.md"
+  ],
+  "modules": [
+    {
+      "id": "WCH-102-U01",
+      "title": "Estado heredado",
+      "subtitle": "UNIDAD 01 · WCH-102",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Garantizar que información, órdenes y problemas sobrevivan correctamente al cambio de turno."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "órdenes vigentes",
+            "pendientes",
+            "degradaciones",
+            "riesgos"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Recibir un relevo complejo."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica órdenes vigentes como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Recibir un relevo complejo.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "lore/federation/starfleet/duty_shifts/shift_model.json",
+            "gameplay/ship_operations/operational_event_log/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "WCH-102-U02",
+      "title": "Seguimiento longitudinal",
+      "subtitle": "UNIDAD 02 · WCH-102",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Garantizar que información, órdenes y problemas sobrevivan correctamente al cambio de turno."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "incidencias",
+            "tendencias",
+            "ETA",
+            "responsables"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Mantener asuntos abiertos."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Práctica."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica incidencias como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Mantener asuntos abiertos.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "lore/federation/starfleet/duty_shifts/shift_model.json",
+            "gameplay/ship_operations/operational_event_log/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "WCH-102-U03",
+      "title": "Registro factual",
+      "subtitle": "UNIDAD 03 · WCH-102",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Garantizar que información, órdenes y problemas sobrevivan correctamente al cambio de turno."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "evento",
+            "acción",
+            "resultado",
+            "fuente"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Actualizar event log/registro."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Revisión."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica evento como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Actualizar event log/registro.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "lore/federation/starfleet/duty_shifts/shift_model.json",
+            "gameplay/ship_operations/operational_event_log/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "WCH-102-U04",
+      "title": "Cambio de prioridad",
+      "subtitle": "UNIDAD 04 · WCH-102",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Garantizar que información, órdenes y problemas sobrevivan correctamente al cambio de turno."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "nueva orden",
+            "impacto",
+            "comunicación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Reorganizar pendientes."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Caso."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica nueva orden como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Reorganizar pendientes.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "lore/federation/starfleet/duty_shifts/shift_model.json",
+            "gameplay/ship_operations/operational_event_log/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "WCH-102-U05",
+      "title": "Entrega de guardia",
+      "subtitle": "UNIDAD 05 · WCH-102",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Garantizar que información, órdenes y problemas sobrevivan correctamente al cambio de turno."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "resumen",
+            "alertas",
+            "acciones futuras",
+            "confirmación"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Handoff formal."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Evaluación."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica resumen como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Handoff formal.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "lore/federation/starfleet/duty_shifts/shift_model.json",
+            "gameplay/ship_operations/operational_event_log/README.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "WCH-102-U06",
+      "title": "Responsabilidad posterior",
+      "subtitle": "UNIDAD 06 · WCH-102",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Garantizar que información, órdenes y problemas sobrevivan correctamente al cambio de turno."
+        },
+        {
+          "type": "heading",
+          "text": "Contenidos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "decisiones anteriores",
+            "auditoría",
+            "consulta",
+            "debrief"
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "PRÁCTICA",
+          "text": "Responder por una decisión pasada."
+        },
+        {
+          "type": "callout",
+          "label": "EVALUACIÓN",
+          "text": "Juicio."
+        },
+        {
+          "type": "heading",
+          "text": "Autoevaluación"
+        },
+        {
+          "type": "numbered",
+          "items": [
+            "Explica decisiones anteriores como se lo explicarías a un Alférez novel.",
+            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
+            "Resuelve: Responder por una decisión pasada.",
+            "¿Qué debe quedar documentado para continuidad o auditoría?"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Referencias internas"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "gameplay/careers/academy_path/course_resolution.md",
+            "gameplay/careers/academy_path/evaluation_model.json",
+            "gameplay/careers/academy_path/academy_era_profiles.json",
+            "gameplay/careers/starfleet_service/professional_evidence_model.json",
+            "lore/federation/starfleet/duty_shifts/shift_model.json",
+            "gameplay/ship_operations/operational_event_log/README.md"
+          ]
+        }
+      ]
+    }
+  ]
+}
