@@ -1,283 +1,278 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "course_id": "SIM-303",
-  "status": "generated_from_authoritative_curriculum",
+  "status": "editorially_aligned_with_developed_manual",
+  "source_manual": "gameplay/careers/academy_path/study_materials/third_class/SIM-303/MANUAL_v1_0.md",
   "question_count": 24,
+  "rule": "No question may require knowledge that is not explicitly taught in SIM-303 or established prerequisites.",
   "questions": [
     {
       "id": "SIM-303-Q001",
       "unit_id": "SIM-303-U01",
       "type": "knowledge",
-      "prompt_es": "Explica misión y da un ejemplo operativo.",
+      "prompt_es": "¿Qué contiene briefing visible?",
       "answer_key_es": [
         "misión",
-        "ejemplo coherente",
-        "límite o contexto"
+        "objetivos",
+        "roles",
+        "entorno",
+        "restricciones",
+        "recursos"
       ]
     },
     {
       "id": "SIM-303-Q002",
       "unit_id": "SIM-303-U01",
-      "type": "relationship",
-      "prompt_es": "Relaciona misión con roles. ¿Qué información pasa de uno a otro?",
+      "type": "judgment",
+      "prompt_es": "¿Por qué existe estado oculto?",
       "answer_key_es": [
-        "misión",
-        "roles",
-        "flujo de información o dependencia"
+        "simulación realista",
+        "información limitada"
       ]
     },
     {
       "id": "SIM-303-Q003",
       "unit_id": "SIM-303-U01",
-      "type": "scenario",
-      "prompt_es": "Preparar equipo. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "knowledge",
+      "prompt_es": "¿Qué debe conocer un rol?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "función",
+        "autoridad",
+        "dependencias",
+        "reporte"
       ]
     },
     {
       "id": "SIM-303-Q004",
       "unit_id": "SIM-303-U01",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Briefing y preparación, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "judgment",
+      "prompt_es": "¿Por qué no mostrar ejes ocultos?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "evitar jugar contra checklist"
       ]
     },
     {
       "id": "SIM-303-Q005",
       "unit_id": "SIM-303-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica guardia y da un ejemplo operativo.",
+      "type": "short_answer",
+      "prompt_es": "¿Por qué se evalúa rutina?",
       "answer_key_es": [
-        "guardia",
-        "ejemplo coherente",
-        "límite o contexto"
+        "fiabilidad",
+        "disciplina",
+        "continuidad"
       ]
     },
     {
       "id": "SIM-303-Q006",
       "unit_id": "SIM-303-U02",
-      "type": "relationship",
-      "prompt_es": "Relaciona guardia con coordinación. ¿Qué información pasa de uno a otro?",
+      "type": "short_answer",
+      "prompt_es": "¿Qué significa ritmo profesional?",
       "answer_key_es": [
-        "guardia",
-        "coordinación",
-        "flujo de información o dependencia"
+        "atención proporcional",
+        "prioridades"
       ]
     },
     {
       "id": "SIM-303-Q007",
       "unit_id": "SIM-303-U02",
-      "type": "scenario",
-      "prompt_es": "Fase rutinaria de misión. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "judgment",
+      "prompt_es": "¿Cómo coordinar sin saturar?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "información relevante",
+        "destinatario correcto"
       ]
     },
     {
       "id": "SIM-303-Q008",
       "unit_id": "SIM-303-U02",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Operación normal, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "compare",
+      "prompt_es": "¿Qué va a log y qué a evaluación?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "hechos",
+        "valoración"
       ]
     },
     {
       "id": "SIM-303-Q009",
       "unit_id": "SIM-303-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica detección y da un ejemplo operativo.",
+      "type": "short_answer",
+      "prompt_es": "¿A qué información puede reaccionar el equipo?",
       "answer_key_es": [
-        "detección",
-        "ejemplo coherente",
-        "límite o contexto"
+        "detectada",
+        "comunicada",
+        "conocida"
       ]
     },
     {
       "id": "SIM-303-Q010",
       "unit_id": "SIM-303-U03",
-      "type": "relationship",
-      "prompt_es": "Relaciona detección con informe. ¿Qué información pasa de uno a otro?",
+      "type": "knowledge",
+      "prompt_es": "¿Qué separa primer informe?",
       "answer_key_es": [
-        "detección",
-        "informe",
-        "flujo de información o dependencia"
+        "hecho",
+        "confianza",
+        "impacto",
+        "necesidad"
       ]
     },
     {
       "id": "SIM-303-Q011",
       "unit_id": "SIM-303-U03",
-      "type": "scenario",
-      "prompt_es": "Responder sin guion paso a paso. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué significa adaptarse?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "actualizar",
+        "cambiar tareas",
+        "apoyo",
+        "escalar",
+        "modificar plan"
       ]
     },
     {
       "id": "SIM-303-Q012",
       "unit_id": "SIM-303-U03",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Evento inesperado, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "judgment",
+      "prompt_es": "¿Por qué varias respuestas pueden ser válidas?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "contexto",
+        "juicio",
+        "consecuencias"
       ]
     },
     {
       "id": "SIM-303-Q013",
       "unit_id": "SIM-303-U04",
       "type": "knowledge",
-      "prompt_es": "Explica dependencias y da un ejemplo operativo.",
+      "prompt_es": "¿Qué conserva handoff?",
       "answer_key_es": [
-        "dependencias",
-        "ejemplo coherente",
-        "límite o contexto"
+        "datos",
+        "contexto",
+        "procedencia",
+        "prioridad",
+        "tarea"
       ]
     },
     {
       "id": "SIM-303-Q014",
       "unit_id": "SIM-303-U04",
-      "type": "relationship",
-      "prompt_es": "Relaciona dependencias con handoff. ¿Qué información pasa de uno a otro?",
+      "type": "knowledge",
+      "prompt_es": "Nombra conflictos interdepartamentales.",
       "answer_key_es": [
-        "dependencias",
-        "handoff",
-        "flujo de información o dependencia"
+        "recursos",
+        "prioridades",
+        "datos contradictorios",
+        "autoridad"
       ]
     },
     {
       "id": "SIM-303-Q015",
       "unit_id": "SIM-303-U04",
-      "type": "scenario",
-      "prompt_es": "Coordinar solución. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "procedure",
+      "prompt_es": "¿Cómo resolver conflicto?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "identificar",
+        "hechos",
+        "opciones",
+        "escalar",
+        "registrar"
       ]
     },
     {
       "id": "SIM-303-Q016",
       "unit_id": "SIM-303-U04",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Interacción entre departamentos, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "judgment",
+      "prompt_es": "¿Teamwork exige acuerdo constante?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "no"
       ]
     },
     {
       "id": "SIM-303-Q017",
       "unit_id": "SIM-303-U05",
-      "type": "knowledge",
-      "prompt_es": "Explica resultado y da un ejemplo operativo.",
+      "type": "short_answer",
+      "prompt_es": "¿Qué responde el cierre?",
       "answer_key_es": [
-        "resultado",
-        "ejemplo coherente",
-        "límite o contexto"
+        "cumplido",
+        "pendiente",
+        "cambios",
+        "riesgos"
       ]
     },
     {
       "id": "SIM-303-Q018",
       "unit_id": "SIM-303-U05",
-      "type": "relationship",
-      "prompt_es": "Relaciona resultado con seguridad. ¿Qué información pasa de uno a otro?",
+      "type": "knowledge",
+      "prompt_es": "¿Qué se comprueba antes de terminar?",
       "answer_key_es": [
-        "resultado",
-        "seguridad",
-        "flujo de información o dependencia"
+        "personal",
+        "sistemas",
+        "equipo",
+        "entorno",
+        "pendientes"
       ]
     },
     {
       "id": "SIM-303-Q019",
       "unit_id": "SIM-303-U05",
-      "type": "scenario",
-      "prompt_es": "Cerrar operación. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "judgment",
+      "prompt_es": "¿Por qué no reescribir logs?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "trazabilidad",
+        "historia factual"
       ]
     },
     {
       "id": "SIM-303-Q020",
       "unit_id": "SIM-303-U05",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Cierre de misión, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "procedure",
+      "prompt_es": "¿Qué hacer con pendientes?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "handoff",
+        "asignar responsable"
       ]
     },
     {
       "id": "SIM-303-Q021",
       "unit_id": "SIM-303-U06",
       "type": "knowledge",
-      "prompt_es": "Explica hechos y da un ejemplo operativo.",
+      "prompt_es": "¿Qué capas separa debrief?",
       "answer_key_es": [
         "hechos",
-        "ejemplo coherente",
-        "límite o contexto"
+        "información",
+        "decisiones",
+        "consecuencias",
+        "alternativas",
+        "aprendizaje"
       ]
     },
     {
       "id": "SIM-303-Q022",
       "unit_id": "SIM-303-U06",
-      "type": "relationship",
-      "prompt_es": "Relaciona hechos con decisiones. ¿Qué información pasa de uno a otro?",
+      "type": "short_answer",
+      "prompt_es": "¿Qué significa evitar hindsight?",
       "answer_key_es": [
-        "hechos",
-        "decisiones",
-        "flujo de información o dependencia"
+        "evaluar con información de entonces"
       ]
     },
     {
       "id": "SIM-303-Q023",
       "unit_id": "SIM-303-U06",
-      "type": "scenario",
-      "prompt_es": "Debrief con instructor. Describe preparación, acción, comunicación y criterio de escalado.",
+      "type": "judgment",
+      "prompt_es": "¿Puede IA inventar evidencia?",
       "answer_key_es": [
-        "preparación",
-        "acción",
-        "comunicación",
-        "escalado"
+        "no"
       ]
     },
     {
       "id": "SIM-303-Q024",
       "unit_id": "SIM-303-U06",
-      "type": "debrief",
-      "prompt_es": "Tras la práctica de Debrief, ¿qué datos usarías para distinguir un error de juicio de un resultado simplemente desfavorable?",
+      "type": "short_answer",
+      "prompt_es": "¿Qué produce aprendizaje final?",
       "answer_key_es": [
-        "información disponible entonces",
-        "decisión",
-        "procedimiento",
-        "resultado separado del proceso"
+        "mantener",
+        "cambiar",
+        "practicar",
+        "investigar"
       ]
     }
   ]
