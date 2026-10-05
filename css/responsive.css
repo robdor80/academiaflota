@@ -795,3 +795,61 @@
     font-size:2.22rem;
   }
 }
+
+
+/* v0.3.6 — usar toda la altura central de la columna institucional */
+@media (min-width:1200px){
+  .gateway__header{
+    justify-content:flex-start;
+  }
+
+  .gateway__title{
+    flex:1 1 auto;
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    min-height:0;
+    margin-top:22px;
+  }
+
+  .gateway__title>.gateway__federation{
+    flex:0 0 auto;
+    text-align:center;
+  }
+
+  .gateway__academy-name{
+    flex:1 1 auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:flex-start;
+    width:100%;
+    min-height:0;
+    margin:28px 0 34px;
+    padding:0 8px;
+    font-size:2.1rem;
+    line-height:.9;
+    text-align:left;
+  }
+
+  .gateway__academy-name span{
+    flex:0 0 auto;
+    width:auto;
+    margin:0;
+    text-align:left;
+  }
+
+  .gateway__header .settings-trigger{
+    flex:0 0 auto;
+    margin-top:0;
+  }
+}
+
+@media (min-width:1600px){
+  .gateway__academy-name{
+    margin-top:34px;
+    margin-bottom:42px;
+    padding:0 4px;
+    font-size:2.35rem;
+  }
+}
