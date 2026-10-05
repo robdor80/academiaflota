@@ -22,7 +22,7 @@ const gateway = document.querySelector("#profile-gateway");
 const portal = document.querySelector("#academy-portal");
 const settingsBackdrop = document.querySelector("#settings-backdrop");
 const views = Array.from(document.querySelectorAll("[data-view]"));
-const navButtons = Array.from(document.querySelectorAll(".primary-nav [data-route]"));
+const navButtons = Array.from(document.querySelectorAll(".primary-nav [data-route], .desktop-sidebar__nav [data-route]"));
 const moduleList = document.querySelector("#module-list");
 const lessonContent = document.querySelector("#lesson-content");
 const curriculumContainer = document.querySelector("#curriculum-container");
@@ -145,7 +145,7 @@ function setRoute(route) {
 function refreshProfileUI() {
   if (!app.profile || !app.study || !app.practices) return;
   const name = app.profile.name;
-  ["#header-cadet-name","#welcome-name","#record-name","#footer-cadet-name"].forEach(function(selector) {
+  ["#header-cadet-name","#desktop-cadet-name","#welcome-name","#record-name","#footer-cadet-name"].forEach(function(selector) {
     document.querySelector(selector).textContent = name;
   });
 
@@ -484,6 +484,7 @@ function renderRecord() {
 
 document.addEventListener("click", function(event) {
   if (event.target.closest("[data-open-settings]")) openSettings();
+  if (event.target.closest("[data-switch-profile]")) leaveProfile();
 
   const routeElement = event.target.closest("[data-route]");
   if (routeElement && app.profile) setRoute(routeElement.dataset.route);
