@@ -13,7 +13,7 @@ function emptyProfile(name) {
     name: name.trim(),
     createdAt: now,
     updatedAt: now,
-    studies: { acceso: { completedModules: [] }, sensores: { completedModules: [] } },
+    studies: { acceso: { completedModules: [] }, sensores: { completedModules: [] }, catalog: {} },
     practices: { sensores: { completed: [], answers: {} } },
     evaluations: { sensores: { attempts: [] } }
   };
@@ -27,6 +27,11 @@ function normalizeProfile(profile) {
   p.studies.acceso.completedModules = p.studies.acceso.completedModules || [];
   p.studies.sensores = p.studies.sensores || { completedModules: [] };
   p.studies.sensores.completedModules = p.studies.sensores.completedModules || [];
+  p.studies.catalog = p.studies.catalog || {};
+  Object.keys(p.studies.catalog).forEach(function(key) {
+    p.studies.catalog[key] = p.studies.catalog[key] || { completedModules: [] };
+    p.studies.catalog[key].completedModules = p.studies.catalog[key].completedModules || [];
+  });
   p.practices = p.practices || {};
   p.practices.sensores = p.practices.sensores || { completed: [], answers: {} };
   p.practices.sensores.completed = p.practices.sensores.completed || [];
