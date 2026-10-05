@@ -14,7 +14,7 @@ const app = {
   exam: null,
   practices: null,
   route: "dashboard",
-  currentStudyId: "sensores-i",
+  currentStudyId: "course-STF-401",
   activeModule: 0,
   activePractice: null
 };
@@ -276,6 +276,17 @@ function renderCurriculum() {
       }).join("") + '</div></div></section>';
   }
 
+  if (app.curriculum.legacySupplementary?.length) {
+    html += '<section class="curriculum-section"><header class="curriculum-section__header"><div>' +
+      '<span class="overline">MANUAL OPERACIONAL EXISTENTE</span><h2>Operaciones de Sensores v0.1</h2>' +
+      '<p>Material especializado previo, conservado como consulta complementaria.</p></div></header>' +
+      '<div class="curriculum-section__body"><div class="supplementary-grid">' +
+      app.curriculum.legacySupplementary.map(function(item) {
+        return '<button data-open-study="' + item.studyId + '"><strong>' + escapeHtml(item.title) +
+          '</strong><small>Manual especializado de Sensores</small></button>';
+      }).join("") + '</div></div></section>';
+  }
+
   curriculumContainer.innerHTML = html;
 }
 
@@ -338,6 +349,20 @@ function findStudyDefinition(studyId) {
         source: "branch",
         dataFile: item.dataFile,
         label: item.title.toUpperCase()
+      };
+    }
+  }
+
+  for (const item of app.curriculum.legacySupplementary || []) {
+    if (item.studyId === studyId) {
+      return {
+        id: item.studyId,
+        title: item.title,
+        code: "SENSORES · CONSULTA",
+        subtitle: "Manual especializado de Operaciones de Sensores v0.1",
+        units: item.units,
+        source: "sensores",
+        label: "OPERACIONES DE SENSORES"
       };
     }
   }
