@@ -13,7 +13,7 @@ function emptyProfile(name) {
     name: name.trim(),
     createdAt: now,
     updatedAt: now,
-    studies: { sensores: { completedModules: [] } },
+    studies: { acceso: { completedModules: [] }, sensores: { completedModules: [] } },
     practices: { sensores: { completed: [], answers: {} } },
     evaluations: { sensores: { attempts: [] } }
   };
@@ -23,6 +23,8 @@ function normalizeProfile(profile) {
   const p = clone(profile);
   p.schemaVersion = 1;
   p.studies = p.studies || {};
+  p.studies.acceso = p.studies.acceso || { completedModules: [] };
+  p.studies.acceso.completedModules = p.studies.acceso.completedModules || [];
   p.studies.sensores = p.studies.sensores || { completedModules: [] };
   p.studies.sensores.completedModules = p.studies.sensores.completedModules || [];
   p.practices = p.practices || {};
