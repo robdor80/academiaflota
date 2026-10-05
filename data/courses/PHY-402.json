@@ -1,7 +1,7 @@
 {
   "subject": "Preparación física II",
   "code": "PHY-402",
-  "version": "1.0",
+  "version": "1.1",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/PHY-402/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/PHY-402/MANUAL_v1_0.md",
@@ -22,29 +22,36 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Consolidar la rutina física y añadir trabajo funcional y cooperativo."
+          "text": "La continuidad importa más que un día espectacular. La preparación mejora cuando frecuencia, carga, recuperación y tiempo forman una rutina sostenible."
+        },
+        {
+          "type": "definition",
+          "term": "Frecuencia",
+          "text": "Cuántas veces se repite una actividad o estímulo en un periodo."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Progresión"
         },
         {
           "type": "bullets",
           "items": [
-            "frecuencia",
-            "progresión",
-            "adaptación"
+            "Duración",
+            "Complejidad",
+            "Resistencia",
+            "Densidad de trabajo",
+            "Autonomía",
+            "Especificidad"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Mantener calendario de entrenamiento."
+          "label": "ADAPTACIÓN",
+          "text": "El sistema diferencia rendimiento puntual, capacidad acumulada, experiencia previa y estado de recuperación."
         },
         {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Evidencia longitudinal."
+          "type": "p",
+          "text": "Una semana con exámenes, simulaciones o poco sueño puede requerir bajar carga. La mejor sesión no siempre es la más dura."
         },
         {
           "type": "heading",
@@ -53,26 +60,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras frecuencia.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Mantener calendario de entrenamiento.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/characters/wellbeing/README.md",
-            "gameplay/characters/wellbeing/activity_effect_contract.json",
-            "gameplay/characters/wellbeing/habit_formation_rules.json",
-            "gameplay/characters/development/development_rules.md"
+            "¿Por qué continuidad importa más que una sesión espectacular?",
+            "¿Qué significa frecuencia?",
+            "¿De qué formas puede progresar una tarea?",
+            "Diferencia rendimiento puntual y adaptación.",
+            "¿Por qué la mejor sesión no siempre es la más dura?"
           ]
         }
       ]
@@ -84,29 +76,34 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Consolidar la rutina física y añadir trabajo funcional y cooperativo."
+          "text": "La resistencia aplicada traslada la base de PHY-401 a tareas donde el personaje debe sostener esfuerzo con control."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Esfuerzo sostenido"
         },
         {
           "type": "bullets",
           "items": [
-            "esfuerzo sostenido",
-            "recuperación",
-            "ritmo"
+            "Desplazamientos",
+            "Circuitos funcionales",
+            "Actividad prolongada",
+            "Tareas repetidas",
+            "Entrenamiento de campo"
           ]
         },
         {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Sesión funcional del personaje."
+          "type": "heading",
+          "text": "Ritmo y recuperación"
+        },
+        {
+          "type": "p",
+          "text": "Salir demasiado rápido puede empeorar técnica, aumentar fatiga y comprometer la recuperación. También importa cómo vuelve el personaje a un estado funcional entre bloques."
         },
         {
           "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Progresión individual."
+          "label": "PROGRESO INDIVIDUAL",
+          "text": "Se compara con el punto de partida, historial, estado actual y demandas razonables, no con el cadete biológicamente más capaz."
         },
         {
           "type": "heading",
@@ -115,26 +112,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras esfuerzo sostenido.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Sesión funcional del personaje.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/characters/wellbeing/README.md",
-            "gameplay/characters/wellbeing/activity_effect_contract.json",
-            "gameplay/characters/wellbeing/habit_formation_rules.json",
-            "gameplay/characters/development/development_rules.md"
+            "¿Qué significa resistencia aplicada?",
+            "¿Por qué importa distribuir el esfuerzo?",
+            "¿Qué puede ocurrir si se sale demasiado rápido?",
+            "¿Por qué importa la recuperación entre bloques?",
+            "¿Con qué se compara el progreso individual?"
           ]
         }
       ]
@@ -146,29 +128,37 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Consolidar la rutina física y añadir trabajo funcional y cooperativo."
+          "text": "Fuerza y coordinación se trabajan juntas porque una tarea real exige aplicar fuerza en la dirección y el momento correctos, con equilibrio y control."
+        },
+        {
+          "type": "definition",
+          "term": "Equilibrio",
+          "text": "Capacidad para estabilizarse, cambiar dirección y controlar el cuerpo en condiciones variables."
+        },
+        {
+          "type": "definition",
+          "term": "Coordinación",
+          "text": "Organización eficiente de movimientos durante desplazamiento, manipulación de equipo o tareas combinadas."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Circuito funcional"
         },
         {
           "type": "bullets",
           "items": [
-            "fuerza funcional",
-            "equilibrio",
-            "coordinación"
+            "Empuje",
+            "Tracción",
+            "Transporte",
+            "Desplazamiento",
+            "Estabilidad",
+            "Coordinación"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Circuito supervisado."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Ejecución segura."
+          "label": "SEGURIDAD",
+          "text": "Se valora técnica, control, fatiga, respuesta a correcciones y capacidad de detenerse cuando el riesgo aumenta."
         },
         {
           "type": "heading",
@@ -177,26 +167,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras fuerza funcional.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Circuito supervisado.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/characters/wellbeing/README.md",
-            "gameplay/characters/wellbeing/activity_effect_contract.json",
-            "gameplay/characters/wellbeing/habit_formation_rules.json",
-            "gameplay/characters/development/development_rules.md"
+            "¿Por qué fuerza y coordinación se trabajan juntas?",
+            "¿Qué funciones cumple el equilibrio?",
+            "¿Qué significa coordinar movimiento?",
+            "¿Qué puede incluir un circuito?",
+            "¿Qué señales justifican reducir o detener la tarea?"
           ]
         }
       ]
@@ -208,29 +183,35 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Consolidar la rutina física y añadir trabajo funcional y cooperativo."
+          "text": "Una actividad colectiva necesita sincronización. El rendimiento del grupo no es simplemente la suma de máximos individuales."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Ritmo de grupo"
+        },
+        {
+          "type": "p",
+          "text": "El grupo busca un ritmo que permita completar la tarea sin dejar atrás a quien necesita apoyo ni convertirla en competición innecesaria."
+        },
+        {
+          "type": "heading",
+          "text": "Cooperación"
         },
         {
           "type": "bullets",
           "items": [
-            "cooperación",
-            "ritmo de grupo",
-            "seguridad"
+            "Repartir peso",
+            "Alternar esfuerzo",
+            "Guiar",
+            "Asegurar",
+            "Informar",
+            "Modificar el plan"
           ]
         },
         {
           "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Actividad colectiva."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Teamwork y disciplina."
+          "label": "SEGURIDAD COMPARTIDA",
+          "text": "Cada participante atiende su propio estado, el de compañeros, el entorno y las instrucciones."
         },
         {
           "type": "heading",
@@ -239,26 +220,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras cooperación.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Actividad colectiva.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/characters/wellbeing/README.md",
-            "gameplay/characters/wellbeing/activity_effect_contract.json",
-            "gameplay/characters/wellbeing/habit_formation_rules.json",
-            "gameplay/characters/development/development_rules.md"
+            "¿Qué significa ritmo de grupo?",
+            "¿Por qué el rendimiento del grupo no es suma de máximos?",
+            "Nombra tres formas de cooperación.",
+            "¿Qué significa seguridad compartida?",
+            "¿Qué conductas se observan además del rendimiento físico?"
           ]
         }
       ]
@@ -270,29 +236,31 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Consolidar la rutina física y añadir trabajo funcional y cooperativo."
+          "text": "La actividad acuática es una opción de entrenamiento, no una prueba universal idéntica. Si no es apropiada para una especie o contexto, se sustituye por una actividad funcional equivalente."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Antes de la sesión"
         },
         {
           "type": "bullets",
           "items": [
-            "seguridad",
-            "adaptación fisiológica",
-            "capacidad funcional"
+            "Capacidad previa",
+            "Entorno",
+            "Supervisión",
+            "Equipo",
+            "Riesgos específicos",
+            "Adaptación fisiológica"
           ]
         },
         {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Sesión adaptada a especie/contexto."
+          "type": "p",
+          "text": "La respuesta al agua, temperatura, presión o flotabilidad puede variar entre especies. El estándar humano no se presume universal."
         },
         {
           "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Competencia funcional, no comparación interespecies."
+          "text": "Se valora seguridad, control, seguimiento de instrucciones y capacidad funcional; no tiempos brutos comparados entre especies incompatibles."
         },
         {
           "type": "heading",
@@ -301,26 +269,11 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras seguridad.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Sesión adaptada a especie/contexto.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/characters/wellbeing/README.md",
-            "gameplay/characters/wellbeing/activity_effect_contract.json",
-            "gameplay/characters/wellbeing/habit_formation_rules.json",
-            "gameplay/characters/development/development_rules.md"
+            "¿Por qué la actividad acuática no es universal?",
+            "¿Qué factores se revisan antes?",
+            "¿Qué significa adaptación fisiológica?",
+            "¿Qué se evalúa principalmente?",
+            "¿Qué debe conservar una actividad equivalente?"
           ]
         }
       ]
@@ -332,30 +285,37 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Consolidar la rutina física y añadir trabajo funcional y cooperativo."
+          "text": "Una rutina útil debe poder cambiar cuando aumentan estudio, simulaciones, guardias, estrés o fatiga."
         },
         {
           "type": "heading",
-          "text": "Contenidos"
+          "text": "Ajustar sin abandonar"
+        },
+        {
+          "type": "p",
+          "text": "Ante fatiga puede reducirse intensidad, duración, frecuencia o complejidad. Ajustar temporalmente no equivale a perder todo el progreso."
+        },
+        {
+          "type": "heading",
+          "text": "Descanso"
+        },
+        {
+          "type": "p",
+          "text": "El descanso compite por tiempo con otras actividades, pero no es tiempo desperdiciado: sin recuperación el entrenamiento deja de ser productivo."
+        },
+        {
+          "type": "heading",
+          "text": "Revisión consciente"
         },
         {
           "type": "bullets",
           "items": [
-            "fatiga",
-            "estudio",
-            "descanso",
-            "ajuste"
+            "Qué funciona",
+            "Qué genera fatiga excesiva",
+            "Qué obligaciones han cambiado",
+            "Qué puede mantenerse",
+            "Qué conviene modificar"
           ]
-        },
-        {
-          "type": "callout",
-          "label": "PRÁCTICA",
-          "text": "Modificar rutina ante carga académica."
-        },
-        {
-          "type": "callout",
-          "label": "EVALUACIÓN",
-          "text": "Criterio y sostenibilidad."
         },
         {
           "type": "heading",
@@ -364,29 +324,15 @@
         {
           "type": "numbered",
           "items": [
-            "Explica con tus palabras fatiga.",
-            "¿Qué información necesitarías antes de actuar?",
-            "Resuelve de forma razonada: Modificar rutina ante carga académica.",
-            "¿Qué deberías comunicar, registrar o escalar?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/characters/wellbeing/README.md",
-            "gameplay/characters/wellbeing/activity_effect_contract.json",
-            "gameplay/characters/wellbeing/habit_formation_rules.json",
-            "gameplay/characters/development/development_rules.md"
+            "¿Por qué una rutina debe poder cambiar?",
+            "¿Qué variables pueden reducirse ante fatiga?",
+            "¿Reducir una semana elimina todo progreso?",
+            "¿Por qué el descanso no es tiempo desperdiciado?",
+            "¿Qué preguntas ayudan a revisar la rutina?"
           ]
         }
       ]
     }
-  ]
+  ],
+  "status": "developed_content"
 }
