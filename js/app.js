@@ -8,6 +8,7 @@ import { loadEvaluationData, renderExam, gradeExam, renderResult } from "./evalu
 const app = {
   profile: null,
   study: null,
+  accessManual: null,
   curriculum: null,
   exam: null,
   practices: null,
@@ -27,6 +28,7 @@ const lessonContent = document.querySelector("#lesson-content");
 const curriculumContainer = document.querySelector("#curriculum-container");
 
 function profileStudy() { return app.profile.studies.sensores; }
+function profileAccessStudy() { return app.profile.studies.acceso; }
 function profilePractices() { return app.profile.practices.sensores; }
 function profileEvaluations() { return app.profile.evaluations.sensores; }
 
@@ -66,7 +68,9 @@ function renderProfileList() {
   profiles.sort(function(a,b) {
     return a.name.localeCompare(b.name, "es");
   }).forEach(function(profile) {
-    const modules = profile.studies?.sensores?.completedModules?.length || 0;
+    const sensorModules = profile.studies?.sensores?.completedModules?.length || 0;
+    const accessModules = profile.studies?.acceso?.completedModules?.length || 0;
+    const modules = sensorModules + accessModules;
     const attempts = profile.evaluations?.sensores?.attempts || [];
     const best = attempts.length ? Math.max.apply(null, attempts.map(function(item){ return item.score; })) : null;
     const button = document.createElement("button");
@@ -106,16 +110,23 @@ function leaveProfile() {
 
 async function ensureData() {
   if (!app.study) app.study = await loadStudyData();
+
+  if (!app.accessManual) {
+    const response = await fetch("data/manual-candidato.json?v=0.3.1");
+    if (!response.ok) throw new Error("No se pudo cargar el Manual del Candidato.");
+    app.accessManual = await response.json();
+  }
+
   if (!app.exam) app.exam = await loadEvaluationData();
 
   if (!app.curriculum) {
-    const response = await fetch("data/curriculum.json?v=0.3.0");
+    const response = await fetch("data/curriculum.json?v=0.3.1");
     if (!response.ok) throw new Error("No se pudo cargar el currículo académico.");
     app.curriculum = await response.json();
   }
 
   if (!app.practices) {
-    const response = await fetch("data/practicas-sensores.json?v=0.3.0");
+    const response = await fetch("data/practicas-sensores.json?v=0.3.1");
     if (!response.ok) throw new Error("No se pudieron cargar las prácticas.");
     app.practices = await response.json();
   }
@@ -189,11 +200,20 @@ function renderCurriculum() {
   if (!app.curriculum || !curriculumContainer) return;
 
   const pre = app.curriculum.preAcademia;
+  const accessMaterials = (pre.materials || []).map(function(item) {
+    return '<button class="access-manual-card" data-open-study="' + item.studyId + '">' +
+      '<span class="access-manual-card__icon">A</span>' +
+      '<span class="access-manual-card__body"><small>MANUAL OFICIAL DE ACCESO · v' + escapeHtml(item.version) + '</small>' +
+      '<strong>' + escapeHtml(item.title) + '</strong><em>' + escapeHtml(item.subtitle) + '</em></span>' +
+      '<span class="access-manual-card__action">ESTUDIAR →</span></button>';
+  }).join("");
+
   let html =
-    '<section class="curriculum-section">' +
+    '<section class="curriculum-section curriculum-section--access">' +
       '<header class="curriculum-section__header"><div><span class="overline">ANTES DE LA ACADEMIA</span><h2>' +
-      escapeHtml(pre.title) + '</h2><p>' + escapeHtml(pre.subtitle) + '</p></div><span class="badge">OPCIONAL</span></header>' +
-      '<div class="curriculum-section__body"><ul class="preacademy-list">' +
+      escapeHtml(pre.title) + '</h2><p>' + escapeHtml(pre.subtitle) + '</p></div><span class="badge">PREVIO AL ACCESO</span></header>' +
+      '<div class="curriculum-section__body">' + accessMaterials +
+      '<h3 class="preacademy-heading">Áreas de preparación</h3><ul class="preacademy-list">' +
       pre.subjects.map(function(item){ return "<li>" + escapeHtml(item) + "</li>"; }).join("") +
       '</ul></div></section>';
 
@@ -228,6 +248,18 @@ function renderCurriculum() {
 function findStudyDefinition(studyId) {
   if (!app.curriculum) return null;
 
+  if (studyId === "manual-candidato" && app.accessManual) {
+    return {
+      id: "manual-candidato",
+      title: "Manual del Candidato",
+      code: "PREPARACIÓN PARA EL ACCESO",
+      subtitle: "Orientación general para el acceso · v" + app.accessManual.version,
+      units: app.accessManual.modules.map(function(module) { return module.id; }),
+      source: "acceso",
+      label: "MANUAL DEL CANDIDATO"
+    };
+  }
+
   for (const year of app.curriculum.years) {
     for (const term of year.trimesters) {
       for (const subject of term.subjects) {
@@ -237,7 +269,9 @@ function findStudyDefinition(studyId) {
             title: subject.title,
             code: "CIENCIAS / SENSORES",
             subtitle: year.title + " · " + term.title,
-            units: subject.units
+            units: subject.units,
+            source: "sensores",
+            label: "OPERACIONES DE SENSORES"
           };
         }
       }
@@ -250,7 +284,9 @@ function findStudyDefinition(studyId) {
           title: item.title,
           code: "SENSORES · CONSULTA",
           subtitle: "Material complementario del Manual de Sensores",
-          units: item.units
+          units: item.units,
+          source: "sensores",
+          label: "OPERACIONES DE SENSORES"
         };
       }
     }
@@ -262,9 +298,23 @@ function findStudyDefinition(studyId) {
 function currentModules() {
   const definition = findStudyDefinition(app.currentStudyId);
   if (!definition) return [];
+  const sourceModules = definition.source === "acceso" ? app.accessManual.modules : app.study.modules;
   return definition.units
-    .map(function(id) { return app.study.modules.find(function(module) { return module.id === id; }); })
+    .map(function(id) { return sourceModules.find(function(module) { return module.id === id; }); })
     .filter(Boolean);
+}
+
+function currentStudyProgress() {
+  const definition = findStudyDefinition(app.currentStudyId);
+  return definition && definition.source === "acceso" ? profileAccessStudy() : profileStudy();
+}
+
+function currentStudyPercent() {
+  const modules = currentModules();
+  if (!modules.length) return 0;
+  const completed = currentStudyProgress().completedModules;
+  const done = modules.filter(function(module) { return completed.includes(module.id); }).length;
+  return Math.round(done / modules.length * 100);
 }
 
 function openStudy(studyId) {
@@ -301,13 +351,15 @@ function renderModule(index) {
   if (!modules.length) return;
   app.activeModule = Math.max(0,Math.min(index,modules.length-1));
   const module = modules[app.activeModule];
-  lessonContent.innerHTML = renderLesson(module);
+  const definition = findStudyDefinition(app.currentStudyId);
+  lessonContent.innerHTML = renderLesson(module, { label: definition?.label || "MATERIAL DE ESTUDIO" });
   document.querySelector("#reader-position").textContent =
-    "UNIDAD " + module.id + " · " + (app.activeModule + 1) + " de " + modules.length;
+    module.id + " · " + (app.activeModule + 1) + " de " + modules.length;
+  document.querySelector("#reader-completion").textContent = "PROGRESO " + currentStudyPercent() + "%";
   document.querySelector("#prev-module").disabled = app.activeModule === 0;
   document.querySelector("#next-module").disabled = app.activeModule === modules.length - 1;
   document.querySelector("#mark-complete").textContent =
-    profileStudy().completedModules.includes(module.id) ? "✓ Unidad estudiada" : "Marcar como estudiado";
+    currentStudyProgress().completedModules.includes(module.id) ? "✓ Unidad estudiada" : "Marcar como estudiado";
   syncModuleButtons();
 }
 
@@ -326,7 +378,7 @@ function toggleModuleComplete() {
   const modules = currentModules();
   if (!modules.length) return;
   const id = modules[app.activeModule].id;
-  const completed = profileStudy().completedModules;
+  const completed = currentStudyProgress().completedModules;
   const index = completed.indexOf(id);
   if (index >= 0) completed.splice(index,1);
   else completed.push(id);
