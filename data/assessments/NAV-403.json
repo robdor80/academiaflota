@@ -31,10 +31,8 @@
         "Selecciona la explicación correcta:  un mapa estelar no representa toda la verdad."
       ],
       "answer_display_es": "conocimiento limitado · puede estar incompleto/desactualizado · World State separado",
-      "accepted_short_answers_es": [
-        "conocimiento limitado"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "conocimiento limitado",
         "puede estar incompleto/desactualizado",
@@ -111,10 +109,8 @@
         "Diferencia posición absoluta y relativa."
       ],
       "answer_display_es": "marco global/referencia · relación con otro objeto",
-      "accepted_short_answers_es": [
-        "marco global/referencia"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "marco global/referencia",
         "relación con otro objeto"
@@ -256,10 +252,8 @@
         "Diferencia uso general de impulso y warp."
       ],
       "answer_display_es": "subluz/local · superlumínico/interestelar",
-      "accepted_short_answers_es": [
-        "subluz/local"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "subluz/local",
         "superlumínico/interestelar"
@@ -332,10 +326,8 @@
         "Selecciona la explicación correcta:  ruta más corta no siempre es mejor."
       ],
       "answer_display_es": "riesgo · restricciones · soporte · confianza · territorio",
-      "accepted_short_answers_es": [
-        "riesgo"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "riesgo",
         "restricciones",
@@ -392,8 +384,10 @@
         "Selecciona la respuesta correcta para este caso: ¿Debe el sistema avisar de un peligro que nadie ha detectado?"
       ],
       "answer_display_es": "No — evitar ground-truth leakage.",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no",
         "evitar ground-truth leakage"
@@ -409,10 +403,8 @@
         "Selecciona la respuesta correcta: Qué pasos básicos sigue una solución de navegación?"
       ],
       "answer_display_es": "origen · destino · restricciones · rutas · selección · ETA · reporte",
-      "accepted_short_answers_es": [
-        "origen"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "origen",
         "destino",

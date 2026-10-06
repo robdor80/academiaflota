@@ -31,10 +31,8 @@
         "Diferencia observación e hipótesis."
       ],
       "answer_display_es": "observación = dato · hipótesis = explicación provisional",
-      "accepted_short_answers_es": [
-        "observación = dato"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "observación = dato",
         "hipótesis = explicación provisional"
@@ -68,8 +66,10 @@
         "Repaso: ¿Una sola lectura demuestra siempre una causa?"
       ],
       "answer_display_es": "No — requiere evidencia; puede haber alternativas.",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no",
         "requiere evidencia",
@@ -174,10 +174,8 @@
         "Selecciona la respuesta correcta: Qué hace un sensor?"
       ],
       "answer_display_es": "detectar · medir · localizar · observar",
-      "accepted_short_answers_es": [
-        "detectar"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "detectar",
         "medir",
@@ -252,10 +250,8 @@
         "Diferencia modo pasivo y activo."
       ],
       "answer_display_es": "pasivo observa emisiones disponibles · activo emite/interactúa para mejorar observación",
-      "accepted_short_answers_es": [
-        "pasivo observa emisiones disponibles"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "pasivo observa emisiones disponibles",
         "activo emite/interactúa para mejorar observación"
@@ -324,10 +320,8 @@
         "Selecciona la respuesta correcta: Qué representa un contacto?"
       ],
       "answer_display_es": "conocimiento persistente observado · no entidad oculta",
-      "accepted_short_answers_es": [
-        "conocimiento persistente observado"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "conocimiento persistente observado",
         "no entidad oculta"
@@ -396,10 +390,8 @@
         "Enumera los pasos básicos de configuración de un barrido."
       ],
       "answer_display_es": "tipo · modo · área/objetivo · resolución · filtros · prioridad · duración · revisar · ejecutar",
-      "accepted_short_answers_es": [
-        "tipo"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "tipo",
         "modo",

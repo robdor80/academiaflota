@@ -31,10 +31,8 @@
         "Repaso: ¿Cómo fluye una orden desde Mando hasta un resultado?"
       ],
       "answer_display_es": "intención · interpretación · validación · ejecución · reporte",
-      "accepted_short_answers_es": [
-        "intención"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "intención",
         "interpretación",
@@ -108,10 +106,8 @@
         "Selecciona la respuesta correcta: Qué información observa Ingeniería?"
       ],
       "answer_display_es": "sistemas · energía · daños · recursos · seguridad",
-      "accepted_short_answers_es": [
-        "sistemas"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "sistemas",
         "energía",
@@ -183,10 +179,8 @@
         "Diferencia Sensores y Ciencia."
       ],
       "answer_display_es": "medición · interpretación",
-      "accepted_short_answers_es": [
-        "medición"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "medición",
         "interpretación"
@@ -258,10 +252,8 @@
         "Selecciona la respuesta correcta: Qué necesita una solución de plotting?"
       ],
       "answer_display_es": "origen · destino · restricciones · capacidad · riesgos · ETA",
-      "accepted_short_answers_es": [
-        "origen"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "origen",
         "destino",
@@ -281,8 +273,10 @@
         "Selecciona la respuesta correcta: Qué representa rumbo?"
       ],
       "answer_display_es": "dirección operacional",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "dirección operacional"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "dirección operacional"
       ]
@@ -332,10 +326,8 @@
         "Selecciona la respuesta correcta: Qué observa el cadete en Seguridad?"
       ],
       "answer_display_es": "protección · acceso · incidentes · riesgo · coordinación",
-      "accepted_short_answers_es": [
-        "protección"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "protección",
         "acceso",
@@ -392,8 +384,10 @@
         "Repaso: ¿Una micro-rotación concede cualificación profesional?"
       ],
       "answer_display_es": "no",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no"
       ]
@@ -408,10 +402,8 @@
         "Diferencia interés y competencia."
       ],
       "answer_display_es": "preferencia/motivación · capacidad demostrada",
-      "accepted_short_answers_es": [
-        "preferencia/motivación"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preferencia/motivación",
         "capacidad demostrada"

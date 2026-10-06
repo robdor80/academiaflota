@@ -31,10 +31,8 @@
         "Selecciona la explicación correcta:  una nave debe entenderse como una red de sistemas."
       ],
       "answer_display_es": "dependencias · recursos compartidos · fallos pueden propagarse",
-      "accepted_short_answers_es": [
-        "dependencias"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "dependencias",
         "recursos compartidos",
@@ -69,8 +67,11 @@
         "Selecciona la respuesta correcta para este caso: ¿Puede una consola intacta dejar de funcionar?"
       ],
       "answer_display_es": "Sí — energía/red/sistema remoto/autorización.",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "sí",
+        "si"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "sí",
         "energía/red/sistema remoto/autorización"
@@ -106,10 +107,8 @@
         "Selecciona la respuesta correcta: Qué función general cumple la propulsión de impulso?"
       ],
       "answer_display_es": "movimiento subluz · maniobras locales",
-      "accepted_short_answers_es": [
-        "movimiento subluz"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "movimiento subluz",
         "maniobras locales"
@@ -178,10 +177,8 @@
         "Selecciona la respuesta correcta: Qué función cumple warp?"
       ],
       "answer_display_es": "viaje superlumínico · navegación interestelar",
-      "accepted_short_answers_es": [
-        "viaje superlumínico"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "viaje superlumínico",
         "navegación interestelar"
@@ -252,10 +249,8 @@
         "Selecciona la respuesta correcta: Qué función general cumple soporte vital?"
       ],
       "answer_display_es": "mantener condiciones habitables · atmósfera/temperatura/ambiente",
-      "accepted_short_answers_es": [
-        "mantener condiciones habitables"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "mantener condiciones habitables",
         "atmósfera/temperatura/ambiente"
@@ -326,10 +321,8 @@
         "Nombra cuatro sistemas que pueden contribuir a defensa."
       ],
       "answer_display_es": "escudos · armamento · sensores · maniobra · comunicaciones · control de daños",
-      "accepted_short_answers_es": [
-        "escudos"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "escudos",
         "armamento",
@@ -383,8 +376,10 @@
         "Selecciona la explicación correcta:  no puede asumirse holodeck en todas las eras."
       ],
       "answer_display_es": "tecnología depende de era/nave",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "tecnología depende de era/nave"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "tecnología depende de era/nave"
       ]
@@ -415,10 +410,8 @@
         "Diferencia sistema primario y respaldo."
       ],
       "answer_display_es": "principal · alternativa parcial/no necesariamente equivalente",
-      "accepted_short_answers_es": [
-        "principal"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "principal",
         "alternativa parcial/no necesariamente equivalente"

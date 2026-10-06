@@ -31,10 +31,8 @@
         "Repaso: ¿Contra qué debe compararse el progreso?"
       ],
       "answer_display_es": "estado inicial · historial propio",
-      "accepted_short_answers_es": [
-        "estado inicial"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estado inicial",
         "historial propio"
@@ -50,8 +48,10 @@
         "Repaso: ¿Una semana peor demuestra regresión?"
       ],
       "answer_display_es": "No — puede ser fluctuación; contexto.",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no",
         "puede ser fluctuación",
@@ -106,10 +106,8 @@
         "Selecciona la respuesta correcta: Qué dimensiones forman condición funcional?"
       ],
       "answer_display_es": "resistencia · fuerza · movilidad · coordinación",
-      "accepted_short_answers_es": [
-        "resistencia"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "resistencia",
         "fuerza",
@@ -145,8 +143,10 @@
         "Selecciona la respuesta correcta: Qué significa adecuación al servicio?"
       ],
       "answer_display_es": "capacidad segura/razonable para demandas comunes",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "capacidad segura/razonable para demandas comunes"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "capacidad segura/razonable para demandas comunes"
       ]
@@ -257,8 +257,10 @@
         "Selecciona la respuesta correcta: Qué significa ajustar sin abandonar?"
       ],
       "answer_display_es": "reducir carga manteniendo continuidad",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "reducir carga manteniendo continuidad"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "reducir carga manteniendo continuidad"
       ]
@@ -273,10 +275,8 @@
         "Selecciona la respuesta correcta: Qué puede reducirse en semana de exámenes?"
       ],
       "answer_display_es": "duración · intensidad · frecuencia",
-      "accepted_short_answers_es": [
-        "duración"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "duración",
         "intensidad",
@@ -293,8 +293,10 @@
         "Selecciona la respuesta correcta: Qué significa consistencia?"
       ],
       "answer_display_es": "continuidad sostenible · no repetir exactamente",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "continuidad sostenible"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "continuidad sostenible",
         "no repetir exactamente"
@@ -346,8 +348,10 @@
         "Selecciona la respuesta correcta: Qué significa transferencia?"
       ],
       "answer_display_es": "una capacidad ayuda a otra · no cualificación automática",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "una capacidad ayuda a otra"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "una capacidad ayuda a otra",
         "no cualificación automática"
@@ -402,10 +406,8 @@
         "Selecciona la respuesta correcta: Qué persiste al cerrar el año?"
       ],
       "answer_display_es": "hábitos · experiencia · estado · fortalezas · mejoras",
-      "accepted_short_answers_es": [
-        "hábitos"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "hábitos",
         "experiencia",
