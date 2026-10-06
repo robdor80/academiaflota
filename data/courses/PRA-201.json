@@ -1,7 +1,7 @@
 {
   "subject": "Práctica de especialidad I",
   "code": "PRA-201",
-  "version": "1.0",
+  "version": "1.1",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/second_class/courses/PRA-201/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/second_class/PRA-201/MANUAL_v1_0.md",
@@ -21,6 +21,10 @@
       "blocks": [
         {
           "type": "p",
+          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+        },
+        {
+          "type": "p",
           "text": "Convertir teoría de rama en ejecución supervisada repetible."
         },
         {
@@ -30,10 +34,10 @@
         {
           "type": "bullets",
           "items": [
-            "estado",
-            "herramientas",
-            "órdenes",
-            "seguridad"
+            "Estado: Fija la condición real de partida —normal, degradada, limitada o desconocida— antes de actuar; si cambia, el plan debe revisarse.",
+            "Herramientas: Incluye consola, sistema, instrumento, checklist y registro necesarios; deben estar disponibles, configurados y autorizados.",
+            "Órdenes: Se interpretan por objetivo, prioridad, límites y autoridad; si son ambiguas o inseguras, se aclaran antes de ejecutar.",
+            "Seguridad: Limita cualquier procedimiento: se identifican peligros, protecciones, condición de aborto y quién puede autorizar continuar."
           ]
         },
         {
@@ -83,6 +87,10 @@
       "blocks": [
         {
           "type": "p",
+          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+        },
+        {
+          "type": "p",
           "text": "Convertir teoría de rama en ejecución supervisada repetible."
         },
         {
@@ -92,9 +100,9 @@
         {
           "type": "bullets",
           "items": [
-            "secuencia",
-            "confirmaciones",
-            "límites"
+            "Secuencia: El orden de pasos importa cuando una acción prepara o valida la siguiente; saltar una comprobación puede ocultar fallos.",
+            "Confirmaciones: Cierran puntos críticos de recepción, configuración, resultado y transferencia.",
+            "Límites: Definen hasta dónde puede actuar el cadete por competencia, autoridad, estado y riesgo; fuera de ellos se consulta o escala."
           ]
         },
         {
@@ -144,6 +152,10 @@
       "blocks": [
         {
           "type": "p",
+          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+        },
+        {
+          "type": "p",
           "text": "Convertir teoría de rama en ejecución supervisada repetible."
         },
         {
@@ -153,9 +165,9 @@
         {
           "type": "bullets",
           "items": [
-            "autonomía parcial",
-            "consulta",
-            "corrección"
+            "Autonomía parcial: Permite ejecutar sin guía continua dentro de un marco conocido, conservando puntos de control y obligación de consultar.",
+            "Consulta: Es una herramienta profesional cuando falta autoridad, evidencia o competencia para decidir con seguridad.",
+            "Corrección: Identifica el desvío, restaura el procedimiento y verifica el nuevo resultado antes de cerrar."
           ]
         },
         {
@@ -205,6 +217,10 @@
       "blocks": [
         {
           "type": "p",
+          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+        },
+        {
+          "type": "p",
           "text": "Convertir teoría de rama en ejecución supervisada repetible."
         },
         {
@@ -214,9 +230,9 @@
         {
           "type": "bullets",
           "items": [
-            "cambio de condición",
-            "adaptación",
-            "reporte"
+            "Cambio de condición: cambio de condición se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Adaptación: adaptación se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Reporte: Separa hechos, interpretación, resultado, limitaciones y pendientes para que otro pueda actuar."
           ]
         },
         {
@@ -266,6 +282,10 @@
       "blocks": [
         {
           "type": "p",
+          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+        },
+        {
+          "type": "p",
           "text": "Convertir teoría de rama en ejecución supervisada repetible."
         },
         {
@@ -275,10 +295,10 @@
         {
           "type": "bullets",
           "items": [
-            "acciones",
-            "resultado",
-            "pendientes",
-            "lecciones"
+            "Acciones: acciones se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Resultado: resultado se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Pendientes: pendientes se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Lecciones: lecciones se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -328,6 +348,10 @@
       "blocks": [
         {
           "type": "p",
+          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+        },
+        {
+          "type": "p",
           "text": "Convertir teoría de rama en ejecución supervisada repetible."
         },
         {
@@ -337,10 +361,10 @@
         {
           "type": "bullets",
           "items": [
-            "error",
-            "causa",
-            "mejora",
-            "repetición"
+            "Error: Se comunica pronto, se contiene y se analiza sin ocultarlo; la prioridad es reducir consecuencias y aprender.",
+            "Causa: causa se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Mejora: mejora se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Repetición: repetición se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -383,5 +407,6 @@
         }
       ]
     }
-  ]
+  ],
+  "status": "developed_content"
 }

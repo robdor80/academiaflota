@@ -1,7 +1,7 @@
 {
   "subject": "Operaciones degradadas y contingencias",
   "code": "RSK-202",
-  "version": "1.0",
+  "version": "1.1",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/second_class/courses/RSK-202/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/second_class/RSK-202/MANUAL_v1_0.md",
@@ -22,6 +22,10 @@
       "blocks": [
         {
           "type": "p",
+          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+        },
+        {
+          "type": "p",
           "text": "Trabajar de forma segura cuando sistemas, información o personal no están disponibles en condiciones normales."
         },
         {
@@ -31,10 +35,10 @@
         {
           "type": "bullets",
           "items": [
-            "capacidad reducida",
-            "backup",
-            "aislamiento",
-            "margen"
+            "Capacidad reducida: capacidad reducida se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Backup: backup se gestiona identificando función perdida, capacidad restante, riesgo de propagación, alternativa y recuperación segura.",
+            "Aislamiento: aislamiento se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Margen: margen se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -85,6 +89,10 @@
       "blocks": [
         {
           "type": "p",
+          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+        },
+        {
+          "type": "p",
           "text": "Trabajar de forma segura cuando sistemas, información o personal no están disponibles en condiciones normales."
         },
         {
@@ -94,10 +102,10 @@
         {
           "type": "bullets",
           "items": [
-            "calidad",
-            "confirmación",
-            "supuestos",
-            "riesgo"
+            "Calidad: calidad se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Confirmación: confirmación se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Supuestos: supuestos se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Riesgo: Combina probabilidad, impacto y exposición; se reduce, acepta dentro de autoridad o se escala."
           ]
         },
         {
@@ -148,6 +156,10 @@
       "blocks": [
         {
           "type": "p",
+          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+        },
+        {
+          "type": "p",
           "text": "Trabajar de forma segura cuando sistemas, información o personal no están disponibles en condiciones normales."
         },
         {
@@ -157,9 +169,9 @@
         {
           "type": "bullets",
           "items": [
-            "prioridades",
-            "servicio mínimo",
-            "procedimiento alternativo"
+            "Prioridades: prioridades ordena la actuación comparando seguridad, misión, tiempo, impacto y recursos disponibles.",
+            "Servicio mínimo: servicio mínimo se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Procedimiento alternativo: procedimiento alternativo se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -210,6 +222,10 @@
       "blocks": [
         {
           "type": "p",
+          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+        },
+        {
+          "type": "p",
           "text": "Trabajar de forma segura cuando sistemas, información o personal no están disponibles en condiciones normales."
         },
         {
@@ -219,10 +235,10 @@
         {
           "type": "bullets",
           "items": [
-            "reparto",
-            "cross-training",
-            "fatiga",
-            "seguridad"
+            "Reparto: reparto se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Cross-training: Permite apoyo auxiliar fuera de la rama principal, pero no elimina límites de competencia ni certificación.",
+            "Fatiga: Reduce atención, memoria de trabajo y calidad de decisión y debe incorporarse al reparto de carga.",
+            "Seguridad: Limita cualquier procedimiento: se identifican peligros, protecciones, condición de aborto y quién puede autorizar continuar."
           ]
         },
         {
@@ -273,6 +289,10 @@
       "blocks": [
         {
           "type": "p",
+          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+        },
+        {
+          "type": "p",
           "text": "Trabajar de forma segura cuando sistemas, información o personal no están disponibles en condiciones normales."
         },
         {
@@ -282,9 +302,9 @@
         {
           "type": "bullets",
           "items": [
-            "efecto cascada",
-            "triage operacional",
-            "escalado"
+            "Efecto cascada: efecto cascada se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Triage operacional: triage operacional se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Escalado: Transfiere una decisión a la autoridad o especialidad adecuada cuando se exceden límites, recursos o riesgo aceptable."
           ]
         },
         {
@@ -335,6 +355,10 @@
       "blocks": [
         {
           "type": "p",
+          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+        },
+        {
+          "type": "p",
           "text": "Trabajar de forma segura cuando sistemas, información o personal no están disponibles en condiciones normales."
         },
         {
@@ -344,10 +368,10 @@
         {
           "type": "bullets",
           "items": [
-            "verificación",
-            "handoff",
-            "logs",
-            "lecciones"
+            "Verificación: Comprueba que una lectura, acción o recuperación produce el efecto esperado antes de darla por válida.",
+            "Handoff: Transfiere continuidad: estado, acciones, resultado, riesgos, órdenes y pendientes deben quedar claros para quien recibe.",
+            "Logs: logs preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes.",
+            "Lecciones: lecciones se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -391,5 +415,6 @@
         }
       ]
     }
-  ]
+  ],
+  "status": "developed_content"
 }

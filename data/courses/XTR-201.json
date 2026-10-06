@@ -1,7 +1,7 @@
 {
   "subject": "Formación cruzada I",
   "code": "XTR-201",
-  "version": "1.0",
+  "version": "1.1",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/second_class/courses/XTR-201/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/second_class/XTR-201/MANUAL_v1_0.md",
@@ -21,6 +21,10 @@
       "blocks": [
         {
           "type": "p",
+          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+        },
+        {
+          "type": "p",
           "text": "Abrir un foco secundario real sin confundir familiarización con cualificación completa."
         },
         {
@@ -30,10 +34,10 @@
         {
           "type": "bullets",
           "items": [
-            "interés",
-            "utilidad",
-            "prerrequisitos",
-            "carga"
+            "Interés: interés se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Utilidad: utilidad se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Prerrequisitos: prerrequisitos se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Carga: Combina número de tareas, dificultad, interrupciones y tiempo disponible; una carga excesiva degrada calidad y seguridad."
           ]
         },
         {
@@ -83,6 +87,10 @@
       "blocks": [
         {
           "type": "p",
+          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+        },
+        {
+          "type": "p",
           "text": "Abrir un foco secundario real sin confundir familiarización con cualificación completa."
         },
         {
@@ -92,10 +100,10 @@
         {
           "type": "bullets",
           "items": [
-            "terminología",
-            "sistemas",
-            "roles",
-            "límites"
+            "Terminología: Reduce ambigüedad y permite interpretar estados, órdenes y reportes con precisión.",
+            "Sistemas: sistemas se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Roles: Delimitan responsabilidad y autoridad dentro del equipo.",
+            "Límites: Definen hasta dónde puede actuar el cadete por competencia, autoridad, estado y riesgo; fuera de ellos se consulta o escala."
           ]
         },
         {
@@ -145,6 +153,10 @@
       "blocks": [
         {
           "type": "p",
+          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+        },
+        {
+          "type": "p",
           "text": "Abrir un foco secundario real sin confundir familiarización con cualificación completa."
         },
         {
@@ -154,9 +166,9 @@
         {
           "type": "bullets",
           "items": [
-            "principios",
-            "riesgos",
-            "interfaz con rama principal"
+            "Principios: principios se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Riesgos: Deben expresarse de forma concreta: qué puede ocurrir, con qué impacto y qué mitigación existe.",
+            "Interfaz con rama principal: interfaz con rama principal se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -206,6 +218,10 @@
       "blocks": [
         {
           "type": "p",
+          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+        },
+        {
+          "type": "p",
           "text": "Abrir un foco secundario real sin confundir familiarización con cualificación completa."
         },
         {
@@ -215,9 +231,9 @@
         {
           "type": "bullets",
           "items": [
-            "tarea segura",
-            "supervisión",
-            "reporte"
+            "Tarea segura: tarea segura se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Supervisión: Establece objetivo, límites y puntos de control, dejando autonomía proporcional a competencia y riesgo.",
+            "Reporte: Separa hechos, interpretación, resultado, limitaciones y pendientes para que otro pueda actuar."
           ]
         },
         {
@@ -267,6 +283,10 @@
       "blocks": [
         {
           "type": "p",
+          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+        },
+        {
+          "type": "p",
           "text": "Abrir un foco secundario real sin confundir familiarización con cualificación completa."
         },
         {
@@ -276,9 +296,9 @@
         {
           "type": "bullets",
           "items": [
-            "habilidades relacionadas",
-            "límites",
-            "no equivalencia"
+            "Habilidades relacionadas: habilidades relacionadas se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Límites: Definen hasta dónde puede actuar el cadete por competencia, autoridad, estado y riesgo; fuera de ellos se consulta o escala.",
+            "No equivalencia: no equivalencia se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -328,6 +348,10 @@
       "blocks": [
         {
           "type": "p",
+          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+        },
+        {
+          "type": "p",
           "text": "Abrir un foco secundario real sin confundir familiarización con cualificación completa."
         },
         {
@@ -337,9 +361,9 @@
         {
           "type": "bullets",
           "items": [
-            "objetivo",
-            "práctica futura",
-            "límites de autoridad"
+            "Objetivo: objetivo se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Práctica futura: práctica futura se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Límites de autoridad: límites de autoridad delimita competencia y autorización; fuera de ese marco la decisión se transfiere a personal adecuado."
           ]
         },
         {
@@ -382,5 +406,6 @@
         }
       ]
     }
-  ]
+  ],
+  "status": "developed_content"
 }

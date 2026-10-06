@@ -1,7 +1,7 @@
 {
   "subject": "Especialización profesional II",
   "code": "BRN-202",
-  "version": "1.0",
+  "version": "1.1",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/second_class/courses/BRN-202/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/second_class/BRN-202/MANUAL_v1_0.md",
@@ -22,6 +22,10 @@
       "blocks": [
         {
           "type": "p",
+          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+        },
+        {
+          "type": "p",
           "text": "Profundizar en la rama mediante situaciones complejas y menos estructuradas."
         },
         {
@@ -31,10 +35,10 @@
         {
           "type": "bullets",
           "items": [
-            "variantes",
-            "excepciones",
-            "riesgos",
-            "diagnóstico"
+            "Variantes: variantes se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Excepciones: excepciones se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Riesgos: Deben expresarse de forma concreta: qué puede ocurrir, con qué impacto y qué mitigación existe.",
+            "Diagnóstico: Relaciona síntomas con causas posibles y usa pruebas para reducir incertidumbre antes de actuar."
           ]
         },
         {
@@ -85,6 +89,10 @@
       "blocks": [
         {
           "type": "p",
+          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+        },
+        {
+          "type": "p",
           "text": "Profundizar en la rama mediante situaciones complejas y menos estructuradas."
         },
         {
@@ -94,10 +102,10 @@
         {
           "type": "bullets",
           "items": [
-            "datos incompletos",
-            "hipótesis",
-            "verificación",
-            "decisión"
+            "Datos incompletos: Obligan a separar lo conocido, lo inferido y lo desconocido; una hipótesis no se eleva a hecho.",
+            "Hipótesis: Es una explicación provisional que debe poder confirmarse o descartarse con evidencia.",
+            "Verificación: Comprueba que una lectura, acción o recuperación produce el efecto esperado antes de darla por válida.",
+            "Decisión: Debe justificarse con información disponible, objetivo, riesgo, autoridad y alternativas."
           ]
         },
         {
@@ -148,6 +156,10 @@
       "blocks": [
         {
           "type": "p",
+          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+        },
+        {
+          "type": "p",
           "text": "Profundizar en la rama mediante situaciones complejas y menos estructuradas."
         },
         {
@@ -157,10 +169,10 @@
         {
           "type": "bullets",
           "items": [
-            "prioridad",
-            "recursos",
-            "secuenciación",
-            "delegación"
+            "Prioridad: Ordena demandas según seguridad, misión, urgencia, impacto y reversibilidad.",
+            "Recursos: Incluyen energía, tiempo, personal, capacidad de sistemas y atención; su disponibilidad determina opciones viables.",
+            "Secuenciación: secuenciación se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Delegación: Asigna una tarea a alguien con capacidad suficiente, manteniendo responsabilidad de seguimiento."
           ]
         },
         {
@@ -211,6 +223,10 @@
       "blocks": [
         {
           "type": "p",
+          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+        },
+        {
+          "type": "p",
           "text": "Profundizar en la rama mediante situaciones complejas y menos estructuradas."
         },
         {
@@ -220,10 +236,10 @@
         {
           "type": "bullets",
           "items": [
-            "detección",
-            "contención",
-            "alternativa",
-            "reporte"
+            "Detección: Reconoce una desviación mediante datos, síntomas o alertas antes de seleccionar respuesta.",
+            "Contención: Limita propagación o impacto mientras se prepara una solución más completa.",
+            "Alternativa: Es una vía distinta para alcanzar el objetivo cuando el método principal no es viable.",
+            "Reporte: Separa hechos, interpretación, resultado, limitaciones y pendientes para que otro pueda actuar."
           ]
         },
         {
@@ -274,6 +290,10 @@
       "blocks": [
         {
           "type": "p",
+          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+        },
+        {
+          "type": "p",
           "text": "Profundizar en la rama mediante situaciones complejas y menos estructuradas."
         },
         {
@@ -283,10 +303,10 @@
         {
           "type": "bullets",
           "items": [
-            "dependencias",
-            "negociación",
-            "escalado",
-            "mando"
+            "Dependencias: Existen cuando una tarea necesita información, recursos o acción de otra función.",
+            "Negociación: Hace visibles necesidad, coste, riesgo y autoridad para coordinar prioridades entre departamentos.",
+            "Escalado: Transfiere una decisión a la autoridad o especialidad adecuada cuando se exceden límites, recursos o riesgo aceptable.",
+            "Mando: Integra información y resuelve conflictos que exceden la autoridad de una estación o departamento."
           ]
         },
         {
@@ -337,6 +357,10 @@
       "blocks": [
         {
           "type": "p",
+          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+        },
+        {
+          "type": "p",
           "text": "Profundizar en la rama mediante situaciones complejas y menos estructuradas."
         },
         {
@@ -346,11 +370,11 @@
         {
           "type": "bullets",
           "items": [
-            "misión",
-            "incidente",
-            "decisión",
-            "resultado",
-            "debrief"
+            "Misión: Define qué se intenta conseguir y bajo qué restricciones; las decisiones locales deben relacionarse con esa intención.",
+            "Incidente: Exige evaluar impacto, actuar dentro de competencia y mantener seguimiento hasta su cierre.",
+            "Decisión: Debe justificarse con información disponible, objetivo, riesgo, autoridad y alternativas.",
+            "Resultado: resultado se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Debrief: Reconstruye qué se sabía, qué se decidió, qué ocurrió y qué debe cambiar, sin usar información conocida solo después."
           ]
         },
         {
@@ -394,5 +418,6 @@
         }
       ]
     }
-  ]
+  ],
+  "status": "developed_content"
 }
