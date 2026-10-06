@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "simulator": "sensors",
   "tutorials": [
     {
@@ -14,7 +14,11 @@
           "event": "NAV_PRIMARY",
           "match": {
             "primaryId": "scans"
-          }
+          },
+          "what": "Entras en el área destinada a observar una región del espacio.",
+          "why": "La orden pide averiguar qué hay en un sector. Eso es un barrido; Búsqueda se usa cuando intentas localizar algo de una clase concreta.",
+          "effect": "Preparas la consola para crear una operación de escaneo; aún no se consume tiempo de observación.",
+          "concept": "Barrido = observar una zona para descubrir qué hay."
         },
         {
           "label": "Elegir Largo alcance",
@@ -22,7 +26,11 @@
           "match": {
             "primaryId": "scans",
             "secondaryId": "long_range"
-          }
+          },
+          "what": "Seleccionas un barrido pensado para cubrir distancias mayores.",
+          "why": "El sector 041 no es el espacio inmediato de la nave. El largo alcance prioriza cobertura a distancia.",
+          "effect": "La operación adopta un perfil de mayor alcance, con posibles compromisos de tiempo o detalle.",
+          "concept": "Alcance y resolución se equilibran."
         },
         {
           "label": "Configurar Sector 041",
@@ -30,7 +38,11 @@
           "match": {
             "scanType": "long_range",
             "targetValue": "sector"
-          }
+          },
+          "what": "Delimitas el espacio que debe observar el sistema.",
+          "why": "Sin un ámbito espacial claro la consola no sabe dónde concentrar el barrido.",
+          "effect": "El procesamiento se centra en el sector indicado y evita gastar capacidad en zonas ajenas.",
+          "concept": "Toda observación necesita un ámbito u objetivo."
         },
         {
           "label": "Prioridad Subespacio",
@@ -38,16 +50,25 @@
           "match": {
             "scanType": "long_range",
             "priority": "subspace"
-          }
+          },
+          "what": "Indicas que las emisiones subespaciales merecen atención preferente.",
+          "why": "La prioridad sigue la intención de la orden sin descartar necesariamente el resto de firmas.",
+          "effect": "El sistema presta más atención de procesamiento a señales subespaciales.",
+          "concept": "Priorizar no es lo mismo que filtrar."
         },
         {
           "label": "Completar barrido",
           "event": "SCAN_COMPLETE",
           "match": {
             "scanType": "long_range"
-          }
+          },
+          "what": "Ejecutas la configuración y esperas a que la observación termine.",
+          "why": "Configurar no produce información nueva; solo al ejecutar se consulta el escenario.",
+          "effect": "Se consume tiempo y capacidad sensora y se genera un resultado.",
+          "concept": "La consola prepara; el mundo resuelve la observación."
         }
-      ]
+      ],
+      "lesson_summary": "Has aprendido a transformar una orden verbal en una observación sensora estructurada: elegir tipo de barrido, delimitar dónde mirar, priorizar una firma y ejecutar."
     },
     {
       "id": "TUT-02",
