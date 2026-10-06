@@ -30,10 +30,10 @@
         {
           "type": "bullets",
           "items": [
-            "**Fijar rumbo**",
+            "**Fijar **rumbo****",
             "Seleccionar **velocidad**",
             "Entrar/salir de warp",
-            "Interceptar",
+            "**Interceptar**",
             "Entrar en órbita",
             "Aproximarse",
             "Atracar cuando proceda",
@@ -59,7 +59,7 @@
         {
           "type": "definition",
           "term": "Waypoint",
-          "text": "**Punto intermedio** que estructura una ruta para evitar zonas, buscar apoyo o cumplir condiciones."
+          "text": "**Punto intermedio** que estructura una ruta para **evitar zona**s, buscar apoyo o cumplir condiciones."
         },
         {
           "type": "heading",
@@ -141,15 +141,15 @@
             "**Posición**",
             "**Progreso**",
             "ETA",
-            "Propulsión",
-            "Condiciones",
+            "**Propulsión**",
+            "**Condiciones**",
             "Cambios de ruta",
             "Nuevos peligros conocidos"
           ]
         },
         {
           "type": "p",
-          "text": "Daño, energía, condiciones subespaciales, fronteras o cambios de misión pueden obligar a replanificar."
+          "text": "**Daño, energía, condiciones subespaciales, fronteras o cambios de misión pueden obligar a replanificar.**"
         }
       ]
     },
@@ -179,8 +179,8 @@
           "type": "bullets",
           "items": [
             "**Instalación válida**",
-            "Puerto asignado cuando proceda",
-            "Aproximación segura",
+            "**Puerto** asignado cuando proceda",
+            "**Aproximación segura**",
             "Autorización"
           ]
         }
@@ -205,14 +205,14 @@
             "Daño",
             "**Error**",
             "**Nueva información**",
-            "Cambio de condiciones",
-            "Obstáculo",
+            "Cambio de **condiciones**",
+            "**Obstáculo**",
             "Orden modificada"
           ]
         },
         {
           "type": "p",
-          "text": "Con datos incompletos se reduce confianza, se amplían márgenes y se solicita información; no se finge precisión."
+          "text": "**Con datos incompletos se reduce confianza, se amplían márgenes y se solicita información; no se finge precisión.**"
         },
         {
           "type": "callout",
