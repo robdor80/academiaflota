@@ -1,7 +1,7 @@
 {
   "subject": "Mando",
   "code": "COMMAND",
-  "version": "1.1",
+  "version": "1.2",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/branches/command/branch_curriculum_v1_0.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/branches/command/MANUAL_v1_0.md",
@@ -32,9 +32,9 @@
         {
           "type": "bullets",
           "items": [
-            "Autoridad: Delimita quién puede ordenar, aprobar o modificar una acción; debe estar clara antes de comprometer personas o sistemas.",
-            "Responsabilidad: Obliga a responder por decisiones dentro del propio ámbito y a escalar lo que lo excede.",
-            "Intención: Expresa el efecto que se quiere conseguir y permite adaptar la ejecución sin perder el propósito de la orden."
+            "**Autoridad**: Delimita quién puede ordenar, aprobar o modificar una acción; debe estar clara antes de comprometer personas o sistemas.",
+            "**Responsabilidad**: Obliga a responder por decisiones dentro del propio ámbito y a escalar lo que lo excede.",
+            "**Intención**: Expresa el efecto que se quiere conseguir y permite adaptar la ejecución sin perder el propósito de la orden."
           ]
         },
         {
@@ -46,19 +46,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Caso."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica autoridad desde la perspectiva de Mando.",
-            "Resuelve: Resolver cadena de decisión.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -95,10 +82,10 @@
         {
           "type": "bullets",
           "items": [
-            "Misión: Define el propósito y las restricciones que permiten priorizar opciones.",
-            "Nave: Se considera por su estado, capacidades, limitaciones y margen disponible para sostener la misión.",
-            "Tripulación: Se valora por seguridad, competencia, carga y disponibilidad, no solo por número de personas.",
-            "Entorno: Incluye condiciones externas que afectan visibilidad, movimiento, riesgo y capacidad de actuación."
+            "**Misión**: Define el propósito y las restricciones que permiten priorizar opciones.",
+            "**Nave**: Se considera por su estado, capacidades, limitaciones y margen disponible para sostener la misión.",
+            "**Tripulación**: Se valora por seguridad, competencia, carga y disponibilidad, no solo por número de personas.",
+            "**Entorno**: Incluye condiciones externas que afectan visibilidad, movimiento, riesgo y capacidad de actuación."
           ]
         },
         {
@@ -110,19 +97,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica misión desde la perspectiva de Mando.",
-            "Resuelve: Mantener picture de mando.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -159,9 +133,9 @@
         {
           "type": "bullets",
           "items": [
-            "Claridad: Una instrucción clara identifica acción, objetivo y límites suficientes para que el destinatario no tenga que adivinar.",
-            "Delegación: Asigna una tarea a quien tiene capacidad suficiente y mantiene seguimiento proporcional al riesgo.",
-            "Confirmación: Verifica recepción, comprensión o resultado en los puntos donde un error tendría consecuencias operativas."
+            "**Claridad**: Una instrucción clara identifica acción, objetivo y límites suficientes para que el destinatario no tenga que adivinar.",
+            "**Delegación**: Asigna una tarea a quien tiene capacidad suficiente y mantiene seguimiento proporcional al riesgo.",
+            "**Confirmación**: Verifica recepción, comprensión o resultado en los puntos donde un error tendría consecuencias operativas."
           ]
         },
         {
@@ -173,19 +147,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Práctica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica claridad desde la perspectiva de Mando.",
-            "Resuelve: Dirigir micro-equipo.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -222,10 +183,10 @@
         {
           "type": "bullets",
           "items": [
-            "Opciones: Deben compararse por viabilidad, riesgo, recursos, reversibilidad y efecto en misión.",
-            "Riesgo: Combina probabilidad, impacto y exposición y se compara con autoridad, misión y alternativas.",
-            "Reglas: Fijan restricciones legales, de seguridad o procedimiento que no desaparecen por urgencia.",
-            "Tiempo: Es un recurso operativo: esperar puede mejorar información, pero también cerrar una ventana o aumentar exposición."
+            "**Opciones**: Deben compararse por viabilidad, riesgo, recursos, reversibilidad y efecto en misión.",
+            "**Riesgo**: Combina probabilidad, impacto y exposición y se compara con autoridad, misión y alternativas.",
+            "**Reglas**: Fijan restricciones legales, de seguridad o procedimiento que no desaparecen por urgencia.",
+            "**Tiempo**: Es un recurso operativo: esperar puede mejorar información, pero también cerrar una ventana o aumentar exposición."
           ]
         },
         {
@@ -237,19 +198,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Juicio."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica opciones desde la perspectiva de Mando.",
-            "Resuelve: Caso de puente.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -286,10 +234,10 @@
         {
           "type": "bullets",
           "items": [
-            "Vida: Tiene prioridad cuando existe amenaza inmediata para personas y exige medidas proporcionadas de protección.",
-            "Misión: Define el propósito y las restricciones que permiten priorizar opciones.",
-            "Nave: Se considera por su estado, capacidades, limitaciones y margen disponible para sostener la misión.",
-            "Regulación: Delimita acciones permitidas y responsabilidades; una orden operativa no anula una prohibición aplicable."
+            "**Vida**: Tiene prioridad cuando existe amenaza inmediata para personas y exige medidas proporcionadas de protección.",
+            "**Misión**: Define el propósito y las restricciones que permiten priorizar opciones.",
+            "**Nave**: Se considera por su estado, capacidades, limitaciones y margen disponible para sostener la misión.",
+            "**Regulación**: Delimita acciones permitidas y responsabilidades; una orden operativa no anula una prohibición aplicable."
           ]
         },
         {
@@ -301,19 +249,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Caso."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica vida desde la perspectiva de Mando.",
-            "Resuelve: Ordenar acciones.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -350,10 +285,10 @@
         {
           "type": "bullets",
           "items": [
-            "Datos: Deben conservar origen, contexto, calidad y recencia suficientes para sostener una decisión.",
-            "Supuestos: Se declaran explícitamente para no confundir inferencia con hecho.",
-            "Consulta: Se usa cuando otra autoridad o especialidad puede reducir una incertidumbre relevante antes de decidir.",
-            "Tiempo: Es un recurso operativo: esperar puede mejorar información, pero también cerrar una ventana o aumentar exposición."
+            "**Datos**: Deben conservar origen, contexto, calidad y recencia suficientes para sostener una decisión.",
+            "**Supuestos**: Se declaran explícitamente para no confundir inferencia con hecho.",
+            "**Consulta**: Se usa cuando otra autoridad o especialidad puede reducir una incertidumbre relevante antes de decidir.",
+            "**Tiempo**: Es un recurso operativo: esperar puede mejorar información, pero también cerrar una ventana o aumentar exposición."
           ]
         },
         {
@@ -365,19 +300,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica datos desde la perspectiva de Mando.",
-            "Resuelve: Escenario incompleto.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -414,9 +336,9 @@
         {
           "type": "bullets",
           "items": [
-            "Recursos: Incluyen tiempo, energía, personal, capacidad y atención; no pueden asignarse dos veces sin mostrar el conflicto.",
-            "Conflictos: Se hacen visibles con sus impactos y se elevan a la autoridad que puede resolver prioridades.",
-            "Handoff: Transfiere estado, acciones, riesgos, órdenes y pendientes sin perder continuidad."
+            "**Recursos**: Incluyen tiempo, energía, personal, capacidad y atención; no pueden asignarse dos veces sin mostrar el conflicto.",
+            "**Conflictos**: Se hacen visibles con sus impactos y se elevan a la autoridad que puede resolver prioridades.",
+            "**Handoff**: Transfiere estado, acciones, riesgos, órdenes y pendientes sin perder continuidad."
           ]
         },
         {
@@ -428,19 +350,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Práctica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica recursos desde la perspectiva de Mando.",
-            "Resuelve: Dirigir equipo multiárea.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -477,9 +386,9 @@
         {
           "type": "bullets",
           "items": [
-            "Desescalada: Busca reducir tensión y riesgo sin renunciar a la misión ni a las obligaciones de seguridad.",
-            "Intereses: Permiten entender qué necesita cada parte y construir opciones compatibles o, al menos, explícitas.",
-            "Autoridad: Delimita quién puede ordenar, aprobar o modificar una acción; debe estar clara antes de comprometer personas o sistemas."
+            "**Desescalada**: Busca reducir tensión y riesgo sin renunciar a la misión ni a las obligaciones de seguridad.",
+            "**Intereses**: Permiten entender qué necesita cada parte y construir opciones compatibles o, al menos, explícitas.",
+            "**Autoridad**: Delimita quién puede ordenar, aprobar o modificar una acción; debe estar clara antes de comprometer personas o sistemas."
           ]
         },
         {
@@ -491,19 +400,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Debrief."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica desescalada desde la perspectiva de Mando.",
-            "Resuelve: Escena de contacto.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -540,9 +436,9 @@
         {
           "type": "bullets",
           "items": [
-            "Estado: Fija la condición real de partida y debe actualizarse cuando cambian sistemas, personas o entorno.",
-            "Órdenes: órdenes en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
-            "Autoridad delegada: autoridad delegada en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+            "**Estado**: Fija la condición real de partida y debe actualizarse cuando cambian sistemas, personas o entorno.",
+            "**Órdenes**: órdenes en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "**Autoridad delegada**: autoridad delegada en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -554,19 +450,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica estado desde la perspectiva de Mando.",
-            "Resuelve: Guardia simulada.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -603,10 +486,10 @@
         {
           "type": "bullets",
           "items": [
-            "Objetivo: objetivo en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
-            "Riesgo: Combina probabilidad, impacto y exposición y se compara con autoridad, misión y alternativas.",
-            "Recursos: Incluyen tiempo, energía, personal, capacidad y atención; no pueden asignarse dos veces sin mostrar el conflicto.",
-            "Contingencia: contingencia en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+            "**Objetivo**: objetivo en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "**Riesgo**: Combina probabilidad, impacto y exposición y se compara con autoridad, misión y alternativas.",
+            "**Recursos**: Incluyen tiempo, energía, personal, capacidad y atención; no pueden asignarse dos veces sin mostrar el conflicto.",
+            "**Contingencia**: contingencia en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -618,19 +501,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Revisión."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica objetivo desde la perspectiva de Mando.",
-            "Resuelve: Preparar plan.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -667,10 +537,10 @@
         {
           "type": "bullets",
           "items": [
-            "Brief: brief en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
-            "Órdenes: órdenes en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
-            "Seguimiento: Comprueba evolución, respuesta y necesidad de modificar tratamiento o restricciones.",
-            "Cierre: cierre en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+            "**Brief**: brief en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "**Órdenes**: órdenes en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "**Seguimiento**: Comprueba evolución, respuesta y necesidad de modificar tratamiento o restricciones.",
+            "**Cierre**: cierre en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -682,19 +552,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica brief desde la perspectiva de Mando.",
-            "Resuelve: Dirigir incidente.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -731,10 +588,10 @@
         {
           "type": "bullets",
           "items": [
-            "Liderazgo: liderazgo en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
-            "Juicio: juicio en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
-            "Comunicación: comunicación preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes.",
-            "Ética: ética en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+            "**Liderazgo**: liderazgo en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "**Juicio**: juicio en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "**Comunicación**: comunicación preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes.",
+            "**Ética**: ética en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -746,19 +603,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evidencia."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica liderazgo desde la perspectiva de Mando.",
-            "Resuelve: Panel de mando.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -1256,5 +1100,6 @@
     }
   ],
   "year3Status": "developed_content",
-  "year3Scope": "201-203"
+  "year3Scope": "201-203",
+  "assessmentModel": "concept_driven_v2_1_year3"
 }

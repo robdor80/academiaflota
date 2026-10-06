@@ -1,15 +1,45 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.1.0",
   "branch_id": "command",
-  "status": "generated_from_authoritative_branch_curriculum",
-  "question_count": 60,
-  "questions": [
+  "status": "concept_driven_autocorrectable_v2_1",
+  "scope": "year3_201_203_only",
+  "source_bank": "question_bank_v1_0.json",
+  "year3_courses": [
+    "CMD-201",
+    "CMD-202",
+    "CMD-203"
+  ],
+  "year3_status": "developed_and_synced_v2_1",
+  "policy": {
+    "theory_formats": [
+      "multiple_choice",
+      "short_answer"
+    ],
+    "deterministic_correction": true,
+    "web_and_game_share_concepts_not_question_instances": true,
+    "complex_judgment_moves_to_practice_and_simulation": true,
+    "source_rule": "Every evaluated concept must be explicitly taught in the branch material or an established prerequisite."
+  },
+  "unit_review": {
+    "questions_per_attempt": 5,
+    "reshuffle_each_attempt": true,
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
+  },
+  "concepts": [
     {
-      "id": "COMMAND-Q001",
-      "course_id": "CMD-201",
+      "id": "COMMAND-C001",
       "unit_id": "CMD-201-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica autoridad desde la perspectiva de Mando: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente autoridad desde la perspectiva de Mando?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente autoridad desde la perspectiva de Mando?",
+        "Explica autoridad desde la perspectiva de Mando: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "autoridad · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "autoridad",
         "aplicación",
@@ -17,11 +47,17 @@
       ]
     },
     {
-      "id": "COMMAND-Q002",
-      "course_id": "CMD-201",
+      "id": "COMMAND-C002",
       "unit_id": "CMD-201-U01",
-      "type": "scenario",
-      "prompt_es": "Resolver cadena de decisión. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Resolver cadena de decisión»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Resolver cadena de decisión»?",
+        "Resolver cadena de decisión. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -30,11 +66,17 @@
       ]
     },
     {
-      "id": "COMMAND-Q003",
-      "course_id": "CMD-201",
+      "id": "COMMAND-C003",
       "unit_id": "CMD-201-U01",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Función de mando para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Función de mando?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Función de mando?",
+        "¿Qué evidencia conservarías tras Función de mando para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -44,11 +86,17 @@
       ]
     },
     {
-      "id": "COMMAND-Q004",
-      "course_id": "CMD-201",
+      "id": "COMMAND-C004",
       "unit_id": "CMD-201-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica misión desde la perspectiva de Mando: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente misión desde la perspectiva de Mando?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente misión desde la perspectiva de Mando?",
+        "Explica misión desde la perspectiva de Mando: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "misión · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "misión",
         "aplicación",
@@ -56,11 +104,17 @@
       ]
     },
     {
-      "id": "COMMAND-Q005",
-      "course_id": "CMD-201",
+      "id": "COMMAND-C005",
       "unit_id": "CMD-201-U02",
-      "type": "scenario",
-      "prompt_es": "Mantener picture de mando. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Mantener picture de mando»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Mantener picture de mando»?",
+        "Mantener picture de mando. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -69,11 +123,17 @@
       ]
     },
     {
-      "id": "COMMAND-Q006",
-      "course_id": "CMD-201",
+      "id": "COMMAND-C006",
       "unit_id": "CMD-201-U02",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Conciencia situacional para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Conciencia situacional?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Conciencia situacional?",
+        "¿Qué evidencia conservarías tras Conciencia situacional para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -83,11 +143,17 @@
       ]
     },
     {
-      "id": "COMMAND-Q007",
-      "course_id": "CMD-201",
+      "id": "COMMAND-C007",
       "unit_id": "CMD-201-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica claridad desde la perspectiva de Mando: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente claridad desde la perspectiva de Mando?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente claridad desde la perspectiva de Mando?",
+        "Explica claridad desde la perspectiva de Mando: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "claridad · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "claridad",
         "aplicación",
@@ -95,11 +161,17 @@
       ]
     },
     {
-      "id": "COMMAND-Q008",
-      "course_id": "CMD-201",
+      "id": "COMMAND-C008",
       "unit_id": "CMD-201-U03",
-      "type": "scenario",
-      "prompt_es": "Dirigir micro-equipo. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Dirigir micro-equipo»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Dirigir micro-equipo»?",
+        "Dirigir micro-equipo. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -108,11 +180,17 @@
       ]
     },
     {
-      "id": "COMMAND-Q009",
-      "course_id": "CMD-201",
+      "id": "COMMAND-C009",
       "unit_id": "CMD-201-U03",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Órdenes para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Órdenes?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Órdenes?",
+        "¿Qué evidencia conservarías tras Órdenes para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -122,11 +200,17 @@
       ]
     },
     {
-      "id": "COMMAND-Q010",
-      "course_id": "CMD-201",
+      "id": "COMMAND-C010",
       "unit_id": "CMD-201-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica opciones desde la perspectiva de Mando: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente opciones desde la perspectiva de Mando?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente opciones desde la perspectiva de Mando?",
+        "Explica opciones desde la perspectiva de Mando: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "opciones · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "opciones",
         "aplicación",
@@ -134,11 +218,17 @@
       ]
     },
     {
-      "id": "COMMAND-Q011",
-      "course_id": "CMD-201",
+      "id": "COMMAND-C011",
       "unit_id": "CMD-201-U04",
-      "type": "scenario",
-      "prompt_es": "Caso de puente. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Caso de puente»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Caso de puente»?",
+        "Caso de puente. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -147,11 +237,17 @@
       ]
     },
     {
-      "id": "COMMAND-Q012",
-      "course_id": "CMD-201",
+      "id": "COMMAND-C012",
       "unit_id": "CMD-201-U04",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Decisión básica para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Decisión básica?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Decisión básica?",
+        "¿Qué evidencia conservarías tras Decisión básica para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -161,11 +257,17 @@
       ]
     },
     {
-      "id": "COMMAND-Q013",
-      "course_id": "CMD-202",
+      "id": "COMMAND-C013",
       "unit_id": "CMD-202-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica vida desde la perspectiva de Mando: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente vida desde la perspectiva de Mando?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente vida desde la perspectiva de Mando?",
+        "Explica vida desde la perspectiva de Mando: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "vida · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "vida",
         "aplicación",
@@ -173,11 +275,17 @@
       ]
     },
     {
-      "id": "COMMAND-Q014",
-      "course_id": "CMD-202",
+      "id": "COMMAND-C014",
       "unit_id": "CMD-202-U01",
-      "type": "scenario",
-      "prompt_es": "Ordenar acciones. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Ordenar acciones»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Ordenar acciones»?",
+        "Ordenar acciones. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -186,11 +294,17 @@
       ]
     },
     {
-      "id": "COMMAND-Q015",
-      "course_id": "CMD-202",
+      "id": "COMMAND-C015",
       "unit_id": "CMD-202-U01",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Prioridad en crisis para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Prioridad en crisis?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Prioridad en crisis?",
+        "¿Qué evidencia conservarías tras Prioridad en crisis para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -200,11 +314,17 @@
       ]
     },
     {
-      "id": "COMMAND-Q016",
-      "course_id": "CMD-202",
+      "id": "COMMAND-C016",
       "unit_id": "CMD-202-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica datos desde la perspectiva de Mando: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente datos desde la perspectiva de Mando?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente datos desde la perspectiva de Mando?",
+        "Explica datos desde la perspectiva de Mando: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "datos · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "datos",
         "aplicación",
@@ -212,11 +332,17 @@
       ]
     },
     {
-      "id": "COMMAND-Q017",
-      "course_id": "CMD-202",
+      "id": "COMMAND-C017",
       "unit_id": "CMD-202-U02",
-      "type": "scenario",
-      "prompt_es": "Escenario incompleto. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Escenario incompleto»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Escenario incompleto»?",
+        "Escenario incompleto. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -225,11 +351,17 @@
       ]
     },
     {
-      "id": "COMMAND-Q018",
-      "course_id": "CMD-202",
+      "id": "COMMAND-C018",
       "unit_id": "CMD-202-U02",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Decisión con incertidumbre para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Decisión con incertidumbre?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Decisión con incertidumbre?",
+        "¿Qué evidencia conservarías tras Decisión con incertidumbre para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -239,11 +371,17 @@
       ]
     },
     {
-      "id": "COMMAND-Q019",
-      "course_id": "CMD-202",
+      "id": "COMMAND-C019",
       "unit_id": "CMD-202-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica recursos desde la perspectiva de Mando: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente recursos desde la perspectiva de Mando?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente recursos desde la perspectiva de Mando?",
+        "Explica recursos desde la perspectiva de Mando: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "recursos · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "recursos",
         "aplicación",
@@ -251,11 +389,17 @@
       ]
     },
     {
-      "id": "COMMAND-Q020",
-      "course_id": "CMD-202",
+      "id": "COMMAND-C020",
       "unit_id": "CMD-202-U03",
-      "type": "scenario",
-      "prompt_es": "Dirigir equipo multiárea. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Dirigir equipo multiárea»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Dirigir equipo multiárea»?",
+        "Dirigir equipo multiárea. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -264,11 +408,17 @@
       ]
     },
     {
-      "id": "COMMAND-Q021",
-      "course_id": "CMD-202",
+      "id": "COMMAND-C021",
       "unit_id": "CMD-202-U03",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Coordinación de departamentos para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Coordinación de departamentos?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Coordinación de departamentos?",
+        "¿Qué evidencia conservarías tras Coordinación de departamentos para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -278,11 +428,17 @@
       ]
     },
     {
-      "id": "COMMAND-Q022",
-      "course_id": "CMD-202",
+      "id": "COMMAND-C022",
       "unit_id": "CMD-202-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica desescalada desde la perspectiva de Mando: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente desescalada desde la perspectiva de Mando?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente desescalada desde la perspectiva de Mando?",
+        "Explica desescalada desde la perspectiva de Mando: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "desescalada · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "desescalada",
         "aplicación",
@@ -290,11 +446,17 @@
       ]
     },
     {
-      "id": "COMMAND-Q023",
-      "course_id": "CMD-202",
+      "id": "COMMAND-C023",
       "unit_id": "CMD-202-U04",
-      "type": "scenario",
-      "prompt_es": "Escena de contacto. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Escena de contacto»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Escena de contacto»?",
+        "Escena de contacto. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -303,11 +465,17 @@
       ]
     },
     {
-      "id": "COMMAND-Q024",
-      "course_id": "CMD-202",
+      "id": "COMMAND-C024",
       "unit_id": "CMD-202-U04",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Diplomacia operativa para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Diplomacia operativa?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Diplomacia operativa?",
+        "¿Qué evidencia conservarías tras Diplomacia operativa para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -317,11 +485,17 @@
       ]
     },
     {
-      "id": "COMMAND-Q025",
-      "course_id": "CMD-203",
+      "id": "COMMAND-C025",
       "unit_id": "CMD-203-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica estado desde la perspectiva de Mando: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente estado desde la perspectiva de Mando?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente estado desde la perspectiva de Mando?",
+        "Explica estado desde la perspectiva de Mando: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "estado · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estado",
         "aplicación",
@@ -329,11 +503,17 @@
       ]
     },
     {
-      "id": "COMMAND-Q026",
-      "course_id": "CMD-203",
+      "id": "COMMAND-C026",
       "unit_id": "CMD-203-U01",
-      "type": "scenario",
-      "prompt_es": "Guardia simulada. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Guardia simulada»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Guardia simulada»?",
+        "Guardia simulada. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -342,11 +522,17 @@
       ]
     },
     {
-      "id": "COMMAND-Q027",
-      "course_id": "CMD-203",
+      "id": "COMMAND-C027",
       "unit_id": "CMD-203-U01",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Oficial de guardia para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Oficial de guardia?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Oficial de guardia?",
+        "¿Qué evidencia conservarías tras Oficial de guardia para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -356,11 +542,17 @@
       ]
     },
     {
-      "id": "COMMAND-Q028",
-      "course_id": "CMD-203",
+      "id": "COMMAND-C028",
       "unit_id": "CMD-203-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica objetivo desde la perspectiva de Mando: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente objetivo desde la perspectiva de Mando?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente objetivo desde la perspectiva de Mando?",
+        "Explica objetivo desde la perspectiva de Mando: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "objetivo · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "objetivo",
         "aplicación",
@@ -368,11 +560,17 @@
       ]
     },
     {
-      "id": "COMMAND-Q029",
-      "course_id": "CMD-203",
+      "id": "COMMAND-C029",
       "unit_id": "CMD-203-U02",
-      "type": "scenario",
-      "prompt_es": "Preparar plan. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Preparar plan»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Preparar plan»?",
+        "Preparar plan. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -381,11 +579,17 @@
       ]
     },
     {
-      "id": "COMMAND-Q030",
-      "course_id": "CMD-203",
+      "id": "COMMAND-C030",
       "unit_id": "CMD-203-U02",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Plan de misión para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Plan de misión?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Plan de misión?",
+        "¿Qué evidencia conservarías tras Plan de misión para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -395,11 +599,17 @@
       ]
     },
     {
-      "id": "COMMAND-Q031",
-      "course_id": "CMD-203",
+      "id": "COMMAND-C031",
       "unit_id": "CMD-203-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica brief desde la perspectiva de Mando: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente brief desde la perspectiva de Mando?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente brief desde la perspectiva de Mando?",
+        "Explica brief desde la perspectiva de Mando: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "brief · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "brief",
         "aplicación",
@@ -407,11 +617,17 @@
       ]
     },
     {
-      "id": "COMMAND-Q032",
-      "course_id": "CMD-203",
+      "id": "COMMAND-C032",
       "unit_id": "CMD-203-U03",
-      "type": "scenario",
-      "prompt_es": "Dirigir incidente. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Dirigir incidente»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Dirigir incidente»?",
+        "Dirigir incidente. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -420,11 +636,17 @@
       ]
     },
     {
-      "id": "COMMAND-Q033",
-      "course_id": "CMD-203",
+      "id": "COMMAND-C033",
       "unit_id": "CMD-203-U03",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Gestión de incidente para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Gestión de incidente?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Gestión de incidente?",
+        "¿Qué evidencia conservarías tras Gestión de incidente para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -434,11 +656,17 @@
       ]
     },
     {
-      "id": "COMMAND-Q034",
-      "course_id": "CMD-203",
+      "id": "COMMAND-C034",
       "unit_id": "CMD-203-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica liderazgo desde la perspectiva de Mando: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente liderazgo desde la perspectiva de Mando?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente liderazgo desde la perspectiva de Mando?",
+        "Explica liderazgo desde la perspectiva de Mando: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "liderazgo · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "liderazgo",
         "aplicación",
@@ -446,11 +674,17 @@
       ]
     },
     {
-      "id": "COMMAND-Q035",
-      "course_id": "CMD-203",
+      "id": "COMMAND-C035",
       "unit_id": "CMD-203-U04",
-      "type": "scenario",
-      "prompt_es": "Panel de mando. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Panel de mando»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Panel de mando»?",
+        "Panel de mando. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -459,11 +693,17 @@
       ]
     },
     {
-      "id": "COMMAND-Q036",
-      "course_id": "CMD-203",
+      "id": "COMMAND-C036",
       "unit_id": "CMD-203-U04",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Revisión intermedia para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Revisión intermedia?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Revisión intermedia?",
+        "¿Qué evidencia conservarías tras Revisión intermedia para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -472,6 +712,584 @@
         "feedback o pendientes"
       ]
     },
+    {
+      "id": "COMMAND-C037",
+      "unit_id": "CMD-201-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Autoridad» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Autoridad» en esta unidad?",
+        "Selecciona la definición correcta de «Autoridad»."
+      ],
+      "answer_display_es": "Delimita quién puede ordenar, aprobar o modificar una acción; debe estar clara antes de comprometer personas o sistemas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Delimita quién puede ordenar, aprobar o modificar una acción; debe estar clara antes de comprometer personas o sistemas."
+      ]
+    },
+    {
+      "id": "COMMAND-C038",
+      "unit_id": "CMD-201-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Responsabilidad» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Responsabilidad» en esta unidad?",
+        "Selecciona la definición correcta de «Responsabilidad»."
+      ],
+      "answer_display_es": "Obliga a responder por decisiones dentro del propio ámbito y a escalar lo que lo excede.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Obliga a responder por decisiones dentro del propio ámbito y a escalar lo que lo excede."
+      ]
+    },
+    {
+      "id": "COMMAND-C039",
+      "unit_id": "CMD-201-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Intención» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Intención» en esta unidad?",
+        "Selecciona la definición correcta de «Intención»."
+      ],
+      "answer_display_es": "Expresa el efecto que se quiere conseguir y permite adaptar la ejecución sin perder el propósito de la orden.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Expresa el efecto que se quiere conseguir y permite adaptar la ejecución sin perder el propósito de la orden."
+      ]
+    },
+    {
+      "id": "COMMAND-C040",
+      "unit_id": "CMD-201-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Misión» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Misión» en esta unidad?",
+        "Selecciona la definición correcta de «Misión»."
+      ],
+      "answer_display_es": "Define el propósito y las restricciones que permiten priorizar opciones.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Define el propósito y las restricciones que permiten priorizar opciones."
+      ]
+    },
+    {
+      "id": "COMMAND-C041",
+      "unit_id": "CMD-201-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Nave» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Nave» en esta unidad?",
+        "Selecciona la definición correcta de «Nave»."
+      ],
+      "answer_display_es": "Se considera por su estado, capacidades, limitaciones y margen disponible para sostener la misión.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Se considera por su estado, capacidades, limitaciones y margen disponible para sostener la misión."
+      ]
+    },
+    {
+      "id": "COMMAND-C042",
+      "unit_id": "CMD-201-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Tripulación» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Tripulación» en esta unidad?",
+        "Selecciona la definición correcta de «Tripulación»."
+      ],
+      "answer_display_es": "Se valora por seguridad, competencia, carga y disponibilidad, no solo por número de personas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Se valora por seguridad, competencia, carga y disponibilidad, no solo por número de personas."
+      ]
+    },
+    {
+      "id": "COMMAND-C043",
+      "unit_id": "CMD-201-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Claridad» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Claridad» en esta unidad?",
+        "Selecciona la definición correcta de «Claridad»."
+      ],
+      "answer_display_es": "Una instrucción clara identifica acción, objetivo y límites suficientes para que el destinatario no tenga que adivinar.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Una instrucción clara identifica acción, objetivo y límites suficientes para que el destinatario no tenga que adivinar."
+      ]
+    },
+    {
+      "id": "COMMAND-C044",
+      "unit_id": "CMD-201-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Delegación» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Delegación» en esta unidad?",
+        "Selecciona la definición correcta de «Delegación»."
+      ],
+      "answer_display_es": "Asigna una tarea a quien tiene capacidad suficiente y mantiene seguimiento proporcional al riesgo.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Asigna una tarea a quien tiene capacidad suficiente y mantiene seguimiento proporcional al riesgo."
+      ]
+    },
+    {
+      "id": "COMMAND-C045",
+      "unit_id": "CMD-201-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Confirmación» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Confirmación» en esta unidad?",
+        "Selecciona la definición correcta de «Confirmación»."
+      ],
+      "answer_display_es": "Verifica recepción, comprensión o resultado en los puntos donde un error tendría consecuencias operativas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Verifica recepción, comprensión o resultado en los puntos donde un error tendría consecuencias operativas."
+      ]
+    },
+    {
+      "id": "COMMAND-C046",
+      "unit_id": "CMD-201-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Opciones» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Opciones» en esta unidad?",
+        "Selecciona la definición correcta de «Opciones»."
+      ],
+      "answer_display_es": "Deben compararse por viabilidad, riesgo, recursos, reversibilidad y efecto en misión.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Deben compararse por viabilidad, riesgo, recursos, reversibilidad y efecto en misión."
+      ]
+    },
+    {
+      "id": "COMMAND-C047",
+      "unit_id": "CMD-201-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Riesgo» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Riesgo» en esta unidad?",
+        "Selecciona la definición correcta de «Riesgo»."
+      ],
+      "answer_display_es": "Combina probabilidad, impacto y exposición y se compara con autoridad, misión y alternativas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Combina probabilidad, impacto y exposición y se compara con autoridad, misión y alternativas."
+      ]
+    },
+    {
+      "id": "COMMAND-C048",
+      "unit_id": "CMD-201-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Reglas» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Reglas» en esta unidad?",
+        "Selecciona la definición correcta de «Reglas»."
+      ],
+      "answer_display_es": "Fijan restricciones legales, de seguridad o procedimiento que no desaparecen por urgencia.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Fijan restricciones legales, de seguridad o procedimiento que no desaparecen por urgencia."
+      ]
+    },
+    {
+      "id": "COMMAND-C049",
+      "unit_id": "CMD-202-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Vida» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Vida» en esta unidad?",
+        "Selecciona la definición correcta de «Vida»."
+      ],
+      "answer_display_es": "Tiene prioridad cuando existe amenaza inmediata para personas y exige medidas proporcionadas de protección.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Tiene prioridad cuando existe amenaza inmediata para personas y exige medidas proporcionadas de protección."
+      ]
+    },
+    {
+      "id": "COMMAND-C050",
+      "unit_id": "CMD-202-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Misión» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Misión» en esta unidad?",
+        "Selecciona la definición correcta de «Misión»."
+      ],
+      "answer_display_es": "Define el propósito y las restricciones que permiten priorizar opciones.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Define el propósito y las restricciones que permiten priorizar opciones."
+      ]
+    },
+    {
+      "id": "COMMAND-C051",
+      "unit_id": "CMD-202-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Nave» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Nave» en esta unidad?",
+        "Selecciona la definición correcta de «Nave»."
+      ],
+      "answer_display_es": "Se considera por su estado, capacidades, limitaciones y margen disponible para sostener la misión.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Se considera por su estado, capacidades, limitaciones y margen disponible para sostener la misión."
+      ]
+    },
+    {
+      "id": "COMMAND-C052",
+      "unit_id": "CMD-202-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Datos» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Datos» en esta unidad?",
+        "Selecciona la definición correcta de «Datos»."
+      ],
+      "answer_display_es": "Deben conservar origen, contexto, calidad y recencia suficientes para sostener una decisión.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Deben conservar origen, contexto, calidad y recencia suficientes para sostener una decisión."
+      ]
+    },
+    {
+      "id": "COMMAND-C053",
+      "unit_id": "CMD-202-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Supuestos» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Supuestos» en esta unidad?",
+        "Selecciona la definición correcta de «Supuestos»."
+      ],
+      "answer_display_es": "Se declaran explícitamente para no confundir inferencia con hecho.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Se declaran explícitamente para no confundir inferencia con hecho."
+      ]
+    },
+    {
+      "id": "COMMAND-C054",
+      "unit_id": "CMD-202-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Consulta» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Consulta» en esta unidad?",
+        "Selecciona la definición correcta de «Consulta»."
+      ],
+      "answer_display_es": "Se usa cuando otra autoridad o especialidad puede reducir una incertidumbre relevante antes de decidir.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Se usa cuando otra autoridad o especialidad puede reducir una incertidumbre relevante antes de decidir."
+      ]
+    },
+    {
+      "id": "COMMAND-C055",
+      "unit_id": "CMD-202-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Recursos» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Recursos» en esta unidad?",
+        "Selecciona la definición correcta de «Recursos»."
+      ],
+      "answer_display_es": "Incluyen tiempo, energía, personal, capacidad y atención; no pueden asignarse dos veces sin mostrar el conflicto.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Incluyen tiempo, energía, personal, capacidad y atención; no pueden asignarse dos veces sin mostrar el conflicto."
+      ]
+    },
+    {
+      "id": "COMMAND-C056",
+      "unit_id": "CMD-202-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Conflictos» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Conflictos» en esta unidad?",
+        "Selecciona la definición correcta de «Conflictos»."
+      ],
+      "answer_display_es": "Se hacen visibles con sus impactos y se elevan a la autoridad que puede resolver prioridades.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Se hacen visibles con sus impactos y se elevan a la autoridad que puede resolver prioridades."
+      ]
+    },
+    {
+      "id": "COMMAND-C057",
+      "unit_id": "CMD-202-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Handoff» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Handoff» en esta unidad?",
+        "Selecciona la definición correcta de «Handoff»."
+      ],
+      "answer_display_es": "Transfiere estado, acciones, riesgos, órdenes y pendientes sin perder continuidad.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Transfiere estado, acciones, riesgos, órdenes y pendientes sin perder continuidad."
+      ]
+    },
+    {
+      "id": "COMMAND-C058",
+      "unit_id": "CMD-202-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Desescalada» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Desescalada» en esta unidad?",
+        "Selecciona la definición correcta de «Desescalada»."
+      ],
+      "answer_display_es": "Busca reducir tensión y riesgo sin renunciar a la misión ni a las obligaciones de seguridad.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Busca reducir tensión y riesgo sin renunciar a la misión ni a las obligaciones de seguridad."
+      ]
+    },
+    {
+      "id": "COMMAND-C059",
+      "unit_id": "CMD-202-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Intereses» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Intereses» en esta unidad?",
+        "Selecciona la definición correcta de «Intereses»."
+      ],
+      "answer_display_es": "Permiten entender qué necesita cada parte y construir opciones compatibles o, al menos, explícitas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Permiten entender qué necesita cada parte y construir opciones compatibles o, al menos, explícitas."
+      ]
+    },
+    {
+      "id": "COMMAND-C060",
+      "unit_id": "CMD-202-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Autoridad» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Autoridad» en esta unidad?",
+        "Selecciona la definición correcta de «Autoridad»."
+      ],
+      "answer_display_es": "Delimita quién puede ordenar, aprobar o modificar una acción; debe estar clara antes de comprometer personas o sistemas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Delimita quién puede ordenar, aprobar o modificar una acción; debe estar clara antes de comprometer personas o sistemas."
+      ]
+    },
+    {
+      "id": "COMMAND-C061",
+      "unit_id": "CMD-203-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Estado» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Estado» en esta unidad?",
+        "Selecciona la definición correcta de «Estado»."
+      ],
+      "answer_display_es": "Fija la condición real de partida y debe actualizarse cuando cambian sistemas, personas o entorno.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Fija la condición real de partida y debe actualizarse cuando cambian sistemas, personas o entorno."
+      ]
+    },
+    {
+      "id": "COMMAND-C062",
+      "unit_id": "CMD-203-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Órdenes» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Órdenes» en esta unidad?",
+        "Selecciona la definición correcta de «Órdenes»."
+      ],
+      "answer_display_es": "órdenes en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "órdenes en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "COMMAND-C063",
+      "unit_id": "CMD-203-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Autoridad delegada» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Autoridad delegada» en esta unidad?",
+        "Selecciona la definición correcta de «Autoridad delegada»."
+      ],
+      "answer_display_es": "autoridad delegada en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "autoridad delegada en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "COMMAND-C064",
+      "unit_id": "CMD-203-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Objetivo» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Objetivo» en esta unidad?",
+        "Selecciona la definición correcta de «Objetivo»."
+      ],
+      "answer_display_es": "objetivo en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "objetivo en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "COMMAND-C065",
+      "unit_id": "CMD-203-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Riesgo» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Riesgo» en esta unidad?",
+        "Selecciona la definición correcta de «Riesgo»."
+      ],
+      "answer_display_es": "Combina probabilidad, impacto y exposición y se compara con autoridad, misión y alternativas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Combina probabilidad, impacto y exposición y se compara con autoridad, misión y alternativas."
+      ]
+    },
+    {
+      "id": "COMMAND-C066",
+      "unit_id": "CMD-203-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Recursos» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Recursos» en esta unidad?",
+        "Selecciona la definición correcta de «Recursos»."
+      ],
+      "answer_display_es": "Incluyen tiempo, energía, personal, capacidad y atención; no pueden asignarse dos veces sin mostrar el conflicto.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Incluyen tiempo, energía, personal, capacidad y atención; no pueden asignarse dos veces sin mostrar el conflicto."
+      ]
+    },
+    {
+      "id": "COMMAND-C067",
+      "unit_id": "CMD-203-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Brief» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Brief» en esta unidad?",
+        "Selecciona la definición correcta de «Brief»."
+      ],
+      "answer_display_es": "brief en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "brief en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "COMMAND-C068",
+      "unit_id": "CMD-203-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Órdenes» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Órdenes» en esta unidad?",
+        "Selecciona la definición correcta de «Órdenes»."
+      ],
+      "answer_display_es": "órdenes en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "órdenes en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "COMMAND-C069",
+      "unit_id": "CMD-203-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Seguimiento» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Seguimiento» en esta unidad?",
+        "Selecciona la definición correcta de «Seguimiento»."
+      ],
+      "answer_display_es": "Comprueba evolución, respuesta y necesidad de modificar tratamiento o restricciones.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Comprueba evolución, respuesta y necesidad de modificar tratamiento o restricciones."
+      ]
+    },
+    {
+      "id": "COMMAND-C070",
+      "unit_id": "CMD-203-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Liderazgo» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Liderazgo» en esta unidad?",
+        "Selecciona la definición correcta de «Liderazgo»."
+      ],
+      "answer_display_es": "liderazgo en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "liderazgo en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "COMMAND-C071",
+      "unit_id": "CMD-203-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Juicio» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Juicio» en esta unidad?",
+        "Selecciona la definición correcta de «Juicio»."
+      ],
+      "answer_display_es": "juicio en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "juicio en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "COMMAND-C072",
+      "unit_id": "CMD-203-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Comunicación» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Comunicación» en esta unidad?",
+        "Selecciona la definición correcta de «Comunicación»."
+      ],
+      "answer_display_es": "comunicación preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "comunicación preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes."
+      ]
+    }
+  ],
+  "legacy_year4_questions": [
     {
       "id": "COMMAND-Q037",
       "course_id": "CMD-101",
@@ -776,12 +1594,5 @@
         "feedback"
       ]
     }
-  ],
-  "year3_status": "editorially_aligned_with_developed_year3_branch_material",
-  "year3_rule": "Only concepts explicitly taught in the 201–203 branch stages or established prerequisites may be required.",
-  "year3_courses": [
-    "CMD-201",
-    "CMD-202",
-    "CMD-203"
   ]
 }

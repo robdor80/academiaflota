@@ -1,7 +1,7 @@
 {
   "subject": "Vuelo / Navegación",
   "code": "FLIGHT_NAVIGATION",
-  "version": "1.1",
+  "version": "1.2",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/branches/flight_navigation/branch_curriculum_v1_0.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/branches/flight_navigation/MANUAL_v1_0.md",
@@ -32,10 +32,10 @@
         {
           "type": "bullets",
           "items": [
-            "Rumbo: Es la orientación ordenada de la nave y se verifica contra referencia, ruta y restricciones.",
-            "Velocidad: Se elige según objetivo, seguridad, entorno, capacidad de propulsión y margen de reacción.",
-            "Vector: Combina dirección y magnitud de movimiento y permite prever posición relativa y maniobras.",
-            "Márgenes: Son reservas de espacio, tiempo o capacidad que absorben error e incertidumbre."
+            "**Rumbo**: Es la orientación ordenada de la nave y se verifica contra referencia, ruta y restricciones.",
+            "**Velocidad**: Se elige según objetivo, seguridad, entorno, capacidad de propulsión y margen de reacción.",
+            "**Vector**: Combina dirección y magnitud de movimiento y permite prever posición relativa y maniobras.",
+            "**Márgenes**: Son reservas de espacio, tiempo o capacidad que absorben error e incertidumbre."
           ]
         },
         {
@@ -47,19 +47,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Práctica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica rumbo desde la perspectiva de Vuelo / Navegación.",
-            "Resuelve: Maniobra precisa.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -96,10 +83,10 @@
         {
           "type": "bullets",
           "items": [
-            "Rutas: Conectan origen y destino mediante tramos verificables, restricciones y puntos de decisión.",
-            "Waypoints: Son referencias intermedias usadas para estructurar, comprobar o modificar una ruta.",
-            "ETA: Es una estimación condicionada por ruta, velocidad y restricciones; debe actualizarse si cambian.",
-            "Restricciones: Son límites de seguridad, misión, espacio, capacidad o autoridad que condicionan el plan."
+            "**Rutas**: Conectan origen y destino mediante tramos verificables, restricciones y puntos de decisión.",
+            "**Waypoints**: Son referencias intermedias usadas para estructurar, comprobar o modificar una ruta.",
+            "**ETA**: Es una estimación condicionada por ruta, velocidad y restricciones; debe actualizarse si cambian.",
+            "**Restricciones**: Son límites de seguridad, misión, espacio, capacidad o autoridad que condicionan el plan."
           ]
         },
         {
@@ -111,19 +98,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica rutas desde la perspectiva de Vuelo / Navegación.",
-            "Resuelve: Plan avanzado.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -160,10 +134,10 @@
         {
           "type": "bullets",
           "items": [
-            "Entrada: Define las condiciones para iniciar una fase de navegación o tránsito de forma controlada.",
-            "Salida: Define cómo finalizar un tramo o abandonar una condición de navegación manteniendo seguridad y control.",
-            "Zonas: Representan regiones con reglas, riesgos o condiciones que afectan la planificación.",
-            "Ajuste: Corrige ruta o maniobra con cambios proporcionados y verificación del nuevo resultado."
+            "**Entrada**: Define las condiciones para iniciar una fase de navegación o tránsito de forma controlada.",
+            "**Salida**: Define cómo finalizar un tramo o abandonar una condición de navegación manteniendo seguridad y control.",
+            "**Zonas**: Representan regiones con reglas, riesgos o condiciones que afectan la planificación.",
+            "**Ajuste**: Corrige ruta o maniobra con cambios proporcionados y verificación del nuevo resultado."
           ]
         },
         {
@@ -175,19 +149,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Práctica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica entrada desde la perspectiva de Vuelo / Navegación.",
-            "Resuelve: Ejecutar ruta.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -224,9 +185,9 @@
         {
           "type": "bullets",
           "items": [
-            "Órbita: Requiere controlar trayectoria relativa, estabilidad y margen de seguridad respecto al cuerpo.",
-            "Rendezvous: Coordina posición, velocidad y tiempo para aproximarse a otro objeto de forma controlada.",
-            "Acoplamiento contextual: Integra aproximación, alineación, autorización y condiciones específicas del punto de atraque."
+            "**Órbita**: Requiere controlar trayectoria relativa, estabilidad y margen de seguridad respecto al cuerpo.",
+            "**Rendezvous**: Coordina posición, velocidad y tiempo para aproximarse a otro objeto de forma controlada.",
+            "**Acoplamiento contextual**: Integra aproximación, alineación, autorización y condiciones específicas del punto de atraque."
           ]
         },
         {
@@ -238,19 +199,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica órbita desde la perspectiva de Vuelo / Navegación.",
-            "Resuelve: Simulación.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -287,9 +235,9 @@
         {
           "type": "bullets",
           "items": [
-            "Sensores parciales: Obligan a aumentar margen y hacer visible qué parte de la solución depende de estimación.",
-            "Estimación: Es una aproximación sustentada por datos disponibles y debe incluir incertidumbre.",
-            "Margen: Es capacidad restante disponible para absorber demanda, error o contingencia."
+            "**Sensores parciales**: Obligan a aumentar margen y hacer visible qué parte de la solución depende de estimación.",
+            "**Estimación**: Es una aproximación sustentada por datos disponibles y debe incluir incertidumbre.",
+            "**Margen**: Es capacidad restante disponible para absorber demanda, error o contingencia."
           ]
         },
         {
@@ -301,19 +249,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Juicio."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica sensores parciales desde la perspectiva de Vuelo / Navegación.",
-            "Resuelve: Ruta con datos pobres.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -350,9 +285,9 @@
         {
           "type": "bullets",
           "items": [
-            "Abort: Es la decisión de interrumpir una maniobra cuando continuar supera límites de seguridad o control.",
-            "Evasión: Prioriza separación segura frente al objetivo original cuando aparece una amenaza inmediata.",
-            "Propulsión limitada: Reduce opciones de maniobra y obliga a recalcular ruta, reserva y contingencias."
+            "**Abort**: Es la decisión de interrumpir una maniobra cuando continuar supera límites de seguridad o control.",
+            "**Evasión**: Prioriza separación segura frente al objetivo original cuando aparece una amenaza inmediata.",
+            "**Propulsión limitada**: Reduce opciones de maniobra y obliga a recalcular ruta, reserva y contingencias."
           ]
         },
         {
@@ -364,19 +299,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Práctica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica abort desde la perspectiva de Vuelo / Navegación.",
-            "Resuelve: Escenario.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -413,9 +335,9 @@
         {
           "type": "bullets",
           "items": [
-            "Anomalías: Se incorporan como condiciones que pueden alterar navegación, sensores o seguridad y exigen margen adicional.",
-            "Gravedad: Afecta trayectoria y energía de maniobra y debe considerarse en aproximaciones y rutas cercanas.",
-            "Tráfico: Exige separación, previsión y coordinación para evitar conflictos de trayectoria."
+            "**Anomalías**: Se incorporan como condiciones que pueden alterar navegación, sensores o seguridad y exigen margen adicional.",
+            "**Gravedad**: Afecta trayectoria y energía de maniobra y debe considerarse en aproximaciones y rutas cercanas.",
+            "**Tráfico**: Exige separación, previsión y coordinación para evitar conflictos de trayectoria."
           ]
         },
         {
@@ -427,19 +349,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica anomalías desde la perspectiva de Vuelo / Navegación.",
-            "Resuelve: Plotting complejo.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -476,9 +385,9 @@
         {
           "type": "bullets",
           "items": [
-            "Datos: Deben conservar origen, contexto, calidad y recencia suficientes para sostener una decisión.",
-            "Potencia: Es capacidad energética disponible para una función y debe gestionarse con demanda, margen y prioridades.",
-            "Capacidad: Describe qué puede hacer realmente un sistema o equipo en su estado actual."
+            "**Datos**: Deben conservar origen, contexto, calidad y recencia suficientes para sostener una decisión.",
+            "**Potencia**: Es capacidad energética disponible para una función y debe gestionarse con demanda, margen y prioridades.",
+            "**Capacidad**: Describe qué puede hacer realmente un sistema o equipo en su estado actual."
           ]
         },
         {
@@ -490,19 +399,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Teamwork."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica datos desde la perspectiva de Vuelo / Navegación.",
-            "Resuelve: Misión integrada.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -539,9 +435,9 @@
         {
           "type": "bullets",
           "items": [
-            "Rutina: rutina en Vuelo / Navegación se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
-            "Relevo: relevo en Vuelo / Navegación se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
-            "Monitorización: Comprueba respuesta y detecta deterioro o efectos adversos tras una intervención."
+            "**Rutina**: rutina en Vuelo / Navegación se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "**Relevo**: relevo en Vuelo / Navegación se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "**Monitorización**: Comprueba respuesta y detecta deterioro o efectos adversos tras una intervención."
           ]
         },
         {
@@ -553,19 +449,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica rutina desde la perspectiva de Vuelo / Navegación.",
-            "Resuelve: Turno supervisado.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -602,9 +485,9 @@
         {
           "type": "bullets",
           "items": [
-            "Rutas: Conectan origen y destino mediante tramos verificables, restricciones y puntos de decisión.",
-            "Cambios: cambios en Vuelo / Navegación se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
-            "Reserva: reserva en Vuelo / Navegación se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+            "**Rutas**: Conectan origen y destino mediante tramos verificables, restricciones y puntos de decisión.",
+            "**Cambios**: cambios en Vuelo / Navegación se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "**Reserva**: reserva en Vuelo / Navegación se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -616,19 +499,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Práctica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica rutas desde la perspectiva de Vuelo / Navegación.",
-            "Resuelve: Plan y ejecución.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -665,9 +535,9 @@
         {
           "type": "bullets",
           "items": [
-            "Desvío: desvío en Vuelo / Navegación se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
-            "Riesgo: Combina probabilidad, impacto y exposición y se compara con autoridad, misión y alternativas.",
-            "Reporte: reporte preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes."
+            "**Desvío**: desvío en Vuelo / Navegación se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "**Riesgo**: Combina probabilidad, impacto y exposición y se compara con autoridad, misión y alternativas.",
+            "**Reporte**: reporte preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes."
           ]
         },
         {
@@ -679,19 +549,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Juicio."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica desvío desde la perspectiva de Vuelo / Navegación.",
-            "Resuelve: Resolver evento.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -728,9 +585,9 @@
         {
           "type": "bullets",
           "items": [
-            "Precisión: precisión en Vuelo / Navegación se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
-            "Seguridad: Limita cualquier procedimiento y exige identificar peligros, protecciones y condición de aborto.",
-            "Comunicación: comunicación preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes."
+            "**Precisión**: precisión en Vuelo / Navegación se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "**Seguridad**: Limita cualquier procedimiento y exige identificar peligros, protecciones y condición de aborto.",
+            "**Comunicación**: comunicación preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes."
           ]
         },
         {
@@ -742,19 +599,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evidencia."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica precisión desde la perspectiva de Vuelo / Navegación.",
-            "Resuelve: Checkride académico.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -1251,5 +1095,6 @@
     }
   ],
   "year3Status": "developed_content",
-  "year3Scope": "201-203"
+  "year3Scope": "201-203",
+  "assessmentModel": "concept_driven_v2_1_year3"
 }

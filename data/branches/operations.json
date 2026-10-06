@@ -1,7 +1,7 @@
 {
   "subject": "Operaciones",
   "code": "OPERATIONS",
-  "version": "1.1",
+  "version": "1.2",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/branches/operations/branch_curriculum_v1_0.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/branches/operations/MANUAL_v1_0.md",
@@ -32,10 +32,10 @@
         {
           "type": "bullets",
           "items": [
-            "Energía: energía en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
-            "Tiempo: Es un recurso operativo: esperar puede mejorar información, pero también cerrar una ventana o aumentar exposición.",
-            "Capacidad: Describe qué puede hacer realmente un sistema o equipo en su estado actual.",
-            "Prioridad: prioridad organiza la respuesta comparando seguridad, misión, tiempo e impacto."
+            "**Energía**: energía en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "**Tiempo**: Es un recurso operativo: esperar puede mejorar información, pero también cerrar una ventana o aumentar exposición.",
+            "**Capacidad**: Describe qué puede hacer realmente un sistema o equipo en su estado actual.",
+            "**Prioridad**: prioridad organiza la respuesta comparando seguridad, misión, tiempo e impacto."
           ]
         },
         {
@@ -47,19 +47,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica energía desde la perspectiva de Operaciones.",
-            "Resuelve: Asignar recursos.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -96,9 +83,9 @@
         {
           "type": "bullets",
           "items": [
-            "Dependencias: dependencias en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
-            "Servicios: servicios en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
-            "Peticiones: peticiones en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+            "**Dependencias**: dependencias en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "**Servicios**: servicios en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "**Peticiones**: peticiones en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -110,19 +97,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Práctica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica dependencias desde la perspectiva de Operaciones.",
-            "Resuelve: Gestionar caso.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -159,9 +133,9 @@
         {
           "type": "bullets",
           "items": [
-            "Configuración: configuración en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
-            "Logística: logística en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
-            "Información: información en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+            "**Configuración**: configuración en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "**Logística**: logística en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "**Información**: información en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -173,19 +147,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica configuración desde la perspectiva de Operaciones.",
-            "Resuelve: Preparar misión.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -222,10 +183,10 @@
         {
           "type": "bullets",
           "items": [
-            "Capacidad: Describe qué puede hacer realmente un sistema o equipo en su estado actual.",
-            "Seguridad: Limita cualquier procedimiento y exige identificar peligros, protecciones y condición de aborto.",
-            "Ventanas: ventanas en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
-            "Límites: límites en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+            "**Capacidad**: Describe qué puede hacer realmente un sistema o equipo en su estado actual.",
+            "**Seguridad**: Limita cualquier procedimiento y exige identificar peligros, protecciones y condición de aborto.",
+            "**Ventanas**: ventanas en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "**Límites**: límites en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -237,19 +198,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Juicio."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica capacidad desde la perspectiva de Operaciones.",
-            "Resuelve: Caso operativo.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -286,10 +234,10 @@
         {
           "type": "bullets",
           "items": [
-            "Inventario: inventario en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
-            "Personal: personal se organiza por función, competencia, carga y responsabilidad, con supervisión proporcional al riesgo.",
-            "Capacidad: Describe qué puede hacer realmente un sistema o equipo en su estado actual.",
-            "Prioridad: prioridad organiza la respuesta comparando seguridad, misión, tiempo e impacto."
+            "**Inventario**: inventario en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "**Personal**: personal se organiza por función, competencia, carga y responsabilidad, con supervisión proporcional al riesgo.",
+            "**Capacidad**: Describe qué puede hacer realmente un sistema o equipo en su estado actual.",
+            "**Prioridad**: prioridad organiza la respuesta comparando seguridad, misión, tiempo e impacto."
           ]
         },
         {
@@ -301,19 +249,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Caso."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica inventario desde la perspectiva de Operaciones.",
-            "Resuelve: Replanificar recursos.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -350,9 +285,9 @@
         {
           "type": "bullets",
           "items": [
-            "Servicio mínimo: servicio mínimo en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
-            "Reroute: reroute en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
-            "Coordination: coordination en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+            "**Servicio mínimo**: servicio mínimo en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "**Reroute**: reroute en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "**Coordination**: coordination en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -364,19 +299,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Práctica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica servicio mínimo desde la perspectiva de Operaciones.",
-            "Resuelve: Simulación.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -413,9 +335,9 @@
         {
           "type": "bullets",
           "items": [
-            "Colas: colas en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
-            "Urgencia: Determina cuánto importa el tiempo para evitar deterioro o pérdida de oportunidad terapéutica.",
-            "Conflictos: Se hacen visibles con sus impactos y se elevan a la autoridad que puede resolver prioridades."
+            "**Colas**: colas en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "**Urgencia**: Determina cuánto importa el tiempo para evitar deterioro o pérdida de oportunidad terapéutica.",
+            "**Conflictos**: Se hacen visibles con sus impactos y se elevan a la autoridad que puede resolver prioridades."
           ]
         },
         {
@@ -427,19 +349,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica colas desde la perspectiva de Operaciones.",
-            "Resuelve: Gestionar puesto cargado.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -476,10 +385,10 @@
         {
           "type": "bullets",
           "items": [
-            "Ingeniería: ingeniería en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
-            "Ciencia: ciencia en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
-            "Táctica: táctica en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
-            "Médico: médico en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+            "**Ingeniería**: ingeniería en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "**Ciencia**: ciencia en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "**Táctica**: táctica en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "**Médico**: médico en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -491,19 +400,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Teamwork."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica ingeniería desde la perspectiva de Operaciones.",
-            "Resuelve: Misión integrada.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -540,9 +436,9 @@
         {
           "type": "bullets",
           "items": [
-            "Estado: Fija la condición real de partida y debe actualizarse cuando cambian sistemas, personas o entorno.",
-            "Peticiones: peticiones en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
-            "Registro: registro preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes."
+            "**Estado**: Fija la condición real de partida y debe actualizarse cuando cambian sistemas, personas o entorno.",
+            "**Peticiones**: peticiones en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "**Registro**: registro preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes."
           ]
         },
         {
@@ -554,19 +450,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica estado desde la perspectiva de Operaciones.",
-            "Resuelve: Turno supervisado.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -603,9 +486,9 @@
         {
           "type": "bullets",
           "items": [
-            "Recursos: Incluyen tiempo, energía, personal, capacidad y atención; no pueden asignarse dos veces sin mostrar el conflicto.",
-            "Sistemas: sistemas en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
-            "Plan: plan en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+            "**Recursos**: Incluyen tiempo, energía, personal, capacidad y atención; no pueden asignarse dos veces sin mostrar el conflicto.",
+            "**Sistemas**: sistemas en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "**Plan**: plan en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -617,19 +500,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Práctica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica recursos desde la perspectiva de Operaciones.",
-            "Resuelve: Preparar nave.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -666,9 +536,9 @@
         {
           "type": "bullets",
           "items": [
-            "Priorización: priorización organiza la respuesta comparando seguridad, misión, tiempo e impacto.",
-            "Reroute: reroute en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
-            "Handoff: Transfiere estado, acciones, riesgos, órdenes y pendientes sin perder continuidad."
+            "**Priorización**: priorización organiza la respuesta comparando seguridad, misión, tiempo e impacto.",
+            "**Reroute**: reroute en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "**Handoff**: Transfiere estado, acciones, riesgos, órdenes y pendientes sin perder continuidad."
           ]
         },
         {
@@ -680,19 +550,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Juicio."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica priorización desde la perspectiva de Operaciones.",
-            "Resuelve: Resolver escenario.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -729,9 +586,9 @@
         {
           "type": "bullets",
           "items": [
-            "Consistencia: consistencia en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
-            "Seguridad: Limita cualquier procedimiento y exige identificar peligros, protecciones y condición de aborto.",
-            "Comunicación: comunicación preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes."
+            "**Consistencia**: consistencia en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "**Seguridad**: Limita cualquier procedimiento y exige identificar peligros, protecciones y condición de aborto.",
+            "**Comunicación**: comunicación preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes."
           ]
         },
         {
@@ -743,19 +600,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evidencia."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica consistencia desde la perspectiva de Operaciones.",
-            "Resuelve: Evaluación integrada.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -1253,5 +1097,6 @@
     }
   ],
   "year3Status": "developed_content",
-  "year3Scope": "201-203"
+  "year3Scope": "201-203",
+  "assessmentModel": "concept_driven_v2_1_year3"
 }

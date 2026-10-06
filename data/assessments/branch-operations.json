@@ -1,15 +1,45 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.1.0",
   "branch_id": "operations",
-  "status": "generated_from_authoritative_branch_curriculum",
-  "question_count": 60,
-  "questions": [
+  "status": "concept_driven_autocorrectable_v2_1",
+  "scope": "year3_201_203_only",
+  "source_bank": "question_bank_v1_0.json",
+  "year3_courses": [
+    "OPR-201",
+    "OPR-202",
+    "OPR-203"
+  ],
+  "year3_status": "developed_and_synced_v2_1",
+  "policy": {
+    "theory_formats": [
+      "multiple_choice",
+      "short_answer"
+    ],
+    "deterministic_correction": true,
+    "web_and_game_share_concepts_not_question_instances": true,
+    "complex_judgment_moves_to_practice_and_simulation": true,
+    "source_rule": "Every evaluated concept must be explicitly taught in the branch material or an established prerequisite."
+  },
+  "unit_review": {
+    "questions_per_attempt": 5,
+    "reshuffle_each_attempt": true,
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
+  },
+  "concepts": [
     {
-      "id": "OPERATIONS-Q001",
-      "course_id": "OPR-201",
+      "id": "OPERATIONS-C001",
       "unit_id": "OPR-201-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica energía desde la perspectiva de Operaciones: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente energía desde la perspectiva de Operaciones?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente energía desde la perspectiva de Operaciones?",
+        "Explica energía desde la perspectiva de Operaciones: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "energía · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "energía",
         "aplicación",
@@ -17,11 +47,17 @@
       ]
     },
     {
-      "id": "OPERATIONS-Q002",
-      "course_id": "OPR-201",
+      "id": "OPERATIONS-C002",
       "unit_id": "OPR-201-U01",
-      "type": "scenario",
-      "prompt_es": "Asignar recursos. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Asignar recursos»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Asignar recursos»?",
+        "Asignar recursos. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -30,11 +66,17 @@
       ]
     },
     {
-      "id": "OPERATIONS-Q003",
-      "course_id": "OPR-201",
+      "id": "OPERATIONS-C003",
       "unit_id": "OPR-201-U01",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Gestión de recursos para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Gestión de recursos?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Gestión de recursos?",
+        "¿Qué evidencia conservarías tras Gestión de recursos para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -44,11 +86,17 @@
       ]
     },
     {
-      "id": "OPERATIONS-Q004",
-      "course_id": "OPR-201",
+      "id": "OPERATIONS-C004",
       "unit_id": "OPR-201-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica dependencias desde la perspectiva de Operaciones: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente dependencias desde la perspectiva de Operaciones?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente dependencias desde la perspectiva de Operaciones?",
+        "Explica dependencias desde la perspectiva de Operaciones: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "dependencias · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "dependencias",
         "aplicación",
@@ -56,11 +104,17 @@
       ]
     },
     {
-      "id": "OPERATIONS-Q005",
-      "course_id": "OPR-201",
+      "id": "OPERATIONS-C005",
       "unit_id": "OPR-201-U02",
-      "type": "scenario",
-      "prompt_es": "Gestionar caso. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Gestionar caso»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Gestionar caso»?",
+        "Gestionar caso. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -69,11 +123,17 @@
       ]
     },
     {
-      "id": "OPERATIONS-Q006",
-      "course_id": "OPR-201",
+      "id": "OPERATIONS-C006",
       "unit_id": "OPR-201-U02",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Coordinación de sistemas para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Coordinación de sistemas?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Coordinación de sistemas?",
+        "¿Qué evidencia conservarías tras Coordinación de sistemas para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -83,11 +143,17 @@
       ]
     },
     {
-      "id": "OPERATIONS-Q007",
-      "course_id": "OPR-201",
+      "id": "OPERATIONS-C007",
       "unit_id": "OPR-201-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica configuración desde la perspectiva de Operaciones: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente configuración desde la perspectiva de Operaciones?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente configuración desde la perspectiva de Operaciones?",
+        "Explica configuración desde la perspectiva de Operaciones: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "configuración · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "configuración",
         "aplicación",
@@ -95,11 +161,17 @@
       ]
     },
     {
-      "id": "OPERATIONS-Q008",
-      "course_id": "OPR-201",
+      "id": "OPERATIONS-C008",
       "unit_id": "OPR-201-U03",
-      "type": "scenario",
-      "prompt_es": "Preparar misión. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Preparar misión»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Preparar misión»?",
+        "Preparar misión. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -108,11 +180,17 @@
       ]
     },
     {
-      "id": "OPERATIONS-Q009",
-      "course_id": "OPR-201",
+      "id": "OPERATIONS-C009",
       "unit_id": "OPR-201-U03",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Soporte de misión para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Soporte de misión?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Soporte de misión?",
+        "¿Qué evidencia conservarías tras Soporte de misión para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -122,11 +200,17 @@
       ]
     },
     {
-      "id": "OPERATIONS-Q010",
-      "course_id": "OPR-201",
+      "id": "OPERATIONS-C010",
       "unit_id": "OPR-201-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica capacidad desde la perspectiva de Operaciones: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente capacidad desde la perspectiva de Operaciones?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente capacidad desde la perspectiva de Operaciones?",
+        "Explica capacidad desde la perspectiva de Operaciones: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "capacidad · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "capacidad",
         "aplicación",
@@ -134,11 +218,17 @@
       ]
     },
     {
-      "id": "OPERATIONS-Q011",
-      "course_id": "OPR-201",
+      "id": "OPERATIONS-C011",
       "unit_id": "OPR-201-U04",
-      "type": "scenario",
-      "prompt_es": "Caso operativo. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Caso operativo»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Caso operativo»?",
+        "Caso operativo. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -147,11 +237,17 @@
       ]
     },
     {
-      "id": "OPERATIONS-Q012",
-      "course_id": "OPR-201",
+      "id": "OPERATIONS-C012",
       "unit_id": "OPR-201-U04",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Transportadores y servicios para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Transportadores y servicios?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Transportadores y servicios?",
+        "¿Qué evidencia conservarías tras Transportadores y servicios para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -161,11 +257,17 @@
       ]
     },
     {
-      "id": "OPERATIONS-Q013",
-      "course_id": "OPR-202",
+      "id": "OPERATIONS-C013",
       "unit_id": "OPR-202-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica inventario desde la perspectiva de Operaciones: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente inventario desde la perspectiva de Operaciones?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente inventario desde la perspectiva de Operaciones?",
+        "Explica inventario desde la perspectiva de Operaciones: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "inventario · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "inventario",
         "aplicación",
@@ -173,11 +275,17 @@
       ]
     },
     {
-      "id": "OPERATIONS-Q014",
-      "course_id": "OPR-202",
+      "id": "OPERATIONS-C014",
       "unit_id": "OPR-202-U01",
-      "type": "scenario",
-      "prompt_es": "Replanificar recursos. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Replanificar recursos»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Replanificar recursos»?",
+        "Replanificar recursos. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -186,11 +294,17 @@
       ]
     },
     {
-      "id": "OPERATIONS-Q015",
-      "course_id": "OPR-202",
+      "id": "OPERATIONS-C015",
       "unit_id": "OPR-202-U01",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Logística dinámica para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Logística dinámica?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Logística dinámica?",
+        "¿Qué evidencia conservarías tras Logística dinámica para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -200,11 +314,17 @@
       ]
     },
     {
-      "id": "OPERATIONS-Q016",
-      "course_id": "OPR-202",
+      "id": "OPERATIONS-C016",
       "unit_id": "OPR-202-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica servicio mínimo desde la perspectiva de Operaciones: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente servicio mínimo desde la perspectiva de Operaciones?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente servicio mínimo desde la perspectiva de Operaciones?",
+        "Explica servicio mínimo desde la perspectiva de Operaciones: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "servicio mínimo · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "servicio mínimo",
         "aplicación",
@@ -212,11 +332,17 @@
       ]
     },
     {
-      "id": "OPERATIONS-Q017",
-      "course_id": "OPR-202",
+      "id": "OPERATIONS-C017",
       "unit_id": "OPR-202-U02",
-      "type": "scenario",
-      "prompt_es": "Simulación. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Simulación»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Simulación»?",
+        "Simulación. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -225,11 +351,17 @@
       ]
     },
     {
-      "id": "OPERATIONS-Q018",
-      "course_id": "OPR-202",
+      "id": "OPERATIONS-C018",
       "unit_id": "OPR-202-U02",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Sistemas degradados para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Sistemas degradados?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Sistemas degradados?",
+        "¿Qué evidencia conservarías tras Sistemas degradados para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -239,11 +371,17 @@
       ]
     },
     {
-      "id": "OPERATIONS-Q019",
-      "course_id": "OPR-202",
+      "id": "OPERATIONS-C019",
       "unit_id": "OPR-202-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica colas desde la perspectiva de Operaciones: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente colas desde la perspectiva de Operaciones?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente colas desde la perspectiva de Operaciones?",
+        "Explica colas desde la perspectiva de Operaciones: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "colas · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "colas",
         "aplicación",
@@ -251,11 +389,17 @@
       ]
     },
     {
-      "id": "OPERATIONS-Q020",
-      "course_id": "OPR-202",
+      "id": "OPERATIONS-C020",
       "unit_id": "OPR-202-U03",
-      "type": "scenario",
-      "prompt_es": "Gestionar puesto cargado. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Gestionar puesto cargado»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Gestionar puesto cargado»?",
+        "Gestionar puesto cargado. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -264,11 +408,17 @@
       ]
     },
     {
-      "id": "OPERATIONS-Q021",
-      "course_id": "OPR-202",
+      "id": "OPERATIONS-C021",
       "unit_id": "OPR-202-U03",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Tráfico de solicitudes para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Tráfico de solicitudes?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Tráfico de solicitudes?",
+        "¿Qué evidencia conservarías tras Tráfico de solicitudes para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -278,11 +428,17 @@
       ]
     },
     {
-      "id": "OPERATIONS-Q022",
-      "course_id": "OPR-202",
+      "id": "OPERATIONS-C022",
       "unit_id": "OPR-202-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica ingeniería desde la perspectiva de Operaciones: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente ingeniería desde la perspectiva de Operaciones?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente ingeniería desde la perspectiva de Operaciones?",
+        "Explica ingeniería desde la perspectiva de Operaciones: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "ingeniería · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "ingeniería",
         "aplicación",
@@ -290,11 +446,17 @@
       ]
     },
     {
-      "id": "OPERATIONS-Q023",
-      "course_id": "OPR-202",
+      "id": "OPERATIONS-C023",
       "unit_id": "OPR-202-U04",
-      "type": "scenario",
-      "prompt_es": "Misión integrada. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Misión integrada»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Misión integrada»?",
+        "Misión integrada. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -303,11 +465,17 @@
       ]
     },
     {
-      "id": "OPERATIONS-Q024",
-      "course_id": "OPR-202",
+      "id": "OPERATIONS-C024",
       "unit_id": "OPR-202-U04",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Apoyo interdepartamental para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Apoyo interdepartamental?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Apoyo interdepartamental?",
+        "¿Qué evidencia conservarías tras Apoyo interdepartamental para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -317,11 +485,17 @@
       ]
     },
     {
-      "id": "OPERATIONS-Q025",
-      "course_id": "OPR-203",
+      "id": "OPERATIONS-C025",
       "unit_id": "OPR-203-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica estado desde la perspectiva de Operaciones: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente estado desde la perspectiva de Operaciones?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente estado desde la perspectiva de Operaciones?",
+        "Explica estado desde la perspectiva de Operaciones: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "estado · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estado",
         "aplicación",
@@ -329,11 +503,17 @@
       ]
     },
     {
-      "id": "OPERATIONS-Q026",
-      "course_id": "OPR-203",
+      "id": "OPERATIONS-C026",
       "unit_id": "OPR-203-U01",
-      "type": "scenario",
-      "prompt_es": "Turno supervisado. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Turno supervisado»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Turno supervisado»?",
+        "Turno supervisado. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -342,11 +522,17 @@
       ]
     },
     {
-      "id": "OPERATIONS-Q027",
-      "course_id": "OPR-203",
+      "id": "OPERATIONS-C027",
       "unit_id": "OPR-203-U01",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Guardia de Operaciones para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Guardia de Operaciones?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Guardia de Operaciones?",
+        "¿Qué evidencia conservarías tras Guardia de Operaciones para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -356,11 +542,17 @@
       ]
     },
     {
-      "id": "OPERATIONS-Q028",
-      "course_id": "OPR-203",
+      "id": "OPERATIONS-C028",
       "unit_id": "OPR-203-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica recursos desde la perspectiva de Operaciones: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente recursos desde la perspectiva de Operaciones?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente recursos desde la perspectiva de Operaciones?",
+        "Explica recursos desde la perspectiva de Operaciones: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "recursos · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "recursos",
         "aplicación",
@@ -368,11 +560,17 @@
       ]
     },
     {
-      "id": "OPERATIONS-Q029",
-      "course_id": "OPR-203",
+      "id": "OPERATIONS-C029",
       "unit_id": "OPR-203-U02",
-      "type": "scenario",
-      "prompt_es": "Preparar nave. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Preparar nave»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Preparar nave»?",
+        "Preparar nave. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -381,11 +579,17 @@
       ]
     },
     {
-      "id": "OPERATIONS-Q030",
-      "course_id": "OPR-203",
+      "id": "OPERATIONS-C030",
       "unit_id": "OPR-203-U02",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Configuración de misión para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Configuración de misión?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Configuración de misión?",
+        "¿Qué evidencia conservarías tras Configuración de misión para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -395,11 +599,17 @@
       ]
     },
     {
-      "id": "OPERATIONS-Q031",
-      "course_id": "OPR-203",
+      "id": "OPERATIONS-C031",
       "unit_id": "OPR-203-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica priorización desde la perspectiva de Operaciones: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente priorización desde la perspectiva de Operaciones?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente priorización desde la perspectiva de Operaciones?",
+        "Explica priorización desde la perspectiva de Operaciones: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "priorización · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "priorización",
         "aplicación",
@@ -407,11 +617,17 @@
       ]
     },
     {
-      "id": "OPERATIONS-Q032",
-      "course_id": "OPR-203",
+      "id": "OPERATIONS-C032",
       "unit_id": "OPR-203-U03",
-      "type": "scenario",
-      "prompt_es": "Resolver escenario. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Resolver escenario»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Resolver escenario»?",
+        "Resolver escenario. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -420,11 +636,17 @@
       ]
     },
     {
-      "id": "OPERATIONS-Q033",
-      "course_id": "OPR-203",
+      "id": "OPERATIONS-C033",
       "unit_id": "OPR-203-U03",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Incidente múltiple para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Incidente múltiple?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Incidente múltiple?",
+        "¿Qué evidencia conservarías tras Incidente múltiple para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -434,11 +656,17 @@
       ]
     },
     {
-      "id": "OPERATIONS-Q034",
-      "course_id": "OPR-203",
+      "id": "OPERATIONS-C034",
       "unit_id": "OPR-203-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica consistencia desde la perspectiva de Operaciones: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente consistencia desde la perspectiva de Operaciones?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente consistencia desde la perspectiva de Operaciones?",
+        "Explica consistencia desde la perspectiva de Operaciones: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "consistencia · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "consistencia",
         "aplicación",
@@ -446,11 +674,17 @@
       ]
     },
     {
-      "id": "OPERATIONS-Q035",
-      "course_id": "OPR-203",
+      "id": "OPERATIONS-C035",
       "unit_id": "OPR-203-U04",
-      "type": "scenario",
-      "prompt_es": "Evaluación integrada. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Evaluación integrada»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Evaluación integrada»?",
+        "Evaluación integrada. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -459,11 +693,17 @@
       ]
     },
     {
-      "id": "OPERATIONS-Q036",
-      "course_id": "OPR-203",
+      "id": "OPERATIONS-C036",
       "unit_id": "OPR-203-U04",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Cualificación intermedia para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Cualificación intermedia?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Cualificación intermedia?",
+        "¿Qué evidencia conservarías tras Cualificación intermedia para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -472,6 +712,584 @@
         "feedback o pendientes"
       ]
     },
+    {
+      "id": "OPERATIONS-C037",
+      "unit_id": "OPR-201-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Energía» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Energía» en esta unidad?",
+        "Selecciona la definición correcta de «Energía»."
+      ],
+      "answer_display_es": "energía en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "energía en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C038",
+      "unit_id": "OPR-201-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Tiempo» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Tiempo» en esta unidad?",
+        "Selecciona la definición correcta de «Tiempo»."
+      ],
+      "answer_display_es": "Es un recurso operativo: esperar puede mejorar información, pero también cerrar una ventana o aumentar exposición.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Es un recurso operativo: esperar puede mejorar información, pero también cerrar una ventana o aumentar exposición."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C039",
+      "unit_id": "OPR-201-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Capacidad» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Capacidad» en esta unidad?",
+        "Selecciona la definición correcta de «Capacidad»."
+      ],
+      "answer_display_es": "Describe qué puede hacer realmente un sistema o equipo en su estado actual.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Describe qué puede hacer realmente un sistema o equipo en su estado actual."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C040",
+      "unit_id": "OPR-201-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Dependencias» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Dependencias» en esta unidad?",
+        "Selecciona la definición correcta de «Dependencias»."
+      ],
+      "answer_display_es": "dependencias en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "dependencias en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C041",
+      "unit_id": "OPR-201-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Servicios» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Servicios» en esta unidad?",
+        "Selecciona la definición correcta de «Servicios»."
+      ],
+      "answer_display_es": "servicios en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "servicios en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C042",
+      "unit_id": "OPR-201-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Peticiones» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Peticiones» en esta unidad?",
+        "Selecciona la definición correcta de «Peticiones»."
+      ],
+      "answer_display_es": "peticiones en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "peticiones en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C043",
+      "unit_id": "OPR-201-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Configuración» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Configuración» en esta unidad?",
+        "Selecciona la definición correcta de «Configuración»."
+      ],
+      "answer_display_es": "configuración en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "configuración en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C044",
+      "unit_id": "OPR-201-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Logística» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Logística» en esta unidad?",
+        "Selecciona la definición correcta de «Logística»."
+      ],
+      "answer_display_es": "logística en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "logística en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C045",
+      "unit_id": "OPR-201-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Información» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Información» en esta unidad?",
+        "Selecciona la definición correcta de «Información»."
+      ],
+      "answer_display_es": "información en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "información en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C046",
+      "unit_id": "OPR-201-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Capacidad» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Capacidad» en esta unidad?",
+        "Selecciona la definición correcta de «Capacidad»."
+      ],
+      "answer_display_es": "Describe qué puede hacer realmente un sistema o equipo en su estado actual.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Describe qué puede hacer realmente un sistema o equipo en su estado actual."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C047",
+      "unit_id": "OPR-201-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Seguridad» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Seguridad» en esta unidad?",
+        "Selecciona la definición correcta de «Seguridad»."
+      ],
+      "answer_display_es": "Limita cualquier procedimiento y exige identificar peligros, protecciones y condición de aborto.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Limita cualquier procedimiento y exige identificar peligros, protecciones y condición de aborto."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C048",
+      "unit_id": "OPR-201-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Ventanas» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Ventanas» en esta unidad?",
+        "Selecciona la definición correcta de «Ventanas»."
+      ],
+      "answer_display_es": "ventanas en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "ventanas en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C049",
+      "unit_id": "OPR-202-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Inventario» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Inventario» en esta unidad?",
+        "Selecciona la definición correcta de «Inventario»."
+      ],
+      "answer_display_es": "inventario en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "inventario en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C050",
+      "unit_id": "OPR-202-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Personal» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Personal» en esta unidad?",
+        "Selecciona la definición correcta de «Personal»."
+      ],
+      "answer_display_es": "personal se organiza por función, competencia, carga y responsabilidad, con supervisión proporcional al riesgo.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "personal se organiza por función, competencia, carga y responsabilidad, con supervisión proporcional al riesgo."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C051",
+      "unit_id": "OPR-202-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Capacidad» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Capacidad» en esta unidad?",
+        "Selecciona la definición correcta de «Capacidad»."
+      ],
+      "answer_display_es": "Describe qué puede hacer realmente un sistema o equipo en su estado actual.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Describe qué puede hacer realmente un sistema o equipo en su estado actual."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C052",
+      "unit_id": "OPR-202-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Servicio mínimo» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Servicio mínimo» en esta unidad?",
+        "Selecciona la definición correcta de «Servicio mínimo»."
+      ],
+      "answer_display_es": "servicio mínimo en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "servicio mínimo en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C053",
+      "unit_id": "OPR-202-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Reroute» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Reroute» en esta unidad?",
+        "Selecciona la definición correcta de «Reroute»."
+      ],
+      "answer_display_es": "reroute en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "reroute en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C054",
+      "unit_id": "OPR-202-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Coordination» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Coordination» en esta unidad?",
+        "Selecciona la definición correcta de «Coordination»."
+      ],
+      "answer_display_es": "coordination en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "coordination en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C055",
+      "unit_id": "OPR-202-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Colas» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Colas» en esta unidad?",
+        "Selecciona la definición correcta de «Colas»."
+      ],
+      "answer_display_es": "colas en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "colas en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C056",
+      "unit_id": "OPR-202-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Urgencia» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Urgencia» en esta unidad?",
+        "Selecciona la definición correcta de «Urgencia»."
+      ],
+      "answer_display_es": "Determina cuánto importa el tiempo para evitar deterioro o pérdida de oportunidad terapéutica.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Determina cuánto importa el tiempo para evitar deterioro o pérdida de oportunidad terapéutica."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C057",
+      "unit_id": "OPR-202-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Conflictos» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Conflictos» en esta unidad?",
+        "Selecciona la definición correcta de «Conflictos»."
+      ],
+      "answer_display_es": "Se hacen visibles con sus impactos y se elevan a la autoridad que puede resolver prioridades.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Se hacen visibles con sus impactos y se elevan a la autoridad que puede resolver prioridades."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C058",
+      "unit_id": "OPR-202-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Ingeniería» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Ingeniería» en esta unidad?",
+        "Selecciona la definición correcta de «Ingeniería»."
+      ],
+      "answer_display_es": "ingeniería en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "ingeniería en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C059",
+      "unit_id": "OPR-202-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Ciencia» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Ciencia» en esta unidad?",
+        "Selecciona la definición correcta de «Ciencia»."
+      ],
+      "answer_display_es": "ciencia en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "ciencia en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C060",
+      "unit_id": "OPR-202-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Táctica» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Táctica» en esta unidad?",
+        "Selecciona la definición correcta de «Táctica»."
+      ],
+      "answer_display_es": "táctica en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "táctica en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C061",
+      "unit_id": "OPR-203-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Estado» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Estado» en esta unidad?",
+        "Selecciona la definición correcta de «Estado»."
+      ],
+      "answer_display_es": "Fija la condición real de partida y debe actualizarse cuando cambian sistemas, personas o entorno.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Fija la condición real de partida y debe actualizarse cuando cambian sistemas, personas o entorno."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C062",
+      "unit_id": "OPR-203-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Peticiones» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Peticiones» en esta unidad?",
+        "Selecciona la definición correcta de «Peticiones»."
+      ],
+      "answer_display_es": "peticiones en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "peticiones en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C063",
+      "unit_id": "OPR-203-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Registro» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Registro» en esta unidad?",
+        "Selecciona la definición correcta de «Registro»."
+      ],
+      "answer_display_es": "registro preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "registro preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C064",
+      "unit_id": "OPR-203-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Recursos» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Recursos» en esta unidad?",
+        "Selecciona la definición correcta de «Recursos»."
+      ],
+      "answer_display_es": "Incluyen tiempo, energía, personal, capacidad y atención; no pueden asignarse dos veces sin mostrar el conflicto.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Incluyen tiempo, energía, personal, capacidad y atención; no pueden asignarse dos veces sin mostrar el conflicto."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C065",
+      "unit_id": "OPR-203-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Sistemas» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Sistemas» en esta unidad?",
+        "Selecciona la definición correcta de «Sistemas»."
+      ],
+      "answer_display_es": "sistemas en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "sistemas en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C066",
+      "unit_id": "OPR-203-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Plan» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Plan» en esta unidad?",
+        "Selecciona la definición correcta de «Plan»."
+      ],
+      "answer_display_es": "plan en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "plan en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C067",
+      "unit_id": "OPR-203-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Priorización» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Priorización» en esta unidad?",
+        "Selecciona la definición correcta de «Priorización»."
+      ],
+      "answer_display_es": "priorización organiza la respuesta comparando seguridad, misión, tiempo e impacto.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "priorización organiza la respuesta comparando seguridad, misión, tiempo e impacto."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C068",
+      "unit_id": "OPR-203-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Reroute» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Reroute» en esta unidad?",
+        "Selecciona la definición correcta de «Reroute»."
+      ],
+      "answer_display_es": "reroute en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "reroute en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C069",
+      "unit_id": "OPR-203-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Handoff» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Handoff» en esta unidad?",
+        "Selecciona la definición correcta de «Handoff»."
+      ],
+      "answer_display_es": "Transfiere estado, acciones, riesgos, órdenes y pendientes sin perder continuidad.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Transfiere estado, acciones, riesgos, órdenes y pendientes sin perder continuidad."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C070",
+      "unit_id": "OPR-203-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Consistencia» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Consistencia» en esta unidad?",
+        "Selecciona la definición correcta de «Consistencia»."
+      ],
+      "answer_display_es": "consistencia en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "consistencia en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C071",
+      "unit_id": "OPR-203-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Seguridad» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Seguridad» en esta unidad?",
+        "Selecciona la definición correcta de «Seguridad»."
+      ],
+      "answer_display_es": "Limita cualquier procedimiento y exige identificar peligros, protecciones y condición de aborto.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Limita cualquier procedimiento y exige identificar peligros, protecciones y condición de aborto."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C072",
+      "unit_id": "OPR-203-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Comunicación» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Comunicación» en esta unidad?",
+        "Selecciona la definición correcta de «Comunicación»."
+      ],
+      "answer_display_es": "comunicación preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "comunicación preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes."
+      ]
+    }
+  ],
+  "legacy_year4_questions": [
     {
       "id": "OPERATIONS-Q037",
       "course_id": "OPR-101",
@@ -776,12 +1594,5 @@
         "feedback"
       ]
     }
-  ],
-  "year3_status": "editorially_aligned_with_developed_year3_branch_material",
-  "year3_rule": "Only concepts explicitly taught in the 201–203 branch stages or established prerequisites may be required.",
-  "year3_courses": [
-    "OPR-201",
-    "OPR-202",
-    "OPR-203"
   ]
 }

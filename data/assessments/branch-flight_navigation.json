@@ -1,15 +1,45 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.1.0",
   "branch_id": "flight_navigation",
-  "status": "generated_from_authoritative_branch_curriculum",
-  "question_count": 60,
-  "questions": [
+  "status": "concept_driven_autocorrectable_v2_1",
+  "scope": "year3_201_203_only",
+  "source_bank": "question_bank_v1_0.json",
+  "year3_courses": [
+    "NAV-201",
+    "NAV-202",
+    "NAV-203"
+  ],
+  "year3_status": "developed_and_synced_v2_1",
+  "policy": {
+    "theory_formats": [
+      "multiple_choice",
+      "short_answer"
+    ],
+    "deterministic_correction": true,
+    "web_and_game_share_concepts_not_question_instances": true,
+    "complex_judgment_moves_to_practice_and_simulation": true,
+    "source_rule": "Every evaluated concept must be explicitly taught in the branch material or an established prerequisite."
+  },
+  "unit_review": {
+    "questions_per_attempt": 5,
+    "reshuffle_each_attempt": true,
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
+  },
+  "concepts": [
     {
-      "id": "FLIGHT_NAVIGATION-Q001",
-      "course_id": "NAV-201",
+      "id": "FLIGHT_NAVIGATION-C001",
       "unit_id": "NAV-201-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica rumbo desde la perspectiva de Vuelo / Navegación: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente rumbo desde la perspectiva de Vuelo / Navegación?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente rumbo desde la perspectiva de Vuelo / Navegación?",
+        "Explica rumbo desde la perspectiva de Vuelo / Navegación: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "rumbo · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "rumbo",
         "aplicación",
@@ -17,11 +47,17 @@
       ]
     },
     {
-      "id": "FLIGHT_NAVIGATION-Q002",
-      "course_id": "NAV-201",
+      "id": "FLIGHT_NAVIGATION-C002",
       "unit_id": "NAV-201-U01",
-      "type": "scenario",
-      "prompt_es": "Maniobra precisa. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Maniobra precisa»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Maniobra precisa»?",
+        "Maniobra precisa. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -30,11 +66,17 @@
       ]
     },
     {
-      "id": "FLIGHT_NAVIGATION-Q003",
-      "course_id": "NAV-201",
+      "id": "FLIGHT_NAVIGATION-C003",
       "unit_id": "NAV-201-U01",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Helm de precisión para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Helm de precisión?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Helm de precisión?",
+        "¿Qué evidencia conservarías tras Helm de precisión para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -44,11 +86,17 @@
       ]
     },
     {
-      "id": "FLIGHT_NAVIGATION-Q004",
-      "course_id": "NAV-201",
+      "id": "FLIGHT_NAVIGATION-C004",
       "unit_id": "NAV-201-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica rutas desde la perspectiva de Vuelo / Navegación: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente rutas desde la perspectiva de Vuelo / Navegación?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente rutas desde la perspectiva de Vuelo / Navegación?",
+        "Explica rutas desde la perspectiva de Vuelo / Navegación: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "rutas · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "rutas",
         "aplicación",
@@ -56,11 +104,17 @@
       ]
     },
     {
-      "id": "FLIGHT_NAVIGATION-Q005",
-      "course_id": "NAV-201",
+      "id": "FLIGHT_NAVIGATION-C005",
       "unit_id": "NAV-201-U02",
-      "type": "scenario",
-      "prompt_es": "Plan avanzado. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Plan avanzado»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Plan avanzado»?",
+        "Plan avanzado. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -69,11 +123,17 @@
       ]
     },
     {
-      "id": "FLIGHT_NAVIGATION-Q006",
-      "course_id": "NAV-201",
+      "id": "FLIGHT_NAVIGATION-C006",
       "unit_id": "NAV-201-U02",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Astrogación para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Astrogación?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Astrogación?",
+        "¿Qué evidencia conservarías tras Astrogación para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -83,11 +143,17 @@
       ]
     },
     {
-      "id": "FLIGHT_NAVIGATION-Q007",
-      "course_id": "NAV-201",
+      "id": "FLIGHT_NAVIGATION-C007",
       "unit_id": "NAV-201-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica entrada desde la perspectiva de Vuelo / Navegación: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente entrada desde la perspectiva de Vuelo / Navegación?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente entrada desde la perspectiva de Vuelo / Navegación?",
+        "Explica entrada desde la perspectiva de Vuelo / Navegación: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "entrada · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "entrada",
         "aplicación",
@@ -95,11 +161,17 @@
       ]
     },
     {
-      "id": "FLIGHT_NAVIGATION-Q008",
-      "course_id": "NAV-201",
+      "id": "FLIGHT_NAVIGATION-C008",
       "unit_id": "NAV-201-U03",
-      "type": "scenario",
-      "prompt_es": "Ejecutar ruta. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Ejecutar ruta»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Ejecutar ruta»?",
+        "Ejecutar ruta. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -108,11 +180,17 @@
       ]
     },
     {
-      "id": "FLIGHT_NAVIGATION-Q009",
-      "course_id": "NAV-201",
+      "id": "FLIGHT_NAVIGATION-C009",
       "unit_id": "NAV-201-U03",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Warp routing para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Warp routing?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Warp routing?",
+        "¿Qué evidencia conservarías tras Warp routing para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -122,11 +200,17 @@
       ]
     },
     {
-      "id": "FLIGHT_NAVIGATION-Q010",
-      "course_id": "NAV-201",
+      "id": "FLIGHT_NAVIGATION-C010",
       "unit_id": "NAV-201-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica órbita desde la perspectiva de Vuelo / Navegación: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente órbita desde la perspectiva de Vuelo / Navegación?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente órbita desde la perspectiva de Vuelo / Navegación?",
+        "Explica órbita desde la perspectiva de Vuelo / Navegación: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "órbita · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "órbita",
         "aplicación",
@@ -134,11 +218,17 @@
       ]
     },
     {
-      "id": "FLIGHT_NAVIGATION-Q011",
-      "course_id": "NAV-201",
+      "id": "FLIGHT_NAVIGATION-C011",
       "unit_id": "NAV-201-U04",
-      "type": "scenario",
-      "prompt_es": "Simulación. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Simulación»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Simulación»?",
+        "Simulación. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -147,11 +237,17 @@
       ]
     },
     {
-      "id": "FLIGHT_NAVIGATION-Q012",
-      "course_id": "NAV-201",
+      "id": "FLIGHT_NAVIGATION-C012",
       "unit_id": "NAV-201-U04",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Aproximaciones para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Aproximaciones?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Aproximaciones?",
+        "¿Qué evidencia conservarías tras Aproximaciones para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -161,11 +257,17 @@
       ]
     },
     {
-      "id": "FLIGHT_NAVIGATION-Q013",
-      "course_id": "NAV-202",
+      "id": "FLIGHT_NAVIGATION-C013",
       "unit_id": "NAV-202-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica sensores parciales desde la perspectiva de Vuelo / Navegación: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente sensores parciales desde la perspectiva de Vuelo / Navegación?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente sensores parciales desde la perspectiva de Vuelo / Navegación?",
+        "Explica sensores parciales desde la perspectiva de Vuelo / Navegación: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "sensores parciales · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "sensores parciales",
         "aplicación",
@@ -173,11 +275,17 @@
       ]
     },
     {
-      "id": "FLIGHT_NAVIGATION-Q014",
-      "course_id": "NAV-202",
+      "id": "FLIGHT_NAVIGATION-C014",
       "unit_id": "NAV-202-U01",
-      "type": "scenario",
-      "prompt_es": "Ruta con datos pobres. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Ruta con datos pobres»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Ruta con datos pobres»?",
+        "Ruta con datos pobres. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -186,11 +294,17 @@
       ]
     },
     {
-      "id": "FLIGHT_NAVIGATION-Q015",
-      "course_id": "NAV-202",
+      "id": "FLIGHT_NAVIGATION-C015",
       "unit_id": "NAV-202-U01",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Navegación degradada para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Navegación degradada?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Navegación degradada?",
+        "¿Qué evidencia conservarías tras Navegación degradada para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -200,11 +314,17 @@
       ]
     },
     {
-      "id": "FLIGHT_NAVIGATION-Q016",
-      "course_id": "NAV-202",
+      "id": "FLIGHT_NAVIGATION-C016",
       "unit_id": "NAV-202-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica abort desde la perspectiva de Vuelo / Navegación: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente abort desde la perspectiva de Vuelo / Navegación?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente abort desde la perspectiva de Vuelo / Navegación?",
+        "Explica abort desde la perspectiva de Vuelo / Navegación: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "abort · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "abort",
         "aplicación",
@@ -212,11 +332,17 @@
       ]
     },
     {
-      "id": "FLIGHT_NAVIGATION-Q017",
-      "course_id": "NAV-202",
+      "id": "FLIGHT_NAVIGATION-C017",
       "unit_id": "NAV-202-U02",
-      "type": "scenario",
-      "prompt_es": "Escenario. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Escenario»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Escenario»?",
+        "Escenario. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -225,11 +351,17 @@
       ]
     },
     {
-      "id": "FLIGHT_NAVIGATION-Q018",
-      "course_id": "NAV-202",
+      "id": "FLIGHT_NAVIGATION-C018",
       "unit_id": "NAV-202-U02",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Maniobra de emergencia para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Maniobra de emergencia?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Maniobra de emergencia?",
+        "¿Qué evidencia conservarías tras Maniobra de emergencia para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -239,11 +371,17 @@
       ]
     },
     {
-      "id": "FLIGHT_NAVIGATION-Q019",
-      "course_id": "NAV-202",
+      "id": "FLIGHT_NAVIGATION-C019",
       "unit_id": "NAV-202-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica anomalías desde la perspectiva de Vuelo / Navegación: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente anomalías desde la perspectiva de Vuelo / Navegación?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente anomalías desde la perspectiva de Vuelo / Navegación?",
+        "Explica anomalías desde la perspectiva de Vuelo / Navegación: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "anomalías · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "anomalías",
         "aplicación",
@@ -251,11 +389,17 @@
       ]
     },
     {
-      "id": "FLIGHT_NAVIGATION-Q020",
-      "course_id": "NAV-202",
+      "id": "FLIGHT_NAVIGATION-C020",
       "unit_id": "NAV-202-U03",
-      "type": "scenario",
-      "prompt_es": "Plotting complejo. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Plotting complejo»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Plotting complejo»?",
+        "Plotting complejo. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -264,11 +408,17 @@
       ]
     },
     {
-      "id": "FLIGHT_NAVIGATION-Q021",
-      "course_id": "NAV-202",
+      "id": "FLIGHT_NAVIGATION-C021",
       "unit_id": "NAV-202-U03",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Entornos complejos para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Entornos complejos?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Entornos complejos?",
+        "¿Qué evidencia conservarías tras Entornos complejos para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -278,11 +428,17 @@
       ]
     },
     {
-      "id": "FLIGHT_NAVIGATION-Q022",
-      "course_id": "NAV-202",
+      "id": "FLIGHT_NAVIGATION-C022",
       "unit_id": "NAV-202-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica datos desde la perspectiva de Vuelo / Navegación: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente datos desde la perspectiva de Vuelo / Navegación?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente datos desde la perspectiva de Vuelo / Navegación?",
+        "Explica datos desde la perspectiva de Vuelo / Navegación: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "datos · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "datos",
         "aplicación",
@@ -290,11 +446,17 @@
       ]
     },
     {
-      "id": "FLIGHT_NAVIGATION-Q023",
-      "course_id": "NAV-202",
+      "id": "FLIGHT_NAVIGATION-C023",
       "unit_id": "NAV-202-U04",
-      "type": "scenario",
-      "prompt_es": "Misión integrada. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Misión integrada»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Misión integrada»?",
+        "Misión integrada. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -303,11 +465,17 @@
       ]
     },
     {
-      "id": "FLIGHT_NAVIGATION-Q024",
-      "course_id": "NAV-202",
+      "id": "FLIGHT_NAVIGATION-C024",
       "unit_id": "NAV-202-U04",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Coordinación con sensores/ingeniería para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Coordinación con sensores/ingeniería?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Coordinación con sensores/ingeniería?",
+        "¿Qué evidencia conservarías tras Coordinación con sensores/ingeniería para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -317,11 +485,17 @@
       ]
     },
     {
-      "id": "FLIGHT_NAVIGATION-Q025",
-      "course_id": "NAV-203",
+      "id": "FLIGHT_NAVIGATION-C025",
       "unit_id": "NAV-203-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica rutina desde la perspectiva de Vuelo / Navegación: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente rutina desde la perspectiva de Vuelo / Navegación?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente rutina desde la perspectiva de Vuelo / Navegación?",
+        "Explica rutina desde la perspectiva de Vuelo / Navegación: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "rutina · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "rutina",
         "aplicación",
@@ -329,11 +503,17 @@
       ]
     },
     {
-      "id": "FLIGHT_NAVIGATION-Q026",
-      "course_id": "NAV-203",
+      "id": "FLIGHT_NAVIGATION-C026",
       "unit_id": "NAV-203-U01",
-      "type": "scenario",
-      "prompt_es": "Turno supervisado. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Turno supervisado»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Turno supervisado»?",
+        "Turno supervisado. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -342,11 +522,17 @@
       ]
     },
     {
-      "id": "FLIGHT_NAVIGATION-Q027",
-      "course_id": "NAV-203",
+      "id": "FLIGHT_NAVIGATION-C027",
       "unit_id": "NAV-203-U01",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Guardia de vuelo para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Guardia de vuelo?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Guardia de vuelo?",
+        "¿Qué evidencia conservarías tras Guardia de vuelo para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -356,11 +542,17 @@
       ]
     },
     {
-      "id": "FLIGHT_NAVIGATION-Q028",
-      "course_id": "NAV-203",
+      "id": "FLIGHT_NAVIGATION-C028",
       "unit_id": "NAV-203-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica rutas desde la perspectiva de Vuelo / Navegación: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente rutas desde la perspectiva de Vuelo / Navegación?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente rutas desde la perspectiva de Vuelo / Navegación?",
+        "Explica rutas desde la perspectiva de Vuelo / Navegación: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "rutas · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "rutas",
         "aplicación",
@@ -368,11 +560,17 @@
       ]
     },
     {
-      "id": "FLIGHT_NAVIGATION-Q029",
-      "course_id": "NAV-203",
+      "id": "FLIGHT_NAVIGATION-C029",
       "unit_id": "NAV-203-U02",
-      "type": "scenario",
-      "prompt_es": "Plan y ejecución. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Plan y ejecución»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Plan y ejecución»?",
+        "Plan y ejecución. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -381,11 +579,17 @@
       ]
     },
     {
-      "id": "FLIGHT_NAVIGATION-Q030",
-      "course_id": "NAV-203",
+      "id": "FLIGHT_NAVIGATION-C030",
       "unit_id": "NAV-203-U02",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Misión multi-tramo para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Misión multi-tramo?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Misión multi-tramo?",
+        "¿Qué evidencia conservarías tras Misión multi-tramo para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -395,11 +599,17 @@
       ]
     },
     {
-      "id": "FLIGHT_NAVIGATION-Q031",
-      "course_id": "NAV-203",
+      "id": "FLIGHT_NAVIGATION-C031",
       "unit_id": "NAV-203-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica desvío desde la perspectiva de Vuelo / Navegación: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente desvío desde la perspectiva de Vuelo / Navegación?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente desvío desde la perspectiva de Vuelo / Navegación?",
+        "Explica desvío desde la perspectiva de Vuelo / Navegación: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "desvío · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "desvío",
         "aplicación",
@@ -407,11 +617,17 @@
       ]
     },
     {
-      "id": "FLIGHT_NAVIGATION-Q032",
-      "course_id": "NAV-203",
+      "id": "FLIGHT_NAVIGATION-C032",
       "unit_id": "NAV-203-U03",
-      "type": "scenario",
-      "prompt_es": "Resolver evento. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Resolver evento»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Resolver evento»?",
+        "Resolver evento. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -420,11 +636,17 @@
       ]
     },
     {
-      "id": "FLIGHT_NAVIGATION-Q033",
-      "course_id": "NAV-203",
+      "id": "FLIGHT_NAVIGATION-C033",
       "unit_id": "NAV-203-U03",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Incidente de navegación para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Incidente de navegación?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Incidente de navegación?",
+        "¿Qué evidencia conservarías tras Incidente de navegación para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -434,11 +656,17 @@
       ]
     },
     {
-      "id": "FLIGHT_NAVIGATION-Q034",
-      "course_id": "NAV-203",
+      "id": "FLIGHT_NAVIGATION-C034",
       "unit_id": "NAV-203-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica precisión desde la perspectiva de Vuelo / Navegación: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente precisión desde la perspectiva de Vuelo / Navegación?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente precisión desde la perspectiva de Vuelo / Navegación?",
+        "Explica precisión desde la perspectiva de Vuelo / Navegación: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "precisión · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "precisión",
         "aplicación",
@@ -446,11 +674,17 @@
       ]
     },
     {
-      "id": "FLIGHT_NAVIGATION-Q035",
-      "course_id": "NAV-203",
+      "id": "FLIGHT_NAVIGATION-C035",
       "unit_id": "NAV-203-U04",
-      "type": "scenario",
-      "prompt_es": "Checkride académico. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Checkride académico»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Checkride académico»?",
+        "Checkride académico. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -459,11 +693,17 @@
       ]
     },
     {
-      "id": "FLIGHT_NAVIGATION-Q036",
-      "course_id": "NAV-203",
+      "id": "FLIGHT_NAVIGATION-C036",
       "unit_id": "NAV-203-U04",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Cualificación intermedia para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Cualificación intermedia?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Cualificación intermedia?",
+        "¿Qué evidencia conservarías tras Cualificación intermedia para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -472,6 +712,584 @@
         "feedback o pendientes"
       ]
     },
+    {
+      "id": "FLIGHT_NAVIGATION-C037",
+      "unit_id": "NAV-201-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Rumbo» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Rumbo» en esta unidad?",
+        "Selecciona la definición correcta de «Rumbo»."
+      ],
+      "answer_display_es": "Es la orientación ordenada de la nave y se verifica contra referencia, ruta y restricciones.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Es la orientación ordenada de la nave y se verifica contra referencia, ruta y restricciones."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C038",
+      "unit_id": "NAV-201-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Velocidad» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Velocidad» en esta unidad?",
+        "Selecciona la definición correcta de «Velocidad»."
+      ],
+      "answer_display_es": "Se elige según objetivo, seguridad, entorno, capacidad de propulsión y margen de reacción.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Se elige según objetivo, seguridad, entorno, capacidad de propulsión y margen de reacción."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C039",
+      "unit_id": "NAV-201-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Vector» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Vector» en esta unidad?",
+        "Selecciona la definición correcta de «Vector»."
+      ],
+      "answer_display_es": "Combina dirección y magnitud de movimiento y permite prever posición relativa y maniobras.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Combina dirección y magnitud de movimiento y permite prever posición relativa y maniobras."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C040",
+      "unit_id": "NAV-201-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Rutas» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Rutas» en esta unidad?",
+        "Selecciona la definición correcta de «Rutas»."
+      ],
+      "answer_display_es": "Conectan origen y destino mediante tramos verificables, restricciones y puntos de decisión.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Conectan origen y destino mediante tramos verificables, restricciones y puntos de decisión."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C041",
+      "unit_id": "NAV-201-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Waypoints» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Waypoints» en esta unidad?",
+        "Selecciona la definición correcta de «Waypoints»."
+      ],
+      "answer_display_es": "Son referencias intermedias usadas para estructurar, comprobar o modificar una ruta.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Son referencias intermedias usadas para estructurar, comprobar o modificar una ruta."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C042",
+      "unit_id": "NAV-201-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «ETA» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «ETA» en esta unidad?",
+        "Selecciona la definición correcta de «ETA»."
+      ],
+      "answer_display_es": "Es una estimación condicionada por ruta, velocidad y restricciones; debe actualizarse si cambian.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Es una estimación condicionada por ruta, velocidad y restricciones; debe actualizarse si cambian."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C043",
+      "unit_id": "NAV-201-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Entrada» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Entrada» en esta unidad?",
+        "Selecciona la definición correcta de «Entrada»."
+      ],
+      "answer_display_es": "Define las condiciones para iniciar una fase de navegación o tránsito de forma controlada.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Define las condiciones para iniciar una fase de navegación o tránsito de forma controlada."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C044",
+      "unit_id": "NAV-201-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Salida» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Salida» en esta unidad?",
+        "Selecciona la definición correcta de «Salida»."
+      ],
+      "answer_display_es": "Define cómo finalizar un tramo o abandonar una condición de navegación manteniendo seguridad y control.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Define cómo finalizar un tramo o abandonar una condición de navegación manteniendo seguridad y control."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C045",
+      "unit_id": "NAV-201-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Zonas» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Zonas» en esta unidad?",
+        "Selecciona la definición correcta de «Zonas»."
+      ],
+      "answer_display_es": "Representan regiones con reglas, riesgos o condiciones que afectan la planificación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Representan regiones con reglas, riesgos o condiciones que afectan la planificación."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C046",
+      "unit_id": "NAV-201-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Órbita» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Órbita» en esta unidad?",
+        "Selecciona la definición correcta de «Órbita»."
+      ],
+      "answer_display_es": "Requiere controlar trayectoria relativa, estabilidad y margen de seguridad respecto al cuerpo.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Requiere controlar trayectoria relativa, estabilidad y margen de seguridad respecto al cuerpo."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C047",
+      "unit_id": "NAV-201-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Rendezvous» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Rendezvous» en esta unidad?",
+        "Selecciona la definición correcta de «Rendezvous»."
+      ],
+      "answer_display_es": "Coordina posición, velocidad y tiempo para aproximarse a otro objeto de forma controlada.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Coordina posición, velocidad y tiempo para aproximarse a otro objeto de forma controlada."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C048",
+      "unit_id": "NAV-201-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Acoplamiento contextual» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Acoplamiento contextual» en esta unidad?",
+        "Selecciona la definición correcta de «Acoplamiento contextual»."
+      ],
+      "answer_display_es": "Integra aproximación, alineación, autorización y condiciones específicas del punto de atraque.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Integra aproximación, alineación, autorización y condiciones específicas del punto de atraque."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C049",
+      "unit_id": "NAV-202-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Sensores parciales» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Sensores parciales» en esta unidad?",
+        "Selecciona la definición correcta de «Sensores parciales»."
+      ],
+      "answer_display_es": "Obligan a aumentar margen y hacer visible qué parte de la solución depende de estimación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Obligan a aumentar margen y hacer visible qué parte de la solución depende de estimación."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C050",
+      "unit_id": "NAV-202-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Estimación» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Estimación» en esta unidad?",
+        "Selecciona la definición correcta de «Estimación»."
+      ],
+      "answer_display_es": "Es una aproximación sustentada por datos disponibles y debe incluir incertidumbre.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Es una aproximación sustentada por datos disponibles y debe incluir incertidumbre."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C051",
+      "unit_id": "NAV-202-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Margen» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Margen» en esta unidad?",
+        "Selecciona la definición correcta de «Margen»."
+      ],
+      "answer_display_es": "Es capacidad restante disponible para absorber demanda, error o contingencia.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Es capacidad restante disponible para absorber demanda, error o contingencia."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C052",
+      "unit_id": "NAV-202-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Abort» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Abort» en esta unidad?",
+        "Selecciona la definición correcta de «Abort»."
+      ],
+      "answer_display_es": "Es la decisión de interrumpir una maniobra cuando continuar supera límites de seguridad o control.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Es la decisión de interrumpir una maniobra cuando continuar supera límites de seguridad o control."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C053",
+      "unit_id": "NAV-202-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Evasión» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Evasión» en esta unidad?",
+        "Selecciona la definición correcta de «Evasión»."
+      ],
+      "answer_display_es": "Prioriza separación segura frente al objetivo original cuando aparece una amenaza inmediata.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Prioriza separación segura frente al objetivo original cuando aparece una amenaza inmediata."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C054",
+      "unit_id": "NAV-202-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Propulsión limitada» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Propulsión limitada» en esta unidad?",
+        "Selecciona la definición correcta de «Propulsión limitada»."
+      ],
+      "answer_display_es": "Reduce opciones de maniobra y obliga a recalcular ruta, reserva y contingencias.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Reduce opciones de maniobra y obliga a recalcular ruta, reserva y contingencias."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C055",
+      "unit_id": "NAV-202-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Anomalías» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Anomalías» en esta unidad?",
+        "Selecciona la definición correcta de «Anomalías»."
+      ],
+      "answer_display_es": "Se incorporan como condiciones que pueden alterar navegación, sensores o seguridad y exigen margen adicional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Se incorporan como condiciones que pueden alterar navegación, sensores o seguridad y exigen margen adicional."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C056",
+      "unit_id": "NAV-202-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Gravedad» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Gravedad» en esta unidad?",
+        "Selecciona la definición correcta de «Gravedad»."
+      ],
+      "answer_display_es": "Afecta trayectoria y energía de maniobra y debe considerarse en aproximaciones y rutas cercanas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Afecta trayectoria y energía de maniobra y debe considerarse en aproximaciones y rutas cercanas."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C057",
+      "unit_id": "NAV-202-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Tráfico» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Tráfico» en esta unidad?",
+        "Selecciona la definición correcta de «Tráfico»."
+      ],
+      "answer_display_es": "Exige separación, previsión y coordinación para evitar conflictos de trayectoria.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Exige separación, previsión y coordinación para evitar conflictos de trayectoria."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C058",
+      "unit_id": "NAV-202-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Datos» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Datos» en esta unidad?",
+        "Selecciona la definición correcta de «Datos»."
+      ],
+      "answer_display_es": "Deben conservar origen, contexto, calidad y recencia suficientes para sostener una decisión.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Deben conservar origen, contexto, calidad y recencia suficientes para sostener una decisión."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C059",
+      "unit_id": "NAV-202-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Potencia» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Potencia» en esta unidad?",
+        "Selecciona la definición correcta de «Potencia»."
+      ],
+      "answer_display_es": "Es capacidad energética disponible para una función y debe gestionarse con demanda, margen y prioridades.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Es capacidad energética disponible para una función y debe gestionarse con demanda, margen y prioridades."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C060",
+      "unit_id": "NAV-202-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Capacidad» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Capacidad» en esta unidad?",
+        "Selecciona la definición correcta de «Capacidad»."
+      ],
+      "answer_display_es": "Describe qué puede hacer realmente un sistema o equipo en su estado actual.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Describe qué puede hacer realmente un sistema o equipo en su estado actual."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C061",
+      "unit_id": "NAV-203-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Rutina» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Rutina» en esta unidad?",
+        "Selecciona la definición correcta de «Rutina»."
+      ],
+      "answer_display_es": "rutina en Vuelo / Navegación se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "rutina en Vuelo / Navegación se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C062",
+      "unit_id": "NAV-203-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Relevo» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Relevo» en esta unidad?",
+        "Selecciona la definición correcta de «Relevo»."
+      ],
+      "answer_display_es": "relevo en Vuelo / Navegación se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "relevo en Vuelo / Navegación se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C063",
+      "unit_id": "NAV-203-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Monitorización» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Monitorización» en esta unidad?",
+        "Selecciona la definición correcta de «Monitorización»."
+      ],
+      "answer_display_es": "Comprueba respuesta y detecta deterioro o efectos adversos tras una intervención.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Comprueba respuesta y detecta deterioro o efectos adversos tras una intervención."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C064",
+      "unit_id": "NAV-203-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Rutas» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Rutas» en esta unidad?",
+        "Selecciona la definición correcta de «Rutas»."
+      ],
+      "answer_display_es": "Conectan origen y destino mediante tramos verificables, restricciones y puntos de decisión.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Conectan origen y destino mediante tramos verificables, restricciones y puntos de decisión."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C065",
+      "unit_id": "NAV-203-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Cambios» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Cambios» en esta unidad?",
+        "Selecciona la definición correcta de «Cambios»."
+      ],
+      "answer_display_es": "cambios en Vuelo / Navegación se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "cambios en Vuelo / Navegación se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C066",
+      "unit_id": "NAV-203-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Reserva» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Reserva» en esta unidad?",
+        "Selecciona la definición correcta de «Reserva»."
+      ],
+      "answer_display_es": "reserva en Vuelo / Navegación se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "reserva en Vuelo / Navegación se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C067",
+      "unit_id": "NAV-203-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Desvío» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Desvío» en esta unidad?",
+        "Selecciona la definición correcta de «Desvío»."
+      ],
+      "answer_display_es": "desvío en Vuelo / Navegación se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "desvío en Vuelo / Navegación se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C068",
+      "unit_id": "NAV-203-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Riesgo» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Riesgo» en esta unidad?",
+        "Selecciona la definición correcta de «Riesgo»."
+      ],
+      "answer_display_es": "Combina probabilidad, impacto y exposición y se compara con autoridad, misión y alternativas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Combina probabilidad, impacto y exposición y se compara con autoridad, misión y alternativas."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C069",
+      "unit_id": "NAV-203-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Reporte» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Reporte» en esta unidad?",
+        "Selecciona la definición correcta de «Reporte»."
+      ],
+      "answer_display_es": "reporte preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "reporte preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C070",
+      "unit_id": "NAV-203-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Precisión» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Precisión» en esta unidad?",
+        "Selecciona la definición correcta de «Precisión»."
+      ],
+      "answer_display_es": "precisión en Vuelo / Navegación se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "precisión en Vuelo / Navegación se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C071",
+      "unit_id": "NAV-203-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Seguridad» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Seguridad» en esta unidad?",
+        "Selecciona la definición correcta de «Seguridad»."
+      ],
+      "answer_display_es": "Limita cualquier procedimiento y exige identificar peligros, protecciones y condición de aborto.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Limita cualquier procedimiento y exige identificar peligros, protecciones y condición de aborto."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C072",
+      "unit_id": "NAV-203-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Comunicación» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Comunicación» en esta unidad?",
+        "Selecciona la definición correcta de «Comunicación»."
+      ],
+      "answer_display_es": "comunicación preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "comunicación preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes."
+      ]
+    }
+  ],
+  "legacy_year4_questions": [
     {
       "id": "FLIGHT_NAVIGATION-Q037",
       "course_id": "NAV-101",
@@ -776,12 +1594,5 @@
         "feedback"
       ]
     }
-  ],
-  "year3_status": "editorially_aligned_with_developed_year3_branch_material",
-  "year3_rule": "Only concepts explicitly taught in the 201–203 branch stages or established prerequisites may be required.",
-  "year3_courses": [
-    "NAV-201",
-    "NAV-202",
-    "NAV-203"
   ]
 }
