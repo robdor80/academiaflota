@@ -45,3 +45,15 @@
 .teacher-order .action{font-size:.82rem;padding:10px 13px}
 
 .console-grid.teacher-locked{pointer-events:none;opacity:.58;filter:saturate(.65)}
+
+.teacher-level-label{display:inline-block;margin-top:4px;font-size:.68rem;font-weight:900;letter-spacing:.08em;color:#7e682f}
+.teacher-order-summary{display:flex;align-items:center;gap:10px;margin:9px 0 10px;padding:9px 11px;background:#f2ead4;border:1px solid #dcc995;border-radius:7px}
+.teacher-order-summary small{font-size:.62rem;font-weight:900;letter-spacing:.1em;color:#8e6e27;white-space:nowrap}
+.teacher-order-summary span{font-size:.88rem;line-height:1.4;color:#3f4b54;font-weight:700}
+.teacher-panel.guidance-reduced .teacher-explanation-grid>div:first-child{display:none}
+.teacher-panel.guidance-reduced .teacher-explanation-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.teacher-panel.guidance-evaluation:not(.practice-complete) .teacher-feedback{display:none}
+.teacher-panel.guidance-evaluation.practice-complete .teacher-steps{display:grid!important}
+.teacher-panel.guidance-evaluation.practice-complete .teacher-explanation{display:block!important}
+.contact-row .action{padding:6px 8px;font-size:.68rem;margin-left:4px}
+.workspace-content .notice.success{border-left-color:var(--ok);background:#eef6f2;color:#285741}
