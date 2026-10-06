@@ -3,7 +3,7 @@ import {
   updateProfile, deleteProfile, exportProfile, importProfile,
   setStorageOwner, getStorageOwner, onProfileChange
 } from "./storage.js";
-import { loadStudyData, loadStudyFile, renderLesson, checkUnitReview } from "./study.js?v=0.8.0";
+import { loadStudyData, loadStudyFile, renderLesson, checkUnitReview } from "./study.js?v=0.9.0";
 import { loadEvaluationData, renderExam, gradeExam, renderResult } from "./evaluation.js?v=0.5.0";
 import { firebaseConfigured } from "./firebase-config.js";
 import { createFirebaseClient } from "./firebase-client.js";
@@ -242,7 +242,7 @@ async function ensureData() {
   if (!app.exam) app.exam = await loadEvaluationData();
 
   if (!app.curriculum) {
-    const response = await fetch("data/curriculum.json?v=0.8.0");
+    const response = await fetch("data/curriculum.json?v=0.9.0");
     if (!response.ok) throw new Error("No se pudo cargar el currículo académico.");
     app.curriculum = await response.json();
   }
@@ -446,6 +446,7 @@ function findStudyDefinition(studyId) {
         units: null,
         source: "branch",
         dataFile: item.dataFile,
+        assessmentFile: item.assessmentFile || null,
         label: item.title.toUpperCase()
       };
     }
@@ -508,7 +509,7 @@ async function openStudy(studyId) {
   if ((definition.source === "course" || definition.source === "branch") && !app.studyCache[studyId]) {
     app.studyCache[studyId] = await loadStudyFile(definition.dataFile);
   }
-  if (definition.source === "course" && definition.assessmentFile && !app.assessmentCache[studyId]) {
+  if ((definition.source === "course" || definition.source === "branch") && definition.assessmentFile && !app.assessmentCache[studyId]) {
     app.assessmentCache[studyId] = await loadStudyFile(definition.assessmentFile);
   }
   if (request !== studyRequest || app.profile?.id !== profileId || owner !== getStorageOwner()) return;

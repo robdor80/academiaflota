@@ -418,7 +418,8 @@
               "studyId": "course-BRN-201",
               "dataFile": "data/courses/BRN-201.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/BRN-201.json"
             },
             {
               "courseId": "PRA-201",
@@ -427,7 +428,8 @@
               "studyId": "course-PRA-201",
               "dataFile": "data/courses/PRA-201.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/PRA-201.json"
             },
             {
               "courseId": "INT-201",
@@ -436,7 +438,8 @@
               "studyId": "course-INT-201",
               "dataFile": "data/courses/INT-201.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/INT-201.json"
             },
             {
               "courseId": "LDR-201",
@@ -445,7 +448,8 @@
               "studyId": "course-LDR-201",
               "dataFile": "data/courses/LDR-201.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/LDR-201.json"
             },
             {
               "courseId": "XTR-201",
@@ -454,7 +458,8 @@
               "studyId": "course-XTR-201",
               "dataFile": "data/courses/XTR-201.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/XTR-201.json"
             }
           ]
         },
@@ -471,7 +476,8 @@
               "studyId": "course-BRN-202",
               "dataFile": "data/courses/BRN-202.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/BRN-202.json"
             },
             {
               "courseId": "PRA-202",
@@ -480,7 +486,8 @@
               "studyId": "course-PRA-202",
               "dataFile": "data/courses/PRA-202.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/PRA-202.json"
             },
             {
               "courseId": "RSK-202",
@@ -489,7 +496,8 @@
               "studyId": "course-RSK-202",
               "dataFile": "data/courses/RSK-202.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/RSK-202.json"
             },
             {
               "courseId": "FLD-202",
@@ -498,7 +506,8 @@
               "studyId": "course-FLD-202",
               "dataFile": "data/courses/FLD-202.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/FLD-202.json"
             },
             {
               "courseId": "XTR-202",
@@ -507,7 +516,8 @@
               "studyId": "course-XTR-202",
               "dataFile": "data/courses/XTR-202.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/XTR-202.json"
             }
           ]
         },
@@ -524,7 +534,8 @@
               "studyId": "course-BRN-203",
               "dataFile": "data/courses/BRN-203.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/BRN-203.json"
             },
             {
               "courseId": "DUT-203",
@@ -533,7 +544,8 @@
               "studyId": "course-DUT-203",
               "dataFile": "data/courses/DUT-203.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/DUT-203.json"
             },
             {
               "courseId": "SIM-203",
@@ -542,7 +554,8 @@
               "studyId": "course-SIM-203",
               "dataFile": "data/courses/SIM-203.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/SIM-203.json"
             },
             {
               "courseId": "PRJ-203",
@@ -551,7 +564,8 @@
               "studyId": "course-PRJ-203",
               "dataFile": "data/courses/PRJ-203.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/PRJ-203.json"
             },
             {
               "courseId": "QUA-203",
@@ -560,7 +574,8 @@
               "studyId": "course-QUA-203",
               "dataFile": "data/courses/QUA-203.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/QUA-203.json"
             }
           ]
         }
@@ -741,7 +756,8 @@
       "studyId": "branch-command",
       "dataFile": "data/branches/command.json",
       "available": true,
-      "unitCount": 20
+      "unitCount": 20,
+      "assessmentFile": "data/assessments/branch-command.json"
     },
     {
       "branchId": "flight_navigation",
@@ -749,7 +765,8 @@
       "studyId": "branch-flight_navigation",
       "dataFile": "data/branches/flight_navigation.json",
       "available": true,
-      "unitCount": 20
+      "unitCount": 20,
+      "assessmentFile": "data/assessments/branch-flight_navigation.json"
     },
     {
       "branchId": "operations",
@@ -757,7 +774,8 @@
       "studyId": "branch-operations",
       "dataFile": "data/branches/operations.json",
       "available": true,
-      "unitCount": 20
+      "unitCount": 20,
+      "assessmentFile": "data/assessments/branch-operations.json"
     },
     {
       "branchId": "engineering",
@@ -765,7 +783,8 @@
       "studyId": "branch-engineering",
       "dataFile": "data/branches/engineering.json",
       "available": true,
-      "unitCount": 20
+      "unitCount": 20,
+      "assessmentFile": "data/assessments/branch-engineering.json"
     },
     {
       "branchId": "security_tactical",
@@ -773,7 +792,8 @@
       "studyId": "branch-security_tactical",
       "dataFile": "data/branches/security_tactical.json",
       "available": true,
-      "unitCount": 20
+      "unitCount": 20,
+      "assessmentFile": "data/assessments/branch-security_tactical.json"
     },
     {
       "branchId": "science_sensors",
@@ -781,7 +801,8 @@
       "studyId": "branch-science_sensors",
       "dataFile": "data/branches/science_sensors.json",
       "available": true,
-      "unitCount": 20
+      "unitCount": 20,
+      "assessmentFile": "data/assessments/branch-science_sensors.json"
     },
     {
       "branchId": "medical",
@@ -789,7 +810,8 @@
       "studyId": "branch-medical",
       "dataFile": "data/branches/medical.json",
       "available": true,
-      "unitCount": 20
+      "unitCount": 20,
+      "assessmentFile": "data/assessments/branch-medical.json"
     }
   ],
   "legacySupplementary": [
