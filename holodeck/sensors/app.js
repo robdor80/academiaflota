@@ -540,7 +540,15 @@ function renderStatus(){
     '<section class="status-card"><h3>SEGUIMIENTO · '+trackingUsed(sim)+'/'+sim.tracking.capacity+'</h3>'+(tracked.length?tracked.map(x=>'<button class="status-link" data-track-contact="'+x.contactId+'">'+x.contactId+' · '+x.mode+' · '+x.priority+'</button>').join(""):'<div class="status-line"><span>Ninguno</span><span>—</span></div>')+'</section>'+
     '<section class="status-card"><h3>SOLICITUD A OPS</h3>'+(sim.powerRequest?'<div class="status-line"><span>'+esc(sim.powerRequest.state)+'</span><strong>+'+(sim.powerRequest.granted??sim.powerRequest.requested??0)+' %</strong></div>':'<div class="status-line"><span>Ninguna</span><span>—</span></div>')+'</section>'+
     '<section class="status-card"><h3>TRANSFERENCIAS</h3>'+(sim.transfers[0]?'<div class="status-line"><span>'+esc(sim.transfers[0].target.toUpperCase())+'</span><strong>'+esc(sim.transfers[0].contactId)+'</strong></div>':'<div class="status-line"><span>Ninguna</span><span>—</span></div>')+'</section>';
-  document.querySelectorAll("[data-track-contact]").forEach(b=>b.onclick=()=>{sim.selectedContactId=b.dataset.trackContact;shell.primaryId="contacts";shell.secondaryId="all";render()});
+  document.querySelectorAll("[data-track-contact]").forEach(b=>b.onclick=()=>{
+    const id=b.dataset.trackContact;
+    sim.selectedContactId=id;
+    log("PERSISTENT TRACK OPEN "+id);
+    emitTeacherEvent("PERSISTENT_TRACK_OPEN",{contactId:id});
+    shell.primaryId="contacts";
+    shell.secondaryId="all";
+    render();
+  });
 }
 function renderLog(){$("#log-list").innerHTML=shell.logs.map(x=>'<div class="log-entry">'+esc(x)+'</div>').join("")}
 function currentExerciseLogLines(){
