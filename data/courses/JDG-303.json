@@ -40,7 +40,7 @@
         {
           "type": "definition",
           "term": "Hipótesis",
-          "text": "Explicación contrastable."
+          "text": "Explicación **contrastable**."
         }
       ]
     },
@@ -93,8 +93,8 @@
           "items": [
             "**Nuevo scan**",
             "**Opinión técnica**",
-            "Aclaración",
-            "Informe",
+            "**Aclaración**",
+            "**Informe**",
             "Autoridad"
           ]
         }
@@ -118,8 +118,8 @@
           "items": [
             "**Completado**",
             "**Parcial**",
-            "Fallido",
-            "Cancelado",
+            "**Fallido**",
+            "**Cancelado**",
             "Pendiente"
           ]
         },
@@ -147,7 +147,7 @@
         {
           "type": "callout",
           "label": "LECCIÓN ÚTIL",
-          "text": "Una lección debe ser específica y **accionable**, no «hacerlo mejor»."
+          "text": "Una lección debe ser **específica** y **accionable**, no «hacerlo mejor»."
         }
       ]
     },
