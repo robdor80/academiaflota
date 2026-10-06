@@ -242,7 +242,7 @@ async function ensureData() {
   if (!app.exam) app.exam = await loadEvaluationData();
 
   if (!app.curriculum) {
-    const response = await fetch("data/curriculum.json?v=0.9.0");
+    const response = await fetch("data/curriculum.json?v=0.11.0");
     if (!response.ok) throw new Error("No se pudo cargar el currículo académico.");
     app.curriculum = await response.json();
   }
@@ -359,25 +359,36 @@ function renderCurriculum() {
   });
 
   if (app.curriculum.branchLibrary?.length) {
+    const operationalMaterials = [];
+    app.curriculum.branchLibrary.forEach(function(item) {
+      (item.operationalMaterials || []).forEach(function(material) {
+        operationalMaterials.push({
+          ...material,
+          parentBranchTitle: item.title
+        });
+      });
+    });
+
     html += '<section class="curriculum-section"><header class="curriculum-section__header"><div>' +
       '<span class="overline">BIBLIOTECA PROFESIONAL</span><h2>Ramas de especialización</h2>' +
-      '<p>Manuales completos de rama para 2.ª y 1.ª clase. Consultables sin bloquear el perfil.</p></div></header>' +
-      '<div class="curriculum-section__body"><div class="supplementary-grid">' +
+      '<p>Siete ramas canónicas. Los manuales de rama cubren 2.ª y 1.ª clase y pueden consultarse sin bloquear el perfil.</p></div></header>' +
+      '<div class="curriculum-section__body"><div class="supplementary supplementary--branch-library">' +
+      '<div class="supplementary-grid">' +
       app.curriculum.branchLibrary.map(function(item) {
         return '<button data-open-study="' + item.studyId + '"><strong>' + escapeHtml(item.title) +
           '</strong><small>' + item.unitCount + ' unidades profesionales · 2.ª y 1.ª clase</small></button>';
-      }).join("") + '</div></div></section>';
-  }
-
-  if (app.curriculum.legacySupplementary?.length) {
-    html += '<section class="curriculum-section"><header class="curriculum-section__header"><div>' +
-      '<span class="overline">MANUAL OPERACIONAL EXISTENTE</span><h2>Operaciones de Sensores v0.1</h2>' +
-      '<p>Material especializado previo, conservado como consulta complementaria.</p></div></header>' +
-      '<div class="curriculum-section__body"><div class="supplementary-grid">' +
-      app.curriculum.legacySupplementary.map(function(item) {
-        return '<button data-open-study="' + item.studyId + '"><strong>' + escapeHtml(item.title) +
-          '</strong><small>Manual especializado de Sensores</small></button>';
-      }).join("") + '</div></div></section>';
+      }).join("") + '</div>' +
+      (operationalMaterials.length
+        ? '<div class="operational-materials"><span class="overline">CIENCIA / SENSORES · FORMACIÓN OPERATIVA</span>' +
+          '<h3>Manual de Operador de Sensores</h3>' +
+          '<p>Procedimientos de la consola funcional real. Complementa la rama Ciencia / Sensores y no constituye una especialización independiente.</p>' +
+          '<div class="supplementary-grid">' +
+          operationalMaterials.map(function(item) {
+            return '<button data-open-study="' + item.studyId + '"><strong>' + escapeHtml(item.title) +
+              '</strong><small>' + escapeHtml(item.subtitle || ("Material operativo vinculado a " + item.parentBranchTitle)) + '</small></button>';
+          }).join("") + '</div></div>'
+        : "") +
+      '</div></div></section>';
   }
 
   curriculumContainer.innerHTML = html;
@@ -446,19 +457,19 @@ function findStudyDefinition(studyId) {
         label: item.title.toUpperCase()
       };
     }
-  }
 
-  for (const item of app.curriculum.legacySupplementary || []) {
-    if (item.studyId === studyId) {
-      return {
-        id: item.studyId,
-        title: item.title,
-        code: "SENSORES · CONSULTA",
-        subtitle: "Manual especializado de Operaciones de Sensores v0.1",
-        units: item.units,
-        source: "sensores",
-        label: "OPERACIONES DE SENSORES"
-      };
+    for (const material of item.operationalMaterials || []) {
+      if (material.studyId === studyId) {
+        return {
+          id: material.studyId,
+          title: material.title,
+          code: "CIENCIA / SENSORES · CONSOLA",
+          subtitle: material.subtitle || "Manual de Operador de Sensores · formación operativa",
+          units: material.units,
+          source: "sensores",
+          label: "OPERACIONES DE SENSORES"
+        };
+      }
     }
   }
 
