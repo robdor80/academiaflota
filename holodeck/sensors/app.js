@@ -1,229 +1,432 @@
 import { initTeacherMode, emitTeacherEvent } from "./teacher_mode.js";
-function initialContacts(){return [
-  {id:"C-03",name:"Contacto 03",status:"identified",classification:"Lanzadera tipo 6",distance:"18.400 km",confidence:94,signal:"FUERTE",signature:"Warp / EM",tracked:true,marked:false},
-  {id:"C-07",name:"Contacto 07",status:"unidentified",classification:"No identificado",distance:"43.000 km",confidence:22,signal:"MUY DÉBIL",signature:"Subespacial parcial",tracked:false,marked:true},
-  {id:"C-12",name:"Contacto 12",status:"identified",classification:"Nave mercante",distance:"71.200 km",confidence:86,signal:"MEDIA",signature:"EM / térmica",tracked:true,marked:false},
-  {id:"C-19",name:"Contacto 19",status:"lost",classification:"Desconocido",distance:"Última: 96.000 km",confidence:31,signal:"PERDIDA",signature:"Warp residual",tracked:false,marked:false}
-]}
-const state={
-  model:null,context:null,interaction:null,powerContract:null,
-  primaryId:"status",secondaryId:"general_status",special:null,
-  power:72,basePower:72,interference:"BAJA",matrix:"PRINCIPAL",trackingCapacity:8,
-  contacts:initialContacts(),
-  selectedContactId:"C-07",activeOperations:[],results:[],powerRequest:null,logs:[]
+import {
+  createSimulation,knownContacts,getContact,getArray,trackingUsed,effectivePenalty,
+  createOperation,operationDuration,resolveScan,resolveSearch,startTracking,stopTracking,
+  updateTracking,readout,applyInterference,applyConfig,restoreStandard,loadProfile,saveProfile,
+  deleteProfile,runDiagnostic,calibrateArray,requestEngineering,makePowerResponse,transferData,
+  saveReading,compareReadings,severityLabel
+} from "./sim_engine.js";
+
+const shell={
+  model:null,context:null,interaction:null,powerContract:null,scenarios:null,
+  sim:null,primaryId:"status",secondaryId:"general_status",special:null,prefill:null,
+  logs:[],timers:new Set(),selectedArrayId:null,selectedResultId:null,message:null
 };
 const $=s=>document.querySelector(s);
-const actionLabels={};
-function log(msg){const t=new Date().toLocaleTimeString("es-ES",{hour12:false});state.logs.unshift(t+"  "+msg);renderLog()}
-function actionDef(id){return state.context?.actions?.[id]||{display_es:id.replaceAll("_"," ")}}
-function contact(){return state.contacts.find(c=>c.id===state.selectedContactId)}
+const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
+function log(msg){const t=new Date().toLocaleTimeString("es-ES",{hour12:false});shell.logs.unshift(t+"  "+msg);renderLog()}
+function teacherLog(msg){log("INSTRUCTOR · "+msg)}
+function notify(text,type="notice"){shell.message={text,type};renderWorkspace()}
+function actionDef(id){return shell.context?.actions?.[id]||{display_es:id.replaceAll("_"," ")}}
+function contact(){return getContact(shell.sim)}
+function primary(){return shell.model.root.find(x=>x.id===shell.primaryId)}
+function secondary(){return primary()?.secondary?.find(x=>x.id===shell.secondaryId)}
+function scenarioById(id){return shell.scenarios.scenarios.find(x=>x.id===id)||shell.scenarios.scenarios[0]}
+function clearTimers(){for(const t of shell.timers)clearInterval(t);shell.timers.clear()}
 async function load(){
-  const [m,c,i,p]=await Promise.all([
+  const [m,c,i,p,s]=await Promise.all([
     fetch("./data/sensor_menu_tree.json").then(r=>r.json()),
     fetch("./data/sensor_context_actions.json").then(r=>r.json()),
     fetch("./data/sensor_console_interaction_model.json").then(r=>r.json()),
-    fetch("./data/sensor_to_operations_power_request.json").then(r=>r.json())
+    fetch("./data/sensor_to_operations_power_request.json").then(r=>r.json()),
+    fetch("./data/scenarios.json").then(r=>r.json())
   ]);
-  state.model=m;state.context=c;state.interaction=i;state.powerContract=p;
-  bind();render();initTeacherMode({resetScenario});log("SIMULATOR READY · escenario SENSOR-LAB-01");
+  shell.model=m;shell.context=c;shell.interaction=i;shell.powerContract=p;shell.scenarios=s;
+  shell.sim=createSimulation(s.scenarios[0]);
+  bind();render();log("SIMULATOR READY · "+shell.sim.scenarioTitle);
+  initTeacherMode({resetScenario,logTeacher:teacherLog});
 }
 function bind(){
-  $("#reset-sim").addEventListener("click",()=>resetScenario("manual"));
+  $("#reset-sim").addEventListener("click",()=>resetScenario("manual",shell.sim.scenarioId));
   $("#toggle-log").addEventListener("click",()=>{$("#log-panel").hidden=!$("#log-panel").hidden});
 }
-function resetScenario(source="teacher"){
-  state.primaryId="status";state.secondaryId="general_status";state.special=null;
-  state.power=72;state.basePower=72;state.interference="BAJA";state.matrix="PRINCIPAL";state.trackingCapacity=8;
-  state.contacts=initialContacts();state.selectedContactId="C-07";state.activeOperations=[];state.results=[];state.powerRequest=null;
-  log("RESET scenario · "+source);render();emitTeacherEvent("SCENARIO_RESET",{source});
+function resetScenario(source="manual",scenarioId=null){
+  clearTimers();
+  const scenario=scenarioById(scenarioId||shell.sim?.scenarioId||shell.scenarios.scenarios[0].id);
+  shell.sim=createSimulation(scenario);
+  shell.primaryId="status";shell.secondaryId="general_status";shell.special=null;shell.prefill=null;
+  shell.selectedArrayId=shell.sim.activeArray;shell.selectedResultId=null;shell.message=null;
+  log("RESET scenario · "+source+" · "+scenario.id);render();
+  emitTeacherEvent("SCENARIO_RESET",{source,scenarioId:scenario.id});
+}
+function navPrimary(id){
+  shell.primaryId=id;shell.special=null;shell.prefill=null;
+  shell.secondaryId=shell.model.root.find(x=>x.id===id)?.secondary?.[0]?.id||null;
+  log("OPEN "+id);emitTeacherEvent("NAV_PRIMARY",{primaryId:id});render();
+}
+function navSecondary(id){
+  shell.secondaryId=id;shell.special=null;shell.prefill=null;
+  log("OPEN "+shell.primaryId+"/"+id);emitTeacherEvent("NAV_SECONDARY",{primaryId:shell.primaryId,secondaryId:id});render();
 }
 function render(){renderPrimary();renderSecondary();renderWorkspace();renderStatus();renderLog()}
-function primary(){return state.model.root.find(x=>x.id===state.primaryId)}
-function secondary(){return primary()?.secondary?.find(x=>x.id===state.secondaryId)}
-function navPrimary(id){
-  state.primaryId=id;state.special=null;state.secondaryId=state.model.root.find(x=>x.id===id)?.secondary?.[0]?.id||null;log("OPEN "+id);emitTeacherEvent("NAV_PRIMARY",{primaryId:id});render()
-}
-function navSecondary(id){state.secondaryId=id;state.special=null;log("OPEN "+state.primaryId+"/"+id);emitTeacherEvent("NAV_SECONDARY",{primaryId:state.primaryId,secondaryId:id});render()}
 function renderPrimary(){
-  $("#primary-nav").innerHTML=state.model.root.map(x=>'<button class="primary-button '+(x.id===state.primaryId?"active":"")+'" data-p="'+x.id+'">'+x.display_es+'</button>').join("");
+  $("#primary-nav").innerHTML=shell.model.root.map(x=>'<button class="primary-button '+(x.id===shell.primaryId?"active":"")+'" data-p="'+x.id+'">'+esc(x.display_es)+'</button>').join("");
   document.querySelectorAll("[data-p]").forEach(b=>b.onclick=()=>navPrimary(b.dataset.p));
 }
 function renderSecondary(){
   const p=primary();$("#workspace-kicker").textContent="SENSORES · "+(p?.display_es||"");
   $("#workspace-title").textContent=p?.display_es||"Sensores";
   const list=p?.secondary||[];
-  $("#secondary-nav").innerHTML=list.length?list.map(x=>'<button class="secondary-button '+(x.id===state.secondaryId?"active":"")+'" data-s="'+x.id+'">'+x.display_es+'</button>').join(""):'<div class="notice">Sin submenús.</div>';
+  $("#secondary-nav").innerHTML=list.map(x=>'<button class="secondary-button '+(x.id===shell.secondaryId?"active":"")+'" data-s="'+x.id+'">'+esc(x.display_es)+'</button>').join("");
   document.querySelectorAll("[data-s]").forEach(b=>b.onclick=()=>navSecondary(b.dataset.s));
 }
-function datum(k,v){return '<div class="datum"><small>'+k+'</small><strong>'+v+'</strong></div>'}
-function button(id,cls=""){const a=actionDef(id);return '<button class="action '+cls+'" data-action="'+id+'">'+a.display_es+'</button>'}
-function wireActions(){document.querySelectorAll("[data-action]").forEach(b=>b.onclick=()=>doAction(b.dataset.action))}
-function renderWorkspace(){
-  const box=$("#workspace-content");
-  if(state.special==="power_request"){box.innerHTML=powerRequestView();wirePowerForm();return}
-  if(state.primaryId==="contacts"){box.innerHTML=contactsView();wireContacts();wireActions();return}
-  if(state.primaryId==="scans"){box.innerHTML=scanView();wireScanForm();wireActions();return}
-  if(state.primaryId==="tracking"){box.innerHTML=trackingView();wireActions();return}
-  if(state.primaryId==="sensor_readout"){box.innerHTML=readoutView();wireActions();return}
-  if(state.primaryId==="results"){box.innerHTML=resultsView();wireActions();return}
-  box.innerHTML=genericView();wireActions();
+function datum(k,v){return '<div class="datum"><small>'+esc(k)+'</small><strong>'+esc(v)+'</strong></div>'}
+function button(id,cls=""){return '<button class="action '+cls+'" data-action="'+id+'">'+esc(actionDef(id).display_es)+'</button>'}
+function taskButton(id,label,cls=""){return '<button class="action '+cls+'" data-task="'+id+'">'+esc(label)+'</button>'}
+function fieldSelect(id,label,opts,value=""){return '<div class="field"><label>'+esc(label)+'</label><select id="'+id+'">'+opts.map(([v,t])=>'<option value="'+esc(v)+'" '+(String(v)===String(value)?"selected":"")+'>'+esc(t)+'</option>').join("")+'</select></div>'}
+function fieldInput(id,label,value="",placeholder=""){return '<div class="field"><label>'+esc(label)+'</label><input id="'+id+'" value="'+esc(value)+'" placeholder="'+esc(placeholder)+'"></div>'}
+function messageHtml(){if(!shell.message)return "";const m=shell.message;shell.message=null;return '<div class="'+(m.type==="danger"?"danger-note":m.type==="success"?"notice success":"notice")+'">'+esc(m.text)+'</div>'}
+function wireCommon(){
+  document.querySelectorAll("[data-action]").forEach(b=>b.onclick=()=>doAction(b.dataset.action));
+  document.querySelectorAll("[data-task]").forEach(b=>b.onclick=()=>doTask(b.dataset.task,b));
 }
-function genericView(){
-  const s=secondary();if(!s)return '<div class="notice">Seleccione una función.</div>';
-  const descriptions={
-    general_status:"Resumen técnico de la instalación sensora.",
-    available_arrays:"Matrices instaladas y su disponibilidad.",
-    effective_range:"Capacidad de detección efectiva bajo las condiciones actuales.",
-    available_resolution:"Resolución máxima efectiva actualmente disponible.",
-    allocated_power:"Potencia actualmente asignada a Sensores.",
-    integrity_damage:"Integridad y degradaciones de hardware.",
-    detected_interference:"Interferencias que afectan a las lecturas.",
-    active_operations:"Operaciones que continúan ejecutándose en segundo plano.",
-    interference_status:"Interferencia detectada y efecto sobre el rendimiento.",
-    sensor_power:"Distribución de la potencia ya asignada y solicitudes adicionales.",
-    self_test:"Diagnóstico de la propia instalación sensora."
-  };
-  let shows=s.shows||s.tertiary?.shows||[];
-  let actions=s.context_actions||s.tertiary?.context_actions||s.terminal_actions||s.tertiary?.terminal_actions||[];
-  let body='<div class="card"><h3>'+s.display_es+'</h3><p>'+(descriptions[s.id]||"Función definida por el modelo autoritativo de Sensores.")+'</p>';
-  if(s.id==="general_status")body+='<div class="data-grid">'+datum("Sistema","NOMINAL")+datum("Matriz",state.matrix)+datum("Potencia",state.power+" %")+datum("Interferencia",state.interference)+'</div>';
-  else if(s.id==="allocated_power"||s.id==="sensor_power")body+='<div class="data-grid">'+datum("Asignada",state.power+" %")+datum("Base",state.basePower+" %")+datum("Solicitud",state.powerRequest?.state||"NINGUNA")+datum("Margen simulado",(100-state.power)+" %")+'</div>';
-  else if(s.id==="effective_range")body+='<div class="data-grid">'+datum("Corto alcance","NOMINAL")+datum("Largo alcance",state.power<80?"LIMITADO":"AMPLIADO")+datum("Efecto potencia",state.power+" %")+datum("Entorno","Interferencia baja")+'</div>';
-  else if(s.id==="detected_interference"||s.id==="interference_status")body+='<div class="data-grid">'+datum("Severidad",state.interference)+datum("Bandas afectadas","Subespacio")+datum("Origen","NO DETERMINADO")+datum("Confianza","61 %")+'</div>';
-  else if(s.id==="active_operations")body+=activeOpsHtml();
-  else body+='<div class="data-grid">'+shows.slice(0,6).map(x=>datum(x.replaceAll("_"," "),"DATOS DE SIMULACIÓN")).join("")+'</div>';
-  if(actions.length)body+='<div class="action-grid">'+actions.map(a=>button(a)).join("")+'</div>';
-  return body+'</div>';
+function renderWorkspace(){
+  const box=$("#workspace-content"),msg=messageHtml();
+  let html="";
+  if(shell.special==="power_request")html=powerRequestView();
+  else if(shell.special==="handoff")html=handoffView();
+  else switch(shell.primaryId){
+    case "status":html=statusView();break;
+    case "scans":html=scanView();break;
+    case "search_localize":html=searchView();break;
+    case "contacts":html=contactsView();break;
+    case "tracking":html=trackingView();break;
+    case "sensor_readout":html=readoutView();break;
+    case "interference":html=interferenceView();break;
+    case "configuration":html=configurationView();break;
+    case "results":html=resultsView();break;
+    case "diagnostics":html=diagnosticsView();break;
+    default:html='<div class="notice">Función no disponible.</div>';
+  }
+  box.innerHTML=msg+html;wireCommon();wireSpecific();
+}
+function statusView(){
+  const s=secondary(),sim=shell.sim,a=getArray(sim),known=knownContacts(sim);
+  if(!s)return "";
+  if(s.id==="general_status")return '<div class="card"><h3>Estado general</h3><div class="data-grid">'+datum("Sistema",sim.diagnostics[0]?.status||"NOMINAL")+datum("Escenario",sim.scenarioTitle)+datum("Matriz activa",a?.name||"—")+datum("Potencia",sim.power+" %")+datum("Contactos conocidos",known.length)+datum("Interferencia",severityLabel(sim.interference.severity))+'</div></div>';
+  if(s.id==="available_arrays")return '<div class="card"><h3>Matrices disponibles</h3><div class="contact-list">'+sim.arrays.map(x=>'<div class="contact-row '+(x.id===sim.activeArray?"active":"")+'" data-array="'+x.id+'"><strong>'+esc(x.id)+'</strong><span>'+esc(x.name)+'<br><small>Integridad '+x.integrity+'% · Calibración '+x.calibration+'%</small></span><strong>'+(x.available?"DISP.":"NO")+'</strong></div>').join("")+'</div></div>'+arrayDetail();
+  if(s.id==="effective_range"){const range=Math.round((a?.range||0)*(sim.power/72)*(1-effectivePenalty(sim)/160));return '<div class="card"><h3>Alcance efectivo</h3><div class="data-grid">'+datum("Índice de alcance",range+" %")+datum("Matriz",a?.name)+datum("Penalización",effectivePenalty(sim)+" pts")+datum("Potencia",sim.power+" %")+'</div><div class="action-grid">'+button("open_configuration_power")+button("request_additional_power","secondary")+'</div></div>'}
+  if(s.id==="available_resolution"){const res=Math.round((a?.resolution||0)*(1-effectivePenalty(sim)/180));return '<div class="card"><h3>Resolución disponible</h3><div class="data-grid">'+datum("Índice de resolución",res+" %")+datum("Calibración",a?.calibration+" %")+datum("Configuración",sim.config.defaultResolution)+datum("Interferencia",severityLabel(sim.interference.severity))+'</div><div class="action-grid">'+button("open_configuration_resolution")+button("request_additional_power","secondary")+'</div></div>'}
+  if(s.id==="allocated_power")return '<div class="card"><h3>Potencia asignada</h3><div class="data-grid">'+datum("Asignación actual",sim.power+" %")+datum("Potencia operación",sim.config.operationPower+" % de asignada")+datum("Margen OPS del escenario",sim.powerBudget+" pts")+datum("Solicitud",sim.powerRequest?.state||"NINGUNA")+'</div><div class="action-grid">'+button("open_configuration_power")+button("request_additional_power","secondary")+(sim.powerRequest?.state==="PENDIENTE"?button("cancel_power_request","secondary"):"")+'</div></div>';
+  if(s.id==="integrity_damage")return '<div class="card"><h3>Integridad / daños</h3><div class="data-grid">'+sim.arrays.map(x=>datum(x.name,x.integrity+" % · "+(x.error||"sin código de fallo"))).join("")+'</div><div class="action-grid">'+button("open_diagnostics")+button("request_engineering_support","secondary")+'</div></div>';
+  if(s.id==="detected_interference")return interferenceSummary();
+  if(s.id==="active_operations")return '<div class="card"><h3>Operaciones activas</h3>'+activeOpsHtml()+'</div>';
+  return "";
+}
+function arrayDetail(){
+  const a=shell.sim.arrays.find(x=>x.id===(shell.selectedArrayId||shell.sim.activeArray));if(!a)return "";
+  return '<div class="card"><h3>'+esc(a.name)+'</h3><div class="data-grid">'+datum("Disponibilidad",a.available?"DISPONIBLE":"NO DISPONIBLE")+datum("Integridad",a.integrity+" %")+datum("Calibración",a.calibration+" %")+datum("Bandas",a.bands.join(" · "))+datum("Alcance nominal",a.range+" %")+datum("Resolución nominal",a.resolution+" %")+'</div><div class="action-grid">'+button("select_array")+button("calibrate_array","secondary")+button("run_array_diagnostic","secondary")+button("request_engineering_support","secondary")+'</div></div>';
+}
+function scanView(){
+  const s=secondary(),sim=shell.sim,c=contact();if(!s)return "";
+  const focused=s.id==="focused";
+  const pf=shell.prefill||{};
+  const area=focused?[[c?.id||"","Contacto "+(c?.id||"")]]:[["surrounding","Espacio circundante"],["sector_041","Sector 041"],["sector_014","Sector 014"],["system","Sistema estelar"],["coordinates","Coordenadas 12.4 / 8.1 / -3.0"]];
+  return '<div class="card"><h3>'+esc(s.display_es)+'</h3><p>La configuración se ejecutará aunque sea una mala decisión operativa, siempre que sea físicamente posible.</p><div class="form-grid">'+
+    fieldSelect("scan-mode","Modo",[["passive","Pasivo"],["active","Activo"]],pf.mode||"passive")+
+    fieldSelect("target-scope","Área / objetivo",area,focused?(c?.id||""):(pf.targetValue||"surrounding"))+
+    fieldSelect("resolution","Resolución",[["general","General"],["standard","Estándar"],["high","Alta"]],pf.resolution||sim.config.defaultResolution)+
+    fieldSelect("priority","Prioridad",[["none","Ninguna"],["subspace","Subespacio"],["warp","Warp"],["em","Electromagnética"],["thermal","Térmica"],["biological","Biológica"],["transponder","Transpondedor"]],pf.priority||sim.config.defaultPriority)+
+    fieldSelect("duration","Duración",[["quick","Rápida"],["standard","Estándar"],["extended","Extendida"]],pf.duration||"standard")+
+    fieldSelect("filters","Filtro",[["all","Todas las firmas"],["subspace","Subespacial"],["warp","Firma warp"],["em","Electromagnética"],["thermal","Térmica"],["biological","Biológica"],["transponder","Transpondedor"]],pf.filters||sim.config.defaultFilters[0]||"all")+
+    '</div><div class="action-grid">'+taskButton("execute_scan","Ejecutar barrido")+button("request_additional_power","secondary")+'</div></div>';
+}
+function searchView(){
+  const s=secondary();if(!s)return "";
+  return '<div class="card"><h3>'+esc(s.display_es)+'</h3><p>Búsqueda intenta localizar candidatos compatibles con lo que buscas; no garantiza identificación.</p><div class="form-grid">'+
+    fieldSelect("search-area","Área",[["local","Espacio local"],["sector_041","Sector 041"],["system","Sistema estelar"],["wide","Volumen ampliado"]],"sector_041")+
+    fieldSelect("search-sensitivity","Sensibilidad",[["low","Baja"],["standard","Estándar"],["high","Alta"],["maximum","Máxima"]],shell.sim.config.sensitivity)+
+    fieldSelect("search-resolution","Resolución",[["general","General"],["standard","Estándar"],["high","Alta"]],shell.sim.config.defaultResolution)+
+    fieldInput("search-criteria","Criterio adicional","",s.id==="custom_signature"?"p. ej. subspace, transponder…":"Opcional")+
+    '</div><div class="action-grid">'+taskButton("execute_search","Iniciar búsqueda")+button("request_additional_power","secondary")+'</div></div>'+latestResultMini("search");
 }
 function contactsView(){
-  const s=secondary();let list=state.contacts;
+  const s=secondary();let list=knownContacts(shell.sim);
   if(s?.id==="unidentified")list=list.filter(c=>c.status==="unidentified");
   if(s?.id==="identified")list=list.filter(c=>c.status==="identified");
   if(s?.id==="marked")list=list.filter(c=>c.marked);
   if(s?.id==="recently_lost")list=list.filter(c=>c.status==="lost");
   const c=contact();
-  let h='<div class="card"><h3>'+s.display_es+'</h3><div class="contact-list">'+list.map(x=>'<div class="contact-row '+(x.id===state.selectedContactId?"active":"")+'" data-contact="'+x.id+'"><strong>'+x.id+'</strong><span>'+x.classification+'<br><small>'+x.signature+'</small></span><strong>'+x.confidence+'%</strong></div>').join("")+'</div></div>';
-  if(c && list.some(x=>x.id===c.id)){
-    h+='<div class="card"><h3>Ficha · '+c.name+'</h3><div class="data-grid">'+datum("Clasificación",c.classification)+datum("Distancia",c.distance)+datum("Firma",c.signature)+datum("Confianza",c.confidence+" %")+datum("Señal",c.signal)+datum("Seguimiento",c.tracked?"ACTIVO":"NO")+'</div><div class="action-grid">'+contactActions(c).map(a=>button(a)).join("")+'</div></div>';
-  }
+  let h='<div class="card"><h3>'+esc(s.display_es)+'</h3><div class="contact-list">'+list.map(x=>'<div class="contact-row '+(x.id===shell.sim.selectedContactId?"active":"")+'" data-contact="'+x.id+'"><strong>'+x.id+'</strong><span>'+esc(x.classification)+'<br><small>'+esc((x.signatures||[]).join(" · "))+'</small></span><strong>'+x.confidence+'%</strong></div>').join("")+'</div></div>';
+  if(c&&list.some(x=>x.id===c.id))h+='<div class="card"><h3>Ficha · '+c.id+'</h3><div class="data-grid">'+datum("Clasificación",c.classification)+datum("Distancia",c.distanceKm.toLocaleString("es-ES")+" km")+datum("Vector",c.vector)+datum("Velocidad",c.velocity)+datum("Firmas",(c.signatures||[]).join(" · "))+datum("Confianza",c.confidence+" %")+datum("Estado",c.status.toUpperCase())+datum("Seguimiento",c.tracked?(c.trackingMode||"normal").toUpperCase():"NO")+'</div><div class="action-grid">'+contactActions(c).map(a=>button(a,a==="request_additional_power"?"secondary":"")).join("")+'</div></div>';
   return h;
 }
 function contactActions(c){
   if(c.status==="lost")return ["reacquire_contact","predict_trajectory","compare_readings","open_sensor_readout","request_additional_power"];
   const a=["focused_scan","open_sensor_readout","compare_readings","send_to_science"];
-  a.push(c.tracked?"stop_tracking":"start_tracking");a.push(c.marked?"unmark_contact":"mark_contact");
+  a.push(c.tracked?"stop_tracking":"start_tracking");
+  if(c.tracked)a.push(c.trackingPriority==="priority"?"set_normal_tracking":"set_priority_tracking");
+  a.push(c.marked?"unmark_contact":"mark_contact");
   if(c.confidence<60)a.push("high_resolution_scan","request_additional_power");
   return a;
 }
-function wireContacts(){document.querySelectorAll("[data-contact]").forEach(el=>el.onclick=()=>{state.selectedContactId=el.dataset.contact;log("SELECT "+el.dataset.contact);emitTeacherEvent("SELECT_CONTACT",{contactId:el.dataset.contact});render()})}
-function scanView(){
-  const s=secondary();if(!s)return "";
-  const c=contact();const focused=s.id==="focused";
-  return '<div class="card"><h3>'+s.display_es+'</h3><p>Configure la operación. Cambiar de menú no la cancela una vez ejecutada.</p><div class="form-grid">'+
-    fieldSelect("scan-mode","Modo",[["passive","Pasivo"],["active","Activo"]])+
-    fieldSelect("target-scope","Área / objetivo",focused?[["known_contact",c?.id||"Contacto"]]:[["surrounding_space","Espacio circundante"],["sector","Sector 041"],["star_system","Sistema estelar"],["coordinates","Coordenadas"]])+
-    fieldSelect("resolution","Resolución",[["general","General"],["standard","Estándar"],["high","Alta"]])+
-    fieldSelect("priority","Prioridad",[["none","Ninguna"],["subspace","Subespacio"],["warp","Warp"],["biological","Biológica"]])+
-    fieldSelect("duration","Duración",[["quick","Rápida"],["standard","Estándar"],["extended","Extendida"]])+
-    fieldSelect("filters","Filtro principal",[["all","Todas"],["subspace","Subespacial"],["warp","Warp"],["thermal","Térmica"]])+
-    '</div><div class="action-grid"><button id="execute-scan" class="action">Ejecutar barrido</button>'+button("request_additional_power","secondary")+'</div></div>';
-}
-function fieldSelect(id,label,opts){return '<div class="field"><label>'+label+'</label><select id="'+id+'">'+opts.map(([v,t])=>'<option value="'+v+'">'+t+'</option>').join("")+'</select></div>'}
-function scanConfigSnapshot(){
-  return {
-    scanType:state.secondaryId,
-    targetValue:$("#target-scope")?.value||"",
-    targetLabel:$("#target-scope")?.selectedOptions?.[0]?.textContent||"",
-    priority:$("#priority")?.value||"none",
-    resolution:$("#resolution")?.value||"standard",
-    mode:$("#scan-mode")?.value||"passive",
-    duration:$("#duration")?.value||"standard",
-    filters:$("#filters")?.value||"all",
-    contactId:contact()?.id||null
-  };
-}
-function wireScanForm(){
-  const b=$("#execute-scan");if(b)b.onclick=executeScan;
-  ["scan-mode","target-scope","resolution","priority","duration","filters"].forEach(id=>{
-    const el=$("#"+id);
-    if(el)el.addEventListener("change",()=>{
-      const snapshot=scanConfigSnapshot();
-      log("CONFIG "+id+"="+el.value);
-      emitTeacherEvent("SCAN_CONFIG_CHANGE",{controlId:id,value:el.value,...snapshot});
-    });
-  });
-}
-function executeScan(){
-  const cfg=scanConfigSnapshot();const type=state.secondaryId;const op={id:"SCN-"+String(Date.now()).slice(-4),type,progress:0,target:cfg.targetLabel||"—",targetValue:cfg.targetValue,resolution:cfg.resolution,priority:cfg.priority,mode:cfg.mode,duration:cfg.duration};
-  state.activeOperations.push(op);log("EXECUTE scan "+type+" · "+op.target);emitTeacherEvent("SCAN_EXECUTE",{...cfg,target:op.target});renderStatus();
-  const timer=setInterval(()=>{op.progress=Math.min(100,op.progress+10);renderStatus();if(op.progress>=100){clearInterval(timer);finishScan(op)}},350);
-}
-function finishScan(op){
-  state.activeOperations=state.activeOperations.filter(x=>x!==op);
-  const c=contact();if(c && (op.type==="focused"||op.target.includes(c.id))){const gain=state.power>=80?38:22;c.confidence=Math.min(99,c.confidence+gain);c.signal=c.confidence>60?"MEDIA":"DÉBIL"}
-  state.results.unshift({id:op.id,time:new Date().toLocaleTimeString("es-ES",{hour12:false}),type:op.type,target:op.target,summary:c?"Confianza "+c.id+": "+c.confidence+" %":"Barrido completado"});
-  log("COMPLETE "+op.id+" · result stored");emitTeacherEvent("SCAN_COMPLETE",{scanType:op.type,target:op.target,contactId:contact()?.id||null,resultId:op.id});render();
-}
 function trackingView(){
-  const s=secondary();const c=contact();
-  if(s.id==="tracked_contacts"){const tracked=state.contacts.filter(x=>x.tracked);return '<div class="card"><h3>Contactos seguidos</h3><div class="contact-list">'+tracked.map(x=>'<div class="contact-row" data-contact="'+x.id+'"><strong>'+x.id+'</strong><span>'+x.classification+'</span><strong>'+x.confidence+'%</strong></div>').join("")+'</div></div>'}
-  return '<div class="card"><h3>'+s.display_es+'</h3><p>Contexto actual: '+c.id+' · '+c.classification+'</p><div class="data-grid">'+datum("Tracking",c.tracked?"ACTIVO":"NO")+datum("Capacidad",state.contacts.filter(x=>x.tracked).length+" / "+state.trackingCapacity)+'</div><div class="action-grid">'+(c.tracked?button("stop_tracking"):button("start_tracking"))+button("request_additional_power","secondary")+'</div></div>';
+  const s=secondary(),sim=shell.sim,c=contact(),known=knownContacts(sim);
+  const contactOpts=known.map(x=>[x.id,x.id+" · "+x.classification]);
+  if(s.id==="tracked_contacts"){
+    const rows=sim.tracking.assignments.map(a=>{const x=getContact(sim,a.contactId);return '<div class="contact-row" data-contact="'+x.id+'"><strong>'+x.id+'</strong><span>'+esc(x.classification)+'<br><small>'+a.mode+' · '+a.priority+'</small></span><strong>'+a.quality+'%</strong></div>'}).join("");
+    return '<div class="card"><h3>Contactos seguidos</h3><p>Capacidad '+trackingUsed(sim)+' / '+sim.tracking.capacity+'</p><div class="contact-list">'+(rows||'<div class="notice">Sin seguimientos activos.</div>')+'</div></div>';
+  }
+  if(s.id==="acquire_contact")return '<div class="card"><h3>Fijar contacto</h3><div class="form-grid">'+fieldSelect("track-contact","Contacto",contactOpts,c?.id)+fieldSelect("track-mode","Modo",[["normal","Normal"],["signature","Firma concreta"]],"normal")+fieldSelect("track-priority","Prioridad",[["normal","Normal"],["priority","Prioritario"]],"normal")+'</div><div class="action-grid">'+taskButton("start_tracking_form","Iniciar seguimiento")+'</div></div>';
+  if(s.id==="multi_track"){
+    return '<div class="card"><h3>Seguimiento múltiple</h3><div class="data-grid">'+datum("Capacidad usada",trackingUsed(sim)+" / "+sim.tracking.capacity)+datum("Potencia",sim.power+" %")+'</div><div class="contact-list">'+known.map(x=>'<div class="contact-row"><strong>'+x.id+'</strong><span>'+esc(x.classification)+'</span><span>'+(x.tracked?taskButton("track_toggle_priority:"+x.id,x.trackingPriority==="priority"?"Normalizar":"Priorizar","secondary")+taskButton("track_stop:"+x.id,"Liberar","secondary"):taskButton("track_start:"+x.id,"Seguir"))+'</span></div>').join("")+'</div><div class="action-grid">'+button("request_additional_power","secondary")+'</div></div>';
+  }
+  if(s.id==="track_signature")return '<div class="card"><h3>Seguir firma concreta</h3><div class="form-grid">'+fieldSelect("sig-contact","Contacto",contactOpts,c?.id)+fieldSelect("sig-type","Firma",[["subspace","Subespacial"],["warp","Warp"],["em","Electromagnética"],["thermal","Térmica"],["transponder","Transpondedor"]],"subspace")+'</div><div class="action-grid">'+taskButton("start_signature_tracking","Iniciar seguimiento de firma")+'</div></div>';
+  if(["update_position","estimate_course","estimate_velocity"].includes(s.id))return '<div class="card"><h3>'+esc(s.display_es)+'</h3><div class="form-grid">'+fieldSelect("track-op-contact","Contacto",contactOpts,c?.id)+fieldSelect("observation-window","Ventana de observación",[["short","Corta"],["standard","Estándar"],["extended","Extendida"]],"standard")+'</div><div class="action-grid">'+taskButton("tracking_operation",s.display_es)+'</div></div>';
+  if(s.id==="predict_trajectory")return '<div class="card"><h3>Predecir trayectoria</h3><div class="form-grid">'+fieldSelect("track-op-contact","Contacto",contactOpts,c?.id)+fieldSelect("prediction-horizon","Horizonte",[["5 min","5 min"],["15 min","15 min"],["30 min","30 min"]],"5 min")+'</div><div class="action-grid">'+taskButton("tracking_operation","Calcular predicción")+'</div></div>';
+  if(s.id==="reacquire_lost_contact"){
+    const lost=known.filter(x=>x.status==="lost").map(x=>[x.id,x.id+" · última "+x.distanceKm.toLocaleString("es-ES")+" km"]);
+    return '<div class="card"><h3>Recuperar contacto perdido</h3><div class="form-grid">'+fieldSelect("lost-contact","Contacto perdido",lost,lost[0]?.[0]||"")+fieldSelect("search-window","Ventana de búsqueda",[["narrow","Estrecha"],["standard","Estándar"],["wide","Amplia"]],"standard")+'</div><div class="action-grid">'+taskButton("reacquire_lost","Iniciar recuperación")+button("request_additional_power","secondary")+'</div></div>';
+  }
+  return "";
 }
 function readoutView(){
-  const s=secondary(),c=contact();
-  const val={signal_strength:c.signal,signature_type:c.signature,band_frequency:"4,7 THz / subespacio",energy_signature:"Parcial",subspace_signature:"Intermitente",approx_mass:"1,1 ×10⁶ t ±34%",approx_dimensions:"92–140 m",vector_velocity:"031 / +12 · 0,18c",detectable_lifeforms:"No concluyente",known_pattern_match:"41 %"}[s.id]||"Lectura";
-  return '<div class="card"><h3>'+s.display_es+' · '+c.id+'</h3><div class="data-grid">'+datum("Valor",val)+datum("Confianza",c.confidence+" %")+datum("Procedencia","Sensores")+datum("Estado","OBSERVADO / ESTIMADO")+'</div><div class="action-grid">'+["focused_scan","compare_readings","send_to_science"].map(a=>button(a)).join("")+(c.confidence<60?button("request_additional_power","secondary"):"")+'</div></div>';
+  const s=secondary(),c=contact();if(!s||!c)return '<div class="notice">Seleccione primero un contacto.</div>';
+  const r=readout(shell.sim,c.id,s.id);
+  return '<div class="card"><h3>'+esc(s.display_es)+' · '+c.id+'</h3><div class="data-grid">'+datum("Valor",r.value)+datum("Incertidumbre",r.uncertainty)+datum("Confianza",r.confidence+" %")+datum("Momento",r.timestamp)+datum("Procedencia",r.provenance)+datum("Historial",r.history.length+" observaciones")+'</div><div class="action-grid">'+button("focused_scan")+button("compare_readings","secondary")+button("send_to_science","secondary")+button("save_reading","secondary")+(c.confidence<60?button("request_additional_power","secondary"):"")+'</div></div>';
+}
+function interferenceSummary(){
+  const i=shell.sim.interference;
+  return '<div class="card"><h3>Interferencias detectadas</h3><div class="data-grid">'+datum("Severidad",severityLabel(i.severity))+datum("Tipo",i.type)+datum("Origen observable",i.source)+datum("Banda afectada",i.band)+datum("Penalización efectiva",effectivePenalty(shell.sim)+" pts")+datum("Compensación",i.compensation.toUpperCase())+'</div><div class="action-grid">'+button("automatic_compensation")+button("manual_compensation","secondary")+button("send_to_science","secondary")+button("send_to_tactical","secondary")+'</div></div>';
+}
+function interferenceView(){
+  const s=secondary(),sim=shell.sim,i=sim.interference;
+  if(["interference_status","interference_type"].includes(s.id))return interferenceSummary();
+  if(s.id==="automatic_compensation")return '<div class="card"><h3>Compensación automática</h3><p>El sistema aplicará un ajuste seguro y rápido. Puede no ser la solución óptima.</p><div class="data-grid">'+datum("Penalización actual",effectivePenalty(sim)+" pts")+datum("Estimación posterior",Math.round(effectivePenalty(sim)*.65)+" pts")+'</div><div class="action-grid">'+taskButton("apply_auto_comp","Aplicar compensación automática")+'</div></div>';
+  if(s.id==="manual_adjustment")return '<div class="card"><h3>Ajuste manual</h3><div class="form-grid">'+fieldSelect("manual-band","Banda",[["broad","Banda ancha"],["em","Electromagnética"],["subspace","Subespacial"],["thermal","Térmica"]],sim.config.bandFrequency)+fieldSelect("manual-sensitivity","Sensibilidad",[["low","Baja"],["standard","Estándar"],["high","Alta"]],sim.config.sensitivity)+fieldSelect("manual-resolution","Resolución",[["general","General"],["standard","Estándar"],["high","Alta"]],sim.config.defaultResolution)+fieldSelect("manual-integration","Integración",[["standard","Estándar"],["extended","Extendida"]],"standard")+'</div><div class="action-grid">'+taskButton("apply_manual_comp","Aplicar ajuste manual")+button("restore_previous_compensation","secondary")+button("request_additional_power","secondary")+'</div></div>';
+  if(s.id==="change_band_frequency")return '<div class="card"><h3>Cambiar banda / frecuencia</h3>'+fieldSelect("band-change","Nueva banda",[["em","Electromagnética"],["subspace","Subespacial"],["thermal","Térmica"],["gravimetric","Gravimétrica"]],sim.config.bandFrequency)+'<div class="action-grid">'+taskButton("apply_band","Aplicar cambio")+'</div></div>';
+  if(s.id==="increase_operation_power")return '<div class="card"><h3>Potencia de operación</h3>'+fieldSelect("operation-power","Uso de la asignación",[["60","60 %"],["75","75 %"],["90","90 %"],["100","100 %"]],String(sim.config.operationPower))+'<div class="action-grid">'+taskButton("apply_operation_power","Aplicar dentro de asignación")+button("request_additional_power","secondary")+'</div></div>';
+  if(s.id==="reduce_resolution")return '<div class="card"><h3>Sacrificar resolución</h3><p>Reduce detalle para ganar estabilidad frente a ruido.</p>'+fieldSelect("reduced-resolution","Resolución objetivo",[["general","General"],["standard","Estándar"]],"general")+'<div class="action-grid">'+taskButton("apply_reduced_resolution","Aplicar")+'</div></div>';
+  if(s.id==="extend_integration")return '<div class="card"><h3>Prolongar integración</h3><p>Acumula señal durante más tiempo; mejora señal/ruido a costa de tiempo.</p><div class="action-grid">'+taskButton("apply_extended_integration","Prolongar integración")+'</div></div>';
+  if(s.id==="recover_signal"){
+    const opts=knownContacts(sim).map(x=>[x.id,x.id+" · "+x.classification]);
+    return '<div class="card"><h3>Recuperar señal</h3>'+fieldSelect("recover-contact","Contacto",opts,contact()?.id)+'<div class="action-grid">'+taskButton("recover_signal_task","Intentar recuperación")+button("request_additional_power","secondary")+'</div></div>';
+  }
+  return "";
+}
+function configurationView(){
+  const s=secondary(),sim=shell.sim;
+  const map={
+    sensitivity:["Sensibilidad",[["low","Baja"],["standard","Estándar"],["high","Alta"],["maximum","Máxima"]],sim.config.sensitivity],
+    default_resolution:["Resolución predeterminada",[["general","General"],["standard","Estándar"],["high","Alta"]],sim.config.defaultResolution],
+    sensor_power:["Potencia de operación",[["60","60 %"],["75","75 %"],["90","90 %"],["100","100 %"]],String(sim.config.operationPower)],
+    sensor_array:["Matriz / conjunto sensor",sim.arrays.filter(a=>a.available).map(a=>[a.id,a.name]),sim.activeArray],
+    band_frequency:["Frecuencia / banda",[["broad","Banda ancha"],["em","Electromagnética"],["subspace","Subespacial"],["thermal","Térmica"],["gravimetric","Gravimétrica"]],sim.config.bandFrequency],
+    update_rate:["Frecuencia de actualización",[["slow","Lenta"],["standard","Estándar"],["fast","Rápida"]],sim.config.updateRate],
+    default_filters:["Filtro predeterminado",[["all","Todas"],["subspace","Subespacial"],["warp","Warp"],["em","Electromagnética"],["thermal","Térmica"],["biological","Biológica"]],sim.config.defaultFilters[0]],
+    default_priorities:["Prioridad predeterminada",[["none","Ninguna"],["subspace","Subespacio"],["warp","Warp"],["biological","Biológica"],["transponder","Transpondedor"]],sim.config.defaultPriority]
+  };
+  if(s.id==="profiles_presets"){
+    const rows=Object.entries(sim.profiles).map(([id,p])=>'<div class="contact-row"><strong>'+esc(id)+'</strong><span>'+esc(p.name||id)+'<br><small>'+esc(p.origin)+(p.readOnly?" · protegido":"")+'</small></span><span>'+taskButton("load_profile:"+id,"Cargar")+(p.readOnly?"":taskButton("delete_profile:"+id,"Eliminar","secondary"))+'</span></div>').join("");
+    return '<div class="card"><h3>Perfiles / preajustes</h3><div class="contact-list">'+rows+'</div><div class="form-grid">'+fieldInput("profile-id","ID perfil","mi_perfil")+fieldInput("profile-name","Nombre","Mi perfil")+'</div><div class="action-grid">'+taskButton("save_profile","Guardar perfil actual")+taskButton("restore_standard","Restaurar estándar","secondary")+'</div></div>';
+  }
+  const [label,opts,val]=map[s.id]||[];
+  if(!label)return "";
+  return '<div class="card"><h3>'+esc(label)+'</h3><p>Los cambios modifican valores predeterminados; no ejecutan operaciones por sí solos.</p>'+fieldSelect("config-value",label,opts,val)+'<div class="action-grid">'+taskButton("apply_config","Aplicar")+taskButton("restore_standard","Restaurar estándar","secondary")+(s.id==="sensor_power"?button("request_additional_power","secondary"):"")+'</div></div>';
+}
+function resultCard(r){
+  return '<div class="contact-row '+(r.id===shell.selectedResultId?"active":"")+'" data-result="'+r.id+'"><strong>'+r.id+'</strong><span>'+esc(r.target||r.subtype)+'<br><small>'+esc(r.summary)+'</small></span><strong>'+esc(r.time)+'</strong></div>';
 }
 function resultsView(){
-  const s=secondary();if(!state.results.length)return '<div class="notice">Todavía no hay resultados. Ejecute un barrido para probar este flujo.</div>';
-  return '<div class="card"><h3>'+s.display_es+'</h3>'+state.results.map(r=>'<div class="contact-row"><strong>'+r.id+'</strong><span>'+r.target+'<br><small>'+r.summary+'</small></span><strong>'+r.time+'</strong></div>').join("")+'<div class="action-grid">'+button("repeat_operation")+button("compare_readings","secondary")+button("send_to_science","secondary")+'</div></div>';
-}
-function activeOpsHtml(){return state.activeOperations.length?state.activeOperations.map(o=>'<div class="datum"><small>'+o.id+' · '+o.type+'</small><strong>'+o.target+' · '+o.progress+'%</strong></div>').join(""):'<div class="notice">No hay operaciones activas.</div>'}
-function powerRequestView(){
-  return '<div class="card"><h3>Solicitar potencia adicional a Operaciones</h3><p>Sensores solicita capacidad. No elige qué sistema cede la energía.</p><div class="form-grid">'+
-  '<div class="field"><label>Potencia actual</label><input value="'+state.power+' %" disabled></div>'+
-  '<div class="field"><label>Incremento solicitado</label><select id="power-delta"><option value="5">+5 %</option><option value="10" selected>+10 %</option><option value="15">+15 %</option><option value="20">+20 %</option></select></div>'+
-  '<div class="field"><label>Prioridad</label><select id="power-priority"><option>Operativa</option><option>Rutina</option><option>Urgente</option></select></div>'+
-  '<div class="field"><label>Duración</label><select id="power-duration"><option>Una operación</option><option>Temporal</option><option>Hasta liberar</option></select></div>'+
-  '</div><div class="action-grid"><button id="send-power" class="action">Enviar solicitud</button><button id="cancel-power" class="action secondary">Cancelar</button></div></div>';
-}
-function wirePowerForm(){
-  $("#cancel-power").onclick=()=>{state.special=null;render()};
-  $("#send-power").onclick=()=>{
-    const delta=Number($("#power-delta").value);state.powerRequest={state:"PENDIENTE",requested:delta,granted:0};log("POWER REQUEST +"+delta+"% → OPS");emitTeacherEvent("POWER_REQUEST",{requestedDelta:delta,contactId:contact()?.id||null});state.special=null;render();
-    setTimeout(()=>{const grant=Math.max(5,Math.floor(delta*.7));state.powerRequest={state:"APROBADA PARCIAL",requested:delta,granted:grant};state.power=Math.min(100,state.power+grant);log("OPS RESPONSE partial +"+grant+"%");emitTeacherEvent("POWER_RESPONSE",{state:"partially_approved",grantedDelta:grant});render()},900);
+  const s=secondary(),sim=shell.sim;
+  if(s.id==="current_operation")return '<div class="card"><h3>Operación actual</h3>'+activeOpsHtml()+'</div>';
+  if(s.id==="last_scan"){
+    const r=sim.results.find(x=>x.type==="scan");return r?'<div class="card"><h3>Último barrido</h3>'+resultDetail(r)+'</div>':'<div class="notice">No hay barridos completados.</div>';
   }
+  if(s.id==="recent_results")return '<div class="card"><h3>Resultados recientes</h3><div class="contact-list">'+(sim.results.map(resultCard).join("")||'<div class="notice">Sin resultados.</div>')+'</div></div>'+selectedResultDetail();
+  if(s.id==="saved_readings")return '<div class="card"><h3>Lecturas guardadas</h3><div class="contact-list">'+(sim.savedReadings.map(r=>'<div class="contact-row"><strong>'+esc(r.savedId)+'</strong><span>'+esc(r.label)+'<br><small>'+esc(r.summary)+'</small></span><strong>'+esc(r.time)+'</strong></div>').join("")||'<div class="notice">No hay lecturas guardadas.</div>')+'</div></div>';
+  if(s.id==="compare_readings"){
+    const all=[...sim.results.map(r=>[r.id,r.id+" · "+r.summary]),...sim.savedReadings.map(r=>[r.savedId,r.savedId+" · "+r.label])];
+    return '<div class="card"><h3>Comparar lecturas</h3><div class="form-grid">'+fieldSelect("compare-a","Lectura A",all,all[0]?.[0]||"")+fieldSelect("compare-b","Lectura B",all,all[1]?.[0]||all[0]?.[0]||"")+'</div><div class="action-grid">'+taskButton("execute_comparison","Comparar")+'</div></div>'+(sim.comparisons[0]?'<div class="card"><h3>Última comparación</h3><p>'+esc(sim.comparisons[0].summary)+'</p></div>':"");
+  }
+  if(s.id==="repeat_operation"){
+    const scans=sim.results.filter(r=>r.type==="scan"||r.type==="search").map(r=>[r.id,r.id+" · "+r.subtype]);
+    return '<div class="card"><h3>Repetir operación</h3>'+fieldSelect("repeat-source","Resultado origen",scans,scans[0]?.[0]||"")+'<p>Se reutiliza la configuración, pero el resultado se resuelve contra el estado actual del escenario.</p><div class="action-grid">'+taskButton("repeat_operation_task","Repetir operación")+'</div></div>';
+  }
+  return "";
+}
+function resultDetail(r){return '<div class="data-grid">'+datum("Tipo",r.type+" / "+r.subtype)+datum("Objetivo",r.target)+datum("Calidad",r.quality??"—")+datum("Procedencia",r.provenance)+datum("Resumen",r.summary)+datum("Observaciones",r.observations?.length??0)+'</div><div class="action-grid">'+button("save_reading")+button("compare_readings","secondary")+button("repeat_operation","secondary")+button("send_data","secondary")+'</div>'}
+function selectedResultDetail(){const r=shell.sim.results.find(x=>x.id===shell.selectedResultId);return r?'<div class="card"><h3>Detalle · '+r.id+'</h3>'+resultDetail(r)+'</div>':""}
+function latestResultMini(type){const r=shell.sim.results.find(x=>x.type===type);return r?'<div class="card"><h3>Último resultado</h3><p>'+esc(r.summary)+'</p></div>':""}
+function diagnosticsView(){
+  const s=secondary(),sim=shell.sim;
+  if(s.id==="self_test")return '<div class="card"><h3>Autodiagnóstico</h3>'+fieldSelect("diag-scope","Ámbito",[["all","Todos los sensores"],...sim.arrays.map(a=>[a.id,a.name])],"all")+'<div class="action-grid">'+taskButton("run_diagnostic","Ejecutar autodiagnóstico")+'</div></div>'+diagnosticLatest();
+  if(s.id==="array_status")return '<div class="card"><h3>Estado por matriz</h3><div class="contact-list">'+sim.arrays.map(a=>'<div class="contact-row '+(a.id===shell.selectedArrayId?"active":"")+'" data-array="'+a.id+'"><strong>'+a.id+'</strong><span>'+esc(a.name)+'<br><small>'+esc(a.error||"Sin errores registrados")+'</small></span><strong>'+a.integrity+'%</strong></div>').join("")+'</div></div>'+arrayDetail();
+  if(s.id==="calibration")return '<div class="card"><h3>Calibración</h3>'+fieldSelect("cal-array","Matriz",sim.arrays.map(a=>[a.id,a.name]),sim.activeArray)+'<p>La matriz seleccionada estará ocupada durante el procedimiento.</p><div class="action-grid">'+taskButton("calibrate_form","Iniciar calibración")+'</div></div>';
+  if(s.id==="performance"){const a=getArray(sim);return '<div class="card"><h3>Rendimiento</h3><div class="data-grid">'+datum("Matriz activa",a?.name)+datum("Integridad",a?.integrity+" %")+datum("Calibración",a?.calibration+" %")+datum("Penalización total",effectivePenalty(sim)+" pts")+datum("Tracking",trackingUsed(sim)+" / "+sim.tracking.capacity)+datum("Potencia",sim.power+" %")+'</div><div class="action-grid">'+button("run_self_test")+button("request_engineering_support","secondary")+button("request_additional_power","secondary")+'</div></div>'}
+  if(s.id==="errors_degradation"){
+    const issues=sim.diagnostics.flatMap(d=>d.issues||[]);
+    return '<div class="card"><h3>Errores / degradación</h3><div class="contact-list">'+(issues.map(i=>'<div class="contact-row"><strong>'+esc(i.code)+'</strong><span>'+esc(i.component)+'<br><small>'+esc(i.effect)+'</small></span><strong>'+esc(i.severity)+'</strong></div>').join("")||'<div class="notice">Ejecute un autodiagnóstico para actualizar incidencias.</div>')+'</div></div>';
+  }
+  if(s.id==="request_engineering_support")return engineeringRequestForm();
+  return "";
+}
+function diagnosticLatest(){const d=shell.sim.diagnostics[0];return d?'<div class="card"><h3>Resultado '+d.id+'</h3><div class="data-grid">'+datum("Estado",d.status)+datum("Incidencias",d.issues.length)+datum("Ámbito",d.scope)+datum("Hora",d.time)+'</div></div>':""}
+function engineeringRequestForm(){
+  const sim=shell.sim,a=getArray(sim);
+  return '<div class="card"><h3>Solicitud a Ingeniería</h3><div class="form-grid">'+fieldSelect("eng-component","Componente",sim.arrays.map(x=>[x.id,x.name]),a?.id)+fieldInput("eng-code","Código diagnóstico",a?.error||"")+fieldInput("eng-problem","Problema","Degradación de sensores")+fieldSelect("eng-priority","Prioridad",[["routine","Rutina"],["operational","Operativa"],["urgent","Urgente"]],"operational")+'</div><div class="action-grid">'+taskButton("send_engineering","Enviar solicitud")+'</div></div>';
+}
+function powerRequestView(){
+  const sim=shell.sim;
+  return '<div class="card"><h3>Solicitar potencia adicional a Operaciones</h3><p>Sensores solicita capacidad adicional. No puede decidir qué sistema cede energía.</p><div class="form-grid">'+fieldInput("power-current","Potencia actual",sim.power+" %")+fieldSelect("power-delta","Incremento",[["5","+5 %"],["10","+10 %"],["15","+15 %"],["20","+20 %"]],"10")+fieldSelect("power-priority","Prioridad",[["Rutina","Rutina"],["Operativa","Operativa"],["Urgente","Urgente"]],"Operativa")+fieldSelect("power-duration","Duración",[["single_operation","Una operación"],["timed","Temporal"],["until_released","Hasta liberar"]],"single_operation")+fieldInput("power-reason","Motivo","Necesidad sensora operacional")+'</div><div class="action-grid">'+taskButton("send_power_request","Enviar solicitud")+taskButton("cancel_special","Cancelar","secondary")+'</div></div>';
+}
+function handoffView(){
+  const c=contact();
+  return '<div class="card"><h3>Enviar datos</h3><div class="form-grid">'+fieldSelect("handoff-target","Destino",[["science","Ciencia"],["tactical","Táctica"],["operations","Operaciones"],["conn","CONN / Navegación"],["command","Mando"],["computer","Ordenador / Base de datos"]],shell.prefill?.target||"science")+fieldInput("handoff-contact","Contacto",c?.id||"")+fieldSelect("handoff-priority","Prioridad",[["routine","Rutina"],["operational","Operativa"],["urgent","Urgente"]],"operational")+fieldInput("handoff-request","Análisis / nota solicitada",shell.prefill?.request||"Revisar datos adjuntos")+'</div><div class="action-grid">'+taskButton("send_handoff","Confirmar envío")+taskButton("cancel_special","Cancelar","secondary")+'</div></div>';
+}
+function activeOpsHtml(){
+  return shell.sim.operations.filter(o=>o.state==="running").length?shell.sim.operations.filter(o=>o.state==="running").map(o=>'<div class="datum"><small>'+esc(o.id)+' · '+esc(o.type)+'</small><strong>'+esc(o.config.targetLabel||o.config.area||o.config.contactId||"—")+' · '+o.progress+'%</strong><div class="progress"><span style="width:'+o.progress+'%"></span></div></div>').join(""):'<div class="notice">No hay operaciones activas.</div>';
+}
+function wireSpecific(){
+  document.querySelectorAll("[data-contact]").forEach(el=>el.onclick=()=>{shell.sim.selectedContactId=el.dataset.contact;log("SELECT "+el.dataset.contact);emitTeacherEvent("SELECT_CONTACT",{contactId:el.dataset.contact});render()});
+  document.querySelectorAll("[data-array]").forEach(el=>el.onclick=()=>{shell.selectedArrayId=el.dataset.array;renderWorkspace()});
+  document.querySelectorAll("[data-result]").forEach(el=>el.onclick=()=>{shell.selectedResultId=el.dataset.result;renderWorkspace()});
+  if(shell.primaryId==="scans")["scan-mode","target-scope","resolution","priority","duration","filters"].forEach(id=>{const el=$("#"+id);if(el)el.addEventListener("change",()=>{const cfg=scanConfig();log("CONFIG "+id+"="+el.value);emitTeacherEvent("SCAN_CONFIG_CHANGE",{controlId:id,value:el.value,...cfg})})});
+}
+function scanConfig(){
+  const focused=shell.secondaryId==="focused";
+  return {
+    scanType:shell.secondaryId,mode:$("#scan-mode")?.value||"passive",
+    targetValue:$("#target-scope")?.value||"",targetLabel:$("#target-scope")?.selectedOptions?.[0]?.textContent||"",
+    contactId:focused?(contact()?.id||$("#target-scope")?.value||null):null,
+    resolution:$("#resolution")?.value||"standard",priority:$("#priority")?.value||"none",
+    duration:$("#duration")?.value||"standard",filters:[$("#filters")?.value||"all"]
+  };
+}
+function runTimed(op,resolveFn,eventPrefix){
+  const total=operationDuration(op.config),tick=200,step=100/(total/tick);
+  const timer=setInterval(()=>{
+    op.progress=Math.min(100,Math.round(op.progress+step));renderStatus();
+    if(op.progress>=100){
+      clearInterval(timer);shell.timers.delete(timer);
+      const result=resolveFn();log("COMPLETE "+op.id+" · "+result.summary);
+      emitTeacherEvent(eventPrefix+"_COMPLETE",{operationId:op.id,resultId:result.id,subtype:result.subtype,contactId:op.config.contactId||null,targetValue:op.config.targetValue||op.config.area||null});
+      render();
+    }
+  },tick);shell.timers.add(timer);
+}
+function executeScan(){
+  const cfg=scanConfig();
+  if(cfg.scanType==="focused"&&!cfg.contactId){notify("El barrido focalizado exige un objetivo.","danger");return}
+  const op=createOperation(shell.sim,"scan:"+cfg.scanType,cfg);
+  log("EXECUTE scan "+cfg.scanType+" · "+cfg.targetLabel);
+  emitTeacherEvent("SCAN_EXECUTE",{...cfg,operationId:op.id});
+  runTimed(op,()=>resolveScan(shell.sim,op),"SCAN");
+  renderStatus();
+}
+function executeSearch(){
+  const cfg={searchType:shell.secondaryId,area:$("#search-area")?.value||"sector_041",sensitivity:$("#search-sensitivity")?.value||"standard",resolution:$("#search-resolution")?.value||"standard",criteria:$("#search-criteria")?.value||"",duration:"standard"};
+  const op=createOperation(shell.sim,"search:"+cfg.searchType,cfg);
+  log("EXECUTE search "+cfg.searchType+" · "+cfg.area);emitTeacherEvent("SEARCH_EXECUTE",{...cfg,operationId:op.id});
+  runTimed(op,()=>{const r=resolveSearch(shell.sim,cfg);op.state="completed";op.progress=100;return r},"SEARCH");
+  renderStatus();
+}
+function doTask(id){
+  const sim=shell.sim,c=contact();
+  if(id==="execute_scan"){executeScan();return}
+  if(id==="execute_search"){executeSearch();return}
+  if(id==="cancel_special"){shell.special=null;shell.prefill=null;renderWorkspace();return}
+  if(id==="send_power_request"){
+    const req={state:"PENDIENTE",requested:Number($("#power-delta").value),priority:$("#power-priority").value,duration:$("#power-duration").value,reason:$("#power-reason").value,contactId:c?.id||null};
+    sim.powerRequest=req;log("POWER REQUEST +"+req.requested+"% → OPS");emitTeacherEvent("POWER_REQUEST",{requestedDelta:req.requested,priority:req.priority,contactId:req.contactId});shell.special=null;render();
+    const t=setTimeout(()=>{shell.timers.delete(t);sim.powerRequest=makePowerResponse(sim,req);log("OPS RESPONSE "+sim.powerRequest.state+" +"+sim.powerRequest.granted+"%");emitTeacherEvent("POWER_RESPONSE",{state:sim.powerRequest.state,grantedDelta:sim.powerRequest.granted});render()},850);shell.timers.add(t);return;
+  }
+  if(id==="send_handoff"){
+    const target=$("#handoff-target").value,contactId=$("#handoff-contact").value,priority=$("#handoff-priority").value,request=$("#handoff-request").value;
+    const tx=transferData(sim,target,contactId,{priority,request});log("TRANSFER "+contactId+" → "+target.toUpperCase());emitTeacherEvent("HANDOFF",{target,contactId,transferId:tx.id});shell.special=null;shell.prefill=null;notify("Datos enviados a "+target.toUpperCase()+".","success");return;
+  }
+  if(id==="start_tracking_form"){
+    const cid=$("#track-contact").value,mode=$("#track-mode").value,priority=$("#track-priority").value,res=startTracking(sim,cid,mode,priority);
+    if(!res.ok){notify(res.reason,"danger");return}log("TRACK START "+cid+" · "+mode+" · "+priority);emitTeacherEvent("TRACK_START",{contactId:cid,mode,priority});render();return;
+  }
+  if(id.startsWith("track_start:")){const cid=id.split(":")[1],res=startTracking(sim,cid);if(!res.ok){notify(res.reason,"danger");return}emitTeacherEvent("TRACK_START",{contactId:cid,mode:"normal",priority:"normal"});log("TRACK START "+cid);render();return}
+  if(id.startsWith("track_stop:")){const cid=id.split(":")[1];stopTracking(sim,cid);emitTeacherEvent("TRACK_STOP",{contactId:cid});log("TRACK STOP "+cid);render();return}
+  if(id.startsWith("track_toggle_priority:")){const cid=id.split(":")[1],x=getContact(sim,cid),prio=x.trackingPriority==="priority"?"normal":"priority",res=startTracking(sim,cid,x.trackingMode||"normal",prio);if(!res.ok){notify(res.reason,"danger");return}emitTeacherEvent("TRACK_PRIORITY",{contactId:cid,priority:prio});log("TRACK PRIORITY "+cid+" → "+prio);render();return}
+  if(id==="start_signature_tracking"){
+    const cid=$("#sig-contact").value,sig=$("#sig-type").value,res=startTracking(sim,cid,"signature","priority",sig);
+    if(!res.ok){notify(res.reason,"danger");return}log("TRACK SIGNATURE "+cid+" · "+sig);emitTeacherEvent("TRACK_SIGNATURE",{contactId:cid,signature:sig});render();return;
+  }
+  if(id==="tracking_operation"){
+    const cid=$("#track-op-contact").value,kind={update_position:"position",estimate_course:"course",estimate_velocity:"velocity",predict_trajectory:"trajectory"}[shell.secondaryId];
+    const res=updateTracking(sim,cid,kind,{horizon:$("#prediction-horizon")?.value});
+    if(!res.ok){notify(res.reason,"danger");return}log("TRACK "+kind.toUpperCase()+" "+cid+" · "+res.value);emitTeacherEvent("TRACK_OPERATION",{contactId:cid,operation:kind,value:res.value});notify(res.value,"success");return;
+  }
+  if(id==="reacquire_lost"){
+    const cid=$("#lost-contact").value,res=updateTracking(sim,cid,"reacquire",{window:$("#search-window").value});
+    if(!res.ok){notify(res.reason,"danger");return}shell.sim.selectedContactId=cid;log("REACQUIRE "+cid+" · "+res.value);emitTeacherEvent("REACQUIRE",{contactId:cid});notify(res.value,"success");return;
+  }
+  if(id==="apply_auto_comp"){const res=applyInterference(sim,"automatic");log("INTERFERENCE AUTO");emitTeacherEvent("INTERFERENCE_ACTION",{action:"automatic"});notify(res.message,"success");return}
+  if(id==="apply_manual_comp"){const res=applyInterference(sim,"manual",{band:$("#manual-band").value});sim.config.sensitivity=$("#manual-sensitivity").value;sim.config.defaultResolution=$("#manual-resolution").value;if($("#manual-integration").value==="extended")applyInterference(sim,"extend");log("INTERFERENCE MANUAL");emitTeacherEvent("INTERFERENCE_ACTION",{action:"manual",band:sim.config.bandFrequency});notify(res.message,"success");return}
+  if(id==="apply_band"){const band=$("#band-change").value,res=applyInterference(sim,"band",{band});log("BAND "+band);emitTeacherEvent("INTERFERENCE_ACTION",{action:"band",band});notify(res.message,"success");return}
+  if(id==="apply_operation_power"){const value=$("#operation-power").value,res=applyInterference(sim,"power",{value});emitTeacherEvent("INTERFERENCE_ACTION",{action:"operation_power",value:Number(value)});notify(res.message,"success");return}
+  if(id==="apply_reduced_resolution"){const resolution=$("#reduced-resolution").value,res=applyInterference(sim,"reduce_resolution",{resolution});emitTeacherEvent("INTERFERENCE_ACTION",{action:"reduce_resolution",resolution});notify(res.message,"success");return}
+  if(id==="apply_extended_integration"){const res=applyInterference(sim,"extend");emitTeacherEvent("INTERFERENCE_ACTION",{action:"extend_integration"});notify(res.message,"success");return}
+  if(id==="recover_signal_task"){const cid=$("#recover-contact").value,res=applyInterference(sim,"recover",{contactId:cid});if(!res.ok){notify(res.reason,"danger");return}emitTeacherEvent("INTERFERENCE_ACTION",{action:"recover_signal",contactId:cid});notify(res.message||res.value,"success");return}
+  if(id==="apply_config"){
+    const sid=shell.secondaryId,val=$("#config-value").value,key={sensitivity:"sensitivity",default_resolution:"defaultResolution",sensor_power:"sensor_power",sensor_array:"sensor_array",band_frequency:"bandFrequency",update_rate:"updateRate",default_filters:"defaultFilters",default_priorities:"defaultPriority"}[sid];
+    const actual=key==="defaultFilters"?[val]:val,res=applyConfig(sim,key,actual);if(!res.ok){notify(res.reason,"danger");return}log("CONFIG APPLY "+sid+"="+val);emitTeacherEvent("CONFIG_APPLY",{setting:sid,value:val});notify("Configuración aplicada.","success");return;
+  }
+  if(id==="restore_standard"){restoreStandard(sim);log("CONFIG RESTORE STANDARD");emitTeacherEvent("CONFIG_RESTORE",{profile:"standard"});notify("Estándar de la nave restaurado.","success");return}
+  if(id.startsWith("load_profile:")){const pid=id.split(":")[1],res=loadProfile(sim,pid);if(!res.ok){notify(res.reason,"danger");return}log("PROFILE LOAD "+pid);emitTeacherEvent("PROFILE_LOAD",{profileId:pid});notify("Perfil "+pid+" cargado.","success");return}
+  if(id==="save_profile"){const pid=$("#profile-id").value.trim(),name=$("#profile-name").value.trim();if(!pid||!name){notify("Indique ID y nombre.","danger");return}saveProfile(sim,pid,name);log("PROFILE SAVE "+pid);emitTeacherEvent("PROFILE_SAVE",{profileId:pid});render();return}
+  if(id.startsWith("delete_profile:")){const pid=id.split(":")[1],res=deleteProfile(sim,pid);if(!res.ok){notify(res.reason,"danger");return}log("PROFILE DELETE "+pid);render();return}
+  if(id==="execute_comparison"){const res=compareReadings(sim,$("#compare-a").value,$("#compare-b").value);if(!res.ok){notify(res.reason,"danger");return}log("COMPARE "+res.comparison.a+" ↔ "+res.comparison.b);emitTeacherEvent("RESULT_COMPARE",{a:res.comparison.a,b:res.comparison.b});notify(res.comparison.summary,"success");return}
+  if(id==="repeat_operation_task"){
+    const rid=$("#repeat-source").value,r=sim.results.find(x=>x.id===rid);if(!r){notify("Resultado no encontrado.","danger");return}
+    log("REPEAT "+rid);emitTeacherEvent("RESULT_REPEAT",{sourceResultId:rid,type:r.type});
+    if(r.type==="scan"){const op=createOperation(sim,"scan:"+r.subtype,r.configuration);runTimed(op,()=>resolveScan(sim,op),"SCAN");renderStatus()}
+    else if(r.type==="search"){const op=createOperation(sim,"search:"+r.subtype,r.configuration);runTimed(op,()=>{const rr=resolveSearch(sim,r.configuration);op.state="completed";op.progress=100;return rr},"SEARCH");renderStatus()}
+    return;
+  }
+  if(id==="run_diagnostic"){const d=runDiagnostic(sim,$("#diag-scope").value);log("DIAGNOSTIC "+d.id+" · "+d.status);emitTeacherEvent("DIAGNOSTIC_RUN",{scope:d.scope,status:d.status,issues:d.issues.length});render();return}
+  if(id==="calibrate_form"){const aid=$("#cal-array").value,res=calibrateArray(sim,aid);if(!res.ok){notify(res.reason,"danger");return}log("CALIBRATE "+aid);emitTeacherEvent("CALIBRATION",{arrayId:aid});notify(res.message,"success");return}
+  if(id==="send_engineering"){const payload={component:$("#eng-component").value,diagnosticCode:$("#eng-code").value,problem:$("#eng-problem").value,priority:$("#eng-priority").value},req=requestEngineering(sim,payload);log("ENGINEERING REQUEST "+req.id+" · "+payload.component);emitTeacherEvent("ENGINEERING_REQUEST",{component:payload.component,priority:payload.priority,requestId:req.id});notify("Solicitud "+req.id+" enviada a Ingeniería.","success");return}
 }
 function doAction(id){
-  log("ACTION "+id);emitTeacherEvent("ACTION",{actionId:id,contactId:contact()?.id||null});
-  if(id==="request_additional_power"){state.special="power_request";renderWorkspace();return}
-  if(id==="focused_scan"||id==="high_resolution_scan"){state.primaryId="scans";state.secondaryId="focused";state.special=null;render();return}
-  if(id==="start_tracking"){contact().tracked=true;emitTeacherEvent("TRACK_START",{contactId:contact().id});render();return}
-  if(id==="stop_tracking"||id==="release_tracking_slot"){const idc=contact().id;contact().tracked=false;emitTeacherEvent("TRACK_STOP",{contactId:idc});render();return}
-  if(id==="mark_contact"){contact().marked=true;render();return}
-  if(id==="unmark_contact"){contact().marked=false;render();return}
-  if(id==="open_sensor_readout"){state.primaryId="sensor_readout";state.secondaryId="signal_strength";emitTeacherEvent("READOUT_OPEN",{contactId:contact()?.id||null,readout:"signal_strength"});render();return}
-  if(id==="compare_readings"){state.primaryId="results";state.secondaryId="compare_readings";render();return}
-  if(id==="open_current_result"){state.primaryId="results";state.secondaryId="current_operation";render();return}
-  if(id==="open_interference"||id==="automatic_compensation"||id==="manual_compensation"||id==="change_band"||id==="extend_integration"||id==="recover_signal"){state.primaryId="interference";state.secondaryId=id==="open_interference"?"interference_status":({automatic_compensation:"automatic_compensation",manual_compensation:"manual_adjustment",change_band:"change_band_frequency",extend_integration:"extend_integration",recover_signal:"recover_signal"}[id]);render();return}
-  if(id==="open_diagnostics"||id==="run_self_test"){state.primaryId="diagnostics";state.secondaryId=id==="run_self_test"?"self_test":"array_status";render();return}
-  if(id==="open_configuration_power"){state.primaryId="configuration";state.secondaryId="sensor_power";render();return}
-  if(id==="open_configuration_resolution"){state.primaryId="configuration";state.secondaryId="default_resolution";render();return}
-  if(id==="reacquire_contact"||id==="predict_trajectory"){state.primaryId="tracking";state.secondaryId=id==="reacquire_contact"?"reacquire_lost_contact":"predict_trajectory";render();return}
-  if(id==="cancel_power_request"){state.powerRequest={state:"CANCELADA"};render();return}
-  if(id==="cancel_operation"){state.activeOperations=[];render();return}
-  if(id==="send_to_science"||id==="send_data"||id==="send_to_tactical"){emitTeacherEvent("HANDOFF",{target:id==="send_to_science"?"science":id==="send_to_tactical"?"tactical":"generic",contactId:contact()?.id||null});alert("Transferencia simulada: "+actionDef(id).display_es+"\n\nEn esta primera versión solo registramos el handoff.");return}
-  alert("Acción registrada en el prototipo: "+actionDef(id).display_es);
+  const sim=shell.sim,c=contact();log("ACTION "+id);emitTeacherEvent("ACTION",{actionId:id,contactId:c?.id||null});
+  if(id==="request_additional_power"){shell.special="power_request";renderWorkspace();return}
+  if(id==="cancel_power_request"){if(sim.powerRequest)sim.powerRequest.state="CANCELADA";emitTeacherEvent("POWER_CANCEL",{});render();return}
+  if(id==="focused_scan"||id==="high_resolution_scan"){shell.primaryId="scans";shell.secondaryId="focused";shell.special=null;shell.prefill={resolution:id==="high_resolution_scan"?"high":"standard"};render();return}
+  if(id==="start_tracking"){const res=startTracking(sim,c.id);if(!res.ok){notify(res.reason,"danger");return}emitTeacherEvent("TRACK_START",{contactId:c.id,mode:"normal",priority:"normal"});render();return}
+  if(id==="stop_tracking"||id==="release_tracking_slot"){stopTracking(sim,c.id);emitTeacherEvent("TRACK_STOP",{contactId:c.id});render();return}
+  if(id==="set_priority_tracking"||id==="set_normal_tracking"){const priority=id==="set_priority_tracking"?"priority":"normal",res=startTracking(sim,c.id,c.trackingMode||"normal",priority);if(!res.ok){notify(res.reason,"danger");return}emitTeacherEvent("TRACK_PRIORITY",{contactId:c.id,priority});render();return}
+  if(id==="mark_contact"){c.marked=true;emitTeacherEvent("CONTACT_MARK",{contactId:c.id,marked:true});render();return}
+  if(id==="unmark_contact"){c.marked=false;emitTeacherEvent("CONTACT_MARK",{contactId:c.id,marked:false});render();return}
+  if(id==="open_sensor_readout"){shell.primaryId="sensor_readout";shell.secondaryId="signal_strength";shell.special=null;emitTeacherEvent("READOUT_OPEN",{contactId:c.id,readout:"signal_strength"});render();return}
+  if(id==="compare_readings"){shell.primaryId="results";shell.secondaryId="compare_readings";shell.special=null;render();return}
+  if(id==="save_reading"){const r=sim.results.find(x=>x.id===shell.selectedResultId)||sim.results[0];if(!r){notify("No existe un resultado para guardar.","danger");return}const res=saveReading(sim,r.id,"Lectura "+r.id);log("SAVE READING "+r.id);emitTeacherEvent("RESULT_SAVE",{resultId:r.id,savedId:res.saved.savedId});notify("Lectura guardada como "+res.saved.savedId+".","success");return}
+  if(id==="repeat_operation"){shell.primaryId="results";shell.secondaryId="repeat_operation";render();return}
+  if(["send_data","send_to_science","send_to_tactical"].includes(id)){shell.special="handoff";shell.prefill={target:id==="send_to_science"?"science":id==="send_to_tactical"?"tactical":"science"};renderWorkspace();return}
+  if(id==="automatic_compensation"){shell.primaryId="interference";shell.secondaryId="automatic_compensation";render();return}
+  if(id==="manual_compensation"){shell.primaryId="interference";shell.secondaryId="manual_adjustment";render();return}
+  if(id==="change_band"){shell.primaryId="interference";shell.secondaryId="change_band_frequency";render();return}
+  if(id==="extend_integration"){shell.primaryId="interference";shell.secondaryId="extend_integration";render();return}
+  if(id==="recover_signal"){shell.primaryId="interference";shell.secondaryId="recover_signal";render();return}
+  if(id==="restore_previous_compensation"){const res=applyInterference(sim,"restore");emitTeacherEvent("INTERFERENCE_ACTION",{action:"restore"});notify(res.message,"success");return}
+  if(id==="open_interference"){shell.primaryId="interference";shell.secondaryId="interference_status";render();return}
+  if(id==="open_diagnostics"){shell.primaryId="diagnostics";shell.secondaryId="array_status";render();return}
+  if(id==="run_self_test"){const d=runDiagnostic(sim,"all");emitTeacherEvent("DIAGNOSTIC_RUN",{scope:"all",status:d.status,issues:d.issues.length});notify("Autodiagnóstico: "+d.status+" · "+d.issues.length+" incidencia(s).","success");return}
+  if(id==="calibrate_array"){const aid=shell.selectedArrayId||sim.activeArray,res=calibrateArray(sim,aid);if(!res.ok){notify(res.reason,"danger");return}emitTeacherEvent("CALIBRATION",{arrayId:aid});notify(res.message,"success");return}
+  if(id==="run_array_diagnostic"){const aid=shell.selectedArrayId||sim.activeArray,d=runDiagnostic(sim,aid);emitTeacherEvent("DIAGNOSTIC_RUN",{scope:aid,status:d.status,issues:d.issues.length});notify("Diagnóstico "+aid+": "+d.status+".","success");return}
+  if(id==="select_array"){const aid=shell.selectedArrayId||sim.activeArray,res=applyConfig(sim,"sensor_array",aid);if(!res.ok){notify(res.reason,"danger");return}emitTeacherEvent("CONFIG_APPLY",{setting:"sensor_array",value:aid});notify("Matriz "+aid+" seleccionada.","success");return}
+  if(id==="request_engineering_support"){shell.primaryId="diagnostics";shell.secondaryId="request_engineering_support";render();return}
+  if(id==="open_current_result"){shell.primaryId="results";shell.secondaryId="current_operation";render();return}
+  if(id==="cancel_operation"){for(const o of sim.operations.filter(x=>x.state==="running"))o.state="cancelled";clearTimers();emitTeacherEvent("OPERATION_CANCEL",{});render();return}
+  if(id==="reacquire_contact"){shell.primaryId="tracking";shell.secondaryId="reacquire_lost_contact";render();return}
+  if(id==="predict_trajectory"){shell.primaryId="tracking";shell.secondaryId="predict_trajectory";render();return}
+  if(id==="reprioritize_tracking"){shell.primaryId="tracking";shell.secondaryId="multi_track";render();return}
+  if(id==="open_configuration_power"){shell.primaryId="configuration";shell.secondaryId="sensor_power";render();return}
+  if(id==="open_configuration_resolution"){shell.primaryId="configuration";shell.secondaryId="default_resolution";render();return}
 }
 function renderStatus(){
-  const tracked=state.contacts.filter(x=>x.tracked);
+  const sim=shell.sim,a=getArray(sim),tracked=sim.tracking.assignments;
   $("#persistent-status").innerHTML=
-  '<section class="status-card"><h3>SISTEMA</h3><div class="status-line"><span>Estado</span><span class="status-value ok">NOMINAL</span></div><div class="status-line"><span>Potencia</span><strong>'+state.power+' %</strong></div><div class="status-line"><span>Matriz</span><strong>'+state.matrix+'</strong></div><div class="status-line"><span>Interferencia</span><span class="status-value warn">'+state.interference+'</span></div></section>'+
-  '<section class="status-card"><h3>OPERACIONES ACTIVAS</h3>'+(state.activeOperations.length?state.activeOperations.map(o=>'<button class="status-link" data-status-route="results">'+o.id+' · '+o.progress+'%<div class="progress"><span style="width:'+o.progress+'%"></span></div></button>').join(""):'<div class="status-line"><span>Ninguna</span><span>—</span></div>')+'</section>'+
-  '<section class="status-card"><h3>SEGUIMIENTO · '+tracked.length+'/'+state.trackingCapacity+'</h3>'+tracked.map(c=>'<button class="status-link" data-track-contact="'+c.id+'">'+c.id+' · '+c.confidence+'%</button>').join("")+'</section>'+
-  '<section class="status-card"><h3>SOLICITUD A OPS</h3>'+(state.powerRequest?'<div class="status-line"><span>'+state.powerRequest.state+'</span><strong>+'+(state.powerRequest.granted||state.powerRequest.requested||0)+' %</strong></div>':'<div class="status-line"><span>Ninguna</span><span>—</span></div>')+'</section>';
-  document.querySelectorAll("[data-track-contact]").forEach(b=>b.onclick=()=>{state.selectedContactId=b.dataset.trackContact;state.primaryId="contacts";state.secondaryId="all";render()});
-  document.querySelectorAll("[data-status-route]").forEach(b=>b.onclick=()=>{state.primaryId="results";state.secondaryId="current_operation";render()});
+    '<section class="status-card"><h3>SISTEMA</h3><div class="status-line"><span>Escenario</span><strong>'+esc(sim.scenarioId)+'</strong></div><div class="status-line"><span>Potencia</span><strong>'+sim.power+' %</strong></div><div class="status-line"><span>Matriz</span><strong>'+esc(a?.id||"—")+'</strong></div><div class="status-line"><span>Interferencia</span><span class="status-value '+(effectivePenalty(sim)>28?"warn":"ok")+'">'+severityLabel(sim.interference.severity)+' · '+effectivePenalty(sim)+'</span></div></section>'+
+    '<section class="status-card"><h3>OPERACIONES ACTIVAS</h3>'+activeOpsHtml()+'</section>'+
+    '<section class="status-card"><h3>SEGUIMIENTO · '+trackingUsed(sim)+'/'+sim.tracking.capacity+'</h3>'+(tracked.length?tracked.map(x=>'<button class="status-link" data-track-contact="'+x.contactId+'">'+x.contactId+' · '+x.mode+' · '+x.priority+'</button>').join(""):'<div class="status-line"><span>Ninguno</span><span>—</span></div>')+'</section>'+
+    '<section class="status-card"><h3>SOLICITUD A OPS</h3>'+(sim.powerRequest?'<div class="status-line"><span>'+esc(sim.powerRequest.state)+'</span><strong>+'+(sim.powerRequest.granted??sim.powerRequest.requested??0)+' %</strong></div>':'<div class="status-line"><span>Ninguna</span><span>—</span></div>')+'</section>'+
+    '<section class="status-card"><h3>TRANSFERENCIAS</h3>'+(sim.transfers[0]?'<div class="status-line"><span>'+esc(sim.transfers[0].target.toUpperCase())+'</span><strong>'+esc(sim.transfers[0].contactId)+'</strong></div>':'<div class="status-line"><span>Ninguna</span><span>—</span></div>')+'</section>';
+  document.querySelectorAll("[data-track-contact]").forEach(b=>b.onclick=()=>{sim.selectedContactId=b.dataset.trackContact;shell.primaryId="contacts";shell.secondaryId="all";render()});
 }
-function renderLog(){$("#log-list").innerHTML=state.logs.map(x=>'<div class="log-entry">'+x+'</div>').join("")}
-load().catch(e=>{$("#workspace-content").innerHTML='<div class="danger-note">Error cargando el prototipo: '+e.message+'</div>';console.error(e)});
+function renderLog(){$("#log-list").innerHTML=shell.logs.map(x=>'<div class="log-entry">'+esc(x)+'</div>').join("")}
+load().catch(e=>{$("#workspace-content").innerHTML='<div class="danger-note">Error cargando Sensores: '+esc(e.message)+'</div>';console.error(e)});
