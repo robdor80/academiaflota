@@ -49,10 +49,8 @@
         "Selecciona la respuesta correcta: Qué función general cumple el puente?"
       ],
       "answer_display_es": "mando · coordinación · información · órdenes · supervisión",
-      "accepted_short_answers_es": [
-        "mando"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "mando",
         "coordinación",
@@ -193,10 +191,8 @@
         "Selecciona la respuesta correcta: Qué cuatro elementos definen una estación según el proyecto?"
       ],
       "answer_display_es": "función · sistemas accesibles · autoridad · información disponible/POV",
-      "accepted_short_answers_es": [
-        "función"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "función",
         "sistemas accesibles",
@@ -270,10 +266,8 @@
         "Selecciona la explicación correcta:  una nave necesita espacios de vida además de espacios técnicos."
       ],
       "answer_display_es": "misiones prolongadas · descanso · alimentación · privacidad · recuperación",
-      "accepted_short_answers_es": [
-        "misiones prolongadas"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "misiones prolongadas",
         "descanso",
@@ -350,10 +344,8 @@
         "Selecciona la explicación correcta:  no se exige memorizar catálogos de clases de nave."
       ],
       "answer_display_es": "se enseña relación misión-capacidad · principios transferibles · evita trivia",
-      "accepted_short_answers_es": [
-        "se enseña relación misión-capacidad"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "se enseña relación misión-capacidad",
         "principios transferibles",
@@ -391,8 +383,11 @@
         "Repaso: ¿Una nave de exploración puede realizar rescates?"
       ],
       "answer_display_es": "Sí — las funciones no son cajas absolutas; depende de capacidades/contexto.",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "sí",
+        "si"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "sí",
         "las funciones no son cajas absolutas",
@@ -429,10 +424,8 @@
         "Nombra cuatro factores que pueden cambiar una ruta a bordo."
       ],
       "answer_display_es": "accesos · daños · compartimentos · órdenes · restricciones · emergencia",
-      "accepted_short_answers_es": [
-        "accesos"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "accesos",
         "daños",

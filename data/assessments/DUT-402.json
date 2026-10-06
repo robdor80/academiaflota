@@ -31,10 +31,8 @@
         "Diferencia turno y puesto."
       ],
       "answer_display_es": "turno = franja temporal · puesto = función",
-      "accepted_short_answers_es": [
-        "turno = franja temporal"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "turno = franja temporal",
         "puesto = función"
@@ -107,10 +105,8 @@
         "Selecciona la explicación correcta:  llegar tarde puede afectar a otra persona."
       ],
       "answer_display_es": "prolonga relevo · deja puesto sin cubrir · rompe continuidad",
-      "accepted_short_answers_es": [
-        "prolonga relevo"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "prolonga relevo",
         "deja puesto sin cubrir",
@@ -166,8 +162,10 @@
         "Repaso: ¿Una nueva guardia cancela órdenes vigentes?"
       ],
       "answer_display_es": "No — deben transferirse; siguen hasta cancelación/cambio.",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no",
         "deben transferirse",
@@ -263,10 +261,8 @@
         "Selecciona la respuesta correcta: Qué debe lograr un informe profesional?"
       ],
       "answer_display_es": "transmitir hecho/cambio útil · permitir decisión · claridad",
-      "accepted_short_answers_es": [
-        "transmitir hecho/cambio útil"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "transmitir hecho/cambio útil",
         "permitir decisión",
@@ -339,10 +335,8 @@
         "Diferencia responsable de puesto, supervisor y jefe de departamento."
       ],
       "answer_display_es": "operación directa · supervisión/autorización · gestión del área",
-      "accepted_short_answers_es": [
-        "operación directa"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "operación directa",
         "supervisión/autorización",

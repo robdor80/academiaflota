@@ -31,10 +31,8 @@
         "Selecciona la respuesta correcta: Qué cambia cuando se declara una alerta?"
       ],
       "answer_display_es": "prioridades · movimiento · acceso · tareas · comunicaciones",
-      "accepted_short_answers_es": [
-        "prioridades"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "prioridades",
         "movimiento",
@@ -53,8 +51,10 @@
         "Repaso: ¿Una alarma local implica evacuar toda la nave?"
       ],
       "answer_display_es": "No — puede afectar solo zona/sistema; seguir instrucción.",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no",
         "puede afectar solo zona/sistema",
@@ -106,8 +106,10 @@
         "Repaso: ¿Cuál es el objetivo de una evacuación?"
       ],
       "answer_display_es": "mover personas a zona segura · de forma controlada",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "mover personas a zona segura"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "mover personas a zona segura",
         "de forma controlada"
@@ -123,10 +125,8 @@
         "Repaso: ¿Para qué sirve aislar compartimentos?"
       ],
       "answer_display_es": "limitar propagación · proteger otras zonas · contener pérdida de presión/contaminación",
-      "accepted_short_answers_es": [
-        "limitar propagación"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "limitar propagación",
         "proteger otras zonas",
@@ -179,10 +179,8 @@
         "Nombra tres riesgos asociados a un incendio además de la llama."
       ],
       "answer_display_es": "humo · atmósfera · calor · daño de sistemas · pérdida de visibilidad",
-      "accepted_short_answers_es": [
-        "humo"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "humo",
         "atmósfera",
@@ -239,8 +237,10 @@
         "Repaso: ¿Cuál es la prioridad de un cadete no especialista ante un incendio?"
       ],
       "answer_display_es": "alertar · proteger · aislar si autorizado · retirarse · apoyar cualificados",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "alertar"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "alertar",
         "proteger",
@@ -315,8 +315,10 @@
         "Selecciona la respuesta correcta: Qué significa no exceder competencia?"
       ],
       "answer_display_es": "hacer solo lo entrenado/autorizado · pedir ayuda · no improvisar tratamiento",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "hacer solo lo entrenado/autorizado"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "hacer solo lo entrenado/autorizado",
         "pedir ayuda",
@@ -333,10 +335,8 @@
         "Indica las prioridades generales del control de daños básico."
       ],
       "answer_display_es": "proteger vidas · contener riesgo · preservar funciones esenciales · recuperar capacidad",
-      "accepted_short_answers_es": [
-        "proteger vidas"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "proteger vidas",
         "contener riesgo",
@@ -411,10 +411,8 @@
         "Enumera las fases básicas de una respuesta integrada."
       ],
       "answer_display_es": "alerta · instrucción · movimiento · informe · asistencia · registro/relevo",
-      "accepted_short_answers_es": [
-        "alerta"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "alerta",
         "instrucción",

@@ -31,10 +31,8 @@
         "Selecciona la explicación correcta:  continuidad importa más que una sesión espectacular."
       ],
       "answer_display_es": "adaptación longitudinal · regularidad · carga y recuperación",
-      "accepted_short_answers_es": [
-        "adaptación longitudinal"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "adaptación longitudinal",
         "regularidad",
@@ -51,8 +49,10 @@
         "Selecciona la respuesta correcta: Qué significa frecuencia?"
       ],
       "answer_display_es": "número de sesiones/estímulos por periodo",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "número de sesiones/estímulos por periodo"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "número de sesiones/estímulos por periodo"
       ]
@@ -107,8 +107,10 @@
         "Selecciona la respuesta correcta: Qué significa resistencia aplicada?"
       ],
       "answer_display_es": "sostener esfuerzo en tarea funcional · mantener control",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "sostener esfuerzo en tarea funcional"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "sostener esfuerzo en tarea funcional",
         "mantener control"
@@ -124,10 +126,8 @@
         "Selecciona la respuesta correcta: Qué puede ocurrir si se empieza demasiado rápido?"
       ],
       "answer_display_es": "fatiga · peor técnica · abandono · peor recuperación",
-      "accepted_short_answers_es": [
-        "fatiga"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "fatiga",
         "peor técnica",
@@ -182,8 +182,10 @@
         "Selecciona la explicación correcta:  fuerza y coordinación se trabajan juntas."
       ],
       "answer_display_es": "aplicar fuerza con dirección/tiempo/control",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "aplicar fuerza con dirección/tiempo/control"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "aplicar fuerza con dirección/tiempo/control"
       ]
@@ -198,10 +200,8 @@
         "Nombra dos funciones del equilibrio."
       ],
       "answer_display_es": "estabilidad · cambiar dirección · superficies difíciles · control bajo carga",
-      "accepted_short_answers_es": [
-        "estabilidad"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estabilidad",
         "cambiar dirección",
@@ -259,8 +259,10 @@
         "Selecciona la respuesta correcta: Qué significa ritmo de grupo?"
       ],
       "answer_display_es": "ritmo sostenible para objetivo común · adaptado al grupo",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "ritmo sostenible para objetivo común"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "ritmo sostenible para objetivo común",
         "adaptado al grupo"
@@ -276,10 +278,8 @@
         "Nombra tres formas de cooperación física."
       ],
       "answer_display_es": "repartir peso · alternar esfuerzo · guiar · asegurar · informar",
-      "accepted_short_answers_es": [
-        "repartir peso"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "repartir peso",
         "alternar esfuerzo",
@@ -298,8 +298,10 @@
         "Selecciona la respuesta correcta: Qué significa seguridad compartida?"
       ],
       "answer_display_es": "vigilar propio estado · compañeros · entorno · instrucciones",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "vigilar propio estado"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "vigilar propio estado",
         "compañeros",
@@ -335,10 +337,8 @@
         "Selecciona la explicación correcta:  la actividad acuática no puede ser universal."
       ],
       "answer_display_es": "biología/contexto distintos · riesgo · adaptación",
-      "accepted_short_answers_es": [
-        "biología/contexto distintos"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "biología/contexto distintos",
         "riesgo",
@@ -411,10 +411,8 @@
         "Selecciona la explicación correcta:  una rutina debe poder cambiar."
       ],
       "answer_display_es": "carga académica · fatiga · obligaciones · lesión/contexto",
-      "accepted_short_answers_es": [
-        "carga académica"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "carga académica",
         "fatiga",

@@ -31,10 +31,8 @@
         "Selecciona la respuesta correcta: Qué elementos forman un enlace de comunicación?"
       ],
       "answer_display_es": "origen · destino · canal · estado · contenido",
-      "accepted_short_answers_es": [
-        "origen"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "origen",
         "destino",
@@ -88,8 +86,10 @@
         "Selecciona la respuesta correcta: Qué significa enlace degradado?"
       ],
       "answer_display_es": "conexión abierta con calidad reducida · puede afectar comprensión/datos",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "conexión abierta con calidad reducida"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "conexión abierta con calidad reducida",
         "puede afectar comprensión/datos"
@@ -105,10 +105,8 @@
         "Selecciona la respuesta correcta: Qué función general cumple un tricorder en COM-402?"
       ],
       "answer_display_es": "adquisición/consulta portátil · observación · medición · registro",
-      "accepted_short_answers_es": [
-        "adquisición/consulta portátil"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "adquisición/consulta portátil",
         "observación",
@@ -181,10 +179,8 @@
         "Selecciona la respuesta correcta: Qué elementos básicos debe contener una comunicación interna útil?"
       ],
       "answer_display_es": "destinatario · hecho/situación · solicitud · prioridad si procede · confirmación",
-      "accepted_short_answers_es": [
-        "destinatario"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "destinatario",
         "hecho/situación",
@@ -257,10 +253,8 @@
         "Selecciona la respuesta correcta: Qué puede incluir la apertura de una comunicación externa?"
       ],
       "answer_display_es": "identificación propia · destinatario · intención · petición de enlace",
-      "accepted_short_answers_es": [
-        "identificación propia"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "identificación propia",
         "destinatario",
@@ -333,10 +327,8 @@
         "Selecciona la respuesta correcta: Qué cuatro elementos pueden estructurar un mensaje?"
       ],
       "answer_display_es": "hecho · estado · solicitud · urgencia",
-      "accepted_short_answers_es": [
-        "hecho"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "hecho",
         "estado",
@@ -407,10 +399,8 @@
         "Selecciona la respuesta correcta: Qué debes conocer antes de preparar equipo de salida?"
       ],
       "answer_display_es": "objetivo · entorno · duración · riesgos · comunicación",
-      "accepted_short_answers_es": [
-        "objetivo"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "objetivo",
         "entorno",
