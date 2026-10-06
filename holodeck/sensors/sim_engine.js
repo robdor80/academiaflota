@@ -53,7 +53,7 @@ function qualityScore(state,cfg={}){
   const dur={quick:-8,standard:5,extended:17,custom:12}[cfg.duration||"standard"]||0;
   const mode=cfg.mode==="active"?10:0;
   const sensitivity={low:-10,standard:0,high:14,maximum:22}[cfg.sensitivity||state.config.sensitivity]||0;
-  const power=(state.power-60)*.45;
+  const power=(state.power-60)*.45+(state.config.operationPower-70)*.16;
   const array=((a?.integrity||0)+(a?.calibration||0)-150)*.18;
   const penalty=effectivePenalty(state);
   return clamp(48+res+dur+mode+sensitivity+power+array-penalty,5,99);
@@ -94,7 +94,7 @@ export function resolveScan(state,op){
     if(c.status==="lost"&&score<60)continue;
     const fingerprint=JSON.stringify([cfg.scanType,cfg.mode,cfg.targetValue,cfg.contactId,cfg.resolution,[...filters].sort(),cfg.priority,cfg.duration,state.power,state.activeArray,effectivePenalty(state)]);
     const repeated=c.history.some(h=>h.fingerprint===fingerprint);
-    const conf=clamp(Math.round((c.confidence*.55)+(score*.45)));
+    const conf=repeated?c.confidence:clamp(Math.round((c.confidence*.55)+(score*.45)));
     revealContact(state,c,conf,"scan:"+op.id,fingerprint);
     if(focused&&c.id===cfg.contactId&&!repeated)c.confidence=clamp(c.confidence+(cfg.resolution==="high"?18:10)+(state.power>=82?6:0));
     contacts.push({id:c.id,confidence:c.confidence,status:c.status});
@@ -154,7 +154,7 @@ export function startTracking(state,contactId,mode="normal",priority="normal",si
   const need=trackingCost(mode,priority)-(existing?trackingCost(existing.mode,existing.priority):0);
   if(trackingUsed(state)+need>state.tracking.capacity)return {ok:false,reason:"Capacidad de seguimiento insuficiente"};
   if(existing){existing.mode=mode;existing.priority=priority;existing.signature=signature||existing.signature;existing.updatedAt=now()}
-  else state.tracking.assignments.push({contactId,mode,priority,signature,quality:clamp(c.confidence+10),updatedAt:now()});
+  else {const rateBonus=state.config.updateRate==="fast"?6:state.config.updateRate==="slow"?-4:0;state.tracking.assignments.push({contactId,mode,priority,signature,quality:clamp(c.confidence+10+rateBonus-effectivePenalty(state)*.12),updatedAt:now()})};
   c.tracked=true;c.trackingMode=mode;c.trackingPriority=priority;return {ok:true};
 }
 export function stopTracking(state,contactId){
@@ -211,6 +211,7 @@ export function applyConfig(state,key,value){
 }
 export function restoreStandard(state){
   Object.assign(state.config,{sensitivity:"standard",defaultResolution:"standard",bandFrequency:"broad",updateRate:"standard",defaultFilters:["all"],defaultPriority:"none",operationPower:70,profile:"standard"});
+  const primary=state.arrays.find(a=>a.id==="PRIMARY"&&a.available)||state.arrays.find(a=>a.available);if(primary)state.activeArray=primary.id;
 }
 export function loadProfile(state,id){
   const p=state.profiles[id];if(!p)return {ok:false,reason:"Perfil inexistente"};
