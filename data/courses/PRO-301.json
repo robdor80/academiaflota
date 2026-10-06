@@ -26,7 +26,7 @@
         {
           "type": "callout",
           "label": "RESPONSABILIDAD",
-          "text": "El **responsable** confirma recepción, comprensión, capacidad y cualquier bloqueo relevante."
+          "text": "El **responsable** confirma recepción, **comprensión**, capacidad y cualquier bloqueo relevante."
         }
       ]
     },
@@ -79,8 +79,8 @@
           "items": [
             "**Identificador**",
             "**Contexto**",
-            "Datos relevantes",
-            "Procedencia",
+            "**Datos** relevantes",
+            "**Procedencia**",
             "Prioridad",
             "Estado",
             "Petición concreta"
@@ -111,8 +111,8 @@
           "items": [
             "**Misión**",
             "**Seguridad**",
-            "Recursos",
-            "Tiempo",
+            "**Recursos**",
+            "**Tiempo**",
             "Reversibilidad",
             "Autoridad"
           ]
@@ -163,11 +163,11 @@
         {
           "type": "callout",
           "label": "APPEND-ONLY",
-          "text": "Una corrección se añade como nuevo evento que **referencia al anterior**; la historia no se reescribe silenciosamente."
+          "text": "Una corrección se añade como **nuevo evento** que **referencia al anterior**; la historia no se reescribe silenciosamente."
         },
         {
           "type": "p",
-          "text": "Que un evento exista no significa que todos los personajes conozcan su contenido."
+          "text": "**Que un evento exista no significa que todos los personajes conozcan su contenido.**"
         }
       ]
     },
@@ -178,7 +178,7 @@
       "blocks": [
         {
           "type": "quote",
-          "text": "orden → tareas → **coordinación** → ejecución → reporte → handoff → registro"
+          "text": "orden → tareas → **coordinación** → **ejecución** → reporte → handoff → registro"
         },
         {
           "type": "p",
@@ -192,7 +192,7 @@
           "type": "bullets",
           "items": [
             "**Resultado**",
-            "Pendientes",
+            "**Pendientes**",
             "Registro",
             "Relevo o debrief"
           ]
