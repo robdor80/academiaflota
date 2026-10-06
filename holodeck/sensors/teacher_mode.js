@@ -70,6 +70,7 @@ export async function initTeacherMode({resetScenario,logTeacher=()=>{}}){
   }
   function render(){
     const teacherMode=mode.value==="teacher",complete=done.size===tutorial.steps.length;
+    const scenarioSelect=document.querySelector("#scenario-select");if(scenarioSelect)scenarioSelect.disabled=teacherMode;
     guidanceClass();
     title.textContent=tutorial.title;
     objective.textContent=tutorial.objective;
