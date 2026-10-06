@@ -19,7 +19,7 @@
         <option value="teacher">Profesor</option>
       </select>
     </label>
-    <span class="prototype">PROTOTIPO TÉCNICO v0.4</span>
+    <span class="prototype">SIMULADOR FUNCIONAL v1.0</span>
     <a href="../">← Holocubierta</a>
   </div>
 </header>
@@ -27,7 +27,7 @@
   <div class="teacher-main">
     <div class="teacher-heading">
       <span class="teacher-badge">INSTRUCTOR</span>
-      <div><small id="teacher-kicker">PRÁCTICA GUIADA</small><h2 id="teacher-title">Modo profesor</h2></div>
+      <div><small id="teacher-kicker">PRÁCTICA GUIADA</small><h2 id="teacher-title">Modo profesor</h2><span id="teacher-level-label" class="teacher-level-label"></span></div>
     </div>
     <section id="teacher-order" class="teacher-order" hidden>
       <div class="teacher-order-head"><span>ORDEN RECIBIDA</span><strong id="teacher-order-source">INSTRUCTOR</strong></div>
@@ -35,6 +35,9 @@
       <p id="teacher-order-note"></p>
       <button id="teacher-order-ack" class="action">Orden recibida · Proceder</button>
     </section>
+    <div id="teacher-order-summary" class="teacher-order-summary" hidden>
+      <small>ORDEN EN CURSO</small><span id="teacher-order-summary-text"></span>
+    </div>
     <p id="teacher-objective"></p>
     <ol id="teacher-steps" class="teacher-steps"></ol>
     <section id="teacher-explanation" class="teacher-explanation">
