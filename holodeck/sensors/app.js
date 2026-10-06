@@ -74,6 +74,7 @@ function datum(k,v){return '<div class="datum"><small>'+esc(k)+'</small><strong>
 function button(id,cls=""){return '<button class="action '+cls+'" data-action="'+id+'">'+esc(actionDef(id).display_es)+'</button>'}
 function taskButton(id,label,cls=""){return '<button class="action '+cls+'" data-task="'+id+'">'+esc(label)+'</button>'}
 function fieldSelect(id,label,opts,value=""){return '<div class="field"><label>'+esc(label)+'</label><select id="'+id+'">'+opts.map(([v,t])=>'<option value="'+esc(v)+'" '+(String(v)===String(value)?"selected":"")+'>'+esc(t)+'</option>').join("")+'</select></div>'}
+function fieldMultiSelect(id,label,opts,values=[]){const set=new Set(Array.isArray(values)?values:[values]);return '<div class="field"><label>'+esc(label)+'</label><select id="'+id+'" multiple size="5">'+opts.map(([v,t])=>'<option value="'+esc(v)+'" '+(set.has(v)?"selected":"")+'>'+esc(t)+'</option>').join("")+'</select><small class="field-help">Ctrl/Cmd + clic para combinar filtros</small></div>'}
 function fieldInput(id,label,value="",placeholder=""){return '<div class="field"><label>'+esc(label)+'</label><input id="'+id+'" value="'+esc(value)+'" placeholder="'+esc(placeholder)+'"></div>'}
 function messageHtml(){if(!shell.message)return "";const m=shell.message;shell.message=null;return '<div class="'+(m.type==="danger"?"danger-note":m.type==="success"?"notice success":"notice")+'">'+esc(m.text)+'</div>'}
 function wireCommon(){
@@ -127,9 +128,9 @@ function scanView(){
     fieldSelect("target-scope","Área / objetivo",area,focused?(c?.id||""):(pf.targetValue||"surrounding"))+
     fieldSelect("resolution","Resolución",[["general","General"],["standard","Estándar"],["high","Alta"]],pf.resolution||sim.config.defaultResolution)+
     fieldSelect("priority","Prioridad",[["none","Ninguna"],["subspace","Subespacio"],["warp","Warp"],["em","Electromagnética"],["thermal","Térmica"],["biological","Biológica"],["transponder","Transpondedor"]],pf.priority||sim.config.defaultPriority)+
-    fieldSelect("duration","Duración",[["quick","Rápida"],["standard","Estándar"],["extended","Extendida"]],pf.duration||"standard")+
-    fieldSelect("filters","Filtro",[["all","Todas las firmas"],["subspace","Subespacial"],["warp","Firma warp"],["em","Electromagnética"],["thermal","Térmica"],["biological","Biológica"],["transponder","Transpondedor"]],pf.filters||sim.config.defaultFilters[0]||"all")+
-    '</div><div class="action-grid">'+taskButton("execute_scan","Ejecutar barrido")+button("request_additional_power","secondary")+'</div></div>';
+    fieldSelect("duration","Duración",[["quick","Rápida"],["standard","Estándar"],["extended","Extendida"],["custom","Personalizada"]],pf.duration||"standard")+
+    fieldMultiSelect("filters","Filtros",[["all","Todas las firmas"],["em","Electromagnética"],["subspace","Subespacial"],["gravimetric","Gravimétrica"],["thermal","Térmica"],["ionizing_radiation","Radiación ionizante"],["particle","Partículas"],["biological","Biológica"],["warp","Firma warp"],["transponder","Transpondedor artificial"]],pf.filters||sim.config.defaultFilters||["all"])+
+    '</div><div class="action-grid">'+taskButton("review_scan_config","Revisar configuración","secondary")+taskButton("execute_scan","Ejecutar barrido")+taskButton("restore_scan_defaults","Restaurar valores","secondary")+button("request_additional_power","secondary")+taskButton("cancel_scan_setup","Cancelar","secondary")+'</div></div>';
 }
 function searchView(){
   const s=secondary();if(!s)return "";
@@ -138,7 +139,7 @@ function searchView(){
     fieldSelect("search-sensitivity","Sensibilidad",[["low","Baja"],["standard","Estándar"],["high","Alta"],["maximum","Máxima"]],shell.sim.config.sensitivity)+
     fieldSelect("search-resolution","Resolución",[["general","General"],["standard","Estándar"],["high","Alta"]],shell.sim.config.defaultResolution)+
     fieldInput("search-criteria","Criterio adicional","",s.id==="custom_signature"?"p. ej. subspace, transponder…":"Opcional")+
-    '</div><div class="action-grid">'+taskButton("execute_search","Iniciar búsqueda")+button("request_additional_power","secondary")+'</div></div>'+latestResultMini("search");
+    '</div><div class="action-grid">'+taskButton("execute_search","Iniciar búsqueda")+taskButton("clear_search_criteria","Limpiar criterio","secondary")+button("request_additional_power","secondary")+taskButton("cancel_search_setup","Cancelar","secondary")+'</div></div>'+latestResultMini("search");
 }
 function contactsView(){
   const s=secondary();let list=knownContacts(shell.sim);
@@ -245,7 +246,7 @@ function resultsView(){
   }
   return "";
 }
-function resultDetail(r){return '<div class="data-grid">'+datum("Tipo",r.type+" / "+r.subtype)+datum("Objetivo",r.target)+datum("Calidad",r.quality??"—")+datum("Procedencia",r.provenance)+datum("Resumen",r.summary)+datum("Observaciones",r.observations?.length??0)+'</div><div class="action-grid">'+button("save_reading")+button("compare_readings","secondary")+button("repeat_operation","secondary")+button("send_data","secondary")+'</div>'}
+function resultDetail(r){return '<div class="data-grid">'+datum("Tipo",r.type+" / "+r.subtype)+datum("Objetivo",r.target)+datum("Calidad",r.quality??"—")+datum("Procedencia",r.provenance)+datum("Resumen",r.summary)+datum("Observaciones",r.observations?.length??0)+(r.emissionExposure?datum("Exposición del barrido",r.emissionExposure):"")+'</div><div class="action-grid">'+button("save_reading")+button("compare_readings","secondary")+button("repeat_operation","secondary")+button("send_data","secondary")+'</div>'}
 function selectedResultDetail(){const r=shell.sim.results.find(x=>x.id===shell.selectedResultId);return r?'<div class="card"><h3>Detalle · '+r.id+'</h3>'+resultDetail(r)+'</div>':""}
 function latestResultMini(type){const r=shell.sim.results.find(x=>x.type===type);return r?'<div class="card"><h3>Último resultado</h3><p>'+esc(r.summary)+'</p></div>':""}
 function diagnosticsView(){
@@ -290,7 +291,7 @@ function scanConfig(){
     targetValue:$("#target-scope")?.value||"",targetLabel:$("#target-scope")?.selectedOptions?.[0]?.textContent||"",
     contactId:focused?(contact()?.id||$("#target-scope")?.value||null):null,
     resolution:$("#resolution")?.value||"standard",priority:$("#priority")?.value||"none",
-    duration:$("#duration")?.value||"standard",filters:[$("#filters")?.value||"all"]
+    duration:$("#duration")?.value||"standard",filters:$("#filters")?[...$("#filters").selectedOptions].map(o=>o.value):["all"]
   };
 }
 function runTimed(op,resolveFn,eventPrefix){
@@ -324,7 +325,12 @@ function executeSearch(){
 function doTask(id){
   const sim=shell.sim,c=contact();
   if(id==="execute_scan"){executeScan();return}
+  if(id==="review_scan_config"){const cfg=scanConfig();notify("Configuración: "+cfg.scanType+" · "+cfg.targetLabel+" · "+cfg.mode+" · resolución "+cfg.resolution+" · filtros "+cfg.filters.join(", ")+" · prioridad "+cfg.priority+" · "+cfg.duration+".");emitTeacherEvent("SCAN_REVIEW",cfg);return}
+  if(id==="restore_scan_defaults"){shell.prefill=null;renderWorkspace();emitTeacherEvent("SCAN_DEFAULTS_RESTORED",{scanType:shell.secondaryId});return}
+  if(id==="cancel_scan_setup"){shell.primaryId="status";shell.secondaryId="general_status";render();return}
   if(id==="execute_search"){executeSearch();return}
+  if(id==="clear_search_criteria"){const el=$("#search-criteria");if(el)el.value="";emitTeacherEvent("SEARCH_CRITERIA_CLEAR",{searchType:shell.secondaryId});notify("Criterio adicional limpiado.");return}
+  if(id==="cancel_search_setup"){shell.primaryId="status";shell.secondaryId="general_status";render();return}
   if(id==="cancel_special"){shell.special=null;shell.prefill=null;renderWorkspace();return}
   if(id==="send_power_request"){
     const req={state:"PENDIENTE",requested:Number($("#power-delta").value),priority:$("#power-priority").value,duration:$("#power-duration").value,reason:$("#power-reason").value,contactId:c?.id||null};
@@ -368,7 +374,7 @@ function doTask(id){
   }
   if(id==="restore_standard"){restoreStandard(sim);log("CONFIG RESTORE STANDARD");emitTeacherEvent("CONFIG_RESTORE",{profile:"standard"});notify("Estándar de la nave restaurado.","success");return}
   if(id.startsWith("load_profile:")){const pid=id.split(":")[1],res=loadProfile(sim,pid);if(!res.ok){notify(res.reason,"danger");return}log("PROFILE LOAD "+pid);emitTeacherEvent("PROFILE_LOAD",{profileId:pid});notify("Perfil "+pid+" cargado.","success");return}
-  if(id==="save_profile"){const pid=$("#profile-id").value.trim(),name=$("#profile-name").value.trim();if(!pid||!name){notify("Indique ID y nombre.","danger");return}saveProfile(sim,pid,name);log("PROFILE SAVE "+pid);emitTeacherEvent("PROFILE_SAVE",{profileId:pid});render();return}
+  if(id==="save_profile"){const pid=$("#profile-id").value.trim(),name=$("#profile-name").value.trim();if(!pid||!name){notify("Indique ID y nombre.","danger");return}const res=saveProfile(sim,pid,name);if(!res.ok){notify(res.reason,"danger");return}log("PROFILE SAVE "+pid);emitTeacherEvent("PROFILE_SAVE",{profileId:pid});render();return}
   if(id.startsWith("delete_profile:")){const pid=id.split(":")[1],res=deleteProfile(sim,pid);if(!res.ok){notify(res.reason,"danger");return}log("PROFILE DELETE "+pid);render();return}
   if(id==="execute_comparison"){const res=compareReadings(sim,$("#compare-a").value,$("#compare-b").value);if(!res.ok){notify(res.reason,"danger");return}log("COMPARE "+res.comparison.a+" ↔ "+res.comparison.b);emitTeacherEvent("RESULT_COMPARE",{a:res.comparison.a,b:res.comparison.b});notify(res.comparison.summary,"success");return}
   if(id==="repeat_operation_task"){
