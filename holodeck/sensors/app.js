@@ -122,12 +122,12 @@ function scanView(){
   const s=secondary(),sim=shell.sim,c=contact();if(!s)return "";
   const focused=s.id==="focused";
   const pf=shell.prefill||{};
-  const area=focused?[[c?.id||"","Contacto "+(c?.id||"")]]:[["surrounding","Espacio circundante"],["sector_041","Sector 041"],["sector_014","Sector 014"],["system","Sistema estelar"],["coordinates","Coordenadas 12.4 / 8.1 / -3.0"]];
+  const area=focused?[[c?.id||"","Contacto "+(c?.id||"")]]:[["surrounding","Espacio circundante"],["sector_041","Sector 041"],["sector_014","Sector 014"],["system","Sistema estelar"],["coordinates","Coordenadas 12.4 / 8.1 / -3.0"],["vector","Vector 031 / +12"],["defined_zone","Zona definida A-3"]];
   return '<div class="card"><h3>'+esc(s.display_es)+'</h3><p>La configuración se ejecutará aunque sea una mala decisión operativa, siempre que sea físicamente posible.</p><div class="form-grid">'+
     fieldSelect("scan-mode","Modo",[["passive","Pasivo"],["active","Activo"]],pf.mode||"passive")+
     fieldSelect("target-scope","Área / objetivo",area,focused?(c?.id||""):(pf.targetValue||"surrounding"))+
     fieldSelect("resolution","Resolución",[["general","General"],["standard","Estándar"],["high","Alta"]],pf.resolution||sim.config.defaultResolution)+
-    fieldSelect("priority","Prioridad",[["none","Ninguna"],["subspace","Subespacio"],["warp","Warp"],["em","Electromagnética"],["thermal","Térmica"],["biological","Biológica"],["transponder","Transpondedor"]],pf.priority||sim.config.defaultPriority)+
+    fieldSelect("priority","Prioridad",[["none","Ninguna"],["subspace","Subespacio"],["warp","Warp"],["em","Electromagnética"],["gravimetric","Gravimétrica"],["thermal","Térmica"],["ionizing_radiation","Radiación ionizante"],["particle","Partículas"],["biological","Biológica"],["transponder","Transpondedor"]],pf.priority||sim.config.defaultPriority)+
     fieldSelect("duration","Duración",[["quick","Rápida"],["standard","Estándar"],["extended","Extendida"],["custom","Personalizada"]],pf.duration||"standard")+
     fieldMultiSelect("filters","Filtros",[["all","Todas las firmas"],["em","Electromagnética"],["subspace","Subespacial"],["gravimetric","Gravimétrica"],["thermal","Térmica"],["ionizing_radiation","Radiación ionizante"],["particle","Partículas"],["biological","Biológica"],["warp","Firma warp"],["transponder","Transpondedor artificial"]],pf.filters||sim.config.defaultFilters||["all"])+
     '</div><div class="action-grid">'+taskButton("review_scan_config","Revisar configuración","secondary")+taskButton("execute_scan","Ejecutar barrido")+taskButton("restore_scan_defaults","Restaurar valores","secondary")+button("request_additional_power","secondary")+taskButton("cancel_scan_setup","Cancelar","secondary")+'</div></div>';
@@ -135,7 +135,7 @@ function scanView(){
 function searchView(){
   const s=secondary();if(!s)return "";
   return '<div class="card"><h3>'+esc(s.display_es)+'</h3><p>Búsqueda intenta localizar candidatos compatibles con lo que buscas; no garantiza identificación.</p><div class="form-grid">'+
-    fieldSelect("search-area","Área",[["local","Espacio local"],["sector_041","Sector 041"],["system","Sistema estelar"],["wide","Volumen ampliado"]],"sector_041")+
+    fieldSelect("search-area","Área",[["local","Espacio local"],["sector_041","Sector 041"],["sector_014","Sector 014"],["system","Sistema estelar"],["coordinates","Coordenadas definidas"],["wide","Volumen ampliado"]],"sector_041")+
     fieldSelect("search-sensitivity","Sensibilidad",[["low","Baja"],["standard","Estándar"],["high","Alta"],["maximum","Máxima"]],shell.sim.config.sensitivity)+
     fieldSelect("search-resolution","Resolución",[["general","General"],["standard","Estándar"],["high","Alta"]],shell.sim.config.defaultResolution)+
     fieldInput("search-criteria","Criterio adicional","",s.id==="custom_signature"?"p. ej. subspace, transponder…":"Opcional")+
@@ -219,11 +219,14 @@ function configurationView(){
   };
   if(s.id==="profiles_presets"){
     const rows=Object.entries(sim.profiles).map(([id,p])=>'<div class="contact-row"><strong>'+esc(id)+'</strong><span>'+esc(p.name||id)+'<br><small>'+esc(p.origin)+(p.readOnly?" · protegido":"")+'</small></span><span>'+taskButton("load_profile:"+id,"Cargar")+(p.readOnly?"":taskButton("delete_profile:"+id,"Eliminar","secondary"))+'</span></div>').join("");
-    return '<div class="card"><h3>Perfiles / preajustes</h3><div class="contact-list">'+rows+'</div><div class="form-grid">'+fieldInput("profile-id","ID perfil","mi_perfil")+fieldInput("profile-name","Nombre","Mi perfil")+'</div><div class="action-grid">'+taskButton("save_profile","Guardar perfil actual")+taskButton("restore_standard","Restaurar estándar","secondary")+'</div></div>';
+    return '<div class="card"><h3>Perfiles / preajustes</h3><div class="contact-list">'+rows+'</div><div class="form-grid">'+fieldInput("profile-id","ID perfil","mi_perfil")+fieldInput("profile-name","Nombre","Mi perfil")+'</div><div class="action-grid">'+taskButton("save_profile","Guardar / actualizar perfil actual")+taskButton("restore_standard","Restaurar estándar","secondary")+'</div></div>';
+  }
+  if(s.id==="default_filters"){
+    return '<div class="card"><h3>Filtros predeterminados</h3><p>Puede combinar varias firmas. Estos filtros se cargarán por defecto en nuevos barridos.</p>'+fieldMultiSelect("config-value","Filtros",[["all","Todas"],["em","Electromagnética"],["subspace","Subespacial"],["gravimetric","Gravimétrica"],["thermal","Térmica"],["ionizing_radiation","Radiación ionizante"],["particle","Partículas"],["biological","Biológica"],["warp","Warp"],["transponder","Transpondedor"]],sim.config.defaultFilters)+'<div class="action-grid">'+taskButton("apply_config","Aplicar")+taskButton("restore_standard","Restaurar estándar","secondary")+'</div></div>';
   }
   const [label,opts,val]=map[s.id]||[];
   if(!label)return "";
-  return '<div class="card"><h3>'+esc(label)+'</h3><p>Los cambios modifican valores predeterminados; no ejecutan operaciones por sí solos.</p>'+fieldSelect("config-value",label,opts,val)+'<div class="action-grid">'+taskButton("apply_config","Aplicar")+taskButton("restore_standard","Restaurar estándar","secondary")+(s.id==="sensor_power"?button("request_additional_power","secondary"):"")+'</div></div>';
+  return '<div class="card"><h3>'+esc(label)+'</h3><p>Los cambios modifican valores predeterminados; no ejecutan operaciones por sí solos.</p>'+fieldSelect("config-value",label,opts,val)+'<div class="action-grid">'+taskButton("apply_config","Aplicar")+taskButton("restore_standard","Restaurar estándar","secondary")+(s.id==="sensor_power"?button("request_additional_power","secondary")+(sim.powerRequest?button("cancel_power_request","secondary"):""):"")+(s.id==="sensor_array"?taskButton("open_array_status_task","Abrir estado de matrices","secondary"):"")+'</div></div>';
 }
 function resultCard(r){
   return '<div class="contact-row '+(r.id===shell.selectedResultId?"active":"")+'" data-result="'+r.id+'"><strong>'+r.id+'</strong><span>'+esc(r.target||r.subtype)+'<br><small>'+esc(r.summary)+'</small></span><strong>'+esc(r.time)+'</strong></div>';
@@ -317,6 +320,7 @@ function executeScan(){
 }
 function executeSearch(){
   const cfg={searchType:shell.secondaryId,area:$("#search-area")?.value||"sector_041",sensitivity:$("#search-sensitivity")?.value||"standard",resolution:$("#search-resolution")?.value||"standard",criteria:$("#search-criteria")?.value||"",duration:"standard"};
+  if(cfg.searchType==="custom_signature"&&!cfg.criteria.trim()){notify("Una firma definida necesita al menos un criterio de búsqueda.","danger");return}
   const op=createOperation(shell.sim,"search:"+cfg.searchType,cfg);
   log("EXECUTE search "+cfg.searchType+" · "+cfg.area);emitTeacherEvent("SEARCH_EXECUTE",{...cfg,operationId:op.id});
   runTimed(op,()=>{const r=resolveSearch(shell.sim,cfg);op.state="completed";op.progress=100;return r},"SEARCH");
@@ -369,9 +373,11 @@ function doTask(id){
   if(id==="apply_extended_integration"){const res=applyInterference(sim,"extend");emitTeacherEvent("INTERFERENCE_ACTION",{action:"extend_integration"});notify(res.message,"success");return}
   if(id==="recover_signal_task"){const cid=$("#recover-contact").value,res=applyInterference(sim,"recover",{contactId:cid});if(!res.ok){notify(res.reason,"danger");return}emitTeacherEvent("INTERFERENCE_ACTION",{action:"recover_signal",contactId:cid});notify(res.message||res.value,"success");return}
   if(id==="apply_config"){
-    const sid=shell.secondaryId,val=$("#config-value").value,key={sensitivity:"sensitivity",default_resolution:"defaultResolution",sensor_power:"sensor_power",sensor_array:"sensor_array",band_frequency:"bandFrequency",update_rate:"updateRate",default_filters:"defaultFilters",default_priorities:"defaultPriority"}[sid];
-    const actual=key==="defaultFilters"?[val]:val,res=applyConfig(sim,key,actual);if(!res.ok){notify(res.reason,"danger");return}log("CONFIG APPLY "+sid+"="+val);emitTeacherEvent("CONFIG_APPLY",{setting:sid,value:val});notify("Configuración aplicada.","success");return;
+    const sid=shell.secondaryId,key={sensitivity:"sensitivity",default_resolution:"defaultResolution",sensor_power:"sensor_power",sensor_array:"sensor_array",band_frequency:"bandFrequency",update_rate:"updateRate",default_filters:"defaultFilters",default_priorities:"defaultPriority"}[sid];
+    const el=$("#config-value"),val=sid==="default_filters"?[...el.selectedOptions].map(o=>o.value):el.value;
+    const actual=val,res=applyConfig(sim,key,actual);if(!res.ok){notify(res.reason,"danger");return}log("CONFIG APPLY "+sid+"="+(Array.isArray(val)?val.join(","):val));emitTeacherEvent("CONFIG_APPLY",{setting:sid,value:val});notify("Configuración aplicada.","success");return;
   }
+  if(id==="open_array_status_task"){shell.primaryId="status";shell.secondaryId="available_arrays";render();return}
   if(id==="restore_standard"){restoreStandard(sim);log("CONFIG RESTORE STANDARD");emitTeacherEvent("CONFIG_RESTORE",{profile:"standard"});notify("Estándar de la nave restaurado.","success");return}
   if(id.startsWith("load_profile:")){const pid=id.split(":")[1],res=loadProfile(sim,pid);if(!res.ok){notify(res.reason,"danger");return}log("PROFILE LOAD "+pid);emitTeacherEvent("PROFILE_LOAD",{profileId:pid});notify("Perfil "+pid+" cargado.","success");return}
   if(id==="save_profile"){const pid=$("#profile-id").value.trim(),name=$("#profile-name").value.trim();if(!pid||!name){notify("Indique ID y nombre.","danger");return}const res=saveProfile(sim,pid,name);if(!res.ok){notify(res.reason,"danger");return}log("PROFILE SAVE "+pid);emitTeacherEvent("PROFILE_SAVE",{profileId:pid});render();return}
