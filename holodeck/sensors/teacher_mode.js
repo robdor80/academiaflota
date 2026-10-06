@@ -71,9 +71,14 @@ export async function initTeacherMode({resetScenario,logTeacher=()=>{}}){
   function render(){
     const teacherMode=mode.value==="teacher",complete=done.size===tutorial.steps.length;
     const scenarioSelect=document.querySelector("#scenario-select");if(scenarioSelect)scenarioSelect.disabled=teacherMode;
+    const copyBtn=document.querySelector("#copy-exercise-log");if(copyBtn)copyBtn.hidden=!teacherMode;
     guidanceClass();
     title.textContent=tutorial.title;
     objective.textContent=tutorial.objective;
+    panel.dataset.tutorialId=tutorial.id;
+    panel.dataset.tutorialTitle=tutorial.title;
+    panel.dataset.tutorialLevel=String(tutorial.level);
+    panel.dataset.scenarioId=tutorial.scenario_id||"";
     levelLabel.textContent="NIVEL "+tutorial.level+" · "+((data.levels||[]).find(x=>x.id===tutorial.level)?.title||"");
     orderBox.hidden=!teacherMode||orderAcknowledged;
     orderSummary.hidden=!teacherMode||!orderAcknowledged;
