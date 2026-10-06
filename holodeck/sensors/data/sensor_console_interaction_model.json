@@ -1,0 +1,171 @@
+{
+  "schema_version": "0.1.0",
+  "model_id": "sensors_console_interaction",
+  "status": "approved_v0.1",
+  "purpose": "Define one functional console rendered by multiple skins without changing behavior.",
+  "layout": {
+    "logical_panels": [
+      {
+        "id": "primary_navigation",
+        "role": "persistent_navigation",
+        "recommended_position": "left_or_equivalent",
+        "contains": "10 primary menu buttons",
+        "rules": [
+          "one primary workspace selected at a time",
+          "navigation never cancels background work"
+        ]
+      },
+      {
+        "id": "workspace",
+        "role": "active_task_and_context",
+        "recommended_position": "center",
+        "contains": [
+          "secondary navigation",
+          "tertiary forms/details",
+          "contextual action strip"
+        ],
+        "rules": [
+          "context survives cross-menu navigation when relevant",
+          "actions may prefill target/configuration but never auto-execute"
+        ]
+      },
+      {
+        "id": "persistent_status",
+        "role": "live_operational_picture",
+        "recommended_position": "right_or_equivalent",
+        "contains": [
+          "sensor_system_state",
+          "allocated_power",
+          "active_array",
+          "interference_summary",
+          "active_operations",
+          "tracking_capacity",
+          "tracked_contact_shortcuts",
+          "alerts",
+          "pending_interconsole_requests"
+        ],
+        "rules": [
+          "cards are interactive shortcuts into the same functional model",
+          "background operations remain visible while another menu is open",
+          "tracking remains active independently of visible primary menu"
+        ]
+      }
+    ]
+  },
+  "contextual_action_semantics": {
+    "states": [
+      "available",
+      "blocked",
+      "irrelevant"
+    ],
+    "available": "Show as actionable.",
+    "blocked": "Function is conceptually applicable but currently impossible; skin may show disabled with reason.",
+    "irrelevant": "Do not present as a contextual action.",
+    "no_best_action_ranking": true,
+    "no_auto_recommendation": true,
+    "preserve_player_decision": true
+  },
+  "cross_menu_navigation": {
+    "enabled": true,
+    "examples": [
+      {
+        "from": "contacts/contact_detail",
+        "action": "focused_scan",
+        "to": "scans/focused",
+        "prefill": [
+          "contact_id"
+        ]
+      },
+      {
+        "from": "contacts/contact_detail",
+        "action": "start_tracking",
+        "to": "tracking/acquire_contact",
+        "prefill": [
+          "contact_id"
+        ]
+      },
+      {
+        "from": "contacts/contact_detail",
+        "action": "open_sensor_readout",
+        "to": "sensor_readout",
+        "prefill": [
+          "contact_id"
+        ]
+      },
+      {
+        "from": "selected_readout",
+        "action": "send_to_science",
+        "to": "science_handoff",
+        "prefill": [
+          "contact_id",
+          "reading_ids"
+        ]
+      },
+      {
+        "from": "selected_result",
+        "action": "repeat_operation",
+        "to": "results/repeat_operation",
+        "prefill": [
+          "result_id",
+          "configuration"
+        ]
+      },
+      {
+        "from": "interference",
+        "action": "request_additional_power",
+        "to": "power_request",
+        "prefill": [
+          "active_operation_id",
+          "reason"
+        ]
+      },
+      {
+        "from": "diagnostic_error",
+        "action": "request_engineering_support",
+        "to": "diagnostics/request_engineering_support",
+        "prefill": [
+          "component",
+          "diagnostic_code"
+        ]
+      }
+    ]
+  },
+  "concurrency": {
+    "menu_navigation_is_not_operation_state": true,
+    "continuous_background_systems": [
+      "contact_tracking",
+      "contact_memory",
+      "interconsole_requests"
+    ],
+    "discrete_operations_can_continue_in_background": [
+      "scan",
+      "search",
+      "reacquisition",
+      "calibration_when_allowed"
+    ],
+    "simultaneous_operation_limit_is_ship_capability_dependent": true,
+    "persistent_status_shows_all_relevant_active_operations": true
+  },
+  "skin_contract": {
+    "functional_model_shared": true,
+    "academy_skin_can_add": [
+      "exercise_brief",
+      "instructor_guidance",
+      "learning_highlights",
+      "evaluation_feedback",
+      "reset_scenario"
+    ],
+    "operational_ship_skin_can_add": [
+      "era_specific_visuals",
+      "station_shortcuts",
+      "physical_control_mapping"
+    ],
+    "skins_must_not_change": [
+      "operation_contracts",
+      "resource_costs",
+      "capability_limits",
+      "contextual_action_applicability",
+      "world_truth"
+    ]
+  }
+}

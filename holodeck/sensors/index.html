@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sensores · Holocubierta</title>
+<link rel="stylesheet" href="./sensors.css">
+</head>
+<body>
+<div id="device-blocker" class="device-blocker">
+  <div><strong>Consola no disponible en este formato</strong><p>Utiliza un PC o una tablet en horizontal.</p></div>
+</div>
+<div id="app" class="console-shell">
+<header class="console-header">
+  <div><span class="eyebrow">ACADEMIA DE LA FLOTA ESTELAR · HOLOCUBIERTA</span><h1>Consola de Sensores</h1></div>
+  <div class="header-actions"><span class="prototype">PROTOTIPO TÉCNICO v0.1</span><a href="../">← Holocubierta</a></div>
+</header>
+<div class="console-grid">
+  <aside class="panel primary-panel">
+    <div class="panel-title"><span>01</span><strong>FUNCIONES</strong></div>
+    <nav id="primary-nav"></nav>
+  </aside>
+  <main class="panel workspace-panel">
+    <div class="workspace-head"><div><span id="workspace-kicker">SENSORES</span><h2 id="workspace-title">Estado de sensores</h2></div><button id="reset-sim" class="ghost">Reiniciar escenario</button></div>
+    <div class="workspace-body">
+      <aside id="secondary-nav" class="secondary-nav"></aside>
+      <section id="workspace-content" class="workspace-content"></section>
+    </div>
+  </main>
+  <aside class="panel status-panel">
+    <div class="panel-title"><span>03</span><strong>ESTADO PERSISTENTE</strong></div>
+    <div id="persistent-status"></div>
+  </aside>
+</div>
+<footer class="operator-log">
+  <button id="toggle-log" class="ghost">LOG DE OPERADOR</button>
+  <div id="log-panel" hidden><div id="log-list"></div></div>
+</footer>
+</div>
+<script type="module" src="./app.js"></script>
+</body>
+</html>

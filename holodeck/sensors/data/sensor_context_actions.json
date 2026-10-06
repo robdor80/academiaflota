@@ -1,0 +1,625 @@
+{
+  "schema_version": "0.1.0",
+  "rule_set_id": "sensors_context_actions",
+  "status": "approved_v0.1",
+  "resolver_policy": {
+    "output_states": [
+      "available",
+      "blocked",
+      "irrelevant"
+    ],
+    "stable_grouping_not_best_action_ranking": true,
+    "never_auto_execute": true,
+    "preserve_context_on_route": true,
+    "blocked_actions_require_reason": true
+  },
+  "actions": {
+    "focused_scan": {
+      "display_es": "Barrido focalizado",
+      "route": "scans/focused",
+      "prefill": [
+        "contact_id"
+      ],
+      "groups": [
+        "observe"
+      ]
+    },
+    "high_resolution_scan": {
+      "display_es": "Barrido de alta resolución",
+      "route": "scans/focused",
+      "prefill": [
+        "contact_id",
+        "resolution:high"
+      ],
+      "groups": [
+        "observe"
+      ]
+    },
+    "start_tracking": {
+      "display_es": "Iniciar seguimiento",
+      "route": "tracking/acquire_contact",
+      "prefill": [
+        "contact_id"
+      ],
+      "groups": [
+        "track"
+      ]
+    },
+    "stop_tracking": {
+      "display_es": "Finalizar seguimiento",
+      "operation": "stop_tracking",
+      "groups": [
+        "track"
+      ]
+    },
+    "set_priority_tracking": {
+      "display_es": "Seguimiento prioritario",
+      "operation": "set_tracking_priority",
+      "groups": [
+        "track"
+      ]
+    },
+    "set_normal_tracking": {
+      "display_es": "Seguimiento normal",
+      "operation": "set_tracking_normal",
+      "groups": [
+        "track"
+      ]
+    },
+    "mark_contact": {
+      "display_es": "Marcar contacto",
+      "operation": "mark_contact",
+      "groups": [
+        "organize"
+      ]
+    },
+    "unmark_contact": {
+      "display_es": "Quitar marca",
+      "operation": "unmark_contact",
+      "groups": [
+        "organize"
+      ]
+    },
+    "open_sensor_readout": {
+      "display_es": "Lectura sensorial",
+      "route": "sensor_readout",
+      "prefill": [
+        "contact_id"
+      ],
+      "groups": [
+        "inspect"
+      ]
+    },
+    "compare_readings": {
+      "display_es": "Comparar lecturas",
+      "route": "results/compare_readings",
+      "prefill": [
+        "contact_id"
+      ],
+      "groups": [
+        "inspect"
+      ]
+    },
+    "save_reading": {
+      "display_es": "Guardar lectura",
+      "operation": "save_sensor_result",
+      "groups": [
+        "organize"
+      ]
+    },
+    "repeat_operation": {
+      "display_es": "Repetir operación",
+      "route": "results/repeat_operation",
+      "prefill": [
+        "result_id",
+        "configuration"
+      ],
+      "groups": [
+        "operate"
+      ]
+    },
+    "send_data": {
+      "display_es": "Enviar datos a…",
+      "operation": "open_generic_handoff",
+      "groups": [
+        "share"
+      ]
+    },
+    "send_to_science": {
+      "display_es": "Enviar a Ciencia",
+      "operation": "open_science_handoff",
+      "groups": [
+        "share"
+      ]
+    },
+    "send_to_tactical": {
+      "display_es": "Enviar a Táctica",
+      "operation": "open_generic_handoff:tactical",
+      "groups": [
+        "share"
+      ]
+    },
+    "request_additional_power": {
+      "display_es": "Solicitar potencia adicional",
+      "operation": "open_power_request",
+      "contract": "gameplay/ship_operations/interconsole/sensor_to_operations_power_request.json",
+      "groups": [
+        "resources"
+      ]
+    },
+    "cancel_power_request": {
+      "display_es": "Cancelar solicitud de potencia",
+      "operation": "cancel_power_request",
+      "groups": [
+        "resources"
+      ]
+    },
+    "automatic_compensation": {
+      "display_es": "Compensación automática",
+      "route": "interference/automatic_compensation",
+      "groups": [
+        "compensate"
+      ]
+    },
+    "manual_compensation": {
+      "display_es": "Ajuste manual",
+      "route": "interference/manual_adjustment",
+      "groups": [
+        "compensate"
+      ]
+    },
+    "change_band": {
+      "display_es": "Cambiar banda / frecuencia",
+      "route": "interference/change_band_frequency",
+      "groups": [
+        "compensate"
+      ]
+    },
+    "extend_integration": {
+      "display_es": "Prolongar integración",
+      "route": "interference/extend_integration",
+      "groups": [
+        "compensate"
+      ]
+    },
+    "recover_signal": {
+      "display_es": "Recuperar señal",
+      "route": "interference/recover_signal",
+      "groups": [
+        "compensate"
+      ]
+    },
+    "open_interference": {
+      "display_es": "Abrir compensación de interferencias",
+      "route": "interference",
+      "groups": [
+        "navigate"
+      ]
+    },
+    "open_diagnostics": {
+      "display_es": "Abrir diagnóstico",
+      "route": "diagnostics",
+      "groups": [
+        "diagnose"
+      ]
+    },
+    "run_self_test": {
+      "display_es": "Ejecutar autodiagnóstico",
+      "route": "diagnostics/self_test",
+      "groups": [
+        "diagnose"
+      ]
+    },
+    "calibrate_array": {
+      "display_es": "Calibrar matriz",
+      "route": "diagnostics/calibration",
+      "prefill": [
+        "array_id"
+      ],
+      "groups": [
+        "diagnose"
+      ]
+    },
+    "run_array_diagnostic": {
+      "display_es": "Diagnosticar matriz",
+      "route": "diagnostics/self_test",
+      "prefill": [
+        "array_id"
+      ],
+      "groups": [
+        "diagnose"
+      ]
+    },
+    "select_array": {
+      "display_es": "Usar esta matriz",
+      "operation": "select_sensor_array",
+      "groups": [
+        "configure"
+      ]
+    },
+    "request_engineering_support": {
+      "display_es": "Solicitar soporte de Ingeniería",
+      "route": "diagnostics/request_engineering_support",
+      "prefill": [
+        "component",
+        "diagnostic_code"
+      ],
+      "groups": [
+        "support"
+      ]
+    },
+    "open_current_result": {
+      "display_es": "Abrir resultado actual",
+      "route": "results/current_operation",
+      "prefill": [
+        "operation_id"
+      ],
+      "groups": [
+        "inspect"
+      ]
+    },
+    "cancel_operation": {
+      "display_es": "Cancelar operación",
+      "operation": "cancel_sensor_operation",
+      "groups": [
+        "operate"
+      ]
+    },
+    "reacquire_contact": {
+      "display_es": "Recuperar contacto",
+      "route": "tracking/reacquire_lost_contact",
+      "prefill": [
+        "contact_id"
+      ],
+      "groups": [
+        "track"
+      ]
+    },
+    "predict_trajectory": {
+      "display_es": "Predecir trayectoria",
+      "route": "tracking/predict_trajectory",
+      "prefill": [
+        "contact_id"
+      ],
+      "groups": [
+        "track"
+      ]
+    },
+    "release_tracking_slot": {
+      "display_es": "Liberar seguimiento",
+      "operation": "stop_tracking",
+      "groups": [
+        "resources"
+      ]
+    },
+    "reprioritize_tracking": {
+      "display_es": "Reordenar prioridades",
+      "route": "tracking/multi_track",
+      "groups": [
+        "resources"
+      ]
+    },
+    "restore_previous_compensation": {
+      "display_es": "Restaurar compensación anterior",
+      "operation": "restore_previous_compensation",
+      "groups": [
+        "compensate"
+      ]
+    },
+    "open_configuration_power": {
+      "display_es": "Abrir configuración de potencia",
+      "route": "configuration/sensor_power",
+      "groups": [
+        "resources"
+      ]
+    },
+    "open_configuration_resolution": {
+      "display_es": "Abrir configuración de resolución",
+      "route": "configuration/default_resolution",
+      "groups": [
+        "configure"
+      ]
+    }
+  },
+  "context_sets": [
+    {
+      "id": "selected_contact_active",
+      "when": [
+        "selected_contact exists",
+        "contact_status in active|confirmed|unidentified"
+      ],
+      "expose": [
+        "focused_scan",
+        "open_sensor_readout",
+        "compare_readings",
+        "send_data",
+        "send_to_science"
+      ],
+      "conditional": [
+        {
+          "action": "start_tracking",
+          "when": "contact not tracked"
+        },
+        {
+          "action": "stop_tracking",
+          "when": "contact tracked"
+        },
+        {
+          "action": "set_priority_tracking",
+          "when": "contact tracked and tracking_mode != priority"
+        },
+        {
+          "action": "set_normal_tracking",
+          "when": "contact tracked and tracking_mode == priority"
+        },
+        {
+          "action": "mark_contact",
+          "when": "contact not marked"
+        },
+        {
+          "action": "unmark_contact",
+          "when": "contact marked"
+        },
+        {
+          "action": "high_resolution_scan",
+          "when": "resolution headroom exists"
+        },
+        {
+          "action": "request_additional_power",
+          "when": "weak_signal or power_limited or insufficient_effective_range"
+        }
+      ]
+    },
+    {
+      "id": "selected_contact_lost",
+      "when": [
+        "selected_contact.contact_status == lost"
+      ],
+      "expose": [
+        "reacquire_contact",
+        "predict_trajectory",
+        "compare_readings",
+        "open_sensor_readout"
+      ],
+      "conditional": [
+        {
+          "action": "request_additional_power",
+          "when": "reacquisition is power_limited or signal extremely weak"
+        },
+        {
+          "action": "send_to_science",
+          "when": "scientific interpretation could assist"
+        }
+      ]
+    },
+    {
+      "id": "selected_readout",
+      "when": [
+        "selected_readout exists"
+      ],
+      "expose": [
+        "save_reading",
+        "compare_readings",
+        "send_data",
+        "send_to_science"
+      ],
+      "conditional": [
+        {
+          "action": "focused_scan",
+          "when": "readout linked to target/contact and additional observation is possible"
+        },
+        {
+          "action": "high_resolution_scan",
+          "when": "detail limited by resolution and capability permits"
+        },
+        {
+          "action": "extend_integration",
+          "when": "signal is weak/intermittent"
+        },
+        {
+          "action": "request_additional_power",
+          "when": "readout marked power_limited"
+        }
+      ]
+    },
+    {
+      "id": "interference",
+      "when": [
+        "interference severity > none"
+      ],
+      "expose": [
+        "automatic_compensation",
+        "manual_compensation",
+        "change_band",
+        "extend_integration"
+      ],
+      "conditional": [
+        {
+          "action": "recover_signal",
+          "when": "contact/signal degraded or lost"
+        },
+        {
+          "action": "request_additional_power",
+          "when": "compensation is power_limited or extra power could improve SNR within ship capability"
+        },
+        {
+          "action": "send_to_science",
+          "when": "cause requires scientific interpretation"
+        },
+        {
+          "action": "send_to_tactical",
+          "when": "deliberate countermeasure plausible"
+        }
+      ]
+    },
+    {
+      "id": "tracked_contact",
+      "when": [
+        "tracked_contact exists"
+      ],
+      "expose": [
+        "open_sensor_readout",
+        "focused_scan",
+        "predict_trajectory",
+        "compare_readings"
+      ],
+      "conditional": [
+        {
+          "action": "set_priority_tracking",
+          "when": "mode != priority"
+        },
+        {
+          "action": "set_normal_tracking",
+          "when": "mode == priority"
+        },
+        {
+          "action": "release_tracking_slot",
+          "when": "tracked"
+        },
+        {
+          "action": "request_additional_power",
+          "when": "tracking quality power_limited"
+        }
+      ]
+    },
+    {
+      "id": "tracking_capacity_pressure",
+      "when": [
+        "tracking capacity near or at limit"
+      ],
+      "expose": [
+        "reprioritize_tracking"
+      ],
+      "conditional": [
+        {
+          "action": "request_additional_power",
+          "when": "ship capability allows power to improve tracking capacity/quality"
+        },
+        {
+          "action": "release_tracking_slot",
+          "when": "at least one tracked contact can be released"
+        }
+      ]
+    },
+    {
+      "id": "active_operation",
+      "when": [
+        "active_operation exists"
+      ],
+      "expose": [
+        "open_current_result"
+      ],
+      "conditional": [
+        {
+          "action": "cancel_operation",
+          "when": "operation cancellable"
+        },
+        {
+          "action": "request_additional_power",
+          "when": "operation power_limited"
+        },
+        {
+          "action": "open_interference",
+          "when": "operation degraded by interference"
+        }
+      ]
+    },
+    {
+      "id": "selected_result",
+      "when": [
+        "selected_result exists"
+      ],
+      "expose": [
+        "save_reading",
+        "compare_readings",
+        "repeat_operation",
+        "send_data"
+      ],
+      "conditional": [
+        {
+          "action": "focused_scan",
+          "when": "result references a current known contact"
+        },
+        {
+          "action": "send_to_science",
+          "when": "scientific analysis is applicable"
+        }
+      ]
+    },
+    {
+      "id": "diagnostic_array",
+      "when": [
+        "diagnostic array detail open"
+      ],
+      "expose": [
+        "run_array_diagnostic"
+      ],
+      "conditional": [
+        {
+          "action": "calibrate_array",
+          "when": "state == miscalibrated or calibration_due"
+        },
+        {
+          "action": "select_array",
+          "when": "array available and not already selected"
+        },
+        {
+          "action": "request_engineering_support",
+          "when": "state == physically_damaged or persistent_degradation"
+        },
+        {
+          "action": "request_additional_power",
+          "when": "performance loss caused by allocation rather than hardware"
+        }
+      ]
+    },
+    {
+      "id": "diagnostic_error",
+      "when": [
+        "diagnostic error selected"
+      ],
+      "conditional": [
+        {
+          "action": "calibrate_array",
+          "when": "error is calibration_recoverable"
+        },
+        {
+          "action": "request_engineering_support",
+          "when": "physical repair or maintenance required"
+        },
+        {
+          "action": "request_additional_power",
+          "when": "error indicates allocation shortfall rather than damage"
+        }
+      ]
+    },
+    {
+      "id": "power_configuration",
+      "when": [
+        "configuration/sensor_power open"
+      ],
+      "expose": [
+        "request_additional_power"
+      ],
+      "conditional": [
+        {
+          "action": "cancel_power_request",
+          "when": "pending power request exists"
+        }
+      ]
+    }
+  ],
+  "power_button_policy": {
+    "not_always_contextual": true,
+    "explicit_location_always_available_if_ship_policy_allows": "configuration/sensor_power",
+    "contextual_triggers": [
+      "weak_signal",
+      "insufficient_effective_range",
+      "power_limited_operation",
+      "high_interference",
+      "tracking_capacity_pressure",
+      "reacquisition_power_limit"
+    ],
+    "never_implies_best_choice": true
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "schema_version": "0.1.0",
+  "contract_id": "sensor_to_operations_power_request",
+  "status": "approved_v0.1",
+  "source_console": "sensors",
+  "resource_authority": "operations",
+  "purpose": "Request additional ship power for Sensors without allowing Sensors to choose the donor system or bypass shipwide priorities.",
+  "request": {
+    "required": [
+      "request_id",
+      "requesting_console",
+      "requested_delta",
+      "use_case",
+      "priority",
+      "requested_duration",
+      "reason",
+      "created_at"
+    ],
+    "fields": {
+      "request_id": "persistent request identifier",
+      "requesting_console": {
+        "const": "sensors"
+      },
+      "current_allocation": "current sensor allocation at request time",
+      "requested_delta": "additional power requested; unit interpreted by ship power model",
+      "desired_total_allocation": "optional total target allocation",
+      "use_case": [
+        "scan",
+        "search",
+        "tracking",
+        "reacquisition",
+        "interference_compensation",
+        "sensor_readout",
+        "other_sensor_operation"
+      ],
+      "operation_id": "optional active/planned sensor operation",
+      "contact_id": "optional related contact",
+      "priority": [
+        "routine",
+        "operational",
+        "urgent"
+      ],
+      "requested_duration": [
+        "single_operation",
+        "timed",
+        "until_released"
+      ],
+      "reason": "operator supplied or context-prefilled reason",
+      "created_at": "simulation timestamp"
+    }
+  },
+  "routing": {
+    "sensors_may_request": true,
+    "sensors_may_select_donor_system": false,
+    "operations_evaluates_shipwide_priority": true,
+    "operations_may_coordinate_execution_with_engineering_or_power_control": true,
+    "command_override_can_exist_via_separate_authority_rules": true
+  },
+  "responses": {
+    "states": [
+      "pending",
+      "approved",
+      "partially_approved",
+      "denied",
+      "cancelled",
+      "expired",
+      "released"
+    ],
+    "fields": [
+      "request_id",
+      "state",
+      "granted_delta",
+      "effective_total_allocation",
+      "effective_from",
+      "effective_until",
+      "conditions",
+      "reason"
+    ]
+  },
+  "effects": {
+    "no_magic_bonus": true,
+    "granted_power_changes_real_sensor_resource_state": true,
+    "possible_sensor_benefits": [
+      "effective_range",
+      "signal_to_noise",
+      "resolution_headroom",
+      "update_rate",
+      "tracking_quality",
+      "tracking_capacity_when_ship_model_allows"
+    ],
+    "benefit_depends_on": [
+      "ship_class",
+      "era",
+      "sensor_hardware",
+      "operation_type",
+      "damage_state",
+      "environment",
+      "interference"
+    ],
+    "power_can_have_costs_elsewhere": true
+  },
+  "ui_rules": {
+    "request_button_is_contextual_outside_power_configuration": true,
+    "player_confirms_request_before_send": true,
+    "prefilled_context_may_be_edited": true,
+    "response_status_visible_in_persistent_status_panel": true
+  }
+}

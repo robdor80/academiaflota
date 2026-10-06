@@ -1,0 +1,1459 @@
+{
+  "schema_version": "0.2.0",
+  "console_id": "sensors",
+  "status": "approved_v0.2_information_architecture",
+  "principle": "detect_search_locate_measure_track_observe",
+  "interaction_model": "gameplay/ship_operations/consoles/sensors/sensor_console_interaction_model.json",
+  "contextual_actions_model": "gameplay/ship_operations/consoles/sensors/sensor_context_actions.json",
+  "boundaries": {
+    "owns": [
+      "detection",
+      "search",
+      "localization",
+      "measurement",
+      "tracking",
+      "sensor_filtering",
+      "sensor_readout"
+    ],
+    "delegates": {
+      "scientific_interpretation": "science",
+      "weapons_and_fire_control": "tactical",
+      "ship_course_plotting": "conn_navigation",
+      "physical_repairs": "engineering",
+      "shipwide_resource_priorities": "operations"
+    }
+  },
+  "navigation_rules": {
+    "primary_menu_count": 10,
+    "one_primary_workspace_visible_at_a_time": true,
+    "background_operations_continue_when_navigating": true,
+    "context_can_cross_link_between_primary_menus": true,
+    "context_prefill_allowed": true,
+    "context_prefill_never_executes_automatically": true,
+    "recommended_max_depth": 3,
+    "deeper_navigation_requires_explicit_design_review": true
+  },
+  "root": [
+    {
+      "id": "status",
+      "display_es": "Estado de sensores",
+      "level": 1,
+      "kind": "primary_menu",
+      "secondary": [
+        {
+          "id": "general_status",
+          "display_es": "Estado general",
+          "kind": "view",
+          "shows": [
+            "system_state",
+            "active_profile",
+            "selected_array",
+            "effective_capability",
+            "alerts"
+          ],
+          "context_actions": [
+            "run_self_test",
+            "open_diagnostics"
+          ]
+        },
+        {
+          "id": "available_arrays",
+          "display_es": "Matrices disponibles",
+          "kind": "list",
+          "tertiary": {
+            "id": "array_detail",
+            "display_es": "Detalle de matriz",
+            "shows": [
+              "availability",
+              "integrity",
+              "calibration",
+              "supported_bands",
+              "effective_range",
+              "resolution",
+              "current_load"
+            ],
+            "context_actions": [
+              "select_array",
+              "calibrate_array",
+              "run_array_diagnostic",
+              "request_engineering_support"
+            ]
+          }
+        },
+        {
+          "id": "effective_range",
+          "display_es": "Alcance efectivo",
+          "kind": "view",
+          "shows": [
+            "short_range_capability",
+            "long_range_capability",
+            "current_environment_effect",
+            "power_effect",
+            "damage_effect"
+          ],
+          "context_actions": [
+            "open_configuration_power",
+            "request_additional_power"
+          ]
+        },
+        {
+          "id": "available_resolution",
+          "display_es": "Resolución disponible",
+          "kind": "view",
+          "shows": [
+            "current_resolution_ceiling",
+            "active_constraints",
+            "tradeoffs"
+          ],
+          "context_actions": [
+            "open_configuration_resolution",
+            "request_additional_power"
+          ]
+        },
+        {
+          "id": "allocated_power",
+          "display_es": "Potencia asignada",
+          "kind": "view",
+          "shows": [
+            "current_allocation",
+            "usable_power",
+            "temporary_grant",
+            "request_status"
+          ],
+          "context_actions": [
+            "open_configuration_power",
+            "request_additional_power",
+            "cancel_power_request"
+          ]
+        },
+        {
+          "id": "integrity_damage",
+          "display_es": "Integridad / daños",
+          "kind": "view",
+          "shows": [
+            "overall_integrity",
+            "degraded_components",
+            "offline_components"
+          ],
+          "context_actions": [
+            "open_diagnostics",
+            "request_engineering_support"
+          ]
+        },
+        {
+          "id": "detected_interference",
+          "display_es": "Interferencias detectadas",
+          "kind": "view",
+          "shows": [
+            "severity",
+            "affected_bands",
+            "suspected_class",
+            "confidence"
+          ],
+          "context_actions": [
+            "open_interference",
+            "automatic_compensation",
+            "send_to_science",
+            "send_to_tactical"
+          ]
+        },
+        {
+          "id": "active_operations",
+          "display_es": "Operaciones activas",
+          "kind": "list",
+          "tertiary": {
+            "id": "operation_detail",
+            "display_es": "Detalle de operación",
+            "shows": [
+              "operation_type",
+              "target",
+              "progress",
+              "configuration",
+              "partial_result",
+              "resource_use"
+            ],
+            "context_actions": [
+              "open_current_result",
+              "cancel_operation",
+              "request_additional_power"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "scans",
+      "display_es": "Barridos",
+      "level": 1,
+      "kind": "primary_menu",
+      "secondary": [
+        {
+          "id": "short_range",
+          "display_es": "Corto alcance",
+          "kind": "task",
+          "defaults": {
+            "range_mode": "short"
+          },
+          "tertiary_template": "scan_configuration"
+        },
+        {
+          "id": "long_range",
+          "display_es": "Largo alcance",
+          "kind": "task",
+          "defaults": {
+            "range_mode": "long"
+          },
+          "tertiary_template": "scan_configuration"
+        },
+        {
+          "id": "focused",
+          "display_es": "Focalizado",
+          "kind": "task",
+          "defaults": {
+            "range_mode": "focused"
+          },
+          "requires_target": true,
+          "tertiary_template": "scan_configuration"
+        }
+      ]
+    },
+    {
+      "id": "search_localize",
+      "display_es": "Búsqueda / localización",
+      "level": 1,
+      "kind": "primary_menu",
+      "secondary": [
+        {
+          "id": "starship",
+          "display_es": "Nave",
+          "kind": "task",
+          "tertiary_template": "search_configuration"
+        },
+        {
+          "id": "shuttle",
+          "display_es": "Lanzadera",
+          "kind": "task",
+          "tertiary_template": "search_configuration"
+        },
+        {
+          "id": "probe_beacon",
+          "display_es": "Sonda / baliza",
+          "kind": "task",
+          "tertiary_template": "search_configuration"
+        },
+        {
+          "id": "lifeform",
+          "display_es": "Forma de vida",
+          "kind": "task",
+          "tertiary_template": "search_configuration"
+        },
+        {
+          "id": "artificial_object",
+          "display_es": "Objeto artificial",
+          "kind": "task",
+          "tertiary_template": "search_configuration"
+        },
+        {
+          "id": "energy_source",
+          "display_es": "Fuente de energía",
+          "kind": "task",
+          "tertiary_template": "search_configuration"
+        },
+        {
+          "id": "warp_signature",
+          "display_es": "Firma warp",
+          "kind": "task",
+          "tertiary_template": "search_configuration"
+        },
+        {
+          "id": "subspace_emission",
+          "display_es": "Emisión subespacial",
+          "kind": "task",
+          "tertiary_template": "search_configuration"
+        },
+        {
+          "id": "signal_transponder",
+          "display_es": "Señal / transpondedor",
+          "kind": "task",
+          "tertiary_template": "search_configuration"
+        },
+        {
+          "id": "radiation_particle",
+          "display_es": "Radiación / partículas",
+          "kind": "task",
+          "tertiary_template": "search_configuration"
+        },
+        {
+          "id": "custom_signature",
+          "display_es": "Firma definida",
+          "kind": "task",
+          "tertiary_template": "search_configuration"
+        }
+      ]
+    },
+    {
+      "id": "contacts",
+      "display_es": "Contactos",
+      "level": 1,
+      "kind": "primary_menu",
+      "secondary": [
+        {
+          "id": "all",
+          "display_es": "Todos",
+          "kind": "contact_list",
+          "tertiary": {
+            "id": "contact_detail",
+            "display_es": "Ficha de contacto",
+            "kind": "detail",
+            "sections": [
+              "summary",
+              "signatures",
+              "motion",
+              "confidence",
+              "classification",
+              "observation_history",
+              "provenance"
+            ],
+            "contextual_actions_from": "sensor_context_actions:selected_contact"
+          }
+        },
+        {
+          "id": "unidentified",
+          "display_es": "No identificados",
+          "kind": "contact_list",
+          "tertiary": {
+            "id": "contact_detail",
+            "display_es": "Ficha de contacto",
+            "kind": "detail",
+            "sections": [
+              "summary",
+              "signatures",
+              "motion",
+              "confidence",
+              "classification",
+              "observation_history",
+              "provenance"
+            ],
+            "contextual_actions_from": "sensor_context_actions:selected_contact"
+          }
+        },
+        {
+          "id": "identified",
+          "display_es": "Identificados",
+          "kind": "contact_list",
+          "tertiary": {
+            "id": "contact_detail",
+            "display_es": "Ficha de contacto",
+            "kind": "detail",
+            "sections": [
+              "summary",
+              "signatures",
+              "motion",
+              "confidence",
+              "classification",
+              "observation_history",
+              "provenance"
+            ],
+            "contextual_actions_from": "sensor_context_actions:selected_contact"
+          }
+        },
+        {
+          "id": "marked",
+          "display_es": "Marcados",
+          "kind": "contact_list",
+          "tertiary": {
+            "id": "contact_detail",
+            "display_es": "Ficha de contacto",
+            "kind": "detail",
+            "sections": [
+              "summary",
+              "signatures",
+              "motion",
+              "confidence",
+              "classification",
+              "observation_history",
+              "provenance"
+            ],
+            "contextual_actions_from": "sensor_context_actions:selected_contact"
+          }
+        },
+        {
+          "id": "recently_lost",
+          "display_es": "Perdidos recientemente",
+          "kind": "contact_list",
+          "tertiary": {
+            "id": "contact_detail",
+            "display_es": "Ficha de contacto",
+            "kind": "detail",
+            "sections": [
+              "summary",
+              "signatures",
+              "motion",
+              "confidence",
+              "classification",
+              "observation_history",
+              "provenance"
+            ],
+            "contextual_actions_from": "sensor_context_actions:selected_contact"
+          }
+        }
+      ],
+      "persistence": {
+        "dossier_model": "gameplay/ship_operations/ship_memory/contact_dossier_model.json",
+        "persistent_identity": true,
+        "preserves_provenance": true
+      }
+    },
+    {
+      "id": "tracking",
+      "display_es": "Seguimiento",
+      "level": 1,
+      "kind": "primary_menu",
+      "secondary": [
+        {
+          "id": "tracked_contacts",
+          "display_es": "Contactos seguidos",
+          "kind": "list",
+          "tertiary": {
+            "id": "tracking_contact_detail",
+            "display_es": "Detalle de seguimiento",
+            "shows": [
+              "mode",
+              "update_rate",
+              "quality",
+              "resource_cost",
+              "last_update"
+            ],
+            "contextual_actions_from": "sensor_context_actions:tracked_contact"
+          }
+        },
+        {
+          "id": "acquire_contact",
+          "display_es": "Fijar contacto",
+          "kind": "task",
+          "tertiary": {
+            "id": "tracking_assignment",
+            "display_es": "Asignar seguimiento",
+            "controls": [
+              "contact",
+              "tracking_mode",
+              "priority"
+            ],
+            "terminal_actions": [
+              "start_tracking",
+              "cancel"
+            ]
+          }
+        },
+        {
+          "id": "multi_track",
+          "display_es": "Seguimiento múltiple",
+          "kind": "task",
+          "tertiary": {
+            "id": "capacity_management",
+            "display_es": "Gestionar capacidad",
+            "shows": [
+              "capacity_used",
+              "capacity_total",
+              "contacts",
+              "per_contact_cost"
+            ],
+            "controls": [
+              "priority_per_contact"
+            ],
+            "terminal_actions": [
+              "apply_tracking_priorities",
+              "request_additional_power"
+            ]
+          }
+        },
+        {
+          "id": "track_signature",
+          "display_es": "Seguir firma concreta",
+          "kind": "task",
+          "tertiary": {
+            "id": "signature_tracking",
+            "display_es": "Configurar seguimiento de firma",
+            "controls": [
+              "contact",
+              "signature",
+              "tracking_mode"
+            ],
+            "terminal_actions": [
+              "start_signature_tracking",
+              "cancel"
+            ]
+          }
+        },
+        {
+          "id": "update_position",
+          "display_es": "Actualizar posición",
+          "kind": "task",
+          "tertiary": {
+            "id": "position_update",
+            "display_es": "Actualización de posición",
+            "controls": [
+              "contact"
+            ],
+            "terminal_actions": [
+              "execute_position_update",
+              "cancel"
+            ]
+          }
+        },
+        {
+          "id": "estimate_course",
+          "display_es": "Estimar rumbo",
+          "kind": "task",
+          "tertiary": {
+            "id": "course_estimation",
+            "display_es": "Estimación de rumbo",
+            "controls": [
+              "contact",
+              "observation_window"
+            ],
+            "terminal_actions": [
+              "execute_course_estimation",
+              "cancel"
+            ]
+          }
+        },
+        {
+          "id": "estimate_velocity",
+          "display_es": "Estimar velocidad",
+          "kind": "task",
+          "tertiary": {
+            "id": "velocity_estimation",
+            "display_es": "Estimación de velocidad",
+            "controls": [
+              "contact",
+              "observation_window"
+            ],
+            "terminal_actions": [
+              "execute_velocity_estimation",
+              "cancel"
+            ]
+          }
+        },
+        {
+          "id": "predict_trajectory",
+          "display_es": "Predecir trayectoria",
+          "kind": "task",
+          "tertiary": {
+            "id": "trajectory_prediction",
+            "display_es": "Predicción de trayectoria",
+            "controls": [
+              "contact",
+              "prediction_horizon"
+            ],
+            "shows": [
+              "expected_uncertainty"
+            ],
+            "terminal_actions": [
+              "execute_trajectory_prediction",
+              "cancel"
+            ]
+          }
+        },
+        {
+          "id": "reacquire_lost_contact",
+          "display_es": "Recuperar contacto perdido",
+          "kind": "task",
+          "tertiary": {
+            "id": "reacquisition_setup",
+            "display_es": "Configurar recuperación",
+            "controls": [
+              "lost_contact",
+              "last_position",
+              "known_signature",
+              "search_window"
+            ],
+            "terminal_actions": [
+              "start_reacquisition",
+              "request_additional_power",
+              "cancel"
+            ]
+          }
+        }
+      ],
+      "capacity_model": "finite_ship_sensor_capacity"
+    },
+    {
+      "id": "sensor_readout",
+      "display_es": "Lectura sensorial",
+      "level": 1,
+      "kind": "primary_menu",
+      "secondary": [
+        {
+          "id": "signal_strength",
+          "display_es": "Intensidad de señal",
+          "kind": "readout_view",
+          "tertiary": {
+            "id": "readout_detail",
+            "display_es": "Detalle de lectura",
+            "shows": [
+              "value",
+              "uncertainty",
+              "confidence",
+              "timestamp",
+              "provenance",
+              "history"
+            ],
+            "contextual_actions_from": "sensor_context_actions:selected_readout"
+          }
+        },
+        {
+          "id": "signature_type",
+          "display_es": "Tipo de firma",
+          "kind": "readout_view",
+          "tertiary": {
+            "id": "readout_detail",
+            "display_es": "Detalle de lectura",
+            "shows": [
+              "value",
+              "uncertainty",
+              "confidence",
+              "timestamp",
+              "provenance",
+              "history"
+            ],
+            "contextual_actions_from": "sensor_context_actions:selected_readout"
+          }
+        },
+        {
+          "id": "band_frequency",
+          "display_es": "Banda / frecuencia",
+          "kind": "readout_view",
+          "tertiary": {
+            "id": "readout_detail",
+            "display_es": "Detalle de lectura",
+            "shows": [
+              "value",
+              "uncertainty",
+              "confidence",
+              "timestamp",
+              "provenance",
+              "history"
+            ],
+            "contextual_actions_from": "sensor_context_actions:selected_readout"
+          }
+        },
+        {
+          "id": "energy_signature",
+          "display_es": "Firma energética",
+          "kind": "readout_view",
+          "tertiary": {
+            "id": "readout_detail",
+            "display_es": "Detalle de lectura",
+            "shows": [
+              "value",
+              "uncertainty",
+              "confidence",
+              "timestamp",
+              "provenance",
+              "history"
+            ],
+            "contextual_actions_from": "sensor_context_actions:selected_readout"
+          }
+        },
+        {
+          "id": "subspace_signature",
+          "display_es": "Firma subespacial",
+          "kind": "readout_view",
+          "tertiary": {
+            "id": "readout_detail",
+            "display_es": "Detalle de lectura",
+            "shows": [
+              "value",
+              "uncertainty",
+              "confidence",
+              "timestamp",
+              "provenance",
+              "history"
+            ],
+            "contextual_actions_from": "sensor_context_actions:selected_readout"
+          }
+        },
+        {
+          "id": "approx_mass",
+          "display_es": "Masa aproximada",
+          "kind": "readout_view",
+          "tertiary": {
+            "id": "readout_detail",
+            "display_es": "Detalle de lectura",
+            "shows": [
+              "value",
+              "uncertainty",
+              "confidence",
+              "timestamp",
+              "provenance",
+              "history"
+            ],
+            "contextual_actions_from": "sensor_context_actions:selected_readout"
+          }
+        },
+        {
+          "id": "approx_dimensions",
+          "display_es": "Dimensiones aproximadas",
+          "kind": "readout_view",
+          "tertiary": {
+            "id": "readout_detail",
+            "display_es": "Detalle de lectura",
+            "shows": [
+              "value",
+              "uncertainty",
+              "confidence",
+              "timestamp",
+              "provenance",
+              "history"
+            ],
+            "contextual_actions_from": "sensor_context_actions:selected_readout"
+          }
+        },
+        {
+          "id": "vector_velocity",
+          "display_es": "Vector / velocidad",
+          "kind": "readout_view",
+          "tertiary": {
+            "id": "readout_detail",
+            "display_es": "Detalle de lectura",
+            "shows": [
+              "value",
+              "uncertainty",
+              "confidence",
+              "timestamp",
+              "provenance",
+              "history"
+            ],
+            "contextual_actions_from": "sensor_context_actions:selected_readout"
+          }
+        },
+        {
+          "id": "detectable_lifeforms",
+          "display_es": "Formas de vida detectables",
+          "kind": "readout_view",
+          "tertiary": {
+            "id": "readout_detail",
+            "display_es": "Detalle de lectura",
+            "shows": [
+              "value",
+              "uncertainty",
+              "confidence",
+              "timestamp",
+              "provenance",
+              "history"
+            ],
+            "contextual_actions_from": "sensor_context_actions:selected_readout"
+          }
+        },
+        {
+          "id": "known_pattern_match",
+          "display_es": "Coincidencia con patrones conocidos",
+          "kind": "readout_view",
+          "tertiary": {
+            "id": "readout_detail",
+            "display_es": "Detalle de lectura",
+            "shows": [
+              "value",
+              "uncertainty",
+              "confidence",
+              "timestamp",
+              "provenance",
+              "history"
+            ],
+            "contextual_actions_from": "sensor_context_actions:selected_readout"
+          }
+        }
+      ],
+      "science_handoff_contract": "gameplay/ship_operations/interconsole/sensor_to_science_analysis_handoff.json"
+    },
+    {
+      "id": "interference",
+      "display_es": "Interferencias / compensación",
+      "level": 1,
+      "kind": "primary_menu",
+      "secondary": [
+        {
+          "id": "interference_status",
+          "display_es": "Estado de interferencias",
+          "kind": "view",
+          "shows": [
+            "severity",
+            "affected_bands",
+            "affected_signatures",
+            "performance_loss"
+          ],
+          "contextual_actions_from": "sensor_context_actions:interference"
+        },
+        {
+          "id": "interference_type",
+          "display_es": "Tipo de interferencia",
+          "kind": "view",
+          "shows": [
+            "observable_pattern",
+            "classification",
+            "confidence",
+            "environmental_or_deliberate"
+          ],
+          "context_actions": [
+            "send_to_science",
+            "send_to_tactical"
+          ]
+        },
+        {
+          "id": "automatic_compensation",
+          "display_es": "Compensación automática",
+          "kind": "task",
+          "tertiary": {
+            "id": "auto_compensation_review",
+            "display_es": "Revisar compensación",
+            "shows": [
+              "planned_adjustments",
+              "expected_tradeoffs"
+            ],
+            "terminal_actions": [
+              "apply_automatic_compensation",
+              "cancel"
+            ]
+          }
+        },
+        {
+          "id": "manual_adjustment",
+          "display_es": "Ajuste manual",
+          "kind": "task",
+          "tertiary": {
+            "id": "manual_compensation",
+            "display_es": "Configurar compensación",
+            "controls": [
+              "band_frequency",
+              "sensitivity",
+              "resolution",
+              "integration_time",
+              "operation_power_within_allocation"
+            ],
+            "shows": [
+              "tradeoffs"
+            ],
+            "terminal_actions": [
+              "apply_manual_compensation",
+              "restore_previous_compensation",
+              "request_additional_power",
+              "cancel"
+            ]
+          }
+        },
+        {
+          "id": "change_band_frequency",
+          "display_es": "Cambiar banda / frecuencia",
+          "kind": "task",
+          "tertiary": {
+            "id": "band_change",
+            "display_es": "Seleccionar banda",
+            "controls": [
+              "available_band_frequency"
+            ],
+            "terminal_actions": [
+              "apply_band_change",
+              "cancel"
+            ]
+          }
+        },
+        {
+          "id": "increase_operation_power",
+          "display_es": "Aumentar potencia de la operación",
+          "kind": "task",
+          "scope": "within_current_sensor_allocation",
+          "tertiary": {
+            "id": "operation_power_adjustment",
+            "display_es": "Potencia de operación",
+            "controls": [
+              "operation",
+              "power_share"
+            ],
+            "shows": [
+              "available_sensor_allocation",
+              "tradeoffs"
+            ],
+            "terminal_actions": [
+              "apply_operation_power",
+              "request_additional_power",
+              "cancel"
+            ]
+          }
+        },
+        {
+          "id": "reduce_resolution",
+          "display_es": "Reducir resolución",
+          "kind": "task",
+          "tertiary": {
+            "id": "resolution_tradeoff",
+            "display_es": "Sacrificar resolución",
+            "controls": [
+              "target_resolution"
+            ],
+            "shows": [
+              "expected_stability_gain"
+            ],
+            "terminal_actions": [
+              "apply_resolution_change",
+              "cancel"
+            ]
+          }
+        },
+        {
+          "id": "extend_integration",
+          "display_es": "Prolongar integración",
+          "kind": "task",
+          "tertiary": {
+            "id": "integration_extension",
+            "display_es": "Tiempo de integración",
+            "controls": [
+              "integration_duration"
+            ],
+            "shows": [
+              "time_cost",
+              "expected_signal_gain"
+            ],
+            "terminal_actions": [
+              "apply_integration_extension",
+              "cancel"
+            ]
+          }
+        },
+        {
+          "id": "recover_signal",
+          "display_es": "Intentar recuperar señal",
+          "kind": "task",
+          "tertiary": {
+            "id": "signal_recovery",
+            "display_es": "Recuperación de señal",
+            "controls": [
+              "contact_or_signature",
+              "history_source",
+              "search_window"
+            ],
+            "terminal_actions": [
+              "start_signal_recovery",
+              "request_additional_power",
+              "cancel"
+            ]
+          }
+        }
+      ],
+      "tradeoffs": [
+        "power",
+        "time",
+        "resolution",
+        "coverage",
+        "tracking_capacity"
+      ]
+    },
+    {
+      "id": "configuration",
+      "display_es": "Configuración",
+      "level": 1,
+      "kind": "primary_menu",
+      "secondary": [
+        {
+          "id": "sensitivity",
+          "display_es": "Sensibilidad",
+          "kind": "setting",
+          "controls": [
+            "default_sensitivity"
+          ],
+          "terminal_actions": [
+            "apply_setting",
+            "restore_ship_standard"
+          ]
+        },
+        {
+          "id": "default_resolution",
+          "display_es": "Resolución predeterminada",
+          "kind": "setting",
+          "controls": [
+            "default_resolution"
+          ],
+          "terminal_actions": [
+            "apply_setting",
+            "restore_ship_standard"
+          ]
+        },
+        {
+          "id": "sensor_power",
+          "display_es": "Potencia de sensores",
+          "kind": "setting",
+          "shows": [
+            "allocated_power",
+            "current_use",
+            "temporary_grant"
+          ],
+          "controls": [
+            "distribution_within_allocation"
+          ],
+          "terminal_actions": [
+            "apply_setting",
+            "request_additional_power",
+            "cancel_power_request"
+          ]
+        },
+        {
+          "id": "sensor_array",
+          "display_es": "Matriz / conjunto sensor",
+          "kind": "setting",
+          "controls": [
+            "available_array"
+          ],
+          "terminal_actions": [
+            "apply_setting",
+            "open_array_status",
+            "restore_ship_standard"
+          ]
+        },
+        {
+          "id": "band_frequency",
+          "display_es": "Frecuencia / banda",
+          "kind": "setting",
+          "controls": [
+            "default_band_frequency"
+          ],
+          "terminal_actions": [
+            "apply_setting",
+            "restore_ship_standard"
+          ]
+        },
+        {
+          "id": "update_rate",
+          "display_es": "Frecuencia de actualización",
+          "kind": "setting",
+          "controls": [
+            "default_update_rate"
+          ],
+          "shows": [
+            "resource_cost"
+          ],
+          "terminal_actions": [
+            "apply_setting",
+            "restore_ship_standard"
+          ]
+        },
+        {
+          "id": "default_filters",
+          "display_es": "Filtros predeterminados",
+          "kind": "setting",
+          "controls": [
+            "default_filters_multi_select"
+          ],
+          "terminal_actions": [
+            "apply_setting",
+            "restore_ship_standard"
+          ]
+        },
+        {
+          "id": "default_priorities",
+          "display_es": "Prioridades predeterminadas",
+          "kind": "setting",
+          "controls": [
+            "default_priority"
+          ],
+          "terminal_actions": [
+            "apply_setting",
+            "restore_ship_standard"
+          ]
+        },
+        {
+          "id": "profiles_presets",
+          "display_es": "Perfiles / preajustes",
+          "kind": "list",
+          "tertiary": {
+            "id": "profile_detail",
+            "display_es": "Detalle de perfil",
+            "shows": [
+              "profile_origin",
+              "settings",
+              "read_only"
+            ],
+            "context_actions": [
+              "load_profile",
+              "save_operator_profile",
+              "update_operator_profile",
+              "delete_operator_profile",
+              "restore_ship_standard"
+            ]
+          }
+        }
+      ],
+      "precedence": [
+        "ship_standard",
+        "operator_profile",
+        "temporary_operation_override"
+      ],
+      "profile_model": "gameplay/ship_operations/consoles/sensors/sensor_configuration_profile_model.json"
+    },
+    {
+      "id": "results",
+      "display_es": "Resultados",
+      "level": 1,
+      "kind": "primary_menu",
+      "secondary": [
+        {
+          "id": "current_operation",
+          "display_es": "Operación actual",
+          "kind": "view",
+          "tertiary": {
+            "id": "current_operation_detail",
+            "display_es": "Detalle de operación",
+            "shows": [
+              "progress",
+              "partial_results",
+              "configuration",
+              "resource_use"
+            ],
+            "contextual_actions_from": "sensor_context_actions:active_operation"
+          }
+        },
+        {
+          "id": "last_scan",
+          "display_es": "Último barrido",
+          "kind": "view",
+          "tertiary": {
+            "id": "result_detail",
+            "display_es": "Detalle del resultado",
+            "shows": [
+              "timestamp",
+              "configuration",
+              "observations",
+              "confidence",
+              "contacts_created_or_updated",
+              "provenance"
+            ],
+            "contextual_actions_from": "sensor_context_actions:selected_result"
+          }
+        },
+        {
+          "id": "recent_results",
+          "display_es": "Resultados recientes",
+          "kind": "list",
+          "tertiary": {
+            "id": "result_detail",
+            "display_es": "Detalle del resultado",
+            "shows": [
+              "timestamp",
+              "configuration",
+              "observations",
+              "confidence",
+              "contacts_created_or_updated",
+              "provenance"
+            ],
+            "contextual_actions_from": "sensor_context_actions:selected_result"
+          }
+        },
+        {
+          "id": "saved_readings",
+          "display_es": "Lecturas guardadas",
+          "kind": "list",
+          "tertiary": {
+            "id": "saved_result_detail",
+            "display_es": "Lectura guardada",
+            "shows": [
+              "timestamp",
+              "label",
+              "observations",
+              "confidence",
+              "provenance"
+            ],
+            "contextual_actions_from": "sensor_context_actions:selected_result"
+          }
+        },
+        {
+          "id": "compare_readings",
+          "display_es": "Comparar lecturas",
+          "kind": "task",
+          "tertiary": {
+            "id": "comparison_setup",
+            "display_es": "Seleccionar lecturas",
+            "controls": [
+              "reading_a",
+              "reading_b"
+            ],
+            "shows": [
+              "compatibility"
+            ],
+            "terminal_actions": [
+              "execute_comparison",
+              "cancel"
+            ]
+          }
+        },
+        {
+          "id": "repeat_operation",
+          "display_es": "Repetir operación",
+          "kind": "task",
+          "tertiary": {
+            "id": "repeat_setup",
+            "display_es": "Revisar operación a repetir",
+            "controls": [
+              "source_result"
+            ],
+            "shows": [
+              "copied_configuration",
+              "current_world_warning"
+            ],
+            "terminal_actions": [
+              "execute_repeated_operation",
+              "edit_before_repeat",
+              "cancel"
+            ]
+          }
+        }
+      ],
+      "send_targets": [
+        "science",
+        "tactical",
+        "operations",
+        "conn_navigation",
+        "command",
+        "computer_database"
+      ]
+    },
+    {
+      "id": "diagnostics",
+      "display_es": "Diagnóstico",
+      "level": 1,
+      "kind": "primary_menu",
+      "secondary": [
+        {
+          "id": "self_test",
+          "display_es": "Autodiagnóstico",
+          "kind": "task",
+          "tertiary": {
+            "id": "self_test_scope",
+            "display_es": "Ámbito del diagnóstico",
+            "controls": [
+              "all_sensors_or_array_or_band"
+            ],
+            "terminal_actions": [
+              "run_self_test",
+              "cancel"
+            ]
+          }
+        },
+        {
+          "id": "array_status",
+          "display_es": "Estado por matriz",
+          "kind": "list",
+          "tertiary": {
+            "id": "diagnostic_array_detail",
+            "display_es": "Diagnóstico de matriz",
+            "shows": [
+              "integrity",
+              "calibration",
+              "performance",
+              "errors",
+              "availability"
+            ],
+            "contextual_actions_from": "sensor_context_actions:diagnostic_array"
+          }
+        },
+        {
+          "id": "calibration",
+          "display_es": "Calibración",
+          "kind": "task",
+          "tertiary": {
+            "id": "calibration_setup",
+            "display_es": "Configurar calibración",
+            "controls": [
+              "array",
+              "band_or_capability",
+              "calibration_scope"
+            ],
+            "shows": [
+              "time_cost",
+              "temporary_unavailability"
+            ],
+            "terminal_actions": [
+              "start_calibration",
+              "cancel"
+            ]
+          }
+        },
+        {
+          "id": "performance",
+          "display_es": "Rendimiento",
+          "kind": "view",
+          "shows": [
+            "nominal_capability",
+            "current_capability",
+            "degradation",
+            "trend"
+          ],
+          "context_actions": [
+            "run_self_test",
+            "request_engineering_support",
+            "request_additional_power"
+          ]
+        },
+        {
+          "id": "errors_degradation",
+          "display_es": "Errores / degradación",
+          "kind": "list",
+          "tertiary": {
+            "id": "error_detail",
+            "display_es": "Detalle de incidencia",
+            "shows": [
+              "diagnostic_code",
+              "component",
+              "severity",
+              "effect",
+              "history"
+            ],
+            "contextual_actions_from": "sensor_context_actions:diagnostic_error"
+          }
+        },
+        {
+          "id": "request_engineering_support",
+          "display_es": "Solicitar soporte de Ingeniería",
+          "kind": "task",
+          "tertiary": {
+            "id": "engineering_request",
+            "display_es": "Solicitud a Ingeniería",
+            "controls": [
+              "component",
+              "diagnostic_code",
+              "problem",
+              "severity",
+              "priority",
+              "attach_diagnostics"
+            ],
+            "terminal_actions": [
+              "send_engineering_support_request",
+              "cancel"
+            ]
+          }
+        }
+      ],
+      "engineering_handoff_contract": "gameplay/ship_operations/interconsole/sensor_to_engineering_support_request.json"
+    }
+  ],
+  "tertiary_templates": {
+    "scan_configuration": {
+      "id": "scan_configuration",
+      "display_es": "Configurar barrido",
+      "controls": [
+        {
+          "id": "scan_mode",
+          "display_es": "Modo",
+          "options": [
+            "passive",
+            "active"
+          ]
+        },
+        {
+          "id": "target_scope",
+          "display_es": "Área / objetivo",
+          "options": [
+            "surrounding_space",
+            "sector",
+            "star_system",
+            "coordinates",
+            "vector",
+            "known_contact",
+            "defined_zone"
+          ]
+        },
+        {
+          "id": "resolution",
+          "display_es": "Resolución",
+          "options": [
+            "general",
+            "standard",
+            "high"
+          ]
+        },
+        {
+          "id": "filters",
+          "display_es": "Filtros",
+          "multi_select": true,
+          "options": [
+            "all",
+            "electromagnetic",
+            "subspace",
+            "gravimetric",
+            "thermal",
+            "ionizing_radiation",
+            "particle",
+            "biological",
+            "warp",
+            "artificial_transponder"
+          ]
+        },
+        {
+          "id": "priority",
+          "display_es": "Prioridad",
+          "optional": true,
+          "source": "selected_signature_type"
+        },
+        {
+          "id": "duration",
+          "display_es": "Duración",
+          "options": [
+            "quick",
+            "standard",
+            "extended",
+            "custom"
+          ]
+        }
+      ],
+      "terminal_actions": [
+        "review_scan_configuration",
+        "execute_scan",
+        "restore_operation_defaults",
+        "request_additional_power",
+        "cancel"
+      ]
+    },
+    "search_configuration": {
+      "id": "search_configuration",
+      "display_es": "Configurar búsqueda",
+      "controls": [
+        "search_area",
+        "sensitivity",
+        "resolution",
+        "target_specific_criteria"
+      ],
+      "shows": [
+        "expected_noise_tradeoff",
+        "current_effective_range"
+      ],
+      "terminal_actions": [
+        "start_search",
+        "clear_search_criteria",
+        "request_additional_power",
+        "cancel"
+      ]
+    }
+  },
+  "v0_0_1_core_path": {
+    "example_order_es": "Barrido de largo alcance del sector 041 con prioridad a emisiones subespaciales.",
+    "menu_path": [
+      "scans",
+      "long_range",
+      "scan_configuration",
+      "target_scope:sector",
+      "sector_id:041",
+      "priority:subspace",
+      "execute_scan"
+    ],
+    "inherited_defaults": [
+      "scan_mode",
+      "resolution",
+      "filters",
+      "duration",
+      "sensor_profile"
+    ]
+  },
+  "review_status": {
+    "information_architecture": "approved_v0.2",
+    "contextual_action_resolution": "see_sensor_context_actions",
+    "academy_and_ship_functional_equivalence": true
+  }
+}
