@@ -135,7 +135,7 @@ function curriculumStudyStats() {
   if (!app.curriculum || !app.profile) return { completed: 0, total: 0, percent: 0 };
   let total = 0;
   let completed = 0;
-  app.curriculum.years.forEach(function(year, yearIndex) {
+  app.curriculum.years.forEach(function(year) {
     year.trimesters.forEach(function(term) {
       term.subjects.forEach(function(subject) {
         if (typeof subject !== "object" || !subject.studyId) return;
@@ -336,7 +336,7 @@ function renderCurriculum() {
       pre.subjects.map(function(item){ return "<li>" + escapeHtml(item) + "</li>"; }).join("") +
       '</ul></div></section>';
 
-  app.curriculum.years.forEach(function(year) {
+  app.curriculum.years.forEach(function(year, yearIndex) {
     const specializationText = year.specializations
       ? '<div class="specialization-note"><strong>Ramas de especialización:</strong> ' +
         year.specializations.map(escapeHtml).join(" · ") +
