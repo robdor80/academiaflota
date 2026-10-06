@@ -1,16 +1,40 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.1.0",
   "course_id": "BRN-201",
-  "status": "editorially_aligned_with_developed_manual",
-  "source_manual": "gameplay/careers/academy_path/study_materials/second_class/BRN-201/MANUAL_v1_0.md",
-  "question_count": 24,
-  "rule": "No question may require knowledge that is not explicitly taught in BRN-201 or established prerequisites.",
-  "questions": [
+  "status": "concept_driven_autocorrectable_v2_1",
+  "source_bank": "question_bank_v1_0.json",
+  "policy": {
+    "theory_formats": [
+      "multiple_choice",
+      "short_answer"
+    ],
+    "multiple_choice_target_ratio": 0.8,
+    "short_answer_target_ratio": 0.2,
+    "deterministic_correction": true,
+    "web_and_game_share_concepts_not_question_instances": true,
+    "complex_judgment_moves_to_practice_and_simulation": true,
+    "source_rule": "Every evaluated concept must be explicitly taught in the course material or an established prerequisite."
+  },
+  "unit_review": {
+    "questions_per_attempt": 5,
+    "reshuffle_each_attempt": true,
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
+  },
+  "concepts": [
     {
-      "id": "BRN-201-Q001",
+      "id": "BRN-201-C001",
       "unit_id": "BRN-201-U01",
-      "type": "short_answer",
-      "prompt_es": "¿Qué cambia al comenzar especialización formal?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué cambia al comenzar especialización formal?",
+      "web_prompt_variants_es": [
+        "¿Qué cambia al comenzar especialización formal?",
+        "Repaso: ¿Qué cambia al comenzar especialización formal?"
+      ],
+      "answer_display_es": "formación sostenida · responsabilidades profesionales · evidencia",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "formación sostenida",
         "responsabilidades profesionales",
@@ -18,10 +42,17 @@
       ]
     },
     {
-      "id": "BRN-201-Q002",
+      "id": "BRN-201-C002",
       "unit_id": "BRN-201-U01",
-      "type": "knowledge",
-      "prompt_es": "Nombra tres responsabilidades comunes.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción contiene tres responsabilidades comunes?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene tres responsabilidades comunes?",
+        "Nombra tres responsabilidades comunes."
+      ],
+      "answer_display_es": "preparación · procedimiento · comunicación · límites · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "procedimiento",
@@ -31,19 +62,35 @@
       ]
     },
     {
-      "id": "BRN-201-Q003",
+      "id": "BRN-201-C003",
       "unit_id": "BRN-201-U01",
-      "type": "judgment",
-      "prompt_es": "¿Elegir una rama concede competencia avanzada?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Elegir una rama concede competencia avanzada?",
+      "web_prompt_variants_es": [
+        "¿Elegir una rama concede competencia avanzada?",
+        "Repaso: ¿Elegir una rama concede competencia avanzada?"
+      ],
+      "answer_display_es": "no",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no"
       ]
     },
     {
-      "id": "BRN-201-Q004",
+      "id": "BRN-201-C004",
       "unit_id": "BRN-201-U01",
-      "type": "short_answer",
-      "prompt_es": "¿Qué significa estándar profesional?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué significa estándar profesional?",
+      "web_prompt_variants_es": [
+        "¿Qué significa estándar profesional?",
+        "Repaso: ¿Qué significa estándar profesional?"
+      ],
+      "answer_display_es": "regularidad · precisión · seguridad · fiabilidad",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "regularidad",
         "precisión",
@@ -52,10 +99,17 @@
       ]
     },
     {
-      "id": "BRN-201-Q005",
+      "id": "BRN-201-C005",
       "unit_id": "BRN-201-U02",
-      "type": "knowledge",
-      "prompt_es": "¿Qué puede ser una herramienta profesional?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué puede ser una herramienta profesional?",
+      "web_prompt_variants_es": [
+        "¿Qué puede ser una herramienta profesional?",
+        "Repaso: ¿Qué puede ser una herramienta profesional?"
+      ],
+      "answer_display_es": "consola · sistema · instrumento · procedimiento · checklist · registro",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "consola",
         "sistema",
@@ -66,20 +120,34 @@
       ]
     },
     {
-      "id": "BRN-201-Q006",
+      "id": "BRN-201-C006",
       "unit_id": "BRN-201-U02",
-      "type": "short_answer",
-      "prompt_es": "¿Por qué terminología importa?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Por qué terminología importa?",
+      "web_prompt_variants_es": [
+        "¿Por qué terminología importa?",
+        "Repaso: ¿Por qué terminología importa?"
+      ],
+      "answer_display_es": "reduce ambigüedad · mejora operación",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "reduce ambigüedad",
         "mejora operación"
       ]
     },
     {
-      "id": "BRN-201-Q007",
+      "id": "BRN-201-C007",
       "unit_id": "BRN-201-U02",
-      "type": "knowledge",
-      "prompt_es": "¿Qué se comprueba antes de usar herramienta?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué se comprueba antes de usar herramienta?",
+      "web_prompt_variants_es": [
+        "¿Qué se comprueba antes de usar herramienta?",
+        "Repaso: ¿Qué se comprueba antes de usar herramienta?"
+      ],
+      "answer_display_es": "estado · autoridad · límites · riesgos · cancelación",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estado",
         "autoridad",
@@ -89,29 +157,52 @@
       ]
     },
     {
-      "id": "BRN-201-Q008",
+      "id": "BRN-201-C008",
       "unit_id": "BRN-201-U02",
-      "type": "judgment",
-      "prompt_es": "¿Por qué interfaz puede cambiar entre eras?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué interfaz puede cambiar entre eras?",
+      "web_prompt_variants_es": [
+        "¿Por qué interfaz puede cambiar entre eras?",
+        "Repaso: ¿Por qué interfaz puede cambiar entre eras?"
+      ],
+      "answer_display_es": "presentación distinta · función subyacente estable",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "presentación distinta",
         "función subyacente estable"
       ]
     },
     {
-      "id": "BRN-201-Q009",
+      "id": "BRN-201-C009",
       "unit_id": "BRN-201-U03",
-      "type": "short_answer",
-      "prompt_es": "¿Qué es procedimiento nuclear?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué es procedimiento nuclear?",
+      "web_prompt_variants_es": [
+        "¿Qué es procedimiento nuclear?",
+        "Repaso: ¿Qué es procedimiento nuclear?"
+      ],
+      "answer_display_es": "secuencia recurrente de trabajo normal",
+      "accepted_short_answers_es": [
+        "secuencia recurrente de trabajo normal"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "secuencia recurrente de trabajo normal"
       ]
     },
     {
-      "id": "BRN-201-Q010",
+      "id": "BRN-201-C010",
       "unit_id": "BRN-201-U03",
-      "type": "procedure",
-      "prompt_es": "Nombra pasos comunes.",
+      "source_type": "procedure",
+      "web_prompt_es": "¿Qué opción contiene pasos comunes?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene pasos comunes?",
+        "Nombra pasos comunes."
+      ],
+      "answer_display_es": "estado · objetivo · configuración · límites · ejecutar · resultado · informar",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estado",
         "objetivo",
@@ -123,19 +214,35 @@
       ]
     },
     {
-      "id": "BRN-201-Q011",
+      "id": "BRN-201-C011",
       "unit_id": "BRN-201-U03",
-      "type": "judgment",
-      "prompt_es": "¿Checklist sustituye juicio?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Checklist sustituye juicio?",
+      "web_prompt_variants_es": [
+        "¿Checklist sustituye juicio?",
+        "Repaso: ¿Checklist sustituye juicio?"
+      ],
+      "answer_display_es": "no",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no"
       ]
     },
     {
-      "id": "BRN-201-Q012",
+      "id": "BRN-201-C012",
       "unit_id": "BRN-201-U03",
-      "type": "knowledge",
-      "prompt_es": "¿Qué conserva handoff?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué conserva handoff?",
+      "web_prompt_variants_es": [
+        "¿Qué conserva handoff?",
+        "Repaso: ¿Qué conserva handoff?"
+      ],
+      "answer_display_es": "procedencia · contexto · datos · prioridad · petición",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "procedencia",
         "contexto",
@@ -145,20 +252,34 @@
       ]
     },
     {
-      "id": "BRN-201-Q013",
+      "id": "BRN-201-C013",
       "unit_id": "BRN-201-U04",
-      "type": "compare",
-      "prompt_es": "Diferencia síntoma y causa.",
+      "source_type": "compare",
+      "web_prompt_es": "¿Qué opción diferencia correctamente síntoma y causa?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente síntoma y causa?",
+        "Diferencia síntoma y causa."
+      ],
+      "answer_display_es": "observación · explicación",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "observación",
         "explicación"
       ]
     },
     {
-      "id": "BRN-201-Q014",
+      "id": "BRN-201-C014",
       "unit_id": "BRN-201-U04",
-      "type": "knowledge",
-      "prompt_es": "¿Qué preguntas ayudan a priorizar?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué preguntas ayudan a priorizar?",
+      "web_prompt_variants_es": [
+        "¿Qué preguntas ayudan a priorizar?",
+        "Repaso: ¿Qué preguntas ayudan a priorizar?"
+      ],
+      "answer_display_es": "vidas · misión · capacidad · reversibilidad · riesgo · autoridad",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "vidas",
         "misión",
@@ -169,10 +290,17 @@
       ]
     },
     {
-      "id": "BRN-201-Q015",
+      "id": "BRN-201-C015",
       "unit_id": "BRN-201-U04",
-      "type": "judgment",
-      "prompt_es": "¿Cuándo escalar?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Cuándo escalar?",
+      "web_prompt_variants_es": [
+        "¿Cuándo escalar?",
+        "Repaso: ¿Cuándo escalar?"
+      ],
+      "answer_display_es": "fuera competencia · autoridad superior · riesgo · otras áreas",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "fuera competencia",
         "autoridad superior",
@@ -181,10 +309,17 @@
       ]
     },
     {
-      "id": "BRN-201-Q016",
+      "id": "BRN-201-C016",
       "unit_id": "BRN-201-U04",
-      "type": "procedure",
-      "prompt_es": "¿Qué hacer ante error propio?",
+      "source_type": "procedure",
+      "web_prompt_es": "¿Qué hacer ante error propio?",
+      "web_prompt_variants_es": [
+        "¿Qué hacer ante error propio?",
+        "Repaso: ¿Qué hacer ante error propio?"
+      ],
+      "answer_display_es": "informar · contener · corregir · registrar · aprender",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "informar",
         "contener",
@@ -194,19 +329,35 @@
       ]
     },
     {
-      "id": "BRN-201-Q017",
+      "id": "BRN-201-C017",
       "unit_id": "BRN-201-U05",
-      "type": "short_answer",
-      "prompt_es": "¿Por qué ninguna rama trabaja sola?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Por qué ninguna rama trabaja sola?",
+      "web_prompt_variants_es": [
+        "¿Por qué ninguna rama trabaja sola?",
+        "Repaso: ¿Por qué ninguna rama trabaja sola?"
+      ],
+      "answer_display_es": "interdependencia de información/recursos",
+      "accepted_short_answers_es": [
+        "interdependencia de información/recursos"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "interdependencia de información/recursos"
       ]
     },
     {
-      "id": "BRN-201-Q018",
+      "id": "BRN-201-C018",
       "unit_id": "BRN-201-U05",
-      "type": "knowledge",
-      "prompt_es": "¿Qué contiene solicitud útil?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué contiene solicitud útil?",
+      "web_prompt_variants_es": [
+        "¿Qué contiene solicitud útil?",
+        "Repaso: ¿Qué contiene solicitud útil?"
+      ],
+      "answer_display_es": "necesidad · motivo · prioridad · plazo · impacto",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "necesidad",
         "motivo",
@@ -216,19 +367,35 @@
       ]
     },
     {
-      "id": "BRN-201-Q019",
+      "id": "BRN-201-C019",
       "unit_id": "BRN-201-U05",
-      "type": "judgment",
-      "prompt_es": "¿Coordinar significa ejecutar trabajo de otra rama?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Coordinar significa ejecutar trabajo de otra rama?",
+      "web_prompt_variants_es": [
+        "¿Coordinar significa ejecutar trabajo de otra rama?",
+        "Repaso: ¿Coordinar significa ejecutar trabajo de otra rama?"
+      ],
+      "answer_display_es": "no",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no"
       ]
     },
     {
-      "id": "BRN-201-Q020",
+      "id": "BRN-201-C020",
       "unit_id": "BRN-201-U05",
-      "type": "short_answer",
-      "prompt_es": "¿Cómo afecta decisión local a misión?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Cómo afecta decisión local a misión?",
+      "web_prompt_variants_es": [
+        "¿Cómo afecta decisión local a misión?",
+        "Repaso: ¿Cómo afecta decisión local a misión?"
+      ],
+      "answer_display_es": "recursos · tiempo · riesgo · capacidad",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "recursos",
         "tiempo",
@@ -237,10 +404,17 @@
       ]
     },
     {
-      "id": "BRN-201-Q021",
+      "id": "BRN-201-C021",
       "unit_id": "BRN-201-U06",
-      "type": "knowledge",
-      "prompt_es": "¿Qué evidencia se revisa?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué evidencia se revisa?",
+      "web_prompt_variants_es": [
+        "¿Qué evidencia se revisa?",
+        "Repaso: ¿Qué evidencia se revisa?"
+      ],
+      "answer_display_es": "teoría · práctica · reportes · handoffs · conducta · juicio",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "teoría",
         "práctica",
@@ -251,19 +425,35 @@
       ]
     },
     {
-      "id": "BRN-201-Q022",
+      "id": "BRN-201-C022",
       "unit_id": "BRN-201-U06",
-      "type": "judgment",
-      "prompt_es": "¿Por qué no basta un examen único?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué no basta un examen único?",
+      "web_prompt_variants_es": [
+        "¿Por qué no basta un examen único?",
+        "Repaso: ¿Por qué no basta un examen único?"
+      ],
+      "answer_display_es": "competencia requiere evidencia longitudinal",
+      "accepted_short_answers_es": [
+        "competencia requiere evidencia longitudinal"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "competencia requiere evidencia longitudinal"
       ]
     },
     {
-      "id": "BRN-201-Q023",
+      "id": "BRN-201-C023",
       "unit_id": "BRN-201-U06",
-      "type": "knowledge",
-      "prompt_es": "¿Qué contiene plan de mejora?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué contiene plan de mejora?",
+      "web_prompt_variants_es": [
+        "¿Qué contiene plan de mejora?",
+        "Repaso: ¿Qué contiene plan de mejora?"
+      ],
+      "answer_display_es": "fortaleza · carencia · práctica · nueva evidencia",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "fortaleza",
         "carencia",
@@ -272,13 +462,212 @@
       ]
     },
     {
-      "id": "BRN-201-Q024",
+      "id": "BRN-201-C024",
       "unit_id": "BRN-201-U06",
-      "type": "short_answer",
-      "prompt_es": "¿Qué significa preparado para continuar?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué significa preparado para continuar?",
+      "web_prompt_variants_es": [
+        "¿Qué significa preparado para continuar?",
+        "Repaso: ¿Qué significa preparado para continuar?"
+      ],
+      "answer_display_es": "base suficiente para BRN-202 · refuerzos identificados",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "base suficiente para BRN-202",
         "refuerzos identificados"
+      ]
+    },
+    {
+      "id": "BRN-201-C025",
+      "unit_id": "BRN-201-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «NO ES EXPERTO»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «NO ES EXPERTO»?",
+        "Selecciona la idea correcta asociada a «NO ES EXPERTO»."
+      ],
+      "answer_display_es": "Elegir una rama inicia una formación profesional; no concede competencia avanzada ni autoridad automática.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Elegir una rama inicia una formación profesional; no concede competencia avanzada ni autoridad automática."
+      ]
+    },
+    {
+      "id": "BRN-201-C026",
+      "unit_id": "BRN-201-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Siete ramas»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Siete ramas»?",
+        "En «Siete ramas», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Mando",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Mando"
+      ]
+    },
+    {
+      "id": "BRN-201-C027",
+      "unit_id": "BRN-201-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «ANTES DE USAR»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «ANTES DE USAR»?",
+        "Selecciona la idea correcta asociada a «ANTES DE USAR»."
+      ],
+      "answer_display_es": "Comprobar estado, autoridad, límites, riesgos y forma segura de cancelar o salir.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Comprobar estado, autoridad, límites, riesgos y forma segura de cancelar o salir."
+      ]
+    },
+    {
+      "id": "BRN-201-C028",
+      "unit_id": "BRN-201-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+        "En «Autoevaluación», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "¿Qué puede ser herramienta profesional?",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "¿Qué puede ser herramienta profesional?"
+      ]
+    },
+    {
+      "id": "BRN-201-C029",
+      "unit_id": "BRN-201-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «CHECKLIST»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «CHECKLIST»?",
+        "Selecciona la idea correcta asociada a «CHECKLIST»."
+      ],
+      "answer_display_es": "Ayuda a no olvidar elementos repetitivos, pero no sustituye el juicio profesional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Ayuda a no olvidar elementos repetitivos, pero no sustituye el juicio profesional."
+      ]
+    },
+    {
+      "id": "BRN-201-C030",
+      "unit_id": "BRN-201-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+        "En «Autoevaluación», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "¿Qué es procedimiento nuclear?",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "¿Qué es procedimiento nuclear?"
+      ]
+    },
+    {
+      "id": "BRN-201-C031",
+      "unit_id": "BRN-201-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «ERROR PROPIO»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «ERROR PROPIO»?",
+        "Selecciona la idea correcta asociada a «ERROR PROPIO»."
+      ],
+      "answer_display_es": "Se informa, contiene, corrige, registra y convierte en aprendizaje; ocultarlo empeora la operación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Se informa, contiene, corrige, registra y convierte en aprendizaje; ocultarlo empeora la operación."
+      ]
+    },
+    {
+      "id": "BRN-201-C032",
+      "unit_id": "BRN-201-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Prioridad»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Prioridad»?",
+        "En «Prioridad», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Vidas",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Vidas"
+      ]
+    },
+    {
+      "id": "BRN-201-C033",
+      "unit_id": "BRN-201-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «COORDINAR ≠ INVADIR»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «COORDINAR ≠ INVADIR»?",
+        "Selecciona la idea correcta asociada a «COORDINAR ≠ INVADIR»."
+      ],
+      "answer_display_es": "Integrarse significa usar peticiones, handoffs, reportes y escalado; no ejecutar sin autoridad la profesión de otro departamento.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Integrarse significa usar peticiones, handoffs, reportes y escalado; no ejecutar sin autoridad la profesión de otro departamento."
+      ]
+    },
+    {
+      "id": "BRN-201-C034",
+      "unit_id": "BRN-201-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Solicitud útil»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Solicitud útil»?",
+        "En «Solicitud útil», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Necesidad",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Necesidad"
+      ]
+    },
+    {
+      "id": "BRN-201-C035",
+      "unit_id": "BRN-201-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Plan de mejora»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Plan de mejora»?",
+        "En «Plan de mejora», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Una fortaleza",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Una fortaleza"
+      ]
+    },
+    {
+      "id": "BRN-201-C036",
+      "unit_id": "BRN-201-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+        "En «Autoevaluación», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "¿Qué evidencia se revisa?",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "¿Qué evidencia se revisa?"
       ]
     }
   ]

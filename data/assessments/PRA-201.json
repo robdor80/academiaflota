@@ -1,14 +1,40 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.1.0",
   "course_id": "PRA-201",
-  "status": "editorially_aligned_with_developed_manual",
-  "question_count": 24,
-  "questions": [
+  "status": "concept_driven_autocorrectable_v2_1",
+  "source_bank": "question_bank_v1_0.json",
+  "policy": {
+    "theory_formats": [
+      "multiple_choice",
+      "short_answer"
+    ],
+    "multiple_choice_target_ratio": 0.8,
+    "short_answer_target_ratio": 0.2,
+    "deterministic_correction": true,
+    "web_and_game_share_concepts_not_question_instances": true,
+    "complex_judgment_moves_to_practice_and_simulation": true,
+    "source_rule": "Every evaluated concept must be explicitly taught in the course material or an established prerequisite."
+  },
+  "unit_review": {
+    "questions_per_attempt": 5,
+    "reshuffle_each_attempt": true,
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
+  },
+  "concepts": [
     {
-      "id": "PRA-201-Q001",
+      "id": "PRA-201-C001",
       "unit_id": "PRA-201-U01",
-      "type": "professional_knowledge",
-      "prompt_es": "Explica qué significa estado en esta unidad y cómo puede cambiar una decisión.",
+      "source_type": "professional_knowledge",
+      "web_prompt_es": "¿Qué opción explica correctamente qué significa estado en esta unidad y cómo puede cambiar una decisión?",
+      "web_prompt_variants_es": [
+        "¿Qué opción explica correctamente qué significa estado en esta unidad y cómo puede cambiar una decisión?",
+        "Explica qué significa estado en esta unidad y cómo puede cambiar una decisión."
+      ],
+      "answer_display_es": "estado · contexto · impacto en decisión",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estado",
         "contexto",
@@ -16,10 +42,17 @@
       ]
     },
     {
-      "id": "PRA-201-Q002",
+      "id": "PRA-201-C002",
       "unit_id": "PRA-201-U01",
-      "type": "planning",
-      "prompt_es": "Planifica esta tarea: Preparar estación/espacio de trabajo.",
+      "source_type": "planning",
+      "web_prompt_es": "Planifica esta tarea: Preparar estación/espacio de trabajo.",
+      "web_prompt_variants_es": [
+        "Planifica esta tarea: Preparar estación/espacio de trabajo.",
+        "Repaso: Planifica esta tarea: Preparar estación/espacio de trabajo."
+      ],
+      "answer_display_es": "objetivo · riesgos · recursos · autoridad · criterio de éxito",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "objetivo",
         "riesgos",
@@ -29,10 +62,17 @@
       ]
     },
     {
-      "id": "PRA-201-Q003",
+      "id": "PRA-201-C003",
       "unit_id": "PRA-201-U01",
-      "type": "contingency",
-      "prompt_es": "Durante Preparación de puesto cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "source_type": "contingency",
+      "web_prompt_es": "Durante Preparación de puesto cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "web_prompt_variants_es": [
+        "Durante Preparación de puesto cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+        "Repaso: Durante Preparación de puesto cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?"
+      ],
+      "answer_display_es": "estado · seguridad · riesgo · autoridad · adaptación o escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estado",
         "seguridad",
@@ -42,10 +82,17 @@
       ]
     },
     {
-      "id": "PRA-201-Q004",
+      "id": "PRA-201-C004",
       "unit_id": "PRA-201-U01",
-      "type": "handoff",
-      "prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "source_type": "handoff",
+      "web_prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+        "Repaso: ¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?"
+      ],
+      "answer_display_es": "acción · resultado · limitaciones · riesgos · pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "acción",
         "resultado",
@@ -55,10 +102,17 @@
       ]
     },
     {
-      "id": "PRA-201-Q005",
+      "id": "PRA-201-C005",
       "unit_id": "PRA-201-U02",
-      "type": "professional_knowledge",
-      "prompt_es": "Explica qué significa secuencia en esta unidad y cómo puede cambiar una decisión.",
+      "source_type": "professional_knowledge",
+      "web_prompt_es": "¿Qué opción explica correctamente qué significa secuencia en esta unidad y cómo puede cambiar una decisión?",
+      "web_prompt_variants_es": [
+        "¿Qué opción explica correctamente qué significa secuencia en esta unidad y cómo puede cambiar una decisión?",
+        "Explica qué significa secuencia en esta unidad y cómo puede cambiar una decisión."
+      ],
+      "answer_display_es": "secuencia · contexto · impacto en decisión",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "secuencia",
         "contexto",
@@ -66,10 +120,17 @@
       ]
     },
     {
-      "id": "PRA-201-Q006",
+      "id": "PRA-201-C006",
       "unit_id": "PRA-201-U02",
-      "type": "planning",
-      "prompt_es": "Planifica esta tarea: Práctica paso a paso.",
+      "source_type": "planning",
+      "web_prompt_es": "Planifica esta tarea: Práctica paso a paso.",
+      "web_prompt_variants_es": [
+        "Planifica esta tarea: Práctica paso a paso.",
+        "Repaso: Planifica esta tarea: Práctica paso a paso."
+      ],
+      "answer_display_es": "objetivo · riesgos · recursos · autoridad · criterio de éxito",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "objetivo",
         "riesgos",
@@ -79,10 +140,17 @@
       ]
     },
     {
-      "id": "PRA-201-Q007",
+      "id": "PRA-201-C007",
       "unit_id": "PRA-201-U02",
-      "type": "contingency",
-      "prompt_es": "Durante Procedimiento guiado cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "source_type": "contingency",
+      "web_prompt_es": "Durante Procedimiento guiado cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "web_prompt_variants_es": [
+        "Durante Procedimiento guiado cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+        "Repaso: Durante Procedimiento guiado cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?"
+      ],
+      "answer_display_es": "estado · seguridad · riesgo · autoridad · adaptación o escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estado",
         "seguridad",
@@ -92,10 +160,17 @@
       ]
     },
     {
-      "id": "PRA-201-Q008",
+      "id": "PRA-201-C008",
       "unit_id": "PRA-201-U02",
-      "type": "handoff",
-      "prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "source_type": "handoff",
+      "web_prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+        "Repaso: ¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?"
+      ],
+      "answer_display_es": "acción · resultado · limitaciones · riesgos · pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "acción",
         "resultado",
@@ -105,10 +180,17 @@
       ]
     },
     {
-      "id": "PRA-201-Q009",
+      "id": "PRA-201-C009",
       "unit_id": "PRA-201-U03",
-      "type": "professional_knowledge",
-      "prompt_es": "Explica qué significa autonomía parcial en esta unidad y cómo puede cambiar una decisión.",
+      "source_type": "professional_knowledge",
+      "web_prompt_es": "¿Qué opción explica correctamente qué significa autonomía parcial en esta unidad y cómo puede cambiar una decisión?",
+      "web_prompt_variants_es": [
+        "¿Qué opción explica correctamente qué significa autonomía parcial en esta unidad y cómo puede cambiar una decisión?",
+        "Explica qué significa autonomía parcial en esta unidad y cómo puede cambiar una decisión."
+      ],
+      "answer_display_es": "autonomía parcial · contexto · impacto en decisión",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "autonomía parcial",
         "contexto",
@@ -116,10 +198,17 @@
       ]
     },
     {
-      "id": "PRA-201-Q010",
+      "id": "PRA-201-C010",
       "unit_id": "PRA-201-U03",
-      "type": "planning",
-      "prompt_es": "Planifica esta tarea: Repetir con menos ayuda.",
+      "source_type": "planning",
+      "web_prompt_es": "Planifica esta tarea: Repetir con menos ayuda.",
+      "web_prompt_variants_es": [
+        "Planifica esta tarea: Repetir con menos ayuda.",
+        "Repaso: Planifica esta tarea: Repetir con menos ayuda."
+      ],
+      "answer_display_es": "objetivo · riesgos · recursos · autoridad · criterio de éxito",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "objetivo",
         "riesgos",
@@ -129,10 +218,17 @@
       ]
     },
     {
-      "id": "PRA-201-Q011",
+      "id": "PRA-201-C011",
       "unit_id": "PRA-201-U03",
-      "type": "contingency",
-      "prompt_es": "Durante Procedimiento supervisado cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "source_type": "contingency",
+      "web_prompt_es": "Durante Procedimiento supervisado cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "web_prompt_variants_es": [
+        "Durante Procedimiento supervisado cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+        "Repaso: Durante Procedimiento supervisado cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?"
+      ],
+      "answer_display_es": "estado · seguridad · riesgo · autoridad · adaptación o escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estado",
         "seguridad",
@@ -142,10 +238,17 @@
       ]
     },
     {
-      "id": "PRA-201-Q012",
+      "id": "PRA-201-C012",
       "unit_id": "PRA-201-U03",
-      "type": "handoff",
-      "prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "source_type": "handoff",
+      "web_prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+        "Repaso: ¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?"
+      ],
+      "answer_display_es": "acción · resultado · limitaciones · riesgos · pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "acción",
         "resultado",
@@ -155,10 +258,17 @@
       ]
     },
     {
-      "id": "PRA-201-Q013",
+      "id": "PRA-201-C013",
       "unit_id": "PRA-201-U04",
-      "type": "professional_knowledge",
-      "prompt_es": "Explica qué significa cambio de condición en esta unidad y cómo puede cambiar una decisión.",
+      "source_type": "professional_knowledge",
+      "web_prompt_es": "¿Qué opción explica correctamente qué significa cambio de condición en esta unidad y cómo puede cambiar una decisión?",
+      "web_prompt_variants_es": [
+        "¿Qué opción explica correctamente qué significa cambio de condición en esta unidad y cómo puede cambiar una decisión?",
+        "Explica qué significa cambio de condición en esta unidad y cómo puede cambiar una decisión."
+      ],
+      "answer_display_es": "cambio de condición · contexto · impacto en decisión",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "cambio de condición",
         "contexto",
@@ -166,10 +276,17 @@
       ]
     },
     {
-      "id": "PRA-201-Q014",
+      "id": "PRA-201-C014",
       "unit_id": "PRA-201-U04",
-      "type": "planning",
-      "prompt_es": "Planifica esta tarea: Resolver variante.",
+      "source_type": "planning",
+      "web_prompt_es": "Planifica esta tarea: Resolver variante.",
+      "web_prompt_variants_es": [
+        "Planifica esta tarea: Resolver variante.",
+        "Repaso: Planifica esta tarea: Resolver variante."
+      ],
+      "answer_display_es": "objetivo · riesgos · recursos · autoridad · criterio de éxito",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "objetivo",
         "riesgos",
@@ -179,10 +296,17 @@
       ]
     },
     {
-      "id": "PRA-201-Q015",
+      "id": "PRA-201-C015",
       "unit_id": "PRA-201-U04",
-      "type": "contingency",
-      "prompt_es": "Durante Caso con variación cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "source_type": "contingency",
+      "web_prompt_es": "Durante Caso con variación cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "web_prompt_variants_es": [
+        "Durante Caso con variación cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+        "Repaso: Durante Caso con variación cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?"
+      ],
+      "answer_display_es": "estado · seguridad · riesgo · autoridad · adaptación o escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estado",
         "seguridad",
@@ -192,10 +316,17 @@
       ]
     },
     {
-      "id": "PRA-201-Q016",
+      "id": "PRA-201-C016",
       "unit_id": "PRA-201-U04",
-      "type": "handoff",
-      "prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "source_type": "handoff",
+      "web_prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+        "Repaso: ¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?"
+      ],
+      "answer_display_es": "acción · resultado · limitaciones · riesgos · pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "acción",
         "resultado",
@@ -205,10 +336,17 @@
       ]
     },
     {
-      "id": "PRA-201-Q017",
+      "id": "PRA-201-C017",
       "unit_id": "PRA-201-U05",
-      "type": "professional_knowledge",
-      "prompt_es": "Explica qué significa acciones en esta unidad y cómo puede cambiar una decisión.",
+      "source_type": "professional_knowledge",
+      "web_prompt_es": "¿Qué opción explica correctamente qué significa acciones en esta unidad y cómo puede cambiar una decisión?",
+      "web_prompt_variants_es": [
+        "¿Qué opción explica correctamente qué significa acciones en esta unidad y cómo puede cambiar una decisión?",
+        "Explica qué significa acciones en esta unidad y cómo puede cambiar una decisión."
+      ],
+      "answer_display_es": "acciones · contexto · impacto en decisión",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "acciones",
         "contexto",
@@ -216,10 +354,17 @@
       ]
     },
     {
-      "id": "PRA-201-Q018",
+      "id": "PRA-201-C018",
       "unit_id": "PRA-201-U05",
-      "type": "planning",
-      "prompt_es": "Planifica esta tarea: Completar log de práctica.",
+      "source_type": "planning",
+      "web_prompt_es": "Planifica esta tarea: Completar log de práctica.",
+      "web_prompt_variants_es": [
+        "Planifica esta tarea: Completar log de práctica.",
+        "Repaso: Planifica esta tarea: Completar log de práctica."
+      ],
+      "answer_display_es": "objetivo · riesgos · recursos · autoridad · criterio de éxito",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "objetivo",
         "riesgos",
@@ -229,10 +374,17 @@
       ]
     },
     {
-      "id": "PRA-201-Q019",
+      "id": "PRA-201-C019",
       "unit_id": "PRA-201-U05",
-      "type": "contingency",
-      "prompt_es": "Durante Registro profesional cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "source_type": "contingency",
+      "web_prompt_es": "Durante Registro profesional cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "web_prompt_variants_es": [
+        "Durante Registro profesional cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+        "Repaso: Durante Registro profesional cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?"
+      ],
+      "answer_display_es": "estado · seguridad · riesgo · autoridad · adaptación o escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estado",
         "seguridad",
@@ -242,10 +394,17 @@
       ]
     },
     {
-      "id": "PRA-201-Q020",
+      "id": "PRA-201-C020",
       "unit_id": "PRA-201-U05",
-      "type": "handoff",
-      "prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "source_type": "handoff",
+      "web_prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+        "Repaso: ¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?"
+      ],
+      "answer_display_es": "acción · resultado · limitaciones · riesgos · pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "acción",
         "resultado",
@@ -255,10 +414,17 @@
       ]
     },
     {
-      "id": "PRA-201-Q021",
+      "id": "PRA-201-C021",
       "unit_id": "PRA-201-U06",
-      "type": "professional_knowledge",
-      "prompt_es": "Explica qué significa error en esta unidad y cómo puede cambiar una decisión.",
+      "source_type": "professional_knowledge",
+      "web_prompt_es": "¿Qué opción explica correctamente qué significa error en esta unidad y cómo puede cambiar una decisión?",
+      "web_prompt_variants_es": [
+        "¿Qué opción explica correctamente qué significa error en esta unidad y cómo puede cambiar una decisión?",
+        "Explica qué significa error en esta unidad y cómo puede cambiar una decisión."
+      ],
+      "answer_display_es": "error · contexto · impacto en decisión",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "error",
         "contexto",
@@ -266,10 +432,17 @@
       ]
     },
     {
-      "id": "PRA-201-Q022",
+      "id": "PRA-201-C022",
       "unit_id": "PRA-201-U06",
-      "type": "planning",
-      "prompt_es": "Planifica esta tarea: Debrief con instructor.",
+      "source_type": "planning",
+      "web_prompt_es": "Planifica esta tarea: Debrief con instructor.",
+      "web_prompt_variants_es": [
+        "Planifica esta tarea: Debrief con instructor.",
+        "Repaso: Planifica esta tarea: Debrief con instructor."
+      ],
+      "answer_display_es": "objetivo · riesgos · recursos · autoridad · criterio de éxito",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "objetivo",
         "riesgos",
@@ -279,10 +452,17 @@
       ]
     },
     {
-      "id": "PRA-201-Q023",
+      "id": "PRA-201-C023",
       "unit_id": "PRA-201-U06",
-      "type": "contingency",
-      "prompt_es": "Durante Debrief cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "source_type": "contingency",
+      "web_prompt_es": "Durante Debrief cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "web_prompt_variants_es": [
+        "Durante Debrief cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+        "Repaso: Durante Debrief cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?"
+      ],
+      "answer_display_es": "estado · seguridad · riesgo · autoridad · adaptación o escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estado",
         "seguridad",
@@ -292,10 +472,17 @@
       ]
     },
     {
-      "id": "PRA-201-Q024",
+      "id": "PRA-201-C024",
       "unit_id": "PRA-201-U06",
-      "type": "handoff",
-      "prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "source_type": "handoff",
+      "web_prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+        "Repaso: ¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?"
+      ],
+      "answer_display_es": "acción · resultado · limitaciones · riesgos · pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "acción",
         "resultado",
@@ -303,8 +490,198 @@
         "riesgos",
         "pendientes"
       ]
+    },
+    {
+      "id": "PRA-201-C025",
+      "unit_id": "PRA-201-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Contenidos»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Contenidos»?",
+        "En «Contenidos», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Estado: Fija la condición real de partida —normal, degradada, limitada o desconocida— antes de actuar; si cambia, el plan debe revisarse.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Estado: Fija la condición real de partida —normal, degradada, limitada o desconocida— antes de actuar; si cambia, el plan debe revisarse."
+      ]
+    },
+    {
+      "id": "PRA-201-C026",
+      "unit_id": "PRA-201-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+        "En «Autoevaluación», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Explica estado desde el punto de vista profesional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Explica estado desde el punto de vista profesional."
+      ]
+    },
+    {
+      "id": "PRA-201-C027",
+      "unit_id": "PRA-201-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Contenidos»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Contenidos»?",
+        "En «Contenidos», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Secuencia: El orden de pasos importa cuando una acción prepara o valida la siguiente; saltar una comprobación puede ocultar fallos.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Secuencia: El orden de pasos importa cuando una acción prepara o valida la siguiente; saltar una comprobación puede ocultar fallos."
+      ]
+    },
+    {
+      "id": "PRA-201-C028",
+      "unit_id": "PRA-201-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+        "En «Autoevaluación», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Explica secuencia desde el punto de vista profesional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Explica secuencia desde el punto de vista profesional."
+      ]
+    },
+    {
+      "id": "PRA-201-C029",
+      "unit_id": "PRA-201-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Contenidos»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Contenidos»?",
+        "En «Contenidos», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Autonomía parcial: Permite ejecutar sin guía continua dentro de un marco conocido, conservando puntos de control y obligación de consultar.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Autonomía parcial: Permite ejecutar sin guía continua dentro de un marco conocido, conservando puntos de control y obligación de consultar."
+      ]
+    },
+    {
+      "id": "PRA-201-C030",
+      "unit_id": "PRA-201-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+        "En «Autoevaluación», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Explica autonomía parcial desde el punto de vista profesional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Explica autonomía parcial desde el punto de vista profesional."
+      ]
+    },
+    {
+      "id": "PRA-201-C031",
+      "unit_id": "PRA-201-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Contenidos»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Contenidos»?",
+        "En «Contenidos», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Cambio de condición: cambio de condición se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Cambio de condición: cambio de condición se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "PRA-201-C032",
+      "unit_id": "PRA-201-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+        "En «Autoevaluación», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Explica cambio de condición desde el punto de vista profesional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Explica cambio de condición desde el punto de vista profesional."
+      ]
+    },
+    {
+      "id": "PRA-201-C033",
+      "unit_id": "PRA-201-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Contenidos»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Contenidos»?",
+        "En «Contenidos», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Acciones: acciones se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Acciones: acciones se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "PRA-201-C034",
+      "unit_id": "PRA-201-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+        "En «Autoevaluación», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Explica acciones desde el punto de vista profesional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Explica acciones desde el punto de vista profesional."
+      ]
+    },
+    {
+      "id": "PRA-201-C035",
+      "unit_id": "PRA-201-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Contenidos»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Contenidos»?",
+        "En «Contenidos», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Error: Se comunica pronto, se contiene y se analiza sin ocultarlo; la prioridad es reducir consecuencias y aprender.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Error: Se comunica pronto, se contiene y se analiza sin ocultarlo; la prioridad es reducir consecuencias y aprender."
+      ]
+    },
+    {
+      "id": "PRA-201-C036",
+      "unit_id": "PRA-201-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+        "En «Autoevaluación», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Explica error desde el punto de vista profesional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Explica error desde el punto de vista profesional."
+      ]
     }
-  ],
-  "source_manual": "gameplay/careers/academy_path/study_materials/second_class/PRA-201/MANUAL_v1_0.md",
-  "rule": "No question may require knowledge that is not explicitly taught in PRA-201 or established prerequisites."
+  ]
 }

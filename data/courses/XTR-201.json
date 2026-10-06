@@ -1,7 +1,7 @@
 {
   "subject": "Formación cruzada I",
   "code": "XTR-201",
-  "version": "1.1",
+  "version": "1.3",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/second_class/courses/XTR-201/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/second_class/XTR-201/MANUAL_v1_0.md",
@@ -21,7 +21,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
@@ -34,10 +34,10 @@
         {
           "type": "bullets",
           "items": [
-            "Interés: interés se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "**Interés**: interés se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Utilidad: utilidad se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Prerrequisitos: prerrequisitos se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
-            "Carga: Combina número de tareas, dificultad, interrupciones y tiempo disponible; una carga excesiva degrada calidad y seguridad."
+            "Carga: Combina número de tareas, dificultad, interrupciones y tiempo disponible; una carga excesiva degrada calidad y **seguridad**."
           ]
         },
         {
@@ -49,19 +49,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Validación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica interés desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Seleccionar área secundaria.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -87,7 +74,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
@@ -100,9 +87,9 @@
         {
           "type": "bullets",
           "items": [
-            "Terminología: Reduce ambigüedad y permite interpretar estados, órdenes y reportes con precisión.",
+            "**Terminología**: Reduce ambigüedad y permite interpretar estados, órdenes y reportes con precisión.",
             "Sistemas: sistemas se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
-            "Roles: Delimitan responsabilidad y autoridad dentro del equipo.",
+            "Roles: Delimitan responsabilidad y **autoridad** dentro del equipo.",
             "Límites: Definen hasta dónde puede actuar el cadete por competencia, autoridad, estado y riesgo; fuera de ellos se consulta o escala."
           ]
         },
@@ -115,19 +102,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Comprobación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica terminología desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Familiarización.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -153,7 +127,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
@@ -166,8 +140,8 @@
         {
           "type": "bullets",
           "items": [
-            "Principios: principios se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
-            "Riesgos: Deben expresarse de forma concreta: qué puede ocurrir, con qué impacto y qué mitigación existe.",
+            "**Principios**: principios se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "**Riesgos**: Deben expresarse de forma concreta: qué puede ocurrir, con qué impacto y qué mitigación existe.",
             "Interfaz con rama principal: interfaz con rama principal se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
           ]
         },
@@ -180,19 +154,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación ligera."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica principios desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Estudio guiado.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -218,7 +179,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
@@ -231,8 +192,8 @@
         {
           "type": "bullets",
           "items": [
-            "Tarea segura: tarea segura se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
-            "Supervisión: Establece objetivo, límites y puntos de control, dejando autonomía proporcional a competencia y riesgo.",
+            "**Tarea segura**: tarea segura se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Supervisión: Establece **objetivo**, límites y puntos de control, dejando autonomía proporcional a competencia y riesgo.",
             "Reporte: Separa hechos, interpretación, resultado, limitaciones y pendientes para que otro pueda actuar."
           ]
         },
@@ -245,19 +206,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evidencia práctica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica tarea segura desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Ejecutar tarea básica.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -283,7 +231,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
@@ -296,8 +244,8 @@
         {
           "type": "bullets",
           "items": [
-            "Habilidades relacionadas: habilidades relacionadas se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
-            "Límites: Definen hasta dónde puede actuar el cadete por competencia, autoridad, estado y riesgo; fuera de ellos se consulta o escala.",
+            "**Habilidades relacionadas**: habilidades relacionadas se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Límites: Definen hasta dónde puede actuar el cadete por competencia, **autoridad**, estado y riesgo; fuera de ellos se consulta o escala.",
             "No equivalencia: no equivalencia se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
           ]
         },
@@ -310,19 +258,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Caso."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica habilidades relacionadas desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Analizar qué experiencia previa ayuda y cuál no.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -348,7 +283,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
@@ -361,9 +296,9 @@
         {
           "type": "bullets",
           "items": [
-            "Objetivo: objetivo se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "**Objetivo**: objetivo se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Práctica futura: práctica futura se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
-            "Límites de autoridad: límites de autoridad delimita competencia y autorización; fuera de ese marco la decisión se transfiere a personal adecuado."
+            "Límites de **autoridad**: límites de autoridad delimita competencia y autorización; fuera de ese marco la decisión se transfiere a personal adecuado."
           ]
         },
         {
@@ -375,19 +310,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Tutoría."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica objetivo desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Definir continuación XTR-202.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -407,5 +329,6 @@
       ]
     }
   ],
-  "status": "developed_content"
+  "status": "developed_content",
+  "assessmentModel": "concept_driven_v2_1"
 }

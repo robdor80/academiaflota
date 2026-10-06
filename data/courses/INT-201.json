@@ -1,7 +1,7 @@
 {
   "subject": "Operaciones integradas de nave II",
   "code": "INT-201",
-  "version": "1.1",
+  "version": "1.3",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/second_class/courses/INT-201/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/second_class/INT-201/MANUAL_v1_0.md",
@@ -22,11 +22,11 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
-          "text": "Entender cómo la especialidad propia consume, modifica y entrega información o recursos al resto de la nave."
+          "text": "Entender cómo la especialidad propia consume, modifica y entrega información o **recursos** al resto de la nave."
         },
         {
           "type": "heading",
@@ -35,7 +35,7 @@
         {
           "type": "bullets",
           "items": [
-            "Entradas: entradas se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "**Entradas**: entradas se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Salidas: salidas se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Recursos: Incluyen energía, tiempo, personal, capacidad de sistemas y atención; su disponibilidad determina opciones viables.",
             "Autoridad: Determina quién puede decidir, aprobar o modificar una acción; competencia técnica no equivale automáticamente a autoridad."
@@ -50,19 +50,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Ejercicio."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica entradas desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Modelar dependencias de la rama.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -89,11 +76,11 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
-          "text": "Entender cómo la especialidad propia consume, modifica y entrega información o recursos al resto de la nave."
+          "text": "Entender cómo la especialidad propia consume, modifica y entrega información o **recursos** al resto de la nave."
         },
         {
           "type": "heading",
@@ -102,7 +89,7 @@
         {
           "type": "bullets",
           "items": [
-            "Formato: formato se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "**Formato**: formato se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Prioridad: Ordena demandas según seguridad, misión, urgencia, impacto y reversibilidad.",
             "Capacidad: Es lo que un sistema o equipo puede hacer en su estado actual, no en condiciones ideales.",
             "Confirmación: confirmación se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
@@ -117,19 +104,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Práctica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica formato desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Coordinar petición realista.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -156,11 +130,11 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
-          "text": "Entender cómo la especialidad propia consume, modifica y entrega información o recursos al resto de la nave."
+          "text": "Entender cómo la especialidad propia consume, modifica y entrega información o **recursos** al resto de la nave."
         },
         {
           "type": "heading",
@@ -169,7 +143,7 @@
         {
           "type": "bullets",
           "items": [
-            "Energía: Es un recurso compartido; aumentar consumo en un área puede reducir margen o disponibilidad en otra.",
+            "**Energía**: Es un recurso compartido; aumentar consumo en un área puede reducir margen o disponibilidad en otra.",
             "Tiempo: Es un recurso operativo: esperar puede mejorar información, pero también aumentar riesgo o cerrar una ventana.",
             "Personal: Se valora por número, competencia, carga y fatiga, no solo por presencia.",
             "Riesgo: Combina probabilidad, impacto y exposición; se reduce, acepta dentro de autoridad o se escala."
@@ -184,19 +158,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Caso."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica energía desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Negociar prioridad operacional.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -223,11 +184,11 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
-          "text": "Entender cómo la especialidad propia consume, modifica y entrega información o recursos al resto de la nave."
+          "text": "Entender cómo la especialidad propia consume, modifica y entrega información o **recursos** al resto de la nave."
         },
         {
           "type": "heading",
@@ -236,7 +197,7 @@
         {
           "type": "bullets",
           "items": [
-            "Efecto local: efecto local se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "**Efecto local**: efecto local se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Efecto sistémico: efecto sistémico se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Efecto en misión: efecto en misión se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
           ]
@@ -250,19 +211,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica efecto local desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Analizar consecuencias.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -289,11 +237,11 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
-          "text": "Entender cómo la especialidad propia consume, modifica y entrega información o recursos al resto de la nave."
+          "text": "Entender cómo la especialidad propia consume, modifica y entrega información o **recursos** al resto de la nave."
         },
         {
           "type": "heading",
@@ -302,7 +250,7 @@
         {
           "type": "bullets",
           "items": [
-            "Estado: Fija la condición real de partida —normal, degradada, limitada o desconocida— antes de actuar; si cambia, el plan debe revisarse.",
+            "**Estado**: Fija la condición real de partida —normal, degradada, limitada o desconocida— antes de actuar; si cambia, el plan debe revisarse.",
             "Riesgos: Deben expresarse de forma concreta: qué puede ocurrir, con qué impacto y qué mitigación existe.",
             "Cambios: cambios se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Recomendaciones: recomendaciones se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
@@ -317,19 +265,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Práctica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica estado desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Actualizar briefing común.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -356,11 +291,11 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
-          "text": "Entender cómo la especialidad propia consume, modifica y entrega información o recursos al resto de la nave."
+          "text": "Entender cómo la especialidad propia consume, modifica y entrega información o **recursos** al resto de la nave."
         },
         {
           "type": "heading",
@@ -369,7 +304,7 @@
         {
           "type": "bullets",
           "items": [
-            "Misión: Define qué se intenta conseguir y bajo qué restricciones; las decisiones locales deben relacionarse con esa intención.",
+            "**Misión**: Define qué se intenta conseguir y bajo qué restricciones; las decisiones locales deben relacionarse con esa intención.",
             "Dependencias: Existen cuando una tarea necesita información, recursos o acción de otra función.",
             "Incidente: Exige evaluar impacto, actuar dentro de competencia y mantener seguimiento hasta su cierre.",
             "Recuperación: Busca restaurar capacidad suficiente y estable, no necesariamente volver de inmediato al estado perfecto."
@@ -384,19 +319,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación integrada."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica misión desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Simulación multi-departamento.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -417,5 +339,6 @@
       ]
     }
   ],
-  "status": "developed_content"
+  "status": "developed_content",
+  "assessmentModel": "concept_driven_v2_1"
 }

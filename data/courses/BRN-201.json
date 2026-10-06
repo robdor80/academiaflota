@@ -1,7 +1,7 @@
 {
   "subject": "Especialización profesional I",
   "code": "BRN-201",
-  "version": "1.1",
+  "version": "1.3",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/second_class/courses/BRN-201/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/second_class/BRN-201/MANUAL_v1_0.md",
@@ -22,7 +22,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "La especialización formal convierte interés y exposición previa en responsabilidad profesional sostenida."
+          "text": "**La especialización formal convierte interés y exposición previa en responsabilidad profesional sostenida.**"
         },
         {
           "type": "heading",
@@ -31,11 +31,11 @@
         {
           "type": "bullets",
           "items": [
-            "Mando",
+            "**Mando**",
             "Vuelo / Navegación",
             "Operaciones",
             "Ingeniería",
-            "Seguridad / Táctica",
+            "**Seguridad** / Táctica",
             "Ciencia / Sensores",
             "Medicina"
           ]
@@ -44,20 +44,6 @@
           "type": "callout",
           "label": "NO ES EXPERTO",
           "text": "Elegir una rama inicia una formación profesional; no concede competencia avanzada ni autoridad automática."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué cambia al comenzar especialización?",
-            "¿Cuál es el núcleo de tu rama?",
-            "¿Qué responsabilidades comunes existen?",
-            "¿Por qué no concede competencia avanzada?",
-            "¿Qué significa estándar profesional?"
-          ]
         }
       ]
     },
@@ -68,7 +54,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Una herramienta profesional puede ser consola, sistema, instrumento, base de datos, procedimiento, checklist, protocolo o registro."
+          "text": "**Una herramienta profesional puede ser consola, sistema, instrumento, base de datos, procedimiento, checklist, protocolo o registro.**"
         },
         {
           "type": "p",
@@ -77,21 +63,7 @@
         {
           "type": "callout",
           "label": "ANTES DE USAR",
-          "text": "Comprobar estado, autoridad, límites, riesgos y forma segura de cancelar o salir."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué puede ser herramienta profesional?",
-            "¿Por qué importa terminología?",
-            "¿Qué debe comprobarse antes?",
-            "¿Por qué interfaz cambia por era?",
-            "Pon ejemplos de tu rama."
-          ]
+          "text": "Comprobar estado, **autoridad**, límites, riesgos y forma segura de cancelar o salir."
         }
       ]
     },
@@ -102,30 +74,16 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Un procedimiento nuclear es una secuencia recurrente del trabajo normal de la rama."
+          "text": "**Un procedimiento nuclear es una secuencia recurrente del trabajo normal de la rama.**"
         },
         {
           "type": "quote",
-          "text": "estado → objetivo → configuración → límites → ejecución → resultado → informe → handoff"
+          "text": "estado → objetivo → **configuración** → límites → ejecución → resultado → informe → handoff"
         },
         {
           "type": "callout",
           "label": "CHECKLIST",
           "text": "Ayuda a no olvidar elementos repetitivos, pero no sustituye el juicio profesional."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué es procedimiento nuclear?",
-            "¿Qué pasos comunes aparecen?",
-            "¿Para qué sirve checklist?",
-            "¿Por qué no sustituye juicio?",
-            "¿Qué conserva handoff?"
-          ]
         }
       ]
     },
@@ -136,7 +94,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "El profesional distingue funcionamiento normal, degradación, anomalía, bloqueo y riesgo. Un síntoma no demuestra por sí solo la causa."
+          "text": "**El profesional distingue funcionamiento normal, degradación, anomalía, bloqueo y riesgo.** Un síntoma no demuestra por sí solo la causa."
         },
         {
           "type": "heading",
@@ -145,8 +103,8 @@
         {
           "type": "bullets",
           "items": [
-            "Vidas",
-            "Misión",
+            "**Vidas**",
+            "**Misión**",
             "Capacidad",
             "Reversibilidad",
             "Riesgo de empeorar",
@@ -157,20 +115,6 @@
           "type": "callout",
           "label": "ERROR PROPIO",
           "text": "Se informa, contiene, corrige, registra y convierte en aprendizaje; ocultarlo empeora la operación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Diferencia síntoma y causa.",
-            "¿Qué preguntas ayudan a priorizar?",
-            "¿Cuándo escalar?",
-            "¿Qué formas puede tener recuperación?",
-            "¿Qué hacer ante error propio?"
-          ]
         }
       ]
     },
@@ -181,7 +125,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Ninguna especialidad trabaja aislada. Cada una consume y produce información, recursos o decisiones para otras áreas."
+          "text": "**Ninguna especialidad trabaja aislada.** Cada una consume y produce información, recursos o decisiones para otras áreas."
         },
         {
           "type": "heading",
@@ -190,8 +134,8 @@
         {
           "type": "bullets",
           "items": [
-            "Necesidad",
-            "Motivo",
+            "**Necesidad**",
+            "**Motivo**",
             "Prioridad",
             "Plazo o urgencia",
             "Impacto si no se atiende"
@@ -201,20 +145,6 @@
           "type": "callout",
           "label": "COORDINAR ≠ INVADIR",
           "text": "Integrarse significa usar peticiones, handoffs, reportes y escalado; no ejecutar sin autoridad la profesión de otro departamento."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Por qué ninguna rama trabaja sola?",
-            "¿Qué debes conocer de dependencias?",
-            "¿Qué contiene solicitud útil?",
-            "¿Cómo afecta una decisión local a misión?",
-            "Diferencia coordinar e invadir otra función."
-          ]
         }
       ]
     },
@@ -225,7 +155,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "El cierre integra teoría, práctica, reportes, handoffs, conducta y juicio en un caso de rama."
+          "text": "**El cierre integra teoría, práctica, reportes, handoffs, conducta y juicio en un caso de rama.**"
         },
         {
           "type": "heading",
@@ -234,8 +164,8 @@
         {
           "type": "bullets",
           "items": [
-            "Una fortaleza",
-            "Una carencia concreta",
+            "**Una fortaleza**",
+            "Una **carencia** concreta",
             "Una práctica necesaria",
             "Una forma de obtener nueva evidencia"
           ]
@@ -244,23 +174,10 @@
           "type": "callout",
           "label": "EVALUACIÓN CONTINUA",
           "text": "El resultado describe preparación para continuar hacia BRN-202; no etiqueta al cadete como experto o incapaz."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué evidencia se revisa?",
-            "¿Por qué no basta un examen único?",
-            "¿Qué demuestra el caso integrado?",
-            "¿Qué contiene plan de mejora?",
-            "¿Qué significa preparado para continuar?"
-          ]
         }
       ]
     }
   ],
-  "status": "developed_content"
+  "status": "developed_content",
+  "assessmentModel": "concept_driven_v2_1"
 }

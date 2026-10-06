@@ -1,14 +1,40 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.1.0",
   "course_id": "XTR-201",
-  "status": "editorially_aligned_with_developed_manual",
-  "question_count": 24,
-  "questions": [
+  "status": "concept_driven_autocorrectable_v2_1",
+  "source_bank": "question_bank_v1_0.json",
+  "policy": {
+    "theory_formats": [
+      "multiple_choice",
+      "short_answer"
+    ],
+    "multiple_choice_target_ratio": 0.8,
+    "short_answer_target_ratio": 0.2,
+    "deterministic_correction": true,
+    "web_and_game_share_concepts_not_question_instances": true,
+    "complex_judgment_moves_to_practice_and_simulation": true,
+    "source_rule": "Every evaluated concept must be explicitly taught in the course material or an established prerequisite."
+  },
+  "unit_review": {
+    "questions_per_attempt": 5,
+    "reshuffle_each_attempt": true,
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
+  },
+  "concepts": [
     {
-      "id": "XTR-201-Q001",
+      "id": "XTR-201-C001",
       "unit_id": "XTR-201-U01",
-      "type": "professional_knowledge",
-      "prompt_es": "Explica qué significa interés en esta unidad y cómo puede cambiar una decisión.",
+      "source_type": "professional_knowledge",
+      "web_prompt_es": "¿Qué opción explica correctamente qué significa interés en esta unidad y cómo puede cambiar una decisión?",
+      "web_prompt_variants_es": [
+        "¿Qué opción explica correctamente qué significa interés en esta unidad y cómo puede cambiar una decisión?",
+        "Explica qué significa interés en esta unidad y cómo puede cambiar una decisión."
+      ],
+      "answer_display_es": "interés · contexto · impacto en decisión",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "interés",
         "contexto",
@@ -16,10 +42,17 @@
       ]
     },
     {
-      "id": "XTR-201-Q002",
+      "id": "XTR-201-C002",
       "unit_id": "XTR-201-U01",
-      "type": "planning",
-      "prompt_es": "Planifica esta tarea: Seleccionar área secundaria.",
+      "source_type": "planning",
+      "web_prompt_es": "Planifica esta tarea: Seleccionar área secundaria.",
+      "web_prompt_variants_es": [
+        "Planifica esta tarea: Seleccionar área secundaria.",
+        "Repaso: Planifica esta tarea: Seleccionar área secundaria."
+      ],
+      "answer_display_es": "objetivo · riesgos · recursos · autoridad · criterio de éxito",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "objetivo",
         "riesgos",
@@ -29,10 +62,17 @@
       ]
     },
     {
-      "id": "XTR-201-Q003",
+      "id": "XTR-201-C003",
       "unit_id": "XTR-201-U01",
-      "type": "contingency",
-      "prompt_es": "Durante Elección de foco secundario cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "source_type": "contingency",
+      "web_prompt_es": "Durante Elección de foco secundario cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "web_prompt_variants_es": [
+        "Durante Elección de foco secundario cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+        "Repaso: Durante Elección de foco secundario cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?"
+      ],
+      "answer_display_es": "estado · seguridad · riesgo · autoridad · adaptación o escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estado",
         "seguridad",
@@ -42,10 +82,17 @@
       ]
     },
     {
-      "id": "XTR-201-Q004",
+      "id": "XTR-201-C004",
       "unit_id": "XTR-201-U01",
-      "type": "handoff",
-      "prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "source_type": "handoff",
+      "web_prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+        "Repaso: ¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?"
+      ],
+      "answer_display_es": "acción · resultado · limitaciones · riesgos · pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "acción",
         "resultado",
@@ -55,10 +102,17 @@
       ]
     },
     {
-      "id": "XTR-201-Q005",
+      "id": "XTR-201-C005",
       "unit_id": "XTR-201-U02",
-      "type": "professional_knowledge",
-      "prompt_es": "Explica qué significa terminología en esta unidad y cómo puede cambiar una decisión.",
+      "source_type": "professional_knowledge",
+      "web_prompt_es": "¿Qué opción explica correctamente qué significa terminología en esta unidad y cómo puede cambiar una decisión?",
+      "web_prompt_variants_es": [
+        "¿Qué opción explica correctamente qué significa terminología en esta unidad y cómo puede cambiar una decisión?",
+        "Explica qué significa terminología en esta unidad y cómo puede cambiar una decisión."
+      ],
+      "answer_display_es": "terminología · contexto · impacto en decisión",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "terminología",
         "contexto",
@@ -66,10 +120,17 @@
       ]
     },
     {
-      "id": "XTR-201-Q006",
+      "id": "XTR-201-C006",
       "unit_id": "XTR-201-U02",
-      "type": "planning",
-      "prompt_es": "Planifica esta tarea: Familiarización.",
+      "source_type": "planning",
+      "web_prompt_es": "Planifica esta tarea: Familiarización.",
+      "web_prompt_variants_es": [
+        "Planifica esta tarea: Familiarización.",
+        "Repaso: Planifica esta tarea: Familiarización."
+      ],
+      "answer_display_es": "objetivo · riesgos · recursos · autoridad · criterio de éxito",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "objetivo",
         "riesgos",
@@ -79,10 +140,17 @@
       ]
     },
     {
-      "id": "XTR-201-Q007",
+      "id": "XTR-201-C007",
       "unit_id": "XTR-201-U02",
-      "type": "contingency",
-      "prompt_es": "Durante Lenguaje y herramientas cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "source_type": "contingency",
+      "web_prompt_es": "Durante Lenguaje y herramientas cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "web_prompt_variants_es": [
+        "Durante Lenguaje y herramientas cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+        "Repaso: Durante Lenguaje y herramientas cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?"
+      ],
+      "answer_display_es": "estado · seguridad · riesgo · autoridad · adaptación o escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estado",
         "seguridad",
@@ -92,10 +160,17 @@
       ]
     },
     {
-      "id": "XTR-201-Q008",
+      "id": "XTR-201-C008",
       "unit_id": "XTR-201-U02",
-      "type": "handoff",
-      "prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "source_type": "handoff",
+      "web_prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+        "Repaso: ¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?"
+      ],
+      "answer_display_es": "acción · resultado · limitaciones · riesgos · pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "acción",
         "resultado",
@@ -105,10 +180,17 @@
       ]
     },
     {
-      "id": "XTR-201-Q009",
+      "id": "XTR-201-C009",
       "unit_id": "XTR-201-U03",
-      "type": "professional_knowledge",
-      "prompt_es": "Explica qué significa principios en esta unidad y cómo puede cambiar una decisión.",
+      "source_type": "professional_knowledge",
+      "web_prompt_es": "¿Qué opción explica correctamente qué significa principios en esta unidad y cómo puede cambiar una decisión?",
+      "web_prompt_variants_es": [
+        "¿Qué opción explica correctamente qué significa principios en esta unidad y cómo puede cambiar una decisión?",
+        "Explica qué significa principios en esta unidad y cómo puede cambiar una decisión."
+      ],
+      "answer_display_es": "principios · contexto · impacto en decisión",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "principios",
         "contexto",
@@ -116,10 +198,17 @@
       ]
     },
     {
-      "id": "XTR-201-Q010",
+      "id": "XTR-201-C010",
       "unit_id": "XTR-201-U03",
-      "type": "planning",
-      "prompt_es": "Planifica esta tarea: Estudio guiado.",
+      "source_type": "planning",
+      "web_prompt_es": "Planifica esta tarea: Estudio guiado.",
+      "web_prompt_variants_es": [
+        "Planifica esta tarea: Estudio guiado.",
+        "Repaso: Planifica esta tarea: Estudio guiado."
+      ],
+      "answer_display_es": "objetivo · riesgos · recursos · autoridad · criterio de éxito",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "objetivo",
         "riesgos",
@@ -129,10 +218,17 @@
       ]
     },
     {
-      "id": "XTR-201-Q011",
+      "id": "XTR-201-C011",
       "unit_id": "XTR-201-U03",
-      "type": "contingency",
-      "prompt_es": "Durante Fundamentos teóricos cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "source_type": "contingency",
+      "web_prompt_es": "Durante Fundamentos teóricos cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "web_prompt_variants_es": [
+        "Durante Fundamentos teóricos cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+        "Repaso: Durante Fundamentos teóricos cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?"
+      ],
+      "answer_display_es": "estado · seguridad · riesgo · autoridad · adaptación o escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estado",
         "seguridad",
@@ -142,10 +238,17 @@
       ]
     },
     {
-      "id": "XTR-201-Q012",
+      "id": "XTR-201-C012",
       "unit_id": "XTR-201-U03",
-      "type": "handoff",
-      "prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "source_type": "handoff",
+      "web_prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+        "Repaso: ¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?"
+      ],
+      "answer_display_es": "acción · resultado · limitaciones · riesgos · pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "acción",
         "resultado",
@@ -155,10 +258,17 @@
       ]
     },
     {
-      "id": "XTR-201-Q013",
+      "id": "XTR-201-C013",
       "unit_id": "XTR-201-U04",
-      "type": "professional_knowledge",
-      "prompt_es": "Explica qué significa tarea segura en esta unidad y cómo puede cambiar una decisión.",
+      "source_type": "professional_knowledge",
+      "web_prompt_es": "¿Qué opción explica correctamente qué significa tarea segura en esta unidad y cómo puede cambiar una decisión?",
+      "web_prompt_variants_es": [
+        "¿Qué opción explica correctamente qué significa tarea segura en esta unidad y cómo puede cambiar una decisión?",
+        "Explica qué significa tarea segura en esta unidad y cómo puede cambiar una decisión."
+      ],
+      "answer_display_es": "tarea segura · contexto · impacto en decisión",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "tarea segura",
         "contexto",
@@ -166,10 +276,17 @@
       ]
     },
     {
-      "id": "XTR-201-Q014",
+      "id": "XTR-201-C014",
       "unit_id": "XTR-201-U04",
-      "type": "planning",
-      "prompt_es": "Planifica esta tarea: Ejecutar tarea básica.",
+      "source_type": "planning",
+      "web_prompt_es": "Planifica esta tarea: Ejecutar tarea básica.",
+      "web_prompt_variants_es": [
+        "Planifica esta tarea: Ejecutar tarea básica.",
+        "Repaso: Planifica esta tarea: Ejecutar tarea básica."
+      ],
+      "answer_display_es": "objetivo · riesgos · recursos · autoridad · criterio de éxito",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "objetivo",
         "riesgos",
@@ -179,10 +296,17 @@
       ]
     },
     {
-      "id": "XTR-201-Q015",
+      "id": "XTR-201-C015",
       "unit_id": "XTR-201-U04",
-      "type": "contingency",
-      "prompt_es": "Durante Práctica inicial cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "source_type": "contingency",
+      "web_prompt_es": "Durante Práctica inicial cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "web_prompt_variants_es": [
+        "Durante Práctica inicial cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+        "Repaso: Durante Práctica inicial cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?"
+      ],
+      "answer_display_es": "estado · seguridad · riesgo · autoridad · adaptación o escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estado",
         "seguridad",
@@ -192,10 +316,17 @@
       ]
     },
     {
-      "id": "XTR-201-Q016",
+      "id": "XTR-201-C016",
       "unit_id": "XTR-201-U04",
-      "type": "handoff",
-      "prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "source_type": "handoff",
+      "web_prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+        "Repaso: ¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?"
+      ],
+      "answer_display_es": "acción · resultado · limitaciones · riesgos · pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "acción",
         "resultado",
@@ -205,10 +336,17 @@
       ]
     },
     {
-      "id": "XTR-201-Q017",
+      "id": "XTR-201-C017",
       "unit_id": "XTR-201-U05",
-      "type": "professional_knowledge",
-      "prompt_es": "Explica qué significa habilidades relacionadas en esta unidad y cómo puede cambiar una decisión.",
+      "source_type": "professional_knowledge",
+      "web_prompt_es": "¿Qué opción explica correctamente qué significa habilidades relacionadas en esta unidad y cómo puede cambiar una decisión?",
+      "web_prompt_variants_es": [
+        "¿Qué opción explica correctamente qué significa habilidades relacionadas en esta unidad y cómo puede cambiar una decisión?",
+        "Explica qué significa habilidades relacionadas en esta unidad y cómo puede cambiar una decisión."
+      ],
+      "answer_display_es": "habilidades relacionadas · contexto · impacto en decisión",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "habilidades relacionadas",
         "contexto",
@@ -216,10 +354,17 @@
       ]
     },
     {
-      "id": "XTR-201-Q018",
+      "id": "XTR-201-C018",
       "unit_id": "XTR-201-U05",
-      "type": "planning",
-      "prompt_es": "Planifica esta tarea: Analizar qué experiencia previa ayuda y cuál no.",
+      "source_type": "planning",
+      "web_prompt_es": "Planifica esta tarea: Analizar qué experiencia previa ayuda y cuál no.",
+      "web_prompt_variants_es": [
+        "Planifica esta tarea: Analizar qué experiencia previa ayuda y cuál no.",
+        "Repaso: Planifica esta tarea: Analizar qué experiencia previa ayuda y cuál no."
+      ],
+      "answer_display_es": "objetivo · riesgos · recursos · autoridad · criterio de éxito",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "objetivo",
         "riesgos",
@@ -229,10 +374,17 @@
       ]
     },
     {
-      "id": "XTR-201-Q019",
+      "id": "XTR-201-C019",
       "unit_id": "XTR-201-U05",
-      "type": "contingency",
-      "prompt_es": "Durante Transferencia de experiencia cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "source_type": "contingency",
+      "web_prompt_es": "Durante Transferencia de experiencia cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "web_prompt_variants_es": [
+        "Durante Transferencia de experiencia cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+        "Repaso: Durante Transferencia de experiencia cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?"
+      ],
+      "answer_display_es": "estado · seguridad · riesgo · autoridad · adaptación o escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estado",
         "seguridad",
@@ -242,10 +394,17 @@
       ]
     },
     {
-      "id": "XTR-201-Q020",
+      "id": "XTR-201-C020",
       "unit_id": "XTR-201-U05",
-      "type": "handoff",
-      "prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "source_type": "handoff",
+      "web_prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+        "Repaso: ¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?"
+      ],
+      "answer_display_es": "acción · resultado · limitaciones · riesgos · pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "acción",
         "resultado",
@@ -255,10 +414,17 @@
       ]
     },
     {
-      "id": "XTR-201-Q021",
+      "id": "XTR-201-C021",
       "unit_id": "XTR-201-U06",
-      "type": "professional_knowledge",
-      "prompt_es": "Explica qué significa objetivo en esta unidad y cómo puede cambiar una decisión.",
+      "source_type": "professional_knowledge",
+      "web_prompt_es": "¿Qué opción explica correctamente qué significa objetivo en esta unidad y cómo puede cambiar una decisión?",
+      "web_prompt_variants_es": [
+        "¿Qué opción explica correctamente qué significa objetivo en esta unidad y cómo puede cambiar una decisión?",
+        "Explica qué significa objetivo en esta unidad y cómo puede cambiar una decisión."
+      ],
+      "answer_display_es": "objetivo · contexto · impacto en decisión",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "objetivo",
         "contexto",
@@ -266,10 +432,17 @@
       ]
     },
     {
-      "id": "XTR-201-Q022",
+      "id": "XTR-201-C022",
       "unit_id": "XTR-201-U06",
-      "type": "planning",
-      "prompt_es": "Planifica esta tarea: Definir continuación XTR-202.",
+      "source_type": "planning",
+      "web_prompt_es": "Planifica esta tarea: Definir continuación XTR-202.",
+      "web_prompt_variants_es": [
+        "Planifica esta tarea: Definir continuación XTR-202.",
+        "Repaso: Planifica esta tarea: Definir continuación XTR-202."
+      ],
+      "answer_display_es": "objetivo · riesgos · recursos · autoridad · criterio de éxito",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "objetivo",
         "riesgos",
@@ -279,10 +452,17 @@
       ]
     },
     {
-      "id": "XTR-201-Q023",
+      "id": "XTR-201-C023",
       "unit_id": "XTR-201-U06",
-      "type": "contingency",
-      "prompt_es": "Durante Plan de continuidad cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "source_type": "contingency",
+      "web_prompt_es": "Durante Plan de continuidad cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "web_prompt_variants_es": [
+        "Durante Plan de continuidad cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+        "Repaso: Durante Plan de continuidad cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?"
+      ],
+      "answer_display_es": "estado · seguridad · riesgo · autoridad · adaptación o escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estado",
         "seguridad",
@@ -292,10 +472,17 @@
       ]
     },
     {
-      "id": "XTR-201-Q024",
+      "id": "XTR-201-C024",
       "unit_id": "XTR-201-U06",
-      "type": "handoff",
-      "prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "source_type": "handoff",
+      "web_prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+        "Repaso: ¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?"
+      ],
+      "answer_display_es": "acción · resultado · limitaciones · riesgos · pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "acción",
         "resultado",
@@ -303,8 +490,198 @@
         "riesgos",
         "pendientes"
       ]
+    },
+    {
+      "id": "XTR-201-C025",
+      "unit_id": "XTR-201-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Contenidos»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Contenidos»?",
+        "En «Contenidos», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Interés: interés se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Interés: interés se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "XTR-201-C026",
+      "unit_id": "XTR-201-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+        "En «Autoevaluación», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Explica interés desde el punto de vista profesional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Explica interés desde el punto de vista profesional."
+      ]
+    },
+    {
+      "id": "XTR-201-C027",
+      "unit_id": "XTR-201-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Contenidos»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Contenidos»?",
+        "En «Contenidos», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Terminología: Reduce ambigüedad y permite interpretar estados, órdenes y reportes con precisión.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Terminología: Reduce ambigüedad y permite interpretar estados, órdenes y reportes con precisión."
+      ]
+    },
+    {
+      "id": "XTR-201-C028",
+      "unit_id": "XTR-201-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+        "En «Autoevaluación», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Explica terminología desde el punto de vista profesional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Explica terminología desde el punto de vista profesional."
+      ]
+    },
+    {
+      "id": "XTR-201-C029",
+      "unit_id": "XTR-201-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Contenidos»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Contenidos»?",
+        "En «Contenidos», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Principios: principios se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Principios: principios se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "XTR-201-C030",
+      "unit_id": "XTR-201-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+        "En «Autoevaluación», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Explica principios desde el punto de vista profesional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Explica principios desde el punto de vista profesional."
+      ]
+    },
+    {
+      "id": "XTR-201-C031",
+      "unit_id": "XTR-201-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Contenidos»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Contenidos»?",
+        "En «Contenidos», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Tarea segura: tarea segura se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Tarea segura: tarea segura se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "XTR-201-C032",
+      "unit_id": "XTR-201-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+        "En «Autoevaluación», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Explica tarea segura desde el punto de vista profesional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Explica tarea segura desde el punto de vista profesional."
+      ]
+    },
+    {
+      "id": "XTR-201-C033",
+      "unit_id": "XTR-201-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Contenidos»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Contenidos»?",
+        "En «Contenidos», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Habilidades relacionadas: habilidades relacionadas se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Habilidades relacionadas: habilidades relacionadas se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "XTR-201-C034",
+      "unit_id": "XTR-201-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+        "En «Autoevaluación», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Explica habilidades relacionadas desde el punto de vista profesional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Explica habilidades relacionadas desde el punto de vista profesional."
+      ]
+    },
+    {
+      "id": "XTR-201-C035",
+      "unit_id": "XTR-201-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Contenidos»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Contenidos»?",
+        "En «Contenidos», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Objetivo: objetivo se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Objetivo: objetivo se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "XTR-201-C036",
+      "unit_id": "XTR-201-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+        "En «Autoevaluación», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Explica objetivo desde el punto de vista profesional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Explica objetivo desde el punto de vista profesional."
+      ]
     }
-  ],
-  "source_manual": "gameplay/careers/academy_path/study_materials/second_class/XTR-201/MANUAL_v1_0.md",
-  "rule": "No question may require knowledge that is not explicitly taught in XTR-201 or established prerequisites."
+  ]
 }
