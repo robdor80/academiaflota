@@ -135,7 +135,7 @@ function curriculumStudyStats() {
   if (!app.curriculum || !app.profile) return { completed: 0, total: 0, percent: 0 };
   let total = 0;
   let completed = 0;
-  app.curriculum.years.forEach(function(year) {
+  app.curriculum.years.forEach(function(year, yearIndex) {
     year.trimesters.forEach(function(term) {
       term.subjects.forEach(function(subject) {
         if (typeof subject !== "object" || !subject.studyId) return;
@@ -352,7 +352,7 @@ function renderCurriculum() {
       : "";
 
     html +=
-      '<section class="curriculum-section">' +
+      '<section class="curriculum-section curriculum-section--year-' + (yearIndex + 1) + '">' +
         '<header class="curriculum-section__header"><div><span class="overline">' + escapeHtml(year.year) +
         '</span><h2>' + escapeHtml(year.title) + '</h2></div></header>' +
         '<div class="curriculum-section__body">' + specializationText +
