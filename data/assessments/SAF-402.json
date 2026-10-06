@@ -16,7 +16,7 @@
     "source_rule": "Every evaluated concept must be explicitly taught in the course material or an established prerequisite."
   },
   "unit_review": {
-    "questions_per_attempt": 4,
+    "questions_per_attempt": 3,
     "reshuffle_each_attempt": true,
     "preferred_short_answers_per_attempt": 1
   },
@@ -26,9 +26,15 @@
       "unit_id": "SAF-402-U01",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué cambia cuando se declara una alerta?",
+      "web_prompt_variants_es": [
+        "¿Qué cambia cuando se declara una alerta?",
+        "Selecciona la respuesta correcta: Qué cambia cuando se declara una alerta?"
+      ],
       "answer_display_es": "prioridades · movimiento · acceso · tareas · comunicaciones",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "prioridades"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "prioridades",
         "movimiento",
@@ -42,11 +48,13 @@
       "unit_id": "SAF-402-U01",
       "source_type": "judgment",
       "web_prompt_es": "¿Una alarma local implica evacuar toda la nave?",
-      "answer_display_es": "No. puede afectar solo zona/sistema; seguir instrucción.",
-      "accepted_short_answers_es": [
-        "no"
+      "web_prompt_variants_es": [
+        "¿Una alarma local implica evacuar toda la nave?",
+        "Repaso: ¿Una alarma local implica evacuar toda la nave?"
       ],
-      "preferred_mode": "short_answer",
+      "answer_display_es": "No — puede afectar solo zona/sistema; seguir instrucción.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "no",
         "puede afectar solo zona/sistema",
@@ -58,6 +66,10 @@
       "unit_id": "SAF-402-U01",
       "source_type": "procedure",
       "web_prompt_es": "¿Qué haces si no entiendes una señal?",
+      "web_prompt_variants_es": [
+        "¿Qué haces si no entiendes una señal?",
+        "Selecciona la respuesta correcta: Qué haces si no entiendes una señal?"
+      ],
       "answer_display_es": "no adivinar · consultar · pedir aclaración",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -72,6 +84,10 @@
       "unit_id": "SAF-402-U01",
       "source_type": "short_answer",
       "web_prompt_es": "¿Por qué la presentación de una alerta puede variar por era?",
+      "web_prompt_variants_es": [
+        "¿Por qué la presentación de una alerta puede variar por era?",
+        "Selecciona la explicación correcta:  la presentación de una alerta puede variar por era."
+      ],
       "answer_display_es": "interfaces/equipo cambian · principio funcional permanece",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -85,6 +101,10 @@
       "unit_id": "SAF-402-U02",
       "source_type": "short_answer",
       "web_prompt_es": "¿Cuál es el objetivo de una evacuación?",
+      "web_prompt_variants_es": [
+        "¿Cuál es el objetivo de una evacuación?",
+        "Repaso: ¿Cuál es el objetivo de una evacuación?"
+      ],
       "answer_display_es": "mover personas a zona segura · de forma controlada",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -98,9 +118,15 @@
       "unit_id": "SAF-402-U02",
       "source_type": "knowledge",
       "web_prompt_es": "¿Para qué sirve aislar compartimentos?",
+      "web_prompt_variants_es": [
+        "¿Para qué sirve aislar compartimentos?",
+        "Repaso: ¿Para qué sirve aislar compartimentos?"
+      ],
       "answer_display_es": "limitar propagación · proteger otras zonas · contener pérdida de presión/contaminación",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "limitar propagación"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "limitar propagación",
         "proteger otras zonas",
@@ -112,6 +138,10 @@
       "unit_id": "SAF-402-U02",
       "source_type": "judgment",
       "web_prompt_es": "¿Por qué no debes abrir un cierre solo porque bloquea tu ruta habitual?",
+      "web_prompt_variants_es": [
+        "¿Por qué no debes abrir un cierre solo porque bloquea tu ruta habitual?",
+        "Selecciona la explicación correcta:  no debes abrir un cierre solo porque bloquea tu ruta habitual."
+      ],
       "answer_display_es": "puede contener peligro · ruta habitual ya no es segura · seguir instrucciones",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -126,6 +156,10 @@
       "unit_id": "SAF-402-U02",
       "source_type": "short_answer",
       "web_prompt_es": "¿Para qué sirve el recuento?",
+      "web_prompt_variants_es": [
+        "¿Para qué sirve el recuento?",
+        "Repaso: ¿Para qué sirve el recuento?"
+      ],
       "answer_display_es": "saber quién falta · confirmar evacuación · evitar búsquedas duplicadas",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -139,10 +173,16 @@
       "id": "SAF-402-C009",
       "unit_id": "SAF-402-U03",
       "source_type": "knowledge",
-      "web_prompt_es": "¿Qué opción contiene correctamente tres riesgos asociados a un incendio además de la llama.",
+      "web_prompt_es": "¿Qué opción contiene tres riesgos asociados a un incendio además de la llama?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene tres riesgos asociados a un incendio además de la llama?",
+        "Nombra tres riesgos asociados a un incendio además de la llama."
+      ],
       "answer_display_es": "humo · atmósfera · calor · daño de sistemas · pérdida de visibilidad",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "humo"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "humo",
         "atmósfera",
@@ -156,6 +196,10 @@
       "unit_id": "SAF-402-U03",
       "source_type": "procedure",
       "web_prompt_es": "¿Qué debes comprobar antes de acercarte a una zona con humo?",
+      "web_prompt_variants_es": [
+        "¿Qué debes comprobar antes de acercarte a una zona con humo?",
+        "Selecciona la respuesta correcta: Qué debes comprobar antes de acercarte a una zona con humo?"
+      ],
       "answer_display_es": "acceso · salida · atmósfera · equipo · autorización",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -172,6 +216,10 @@
       "unit_id": "SAF-402-U03",
       "source_type": "judgment",
       "web_prompt_es": "¿Por qué aislar puede ser mejor que entrar?",
+      "web_prompt_variants_es": [
+        "¿Por qué aislar puede ser mejor que entrar?",
+        "Selecciona la explicación correcta:  aislar puede ser mejor que entrar."
+      ],
       "answer_display_es": "contención · reduce exposición · protege otras zonas",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -186,6 +234,10 @@
       "unit_id": "SAF-402-U03",
       "source_type": "short_answer",
       "web_prompt_es": "¿Cuál es la prioridad de un cadete no especialista ante un incendio?",
+      "web_prompt_variants_es": [
+        "¿Cuál es la prioridad de un cadete no especialista ante un incendio?",
+        "Repaso: ¿Cuál es la prioridad de un cadete no especialista ante un incendio?"
+      ],
       "answer_display_es": "alertar · proteger · aislar si autorizado · retirarse · apoyar cualificados",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -202,6 +254,10 @@
       "unit_id": "SAF-402-U04",
       "source_type": "procedure",
       "web_prompt_es": "¿Qué debes comprobar antes de ayudar a un herido?",
+      "web_prompt_variants_es": [
+        "¿Qué debes comprobar antes de ayudar a un herido?",
+        "Selecciona la respuesta correcta: Qué debes comprobar antes de ayudar a un herido?"
+      ],
       "answer_display_es": "seguridad de escena",
       "accepted_short_answers_es": [
         "seguridad de escena"
@@ -216,6 +272,10 @@
       "unit_id": "SAF-402-U04",
       "source_type": "knowledge",
       "web_prompt_es": "¿Qué información básica debes transmitir a Medicina?",
+      "web_prompt_variants_es": [
+        "¿Qué información básica debes transmitir a Medicina?",
+        "Selecciona la respuesta correcta: Qué información básica debes transmitir a Medicina?"
+      ],
       "answer_display_es": "ubicación · número afectados · riesgo · estado observable · acceso",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -231,7 +291,11 @@
       "id": "SAF-402-C015",
       "unit_id": "SAF-402-U04",
       "source_type": "compare",
-      "web_prompt_es": "¿Qué opción diferencia correctamente síntoma observado y diagnóstico.",
+      "web_prompt_es": "¿Qué opción diferencia correctamente síntoma observado y diagnóstico?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente síntoma observado y diagnóstico?",
+        "Diferencia síntoma observado y diagnóstico."
+      ],
       "answer_display_es": "síntoma = dato observable · diagnóstico = interpretación médica conocida · no inventar causa",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -246,6 +310,10 @@
       "unit_id": "SAF-402-U04",
       "source_type": "judgment",
       "web_prompt_es": "¿Qué significa no exceder competencia?",
+      "web_prompt_variants_es": [
+        "¿Qué significa no exceder competencia?",
+        "Selecciona la respuesta correcta: Qué significa no exceder competencia?"
+      ],
       "answer_display_es": "hacer solo lo entrenado/autorizado · pedir ayuda · no improvisar tratamiento",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -259,10 +327,16 @@
       "id": "SAF-402-C017",
       "unit_id": "SAF-402-U05",
       "source_type": "knowledge",
-      "web_prompt_es": "¿Qué opción indica correctamente las prioridades generales del control de daños básico.",
+      "web_prompt_es": "¿Qué opción indica correctamente las prioridades generales del control de daños básico?",
+      "web_prompt_variants_es": [
+        "¿Qué opción indica correctamente las prioridades generales del control de daños básico?",
+        "Indica las prioridades generales del control de daños básico."
+      ],
       "answer_display_es": "proteger vidas · contener riesgo · preservar funciones esenciales · recuperar capacidad",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "proteger vidas"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "proteger vidas",
         "contener riesgo",
@@ -275,6 +349,10 @@
       "unit_id": "SAF-402-U05",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué es un riesgo secundario?",
+      "web_prompt_variants_es": [
+        "¿Qué es un riesgo secundario?",
+        "Selecciona la respuesta correcta: Qué es un riesgo secundario?"
+      ],
       "answer_display_es": "un problema genera otro · efecto encadenado",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -288,6 +366,10 @@
       "unit_id": "SAF-402-U05",
       "source_type": "scenario",
       "web_prompt_es": "¿Cómo puede ayudar un cadete a control de daños sin reparar sistemas?",
+      "web_prompt_variants_es": [
+        "¿Cómo puede ayudar un cadete a control de daños sin reparar sistemas?",
+        "Repaso: ¿Cómo puede ayudar un cadete a control de daños sin reparar sistemas?"
+      ],
       "answer_display_es": "transporte · comunicaciones · acceso · evacuación · reporte",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -304,6 +386,10 @@
       "unit_id": "SAF-402-U05",
       "source_type": "judgment",
       "web_prompt_es": "¿Por qué una improvisación técnica no funciona automáticamente?",
+      "web_prompt_variants_es": [
+        "¿Por qué una improvisación técnica no funciona automáticamente?",
+        "Selecciona la explicación correcta:  una improvisación técnica no funciona automáticamente."
+      ],
       "answer_display_es": "requiere recursos · conocimiento · compatibilidad · riesgo · validación",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -319,10 +405,16 @@
       "id": "SAF-402-C021",
       "unit_id": "SAF-402-U06",
       "source_type": "procedure",
-      "web_prompt_es": "¿Qué opción enumera correctamente las fases básicas de una respuesta integrada.",
+      "web_prompt_es": "¿Qué opción enumera correctamente las fases básicas de una respuesta integrada?",
+      "web_prompt_variants_es": [
+        "¿Qué opción enumera correctamente las fases básicas de una respuesta integrada?",
+        "Enumera las fases básicas de una respuesta integrada."
+      ],
       "answer_display_es": "alerta · instrucción · movimiento · informe · asistencia · registro/relevo",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "alerta"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "alerta",
         "instrucción",
@@ -337,6 +429,10 @@
       "unit_id": "SAF-402-U06",
       "source_type": "knowledge",
       "web_prompt_es": "¿Qué debe priorizar un mensaje de emergencia?",
+      "web_prompt_variants_es": [
+        "¿Qué debe priorizar un mensaje de emergencia?",
+        "Selecciona la respuesta correcta: Qué debe priorizar un mensaje de emergencia?"
+      ],
       "answer_display_es": "lugar · hecho · riesgo · necesidad",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -352,6 +448,10 @@
       "unit_id": "SAF-402-U06",
       "source_type": "judgment",
       "web_prompt_es": "¿Por qué una acción peligrosa no es automáticamente heroica?",
+      "web_prompt_variants_es": [
+        "¿Por qué una acción peligrosa no es automáticamente heroica?",
+        "Selecciona la explicación correcta:  una acción peligrosa no es automáticamente heroica."
+      ],
       "answer_display_es": "riesgo debe estar justificado · seguridad · misión · alternativas",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -367,6 +467,10 @@
       "unit_id": "SAF-402-U06",
       "source_type": "debrief",
       "web_prompt_es": "¿Qué debe revisarse tras el ejercicio?",
+      "web_prompt_variants_es": [
+        "¿Qué debe revisarse tras el ejercicio?",
+        "Selecciona la respuesta correcta: Qué debe revisarse tras el ejercicio?"
+      ],
       "answer_display_es": "qué se sabía · qué se hizo · qué se comunicó · riesgo · mejoras",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",

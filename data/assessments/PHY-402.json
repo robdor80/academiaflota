@@ -16,7 +16,7 @@
     "source_rule": "Every evaluated concept must be explicitly taught in the course material or an established prerequisite."
   },
   "unit_review": {
-    "questions_per_attempt": 4,
+    "questions_per_attempt": 3,
     "reshuffle_each_attempt": true,
     "preferred_short_answers_per_attempt": 1
   },
@@ -26,9 +26,15 @@
       "unit_id": "PHY-402-U01",
       "source_type": "short_answer",
       "web_prompt_es": "¿Por qué continuidad importa más que una sesión espectacular?",
+      "web_prompt_variants_es": [
+        "¿Por qué continuidad importa más que una sesión espectacular?",
+        "Selecciona la explicación correcta:  continuidad importa más que una sesión espectacular."
+      ],
       "answer_display_es": "adaptación longitudinal · regularidad · carga y recuperación",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "adaptación longitudinal"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "adaptación longitudinal",
         "regularidad",
@@ -40,11 +46,13 @@
       "unit_id": "PHY-402-U01",
       "source_type": "knowledge",
       "web_prompt_es": "¿Qué significa frecuencia?",
-      "answer_display_es": "número de sesiones/estímulos por periodo",
-      "accepted_short_answers_es": [
-        "número de sesiones/estímulos por periodo"
+      "web_prompt_variants_es": [
+        "¿Qué significa frecuencia?",
+        "Selecciona la respuesta correcta: Qué significa frecuencia?"
       ],
-      "preferred_mode": "short_answer",
+      "answer_display_es": "número de sesiones/estímulos por periodo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "número de sesiones/estímulos por periodo"
       ]
@@ -53,7 +61,11 @@
       "id": "PHY-402-C003",
       "unit_id": "PHY-402-U01",
       "source_type": "knowledge",
-      "web_prompt_es": "¿Qué opción contiene correctamente tres formas de progresar sin subir solo intensidad.",
+      "web_prompt_es": "¿Qué opción contiene tres formas de progresar sin subir solo intensidad?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene tres formas de progresar sin subir solo intensidad?",
+        "Nombra tres formas de progresar sin subir solo intensidad."
+      ],
       "answer_display_es": "duración · complejidad · resistencia · densidad · autonomía · especificidad",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -71,6 +83,10 @@
       "unit_id": "PHY-402-U01",
       "source_type": "judgment",
       "web_prompt_es": "¿Por qué la mejor sesión no siempre es la más dura?",
+      "web_prompt_variants_es": [
+        "¿Por qué la mejor sesión no siempre es la más dura?",
+        "Selecciona la explicación correcta:  la mejor sesión no siempre es la más dura."
+      ],
       "answer_display_es": "contexto · fatiga · recuperación · carga académica",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -86,6 +102,10 @@
       "unit_id": "PHY-402-U02",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué significa resistencia aplicada?",
+      "web_prompt_variants_es": [
+        "¿Qué significa resistencia aplicada?",
+        "Selecciona la respuesta correcta: Qué significa resistencia aplicada?"
+      ],
       "answer_display_es": "sostener esfuerzo en tarea funcional · mantener control",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -99,9 +119,15 @@
       "unit_id": "PHY-402-U02",
       "source_type": "judgment",
       "web_prompt_es": "¿Qué puede ocurrir si se empieza demasiado rápido?",
+      "web_prompt_variants_es": [
+        "¿Qué puede ocurrir si se empieza demasiado rápido?",
+        "Selecciona la respuesta correcta: Qué puede ocurrir si se empieza demasiado rápido?"
+      ],
       "answer_display_es": "fatiga · peor técnica · abandono · peor recuperación",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "fatiga"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "fatiga",
         "peor técnica",
@@ -114,6 +140,10 @@
       "unit_id": "PHY-402-U02",
       "source_type": "short_answer",
       "web_prompt_es": "¿Por qué importa recuperarse entre esfuerzos?",
+      "web_prompt_variants_es": [
+        "¿Por qué importa recuperarse entre esfuerzos?",
+        "Selecciona la explicación correcta:  importa recuperarse entre esfuerzos."
+      ],
       "answer_display_es": "mantener función · continuar tarea · medir adaptación",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -128,6 +158,10 @@
       "unit_id": "PHY-402-U02",
       "source_type": "compare",
       "web_prompt_es": "¿Con qué se compara principalmente el progreso individual?",
+      "web_prompt_variants_es": [
+        "¿Con qué se compara principalmente el progreso individual?",
+        "Repaso: ¿Con qué se compara principalmente el progreso individual?"
+      ],
       "answer_display_es": "punto de partida · historial · estado actual · demandas razonables",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -143,11 +177,13 @@
       "unit_id": "PHY-402-U03",
       "source_type": "short_answer",
       "web_prompt_es": "¿Por qué fuerza y coordinación se trabajan juntas?",
-      "answer_display_es": "aplicar fuerza con dirección/tiempo/control",
-      "accepted_short_answers_es": [
-        "aplicar fuerza con dirección/tiempo/control"
+      "web_prompt_variants_es": [
+        "¿Por qué fuerza y coordinación se trabajan juntas?",
+        "Selecciona la explicación correcta:  fuerza y coordinación se trabajan juntas."
       ],
-      "preferred_mode": "short_answer",
+      "answer_display_es": "aplicar fuerza con dirección/tiempo/control",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "aplicar fuerza con dirección/tiempo/control"
       ]
@@ -156,10 +192,16 @@
       "id": "PHY-402-C010",
       "unit_id": "PHY-402-U03",
       "source_type": "knowledge",
-      "web_prompt_es": "¿Qué opción contiene correctamente dos funciones del equilibrio.",
+      "web_prompt_es": "¿Qué opción contiene dos funciones del equilibrio?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene dos funciones del equilibrio?",
+        "Nombra dos funciones del equilibrio."
+      ],
       "answer_display_es": "estabilidad · cambiar dirección · superficies difíciles · control bajo carga",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "estabilidad"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "estabilidad",
         "cambiar dirección",
@@ -172,6 +214,10 @@
       "unit_id": "PHY-402-U03",
       "source_type": "knowledge",
       "web_prompt_es": "¿Qué puede incluir un circuito funcional?",
+      "web_prompt_variants_es": [
+        "¿Qué puede incluir un circuito funcional?",
+        "Selecciona la respuesta correcta: Qué puede incluir un circuito funcional?"
+      ],
       "answer_display_es": "empuje · tracción · transporte · desplazamiento · estabilidad · coordinación",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -189,6 +235,10 @@
       "unit_id": "PHY-402-U03",
       "source_type": "judgment",
       "web_prompt_es": "¿Qué señales justifican reducir o detener una tarea?",
+      "web_prompt_variants_es": [
+        "¿Qué señales justifican reducir o detener una tarea?",
+        "Selecciona la respuesta correcta: Qué señales justifican reducir o detener una tarea?"
+      ],
       "answer_display_es": "pérdida de técnica · riesgo · fatiga excesiva · dolor/limitación",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -204,6 +254,10 @@
       "unit_id": "PHY-402-U04",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué significa ritmo de grupo?",
+      "web_prompt_variants_es": [
+        "¿Qué significa ritmo de grupo?",
+        "Selecciona la respuesta correcta: Qué significa ritmo de grupo?"
+      ],
       "answer_display_es": "ritmo sostenible para objetivo común · adaptado al grupo",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -216,10 +270,16 @@
       "id": "PHY-402-C014",
       "unit_id": "PHY-402-U04",
       "source_type": "knowledge",
-      "web_prompt_es": "¿Qué opción contiene correctamente tres formas de cooperación física.",
+      "web_prompt_es": "¿Qué opción contiene tres formas de cooperación física?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene tres formas de cooperación física?",
+        "Nombra tres formas de cooperación física."
+      ],
       "answer_display_es": "repartir peso · alternar esfuerzo · guiar · asegurar · informar",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "repartir peso"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "repartir peso",
         "alternar esfuerzo",
@@ -233,6 +293,10 @@
       "unit_id": "PHY-402-U04",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué significa seguridad compartida?",
+      "web_prompt_variants_es": [
+        "¿Qué significa seguridad compartida?",
+        "Selecciona la respuesta correcta: Qué significa seguridad compartida?"
+      ],
       "answer_display_es": "vigilar propio estado · compañeros · entorno · instrucciones",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -248,6 +312,10 @@
       "unit_id": "PHY-402-U04",
       "source_type": "judgment",
       "web_prompt_es": "¿Por qué una actividad colectiva no debe convertirse en competición innecesaria?",
+      "web_prompt_variants_es": [
+        "¿Por qué una actividad colectiva no debe convertirse en competición innecesaria?",
+        "Selecciona la explicación correcta:  una actividad colectiva no debe convertirse en competición innecesaria."
+      ],
       "answer_display_es": "objetivo común · seguridad · coordinación",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -262,9 +330,15 @@
       "unit_id": "PHY-402-U05",
       "source_type": "judgment",
       "web_prompt_es": "¿Por qué la actividad acuática no puede ser universal?",
+      "web_prompt_variants_es": [
+        "¿Por qué la actividad acuática no puede ser universal?",
+        "Selecciona la explicación correcta:  la actividad acuática no puede ser universal."
+      ],
       "answer_display_es": "biología/contexto distintos · riesgo · adaptación",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "biología/contexto distintos"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "biología/contexto distintos",
         "riesgo",
@@ -276,6 +350,10 @@
       "unit_id": "PHY-402-U05",
       "source_type": "knowledge",
       "web_prompt_es": "¿Qué factores deben revisarse antes de la sesión?",
+      "web_prompt_variants_es": [
+        "¿Qué factores deben revisarse antes de la sesión?",
+        "Selecciona la respuesta correcta: Qué factores deben revisarse antes de la sesión?"
+      ],
       "answer_display_es": "capacidad previa · entorno · supervisión · equipo · riesgos",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -292,6 +370,10 @@
       "unit_id": "PHY-402-U05",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué se evalúa principalmente en una actividad acuática o equivalente?",
+      "web_prompt_variants_es": [
+        "¿Qué se evalúa principalmente en una actividad acuática o equivalente?",
+        "Selecciona la respuesta correcta: Qué se evalúa principalmente en una actividad acuática o equivalente?"
+      ],
       "answer_display_es": "seguridad · control · instrucciones · capacidad funcional",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -307,6 +389,10 @@
       "unit_id": "PHY-402-U05",
       "source_type": "judgment",
       "web_prompt_es": "¿Qué debe conservar una actividad equivalente?",
+      "web_prompt_variants_es": [
+        "¿Qué debe conservar una actividad equivalente?",
+        "Selecciona la respuesta correcta: Qué debe conservar una actividad equivalente?"
+      ],
       "answer_display_es": "capacidad funcional comparable · objetivo de entrenamiento",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -320,9 +406,15 @@
       "unit_id": "PHY-402-U06",
       "source_type": "short_answer",
       "web_prompt_es": "¿Por qué una rutina debe poder cambiar?",
+      "web_prompt_variants_es": [
+        "¿Por qué una rutina debe poder cambiar?",
+        "Selecciona la explicación correcta:  una rutina debe poder cambiar."
+      ],
       "answer_display_es": "carga académica · fatiga · obligaciones · lesión/contexto",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "carga académica"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "carga académica",
         "fatiga",
@@ -335,6 +427,10 @@
       "unit_id": "PHY-402-U06",
       "source_type": "knowledge",
       "web_prompt_es": "¿Qué variables pueden reducirse ante fatiga?",
+      "web_prompt_variants_es": [
+        "¿Qué variables pueden reducirse ante fatiga?",
+        "Selecciona la respuesta correcta: Qué variables pueden reducirse ante fatiga?"
+      ],
       "answer_display_es": "intensidad · duración · frecuencia · complejidad",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -350,7 +446,11 @@
       "unit_id": "PHY-402-U06",
       "source_type": "judgment",
       "web_prompt_es": "¿Reducir entrenamiento una semana implica perder todo progreso?",
-      "answer_display_es": "No. ajuste temporal; adaptación longitudinal.",
+      "web_prompt_variants_es": [
+        "¿Reducir entrenamiento una semana implica perder todo progreso?",
+        "Repaso: ¿Reducir entrenamiento una semana implica perder todo progreso?"
+      ],
+      "answer_display_es": "No — ajuste temporal; adaptación longitudinal.",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
       "answer_key_es": [
@@ -364,6 +464,10 @@
       "unit_id": "PHY-402-U06",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué preguntas ayudan a revisar una rutina?",
+      "web_prompt_variants_es": [
+        "¿Qué preguntas ayudan a revisar una rutina?",
+        "Selecciona la respuesta correcta: Qué preguntas ayudan a revisar una rutina?"
+      ],
       "answer_display_es": "qué funciona · qué fatiga · qué cambió · qué mantener · qué modificar",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",

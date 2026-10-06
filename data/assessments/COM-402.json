@@ -16,7 +16,7 @@
     "source_rule": "Every evaluated concept must be explicitly taught in the course material or an established prerequisite."
   },
   "unit_review": {
-    "questions_per_attempt": 4,
+    "questions_per_attempt": 3,
     "reshuffle_each_attempt": true,
     "preferred_short_answers_per_attempt": 1
   },
@@ -26,9 +26,15 @@
       "unit_id": "COM-402-U01",
       "source_type": "knowledge",
       "web_prompt_es": "¿Qué elementos forman un enlace de comunicación?",
+      "web_prompt_variants_es": [
+        "¿Qué elementos forman un enlace de comunicación?",
+        "Selecciona la respuesta correcta: Qué elementos forman un enlace de comunicación?"
+      ],
       "answer_display_es": "origen · destino · canal · estado · contenido",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "origen"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "origen",
         "destino",
@@ -41,7 +47,11 @@
       "id": "COM-402-C002",
       "unit_id": "COM-402-U01",
       "source_type": "compare",
-      "web_prompt_es": "¿Qué opción diferencia correctamente canal y contenido.",
+      "web_prompt_es": "¿Qué opción diferencia correctamente canal y contenido?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente canal y contenido?",
+        "Diferencia canal y contenido."
+      ],
       "answer_display_es": "canal = medio/tipo de enlace · contenido = mensaje transmitido",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -55,6 +65,10 @@
       "unit_id": "COM-402-U01",
       "source_type": "judgment",
       "web_prompt_es": "¿Por qué la prioridad debe usarse con criterio?",
+      "web_prompt_variants_es": [
+        "¿Por qué la prioridad debe usarse con criterio?",
+        "Selecciona la explicación correcta:  la prioridad debe usarse con criterio."
+      ],
       "answer_display_es": "evitar saturación · reservar atención para casos relevantes · no inflar urgencia",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -69,6 +83,10 @@
       "unit_id": "COM-402-U01",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué significa enlace degradado?",
+      "web_prompt_variants_es": [
+        "¿Qué significa enlace degradado?",
+        "Selecciona la respuesta correcta: Qué significa enlace degradado?"
+      ],
       "answer_display_es": "conexión abierta con calidad reducida · puede afectar comprensión/datos",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -82,9 +100,15 @@
       "unit_id": "COM-402-U02",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué función general cumple un tricorder en COM-402?",
+      "web_prompt_variants_es": [
+        "¿Qué función general cumple un tricorder en COM-402?",
+        "Selecciona la respuesta correcta: Qué función general cumple un tricorder en COM-402?"
+      ],
       "answer_display_es": "adquisición/consulta portátil · observación · medición · registro",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "adquisición/consulta portátil"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "adquisición/consulta portátil",
         "observación",
@@ -96,7 +120,11 @@
       "id": "COM-402-C006",
       "unit_id": "COM-402-U02",
       "source_type": "compare",
-      "web_prompt_es": "¿Qué opción diferencia correctamente lectura e interpretación.",
+      "web_prompt_es": "¿Qué opción diferencia correctamente lectura e interpretación?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente lectura e interpretación?",
+        "Diferencia lectura e interpretación."
+      ],
       "answer_display_es": "lectura = dato · interpretación = explicación/hipótesis",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -109,7 +137,11 @@
       "id": "COM-402-C007",
       "unit_id": "COM-402-U02",
       "source_type": "knowledge",
-      "web_prompt_es": "¿Qué opción contiene correctamente tres limitaciones posibles de una lectura.",
+      "web_prompt_es": "¿Qué opción contiene tres limitaciones posibles de una lectura?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene tres limitaciones posibles de una lectura?",
+        "Nombra tres limitaciones posibles de una lectura."
+      ],
       "answer_display_es": "alcance · resolución · interferencia · calibración · entorno · señal",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -127,6 +159,10 @@
       "unit_id": "COM-402-U02",
       "source_type": "judgment",
       "web_prompt_es": "¿Por qué «radiación elevada» no demuestra sabotaje?",
+      "web_prompt_variants_es": [
+        "¿Por qué «radiación elevada» no demuestra sabotaje?",
+        "Selecciona la explicación correcta:  «radiación elevada» no demuestra sabotaje."
+      ],
       "answer_display_es": "dato no prueba causa · requiere evidencia adicional",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -140,9 +176,15 @@
       "unit_id": "COM-402-U03",
       "source_type": "procedure",
       "web_prompt_es": "¿Qué elementos básicos debe contener una comunicación interna útil?",
+      "web_prompt_variants_es": [
+        "¿Qué elementos básicos debe contener una comunicación interna útil?",
+        "Selecciona la respuesta correcta: Qué elementos básicos debe contener una comunicación interna útil?"
+      ],
       "answer_display_es": "destinatario · hecho/situación · solicitud · prioridad si procede · confirmación",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "destinatario"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "destinatario",
         "hecho/situación",
@@ -156,7 +198,11 @@
       "unit_id": "COM-402-U03",
       "source_type": "judgment",
       "web_prompt_es": "¿Brevedad significa omitir datos importantes?",
-      "answer_display_es": "No. ser breve y suficiente.",
+      "web_prompt_variants_es": [
+        "¿Brevedad significa omitir datos importantes?",
+        "Repaso: ¿Brevedad significa omitir datos importantes?"
+      ],
+      "answer_display_es": "No — ser breve y suficiente.",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
       "answer_key_es": [
@@ -169,6 +215,10 @@
       "unit_id": "COM-402-U03",
       "source_type": "knowledge",
       "web_prompt_es": "¿Cuándo conviene pedir confirmación?",
+      "web_prompt_variants_es": [
+        "¿Cuándo conviene pedir confirmación?",
+        "Repaso: ¿Cuándo conviene pedir confirmación?"
+      ],
       "answer_display_es": "tarea crítica · riesgo · necesidad de comprobar recepción/comprensión",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -183,6 +233,10 @@
       "unit_id": "COM-402-U03",
       "source_type": "scenario",
       "web_prompt_es": "Debes coordinarte con Ingeniería. ¿Qué debe quedar claro?",
+      "web_prompt_variants_es": [
+        "Debes coordinarte con Ingeniería. ¿Qué debe quedar claro?",
+        "Repaso: Debes coordinarte con Ingeniería. ¿Qué debe quedar claro?"
+      ],
       "answer_display_es": "qué necesitas · por qué · información compartida · responsabilidad propia",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -198,9 +252,15 @@
       "unit_id": "COM-402-U04",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué puede incluir la apertura de una comunicación externa?",
+      "web_prompt_variants_es": [
+        "¿Qué puede incluir la apertura de una comunicación externa?",
+        "Selecciona la respuesta correcta: Qué puede incluir la apertura de una comunicación externa?"
+      ],
       "answer_display_es": "identificación propia · destinatario · intención · petición de enlace",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "identificación propia"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "identificación propia",
         "destinatario",
@@ -213,7 +273,11 @@
       "unit_id": "COM-402-U04",
       "source_type": "judgment",
       "web_prompt_es": "¿Abrir un canal concede autoridad diplomática?",
-      "answer_display_es": "No. autoridad depende de misión/puesto/órdenes.",
+      "web_prompt_variants_es": [
+        "¿Abrir un canal concede autoridad diplomática?",
+        "Repaso: ¿Abrir un canal concede autoridad diplomática?"
+      ],
+      "answer_display_es": "No — autoridad depende de misión/puesto/órdenes.",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
       "answer_key_es": [
@@ -225,7 +289,11 @@
       "id": "COM-402-C015",
       "unit_id": "COM-402-U04",
       "source_type": "knowledge",
-      "web_prompt_es": "¿Qué opción contiene correctamente tres factores que pueden degradar una comunicación externa.",
+      "web_prompt_es": "¿Qué opción contiene tres factores que pueden degradar una comunicación externa?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene tres factores que pueden degradar una comunicación externa?",
+        "Nombra tres factores que pueden degradar una comunicación externa."
+      ],
       "answer_display_es": "interferencia · latencia · traducción · cifrado · relay",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -242,6 +310,10 @@
       "unit_id": "COM-402-U04",
       "source_type": "short_answer",
       "web_prompt_es": "¿Por qué se registran comunicaciones externas relevantes?",
+      "web_prompt_variants_es": [
+        "¿Por qué se registran comunicaciones externas relevantes?",
+        "Selecciona la explicación correcta:  se registran comunicaciones externas relevantes."
+      ],
       "answer_display_es": "trazabilidad · revisión · qué/cuándo/a quién",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -256,9 +328,15 @@
       "unit_id": "COM-402-U05",
       "source_type": "knowledge",
       "web_prompt_es": "¿Qué cuatro elementos pueden estructurar un mensaje?",
+      "web_prompt_variants_es": [
+        "¿Qué cuatro elementos pueden estructurar un mensaje?",
+        "Selecciona la respuesta correcta: Qué cuatro elementos pueden estructurar un mensaje?"
+      ],
       "answer_display_es": "hecho · estado · solicitud · urgencia",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "hecho"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "hecho",
         "estado",
@@ -270,7 +348,11 @@
       "id": "COM-402-C018",
       "unit_id": "COM-402-U05",
       "source_type": "compare",
-      "web_prompt_es": "¿Qué opción diferencia correctamente hecho e hipótesis.",
+      "web_prompt_es": "¿Qué opción diferencia correctamente hecho e hipótesis?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente hecho e hipótesis?",
+        "Diferencia hecho e hipótesis."
+      ],
       "answer_display_es": "hecho = observado · hipótesis = explicación no confirmada",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -284,6 +366,10 @@
       "unit_id": "COM-402-U05",
       "source_type": "scenario",
       "web_prompt_es": "La puerta no responde. ¿Qué mensaje evita inventar sabotaje?",
+      "web_prompt_variants_es": [
+        "La puerta no responde. ¿Qué mensaje evita inventar sabotaje?",
+        "Repaso: La puerta no responde. ¿Qué mensaje evita inventar sabotaje?"
+      ],
       "answer_display_es": "puerta no responde · causa no determinada · solicitar apoyo si procede",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -298,6 +384,10 @@
       "unit_id": "COM-402-U05",
       "source_type": "judgment",
       "web_prompt_es": "¿Por qué no debe inflarse la urgencia?",
+      "web_prompt_variants_es": [
+        "¿Por qué no debe inflarse la urgencia?",
+        "Selecciona la explicación correcta:  no debe inflarse la urgencia."
+      ],
       "answer_display_es": "priorización real · evitar alarmismo · mantener credibilidad",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -312,9 +402,15 @@
       "unit_id": "COM-402-U06",
       "source_type": "planning",
       "web_prompt_es": "¿Qué debes conocer antes de preparar equipo de salida?",
+      "web_prompt_variants_es": [
+        "¿Qué debes conocer antes de preparar equipo de salida?",
+        "Selecciona la respuesta correcta: Qué debes conocer antes de preparar equipo de salida?"
+      ],
       "answer_display_es": "objetivo · entorno · duración · riesgos · comunicación",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "objetivo"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "objetivo",
         "entorno",
@@ -328,6 +424,10 @@
       "unit_id": "COM-402-U06",
       "source_type": "judgment",
       "web_prompt_es": "¿Por qué no existe un kit universal?",
+      "web_prompt_variants_es": [
+        "¿Por qué no existe un kit universal?",
+        "Selecciona la explicación correcta:  no existe un kit universal."
+      ],
       "answer_display_es": "misiones/contextos diferentes · equipo debe ajustarse",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -341,6 +441,10 @@
       "unit_id": "COM-402-U06",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué responsabilidades asumes al recibir equipo?",
+      "web_prompt_variants_es": [
+        "¿Qué responsabilidades asumes al recibir equipo?",
+        "Selecciona la respuesta correcta: Qué responsabilidades asumes al recibir equipo?"
+      ],
       "answer_display_es": "comprobar · mantener · informar fallos · devolver/registrar",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -356,7 +460,11 @@
       "unit_id": "COM-402-U06",
       "source_type": "judgment",
       "web_prompt_es": "¿Tener una herramienta concede automáticamente competencia?",
-      "answer_display_es": "No. requiere entrenamiento/autorización.",
+      "web_prompt_variants_es": [
+        "¿Tener una herramienta concede automáticamente competencia?",
+        "Repaso: ¿Tener una herramienta concede automáticamente competencia?"
+      ],
+      "answer_display_es": "No — requiere entrenamiento/autorización.",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
       "answer_key_es": [

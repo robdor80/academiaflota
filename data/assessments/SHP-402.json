@@ -16,7 +16,7 @@
     "source_rule": "Every evaluated concept must be explicitly taught in the course material or an established prerequisite."
   },
   "unit_review": {
-    "questions_per_attempt": 4,
+    "questions_per_attempt": 3,
     "reshuffle_each_attempt": true,
     "preferred_short_answers_per_attempt": 1
   },
@@ -26,6 +26,10 @@
       "unit_id": "SHP-402-U01",
       "source_type": "short_answer",
       "web_prompt_es": "¿Por qué conviene aprender una nave por funciones y no solo por planos?",
+      "web_prompt_variants_es": [
+        "¿Por qué conviene aprender una nave por funciones y no solo por planos?",
+        "Selecciona la explicación correcta:  conviene aprender una nave por funciones y no solo por planos."
+      ],
       "answer_display_es": "clases distintas distribuyen espacios distinto · funciones transfieren entre naves · evita memorizar un único layout",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -40,9 +44,15 @@
       "unit_id": "SHP-402-U01",
       "source_type": "knowledge",
       "web_prompt_es": "¿Qué función general cumple el puente?",
+      "web_prompt_variants_es": [
+        "¿Qué función general cumple el puente?",
+        "Selecciona la respuesta correcta: Qué función general cumple el puente?"
+      ],
       "answer_display_es": "mando · coordinación · información · órdenes · supervisión",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "mando"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "mando",
         "coordinación",
@@ -56,7 +66,11 @@
       "unit_id": "SHP-402-U01",
       "source_type": "judgment",
       "web_prompt_es": "¿Estar físicamente en Ingeniería autoriza a reparar cualquier sistema?",
-      "answer_display_es": "No. requiere cualificación/autoridad; puede existir riesgo.",
+      "web_prompt_variants_es": [
+        "¿Estar físicamente en Ingeniería autoriza a reparar cualquier sistema?",
+        "Repaso: ¿Estar físicamente en Ingeniería autoriza a reparar cualquier sistema?"
+      ],
+      "answer_display_es": "No — requiere cualificación/autoridad; puede existir riesgo.",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
       "answer_key_es": [
@@ -69,7 +83,11 @@
       "id": "SHP-402-C004",
       "unit_id": "SHP-402-U01",
       "source_type": "compare",
-      "web_prompt_es": "¿Qué opción diferencia correctamente dato médico y realidad completa del paciente.",
+      "web_prompt_es": "¿Qué opción diferencia correctamente dato médico y realidad completa del paciente?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente dato médico y realidad completa del paciente?",
+        "Diferencia dato médico y realidad completa del paciente."
+      ],
       "answer_display_es": "dato = observación/conocimiento · estado real puede incluir información desconocida · pruebas revelan información gradualmente",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -84,9 +102,15 @@
       "unit_id": "SHP-402-U02",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué significa que una nave sea una organización?",
+      "web_prompt_variants_es": [
+        "¿Qué significa que una nave sea una organización?",
+        "Selecciona la respuesta correcta: Qué significa que una nave sea una organización?"
+      ],
       "answer_display_es": "departamentos · puestos · guardias · apoyo · responsabilidades distribuidas",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "departamentos"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "departamentos",
         "puestos",
@@ -99,7 +123,11 @@
       "id": "SHP-402-C006",
       "unit_id": "SHP-402-U02",
       "source_type": "knowledge",
-      "web_prompt_es": "¿Qué opción contiene correctamente cuatro departamentos del modelo.",
+      "web_prompt_es": "¿Qué opción contiene cuatro departamentos del modelo?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene cuatro departamentos del modelo?",
+        "Nombra cuatro departamentos del modelo."
+      ],
       "answer_display_es": "Mando · Control de vuelo · Operaciones · Ingeniería · Seguridad · Táctica · Comunicaciones · Ciencia · Medicina",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -120,6 +148,10 @@
       "unit_id": "SHP-402-U02",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué implica una jefatura?",
+      "web_prompt_variants_es": [
+        "¿Qué implica una jefatura?",
+        "Selecciona la respuesta correcta: Qué implica una jefatura?"
+      ],
       "answer_display_es": "organizar · supervisar · priorizar · responder por el área · no hacer cada tarea personalmente",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -136,6 +168,10 @@
       "unit_id": "SHP-402-U02",
       "source_type": "judgment",
       "web_prompt_es": "¿Por qué la tripulación visible en una escena no representa a toda la dotación?",
+      "web_prompt_variants_es": [
+        "¿Por qué la tripulación visible en una escena no representa a toda la dotación?",
+        "Selecciona la explicación correcta:  la tripulación visible en una escena no representa a toda la dotación."
+      ],
       "answer_display_es": "guardias · descanso · mantenimiento · apoyo · otras ubicaciones",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -152,9 +188,15 @@
       "unit_id": "SHP-402-U03",
       "source_type": "knowledge",
       "web_prompt_es": "¿Qué cuatro elementos definen una estación según el proyecto?",
+      "web_prompt_variants_es": [
+        "¿Qué cuatro elementos definen una estación según el proyecto?",
+        "Selecciona la respuesta correcta: Qué cuatro elementos definen una estación según el proyecto?"
+      ],
       "answer_display_es": "función · sistemas accesibles · autoridad · información disponible/POV",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "función"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "función",
         "sistemas accesibles",
@@ -167,7 +209,11 @@
       "unit_id": "SHP-402-U03",
       "source_type": "judgment",
       "web_prompt_es": "¿Sentarse en una consola concede automáticamente acceso a sus sistemas?",
-      "answer_display_es": "No. puesto; cualificación; autoridad; estado/permisos.",
+      "web_prompt_variants_es": [
+        "¿Sentarse en una consola concede automáticamente acceso a sus sistemas?",
+        "Repaso: ¿Sentarse en una consola concede automáticamente acceso a sus sistemas?"
+      ],
+      "answer_display_es": "No — puesto; cualificación; autoridad; estado/permisos.",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
       "answer_key_es": [
@@ -182,7 +228,11 @@
       "id": "SHP-402-C011",
       "unit_id": "SHP-402-U03",
       "source_type": "compare",
-      "web_prompt_es": "¿Qué opción indica correctamente una diferencia general entre configuraciones de puente del siglo XXIII y XXIV.",
+      "web_prompt_es": "¿Qué opción indica correctamente una diferencia general entre configuraciones de puente del siglo XXIII y XXIV?",
+      "web_prompt_variants_es": [
+        "¿Qué opción indica correctamente una diferencia general entre configuraciones de puente del siglo XXIII y XXIV?",
+        "Indica una diferencia general entre configuraciones de puente del siglo XXIII y XXIV."
+      ],
       "answer_display_es": "Timón/Navegación separados frente a Conn/Ops · Comunicaciones separada en siglo XXIII · configuración depende de era/clase",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -197,6 +247,10 @@
       "unit_id": "SHP-402-U03",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué significa POV profesional?",
+      "web_prompt_variants_es": [
+        "¿Qué significa POV profesional?",
+        "Selecciona la respuesta correcta: Qué significa POV profesional?"
+      ],
       "answer_display_es": "cada estación ve información relevante a su función · ninguna estación posee toda la realidad · requiere coordinación",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -211,9 +265,15 @@
       "unit_id": "SHP-402-U04",
       "source_type": "short_answer",
       "web_prompt_es": "¿Por qué una nave necesita espacios de vida además de espacios técnicos?",
+      "web_prompt_variants_es": [
+        "¿Por qué una nave necesita espacios de vida además de espacios técnicos?",
+        "Selecciona la explicación correcta:  una nave necesita espacios de vida además de espacios técnicos."
+      ],
       "answer_display_es": "misiones prolongadas · descanso · alimentación · privacidad · recuperación",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "misiones prolongadas"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "misiones prolongadas",
         "descanso",
@@ -226,7 +286,11 @@
       "id": "SHP-402-C014",
       "unit_id": "SHP-402-U04",
       "source_type": "knowledge",
-      "web_prompt_es": "¿Qué opción contiene correctamente tres funciones de los alojamientos o servicios cotidianos.",
+      "web_prompt_es": "¿Qué opción contiene tres funciones de los alojamientos o servicios cotidianos?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene tres funciones de los alojamientos o servicios cotidianos?",
+        "Nombra tres funciones de los alojamientos o servicios cotidianos."
+      ],
       "answer_display_es": "descanso · privacidad · almacenamiento · higiene · alimentación · socialización",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -244,7 +308,11 @@
       "unit_id": "SHP-402-U04",
       "source_type": "judgment",
       "web_prompt_es": "¿Vivir en una nave elimina la privacidad?",
-      "answer_display_es": "No. acceso sigue condicionado; logs/datos médicos/alojamientos no son públicos automáticamente.",
+      "web_prompt_variants_es": [
+        "¿Vivir en una nave elimina la privacidad?",
+        "Repaso: ¿Vivir en una nave elimina la privacidad?"
+      ],
+      "answer_display_es": "No — acceso sigue condicionado; logs/datos médicos/alojamientos no son públicos automáticamente.",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
       "answer_key_es": [
@@ -257,7 +325,11 @@
       "id": "SHP-402-C016",
       "unit_id": "SHP-402-U04",
       "source_type": "planning",
-      "web_prompt_es": "¿Planifica una jornada con guardia, comida, descanso y actividad personal sin solapar obligaciones?",
+      "web_prompt_es": "Planifica una jornada con guardia, comida, descanso y actividad personal sin solapar obligaciones.",
+      "web_prompt_variants_es": [
+        "Planifica una jornada con guardia, comida, descanso y actividad personal sin solapar obligaciones.",
+        "Repaso: Planifica una jornada con guardia, comida, descanso y actividad personal sin solapar obligaciones."
+      ],
       "answer_display_es": "horario coherente · descanso · cumplimiento · tiempo personal",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -273,9 +345,15 @@
       "unit_id": "SHP-402-U05",
       "source_type": "short_answer",
       "web_prompt_es": "¿Por qué no se exige memorizar catálogos de clases de nave?",
+      "web_prompt_variants_es": [
+        "¿Por qué no se exige memorizar catálogos de clases de nave?",
+        "Selecciona la explicación correcta:  no se exige memorizar catálogos de clases de nave."
+      ],
       "answer_display_es": "se enseña relación misión-capacidad · principios transferibles · evita trivia",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "se enseña relación misión-capacidad"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "se enseña relación misión-capacidad",
         "principios transferibles",
@@ -286,7 +364,11 @@
       "id": "SHP-402-C018",
       "unit_id": "SHP-402-U05",
       "source_type": "knowledge",
-      "web_prompt_es": "¿Qué opción contiene correctamente tres capacidades útiles para una misión de exploración.",
+      "web_prompt_es": "¿Qué opción contiene tres capacidades útiles para una misión de exploración?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene tres capacidades útiles para una misión de exploración?",
+        "Nombra tres capacidades útiles para una misión de exploración."
+      ],
       "answer_display_es": "autonomía · sensores · ciencia · diplomacia · apoyo médico · flexibilidad",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -304,11 +386,13 @@
       "unit_id": "SHP-402-U05",
       "source_type": "judgment",
       "web_prompt_es": "¿Una nave de exploración puede realizar rescates?",
-      "answer_display_es": "Sí. las funciones no son cajas absolutas; depende de capacidades/contexto.",
-      "accepted_short_answers_es": [
-        "sí"
+      "web_prompt_variants_es": [
+        "¿Una nave de exploración puede realizar rescates?",
+        "Repaso: ¿Una nave de exploración puede realizar rescates?"
       ],
-      "preferred_mode": "short_answer",
+      "answer_display_es": "Sí — las funciones no son cajas absolutas; depende de capacidades/contexto.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "sí",
         "las funciones no son cajas absolutas",
@@ -320,6 +404,10 @@
       "unit_id": "SHP-402-U05",
       "source_type": "scenario",
       "web_prompt_es": "Una misión exige estudiar un fenómeno durante semanas con equipo especializado. ¿Qué capacidades priorizarías?",
+      "web_prompt_variants_es": [
+        "Una misión exige estudiar un fenómeno durante semanas con equipo especializado. ¿Qué capacidades priorizarías?",
+        "Repaso: Una misión exige estudiar un fenómeno durante semanas con equipo especializado. ¿Qué capacidades priorizarías?"
+      ],
       "answer_display_es": "ciencia · sensores · autonomía · laboratorios/instrumentación · soporte adecuado",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -335,10 +423,16 @@
       "id": "SHP-402-C021",
       "unit_id": "SHP-402-U06",
       "source_type": "knowledge",
-      "web_prompt_es": "¿Qué opción contiene correctamente cuatro factores que pueden cambiar una ruta a bordo.",
+      "web_prompt_es": "¿Qué opción contiene cuatro factores que pueden cambiar una ruta a bordo?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene cuatro factores que pueden cambiar una ruta a bordo?",
+        "Nombra cuatro factores que pueden cambiar una ruta a bordo."
+      ],
       "answer_display_es": "accesos · daños · compartimentos · órdenes · restricciones · emergencia",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "accesos"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "accesos",
         "daños",
@@ -353,6 +447,10 @@
       "unit_id": "SHP-402-U06",
       "source_type": "judgment",
       "web_prompt_es": "¿Qué debe prevalecer: la ruta habitual o la ruta segura vigente?",
+      "web_prompt_variants_es": [
+        "¿Qué debe prevalecer: la ruta habitual o la ruta segura vigente?",
+        "Selecciona la respuesta correcta: Qué debe prevalecer: la ruta habitual o la ruta segura vigente?"
+      ],
       "answer_display_es": "ruta segura vigente · seguir instrucciones · estado real de la nave",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -367,6 +465,10 @@
       "unit_id": "SHP-402-U06",
       "source_type": "short_answer",
       "web_prompt_es": "¿Para qué sirve el recuento durante una evacuación?",
+      "web_prompt_variants_es": [
+        "¿Para qué sirve el recuento durante una evacuación?",
+        "Repaso: ¿Para qué sirve el recuento durante una evacuación?"
+      ],
       "answer_display_es": "saber quién falta · evitar búsquedas duplicadas · confirmar evacuación · asignar ayuda",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -382,6 +484,10 @@
       "unit_id": "SHP-402-U06",
       "source_type": "scenario",
       "web_prompt_es": "Llegas a una zona dañada antes que un equipo técnico. ¿Qué NO debes asumir?",
+      "web_prompt_variants_es": [
+        "Llegas a una zona dañada antes que un equipo técnico. ¿Qué NO debes asumir?",
+        "Repaso: Llegas a una zona dañada antes que un equipo técnico. ¿Qué NO debes asumir?"
+      ],
       "answer_display_es": "que puedes intervenir técnicamente · que tienes autoridad/cualificación · debes informar y seguir instrucciones",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
