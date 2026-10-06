@@ -64,6 +64,7 @@ function resetScenario(source="manual",scenarioId=null){
 function navPrimary(id){
   shell.primaryId=id;shell.special=null;shell.prefill=null;
   shell.secondaryId=shell.model.root.find(x=>x.id===id)?.secondary?.[0]?.id||null;
+  if(id==="results"&&shell.sim.operations.every(o=>o.state!=="running")&&shell.sim.results.length)shell.secondaryId="recent_results";
   log("OPEN "+id);emitTeacherEvent("NAV_PRIMARY",{primaryId:id});render();
 }
 function navSecondary(id){
@@ -263,7 +264,12 @@ function resultsView(){
   return "";
 }
 function resultDetail(r){return '<div class="data-grid">'+datum("Tipo",r.type+" / "+r.subtype)+datum("Objetivo",r.target)+datum("Calidad",r.quality??"—")+datum("Procedencia",r.provenance)+datum("Resumen",r.summary)+datum("Observaciones",r.observations?.length??0)+(r.emissionExposure?datum("Exposición del barrido",r.emissionExposure):"")+'</div><div class="action-grid">'+button("save_reading")+button("compare_readings","secondary")+button("repeat_operation","secondary")+button("send_data","secondary")+'</div>'}
-function selectedResultDetail(){const r=shell.sim.results.find(x=>x.id===shell.selectedResultId);return r?'<div class="card"><h3>Detalle · '+r.id+'</h3>'+resultDetail(r)+'</div>':""}
+function selectedResultDetail(){
+  const r=shell.sim.results.find(x=>x.id===shell.selectedResultId);
+  if(!r)return "";
+  const candidates=r.type==="search"?'<div class="result-candidates"><h3>Candidatos observados</h3>'+resultCandidatesHtml(r)+'</div>':"";
+  return '<div class="card"><h3>Detalle · '+r.id+'</h3>'+resultDetail(r)+candidates+'</div>';
+}
 function resultCandidatesHtml(r){
   const observations=r?.observations||[];
   if(!observations.length)return '<div class="notice">Sin candidatos concluyentes.</div>';
@@ -324,7 +330,15 @@ function wireSpecific(){
     shell.prefill=null;
     render();
   });
-  document.querySelectorAll("[data-result]").forEach(el=>el.onclick=()=>{shell.selectedResultId=el.dataset.result;renderWorkspace()});
+  document.querySelectorAll("[data-result]").forEach(el=>el.onclick=()=>{
+    shell.selectedResultId=el.dataset.result;
+    const r=shell.sim.results.find(x=>x.id===shell.selectedResultId);
+    if(r){
+      log("OPEN RESULT "+r.id+" · "+r.type+"/"+r.subtype);
+      emitTeacherEvent("RESULT_OPEN",{resultId:r.id,type:r.type,subtype:r.subtype,target:r.target});
+    }
+    renderWorkspace();
+  });
   document.querySelectorAll("[data-saved-result]").forEach(el=>el.onclick=()=>{shell.selectedResultId=el.dataset.savedResult;renderWorkspace()});
   if(shell.primaryId==="scans")["scan-mode","target-scope","resolution","priority","duration","filters"].forEach(id=>{const el=$("#"+id);if(el)el.addEventListener("change",()=>{const cfg=scanConfig();log("CONFIG "+id+"="+el.value);emitTeacherEvent("SCAN_CONFIG_CHANGE",{controlId:id,value:el.value,...cfg})})});
 }
