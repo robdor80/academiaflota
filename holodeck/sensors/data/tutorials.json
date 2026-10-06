@@ -1594,6 +1594,25 @@
       "completion_feedback": "Práctica completada. Has decidido cómo mejorar una observación y has respetado la frontera Sensores/Ciencia.",
       "steps": [
         {
+          "label": "Mejorar capacidad de observación",
+          "alternatives": [
+            {
+              "event": "SCAN_CONFIG_CHANGE",
+              "match": {
+                "scanType": "focused",
+                "resolution": "high"
+              }
+            },
+            {
+              "event": "POWER_RESPONSE"
+            }
+          ],
+          "what": "",
+          "why": "",
+          "effect": "",
+          "concept": ""
+        },
+        {
           "label": "Obtener nueva observación",
           "event": "SCAN_COMPLETE",
           "match": {
@@ -1630,7 +1649,7 @@
           "concept": ""
         }
       ],
-      "lesson_summary": "Has decidido cómo mejorar una observación y has respetado la frontera Sensores/Ciencia.",
+      "lesson_summary": "Has mejorado deliberadamente la capacidad de observación antes de obtener una nueva lectura y has remitido la evidencia a Ciencia.",
       "order": {
         "source": "Teniente Cmdr. Hale · Instructor de Sensores",
         "order": "Cadete {name}, necesitamos una lectura fiable del contacto C-07. Mejore la observación y remita los datos relevantes a Ciencia.",
