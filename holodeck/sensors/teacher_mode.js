@@ -90,6 +90,16 @@ export async function initTeacherMode({resetScenario}){
     if(reset)resetScenario("teacher:"+tutorial.id);render();
   }
   function onEvent(ev){
+    if(mode.value==="teacher" && ev.type==="SCENARIO_RESET" && ev.data?.source==="manual"){
+      done=new Set();
+      current=0;
+      orderAcknowledged=false;
+      hintText.hidden=true;
+      hintText.textContent=tutorial.hint;
+      hintBtn.textContent="Mostrar pista";
+      render();
+      return;
+    }
     if(mode.value!=="teacher"||!orderAcknowledged||done.size===tutorial.steps.length)return;
     let advanced=false;
     while(current<tutorial.steps.length && stepMatches(tutorial.steps[current],ev)){
