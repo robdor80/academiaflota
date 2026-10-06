@@ -1,7 +1,7 @@
 {
   "subject": "Navegación y astrográfica I",
   "code": "NAV-403",
-  "version": "1.2",
+  "version": "1.3",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/NAV-403/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/NAV-403/MANUAL_v1_0.md",
@@ -22,7 +22,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Una carta estelar representa conocimiento disponible: sistemas, sectores, regiones, rutas, fronteras, peligros conocidos e instalaciones. No representa toda la verdad del universo."
+          "text": "**Una carta estelar representa conocimiento disponible: sistemas, sectores, regiones, rutas, fronteras, peligros conocidos e instalaciones.** No representa toda la verdad del universo."
         },
         {
           "type": "heading",
@@ -31,7 +31,7 @@
         {
           "type": "bullets",
           "items": [
-            "Detallada",
+            "**Detallada**",
             "Incompleta",
             "Desactualizada",
             "Incierta"
@@ -44,7 +44,7 @@
         },
         {
           "type": "p",
-          "text": "La política también importa: fronteras, jurisdicciones, conflictos y apoyo disponible cambian según fecha y campaña."
+          "text": "La política también importa: fronteras, jurisdicciones, **conflictos** y apoyo disponible cambian según fecha y campaña."
         }
       ]
     },
@@ -61,7 +61,7 @@
         {
           "type": "definition",
           "term": "Posición relativa",
-          "text": "Ubicación respecto a otro objeto o referencia."
+          "text": "**Ubicación respecto a otro objeto o referencia.**"
         },
         {
           "type": "heading",
@@ -69,12 +69,12 @@
         },
         {
           "type": "p",
-          "text": "Un vector describe dirección y magnitud. En este nivel se interpreta conceptualmente: aproximarse, alejarse, cruzar trayectoria o mantener vector paralelo."
+          "text": "**Un vector describe dirección y magnitud.** En este nivel se interpreta conceptualmente: aproximarse, alejarse, cruzar trayectoria o mantener vector paralelo."
         },
         {
           "type": "callout",
           "label": "IMPORTANTE",
-          "text": "Orientación y movimiento no son necesariamente lo mismo: una nave puede apuntar en una dirección y desplazarse en otra."
+          "text": "Orientación y movimiento no son necesariamente lo mismo: una nave puede apuntar en una **dirección** y desplazarse en otra."
         }
       ]
     },
@@ -85,7 +85,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "La distancia puede proceder de cartografía, geometría de ruta, sensores o datos históricos, y su precisión puede variar."
+          "text": "**La distancia puede proceder de cartografía, geometría de ruta, sensores o datos históricos, y su precisión puede variar.**"
         },
         {
           "type": "definition",
@@ -99,10 +99,10 @@
         {
           "type": "bullets",
           "items": [
-            "Velocidad",
+            "**Velocidad**",
             "Ruta",
             "Daño",
-            "Energía",
+            "**Energía**",
             "Condiciones subespaciales",
             "Fronteras",
             "Esperas",
@@ -125,16 +125,16 @@
         {
           "type": "definition",
           "term": "Impulso",
-          "text": "Régimen subluz y maniobras locales."
+          "text": "**Régimen subluz y maniobras locales.**"
         },
         {
           "type": "definition",
           "term": "Warp",
-          "text": "Viaje superlumínico interestelar cuando nave, ruta y condiciones lo permiten."
+          "text": "Viaje superlumínico interestelar cuando nave, ruta y **condiciones** lo permiten."
         },
         {
           "type": "p",
-          "text": "Elegir régimen depende de distancia, objetivo, entorno, seguridad, capacidad, restricciones y misión."
+          "text": "**Elegir régimen depende de distancia, objetivo, entorno, seguridad, capacidad, restricciones y misión.**"
         },
         {
           "type": "callout",
@@ -164,7 +164,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "La ruta más corta no siempre es la mejor. Puede optimizar tiempo, seguridad, soporte, discreción o respeto de restricciones."
+          "text": "**La ruta más corta no siempre es la mejor.** Puede optimizar tiempo, seguridad, soporte, discreción o respeto de restricciones."
         },
         {
           "type": "heading",
@@ -173,8 +173,8 @@
         {
           "type": "bullets",
           "items": [
-            "Más rápida",
-            "Más segura",
+            "**Más rápida**",
+            "Más **segura**",
             "Evitar espacio hostil",
             "Evitar espacio restringido",
             "Preferir rutas cartografiadas",
@@ -212,11 +212,11 @@
       "blocks": [
         {
           "type": "quote",
-          "text": "origen → destino → restricciones → rutas candidatas → selección → ETA → reporte"
+          "text": "origen → destino → **restricciones** → rutas candidatas → selección → ETA → reporte"
         },
         {
           "type": "p",
-          "text": "Una orden ambigua debe aclararse antes de ejecutar. La solución considera nave, propulsión, daño, fronteras, peligros conocidos, permisos y prioridad de misión."
+          "text": "**Una orden ambigua debe aclararse antes de ejecutar.** La solución considera nave, propulsión, daño, fronteras, peligros conocidos, permisos y prioridad de misión."
         },
         {
           "type": "heading",
@@ -229,11 +229,11 @@
         {
           "type": "callout",
           "label": "REEVALUACIÓN",
-          "text": "La ruta puede cambiar si cambian velocidad, daño, energía, subespacio, frontera, encuentros o nueva detección de peligro."
+          "text": "La ruta puede cambiar si cambian velocidad, daño, energía, **subespacio**, frontera, encuentros o nueva detección de peligro."
         }
       ]
     }
   ],
   "status": "developed_content",
-  "assessmentModel": "concept_driven_v2"
+  "assessmentModel": "concept_driven_v2_1"
 }

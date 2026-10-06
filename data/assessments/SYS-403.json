@@ -1,7 +1,7 @@
 {
-  "schema_version": "2.0.0",
+  "schema_version": "2.1.0",
   "course_id": "SYS-403",
-  "status": "concept_driven_autocorrectable",
+  "status": "concept_driven_autocorrectable_v2_1",
   "source_bank": "question_bank_v1_0.json",
   "policy": {
     "theory_formats": [
@@ -16,9 +16,11 @@
     "source_rule": "Every evaluated concept must be explicitly taught in the course material or an established prerequisite."
   },
   "unit_review": {
-    "questions_per_attempt": 3,
+    "questions_per_attempt": 5,
     "reshuffle_each_attempt": true,
-    "preferred_short_answers_per_attempt": 1
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
   },
   "concepts": [
     {
@@ -450,6 +452,198 @@
         "causas múltiples",
         "requiere diagnóstico",
         "separar observación de explicación"
+      ]
+    },
+    {
+      "id": "SYS-403-C025",
+      "unit_id": "SYS-403-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Fuente» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Fuente» en esta unidad?",
+        "Selecciona la definición correcta de «Fuente»."
+      ],
+      "answer_display_es": "Aporta energía utilizable.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Aporta energía utilizable."
+      ]
+    },
+    {
+      "id": "SYS-403-C026",
+      "unit_id": "SYS-403-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Distribución» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Distribución» en esta unidad?",
+        "Selecciona la definición correcta de «Distribución»."
+      ],
+      "answer_display_es": "Entrega, prioriza, limita o redirige energía.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Entrega, prioriza, limita o redirige energía."
+      ]
+    },
+    {
+      "id": "SYS-403-C027",
+      "unit_id": "SYS-403-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Subluz» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Subluz» en esta unidad?",
+        "Selecciona la definición correcta de «Subluz»."
+      ],
+      "answer_display_es": "Movimiento por debajo de la velocidad de la luz dentro del modelo del juego.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Movimiento por debajo de la velocidad de la luz dentro del modelo del juego."
+      ]
+    },
+    {
+      "id": "SYS-403-C028",
+      "unit_id": "SYS-403-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Estado de propulsión»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Estado de propulsión»?",
+        "En «Estado de propulsión», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Disponible",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Disponible"
+      ]
+    },
+    {
+      "id": "SYS-403-C029",
+      "unit_id": "SYS-403-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Factor warp» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Factor warp» en esta unidad?",
+        "Selecciona la definición correcta de «Factor warp»."
+      ],
+      "answer_display_es": "Selección de régimen de velocidad dentro del sistema warp.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Selección de régimen de velocidad dentro del sistema warp."
+      ]
+    },
+    {
+      "id": "SYS-403-C030",
+      "unit_id": "SYS-403-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «REGLA DEL PROYECTO»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «REGLA DEL PROYECTO»?",
+        "Selecciona la idea correcta asociada a «REGLA DEL PROYECTO»."
+      ],
+      "answer_display_es": "No existe una única conversión universal e inmutable de factor warp a velocidad para todas las eras, naves y condiciones.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "No existe una única conversión universal e inmutable de factor warp a velocidad para todas las eras, naves y condiciones."
+      ]
+    },
+    {
+      "id": "SYS-403-C031",
+      "unit_id": "SYS-403-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Soporte vital» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Soporte vital» en esta unidad?",
+        "Selecciona la definición correcta de «Soporte vital»."
+      ],
+      "answer_display_es": "Mantiene condiciones habitables como atmósfera, temperatura y ambiente básico.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Mantiene condiciones habitables como atmósfera, temperatura y ambiente básico."
+      ]
+    },
+    {
+      "id": "SYS-403-C032",
+      "unit_id": "SYS-403-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Transportador» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Transportador» en esta unidad?",
+        "Selecciona la definición correcta de «Transportador»."
+      ],
+      "answer_display_es": "Sistema de traslado de personas o materia; en 4.ª clase se estudian función y dependencias, no operación avanzada.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Sistema de traslado de personas o materia; en 4.ª clase se estudian función y dependencias, no operación avanzada."
+      ]
+    },
+    {
+      "id": "SYS-403-C033",
+      "unit_id": "SYS-403-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Escudos» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Escudos» en esta unidad?",
+        "Selecciona la definición correcta de «Escudos»."
+      ],
+      "answer_display_es": "Protegen la nave frente a amenazas o fenómenos compatibles con sus capacidades.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Protegen la nave frente a amenazas o fenómenos compatibles con sus capacidades."
+      ]
+    },
+    {
+      "id": "SYS-403-C034",
+      "unit_id": "SYS-403-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Armamento» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Armamento» en esta unidad?",
+        "Selecciona la definición correcta de «Armamento»."
+      ],
+      "answer_display_es": "Permite aplicar fuerza cuando existe autoridad y contexto para ello.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Permite aplicar fuerza cuando existe autoridad y contexto para ello."
+      ]
+    },
+    {
+      "id": "SYS-403-C035",
+      "unit_id": "SYS-403-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Primario» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Primario» en esta unidad?",
+        "Selecciona la definición correcta de «Primario»."
+      ],
+      "answer_display_es": "Sistema principal de una función.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Sistema principal de una función."
+      ]
+    },
+    {
+      "id": "SYS-403-C036",
+      "unit_id": "SYS-403-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Respaldo» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Respaldo» en esta unidad?",
+        "Selecciona la definición correcta de «Respaldo»."
+      ],
+      "answer_display_es": "Alternativa que puede ofrecer capacidad parcial o distinta.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Alternativa que puede ofrecer capacidad parcial o distinta."
       ]
     }
   ]

@@ -1,7 +1,7 @@
 {
   "subject": "Sistemas fundamentales de una nave estelar",
   "code": "SYS-403",
-  "version": "1.2",
+  "version": "1.3",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/SYS-403/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/SYS-403/MANUAL_v1_0.md",
@@ -23,17 +23,17 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Una nave es una red de sistemas interdependientes. Propulsión, sensores, soporte vital, comunicaciones, defensa y servicios comparten recursos y pueden afectarse entre sí."
+          "text": "**Una nave es una red de sistemas interdependientes.** Propulsión, sensores, soporte vital, comunicaciones, defensa y servicios comparten recursos y pueden afectarse entre sí."
         },
         {
           "type": "definition",
           "term": "Fuente",
-          "text": "Aporta energía utilizable."
+          "text": "**Aporta energía utilizable.**"
         },
         {
           "type": "definition",
           "term": "Distribución",
-          "text": "Entrega, prioriza, limita o redirige energía."
+          "text": "**Entrega, prioriza, limita o redirige energía.**"
         },
         {
           "type": "definition",
@@ -54,7 +54,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "La propulsión de impulso permite el movimiento normal de la nave en régimen subluz y sostiene gran parte de las maniobras locales."
+          "text": "**La propulsión de impulso permite el movimiento normal de la nave en régimen subluz y sostiene gran parte de las maniobras locales.**"
         },
         {
           "type": "definition",
@@ -68,10 +68,10 @@
         {
           "type": "bullets",
           "items": [
-            "Disponible",
+            "**Disponible**",
             "Degradado",
             "Limitado",
-            "No disponible"
+            "No **disponible**"
           ]
         },
         {
@@ -102,7 +102,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "La propulsión warp permite el viaje superlumínico. En 4.ª clase se estudia como capacidad de navegación interestelar, no como ingeniería de campo avanzada."
+          "text": "**La propulsión warp permite el viaje superlumínico.** En 4.ª clase se estudia como capacidad de navegación interestelar, no como ingeniería de campo avanzada."
         },
         {
           "type": "definition",
@@ -120,7 +120,7 @@
         },
         {
           "type": "p",
-          "text": "La capacidad máxima puede ser superior a la que una nave puede mantener durante largo tiempo. Navegación debe considerar velocidad solicitada, capacidad disponible, límite sostenible y ETA."
+          "text": "La capacidad máxima puede ser superior a la que una nave puede mantener durante largo tiempo. **Navegación** debe considerar velocidad solicitada, capacidad disponible, límite sostenible y ETA."
         },
         {
           "type": "heading",
@@ -130,7 +130,7 @@
           "type": "bullets",
           "items": [
             "Daño",
-            "Energía",
+            "**Energía**",
             "Navegación",
             "Condiciones subespaciales",
             "Peligros",
@@ -146,7 +146,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Habitabilidad y servicios hacen posible que una tripulación viva y trabaje durante la misión."
+          "text": "**Habitabilidad y servicios hacen posible que una tripulación viva y trabaje durante la misión.**"
         },
         {
           "type": "definition",
@@ -163,12 +163,12 @@
         },
         {
           "type": "p",
-          "text": "El uso de replicadores depende de energía, patrones autorizados, reservas y restricciones."
+          "text": "El uso de replicadores depende de energía, **patrones** autorizados, reservas y restricciones."
         },
         {
           "type": "definition",
           "term": "Transportador",
-          "text": "Sistema de traslado de personas o materia; en 4.ª clase se estudian función y dependencias, no operación avanzada."
+          "text": "Sistema de traslado de personas o materia; en 4.ª clase se estudian función y **dependencias**, no operación avanzada."
         },
         {
           "type": "definition",
@@ -184,7 +184,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "La defensa de una nave puede combinar escudos, armamento, sensores, maniobra, comunicaciones y control de daños."
+          "text": "**La defensa de una nave puede combinar escudos, armamento, sensores, maniobra, comunicaciones y control de daños.**"
         },
         {
           "type": "definition",
@@ -199,7 +199,7 @@
         {
           "type": "callout",
           "label": "DISPONIBLE ≠ AUTORIZADO",
-          "text": "Tener armamento disponible no concede permiso para usarlo."
+          "text": "Tener **armamento** disponible no concede permiso para usarlo."
         },
         {
           "type": "heading",
@@ -207,7 +207,7 @@
         },
         {
           "type": "p",
-          "text": "Sensores consume energía y capacidad, pero produce conocimiento para Navegación, Ciencia, Táctica, Mando y otras funciones."
+          "text": "**Sensores** consume energía y capacidad, pero produce conocimiento para Navegación, Ciencia, Táctica, Mando y otras funciones."
         },
         {
           "type": "heading",
@@ -226,12 +226,12 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Un sistema degradado puede seguir funcionando con menos capacidad, precisión o velocidad, o con restricciones y riesgo adicional."
+          "text": "**Un sistema degradado puede seguir funcionando con menos capacidad, precisión o velocidad, o con restricciones y riesgo adicional.**"
         },
         {
           "type": "definition",
           "term": "Primario",
-          "text": "Sistema principal de una función."
+          "text": "**Sistema principal de una función.**"
         },
         {
           "type": "definition",
@@ -244,7 +244,7 @@
         },
         {
           "type": "p",
-          "text": "Un fallo inicial puede producir consecuencias indirectas. Ejemplo: menos energía → menos sensores → menor conocimiento → navegación más incierta."
+          "text": "Un fallo inicial puede producir **consecuencias indirectas**. Ejemplo: menos energía → menos sensores → menor conocimiento → navegación más incierta."
         },
         {
           "type": "heading",
@@ -270,5 +270,5 @@
     }
   ],
   "status": "developed_content",
-  "assessmentModel": "concept_driven_v2"
+  "assessmentModel": "concept_driven_v2_1"
 }

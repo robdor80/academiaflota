@@ -1,7 +1,7 @@
 {
   "subject": "Ciencia, sensores y método científico I",
   "code": "SCI-403",
-  "version": "1.2",
+  "version": "1.3",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/SCI-403/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/SCI-403/MANUAL_v1_0.md",
@@ -21,7 +21,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "SCI-403 empieza separando observación de explicación. Observar describe lo detectado; una hipótesis propone una causa que debe poder contrastarse."
+          "text": "**SCI-403 empieza separando observación de explicación.** Observar describe lo detectado; una hipótesis propone una causa que debe poder contrastarse."
         },
         {
           "type": "quote",
@@ -41,7 +41,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Toda medición tiene límites. El cadete debe leer valor, calidad, confianza, incertidumbre y condiciones de observación."
+          "text": "**Toda medición tiene límites.** El cadete debe leer valor, calidad, confianza, incertidumbre y condiciones de observación."
         },
         {
           "type": "heading",
@@ -50,10 +50,10 @@
         {
           "type": "bullets",
           "items": [
-            "Precisión",
+            "**Precisión**",
             "Ruido",
             "Error/margen",
-            "Límite de detección"
+            "**Límite de detección**"
           ]
         },
         {
@@ -74,7 +74,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Un sensor detecta y mide propiedades observables: existencia de señal, procedencia, cambio, firmas y confianza."
+          "text": "**Un sensor detecta y mide propiedades observables: existencia de señal, procedencia, cambio, firmas y confianza.**"
         },
         {
           "type": "heading",
@@ -97,8 +97,8 @@
         {
           "type": "bullets",
           "items": [
-            "Electromagnética",
-            "Subespacial",
+            "**Electromagnética**",
+            "**Subespacial**",
             "Gravimétrica",
             "Térmica",
             "Radiación",
@@ -128,7 +128,7 @@
         {
           "type": "definition",
           "term": "Activo",
-          "text": "Usa una emisión o interacción deliberada para mejorar observación, con costes de recursos o detectabilidad."
+          "text": "Usa una emisión o interacción deliberada para mejorar observación, con costes de recursos o **detectabilidad**."
         },
         {
           "type": "callout",
@@ -137,7 +137,7 @@
         },
         {
           "type": "p",
-          "text": "Una opción técnicamente válida pero inapropiada puede ejecutarse: eso es un error profesional del operador, no de interfaz."
+          "text": "**Una opción técnicamente válida pero inapropiada puede ejecutarse: eso es un error profesional del operador, no de interfaz.**"
         }
       ]
     },
@@ -148,7 +148,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Un contacto representa conocimiento persistente sobre algo detectado; no es una copia de la entidad oculta del World State."
+          "text": "**Un contacto representa conocimiento persistente sobre algo detectado; no es una copia de la entidad oculta del World State.**"
         },
         {
           "type": "heading",
@@ -157,10 +157,10 @@
         {
           "type": "bullets",
           "items": [
-            "Posición estimada",
+            "**Posición estimada**",
             "Distancia",
             "Vector",
-            "Velocidad estimada",
+            "**Velocidad** estimada",
             "Firmas",
             "Confianza",
             "Clasificación",
@@ -189,11 +189,11 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Esta unidad conecta directamente con la consola funcional de Sensores del juego."
+          "text": "**Esta unidad conecta directamente con la consola funcional de Sensores del juego.**"
         },
         {
           "type": "quote",
-          "text": "tipo → modo → área/objetivo → resolución → filtros → prioridad → duración → revisar → ejecutar"
+          "text": "tipo → modo → **área/objetivo** → resolución → filtros → prioridad → duración → revisar → ejecutar"
         },
         {
           "type": "heading",
@@ -213,7 +213,7 @@
         },
         {
           "type": "p",
-          "text": "El filtro define qué firmas se buscan. La prioridad indica cuál recibe atención preferente sin excluir necesariamente las demás."
+          "text": "El filtro define qué firmas se buscan. La **prioridad** indica cuál recibe atención preferente sin excluir necesariamente las demás."
         },
         {
           "type": "heading",
@@ -243,5 +243,5 @@
     }
   ],
   "status": "developed_content",
-  "assessmentModel": "concept_driven_v2"
+  "assessmentModel": "concept_driven_v2_1"
 }
