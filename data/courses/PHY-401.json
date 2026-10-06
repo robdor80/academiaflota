@@ -1,7 +1,7 @@
 {
   "subject": "Preparación física I",
   "code": "PHY-401",
-  "version": "1.2",
+  "version": "1.3",
   "status": "developed_content",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/PHY-401/course.json",
@@ -21,7 +21,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "La evaluación inicial establece una referencia funcional. No busca descubrir quién es el cadete más fuerte, sino conocer estado, limitaciones, riesgos y punto de partida."
+          "text": "**La evaluación inicial establece una referencia funcional.** No busca descubrir quién es el cadete más fuerte, sino conocer estado, limitaciones, riesgos y punto de partida."
         },
         {
           "type": "heading",
@@ -30,8 +30,8 @@
         {
           "type": "bullets",
           "items": [
-            "Movilidad",
-            "Resistencia",
+            "**Movilidad**",
+            "**Resistencia**",
             "Fuerza funcional",
             "Coordinación"
           ]
@@ -68,7 +68,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Movilidad funcional significa disponer del rango útil para ejecutar una tarea con control suficiente. No significa alcanzar posiciones extremas."
+          "text": "**Movilidad funcional significa disponer del rango útil para ejecutar una tarea con control suficiente.** No significa alcanzar posiciones extremas."
         },
         {
           "type": "heading",
@@ -77,8 +77,8 @@
         {
           "type": "bullets",
           "items": [
-            "Movimiento general",
-            "Movilidad específica",
+            "**Movimiento general**",
+            "**Movilidad específica**",
             "Incremento gradual de intensidad",
             "Ensayo técnico con baja carga"
           ]
@@ -120,7 +120,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "La resistencia básica es la capacidad de sostener actividad durante un periodo razonable sin un deterioro excesivo del rendimiento."
+          "text": "**La resistencia básica es la capacidad de sostener actividad durante un periodo razonable sin un deterioro excesivo del rendimiento.**"
         },
         {
           "type": "heading",
@@ -128,11 +128,11 @@
         },
         {
           "type": "quote",
-          "text": "carga apropiada + recuperación + repetición → adaptación"
+          "text": "carga apropiada + **recuperación** + repetición → adaptación"
         },
         {
           "type": "p",
-          "text": "Una sesión excepcional no sustituye semanas de regularidad."
+          "text": "Una sesión excepcional no sustituye semanas de **regularidad**."
         },
         {
           "type": "heading",
@@ -169,7 +169,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "La fuerza funcional es capacidad de producir y controlar fuerza útil para tareas reales. No se limita a levantar el mayor peso posible."
+          "text": "**La fuerza funcional es capacidad de producir y controlar fuerza útil para tareas reales.** No se limita a levantar el mayor peso posible."
         },
         {
           "type": "heading",
@@ -178,8 +178,8 @@
         {
           "type": "bullets",
           "items": [
-            "Empujar",
-            "Tirar",
+            "**Empujar**",
+            "**Tirar**",
             "Levantarse",
             "Agacharse",
             "Transportar",
@@ -224,7 +224,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "La recuperación forma parte del entrenamiento. El sistema distingue el estado agudo de los patrones acumulados a lo largo de días, semanas y meses."
+          "text": "**La recuperación forma parte del entrenamiento.** El sistema distingue el estado agudo de los patrones acumulados a lo largo de días, semanas y meses."
         },
         {
           "type": "definition",
@@ -250,8 +250,8 @@
           "items": [
             "Reducir actividad",
             "Cambiar ejercicio",
-            "Tratamiento",
-            "Recuperación médica",
+            "**Tratamiento**",
+            "**Recuperación médica**",
             "Reintroducción progresiva"
           ]
         },
@@ -268,7 +268,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Una rutina se forma por comportamiento repetido. No se selecciona como perk."
+          "text": "**Una rutina se forma por comportamiento repetido.** No se selecciona como perk."
         },
         {
           "type": "heading",
@@ -277,8 +277,8 @@
         {
           "type": "bullets",
           "items": [
-            "Frecuencia",
-            "Continuidad",
+            "**Frecuencia**",
+            "**Continuidad**",
             "Horario típico",
             "Lugar",
             "Actividad",
@@ -324,5 +324,5 @@
       ]
     }
   ],
-  "assessmentModel": "concept_driven_v2"
+  "assessmentModel": "concept_driven_v2_1"
 }

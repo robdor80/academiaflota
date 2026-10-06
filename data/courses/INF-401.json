@@ -1,7 +1,7 @@
 {
   "subject": "Sistemas de información Starfleet",
   "code": "INF-401",
-  "version": "1.2",
+  "version": "1.3",
   "status": "developed_content",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/INF-401/course.json",
@@ -21,7 +21,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "La computadora de una nave es un servicio distribuido, no una única consola. Puede accederse desde estaciones, terminales, alojamientos, PADD, interfaces de voz y otros puntos autorizados."
+          "text": "**La computadora de una nave es un servicio distribuido, no una única consola.** Puede accederse desde estaciones, terminales, alojamientos, PADD, interfaces de voz y otros puntos autorizados."
         },
         {
           "type": "heading",
@@ -56,7 +56,7 @@
         },
         {
           "type": "p",
-          "text": "La IA puede entender lenguaje complejo o resumir datos, pero no muta por sí sola el mundo. Los sistemas autoritativos validan y ejecutan."
+          "text": "La IA puede entender lenguaje complejo o resumir datos, pero no muta por sí sola el mundo. Los **sistemas autoritativos validan y ejecutan**."
         }
       ]
     },
@@ -67,7 +67,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "El PADD es una interfaz portátil para trabajar con información autorizada. El documento importante persiste en el sistema; no pertenece físicamente al dispositivo desde el que se consulta."
+          "text": "**El PADD es una interfaz portátil para trabajar con información autorizada.** El documento importante persiste en el sistema; no pertenece físicamente al dispositivo desde el que se consulta."
         },
         {
           "type": "heading",
@@ -76,7 +76,7 @@
         {
           "type": "bullets",
           "items": [
-            "Material académico",
+            "**Material académico**",
             "Documentos",
             "Anotaciones",
             "Tareas",
@@ -91,7 +91,7 @@
         },
         {
           "type": "p",
-          "text": "Sincronizar no significa copiarlo todo a todas partes. Identidad, permisos, contexto, conectividad, privacidad y tipo de dato condicionan la disponibilidad."
+          "text": "Sincronizar no significa copiarlo todo a todas partes. Identidad, permisos, contexto, **conectividad**, privacidad y tipo de dato condicionan la disponibilidad."
         },
         {
           "type": "heading",
@@ -124,12 +124,12 @@
         {
           "type": "definition",
           "term": "Autenticación",
-          "text": "Responde a «¿quién eres?»."
+          "text": "**Responde a «¿quién eres?».**"
         },
         {
           "type": "definition",
           "term": "Autorización",
-          "text": "Responde a «¿puedes hacer esto?»."
+          "text": "**Responde a «¿puedes hacer esto?».**"
         },
         {
           "type": "heading",
@@ -162,7 +162,7 @@
         },
         {
           "type": "p",
-          "text": "Debe concederse acceso suficiente para realizar la función, no acceso universal «por si acaso»."
+          "text": "**Debe concederse acceso suficiente para realizar la función, no acceso universal «por si acaso».**"
         },
         {
           "type": "heading",
@@ -181,7 +181,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Buscar no es preguntar a un oráculo. Una consulta útil define qué quieres encontrar, en qué ámbito, con qué filtros y dentro de qué fuentes autorizadas."
+          "text": "**Buscar no es preguntar a un oráculo.** Una consulta útil define qué quieres encontrar, en qué ámbito, con qué filtros y dentro de qué fuentes autorizadas."
         },
         {
           "type": "heading",
@@ -190,7 +190,7 @@
         {
           "type": "bullets",
           "items": [
-            "Horarios",
+            "**Horarios**",
             "Roster",
             "Sistemas",
             "Mantenimiento",
@@ -231,7 +231,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Los registros permiten continuidad, debrief, evaluación, investigación, mantenimiento y responsabilidad."
+          "text": "**Los registros permiten continuidad, debrief, evaluación, investigación, mantenimiento y responsabilidad.**"
         },
         {
           "type": "heading",
@@ -240,7 +240,7 @@
         {
           "type": "definition",
           "term": "Operational Event Log",
-          "text": "Conserva hechos operativos autoritativos de forma estructurada."
+          "text": "**Conserva hechos operativos autoritativos de forma estructurada.**"
         },
         {
           "type": "definition",
@@ -267,7 +267,7 @@
         {
           "type": "bullets",
           "items": [
-            "Autor",
+            "**Autor**",
             "Marca temporal",
             "Tipo de registro",
             "Referencias",
@@ -283,7 +283,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Poder consultar técnicamente un dato no significa estar autorizado para hacerlo."
+          "text": "**Poder consultar técnicamente un dato no significa estar autorizado para hacerlo.**"
         },
         {
           "type": "heading",
@@ -292,8 +292,8 @@
         {
           "type": "bullets",
           "items": [
-            "Médica",
-            "Seguridad",
+            "**Médica**",
+            "**Seguridad**",
             "Inteligencia",
             "Clasificada",
             "Logs personales",
@@ -336,5 +336,5 @@
       ]
     }
   ],
-  "assessmentModel": "concept_driven_v2"
+  "assessmentModel": "concept_driven_v2_1"
 }
