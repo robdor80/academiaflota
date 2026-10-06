@@ -1,8 +1,8 @@
 {
   "schema_version": "2.1.0",
   "branch_id": "command",
-  "status": "concept_driven_autocorrectable_v2_1",
-  "scope": "year3_201_203_only",
+  "status": "developed_concept_driven_autocorrectable_v2_1",
+  "scope": "year3_and_year4_all_branch_stages",
   "source_bank": "question_bank_v1_0.json",
   "year3_courses": [
     "CMD-201",
@@ -1287,312 +1287,833 @@
       "answer_key_es": [
         "comunicación preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes."
       ]
+    },
+    {
+      "id": "COMMAND-C073",
+      "unit_id": "CMD-101-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: personas disponibles consideradas por rol, competencia, carga y capacidad de relevo; supervisar exige adaptar el control al riesgo y experiencia?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: personas disponibles consideradas por rol, competencia, carga y capacidad de relevo; supervisar exige adaptar el control al riesgo y experiencia?",
+        "En «Supervisión profesional», selecciona el concepto descrito así: personas disponibles consideradas por rol, competencia, carga y capacidad de relevo; supervisar exige adaptar el control al riesgo y experiencia."
+      ],
+      "answer_display_es": "equipo",
+      "accepted_short_answers_es": [
+        "equipo"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "equipo"
+      ]
+    },
+    {
+      "id": "COMMAND-C074",
+      "unit_id": "CMD-101-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: criterios mínimos de seguridad y calidad que permiten decidir si una ejecución es aceptable y repetible?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: criterios mínimos de seguridad y calidad que permiten decidir si una ejecución es aceptable y repetible?",
+        "En «Supervisión profesional», selecciona el concepto descrito así: criterios mínimos de seguridad y calidad que permiten decidir si una ejecución es aceptable y repetible."
+      ],
+      "answer_display_es": "estándares",
+      "accepted_short_answers_es": [
+        "estándares"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "estándares"
+      ]
+    },
+    {
+      "id": "COMMAND-C075",
+      "unit_id": "CMD-101-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: información específica que conecta una conducta observada con su efecto y con una acción concreta de mejora?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: información específica que conecta una conducta observada con su efecto y con una acción concreta de mejora?",
+        "En «Supervisión profesional», selecciona el concepto descrito así: información específica que conecta una conducta observada con su efecto y con una acción concreta de mejora."
+      ],
+      "answer_display_es": "feedback",
+      "accepted_short_answers_es": [
+        "feedback"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "feedback"
+      ]
+    },
+    {
+      "id": "COMMAND-C076",
+      "unit_id": "CMD-101-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Supervisión profesional»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Supervisión profesional»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Supervisión profesional»?"
+      ],
+      "answer_display_es": "Dirigir turno.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Dirigir turno."
+      ]
+    },
+    {
+      "id": "COMMAND-C077",
+      "unit_id": "CMD-101-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Supervisión profesional»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Supervisión profesional»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Supervisión profesional»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
+    },
+    {
+      "id": "COMMAND-C078",
+      "unit_id": "CMD-101-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio profesional guía la actuación en «Supervisión profesional»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio profesional guía la actuación en «Supervisión profesional»?",
+        "Repaso de rama: ¿Qué criterio profesional guía la actuación en «Supervisión profesional»?"
+      ],
+      "answer_display_es": "Mando debe integrar información incompleta, personas, regulación y misión, y asumir una decisión explicable sin invadir la competencia técnica de sus especialistas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Mando debe integrar información incompleta, personas, regulación y misión, y asumir una decisión explicable sin invadir la competencia técnica de sus especialistas."
+      ]
+    },
+    {
+      "id": "COMMAND-C079",
+      "unit_id": "CMD-101-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: margen real de una persona o sistema para asumir una tarea sin superar límites de competencia o seguridad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: margen real de una persona o sistema para asumir una tarea sin superar límites de competencia o seguridad?",
+        "En «Mando y personal», selecciona el concepto descrito así: margen real de una persona o sistema para asumir una tarea sin superar límites de competencia o seguridad."
+      ],
+      "answer_display_es": "capacidad",
+      "accepted_short_answers_es": [
+        "capacidad"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "capacidad"
+      ]
+    },
+    {
+      "id": "COMMAND-C080",
+      "unit_id": "CMD-101-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: degradación de rendimiento por carga o tiempo que debe tratarse como riesgo operativo y puede exigir relevo?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: degradación de rendimiento por carga o tiempo que debe tratarse como riesgo operativo y puede exigir relevo?",
+        "En «Mando y personal», selecciona el concepto descrito así: degradación de rendimiento por carga o tiempo que debe tratarse como riesgo operativo y puede exigir relevo."
+      ],
+      "answer_display_es": "fatiga",
+      "accepted_short_answers_es": [
+        "fatiga"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "fatiga"
+      ]
+    },
+    {
+      "id": "COMMAND-C081",
+      "unit_id": "CMD-101-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: choque de objetivos, criterios o relaciones que se gestiona haciendo visibles hechos, autoridad, riesgo y decisión?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: choque de objetivos, criterios o relaciones que se gestiona haciendo visibles hechos, autoridad, riesgo y decisión?",
+        "En «Mando y personal», selecciona el concepto descrito así: choque de objetivos, criterios o relaciones que se gestiona haciendo visibles hechos, autoridad, riesgo y decisión."
+      ],
+      "answer_display_es": "conflicto",
+      "accepted_short_answers_es": [
+        "conflicto"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "conflicto"
+      ]
+    },
+    {
+      "id": "COMMAND-C082",
+      "unit_id": "CMD-101-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: asignación de una tarea a quien tiene capacidad suficiente manteniendo seguimiento proporcional y responsabilidad de supervisión?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: asignación de una tarea a quien tiene capacidad suficiente manteniendo seguimiento proporcional y responsabilidad de supervisión?",
+        "En «Mando y personal», selecciona el concepto descrito así: asignación de una tarea a quien tiene capacidad suficiente manteniendo seguimiento proporcional y responsabilidad de supervisión."
+      ],
+      "answer_display_es": "delegación",
+      "accepted_short_answers_es": [
+        "delegación"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "delegación"
+      ]
+    },
+    {
+      "id": "COMMAND-C083",
+      "unit_id": "CMD-101-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Mando y personal»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Mando y personal»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Mando y personal»?"
+      ],
+      "answer_display_es": "Caso humano.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Caso humano."
+      ]
+    },
+    {
+      "id": "COMMAND-C084",
+      "unit_id": "CMD-101-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Mando y personal»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Mando y personal»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Mando y personal»?"
+      ],
+      "answer_display_es": "Juicio.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Juicio."
+      ]
+    },
+    {
+      "id": "COMMAND-C085",
+      "unit_id": "CMD-101-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: efecto que se desea conseguir con una orden; permite adaptar la ejecución sin perder el propósito?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: efecto que se desea conseguir con una orden; permite adaptar la ejecución sin perder el propósito?",
+        "En «Órdenes complejas», selecciona el concepto descrito así: efecto que se desea conseguir con una orden; permite adaptar la ejecución sin perder el propósito."
+      ],
+      "answer_display_es": "intención",
+      "accepted_short_answers_es": [
+        "intención"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "intención"
+      ]
+    },
+    {
+      "id": "COMMAND-C086",
+      "unit_id": "CMD-101-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: circunstancias que activan, limitan o detienen una orden o acción?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: circunstancias que activan, limitan o detienen una orden o acción?",
+        "En «Órdenes complejas», selecciona el concepto descrito así: circunstancias que activan, limitan o detienen una orden o acción."
+      ],
+      "answer_display_es": "condiciones",
+      "accepted_short_answers_es": [
+        "condiciones"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "condiciones"
+      ]
+    },
+    {
+      "id": "COMMAND-C087",
+      "unit_id": "CMD-101-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: capacidad de actuar sin guía continua dentro del ámbito autorizado y de escalar cuando se supera?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: capacidad de actuar sin guía continua dentro del ámbito autorizado y de escalar cuando se supera?",
+        "En «Órdenes complejas», selecciona el concepto descrito así: capacidad de actuar sin guía continua dentro del ámbito autorizado y de escalar cuando se supera."
+      ],
+      "answer_display_es": "autonomía",
+      "accepted_short_answers_es": [
+        "autonomía"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "autonomía"
+      ]
+    },
+    {
+      "id": "COMMAND-C088",
+      "unit_id": "CMD-101-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Órdenes complejas»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Órdenes complejas»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Órdenes complejas»?"
+      ],
+      "answer_display_es": "Emitir plan de órdenes.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Emitir plan de órdenes."
+      ]
+    },
+    {
+      "id": "COMMAND-C089",
+      "unit_id": "CMD-101-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Órdenes complejas»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Órdenes complejas»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Órdenes complejas»?"
+      ],
+      "answer_display_es": "Práctica.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Práctica."
+      ]
+    },
+    {
+      "id": "COMMAND-C090",
+      "unit_id": "CMD-101-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio profesional guía la actuación en «Órdenes complejas»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio profesional guía la actuación en «Órdenes complejas»?",
+        "Repaso de rama: ¿Qué criterio profesional guía la actuación en «Órdenes complejas»?"
+      ],
+      "answer_display_es": "Mando debe integrar información incompleta, personas, regulación y misión, y asumir una decisión explicable sin invadir la competencia técnica de sus especialistas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Mando debe integrar información incompleta, personas, regulación y misión, y asumir una decisión explicable sin invadir la competencia técnica de sus especialistas."
+      ]
+    },
+    {
+      "id": "COMMAND-C091",
+      "unit_id": "CMD-101-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: competencias formalmente demostradas que habilitan funciones concretas y conservan límites definidos?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: competencias formalmente demostradas que habilitan funciones concretas y conservan límites definidos?",
+        "En «Preparación de mando», selecciona el concepto descrito así: competencias formalmente demostradas que habilitan funciones concretas y conservan límites definidos."
+      ],
+      "answer_display_es": "cualificaciones",
+      "accepted_short_answers_es": [
+        "cualificaciones"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "cualificaciones"
+      ]
+    },
+    {
+      "id": "COMMAND-C092",
+      "unit_id": "CMD-101-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: entorno de coordinación donde información y decisiones de varios puestos deben integrarse en una picture común?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: entorno de coordinación donde información y decisiones de varios puestos deben integrarse en una picture común?",
+        "En «Preparación de mando», selecciona el concepto descrito así: entorno de coordinación donde información y decisiones de varios puestos deben integrarse en una picture común."
+      ],
+      "answer_display_es": "puente",
+      "accepted_short_answers_es": [
+        "puente"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "puente"
+      ]
+    },
+    {
+      "id": "COMMAND-C093",
+      "unit_id": "CMD-101-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: obligación de responder por decisiones y por el uso de autoridad, incluida la decisión de delegar o escalar?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: obligación de responder por decisiones y por el uso de autoridad, incluida la decisión de delegar o escalar?",
+        "En «Preparación de mando», selecciona el concepto descrito así: obligación de responder por decisiones y por el uso de autoridad, incluida la decisión de delegar o escalar."
+      ],
+      "answer_display_es": "responsabilidad",
+      "accepted_short_answers_es": [
+        "responsabilidad"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "responsabilidad"
+      ]
+    },
+    {
+      "id": "COMMAND-C094",
+      "unit_id": "CMD-101-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Preparación de mando»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Preparación de mando»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Preparación de mando»?"
+      ],
+      "answer_display_es": "Revisión de trayectoria.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Revisión de trayectoria."
+      ]
+    },
+    {
+      "id": "COMMAND-C095",
+      "unit_id": "CMD-101-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Preparación de mando»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Preparación de mando»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Preparación de mando»?"
+      ],
+      "answer_display_es": "Informe.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Informe."
+      ]
+    },
+    {
+      "id": "COMMAND-C096",
+      "unit_id": "CMD-101-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio profesional guía la actuación en «Preparación de mando»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio profesional guía la actuación en «Preparación de mando»?",
+        "Repaso de rama: ¿Qué criterio profesional guía la actuación en «Preparación de mando»?"
+      ],
+      "answer_display_es": "Mando debe integrar información incompleta, personas, regulación y misión, y asumir una decisión explicable sin invadir la competencia técnica de sus especialistas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Mando debe integrar información incompleta, personas, regulación y misión, y asumir una decisión explicable sin invadir la competencia técnica de sus especialistas."
+      ]
+    },
+    {
+      "id": "COMMAND-C097",
+      "unit_id": "CMD-102-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: comunicación previa que alinea misión, situación, roles, límites, riesgos y contingencias?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: comunicación previa que alinea misión, situación, roles, límites, riesgos y contingencias?",
+        "En «Misión completa», selecciona el concepto descrito así: comunicación previa que alinea misión, situación, roles, límites, riesgos y contingencias."
+      ],
+      "answer_display_es": "briefing",
+      "accepted_short_answers_es": [
+        "briefing"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "briefing"
+      ]
+    },
+    {
+      "id": "COMMAND-C098",
+      "unit_id": "CMD-102-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: realización del plan con monitorización y adaptación dentro de los límites autorizados?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: realización del plan con monitorización y adaptación dentro de los límites autorizados?",
+        "En «Misión completa», selecciona el concepto descrito así: realización del plan con monitorización y adaptación dentro de los límites autorizados."
+      ],
+      "answer_display_es": "ejecución",
+      "accepted_short_answers_es": [
+        "ejecución"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "ejecución"
+      ]
+    },
+    {
+      "id": "COMMAND-C099",
+      "unit_id": "CMD-102-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: modificación razonada del plan cuando cambian las condiciones sin perder intención ni trazabilidad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: modificación razonada del plan cuando cambian las condiciones sin perder intención ni trazabilidad?",
+        "En «Misión completa», selecciona el concepto descrito así: modificación razonada del plan cuando cambian las condiciones sin perder intención ni trazabilidad."
+      ],
+      "answer_display_es": "adaptación",
+      "accepted_short_answers_es": [
+        "adaptación"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "adaptación"
+      ]
+    },
+    {
+      "id": "COMMAND-C100",
+      "unit_id": "CMD-102-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: confirmación de resultado, estado final, pendientes y transferencia de responsabilidad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: confirmación de resultado, estado final, pendientes y transferencia de responsabilidad?",
+        "En «Misión completa», selecciona el concepto descrito así: confirmación de resultado, estado final, pendientes y transferencia de responsabilidad."
+      ],
+      "answer_display_es": "cierre",
+      "accepted_short_answers_es": [
+        "cierre"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "cierre"
+      ]
+    },
+    {
+      "id": "COMMAND-C101",
+      "unit_id": "CMD-102-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Misión completa»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Misión completa»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Misión completa»?"
+      ],
+      "answer_display_es": "Dirigir misión.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Dirigir misión."
+      ]
+    },
+    {
+      "id": "COMMAND-C102",
+      "unit_id": "CMD-102-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Misión completa»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Misión completa»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Misión completa»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
+    },
+    {
+      "id": "COMMAND-C103",
+      "unit_id": "CMD-102-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: efectos probables o reales sobre vidas, nave, misión, relaciones y recursos?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: efectos probables o reales sobre vidas, nave, misión, relaciones y recursos?",
+        "En «Riesgo estratégico local», selecciona el concepto descrito así: efectos probables o reales sobre vidas, nave, misión, relaciones y recursos."
+      ],
+      "answer_display_es": "consecuencias",
+      "accepted_short_answers_es": [
+        "consecuencias"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "consecuencias"
+      ]
+    },
+    {
+      "id": "COMMAND-C104",
+      "unit_id": "CMD-102-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: marco de normas y restricciones que sigue vigente bajo presión y delimita acciones permitidas?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: marco de normas y restricciones que sigue vigente bajo presión y delimita acciones permitidas?",
+        "En «Riesgo estratégico local», selecciona el concepto descrito así: marco de normas y restricciones que sigue vigente bajo presión y delimita acciones permitidas."
+      ],
+      "answer_display_es": "regulación",
+      "accepted_short_answers_es": [
+        "regulación"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "regulación"
+      ]
+    },
+    {
+      "id": "COMMAND-C105",
+      "unit_id": "CMD-102-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: personas de la unidad consideradas por seguridad, competencia, distribución y carga?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: personas de la unidad consideradas por seguridad, competencia, distribución y carga?",
+        "En «Riesgo estratégico local», selecciona el concepto descrito así: personas de la unidad consideradas por seguridad, competencia, distribución y carga."
+      ],
+      "answer_display_es": "tripulación",
+      "accepted_short_answers_es": [
+        "tripulación"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "tripulación"
+      ]
+    },
+    {
+      "id": "COMMAND-C106",
+      "unit_id": "CMD-102-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Riesgo estratégico local»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Riesgo estratégico local»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Riesgo estratégico local»?"
+      ],
+      "answer_display_es": "Caso complejo.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Caso complejo."
+      ]
+    },
+    {
+      "id": "COMMAND-C107",
+      "unit_id": "CMD-102-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Riesgo estratégico local»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Riesgo estratégico local»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Riesgo estratégico local»?"
+      ],
+      "answer_display_es": "Juicio.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Juicio."
+      ]
+    },
+    {
+      "id": "COMMAND-C108",
+      "unit_id": "CMD-102-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio profesional guía la actuación en «Riesgo estratégico local»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio profesional guía la actuación en «Riesgo estratégico local»?",
+        "Repaso de rama: ¿Qué criterio profesional guía la actuación en «Riesgo estratégico local»?"
+      ],
+      "answer_display_es": "Mando debe integrar información incompleta, personas, regulación y misión, y asumir una decisión explicable sin invadir la competencia técnica de sus especialistas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Mando debe integrar información incompleta, personas, regulación y misión, y asumir una decisión explicable sin invadir la competencia técnica de sus especialistas."
+      ]
+    },
+    {
+      "id": "COMMAND-C109",
+      "unit_id": "CMD-102-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: facultad reconocida para decidir o representar a la organización dentro de un ámbito concreto?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: facultad reconocida para decidir o representar a la organización dentro de un ámbito concreto?",
+        "En «Interacción externa», selecciona el concepto descrito así: facultad reconocida para decidir o representar a la organización dentro de un ámbito concreto."
+      ],
+      "answer_display_es": "autoridad",
+      "accepted_short_answers_es": [
+        "autoridad"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "autoridad"
+      ]
+    },
+    {
+      "id": "COMMAND-C110",
+      "unit_id": "CMD-102-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: proceso para buscar un acuerdo sin prometer capacidades ni compromisos fuera de la propia autoridad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: proceso para buscar un acuerdo sin prometer capacidades ni compromisos fuera de la propia autoridad?",
+        "En «Interacción externa», selecciona el concepto descrito así: proceso para buscar un acuerdo sin prometer capacidades ni compromisos fuera de la propia autoridad."
+      ],
+      "answer_display_es": "negociación",
+      "accepted_short_answers_es": [
+        "negociación"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "negociación"
+      ]
+    },
+    {
+      "id": "COMMAND-C111",
+      "unit_id": "CMD-102-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: actuación en nombre de Starfleet que exige precisión sobre mandato, límites y compromisos asumibles?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: actuación en nombre de Starfleet que exige precisión sobre mandato, límites y compromisos asumibles?",
+        "En «Interacción externa», selecciona el concepto descrito así: actuación en nombre de Starfleet que exige precisión sobre mandato, límites y compromisos asumibles."
+      ],
+      "answer_display_es": "representación",
+      "accepted_short_answers_es": [
+        "representación"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "representación"
+      ]
+    },
+    {
+      "id": "COMMAND-C112",
+      "unit_id": "CMD-102-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Interacción externa»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Interacción externa»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Interacción externa»?"
+      ],
+      "answer_display_es": "Escena diplomática.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Escena diplomática."
+      ]
+    },
+    {
+      "id": "COMMAND-C113",
+      "unit_id": "CMD-102-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Interacción externa»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Interacción externa»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Interacción externa»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
+    },
+    {
+      "id": "COMMAND-C114",
+      "unit_id": "CMD-102-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio profesional guía la actuación en «Interacción externa»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio profesional guía la actuación en «Interacción externa»?",
+        "Repaso de rama: ¿Qué criterio profesional guía la actuación en «Interacción externa»?"
+      ],
+      "answer_display_es": "Mando debe integrar información incompleta, personas, regulación y misión, y asumir una decisión explicable sin invadir la competencia técnica de sus especialistas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Mando debe integrar información incompleta, personas, regulación y misión, y asumir una decisión explicable sin invadir la competencia técnica de sus especialistas."
+      ]
+    },
+    {
+      "id": "COMMAND-C115",
+      "unit_id": "CMD-102-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: descripción actual y verificable de capacidad, configuración, degradaciones y acciones en curso?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: descripción actual y verificable de capacidad, configuración, degradaciones y acciones en curso?",
+        "En «Handover de mando», selecciona el concepto descrito así: descripción actual y verificable de capacidad, configuración, degradaciones y acciones en curso."
+      ],
+      "answer_display_es": "estado",
+      "accepted_short_answers_es": [
+        "estado"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "estado"
+      ]
+    },
+    {
+      "id": "COMMAND-C116",
+      "unit_id": "CMD-102-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: instrucciones vigentes que deben entregarse con prioridad, alcance, emisor y condiciones?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: instrucciones vigentes que deben entregarse con prioridad, alcance, emisor y condiciones?",
+        "En «Handover de mando», selecciona el concepto descrito así: instrucciones vigentes que deben entregarse con prioridad, alcance, emisor y condiciones."
+      ],
+      "answer_display_es": "órdenes",
+      "accepted_short_answers_es": [
+        "órdenes"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "órdenes"
+      ]
+    },
+    {
+      "id": "COMMAND-C117",
+      "unit_id": "CMD-102-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: acciones abiertas con responsable, prioridad y condición prevista de cierre?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: acciones abiertas con responsable, prioridad y condición prevista de cierre?",
+        "En «Handover de mando», selecciona el concepto descrito así: acciones abiertas con responsable, prioridad y condición prevista de cierre."
+      ],
+      "answer_display_es": "pendientes",
+      "accepted_short_answers_es": [
+        "pendientes"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "pendientes"
+      ]
+    },
+    {
+      "id": "COMMAND-C118",
+      "unit_id": "CMD-102-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: obligación de responder por decisiones y por el uso de autoridad, incluida la decisión de delegar o escalar?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: obligación de responder por decisiones y por el uso de autoridad, incluida la decisión de delegar o escalar?",
+        "En «Handover de mando», selecciona el concepto descrito así: obligación de responder por decisiones y por el uso de autoridad, incluida la decisión de delegar o escalar."
+      ],
+      "answer_display_es": "responsabilidad",
+      "accepted_short_answers_es": [
+        "responsabilidad"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "responsabilidad"
+      ]
+    },
+    {
+      "id": "COMMAND-C119",
+      "unit_id": "CMD-102-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Handover de mando»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Handover de mando»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Handover de mando»?"
+      ],
+      "answer_display_es": "Transferir control.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Transferir control."
+      ]
+    },
+    {
+      "id": "COMMAND-C120",
+      "unit_id": "CMD-102-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Handover de mando»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Handover de mando»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Handover de mando»?"
+      ],
+      "answer_display_es": "Práctica.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Práctica."
+      ]
     }
   ],
-  "legacy_year4_questions": [
-    {
-      "id": "COMMAND-Q037",
-      "course_id": "CMD-101",
-      "unit_id": "CMD-101-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica equipo desde la perspectiva de Mando.",
-      "answer_key_es": [
-        "equipo",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "COMMAND-Q038",
-      "course_id": "CMD-101",
-      "unit_id": "CMD-101-U01",
-      "type": "scenario",
-      "prompt_es": "Dirigir turno. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "COMMAND-Q039",
-      "course_id": "CMD-101",
-      "unit_id": "CMD-101-U01",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Supervisión profesional para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "COMMAND-Q040",
-      "course_id": "CMD-101",
-      "unit_id": "CMD-101-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica capacidad desde la perspectiva de Mando.",
-      "answer_key_es": [
-        "capacidad",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "COMMAND-Q041",
-      "course_id": "CMD-101",
-      "unit_id": "CMD-101-U02",
-      "type": "scenario",
-      "prompt_es": "Caso humano. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "COMMAND-Q042",
-      "course_id": "CMD-101",
-      "unit_id": "CMD-101-U02",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Mando y personal para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "COMMAND-Q043",
-      "course_id": "CMD-101",
-      "unit_id": "CMD-101-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica intención desde la perspectiva de Mando.",
-      "answer_key_es": [
-        "intención",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "COMMAND-Q044",
-      "course_id": "CMD-101",
-      "unit_id": "CMD-101-U03",
-      "type": "scenario",
-      "prompt_es": "Emitir plan de órdenes. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "COMMAND-Q045",
-      "course_id": "CMD-101",
-      "unit_id": "CMD-101-U03",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Órdenes complejas para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "COMMAND-Q046",
-      "course_id": "CMD-101",
-      "unit_id": "CMD-101-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica cualificaciones desde la perspectiva de Mando.",
-      "answer_key_es": [
-        "cualificaciones",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "COMMAND-Q047",
-      "course_id": "CMD-101",
-      "unit_id": "CMD-101-U04",
-      "type": "scenario",
-      "prompt_es": "Revisión de trayectoria. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "COMMAND-Q048",
-      "course_id": "CMD-101",
-      "unit_id": "CMD-101-U04",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Preparación de mando para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "COMMAND-Q049",
-      "course_id": "CMD-102",
-      "unit_id": "CMD-102-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica briefing desde la perspectiva de Mando.",
-      "answer_key_es": [
-        "briefing",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "COMMAND-Q050",
-      "course_id": "CMD-102",
-      "unit_id": "CMD-102-U01",
-      "type": "scenario",
-      "prompt_es": "Dirigir misión. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "COMMAND-Q051",
-      "course_id": "CMD-102",
-      "unit_id": "CMD-102-U01",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Misión completa para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "COMMAND-Q052",
-      "course_id": "CMD-102",
-      "unit_id": "CMD-102-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica consecuencias desde la perspectiva de Mando.",
-      "answer_key_es": [
-        "consecuencias",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "COMMAND-Q053",
-      "course_id": "CMD-102",
-      "unit_id": "CMD-102-U02",
-      "type": "scenario",
-      "prompt_es": "Caso complejo. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "COMMAND-Q054",
-      "course_id": "CMD-102",
-      "unit_id": "CMD-102-U02",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Riesgo estratégico local para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "COMMAND-Q055",
-      "course_id": "CMD-102",
-      "unit_id": "CMD-102-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica autoridad desde la perspectiva de Mando.",
-      "answer_key_es": [
-        "autoridad",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "COMMAND-Q056",
-      "course_id": "CMD-102",
-      "unit_id": "CMD-102-U03",
-      "type": "scenario",
-      "prompt_es": "Escena diplomática. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "COMMAND-Q057",
-      "course_id": "CMD-102",
-      "unit_id": "CMD-102-U03",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Interacción externa para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "COMMAND-Q058",
-      "course_id": "CMD-102",
-      "unit_id": "CMD-102-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica estado desde la perspectiva de Mando.",
-      "answer_key_es": [
-        "estado",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "COMMAND-Q059",
-      "course_id": "CMD-102",
-      "unit_id": "CMD-102-U04",
-      "type": "scenario",
-      "prompt_es": "Transferir control. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "COMMAND-Q060",
-      "course_id": "CMD-102",
-      "unit_id": "CMD-102-U04",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Handover de mando para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    }
-  ]
+  "year4_courses": [
+    "CMD-101",
+    "CMD-102"
+  ],
+  "year4_status": "developed_and_synced_v2_1"
 }

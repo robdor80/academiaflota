@@ -1,7 +1,7 @@
 {
   "subject": "Ciencia / Sensores",
   "code": "SCIENCE_SENSORS",
-  "version": "1.2",
+  "version": "1.3",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/branches/science_sensors/branch_curriculum_v1_0.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/branches/science_sensors/MANUAL_v1_0.md",
@@ -633,17 +633,29 @@
       "subtitle": "SCI-101 · Ciencia/Sensores avanzada I",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Ciencia / Sensores** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "objetivo",
-            "instrumento",
-            "estrategia",
-            "validación"
+            "**objetivo**: pregunta o efecto de observación que determina qué medir y con qué precisión",
+            "**instrumento**: sensor o método elegido por cobertura, resolución, sensibilidad, limitaciones y adecuación al fenómeno",
+            "**estrategia**: plan de adquisición que combina geometría, tiempo, modos de sensor y repetición para obtener evidencia útil",
+            "**validación**: comprobación independiente o repetida que reduce la probabilidad de aceptar una lectura espuria"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se parte de datos con origen y calidad conocidos, se separa observación de inferencia, se contrastan hipótesis, se expresa incertidumbre y se comunica al mando una conclusión útil con límites y recomendación."
         },
         {
           "type": "callout",
@@ -652,38 +664,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Ciencia/Sensores debe separar **observación, interpretación y confianza**, declarar incertidumbre y evitar que una lectura aislada se convierta en certeza."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Revisión."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica objetivo desde la perspectiva de Ciencia / Sensores.",
-            "Resuelve: Plan científico.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/ship_operations/consoles/sensors/README.md",
-            "gameplay/ship_operations/consoles/sensors/sensor_menu_tree.json",
-            "gameplay/science/sensor_analysis_model.json",
-            "gameplay/careers/academy_path/study_materials/sensors/SENSORS_OPERATOR_MANUAL_v0.1.md"
-          ]
+          "text": "Revisión. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -693,17 +680,29 @@
       "subtitle": "SCI-101 · Ciencia/Sensores avanzada I",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Ciencia / Sensores** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "múltiples firmas",
-            "cambios",
-            "modelos",
-            "incertidumbre"
+            "**múltiples firmas**: señales superpuestas de distintos orígenes que exigen separación antes de atribuir causa",
+            "**cambios**: variaciones temporales que pueden distinguir fenómeno real de ruido o indicar evolución",
+            "**modelos**: representaciones explicativas que predicen observaciones y deben revisarse cuando los datos no encajan",
+            "**incertidumbre**: margen de desconocimiento o error que acompaña una medida o interpretación y debe comunicarse"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se parte de datos con origen y calidad conocidos, se separa observación de inferencia, se contrastan hipótesis, se expresa incertidumbre y se comunica al mando una conclusión útil con límites y recomendación."
         },
         {
           "type": "callout",
@@ -712,38 +711,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Ciencia/Sensores debe separar **observación, interpretación y confianza**, declarar incertidumbre y evitar que una lectura aislada se convierta en certeza."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Juicio."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica múltiples firmas desde la perspectiva de Ciencia / Sensores.",
-            "Resuelve: Caso avanzado.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/ship_operations/consoles/sensors/README.md",
-            "gameplay/ship_operations/consoles/sensors/sensor_menu_tree.json",
-            "gameplay/science/sensor_analysis_model.json",
-            "gameplay/careers/academy_path/study_materials/sensors/SENSORS_OPERATOR_MANUAL_v0.1.md"
-          ]
+          "text": "Juicio. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -753,17 +727,29 @@
       "subtitle": "SCI-101 · Ciencia/Sensores avanzada I",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Ciencia / Sensores** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "equipo",
-            "prioridades",
-            "calidad",
-            "logs"
+            "**equipo**: personas disponibles consideradas por rol, competencia, carga y capacidad de relevo; supervisar exige adaptar control y apoyo al riesgo",
+            "**prioridades**: orden de tareas de observación según misión, urgencia, ventanas y valor de la información",
+            "**calidad**: grado de fiabilidad y utilidad de los datos según cobertura, resolución, calibración, ruido y trazabilidad",
+            "**logs**: registros de configuración, adquisición, anomalías y decisiones necesarios para reproducir y revisar el análisis"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se parte de datos con origen y calidad conocidos, se separa observación de inferencia, se contrastan hipótesis, se expresa incertidumbre y se comunica al mando una conclusión útil con límites y recomendación."
         },
         {
           "type": "callout",
@@ -772,38 +758,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Ciencia/Sensores debe separar **observación, interpretación y confianza**, declarar incertidumbre y evitar que una lectura aislada se convierta en certeza."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica equipo desde la perspectiva de Ciencia / Sensores.",
-            "Resuelve: Dirigir turno.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/ship_operations/consoles/sensors/README.md",
-            "gameplay/ship_operations/consoles/sensors/sensor_menu_tree.json",
-            "gameplay/science/sensor_analysis_model.json",
-            "gameplay/careers/academy_path/study_materials/sensors/SENSORS_OPERATOR_MANUAL_v0.1.md"
-          ]
+          "text": "Evaluación. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -813,17 +774,29 @@
       "subtitle": "SCI-101 · Ciencia/Sensores avanzada I",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Ciencia / Sensores** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "dato",
-            "interpretación",
-            "confianza",
-            "recomendación"
+            "**dato**: observación con origen, contexto, tiempo y calidad identificables antes de interpretarla",
+            "**interpretación**: explicación inferida a partir de datos; debe distinguirse de la observación y expresar incertidumbre",
+            "**confianza**: grado de apoyo que la evidencia ofrece a una interpretación, sin convertir probabilidad en certeza",
+            "**recomendación**: acción aconsejada al mando basada en datos, interpretación, incertidumbre y consecuencias"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se parte de datos con origen y calidad conocidos, se separa observación de inferencia, se contrastan hipótesis, se expresa incertidumbre y se comunica al mando una conclusión útil con límites y recomendación."
         },
         {
           "type": "callout",
@@ -832,38 +805,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Ciencia/Sensores debe separar **observación, interpretación y confianza**, declarar incertidumbre y evitar que una lectura aislada se convierta en certeza."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica dato desde la perspectiva de Ciencia / Sensores.",
-            "Resuelve: Briefing al mando.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/ship_operations/consoles/sensors/README.md",
-            "gameplay/ship_operations/consoles/sensors/sensor_menu_tree.json",
-            "gameplay/science/sensor_analysis_model.json",
-            "gameplay/careers/academy_path/study_materials/sensors/SENSORS_OPERATOR_MANUAL_v0.1.md"
-          ]
+          "text": "Evaluación. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -873,17 +821,29 @@
       "subtitle": "SCI-102 · Ciencia/Sensores avanzada II",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Ciencia / Sensores** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "pregunta",
-            "adquisición",
-            "análisis",
-            "resultado"
+            "**pregunta**: problema científico formulado de modo que determine qué observaciones pueden apoyarlo o refutarlo",
+            "**adquisición**: proceso planificado de obtener datos con configuración y condiciones registradas",
+            "**análisis**: tratamiento de datos para identificar patrones, comparar hipótesis y estimar incertidumbre",
+            "**resultado**: conclusión o producto científico acompañado por evidencia, límites y nivel de confianza"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se parte de datos con origen y calidad conocidos, se separa observación de inferencia, se contrastan hipótesis, se expresa incertidumbre y se comunica al mando una conclusión útil con límites y recomendación."
         },
         {
           "type": "callout",
@@ -892,38 +852,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Ciencia/Sensores debe separar **observación, interpretación y confianza**, declarar incertidumbre y evitar que una lectura aislada se convierta en certeza."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica pregunta desde la perspectiva de Ciencia / Sensores.",
-            "Resuelve: Ejecutar misión.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/ship_operations/consoles/sensors/README.md",
-            "gameplay/ship_operations/consoles/sensors/sensor_menu_tree.json",
-            "gameplay/science/sensor_analysis_model.json",
-            "gameplay/careers/academy_path/study_materials/sensors/SENSORS_OPERATOR_MANUAL_v0.1.md"
-          ]
+          "text": "Evaluación. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -933,17 +868,29 @@
       "subtitle": "SCI-102 · Ciencia/Sensores avanzada II",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Ciencia / Sensores** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "cobertura",
-            "ruido",
-            "alternativas",
-            "riesgo"
+            "**cobertura**: parte del espacio, espectro o fenómeno que el sistema puede observar en una configuración concreta",
+            "**ruido**: variación no deseada que reduce la capacidad de distinguir una señal y obliga a controlar falsos positivos",
+            "**alternativas**: métodos o fuentes distintas que pueden compensar la pérdida de un sensor o una interpretación dudosa",
+            "**riesgo**: combinación de probabilidad, impacto y exposición; la respuesta debe ser proporcionada y quedar dentro de autoridad"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se parte de datos con origen y calidad conocidos, se separa observación de inferencia, se contrastan hipótesis, se expresa incertidumbre y se comunica al mando una conclusión útil con límites y recomendación."
         },
         {
           "type": "callout",
@@ -952,38 +899,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Ciencia/Sensores debe separar **observación, interpretación y confianza**, declarar incertidumbre y evitar que una lectura aislada se convierta en certeza."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Práctica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica cobertura desde la perspectiva de Ciencia / Sensores.",
-            "Resuelve: Escenario.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/ship_operations/consoles/sensors/README.md",
-            "gameplay/ship_operations/consoles/sensors/sensor_menu_tree.json",
-            "gameplay/science/sensor_analysis_model.json",
-            "gameplay/careers/academy_path/study_materials/sensors/SENSORS_OPERATOR_MANUAL_v0.1.md"
-          ]
+          "text": "Práctica. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -993,16 +915,28 @@
       "subtitle": "SCI-102 · Ciencia/Sensores avanzada II",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Ciencia / Sensores** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "anomalía",
-            "verificación",
-            "prioridad"
+            "**anomalía**: observación que no encaja con el modelo esperado y debe verificarse antes de tratarse como descubrimiento",
+            "**verificación**: repetición o contraste independiente destinado a confirmar que la anomalía no procede de error, ruido o configuración",
+            "**prioridad**: orden relativo entre amenazas, protección de personas, misión y otras demandas"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se parte de datos con origen y calidad conocidos, se separa observación de inferencia, se contrastan hipótesis, se expresa incertidumbre y se comunica al mando una conclusión útil con límites y recomendación."
         },
         {
           "type": "callout",
@@ -1011,38 +945,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Ciencia/Sensores debe separar **observación, interpretación y confianza**, declarar incertidumbre y evitar que una lectura aislada se convierta en certeza."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Juicio."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica anomalía desde la perspectiva de Ciencia / Sensores.",
-            "Resuelve: Caso complejo.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/ship_operations/consoles/sensors/README.md",
-            "gameplay/ship_operations/consoles/sensors/sensor_menu_tree.json",
-            "gameplay/science/sensor_analysis_model.json",
-            "gameplay/careers/academy_path/study_materials/sensors/SENSORS_OPERATOR_MANUAL_v0.1.md"
-          ]
+          "text": "Juicio. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -1052,17 +961,29 @@
       "subtitle": "SCI-102 · Ciencia/Sensores avanzada II",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Ciencia / Sensores** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "datos",
-            "hipótesis",
-            "pendientes",
-            "calidad"
+            "**datos**: conjunto de observaciones conservadas con origen, contexto y calidad",
+            "**hipótesis**: explicación provisional que genera predicciones comprobables y debe poder descartarse",
+            "**pendientes**: acciones abiertas con responsable, prioridad y criterio de cierre",
+            "**calidad**: grado de fiabilidad y utilidad de los datos según cobertura, resolución, calibración, ruido y trazabilidad"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se parte de datos con origen y calidad conocidos, se separa observación de inferencia, se contrastan hipótesis, se expresa incertidumbre y se comunica al mando una conclusión útil con límites y recomendación."
         },
         {
           "type": "callout",
@@ -1071,43 +992,18 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Ciencia/Sensores debe separar **observación, interpretación y confianza**, declarar incertidumbre y evitar que una lectura aislada se convierta en certeza."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica datos desde la perspectiva de Ciencia / Sensores.",
-            "Resuelve: Relevo profesional.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/ship_operations/consoles/sensors/README.md",
-            "gameplay/ship_operations/consoles/sensors/sensor_menu_tree.json",
-            "gameplay/science/sensor_analysis_model.json",
-            "gameplay/careers/academy_path/study_materials/sensors/SENSORS_OPERATOR_MANUAL_v0.1.md"
-          ]
+          "text": "Evaluación. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     }
   ],
   "year3Status": "developed_content",
   "year3Scope": "201-203",
-  "assessmentModel": "concept_driven_v2_1_year3"
+  "assessmentModel": "concept_driven_v2_1"
 }

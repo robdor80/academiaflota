@@ -1,8 +1,8 @@
 {
   "schema_version": "2.1.0",
   "branch_id": "flight_navigation",
-  "status": "concept_driven_autocorrectable_v2_1",
-  "scope": "year3_201_203_only",
+  "status": "developed_concept_driven_autocorrectable_v2_1",
+  "scope": "year3_and_year4_all_branch_stages",
   "source_bank": "question_bank_v1_0.json",
   "year3_courses": [
     "NAV-201",
@@ -1287,312 +1287,831 @@
       "answer_key_es": [
         "comunicación preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes."
       ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C073",
+      "unit_id": "NAV-101-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: propiedad que condiciona inercia y respuesta de una nave; se traduce en anticipación y márgenes de maniobra?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: propiedad que condiciona inercia y respuesta de una nave; se traduce en anticipación y márgenes de maniobra?",
+        "En «Comportamiento por clase», selecciona el concepto descrito así: propiedad que condiciona inercia y respuesta de una nave; se traduce en anticipación y márgenes de maniobra."
+      ],
+      "answer_display_es": "masa",
+      "accepted_short_answers_es": [
+        "masa"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "masa"
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C074",
+      "unit_id": "NAV-101-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: forma y rapidez con que la nave cambia su estado tras una orden, condicionada por clase, configuración y daños?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: forma y rapidez con que la nave cambia su estado tras una orden, condicionada por clase, configuración y daños?",
+        "En «Comportamiento por clase», selecciona el concepto descrito así: forma y rapidez con que la nave cambia su estado tras una orden, condicionada por clase, configuración y daños."
+      ],
+      "answer_display_es": "respuesta",
+      "accepted_short_answers_es": [
+        "respuesta"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "respuesta"
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C075",
+      "unit_id": "NAV-101-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: fronteras técnicas o procedimentales que no deben superarse sin autoridad y justificación?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: fronteras técnicas o procedimentales que no deben superarse sin autoridad y justificación?",
+        "En «Comportamiento por clase», selecciona el concepto descrito así: fronteras técnicas o procedimentales que no deben superarse sin autoridad y justificación."
+      ],
+      "answer_display_es": "límites",
+      "accepted_short_answers_es": [
+        "límites"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "límites"
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C076",
+      "unit_id": "NAV-101-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: capacidades de propulsión, control, sensores y soporte cuyo estado afecta la maniobra disponible?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: capacidades de propulsión, control, sensores y soporte cuyo estado afecta la maniobra disponible?",
+        "En «Comportamiento por clase», selecciona el concepto descrito así: capacidades de propulsión, control, sensores y soporte cuyo estado afecta la maniobra disponible."
+      ],
+      "answer_display_es": "sistemas",
+      "accepted_short_answers_es": [
+        "sistemas"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "sistemas"
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C077",
+      "unit_id": "NAV-101-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Comportamiento por clase»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Comportamiento por clase»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Comportamiento por clase»?"
+      ],
+      "answer_display_es": "Familiarización de clase.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Familiarización de clase."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C078",
+      "unit_id": "NAV-101-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Comportamiento por clase»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Comportamiento por clase»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Comportamiento por clase»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C079",
+      "unit_id": "NAV-101-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: pérdida parcial de capacidad de impulso o curvatura que reduce aceleración, control o reservas?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: pérdida parcial de capacidad de impulso o curvatura que reduce aceleración, control o reservas?",
+        "En «Vuelo con daños», selecciona el concepto descrito así: pérdida parcial de capacidad de impulso o curvatura que reduce aceleración, control o reservas."
+      ],
+      "answer_display_es": "propulsión degradada",
+      "accepted_short_answers_es": [
+        "propulsión degradada"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "propulsión degradada"
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C080",
+      "unit_id": "NAV-101-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: capacidad de mantener actitud, vector y maniobra dentro de tolerancias seguras?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: capacidad de mantener actitud, vector y maniobra dentro de tolerancias seguras?",
+        "En «Vuelo con daños», selecciona el concepto descrito así: capacidad de mantener actitud, vector y maniobra dentro de tolerancias seguras."
+      ],
+      "answer_display_es": "control",
+      "accepted_short_answers_es": [
+        "control"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "control"
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C081",
+      "unit_id": "NAV-101-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: distancia respecto a un límite de seguridad; debe conservarse para absorber error, retraso o cambio inesperado?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: distancia respecto a un límite de seguridad; debe conservarse para absorber error, retraso o cambio inesperado?",
+        "En «Vuelo con daños», selecciona el concepto descrito así: distancia respecto a un límite de seguridad; debe conservarse para absorber error, retraso o cambio inesperado."
+      ],
+      "answer_display_es": "margen",
+      "accepted_short_answers_es": [
+        "margen"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "margen"
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C082",
+      "unit_id": "NAV-101-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Vuelo con daños»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Vuelo con daños»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Vuelo con daños»?"
+      ],
+      "answer_display_es": "Simulación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Simulación."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C083",
+      "unit_id": "NAV-101-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Vuelo con daños»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Vuelo con daños»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Vuelo con daños»?"
+      ],
+      "answer_display_es": "Práctica.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Práctica."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C084",
+      "unit_id": "NAV-101-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio profesional guía la actuación en «Vuelo con daños»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio profesional guía la actuación en «Vuelo con daños»?",
+        "Repaso de rama: ¿Qué criterio profesional guía la actuación en «Vuelo con daños»?"
+      ],
+      "answer_display_es": "Vuelo debe conservar márgenes, anunciar límites y adaptar trayectoria antes de que una situación deje de ser recuperable.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Vuelo debe conservar márgenes, anunciar límites y adaptar trayectoria antes de que una situación deje de ser recuperable."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C085",
+      "unit_id": "NAV-101-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: posición relativa coordinada entre varias naves con separaciones y responsabilidades definidas?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: posición relativa coordinada entre varias naves con separaciones y responsabilidades definidas?",
+        "En «Operaciones cercanas», selecciona el concepto descrito así: posición relativa coordinada entre varias naves con separaciones y responsabilidades definidas."
+      ],
+      "answer_display_es": "formación",
+      "accepted_short_answers_es": [
+        "formación"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "formación"
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C086",
+      "unit_id": "NAV-101-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: encuentro planificado que exige sincronizar posición, vector, tiempo y velocidad relativa?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: encuentro planificado que exige sincronizar posición, vector, tiempo y velocidad relativa?",
+        "En «Operaciones cercanas», selecciona el concepto descrito así: encuentro planificado que exige sincronizar posición, vector, tiempo y velocidad relativa."
+      ],
+      "answer_display_es": "rendezvous",
+      "accepted_short_answers_es": [
+        "rendezvous"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "rendezvous"
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C087",
+      "unit_id": "NAV-101-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: entorno con múltiples trayectorias y restricciones donde disminuye el margen para corregir tarde?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: entorno con múltiples trayectorias y restricciones donde disminuye el margen para corregir tarde?",
+        "En «Operaciones cercanas», selecciona el concepto descrito así: entorno con múltiples trayectorias y restricciones donde disminuye el margen para corregir tarde."
+      ],
+      "answer_display_es": "espacio congestionado",
+      "accepted_short_answers_es": [
+        "espacio congestionado"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "espacio congestionado"
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C088",
+      "unit_id": "NAV-101-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Operaciones cercanas»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Operaciones cercanas»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Operaciones cercanas»?"
+      ],
+      "answer_display_es": "Maniobra.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Maniobra."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C089",
+      "unit_id": "NAV-101-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Operaciones cercanas»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Operaciones cercanas»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Operaciones cercanas»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C090",
+      "unit_id": "NAV-101-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio profesional guía la actuación en «Operaciones cercanas»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio profesional guía la actuación en «Operaciones cercanas»?",
+        "Repaso de rama: ¿Qué criterio profesional guía la actuación en «Operaciones cercanas»?"
+      ],
+      "answer_display_es": "Vuelo debe conservar márgenes, anunciar límites y adaptar trayectoria antes de que una situación deje de ser recuperable.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Vuelo debe conservar márgenes, anunciar límites y adaptar trayectoria antes de que una situación deje de ser recuperable."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C091",
+      "unit_id": "NAV-101-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: transferencia formal de responsabilidad acompañada de estado, plan, riesgos y acciones futuras?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: transferencia formal de responsabilidad acompañada de estado, plan, riesgos y acciones futuras?",
+        "En «Liderazgo de vuelo», selecciona el concepto descrito así: transferencia formal de responsabilidad acompañada de estado, plan, riesgos y acciones futuras."
+      ],
+      "answer_display_es": "relevo",
+      "accepted_short_answers_es": [
+        "relevo"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "relevo"
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C092",
+      "unit_id": "NAV-101-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: orientación dada a otra persona para ejecutar o aprender una tarea, adaptada a su experiencia?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: orientación dada a otra persona para ejecutar o aprender una tarea, adaptada a su experiencia?",
+        "En «Liderazgo de vuelo», selecciona el concepto descrito así: orientación dada a otra persona para ejecutar o aprender una tarea, adaptada a su experiencia."
+      ],
+      "answer_display_es": "instrucción",
+      "accepted_short_answers_es": [
+        "instrucción"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "instrucción"
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C093",
+      "unit_id": "NAV-101-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: alineación de acciones y tiempos entre puestos o unidades para evitar conflictos y mantener objetivo común?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: alineación de acciones y tiempos entre puestos o unidades para evitar conflictos y mantener objetivo común?",
+        "En «Liderazgo de vuelo», selecciona el concepto descrito así: alineación de acciones y tiempos entre puestos o unidades para evitar conflictos y mantener objetivo común."
+      ],
+      "answer_display_es": "coordinación",
+      "accepted_short_answers_es": [
+        "coordinación"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "coordinación"
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C094",
+      "unit_id": "NAV-101-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Liderazgo de vuelo»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Liderazgo de vuelo»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Liderazgo de vuelo»?"
+      ],
+      "answer_display_es": "Supervisar puesto.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Supervisar puesto."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C095",
+      "unit_id": "NAV-101-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Liderazgo de vuelo»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Liderazgo de vuelo»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Liderazgo de vuelo»?"
+      ],
+      "answer_display_es": "Observación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Observación."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C096",
+      "unit_id": "NAV-101-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio profesional guía la actuación en «Liderazgo de vuelo»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio profesional guía la actuación en «Liderazgo de vuelo»?",
+        "Repaso de rama: ¿Qué criterio profesional guía la actuación en «Liderazgo de vuelo»?"
+      ],
+      "answer_display_es": "Vuelo debe conservar márgenes, anunciar límites y adaptar trayectoria antes de que una situación deje de ser recuperable.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Vuelo debe conservar márgenes, anunciar límites y adaptar trayectoria antes de que una situación deje de ser recuperable."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C097",
+      "unit_id": "NAV-102-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: secuencia de posiciones o tramos que lleva al objetivo respetando restricciones, reservas y márgenes?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: secuencia de posiciones o tramos que lleva al objetivo respetando restricciones, reservas y márgenes?",
+        "En «Plan de misión», selecciona el concepto descrito así: secuencia de posiciones o tramos que lleva al objetivo respetando restricciones, reservas y márgenes."
+      ],
+      "answer_display_es": "ruta",
+      "accepted_short_answers_es": [
+        "ruta"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "ruta"
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C098",
+      "unit_id": "NAV-102-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: recurso de misión que afecta ventanas, combustible, exposición y posibilidad de esperar por mejor información?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: recurso de misión que afecta ventanas, combustible, exposición y posibilidad de esperar por mejor información?",
+        "En «Plan de misión», selecciona el concepto descrito así: recurso de misión que afecta ventanas, combustible, exposición y posibilidad de esperar por mejor información."
+      ],
+      "answer_display_es": "tiempo",
+      "accepted_short_answers_es": [
+        "tiempo"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "tiempo"
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C099",
+      "unit_id": "NAV-102-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: amenazas plausibles a seguridad o misión que deben identificarse y reevaluarse?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: amenazas plausibles a seguridad o misión que deben identificarse y reevaluarse?",
+        "En «Plan de misión», selecciona el concepto descrito así: amenazas plausibles a seguridad o misión que deben identificarse y reevaluarse."
+      ],
+      "answer_display_es": "riesgos",
+      "accepted_short_answers_es": [
+        "riesgos"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "riesgos"
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C100",
+      "unit_id": "NAV-102-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: rutas o cursos distintos preparados para cambios de situación o pérdida de la opción principal?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: rutas o cursos distintos preparados para cambios de situación o pérdida de la opción principal?",
+        "En «Plan de misión», selecciona el concepto descrito así: rutas o cursos distintos preparados para cambios de situación o pérdida de la opción principal."
+      ],
+      "answer_display_es": "alternativas",
+      "accepted_short_answers_es": [
+        "alternativas"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "alternativas"
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C101",
+      "unit_id": "NAV-102-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Plan de misión»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Plan de misión»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Plan de misión»?"
+      ],
+      "answer_display_es": "Plan completo.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Plan completo."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C102",
+      "unit_id": "NAV-102-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Plan de misión»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Plan de misión»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Plan de misión»?"
+      ],
+      "answer_display_es": "Revisión.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Revisión."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C103",
+      "unit_id": "NAV-102-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: mantenimiento del plan y de la picture durante una operación prolongada y entre relevos?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: mantenimiento del plan y de la picture durante una operación prolongada y entre relevos?",
+        "En «Ejecución prolongada», selecciona el concepto descrito así: mantenimiento del plan y de la picture durante una operación prolongada y entre relevos."
+      ],
+      "answer_display_es": "continuidad",
+      "accepted_short_answers_es": [
+        "continuidad"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "continuidad"
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C104",
+      "unit_id": "NAV-102-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: variaciones de entorno, misión o nave que obligan a recalcular navegación y márgenes?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: variaciones de entorno, misión o nave que obligan a recalcular navegación y márgenes?",
+        "En «Ejecución prolongada», selecciona el concepto descrito así: variaciones de entorno, misión o nave que obligan a recalcular navegación y márgenes."
+      ],
+      "answer_display_es": "cambios",
+      "accepted_short_answers_es": [
+        "cambios"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "cambios"
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C105",
+      "unit_id": "NAV-102-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: registros cronológicos de órdenes, parámetros, eventos y decisiones necesarios para continuidad y revisión?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: registros cronológicos de órdenes, parámetros, eventos y decisiones necesarios para continuidad y revisión?",
+        "En «Ejecución prolongada», selecciona el concepto descrito así: registros cronológicos de órdenes, parámetros, eventos y decisiones necesarios para continuidad y revisión."
+      ],
+      "answer_display_es": "logs",
+      "accepted_short_answers_es": [
+        "logs"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "logs"
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C106",
+      "unit_id": "NAV-102-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Ejecución prolongada»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Ejecución prolongada»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Ejecución prolongada»?"
+      ],
+      "answer_display_es": "Misión extendida.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Misión extendida."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C107",
+      "unit_id": "NAV-102-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Ejecución prolongada»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Ejecución prolongada»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Ejecución prolongada»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C108",
+      "unit_id": "NAV-102-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio profesional guía la actuación en «Ejecución prolongada»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio profesional guía la actuación en «Ejecución prolongada»?",
+        "Repaso de rama: ¿Qué criterio profesional guía la actuación en «Ejecución prolongada»?"
+      ],
+      "answer_display_es": "Vuelo debe conservar márgenes, anunciar límites y adaptar trayectoria antes de que una situación deje de ser recuperable.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Vuelo debe conservar márgenes, anunciar límites y adaptar trayectoria antes de que una situación deje de ser recuperable."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C109",
+      "unit_id": "NAV-102-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: orden relativo entre seguridad de vuelo, misión y otras demandas cuando no pueden atenderse simultáneamente?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: orden relativo entre seguridad de vuelo, misión y otras demandas cuando no pueden atenderse simultáneamente?",
+        "En «Crisis de vuelo», selecciona el concepto descrito así: orden relativo entre seguridad de vuelo, misión y otras demandas cuando no pueden atenderse simultáneamente."
+      ],
+      "answer_display_es": "prioridad",
+      "accepted_short_answers_es": [
+        "prioridad"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "prioridad"
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C110",
+      "unit_id": "NAV-102-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: reporte claro de maniobra, límites, desviaciones y necesidades a los puestos afectados?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: reporte claro de maniobra, límites, desviaciones y necesidades a los puestos afectados?",
+        "En «Crisis de vuelo», selecciona el concepto descrito así: reporte claro de maniobra, límites, desviaciones y necesidades a los puestos afectados."
+      ],
+      "answer_display_es": "comunicación",
+      "accepted_short_answers_es": [
+        "comunicación"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "comunicación"
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C111",
+      "unit_id": "NAV-102-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: decisión de abandonar o interrumpir una maniobra cuando continuar supera límites o riesgo aceptable?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: decisión de abandonar o interrumpir una maniobra cuando continuar supera límites o riesgo aceptable?",
+        "En «Crisis de vuelo», selecciona el concepto descrito así: decisión de abandonar o interrumpir una maniobra cuando continuar supera límites o riesgo aceptable."
+      ],
+      "answer_display_es": "abort",
+      "accepted_short_answers_es": [
+        "abort"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "abort"
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C112",
+      "unit_id": "NAV-102-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Crisis de vuelo»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Crisis de vuelo»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Crisis de vuelo»?"
+      ],
+      "answer_display_es": "Escenario complejo.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Escenario complejo."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C113",
+      "unit_id": "NAV-102-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Crisis de vuelo»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Crisis de vuelo»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Crisis de vuelo»?"
+      ],
+      "answer_display_es": "Juicio.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Juicio."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C114",
+      "unit_id": "NAV-102-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio profesional guía la actuación en «Crisis de vuelo»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio profesional guía la actuación en «Crisis de vuelo»?",
+        "Repaso de rama: ¿Qué criterio profesional guía la actuación en «Crisis de vuelo»?"
+      ],
+      "answer_display_es": "Vuelo debe conservar márgenes, anunciar límites y adaptar trayectoria antes de que una situación deje de ser recuperable.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Vuelo debe conservar márgenes, anunciar límites y adaptar trayectoria antes de que una situación deje de ser recuperable."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C115",
+      "unit_id": "NAV-102-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: descripción actual y verificable de capacidad, configuración, degradaciones y acciones en curso?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: descripción actual y verificable de capacidad, configuración, degradaciones y acciones en curso?",
+        "En «Entrega de navegación», selecciona el concepto descrito así: descripción actual y verificable de capacidad, configuración, degradaciones y acciones en curso."
+      ],
+      "answer_display_es": "estado",
+      "accepted_short_answers_es": [
+        "estado"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "estado"
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C116",
+      "unit_id": "NAV-102-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: acciones abiertas con responsable, prioridad y condición prevista de cierre?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: acciones abiertas con responsable, prioridad y condición prevista de cierre?",
+        "En «Entrega de navegación», selecciona el concepto descrito así: acciones abiertas con responsable, prioridad y condición prevista de cierre."
+      ],
+      "answer_display_es": "pendientes",
+      "accepted_short_answers_es": [
+        "pendientes"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "pendientes"
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C117",
+      "unit_id": "NAV-102-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: amenazas plausibles a seguridad o misión que deben identificarse y reevaluarse?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: amenazas plausibles a seguridad o misión que deben identificarse y reevaluarse?",
+        "En «Entrega de navegación», selecciona el concepto descrito así: amenazas plausibles a seguridad o misión que deben identificarse y reevaluarse."
+      ],
+      "answer_display_es": "riesgos",
+      "accepted_short_answers_es": [
+        "riesgos"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "riesgos"
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C118",
+      "unit_id": "NAV-102-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Entrega de navegación»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Entrega de navegación»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Entrega de navegación»?"
+      ],
+      "answer_display_es": "Handoff profesional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Handoff profesional."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C119",
+      "unit_id": "NAV-102-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Entrega de navegación»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Entrega de navegación»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Entrega de navegación»?"
+      ],
+      "answer_display_es": "Práctica.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Práctica."
+      ]
+    },
+    {
+      "id": "FLIGHT_NAVIGATION-C120",
+      "unit_id": "NAV-102-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio profesional guía la actuación en «Entrega de navegación»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio profesional guía la actuación en «Entrega de navegación»?",
+        "Repaso de rama: ¿Qué criterio profesional guía la actuación en «Entrega de navegación»?"
+      ],
+      "answer_display_es": "Vuelo debe conservar márgenes, anunciar límites y adaptar trayectoria antes de que una situación deje de ser recuperable.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Vuelo debe conservar márgenes, anunciar límites y adaptar trayectoria antes de que una situación deje de ser recuperable."
+      ]
     }
   ],
-  "legacy_year4_questions": [
-    {
-      "id": "FLIGHT_NAVIGATION-Q037",
-      "course_id": "NAV-101",
-      "unit_id": "NAV-101-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica masa desde la perspectiva de Vuelo / Navegación.",
-      "answer_key_es": [
-        "masa",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "FLIGHT_NAVIGATION-Q038",
-      "course_id": "NAV-101",
-      "unit_id": "NAV-101-U01",
-      "type": "scenario",
-      "prompt_es": "Familiarización de clase. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "FLIGHT_NAVIGATION-Q039",
-      "course_id": "NAV-101",
-      "unit_id": "NAV-101-U01",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Comportamiento por clase para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "FLIGHT_NAVIGATION-Q040",
-      "course_id": "NAV-101",
-      "unit_id": "NAV-101-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica propulsión degradada desde la perspectiva de Vuelo / Navegación.",
-      "answer_key_es": [
-        "propulsión degradada",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "FLIGHT_NAVIGATION-Q041",
-      "course_id": "NAV-101",
-      "unit_id": "NAV-101-U02",
-      "type": "scenario",
-      "prompt_es": "Simulación. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "FLIGHT_NAVIGATION-Q042",
-      "course_id": "NAV-101",
-      "unit_id": "NAV-101-U02",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Vuelo con daños para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "FLIGHT_NAVIGATION-Q043",
-      "course_id": "NAV-101",
-      "unit_id": "NAV-101-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica formación desde la perspectiva de Vuelo / Navegación.",
-      "answer_key_es": [
-        "formación",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "FLIGHT_NAVIGATION-Q044",
-      "course_id": "NAV-101",
-      "unit_id": "NAV-101-U03",
-      "type": "scenario",
-      "prompt_es": "Maniobra. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "FLIGHT_NAVIGATION-Q045",
-      "course_id": "NAV-101",
-      "unit_id": "NAV-101-U03",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Operaciones cercanas para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "FLIGHT_NAVIGATION-Q046",
-      "course_id": "NAV-101",
-      "unit_id": "NAV-101-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica relevo desde la perspectiva de Vuelo / Navegación.",
-      "answer_key_es": [
-        "relevo",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "FLIGHT_NAVIGATION-Q047",
-      "course_id": "NAV-101",
-      "unit_id": "NAV-101-U04",
-      "type": "scenario",
-      "prompt_es": "Supervisar puesto. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "FLIGHT_NAVIGATION-Q048",
-      "course_id": "NAV-101",
-      "unit_id": "NAV-101-U04",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Liderazgo de vuelo para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "FLIGHT_NAVIGATION-Q049",
-      "course_id": "NAV-102",
-      "unit_id": "NAV-102-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica ruta desde la perspectiva de Vuelo / Navegación.",
-      "answer_key_es": [
-        "ruta",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "FLIGHT_NAVIGATION-Q050",
-      "course_id": "NAV-102",
-      "unit_id": "NAV-102-U01",
-      "type": "scenario",
-      "prompt_es": "Plan completo. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "FLIGHT_NAVIGATION-Q051",
-      "course_id": "NAV-102",
-      "unit_id": "NAV-102-U01",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Plan de misión para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "FLIGHT_NAVIGATION-Q052",
-      "course_id": "NAV-102",
-      "unit_id": "NAV-102-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica continuidad desde la perspectiva de Vuelo / Navegación.",
-      "answer_key_es": [
-        "continuidad",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "FLIGHT_NAVIGATION-Q053",
-      "course_id": "NAV-102",
-      "unit_id": "NAV-102-U02",
-      "type": "scenario",
-      "prompt_es": "Misión extendida. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "FLIGHT_NAVIGATION-Q054",
-      "course_id": "NAV-102",
-      "unit_id": "NAV-102-U02",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Ejecución prolongada para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "FLIGHT_NAVIGATION-Q055",
-      "course_id": "NAV-102",
-      "unit_id": "NAV-102-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica prioridad desde la perspectiva de Vuelo / Navegación.",
-      "answer_key_es": [
-        "prioridad",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "FLIGHT_NAVIGATION-Q056",
-      "course_id": "NAV-102",
-      "unit_id": "NAV-102-U03",
-      "type": "scenario",
-      "prompt_es": "Escenario complejo. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "FLIGHT_NAVIGATION-Q057",
-      "course_id": "NAV-102",
-      "unit_id": "NAV-102-U03",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Crisis de vuelo para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "FLIGHT_NAVIGATION-Q058",
-      "course_id": "NAV-102",
-      "unit_id": "NAV-102-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica estado desde la perspectiva de Vuelo / Navegación.",
-      "answer_key_es": [
-        "estado",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "FLIGHT_NAVIGATION-Q059",
-      "course_id": "NAV-102",
-      "unit_id": "NAV-102-U04",
-      "type": "scenario",
-      "prompt_es": "Handoff profesional. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "FLIGHT_NAVIGATION-Q060",
-      "course_id": "NAV-102",
-      "unit_id": "NAV-102-U04",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Entrega de navegación para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    }
-  ]
+  "year4_courses": [
+    "NAV-101",
+    "NAV-102"
+  ],
+  "year4_status": "developed_and_synced_v2_1"
 }

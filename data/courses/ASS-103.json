@@ -1,7 +1,7 @@
 {
   "subject": "Primer destino y transición a servicio activo",
   "code": "ASS-103",
-  "version": "1.0",
+  "version": "2.0",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/first_class/courses/ASS-103/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/first_class/ASS-103/MANUAL_v1_0.md",
@@ -22,7 +22,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Cruzar el perfil real del graduando con necesidades y vacantes del mundo vivo sin garantizar destino concreto."
+          "text": "Esta unidad sitúa **Preferencias del jugador** dentro de la transición real de cadete a oficial. El cadete debe comprender qué información pesa, qué decisiones son institucionales y qué consecuencias persisten después de graduarse."
         },
         {
           "type": "heading",
@@ -31,12 +31,20 @@
         {
           "type": "bullets",
           "items": [
-            "tipo de unidad",
-            "misión",
-            "tamaño",
-            "región",
-            "puesto"
+            "**tipo de unidad**: naturaleza funcional del destino, como nave o estación, que condiciona misión, ritmo y oportunidades.",
+            "**misión**: propósito principal de la unidad junto con restricciones y prioridades.",
+            "**tamaño**: escala de la unidad y tripulación, que modifica especialización de funciones, carga y relaciones de trabajo.",
+            "**región**: zona de servicio que afecta distancia, apoyo disponible, entorno político y tipo de misión.",
+            "**puesto**: función concreta con responsabilidades, autoridad, interfaces y requisitos definidos."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se trabaja siempre con la información disponible en ese momento, diferenciando hechos, incertidumbre, responsabilidad individual y decisión institucional. El resultado se conserva como parte del historial del personaje."
         },
         {
           "type": "callout",
@@ -45,37 +53,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "El sistema cruza perfil, requisitos, vacantes y necesidades del mundo vivo. Las preferencias cuentan, pero **no crean una vacante**."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "No son órdenes garantizadas."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica tipo de unidad como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Registrar preferencias.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/academy_path/first_assignment_model.json",
-            "gameplay/careers/career_bridge.md",
-            "gameplay/careers/starfleet_service/career_progression_rules.json"
-          ]
+          "text": "No son órdenes garantizadas. Se valora la coherencia entre expediente, actuación y preparación real para el siguiente estado de carrera."
         }
       ]
     },
@@ -86,7 +70,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Cruzar el perfil real del graduando con necesidades y vacantes del mundo vivo sin garantizar destino concreto."
+          "text": "Esta unidad sitúa **Perfil de asignación** dentro de la transición real de cadete a oficial. El cadete debe comprender qué información pesa, qué decisiones son institucionales y qué consecuencias persisten después de graduarse."
         },
         {
           "type": "heading",
@@ -95,11 +79,19 @@
         {
           "type": "bullets",
           "items": [
-            "especialidad",
-            "cualificaciones",
-            "recomendaciones",
-            "restricciones"
+            "**especialidad**: rama profesional principal para la que el graduando ha acumulado formación y evidencia.",
+            "**cualificaciones**: competencias formalmente reconocidas a partir de evidencia; habilitan funciones concretas y conservan sus propios límites.",
+            "**recomendaciones**: orientaciones de instructores y paneles basadas en evidencia, útiles para asignación y desarrollo.",
+            "**restricciones**: condiciones que limitan destinos o funciones por requisitos, seguridad, cualificación o situación institucional."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se trabaja siempre con la información disponible en ese momento, diferenciando hechos, incertidumbre, responsabilidad individual y decisión institucional. El resultado se conserva como parte del historial del personaje."
         },
         {
           "type": "callout",
@@ -108,37 +100,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "El sistema cruza perfil, requisitos, vacantes y necesidades del mundo vivo. Las preferencias cuentan, pero **no crean una vacante**."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Validación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica especialidad como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Construir perfil.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/academy_path/first_assignment_model.json",
-            "gameplay/careers/career_bridge.md",
-            "gameplay/careers/starfleet_service/career_progression_rules.json"
-          ]
+          "text": "Validación. Se valora la coherencia entre expediente, actuación y preparación real para el siguiente estado de carrera."
         }
       ]
     },
@@ -149,7 +117,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Cruzar el perfil real del graduando con necesidades y vacantes del mundo vivo sin garantizar destino concreto."
+          "text": "Esta unidad sitúa **Vacantes y necesidades** dentro de la transición real de cadete a oficial. El cadete debe comprender qué información pesa, qué decisiones son institucionales y qué consecuencias persisten después de graduarse."
         },
         {
           "type": "heading",
@@ -158,12 +126,20 @@
         {
           "type": "bullets",
           "items": [
-            "estado del mundo",
-            "fecha",
-            "unidades",
-            "puestos",
-            "prioridad"
+            "**estado del mundo**: situación persistente de flota, conflictos, despliegues, pérdidas, proyectos y necesidades en la fecha de asignación.",
+            "**fecha**: momento efectivo que determina qué unidades, vacantes y condiciones existen realmente.",
+            "**unidades**: organizaciones disponibles en el mundo vivo con misión, dotación y necesidades propias.",
+            "**puestos**: vacantes o funciones que pueden cubrirse según requisitos, prioridad y disponibilidad.",
+            "**prioridad**: urgencia relativa con la que la organización necesita cubrir una necesidad frente a otras."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se trabaja siempre con la información disponible en ese momento, diferenciando hechos, incertidumbre, responsabilidad individual y decisión institucional. El resultado se conserva como parte del historial del personaje."
         },
         {
           "type": "callout",
@@ -172,37 +148,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "El sistema cruza perfil, requisitos, vacantes y necesidades del mundo vivo. Las preferencias cuentan, pero **no crean una vacante**."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Sin crear vacantes por deseo."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica estado del mundo como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Consultar candidatos generados por sistema.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/academy_path/first_assignment_model.json",
-            "gameplay/careers/career_bridge.md",
-            "gameplay/careers/starfleet_service/career_progression_rules.json"
-          ]
+          "text": "Sin crear vacantes por deseo. Se valora la coherencia entre expediente, actuación y preparación real para el siguiente estado de carrera."
         }
       ]
     },
@@ -213,7 +165,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Cruzar el perfil real del graduando con necesidades y vacantes del mundo vivo sin garantizar destino concreto."
+          "text": "Esta unidad sitúa **Entrevistas/órdenes preliminares** dentro de la transición real de cadete a oficial. El cadete debe comprender qué información pesa, qué decisiones son institucionales y qué consecuencias persisten después de graduarse."
         },
         {
           "type": "heading",
@@ -222,11 +174,19 @@
         {
           "type": "bullets",
           "items": [
-            "contacto",
-            "preguntas",
-            "encaje",
-            "condiciones"
+            "**contacto**: interacción con una unidad o responsable durante el proceso de asignación.",
+            "**preguntas**: intercambio destinado a aclarar experiencia, expectativas, límites y encaje profesional.",
+            "**encaje**: compatibilidad entre perfil real del graduando, requisitos del puesto y necesidades de la unidad.",
+            "**condiciones**: circunstancias concretas del destino o puesto que el graduando debe conocer antes de incorporarse."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se trabaja siempre con la información disponible en ese momento, diferenciando hechos, incertidumbre, responsabilidad individual y decisión institucional. El resultado se conserva como parte del historial del personaje."
         },
         {
           "type": "callout",
@@ -235,37 +195,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "El sistema cruza perfil, requisitos, vacantes y necesidades del mundo vivo. Las preferencias cuentan, pero **no crean una vacante**."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evidencia contextual."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica contacto como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Escenas cuando correspondan.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/academy_path/first_assignment_model.json",
-            "gameplay/careers/career_bridge.md",
-            "gameplay/careers/starfleet_service/career_progression_rules.json"
-          ]
+          "text": "Evidencia contextual. Se valora la coherencia entre expediente, actuación y preparación real para el siguiente estado de carrera."
         }
       ]
     },
@@ -276,7 +212,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Cruzar el perfil real del graduando con necesidades y vacantes del mundo vivo sin garantizar destino concreto."
+          "text": "Esta unidad sitúa **Selección institucional** dentro de la transición real de cadete a oficial. El cadete debe comprender qué información pesa, qué decisiones son institucionales y qué consecuencias persisten después de graduarse."
         },
         {
           "type": "heading",
@@ -285,11 +221,19 @@
         {
           "type": "bullets",
           "items": [
-            "necesidad",
-            "encaje",
-            "disponibilidad",
-            "preferencias"
+            "**necesidad**: demanda real de la organización que justifica cubrir un puesto.",
+            "**encaje**: compatibilidad entre perfil real del graduando, requisitos del puesto y necesidades de la unidad.",
+            "**disponibilidad**: existencia efectiva de una vacante y posibilidad temporal de ocuparla.",
+            "**preferencias**: opciones expresadas por el graduando que se consideran cuando son compatibles con necesidades y vacantes."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se trabaja siempre con la información disponible en ese momento, diferenciando hechos, incertidumbre, responsabilidad individual y decisión institucional. El resultado se conserva como parte del historial del personaje."
         },
         {
           "type": "callout",
@@ -298,37 +242,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "El sistema cruza perfil, requisitos, vacantes y necesidades del mundo vivo. Las preferencias cuentan, pero **no crean una vacante**."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Resultado persistente."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica necesidad como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Resolver asignación por reglas.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/academy_path/first_assignment_model.json",
-            "gameplay/careers/career_bridge.md",
-            "gameplay/careers/starfleet_service/career_progression_rules.json"
-          ]
+          "text": "Resultado persistente. Se valora la coherencia entre expediente, actuación y preparación real para el siguiente estado de carrera."
         }
       ]
     },
@@ -339,7 +259,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Cruzar el perfil real del graduando con necesidades y vacantes del mundo vivo sin garantizar destino concreto."
+          "text": "Esta unidad sitúa **Transición** dentro de la transición real de cadete a oficial. El cadete debe comprender qué información pesa, qué decisiones son institucionales y qué consecuencias persisten después de graduarse."
         },
         {
           "type": "heading",
@@ -348,11 +268,19 @@
         {
           "type": "bullets",
           "items": [
-            "órdenes",
-            "fecha",
-            "viaje",
-            "presentación"
+            "**órdenes**: instrucciones oficiales de asignación que especifican destino, puesto, fechas y obligaciones.",
+            "**fecha**: momento efectivo que determina qué unidades, vacantes y condiciones existen realmente.",
+            "**viaje**: traslado hasta el destino como parte de la transición, con tiempo y logística propios.",
+            "**presentación**: incorporación formal a la nueva unidad y cadena de mando."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se trabaja siempre con la información disponible en ese momento, diferenciando hechos, incertidumbre, responsabilidad individual y decisión institucional. El resultado se conserva como parte del historial del personaje."
         },
         {
           "type": "callout",
@@ -361,39 +289,16 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "El sistema cruza perfil, requisitos, vacantes y necesidades del mundo vivo. Las preferencias cuentan, pero **no crean una vacante**."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Cierre."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica órdenes como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Preparar incorporación.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/academy_path/first_assignment_model.json",
-            "gameplay/careers/career_bridge.md",
-            "gameplay/careers/starfleet_service/career_progression_rules.json"
-          ]
+          "text": "Cierre. Se valora la coherencia entre expediente, actuación y preparación real para el siguiente estado de carrera."
         }
       ]
     }
-  ]
+  ],
+  "assessmentModel": "concept_driven_v2_1"
 }

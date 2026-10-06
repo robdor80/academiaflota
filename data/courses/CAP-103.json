@@ -1,7 +1,7 @@
 {
   "subject": "Evaluación final de especialidad",
   "code": "CAP-103",
-  "version": "1.0",
+  "version": "2.0",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/first_class/courses/CAP-103/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/first_class/CAP-103/MANUAL_v1_0.md",
@@ -20,7 +20,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Determinar si el cadete puede comenzar a servir como Alférez de su especialidad bajo supervisión normal de unidad."
+          "text": "Esta unidad sitúa **Revisión de rama** dentro de la transición real de cadete a oficial. El cadete debe comprender qué información pesa, qué decisiones son institucionales y qué consecuencias persisten después de graduarse."
         },
         {
           "type": "heading",
@@ -29,10 +29,18 @@
         {
           "type": "bullets",
           "items": [
-            "evidencia 2.ª/1.ª clase",
-            "cualificaciones",
-            "carencias"
+            "**evidencia 2.ª/1.ª clase**: conjunto de actuaciones observadas en especialización y último año que permite valorar consistencia, no solo el último ejercicio.",
+            "**cualificaciones**: competencias formalmente reconocidas a partir de evidencia; habilitan funciones concretas y conservan sus propios límites.",
+            "**carencias**: áreas en las que la evidencia muestra preparación insuficiente o inconsistente y que requieren entrenamiento dirigido."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se trabaja siempre con la información disponible en ese momento, diferenciando hechos, incertidumbre, responsabilidad individual y decisión institucional. El resultado se conserva como parte del historial del personaje."
         },
         {
           "type": "callout",
@@ -41,35 +49,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "La cualificación final comprueba preparación de **oficial novel**, no pericia experta; una brecha concreta puede generar remediación focalizada."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Validación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica evidencia 2.ª/1.ª clase como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Compilar expediente de especialidad.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/post_academy/qualification_and_mentorship_model.json"
-          ]
+          "text": "Validación. Se valora la coherencia entre expediente, actuación y preparación real para el siguiente estado de carrera."
         }
       ]
     },
@@ -80,7 +66,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Determinar si el cadete puede comenzar a servir como Alférez de su especialidad bajo supervisión normal de unidad."
+          "text": "Esta unidad sitúa **Conocimiento profesional** dentro de la transición real de cadete a oficial. El cadete debe comprender qué información pesa, qué decisiones son institucionales y qué consecuencias persisten después de graduarse."
         },
         {
           "type": "heading",
@@ -89,11 +75,19 @@
         {
           "type": "bullets",
           "items": [
-            "principios",
-            "procedimientos",
-            "límites",
-            "seguridad"
+            "**principios**: reglas conceptuales que explican por qué se actúa de una determinada forma y permiten adaptarse fuera del ejemplo memorizado.",
+            "**procedimientos**: secuencias definidas para ejecutar tareas de forma segura y repetible, adaptables solo dentro de márgenes autorizados.",
+            "**límites**: fronteras de autoridad, competencia, seguridad o regulación que obligan a detener, adaptar o escalar.",
+            "**seguridad**: protección de personas, nave, misión y entorno mediante márgenes, comprobaciones y decisiones proporcionadas."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se trabaja siempre con la información disponible en ese momento, diferenciando hechos, incertidumbre, responsabilidad individual y decisión institucional. El resultado se conserva como parte del historial del personaje."
         },
         {
           "type": "callout",
@@ -102,35 +96,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "La cualificación final comprueba preparación de **oficial novel**, no pericia experta; una brecha concreta puede generar remediación focalizada."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Resultado por áreas."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica principios como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Prueba focalizada.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/post_academy/qualification_and_mentorship_model.json"
-          ]
+          "text": "Resultado por áreas. Se valora la coherencia entre expediente, actuación y preparación real para el siguiente estado de carrera."
         }
       ]
     },
@@ -141,7 +113,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Determinar si el cadete puede comenzar a servir como Alférez de su especialidad bajo supervisión normal de unidad."
+          "text": "Esta unidad sitúa **Caso práctico** dentro de la transición real de cadete a oficial. El cadete debe comprender qué información pesa, qué decisiones son institucionales y qué consecuencias persisten después de graduarse."
         },
         {
           "type": "heading",
@@ -150,11 +122,19 @@
         {
           "type": "bullets",
           "items": [
-            "preparación",
-            "ejecución",
-            "comunicación",
-            "cierre"
+            "**preparación**: organización previa de información, configuración, recursos, roles y contingencias antes de comprometer la acción.",
+            "**ejecución**: realización de la tarea con monitorización, comunicación y capacidad de adaptación dentro de límites.",
+            "**comunicación**: transmisión clara y oportuna de estado, intención, riesgo, necesidades y resultado al destinatario adecuado.",
+            "**cierre**: confirmación del resultado, estado final, pendientes, registro y transferencia de responsabilidad."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se trabaja siempre con la información disponible en ese momento, diferenciando hechos, incertidumbre, responsabilidad individual y decisión institucional. El resultado se conserva como parte del historial del personaje."
         },
         {
           "type": "callout",
@@ -163,35 +143,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "La cualificación final comprueba preparación de **oficial novel**, no pericia experta; una brecha concreta puede generar remediación focalizada."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica preparación como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Prueba real/simulada.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/post_academy/qualification_and_mentorship_model.json"
-          ]
+          "text": "Evaluación. Se valora la coherencia entre expediente, actuación y preparación real para el siguiente estado de carrera."
         }
       ]
     },
@@ -202,7 +160,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Determinar si el cadete puede comenzar a servir como Alférez de su especialidad bajo supervisión normal de unidad."
+          "text": "Esta unidad sitúa **Caso de juicio** dentro de la transición real de cadete a oficial. El cadete debe comprender qué información pesa, qué decisiones son institucionales y qué consecuencias persisten después de graduarse."
         },
         {
           "type": "heading",
@@ -211,11 +169,19 @@
         {
           "type": "bullets",
           "items": [
-            "incertidumbre",
-            "riesgo",
-            "autoridad",
-            "recomendación"
+            "**incertidumbre**: información relevante no confirmada que debe declararse y gestionarse, no ocultarse mediante suposiciones.",
+            "**riesgo**: combinación de probabilidad, impacto y exposición comparada con misión, alternativas, autoridad y reversibilidad.",
+            "**autoridad**: facultad para decidir u ordenar dentro de un ámbito y unas condiciones; no sustituye la competencia técnica.",
+            "**recomendación**: curso de acción aconsejado con fundamento en datos, alternativas y riesgos."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se trabaja siempre con la información disponible en ese momento, diferenciando hechos, incertidumbre, responsabilidad individual y decisión institucional. El resultado se conserva como parte del historial del personaje."
         },
         {
           "type": "callout",
@@ -224,35 +190,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "La cualificación final comprueba preparación de **oficial novel**, no pericia experta; una brecha concreta puede generar remediación focalizada."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica incertidumbre como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Escenario oral/simulado.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/post_academy/qualification_and_mentorship_model.json"
-          ]
+          "text": "Evaluación. Se valora la coherencia entre expediente, actuación y preparación real para el siguiente estado de carrera."
         }
       ]
     },
@@ -263,7 +207,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Determinar si el cadete puede comenzar a servir como Alférez de su especialidad bajo supervisión normal de unidad."
+          "text": "Esta unidad sitúa **Revisión de servicio** dentro de la transición real de cadete a oficial. El cadete debe comprender qué información pesa, qué decisiones son institucionales y qué consecuencias persisten después de graduarse."
         },
         {
           "type": "heading",
@@ -272,11 +216,19 @@
         {
           "type": "bullets",
           "items": [
-            "DUT",
-            "PRC",
-            "simulaciones",
-            "conducta"
+            "**DUT**: evidencia obtenida durante servicio supervisado sobre autonomía, disciplina, continuidad y juicio operativo.",
+            "**PRC**: evidencia longitudinal del prácticum en una unidad real o casi real, incluida rutina, integración y actuación contextual.",
+            "**simulaciones**: entornos controlados que permiten observar decisiones y coordinación bajo condiciones difíciles sin confundir simulación con servicio real.",
+            "**conducta**: forma observable de actuar respecto a integridad, disciplina, respeto, seguridad, comunicación y responsabilidad."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se trabaja siempre con la información disponible en ese momento, diferenciando hechos, incertidumbre, responsabilidad individual y decisión institucional. El resultado se conserva como parte del historial del personaje."
         },
         {
           "type": "callout",
@@ -285,35 +237,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "La cualificación final comprueba preparación de **oficial novel**, no pericia experta; una brecha concreta puede generar remediación focalizada."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Informe."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica DUT como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Panel de instructores.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/post_academy/qualification_and_mentorship_model.json"
-          ]
+          "text": "Informe. Se valora la coherencia entre expediente, actuación y preparación real para el siguiente estado de carrera."
         }
       ]
     },
@@ -324,7 +254,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Determinar si el cadete puede comenzar a servir como Alférez de su especialidad bajo supervisión normal de unidad."
+          "text": "Esta unidad sitúa **Resultado** dentro de la transición real de cadete a oficial. El cadete debe comprender qué información pesa, qué decisiones son institucionales y qué consecuencias persisten después de graduarse."
         },
         {
           "type": "heading",
@@ -333,10 +263,18 @@
         {
           "type": "bullets",
           "items": [
-            "ready",
-            "targeted_remediation",
-            "reassessment"
+            "**ready**: resultado que indica preparación suficiente para ejercer como oficial novel con la supervisión normal de la unidad.",
+            "**targeted_remediation**: plan de corrección focalizado en brechas concretas sin repetir innecesariamente toda la formación.",
+            "**reassessment**: nueva evaluación posterior a la remediación para comprobar que la brecha relevante se ha cerrado."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se trabaja siempre con la información disponible en ese momento, diferenciando hechos, incertidumbre, responsabilidad individual y decisión institucional. El resultado se conserva como parte del historial del personaje."
         },
         {
           "type": "callout",
@@ -345,37 +283,16 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "La cualificación final comprueba preparación de **oficial novel**, no pericia experta; una brecha concreta puede generar remediación focalizada."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "No exige pericia experta; exige preparación de oficial novel."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica ready como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Cerrar evaluación.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/post_academy/qualification_and_mentorship_model.json"
-          ]
+          "text": "No exige pericia experta; exige preparación de oficial novel. Se valora la coherencia entre expediente, actuación y preparación real para el siguiente estado de carrera."
         }
       ]
     }
-  ]
+  ],
+  "assessmentModel": "concept_driven_v2_1"
 }

@@ -1,313 +1,643 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.1.0",
   "course_id": "SVC-103",
-  "status": "generated_from_authoritative_curriculum",
-  "question_count": 24,
-  "questions": [
+  "status": "developed_concept_driven_autocorrectable_v2_1",
+  "policy": {
+    "theory_formats": [
+      "multiple_choice",
+      "short_answer"
+    ],
+    "multiple_choice_target_ratio": 0.8,
+    "short_answer_target_ratio": 0.2,
+    "deterministic_correction": true,
+    "web_and_game_share_concepts_not_question_instances": true,
+    "complex_judgment_moves_to_practice_and_simulation": true,
+    "source_rule": "Every evaluated concept is explicitly taught in the developed Year 4 material or an established prerequisite."
+  },
+  "unit_review": {
+    "questions_per_attempt": 5,
+    "reshuffle_each_attempt": true,
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
+  },
+  "concepts": [
     {
-      "id": "SVC-103-Q001",
+      "id": "SVC-103-C001",
       "unit_id": "SVC-103-U01",
-      "type": "service_readiness",
-      "prompt_es": "Explica años como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: trayectoria completa de la Academia considerada como serie de evidencias y tendencias, no como suma ciega de notas?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: trayectoria completa de la Academia considerada como serie de evidencias y tendencias, no como suma ciega de notas?",
+        "En «Integridad de expediente», selecciona el concepto descrito así: trayectoria completa de la Academia considerada como serie de evidencias y tendencias, no como suma ciega de notas."
+      ],
+      "answer_display_es": "años",
+      "accepted_short_answers_es": [
+        "años"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "años",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "años"
       ]
     },
     {
-      "id": "SVC-103-Q002",
+      "id": "SVC-103-C002",
       "unit_id": "SVC-103-U01",
-      "type": "scenario",
-      "prompt_es": "Escenario: Validar historial. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: formación estructurada que demuestra conocimiento y práctica en áreas concretas?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: formación estructurada que demuestra conocimiento y práctica en áreas concretas?",
+        "En «Integridad de expediente», selecciona el concepto descrito así: formación estructurada que demuestra conocimiento y práctica en áreas concretas."
+      ],
+      "answer_display_es": "cursos",
+      "accepted_short_answers_es": [
+        "cursos"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "cursos"
       ]
     },
     {
-      "id": "SVC-103-Q003",
+      "id": "SVC-103-C003",
       "unit_id": "SVC-103-U01",
-      "type": "debrief",
-      "prompt_es": "Tras Integridad de expediente, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: actividades observables que convierten teoría en desempeño y producen evidencia contextual?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: actividades observables que convierten teoría en desempeño y producen evidencia contextual?",
+        "En «Integridad de expediente», selecciona el concepto descrito así: actividades observables que convierten teoría en desempeño y producen evidencia contextual."
+      ],
+      "answer_display_es": "prácticas",
+      "accepted_short_answers_es": [
+        "prácticas"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "prácticas"
       ]
     },
     {
-      "id": "SVC-103-Q004",
+      "id": "SVC-103-C004",
       "unit_id": "SVC-103-U01",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: forma observable de actuar respecto a integridad, disciplina, respeto, seguridad, comunicación y responsabilidad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: forma observable de actuar respecto a integridad, disciplina, respeto, seguridad, comunicación y responsabilidad?",
+        "En «Integridad de expediente», selecciona el concepto descrito así: forma observable de actuar respecto a integridad, disciplina, respeto, seguridad, comunicación y responsabilidad."
+      ],
+      "answer_display_es": "conducta",
+      "accepted_short_answers_es": [
+        "conducta"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "conducta"
       ]
     },
     {
-      "id": "SVC-103-Q005",
+      "id": "SVC-103-C005",
+      "unit_id": "SVC-103-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: eventos relevantes cuyo valor evaluativo depende del contexto, la respuesta y el aprendizaje posterior?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: eventos relevantes cuyo valor evaluativo depende del contexto, la respuesta y el aprendizaje posterior?",
+        "En «Integridad de expediente», selecciona el concepto descrito así: eventos relevantes cuyo valor evaluativo depende del contexto, la respuesta y el aprendizaje posterior."
+      ],
+      "answer_display_es": "incidentes",
+      "accepted_short_answers_es": [
+        "incidentes"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "incidentes"
+      ]
+    },
+    {
+      "id": "SVC-103-C006",
+      "unit_id": "SVC-103-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Integridad de expediente»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Integridad de expediente»?",
+        "Repaso final: ¿Qué práctica corresponde a «Integridad de expediente»?"
+      ],
+      "answer_display_es": "Validar historial.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Validar historial."
+      ]
+    },
+    {
+      "id": "SVC-103-C007",
       "unit_id": "SVC-103-U02",
-      "type": "service_readiness",
-      "prompt_es": "Explica CAP-103 como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: evaluación final de especialidad que comprueba preparación para comenzar a servir en la rama elegida?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: evaluación final de especialidad que comprueba preparación para comenzar a servir en la rama elegida?",
+        "En «Preparación profesional», selecciona el concepto descrito así: evaluación final de especialidad que comprueba preparación para comenzar a servir en la rama elegida."
+      ],
+      "answer_display_es": "CAP-103",
+      "accepted_short_answers_es": [
+        "CAP-103"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "CAP-103",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "CAP-103"
       ]
     },
     {
-      "id": "SVC-103-Q006",
+      "id": "SVC-103-C008",
       "unit_id": "SVC-103-U02",
-      "type": "scenario",
-      "prompt_es": "Escenario: Revisión de competencia. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: evidencia obtenida durante servicio supervisado sobre autonomía, disciplina, continuidad y juicio operativo?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: evidencia obtenida durante servicio supervisado sobre autonomía, disciplina, continuidad y juicio operativo?",
+        "En «Preparación profesional», selecciona el concepto descrito así: evidencia obtenida durante servicio supervisado sobre autonomía, disciplina, continuidad y juicio operativo."
+      ],
+      "answer_display_es": "DUT",
+      "accepted_short_answers_es": [
+        "DUT"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "DUT"
       ]
     },
     {
-      "id": "SVC-103-Q007",
+      "id": "SVC-103-C009",
       "unit_id": "SVC-103-U02",
-      "type": "debrief",
-      "prompt_es": "Tras Preparación profesional, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: evidencia longitudinal del prácticum en una unidad real o casi real, incluida rutina, integración y actuación contextual?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: evidencia longitudinal del prácticum en una unidad real o casi real, incluida rutina, integración y actuación contextual?",
+        "En «Preparación profesional», selecciona el concepto descrito así: evidencia longitudinal del prácticum en una unidad real o casi real, incluida rutina, integración y actuación contextual."
+      ],
+      "answer_display_es": "PRC",
+      "accepted_short_answers_es": [
+        "PRC"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "PRC"
       ]
     },
     {
-      "id": "SVC-103-Q008",
+      "id": "SVC-103-C010",
       "unit_id": "SVC-103-U02",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: competencias formalmente reconocidas a partir de evidencia; habilitan funciones concretas y conservan sus propios límites?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: competencias formalmente reconocidas a partir de evidencia; habilitan funciones concretas y conservan sus propios límites?",
+        "En «Preparación profesional», selecciona el concepto descrito así: competencias formalmente reconocidas a partir de evidencia; habilitan funciones concretas y conservan sus propios límites."
+      ],
+      "answer_display_es": "cualificaciones",
+      "accepted_short_answers_es": [
+        "cualificaciones"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "cualificaciones"
       ]
     },
     {
-      "id": "SVC-103-Q009",
+      "id": "SVC-103-C011",
+      "unit_id": "SVC-103-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Preparación profesional»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Preparación profesional»?",
+        "Repaso final: ¿Qué práctica corresponde a «Preparación profesional»?"
+      ],
+      "answer_display_es": "Revisión de competencia.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Revisión de competencia."
+      ]
+    },
+    {
+      "id": "SVC-103-C012",
+      "unit_id": "SVC-103-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio de evaluación se asocia a «Preparación profesional»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio de evaluación se asocia a «Preparación profesional»?",
+        "Repaso final: ¿Qué criterio de evaluación se asocia a «Preparación profesional»?"
+      ],
+      "answer_display_es": "Panel.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Panel."
+      ]
+    },
+    {
+      "id": "SVC-103-C013",
       "unit_id": "SVC-103-U03",
-      "type": "service_readiness",
-      "prompt_es": "Explica juicio como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: capacidad de seleccionar una acción razonable integrando información, límites, riesgo, alternativas y consecuencias?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: capacidad de seleccionar una acción razonable integrando información, límites, riesgo, alternativas y consecuencias?",
+        "En «Preparación como oficial», selecciona el concepto descrito así: capacidad de seleccionar una acción razonable integrando información, límites, riesgo, alternativas y consecuencias."
+      ],
+      "answer_display_es": "juicio",
+      "accepted_short_answers_es": [
+        "juicio"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "juicio",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "juicio"
       ]
     },
     {
-      "id": "SVC-103-Q010",
+      "id": "SVC-103-C014",
       "unit_id": "SVC-103-U03",
-      "type": "scenario",
-      "prompt_es": "Escenario: Revisión longitudinal. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: capacidad de orientar personas hacia un objetivo manteniendo claridad, seguridad, responsabilidad y desarrollo del equipo?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: capacidad de orientar personas hacia un objetivo manteniendo claridad, seguridad, responsabilidad y desarrollo del equipo?",
+        "En «Preparación como oficial», selecciona el concepto descrito así: capacidad de orientar personas hacia un objetivo manteniendo claridad, seguridad, responsabilidad y desarrollo del equipo."
+      ],
+      "answer_display_es": "liderazgo",
+      "accepted_short_answers_es": [
+        "liderazgo"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "liderazgo"
       ]
     },
     {
-      "id": "SVC-103-Q011",
+      "id": "SVC-103-C015",
       "unit_id": "SVC-103-U03",
-      "type": "debrief",
-      "prompt_es": "Tras Preparación como oficial, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: transmisión clara y oportuna de estado, intención, riesgo, necesidades y resultado al destinatario adecuado?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: transmisión clara y oportuna de estado, intención, riesgo, necesidades y resultado al destinatario adecuado?",
+        "En «Preparación como oficial», selecciona el concepto descrito así: transmisión clara y oportuna de estado, intención, riesgo, necesidades y resultado al destinatario adecuado."
+      ],
+      "answer_display_es": "comunicación",
+      "accepted_short_answers_es": [
+        "comunicación"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "comunicación"
       ]
     },
     {
-      "id": "SVC-103-Q012",
+      "id": "SVC-103-C016",
       "unit_id": "SVC-103-U03",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: coherencia entre hechos, normas y conducta incluso cuando reconocer un error o límite resulta desfavorable?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: coherencia entre hechos, normas y conducta incluso cuando reconocer un error o límite resulta desfavorable?",
+        "En «Preparación como oficial», selecciona el concepto descrito así: coherencia entre hechos, normas y conducta incluso cuando reconocer un error o límite resulta desfavorable."
+      ],
+      "answer_display_es": "integridad",
+      "accepted_short_answers_es": [
+        "integridad"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "integridad"
       ]
     },
     {
-      "id": "SVC-103-Q013",
+      "id": "SVC-103-C017",
+      "unit_id": "SVC-103-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Preparación como oficial»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Preparación como oficial»?",
+        "Repaso final: ¿Qué práctica corresponde a «Preparación como oficial»?"
+      ],
+      "answer_display_es": "Revisión longitudinal.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Revisión longitudinal."
+      ]
+    },
+    {
+      "id": "SVC-103-C018",
+      "unit_id": "SVC-103-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio de evaluación se asocia a «Preparación como oficial»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio de evaluación se asocia a «Preparación como oficial»?",
+        "Repaso final: ¿Qué criterio de evaluación se asocia a «Preparación como oficial»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
+    },
+    {
+      "id": "SVC-103-C019",
       "unit_id": "SVC-103-U04",
-      "type": "service_readiness",
-      "prompt_es": "Explica conducta como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: forma observable de actuar respecto a integridad, disciplina, respeto, seguridad, comunicación y responsabilidad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: forma observable de actuar respecto a integridad, disciplina, respeto, seguridad, comunicación y responsabilidad?",
+        "En «Kobayashi y presión», selecciona el concepto descrito así: forma observable de actuar respecto a integridad, disciplina, respeto, seguridad, comunicación y responsabilidad."
+      ],
+      "answer_display_es": "conducta",
+      "accepted_short_answers_es": [
+        "conducta"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "conducta",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "conducta"
       ]
     },
     {
-      "id": "SVC-103-Q014",
+      "id": "SVC-103-C020",
       "unit_id": "SVC-103-U04",
-      "type": "scenario",
-      "prompt_es": "Escenario: Incorporar evidencia sin sobrerrepresentarla. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: capacidad de aplicar principios a una situación concreta sin limitarse a repetir una receta?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: capacidad de aplicar principios a una situación concreta sin limitarse a repetir una receta?",
+        "En «Kobayashi y presión», selecciona el concepto descrito así: capacidad de aplicar principios a una situación concreta sin limitarse a repetir una receta."
+      ],
+      "answer_display_es": "criterio",
+      "accepted_short_answers_es": [
+        "criterio"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "criterio"
       ]
     },
     {
-      "id": "SVC-103-Q015",
+      "id": "SVC-103-C021",
       "unit_id": "SVC-103-U04",
-      "type": "debrief",
-      "prompt_es": "Tras Kobayashi y presión, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: valoración de lo que es profesionalmente defendible cuando varias obligaciones o consecuencias entran en tensión?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: valoración de lo que es profesionalmente defendible cuando varias obligaciones o consecuencias entran en tensión?",
+        "En «Kobayashi y presión», selecciona el concepto descrito así: valoración de lo que es profesionalmente defendible cuando varias obligaciones o consecuencias entran en tensión."
+      ],
+      "answer_display_es": "ética",
+      "accepted_short_answers_es": [
+        "ética"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "ética"
       ]
     },
     {
-      "id": "SVC-103-Q016",
+      "id": "SVC-103-C022",
       "unit_id": "SVC-103-U04",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: cambio demostrable derivado de feedback, experiencia y revisión posterior?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: cambio demostrable derivado de feedback, experiencia y revisión posterior?",
+        "En «Kobayashi y presión», selecciona el concepto descrito así: cambio demostrable derivado de feedback, experiencia y revisión posterior."
+      ],
+      "answer_display_es": "aprendizaje",
+      "accepted_short_answers_es": [
+        "aprendizaje"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "aprendizaje"
       ]
     },
     {
-      "id": "SVC-103-Q017",
+      "id": "SVC-103-C023",
+      "unit_id": "SVC-103-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Kobayashi y presión»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Kobayashi y presión»?",
+        "Repaso final: ¿Qué práctica corresponde a «Kobayashi y presión»?"
+      ],
+      "answer_display_es": "Incorporar evidencia sin sobrerrepresentarla.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Incorporar evidencia sin sobrerrepresentarla."
+      ]
+    },
+    {
+      "id": "SVC-103-C024",
+      "unit_id": "SVC-103-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio de evaluación se asocia a «Kobayashi y presión»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio de evaluación se asocia a «Kobayashi y presión»?",
+        "Repaso final: ¿Qué criterio de evaluación se asocia a «Kobayashi y presión»?"
+      ],
+      "answer_display_es": "Panel.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Panel."
+      ]
+    },
+    {
+      "id": "SVC-103-C025",
       "unit_id": "SVC-103-U05",
-      "type": "service_readiness",
-      "prompt_es": "Explica fortalezas como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: capacidades demostradas de forma consistente y respaldadas por evidencia?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: capacidades demostradas de forma consistente y respaldadas por evidencia?",
+        "En «Recomendaciones», selecciona el concepto descrito así: capacidades demostradas de forma consistente y respaldadas por evidencia."
+      ],
+      "answer_display_es": "fortalezas",
+      "accepted_short_answers_es": [
+        "fortalezas"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "fortalezas",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "fortalezas"
       ]
     },
     {
-      "id": "SVC-103-Q018",
+      "id": "SVC-103-C026",
       "unit_id": "SVC-103-U05",
-      "type": "scenario",
-      "prompt_es": "Escenario: Redactar salida profesional. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: áreas y acciones mediante las que el oficial novel seguirá aumentando competencia tras graduarse?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: áreas y acciones mediante las que el oficial novel seguirá aumentando competencia tras graduarse?",
+        "En «Recomendaciones», selecciona el concepto descrito así: áreas y acciones mediante las que el oficial novel seguirá aumentando competencia tras graduarse."
+      ],
+      "answer_display_es": "desarrollo",
+      "accepted_short_answers_es": [
+        "desarrollo"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "desarrollo"
       ]
     },
     {
-      "id": "SVC-103-Q019",
+      "id": "SVC-103-C027",
       "unit_id": "SVC-103-U05",
-      "type": "debrief",
-      "prompt_es": "Tras Recomendaciones, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: acompañamiento profesional que orienta aprendizaje y carrera sin sustituir responsabilidad ni cadena formal?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: acompañamiento profesional que orienta aprendizaje y carrera sin sustituir responsabilidad ni cadena formal?",
+        "En «Recomendaciones», selecciona el concepto descrito así: acompañamiento profesional que orienta aprendizaje y carrera sin sustituir responsabilidad ni cadena formal."
+      ],
+      "answer_display_es": "mentoría",
+      "accepted_short_answers_es": [
+        "mentoría"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "mentoría"
       ]
     },
     {
-      "id": "SVC-103-Q020",
+      "id": "SVC-103-C028",
       "unit_id": "SVC-103-U05",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: condiciones o fronteras que deben ser conocidas y comunicadas para no asumir una capacidad inexistente?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: condiciones o fronteras que deben ser conocidas y comunicadas para no asumir una capacidad inexistente?",
+        "En «Recomendaciones», selecciona el concepto descrito así: condiciones o fronteras que deben ser conocidas y comunicadas para no asumir una capacidad inexistente."
+      ],
+      "answer_display_es": "limitaciones",
+      "accepted_short_answers_es": [
+        "limitaciones"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "limitaciones"
       ]
     },
     {
-      "id": "SVC-103-Q021",
-      "unit_id": "SVC-103-U06",
-      "type": "service_readiness",
-      "prompt_es": "Explica ready_for_commission como se lo explicarías a un Alférez que recibe su primer destino.",
+      "id": "SVC-103-C029",
+      "unit_id": "SVC-103-U05",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Recomendaciones»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Recomendaciones»?",
+        "Repaso final: ¿Qué práctica corresponde a «Recomendaciones»?"
+      ],
+      "answer_display_es": "Redactar salida profesional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "ready_for_commission",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "Redactar salida profesional."
       ]
     },
     {
-      "id": "SVC-103-Q022",
-      "unit_id": "SVC-103-U06",
-      "type": "scenario",
-      "prompt_es": "Escenario: Emitir decisión. Describe decisión inicial, alternativas y condición de escalado.",
+      "id": "SVC-103-C030",
+      "unit_id": "SVC-103-U05",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio de evaluación se asocia a «Recomendaciones»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio de evaluación se asocia a «Recomendaciones»?",
+        "Repaso final: ¿Qué criterio de evaluación se asocia a «Recomendaciones»?"
+      ],
+      "answer_display_es": "Revisión.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "Revisión."
       ]
     },
     {
-      "id": "SVC-103-Q023",
+      "id": "SVC-103-C031",
       "unit_id": "SVC-103-U06",
-      "type": "debrief",
-      "prompt_es": "Tras Resultado de comisión, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: resultado global que autoriza la comisión porque el expediente demuestra preparación suficiente para oficial novel?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: resultado global que autoriza la comisión porque el expediente demuestra preparación suficiente para oficial novel?",
+        "En «Resultado de comisión», selecciona el concepto descrito así: resultado global que autoriza la comisión porque el expediente demuestra preparación suficiente para oficial novel."
+      ],
+      "answer_display_es": "ready_for_commission",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "ready_for_commission"
       ]
     },
     {
-      "id": "SVC-103-Q024",
+      "id": "SVC-103-C032",
       "unit_id": "SVC-103-U06",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: comisión compatible con áreas de mejora que pueden abordarse durante el servicio normal mediante mentoría y desarrollo?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: comisión compatible con áreas de mejora que pueden abordarse durante el servicio normal mediante mentoría y desarrollo?",
+        "En «Resultado de comisión», selecciona el concepto descrito así: comisión compatible con áreas de mejora que pueden abordarse durante el servicio normal mediante mentoría y desarrollo."
+      ],
+      "answer_display_es": "ready_with_development_recommendations",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "ready_with_development_recommendations"
+      ]
+    },
+    {
+      "id": "SVC-103-C033",
+      "unit_id": "SVC-103-U06",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: resultado que pospone la comisión hasta completar formación adicional específica; no equivale a game over?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: resultado que pospone la comisión hasta completar formación adicional específica; no equivale a game over?",
+        "En «Resultado de comisión», selecciona el concepto descrito así: resultado que pospone la comisión hasta completar formación adicional específica; no equivale a game over."
+      ],
+      "answer_display_es": "additional_training_required",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "additional_training_required"
+      ]
+    },
+    {
+      "id": "SVC-103-C034",
+      "unit_id": "SVC-103-U06",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Resultado de comisión»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Resultado de comisión»?",
+        "Repaso final: ¿Qué práctica corresponde a «Resultado de comisión»?"
+      ],
+      "answer_display_es": "Emitir decisión.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Emitir decisión."
+      ]
+    },
+    {
+      "id": "SVC-103-C035",
+      "unit_id": "SVC-103-U06",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio de evaluación se asocia a «Resultado de comisión»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio de evaluación se asocia a «Resultado de comisión»?",
+        "Repaso final: ¿Qué criterio de evaluación se asocia a «Resultado de comisión»?"
+      ],
+      "answer_display_es": "No game over automático.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "No game over automático."
+      ]
+    },
+    {
+      "id": "SVC-103-C036",
+      "unit_id": "SVC-103-U06",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué principio debe guiar «Resultado de comisión»?",
+      "web_prompt_variants_es": [
+        "¿Qué principio debe guiar «Resultado de comisión»?",
+        "Repaso final: ¿Qué principio debe guiar «Resultado de comisión»?"
+      ],
+      "answer_display_es": "La comisión se decide con evidencia longitudinal de los cuatro años; ningún ejercicio aislado debe dominar todo el expediente.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "La comisión se decide con evidencia longitudinal de los cuatro años; ningún ejercicio aislado debe dominar todo el expediente."
       ]
     }
   ]

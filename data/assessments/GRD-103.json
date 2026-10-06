@@ -1,313 +1,651 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.1.0",
   "course_id": "GRD-103",
-  "status": "generated_from_authoritative_curriculum",
-  "question_count": 24,
-  "questions": [
+  "status": "developed_concept_driven_autocorrectable_v2_1",
+  "policy": {
+    "theory_formats": [
+      "multiple_choice",
+      "short_answer"
+    ],
+    "multiple_choice_target_ratio": 0.8,
+    "short_answer_target_ratio": 0.2,
+    "deterministic_correction": true,
+    "web_and_game_share_concepts_not_question_instances": true,
+    "complex_judgment_moves_to_practice_and_simulation": true,
+    "source_rule": "Every evaluated concept is explicitly taught in the developed Year 4 material or an established prerequisite."
+  },
+  "unit_review": {
+    "questions_per_attempt": 5,
+    "reshuffle_each_attempt": true,
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
+  },
+  "concepts": [
     {
-      "id": "GRD-103-Q001",
+      "id": "GRD-103-C001",
       "unit_id": "GRD-103-U01",
-      "type": "service_readiness",
-      "prompt_es": "Explica cierres como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: acciones necesarias para terminar correctamente responsabilidades, expedientes y asuntos abiertos antes de abandonar la Academia?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: acciones necesarias para terminar correctamente responsabilidades, expedientes y asuntos abiertos antes de abandonar la Academia?",
+        "En «Últimos días», selecciona el concepto descrito así: acciones necesarias para terminar correctamente responsabilidades, expedientes y asuntos abiertos antes de abandonar la Academia."
+      ],
+      "answer_display_es": "cierres",
+      "accepted_short_answers_es": [
+        "cierres"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "cierres",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "cierres"
       ]
     },
     {
-      "id": "GRD-103-Q002",
+      "id": "GRD-103-C002",
       "unit_id": "GRD-103-U01",
-      "type": "scenario",
-      "prompt_es": "Escenario: Escenas relevantes. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: interacciones de cierre con compañeros, instructores y otras relaciones relevantes que pueden persistir después?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: interacciones de cierre con compañeros, instructores y otras relaciones relevantes que pueden persistir después?",
+        "En «Últimos días», selecciona el concepto descrito así: interacciones de cierre con compañeros, instructores y otras relaciones relevantes que pueden persistir después."
+      ],
+      "answer_display_es": "despedidas",
+      "accepted_short_answers_es": [
+        "despedidas"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "despedidas"
       ]
     },
     {
-      "id": "GRD-103-Q003",
+      "id": "GRD-103-C003",
       "unit_id": "GRD-103-U01",
-      "type": "debrief",
-      "prompt_es": "Tras Últimos días, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: expediente y registros que deben quedar completos, consistentes y transferidos antes de la comisión?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: expediente y registros que deben quedar completos, consistentes y transferidos antes de la comisión?",
+        "En «Últimos días», selecciona el concepto descrito así: expediente y registros que deben quedar completos, consistentes y transferidos antes de la comisión."
+      ],
+      "answer_display_es": "documentación",
+      "accepted_short_answers_es": [
+        "documentación"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "documentación"
       ]
     },
     {
-      "id": "GRD-103-Q004",
+      "id": "GRD-103-C004",
       "unit_id": "GRD-103-U01",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: vínculos sociales y profesionales persistentes que no desaparecen automáticamente al graduarse?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: vínculos sociales y profesionales persistentes que no desaparecen automáticamente al graduarse?",
+        "En «Últimos días», selecciona el concepto descrito así: vínculos sociales y profesionales persistentes que no desaparecen automáticamente al graduarse."
+      ],
+      "answer_display_es": "relaciones",
+      "accepted_short_answers_es": [
+        "relaciones"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "relaciones"
       ]
     },
     {
-      "id": "GRD-103-Q005",
+      "id": "GRD-103-C005",
+      "unit_id": "GRD-103-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Últimos días»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Últimos días»?",
+        "Repaso final: ¿Qué práctica corresponde a «Últimos días»?"
+      ],
+      "answer_display_es": "Escenas relevantes.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Escenas relevantes."
+      ]
+    },
+    {
+      "id": "GRD-103-C006",
+      "unit_id": "GRD-103-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio de evaluación se asocia a «Últimos días»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio de evaluación se asocia a «Últimos días»?",
+        "Repaso final: ¿Qué criterio de evaluación se asocia a «Últimos días»?"
+      ],
+      "answer_display_es": "Persistencia social.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Persistencia social."
+      ]
+    },
+    {
+      "id": "GRD-103-C007",
       "unit_id": "GRD-103-U02",
-      "type": "service_readiness",
-      "prompt_es": "Explica especialidad como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: rama profesional principal para la que el graduando ha acumulado formación y evidencia?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: rama profesional principal para la que el graduando ha acumulado formación y evidencia?",
+        "En «Expediente académico final», selecciona el concepto descrito así: rama profesional principal para la que el graduando ha acumulado formación y evidencia."
+      ],
+      "answer_display_es": "especialidad",
+      "accepted_short_answers_es": [
+        "especialidad"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "especialidad",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "especialidad"
       ]
     },
     {
-      "id": "GRD-103-Q006",
+      "id": "GRD-103-C008",
       "unit_id": "GRD-103-U02",
-      "type": "scenario",
-      "prompt_es": "Escenario: Sellar registro. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: capacidades demostradas de forma consistente y respaldadas por evidencia?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: capacidades demostradas de forma consistente y respaldadas por evidencia?",
+        "En «Expediente académico final», selecciona el concepto descrito así: capacidades demostradas de forma consistente y respaldadas por evidencia."
+      ],
+      "answer_display_es": "fortalezas",
+      "accepted_short_answers_es": [
+        "fortalezas"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "fortalezas"
       ]
     },
     {
-      "id": "GRD-103-Q007",
+      "id": "GRD-103-C009",
       "unit_id": "GRD-103-U02",
-      "type": "debrief",
-      "prompt_es": "Tras Expediente académico final, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: competencias formalmente reconocidas a partir de evidencia; habilitan funciones concretas y conservan sus propios límites?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: competencias formalmente reconocidas a partir de evidencia; habilitan funciones concretas y conservan sus propios límites?",
+        "En «Expediente académico final», selecciona el concepto descrito así: competencias formalmente reconocidas a partir de evidencia; habilitan funciones concretas y conservan sus propios límites."
+      ],
+      "answer_display_es": "cualificaciones",
+      "accepted_short_answers_es": [
+        "cualificaciones"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "cualificaciones"
       ]
     },
     {
-      "id": "GRD-103-Q008",
+      "id": "GRD-103-C010",
       "unit_id": "GRD-103-U02",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: resultados y observaciones acumulados que forman parte del historial profesional inicial?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: resultados y observaciones acumulados que forman parte del historial profesional inicial?",
+        "En «Expediente académico final», selecciona el concepto descrito así: resultados y observaciones acumulados que forman parte del historial profesional inicial."
+      ],
+      "answer_display_es": "evaluaciones",
+      "accepted_short_answers_es": [
+        "evaluaciones"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "evaluaciones"
       ]
     },
     {
-      "id": "GRD-103-Q009",
+      "id": "GRD-103-C011",
+      "unit_id": "GRD-103-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: eventos relevantes cuyo valor evaluativo depende del contexto, la respuesta y el aprendizaje posterior?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: eventos relevantes cuyo valor evaluativo depende del contexto, la respuesta y el aprendizaje posterior?",
+        "En «Expediente académico final», selecciona el concepto descrito así: eventos relevantes cuyo valor evaluativo depende del contexto, la respuesta y el aprendizaje posterior."
+      ],
+      "answer_display_es": "incidentes",
+      "accepted_short_answers_es": [
+        "incidentes"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "incidentes"
+      ]
+    },
+    {
+      "id": "GRD-103-C012",
+      "unit_id": "GRD-103-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Expediente académico final»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Expediente académico final»?",
+        "Repaso final: ¿Qué práctica corresponde a «Expediente académico final»?"
+      ],
+      "answer_display_es": "Sellar registro.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Sellar registro."
+      ]
+    },
+    {
+      "id": "GRD-103-C013",
       "unit_id": "GRD-103-U03",
-      "type": "service_readiness",
-      "prompt_es": "Explica protocolo como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: secuencia formal y comportamiento esperado durante un acto institucional?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: secuencia formal y comportamiento esperado durante un acto institucional?",
+        "En «Ceremonia», selecciona el concepto descrito así: secuencia formal y comportamiento esperado durante un acto institucional."
+      ],
+      "answer_display_es": "protocolo",
+      "accepted_short_answers_es": [
+        "protocolo"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "protocolo",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "protocolo"
       ]
     },
     {
-      "id": "GRD-103-Q010",
+      "id": "GRD-103-C014",
       "unit_id": "GRD-103-U03",
-      "type": "scenario",
-      "prompt_es": "Escenario: Evento jugable. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: otros cadetes cuya trayectoria compartida puede originar relaciones profesionales duraderas?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: otros cadetes cuya trayectoria compartida puede originar relaciones profesionales duraderas?",
+        "En «Ceremonia», selecciona el concepto descrito así: otros cadetes cuya trayectoria compartida puede originar relaciones profesionales duraderas."
+      ],
+      "answer_display_es": "compañeros",
+      "accepted_short_answers_es": [
+        "compañeros"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "compañeros"
       ]
     },
     {
-      "id": "GRD-103-Q011",
+      "id": "GRD-103-C015",
       "unit_id": "GRD-103-U03",
-      "type": "debrief",
-      "prompt_es": "Tras Ceremonia, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: personal que ha formado y evaluado al cadete y puede aportar continuidad, referencia o mentoría futura?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: personal que ha formado y evaluado al cadete y puede aportar continuidad, referencia o mentoría futura?",
+        "En «Ceremonia», selecciona el concepto descrito así: personal que ha formado y evaluado al cadete y puede aportar continuidad, referencia o mentoría futura."
+      ],
+      "answer_display_es": "instructores",
+      "accepted_short_answers_es": [
+        "instructores"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "instructores"
       ]
     },
     {
-      "id": "GRD-103-Q012",
+      "id": "GRD-103-C016",
       "unit_id": "GRD-103-U03",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: presencia contextual de personas significativas solo cuando existe en la biografía y situación del personaje?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: presencia contextual de personas significativas solo cuando existe en la biografía y situación del personaje?",
+        "En «Ceremonia», selecciona el concepto descrito así: presencia contextual de personas significativas solo cuando existe en la biografía y situación del personaje."
+      ],
+      "answer_display_es": "familia cuando proceda",
+      "accepted_short_answers_es": [
+        "familia cuando proceda"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "familia cuando proceda"
       ]
     },
     {
-      "id": "GRD-103-Q013",
+      "id": "GRD-103-C017",
+      "unit_id": "GRD-103-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Ceremonia»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Ceremonia»?",
+        "Repaso final: ¿Qué práctica corresponde a «Ceremonia»?"
+      ],
+      "answer_display_es": "Evento jugable.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evento jugable."
+      ]
+    },
+    {
+      "id": "GRD-103-C018",
+      "unit_id": "GRD-103-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio de evaluación se asocia a «Ceremonia»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio de evaluación se asocia a «Ceremonia»?",
+        "Repaso final: ¿Qué criterio de evaluación se asocia a «Ceremonia»?"
+      ],
+      "answer_display_es": "Sin recompensa XP.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Sin recompensa XP."
+      ]
+    },
+    {
+      "id": "GRD-103-C019",
       "unit_id": "GRD-103-U04",
-      "type": "service_readiness",
-      "prompt_es": "Explica rango de Alférez como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: primer rango de oficial obtenido al recibir la comisión; cambia autoridad y responsabilidades, no convierte al graduado en experto?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: primer rango de oficial obtenido al recibir la comisión; cambia autoridad y responsabilidades, no convierte al graduado en experto?",
+        "En «Comisión», selecciona el concepto descrito así: primer rango de oficial obtenido al recibir la comisión; cambia autoridad y responsabilidades, no convierte al graduado en experto."
+      ],
+      "answer_display_es": "rango de Alférez",
+      "accepted_short_answers_es": [
+        "rango de Alférez"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "rango de Alférez",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "rango de Alférez"
       ]
     },
     {
-      "id": "GRD-103-Q014",
+      "id": "GRD-103-C020",
       "unit_id": "GRD-103-U04",
-      "type": "scenario",
-      "prompt_es": "Escenario: Aplicar cambio de estado. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: facultad para decidir u ordenar dentro de un ámbito y unas condiciones; no sustituye la competencia técnica?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: facultad para decidir u ordenar dentro de un ámbito y unas condiciones; no sustituye la competencia técnica?",
+        "En «Comisión», selecciona el concepto descrito así: facultad para decidir u ordenar dentro de un ámbito y unas condiciones; no sustituye la competencia técnica."
+      ],
+      "answer_display_es": "autoridad",
+      "accepted_short_answers_es": [
+        "autoridad"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "autoridad"
       ]
     },
     {
-      "id": "GRD-103-Q015",
+      "id": "GRD-103-C021",
       "unit_id": "GRD-103-U04",
-      "type": "debrief",
-      "prompt_es": "Tras Comisión, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: obligación de responder por decisiones propias, incluida la decisión de delegar, continuar o escalar?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: obligación de responder por decisiones propias, incluida la decisión de delegar, continuar o escalar?",
+        "En «Comisión», selecciona el concepto descrito así: obligación de responder por decisiones propias, incluida la decisión de delegar, continuar o escalar."
+      ],
+      "answer_display_es": "responsabilidad",
+      "accepted_short_answers_es": [
+        "responsabilidad"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "responsabilidad"
       ]
     },
     {
-      "id": "GRD-103-Q016",
+      "id": "GRD-103-C022",
       "unit_id": "GRD-103-U04",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: registro formal de la comisión y cambio de estado profesional?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: registro formal de la comisión y cambio de estado profesional?",
+        "En «Comisión», selecciona el concepto descrito así: registro formal de la comisión y cambio de estado profesional."
+      ],
+      "answer_display_es": "documento",
+      "accepted_short_answers_es": [
+        "documento"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "documento"
       ]
     },
     {
-      "id": "GRD-103-Q017",
+      "id": "GRD-103-C023",
+      "unit_id": "GRD-103-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Comisión»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Comisión»?",
+        "Repaso final: ¿Qué práctica corresponde a «Comisión»?"
+      ],
+      "answer_display_es": "Aplicar cambio de estado.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Aplicar cambio de estado."
+      ]
+    },
+    {
+      "id": "GRD-103-C024",
+      "unit_id": "GRD-103-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio de evaluación se asocia a «Comisión»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio de evaluación se asocia a «Comisión»?",
+        "Repaso final: ¿Qué criterio de evaluación se asocia a «Comisión»?"
+      ],
+      "answer_display_es": "Validación de carrera.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Validación de carrera."
+      ]
+    },
+    {
+      "id": "GRD-103-C025",
       "unit_id": "GRD-103-U05",
-      "type": "service_readiness",
-      "prompt_es": "Explica primer destino como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: primera asignación de servicio activo obtenida por reglas de perfil, necesidad y vacantes?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: primera asignación de servicio activo obtenida por reglas de perfil, necesidad y vacantes?",
+        "En «Órdenes», selecciona el concepto descrito así: primera asignación de servicio activo obtenida por reglas de perfil, necesidad y vacantes."
+      ],
+      "answer_display_es": "primer destino",
+      "accepted_short_answers_es": [
+        "primer destino"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "primer destino",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "primer destino"
       ]
     },
     {
-      "id": "GRD-103-Q018",
+      "id": "GRD-103-C026",
       "unit_id": "GRD-103-U05",
-      "type": "scenario",
-      "prompt_es": "Escenario: Recibir órdenes. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: momento efectivo que determina qué unidades, vacantes y condiciones existen realmente?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: momento efectivo que determina qué unidades, vacantes y condiciones existen realmente?",
+        "En «Órdenes», selecciona el concepto descrito así: momento efectivo que determina qué unidades, vacantes y condiciones existen realmente."
+      ],
+      "answer_display_es": "fecha",
+      "accepted_short_answers_es": [
+        "fecha"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "fecha"
       ]
     },
     {
-      "id": "GRD-103-Q019",
+      "id": "GRD-103-C027",
       "unit_id": "GRD-103-U05",
-      "type": "debrief",
-      "prompt_es": "Tras Órdenes, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: función concreta con responsabilidades, autoridad, interfaces y requisitos definidos?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: función concreta con responsabilidades, autoridad, interfaces y requisitos definidos?",
+        "En «Órdenes», selecciona el concepto descrito así: función concreta con responsabilidades, autoridad, interfaces y requisitos definidos."
+      ],
+      "answer_display_es": "puesto",
+      "accepted_short_answers_es": [
+        "puesto"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "puesto"
       ]
     },
     {
-      "id": "GRD-103-Q020",
+      "id": "GRD-103-C028",
       "unit_id": "GRD-103-U05",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: traslado hasta el destino como parte de la transición, con tiempo y logística propios?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: traslado hasta el destino como parte de la transición, con tiempo y logística propios?",
+        "En «Órdenes», selecciona el concepto descrito así: traslado hasta el destino como parte de la transición, con tiempo y logística propios."
+      ],
+      "answer_display_es": "viaje",
+      "accepted_short_answers_es": [
+        "viaje"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "viaje"
       ]
     },
     {
-      "id": "GRD-103-Q021",
-      "unit_id": "GRD-103-U06",
-      "type": "service_readiness",
-      "prompt_es": "Explica relaciones como se lo explicarías a un Alférez que recibe su primer destino.",
+      "id": "GRD-103-C029",
+      "unit_id": "GRD-103-U05",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Órdenes»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Órdenes»?",
+        "Repaso final: ¿Qué práctica corresponde a «Órdenes»?"
+      ],
+      "answer_display_es": "Recibir órdenes.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "relaciones",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "Recibir órdenes."
       ]
     },
     {
-      "id": "GRD-103-Q022",
-      "unit_id": "GRD-103-U06",
-      "type": "scenario",
-      "prompt_es": "Escenario: Transición a servicio activo. Describe decisión inicial, alternativas y condición de escalado.",
+      "id": "GRD-103-C030",
+      "unit_id": "GRD-103-U05",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio de evaluación se asocia a «Órdenes»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio de evaluación se asocia a «Órdenes»?",
+        "Repaso final: ¿Qué criterio de evaluación se asocia a «Órdenes»?"
+      ],
+      "answer_display_es": "Persistencia.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "Persistencia."
       ]
     },
     {
-      "id": "GRD-103-Q023",
+      "id": "GRD-103-C031",
       "unit_id": "GRD-103-U06",
-      "type": "debrief",
-      "prompt_es": "Tras Salida de Academia, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: vínculos sociales y profesionales persistentes que no desaparecen automáticamente al graduarse?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: vínculos sociales y profesionales persistentes que no desaparecen automáticamente al graduarse?",
+        "En «Salida de Academia», selecciona el concepto descrito así: vínculos sociales y profesionales persistentes que no desaparecen automáticamente al graduarse."
+      ],
+      "answer_display_es": "relaciones",
+      "accepted_short_answers_es": [
+        "relaciones"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "relaciones"
       ]
     },
     {
-      "id": "GRD-103-Q024",
+      "id": "GRD-103-C032",
       "unit_id": "GRD-103-U06",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: objetivos debe definirse mediante hechos, límites y consecuencias concretas dentro de «Salida de Academia» para que sea útil en una decisión profesional?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: objetivos debe definirse mediante hechos, límites y consecuencias concretas dentro de «Salida de Academia» para que sea útil en una decisión profesional?",
+        "En «Salida de Academia», selecciona el concepto descrito así: objetivos debe definirse mediante hechos, límites y consecuencias concretas dentro de «Salida de Academia» para que sea útil en una decisión profesional."
+      ],
+      "answer_display_es": "objetivos",
+      "accepted_short_answers_es": [
+        "objetivos"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "objetivos"
+      ]
+    },
+    {
+      "id": "GRD-103-C033",
+      "unit_id": "GRD-103-U06",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: conjunto persistente de decisiones, relaciones, evaluaciones y eventos que acompaña al personaje tras la Academia?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: conjunto persistente de decisiones, relaciones, evaluaciones y eventos que acompaña al personaje tras la Academia?",
+        "En «Salida de Academia», selecciona el concepto descrito así: conjunto persistente de decisiones, relaciones, evaluaciones y eventos que acompaña al personaje tras la Academia."
+      ],
+      "answer_display_es": "historial",
+      "accepted_short_answers_es": [
+        "historial"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "historial"
+      ]
+    },
+    {
+      "id": "GRD-103-C034",
+      "unit_id": "GRD-103-U06",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: paso del ciclo académico al ciclo de servicio activo, donde progreso depende de destinos, experiencia y nuevas cualificaciones?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: paso del ciclo académico al ciclo de servicio activo, donde progreso depende de destinos, experiencia y nuevas cualificaciones?",
+        "En «Salida de Academia», selecciona el concepto descrito así: paso del ciclo académico al ciclo de servicio activo, donde progreso depende de destinos, experiencia y nuevas cualificaciones."
+      ],
+      "answer_display_es": "nuevo lifecycle",
+      "accepted_short_answers_es": [
+        "nuevo lifecycle"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "nuevo lifecycle"
+      ]
+    },
+    {
+      "id": "GRD-103-C035",
+      "unit_id": "GRD-103-U06",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Salida de Academia»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Salida de Academia»?",
+        "Repaso final: ¿Qué práctica corresponde a «Salida de Academia»?"
+      ],
+      "answer_display_es": "Transición a servicio activo.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Transición a servicio activo."
+      ]
+    },
+    {
+      "id": "GRD-103-C036",
+      "unit_id": "GRD-103-U06",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio de evaluación se asocia a «Salida de Academia»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio de evaluación se asocia a «Salida de Academia»?",
+        "Repaso final: ¿Qué criterio de evaluación se asocia a «Salida de Academia»?"
+      ],
+      "answer_display_es": "Cierre del arco académico.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Cierre del arco académico."
       ]
     }
   ]

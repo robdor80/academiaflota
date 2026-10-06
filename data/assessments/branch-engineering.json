@@ -1,8 +1,8 @@
 {
   "schema_version": "2.1.0",
   "branch_id": "engineering",
-  "status": "concept_driven_autocorrectable_v2_1",
-  "scope": "year3_201_203_only",
+  "status": "developed_concept_driven_autocorrectable_v2_1",
+  "scope": "year3_and_year4_all_branch_stages",
   "source_bank": "question_bank_v1_0.json",
   "year3_courses": [
     "ENG-201",
@@ -1287,312 +1287,835 @@
       "answer_key_es": [
         "ejecución en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
       ]
+    },
+    {
+      "id": "ENGINEERING-C073",
+      "unit_id": "ENG-101-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: relaciones por las que un cambio en un sistema altera capacidad o riesgo de otros?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: relaciones por las que un cambio en un sistema altera capacidad o riesgo de otros?",
+        "En «Sistemas complejos», selecciona el concepto descrito así: relaciones por las que un cambio en un sistema altera capacidad o riesgo de otros."
+      ],
+      "answer_display_es": "interdependencias",
+      "accepted_short_answers_es": [
+        "interdependencias"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "interdependencias"
+      ]
+    },
+    {
+      "id": "ENGINEERING-C074",
+      "unit_id": "ENG-101-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: estado deliberado de recursos y sistemas preparado para una fase concreta de misión?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: estado deliberado de recursos y sistemas preparado para una fase concreta de misión?",
+        "En «Sistemas complejos», selecciona el concepto descrito así: estado deliberado de recursos y sistemas preparado para una fase concreta de misión."
+      ],
+      "answer_display_es": "configuración",
+      "accepted_short_answers_es": [
+        "configuración"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "configuración"
+      ]
+    },
+    {
+      "id": "ENGINEERING-C075",
+      "unit_id": "ENG-101-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: capacidades reducidas o restricciones que condicionan qué configuración y reparación son viables?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: capacidades reducidas o restricciones que condicionan qué configuración y reparación son viables?",
+        "En «Sistemas complejos», selecciona el concepto descrito así: capacidades reducidas o restricciones que condicionan qué configuración y reparación son viables."
+      ],
+      "answer_display_es": "limitaciones",
+      "accepted_short_answers_es": [
+        "limitaciones"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "limitaciones"
+      ]
+    },
+    {
+      "id": "ENGINEERING-C076",
+      "unit_id": "ENG-101-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Sistemas complejos»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Sistemas complejos»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Sistemas complejos»?"
+      ],
+      "answer_display_es": "Caso de clase.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Caso de clase."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C077",
+      "unit_id": "ENG-101-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Sistemas complejos»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Sistemas complejos»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Sistemas complejos»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C078",
+      "unit_id": "ENG-101-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio profesional guía la actuación en «Sistemas complejos»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio profesional guía la actuación en «Sistemas complejos»?",
+        "Repaso de rama: ¿Qué criterio profesional guía la actuación en «Sistemas complejos»?"
+      ],
+      "answer_display_es": "Ingeniería debe diagnosticar antes de intervenir, proteger al personal y verificar cualquier restauración antes de declarar capacidad recuperada.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Ingeniería debe diagnosticar antes de intervenir, proteger al personal y verificar cualquier restauración antes de declarar capacidad recuperada."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C079",
+      "unit_id": "ENG-101-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: personas disponibles consideradas por rol, competencia, carga y capacidad de relevo; supervisar exige adaptar el control al riesgo y experiencia?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: personas disponibles consideradas por rol, competencia, carga y capacidad de relevo; supervisar exige adaptar el control al riesgo y experiencia?",
+        "En «Supervisión técnica», selecciona el concepto descrito así: personas disponibles consideradas por rol, competencia, carga y capacidad de relevo; supervisar exige adaptar el control al riesgo y experiencia."
+      ],
+      "answer_display_es": "equipo",
+      "accepted_short_answers_es": [
+        "equipo"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "equipo"
+      ]
+    },
+    {
+      "id": "ENGINEERING-C080",
+      "unit_id": "ENG-101-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: tarea técnica definida con objetivo, responsable, aislamiento, recursos y criterio de finalización?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: tarea técnica definida con objetivo, responsable, aislamiento, recursos y criterio de finalización?",
+        "En «Supervisión técnica», selecciona el concepto descrito así: tarea técnica definida con objetivo, responsable, aislamiento, recursos y criterio de finalización."
+      ],
+      "answer_display_es": "trabajo",
+      "accepted_short_answers_es": [
+        "trabajo"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "trabajo"
+      ]
+    },
+    {
+      "id": "ENGINEERING-C081",
+      "unit_id": "ENG-101-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: protección de personal y nave mediante aislamiento, procedimientos, márgenes y verificación?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: protección de personal y nave mediante aislamiento, procedimientos, márgenes y verificación?",
+        "En «Supervisión técnica», selecciona el concepto descrito así: protección de personal y nave mediante aislamiento, procedimientos, márgenes y verificación."
+      ],
+      "answer_display_es": "seguridad",
+      "accepted_short_answers_es": [
+        "seguridad"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "seguridad"
+      ]
+    },
+    {
+      "id": "ENGINEERING-C082",
+      "unit_id": "ENG-101-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: ETA se aplica en Ingeniería como una variable observable de «Supervisión técnica»: debe poder medirse o describirse, relacionarse con el riesgo y convertirse en una decisión o recomendación concreta?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: ETA se aplica en Ingeniería como una variable observable de «Supervisión técnica»: debe poder medirse o describirse, relacionarse con el riesgo y convertirse en una decisión o recomendación concreta?",
+        "En «Supervisión técnica», selecciona el concepto descrito así: ETA se aplica en Ingeniería como una variable observable de «Supervisión técnica»: debe poder medirse o describirse, relacionarse con el riesgo y convertirse en una decisión o recomendación concreta."
+      ],
+      "answer_display_es": "ETA",
+      "accepted_short_answers_es": [
+        "ETA"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "ETA"
+      ]
+    },
+    {
+      "id": "ENGINEERING-C083",
+      "unit_id": "ENG-101-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Supervisión técnica»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Supervisión técnica»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Supervisión técnica»?"
+      ],
+      "answer_display_es": "Dirigir reparación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Dirigir reparación."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C084",
+      "unit_id": "ENG-101-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Supervisión técnica»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Supervisión técnica»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Supervisión técnica»?"
+      ],
+      "answer_display_es": "Práctica.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Práctica."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C085",
+      "unit_id": "ENG-101-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: cursos de acción viables comparados por coste, riesgo, tiempo y consecuencias?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: cursos de acción viables comparados por coste, riesgo, tiempo y consecuencias?",
+        "En «Decisión técnica», selecciona el concepto descrito así: cursos de acción viables comparados por coste, riesgo, tiempo y consecuencias."
+      ],
+      "answer_display_es": "opciones",
+      "accepted_short_answers_es": [
+        "opciones"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "opciones"
+      ]
+    },
+    {
+      "id": "ENGINEERING-C086",
+      "unit_id": "ENG-101-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: combinación de probabilidad, impacto y exposición comparada con misión, alternativas y autoridad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: combinación de probabilidad, impacto y exposición comparada con misión, alternativas y autoridad?",
+        "En «Decisión técnica», selecciona el concepto descrito así: combinación de probabilidad, impacto y exposición comparada con misión, alternativas y autoridad."
+      ],
+      "answer_display_es": "riesgo",
+      "accepted_short_answers_es": [
+        "riesgo"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "riesgo"
+      ]
+    },
+    {
+      "id": "ENGINEERING-C087",
+      "unit_id": "ENG-101-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: propósito operativo que determina qué recursos necesitan reserva y qué demandas tienen prioridad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: propósito operativo que determina qué recursos necesitan reserva y qué demandas tienen prioridad?",
+        "En «Decisión técnica», selecciona el concepto descrito así: propósito operativo que determina qué recursos necesitan reserva y qué demandas tienen prioridad."
+      ],
+      "answer_display_es": "misión",
+      "accepted_short_answers_es": [
+        "misión"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "misión"
+      ]
+    },
+    {
+      "id": "ENGINEERING-C088",
+      "unit_id": "ENG-101-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: curso aconsejado respaldado por datos, alternativas y riesgos?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: curso aconsejado respaldado por datos, alternativas y riesgos?",
+        "En «Decisión técnica», selecciona el concepto descrito así: curso aconsejado respaldado por datos, alternativas y riesgos."
+      ],
+      "answer_display_es": "recomendación",
+      "accepted_short_answers_es": [
+        "recomendación"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "recomendación"
+      ]
+    },
+    {
+      "id": "ENGINEERING-C089",
+      "unit_id": "ENG-101-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Decisión técnica»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Decisión técnica»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Decisión técnica»?"
+      ],
+      "answer_display_es": "Briefing al mando.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Briefing al mando."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C090",
+      "unit_id": "ENG-101-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Decisión técnica»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Decisión técnica»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Decisión técnica»?"
+      ],
+      "answer_display_es": "Juicio.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Juicio."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C091",
+      "unit_id": "ENG-101-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: evolución de parámetros en el tiempo que permite detectar degradación antes del fallo?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: evolución de parámetros en el tiempo que permite detectar degradación antes del fallo?",
+        "En «Mantenimiento avanzado», selecciona el concepto descrito así: evolución de parámetros en el tiempo que permite detectar degradación antes del fallo."
+      ],
+      "answer_display_es": "tendencia",
+      "accepted_short_answers_es": [
+        "tendencia"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "tendencia"
+      ]
+    },
+    {
+      "id": "ENGINEERING-C092",
+      "unit_id": "ENG-101-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: acción destinada a reducir probabilidad o impacto de un fallo antes de que ocurra?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: acción destinada a reducir probabilidad o impacto de un fallo antes de que ocurra?",
+        "En «Mantenimiento avanzado», selecciona el concepto descrito así: acción destinada a reducir probabilidad o impacto de un fallo antes de que ocurra."
+      ],
+      "answer_display_es": "prevención",
+      "accepted_short_answers_es": [
+        "prevención"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "prevención"
+      ]
+    },
+    {
+      "id": "ENGINEERING-C093",
+      "unit_id": "ENG-101-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: ordenación de trabajo, recursos y ventanas para mantener disponibilidad sin crear riesgos innecesarios?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: ordenación de trabajo, recursos y ventanas para mantener disponibilidad sin crear riesgos innecesarios?",
+        "En «Mantenimiento avanzado», selecciona el concepto descrito así: ordenación de trabajo, recursos y ventanas para mantener disponibilidad sin crear riesgos innecesarios."
+      ],
+      "answer_display_es": "planificación",
+      "accepted_short_answers_es": [
+        "planificación"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "planificación"
+      ]
+    },
+    {
+      "id": "ENGINEERING-C094",
+      "unit_id": "ENG-101-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Mantenimiento avanzado»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Mantenimiento avanzado»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Mantenimiento avanzado»?"
+      ],
+      "answer_display_es": "Plan de mantenimiento.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Plan de mantenimiento."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C095",
+      "unit_id": "ENG-101-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Mantenimiento avanzado»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Mantenimiento avanzado»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Mantenimiento avanzado»?"
+      ],
+      "answer_display_es": "Revisión.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Revisión."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C096",
+      "unit_id": "ENG-101-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio profesional guía la actuación en «Mantenimiento avanzado»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio profesional guía la actuación en «Mantenimiento avanzado»?",
+        "Repaso de rama: ¿Qué criterio profesional guía la actuación en «Mantenimiento avanzado»?"
+      ],
+      "answer_display_es": "Ingeniería debe diagnosticar antes de intervenir, proteger al personal y verificar cualquier restauración antes de declarar capacidad recuperada.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Ingeniería debe diagnosticar antes de intervenir, proteger al personal y verificar cualquier restauración antes de declarar capacidad recuperada."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C097",
+      "unit_id": "ENG-102-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: necesidad de energía o capacidad creada por una fase de misión o por otros sistemas?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: necesidad de energía o capacidad creada por una fase de misión o por otros sistemas?",
+        "En «Misión completa», selecciona el concepto descrito así: necesidad de energía o capacidad creada por una fase de misión o por otros sistemas."
+      ],
+      "answer_display_es": "demanda",
+      "accepted_short_answers_es": [
+        "demanda"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "demanda"
+      ]
+    },
+    {
+      "id": "ENGINEERING-C098",
+      "unit_id": "ENG-102-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: capacidad conservada para picos, contingencias y recuperación?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: capacidad conservada para picos, contingencias y recuperación?",
+        "En «Misión completa», selecciona el concepto descrito así: capacidad conservada para picos, contingencias y recuperación."
+      ],
+      "answer_display_es": "reservas",
+      "accepted_short_answers_es": [
+        "reservas"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "reservas"
+      ]
+    },
+    {
+      "id": "ENGINEERING-C099",
+      "unit_id": "ENG-102-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: estado deliberado de recursos y sistemas preparado para una fase concreta de misión?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: estado deliberado de recursos y sistemas preparado para una fase concreta de misión?",
+        "En «Misión completa», selecciona el concepto descrito así: estado deliberado de recursos y sistemas preparado para una fase concreta de misión."
+      ],
+      "answer_display_es": "configuración",
+      "accepted_short_answers_es": [
+        "configuración"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "configuración"
+      ]
+    },
+    {
+      "id": "ENGINEERING-C100",
+      "unit_id": "ENG-102-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: mantenimiento del plan y de la picture durante una operación prolongada y entre relevos?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: mantenimiento del plan y de la picture durante una operación prolongada y entre relevos?",
+        "En «Misión completa», selecciona el concepto descrito así: mantenimiento del plan y de la picture durante una operación prolongada y entre relevos."
+      ],
+      "answer_display_es": "continuidad",
+      "accepted_short_answers_es": [
+        "continuidad"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "continuidad"
+      ]
+    },
+    {
+      "id": "ENGINEERING-C101",
+      "unit_id": "ENG-102-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Misión completa»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Misión completa»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Misión completa»?"
+      ],
+      "answer_display_es": "Operar misión.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Operar misión."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C102",
+      "unit_id": "ENG-102-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Misión completa»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Misión completa»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Misión completa»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C103",
+      "unit_id": "ENG-102-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: varios problemas simultáneos o relacionados que obligan a priorizar por seguridad y dependencias?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: varios problemas simultáneos o relacionados que obligan a priorizar por seguridad y dependencias?",
+        "En «Crisis técnica», selecciona el concepto descrito así: varios problemas simultáneos o relacionados que obligan a priorizar por seguridad y dependencias."
+      ],
+      "answer_display_es": "fallos múltiples",
+      "accepted_short_answers_es": [
+        "fallos múltiples"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "fallos múltiples"
+      ]
+    },
+    {
+      "id": "ENGINEERING-C104",
+      "unit_id": "ENG-102-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: técnicos disponibles considerados por competencia, ubicación, carga y seguridad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: técnicos disponibles considerados por competencia, ubicación, carga y seguridad?",
+        "En «Crisis técnica», selecciona el concepto descrito así: técnicos disponibles considerados por competencia, ubicación, carga y seguridad."
+      ],
+      "answer_display_es": "personal",
+      "accepted_short_answers_es": [
+        "personal"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "personal"
+      ]
+    },
+    {
+      "id": "ENGINEERING-C105",
+      "unit_id": "ENG-102-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: orden relativo entre seguridad de vuelo, misión y otras demandas cuando no pueden atenderse simultáneamente?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: orden relativo entre seguridad de vuelo, misión y otras demandas cuando no pueden atenderse simultáneamente?",
+        "En «Crisis técnica», selecciona el concepto descrito así: orden relativo entre seguridad de vuelo, misión y otras demandas cuando no pueden atenderse simultáneamente."
+      ],
+      "answer_display_es": "prioridad",
+      "accepted_short_answers_es": [
+        "prioridad"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "prioridad"
+      ]
+    },
+    {
+      "id": "ENGINEERING-C106",
+      "unit_id": "ENG-102-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Crisis técnica»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Crisis técnica»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Crisis técnica»?"
+      ],
+      "answer_display_es": "Escenario complejo.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Escenario complejo."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C107",
+      "unit_id": "ENG-102-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Crisis técnica»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Crisis técnica»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Crisis técnica»?"
+      ],
+      "answer_display_es": "Juicio.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Juicio."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C108",
+      "unit_id": "ENG-102-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio profesional guía la actuación en «Crisis técnica»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio profesional guía la actuación en «Crisis técnica»?",
+        "Repaso de rama: ¿Qué criterio profesional guía la actuación en «Crisis técnica»?"
+      ],
+      "answer_display_es": "Ingeniería debe diagnosticar antes de intervenir, proteger al personal y verificar cualquier restauración antes de declarar capacidad recuperada.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Ingeniería debe diagnosticar antes de intervenir, proteger al personal y verificar cualquier restauración antes de declarar capacidad recuperada."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C109",
+      "unit_id": "ENG-102-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: recuperación controlada de un servicio con verificación antes de declararlo disponible?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: recuperación controlada de un servicio con verificación antes de declararlo disponible?",
+        "En «Recuperación», selecciona el concepto descrito así: recuperación controlada de un servicio con verificación antes de declararlo disponible."
+      ],
+      "answer_display_es": "restauración",
+      "accepted_short_answers_es": [
+        "restauración"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "restauración"
+      ]
+    },
+    {
+      "id": "ENGINEERING-C110",
+      "unit_id": "ENG-102-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: comprobación funcional tras una intervención para confirmar que el sistema hace lo esperado y no introduce un riesgo nuevo?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: comprobación funcional tras una intervención para confirmar que el sistema hace lo esperado y no introduce un riesgo nuevo?",
+        "En «Recuperación», selecciona el concepto descrito así: comprobación funcional tras una intervención para confirmar que el sistema hace lo esperado y no introduce un riesgo nuevo."
+      ],
+      "answer_display_es": "verificación",
+      "accepted_short_answers_es": [
+        "verificación"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "verificación"
+      ]
+    },
+    {
+      "id": "ENGINEERING-C111",
+      "unit_id": "ENG-102-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: registros cronológicos de órdenes, parámetros, eventos y decisiones necesarios para continuidad y revisión?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: registros cronológicos de órdenes, parámetros, eventos y decisiones necesarios para continuidad y revisión?",
+        "En «Recuperación», selecciona el concepto descrito así: registros cronológicos de órdenes, parámetros, eventos y decisiones necesarios para continuidad y revisión."
+      ],
+      "answer_display_es": "logs",
+      "accepted_short_answers_es": [
+        "logs"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "logs"
+      ]
+    },
+    {
+      "id": "ENGINEERING-C112",
+      "unit_id": "ENG-102-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Recuperación»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Recuperación»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Recuperación»?"
+      ],
+      "answer_display_es": "Cerrar incidente.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Cerrar incidente."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C113",
+      "unit_id": "ENG-102-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Recuperación»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Recuperación»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Recuperación»?"
+      ],
+      "answer_display_es": "Práctica.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Práctica."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C114",
+      "unit_id": "ENG-102-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio profesional guía la actuación en «Recuperación»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio profesional guía la actuación en «Recuperación»?",
+        "Repaso de rama: ¿Qué criterio profesional guía la actuación en «Recuperación»?"
+      ],
+      "answer_display_es": "Ingeniería debe diagnosticar antes de intervenir, proteger al personal y verificar cualquier restauración antes de declarar capacidad recuperada.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Ingeniería debe diagnosticar antes de intervenir, proteger al personal y verificar cualquier restauración antes de declarar capacidad recuperada."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C115",
+      "unit_id": "ENG-102-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: descripción actual y verificable de capacidad, configuración, degradaciones y acciones en curso?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: descripción actual y verificable de capacidad, configuración, degradaciones y acciones en curso?",
+        "En «Handoff de Ingeniería», selecciona el concepto descrito así: descripción actual y verificable de capacidad, configuración, degradaciones y acciones en curso."
+      ],
+      "answer_display_es": "estado",
+      "accepted_short_answers_es": [
+        "estado"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "estado"
+      ]
+    },
+    {
+      "id": "ENGINEERING-C116",
+      "unit_id": "ENG-102-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: ETA se aplica en Ingeniería como una variable observable de «Handoff de Ingeniería»: debe poder medirse o describirse, relacionarse con el riesgo y convertirse en una decisión o recomendación concreta?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: ETA se aplica en Ingeniería como una variable observable de «Handoff de Ingeniería»: debe poder medirse o describirse, relacionarse con el riesgo y convertirse en una decisión o recomendación concreta?",
+        "En «Handoff de Ingeniería», selecciona el concepto descrito así: ETA se aplica en Ingeniería como una variable observable de «Handoff de Ingeniería»: debe poder medirse o describirse, relacionarse con el riesgo y convertirse en una decisión o recomendación concreta."
+      ],
+      "answer_display_es": "ETA",
+      "accepted_short_answers_es": [
+        "ETA"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "ETA"
+      ]
+    },
+    {
+      "id": "ENGINEERING-C117",
+      "unit_id": "ENG-102-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: amenazas plausibles a seguridad o misión que deben identificarse y reevaluarse?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: amenazas plausibles a seguridad o misión que deben identificarse y reevaluarse?",
+        "En «Handoff de Ingeniería», selecciona el concepto descrito así: amenazas plausibles a seguridad o misión que deben identificarse y reevaluarse."
+      ],
+      "answer_display_es": "riesgos",
+      "accepted_short_answers_es": [
+        "riesgos"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "riesgos"
+      ]
+    },
+    {
+      "id": "ENGINEERING-C118",
+      "unit_id": "ENG-102-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: acciones abiertas con responsable, prioridad y condición prevista de cierre?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: acciones abiertas con responsable, prioridad y condición prevista de cierre?",
+        "En «Handoff de Ingeniería», selecciona el concepto descrito así: acciones abiertas con responsable, prioridad y condición prevista de cierre."
+      ],
+      "answer_display_es": "pendientes",
+      "accepted_short_answers_es": [
+        "pendientes"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "pendientes"
+      ]
+    },
+    {
+      "id": "ENGINEERING-C119",
+      "unit_id": "ENG-102-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Handoff de Ingeniería»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Handoff de Ingeniería»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Handoff de Ingeniería»?"
+      ],
+      "answer_display_es": "Relevo profesional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Relevo profesional."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C120",
+      "unit_id": "ENG-102-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Handoff de Ingeniería»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Handoff de Ingeniería»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Handoff de Ingeniería»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
     }
   ],
-  "legacy_year4_questions": [
-    {
-      "id": "ENGINEERING-Q037",
-      "course_id": "ENG-101",
-      "unit_id": "ENG-101-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica interdependencias desde la perspectiva de Ingeniería.",
-      "answer_key_es": [
-        "interdependencias",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "ENGINEERING-Q038",
-      "course_id": "ENG-101",
-      "unit_id": "ENG-101-U01",
-      "type": "scenario",
-      "prompt_es": "Caso de clase. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "ENGINEERING-Q039",
-      "course_id": "ENG-101",
-      "unit_id": "ENG-101-U01",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Sistemas complejos para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "ENGINEERING-Q040",
-      "course_id": "ENG-101",
-      "unit_id": "ENG-101-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica equipo desde la perspectiva de Ingeniería.",
-      "answer_key_es": [
-        "equipo",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "ENGINEERING-Q041",
-      "course_id": "ENG-101",
-      "unit_id": "ENG-101-U02",
-      "type": "scenario",
-      "prompt_es": "Dirigir reparación. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "ENGINEERING-Q042",
-      "course_id": "ENG-101",
-      "unit_id": "ENG-101-U02",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Supervisión técnica para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "ENGINEERING-Q043",
-      "course_id": "ENG-101",
-      "unit_id": "ENG-101-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica opciones desde la perspectiva de Ingeniería.",
-      "answer_key_es": [
-        "opciones",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "ENGINEERING-Q044",
-      "course_id": "ENG-101",
-      "unit_id": "ENG-101-U03",
-      "type": "scenario",
-      "prompt_es": "Briefing al mando. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "ENGINEERING-Q045",
-      "course_id": "ENG-101",
-      "unit_id": "ENG-101-U03",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Decisión técnica para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "ENGINEERING-Q046",
-      "course_id": "ENG-101",
-      "unit_id": "ENG-101-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica tendencia desde la perspectiva de Ingeniería.",
-      "answer_key_es": [
-        "tendencia",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "ENGINEERING-Q047",
-      "course_id": "ENG-101",
-      "unit_id": "ENG-101-U04",
-      "type": "scenario",
-      "prompt_es": "Plan de mantenimiento. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "ENGINEERING-Q048",
-      "course_id": "ENG-101",
-      "unit_id": "ENG-101-U04",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Mantenimiento avanzado para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "ENGINEERING-Q049",
-      "course_id": "ENG-102",
-      "unit_id": "ENG-102-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica demanda desde la perspectiva de Ingeniería.",
-      "answer_key_es": [
-        "demanda",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "ENGINEERING-Q050",
-      "course_id": "ENG-102",
-      "unit_id": "ENG-102-U01",
-      "type": "scenario",
-      "prompt_es": "Operar misión. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "ENGINEERING-Q051",
-      "course_id": "ENG-102",
-      "unit_id": "ENG-102-U01",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Misión completa para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "ENGINEERING-Q052",
-      "course_id": "ENG-102",
-      "unit_id": "ENG-102-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica fallos múltiples desde la perspectiva de Ingeniería.",
-      "answer_key_es": [
-        "fallos múltiples",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "ENGINEERING-Q053",
-      "course_id": "ENG-102",
-      "unit_id": "ENG-102-U02",
-      "type": "scenario",
-      "prompt_es": "Escenario complejo. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "ENGINEERING-Q054",
-      "course_id": "ENG-102",
-      "unit_id": "ENG-102-U02",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Crisis técnica para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "ENGINEERING-Q055",
-      "course_id": "ENG-102",
-      "unit_id": "ENG-102-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica restauración desde la perspectiva de Ingeniería.",
-      "answer_key_es": [
-        "restauración",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "ENGINEERING-Q056",
-      "course_id": "ENG-102",
-      "unit_id": "ENG-102-U03",
-      "type": "scenario",
-      "prompt_es": "Cerrar incidente. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "ENGINEERING-Q057",
-      "course_id": "ENG-102",
-      "unit_id": "ENG-102-U03",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Recuperación para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "ENGINEERING-Q058",
-      "course_id": "ENG-102",
-      "unit_id": "ENG-102-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica estado desde la perspectiva de Ingeniería.",
-      "answer_key_es": [
-        "estado",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "ENGINEERING-Q059",
-      "course_id": "ENG-102",
-      "unit_id": "ENG-102-U04",
-      "type": "scenario",
-      "prompt_es": "Relevo profesional. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "ENGINEERING-Q060",
-      "course_id": "ENG-102",
-      "unit_id": "ENG-102-U04",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Handoff de Ingeniería para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    }
-  ]
+  "year4_courses": [
+    "ENG-101",
+    "ENG-102"
+  ],
+  "year4_status": "developed_and_synced_v2_1"
 }

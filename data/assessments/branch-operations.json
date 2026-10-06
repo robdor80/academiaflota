@@ -1,8 +1,8 @@
 {
   "schema_version": "2.1.0",
   "branch_id": "operations",
-  "status": "concept_driven_autocorrectable_v2_1",
-  "scope": "year3_201_203_only",
+  "status": "developed_concept_driven_autocorrectable_v2_1",
+  "scope": "year3_and_year4_all_branch_stages",
   "source_bank": "question_bank_v1_0.json",
   "year3_courses": [
     "OPR-201",
@@ -1287,312 +1287,833 @@
       "answer_key_es": [
         "comunicación preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes."
       ]
+    },
+    {
+      "id": "OPERATIONS-C073",
+      "unit_id": "OPR-101-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: propósito operativo que determina qué recursos necesitan reserva y qué demandas tienen prioridad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: propósito operativo que determina qué recursos necesitan reserva y qué demandas tienen prioridad?",
+        "En «Planificación de recursos», selecciona el concepto descrito así: propósito operativo que determina qué recursos necesitan reserva y qué demandas tienen prioridad."
+      ],
+      "answer_display_es": "misión",
+      "accepted_short_answers_es": [
+        "misión"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "misión"
+      ]
+    },
+    {
+      "id": "OPERATIONS-C074",
+      "unit_id": "OPR-101-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: capacidad no comprometida que se conserva para contingencias y degradaciones?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: capacidad no comprometida que se conserva para contingencias y degradaciones?",
+        "En «Planificación de recursos», selecciona el concepto descrito así: capacidad no comprometida que se conserva para contingencias y degradaciones."
+      ],
+      "answer_display_es": "reserva",
+      "accepted_short_answers_es": [
+        "reserva"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "reserva"
+      ]
+    },
+    {
+      "id": "OPERATIONS-C075",
+      "unit_id": "OPR-101-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: combinación de probabilidad, impacto y exposición comparada con misión, alternativas y autoridad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: combinación de probabilidad, impacto y exposición comparada con misión, alternativas y autoridad?",
+        "En «Planificación de recursos», selecciona el concepto descrito así: combinación de probabilidad, impacto y exposición comparada con misión, alternativas y autoridad."
+      ],
+      "answer_display_es": "riesgo",
+      "accepted_short_answers_es": [
+        "riesgo"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "riesgo"
+      ]
+    },
+    {
+      "id": "OPERATIONS-C076",
+      "unit_id": "OPR-101-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: plan alternativo preparado para una desviación concreta, con condición de activación?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: plan alternativo preparado para una desviación concreta, con condición de activación?",
+        "En «Planificación de recursos», selecciona el concepto descrito así: plan alternativo preparado para una desviación concreta, con condición de activación."
+      ],
+      "answer_display_es": "contingencia",
+      "accepted_short_answers_es": [
+        "contingencia"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "contingencia"
+      ]
+    },
+    {
+      "id": "OPERATIONS-C077",
+      "unit_id": "OPR-101-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Planificación de recursos»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Planificación de recursos»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Planificación de recursos»?"
+      ],
+      "answer_display_es": "Plan completo.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Plan completo."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C078",
+      "unit_id": "OPR-101-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Planificación de recursos»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Planificación de recursos»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Planificación de recursos»?"
+      ],
+      "answer_display_es": "Revisión.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Revisión."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C079",
+      "unit_id": "OPR-101-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: personas disponibles consideradas por rol, competencia, carga y capacidad de relevo; supervisar exige adaptar el control al riesgo y experiencia?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: personas disponibles consideradas por rol, competencia, carga y capacidad de relevo; supervisar exige adaptar el control al riesgo y experiencia?",
+        "En «Supervisión de Ops», selecciona el concepto descrito así: personas disponibles consideradas por rol, competencia, carga y capacidad de relevo; supervisar exige adaptar el control al riesgo y experiencia."
+      ],
+      "answer_display_es": "equipo",
+      "accepted_short_answers_es": [
+        "equipo"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "equipo"
+      ]
+    },
+    {
+      "id": "OPERATIONS-C080",
+      "unit_id": "OPR-101-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: demandas de recursos o capacidad que deben registrar origen, urgencia, impacto y responsable?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: demandas de recursos o capacidad que deben registrar origen, urgencia, impacto y responsable?",
+        "En «Supervisión de Ops», selecciona el concepto descrito así: demandas de recursos o capacidad que deben registrar origen, urgencia, impacto y responsable."
+      ],
+      "answer_display_es": "peticiones",
+      "accepted_short_answers_es": [
+        "peticiones"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "peticiones"
+      ]
+    },
+    {
+      "id": "OPERATIONS-C081",
+      "unit_id": "OPR-101-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: orden explícito entre demandas competidoras según seguridad, misión, urgencia y efecto?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: orden explícito entre demandas competidoras según seguridad, misión, urgencia y efecto?",
+        "En «Supervisión de Ops», selecciona el concepto descrito así: orden explícito entre demandas competidoras según seguridad, misión, urgencia y efecto."
+      ],
+      "answer_display_es": "prioridades",
+      "accepted_short_answers_es": [
+        "prioridades"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "prioridades"
+      ]
+    },
+    {
+      "id": "OPERATIONS-C082",
+      "unit_id": "OPR-101-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Supervisión de Ops»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Supervisión de Ops»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Supervisión de Ops»?"
+      ],
+      "answer_display_es": "Dirigir turno.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Dirigir turno."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C083",
+      "unit_id": "OPR-101-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Supervisión de Ops»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Supervisión de Ops»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Supervisión de Ops»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C084",
+      "unit_id": "OPR-101-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio profesional guía la actuación en «Supervisión de Ops»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio profesional guía la actuación en «Supervisión de Ops»?",
+        "Repaso de rama: ¿Qué criterio profesional guía la actuación en «Supervisión de Ops»?"
+      ],
+      "answer_display_es": "Operaciones debe hacer visibles conflictos de recursos y mantener una picture de capacidad útil para que mando pueda priorizar.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Operaciones debe hacer visibles conflictos de recursos y mantener una picture de capacidad útil para que mando pueda priorizar."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C085",
+      "unit_id": "OPR-101-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: descripción actual y verificable de capacidad, configuración, degradaciones y acciones en curso?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: descripción actual y verificable de capacidad, configuración, degradaciones y acciones en curso?",
+        "En «Interfaz con mando», selecciona el concepto descrito así: descripción actual y verificable de capacidad, configuración, degradaciones y acciones en curso."
+      ],
+      "answer_display_es": "estado",
+      "accepted_short_answers_es": [
+        "estado"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "estado"
+      ]
+    },
+    {
+      "id": "OPERATIONS-C086",
+      "unit_id": "OPR-101-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: cursos de acción viables comparados por coste, riesgo, tiempo y consecuencias?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: cursos de acción viables comparados por coste, riesgo, tiempo y consecuencias?",
+        "En «Interfaz con mando», selecciona el concepto descrito así: cursos de acción viables comparados por coste, riesgo, tiempo y consecuencias."
+      ],
+      "answer_display_es": "opciones",
+      "accepted_short_answers_es": [
+        "opciones"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "opciones"
+      ]
+    },
+    {
+      "id": "OPERATIONS-C087",
+      "unit_id": "OPR-101-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: curso aconsejado respaldado por datos, alternativas y riesgos?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: curso aconsejado respaldado por datos, alternativas y riesgos?",
+        "En «Interfaz con mando», selecciona el concepto descrito así: curso aconsejado respaldado por datos, alternativas y riesgos."
+      ],
+      "answer_display_es": "recomendación",
+      "accepted_short_answers_es": [
+        "recomendación"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "recomendación"
+      ]
+    },
+    {
+      "id": "OPERATIONS-C088",
+      "unit_id": "OPR-101-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Interfaz con mando»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Interfaz con mando»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Interfaz con mando»?"
+      ],
+      "answer_display_es": "Briefing.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Briefing."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C089",
+      "unit_id": "OPR-101-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Interfaz con mando»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Interfaz con mando»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Interfaz con mando»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C090",
+      "unit_id": "OPR-101-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio profesional guía la actuación en «Interfaz con mando»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio profesional guía la actuación en «Interfaz con mando»?",
+        "Repaso de rama: ¿Qué criterio profesional guía la actuación en «Interfaz con mando»?"
+      ],
+      "answer_display_es": "Operaciones debe hacer visibles conflictos de recursos y mantener una picture de capacidad útil para que mando pueda priorizar.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Operaciones debe hacer visibles conflictos de recursos y mantener una picture de capacidad útil para que mando pueda priorizar."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C091",
+      "unit_id": "OPR-101-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: pérdida parcial de capacidad que obliga a recalcular recursos y servicios soportables?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: pérdida parcial de capacidad que obliga a recalcular recursos y servicios soportables?",
+        "En «Continuidad de servicios», selecciona el concepto descrito así: pérdida parcial de capacidad que obliga a recalcular recursos y servicios soportables."
+      ],
+      "answer_display_es": "degradación",
+      "accepted_short_answers_es": [
+        "degradación"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "degradación"
+      ]
+    },
+    {
+      "id": "OPERATIONS-C092",
+      "unit_id": "OPR-101-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: recuperación controlada de un servicio con verificación antes de declararlo disponible?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: recuperación controlada de un servicio con verificación antes de declararlo disponible?",
+        "En «Continuidad de servicios», selecciona el concepto descrito así: recuperación controlada de un servicio con verificación antes de declararlo disponible."
+      ],
+      "answer_display_es": "restauración",
+      "accepted_short_answers_es": [
+        "restauración"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "restauración"
+      ]
+    },
+    {
+      "id": "OPERATIONS-C093",
+      "unit_id": "OPR-101-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: evidencia factual de asignaciones, cambios, decisiones y resultados?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: evidencia factual de asignaciones, cambios, decisiones y resultados?",
+        "En «Continuidad de servicios», selecciona el concepto descrito así: evidencia factual de asignaciones, cambios, decisiones y resultados."
+      ],
+      "answer_display_es": "registro",
+      "accepted_short_answers_es": [
+        "registro"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "registro"
+      ]
+    },
+    {
+      "id": "OPERATIONS-C094",
+      "unit_id": "OPR-101-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Continuidad de servicios»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Continuidad de servicios»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Continuidad de servicios»?"
+      ],
+      "answer_display_es": "Caso avanzado.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Caso avanzado."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C095",
+      "unit_id": "OPR-101-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Continuidad de servicios»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Continuidad de servicios»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Continuidad de servicios»?"
+      ],
+      "answer_display_es": "Práctica.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Práctica."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C096",
+      "unit_id": "OPR-101-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio profesional guía la actuación en «Continuidad de servicios»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio profesional guía la actuación en «Continuidad de servicios»?",
+        "Repaso de rama: ¿Qué criterio profesional guía la actuación en «Continuidad de servicios»?"
+      ],
+      "answer_display_es": "Operaciones debe hacer visibles conflictos de recursos y mantener una picture de capacidad útil para que mando pueda priorizar.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Operaciones debe hacer visibles conflictos de recursos y mantener una picture de capacidad útil para que mando pueda priorizar."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C097",
+      "unit_id": "OPR-102-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: estado deliberado de recursos y sistemas preparado para una fase concreta de misión?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: estado deliberado de recursos y sistemas preparado para una fase concreta de misión?",
+        "En «Misión prolongada», selecciona el concepto descrito así: estado deliberado de recursos y sistemas preparado para una fase concreta de misión."
+      ],
+      "answer_display_es": "configuración",
+      "accepted_short_answers_es": [
+        "configuración"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "configuración"
+      ]
+    },
+    {
+      "id": "OPERATIONS-C098",
+      "unit_id": "OPR-102-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: ritmo al que una operación utiliza recursos; permite prever agotamiento y necesidad de reconfigurar?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: ritmo al que una operación utiliza recursos; permite prever agotamiento y necesidad de reconfigurar?",
+        "En «Misión prolongada», selecciona el concepto descrito así: ritmo al que una operación utiliza recursos; permite prever agotamiento y necesidad de reconfigurar."
+      ],
+      "answer_display_es": "consumo",
+      "accepted_short_answers_es": [
+        "consumo"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "consumo"
+      ]
+    },
+    {
+      "id": "OPERATIONS-C099",
+      "unit_id": "OPR-102-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: variaciones de entorno, misión o nave que obligan a recalcular navegación y márgenes?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: variaciones de entorno, misión o nave que obligan a recalcular navegación y márgenes?",
+        "En «Misión prolongada», selecciona el concepto descrito así: variaciones de entorno, misión o nave que obligan a recalcular navegación y márgenes."
+      ],
+      "answer_display_es": "cambios",
+      "accepted_short_answers_es": [
+        "cambios"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "cambios"
+      ]
+    },
+    {
+      "id": "OPERATIONS-C100",
+      "unit_id": "OPR-102-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Misión prolongada»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Misión prolongada»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Misión prolongada»?"
+      ],
+      "answer_display_es": "Operar misión.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Operar misión."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C101",
+      "unit_id": "OPR-102-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Misión prolongada»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Misión prolongada»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Misión prolongada»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C102",
+      "unit_id": "OPR-102-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio profesional guía la actuación en «Misión prolongada»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio profesional guía la actuación en «Misión prolongada»?",
+        "Repaso de rama: ¿Qué criterio profesional guía la actuación en «Misión prolongada»?"
+      ],
+      "answer_display_es": "Operaciones debe hacer visibles conflictos de recursos y mantener una picture de capacidad útil para que mando pueda priorizar.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Operaciones debe hacer visibles conflictos de recursos y mantener una picture de capacidad útil para que mando pueda priorizar."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C103",
+      "unit_id": "OPR-102-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: situación en que los recursos disponibles no permiten satisfacer todas las demandas simultáneamente?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: situación en que los recursos disponibles no permiten satisfacer todas las demandas simultáneamente?",
+        "En «Crisis de recursos», selecciona el concepto descrito así: situación en que los recursos disponibles no permiten satisfacer todas las demandas simultáneamente."
+      ],
+      "answer_display_es": "escasez",
+      "accepted_short_answers_es": [
+        "escasez"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "escasez"
+      ]
+    },
+    {
+      "id": "OPERATIONS-C104",
+      "unit_id": "OPR-102-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: orden relativo entre seguridad de vuelo, misión y otras demandas cuando no pueden atenderse simultáneamente?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: orden relativo entre seguridad de vuelo, misión y otras demandas cuando no pueden atenderse simultáneamente?",
+        "En «Crisis de recursos», selecciona el concepto descrito así: orden relativo entre seguridad de vuelo, misión y otras demandas cuando no pueden atenderse simultáneamente."
+      ],
+      "answer_display_es": "prioridad",
+      "accepted_short_answers_es": [
+        "prioridad"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "prioridad"
+      ]
+    },
+    {
+      "id": "OPERATIONS-C105",
+      "unit_id": "OPR-102-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: magnitud de las consecuencias que tendrá aceptar o rechazar una demanda?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: magnitud de las consecuencias que tendrá aceptar o rechazar una demanda?",
+        "En «Crisis de recursos», selecciona el concepto descrito así: magnitud de las consecuencias que tendrá aceptar o rechazar una demanda."
+      ],
+      "answer_display_es": "impacto",
+      "accepted_short_answers_es": [
+        "impacto"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "impacto"
+      ]
+    },
+    {
+      "id": "OPERATIONS-C106",
+      "unit_id": "OPR-102-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Crisis de recursos»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Crisis de recursos»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Crisis de recursos»?"
+      ],
+      "answer_display_es": "Escenario.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Escenario."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C107",
+      "unit_id": "OPR-102-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Crisis de recursos»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Crisis de recursos»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Crisis de recursos»?"
+      ],
+      "answer_display_es": "Juicio.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Juicio."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C108",
+      "unit_id": "OPR-102-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio profesional guía la actuación en «Crisis de recursos»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio profesional guía la actuación en «Crisis de recursos»?",
+        "Repaso de rama: ¿Qué criterio profesional guía la actuación en «Crisis de recursos»?"
+      ],
+      "answer_display_es": "Operaciones debe hacer visibles conflictos de recursos y mantener una picture de capacidad útil para que mando pueda priorizar.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Operaciones debe hacer visibles conflictos de recursos y mantener una picture de capacidad útil para que mando pueda priorizar."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C109",
+      "unit_id": "OPR-102-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: grupos o medios coordinados para prestar apoyo con capacidad y disponibilidad limitadas?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: grupos o medios coordinados para prestar apoyo con capacidad y disponibilidad limitadas?",
+        "En «Coordinación de soporte», selecciona el concepto descrito así: grupos o medios coordinados para prestar apoyo con capacidad y disponibilidad limitadas."
+      ],
+      "answer_display_es": "equipos",
+      "accepted_short_answers_es": [
+        "equipos"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "equipos"
+      ]
+    },
+    {
+      "id": "OPERATIONS-C110",
+      "unit_id": "OPR-102-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: activos de transporte y operación local cuya asignación consume tripulación, tiempo y capacidad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: activos de transporte y operación local cuya asignación consume tripulación, tiempo y capacidad?",
+        "En «Coordinación de soporte», selecciona el concepto descrito así: activos de transporte y operación local cuya asignación consume tripulación, tiempo y capacidad."
+      ],
+      "answer_display_es": "lanzaderas",
+      "accepted_short_answers_es": [
+        "lanzaderas"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "lanzaderas"
+      ]
+    },
+    {
+      "id": "OPERATIONS-C111",
+      "unit_id": "OPR-102-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: capacidad de movimiento de personas o material sujeta a disponibilidad, alcance y condiciones?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: capacidad de movimiento de personas o material sujeta a disponibilidad, alcance y condiciones?",
+        "En «Coordinación de soporte», selecciona el concepto descrito así: capacidad de movimiento de personas o material sujeta a disponibilidad, alcance y condiciones."
+      ],
+      "answer_display_es": "transportes",
+      "accepted_short_answers_es": [
+        "transportes"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "transportes"
+      ]
+    },
+    {
+      "id": "OPERATIONS-C112",
+      "unit_id": "OPR-102-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: áreas especialistas con necesidades propias que Operaciones integra sin sustituir su criterio técnico?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: áreas especialistas con necesidades propias que Operaciones integra sin sustituir su criterio técnico?",
+        "En «Coordinación de soporte», selecciona el concepto descrito así: áreas especialistas con necesidades propias que Operaciones integra sin sustituir su criterio técnico."
+      ],
+      "answer_display_es": "departamentos",
+      "accepted_short_answers_es": [
+        "departamentos"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "departamentos"
+      ]
+    },
+    {
+      "id": "OPERATIONS-C113",
+      "unit_id": "OPR-102-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Coordinación de soporte»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Coordinación de soporte»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Coordinación de soporte»?"
+      ],
+      "answer_display_es": "Caso integrado.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Caso integrado."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C114",
+      "unit_id": "OPR-102-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Coordinación de soporte»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Coordinación de soporte»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Coordinación de soporte»?"
+      ],
+      "answer_display_es": "Teamwork.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Teamwork."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C115",
+      "unit_id": "OPR-102-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: descripción actual y verificable de capacidad, configuración, degradaciones y acciones en curso?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: descripción actual y verificable de capacidad, configuración, degradaciones y acciones en curso?",
+        "En «Handoff avanzado», selecciona el concepto descrito así: descripción actual y verificable de capacidad, configuración, degradaciones y acciones en curso."
+      ],
+      "answer_display_es": "estado",
+      "accepted_short_answers_es": [
+        "estado"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "estado"
+      ]
+    },
+    {
+      "id": "OPERATIONS-C116",
+      "unit_id": "OPR-102-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: acciones abiertas con responsable, prioridad y condición prevista de cierre?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: acciones abiertas con responsable, prioridad y condición prevista de cierre?",
+        "En «Handoff avanzado», selecciona el concepto descrito así: acciones abiertas con responsable, prioridad y condición prevista de cierre."
+      ],
+      "answer_display_es": "pendientes",
+      "accepted_short_answers_es": [
+        "pendientes"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "pendientes"
+      ]
+    },
+    {
+      "id": "OPERATIONS-C117",
+      "unit_id": "OPR-102-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: amenazas plausibles a seguridad o misión que deben identificarse y reevaluarse?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: amenazas plausibles a seguridad o misión que deben identificarse y reevaluarse?",
+        "En «Handoff avanzado», selecciona el concepto descrito así: amenazas plausibles a seguridad o misión que deben identificarse y reevaluarse."
+      ],
+      "answer_display_es": "riesgos",
+      "accepted_short_answers_es": [
+        "riesgos"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "riesgos"
+      ]
+    },
+    {
+      "id": "OPERATIONS-C118",
+      "unit_id": "OPR-102-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: instrucciones vigentes que deben entregarse con prioridad, alcance, emisor y condiciones?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: instrucciones vigentes que deben entregarse con prioridad, alcance, emisor y condiciones?",
+        "En «Handoff avanzado», selecciona el concepto descrito así: instrucciones vigentes que deben entregarse con prioridad, alcance, emisor y condiciones."
+      ],
+      "answer_display_es": "órdenes",
+      "accepted_short_answers_es": [
+        "órdenes"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "órdenes"
+      ]
+    },
+    {
+      "id": "OPERATIONS-C119",
+      "unit_id": "OPR-102-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Handoff avanzado»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Handoff avanzado»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Handoff avanzado»?"
+      ],
+      "answer_display_es": "Relevo profesional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Relevo profesional."
+      ]
+    },
+    {
+      "id": "OPERATIONS-C120",
+      "unit_id": "OPR-102-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Handoff avanzado»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Handoff avanzado»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Handoff avanzado»?"
+      ],
+      "answer_display_es": "Práctica.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Práctica."
+      ]
     }
   ],
-  "legacy_year4_questions": [
-    {
-      "id": "OPERATIONS-Q037",
-      "course_id": "OPR-101",
-      "unit_id": "OPR-101-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica misión desde la perspectiva de Operaciones.",
-      "answer_key_es": [
-        "misión",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "OPERATIONS-Q038",
-      "course_id": "OPR-101",
-      "unit_id": "OPR-101-U01",
-      "type": "scenario",
-      "prompt_es": "Plan completo. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "OPERATIONS-Q039",
-      "course_id": "OPR-101",
-      "unit_id": "OPR-101-U01",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Planificación de recursos para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "OPERATIONS-Q040",
-      "course_id": "OPR-101",
-      "unit_id": "OPR-101-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica equipo desde la perspectiva de Operaciones.",
-      "answer_key_es": [
-        "equipo",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "OPERATIONS-Q041",
-      "course_id": "OPR-101",
-      "unit_id": "OPR-101-U02",
-      "type": "scenario",
-      "prompt_es": "Dirigir turno. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "OPERATIONS-Q042",
-      "course_id": "OPR-101",
-      "unit_id": "OPR-101-U02",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Supervisión de Ops para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "OPERATIONS-Q043",
-      "course_id": "OPR-101",
-      "unit_id": "OPR-101-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica estado desde la perspectiva de Operaciones.",
-      "answer_key_es": [
-        "estado",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "OPERATIONS-Q044",
-      "course_id": "OPR-101",
-      "unit_id": "OPR-101-U03",
-      "type": "scenario",
-      "prompt_es": "Briefing. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "OPERATIONS-Q045",
-      "course_id": "OPR-101",
-      "unit_id": "OPR-101-U03",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Interfaz con mando para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "OPERATIONS-Q046",
-      "course_id": "OPR-101",
-      "unit_id": "OPR-101-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica degradación desde la perspectiva de Operaciones.",
-      "answer_key_es": [
-        "degradación",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "OPERATIONS-Q047",
-      "course_id": "OPR-101",
-      "unit_id": "OPR-101-U04",
-      "type": "scenario",
-      "prompt_es": "Caso avanzado. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "OPERATIONS-Q048",
-      "course_id": "OPR-101",
-      "unit_id": "OPR-101-U04",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Continuidad de servicios para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "OPERATIONS-Q049",
-      "course_id": "OPR-102",
-      "unit_id": "OPR-102-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica configuración desde la perspectiva de Operaciones.",
-      "answer_key_es": [
-        "configuración",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "OPERATIONS-Q050",
-      "course_id": "OPR-102",
-      "unit_id": "OPR-102-U01",
-      "type": "scenario",
-      "prompt_es": "Operar misión. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "OPERATIONS-Q051",
-      "course_id": "OPR-102",
-      "unit_id": "OPR-102-U01",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Misión prolongada para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "OPERATIONS-Q052",
-      "course_id": "OPR-102",
-      "unit_id": "OPR-102-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica escasez desde la perspectiva de Operaciones.",
-      "answer_key_es": [
-        "escasez",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "OPERATIONS-Q053",
-      "course_id": "OPR-102",
-      "unit_id": "OPR-102-U02",
-      "type": "scenario",
-      "prompt_es": "Escenario. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "OPERATIONS-Q054",
-      "course_id": "OPR-102",
-      "unit_id": "OPR-102-U02",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Crisis de recursos para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "OPERATIONS-Q055",
-      "course_id": "OPR-102",
-      "unit_id": "OPR-102-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica equipos desde la perspectiva de Operaciones.",
-      "answer_key_es": [
-        "equipos",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "OPERATIONS-Q056",
-      "course_id": "OPR-102",
-      "unit_id": "OPR-102-U03",
-      "type": "scenario",
-      "prompt_es": "Caso integrado. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "OPERATIONS-Q057",
-      "course_id": "OPR-102",
-      "unit_id": "OPR-102-U03",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Coordinación de soporte para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "OPERATIONS-Q058",
-      "course_id": "OPR-102",
-      "unit_id": "OPR-102-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica estado desde la perspectiva de Operaciones.",
-      "answer_key_es": [
-        "estado",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "OPERATIONS-Q059",
-      "course_id": "OPR-102",
-      "unit_id": "OPR-102-U04",
-      "type": "scenario",
-      "prompt_es": "Relevo profesional. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "OPERATIONS-Q060",
-      "course_id": "OPR-102",
-      "unit_id": "OPR-102-U04",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Handoff avanzado para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    }
-  ]
+  "year4_courses": [
+    "OPR-101",
+    "OPR-102"
+  ],
+  "year4_status": "developed_and_synced_v2_1"
 }

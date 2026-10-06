@@ -1,7 +1,7 @@
 {
   "subject": "Seguridad / Táctica",
   "code": "SECURITY_TACTICAL",
-  "version": "1.2",
+  "version": "1.3",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/branches/security_tactical/branch_curriculum_v1_0.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/branches/security_tactical/MANUAL_v1_0.md",
@@ -631,17 +631,29 @@
       "subtitle": "SEC-101 · Seguridad/Táctica avanzada I",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Seguridad / Táctica** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "equipo",
-            "turnos",
-            "riesgo",
-            "estándares"
+            "**equipo**: personas disponibles consideradas por rol, competencia, carga y capacidad de relevo; supervisar exige adaptar control y apoyo al riesgo",
+            "**turnos**: periodos de responsabilidad operativa que requieren incorporación, desempeño sostenido y relevo formal",
+            "**riesgo**: combinación de probabilidad, impacto y exposición; la respuesta debe ser proporcionada y quedar dentro de autoridad",
+            "**estándares**: criterios mínimos de seguridad y calidad que permiten decidir si una actuación es aceptable y repetible"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se verifica amenaza, entorno, autoridad y reglas aplicables; después se selecciona la respuesta mínima suficiente, se coordina con mando y se conserva evidencia para revisión, relevo y consecuencias posteriores."
         },
         {
           "type": "callout",
@@ -650,38 +662,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Seguridad / Táctica debe distinguir amenaza, riesgo y respuesta autorizada, aplicar proporcionalidad y proteger personas, nave y misión antes de escalar la fuerza."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica equipo desde la perspectiva de Seguridad / Táctica.",
-            "Resuelve: Dirigir servicio.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/security/README.md",
-            "gameplay/ship_operations/bridge_station_model.json",
-            "lore/federation/starfleet/regulations/README.md",
-            "lore/federation/starfleet/prime_directive/prime_directive.json"
-          ]
+          "text": "Evaluación. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -691,16 +678,28 @@
       "subtitle": "SEC-101 · Seguridad/Táctica avanzada I",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Seguridad / Táctica** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "sensores/escudos degradados",
-            "prioridad",
-            "coordinación"
+            "**sensores/escudos degradados**: pérdida parcial de detección o protección que reduce información o margen defensivo y obliga a revisar táctica",
+            "**prioridad**: orden relativo entre amenazas, protección de personas, misión y otras demandas",
+            "**coordinación**: alineación entre seguridad, táctica, mando y otros puestos para que acciones y restricciones sean compatibles"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se verifica amenaza, entorno, autoridad y reglas aplicables; después se selecciona la respuesta mínima suficiente, se coordina con mando y se conserva evidencia para revisión, relevo y consecuencias posteriores."
         },
         {
           "type": "callout",
@@ -709,38 +708,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Seguridad/Táctica debe responder con **autoridad y proporcionalidad**, proteger personas y mantener siempre una vía de desescalada cuando sea compatible con la amenaza."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Práctica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica sensores/escudos degradados desde la perspectiva de Seguridad / Táctica.",
-            "Resuelve: Simulación.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/security/README.md",
-            "gameplay/ship_operations/bridge_station_model.json",
-            "lore/federation/starfleet/regulations/README.md",
-            "lore/federation/starfleet/prime_directive/prime_directive.json"
-          ]
+          "text": "Práctica. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -750,16 +724,28 @@
       "subtitle": "SEC-101 · Seguridad/Táctica avanzada I",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Seguridad / Táctica** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "personal",
-            "instalación",
-            "away team"
+            "**personal**: personas a proteger o emplear consideradas por exposición, competencia, ubicación y capacidad de evacuación",
+            "**instalación**: espacio físico o infraestructura cuya protección exige conocer accesos, zonas críticas, ocupación y rutas de respuesta",
+            "**away team**: equipo desplegado fuera de la unidad que necesita misión, comunicaciones, extracción y límites de autoridad claros"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se verifica amenaza, entorno, autoridad y reglas aplicables; después se selecciona la respuesta mínima suficiente, se coordina con mando y se conserva evidencia para revisión, relevo y consecuencias posteriores."
         },
         {
           "type": "callout",
@@ -768,38 +754,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Seguridad/Táctica debe responder con **autoridad y proporcionalidad**, proteger personas y mantener siempre una vía de desescalada cuando sea compatible con la amenaza."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Revisión."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica personal desde la perspectiva de Seguridad / Táctica.",
-            "Resuelve: Plan avanzado.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/security/README.md",
-            "gameplay/ship_operations/bridge_station_model.json",
-            "lore/federation/starfleet/regulations/README.md",
-            "lore/federation/starfleet/prime_directive/prime_directive.json"
-          ]
+          "text": "Revisión. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -809,16 +770,28 @@
       "subtitle": "SEC-101 · Seguridad/Táctica avanzada I",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Seguridad / Táctica** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "amenaza",
-            "opciones",
-            "consecuencias"
+            "**amenaza**: actor, capacidad o condición con posibilidad de causar daño; debe describirse por evidencia y no por intención asumida",
+            "**opciones**: cursos de acción viables comparados por proporcionalidad, riesgo, tiempo y consecuencias",
+            "**consecuencias**: efectos previsibles o reales sobre personas, misión, relaciones y entorno"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se verifica amenaza, entorno, autoridad y reglas aplicables; después se selecciona la respuesta mínima suficiente, se coordina con mando y se conserva evidencia para revisión, relevo y consecuencias posteriores."
         },
         {
           "type": "callout",
@@ -827,38 +800,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Seguridad/Táctica debe responder con **autoridad y proporcionalidad**, proteger personas y mantener siempre una vía de desescalada cuando sea compatible con la amenaza."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Juicio."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica amenaza desde la perspectiva de Seguridad / Táctica.",
-            "Resuelve: Briefing.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/security/README.md",
-            "gameplay/ship_operations/bridge_station_model.json",
-            "lore/federation/starfleet/regulations/README.md",
-            "lore/federation/starfleet/prime_directive/prime_directive.json"
-          ]
+          "text": "Juicio. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -868,17 +816,29 @@
       "subtitle": "SEC-102 · Seguridad/Táctica avanzada II",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Seguridad / Táctica** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "brief",
-            "reglas",
-            "ejecución",
-            "cierre"
+            "**brief**: síntesis previa de misión, amenaza, reglas, roles, comunicaciones y contingencias",
+            "**reglas**: restricciones de actuación y uso de fuerza que siguen vigentes bajo presión",
+            "**ejecución**: realización del plan con control, comunicación y adaptación proporcional a la situación",
+            "**cierre**: confirmación de seguridad, estado, detenidos o afectados cuando proceda, registro y pendientes"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se verifica amenaza, entorno, autoridad y reglas aplicables; después se selecciona la respuesta mínima suficiente, se coordina con mando y se conserva evidencia para revisión, relevo y consecuencias posteriores."
         },
         {
           "type": "callout",
@@ -887,38 +847,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Seguridad / Táctica debe distinguir amenaza, riesgo y respuesta autorizada, aplicar proporcionalidad y proteger personas, nave y misión antes de escalar la fuerza."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica brief desde la perspectiva de Seguridad / Táctica.",
-            "Resuelve: Operar misión.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/security/README.md",
-            "gameplay/ship_operations/bridge_station_model.json",
-            "lore/federation/starfleet/regulations/README.md",
-            "lore/federation/starfleet/prime_directive/prime_directive.json"
-          ]
+          "text": "Evaluación. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -928,16 +863,28 @@
       "subtitle": "SEC-102 · Seguridad/Táctica avanzada II",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Seguridad / Táctica** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "abordaje",
-            "rehén contextual",
-            "evacuación"
+            "**abordaje**: entrada hostil o no autorizada que requiere proteger personas, sectores críticos y continuidad de mando sin perder proporcionalidad",
+            "**rehén contextual**: situación en la que la seguridad de una persona condiciona opciones; exige información, contención y decisiones proporcionadas al contexto",
+            "**evacuación**: movimiento planificado de personas desde una zona de riesgo a una segura con rutas, prioridad y control de recuento"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se verifica amenaza, entorno, autoridad y reglas aplicables; después se selecciona la respuesta mínima suficiente, se coordina con mando y se conserva evidencia para revisión, relevo y consecuencias posteriores."
         },
         {
           "type": "callout",
@@ -946,38 +893,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Seguridad/Táctica debe responder con **autoridad y proporcionalidad**, proteger personas y mantener siempre una vía de desescalada cuando sea compatible con la amenaza."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Juicio."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica abordaje desde la perspectiva de Seguridad / Táctica.",
-            "Resuelve: Escenario complejo.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/security/README.md",
-            "gameplay/ship_operations/bridge_station_model.json",
-            "lore/federation/starfleet/regulations/README.md",
-            "lore/federation/starfleet/prime_directive/prime_directive.json"
-          ]
+          "text": "Juicio. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -987,16 +909,28 @@
       "subtitle": "SEC-102 · Seguridad/Táctica avanzada II",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Seguridad / Táctica** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "comunicación",
-            "posición",
-            "alternativas"
+            "**comunicación**: intercambio claro que reduce ambigüedad, permite desescalar y mantiene coordinación entre actores",
+            "**posición**: ubicación física o táctica elegida para proteger, observar o controlar sin aumentar innecesariamente el riesgo",
+            "**alternativas**: métodos o fuentes distintas que pueden compensar la pérdida de un sensor o una interpretación dudosa"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se verifica amenaza, entorno, autoridad y reglas aplicables; después se selecciona la respuesta mínima suficiente, se coordina con mando y se conserva evidencia para revisión, relevo y consecuencias posteriores."
         },
         {
           "type": "callout",
@@ -1005,38 +939,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Seguridad/Táctica debe responder con **autoridad y proporcionalidad**, proteger personas y mantener siempre una vía de desescalada cuando sea compatible con la amenaza."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica comunicación desde la perspectiva de Seguridad / Táctica.",
-            "Resuelve: Caso.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/security/README.md",
-            "gameplay/ship_operations/bridge_station_model.json",
-            "lore/federation/starfleet/regulations/README.md",
-            "lore/federation/starfleet/prime_directive/prime_directive.json"
-          ]
+          "text": "Evaluación. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -1046,17 +955,29 @@
       "subtitle": "SEC-102 · Seguridad/Táctica avanzada II",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Seguridad / Táctica** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "amenazas",
-            "estado",
-            "órdenes",
-            "pendientes"
+            "**amenazas**: riesgos activos o potenciales que deben entregarse en el relevo con evidencia, ubicación y estado",
+            "**estado**: situación actual verificable de seguridad, sistemas defensivos, personal y acciones en curso",
+            "**órdenes**: instrucciones vigentes con prioridad, alcance y autoridad emisora",
+            "**pendientes**: acciones abiertas con responsable, prioridad y criterio de cierre"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se verifica amenaza, entorno, autoridad y reglas aplicables; después se selecciona la respuesta mínima suficiente, se coordina con mando y se conserva evidencia para revisión, relevo y consecuencias posteriores."
         },
         {
           "type": "callout",
@@ -1065,43 +986,18 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Seguridad / Táctica debe distinguir amenaza, riesgo y respuesta autorizada, aplicar proporcionalidad y proteger personas, nave y misión antes de escalar la fuerza."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Práctica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica amenazas desde la perspectiva de Seguridad / Táctica.",
-            "Resuelve: Relevo profesional.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/security/README.md",
-            "gameplay/ship_operations/bridge_station_model.json",
-            "lore/federation/starfleet/regulations/README.md",
-            "lore/federation/starfleet/prime_directive/prime_directive.json"
-          ]
+          "text": "Práctica. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     }
   ],
   "year3Status": "developed_content",
   "year3Scope": "201-203",
-  "assessmentModel": "concept_driven_v2_1_year3"
+  "assessmentModel": "concept_driven_v2_1"
 }

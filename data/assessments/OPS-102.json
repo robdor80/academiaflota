@@ -417,6 +417,25 @@
       ]
     },
     {
+      "id": "OPS-102-C036",
+      "unit_id": "OPS-102-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "En «Objetivo principal», ¿qué secuencia profesional debe aplicarse antes de cerrar la actuación?",
+      "web_prompt_variants_es": [
+        "En «Objetivo principal», ¿qué secuencia profesional debe aplicarse antes de cerrar la actuación?",
+        "¿Qué secuencia resume la aplicación profesional enseñada en «Objetivo principal»?"
+      ],
+      "answer_display_es": "distinguir confirmado de incierto · comprobar límites y responsables · ejecutar una opción proporcionada · conservar seguimiento, relevo y debrief",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "distinguir confirmado de incierto",
+        "comprobar límites y responsables",
+        "ejecutar una opción proporcionada",
+        "conservar seguimiento, relevo y debrief"
+      ]
+    },
+    {
       "id": "OPS-102-C024",
       "unit_id": "OPS-102-U05",
       "source_type": "taught_term",

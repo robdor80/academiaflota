@@ -1,7 +1,7 @@
 {
   "subject": "Mando",
   "code": "COMMAND",
-  "version": "1.2",
+  "version": "1.3",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/branches/command/branch_curriculum_v1_0.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/branches/command/MANUAL_v1_0.md",
@@ -629,16 +629,28 @@
       "subtitle": "CMD-101 · Mando avanzado I",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Mando** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "equipo",
-            "estándares",
-            "feedback"
+            "**equipo**: personas disponibles consideradas por rol, competencia, carga y capacidad de relevo; supervisar exige adaptar el control al riesgo y experiencia",
+            "**estándares**: criterios mínimos de seguridad y calidad que permiten decidir si una ejecución es aceptable y repetible",
+            "**feedback**: información específica que conecta una conducta observada con su efecto y con una acción concreta de mejora"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se establece el estado de misión, se confirma quién tiene autoridad, se comparan opciones y riesgos, se comunica la intención y se deja evidencia suficiente para supervisión, relevo y debrief."
         },
         {
           "type": "callout",
@@ -647,38 +659,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Mando debe integrar información incompleta, personas, regulación y misión, y asumir una decisión explicable sin invadir la competencia técnica de sus especialistas."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica equipo desde la perspectiva de Mando.",
-            "Resuelve: Dirigir turno.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "lore/federation/starfleet/command_structure/succession_rules.json",
-            "lore/federation/starfleet/qualifications/command_qualification.json",
-            "lore/federation/starfleet/prime_directive/prime_directive.json",
-            "gameplay/orders/starfleet_mission_tasking_order.json"
-          ]
+          "text": "Evaluación. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -688,17 +675,29 @@
       "subtitle": "CMD-101 · Mando avanzado I",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Mando** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "capacidad",
-            "fatiga",
-            "conflicto",
-            "delegación"
+            "**capacidad**: margen real de una persona o sistema para asumir una tarea sin superar límites de competencia o seguridad",
+            "**fatiga**: degradación de rendimiento por carga o tiempo que debe tratarse como riesgo operativo y puede exigir relevo",
+            "**conflicto**: choque de objetivos, criterios o relaciones que se gestiona haciendo visibles hechos, autoridad, riesgo y decisión",
+            "**delegación**: asignación de una tarea a quien tiene capacidad suficiente manteniendo seguimiento proporcional y responsabilidad de supervisión"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se establece el estado de misión, se confirma quién tiene autoridad, se comparan opciones y riesgos, se comunica la intención y se deja evidencia suficiente para supervisión, relevo y debrief."
         },
         {
           "type": "callout",
@@ -707,38 +706,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Mando debe mantener una imagen operativa clara, decidir dentro de autoridad, proteger a la tripulación y comunicar intención, riesgo y límites."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Juicio."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica capacidad desde la perspectiva de Mando.",
-            "Resuelve: Caso humano.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "lore/federation/starfleet/command_structure/succession_rules.json",
-            "lore/federation/starfleet/qualifications/command_qualification.json",
-            "lore/federation/starfleet/prime_directive/prime_directive.json",
-            "gameplay/orders/starfleet_mission_tasking_order.json"
-          ]
+          "text": "Juicio. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -748,16 +722,28 @@
       "subtitle": "CMD-101 · Mando avanzado I",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Mando** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "intención",
-            "condiciones",
-            "autonomía"
+            "**intención**: efecto que se desea conseguir con una orden; permite adaptar la ejecución sin perder el propósito",
+            "**condiciones**: circunstancias que activan, limitan o detienen una orden o acción",
+            "**autonomía**: capacidad de actuar sin guía continua dentro del ámbito autorizado y de escalar cuando se supera"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se establece el estado de misión, se confirma quién tiene autoridad, se comparan opciones y riesgos, se comunica la intención y se deja evidencia suficiente para supervisión, relevo y debrief."
         },
         {
           "type": "callout",
@@ -766,38 +752,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Mando debe integrar información incompleta, personas, regulación y misión, y asumir una decisión explicable sin invadir la competencia técnica de sus especialistas."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Práctica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica intención desde la perspectiva de Mando.",
-            "Resuelve: Emitir plan de órdenes.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "lore/federation/starfleet/command_structure/succession_rules.json",
-            "lore/federation/starfleet/qualifications/command_qualification.json",
-            "lore/federation/starfleet/prime_directive/prime_directive.json",
-            "gameplay/orders/starfleet_mission_tasking_order.json"
-          ]
+          "text": "Práctica. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -807,16 +768,28 @@
       "subtitle": "CMD-101 · Mando avanzado I",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Mando** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "cualificaciones",
-            "puente",
-            "responsabilidad"
+            "**cualificaciones**: competencias formalmente demostradas que habilitan funciones concretas y conservan límites definidos",
+            "**puente**: entorno de coordinación donde información y decisiones de varios puestos deben integrarse en una picture común",
+            "**responsabilidad**: obligación de responder por decisiones y por el uso de autoridad, incluida la decisión de delegar o escalar"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se establece el estado de misión, se confirma quién tiene autoridad, se comparan opciones y riesgos, se comunica la intención y se deja evidencia suficiente para supervisión, relevo y debrief."
         },
         {
           "type": "callout",
@@ -825,38 +798,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Mando debe integrar información incompleta, personas, regulación y misión, y asumir una decisión explicable sin invadir la competencia técnica de sus especialistas."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Informe."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica cualificaciones desde la perspectiva de Mando.",
-            "Resuelve: Revisión de trayectoria.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "lore/federation/starfleet/command_structure/succession_rules.json",
-            "lore/federation/starfleet/qualifications/command_qualification.json",
-            "lore/federation/starfleet/prime_directive/prime_directive.json",
-            "gameplay/orders/starfleet_mission_tasking_order.json"
-          ]
+          "text": "Informe. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -866,17 +814,29 @@
       "subtitle": "CMD-102 · Mando avanzado II",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Mando** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "briefing",
-            "ejecución",
-            "adaptación",
-            "cierre"
+            "**briefing**: comunicación previa que alinea misión, situación, roles, límites, riesgos y contingencias",
+            "**ejecución**: realización del plan con monitorización y adaptación dentro de los límites autorizados",
+            "**adaptación**: modificación razonada del plan cuando cambian las condiciones sin perder intención ni trazabilidad",
+            "**cierre**: confirmación de resultado, estado final, pendientes y transferencia de responsabilidad"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se establece el estado de misión, se confirma quién tiene autoridad, se comparan opciones y riesgos, se comunica la intención y se deja evidencia suficiente para supervisión, relevo y debrief."
         },
         {
           "type": "callout",
@@ -885,38 +845,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Mando debe mantener una imagen operativa clara, decidir dentro de autoridad, proteger a la tripulación y comunicar intención, riesgo y límites."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica briefing desde la perspectiva de Mando.",
-            "Resuelve: Dirigir misión.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "lore/federation/starfleet/command_structure/succession_rules.json",
-            "lore/federation/starfleet/qualifications/command_qualification.json",
-            "lore/federation/starfleet/prime_directive/prime_directive.json",
-            "gameplay/orders/starfleet_mission_tasking_order.json"
-          ]
+          "text": "Evaluación. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -926,16 +861,28 @@
       "subtitle": "CMD-102 · Mando avanzado II",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Mando** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "consecuencias",
-            "regulación",
-            "tripulación"
+            "**consecuencias**: efectos probables o reales sobre vidas, nave, misión, relaciones y recursos",
+            "**regulación**: marco de normas y restricciones que sigue vigente bajo presión y delimita acciones permitidas",
+            "**tripulación**: personas de la unidad consideradas por seguridad, competencia, distribución y carga"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se establece el estado de misión, se confirma quién tiene autoridad, se comparan opciones y riesgos, se comunica la intención y se deja evidencia suficiente para supervisión, relevo y debrief."
         },
         {
           "type": "callout",
@@ -944,38 +891,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Mando debe integrar información incompleta, personas, regulación y misión, y asumir una decisión explicable sin invadir la competencia técnica de sus especialistas."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Juicio."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica consecuencias desde la perspectiva de Mando.",
-            "Resuelve: Caso complejo.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "lore/federation/starfleet/command_structure/succession_rules.json",
-            "lore/federation/starfleet/qualifications/command_qualification.json",
-            "lore/federation/starfleet/prime_directive/prime_directive.json",
-            "gameplay/orders/starfleet_mission_tasking_order.json"
-          ]
+          "text": "Juicio. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -985,16 +907,28 @@
       "subtitle": "CMD-102 · Mando avanzado II",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Mando** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "autoridad",
-            "negociación",
-            "representación"
+            "**autoridad**: facultad reconocida para decidir o representar a la organización dentro de un ámbito concreto",
+            "**negociación**: proceso para buscar un acuerdo sin prometer capacidades ni compromisos fuera de la propia autoridad",
+            "**representación**: actuación en nombre de Starfleet que exige precisión sobre mandato, límites y compromisos asumibles"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se establece el estado de misión, se confirma quién tiene autoridad, se comparan opciones y riesgos, se comunica la intención y se deja evidencia suficiente para supervisión, relevo y debrief."
         },
         {
           "type": "callout",
@@ -1003,38 +937,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Mando debe integrar información incompleta, personas, regulación y misión, y asumir una decisión explicable sin invadir la competencia técnica de sus especialistas."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica autoridad desde la perspectiva de Mando.",
-            "Resuelve: Escena diplomática.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "lore/federation/starfleet/command_structure/succession_rules.json",
-            "lore/federation/starfleet/qualifications/command_qualification.json",
-            "lore/federation/starfleet/prime_directive/prime_directive.json",
-            "gameplay/orders/starfleet_mission_tasking_order.json"
-          ]
+          "text": "Evaluación. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -1044,17 +953,29 @@
       "subtitle": "CMD-102 · Mando avanzado II",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Mando** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "estado",
-            "órdenes",
-            "pendientes",
-            "responsabilidad"
+            "**estado**: descripción actual y verificable de capacidad, configuración, degradaciones y acciones en curso",
+            "**órdenes**: instrucciones vigentes que deben entregarse con prioridad, alcance, emisor y condiciones",
+            "**pendientes**: acciones abiertas con responsable, prioridad y condición prevista de cierre",
+            "**responsabilidad**: obligación de responder por decisiones y por el uso de autoridad, incluida la decisión de delegar o escalar"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se establece el estado de misión, se confirma quién tiene autoridad, se comparan opciones y riesgos, se comunica la intención y se deja evidencia suficiente para supervisión, relevo y debrief."
         },
         {
           "type": "callout",
@@ -1063,43 +984,18 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Mando debe mantener una imagen operativa clara, decidir dentro de autoridad, proteger a la tripulación y comunicar intención, riesgo y límites."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Práctica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica estado desde la perspectiva de Mando.",
-            "Resuelve: Transferir control.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "lore/federation/starfleet/command_structure/succession_rules.json",
-            "lore/federation/starfleet/qualifications/command_qualification.json",
-            "lore/federation/starfleet/prime_directive/prime_directive.json",
-            "gameplay/orders/starfleet_mission_tasking_order.json"
-          ]
+          "text": "Práctica. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     }
   ],
   "year3Status": "developed_content",
   "year3Scope": "201-203",
-  "assessmentModel": "concept_driven_v2_1_year3"
+  "assessmentModel": "concept_driven_v2_1"
 }

@@ -1,313 +1,653 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.1.0",
   "course_id": "ASS-103",
-  "status": "generated_from_authoritative_curriculum",
-  "question_count": 24,
-  "questions": [
+  "status": "developed_concept_driven_autocorrectable_v2_1",
+  "policy": {
+    "theory_formats": [
+      "multiple_choice",
+      "short_answer"
+    ],
+    "multiple_choice_target_ratio": 0.8,
+    "short_answer_target_ratio": 0.2,
+    "deterministic_correction": true,
+    "web_and_game_share_concepts_not_question_instances": true,
+    "complex_judgment_moves_to_practice_and_simulation": true,
+    "source_rule": "Every evaluated concept is explicitly taught in the developed Year 4 material or an established prerequisite."
+  },
+  "unit_review": {
+    "questions_per_attempt": 5,
+    "reshuffle_each_attempt": true,
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
+  },
+  "concepts": [
     {
-      "id": "ASS-103-Q001",
+      "id": "ASS-103-C001",
       "unit_id": "ASS-103-U01",
-      "type": "service_readiness",
-      "prompt_es": "Explica tipo de unidad como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: naturaleza funcional del destino, como nave o estación, que condiciona misión, ritmo y oportunidades?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: naturaleza funcional del destino, como nave o estación, que condiciona misión, ritmo y oportunidades?",
+        "En «Preferencias del jugador», selecciona el concepto descrito así: naturaleza funcional del destino, como nave o estación, que condiciona misión, ritmo y oportunidades."
+      ],
+      "answer_display_es": "tipo de unidad",
+      "accepted_short_answers_es": [
+        "tipo de unidad"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "tipo de unidad",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "tipo de unidad"
       ]
     },
     {
-      "id": "ASS-103-Q002",
+      "id": "ASS-103-C002",
       "unit_id": "ASS-103-U01",
-      "type": "scenario",
-      "prompt_es": "Escenario: Registrar preferencias. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: propósito principal de la unidad junto con restricciones y prioridades?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: propósito principal de la unidad junto con restricciones y prioridades?",
+        "En «Preferencias del jugador», selecciona el concepto descrito así: propósito principal de la unidad junto con restricciones y prioridades."
+      ],
+      "answer_display_es": "misión",
+      "accepted_short_answers_es": [
+        "misión"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "misión"
       ]
     },
     {
-      "id": "ASS-103-Q003",
+      "id": "ASS-103-C003",
       "unit_id": "ASS-103-U01",
-      "type": "debrief",
-      "prompt_es": "Tras Preferencias del jugador, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: escala de la unidad y tripulación, que modifica especialización de funciones, carga y relaciones de trabajo?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: escala de la unidad y tripulación, que modifica especialización de funciones, carga y relaciones de trabajo?",
+        "En «Preferencias del jugador», selecciona el concepto descrito así: escala de la unidad y tripulación, que modifica especialización de funciones, carga y relaciones de trabajo."
+      ],
+      "answer_display_es": "tamaño",
+      "accepted_short_answers_es": [
+        "tamaño"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "tamaño"
       ]
     },
     {
-      "id": "ASS-103-Q004",
+      "id": "ASS-103-C004",
       "unit_id": "ASS-103-U01",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: zona de servicio que afecta distancia, apoyo disponible, entorno político y tipo de misión?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: zona de servicio que afecta distancia, apoyo disponible, entorno político y tipo de misión?",
+        "En «Preferencias del jugador», selecciona el concepto descrito así: zona de servicio que afecta distancia, apoyo disponible, entorno político y tipo de misión."
+      ],
+      "answer_display_es": "región",
+      "accepted_short_answers_es": [
+        "región"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "región"
       ]
     },
     {
-      "id": "ASS-103-Q005",
+      "id": "ASS-103-C005",
+      "unit_id": "ASS-103-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: función concreta con responsabilidades, autoridad, interfaces y requisitos definidos?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: función concreta con responsabilidades, autoridad, interfaces y requisitos definidos?",
+        "En «Preferencias del jugador», selecciona el concepto descrito así: función concreta con responsabilidades, autoridad, interfaces y requisitos definidos."
+      ],
+      "answer_display_es": "puesto",
+      "accepted_short_answers_es": [
+        "puesto"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "puesto"
+      ]
+    },
+    {
+      "id": "ASS-103-C006",
+      "unit_id": "ASS-103-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Preferencias del jugador»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Preferencias del jugador»?",
+        "Repaso final: ¿Qué práctica corresponde a «Preferencias del jugador»?"
+      ],
+      "answer_display_es": "Registrar preferencias.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Registrar preferencias."
+      ]
+    },
+    {
+      "id": "ASS-103-C007",
       "unit_id": "ASS-103-U02",
-      "type": "service_readiness",
-      "prompt_es": "Explica especialidad como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: rama profesional principal para la que el graduando ha acumulado formación y evidencia?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: rama profesional principal para la que el graduando ha acumulado formación y evidencia?",
+        "En «Perfil de asignación», selecciona el concepto descrito así: rama profesional principal para la que el graduando ha acumulado formación y evidencia."
+      ],
+      "answer_display_es": "especialidad",
+      "accepted_short_answers_es": [
+        "especialidad"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "especialidad",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "especialidad"
       ]
     },
     {
-      "id": "ASS-103-Q006",
+      "id": "ASS-103-C008",
       "unit_id": "ASS-103-U02",
-      "type": "scenario",
-      "prompt_es": "Escenario: Construir perfil. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: competencias formalmente reconocidas a partir de evidencia; habilitan funciones concretas y conservan sus propios límites?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: competencias formalmente reconocidas a partir de evidencia; habilitan funciones concretas y conservan sus propios límites?",
+        "En «Perfil de asignación», selecciona el concepto descrito así: competencias formalmente reconocidas a partir de evidencia; habilitan funciones concretas y conservan sus propios límites."
+      ],
+      "answer_display_es": "cualificaciones",
+      "accepted_short_answers_es": [
+        "cualificaciones"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "cualificaciones"
       ]
     },
     {
-      "id": "ASS-103-Q007",
+      "id": "ASS-103-C009",
       "unit_id": "ASS-103-U02",
-      "type": "debrief",
-      "prompt_es": "Tras Perfil de asignación, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: orientaciones de instructores y paneles basadas en evidencia, útiles para asignación y desarrollo?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: orientaciones de instructores y paneles basadas en evidencia, útiles para asignación y desarrollo?",
+        "En «Perfil de asignación», selecciona el concepto descrito así: orientaciones de instructores y paneles basadas en evidencia, útiles para asignación y desarrollo."
+      ],
+      "answer_display_es": "recomendaciones",
+      "accepted_short_answers_es": [
+        "recomendaciones"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "recomendaciones"
       ]
     },
     {
-      "id": "ASS-103-Q008",
+      "id": "ASS-103-C010",
       "unit_id": "ASS-103-U02",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: condiciones que limitan destinos o funciones por requisitos, seguridad, cualificación o situación institucional?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: condiciones que limitan destinos o funciones por requisitos, seguridad, cualificación o situación institucional?",
+        "En «Perfil de asignación», selecciona el concepto descrito así: condiciones que limitan destinos o funciones por requisitos, seguridad, cualificación o situación institucional."
+      ],
+      "answer_display_es": "restricciones",
+      "accepted_short_answers_es": [
+        "restricciones"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "restricciones"
       ]
     },
     {
-      "id": "ASS-103-Q009",
+      "id": "ASS-103-C011",
+      "unit_id": "ASS-103-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Perfil de asignación»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Perfil de asignación»?",
+        "Repaso final: ¿Qué práctica corresponde a «Perfil de asignación»?"
+      ],
+      "answer_display_es": "Construir perfil.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Construir perfil."
+      ]
+    },
+    {
+      "id": "ASS-103-C012",
+      "unit_id": "ASS-103-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio de evaluación se asocia a «Perfil de asignación»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio de evaluación se asocia a «Perfil de asignación»?",
+        "Repaso final: ¿Qué criterio de evaluación se asocia a «Perfil de asignación»?"
+      ],
+      "answer_display_es": "Validación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Validación."
+      ]
+    },
+    {
+      "id": "ASS-103-C013",
       "unit_id": "ASS-103-U03",
-      "type": "service_readiness",
-      "prompt_es": "Explica estado del mundo como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: situación persistente de flota, conflictos, despliegues, pérdidas, proyectos y necesidades en la fecha de asignación?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: situación persistente de flota, conflictos, despliegues, pérdidas, proyectos y necesidades en la fecha de asignación?",
+        "En «Vacantes y necesidades», selecciona el concepto descrito así: situación persistente de flota, conflictos, despliegues, pérdidas, proyectos y necesidades en la fecha de asignación."
+      ],
+      "answer_display_es": "estado del mundo",
+      "accepted_short_answers_es": [
+        "estado del mundo"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado del mundo",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "estado del mundo"
       ]
     },
     {
-      "id": "ASS-103-Q010",
+      "id": "ASS-103-C014",
       "unit_id": "ASS-103-U03",
-      "type": "scenario",
-      "prompt_es": "Escenario: Consultar candidatos generados por sistema. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: momento efectivo que determina qué unidades, vacantes y condiciones existen realmente?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: momento efectivo que determina qué unidades, vacantes y condiciones existen realmente?",
+        "En «Vacantes y necesidades», selecciona el concepto descrito así: momento efectivo que determina qué unidades, vacantes y condiciones existen realmente."
+      ],
+      "answer_display_es": "fecha",
+      "accepted_short_answers_es": [
+        "fecha"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "fecha"
       ]
     },
     {
-      "id": "ASS-103-Q011",
+      "id": "ASS-103-C015",
       "unit_id": "ASS-103-U03",
-      "type": "debrief",
-      "prompt_es": "Tras Vacantes y necesidades, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: organizaciones disponibles en el mundo vivo con misión, dotación y necesidades propias?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: organizaciones disponibles en el mundo vivo con misión, dotación y necesidades propias?",
+        "En «Vacantes y necesidades», selecciona el concepto descrito así: organizaciones disponibles en el mundo vivo con misión, dotación y necesidades propias."
+      ],
+      "answer_display_es": "unidades",
+      "accepted_short_answers_es": [
+        "unidades"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "unidades"
       ]
     },
     {
-      "id": "ASS-103-Q012",
+      "id": "ASS-103-C016",
       "unit_id": "ASS-103-U03",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: vacantes o funciones que pueden cubrirse según requisitos, prioridad y disponibilidad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: vacantes o funciones que pueden cubrirse según requisitos, prioridad y disponibilidad?",
+        "En «Vacantes y necesidades», selecciona el concepto descrito así: vacantes o funciones que pueden cubrirse según requisitos, prioridad y disponibilidad."
+      ],
+      "answer_display_es": "puestos",
+      "accepted_short_answers_es": [
+        "puestos"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "puestos"
       ]
     },
     {
-      "id": "ASS-103-Q013",
+      "id": "ASS-103-C017",
+      "unit_id": "ASS-103-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: urgencia relativa con la que la organización necesita cubrir una necesidad frente a otras?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: urgencia relativa con la que la organización necesita cubrir una necesidad frente a otras?",
+        "En «Vacantes y necesidades», selecciona el concepto descrito así: urgencia relativa con la que la organización necesita cubrir una necesidad frente a otras."
+      ],
+      "answer_display_es": "prioridad",
+      "accepted_short_answers_es": [
+        "prioridad"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "prioridad"
+      ]
+    },
+    {
+      "id": "ASS-103-C018",
+      "unit_id": "ASS-103-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Vacantes y necesidades»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Vacantes y necesidades»?",
+        "Repaso final: ¿Qué práctica corresponde a «Vacantes y necesidades»?"
+      ],
+      "answer_display_es": "Consultar candidatos generados por sistema.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Consultar candidatos generados por sistema."
+      ]
+    },
+    {
+      "id": "ASS-103-C019",
       "unit_id": "ASS-103-U04",
-      "type": "service_readiness",
-      "prompt_es": "Explica contacto como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: interacción con una unidad o responsable durante el proceso de asignación?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: interacción con una unidad o responsable durante el proceso de asignación?",
+        "En «Entrevistas/órdenes preliminares», selecciona el concepto descrito así: interacción con una unidad o responsable durante el proceso de asignación."
+      ],
+      "answer_display_es": "contacto",
+      "accepted_short_answers_es": [
+        "contacto"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "contacto",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "contacto"
       ]
     },
     {
-      "id": "ASS-103-Q014",
+      "id": "ASS-103-C020",
       "unit_id": "ASS-103-U04",
-      "type": "scenario",
-      "prompt_es": "Escenario: Escenas cuando correspondan. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: intercambio destinado a aclarar experiencia, expectativas, límites y encaje profesional?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: intercambio destinado a aclarar experiencia, expectativas, límites y encaje profesional?",
+        "En «Entrevistas/órdenes preliminares», selecciona el concepto descrito así: intercambio destinado a aclarar experiencia, expectativas, límites y encaje profesional."
+      ],
+      "answer_display_es": "preguntas",
+      "accepted_short_answers_es": [
+        "preguntas"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "preguntas"
       ]
     },
     {
-      "id": "ASS-103-Q015",
+      "id": "ASS-103-C021",
       "unit_id": "ASS-103-U04",
-      "type": "debrief",
-      "prompt_es": "Tras Entrevistas/órdenes preliminares, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: compatibilidad entre perfil real del graduando, requisitos del puesto y necesidades de la unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: compatibilidad entre perfil real del graduando, requisitos del puesto y necesidades de la unidad?",
+        "En «Entrevistas/órdenes preliminares», selecciona el concepto descrito así: compatibilidad entre perfil real del graduando, requisitos del puesto y necesidades de la unidad."
+      ],
+      "answer_display_es": "encaje",
+      "accepted_short_answers_es": [
+        "encaje"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "encaje"
       ]
     },
     {
-      "id": "ASS-103-Q016",
+      "id": "ASS-103-C022",
       "unit_id": "ASS-103-U04",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: circunstancias concretas del destino o puesto que el graduando debe conocer antes de incorporarse?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: circunstancias concretas del destino o puesto que el graduando debe conocer antes de incorporarse?",
+        "En «Entrevistas/órdenes preliminares», selecciona el concepto descrito así: circunstancias concretas del destino o puesto que el graduando debe conocer antes de incorporarse."
+      ],
+      "answer_display_es": "condiciones",
+      "accepted_short_answers_es": [
+        "condiciones"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "condiciones"
       ]
     },
     {
-      "id": "ASS-103-Q017",
+      "id": "ASS-103-C023",
+      "unit_id": "ASS-103-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Entrevistas/órdenes preliminares»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Entrevistas/órdenes preliminares»?",
+        "Repaso final: ¿Qué práctica corresponde a «Entrevistas/órdenes preliminares»?"
+      ],
+      "answer_display_es": "Escenas cuando correspondan.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Escenas cuando correspondan."
+      ]
+    },
+    {
+      "id": "ASS-103-C024",
+      "unit_id": "ASS-103-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio de evaluación se asocia a «Entrevistas/órdenes preliminares»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio de evaluación se asocia a «Entrevistas/órdenes preliminares»?",
+        "Repaso final: ¿Qué criterio de evaluación se asocia a «Entrevistas/órdenes preliminares»?"
+      ],
+      "answer_display_es": "Evidencia contextual.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evidencia contextual."
+      ]
+    },
+    {
+      "id": "ASS-103-C025",
       "unit_id": "ASS-103-U05",
-      "type": "service_readiness",
-      "prompt_es": "Explica necesidad como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: demanda real de la organización que justifica cubrir un puesto?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: demanda real de la organización que justifica cubrir un puesto?",
+        "En «Selección institucional», selecciona el concepto descrito así: demanda real de la organización que justifica cubrir un puesto."
+      ],
+      "answer_display_es": "necesidad",
+      "accepted_short_answers_es": [
+        "necesidad"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "necesidad",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "necesidad"
       ]
     },
     {
-      "id": "ASS-103-Q018",
+      "id": "ASS-103-C026",
       "unit_id": "ASS-103-U05",
-      "type": "scenario",
-      "prompt_es": "Escenario: Resolver asignación por reglas. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: compatibilidad entre perfil real del graduando, requisitos del puesto y necesidades de la unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: compatibilidad entre perfil real del graduando, requisitos del puesto y necesidades de la unidad?",
+        "En «Selección institucional», selecciona el concepto descrito así: compatibilidad entre perfil real del graduando, requisitos del puesto y necesidades de la unidad."
+      ],
+      "answer_display_es": "encaje",
+      "accepted_short_answers_es": [
+        "encaje"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "encaje"
       ]
     },
     {
-      "id": "ASS-103-Q019",
+      "id": "ASS-103-C027",
       "unit_id": "ASS-103-U05",
-      "type": "debrief",
-      "prompt_es": "Tras Selección institucional, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: existencia efectiva de una vacante y posibilidad temporal de ocuparla?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: existencia efectiva de una vacante y posibilidad temporal de ocuparla?",
+        "En «Selección institucional», selecciona el concepto descrito así: existencia efectiva de una vacante y posibilidad temporal de ocuparla."
+      ],
+      "answer_display_es": "disponibilidad",
+      "accepted_short_answers_es": [
+        "disponibilidad"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "disponibilidad"
       ]
     },
     {
-      "id": "ASS-103-Q020",
+      "id": "ASS-103-C028",
       "unit_id": "ASS-103-U05",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: opciones expresadas por el graduando que se consideran cuando son compatibles con necesidades y vacantes?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: opciones expresadas por el graduando que se consideran cuando son compatibles con necesidades y vacantes?",
+        "En «Selección institucional», selecciona el concepto descrito así: opciones expresadas por el graduando que se consideran cuando son compatibles con necesidades y vacantes."
+      ],
+      "answer_display_es": "preferencias",
+      "accepted_short_answers_es": [
+        "preferencias"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "preferencias"
       ]
     },
     {
-      "id": "ASS-103-Q021",
-      "unit_id": "ASS-103-U06",
-      "type": "service_readiness",
-      "prompt_es": "Explica órdenes como se lo explicarías a un Alférez que recibe su primer destino.",
+      "id": "ASS-103-C029",
+      "unit_id": "ASS-103-U05",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Selección institucional»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Selección institucional»?",
+        "Repaso final: ¿Qué práctica corresponde a «Selección institucional»?"
+      ],
+      "answer_display_es": "Resolver asignación por reglas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "órdenes",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "Resolver asignación por reglas."
       ]
     },
     {
-      "id": "ASS-103-Q022",
-      "unit_id": "ASS-103-U06",
-      "type": "scenario",
-      "prompt_es": "Escenario: Preparar incorporación. Describe decisión inicial, alternativas y condición de escalado.",
+      "id": "ASS-103-C030",
+      "unit_id": "ASS-103-U05",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio de evaluación se asocia a «Selección institucional»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio de evaluación se asocia a «Selección institucional»?",
+        "Repaso final: ¿Qué criterio de evaluación se asocia a «Selección institucional»?"
+      ],
+      "answer_display_es": "Resultado persistente.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "Resultado persistente."
       ]
     },
     {
-      "id": "ASS-103-Q023",
+      "id": "ASS-103-C031",
       "unit_id": "ASS-103-U06",
-      "type": "debrief",
-      "prompt_es": "Tras Transición, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: instrucciones oficiales de asignación que especifican destino, puesto, fechas y obligaciones?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: instrucciones oficiales de asignación que especifican destino, puesto, fechas y obligaciones?",
+        "En «Transición», selecciona el concepto descrito así: instrucciones oficiales de asignación que especifican destino, puesto, fechas y obligaciones."
+      ],
+      "answer_display_es": "órdenes",
+      "accepted_short_answers_es": [
+        "órdenes"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "órdenes"
       ]
     },
     {
-      "id": "ASS-103-Q024",
+      "id": "ASS-103-C032",
       "unit_id": "ASS-103-U06",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: momento efectivo que determina qué unidades, vacantes y condiciones existen realmente?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: momento efectivo que determina qué unidades, vacantes y condiciones existen realmente?",
+        "En «Transición», selecciona el concepto descrito así: momento efectivo que determina qué unidades, vacantes y condiciones existen realmente."
+      ],
+      "answer_display_es": "fecha",
+      "accepted_short_answers_es": [
+        "fecha"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "fecha"
+      ]
+    },
+    {
+      "id": "ASS-103-C033",
+      "unit_id": "ASS-103-U06",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: traslado hasta el destino como parte de la transición, con tiempo y logística propios?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: traslado hasta el destino como parte de la transición, con tiempo y logística propios?",
+        "En «Transición», selecciona el concepto descrito así: traslado hasta el destino como parte de la transición, con tiempo y logística propios."
+      ],
+      "answer_display_es": "viaje",
+      "accepted_short_answers_es": [
+        "viaje"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "viaje"
+      ]
+    },
+    {
+      "id": "ASS-103-C034",
+      "unit_id": "ASS-103-U06",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: incorporación formal a la nueva unidad y cadena de mando?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: incorporación formal a la nueva unidad y cadena de mando?",
+        "En «Transición», selecciona el concepto descrito así: incorporación formal a la nueva unidad y cadena de mando."
+      ],
+      "answer_display_es": "presentación",
+      "accepted_short_answers_es": [
+        "presentación"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "presentación"
+      ]
+    },
+    {
+      "id": "ASS-103-C035",
+      "unit_id": "ASS-103-U06",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Transición»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Transición»?",
+        "Repaso final: ¿Qué práctica corresponde a «Transición»?"
+      ],
+      "answer_display_es": "Preparar incorporación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Preparar incorporación."
+      ]
+    },
+    {
+      "id": "ASS-103-C036",
+      "unit_id": "ASS-103-U06",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio de evaluación se asocia a «Transición»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio de evaluación se asocia a «Transición»?",
+        "Repaso final: ¿Qué criterio de evaluación se asocia a «Transición»?"
+      ],
+      "answer_display_es": "Cierre.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Cierre."
       ]
     }
   ]

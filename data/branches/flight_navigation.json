@@ -1,7 +1,7 @@
 {
   "subject": "Vuelo / Navegación",
   "code": "FLIGHT_NAVIGATION",
-  "version": "1.2",
+  "version": "1.3",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/branches/flight_navigation/branch_curriculum_v1_0.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/branches/flight_navigation/MANUAL_v1_0.md",
@@ -625,17 +625,29 @@
       "subtitle": "NAV-101 · Vuelo avanzado I",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Vuelo / Navegación** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "masa",
-            "respuesta",
-            "límites",
-            "sistemas"
+            "**masa**: propiedad que condiciona inercia y respuesta de una nave; se traduce en anticipación y márgenes de maniobra",
+            "**respuesta**: forma y rapidez con que la nave cambia su estado tras una orden, condicionada por clase, configuración y daños",
+            "**límites**: fronteras técnicas o procedimentales que no deben superarse sin autoridad y justificación",
+            "**sistemas**: capacidades de propulsión, control, sensores y soporte cuyo estado afecta la maniobra disponible"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se confirma posición, vector, energía, entorno y restricciones; después se compara la maniobra con sus márgenes, se coordina con puente y se conserva la solución necesaria para continuidad y relevo."
         },
         {
           "type": "callout",
@@ -644,38 +656,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Vuelo / Navegación debe conservar márgenes de seguridad, energía y geometría, anticipar la trayectoria y coordinar cada maniobra con el resto de la nave."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica masa desde la perspectiva de Vuelo / Navegación.",
-            "Resuelve: Familiarización de clase.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/navigation/navigation_order_contract.json",
-            "gameplay/navigation/route_cost_model.json",
-            "gameplay/warp_travel/route_planning_model.json",
-            "gameplay/warp_travel/eta_resolution_model.json"
-          ]
+          "text": "Evaluación. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -685,16 +672,28 @@
       "subtitle": "NAV-101 · Vuelo avanzado I",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Vuelo / Navegación** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "propulsión degradada",
-            "control",
-            "margen"
+            "**propulsión degradada**: pérdida parcial de capacidad de impulso o curvatura que reduce aceleración, control o reservas",
+            "**control**: capacidad de mantener actitud, vector y maniobra dentro de tolerancias seguras",
+            "**margen**: distancia respecto a un límite de seguridad; debe conservarse para absorber error, retraso o cambio inesperado"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se confirma posición, vector, energía, entorno y restricciones; después se compara la maniobra con sus márgenes, se coordina con puente y se conserva la solución necesaria para continuidad y relevo."
         },
         {
           "type": "callout",
@@ -703,38 +702,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Vuelo debe conservar márgenes, anunciar límites y adaptar trayectoria antes de que una situación deje de ser recuperable."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Práctica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica propulsión degradada desde la perspectiva de Vuelo / Navegación.",
-            "Resuelve: Simulación.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/navigation/navigation_order_contract.json",
-            "gameplay/navigation/route_cost_model.json",
-            "gameplay/warp_travel/route_planning_model.json",
-            "gameplay/warp_travel/eta_resolution_model.json"
-          ]
+          "text": "Práctica. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -744,16 +718,28 @@
       "subtitle": "NAV-101 · Vuelo avanzado I",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Vuelo / Navegación** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "formación",
-            "rendezvous",
-            "espacio congestionado"
+            "**formación**: posición relativa coordinada entre varias naves con separaciones y responsabilidades definidas",
+            "**rendezvous**: encuentro planificado que exige sincronizar posición, vector, tiempo y velocidad relativa",
+            "**espacio congestionado**: entorno con múltiples trayectorias y restricciones donde disminuye el margen para corregir tarde"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se confirma posición, vector, energía, entorno y restricciones; después se compara la maniobra con sus márgenes, se coordina con puente y se conserva la solución necesaria para continuidad y relevo."
         },
         {
           "type": "callout",
@@ -762,38 +748,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Vuelo debe conservar márgenes, anunciar límites y adaptar trayectoria antes de que una situación deje de ser recuperable."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica formación desde la perspectiva de Vuelo / Navegación.",
-            "Resuelve: Maniobra.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/navigation/navigation_order_contract.json",
-            "gameplay/navigation/route_cost_model.json",
-            "gameplay/warp_travel/route_planning_model.json",
-            "gameplay/warp_travel/eta_resolution_model.json"
-          ]
+          "text": "Evaluación. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -803,16 +764,28 @@
       "subtitle": "NAV-101 · Vuelo avanzado I",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Vuelo / Navegación** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "relevo",
-            "instrucción",
-            "coordinación"
+            "**relevo**: transferencia formal de responsabilidad acompañada de estado, plan, riesgos y acciones futuras",
+            "**instrucción**: orientación dada a otra persona para ejecutar o aprender una tarea, adaptada a su experiencia",
+            "**coordinación**: alineación de acciones y tiempos entre puestos o unidades para evitar conflictos y mantener objetivo común"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se confirma posición, vector, energía, entorno y restricciones; después se compara la maniobra con sus márgenes, se coordina con puente y se conserva la solución necesaria para continuidad y relevo."
         },
         {
           "type": "callout",
@@ -821,38 +794,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Vuelo debe conservar márgenes, anunciar límites y adaptar trayectoria antes de que una situación deje de ser recuperable."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Observación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica relevo desde la perspectiva de Vuelo / Navegación.",
-            "Resuelve: Supervisar puesto.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/navigation/navigation_order_contract.json",
-            "gameplay/navigation/route_cost_model.json",
-            "gameplay/warp_travel/route_planning_model.json",
-            "gameplay/warp_travel/eta_resolution_model.json"
-          ]
+          "text": "Observación. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -862,17 +810,29 @@
       "subtitle": "NAV-102 · Vuelo avanzado II",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Vuelo / Navegación** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "ruta",
-            "tiempo",
-            "riesgos",
-            "alternativas"
+            "**ruta**: secuencia de posiciones o tramos que lleva al objetivo respetando restricciones, reservas y márgenes",
+            "**tiempo**: recurso de misión que afecta ventanas, combustible, exposición y posibilidad de esperar por mejor información",
+            "**riesgos**: amenazas plausibles a seguridad o misión que deben identificarse y reevaluarse",
+            "**alternativas**: rutas o cursos distintos preparados para cambios de situación o pérdida de la opción principal"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se confirma posición, vector, energía, entorno y restricciones; después se compara la maniobra con sus márgenes, se coordina con puente y se conserva la solución necesaria para continuidad y relevo."
         },
         {
           "type": "callout",
@@ -881,38 +841,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Vuelo / Navegación debe conservar márgenes de seguridad, energía y geometría, anticipar la trayectoria y coordinar cada maniobra con el resto de la nave."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Revisión."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica ruta desde la perspectiva de Vuelo / Navegación.",
-            "Resuelve: Plan completo.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/navigation/navigation_order_contract.json",
-            "gameplay/navigation/route_cost_model.json",
-            "gameplay/warp_travel/route_planning_model.json",
-            "gameplay/warp_travel/eta_resolution_model.json"
-          ]
+          "text": "Revisión. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -922,16 +857,28 @@
       "subtitle": "NAV-102 · Vuelo avanzado II",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Vuelo / Navegación** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "continuidad",
-            "cambios",
-            "logs"
+            "**continuidad**: mantenimiento del plan y de la picture durante una operación prolongada y entre relevos",
+            "**cambios**: variaciones de entorno, misión o nave que obligan a recalcular navegación y márgenes",
+            "**logs**: registros cronológicos de órdenes, parámetros, eventos y decisiones necesarios para continuidad y revisión"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se confirma posición, vector, energía, entorno y restricciones; después se compara la maniobra con sus márgenes, se coordina con puente y se conserva la solución necesaria para continuidad y relevo."
         },
         {
           "type": "callout",
@@ -940,38 +887,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Vuelo debe conservar márgenes, anunciar límites y adaptar trayectoria antes de que una situación deje de ser recuperable."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica continuidad desde la perspectiva de Vuelo / Navegación.",
-            "Resuelve: Misión extendida.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/navigation/navigation_order_contract.json",
-            "gameplay/navigation/route_cost_model.json",
-            "gameplay/warp_travel/route_planning_model.json",
-            "gameplay/warp_travel/eta_resolution_model.json"
-          ]
+          "text": "Evaluación. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -981,16 +903,28 @@
       "subtitle": "NAV-102 · Vuelo avanzado II",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Vuelo / Navegación** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "prioridad",
-            "comunicación",
-            "abort"
+            "**prioridad**: orden relativo entre seguridad de vuelo, misión y otras demandas cuando no pueden atenderse simultáneamente",
+            "**comunicación**: reporte claro de maniobra, límites, desviaciones y necesidades a los puestos afectados",
+            "**abort**: decisión de abandonar o interrumpir una maniobra cuando continuar supera límites o riesgo aceptable"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se confirma posición, vector, energía, entorno y restricciones; después se compara la maniobra con sus márgenes, se coordina con puente y se conserva la solución necesaria para continuidad y relevo."
         },
         {
           "type": "callout",
@@ -999,38 +933,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Vuelo debe conservar márgenes, anunciar límites y adaptar trayectoria antes de que una situación deje de ser recuperable."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Juicio."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica prioridad desde la perspectiva de Vuelo / Navegación.",
-            "Resuelve: Escenario complejo.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/navigation/navigation_order_contract.json",
-            "gameplay/navigation/route_cost_model.json",
-            "gameplay/warp_travel/route_planning_model.json",
-            "gameplay/warp_travel/eta_resolution_model.json"
-          ]
+          "text": "Juicio. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -1040,16 +949,28 @@
       "subtitle": "NAV-102 · Vuelo avanzado II",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Vuelo / Navegación** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "estado",
-            "pendientes",
-            "riesgos"
+            "**estado**: descripción actual y verificable de capacidad, configuración, degradaciones y acciones en curso",
+            "**pendientes**: acciones abiertas con responsable, prioridad y condición prevista de cierre",
+            "**riesgos**: amenazas plausibles a seguridad o misión que deben identificarse y reevaluarse"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se confirma posición, vector, energía, entorno y restricciones; después se compara la maniobra con sus márgenes, se coordina con puente y se conserva la solución necesaria para continuidad y relevo."
         },
         {
           "type": "callout",
@@ -1058,43 +979,18 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Vuelo debe conservar márgenes, anunciar límites y adaptar trayectoria antes de que una situación deje de ser recuperable."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Práctica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica estado desde la perspectiva de Vuelo / Navegación.",
-            "Resuelve: Handoff profesional.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/navigation/navigation_order_contract.json",
-            "gameplay/navigation/route_cost_model.json",
-            "gameplay/warp_travel/route_planning_model.json",
-            "gameplay/warp_travel/eta_resolution_model.json"
-          ]
+          "text": "Práctica. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     }
   ],
   "year3Status": "developed_content",
   "year3Scope": "201-203",
-  "assessmentModel": "concept_driven_v2_1_year3"
+  "assessmentModel": "concept_driven_v2_1"
 }

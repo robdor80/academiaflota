@@ -1,7 +1,7 @@
 {
   "subject": "Graduación y comisión",
   "code": "GRD-103",
-  "version": "1.0",
+  "version": "2.0",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/first_class/courses/GRD-103/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/first_class/GRD-103/MANUAL_v1_0.md",
@@ -21,7 +21,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Cerrar la vida académica mediante una ceremonia jugable, comisión y transición biográfica al servicio."
+          "text": "Esta unidad sitúa **Últimos días** dentro de la transición real de cadete a oficial. El cadete debe comprender qué información pesa, qué decisiones son institucionales y qué consecuencias persisten después de graduarse."
         },
         {
           "type": "heading",
@@ -30,11 +30,19 @@
         {
           "type": "bullets",
           "items": [
-            "cierres",
-            "despedidas",
-            "documentación",
-            "relaciones"
+            "**cierres**: acciones necesarias para terminar correctamente responsabilidades, expedientes y asuntos abiertos antes de abandonar la Academia.",
+            "**despedidas**: interacciones de cierre con compañeros, instructores y otras relaciones relevantes que pueden persistir después.",
+            "**documentación**: expediente y registros que deben quedar completos, consistentes y transferidos antes de la comisión.",
+            "**relaciones**: vínculos sociales y profesionales persistentes que no desaparecen automáticamente al graduarse."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se trabaja siempre con la información disponible en ese momento, diferenciando hechos, incertidumbre, responsabilidad individual y decisión institucional. El resultado se conserva como parte del historial del personaje."
         },
         {
           "type": "callout",
@@ -43,36 +51,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "La graduación consolida expediente, relaciones y comisión; el rango de Alférez abre el servicio activo, no borra el historial ni concede competencia no demostrada."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Persistencia social."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica cierres como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Escenas relevantes.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/academy_path/graduation_model.json",
-            "gameplay/careers/career_bridge.md"
-          ]
+          "text": "Persistencia social. Se valora la coherencia entre expediente, actuación y preparación real para el siguiente estado de carrera."
         }
       ]
     },
@@ -83,7 +68,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Cerrar la vida académica mediante una ceremonia jugable, comisión y transición biográfica al servicio."
+          "text": "Esta unidad sitúa **Expediente académico final** dentro de la transición real de cadete a oficial. El cadete debe comprender qué información pesa, qué decisiones son institucionales y qué consecuencias persisten después de graduarse."
         },
         {
           "type": "heading",
@@ -92,12 +77,20 @@
         {
           "type": "bullets",
           "items": [
-            "especialidad",
-            "fortalezas",
-            "cualificaciones",
-            "evaluaciones",
-            "incidentes"
+            "**especialidad**: rama profesional principal para la que el graduando ha acumulado formación y evidencia.",
+            "**fortalezas**: capacidades demostradas de forma consistente y respaldadas por evidencia.",
+            "**cualificaciones**: competencias formalmente reconocidas a partir de evidencia; habilitan funciones concretas y conservan sus propios límites.",
+            "**evaluaciones**: resultados y observaciones acumulados que forman parte del historial profesional inicial.",
+            "**incidentes**: eventos relevantes cuyo valor evaluativo depende del contexto, la respuesta y el aprendizaje posterior."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se trabaja siempre con la información disponible en ese momento, diferenciando hechos, incertidumbre, responsabilidad individual y decisión institucional. El resultado se conserva como parte del historial del personaje."
         },
         {
           "type": "callout",
@@ -106,36 +99,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "La graduación consolida expediente, relaciones y comisión; el rango de Alférez abre el servicio activo, no borra el historial ni concede competencia no demostrada."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Validación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica especialidad como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Sellar registro.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/academy_path/graduation_model.json",
-            "gameplay/careers/career_bridge.md"
-          ]
+          "text": "Validación. Se valora la coherencia entre expediente, actuación y preparación real para el siguiente estado de carrera."
         }
       ]
     },
@@ -146,7 +116,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Cerrar la vida académica mediante una ceremonia jugable, comisión y transición biográfica al servicio."
+          "text": "Esta unidad sitúa **Ceremonia** dentro de la transición real de cadete a oficial. El cadete debe comprender qué información pesa, qué decisiones son institucionales y qué consecuencias persisten después de graduarse."
         },
         {
           "type": "heading",
@@ -155,11 +125,19 @@
         {
           "type": "bullets",
           "items": [
-            "protocolo",
-            "compañeros",
-            "instructores",
-            "familia cuando proceda"
+            "**protocolo**: secuencia formal y comportamiento esperado durante un acto institucional.",
+            "**compañeros**: otros cadetes cuya trayectoria compartida puede originar relaciones profesionales duraderas.",
+            "**instructores**: personal que ha formado y evaluado al cadete y puede aportar continuidad, referencia o mentoría futura.",
+            "**familia cuando proceda**: presencia contextual de personas significativas solo cuando existe en la biografía y situación del personaje."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se trabaja siempre con la información disponible en ese momento, diferenciando hechos, incertidumbre, responsabilidad individual y decisión institucional. El resultado se conserva como parte del historial del personaje."
         },
         {
           "type": "callout",
@@ -168,36 +146,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "La graduación consolida expediente, relaciones y comisión; el rango de Alférez abre el servicio activo, no borra el historial ni concede competencia no demostrada."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Sin recompensa XP."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica protocolo como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Evento jugable.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/academy_path/graduation_model.json",
-            "gameplay/careers/career_bridge.md"
-          ]
+          "text": "Sin recompensa XP. Se valora la coherencia entre expediente, actuación y preparación real para el siguiente estado de carrera."
         }
       ]
     },
@@ -208,7 +163,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Cerrar la vida académica mediante una ceremonia jugable, comisión y transición biográfica al servicio."
+          "text": "Esta unidad sitúa **Comisión** dentro de la transición real de cadete a oficial. El cadete debe comprender qué información pesa, qué decisiones son institucionales y qué consecuencias persisten después de graduarse."
         },
         {
           "type": "heading",
@@ -217,11 +172,19 @@
         {
           "type": "bullets",
           "items": [
-            "rango de Alférez",
-            "autoridad",
-            "responsabilidad",
-            "documento"
+            "**rango de Alférez**: primer rango de oficial obtenido al recibir la comisión; cambia autoridad y responsabilidades, no convierte al graduado en experto.",
+            "**autoridad**: facultad para decidir u ordenar dentro de un ámbito y unas condiciones; no sustituye la competencia técnica.",
+            "**responsabilidad**: obligación de responder por decisiones propias, incluida la decisión de delegar, continuar o escalar.",
+            "**documento**: registro formal de la comisión y cambio de estado profesional."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se trabaja siempre con la información disponible en ese momento, diferenciando hechos, incertidumbre, responsabilidad individual y decisión institucional. El resultado se conserva como parte del historial del personaje."
         },
         {
           "type": "callout",
@@ -230,36 +193,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "La graduación consolida expediente, relaciones y comisión; el rango de Alférez abre el servicio activo, no borra el historial ni concede competencia no demostrada."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Validación de carrera."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica rango de Alférez como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Aplicar cambio de estado.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/academy_path/graduation_model.json",
-            "gameplay/careers/career_bridge.md"
-          ]
+          "text": "Validación de carrera. Se valora la coherencia entre expediente, actuación y preparación real para el siguiente estado de carrera."
         }
       ]
     },
@@ -270,7 +210,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Cerrar la vida académica mediante una ceremonia jugable, comisión y transición biográfica al servicio."
+          "text": "Esta unidad sitúa **Órdenes** dentro de la transición real de cadete a oficial. El cadete debe comprender qué información pesa, qué decisiones son institucionales y qué consecuencias persisten después de graduarse."
         },
         {
           "type": "heading",
@@ -279,11 +219,19 @@
         {
           "type": "bullets",
           "items": [
-            "primer destino",
-            "fecha",
-            "puesto",
-            "viaje"
+            "**primer destino**: primera asignación de servicio activo obtenida por reglas de perfil, necesidad y vacantes.",
+            "**fecha**: momento efectivo que determina qué unidades, vacantes y condiciones existen realmente.",
+            "**puesto**: función concreta con responsabilidades, autoridad, interfaces y requisitos definidos.",
+            "**viaje**: traslado hasta el destino como parte de la transición, con tiempo y logística propios."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se trabaja siempre con la información disponible en ese momento, diferenciando hechos, incertidumbre, responsabilidad individual y decisión institucional. El resultado se conserva como parte del historial del personaje."
         },
         {
           "type": "callout",
@@ -292,36 +240,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "La graduación consolida expediente, relaciones y comisión; el rango de Alférez abre el servicio activo, no borra el historial ni concede competencia no demostrada."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Persistencia."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica primer destino como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Recibir órdenes.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/academy_path/graduation_model.json",
-            "gameplay/careers/career_bridge.md"
-          ]
+          "text": "Persistencia. Se valora la coherencia entre expediente, actuación y preparación real para el siguiente estado de carrera."
         }
       ]
     },
@@ -332,7 +257,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Cerrar la vida académica mediante una ceremonia jugable, comisión y transición biográfica al servicio."
+          "text": "Esta unidad sitúa **Salida de Academia** dentro de la transición real de cadete a oficial. El cadete debe comprender qué información pesa, qué decisiones son institucionales y qué consecuencias persisten después de graduarse."
         },
         {
           "type": "heading",
@@ -341,11 +266,19 @@
         {
           "type": "bullets",
           "items": [
-            "relaciones",
-            "objetivos",
-            "historial",
-            "nuevo lifecycle"
+            "**relaciones**: vínculos sociales y profesionales persistentes que no desaparecen automáticamente al graduarse.",
+            "**objetivos**: objetivos debe definirse mediante hechos, límites y consecuencias concretas dentro de «Salida de Academia» para que sea útil en una decisión profesional.",
+            "**historial**: conjunto persistente de decisiones, relaciones, evaluaciones y eventos que acompaña al personaje tras la Academia.",
+            "**nuevo lifecycle**: paso del ciclo académico al ciclo de servicio activo, donde progreso depende de destinos, experiencia y nuevas cualificaciones."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se trabaja siempre con la información disponible en ese momento, diferenciando hechos, incertidumbre, responsabilidad individual y decisión institucional. El resultado se conserva como parte del historial del personaje."
         },
         {
           "type": "callout",
@@ -354,38 +287,16 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "La graduación consolida expediente, relaciones y comisión; el rango de Alférez abre el servicio activo, no borra el historial ni concede competencia no demostrada."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Cierre del arco académico."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica relaciones como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Transición a servicio activo.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/academy_path/graduation_model.json",
-            "gameplay/careers/career_bridge.md"
-          ]
+          "text": "Cierre del arco académico. Se valora la coherencia entre expediente, actuación y preparación real para el siguiente estado de carrera."
         }
       ]
     }
-  ]
+  ],
+  "assessmentModel": "concept_driven_v2_1"
 }

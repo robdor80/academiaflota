@@ -1,313 +1,651 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.1.0",
   "course_id": "KM-103",
-  "status": "generated_from_authoritative_curriculum",
-  "question_count": 24,
-  "questions": [
+  "status": "developed_concept_driven_autocorrectable_v2_1",
+  "policy": {
+    "theory_formats": [
+      "multiple_choice",
+      "short_answer"
+    ],
+    "multiple_choice_target_ratio": 0.8,
+    "short_answer_target_ratio": 0.2,
+    "deterministic_correction": true,
+    "web_and_game_share_concepts_not_question_instances": true,
+    "complex_judgment_moves_to_practice_and_simulation": true,
+    "source_rule": "Every evaluated concept is explicitly taught in the developed Year 4 material or an established prerequisite."
+  },
+  "unit_review": {
+    "questions_per_attempt": 5,
+    "reshuffle_each_attempt": true,
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
+  },
+  "concepts": [
     {
-      "id": "KM-103-Q001",
+      "id": "KM-103-C001",
       "unit_id": "KM-103-U01",
-      "type": "service_readiness",
-      "prompt_es": "Explica misión aparente como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: objetivo y contexto presentados al cadete al inicio del escenario, que pueden no revelar todas las tensiones que aparecerán?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: objetivo y contexto presentados al cadete al inicio del escenario, que pueden no revelar todas las tensiones que aparecerán?",
+        "En «Briefing», selecciona el concepto descrito así: objetivo y contexto presentados al cadete al inicio del escenario, que pueden no revelar todas las tensiones que aparecerán."
+      ],
+      "answer_display_es": "misión aparente",
+      "accepted_short_answers_es": [
+        "misión aparente"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "misión aparente",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "misión aparente"
       ]
     },
     {
-      "id": "KM-103-Q002",
+      "id": "KM-103-C002",
       "unit_id": "KM-103-U01",
-      "type": "scenario",
-      "prompt_es": "Escenario: Preparar puesto sin conocer ejes ocultos. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: responsabilidad profesional que el cadete mantiene durante la simulación y desde la que debe aportar al conjunto?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: responsabilidad profesional que el cadete mantiene durante la simulación y desde la que debe aportar al conjunto?",
+        "En «Briefing», selecciona el concepto descrito así: responsabilidad profesional que el cadete mantiene durante la simulación y desde la que debe aportar al conjunto."
+      ],
+      "answer_display_es": "rol de rama",
+      "accepted_short_answers_es": [
+        "rol de rama"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "rol de rama"
       ]
     },
     {
-      "id": "KM-103-Q003",
+      "id": "KM-103-C003",
       "unit_id": "KM-103-U01",
-      "type": "debrief",
-      "prompt_es": "Tras Briefing, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: restricciones conocidas al inicio que delimitan qué acciones están autorizadas o prohibidas?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: restricciones conocidas al inicio que delimitan qué acciones están autorizadas o prohibidas?",
+        "En «Briefing», selecciona el concepto descrito así: restricciones conocidas al inicio que delimitan qué acciones están autorizadas o prohibidas."
+      ],
+      "answer_display_es": "reglas visibles",
+      "accepted_short_answers_es": [
+        "reglas visibles"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "reglas visibles"
       ]
     },
     {
-      "id": "KM-103-Q004",
+      "id": "KM-103-C004",
       "unit_id": "KM-103-U01",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: información relevante no confirmada que debe declararse y gestionarse, no ocultarse mediante suposiciones?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: información relevante no confirmada que debe declararse y gestionarse, no ocultarse mediante suposiciones?",
+        "En «Briefing», selecciona el concepto descrito así: información relevante no confirmada que debe declararse y gestionarse, no ocultarse mediante suposiciones."
+      ],
+      "answer_display_es": "incertidumbre",
+      "accepted_short_answers_es": [
+        "incertidumbre"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "incertidumbre"
       ]
     },
     {
-      "id": "KM-103-Q005",
+      "id": "KM-103-C005",
+      "unit_id": "KM-103-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Briefing»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Briefing»?",
+        "Repaso final: ¿Qué práctica corresponde a «Briefing»?"
+      ],
+      "answer_display_es": "Preparar puesto sin conocer ejes ocultos.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Preparar puesto sin conocer ejes ocultos."
+      ]
+    },
+    {
+      "id": "KM-103-C006",
+      "unit_id": "KM-103-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio de evaluación se asocia a «Briefing»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio de evaluación se asocia a «Briefing»?",
+        "Repaso final: ¿Qué criterio de evaluación se asocia a «Briefing»?"
+      ],
+      "answer_display_es": "No se revelan criterios ocultos.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "No se revelan criterios ocultos."
+      ]
+    },
+    {
+      "id": "KM-103-C007",
       "unit_id": "KM-103-U02",
-      "type": "service_readiness",
-      "prompt_es": "Explica información como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: datos e informes disponibles que deben distinguirse por origen, calidad, recencia e incertidumbre?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: datos e informes disponibles que deben distinguirse por origen, calidad, recencia e incertidumbre?",
+        "En «Desarrollo inicial», selecciona el concepto descrito así: datos e informes disponibles que deben distinguirse por origen, calidad, recencia e incertidumbre."
+      ],
+      "answer_display_es": "información",
+      "accepted_short_answers_es": [
+        "información"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "información",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "información"
       ]
     },
     {
-      "id": "KM-103-Q006",
+      "id": "KM-103-C008",
       "unit_id": "KM-103-U02",
-      "type": "scenario",
-      "prompt_es": "Escenario: Operar escenario. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: elecciones realizadas con la información disponible entonces y por las que debe poder explicarse el razonamiento?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: elecciones realizadas con la información disponible entonces y por las que debe poder explicarse el razonamiento?",
+        "En «Desarrollo inicial», selecciona el concepto descrito así: elecciones realizadas con la información disponible entonces y por las que debe poder explicarse el razonamiento."
+      ],
+      "answer_display_es": "decisiones",
+      "accepted_short_answers_es": [
+        "decisiones"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "decisiones"
       ]
     },
     {
-      "id": "KM-103-Q007",
+      "id": "KM-103-C009",
       "unit_id": "KM-103-U02",
-      "type": "debrief",
-      "prompt_es": "Tras Desarrollo inicial, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: transmisión clara y oportuna de estado, intención, riesgo, necesidades y resultado al destinatario adecuado?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: transmisión clara y oportuna de estado, intención, riesgo, necesidades y resultado al destinatario adecuado?",
+        "En «Desarrollo inicial», selecciona el concepto descrito así: transmisión clara y oportuna de estado, intención, riesgo, necesidades y resultado al destinatario adecuado."
+      ],
+      "answer_display_es": "comunicación",
+      "accepted_short_answers_es": [
+        "comunicación"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "comunicación"
       ]
     },
     {
-      "id": "KM-103-Q008",
+      "id": "KM-103-C010",
       "unit_id": "KM-103-U02",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: personas coordinadas mediante roles, comunicación, confianza y responsabilidad compartida?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: personas coordinadas mediante roles, comunicación, confianza y responsabilidad compartida?",
+        "En «Desarrollo inicial», selecciona el concepto descrito así: personas coordinadas mediante roles, comunicación, confianza y responsabilidad compartida."
+      ],
+      "answer_display_es": "equipo",
+      "accepted_short_answers_es": [
+        "equipo"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "equipo"
       ]
     },
     {
-      "id": "KM-103-Q009",
+      "id": "KM-103-C011",
+      "unit_id": "KM-103-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Desarrollo inicial»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Desarrollo inicial»?",
+        "Repaso final: ¿Qué práctica corresponde a «Desarrollo inicial»?"
+      ],
+      "answer_display_es": "Operar escenario.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Operar escenario."
+      ]
+    },
+    {
+      "id": "KM-103-C012",
+      "unit_id": "KM-103-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio de evaluación se asocia a «Desarrollo inicial»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio de evaluación se asocia a «Desarrollo inicial»?",
+        "Repaso final: ¿Qué criterio de evaluación se asocia a «Desarrollo inicial»?"
+      ],
+      "answer_display_es": "Observación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Observación."
+      ]
+    },
+    {
+      "id": "KM-103-C013",
       "unit_id": "KM-103-U03",
-      "type": "service_readiness",
-      "prompt_es": "Explica pérdida de opciones como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: reducción progresiva de cursos de acción que obliga a reconocer cuándo una solución perfecta ya no existe?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: reducción progresiva de cursos de acción que obliga a reconocer cuándo una solución perfecta ya no existe?",
+        "En «Escalada», selecciona el concepto descrito así: reducción progresiva de cursos de acción que obliga a reconocer cuándo una solución perfecta ya no existe."
+      ],
+      "answer_display_es": "pérdida de opciones",
+      "accepted_short_answers_es": [
+        "pérdida de opciones"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "pérdida de opciones",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "pérdida de opciones"
       ]
     },
     {
-      "id": "KM-103-Q010",
+      "id": "KM-103-C014",
       "unit_id": "KM-103-U03",
-      "type": "scenario",
-      "prompt_es": "Escenario: Continuar desde el rol real. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: combinación de probabilidad, impacto y exposición comparada con misión, alternativas, autoridad y reversibilidad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: combinación de probabilidad, impacto y exposición comparada con misión, alternativas, autoridad y reversibilidad?",
+        "En «Escalada», selecciona el concepto descrito así: combinación de probabilidad, impacto y exposición comparada con misión, alternativas, autoridad y reversibilidad."
+      ],
+      "answer_display_es": "riesgo",
+      "accepted_short_answers_es": [
+        "riesgo"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "riesgo"
       ]
     },
     {
-      "id": "KM-103-Q011",
+      "id": "KM-103-C015",
       "unit_id": "KM-103-U03",
-      "type": "debrief",
-      "prompt_es": "Tras Escalada, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: condición de tiempo, riesgo o carga que aumenta el coste del error pero no elimina regulación ni responsabilidad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: condición de tiempo, riesgo o carga que aumenta el coste del error pero no elimina regulación ni responsabilidad?",
+        "En «Escalada», selecciona el concepto descrito así: condición de tiempo, riesgo o carga que aumenta el coste del error pero no elimina regulación ni responsabilidad."
+      ],
+      "answer_display_es": "presión",
+      "accepted_short_answers_es": [
+        "presión"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "presión"
       ]
     },
     {
-      "id": "KM-103-Q012",
+      "id": "KM-103-C016",
       "unit_id": "KM-103-U03",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: choque entre objetivos, valores, órdenes o intereses que exige priorización y criterio explícitos?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: choque entre objetivos, valores, órdenes o intereses que exige priorización y criterio explícitos?",
+        "En «Escalada», selecciona el concepto descrito así: choque entre objetivos, valores, órdenes o intereses que exige priorización y criterio explícitos."
+      ],
+      "answer_display_es": "conflicto",
+      "accepted_short_answers_es": [
+        "conflicto"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "conflicto"
       ]
     },
     {
-      "id": "KM-103-Q013",
+      "id": "KM-103-C017",
+      "unit_id": "KM-103-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Escalada»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Escalada»?",
+        "Repaso final: ¿Qué práctica corresponde a «Escalada»?"
+      ],
+      "answer_display_es": "Continuar desde el rol real.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Continuar desde el rol real."
+      ]
+    },
+    {
+      "id": "KM-103-C018",
+      "unit_id": "KM-103-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio de evaluación se asocia a «Escalada»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio de evaluación se asocia a «Escalada»?",
+        "Repaso final: ¿Qué criterio de evaluación se asocia a «Escalada»?"
+      ],
+      "answer_display_es": "Evaluación contextual.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación contextual."
+      ]
+    },
+    {
+      "id": "KM-103-C019",
       "unit_id": "KM-103-U04",
-      "type": "service_readiness",
-      "prompt_es": "Explica limitaciones como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: condiciones o fronteras que deben ser conocidas y comunicadas para no asumir una capacidad inexistente?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: condiciones o fronteras que deben ser conocidas y comunicadas para no asumir una capacidad inexistente?",
+        "En «Situación no ganable», selecciona el concepto descrito así: condiciones o fronteras que deben ser conocidas y comunicadas para no asumir una capacidad inexistente."
+      ],
+      "answer_display_es": "limitaciones",
+      "accepted_short_answers_es": [
+        "limitaciones"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "limitaciones",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "limitaciones"
       ]
     },
     {
-      "id": "KM-103-Q014",
+      "id": "KM-103-C020",
       "unit_id": "KM-103-U04",
-      "type": "scenario",
-      "prompt_es": "Escenario: Tomar decisiones sin solución perfecta. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: efectos previsibles o reales de una decisión sobre vidas, nave, misión, relaciones y recursos?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: efectos previsibles o reales de una decisión sobre vidas, nave, misión, relaciones y recursos?",
+        "En «Situación no ganable», selecciona el concepto descrito así: efectos previsibles o reales de una decisión sobre vidas, nave, misión, relaciones y recursos."
+      ],
+      "answer_display_es": "consecuencias",
+      "accepted_short_answers_es": [
+        "consecuencias"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "consecuencias"
       ]
     },
     {
-      "id": "KM-103-Q015",
+      "id": "KM-103-C021",
       "unit_id": "KM-103-U04",
-      "type": "debrief",
-      "prompt_es": "Tras Situación no ganable, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: obligación de responder por decisiones propias, incluida la decisión de delegar, continuar o escalar?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: obligación de responder por decisiones propias, incluida la decisión de delegar, continuar o escalar?",
+        "En «Situación no ganable», selecciona el concepto descrito así: obligación de responder por decisiones propias, incluida la decisión de delegar, continuar o escalar."
+      ],
+      "answer_display_es": "responsabilidad",
+      "accepted_short_answers_es": [
+        "responsabilidad"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "responsabilidad"
       ]
     },
     {
-      "id": "KM-103-Q016",
+      "id": "KM-103-C022",
       "unit_id": "KM-103-U04",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: valoración de lo que es profesionalmente defendible cuando varias obligaciones o consecuencias entran en tensión?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: valoración de lo que es profesionalmente defendible cuando varias obligaciones o consecuencias entran en tensión?",
+        "En «Situación no ganable», selecciona el concepto descrito así: valoración de lo que es profesionalmente defendible cuando varias obligaciones o consecuencias entran en tensión."
+      ],
+      "answer_display_es": "ética",
+      "accepted_short_answers_es": [
+        "ética"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "ética"
       ]
     },
     {
-      "id": "KM-103-Q017",
+      "id": "KM-103-C023",
+      "unit_id": "KM-103-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Situación no ganable»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Situación no ganable»?",
+        "Repaso final: ¿Qué práctica corresponde a «Situación no ganable»?"
+      ],
+      "answer_display_es": "Tomar decisiones sin solución perfecta.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Tomar decisiones sin solución perfecta."
+      ]
+    },
+    {
+      "id": "KM-103-C024",
+      "unit_id": "KM-103-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio de evaluación se asocia a «Situación no ganable»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio de evaluación se asocia a «Situación no ganable»?",
+        "Repaso final: ¿Qué criterio de evaluación se asocia a «Situación no ganable»?"
+      ],
+      "answer_display_es": "No se evalúa 'salvar la nave' como condición de aprobado.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "No se evalúa 'salvar la nave' como condición de aprobado."
+      ]
+    },
+    {
+      "id": "KM-103-C025",
       "unit_id": "KM-103-U05",
-      "type": "service_readiness",
-      "prompt_es": "Explica resultado como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: estado final del escenario; aporta evidencia, pero no sustituye la evaluación del proceso y la conducta?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: estado final del escenario; aporta evidencia, pero no sustituye la evaluación del proceso y la conducta?",
+        "En «Cierre», selecciona el concepto descrito así: estado final del escenario; aporta evidencia, pero no sustituye la evaluación del proceso y la conducta."
+      ],
+      "answer_display_es": "resultado",
+      "accepted_short_answers_es": [
+        "resultado"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "resultado",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "resultado"
       ]
     },
     {
-      "id": "KM-103-Q018",
+      "id": "KM-103-C026",
       "unit_id": "KM-103-U05",
-      "type": "scenario",
-      "prompt_es": "Escenario: Finalizar escenario. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: forma observable de actuar respecto a integridad, disciplina, respeto, seguridad, comunicación y responsabilidad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: forma observable de actuar respecto a integridad, disciplina, respeto, seguridad, comunicación y responsabilidad?",
+        "En «Cierre», selecciona el concepto descrito así: forma observable de actuar respecto a integridad, disciplina, respeto, seguridad, comunicación y responsabilidad."
+      ],
+      "answer_display_es": "conducta",
+      "accepted_short_answers_es": [
+        "conducta"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "conducta"
       ]
     },
     {
-      "id": "KM-103-Q019",
+      "id": "KM-103-C027",
       "unit_id": "KM-103-U05",
-      "type": "debrief",
-      "prompt_es": "Tras Cierre, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: constancia factual de hechos, acciones y decisiones necesaria para reconstrucción y aprendizaje?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: constancia factual de hechos, acciones y decisiones necesaria para reconstrucción y aprendizaje?",
+        "En «Cierre», selecciona el concepto descrito así: constancia factual de hechos, acciones y decisiones necesaria para reconstrucción y aprendizaje."
+      ],
+      "answer_display_es": "registro",
+      "accepted_short_answers_es": [
+        "registro"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "registro"
       ]
     },
     {
-      "id": "KM-103-Q020",
+      "id": "KM-103-C028",
       "unit_id": "KM-103-U05",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: magnitud de los efectos de una decisión o evento sobre personas, misión y mundo persistente?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: magnitud de los efectos de una decisión o evento sobre personas, misión y mundo persistente?",
+        "En «Cierre», selecciona el concepto descrito así: magnitud de los efectos de una decisión o evento sobre personas, misión y mundo persistente."
+      ],
+      "answer_display_es": "impacto",
+      "accepted_short_answers_es": [
+        "impacto"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "impacto"
       ]
     },
     {
-      "id": "KM-103-Q021",
-      "unit_id": "KM-103-U06",
-      "type": "service_readiness",
-      "prompt_es": "Explica juicio como se lo explicarías a un Alférez que recibe su primer destino.",
+      "id": "KM-103-C029",
+      "unit_id": "KM-103-U05",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Cierre»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Cierre»?",
+        "Repaso final: ¿Qué práctica corresponde a «Cierre»?"
+      ],
+      "answer_display_es": "Finalizar escenario.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "juicio",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "Finalizar escenario."
       ]
     },
     {
-      "id": "KM-103-Q022",
-      "unit_id": "KM-103-U06",
-      "type": "scenario",
-      "prompt_es": "Escenario: Debrief individual y de equipo. Describe decisión inicial, alternativas y condición de escalado.",
+      "id": "KM-103-C030",
+      "unit_id": "KM-103-U05",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio de evaluación se asocia a «Cierre»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio de evaluación se asocia a «Cierre»?",
+        "Repaso final: ¿Qué criterio de evaluación se asocia a «Cierre»?"
+      ],
+      "answer_display_es": "Evidencia.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "Evidencia."
       ]
     },
     {
-      "id": "KM-103-Q023",
+      "id": "KM-103-C031",
       "unit_id": "KM-103-U06",
-      "type": "debrief",
-      "prompt_es": "Tras Debrief, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: capacidad de seleccionar una acción razonable integrando información, límites, riesgo, alternativas y consecuencias?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: capacidad de seleccionar una acción razonable integrando información, límites, riesgo, alternativas y consecuencias?",
+        "En «Debrief», selecciona el concepto descrito así: capacidad de seleccionar una acción razonable integrando información, límites, riesgo, alternativas y consecuencias."
+      ],
+      "answer_display_es": "juicio",
+      "accepted_short_answers_es": [
+        "juicio"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "juicio"
       ]
     },
     {
-      "id": "KM-103-Q024",
+      "id": "KM-103-C032",
       "unit_id": "KM-103-U06",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: transmisión clara y oportuna de estado, intención, riesgo, necesidades y resultado al destinatario adecuado?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: transmisión clara y oportuna de estado, intención, riesgo, necesidades y resultado al destinatario adecuado?",
+        "En «Debrief», selecciona el concepto descrito así: transmisión clara y oportuna de estado, intención, riesgo, necesidades y resultado al destinatario adecuado."
+      ],
+      "answer_display_es": "comunicación",
+      "accepted_short_answers_es": [
+        "comunicación"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "comunicación"
+      ]
+    },
+    {
+      "id": "KM-103-C033",
+      "unit_id": "KM-103-U06",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: valoración de lo que es profesionalmente defendible cuando varias obligaciones o consecuencias entran en tensión?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: valoración de lo que es profesionalmente defendible cuando varias obligaciones o consecuencias entran en tensión?",
+        "En «Debrief», selecciona el concepto descrito así: valoración de lo que es profesionalmente defendible cuando varias obligaciones o consecuencias entran en tensión."
+      ],
+      "answer_display_es": "ética",
+      "accepted_short_answers_es": [
+        "ética"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "ética"
+      ]
+    },
+    {
+      "id": "KM-103-C034",
+      "unit_id": "KM-103-U06",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: capacidad de mantener procedimientos, comunicación y cadena de mando bajo presión sin ocultar riesgos reales?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: capacidad de mantener procedimientos, comunicación y cadena de mando bajo presión sin ocultar riesgos reales?",
+        "En «Debrief», selecciona el concepto descrito así: capacidad de mantener procedimientos, comunicación y cadena de mando bajo presión sin ocultar riesgos reales."
+      ],
+      "answer_display_es": "disciplina",
+      "accepted_short_answers_es": [
+        "disciplina"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "disciplina"
+      ]
+    },
+    {
+      "id": "KM-103-C035",
+      "unit_id": "KM-103-U06",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: reconocimiento honesto de fortalezas, sesgos, límites y reacciones propias para poder mejorar?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: reconocimiento honesto de fortalezas, sesgos, límites y reacciones propias para poder mejorar?",
+        "En «Debrief», selecciona el concepto descrito así: reconocimiento honesto de fortalezas, sesgos, límites y reacciones propias para poder mejorar."
+      ],
+      "answer_display_es": "autoconocimiento",
+      "accepted_short_answers_es": [
+        "autoconocimiento"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "autoconocimiento"
+      ]
+    },
+    {
+      "id": "KM-103-C036",
+      "unit_id": "KM-103-U06",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Debrief»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Debrief»?",
+        "Repaso final: ¿Qué práctica corresponde a «Debrief»?"
+      ],
+      "answer_display_es": "Debrief individual y de equipo.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Debrief individual y de equipo."
       ]
     }
   ]

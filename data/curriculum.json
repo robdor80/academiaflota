@@ -1,5 +1,5 @@
 {
-  "version": "2.0",
+  "version": "2.1",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceManifest": "gameplay/careers/academy_path/curriculum/curriculum_manifest_v1_0.json",
   "philosophy": "La web publica una vista derivada del currículo autoritativo del videojuego. No simula ni desbloquea la carrera del personaje.",
@@ -600,7 +600,8 @@
               "studyId": "course-BRN-101",
               "dataFile": "data/courses/BRN-101.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/BRN-101.json"
             },
             {
               "courseId": "DUT-101",
@@ -609,7 +610,8 @@
               "studyId": "course-DUT-101",
               "dataFile": "data/courses/DUT-101.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/DUT-101.json"
             },
             {
               "courseId": "LDR-101",
@@ -618,7 +620,8 @@
               "studyId": "course-LDR-101",
               "dataFile": "data/courses/LDR-101.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/LDR-101.json"
             },
             {
               "courseId": "INT-101",
@@ -627,7 +630,8 @@
               "studyId": "course-INT-101",
               "dataFile": "data/courses/INT-101.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/INT-101.json"
             },
             {
               "courseId": "DEV-101",
@@ -636,7 +640,8 @@
               "studyId": "course-DEV-101",
               "dataFile": "data/courses/DEV-101.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/DEV-101.json"
             }
           ]
         },
@@ -653,7 +658,8 @@
               "studyId": "course-BRN-102",
               "dataFile": "data/courses/BRN-102.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/BRN-102.json"
             },
             {
               "courseId": "OPS-102",
@@ -662,7 +668,8 @@
               "studyId": "course-OPS-102",
               "dataFile": "data/courses/OPS-102.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/OPS-102.json"
             },
             {
               "courseId": "WCH-102",
@@ -671,7 +678,8 @@
               "studyId": "course-WCH-102",
               "dataFile": "data/courses/WCH-102.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/WCH-102.json"
             },
             {
               "courseId": "PRC-102",
@@ -680,7 +688,8 @@
               "studyId": "course-PRC-102",
               "dataFile": "data/courses/PRC-102.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/PRC-102.json"
             },
             {
               "courseId": "DEB-102",
@@ -689,7 +698,8 @@
               "studyId": "course-DEB-102",
               "dataFile": "data/courses/DEB-102.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/DEB-102.json"
             }
           ]
         },
@@ -706,7 +716,8 @@
               "studyId": "course-CAP-103",
               "dataFile": "data/courses/CAP-103.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/CAP-103.json"
             },
             {
               "courseId": "KM-103",
@@ -715,7 +726,8 @@
               "studyId": "course-KM-103",
               "dataFile": "data/courses/KM-103.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/KM-103.json"
             },
             {
               "courseId": "SVC-103",
@@ -724,7 +736,8 @@
               "studyId": "course-SVC-103",
               "dataFile": "data/courses/SVC-103.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/SVC-103.json"
             },
             {
               "courseId": "ASS-103",
@@ -733,7 +746,8 @@
               "studyId": "course-ASS-103",
               "dataFile": "data/courses/ASS-103.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/ASS-103.json"
             },
             {
               "courseId": "GRD-103",
@@ -742,10 +756,20 @@
               "studyId": "course-GRD-103",
               "dataFile": "data/courses/GRD-103.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/GRD-103.json"
             }
           ]
         }
+      ],
+      "specializations": [
+        "Mando",
+        "Vuelo / Navegación",
+        "Operaciones",
+        "Ingeniería",
+        "Seguridad / Táctica",
+        "Ciencia / Sensores",
+        "Medicina"
       ]
     }
   ],

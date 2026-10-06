@@ -1,8 +1,8 @@
 {
   "schema_version": "2.1.0",
   "branch_id": "security_tactical",
-  "status": "concept_driven_autocorrectable_v2_1",
-  "scope": "year3_201_203_only",
+  "status": "developed_concept_driven_autocorrectable_v2_1",
+  "scope": "year3_and_year4_all_branch_stages",
   "source_bank": "question_bank_v1_0.json",
   "year3_courses": [
     "SEC-201",
@@ -1287,312 +1287,831 @@
       "answer_key_es": [
         "comunicación preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes."
       ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C073",
+      "unit_id": "SEC-101-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: personas disponibles consideradas por rol, competencia, carga y capacidad de relevo; supervisar exige adaptar control y apoyo al riesgo?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: personas disponibles consideradas por rol, competencia, carga y capacidad de relevo; supervisar exige adaptar control y apoyo al riesgo?",
+        "En «Supervisión de seguridad», selecciona el concepto descrito así: personas disponibles consideradas por rol, competencia, carga y capacidad de relevo; supervisar exige adaptar control y apoyo al riesgo."
+      ],
+      "answer_display_es": "equipo",
+      "accepted_short_answers_es": [
+        "equipo"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "equipo"
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C074",
+      "unit_id": "SEC-101-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: periodos de responsabilidad operativa que requieren incorporación, desempeño sostenido y relevo formal?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: periodos de responsabilidad operativa que requieren incorporación, desempeño sostenido y relevo formal?",
+        "En «Supervisión de seguridad», selecciona el concepto descrito así: periodos de responsabilidad operativa que requieren incorporación, desempeño sostenido y relevo formal."
+      ],
+      "answer_display_es": "turnos",
+      "accepted_short_answers_es": [
+        "turnos"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "turnos"
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C075",
+      "unit_id": "SEC-101-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: combinación de probabilidad, impacto y exposición; la respuesta debe ser proporcionada y quedar dentro de autoridad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: combinación de probabilidad, impacto y exposición; la respuesta debe ser proporcionada y quedar dentro de autoridad?",
+        "En «Supervisión de seguridad», selecciona el concepto descrito así: combinación de probabilidad, impacto y exposición; la respuesta debe ser proporcionada y quedar dentro de autoridad."
+      ],
+      "answer_display_es": "riesgo",
+      "accepted_short_answers_es": [
+        "riesgo"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "riesgo"
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C076",
+      "unit_id": "SEC-101-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: criterios mínimos de seguridad y calidad que permiten decidir si una actuación es aceptable y repetible?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: criterios mínimos de seguridad y calidad que permiten decidir si una actuación es aceptable y repetible?",
+        "En «Supervisión de seguridad», selecciona el concepto descrito así: criterios mínimos de seguridad y calidad que permiten decidir si una actuación es aceptable y repetible."
+      ],
+      "answer_display_es": "estándares",
+      "accepted_short_answers_es": [
+        "estándares"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "estándares"
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C077",
+      "unit_id": "SEC-101-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Supervisión de seguridad»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Supervisión de seguridad»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Supervisión de seguridad»?"
+      ],
+      "answer_display_es": "Dirigir servicio.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Dirigir servicio."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C078",
+      "unit_id": "SEC-101-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Supervisión de seguridad»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Supervisión de seguridad»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Supervisión de seguridad»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C079",
+      "unit_id": "SEC-101-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: pérdida parcial de detección o protección que reduce información o margen defensivo y obliga a revisar táctica?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: pérdida parcial de detección o protección que reduce información o margen defensivo y obliga a revisar táctica?",
+        "En «Táctica bajo daño», selecciona el concepto descrito así: pérdida parcial de detección o protección que reduce información o margen defensivo y obliga a revisar táctica."
+      ],
+      "answer_display_es": "sensores/escudos degradados",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "sensores/escudos degradados"
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C080",
+      "unit_id": "SEC-101-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: orden relativo entre amenazas, protección de personas, misión y otras demandas?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: orden relativo entre amenazas, protección de personas, misión y otras demandas?",
+        "En «Táctica bajo daño», selecciona el concepto descrito así: orden relativo entre amenazas, protección de personas, misión y otras demandas."
+      ],
+      "answer_display_es": "prioridad",
+      "accepted_short_answers_es": [
+        "prioridad"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "prioridad"
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C081",
+      "unit_id": "SEC-101-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: alineación entre seguridad, táctica, mando y otros puestos para que acciones y restricciones sean compatibles?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: alineación entre seguridad, táctica, mando y otros puestos para que acciones y restricciones sean compatibles?",
+        "En «Táctica bajo daño», selecciona el concepto descrito así: alineación entre seguridad, táctica, mando y otros puestos para que acciones y restricciones sean compatibles."
+      ],
+      "answer_display_es": "coordinación",
+      "accepted_short_answers_es": [
+        "coordinación"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "coordinación"
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C082",
+      "unit_id": "SEC-101-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Táctica bajo daño»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Táctica bajo daño»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Táctica bajo daño»?"
+      ],
+      "answer_display_es": "Simulación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Simulación."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C083",
+      "unit_id": "SEC-101-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Táctica bajo daño»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Táctica bajo daño»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Táctica bajo daño»?"
+      ],
+      "answer_display_es": "Práctica.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Práctica."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C084",
+      "unit_id": "SEC-101-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio profesional guía «Táctica bajo daño»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio profesional guía «Táctica bajo daño»?",
+        "Repaso de rama: ¿Qué criterio profesional guía «Táctica bajo daño»?"
+      ],
+      "answer_display_es": "Seguridad/Táctica debe responder con **autoridad y proporcionalidad**, proteger personas y mantener siempre una vía de desescalada cuando sea compatible con la amenaza.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Seguridad/Táctica debe responder con **autoridad y proporcionalidad**, proteger personas y mantener siempre una vía de desescalada cuando sea compatible con la amenaza."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C085",
+      "unit_id": "SEC-101-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: personas a proteger o emplear consideradas por exposición, competencia, ubicación y capacidad de evacuación?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: personas a proteger o emplear consideradas por exposición, competencia, ubicación y capacidad de evacuación?",
+        "En «Protección de misión», selecciona el concepto descrito así: personas a proteger o emplear consideradas por exposición, competencia, ubicación y capacidad de evacuación."
+      ],
+      "answer_display_es": "personal",
+      "accepted_short_answers_es": [
+        "personal"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "personal"
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C086",
+      "unit_id": "SEC-101-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: espacio físico o infraestructura cuya protección exige conocer accesos, zonas críticas, ocupación y rutas de respuesta?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: espacio físico o infraestructura cuya protección exige conocer accesos, zonas críticas, ocupación y rutas de respuesta?",
+        "En «Protección de misión», selecciona el concepto descrito así: espacio físico o infraestructura cuya protección exige conocer accesos, zonas críticas, ocupación y rutas de respuesta."
+      ],
+      "answer_display_es": "instalación",
+      "accepted_short_answers_es": [
+        "instalación"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "instalación"
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C087",
+      "unit_id": "SEC-101-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: equipo desplegado fuera de la unidad que necesita misión, comunicaciones, extracción y límites de autoridad claros?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: equipo desplegado fuera de la unidad que necesita misión, comunicaciones, extracción y límites de autoridad claros?",
+        "En «Protección de misión», selecciona el concepto descrito así: equipo desplegado fuera de la unidad que necesita misión, comunicaciones, extracción y límites de autoridad claros."
+      ],
+      "answer_display_es": "away team",
+      "accepted_short_answers_es": [
+        "away team"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "away team"
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C088",
+      "unit_id": "SEC-101-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Protección de misión»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Protección de misión»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Protección de misión»?"
+      ],
+      "answer_display_es": "Plan avanzado.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Plan avanzado."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C089",
+      "unit_id": "SEC-101-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Protección de misión»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Protección de misión»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Protección de misión»?"
+      ],
+      "answer_display_es": "Revisión.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Revisión."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C090",
+      "unit_id": "SEC-101-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio profesional guía «Protección de misión»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio profesional guía «Protección de misión»?",
+        "Repaso de rama: ¿Qué criterio profesional guía «Protección de misión»?"
+      ],
+      "answer_display_es": "Seguridad/Táctica debe responder con **autoridad y proporcionalidad**, proteger personas y mantener siempre una vía de desescalada cuando sea compatible con la amenaza.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Seguridad/Táctica debe responder con **autoridad y proporcionalidad**, proteger personas y mantener siempre una vía de desescalada cuando sea compatible con la amenaza."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C091",
+      "unit_id": "SEC-101-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: actor, capacidad o condición con posibilidad de causar daño; debe describirse por evidencia y no por intención asumida?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: actor, capacidad o condición con posibilidad de causar daño; debe describirse por evidencia y no por intención asumida?",
+        "En «Asesoramiento al mando», selecciona el concepto descrito así: actor, capacidad o condición con posibilidad de causar daño; debe describirse por evidencia y no por intención asumida."
+      ],
+      "answer_display_es": "amenaza",
+      "accepted_short_answers_es": [
+        "amenaza"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "amenaza"
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C092",
+      "unit_id": "SEC-101-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: cursos de acción viables comparados por proporcionalidad, riesgo, tiempo y consecuencias?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: cursos de acción viables comparados por proporcionalidad, riesgo, tiempo y consecuencias?",
+        "En «Asesoramiento al mando», selecciona el concepto descrito así: cursos de acción viables comparados por proporcionalidad, riesgo, tiempo y consecuencias."
+      ],
+      "answer_display_es": "opciones",
+      "accepted_short_answers_es": [
+        "opciones"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "opciones"
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C093",
+      "unit_id": "SEC-101-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: efectos previsibles o reales sobre personas, misión, relaciones y entorno?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: efectos previsibles o reales sobre personas, misión, relaciones y entorno?",
+        "En «Asesoramiento al mando», selecciona el concepto descrito así: efectos previsibles o reales sobre personas, misión, relaciones y entorno."
+      ],
+      "answer_display_es": "consecuencias",
+      "accepted_short_answers_es": [
+        "consecuencias"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "consecuencias"
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C094",
+      "unit_id": "SEC-101-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Asesoramiento al mando»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Asesoramiento al mando»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Asesoramiento al mando»?"
+      ],
+      "answer_display_es": "Briefing.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Briefing."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C095",
+      "unit_id": "SEC-101-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Asesoramiento al mando»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Asesoramiento al mando»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Asesoramiento al mando»?"
+      ],
+      "answer_display_es": "Juicio.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Juicio."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C096",
+      "unit_id": "SEC-101-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio profesional guía «Asesoramiento al mando»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio profesional guía «Asesoramiento al mando»?",
+        "Repaso de rama: ¿Qué criterio profesional guía «Asesoramiento al mando»?"
+      ],
+      "answer_display_es": "Seguridad/Táctica debe responder con **autoridad y proporcionalidad**, proteger personas y mantener siempre una vía de desescalada cuando sea compatible con la amenaza.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Seguridad/Táctica debe responder con **autoridad y proporcionalidad**, proteger personas y mantener siempre una vía de desescalada cuando sea compatible con la amenaza."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C097",
+      "unit_id": "SEC-102-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: síntesis previa de misión, amenaza, reglas, roles, comunicaciones y contingencias?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: síntesis previa de misión, amenaza, reglas, roles, comunicaciones y contingencias?",
+        "En «Misión táctica completa», selecciona el concepto descrito así: síntesis previa de misión, amenaza, reglas, roles, comunicaciones y contingencias."
+      ],
+      "answer_display_es": "brief",
+      "accepted_short_answers_es": [
+        "brief"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "brief"
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C098",
+      "unit_id": "SEC-102-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: restricciones de actuación y uso de fuerza que siguen vigentes bajo presión?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: restricciones de actuación y uso de fuerza que siguen vigentes bajo presión?",
+        "En «Misión táctica completa», selecciona el concepto descrito así: restricciones de actuación y uso de fuerza que siguen vigentes bajo presión."
+      ],
+      "answer_display_es": "reglas",
+      "accepted_short_answers_es": [
+        "reglas"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "reglas"
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C099",
+      "unit_id": "SEC-102-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: realización del plan con control, comunicación y adaptación proporcional a la situación?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: realización del plan con control, comunicación y adaptación proporcional a la situación?",
+        "En «Misión táctica completa», selecciona el concepto descrito así: realización del plan con control, comunicación y adaptación proporcional a la situación."
+      ],
+      "answer_display_es": "ejecución",
+      "accepted_short_answers_es": [
+        "ejecución"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "ejecución"
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C100",
+      "unit_id": "SEC-102-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: confirmación de seguridad, estado, detenidos o afectados cuando proceda, registro y pendientes?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: confirmación de seguridad, estado, detenidos o afectados cuando proceda, registro y pendientes?",
+        "En «Misión táctica completa», selecciona el concepto descrito así: confirmación de seguridad, estado, detenidos o afectados cuando proceda, registro y pendientes."
+      ],
+      "answer_display_es": "cierre",
+      "accepted_short_answers_es": [
+        "cierre"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "cierre"
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C101",
+      "unit_id": "SEC-102-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Misión táctica completa»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Misión táctica completa»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Misión táctica completa»?"
+      ],
+      "answer_display_es": "Operar misión.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Operar misión."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C102",
+      "unit_id": "SEC-102-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Misión táctica completa»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Misión táctica completa»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Misión táctica completa»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C103",
+      "unit_id": "SEC-102-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: entrada hostil o no autorizada que requiere proteger personas, sectores críticos y continuidad de mando sin perder proporcionalidad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: entrada hostil o no autorizada que requiere proteger personas, sectores críticos y continuidad de mando sin perder proporcionalidad?",
+        "En «Crisis de seguridad», selecciona el concepto descrito así: entrada hostil o no autorizada que requiere proteger personas, sectores críticos y continuidad de mando sin perder proporcionalidad."
+      ],
+      "answer_display_es": "abordaje",
+      "accepted_short_answers_es": [
+        "abordaje"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "abordaje"
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C104",
+      "unit_id": "SEC-102-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: situación en la que la seguridad de una persona condiciona opciones; exige información, contención y decisiones proporcionadas al contexto?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: situación en la que la seguridad de una persona condiciona opciones; exige información, contención y decisiones proporcionadas al contexto?",
+        "En «Crisis de seguridad», selecciona el concepto descrito así: situación en la que la seguridad de una persona condiciona opciones; exige información, contención y decisiones proporcionadas al contexto."
+      ],
+      "answer_display_es": "rehén contextual",
+      "accepted_short_answers_es": [
+        "rehén contextual"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "rehén contextual"
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C105",
+      "unit_id": "SEC-102-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: movimiento planificado de personas desde una zona de riesgo a una segura con rutas, prioridad y control de recuento?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: movimiento planificado de personas desde una zona de riesgo a una segura con rutas, prioridad y control de recuento?",
+        "En «Crisis de seguridad», selecciona el concepto descrito así: movimiento planificado de personas desde una zona de riesgo a una segura con rutas, prioridad y control de recuento."
+      ],
+      "answer_display_es": "evacuación",
+      "accepted_short_answers_es": [
+        "evacuación"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "evacuación"
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C106",
+      "unit_id": "SEC-102-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Crisis de seguridad»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Crisis de seguridad»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Crisis de seguridad»?"
+      ],
+      "answer_display_es": "Escenario complejo.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Escenario complejo."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C107",
+      "unit_id": "SEC-102-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Crisis de seguridad»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Crisis de seguridad»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Crisis de seguridad»?"
+      ],
+      "answer_display_es": "Juicio.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Juicio."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C108",
+      "unit_id": "SEC-102-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio profesional guía «Crisis de seguridad»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio profesional guía «Crisis de seguridad»?",
+        "Repaso de rama: ¿Qué criterio profesional guía «Crisis de seguridad»?"
+      ],
+      "answer_display_es": "Seguridad/Táctica debe responder con **autoridad y proporcionalidad**, proteger personas y mantener siempre una vía de desescalada cuando sea compatible con la amenaza.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Seguridad/Táctica debe responder con **autoridad y proporcionalidad**, proteger personas y mantener siempre una vía de desescalada cuando sea compatible con la amenaza."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C109",
+      "unit_id": "SEC-102-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: intercambio claro que reduce ambigüedad, permite desescalar y mantiene coordinación entre actores?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: intercambio claro que reduce ambigüedad, permite desescalar y mantiene coordinación entre actores?",
+        "En «Desescalada», selecciona el concepto descrito así: intercambio claro que reduce ambigüedad, permite desescalar y mantiene coordinación entre actores."
+      ],
+      "answer_display_es": "comunicación",
+      "accepted_short_answers_es": [
+        "comunicación"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "comunicación"
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C110",
+      "unit_id": "SEC-102-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: ubicación física o táctica elegida para proteger, observar o controlar sin aumentar innecesariamente el riesgo?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: ubicación física o táctica elegida para proteger, observar o controlar sin aumentar innecesariamente el riesgo?",
+        "En «Desescalada», selecciona el concepto descrito así: ubicación física o táctica elegida para proteger, observar o controlar sin aumentar innecesariamente el riesgo."
+      ],
+      "answer_display_es": "posición",
+      "accepted_short_answers_es": [
+        "posición"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "posición"
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C111",
+      "unit_id": "SEC-102-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: métodos o fuentes distintas que pueden compensar la pérdida de un sensor o una interpretación dudosa?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: métodos o fuentes distintas que pueden compensar la pérdida de un sensor o una interpretación dudosa?",
+        "En «Desescalada», selecciona el concepto descrito así: métodos o fuentes distintas que pueden compensar la pérdida de un sensor o una interpretación dudosa."
+      ],
+      "answer_display_es": "alternativas",
+      "accepted_short_answers_es": [
+        "alternativas"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "alternativas"
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C112",
+      "unit_id": "SEC-102-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Desescalada»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Desescalada»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Desescalada»?"
+      ],
+      "answer_display_es": "Caso.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Caso."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C113",
+      "unit_id": "SEC-102-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Desescalada»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Desescalada»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Desescalada»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C114",
+      "unit_id": "SEC-102-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio profesional guía «Desescalada»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio profesional guía «Desescalada»?",
+        "Repaso de rama: ¿Qué criterio profesional guía «Desescalada»?"
+      ],
+      "answer_display_es": "Seguridad/Táctica debe responder con **autoridad y proporcionalidad**, proteger personas y mantener siempre una vía de desescalada cuando sea compatible con la amenaza.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Seguridad/Táctica debe responder con **autoridad y proporcionalidad**, proteger personas y mantener siempre una vía de desescalada cuando sea compatible con la amenaza."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C115",
+      "unit_id": "SEC-102-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: riesgos activos o potenciales que deben entregarse en el relevo con evidencia, ubicación y estado?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: riesgos activos o potenciales que deben entregarse en el relevo con evidencia, ubicación y estado?",
+        "En «Handoff táctico», selecciona el concepto descrito así: riesgos activos o potenciales que deben entregarse en el relevo con evidencia, ubicación y estado."
+      ],
+      "answer_display_es": "amenazas",
+      "accepted_short_answers_es": [
+        "amenazas"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "amenazas"
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C116",
+      "unit_id": "SEC-102-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: situación actual verificable de seguridad, sistemas defensivos, personal y acciones en curso?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: situación actual verificable de seguridad, sistemas defensivos, personal y acciones en curso?",
+        "En «Handoff táctico», selecciona el concepto descrito así: situación actual verificable de seguridad, sistemas defensivos, personal y acciones en curso."
+      ],
+      "answer_display_es": "estado",
+      "accepted_short_answers_es": [
+        "estado"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "estado"
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C117",
+      "unit_id": "SEC-102-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: instrucciones vigentes con prioridad, alcance y autoridad emisora?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: instrucciones vigentes con prioridad, alcance y autoridad emisora?",
+        "En «Handoff táctico», selecciona el concepto descrito así: instrucciones vigentes con prioridad, alcance y autoridad emisora."
+      ],
+      "answer_display_es": "órdenes",
+      "accepted_short_answers_es": [
+        "órdenes"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "órdenes"
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C118",
+      "unit_id": "SEC-102-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: acciones abiertas con responsable, prioridad y criterio de cierre?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: acciones abiertas con responsable, prioridad y criterio de cierre?",
+        "En «Handoff táctico», selecciona el concepto descrito así: acciones abiertas con responsable, prioridad y criterio de cierre."
+      ],
+      "answer_display_es": "pendientes",
+      "accepted_short_answers_es": [
+        "pendientes"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "pendientes"
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C119",
+      "unit_id": "SEC-102-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Handoff táctico»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Handoff táctico»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Handoff táctico»?"
+      ],
+      "answer_display_es": "Relevo profesional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Relevo profesional."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C120",
+      "unit_id": "SEC-102-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Handoff táctico»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Handoff táctico»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Handoff táctico»?"
+      ],
+      "answer_display_es": "Práctica.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Práctica."
+      ]
     }
   ],
-  "legacy_year4_questions": [
-    {
-      "id": "SECURITY_TACTICAL-Q037",
-      "course_id": "SEC-101",
-      "unit_id": "SEC-101-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica equipo desde la perspectiva de Seguridad / Táctica.",
-      "answer_key_es": [
-        "equipo",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "SECURITY_TACTICAL-Q038",
-      "course_id": "SEC-101",
-      "unit_id": "SEC-101-U01",
-      "type": "scenario",
-      "prompt_es": "Dirigir servicio. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "SECURITY_TACTICAL-Q039",
-      "course_id": "SEC-101",
-      "unit_id": "SEC-101-U01",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Supervisión de seguridad para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "SECURITY_TACTICAL-Q040",
-      "course_id": "SEC-101",
-      "unit_id": "SEC-101-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica sensores/escudos degradados desde la perspectiva de Seguridad / Táctica.",
-      "answer_key_es": [
-        "sensores/escudos degradados",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "SECURITY_TACTICAL-Q041",
-      "course_id": "SEC-101",
-      "unit_id": "SEC-101-U02",
-      "type": "scenario",
-      "prompt_es": "Simulación. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "SECURITY_TACTICAL-Q042",
-      "course_id": "SEC-101",
-      "unit_id": "SEC-101-U02",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Táctica bajo daño para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "SECURITY_TACTICAL-Q043",
-      "course_id": "SEC-101",
-      "unit_id": "SEC-101-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica personal desde la perspectiva de Seguridad / Táctica.",
-      "answer_key_es": [
-        "personal",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "SECURITY_TACTICAL-Q044",
-      "course_id": "SEC-101",
-      "unit_id": "SEC-101-U03",
-      "type": "scenario",
-      "prompt_es": "Plan avanzado. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "SECURITY_TACTICAL-Q045",
-      "course_id": "SEC-101",
-      "unit_id": "SEC-101-U03",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Protección de misión para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "SECURITY_TACTICAL-Q046",
-      "course_id": "SEC-101",
-      "unit_id": "SEC-101-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica amenaza desde la perspectiva de Seguridad / Táctica.",
-      "answer_key_es": [
-        "amenaza",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "SECURITY_TACTICAL-Q047",
-      "course_id": "SEC-101",
-      "unit_id": "SEC-101-U04",
-      "type": "scenario",
-      "prompt_es": "Briefing. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "SECURITY_TACTICAL-Q048",
-      "course_id": "SEC-101",
-      "unit_id": "SEC-101-U04",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Asesoramiento al mando para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "SECURITY_TACTICAL-Q049",
-      "course_id": "SEC-102",
-      "unit_id": "SEC-102-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica brief desde la perspectiva de Seguridad / Táctica.",
-      "answer_key_es": [
-        "brief",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "SECURITY_TACTICAL-Q050",
-      "course_id": "SEC-102",
-      "unit_id": "SEC-102-U01",
-      "type": "scenario",
-      "prompt_es": "Operar misión. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "SECURITY_TACTICAL-Q051",
-      "course_id": "SEC-102",
-      "unit_id": "SEC-102-U01",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Misión táctica completa para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "SECURITY_TACTICAL-Q052",
-      "course_id": "SEC-102",
-      "unit_id": "SEC-102-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica abordaje desde la perspectiva de Seguridad / Táctica.",
-      "answer_key_es": [
-        "abordaje",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "SECURITY_TACTICAL-Q053",
-      "course_id": "SEC-102",
-      "unit_id": "SEC-102-U02",
-      "type": "scenario",
-      "prompt_es": "Escenario complejo. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "SECURITY_TACTICAL-Q054",
-      "course_id": "SEC-102",
-      "unit_id": "SEC-102-U02",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Crisis de seguridad para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "SECURITY_TACTICAL-Q055",
-      "course_id": "SEC-102",
-      "unit_id": "SEC-102-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica comunicación desde la perspectiva de Seguridad / Táctica.",
-      "answer_key_es": [
-        "comunicación",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "SECURITY_TACTICAL-Q056",
-      "course_id": "SEC-102",
-      "unit_id": "SEC-102-U03",
-      "type": "scenario",
-      "prompt_es": "Caso. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "SECURITY_TACTICAL-Q057",
-      "course_id": "SEC-102",
-      "unit_id": "SEC-102-U03",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Desescalada para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "SECURITY_TACTICAL-Q058",
-      "course_id": "SEC-102",
-      "unit_id": "SEC-102-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica amenazas desde la perspectiva de Seguridad / Táctica.",
-      "answer_key_es": [
-        "amenazas",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "SECURITY_TACTICAL-Q059",
-      "course_id": "SEC-102",
-      "unit_id": "SEC-102-U04",
-      "type": "scenario",
-      "prompt_es": "Relevo profesional. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "SECURITY_TACTICAL-Q060",
-      "course_id": "SEC-102",
-      "unit_id": "SEC-102-U04",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Handoff táctico para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    }
-  ]
+  "year4_courses": [
+    "SEC-101",
+    "SEC-102"
+  ],
+  "year4_status": "developed_and_synced_v2_1"
 }

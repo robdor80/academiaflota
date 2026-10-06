@@ -1,8 +1,8 @@
 {
   "schema_version": "2.1.0",
   "branch_id": "medical",
-  "status": "concept_driven_autocorrectable_v2_1",
-  "scope": "year3_201_203_only",
+  "status": "developed_concept_driven_autocorrectable_v2_1",
+  "scope": "year3_and_year4_all_branch_stages",
   "source_bank": "question_bank_v1_0.json",
   "year3_courses": [
     "MED-201",
@@ -1287,312 +1287,841 @@
       "answer_key_es": [
         "comunicación preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes."
       ]
+    },
+    {
+      "id": "MEDICAL-C073",
+      "unit_id": "MED-101-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: resultados que no apuntan a una misma explicación y obligan a revisar calidad, hipótesis y diagnósticos alternativos?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: resultados que no apuntan a una misma explicación y obligan a revisar calidad, hipótesis y diagnósticos alternativos?",
+        "En «Diagnóstico complejo», selecciona el concepto descrito así: resultados que no apuntan a una misma explicación y obligan a revisar calidad, hipótesis y diagnósticos alternativos."
+      ],
+      "answer_display_es": "datos discordantes",
+      "accepted_short_answers_es": [
+        "datos discordantes"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "datos discordantes"
+      ]
+    },
+    {
+      "id": "MEDICAL-C074",
+      "unit_id": "MED-101-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: presencia simultánea de varias condiciones que puede modificar síntomas, riesgos y tratamiento?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: presencia simultánea de varias condiciones que puede modificar síntomas, riesgos y tratamiento?",
+        "En «Diagnóstico complejo», selecciona el concepto descrito así: presencia simultánea de varias condiciones que puede modificar síntomas, riesgos y tratamiento."
+      ],
+      "answer_display_es": "comorbilidad",
+      "accepted_short_answers_es": [
+        "comorbilidad"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "comorbilidad"
+      ]
+    },
+    {
+      "id": "MEDICAL-C075",
+      "unit_id": "MED-101-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: contexto biológico del paciente que condiciona valores normales, fisiología, farmacología y riesgos?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: contexto biológico del paciente que condiciona valores normales, fisiología, farmacología y riesgos?",
+        "En «Diagnóstico complejo», selecciona el concepto descrito así: contexto biológico del paciente que condiciona valores normales, fisiología, farmacología y riesgos."
+      ],
+      "answer_display_es": "especie",
+      "accepted_short_answers_es": [
+        "especie"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "especie"
+      ]
+    },
+    {
+      "id": "MEDICAL-C076",
+      "unit_id": "MED-101-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: margen de desconocimiento o error que acompaña una medida o interpretación y debe comunicarse?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: margen de desconocimiento o error que acompaña una medida o interpretación y debe comunicarse?",
+        "En «Diagnóstico complejo», selecciona el concepto descrito así: margen de desconocimiento o error que acompaña una medida o interpretación y debe comunicarse."
+      ],
+      "answer_display_es": "incertidumbre",
+      "accepted_short_answers_es": [
+        "incertidumbre"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "incertidumbre"
+      ]
+    },
+    {
+      "id": "MEDICAL-C077",
+      "unit_id": "MED-101-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Diagnóstico complejo»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Diagnóstico complejo»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Diagnóstico complejo»?"
+      ],
+      "answer_display_es": "Caso avanzado.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Caso avanzado."
+      ]
+    },
+    {
+      "id": "MEDICAL-C078",
+      "unit_id": "MED-101-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Diagnóstico complejo»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Diagnóstico complejo»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Diagnóstico complejo»?"
+      ],
+      "answer_display_es": "Juicio.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Juicio."
+      ]
+    },
+    {
+      "id": "MEDICAL-C079",
+      "unit_id": "MED-101-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: personas disponibles consideradas por rol, competencia, carga y capacidad de relevo; supervisar exige adaptar control y apoyo al riesgo?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: personas disponibles consideradas por rol, competencia, carga y capacidad de relevo; supervisar exige adaptar control y apoyo al riesgo?",
+        "En «Supervisión clínica», selecciona el concepto descrito así: personas disponibles consideradas por rol, competencia, carga y capacidad de relevo; supervisar exige adaptar control y apoyo al riesgo."
+      ],
+      "answer_display_es": "equipo",
+      "accepted_short_answers_es": [
+        "equipo"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "equipo"
+      ]
+    },
+    {
+      "id": "MEDICAL-C080",
+      "unit_id": "MED-101-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: asignación de una tarea clínica a personal con competencia suficiente manteniendo supervisión y responsabilidad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: asignación de una tarea clínica a personal con competencia suficiente manteniendo supervisión y responsabilidad?",
+        "En «Supervisión clínica», selecciona el concepto descrito así: asignación de una tarea clínica a personal con competencia suficiente manteniendo supervisión y responsabilidad."
+      ],
+      "answer_display_es": "delegación",
+      "accepted_short_answers_es": [
+        "delegación"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "delegación"
+      ]
+    },
+    {
+      "id": "MEDICAL-C081",
+      "unit_id": "MED-101-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: orden relativo entre amenazas, protección de personas, misión y otras demandas?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: orden relativo entre amenazas, protección de personas, misión y otras demandas?",
+        "En «Supervisión clínica», selecciona el concepto descrito así: orden relativo entre amenazas, protección de personas, misión y otras demandas."
+      ],
+      "answer_display_es": "prioridad",
+      "accepted_short_answers_es": [
+        "prioridad"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "prioridad"
+      ]
+    },
+    {
+      "id": "MEDICAL-C082",
+      "unit_id": "MED-101-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: historia factual de valoración, decisiones, intervenciones y evolución necesaria para continuidad asistencial?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: historia factual de valoración, decisiones, intervenciones y evolución necesaria para continuidad asistencial?",
+        "En «Supervisión clínica», selecciona el concepto descrito así: historia factual de valoración, decisiones, intervenciones y evolución necesaria para continuidad asistencial."
+      ],
+      "answer_display_es": "registro",
+      "accepted_short_answers_es": [
+        "registro"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "registro"
+      ]
+    },
+    {
+      "id": "MEDICAL-C083",
+      "unit_id": "MED-101-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Supervisión clínica»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Supervisión clínica»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Supervisión clínica»?"
+      ],
+      "answer_display_es": "Dirigir turno.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Dirigir turno."
+      ]
+    },
+    {
+      "id": "MEDICAL-C084",
+      "unit_id": "MED-101-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Supervisión clínica»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Supervisión clínica»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Supervisión clínica»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
+    },
+    {
+      "id": "MEDICAL-C085",
+      "unit_id": "MED-101-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: mejora clínica esperada de una intervención comparada con alternativas y con no actuar?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: mejora clínica esperada de una intervención comparada con alternativas y con no actuar?",
+        "En «Plan terapéutico», selecciona el concepto descrito así: mejora clínica esperada de una intervención comparada con alternativas y con no actuar."
+      ],
+      "answer_display_es": "beneficio",
+      "accepted_short_answers_es": [
+        "beneficio"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "beneficio"
+      ]
+    },
+    {
+      "id": "MEDICAL-C086",
+      "unit_id": "MED-101-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: combinación de probabilidad, impacto y exposición; la respuesta debe ser proporcionada y quedar dentro de autoridad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: combinación de probabilidad, impacto y exposición; la respuesta debe ser proporcionada y quedar dentro de autoridad?",
+        "En «Plan terapéutico», selecciona el concepto descrito así: combinación de probabilidad, impacto y exposición; la respuesta debe ser proporcionada y quedar dentro de autoridad."
+      ],
+      "answer_display_es": "riesgo",
+      "accepted_short_answers_es": [
+        "riesgo"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "riesgo"
+      ]
+    },
+    {
+      "id": "MEDICAL-C087",
+      "unit_id": "MED-101-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: seguimiento de variables clínicas para detectar respuesta, deterioro o efectos adversos a tiempo?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: seguimiento de variables clínicas para detectar respuesta, deterioro o efectos adversos a tiempo?",
+        "En «Plan terapéutico», selecciona el concepto descrito así: seguimiento de variables clínicas para detectar respuesta, deterioro o efectos adversos a tiempo."
+      ],
+      "answer_display_es": "monitorización",
+      "accepted_short_answers_es": [
+        "monitorización"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "monitorización"
+      ]
+    },
+    {
+      "id": "MEDICAL-C088",
+      "unit_id": "MED-101-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: métodos o fuentes distintas que pueden compensar la pérdida de un sensor o una interpretación dudosa?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: métodos o fuentes distintas que pueden compensar la pérdida de un sensor o una interpretación dudosa?",
+        "En «Plan terapéutico», selecciona el concepto descrito así: métodos o fuentes distintas que pueden compensar la pérdida de un sensor o una interpretación dudosa."
+      ],
+      "answer_display_es": "alternativas",
+      "accepted_short_answers_es": [
+        "alternativas"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "alternativas"
+      ]
+    },
+    {
+      "id": "MEDICAL-C089",
+      "unit_id": "MED-101-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Plan terapéutico»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Plan terapéutico»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Plan terapéutico»?"
+      ],
+      "answer_display_es": "Planificar tratamiento.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Planificar tratamiento."
+      ]
+    },
+    {
+      "id": "MEDICAL-C090",
+      "unit_id": "MED-101-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Plan terapéutico»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Plan terapéutico»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Plan terapéutico»?"
+      ],
+      "answer_display_es": "Revisión.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Revisión."
+      ]
+    },
+    {
+      "id": "MEDICAL-C091",
+      "unit_id": "MED-101-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: capacidad médica para realizar una función concreta en unas condiciones determinadas, no juicio general sobre la persona?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: capacidad médica para realizar una función concreta en unas condiciones determinadas, no juicio general sobre la persona?",
+        "En «Asesoramiento al mando», selecciona el concepto descrito así: capacidad médica para realizar una función concreta en unas condiciones determinadas, no juicio general sobre la persona."
+      ],
+      "answer_display_es": "aptitud",
+      "accepted_short_answers_es": [
+        "aptitud"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "aptitud"
+      ]
+    },
+    {
+      "id": "MEDICAL-C092",
+      "unit_id": "MED-101-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: combinación de probabilidad, impacto y exposición; la respuesta debe ser proporcionada y quedar dentro de autoridad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: combinación de probabilidad, impacto y exposición; la respuesta debe ser proporcionada y quedar dentro de autoridad?",
+        "En «Asesoramiento al mando», selecciona el concepto descrito así: combinación de probabilidad, impacto y exposición; la respuesta debe ser proporcionada y quedar dentro de autoridad."
+      ],
+      "answer_display_es": "riesgo",
+      "accepted_short_answers_es": [
+        "riesgo"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "riesgo"
+      ]
+    },
+    {
+      "id": "MEDICAL-C093",
+      "unit_id": "MED-101-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: protección de información clínica, compartida solo en la medida necesaria y autorizada para atención o seguridad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: protección de información clínica, compartida solo en la medida necesaria y autorizada para atención o seguridad?",
+        "En «Asesoramiento al mando», selecciona el concepto descrito así: protección de información clínica, compartida solo en la medida necesaria y autorizada para atención o seguridad."
+      ],
+      "answer_display_es": "privacidad",
+      "accepted_short_answers_es": [
+        "privacidad"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "privacidad"
+      ]
+    },
+    {
+      "id": "MEDICAL-C094",
+      "unit_id": "MED-101-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: facultad clínica o de mando para decidir dentro de un ámbito; no permite revelar datos médicos innecesarios?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: facultad clínica o de mando para decidir dentro de un ámbito; no permite revelar datos médicos innecesarios?",
+        "En «Asesoramiento al mando», selecciona el concepto descrito así: facultad clínica o de mando para decidir dentro de un ámbito; no permite revelar datos médicos innecesarios."
+      ],
+      "answer_display_es": "autoridad",
+      "accepted_short_answers_es": [
+        "autoridad"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "autoridad"
+      ]
+    },
+    {
+      "id": "MEDICAL-C095",
+      "unit_id": "MED-101-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Asesoramiento al mando»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Asesoramiento al mando»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Asesoramiento al mando»?"
+      ],
+      "answer_display_es": "Escena profesional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Escena profesional."
+      ]
+    },
+    {
+      "id": "MEDICAL-C096",
+      "unit_id": "MED-101-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Asesoramiento al mando»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Asesoramiento al mando»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Asesoramiento al mando»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
+    },
+    {
+      "id": "MEDICAL-C097",
+      "unit_id": "MED-102-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: organización previa de personal, material, aislamiento y contingencias para una misión sanitaria?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: organización previa de personal, material, aislamiento y contingencias para una misión sanitaria?",
+        "En «Misión médica», selecciona el concepto descrito así: organización previa de personal, material, aislamiento y contingencias para una misión sanitaria."
+      ],
+      "answer_display_es": "preparación",
+      "accepted_short_answers_es": [
+        "preparación"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "preparación"
+      ]
+    },
+    {
+      "id": "MEDICAL-C098",
+      "unit_id": "MED-102-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: personas atendidas consideradas por gravedad, necesidades, especie, riesgo y continuidad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: personas atendidas consideradas por gravedad, necesidades, especie, riesgo y continuidad?",
+        "En «Misión médica», selecciona el concepto descrito así: personas atendidas consideradas por gravedad, necesidades, especie, riesgo y continuidad."
+      ],
+      "answer_display_es": "pacientes",
+      "accepted_short_answers_es": [
+        "pacientes"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "pacientes"
+      ]
+    },
+    {
+      "id": "MEDICAL-C099",
+      "unit_id": "MED-102-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: personal, camas, material, tiempo y capacidad diagnóstica o terapéutica disponibles?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: personal, camas, material, tiempo y capacidad diagnóstica o terapéutica disponibles?",
+        "En «Misión médica», selecciona el concepto descrito así: personal, camas, material, tiempo y capacidad diagnóstica o terapéutica disponibles."
+      ],
+      "answer_display_es": "recursos",
+      "accepted_short_answers_es": [
+        "recursos"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "recursos"
+      ]
+    },
+    {
+      "id": "MEDICAL-C100",
+      "unit_id": "MED-102-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: revisión posterior para comprobar evolución, respuesta y tareas clínicas pendientes?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: revisión posterior para comprobar evolución, respuesta y tareas clínicas pendientes?",
+        "En «Misión médica», selecciona el concepto descrito así: revisión posterior para comprobar evolución, respuesta y tareas clínicas pendientes."
+      ],
+      "answer_display_es": "seguimiento",
+      "accepted_short_answers_es": [
+        "seguimiento"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "seguimiento"
+      ]
+    },
+    {
+      "id": "MEDICAL-C101",
+      "unit_id": "MED-102-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Misión médica»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Misión médica»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Misión médica»?"
+      ],
+      "answer_display_es": "Operación completa.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Operación completa."
+      ]
+    },
+    {
+      "id": "MEDICAL-C102",
+      "unit_id": "MED-102-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Misión médica»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Misión médica»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Misión médica»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
+    },
+    {
+      "id": "MEDICAL-C103",
+      "unit_id": "MED-102-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: varios pacientes simultáneos que obligan a priorizar por necesidad clínica y recursos, no por orden de llegada?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: varios pacientes simultáneos que obligan a priorizar por necesidad clínica y recursos, no por orden de llegada?",
+        "En «Crisis sanitaria», selecciona el concepto descrito así: varios pacientes simultáneos que obligan a priorizar por necesidad clínica y recursos, no por orden de llegada."
+      ],
+      "answer_display_es": "múltiples casos",
+      "accepted_short_answers_es": [
+        "múltiples casos"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "múltiples casos"
+      ]
+    },
+    {
+      "id": "MEDICAL-C104",
+      "unit_id": "MED-102-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: medidas proporcionales para limitar un riesgo sanitario según mecanismo plausible, evidencia y situación?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: medidas proporcionales para limitar un riesgo sanitario según mecanismo plausible, evidencia y situación?",
+        "En «Crisis sanitaria», selecciona el concepto descrito así: medidas proporcionales para limitar un riesgo sanitario según mecanismo plausible, evidencia y situación."
+      ],
+      "answer_display_es": "contención contextual",
+      "accepted_short_answers_es": [
+        "contención contextual"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "contención contextual"
+      ]
+    },
+    {
+      "id": "MEDICAL-C105",
+      "unit_id": "MED-102-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: orden relativo entre amenazas, protección de personas, misión y otras demandas?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: orden relativo entre amenazas, protección de personas, misión y otras demandas?",
+        "En «Crisis sanitaria», selecciona el concepto descrito así: orden relativo entre amenazas, protección de personas, misión y otras demandas."
+      ],
+      "answer_display_es": "prioridad",
+      "accepted_short_answers_es": [
+        "prioridad"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "prioridad"
+      ]
+    },
+    {
+      "id": "MEDICAL-C106",
+      "unit_id": "MED-102-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Crisis sanitaria»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Crisis sanitaria»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Crisis sanitaria»?"
+      ],
+      "answer_display_es": "Escenario complejo.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Escenario complejo."
+      ]
+    },
+    {
+      "id": "MEDICAL-C107",
+      "unit_id": "MED-102-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Crisis sanitaria»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Crisis sanitaria»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Crisis sanitaria»?"
+      ],
+      "answer_display_es": "Juicio.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Juicio."
+      ]
+    },
+    {
+      "id": "MEDICAL-C108",
+      "unit_id": "MED-102-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio profesional guía «Crisis sanitaria»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio profesional guía «Crisis sanitaria»?",
+        "Repaso de rama: ¿Qué criterio profesional guía «Crisis sanitaria»?"
+      ],
+      "answer_display_es": "Medicina prioriza seguridad del paciente, juicio clínico, continuidad asistencial y privacidad; el mando recibe la información necesaria, no toda la historia clínica.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Medicina prioriza seguridad del paciente, juicio clínico, continuidad asistencial y privacidad; el mando recibe la información necesaria, no toda la historia clínica."
+      ]
+    },
+    {
+      "id": "MEDICAL-C109",
+      "unit_id": "MED-102-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: transferencia estructurada de paciente, estado, tratamiento, riesgos y pendientes entre profesionales?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: transferencia estructurada de paciente, estado, tratamiento, riesgos y pendientes entre profesionales?",
+        "En «Continuidad asistencial», selecciona el concepto descrito así: transferencia estructurada de paciente, estado, tratamiento, riesgos y pendientes entre profesionales."
+      ],
+      "answer_display_es": "handoff",
+      "accepted_short_answers_es": [
+        "handoff"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "handoff"
+      ]
+    },
+    {
+      "id": "MEDICAL-C110",
+      "unit_id": "MED-102-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: registro clínico longitudinal que reúne antecedentes, hallazgos, decisiones y evolución?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: registro clínico longitudinal que reúne antecedentes, hallazgos, decisiones y evolución?",
+        "En «Continuidad asistencial», selecciona el concepto descrito así: registro clínico longitudinal que reúne antecedentes, hallazgos, decisiones y evolución."
+      ],
+      "answer_display_es": "historia",
+      "accepted_short_answers_es": [
+        "historia"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "historia"
+      ]
+    },
+    {
+      "id": "MEDICAL-C111",
+      "unit_id": "MED-102-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: acciones abiertas con responsable, prioridad y criterio de cierre?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: acciones abiertas con responsable, prioridad y criterio de cierre?",
+        "En «Continuidad asistencial», selecciona el concepto descrito así: acciones abiertas con responsable, prioridad y criterio de cierre."
+      ],
+      "answer_display_es": "pendientes",
+      "accepted_short_answers_es": [
+        "pendientes"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "pendientes"
+      ]
+    },
+    {
+      "id": "MEDICAL-C112",
+      "unit_id": "MED-102-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: obligación de limitar acceso y divulgación de datos clínicos a quienes los necesitan legítimamente?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: obligación de limitar acceso y divulgación de datos clínicos a quienes los necesitan legítimamente?",
+        "En «Continuidad asistencial», selecciona el concepto descrito así: obligación de limitar acceso y divulgación de datos clínicos a quienes los necesitan legítimamente."
+      ],
+      "answer_display_es": "confidencialidad",
+      "accepted_short_answers_es": [
+        "confidencialidad"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "confidencialidad"
+      ]
+    },
+    {
+      "id": "MEDICAL-C113",
+      "unit_id": "MED-102-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Continuidad asistencial»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Continuidad asistencial»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Continuidad asistencial»?"
+      ],
+      "answer_display_es": "Relevo.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Relevo."
+      ]
+    },
+    {
+      "id": "MEDICAL-C114",
+      "unit_id": "MED-102-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Continuidad asistencial»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Continuidad asistencial»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Continuidad asistencial»?"
+      ],
+      "answer_display_es": "Práctica.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Práctica."
+      ]
+    },
+    {
+      "id": "MEDICAL-C115",
+      "unit_id": "MED-102-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: conclusión o producto científico acompañado por evidencia, límites y nivel de confianza?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: conclusión o producto científico acompañado por evidencia, límites y nivel de confianza?",
+        "En «Cierre clínico», selecciona el concepto descrito así: conclusión o producto científico acompañado por evidencia, límites y nivel de confianza."
+      ],
+      "answer_display_es": "resultado",
+      "accepted_short_answers_es": [
+        "resultado"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "resultado"
+      ]
+    },
+    {
+      "id": "MEDICAL-C116",
+      "unit_id": "MED-102-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: problemas surgidos durante enfermedad o tratamiento que deben reconocerse, tratarse y documentarse?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: problemas surgidos durante enfermedad o tratamiento que deben reconocerse, tratarse y documentarse?",
+        "En «Cierre clínico», selecciona el concepto descrito así: problemas surgidos durante enfermedad o tratamiento que deben reconocerse, tratarse y documentarse."
+      ],
+      "answer_display_es": "complicaciones",
+      "accepted_short_answers_es": [
+        "complicaciones"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "complicaciones"
+      ]
+    },
+    {
+      "id": "MEDICAL-C117",
+      "unit_id": "MED-102-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: historia factual de valoración, decisiones, intervenciones y evolución necesaria para continuidad asistencial?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: historia factual de valoración, decisiones, intervenciones y evolución necesaria para continuidad asistencial?",
+        "En «Cierre clínico», selecciona el concepto descrito así: historia factual de valoración, decisiones, intervenciones y evolución necesaria para continuidad asistencial."
+      ],
+      "answer_display_es": "registro",
+      "accepted_short_answers_es": [
+        "registro"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "registro"
+      ]
+    },
+    {
+      "id": "MEDICAL-C118",
+      "unit_id": "MED-102-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: cambio concreto en práctica, protocolo o formación derivado de evidencia y revisión clínica?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: cambio concreto en práctica, protocolo o formación derivado de evidencia y revisión clínica?",
+        "En «Cierre clínico», selecciona el concepto descrito así: cambio concreto en práctica, protocolo o formación derivado de evidencia y revisión clínica."
+      ],
+      "answer_display_es": "aprendizaje",
+      "accepted_short_answers_es": [
+        "aprendizaje"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "aprendizaje"
+      ]
+    },
+    {
+      "id": "MEDICAL-C119",
+      "unit_id": "MED-102-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Cierre clínico»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Cierre clínico»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Cierre clínico»?"
+      ],
+      "answer_display_es": "Debrief.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Debrief."
+      ]
+    },
+    {
+      "id": "MEDICAL-C120",
+      "unit_id": "MED-102-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Cierre clínico»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Cierre clínico»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Cierre clínico»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
     }
   ],
-  "legacy_year4_questions": [
-    {
-      "id": "MEDICAL-Q037",
-      "course_id": "MED-101",
-      "unit_id": "MED-101-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica datos discordantes desde la perspectiva de Medicina.",
-      "answer_key_es": [
-        "datos discordantes",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "MEDICAL-Q038",
-      "course_id": "MED-101",
-      "unit_id": "MED-101-U01",
-      "type": "scenario",
-      "prompt_es": "Caso avanzado. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "MEDICAL-Q039",
-      "course_id": "MED-101",
-      "unit_id": "MED-101-U01",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Diagnóstico complejo para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "MEDICAL-Q040",
-      "course_id": "MED-101",
-      "unit_id": "MED-101-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica equipo desde la perspectiva de Medicina.",
-      "answer_key_es": [
-        "equipo",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "MEDICAL-Q041",
-      "course_id": "MED-101",
-      "unit_id": "MED-101-U02",
-      "type": "scenario",
-      "prompt_es": "Dirigir turno. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "MEDICAL-Q042",
-      "course_id": "MED-101",
-      "unit_id": "MED-101-U02",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Supervisión clínica para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "MEDICAL-Q043",
-      "course_id": "MED-101",
-      "unit_id": "MED-101-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica beneficio desde la perspectiva de Medicina.",
-      "answer_key_es": [
-        "beneficio",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "MEDICAL-Q044",
-      "course_id": "MED-101",
-      "unit_id": "MED-101-U03",
-      "type": "scenario",
-      "prompt_es": "Planificar tratamiento. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "MEDICAL-Q045",
-      "course_id": "MED-101",
-      "unit_id": "MED-101-U03",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Plan terapéutico para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "MEDICAL-Q046",
-      "course_id": "MED-101",
-      "unit_id": "MED-101-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica aptitud desde la perspectiva de Medicina.",
-      "answer_key_es": [
-        "aptitud",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "MEDICAL-Q047",
-      "course_id": "MED-101",
-      "unit_id": "MED-101-U04",
-      "type": "scenario",
-      "prompt_es": "Escena profesional. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "MEDICAL-Q048",
-      "course_id": "MED-101",
-      "unit_id": "MED-101-U04",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Asesoramiento al mando para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "MEDICAL-Q049",
-      "course_id": "MED-102",
-      "unit_id": "MED-102-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica preparación desde la perspectiva de Medicina.",
-      "answer_key_es": [
-        "preparación",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "MEDICAL-Q050",
-      "course_id": "MED-102",
-      "unit_id": "MED-102-U01",
-      "type": "scenario",
-      "prompt_es": "Operación completa. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "MEDICAL-Q051",
-      "course_id": "MED-102",
-      "unit_id": "MED-102-U01",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Misión médica para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "MEDICAL-Q052",
-      "course_id": "MED-102",
-      "unit_id": "MED-102-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica múltiples casos desde la perspectiva de Medicina.",
-      "answer_key_es": [
-        "múltiples casos",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "MEDICAL-Q053",
-      "course_id": "MED-102",
-      "unit_id": "MED-102-U02",
-      "type": "scenario",
-      "prompt_es": "Escenario complejo. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "MEDICAL-Q054",
-      "course_id": "MED-102",
-      "unit_id": "MED-102-U02",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Crisis sanitaria para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "MEDICAL-Q055",
-      "course_id": "MED-102",
-      "unit_id": "MED-102-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica handoff desde la perspectiva de Medicina.",
-      "answer_key_es": [
-        "handoff",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "MEDICAL-Q056",
-      "course_id": "MED-102",
-      "unit_id": "MED-102-U03",
-      "type": "scenario",
-      "prompt_es": "Relevo. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "MEDICAL-Q057",
-      "course_id": "MED-102",
-      "unit_id": "MED-102-U03",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Continuidad asistencial para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "MEDICAL-Q058",
-      "course_id": "MED-102",
-      "unit_id": "MED-102-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica resultado desde la perspectiva de Medicina.",
-      "answer_key_es": [
-        "resultado",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "MEDICAL-Q059",
-      "course_id": "MED-102",
-      "unit_id": "MED-102-U04",
-      "type": "scenario",
-      "prompt_es": "Debrief. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "MEDICAL-Q060",
-      "course_id": "MED-102",
-      "unit_id": "MED-102-U04",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Cierre clínico para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    }
-  ]
+  "year4_courses": [
+    "MED-101",
+    "MED-102"
+  ],
+  "year4_status": "developed_and_synced_v2_1"
 }

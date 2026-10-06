@@ -1,8 +1,8 @@
 {
   "schema_version": "2.1.0",
   "branch_id": "science_sensors",
-  "status": "concept_driven_autocorrectable_v2_1",
-  "scope": "year3_201_203_only",
+  "status": "developed_concept_driven_autocorrectable_v2_1",
+  "scope": "year3_and_year4_all_branch_stages",
   "source_bank": "question_bank_v1_0.json",
   "year3_courses": [
     "SCI-201",
@@ -1287,312 +1287,841 @@
       "answer_key_es": [
         "Se expresa explícitamente para separar dato medido, inferencia y desconocido."
       ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C073",
+      "unit_id": "SCI-101-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: pregunta o efecto de observación que determina qué medir y con qué precisión?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: pregunta o efecto de observación que determina qué medir y con qué precisión?",
+        "En «Diseño de observación», selecciona el concepto descrito así: pregunta o efecto de observación que determina qué medir y con qué precisión."
+      ],
+      "answer_display_es": "objetivo",
+      "accepted_short_answers_es": [
+        "objetivo"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "objetivo"
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C074",
+      "unit_id": "SCI-101-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: sensor o método elegido por cobertura, resolución, sensibilidad, limitaciones y adecuación al fenómeno?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: sensor o método elegido por cobertura, resolución, sensibilidad, limitaciones y adecuación al fenómeno?",
+        "En «Diseño de observación», selecciona el concepto descrito así: sensor o método elegido por cobertura, resolución, sensibilidad, limitaciones y adecuación al fenómeno."
+      ],
+      "answer_display_es": "instrumento",
+      "accepted_short_answers_es": [
+        "instrumento"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "instrumento"
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C075",
+      "unit_id": "SCI-101-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: plan de adquisición que combina geometría, tiempo, modos de sensor y repetición para obtener evidencia útil?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: plan de adquisición que combina geometría, tiempo, modos de sensor y repetición para obtener evidencia útil?",
+        "En «Diseño de observación», selecciona el concepto descrito así: plan de adquisición que combina geometría, tiempo, modos de sensor y repetición para obtener evidencia útil."
+      ],
+      "answer_display_es": "estrategia",
+      "accepted_short_answers_es": [
+        "estrategia"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "estrategia"
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C076",
+      "unit_id": "SCI-101-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: comprobación independiente o repetida que reduce la probabilidad de aceptar una lectura espuria?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: comprobación independiente o repetida que reduce la probabilidad de aceptar una lectura espuria?",
+        "En «Diseño de observación», selecciona el concepto descrito así: comprobación independiente o repetida que reduce la probabilidad de aceptar una lectura espuria."
+      ],
+      "answer_display_es": "validación",
+      "accepted_short_answers_es": [
+        "validación"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "validación"
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C077",
+      "unit_id": "SCI-101-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Diseño de observación»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Diseño de observación»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Diseño de observación»?"
+      ],
+      "answer_display_es": "Plan científico.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Plan científico."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C078",
+      "unit_id": "SCI-101-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Diseño de observación»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Diseño de observación»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Diseño de observación»?"
+      ],
+      "answer_display_es": "Revisión.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Revisión."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C079",
+      "unit_id": "SCI-101-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: señales superpuestas de distintos orígenes que exigen separación antes de atribuir causa?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: señales superpuestas de distintos orígenes que exigen separación antes de atribuir causa?",
+        "En «Fenómenos complejos», selecciona el concepto descrito así: señales superpuestas de distintos orígenes que exigen separación antes de atribuir causa."
+      ],
+      "answer_display_es": "múltiples firmas",
+      "accepted_short_answers_es": [
+        "múltiples firmas"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "múltiples firmas"
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C080",
+      "unit_id": "SCI-101-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: variaciones temporales que pueden distinguir fenómeno real de ruido o indicar evolución?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: variaciones temporales que pueden distinguir fenómeno real de ruido o indicar evolución?",
+        "En «Fenómenos complejos», selecciona el concepto descrito así: variaciones temporales que pueden distinguir fenómeno real de ruido o indicar evolución."
+      ],
+      "answer_display_es": "cambios",
+      "accepted_short_answers_es": [
+        "cambios"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "cambios"
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C081",
+      "unit_id": "SCI-101-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: representaciones explicativas que predicen observaciones y deben revisarse cuando los datos no encajan?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: representaciones explicativas que predicen observaciones y deben revisarse cuando los datos no encajan?",
+        "En «Fenómenos complejos», selecciona el concepto descrito así: representaciones explicativas que predicen observaciones y deben revisarse cuando los datos no encajan."
+      ],
+      "answer_display_es": "modelos",
+      "accepted_short_answers_es": [
+        "modelos"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "modelos"
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C082",
+      "unit_id": "SCI-101-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: margen de desconocimiento o error que acompaña una medida o interpretación y debe comunicarse?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: margen de desconocimiento o error que acompaña una medida o interpretación y debe comunicarse?",
+        "En «Fenómenos complejos», selecciona el concepto descrito así: margen de desconocimiento o error que acompaña una medida o interpretación y debe comunicarse."
+      ],
+      "answer_display_es": "incertidumbre",
+      "accepted_short_answers_es": [
+        "incertidumbre"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "incertidumbre"
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C083",
+      "unit_id": "SCI-101-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Fenómenos complejos»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Fenómenos complejos»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Fenómenos complejos»?"
+      ],
+      "answer_display_es": "Caso avanzado.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Caso avanzado."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C084",
+      "unit_id": "SCI-101-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Fenómenos complejos»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Fenómenos complejos»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Fenómenos complejos»?"
+      ],
+      "answer_display_es": "Juicio.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Juicio."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C085",
+      "unit_id": "SCI-101-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: personas disponibles consideradas por rol, competencia, carga y capacidad de relevo; supervisar exige adaptar control y apoyo al riesgo?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: personas disponibles consideradas por rol, competencia, carga y capacidad de relevo; supervisar exige adaptar control y apoyo al riesgo?",
+        "En «Supervisión de estación», selecciona el concepto descrito así: personas disponibles consideradas por rol, competencia, carga y capacidad de relevo; supervisar exige adaptar control y apoyo al riesgo."
+      ],
+      "answer_display_es": "equipo",
+      "accepted_short_answers_es": [
+        "equipo"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "equipo"
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C086",
+      "unit_id": "SCI-101-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: orden de tareas de observación según misión, urgencia, ventanas y valor de la información?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: orden de tareas de observación según misión, urgencia, ventanas y valor de la información?",
+        "En «Supervisión de estación», selecciona el concepto descrito así: orden de tareas de observación según misión, urgencia, ventanas y valor de la información."
+      ],
+      "answer_display_es": "prioridades",
+      "accepted_short_answers_es": [
+        "prioridades"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "prioridades"
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C087",
+      "unit_id": "SCI-101-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: grado de fiabilidad y utilidad de los datos según cobertura, resolución, calibración, ruido y trazabilidad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: grado de fiabilidad y utilidad de los datos según cobertura, resolución, calibración, ruido y trazabilidad?",
+        "En «Supervisión de estación», selecciona el concepto descrito así: grado de fiabilidad y utilidad de los datos según cobertura, resolución, calibración, ruido y trazabilidad."
+      ],
+      "answer_display_es": "calidad",
+      "accepted_short_answers_es": [
+        "calidad"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "calidad"
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C088",
+      "unit_id": "SCI-101-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: registros de configuración, adquisición, anomalías y decisiones necesarios para reproducir y revisar el análisis?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: registros de configuración, adquisición, anomalías y decisiones necesarios para reproducir y revisar el análisis?",
+        "En «Supervisión de estación», selecciona el concepto descrito así: registros de configuración, adquisición, anomalías y decisiones necesarios para reproducir y revisar el análisis."
+      ],
+      "answer_display_es": "logs",
+      "accepted_short_answers_es": [
+        "logs"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "logs"
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C089",
+      "unit_id": "SCI-101-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Supervisión de estación»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Supervisión de estación»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Supervisión de estación»?"
+      ],
+      "answer_display_es": "Dirigir turno.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Dirigir turno."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C090",
+      "unit_id": "SCI-101-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Supervisión de estación»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Supervisión de estación»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Supervisión de estación»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C091",
+      "unit_id": "SCI-101-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: observación con origen, contexto, tiempo y calidad identificables antes de interpretarla?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: observación con origen, contexto, tiempo y calidad identificables antes de interpretarla?",
+        "En «Asesoramiento científico», selecciona el concepto descrito así: observación con origen, contexto, tiempo y calidad identificables antes de interpretarla."
+      ],
+      "answer_display_es": "dato",
+      "accepted_short_answers_es": [
+        "dato"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "dato"
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C092",
+      "unit_id": "SCI-101-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: explicación inferida a partir de datos; debe distinguirse de la observación y expresar incertidumbre?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: explicación inferida a partir de datos; debe distinguirse de la observación y expresar incertidumbre?",
+        "En «Asesoramiento científico», selecciona el concepto descrito así: explicación inferida a partir de datos; debe distinguirse de la observación y expresar incertidumbre."
+      ],
+      "answer_display_es": "interpretación",
+      "accepted_short_answers_es": [
+        "interpretación"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "interpretación"
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C093",
+      "unit_id": "SCI-101-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: grado de apoyo que la evidencia ofrece a una interpretación, sin convertir probabilidad en certeza?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: grado de apoyo que la evidencia ofrece a una interpretación, sin convertir probabilidad en certeza?",
+        "En «Asesoramiento científico», selecciona el concepto descrito así: grado de apoyo que la evidencia ofrece a una interpretación, sin convertir probabilidad en certeza."
+      ],
+      "answer_display_es": "confianza",
+      "accepted_short_answers_es": [
+        "confianza"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "confianza"
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C094",
+      "unit_id": "SCI-101-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: acción aconsejada al mando basada en datos, interpretación, incertidumbre y consecuencias?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: acción aconsejada al mando basada en datos, interpretación, incertidumbre y consecuencias?",
+        "En «Asesoramiento científico», selecciona el concepto descrito así: acción aconsejada al mando basada en datos, interpretación, incertidumbre y consecuencias."
+      ],
+      "answer_display_es": "recomendación",
+      "accepted_short_answers_es": [
+        "recomendación"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "recomendación"
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C095",
+      "unit_id": "SCI-101-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Asesoramiento científico»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Asesoramiento científico»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Asesoramiento científico»?"
+      ],
+      "answer_display_es": "Briefing al mando.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Briefing al mando."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C096",
+      "unit_id": "SCI-101-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Asesoramiento científico»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Asesoramiento científico»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Asesoramiento científico»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C097",
+      "unit_id": "SCI-102-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: problema científico formulado de modo que determine qué observaciones pueden apoyarlo o refutarlo?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: problema científico formulado de modo que determine qué observaciones pueden apoyarlo o refutarlo?",
+        "En «Misión científica completa», selecciona el concepto descrito así: problema científico formulado de modo que determine qué observaciones pueden apoyarlo o refutarlo."
+      ],
+      "answer_display_es": "pregunta",
+      "accepted_short_answers_es": [
+        "pregunta"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "pregunta"
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C098",
+      "unit_id": "SCI-102-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: proceso planificado de obtener datos con configuración y condiciones registradas?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: proceso planificado de obtener datos con configuración y condiciones registradas?",
+        "En «Misión científica completa», selecciona el concepto descrito así: proceso planificado de obtener datos con configuración y condiciones registradas."
+      ],
+      "answer_display_es": "adquisición",
+      "accepted_short_answers_es": [
+        "adquisición"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "adquisición"
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C099",
+      "unit_id": "SCI-102-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: tratamiento de datos para identificar patrones, comparar hipótesis y estimar incertidumbre?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: tratamiento de datos para identificar patrones, comparar hipótesis y estimar incertidumbre?",
+        "En «Misión científica completa», selecciona el concepto descrito así: tratamiento de datos para identificar patrones, comparar hipótesis y estimar incertidumbre."
+      ],
+      "answer_display_es": "análisis",
+      "accepted_short_answers_es": [
+        "análisis"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "análisis"
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C100",
+      "unit_id": "SCI-102-U01",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: conclusión o producto científico acompañado por evidencia, límites y nivel de confianza?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: conclusión o producto científico acompañado por evidencia, límites y nivel de confianza?",
+        "En «Misión científica completa», selecciona el concepto descrito así: conclusión o producto científico acompañado por evidencia, límites y nivel de confianza."
+      ],
+      "answer_display_es": "resultado",
+      "accepted_short_answers_es": [
+        "resultado"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "resultado"
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C101",
+      "unit_id": "SCI-102-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Misión científica completa»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Misión científica completa»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Misión científica completa»?"
+      ],
+      "answer_display_es": "Ejecutar misión.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Ejecutar misión."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C102",
+      "unit_id": "SCI-102-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Misión científica completa»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Misión científica completa»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Misión científica completa»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C103",
+      "unit_id": "SCI-102-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: parte del espacio, espectro o fenómeno que el sistema puede observar en una configuración concreta?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: parte del espacio, espectro o fenómeno que el sistema puede observar en una configuración concreta?",
+        "En «Sensores degradados», selecciona el concepto descrito así: parte del espacio, espectro o fenómeno que el sistema puede observar en una configuración concreta."
+      ],
+      "answer_display_es": "cobertura",
+      "accepted_short_answers_es": [
+        "cobertura"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "cobertura"
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C104",
+      "unit_id": "SCI-102-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: variación no deseada que reduce la capacidad de distinguir una señal y obliga a controlar falsos positivos?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: variación no deseada que reduce la capacidad de distinguir una señal y obliga a controlar falsos positivos?",
+        "En «Sensores degradados», selecciona el concepto descrito así: variación no deseada que reduce la capacidad de distinguir una señal y obliga a controlar falsos positivos."
+      ],
+      "answer_display_es": "ruido",
+      "accepted_short_answers_es": [
+        "ruido"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "ruido"
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C105",
+      "unit_id": "SCI-102-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: métodos o fuentes distintas que pueden compensar la pérdida de un sensor o una interpretación dudosa?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: métodos o fuentes distintas que pueden compensar la pérdida de un sensor o una interpretación dudosa?",
+        "En «Sensores degradados», selecciona el concepto descrito así: métodos o fuentes distintas que pueden compensar la pérdida de un sensor o una interpretación dudosa."
+      ],
+      "answer_display_es": "alternativas",
+      "accepted_short_answers_es": [
+        "alternativas"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "alternativas"
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C106",
+      "unit_id": "SCI-102-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: combinación de probabilidad, impacto y exposición; la respuesta debe ser proporcionada y quedar dentro de autoridad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: combinación de probabilidad, impacto y exposición; la respuesta debe ser proporcionada y quedar dentro de autoridad?",
+        "En «Sensores degradados», selecciona el concepto descrito así: combinación de probabilidad, impacto y exposición; la respuesta debe ser proporcionada y quedar dentro de autoridad."
+      ],
+      "answer_display_es": "riesgo",
+      "accepted_short_answers_es": [
+        "riesgo"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "riesgo"
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C107",
+      "unit_id": "SCI-102-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Sensores degradados»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Sensores degradados»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Sensores degradados»?"
+      ],
+      "answer_display_es": "Escenario.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Escenario."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C108",
+      "unit_id": "SCI-102-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Sensores degradados»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Sensores degradados»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Sensores degradados»?"
+      ],
+      "answer_display_es": "Práctica.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Práctica."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C109",
+      "unit_id": "SCI-102-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: observación que no encaja con el modelo esperado y debe verificarse antes de tratarse como descubrimiento?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: observación que no encaja con el modelo esperado y debe verificarse antes de tratarse como descubrimiento?",
+        "En «Descubrimiento inesperado», selecciona el concepto descrito así: observación que no encaja con el modelo esperado y debe verificarse antes de tratarse como descubrimiento."
+      ],
+      "answer_display_es": "anomalía",
+      "accepted_short_answers_es": [
+        "anomalía"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "anomalía"
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C110",
+      "unit_id": "SCI-102-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: repetición o contraste independiente destinado a confirmar que la anomalía no procede de error, ruido o configuración?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: repetición o contraste independiente destinado a confirmar que la anomalía no procede de error, ruido o configuración?",
+        "En «Descubrimiento inesperado», selecciona el concepto descrito así: repetición o contraste independiente destinado a confirmar que la anomalía no procede de error, ruido o configuración."
+      ],
+      "answer_display_es": "verificación",
+      "accepted_short_answers_es": [
+        "verificación"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "verificación"
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C111",
+      "unit_id": "SCI-102-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: orden relativo entre amenazas, protección de personas, misión y otras demandas?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: orden relativo entre amenazas, protección de personas, misión y otras demandas?",
+        "En «Descubrimiento inesperado», selecciona el concepto descrito así: orden relativo entre amenazas, protección de personas, misión y otras demandas."
+      ],
+      "answer_display_es": "prioridad",
+      "accepted_short_answers_es": [
+        "prioridad"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "prioridad"
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C112",
+      "unit_id": "SCI-102-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Descubrimiento inesperado»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Descubrimiento inesperado»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Descubrimiento inesperado»?"
+      ],
+      "answer_display_es": "Caso complejo.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Caso complejo."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C113",
+      "unit_id": "SCI-102-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Descubrimiento inesperado»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Descubrimiento inesperado»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Descubrimiento inesperado»?"
+      ],
+      "answer_display_es": "Juicio.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Juicio."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C114",
+      "unit_id": "SCI-102-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio profesional guía «Descubrimiento inesperado»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio profesional guía «Descubrimiento inesperado»?",
+        "Repaso de rama: ¿Qué criterio profesional guía «Descubrimiento inesperado»?"
+      ],
+      "answer_display_es": "Ciencia/Sensores debe separar **observación, interpretación y confianza**, declarar incertidumbre y evitar que una lectura aislada se convierta en certeza.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Ciencia/Sensores debe separar **observación, interpretación y confianza**, declarar incertidumbre y evitar que una lectura aislada se convierta en certeza."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C115",
+      "unit_id": "SCI-102-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: conjunto de observaciones conservadas con origen, contexto y calidad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: conjunto de observaciones conservadas con origen, contexto y calidad?",
+        "En «Handoff científico», selecciona el concepto descrito así: conjunto de observaciones conservadas con origen, contexto y calidad."
+      ],
+      "answer_display_es": "datos",
+      "accepted_short_answers_es": [
+        "datos"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "datos"
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C116",
+      "unit_id": "SCI-102-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: explicación provisional que genera predicciones comprobables y debe poder descartarse?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: explicación provisional que genera predicciones comprobables y debe poder descartarse?",
+        "En «Handoff científico», selecciona el concepto descrito así: explicación provisional que genera predicciones comprobables y debe poder descartarse."
+      ],
+      "answer_display_es": "hipótesis",
+      "accepted_short_answers_es": [
+        "hipótesis"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "hipótesis"
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C117",
+      "unit_id": "SCI-102-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: acciones abiertas con responsable, prioridad y criterio de cierre?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: acciones abiertas con responsable, prioridad y criterio de cierre?",
+        "En «Handoff científico», selecciona el concepto descrito así: acciones abiertas con responsable, prioridad y criterio de cierre."
+      ],
+      "answer_display_es": "pendientes",
+      "accepted_short_answers_es": [
+        "pendientes"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "pendientes"
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C118",
+      "unit_id": "SCI-102-U04",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: grado de fiabilidad y utilidad de los datos según cobertura, resolución, calibración, ruido y trazabilidad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: grado de fiabilidad y utilidad de los datos según cobertura, resolución, calibración, ruido y trazabilidad?",
+        "En «Handoff científico», selecciona el concepto descrito así: grado de fiabilidad y utilidad de los datos según cobertura, resolución, calibración, ruido y trazabilidad."
+      ],
+      "answer_display_es": "calidad",
+      "accepted_short_answers_es": [
+        "calidad"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "calidad"
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C119",
+      "unit_id": "SCI-102-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Handoff científico»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Handoff científico»?",
+        "Repaso de rama: ¿Qué práctica corresponde a «Handoff científico»?"
+      ],
+      "answer_display_es": "Relevo profesional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Relevo profesional."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C120",
+      "unit_id": "SCI-102-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Handoff científico»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Handoff científico»?",
+        "Repaso de rama: ¿Qué evaluación se asocia a «Handoff científico»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
     }
   ],
-  "legacy_year4_questions": [
-    {
-      "id": "SCIENCE_SENSORS-Q037",
-      "course_id": "SCI-101",
-      "unit_id": "SCI-101-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica objetivo desde la perspectiva de Ciencia / Sensores.",
-      "answer_key_es": [
-        "objetivo",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "SCIENCE_SENSORS-Q038",
-      "course_id": "SCI-101",
-      "unit_id": "SCI-101-U01",
-      "type": "scenario",
-      "prompt_es": "Plan científico. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "SCIENCE_SENSORS-Q039",
-      "course_id": "SCI-101",
-      "unit_id": "SCI-101-U01",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Diseño de observación para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "SCIENCE_SENSORS-Q040",
-      "course_id": "SCI-101",
-      "unit_id": "SCI-101-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica múltiples firmas desde la perspectiva de Ciencia / Sensores.",
-      "answer_key_es": [
-        "múltiples firmas",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "SCIENCE_SENSORS-Q041",
-      "course_id": "SCI-101",
-      "unit_id": "SCI-101-U02",
-      "type": "scenario",
-      "prompt_es": "Caso avanzado. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "SCIENCE_SENSORS-Q042",
-      "course_id": "SCI-101",
-      "unit_id": "SCI-101-U02",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Fenómenos complejos para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "SCIENCE_SENSORS-Q043",
-      "course_id": "SCI-101",
-      "unit_id": "SCI-101-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica equipo desde la perspectiva de Ciencia / Sensores.",
-      "answer_key_es": [
-        "equipo",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "SCIENCE_SENSORS-Q044",
-      "course_id": "SCI-101",
-      "unit_id": "SCI-101-U03",
-      "type": "scenario",
-      "prompt_es": "Dirigir turno. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "SCIENCE_SENSORS-Q045",
-      "course_id": "SCI-101",
-      "unit_id": "SCI-101-U03",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Supervisión de estación para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "SCIENCE_SENSORS-Q046",
-      "course_id": "SCI-101",
-      "unit_id": "SCI-101-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica dato desde la perspectiva de Ciencia / Sensores.",
-      "answer_key_es": [
-        "dato",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "SCIENCE_SENSORS-Q047",
-      "course_id": "SCI-101",
-      "unit_id": "SCI-101-U04",
-      "type": "scenario",
-      "prompt_es": "Briefing al mando. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "SCIENCE_SENSORS-Q048",
-      "course_id": "SCI-101",
-      "unit_id": "SCI-101-U04",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Asesoramiento científico para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "SCIENCE_SENSORS-Q049",
-      "course_id": "SCI-102",
-      "unit_id": "SCI-102-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica pregunta desde la perspectiva de Ciencia / Sensores.",
-      "answer_key_es": [
-        "pregunta",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "SCIENCE_SENSORS-Q050",
-      "course_id": "SCI-102",
-      "unit_id": "SCI-102-U01",
-      "type": "scenario",
-      "prompt_es": "Ejecutar misión. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "SCIENCE_SENSORS-Q051",
-      "course_id": "SCI-102",
-      "unit_id": "SCI-102-U01",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Misión científica completa para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "SCIENCE_SENSORS-Q052",
-      "course_id": "SCI-102",
-      "unit_id": "SCI-102-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica cobertura desde la perspectiva de Ciencia / Sensores.",
-      "answer_key_es": [
-        "cobertura",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "SCIENCE_SENSORS-Q053",
-      "course_id": "SCI-102",
-      "unit_id": "SCI-102-U02",
-      "type": "scenario",
-      "prompt_es": "Escenario. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "SCIENCE_SENSORS-Q054",
-      "course_id": "SCI-102",
-      "unit_id": "SCI-102-U02",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Sensores degradados para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "SCIENCE_SENSORS-Q055",
-      "course_id": "SCI-102",
-      "unit_id": "SCI-102-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica anomalía desde la perspectiva de Ciencia / Sensores.",
-      "answer_key_es": [
-        "anomalía",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "SCIENCE_SENSORS-Q056",
-      "course_id": "SCI-102",
-      "unit_id": "SCI-102-U03",
-      "type": "scenario",
-      "prompt_es": "Caso complejo. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "SCIENCE_SENSORS-Q057",
-      "course_id": "SCI-102",
-      "unit_id": "SCI-102-U03",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Descubrimiento inesperado para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    },
-    {
-      "id": "SCIENCE_SENSORS-Q058",
-      "course_id": "SCI-102",
-      "unit_id": "SCI-102-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica datos desde la perspectiva de Ciencia / Sensores.",
-      "answer_key_es": [
-        "datos",
-        "aplicación",
-        "límite o riesgo"
-      ]
-    },
-    {
-      "id": "SCIENCE_SENSORS-Q059",
-      "course_id": "SCI-102",
-      "unit_id": "SCI-102-U04",
-      "type": "scenario",
-      "prompt_es": "Relevo profesional. Describe preparación, decisión, comunicación y escalado.",
-      "answer_key_es": [
-        "preparación",
-        "decisión",
-        "comunicación",
-        "escalado"
-      ]
-    },
-    {
-      "id": "SCIENCE_SENSORS-Q060",
-      "course_id": "SCI-102",
-      "unit_id": "SCI-102-U04",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Handoff científico para demostrar competencia real?",
-      "answer_key_es": [
-        "contexto",
-        "acciones",
-        "resultado",
-        "feedback"
-      ]
-    }
-  ]
+  "year4_courses": [
+    "SCI-101",
+    "SCI-102"
+  ],
+  "year4_status": "developed_and_synced_v2_1"
 }

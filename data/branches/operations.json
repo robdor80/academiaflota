@@ -1,7 +1,7 @@
 {
   "subject": "Operaciones",
   "code": "OPERATIONS",
-  "version": "1.2",
+  "version": "1.3",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/branches/operations/branch_curriculum_v1_0.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/branches/operations/MANUAL_v1_0.md",
@@ -626,17 +626,29 @@
       "subtitle": "OPR-101 · Operaciones avanzadas I",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Operaciones** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "misión",
-            "reserva",
-            "riesgo",
-            "contingencia"
+            "**misión**: propósito operativo que determina qué recursos necesitan reserva y qué demandas tienen prioridad",
+            "**reserva**: capacidad no comprometida que se conserva para contingencias y degradaciones",
+            "**riesgo**: combinación de probabilidad, impacto y exposición comparada con misión, alternativas y autoridad",
+            "**contingencia**: plan alternativo preparado para una desviación concreta, con condición de activación"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se construye una imagen integrada de recursos y estado, se identifican dependencias y conflictos, se priorizan acciones con el mando y se mantiene registro suficiente para continuidad de misión y relevo."
         },
         {
           "type": "callout",
@@ -645,38 +657,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Operaciones debe integrar estado de sistemas, recursos, prioridades y continuidad, manteniendo trazabilidad suficiente para que mando y relevo entiendan qué puede hacer la nave y qué limita la misión."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Revisión."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica misión desde la perspectiva de Operaciones.",
-            "Resuelve: Plan completo.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/ship_operations/bridge_station_model.json",
-            "gameplay/ship_operations/ship_computer/computer_query_action_catalog.json",
-            "gameplay/engineering/engineering_loop.json",
-            "gameplay/ship_operations/operational_event_log/README.md"
-          ]
+          "text": "Revisión. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -686,16 +673,28 @@
       "subtitle": "OPR-101 · Operaciones avanzadas I",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Operaciones** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "equipo",
-            "peticiones",
-            "prioridades"
+            "**equipo**: personas disponibles consideradas por rol, competencia, carga y capacidad de relevo; supervisar exige adaptar el control al riesgo y experiencia",
+            "**peticiones**: demandas de recursos o capacidad que deben registrar origen, urgencia, impacto y responsable",
+            "**prioridades**: orden explícito entre demandas competidoras según seguridad, misión, urgencia y efecto"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se construye una imagen integrada de recursos y estado, se identifican dependencias y conflictos, se priorizan acciones con el mando y se mantiene registro suficiente para continuidad de misión y relevo."
         },
         {
           "type": "callout",
@@ -704,38 +703,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Operaciones debe hacer visibles conflictos de recursos y mantener una picture de capacidad útil para que mando pueda priorizar."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica equipo desde la perspectiva de Operaciones.",
-            "Resuelve: Dirigir turno.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/ship_operations/bridge_station_model.json",
-            "gameplay/ship_operations/ship_computer/computer_query_action_catalog.json",
-            "gameplay/engineering/engineering_loop.json",
-            "gameplay/ship_operations/operational_event_log/README.md"
-          ]
+          "text": "Evaluación. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -745,16 +719,28 @@
       "subtitle": "OPR-101 · Operaciones avanzadas I",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Operaciones** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "estado",
-            "opciones",
-            "recomendación"
+            "**estado**: descripción actual y verificable de capacidad, configuración, degradaciones y acciones en curso",
+            "**opciones**: cursos de acción viables comparados por coste, riesgo, tiempo y consecuencias",
+            "**recomendación**: curso aconsejado respaldado por datos, alternativas y riesgos"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se construye una imagen integrada de recursos y estado, se identifican dependencias y conflictos, se priorizan acciones con el mando y se mantiene registro suficiente para continuidad de misión y relevo."
         },
         {
           "type": "callout",
@@ -763,38 +749,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Operaciones debe hacer visibles conflictos de recursos y mantener una picture de capacidad útil para que mando pueda priorizar."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica estado desde la perspectiva de Operaciones.",
-            "Resuelve: Briefing.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/ship_operations/bridge_station_model.json",
-            "gameplay/ship_operations/ship_computer/computer_query_action_catalog.json",
-            "gameplay/engineering/engineering_loop.json",
-            "gameplay/ship_operations/operational_event_log/README.md"
-          ]
+          "text": "Evaluación. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -804,16 +765,28 @@
       "subtitle": "OPR-101 · Operaciones avanzadas I",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Operaciones** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "degradación",
-            "restauración",
-            "registro"
+            "**degradación**: pérdida parcial de capacidad que obliga a recalcular recursos y servicios soportables",
+            "**restauración**: recuperación controlada de un servicio con verificación antes de declararlo disponible",
+            "**registro**: evidencia factual de asignaciones, cambios, decisiones y resultados"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se construye una imagen integrada de recursos y estado, se identifican dependencias y conflictos, se priorizan acciones con el mando y se mantiene registro suficiente para continuidad de misión y relevo."
         },
         {
           "type": "callout",
@@ -822,38 +795,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Operaciones debe hacer visibles conflictos de recursos y mantener una picture de capacidad útil para que mando pueda priorizar."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Práctica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica degradación desde la perspectiva de Operaciones.",
-            "Resuelve: Caso avanzado.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/ship_operations/bridge_station_model.json",
-            "gameplay/ship_operations/ship_computer/computer_query_action_catalog.json",
-            "gameplay/engineering/engineering_loop.json",
-            "gameplay/ship_operations/operational_event_log/README.md"
-          ]
+          "text": "Práctica. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -863,16 +811,28 @@
       "subtitle": "OPR-102 · Operaciones avanzadas II",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Operaciones** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "configuración",
-            "consumo",
-            "cambios"
+            "**configuración**: estado deliberado de recursos y sistemas preparado para una fase concreta de misión",
+            "**consumo**: ritmo al que una operación utiliza recursos; permite prever agotamiento y necesidad de reconfigurar",
+            "**cambios**: variaciones de entorno, misión o nave que obligan a recalcular navegación y márgenes"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se construye una imagen integrada de recursos y estado, se identifican dependencias y conflictos, se priorizan acciones con el mando y se mantiene registro suficiente para continuidad de misión y relevo."
         },
         {
           "type": "callout",
@@ -881,38 +841,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Operaciones debe hacer visibles conflictos de recursos y mantener una picture de capacidad útil para que mando pueda priorizar."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica configuración desde la perspectiva de Operaciones.",
-            "Resuelve: Operar misión.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/ship_operations/bridge_station_model.json",
-            "gameplay/ship_operations/ship_computer/computer_query_action_catalog.json",
-            "gameplay/engineering/engineering_loop.json",
-            "gameplay/ship_operations/operational_event_log/README.md"
-          ]
+          "text": "Evaluación. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -922,16 +857,28 @@
       "subtitle": "OPR-102 · Operaciones avanzadas II",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Operaciones** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "escasez",
-            "prioridad",
-            "impacto"
+            "**escasez**: situación en que los recursos disponibles no permiten satisfacer todas las demandas simultáneamente",
+            "**prioridad**: orden relativo entre seguridad de vuelo, misión y otras demandas cuando no pueden atenderse simultáneamente",
+            "**impacto**: magnitud de las consecuencias que tendrá aceptar o rechazar una demanda"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se construye una imagen integrada de recursos y estado, se identifican dependencias y conflictos, se priorizan acciones con el mando y se mantiene registro suficiente para continuidad de misión y relevo."
         },
         {
           "type": "callout",
@@ -940,38 +887,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Operaciones debe hacer visibles conflictos de recursos y mantener una picture de capacidad útil para que mando pueda priorizar."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Juicio."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica escasez desde la perspectiva de Operaciones.",
-            "Resuelve: Escenario.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/ship_operations/bridge_station_model.json",
-            "gameplay/ship_operations/ship_computer/computer_query_action_catalog.json",
-            "gameplay/engineering/engineering_loop.json",
-            "gameplay/ship_operations/operational_event_log/README.md"
-          ]
+          "text": "Juicio. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -981,17 +903,29 @@
       "subtitle": "OPR-102 · Operaciones avanzadas II",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Operaciones** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "equipos",
-            "lanzaderas",
-            "transportes",
-            "departamentos"
+            "**equipos**: grupos o medios coordinados para prestar apoyo con capacidad y disponibilidad limitadas",
+            "**lanzaderas**: activos de transporte y operación local cuya asignación consume tripulación, tiempo y capacidad",
+            "**transportes**: capacidad de movimiento de personas o material sujeta a disponibilidad, alcance y condiciones",
+            "**departamentos**: áreas especialistas con necesidades propias que Operaciones integra sin sustituir su criterio técnico"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se construye una imagen integrada de recursos y estado, se identifican dependencias y conflictos, se priorizan acciones con el mando y se mantiene registro suficiente para continuidad de misión y relevo."
         },
         {
           "type": "callout",
@@ -1000,38 +934,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Operaciones debe integrar estado de sistemas, recursos, prioridades y continuidad, manteniendo trazabilidad suficiente para que mando y relevo entiendan qué puede hacer la nave y qué limita la misión."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Teamwork."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica equipos desde la perspectiva de Operaciones.",
-            "Resuelve: Caso integrado.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/ship_operations/bridge_station_model.json",
-            "gameplay/ship_operations/ship_computer/computer_query_action_catalog.json",
-            "gameplay/engineering/engineering_loop.json",
-            "gameplay/ship_operations/operational_event_log/README.md"
-          ]
+          "text": "Teamwork. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -1041,17 +950,29 @@
       "subtitle": "OPR-102 · Operaciones avanzadas II",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Operaciones** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "estado",
-            "pendientes",
-            "riesgos",
-            "órdenes"
+            "**estado**: descripción actual y verificable de capacidad, configuración, degradaciones y acciones en curso",
+            "**pendientes**: acciones abiertas con responsable, prioridad y condición prevista de cierre",
+            "**riesgos**: amenazas plausibles a seguridad o misión que deben identificarse y reevaluarse",
+            "**órdenes**: instrucciones vigentes que deben entregarse con prioridad, alcance, emisor y condiciones"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se construye una imagen integrada de recursos y estado, se identifican dependencias y conflictos, se priorizan acciones con el mando y se mantiene registro suficiente para continuidad de misión y relevo."
         },
         {
           "type": "callout",
@@ -1060,43 +981,18 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Operaciones debe integrar estado de sistemas, recursos, prioridades y continuidad, manteniendo trazabilidad suficiente para que mando y relevo entiendan qué puede hacer la nave y qué limita la misión."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Práctica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica estado desde la perspectiva de Operaciones.",
-            "Resuelve: Relevo profesional.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/ship_operations/bridge_station_model.json",
-            "gameplay/ship_operations/ship_computer/computer_query_action_catalog.json",
-            "gameplay/engineering/engineering_loop.json",
-            "gameplay/ship_operations/operational_event_log/README.md"
-          ]
+          "text": "Práctica. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     }
   ],
   "year3Status": "developed_content",
   "year3Scope": "201-203",
-  "assessmentModel": "concept_driven_v2_1_year3"
+  "assessmentModel": "concept_driven_v2_1"
 }

@@ -1,7 +1,7 @@
 {
   "subject": "Medicina",
   "code": "MEDICAL",
-  "version": "1.2",
+  "version": "1.3",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/branches/medical/branch_curriculum_v1_0.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/branches/medical/MANUAL_v1_0.md",
@@ -633,17 +633,29 @@
       "subtitle": "MED-101 · Medicina avanzada I",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Medicina** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "datos discordantes",
-            "comorbilidad",
-            "especie",
-            "incertidumbre"
+            "**datos discordantes**: resultados que no apuntan a una misma explicación y obligan a revisar calidad, hipótesis y diagnósticos alternativos",
+            "**comorbilidad**: presencia simultánea de varias condiciones que puede modificar síntomas, riesgos y tratamiento",
+            "**especie**: contexto biológico del paciente que condiciona valores normales, fisiología, farmacología y riesgos",
+            "**incertidumbre**: margen de desconocimiento o error que acompaña una medida o interpretación y debe comunicarse"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se confirma el estado clínico con los datos disponibles, se priorizan riesgos vitales, se selecciona una intervención proporcional a competencia y recursos, se reevalúa la respuesta y se documentan tratamiento, límites y pendientes."
         },
         {
           "type": "callout",
@@ -652,38 +664,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Medicina debe priorizar vida y estabilidad, distinguir datos clínicos de hipótesis, actuar dentro de competencia y conservar continuidad asistencial mediante registro y relevo claros."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Juicio."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica datos discordantes desde la perspectiva de Medicina.",
-            "Resuelve: Caso avanzado.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/medical/medical_state_model.json",
-            "gameplay/medical/species_medical_hooks.json",
-            "lore/medicine/medical_capability_contract.json",
-            "lore/federation/starfleet/regulations/medical_authority.json"
-          ]
+          "text": "Juicio. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -693,17 +680,29 @@
       "subtitle": "MED-101 · Medicina avanzada I",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Medicina** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "equipo",
-            "delegación",
-            "prioridad",
-            "registro"
+            "**equipo**: personas disponibles consideradas por rol, competencia, carga y capacidad de relevo; supervisar exige adaptar control y apoyo al riesgo",
+            "**delegación**: asignación de una tarea clínica a personal con competencia suficiente manteniendo supervisión y responsabilidad",
+            "**prioridad**: orden relativo entre amenazas, protección de personas, misión y otras demandas",
+            "**registro**: historia factual de valoración, decisiones, intervenciones y evolución necesaria para continuidad asistencial"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se confirma el estado clínico con los datos disponibles, se priorizan riesgos vitales, se selecciona una intervención proporcional a competencia y recursos, se reevalúa la respuesta y se documentan tratamiento, límites y pendientes."
         },
         {
           "type": "callout",
@@ -712,38 +711,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Medicina debe priorizar vida y estabilidad, distinguir datos clínicos de hipótesis, actuar dentro de competencia y conservar continuidad asistencial mediante registro y relevo claros."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica equipo desde la perspectiva de Medicina.",
-            "Resuelve: Dirigir turno.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/medical/medical_state_model.json",
-            "gameplay/medical/species_medical_hooks.json",
-            "lore/medicine/medical_capability_contract.json",
-            "lore/federation/starfleet/regulations/medical_authority.json"
-          ]
+          "text": "Evaluación. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -753,17 +727,29 @@
       "subtitle": "MED-101 · Medicina avanzada I",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Medicina** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "beneficio",
-            "riesgo",
-            "monitorización",
-            "alternativas"
+            "**beneficio**: mejora clínica esperada de una intervención comparada con alternativas y con no actuar",
+            "**riesgo**: combinación de probabilidad, impacto y exposición; la respuesta debe ser proporcionada y quedar dentro de autoridad",
+            "**monitorización**: seguimiento de variables clínicas para detectar respuesta, deterioro o efectos adversos a tiempo",
+            "**alternativas**: métodos o fuentes distintas que pueden compensar la pérdida de un sensor o una interpretación dudosa"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se confirma el estado clínico con los datos disponibles, se priorizan riesgos vitales, se selecciona una intervención proporcional a competencia y recursos, se reevalúa la respuesta y se documentan tratamiento, límites y pendientes."
         },
         {
           "type": "callout",
@@ -772,38 +758,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Medicina debe priorizar vida y estabilidad, distinguir datos clínicos de hipótesis, actuar dentro de competencia y conservar continuidad asistencial mediante registro y relevo claros."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Revisión."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica beneficio desde la perspectiva de Medicina.",
-            "Resuelve: Planificar tratamiento.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/medical/medical_state_model.json",
-            "gameplay/medical/species_medical_hooks.json",
-            "lore/medicine/medical_capability_contract.json",
-            "lore/federation/starfleet/regulations/medical_authority.json"
-          ]
+          "text": "Revisión. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -813,17 +774,29 @@
       "subtitle": "MED-101 · Medicina avanzada I",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Medicina** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "aptitud",
-            "riesgo",
-            "privacidad",
-            "autoridad"
+            "**aptitud**: capacidad médica para realizar una función concreta en unas condiciones determinadas, no juicio general sobre la persona",
+            "**riesgo**: combinación de probabilidad, impacto y exposición; la respuesta debe ser proporcionada y quedar dentro de autoridad",
+            "**privacidad**: protección de información clínica, compartida solo en la medida necesaria y autorizada para atención o seguridad",
+            "**autoridad**: facultad clínica o de mando para decidir dentro de un ámbito; no permite revelar datos médicos innecesarios"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se confirma el estado clínico con los datos disponibles, se priorizan riesgos vitales, se selecciona una intervención proporcional a competencia y recursos, se reevalúa la respuesta y se documentan tratamiento, límites y pendientes."
         },
         {
           "type": "callout",
@@ -832,38 +805,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Medicina debe priorizar vida y estabilidad, distinguir datos clínicos de hipótesis, actuar dentro de competencia y conservar continuidad asistencial mediante registro y relevo claros."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica aptitud desde la perspectiva de Medicina.",
-            "Resuelve: Escena profesional.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/medical/medical_state_model.json",
-            "gameplay/medical/species_medical_hooks.json",
-            "lore/medicine/medical_capability_contract.json",
-            "lore/federation/starfleet/regulations/medical_authority.json"
-          ]
+          "text": "Evaluación. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -873,17 +821,29 @@
       "subtitle": "MED-102 · Medicina avanzada II",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Medicina** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "preparación",
-            "pacientes",
-            "recursos",
-            "seguimiento"
+            "**preparación**: organización previa de personal, material, aislamiento y contingencias para una misión sanitaria",
+            "**pacientes**: personas atendidas consideradas por gravedad, necesidades, especie, riesgo y continuidad",
+            "**recursos**: personal, camas, material, tiempo y capacidad diagnóstica o terapéutica disponibles",
+            "**seguimiento**: revisión posterior para comprobar evolución, respuesta y tareas clínicas pendientes"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se confirma el estado clínico con los datos disponibles, se priorizan riesgos vitales, se selecciona una intervención proporcional a competencia y recursos, se reevalúa la respuesta y se documentan tratamiento, límites y pendientes."
         },
         {
           "type": "callout",
@@ -892,38 +852,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Medicina debe priorizar vida y estabilidad, distinguir datos clínicos de hipótesis, actuar dentro de competencia y conservar continuidad asistencial mediante registro y relevo claros."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica preparación desde la perspectiva de Medicina.",
-            "Resuelve: Operación completa.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/medical/medical_state_model.json",
-            "gameplay/medical/species_medical_hooks.json",
-            "lore/medicine/medical_capability_contract.json",
-            "lore/federation/starfleet/regulations/medical_authority.json"
-          ]
+          "text": "Evaluación. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -933,16 +868,28 @@
       "subtitle": "MED-102 · Medicina avanzada II",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Medicina** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "múltiples casos",
-            "contención contextual",
-            "prioridad"
+            "**múltiples casos**: varios pacientes simultáneos que obligan a priorizar por necesidad clínica y recursos, no por orden de llegada",
+            "**contención contextual**: medidas proporcionales para limitar un riesgo sanitario según mecanismo plausible, evidencia y situación",
+            "**prioridad**: orden relativo entre amenazas, protección de personas, misión y otras demandas"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se confirma el estado clínico con los datos disponibles, se priorizan riesgos vitales, se selecciona una intervención proporcional a competencia y recursos, se reevalúa la respuesta y se documentan tratamiento, límites y pendientes."
         },
         {
           "type": "callout",
@@ -951,38 +898,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Medicina prioriza seguridad del paciente, juicio clínico, continuidad asistencial y privacidad; el mando recibe la información necesaria, no toda la historia clínica."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Juicio."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica múltiples casos desde la perspectiva de Medicina.",
-            "Resuelve: Escenario complejo.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/medical/medical_state_model.json",
-            "gameplay/medical/species_medical_hooks.json",
-            "lore/medicine/medical_capability_contract.json",
-            "lore/federation/starfleet/regulations/medical_authority.json"
-          ]
+          "text": "Juicio. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -992,17 +914,29 @@
       "subtitle": "MED-102 · Medicina avanzada II",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Medicina** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "handoff",
-            "historia",
-            "pendientes",
-            "confidencialidad"
+            "**handoff**: transferencia estructurada de paciente, estado, tratamiento, riesgos y pendientes entre profesionales",
+            "**historia**: registro clínico longitudinal que reúne antecedentes, hallazgos, decisiones y evolución",
+            "**pendientes**: acciones abiertas con responsable, prioridad y criterio de cierre",
+            "**confidencialidad**: obligación de limitar acceso y divulgación de datos clínicos a quienes los necesitan legítimamente"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se confirma el estado clínico con los datos disponibles, se priorizan riesgos vitales, se selecciona una intervención proporcional a competencia y recursos, se reevalúa la respuesta y se documentan tratamiento, límites y pendientes."
         },
         {
           "type": "callout",
@@ -1011,38 +945,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Medicina debe priorizar vida y estabilidad, distinguir datos clínicos de hipótesis, actuar dentro de competencia y conservar continuidad asistencial mediante registro y relevo claros."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Práctica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica handoff desde la perspectiva de Medicina.",
-            "Resuelve: Relevo.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/medical/medical_state_model.json",
-            "gameplay/medical/species_medical_hooks.json",
-            "lore/medicine/medical_capability_contract.json",
-            "lore/federation/starfleet/regulations/medical_authority.json"
-          ]
+          "text": "Práctica. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     },
@@ -1052,17 +961,29 @@
       "subtitle": "MED-102 · Medicina avanzada II",
       "blocks": [
         {
+          "type": "p",
+          "text": "La unidad lleva **Medicina** al estándar de 1.ª clase: autonomía dentro de competencia, responsabilidad por la continuidad y capacidad de explicar qué se sabe, qué se decide y cuándo hay que escalar."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "resultado",
-            "complicaciones",
-            "registro",
-            "aprendizaje"
+            "**resultado**: conclusión o producto científico acompañado por evidencia, límites y nivel de confianza",
+            "**complicaciones**: problemas surgidos durante enfermedad o tratamiento que deben reconocerse, tratarse y documentarse",
+            "**registro**: historia factual de valoración, decisiones, intervenciones y evolución necesaria para continuidad asistencial",
+            "**aprendizaje**: cambio concreto en práctica, protocolo o formación derivado de evidencia y revisión clínica"
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se confirma el estado clínico con los datos disponibles, se priorizan riesgos vitales, se selecciona una intervención proporcional a competencia y recursos, se reevalúa la respuesta y se documentan tratamiento, límites y pendientes."
         },
         {
           "type": "callout",
@@ -1071,43 +992,18 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Medicina debe priorizar vida y estabilidad, distinguir datos clínicos de hipótesis, actuar dentro de competencia y conservar continuidad asistencial mediante registro y relevo claros."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica resultado desde la perspectiva de Medicina.",
-            "Resuelve: Debrief.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/medical/medical_state_model.json",
-            "gameplay/medical/species_medical_hooks.json",
-            "lore/medicine/medical_capability_contract.json",
-            "lore/federation/starfleet/regulations/medical_authority.json"
-          ]
+          "text": "Evaluación. Se exige desempeño repetible y explicable; el resultado no sustituye el criterio profesional ni la seguridad."
         }
       ]
     }
   ],
   "year3Status": "developed_content",
   "year3Scope": "201-203",
-  "assessmentModel": "concept_driven_v2_1_year3"
+  "assessmentModel": "concept_driven_v2_1"
 }

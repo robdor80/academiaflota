@@ -1,313 +1,641 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.1.0",
   "course_id": "CAP-103",
-  "status": "generated_from_authoritative_curriculum",
-  "question_count": 24,
-  "questions": [
+  "status": "developed_concept_driven_autocorrectable_v2_1",
+  "policy": {
+    "theory_formats": [
+      "multiple_choice",
+      "short_answer"
+    ],
+    "multiple_choice_target_ratio": 0.8,
+    "short_answer_target_ratio": 0.2,
+    "deterministic_correction": true,
+    "web_and_game_share_concepts_not_question_instances": true,
+    "complex_judgment_moves_to_practice_and_simulation": true,
+    "source_rule": "Every evaluated concept is explicitly taught in the developed Year 4 material or an established prerequisite."
+  },
+  "unit_review": {
+    "questions_per_attempt": 5,
+    "reshuffle_each_attempt": true,
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
+  },
+  "concepts": [
     {
-      "id": "CAP-103-Q001",
+      "id": "CAP-103-C001",
       "unit_id": "CAP-103-U01",
-      "type": "service_readiness",
-      "prompt_es": "Explica evidencia 2.ª/1.ª clase como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: conjunto de actuaciones observadas en especialización y último año que permite valorar consistencia, no solo el último ejercicio?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: conjunto de actuaciones observadas en especialización y último año que permite valorar consistencia, no solo el último ejercicio?",
+        "En «Revisión de rama», selecciona el concepto descrito así: conjunto de actuaciones observadas en especialización y último año que permite valorar consistencia, no solo el último ejercicio."
+      ],
+      "answer_display_es": "evidencia 2.ª/1.ª clase",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "evidencia 2.ª/1.ª clase",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "evidencia 2.ª/1.ª clase"
       ]
     },
     {
-      "id": "CAP-103-Q002",
+      "id": "CAP-103-C002",
       "unit_id": "CAP-103-U01",
-      "type": "scenario",
-      "prompt_es": "Escenario: Compilar expediente de especialidad. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: competencias formalmente reconocidas a partir de evidencia; habilitan funciones concretas y conservan sus propios límites?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: competencias formalmente reconocidas a partir de evidencia; habilitan funciones concretas y conservan sus propios límites?",
+        "En «Revisión de rama», selecciona el concepto descrito así: competencias formalmente reconocidas a partir de evidencia; habilitan funciones concretas y conservan sus propios límites."
+      ],
+      "answer_display_es": "cualificaciones",
+      "accepted_short_answers_es": [
+        "cualificaciones"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "cualificaciones"
       ]
     },
     {
-      "id": "CAP-103-Q003",
+      "id": "CAP-103-C003",
       "unit_id": "CAP-103-U01",
-      "type": "debrief",
-      "prompt_es": "Tras Revisión de rama, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: áreas en las que la evidencia muestra preparación insuficiente o inconsistente y que requieren entrenamiento dirigido?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: áreas en las que la evidencia muestra preparación insuficiente o inconsistente y que requieren entrenamiento dirigido?",
+        "En «Revisión de rama», selecciona el concepto descrito así: áreas en las que la evidencia muestra preparación insuficiente o inconsistente y que requieren entrenamiento dirigido."
+      ],
+      "answer_display_es": "carencias",
+      "accepted_short_answers_es": [
+        "carencias"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "carencias"
       ]
     },
     {
-      "id": "CAP-103-Q004",
+      "id": "CAP-103-C004",
       "unit_id": "CAP-103-U01",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Revisión de rama»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Revisión de rama»?",
+        "Repaso final: ¿Qué práctica corresponde a «Revisión de rama»?"
+      ],
+      "answer_display_es": "Compilar expediente de especialidad.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "Compilar expediente de especialidad."
       ]
     },
     {
-      "id": "CAP-103-Q005",
+      "id": "CAP-103-C005",
+      "unit_id": "CAP-103-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio de evaluación se asocia a «Revisión de rama»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio de evaluación se asocia a «Revisión de rama»?",
+        "Repaso final: ¿Qué criterio de evaluación se asocia a «Revisión de rama»?"
+      ],
+      "answer_display_es": "Validación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Validación."
+      ]
+    },
+    {
+      "id": "CAP-103-C006",
+      "unit_id": "CAP-103-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué principio debe guiar «Revisión de rama»?",
+      "web_prompt_variants_es": [
+        "¿Qué principio debe guiar «Revisión de rama»?",
+        "Repaso final: ¿Qué principio debe guiar «Revisión de rama»?"
+      ],
+      "answer_display_es": "La cualificación final comprueba preparación de **oficial novel**, no pericia experta; una brecha concreta puede generar remediación focalizada.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "La cualificación final comprueba preparación de **oficial novel**, no pericia experta; una brecha concreta puede generar remediación focalizada."
+      ]
+    },
+    {
+      "id": "CAP-103-C007",
       "unit_id": "CAP-103-U02",
-      "type": "service_readiness",
-      "prompt_es": "Explica principios como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: reglas conceptuales que explican por qué se actúa de una determinada forma y permiten adaptarse fuera del ejemplo memorizado?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: reglas conceptuales que explican por qué se actúa de una determinada forma y permiten adaptarse fuera del ejemplo memorizado?",
+        "En «Conocimiento profesional», selecciona el concepto descrito así: reglas conceptuales que explican por qué se actúa de una determinada forma y permiten adaptarse fuera del ejemplo memorizado."
+      ],
+      "answer_display_es": "principios",
+      "accepted_short_answers_es": [
+        "principios"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "principios",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "principios"
       ]
     },
     {
-      "id": "CAP-103-Q006",
+      "id": "CAP-103-C008",
       "unit_id": "CAP-103-U02",
-      "type": "scenario",
-      "prompt_es": "Escenario: Prueba focalizada. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: secuencias definidas para ejecutar tareas de forma segura y repetible, adaptables solo dentro de márgenes autorizados?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: secuencias definidas para ejecutar tareas de forma segura y repetible, adaptables solo dentro de márgenes autorizados?",
+        "En «Conocimiento profesional», selecciona el concepto descrito así: secuencias definidas para ejecutar tareas de forma segura y repetible, adaptables solo dentro de márgenes autorizados."
+      ],
+      "answer_display_es": "procedimientos",
+      "accepted_short_answers_es": [
+        "procedimientos"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "procedimientos"
       ]
     },
     {
-      "id": "CAP-103-Q007",
+      "id": "CAP-103-C009",
       "unit_id": "CAP-103-U02",
-      "type": "debrief",
-      "prompt_es": "Tras Conocimiento profesional, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: fronteras de autoridad, competencia, seguridad o regulación que obligan a detener, adaptar o escalar?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: fronteras de autoridad, competencia, seguridad o regulación que obligan a detener, adaptar o escalar?",
+        "En «Conocimiento profesional», selecciona el concepto descrito así: fronteras de autoridad, competencia, seguridad o regulación que obligan a detener, adaptar o escalar."
+      ],
+      "answer_display_es": "límites",
+      "accepted_short_answers_es": [
+        "límites"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "límites"
       ]
     },
     {
-      "id": "CAP-103-Q008",
+      "id": "CAP-103-C010",
       "unit_id": "CAP-103-U02",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: protección de personas, nave, misión y entorno mediante márgenes, comprobaciones y decisiones proporcionadas?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: protección de personas, nave, misión y entorno mediante márgenes, comprobaciones y decisiones proporcionadas?",
+        "En «Conocimiento profesional», selecciona el concepto descrito así: protección de personas, nave, misión y entorno mediante márgenes, comprobaciones y decisiones proporcionadas."
+      ],
+      "answer_display_es": "seguridad",
+      "accepted_short_answers_es": [
+        "seguridad"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "seguridad"
       ]
     },
     {
-      "id": "CAP-103-Q009",
+      "id": "CAP-103-C011",
+      "unit_id": "CAP-103-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Conocimiento profesional»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Conocimiento profesional»?",
+        "Repaso final: ¿Qué práctica corresponde a «Conocimiento profesional»?"
+      ],
+      "answer_display_es": "Prueba focalizada.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Prueba focalizada."
+      ]
+    },
+    {
+      "id": "CAP-103-C012",
+      "unit_id": "CAP-103-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio de evaluación se asocia a «Conocimiento profesional»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio de evaluación se asocia a «Conocimiento profesional»?",
+        "Repaso final: ¿Qué criterio de evaluación se asocia a «Conocimiento profesional»?"
+      ],
+      "answer_display_es": "Resultado por áreas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Resultado por áreas."
+      ]
+    },
+    {
+      "id": "CAP-103-C013",
       "unit_id": "CAP-103-U03",
-      "type": "service_readiness",
-      "prompt_es": "Explica preparación como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: organización previa de información, configuración, recursos, roles y contingencias antes de comprometer la acción?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: organización previa de información, configuración, recursos, roles y contingencias antes de comprometer la acción?",
+        "En «Caso práctico», selecciona el concepto descrito así: organización previa de información, configuración, recursos, roles y contingencias antes de comprometer la acción."
+      ],
+      "answer_display_es": "preparación",
+      "accepted_short_answers_es": [
+        "preparación"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "preparación",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "preparación"
       ]
     },
     {
-      "id": "CAP-103-Q010",
+      "id": "CAP-103-C014",
       "unit_id": "CAP-103-U03",
-      "type": "scenario",
-      "prompt_es": "Escenario: Prueba real/simulada. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: realización de la tarea con monitorización, comunicación y capacidad de adaptación dentro de límites?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: realización de la tarea con monitorización, comunicación y capacidad de adaptación dentro de límites?",
+        "En «Caso práctico», selecciona el concepto descrito así: realización de la tarea con monitorización, comunicación y capacidad de adaptación dentro de límites."
+      ],
+      "answer_display_es": "ejecución",
+      "accepted_short_answers_es": [
+        "ejecución"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "ejecución"
       ]
     },
     {
-      "id": "CAP-103-Q011",
+      "id": "CAP-103-C015",
       "unit_id": "CAP-103-U03",
-      "type": "debrief",
-      "prompt_es": "Tras Caso práctico, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: transmisión clara y oportuna de estado, intención, riesgo, necesidades y resultado al destinatario adecuado?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: transmisión clara y oportuna de estado, intención, riesgo, necesidades y resultado al destinatario adecuado?",
+        "En «Caso práctico», selecciona el concepto descrito así: transmisión clara y oportuna de estado, intención, riesgo, necesidades y resultado al destinatario adecuado."
+      ],
+      "answer_display_es": "comunicación",
+      "accepted_short_answers_es": [
+        "comunicación"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "comunicación"
       ]
     },
     {
-      "id": "CAP-103-Q012",
+      "id": "CAP-103-C016",
       "unit_id": "CAP-103-U03",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: confirmación del resultado, estado final, pendientes, registro y transferencia de responsabilidad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: confirmación del resultado, estado final, pendientes, registro y transferencia de responsabilidad?",
+        "En «Caso práctico», selecciona el concepto descrito así: confirmación del resultado, estado final, pendientes, registro y transferencia de responsabilidad."
+      ],
+      "answer_display_es": "cierre",
+      "accepted_short_answers_es": [
+        "cierre"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "cierre"
       ]
     },
     {
-      "id": "CAP-103-Q013",
+      "id": "CAP-103-C017",
+      "unit_id": "CAP-103-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Caso práctico»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Caso práctico»?",
+        "Repaso final: ¿Qué práctica corresponde a «Caso práctico»?"
+      ],
+      "answer_display_es": "Prueba real/simulada.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Prueba real/simulada."
+      ]
+    },
+    {
+      "id": "CAP-103-C018",
+      "unit_id": "CAP-103-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio de evaluación se asocia a «Caso práctico»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio de evaluación se asocia a «Caso práctico»?",
+        "Repaso final: ¿Qué criterio de evaluación se asocia a «Caso práctico»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
+    },
+    {
+      "id": "CAP-103-C019",
       "unit_id": "CAP-103-U04",
-      "type": "service_readiness",
-      "prompt_es": "Explica incertidumbre como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: información relevante no confirmada que debe declararse y gestionarse, no ocultarse mediante suposiciones?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: información relevante no confirmada que debe declararse y gestionarse, no ocultarse mediante suposiciones?",
+        "En «Caso de juicio», selecciona el concepto descrito así: información relevante no confirmada que debe declararse y gestionarse, no ocultarse mediante suposiciones."
+      ],
+      "answer_display_es": "incertidumbre",
+      "accepted_short_answers_es": [
+        "incertidumbre"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "incertidumbre",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "incertidumbre"
       ]
     },
     {
-      "id": "CAP-103-Q014",
+      "id": "CAP-103-C020",
       "unit_id": "CAP-103-U04",
-      "type": "scenario",
-      "prompt_es": "Escenario: Escenario oral/simulado. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: combinación de probabilidad, impacto y exposición comparada con misión, alternativas, autoridad y reversibilidad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: combinación de probabilidad, impacto y exposición comparada con misión, alternativas, autoridad y reversibilidad?",
+        "En «Caso de juicio», selecciona el concepto descrito así: combinación de probabilidad, impacto y exposición comparada con misión, alternativas, autoridad y reversibilidad."
+      ],
+      "answer_display_es": "riesgo",
+      "accepted_short_answers_es": [
+        "riesgo"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "riesgo"
       ]
     },
     {
-      "id": "CAP-103-Q015",
+      "id": "CAP-103-C021",
       "unit_id": "CAP-103-U04",
-      "type": "debrief",
-      "prompt_es": "Tras Caso de juicio, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: facultad para decidir u ordenar dentro de un ámbito y unas condiciones; no sustituye la competencia técnica?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: facultad para decidir u ordenar dentro de un ámbito y unas condiciones; no sustituye la competencia técnica?",
+        "En «Caso de juicio», selecciona el concepto descrito así: facultad para decidir u ordenar dentro de un ámbito y unas condiciones; no sustituye la competencia técnica."
+      ],
+      "answer_display_es": "autoridad",
+      "accepted_short_answers_es": [
+        "autoridad"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "autoridad"
       ]
     },
     {
-      "id": "CAP-103-Q016",
+      "id": "CAP-103-C022",
       "unit_id": "CAP-103-U04",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: curso de acción aconsejado con fundamento en datos, alternativas y riesgos?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: curso de acción aconsejado con fundamento en datos, alternativas y riesgos?",
+        "En «Caso de juicio», selecciona el concepto descrito así: curso de acción aconsejado con fundamento en datos, alternativas y riesgos."
+      ],
+      "answer_display_es": "recomendación",
+      "accepted_short_answers_es": [
+        "recomendación"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "recomendación"
       ]
     },
     {
-      "id": "CAP-103-Q017",
+      "id": "CAP-103-C023",
+      "unit_id": "CAP-103-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Caso de juicio»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Caso de juicio»?",
+        "Repaso final: ¿Qué práctica corresponde a «Caso de juicio»?"
+      ],
+      "answer_display_es": "Escenario oral/simulado.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Escenario oral/simulado."
+      ]
+    },
+    {
+      "id": "CAP-103-C024",
+      "unit_id": "CAP-103-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio de evaluación se asocia a «Caso de juicio»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio de evaluación se asocia a «Caso de juicio»?",
+        "Repaso final: ¿Qué criterio de evaluación se asocia a «Caso de juicio»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
+    },
+    {
+      "id": "CAP-103-C025",
       "unit_id": "CAP-103-U05",
-      "type": "service_readiness",
-      "prompt_es": "Explica DUT como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: evidencia obtenida durante servicio supervisado sobre autonomía, disciplina, continuidad y juicio operativo?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: evidencia obtenida durante servicio supervisado sobre autonomía, disciplina, continuidad y juicio operativo?",
+        "En «Revisión de servicio», selecciona el concepto descrito así: evidencia obtenida durante servicio supervisado sobre autonomía, disciplina, continuidad y juicio operativo."
+      ],
+      "answer_display_es": "DUT",
+      "accepted_short_answers_es": [
+        "DUT"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "DUT",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "DUT"
       ]
     },
     {
-      "id": "CAP-103-Q018",
+      "id": "CAP-103-C026",
       "unit_id": "CAP-103-U05",
-      "type": "scenario",
-      "prompt_es": "Escenario: Panel de instructores. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: evidencia longitudinal del prácticum en una unidad real o casi real, incluida rutina, integración y actuación contextual?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: evidencia longitudinal del prácticum en una unidad real o casi real, incluida rutina, integración y actuación contextual?",
+        "En «Revisión de servicio», selecciona el concepto descrito así: evidencia longitudinal del prácticum en una unidad real o casi real, incluida rutina, integración y actuación contextual."
+      ],
+      "answer_display_es": "PRC",
+      "accepted_short_answers_es": [
+        "PRC"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "PRC"
       ]
     },
     {
-      "id": "CAP-103-Q019",
+      "id": "CAP-103-C027",
       "unit_id": "CAP-103-U05",
-      "type": "debrief",
-      "prompt_es": "Tras Revisión de servicio, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: entornos controlados que permiten observar decisiones y coordinación bajo condiciones difíciles sin confundir simulación con servicio real?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: entornos controlados que permiten observar decisiones y coordinación bajo condiciones difíciles sin confundir simulación con servicio real?",
+        "En «Revisión de servicio», selecciona el concepto descrito así: entornos controlados que permiten observar decisiones y coordinación bajo condiciones difíciles sin confundir simulación con servicio real."
+      ],
+      "answer_display_es": "simulaciones",
+      "accepted_short_answers_es": [
+        "simulaciones"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "simulaciones"
       ]
     },
     {
-      "id": "CAP-103-Q020",
+      "id": "CAP-103-C028",
       "unit_id": "CAP-103-U05",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: forma observable de actuar respecto a integridad, disciplina, respeto, seguridad, comunicación y responsabilidad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: forma observable de actuar respecto a integridad, disciplina, respeto, seguridad, comunicación y responsabilidad?",
+        "En «Revisión de servicio», selecciona el concepto descrito así: forma observable de actuar respecto a integridad, disciplina, respeto, seguridad, comunicación y responsabilidad."
+      ],
+      "answer_display_es": "conducta",
+      "accepted_short_answers_es": [
+        "conducta"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "conducta"
       ]
     },
     {
-      "id": "CAP-103-Q021",
-      "unit_id": "CAP-103-U06",
-      "type": "service_readiness",
-      "prompt_es": "Explica ready como se lo explicarías a un Alférez que recibe su primer destino.",
+      "id": "CAP-103-C029",
+      "unit_id": "CAP-103-U05",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Revisión de servicio»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Revisión de servicio»?",
+        "Repaso final: ¿Qué práctica corresponde a «Revisión de servicio»?"
+      ],
+      "answer_display_es": "Panel de instructores.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "ready",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "Panel de instructores."
       ]
     },
     {
-      "id": "CAP-103-Q022",
-      "unit_id": "CAP-103-U06",
-      "type": "scenario",
-      "prompt_es": "Escenario: Cerrar evaluación. Describe decisión inicial, alternativas y condición de escalado.",
+      "id": "CAP-103-C030",
+      "unit_id": "CAP-103-U05",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio de evaluación se asocia a «Revisión de servicio»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio de evaluación se asocia a «Revisión de servicio»?",
+        "Repaso final: ¿Qué criterio de evaluación se asocia a «Revisión de servicio»?"
+      ],
+      "answer_display_es": "Informe.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "Informe."
       ]
     },
     {
-      "id": "CAP-103-Q023",
+      "id": "CAP-103-C031",
       "unit_id": "CAP-103-U06",
-      "type": "debrief",
-      "prompt_es": "Tras Resultado, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: resultado que indica preparación suficiente para ejercer como oficial novel con la supervisión normal de la unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: resultado que indica preparación suficiente para ejercer como oficial novel con la supervisión normal de la unidad?",
+        "En «Resultado», selecciona el concepto descrito así: resultado que indica preparación suficiente para ejercer como oficial novel con la supervisión normal de la unidad."
+      ],
+      "answer_display_es": "ready",
+      "accepted_short_answers_es": [
+        "ready"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "ready"
       ]
     },
     {
-      "id": "CAP-103-Q024",
+      "id": "CAP-103-C032",
       "unit_id": "CAP-103-U06",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: plan de corrección focalizado en brechas concretas sin repetir innecesariamente toda la formación?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: plan de corrección focalizado en brechas concretas sin repetir innecesariamente toda la formación?",
+        "En «Resultado», selecciona el concepto descrito así: plan de corrección focalizado en brechas concretas sin repetir innecesariamente toda la formación."
+      ],
+      "answer_display_es": "targeted_remediation",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "targeted_remediation"
+      ]
+    },
+    {
+      "id": "CAP-103-C033",
+      "unit_id": "CAP-103-U06",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: nueva evaluación posterior a la remediación para comprobar que la brecha relevante se ha cerrado?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: nueva evaluación posterior a la remediación para comprobar que la brecha relevante se ha cerrado?",
+        "En «Resultado», selecciona el concepto descrito así: nueva evaluación posterior a la remediación para comprobar que la brecha relevante se ha cerrado."
+      ],
+      "answer_display_es": "reassessment",
+      "accepted_short_answers_es": [
+        "reassessment"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "reassessment"
+      ]
+    },
+    {
+      "id": "CAP-103-C034",
+      "unit_id": "CAP-103-U06",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Resultado»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Resultado»?",
+        "Repaso final: ¿Qué práctica corresponde a «Resultado»?"
+      ],
+      "answer_display_es": "Cerrar evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Cerrar evaluación."
+      ]
+    },
+    {
+      "id": "CAP-103-C035",
+      "unit_id": "CAP-103-U06",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio de evaluación se asocia a «Resultado»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio de evaluación se asocia a «Resultado»?",
+        "Repaso final: ¿Qué criterio de evaluación se asocia a «Resultado»?"
+      ],
+      "answer_display_es": "No exige pericia experta; exige preparación de oficial novel.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "No exige pericia experta; exige preparación de oficial novel."
+      ]
+    },
+    {
+      "id": "CAP-103-C036",
+      "unit_id": "CAP-103-U06",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué principio debe guiar «Resultado»?",
+      "web_prompt_variants_es": [
+        "¿Qué principio debe guiar «Resultado»?",
+        "Repaso final: ¿Qué principio debe guiar «Resultado»?"
+      ],
+      "answer_display_es": "La cualificación final comprueba preparación de **oficial novel**, no pericia experta; una brecha concreta puede generar remediación focalizada.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "La cualificación final comprueba preparación de **oficial novel**, no pericia experta; una brecha concreta puede generar remediación focalizada."
       ]
     }
   ]

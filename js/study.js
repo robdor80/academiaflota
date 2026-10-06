@@ -1,7 +1,7 @@
 export async function loadStudyFile(path) {
   if (!path) throw new Error("El material de estudio no tiene un archivo asociado.");
   const separator = path.includes("?") ? "&" : "?";
-  const response = await fetch(path + separator + "v=0.9.0");
+  const response = await fetch(path + separator + "v=0.10.0");
   if (!response.ok) throw new Error("No se pudo cargar el material académico.");
   return response.json();
 }
@@ -169,9 +169,12 @@ export function checkUnitReview(root) {
 export function renderLesson(module, context) {
   const label = context && context.label ? context.label : "OPERACIONES DE SENSORES";
   const assessment = context && context.assessment ? context.assessment : null;
-  return '<span class="lesson-kicker">' + label + " // " + module.id + "</span>" +
-    "<h1>" + module.title + "</h1>" +
-    '<p class="lesson-subtitle">' + module.subtitle + "</p>" +
+  const subtitle = module.subtitle
+    ? '<p class="lesson-subtitle">' + escapeHtml(module.subtitle) + "</p>"
+    : "";
+  return '<span class="lesson-kicker">' + escapeHtml(label) + " // " + escapeHtml(module.id) + "</span>" +
+    "<h1>" + escapeHtml(module.title) + "</h1>" +
+    subtitle +
     module.blocks.map(blockHtml).join("") +
     renderReview(assessment, module.id);
 }

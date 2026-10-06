@@ -1,7 +1,7 @@
 {
   "subject": "Evaluación integral de preparación para el servicio",
   "code": "SVC-103",
-  "version": "1.0",
+  "version": "2.0",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/first_class/courses/SVC-103/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/first_class/SVC-103/MANUAL_v1_0.md",
@@ -21,7 +21,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Determinar la preparación global para comisión utilizando evidencia de toda la Academia."
+          "text": "Esta unidad sitúa **Integridad de expediente** dentro de la transición real de cadete a oficial. El cadete debe comprender qué información pesa, qué decisiones son institucionales y qué consecuencias persisten después de graduarse."
         },
         {
           "type": "heading",
@@ -30,12 +30,20 @@
         {
           "type": "bullets",
           "items": [
-            "años",
-            "cursos",
-            "prácticas",
-            "conducta",
-            "incidentes"
+            "**años**: trayectoria completa de la Academia considerada como serie de evidencias y tendencias, no como suma ciega de notas.",
+            "**cursos**: formación estructurada que demuestra conocimiento y práctica en áreas concretas.",
+            "**prácticas**: actividades observables que convierten teoría en desempeño y producen evidencia contextual.",
+            "**conducta**: forma observable de actuar respecto a integridad, disciplina, respeto, seguridad, comunicación y responsabilidad.",
+            "**incidentes**: eventos relevantes cuyo valor evaluativo depende del contexto, la respuesta y el aprendizaje posterior."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se trabaja siempre con la información disponible en ese momento, diferenciando hechos, incertidumbre, responsabilidad individual y decisión institucional. El resultado se conserva como parte del historial del personaje."
         },
         {
           "type": "callout",
@@ -44,36 +52,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "La comisión se decide con evidencia longitudinal de los cuatro años; ningún ejercicio aislado debe dominar todo el expediente."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Control."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica años como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Validar historial.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/academy_path/graduation_model.json",
-            "gameplay/careers/post_academy/qualification_and_mentorship_model.json"
-          ]
+          "text": "Control. Se valora la coherencia entre expediente, actuación y preparación real para el siguiente estado de carrera."
         }
       ]
     },
@@ -84,7 +69,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Determinar la preparación global para comisión utilizando evidencia de toda la Academia."
+          "text": "Esta unidad sitúa **Preparación profesional** dentro de la transición real de cadete a oficial. El cadete debe comprender qué información pesa, qué decisiones son institucionales y qué consecuencias persisten después de graduarse."
         },
         {
           "type": "heading",
@@ -93,11 +78,19 @@
         {
           "type": "bullets",
           "items": [
-            "CAP-103",
-            "DUT",
-            "PRC",
-            "cualificaciones"
+            "**CAP-103**: evaluación final de especialidad que comprueba preparación para comenzar a servir en la rama elegida.",
+            "**DUT**: evidencia obtenida durante servicio supervisado sobre autonomía, disciplina, continuidad y juicio operativo.",
+            "**PRC**: evidencia longitudinal del prácticum en una unidad real o casi real, incluida rutina, integración y actuación contextual.",
+            "**cualificaciones**: competencias formalmente reconocidas a partir de evidencia; habilitan funciones concretas y conservan sus propios límites."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se trabaja siempre con la información disponible en ese momento, diferenciando hechos, incertidumbre, responsabilidad individual y decisión institucional. El resultado se conserva como parte del historial del personaje."
         },
         {
           "type": "callout",
@@ -106,36 +99,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "La comisión se decide con evidencia longitudinal de los cuatro años; ningún ejercicio aislado debe dominar todo el expediente."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Panel."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica CAP-103 como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Revisión de competencia.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/academy_path/graduation_model.json",
-            "gameplay/careers/post_academy/qualification_and_mentorship_model.json"
-          ]
+          "text": "Panel. Se valora la coherencia entre expediente, actuación y preparación real para el siguiente estado de carrera."
         }
       ]
     },
@@ -146,7 +116,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Determinar la preparación global para comisión utilizando evidencia de toda la Academia."
+          "text": "Esta unidad sitúa **Preparación como oficial** dentro de la transición real de cadete a oficial. El cadete debe comprender qué información pesa, qué decisiones son institucionales y qué consecuencias persisten después de graduarse."
         },
         {
           "type": "heading",
@@ -155,11 +125,19 @@
         {
           "type": "bullets",
           "items": [
-            "juicio",
-            "liderazgo",
-            "comunicación",
-            "integridad"
+            "**juicio**: capacidad de seleccionar una acción razonable integrando información, límites, riesgo, alternativas y consecuencias.",
+            "**liderazgo**: capacidad de orientar personas hacia un objetivo manteniendo claridad, seguridad, responsabilidad y desarrollo del equipo.",
+            "**comunicación**: transmisión clara y oportuna de estado, intención, riesgo, necesidades y resultado al destinatario adecuado.",
+            "**integridad**: coherencia entre hechos, normas y conducta incluso cuando reconocer un error o límite resulta desfavorable."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se trabaja siempre con la información disponible en ese momento, diferenciando hechos, incertidumbre, responsabilidad individual y decisión institucional. El resultado se conserva como parte del historial del personaje."
         },
         {
           "type": "callout",
@@ -168,36 +146,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "La comisión se decide con evidencia longitudinal de los cuatro años; ningún ejercicio aislado debe dominar todo el expediente."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica juicio como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Revisión longitudinal.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/academy_path/graduation_model.json",
-            "gameplay/careers/post_academy/qualification_and_mentorship_model.json"
-          ]
+          "text": "Evaluación. Se valora la coherencia entre expediente, actuación y preparación real para el siguiente estado de carrera."
         }
       ]
     },
@@ -208,7 +163,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Determinar la preparación global para comisión utilizando evidencia de toda la Academia."
+          "text": "Esta unidad sitúa **Kobayashi y presión** dentro de la transición real de cadete a oficial. El cadete debe comprender qué información pesa, qué decisiones son institucionales y qué consecuencias persisten después de graduarse."
         },
         {
           "type": "heading",
@@ -217,11 +172,19 @@
         {
           "type": "bullets",
           "items": [
-            "conducta",
-            "criterio",
-            "ética",
-            "aprendizaje"
+            "**conducta**: forma observable de actuar respecto a integridad, disciplina, respeto, seguridad, comunicación y responsabilidad.",
+            "**criterio**: capacidad de aplicar principios a una situación concreta sin limitarse a repetir una receta.",
+            "**ética**: valoración de lo que es profesionalmente defendible cuando varias obligaciones o consecuencias entran en tensión.",
+            "**aprendizaje**: cambio demostrable derivado de feedback, experiencia y revisión posterior."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se trabaja siempre con la información disponible en ese momento, diferenciando hechos, incertidumbre, responsabilidad individual y decisión institucional. El resultado se conserva como parte del historial del personaje."
         },
         {
           "type": "callout",
@@ -230,36 +193,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "La comisión se decide con evidencia longitudinal de los cuatro años; ningún ejercicio aislado debe dominar todo el expediente."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Panel."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica conducta como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Incorporar evidencia sin sobrerrepresentarla.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/academy_path/graduation_model.json",
-            "gameplay/careers/post_academy/qualification_and_mentorship_model.json"
-          ]
+          "text": "Panel. Se valora la coherencia entre expediente, actuación y preparación real para el siguiente estado de carrera."
         }
       ]
     },
@@ -270,7 +210,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Determinar la preparación global para comisión utilizando evidencia de toda la Academia."
+          "text": "Esta unidad sitúa **Recomendaciones** dentro de la transición real de cadete a oficial. El cadete debe comprender qué información pesa, qué decisiones son institucionales y qué consecuencias persisten después de graduarse."
         },
         {
           "type": "heading",
@@ -279,11 +219,19 @@
         {
           "type": "bullets",
           "items": [
-            "fortalezas",
-            "desarrollo",
-            "mentoría",
-            "limitaciones"
+            "**fortalezas**: capacidades demostradas de forma consistente y respaldadas por evidencia.",
+            "**desarrollo**: áreas y acciones mediante las que el oficial novel seguirá aumentando competencia tras graduarse.",
+            "**mentoría**: acompañamiento profesional que orienta aprendizaje y carrera sin sustituir responsabilidad ni cadena formal.",
+            "**limitaciones**: condiciones o fronteras que deben ser conocidas y comunicadas para no asumir una capacidad inexistente."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se trabaja siempre con la información disponible en ese momento, diferenciando hechos, incertidumbre, responsabilidad individual y decisión institucional. El resultado se conserva como parte del historial del personaje."
         },
         {
           "type": "callout",
@@ -292,36 +240,13 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "La comisión se decide con evidencia longitudinal de los cuatro años; ningún ejercicio aislado debe dominar todo el expediente."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Revisión."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica fortalezas como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Redactar salida profesional.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/academy_path/graduation_model.json",
-            "gameplay/careers/post_academy/qualification_and_mentorship_model.json"
-          ]
+          "text": "Revisión. Se valora la coherencia entre expediente, actuación y preparación real para el siguiente estado de carrera."
         }
       ]
     },
@@ -332,7 +257,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Determinar la preparación global para comisión utilizando evidencia de toda la Academia."
+          "text": "Esta unidad sitúa **Resultado de comisión** dentro de la transición real de cadete a oficial. El cadete debe comprender qué información pesa, qué decisiones son institucionales y qué consecuencias persisten después de graduarse."
         },
         {
           "type": "heading",
@@ -341,10 +266,18 @@
         {
           "type": "bullets",
           "items": [
-            "ready_for_commission",
-            "ready_with_development_recommendations",
-            "additional_training_required"
+            "**ready_for_commission**: resultado global que autoriza la comisión porque el expediente demuestra preparación suficiente para oficial novel.",
+            "**ready_with_development_recommendations**: comisión compatible con áreas de mejora que pueden abordarse durante el servicio normal mediante mentoría y desarrollo.",
+            "**additional_training_required**: resultado que pospone la comisión hasta completar formación adicional específica; no equivale a game over."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Se trabaja siempre con la información disponible en ese momento, diferenciando hechos, incertidumbre, responsabilidad individual y decisión institucional. El resultado se conserva como parte del historial del personaje."
         },
         {
           "type": "callout",
@@ -353,38 +286,16 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "La comisión se decide con evidencia longitudinal de los cuatro años; ningún ejercicio aislado debe dominar todo el expediente."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "No game over automático."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica ready_for_commission como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Emitir decisión.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/academy_path/graduation_model.json",
-            "gameplay/careers/post_academy/qualification_and_mentorship_model.json"
-          ]
+          "text": "No game over automático. Se valora la coherencia entre expediente, actuación y preparación real para el siguiente estado de carrera."
         }
       ]
     }
-  ]
+  ],
+  "assessmentModel": "concept_driven_v2_1"
 }
