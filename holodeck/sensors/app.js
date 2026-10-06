@@ -42,6 +42,7 @@ async function load(){
 function bind(){
   $("#reset-sim").addEventListener("click",()=>resetScenario("manual",shell.sim.scenarioId));
   $("#toggle-log").addEventListener("click",()=>{$("#log-panel").hidden=!$("#log-panel").hidden});
+  $("#copy-exercise-log").addEventListener("click",copyCurrentExerciseLog);
   $("#scenario-select").addEventListener("change",()=>{if($("#mode-select").value==="free")resetScenario("free:scenario-select",$("#scenario-select").value)});
   $("#mode-select").addEventListener("change",syncScenarioControl);
 }
@@ -481,4 +482,46 @@ function renderStatus(){
   document.querySelectorAll("[data-track-contact]").forEach(b=>b.onclick=()=>{sim.selectedContactId=b.dataset.trackContact;shell.primaryId="contacts";shell.secondaryId="all";render()});
 }
 function renderLog(){$("#log-list").innerHTML=shell.logs.map(x=>'<div class="log-entry">'+esc(x)+'</div>').join("")}
+function currentExerciseLogLines(){
+  const markerIndex=shell.logs.findIndex(line=>line.includes("RESET scenario · teacher:"));
+  if(markerIndex<0)return [];
+  return shell.logs.slice(0,markerIndex+1).reverse();
+}
+function currentExerciseLogText(){
+  const panel=$("#teacher-panel"),lines=currentExerciseLogLines();
+  if(!lines.length)return "";
+  const id=panel?.dataset.tutorialId||"—";
+  const title=panel?.dataset.tutorialTitle||"—";
+  const level=panel?.dataset.tutorialLevel||"—";
+  const scenario=panel?.dataset.scenarioId||shell.sim?.scenarioId||"—";
+  return [
+    "=== HOLOCUBIERTA · LOG DE EJERCICIO ===",
+    "Práctica: "+id+" · "+title,
+    "Nivel: "+level,
+    "Escenario: "+scenario,
+    "Exportado: "+new Date().toLocaleString("es-ES"),
+    "----------------------------------------",
+    ...lines,
+    "=== FIN LOG DE EJERCICIO ==="
+  ].join("\n");
+}
+async function copyCurrentExerciseLog(){
+  const status=$("#copy-log-status"),text=currentExerciseLogText();
+  if(!text){
+    if(status)status.textContent="No hay ejercicio activo";
+    return;
+  }
+  try{
+    if(navigator.clipboard?.writeText)await navigator.clipboard.writeText(text);
+    else{
+      const ta=document.createElement("textarea");ta.value=text;ta.style.position="fixed";ta.style.opacity="0";document.body.appendChild(ta);ta.select();document.execCommand("copy");ta.remove();
+    }
+    if(status)status.textContent="✓ Log del ejercicio copiado";
+    setTimeout(()=>{if(status)status.textContent=""},2200);
+    log("DEV EXPORT · current exercise log copied");
+  }catch(e){
+    if(status)status.textContent="No se pudo copiar";
+    console.error(e);
+  }
+}
 load().catch(e=>{$("#workspace-content").innerHTML='<div class="danger-note">Error cargando Sensores: '+esc(e.message)+'</div>';console.error(e)});
