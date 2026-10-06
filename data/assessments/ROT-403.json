@@ -1,7 +1,7 @@
 {
-  "schema_version": "2.0.0",
+  "schema_version": "2.1.0",
   "course_id": "ROT-403",
-  "status": "concept_driven_autocorrectable",
+  "status": "concept_driven_autocorrectable_v2_1",
   "source_bank": "question_bank_v1_0.json",
   "policy": {
     "theory_formats": [
@@ -16,9 +16,11 @@
     "source_rule": "Every evaluated concept must be explicitly taught in the course material or an established prerequisite."
   },
   "unit_review": {
-    "questions_per_attempt": 3,
+    "questions_per_attempt": 5,
     "reshuffle_each_attempt": true,
-    "preferred_short_answers_per_attempt": 1
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
   },
   "concepts": [
     {
@@ -465,6 +467,198 @@
         "dificultades",
         "preguntas",
         "no elección final"
+      ]
+    },
+    {
+      "id": "ROT-403-C025",
+      "unit_id": "ROT-403-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «LÍMITE»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «LÍMITE»?",
+        "Selecciona la idea correcta asociada a «LÍMITE»."
+      ],
+      "answer_display_es": "Ocupar temporalmente una estación durante una rotación no concede autoridad general sobre el puente.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Ocupar temporalmente una estación durante una rotación no concede autoridad general sobre el puente."
+      ]
+    },
+    {
+      "id": "ROT-403-C026",
+      "unit_id": "ROT-403-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Estaciones»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Estaciones»?",
+        "En «Estaciones», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Mando",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Mando"
+      ]
+    },
+    {
+      "id": "ROT-403-C027",
+      "unit_id": "ROT-403-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «ENERGÍA COMPARTIDA»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «ENERGÍA COMPARTIDA»?",
+        "Selecciona la idea correcta asociada a «ENERGÍA COMPARTIDA»."
+      ],
+      "answer_display_es": "Pedir más potencia puede afectar a otros consumidores; no es una mejora gratuita.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Pedir más potencia puede afectar a otros consumidores; no es una mejora gratuita."
+      ]
+    },
+    {
+      "id": "ROT-403-C028",
+      "unit_id": "ROT-403-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Mantenimiento»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Mantenimiento»?",
+        "En «Mantenimiento», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Inspección",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Inspección"
+      ]
+    },
+    {
+      "id": "ROT-403-C029",
+      "unit_id": "ROT-403-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «REPORTE»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «REPORTE»?",
+        "Selecciona la idea correcta asociada a «REPORTE»."
+      ],
+      "answer_display_es": "Debe distinguir qué se observó, con qué confianza, qué sigue sin saberse y qué análisis adicional podría ayudar.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Debe distinguir qué se observó, con qué confianza, qué sigue sin saberse y qué análisis adicional podría ayudar."
+      ]
+    },
+    {
+      "id": "ROT-403-C030",
+      "unit_id": "ROT-403-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+        "Selecciona la afirmación que coincide con los apuntes de esta unidad."
+      ],
+      "answer_display_es": "La rotación refuerza la separación entre obtener datos e interpretarlos: Sensores mide y organiza observaciones; Ciencia construye explicaciones.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "La rotación refuerza la separación entre obtener datos e interpretarlos: Sensores mide y organiza observaciones; Ciencia construye explicaciones."
+      ]
+    },
+    {
+      "id": "ROT-403-C031",
+      "unit_id": "ROT-403-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Rumbo» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Rumbo» en esta unidad?",
+        "Selecciona la definición correcta de «Rumbo»."
+      ],
+      "answer_display_es": "Dirección operacional de la nave dentro del marco utilizado.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Dirección operacional de la nave dentro del marco utilizado."
+      ]
+    },
+    {
+      "id": "ROT-403-C032",
+      "unit_id": "ROT-403-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «SI NO PUEDE EJECUTARSE»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «SI NO PUEDE EJECUTARSE»?",
+        "Selecciona la idea correcta asociada a «SI NO PUEDE EJECUTARSE»."
+      ],
+      "answer_display_es": "El operador informa de la limitación y, cuando corresponda, ofrece una alternativa válida.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "El operador informa de la limitación y, cuando corresponda, ofrece una alternativa válida."
+      ]
+    },
+    {
+      "id": "ROT-403-C033",
+      "unit_id": "ROT-403-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Seguridad» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Seguridad» en esta unidad?",
+        "Selecciona la definición correcta de «Seguridad»."
+      ],
+      "answer_display_es": "Protección, control de acceso, respuesta a incidentes, evaluación inicial de riesgo y coordinación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Protección, control de acceso, respuesta a incidentes, evaluación inicial de riesgo y coordinación."
+      ]
+    },
+    {
+      "id": "ROT-403-C034",
+      "unit_id": "ROT-403-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Medicina» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Medicina» en esta unidad?",
+        "Selecciona la definición correcta de «Medicina»."
+      ],
+      "answer_display_es": "Seguridad de escena, estado observable, triaje básico, asistencia y relevo.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Seguridad de escena, estado observable, triaje básico, asistencia y relevo."
+      ]
+    },
+    {
+      "id": "ROT-403-C035",
+      "unit_id": "ROT-403-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Interés» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Interés» en esta unidad?",
+        "Selecciona la definición correcta de «Interés»."
+      ],
+      "answer_display_es": "Qué tareas, problemas y entornos atraen al cadete.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Qué tareas, problemas y entornos atraen al cadete."
+      ]
+    },
+    {
+      "id": "ROT-403-C036",
+      "unit_id": "ROT-403-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Fortaleza» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Fortaleza» en esta unidad?",
+        "Selecciona la definición correcta de «Fortaleza»."
+      ],
+      "answer_display_es": "Capacidad respaldada por evidencia, no una impresión aislada.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Capacidad respaldada por evidencia, no una impresión aislada."
       ]
     }
   ]

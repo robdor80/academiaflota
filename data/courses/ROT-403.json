@@ -1,7 +1,7 @@
 {
   "subject": "Rotaciones operativas e integración",
   "code": "ROT-403",
-  "version": "1.2",
+  "version": "1.3",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/ROT-403/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/ROT-403/MANUAL_v1_0.md",
@@ -21,7 +21,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "La rotación de Puente y Operaciones muestra cómo una orden atraviesa varias estaciones: Mando define intención, una estación interpreta, el sistema valida, se ejecuta una acción y el resultado se informa."
+          "text": "**La rotación de Puente y Operaciones muestra cómo una orden atraviesa varias estaciones: Mando define intención, una estación interpreta, el sistema valida, se ejecuta una acción y el resultado se informa.**"
         },
         {
           "type": "heading",
@@ -29,7 +29,7 @@
         },
         {
           "type": "p",
-          "text": "Operaciones mantiene una imagen funcional de recursos, sistemas, necesidades de departamentos y prioridades de misión."
+          "text": "Operaciones mantiene una imagen funcional de recursos, sistemas, necesidades de departamentos y **prioridades** de misión."
         },
         {
           "type": "heading",
@@ -38,7 +38,7 @@
         {
           "type": "bullets",
           "items": [
-            "Mando",
+            "**Mando**",
             "Conn / Navegación",
             "Ops",
             "Sensores / Ciencia",
@@ -61,7 +61,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Ingeniería trabaja con estado de sistemas, energía, daños, mantenimiento, recursos y seguridad."
+          "text": "**Ingeniería trabaja con estado de sistemas, energía, daños, mantenimiento, recursos y seguridad.**"
         },
         {
           "type": "heading",
@@ -70,7 +70,7 @@
         {
           "type": "bullets",
           "items": [
-            "Inspección",
+            "**Inspección**",
             "Prueba",
             "Calibración",
             "Sustitución",
@@ -95,7 +95,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "La rotación refuerza la separación entre obtener datos e interpretarlos: Sensores mide y organiza observaciones; Ciencia construye explicaciones."
+          "text": "**La rotación refuerza la separación entre obtener datos e interpretarlos: Sensores mide y organiza observaciones; Ciencia construye explicaciones.**"
         },
         {
           "type": "heading",
@@ -104,10 +104,10 @@
         {
           "type": "numbered",
           "items": [
-            "Revisar objetivo",
+            "Revisar **objetivo**",
             "Comprobar modo",
             "Ejecutar",
-            "Observar resultado",
+            "Observar **resultado**",
             "Guardar o enviar datos"
           ]
         },
@@ -125,12 +125,12 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Navegación y vuelo convierten intención de mando en movimiento real mediante una solución de ruta compatible con origen, destino, restricciones, capacidad, riesgos y ETA."
+          "text": "**Navegación y vuelo convierten intención de mando en movimiento real mediante una solución de ruta compatible con origen, destino, restricciones, capacidad, riesgos y ETA.**"
         },
         {
           "type": "definition",
           "term": "Rumbo",
-          "text": "Dirección operacional de la nave dentro del marco utilizado."
+          "text": "**Dirección operacional** de la nave dentro del marco utilizado."
         },
         {
           "type": "heading",
@@ -154,17 +154,17 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Seguridad y Medicina intervienen en situaciones críticas, pero con responsabilidades distintas."
+          "text": "**Seguridad y Medicina intervienen en situaciones críticas, pero con responsabilidades distintas.**"
         },
         {
           "type": "definition",
           "term": "Seguridad",
-          "text": "Protección, control de acceso, respuesta a incidentes, evaluación inicial de riesgo y coordinación."
+          "text": "Protección, control de acceso, respuesta a incidentes, evaluación inicial de riesgo y **coordinación**."
         },
         {
           "type": "definition",
           "term": "Medicina",
-          "text": "Seguridad de escena, estado observable, triaje básico, asistencia y relevo."
+          "text": "**Seguridad de escena**, estado observable, triaje básico, asistencia y relevo."
         },
         {
           "type": "definition",
@@ -185,7 +185,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "La última unidad sirve para conocerse profesionalmente sin elegir todavía una rama."
+          "text": "**La última unidad sirve para conocerse profesionalmente sin elegir todavía una rama.**"
         },
         {
           "type": "definition",
@@ -200,16 +200,16 @@
         {
           "type": "definition",
           "term": "Dificultad",
-          "text": "Área que puede orientar entrenamiento, tutoría o nueva exposición."
+          "text": "Área que puede orientar entrenamiento, **tutoría** o nueva exposición."
         },
         {
           "type": "callout",
           "label": "NO ES ELECCIÓN FINAL",
-          "text": "El debrief genera un registro descriptivo de intereses, fortalezas, dificultades y preguntas. No selecciona automáticamente especialización."
+          "text": "El debrief genera un **registro descriptivo** de intereses, fortalezas, dificultades y preguntas. No selecciona automáticamente especialización."
         }
       ]
     }
   ],
   "status": "developed_content",
-  "assessmentModel": "concept_driven_v2"
+  "assessmentModel": "concept_driven_v2_1"
 }
