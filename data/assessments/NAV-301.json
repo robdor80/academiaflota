@@ -1,16 +1,40 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.1.0",
   "course_id": "NAV-301",
-  "status": "editorially_aligned_with_developed_manual",
-  "source_manual": "gameplay/careers/academy_path/study_materials/third_class/NAV-301/MANUAL_v1_0.md",
-  "question_count": 24,
-  "rule": "No question may require knowledge that is not explicitly taught in NAV-301 or established prerequisites.",
-  "questions": [
+  "status": "concept_driven_autocorrectable_v2_1",
+  "source_bank": "question_bank_v1_0.json",
+  "policy": {
+    "theory_formats": [
+      "multiple_choice",
+      "short_answer"
+    ],
+    "multiple_choice_target_ratio": 0.8,
+    "short_answer_target_ratio": 0.2,
+    "deterministic_correction": true,
+    "web_and_game_share_concepts_not_question_instances": true,
+    "complex_judgment_moves_to_practice_and_simulation": true,
+    "source_rule": "Every evaluated concept must be explicitly taught in the course material or an established prerequisite."
+  },
+  "unit_review": {
+    "questions_per_attempt": 5,
+    "reshuffle_each_attempt": true,
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
+  },
+  "concepts": [
     {
-      "id": "NAV-301-Q001",
+      "id": "NAV-301-C001",
       "unit_id": "NAV-301-U01",
-      "type": "short_answer",
-      "prompt_es": "¿Qué controla la estación de vuelo?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué controla la estación de vuelo?",
+      "web_prompt_variants_es": [
+        "¿Qué controla la estación de vuelo?",
+        "Selecciona la respuesta correcta: Qué controla la estación de vuelo?"
+      ],
+      "answer_display_es": "rumbo · velocidad · propulsión · maniobra · ejecución",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "rumbo",
         "velocidad",
@@ -20,10 +44,17 @@
       ]
     },
     {
-      "id": "NAV-301-Q002",
+      "id": "NAV-301-C002",
       "unit_id": "NAV-301-U01",
-      "type": "knowledge",
-      "prompt_es": "Nombra cuatro acciones funcionales mínimas.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción contiene cuatro acciones funcionales mínimas?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene cuatro acciones funcionales mínimas?",
+        "Nombra cuatro acciones funcionales mínimas."
+      ],
+      "answer_display_es": "fijar rumbo · velocidad · warp · interceptar · órbita · atracar · abortar",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "fijar rumbo",
         "velocidad",
@@ -35,39 +66,69 @@
       ]
     },
     {
-      "id": "NAV-301-Q003",
+      "id": "NAV-301-C003",
       "unit_id": "NAV-301-U01",
-      "type": "compare",
-      "prompt_es": "Diferencia orden válida y ejecutable.",
+      "source_type": "compare",
+      "web_prompt_es": "¿Qué opción diferencia correctamente orden válida y ejecutable?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente orden válida y ejecutable?",
+        "Diferencia orden válida y ejecutable."
+      ],
+      "answer_display_es": "intención válida · capacidad actual suficiente",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "intención válida",
         "capacidad actual suficiente"
       ]
     },
     {
-      "id": "NAV-301-Q004",
+      "id": "NAV-301-C004",
       "unit_id": "NAV-301-U01",
-      "type": "scenario",
-      "prompt_es": "La nave no puede cumplir la velocidad ordenada. ¿Qué haces?",
+      "source_type": "scenario",
+      "web_prompt_es": "La nave no puede cumplir la velocidad ordenada. ¿Qué haces?",
+      "web_prompt_variants_es": [
+        "La nave no puede cumplir la velocidad ordenada. ¿Qué haces?",
+        "Repaso: La nave no puede cumplir la velocidad ordenada. ¿Qué haces?"
+      ],
+      "answer_display_es": "informar limitación · proponer alternativa",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "informar limitación",
         "proponer alternativa"
       ]
     },
     {
-      "id": "NAV-301-Q005",
+      "id": "NAV-301-C005",
       "unit_id": "NAV-301-U02",
-      "type": "short_answer",
-      "prompt_es": "¿Qué significa plotting?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué significa plotting?",
+      "web_prompt_variants_es": [
+        "¿Qué significa plotting?",
+        "Selecciona la respuesta correcta: Qué significa plotting?"
+      ],
+      "answer_display_es": "construir solución de ruta",
+      "accepted_short_answers_es": [
+        "construir solución de ruta"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "construir solución de ruta"
       ]
     },
     {
-      "id": "NAV-301-Q006",
+      "id": "NAV-301-C006",
       "unit_id": "NAV-301-U02",
-      "type": "knowledge",
-      "prompt_es": "¿Para qué sirve waypoint?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Para qué sirve waypoint?",
+      "web_prompt_variants_es": [
+        "¿Para qué sirve waypoint?",
+        "Repaso: ¿Para qué sirve waypoint?"
+      ],
+      "answer_display_es": "punto intermedio · evitar zona · apoyo · cumplir ruta",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "punto intermedio",
         "evitar zona",
@@ -76,10 +137,17 @@
       ]
     },
     {
-      "id": "NAV-301-Q007",
+      "id": "NAV-301-C007",
       "unit_id": "NAV-301-U02",
-      "type": "judgment",
-      "prompt_es": "¿Por qué ruta corta no siempre es mejor?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué ruta corta no siempre es mejor?",
+      "web_prompt_variants_es": [
+        "¿Por qué ruta corta no siempre es mejor?",
+        "Selecciona la explicación correcta:  ruta corta no siempre es mejor."
+      ],
+      "answer_display_es": "riesgo · legalidad · soporte · incertidumbre",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "riesgo",
         "legalidad",
@@ -88,20 +156,34 @@
       ]
     },
     {
-      "id": "NAV-301-Q008",
+      "id": "NAV-301-C008",
       "unit_id": "NAV-301-U02",
-      "type": "compare",
-      "prompt_es": "Diferencia posibilidad física y legalidad.",
+      "source_type": "compare",
+      "web_prompt_es": "¿Qué opción diferencia correctamente posibilidad física y legalidad?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente posibilidad física y legalidad?",
+        "Diferencia posibilidad física y legalidad."
+      ],
+      "answer_display_es": "puede recorrerse · puede estar restringida",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "puede recorrerse",
         "puede estar restringida"
       ]
     },
     {
-      "id": "NAV-301-Q009",
+      "id": "NAV-301-C009",
       "unit_id": "NAV-301-U03",
-      "type": "knowledge",
-      "prompt_es": "Nombra tres maniobras a impulso.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción contiene tres maniobras a impulso?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene tres maniobras a impulso?",
+        "Nombra tres maniobras a impulso."
+      ],
+      "answer_display_es": "rumbo · velocidad · aproximación · separación · formación",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "rumbo",
         "velocidad",
@@ -111,10 +193,17 @@
       ]
     },
     {
-      "id": "NAV-301-Q010",
+      "id": "NAV-301-C010",
       "unit_id": "NAV-301-U03",
-      "type": "judgment",
-      "prompt_es": "¿Qué puede empeorar al aumentar velocidad?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Qué puede empeorar al aumentar velocidad?",
+      "web_prompt_variants_es": [
+        "¿Qué puede empeorar al aumentar velocidad?",
+        "Selecciona la respuesta correcta: Qué puede empeorar al aumentar velocidad?"
+      ],
+      "answer_display_es": "margen reacción · seguridad · aproximación",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "margen reacción",
         "seguridad",
@@ -122,10 +211,17 @@
       ]
     },
     {
-      "id": "NAV-301-Q011",
+      "id": "NAV-301-C011",
       "unit_id": "NAV-301-U03",
-      "type": "short_answer",
-      "prompt_es": "¿De qué dependen márgenes de aproximación?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿De qué dependen márgenes de aproximación?",
+      "web_prompt_variants_es": [
+        "¿De qué dependen márgenes de aproximación?",
+        "Repaso: ¿De qué dependen márgenes de aproximación?"
+      ],
+      "answer_display_es": "objetivo · movimiento relativo · misión · instrucciones",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "objetivo",
         "movimiento relativo",
@@ -134,20 +230,34 @@
       ]
     },
     {
-      "id": "NAV-301-Q012",
+      "id": "NAV-301-C012",
       "unit_id": "NAV-301-U03",
-      "type": "judgment",
-      "prompt_es": "¿Por qué una maniobra debe poder cancelarse?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué una maniobra debe poder cancelarse?",
+      "web_prompt_variants_es": [
+        "¿Por qué una maniobra debe poder cancelarse?",
+        "Selecciona la explicación correcta:  una maniobra debe poder cancelarse."
+      ],
+      "answer_display_es": "estado puede cambiar · seguridad",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estado puede cambiar",
         "seguridad"
       ]
     },
     {
-      "id": "NAV-301-Q013",
+      "id": "NAV-301-C013",
       "unit_id": "NAV-301-U04",
-      "type": "procedure",
-      "prompt_es": "¿Qué se comprueba antes de warp?",
+      "source_type": "procedure",
+      "web_prompt_es": "¿Qué se comprueba antes de warp?",
+      "web_prompt_variants_es": [
+        "¿Qué se comprueba antes de warp?",
+        "Selecciona la respuesta correcta: Qué se comprueba antes de warp?"
+      ],
+      "answer_display_es": "destino · ruta · factor · capacidad · energía · daño · autorización",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "destino",
         "ruta",
@@ -159,20 +269,36 @@
       ]
     },
     {
-      "id": "NAV-301-Q014",
+      "id": "NAV-301-C014",
       "unit_id": "NAV-301-U04",
-      "type": "judgment",
-      "prompt_es": "¿Entrar en warp completa el viaje?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Entrar en warp completa el viaje?",
+      "web_prompt_variants_es": [
+        "¿Entrar en warp completa el viaje?",
+        "Repaso: ¿Entrar en warp completa el viaje?"
+      ],
+      "answer_display_es": "No — tránsito persistente.",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no",
         "tránsito persistente"
       ]
     },
     {
-      "id": "NAV-301-Q015",
+      "id": "NAV-301-C015",
       "unit_id": "NAV-301-U04",
-      "type": "knowledge",
-      "prompt_es": "¿Qué se monitoriza en tránsito?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué se monitoriza en tránsito?",
+      "web_prompt_variants_es": [
+        "¿Qué se monitoriza en tránsito?",
+        "Selecciona la respuesta correcta: Qué se monitoriza en tránsito?"
+      ],
+      "answer_display_es": "progreso · ETA · propulsión · condiciones · ruta",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "progreso",
         "ETA",
@@ -182,10 +308,17 @@
       ]
     },
     {
-      "id": "NAV-301-Q016",
+      "id": "NAV-301-C016",
       "unit_id": "NAV-301-U04",
-      "type": "knowledge",
-      "prompt_es": "Nombra tres causas de replanificación.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción contiene tres causas de replanificación?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene tres causas de replanificación?",
+        "Nombra tres causas de replanificación."
+      ],
+      "answer_display_es": "daño · energía · subespacio · frontera · misión",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "daño",
         "energía",
@@ -195,10 +328,17 @@
       ]
     },
     {
-      "id": "NAV-301-Q017",
+      "id": "NAV-301-C017",
       "unit_id": "NAV-301-U05",
-      "type": "short_answer",
-      "prompt_es": "¿Qué datos requiere interceptar?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué datos requiere interceptar?",
+      "web_prompt_variants_es": [
+        "¿Qué datos requiere interceptar?",
+        "Selecciona la respuesta correcta: Qué datos requiere interceptar?"
+      ],
+      "answer_display_es": "posición · vector · velocidad · contacto · capacidad",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "posición",
         "vector",
@@ -208,10 +348,17 @@
       ]
     },
     {
-      "id": "NAV-301-Q018",
+      "id": "NAV-301-C018",
       "unit_id": "NAV-301-U05",
-      "type": "knowledge",
-      "prompt_es": "¿Qué controla una aproximación?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué controla una aproximación?",
+      "web_prompt_variants_es": [
+        "¿Qué controla una aproximación?",
+        "Selecciona la respuesta correcta: Qué controla una aproximación?"
+      ],
+      "answer_display_es": "velocidad relativa · separación · orientación · tráfico",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "velocidad relativa",
         "separación",
@@ -220,10 +367,17 @@
       ]
     },
     {
-      "id": "NAV-301-Q019",
+      "id": "NAV-301-C019",
       "unit_id": "NAV-301-U05",
-      "type": "judgment",
-      "prompt_es": "¿Qué añade el acoplamiento?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Qué añade el acoplamiento?",
+      "web_prompt_variants_es": [
+        "¿Qué añade el acoplamiento?",
+        "Selecciona la respuesta correcta: Qué añade el acoplamiento?"
+      ],
+      "answer_display_es": "puerto · autorización · aproximación segura",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "puerto",
         "autorización",
@@ -231,10 +385,17 @@
       ]
     },
     {
-      "id": "NAV-301-Q020",
+      "id": "NAV-301-C020",
       "unit_id": "NAV-301-U05",
-      "type": "short_answer",
-      "prompt_es": "¿Para qué sirven márgenes?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Para qué sirven márgenes?",
+      "web_prompt_variants_es": [
+        "¿Para qué sirven márgenes?",
+        "Repaso: ¿Para qué sirven márgenes?"
+      ],
+      "answer_display_es": "incertidumbre · error · movimiento · demora",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "incertidumbre",
         "error",
@@ -243,10 +404,17 @@
       ]
     },
     {
-      "id": "NAV-301-Q021",
+      "id": "NAV-301-C021",
       "unit_id": "NAV-301-U06",
-      "type": "knowledge",
-      "prompt_es": "Nombra tres causas de desviación.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción contiene tres causas de desviación?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene tres causas de desviación?",
+        "Nombra tres causas de desviación."
+      ],
+      "answer_display_es": "daño · error · nueva información · condiciones · obstáculo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "daño",
         "error",
@@ -256,10 +424,17 @@
       ]
     },
     {
-      "id": "NAV-301-Q022",
+      "id": "NAV-301-C022",
       "unit_id": "NAV-301-U06",
-      "type": "procedure",
-      "prompt_es": "¿Cómo actúas con datos incompletos?",
+      "source_type": "procedure",
+      "web_prompt_es": "¿Cómo actúas con datos incompletos?",
+      "web_prompt_variants_es": [
+        "¿Cómo actúas con datos incompletos?",
+        "Repaso: ¿Cómo actúas con datos incompletos?"
+      ],
+      "answer_display_es": "reducir confianza · ampliar margen · pedir información",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "reducir confianza",
         "ampliar margen",
@@ -267,25 +442,233 @@
       ]
     },
     {
-      "id": "NAV-301-Q023",
+      "id": "NAV-301-C023",
       "unit_id": "NAV-301-U06",
-      "type": "judgment",
-      "prompt_es": "¿Abortar es siempre fracaso?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Abortar es siempre fracaso?",
+      "web_prompt_variants_es": [
+        "¿Abortar es siempre fracaso?",
+        "Repaso: ¿Abortar es siempre fracaso?"
+      ],
+      "answer_display_es": "No — puede ser decisión segura/profesional.",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no",
         "puede ser decisión segura/profesional"
       ]
     },
     {
-      "id": "NAV-301-Q024",
+      "id": "NAV-301-C024",
       "unit_id": "NAV-301-U06",
-      "type": "short_answer",
-      "prompt_es": "¿Qué incluye reporte de anomalía?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué incluye reporte de anomalía?",
+      "web_prompt_variants_es": [
+        "¿Qué incluye reporte de anomalía?",
+        "Selecciona la respuesta correcta: Qué incluye reporte de anomalía?"
+      ],
+      "answer_display_es": "cambio · impacto · opción segura · ETA/ruta revisada",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "cambio",
         "impacto",
         "opción segura",
         "ETA/ruta revisada"
+      ]
+    },
+    {
+      "id": "NAV-301-C025",
+      "unit_id": "NAV-301-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «VALIDACIÓN»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «VALIDACIÓN»?",
+        "Selecciona la idea correcta asociada a «VALIDACIÓN»."
+      ],
+      "answer_display_es": "Una orden puede ser válida como intención pero no ejecutable con el estado actual de la nave.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Una orden puede ser válida como intención pero no ejecutable con el estado actual de la nave."
+      ]
+    },
+    {
+      "id": "NAV-301-C026",
+      "unit_id": "NAV-301-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Acciones funcionales mínimas»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Acciones funcionales mínimas»?",
+        "En «Acciones funcionales mínimas», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Fijar rumbo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Fijar rumbo"
+      ]
+    },
+    {
+      "id": "NAV-301-C027",
+      "unit_id": "NAV-301-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Waypoint» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Waypoint» en esta unidad?",
+        "Selecciona la definición correcta de «Waypoint»."
+      ],
+      "answer_display_es": "Punto intermedio que estructura una ruta para evitar zonas, buscar apoyo o cumplir condiciones.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Punto intermedio que estructura una ruta para evitar zonas, buscar apoyo o cumplir condiciones."
+      ]
+    },
+    {
+      "id": "NAV-301-C028",
+      "unit_id": "NAV-301-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «FÍSICA Y POLÍTICA»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «FÍSICA Y POLÍTICA»?",
+        "Selecciona la idea correcta asociada a «FÍSICA Y POLÍTICA»."
+      ],
+      "answer_display_es": "Una ruta puede ser físicamente posible y aun así estar políticamente restringida.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Una ruta puede ser físicamente posible y aun así estar políticamente restringida."
+      ]
+    },
+    {
+      "id": "NAV-301-C029",
+      "unit_id": "NAV-301-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «CANCELACIÓN»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «CANCELACIÓN»?",
+        "Selecciona la idea correcta asociada a «CANCELACIÓN»."
+      ],
+      "answer_display_es": "Toda maniobra debe poder modificarse o cancelarse si cambia la situación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Toda maniobra debe poder modificarse o cancelarse si cambia la situación."
+      ]
+    },
+    {
+      "id": "NAV-301-C030",
+      "unit_id": "NAV-301-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Qué se valida»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Qué se valida»?",
+        "En «Qué se valida», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Capacidad de maniobra",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Capacidad de maniobra"
+      ]
+    },
+    {
+      "id": "NAV-301-C031",
+      "unit_id": "NAV-301-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «TRÁNSITO PERSISTENTE»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «TRÁNSITO PERSISTENTE»?",
+        "Selecciona la idea correcta asociada a «TRÁNSITO PERSISTENTE»."
+      ],
+      "answer_display_es": "Entrar en warp inicia el viaje; no completa el trayecto instantáneamente.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Entrar en warp inicia el viaje; no completa el trayecto instantáneamente."
+      ]
+    },
+    {
+      "id": "NAV-301-C032",
+      "unit_id": "NAV-301-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Monitorización»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Monitorización»?",
+        "En «Monitorización», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Posición",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Posición"
+      ]
+    },
+    {
+      "id": "NAV-301-C033",
+      "unit_id": "NAV-301-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Interceptación» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Interceptación» en esta unidad?",
+        "Selecciona la definición correcta de «Interceptación»."
+      ],
+      "answer_display_es": "Trayectoria destinada a encontrarse con un objetivo móvil.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Trayectoria destinada a encontrarse con un objetivo móvil."
+      ]
+    },
+    {
+      "id": "NAV-301-C034",
+      "unit_id": "NAV-301-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Acoplamiento»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Acoplamiento»?",
+        "En «Acoplamiento», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Instalación válida",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Instalación válida"
+      ]
+    },
+    {
+      "id": "NAV-301-C035",
+      "unit_id": "NAV-301-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «ABORTAR PUEDE SER CORRECTO»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «ABORTAR PUEDE SER CORRECTO»?",
+        "Selecciona la idea correcta asociada a «ABORTAR PUEDE SER CORRECTO»."
+      ],
+      "answer_display_es": "Si continuar deja de ser seguro o autorizado, abortar es una decisión profesional, no un fracaso automático.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Si continuar deja de ser seguro o autorizado, abortar es una decisión profesional, no un fracaso automático."
+      ]
+    },
+    {
+      "id": "NAV-301-C036",
+      "unit_id": "NAV-301-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Causas»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Causas»?",
+        "En «Causas», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Daño",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Daño"
       ]
     }
   ]

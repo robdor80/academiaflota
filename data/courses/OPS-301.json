@@ -1,7 +1,7 @@
 {
   "subject": "Operaciones de puente y coordinación",
   "code": "OPS-301",
-  "version": "1.1",
+  "version": "1.3",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/OPS-301/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/OPS-301/MANUAL_v1_0.md",
@@ -21,16 +21,16 @@
       "blocks": [
         {
           "type": "p",
-          "text": "El puente es un sistema de trabajo distribuido: la información, la autoridad y la capacidad de actuar están repartidas entre estaciones y personas."
+          "text": "**El puente es un sistema de trabajo distribuido: la información, la autoridad y la capacidad de actuar están repartidas entre estaciones y personas.**"
         },
         {
           "type": "quote",
-          "text": "detección → interpretación → decisión → ejecución → resultado → actualización"
+          "text": "detección → interpretación → decisión → ejecución → **resultado** → actualización"
         },
         {
           "type": "definition",
           "term": "Rol",
-          "text": "Responsabilidad profesional del personaje."
+          "text": "**Responsabilidad profesional del personaje.**"
         },
         {
           "type": "definition",
@@ -41,20 +41,6 @@
           "type": "callout",
           "label": "MANDO",
           "text": "Mando mantiene intención y prioridad, asigna tareas y resuelve decisiones que exceden a una estación individual."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Por qué el puente es distribuido?",
-            "Diferencia rol y estación.",
-            "¿Qué conserva Mando?",
-            "¿Qué hace útil el flujo de información?",
-            "¿Cómo reconstruyes un evento?"
-          ]
         }
       ]
     },
@@ -65,7 +51,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Una orden debe poder recibirse, comprenderse, ejecutarse y cerrarse. El acuse confirma recepción; no equivale a finalización."
+          "text": "**Una orden debe poder recibirse, comprenderse, ejecutarse y cerrarse.** El acuse confirma recepción; no equivale a finalización."
         },
         {
           "type": "heading",
@@ -74,10 +60,10 @@
         {
           "type": "bullets",
           "items": [
-            "Pedir aclaración",
+            "**Pedir aclaración**",
             "Informar limitación",
             "Ofrecer alternativa cuando proceda",
-            "No adivinar"
+            "**No adivinar**"
           ]
         },
         {
@@ -88,20 +74,6 @@
           "type": "callout",
           "label": "CIERRE",
           "text": "El reporte final indica qué se hizo, qué resultado hubo, anomalías y pendientes."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Diferencia acuse y finalización.",
-            "¿Qué haces ante ambigüedad?",
-            "¿Qué bloqueos deben reportarse?",
-            "¿Qué incluye cierre?",
-            "¿Por qué no se debe fingir cumplimiento imposible?"
-          ]
         }
       ]
     },
@@ -112,7 +84,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Muchas tareas requieren varias estaciones. Una petición interconsola debe indicar necesidad, motivo, prioridad, contexto mínimo y momento."
+          "text": "**Muchas tareas requieren varias estaciones.** Una petición interconsola debe indicar necesidad, motivo, prioridad, contexto mínimo y momento."
         },
         {
           "type": "heading",
@@ -121,8 +93,8 @@
         {
           "type": "bullets",
           "items": [
-            "Técnico",
-            "Energético",
+            "**Técnico**",
+            "**Energético**",
             "Operativo",
             "Legal",
             "Autorización",
@@ -137,20 +109,6 @@
           "type": "callout",
           "label": "HANDOFF",
           "text": "Cuando otra estación asume parte del problema recibe contexto, datos, procedencia, prioridad y estado actual."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué es una dependencia?",
-            "¿Qué contiene una petición?",
-            "¿Quién resuelve prioridades superiores?",
-            "Nombra tres bloqueos.",
-            "¿Qué conserva un handoff?"
-          ]
         }
       ]
     },
@@ -161,11 +119,11 @@
       "blocks": [
         {
           "type": "p",
-          "text": "La imagen operativa común resume lo relevante para la misión: estado de nave, contactos, riesgos, tareas, restricciones e incidencias."
+          "text": "**La imagen operativa común resume lo relevante para la misión: estado de nave, contactos, riesgos, tareas, restricciones e incidencias.**"
         },
         {
           "type": "p",
-          "text": "No es una copia de todos los datos. Debe evitar ruido y conservar incertidumbre."
+          "text": "No es una copia de todos los datos. Debe **evitar ruido** y conservar incertidumbre."
         },
         {
           "type": "heading",
@@ -173,7 +131,7 @@
         },
         {
           "type": "p",
-          "text": "Un contacto provisional sigue siendo provisional. Los peligros ocultos del World State no aparecen si la tripulación no los conoce."
+          "text": "Un contacto **provisional** sigue siendo provisional. Los peligros ocultos del World State no aparecen si la tripulación no los conoce."
         },
         {
           "type": "heading",
@@ -189,20 +147,6 @@
             "Restricciones",
             "Requisitos de informe"
           ]
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué es imagen operativa común?",
-            "¿Por qué no incluye todo?",
-            "¿Cómo presentas contacto incierto?",
-            "¿Qué contiene una orden?",
-            "¿Puede mostrar un peligro oculto?"
-          ]
         }
       ]
     },
@@ -213,36 +157,22 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Una incidencia se resuelve localmente si está dentro de función, autoridad y riesgo controlable. Se escala cuando excede autoridad, cruza departamentos o afecta misión o seguridad."
+          "text": "**Una incidencia se resuelve localmente si está dentro de función, autoridad y riesgo controlable.** Se escala cuando excede autoridad, cruza departamentos o afecta misión o seguridad."
         },
         {
           "type": "definition",
           "term": "Urgencia",
-          "text": "Cuánto importa el tiempo de respuesta."
+          "text": "**Cuánto importa el tiempo de respuesta.**"
         },
         {
           "type": "definition",
           "term": "Gravedad",
-          "text": "Magnitud potencial del impacto."
+          "text": "**Magnitud potencial del impacto.**"
         },
         {
           "type": "callout",
           "label": "EQUILIBRIO",
           "text": "Escalar todo satura; no escalar nada oculta riesgos y fuerza decisiones fuera de autoridad."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Cuándo resolver localmente?",
-            "¿Cuándo informar?",
-            "¿Cuándo escalar?",
-            "Diferencia urgencia y gravedad.",
-            "¿Qué causa escalar demasiado o poco?"
-          ]
         }
       ]
     },
@@ -253,7 +183,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "La guardia supervisada integra rutina, órdenes, contactos, coordinación, un evento inesperado y relevo."
+          "text": "**La guardia supervisada integra rutina, órdenes, contactos, coordinación, un evento inesperado y relevo.**"
         },
         {
           "type": "p",
@@ -266,8 +196,8 @@
         {
           "type": "bullets",
           "items": [
-            "Precisión",
-            "Juicio",
+            "**Precisión**",
+            "**Juicio**",
             "Comunicación",
             "Disciplina",
             "Trabajo en equipo",
@@ -278,23 +208,10 @@
           "type": "callout",
           "label": "RELEVO",
           "text": "Debe transferir estado, pendientes, órdenes, incidencias y restricciones."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué integra la guardia?",
-            "¿Por qué puede haber varias respuestas correctas?",
-            "¿Qué muestra buena coordinación?",
-            "¿Qué debe incluir el relevo?",
-            "¿Qué se evalúa además del resultado?"
-          ]
         }
       ]
     }
   ],
-  "status": "developed_content"
+  "status": "developed_content",
+  "assessmentModel": "concept_driven_v2_1"
 }

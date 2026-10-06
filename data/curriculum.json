@@ -227,7 +227,8 @@
               "studyId": "course-OPS-301",
               "dataFile": "data/courses/OPS-301.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/OPS-301.json"
             },
             {
               "courseId": "NAV-301",
@@ -236,7 +237,8 @@
               "studyId": "course-NAV-301",
               "dataFile": "data/courses/NAV-301.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/NAV-301.json"
             },
             {
               "courseId": "SEN-301",
@@ -245,7 +247,8 @@
               "studyId": "course-SEN-301",
               "dataFile": "data/courses/SEN-301.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/SEN-301.json"
             },
             {
               "courseId": "ENG-301",
@@ -254,7 +257,8 @@
               "studyId": "course-ENG-301",
               "dataFile": "data/courses/ENG-301.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/ENG-301.json"
             },
             {
               "courseId": "PRO-301",
@@ -263,7 +267,8 @@
               "studyId": "course-PRO-301",
               "dataFile": "data/courses/PRO-301.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/PRO-301.json"
             }
           ]
         },
@@ -280,7 +285,8 @@
               "studyId": "course-REG-302",
               "dataFile": "data/courses/REG-302.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/REG-302.json"
             },
             {
               "courseId": "XEN-302",
@@ -289,7 +295,8 @@
               "studyId": "course-XEN-302",
               "dataFile": "data/courses/XEN-302.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/XEN-302.json"
             },
             {
               "courseId": "MED-302",
@@ -298,7 +305,8 @@
               "studyId": "course-MED-302",
               "dataFile": "data/courses/MED-302.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/MED-302.json"
             },
             {
               "courseId": "SEC-302",
@@ -307,7 +315,8 @@
               "studyId": "course-SEC-302",
               "dataFile": "data/courses/SEC-302.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/SEC-302.json"
             },
             {
               "courseId": "FLD-302",
@@ -316,7 +325,8 @@
               "studyId": "course-FLD-302",
               "dataFile": "data/courses/FLD-302.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/FLD-302.json"
             }
           ]
         },
@@ -333,7 +343,8 @@
               "studyId": "course-SIM-303",
               "dataFile": "data/courses/SIM-303.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/SIM-303.json"
             },
             {
               "courseId": "LDR-303",
@@ -342,7 +353,8 @@
               "studyId": "course-LDR-303",
               "dataFile": "data/courses/LDR-303.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/LDR-303.json"
             },
             {
               "courseId": "BRN-303",
@@ -351,7 +363,8 @@
               "studyId": "course-BRN-303",
               "dataFile": "data/courses/BRN-303.json",
               "source": "course",
-              "unitCount": 7
+              "unitCount": 7,
+              "assessmentFile": "data/assessments/BRN-303.json"
             },
             {
               "courseId": "JDG-303",
@@ -360,7 +373,8 @@
               "studyId": "course-JDG-303",
               "dataFile": "data/courses/JDG-303.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/JDG-303.json"
             },
             {
               "courseId": "CAR-303",
@@ -369,7 +383,8 @@
               "studyId": "course-CAR-303",
               "dataFile": "data/courses/CAR-303.json",
               "source": "course",
-              "unitCount": 6
+              "unitCount": 6,
+              "assessmentFile": "data/assessments/CAR-303.json"
             }
           ]
         }

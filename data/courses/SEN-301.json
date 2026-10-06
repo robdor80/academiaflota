@@ -1,7 +1,7 @@
 {
   "subject": "Sensores y adquisición de situación I",
   "code": "SEN-301",
-  "version": "1.1",
+  "version": "1.3",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/SEN-301/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/SEN-301/MANUAL_v1_0.md",
@@ -22,30 +22,16 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Antes de operar Sensores, el cadete debe comprobar estado general, matrices disponibles, alcance efectivo, resolución, potencia asignada, integridad, interferencias y operaciones en curso."
+          "text": "**Antes de operar Sensores, el cadete debe comprobar estado general, matrices disponibles, alcance efectivo, resolución, potencia asignada, integridad, interferencias y operaciones en curso.**"
         },
         {
           "type": "callout",
           "label": "POTENCIA",
-          "text": "Sensores administra la potencia ya asignada. Si necesita más, debe solicitarla a Operaciones."
+          "text": "Sensores administra la **potencia** ya asignada. Si necesita más, debe solicitarla a Operaciones."
         },
         {
           "type": "p",
-          "text": "El alcance efectivo depende de capacidad real, potencia, daños, interferencias, modo y entorno; no es igual al alcance nominal."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué se comprueba antes de operar?",
-            "Diferencia alcance nominal y efectivo.",
-            "¿Qué factores reducen capacidad?",
-            "¿Puede Sensores tomar energía de otro sistema?",
-            "¿Por qué importa una operación en curso?"
-          ]
+          "text": "El alcance efectivo depende de capacidad real, potencia, daños, **interferencia**s, modo y entorno; no es igual al alcance nominal."
         }
       ]
     },
@@ -56,7 +42,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Los scans básicos pueden ser de corto alcance, largo alcance o focalizados. Cada uno utiliza la misma lógica de configuración con distintos perfiles."
+          "text": "**Los scans básicos pueden ser de corto alcance, largo alcance o focalizados.** Cada uno utiliza la misma lógica de configuración con distintos perfiles."
         },
         {
           "type": "heading",
@@ -65,8 +51,8 @@
         {
           "type": "bullets",
           "items": [
-            "Modo activo/pasivo",
-            "Área u objetivo",
+            "**Modo activo/pasivo**",
+            "Área u **objetivo**",
             "Resolución",
             "Filtros",
             "Prioridad",
@@ -81,20 +67,6 @@
         {
           "type": "p",
           "text": "Los resultados pueden ir desde ninguna detección hasta contacto resuelto, pasando por trazas y clasificaciones parciales."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué tres tipos de scan existen?",
-            "¿Qué parámetros se configuran?",
-            "¿Qué exige un focalizado?",
-            "¿Por qué puede aparecer una traza?",
-            "Diferencia no detectado y resuelto."
-          ]
         }
       ]
     },
@@ -106,7 +78,7 @@
         {
           "type": "definition",
           "term": "Barrido",
-          "text": "Observar una zona para ver qué hay."
+          "text": "**Observar una zona para ver qué hay.**"
         },
         {
           "type": "definition",
@@ -121,7 +93,7 @@
           "type": "bullets",
           "items": [
             "Nave",
-            "Lanzadera",
+            "**Lanzadera**",
             "Sonda/baliza",
             "Forma de vida",
             "Objeto artificial",
@@ -134,26 +106,12 @@
         },
         {
           "type": "p",
-          "text": "Subir sensibilidad puede descubrir señales débiles, pero también aumentar ruido y falsos positivos."
+          "text": "**Subir sensibilidad puede descubrir señales débiles, pero también aumentar ruido y falsos positivos.**"
         },
         {
           "type": "callout",
           "label": "CANDIDATOS, NO CERTEZA",
           "text": "Una búsqueda devuelve candidatos compatibles; no garantiza identidad."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Diferencia barrido y búsqueda.",
-            "Nombra cinco objetivos.",
-            "¿Qué parámetros usa la búsqueda?",
-            "¿Qué coste tiene sensibilidad alta?",
-            "¿Garantiza identidad?"
-          ]
         }
       ]
     },
@@ -164,7 +122,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Un contacto es una ficha observacional persistente sobre algo detectado. Solo muestra datos realmente descubiertos."
+          "text": "**Un contacto es una ficha observacional persistente sobre algo detectado.** Solo muestra datos realmente descubiertos."
         },
         {
           "type": "heading",
@@ -173,8 +131,8 @@
         {
           "type": "bullets",
           "items": [
-            "Posición",
-            "Distancia",
+            "**Posición**",
+            "**Distancia**",
             "Vector",
             "Velocidad",
             "Firmas",
@@ -191,20 +149,6 @@
           "type": "callout",
           "label": "PÉRDIDA ≠ BORRADO",
           "text": "Se conservan última posición, rumbo, velocidad, firmas y hora de pérdida."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué representa un contacto?",
-            "¿Qué datos puede contener?",
-            "¿Por qué persiste identidad?",
-            "¿Qué se conserva al perderlo?",
-            "¿Puede una nueva lectura cambiar la clasificación?"
-          ]
         }
       ]
     },
@@ -215,7 +159,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Tracking acumula observaciones para mejorar posición, rumbo, velocidad y trayectoria probable. No revela mágicamente la naturaleza del contacto."
+          "text": "**Tracking acumula observaciones para mejorar posición, rumbo, velocidad y trayectoria probable.** No revela mágicamente la naturaleza del contacto."
         },
         {
           "type": "heading",
@@ -223,7 +167,7 @@
         },
         {
           "type": "p",
-          "text": "La calidad de seguimiento depende de clase, era, matrices, potencia, daños e interferencia. Priorizar un contacto consume más recursos."
+          "text": "La calidad de seguimiento depende de clase, era, matrices, potencia, daños e interferencia. Priorizar un contacto consume **más recursos**."
         },
         {
           "type": "heading",
@@ -232,7 +176,7 @@
         {
           "type": "bullets",
           "items": [
-            "Intensidad",
+            "**Intensidad**",
             "Firma",
             "Banda",
             "Energía",
@@ -248,20 +192,6 @@
           "type": "callout",
           "label": "PROCEDENCIA",
           "text": "Cada dato debe conservar fuente, hora, confianza y margen."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué mejora tracking?",
-            "¿Por qué es finito?",
-            "¿Qué coste tiene priorizar?",
-            "¿Qué conserva cada dato?",
-            "¿Por qué una predicción no es certeza?"
-          ]
         }
       ]
     },
@@ -272,7 +202,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "La interferencia puede ser ambiental o deliberada y degrada la calidad de la lectura."
+          "text": "**La interferencia puede ser ambiental o deliberada y degrada la calidad de la lectura.**"
         },
         {
           "type": "heading",
@@ -281,8 +211,8 @@
         {
           "type": "bullets",
           "items": [
-            "Automática",
-            "Cambiar banda",
+            "**Automática**",
+            "Cambiar **banda**",
             "Aumentar potencia",
             "Reducir resolución",
             "Prolongar integración",
@@ -297,23 +227,10 @@
           "type": "callout",
           "label": "COMPENSAR ≠ ELIMINAR",
           "text": "La compensación reduce los efectos de la interferencia; no elimina mágicamente su causa."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Diferencia interferencia ambiental y deliberada.",
-            "¿Puede conocerse siempre la causa?",
-            "Nombra cuatro compensaciones.",
-            "¿Qué costes tienen?",
-            "¿Por qué compensar no elimina la causa?"
-          ]
         }
       ]
     }
   ],
-  "status": "developed_content"
+  "status": "developed_content",
+  "assessmentModel": "concept_driven_v2_1"
 }

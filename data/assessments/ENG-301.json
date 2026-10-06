@@ -1,16 +1,40 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.1.0",
   "course_id": "ENG-301",
-  "status": "editorially_aligned_with_developed_manual",
-  "source_manual": "gameplay/careers/academy_path/study_materials/third_class/ENG-301/MANUAL_v1_0.md",
-  "question_count": 24,
-  "rule": "No question may require knowledge that is not explicitly taught in ENG-301 or established prerequisites.",
-  "questions": [
+  "status": "concept_driven_autocorrectable_v2_1",
+  "source_bank": "question_bank_v1_0.json",
+  "policy": {
+    "theory_formats": [
+      "multiple_choice",
+      "short_answer"
+    ],
+    "multiple_choice_target_ratio": 0.8,
+    "short_answer_target_ratio": 0.2,
+    "deterministic_correction": true,
+    "web_and_game_share_concepts_not_question_instances": true,
+    "complex_judgment_moves_to_practice_and_simulation": true,
+    "source_rule": "Every evaluated concept must be explicitly taught in the course material or an established prerequisite."
+  },
+  "unit_review": {
+    "questions_per_attempt": 5,
+    "reshuffle_each_attempt": true,
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
+  },
+  "concepts": [
     {
-      "id": "ENG-301-Q001",
+      "id": "ENG-301-C001",
       "unit_id": "ENG-301-U01",
-      "type": "knowledge",
-      "prompt_es": "¿Qué datos forman un estado energético?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué datos forman un estado energético?",
+      "web_prompt_variants_es": [
+        "¿Qué datos forman un estado energético?",
+        "Selecciona la respuesta correcta: Qué datos forman un estado energético?"
+      ],
+      "answer_display_es": "fuentes · reservas · consumo · margen · prioridades · degradación",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "fuentes",
         "reservas",
@@ -21,10 +45,17 @@
       ]
     },
     {
-      "id": "ENG-301-Q002",
+      "id": "ENG-301-C002",
       "unit_id": "ENG-301-U01",
-      "type": "short_answer",
-      "prompt_es": "¿Qué función cumplen reservas?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué función cumplen reservas?",
+      "web_prompt_variants_es": [
+        "¿Qué función cumplen reservas?",
+        "Selecciona la respuesta correcta: Qué función cumplen reservas?"
+      ],
+      "answer_display_es": "absorber picos · contingencia · sostener sistemas",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "absorber picos",
         "contingencia",
@@ -32,38 +63,68 @@
       ]
     },
     {
-      "id": "ENG-301-Q003",
+      "id": "ENG-301-C003",
       "unit_id": "ENG-301-U01",
-      "type": "judgment",
-      "prompt_es": "¿Por qué no son infinitas?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué no son infinitas?",
+      "web_prompt_variants_es": [
+        "¿Por qué no son infinitas?",
+        "Selecciona la explicación correcta:  no son infinitas."
+      ],
+      "answer_display_es": "consumo futuro · capacidad limitada",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "consumo futuro",
         "capacidad limitada"
       ]
     },
     {
-      "id": "ENG-301-Q004",
+      "id": "ENG-301-C004",
       "unit_id": "ENG-301-U01",
-      "type": "short_answer",
-      "prompt_es": "¿Qué significa margen energético?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué significa margen energético?",
+      "web_prompt_variants_es": [
+        "¿Qué significa margen energético?",
+        "Selecciona la respuesta correcta: Qué significa margen energético?"
+      ],
+      "answer_display_es": "capacidad disponible antes de comprometer otros",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "capacidad disponible antes de comprometer otros"
       ]
     },
     {
-      "id": "ENG-301-Q005",
+      "id": "ENG-301-C005",
       "unit_id": "ENG-301-U02",
-      "type": "short_answer",
-      "prompt_es": "¿Qué significa distribuir energía?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué significa distribuir energía?",
+      "web_prompt_variants_es": [
+        "¿Qué significa distribuir energía?",
+        "Selecciona la respuesta correcta: Qué significa distribuir energía?"
+      ],
+      "answer_display_es": "asignar/priorizar cargas",
+      "accepted_short_answers_es": [
+        "asignar/priorizar cargas"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "asignar/priorizar cargas"
       ]
     },
     {
-      "id": "ENG-301-Q006",
+      "id": "ENG-301-C006",
       "unit_id": "ENG-301-U02",
-      "type": "knowledge",
-      "prompt_es": "¿De dónde puede venir una prioridad?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿De dónde puede venir una prioridad?",
+      "web_prompt_variants_es": [
+        "¿De dónde puede venir una prioridad?",
+        "Repaso: ¿De dónde puede venir una prioridad?"
+      ],
+      "answer_display_es": "seguridad · misión · Mando · emergencia · estado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "seguridad",
         "misión",
@@ -73,29 +134,52 @@
       ]
     },
     {
-      "id": "ENG-301-Q007",
+      "id": "ENG-301-C007",
       "unit_id": "ENG-301-U02",
-      "type": "short_answer",
-      "prompt_es": "¿Para qué sirve aislar?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Para qué sirve aislar?",
+      "web_prompt_variants_es": [
+        "¿Para qué sirve aislar?",
+        "Repaso: ¿Para qué sirve aislar?"
+      ],
+      "answer_display_es": "contener fallo · proteger resto",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contener fallo",
         "proteger resto"
       ]
     },
     {
-      "id": "ENG-301-Q008",
+      "id": "ENG-301-C008",
       "unit_id": "ENG-301-U02",
-      "type": "judgment",
-      "prompt_es": "¿Por qué aumentar un sistema afecta a otro?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué aumentar un sistema afecta a otro?",
+      "web_prompt_variants_es": [
+        "¿Por qué aumentar un sistema afecta a otro?",
+        "Selecciona la explicación correcta:  aumentar un sistema afecta a otro."
+      ],
+      "answer_display_es": "recursos compartidos",
+      "accepted_short_answers_es": [
+        "recursos compartidos"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "recursos compartidos"
       ]
     },
     {
-      "id": "ENG-301-Q009",
+      "id": "ENG-301-C009",
       "unit_id": "ENG-301-U03",
-      "type": "short_answer",
-      "prompt_es": "¿Qué responde Ingeniería ante una orden de vuelo?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué responde Ingeniería ante una orden de vuelo?",
+      "web_prompt_variants_es": [
+        "¿Qué responde Ingeniería ante una orden de vuelo?",
+        "Selecciona la respuesta correcta: Qué responde Ingeniería ante una orden de vuelo?"
+      ],
+      "answer_display_es": "posible · duración · riesgo · impacto",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "posible",
         "duración",
@@ -104,20 +188,34 @@
       ]
     },
     {
-      "id": "ENG-301-Q010",
+      "id": "ENG-301-C010",
       "unit_id": "ENG-301-U03",
-      "type": "compare",
-      "prompt_es": "Diferencia máximo y sostenible.",
+      "source_type": "compare",
+      "web_prompt_es": "¿Qué opción diferencia correctamente máximo y sostenible?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente máximo y sostenible?",
+        "Diferencia máximo y sostenible."
+      ],
+      "answer_display_es": "pico · mantenible",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "pico",
         "mantenible"
       ]
     },
     {
-      "id": "ENG-301-Q011",
+      "id": "ENG-301-C011",
       "unit_id": "ENG-301-U03",
-      "type": "knowledge",
-      "prompt_es": "Nombra tres limitaciones warp.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción contiene tres limitaciones warp?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene tres limitaciones warp?",
+        "Nombra tres limitaciones warp."
+      ],
+      "answer_display_es": "factor · daño · potencia · condiciones · sostenibilidad",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "factor",
         "daño",
@@ -127,10 +225,17 @@
       ]
     },
     {
-      "id": "ENG-301-Q012",
+      "id": "ENG-301-C012",
       "unit_id": "ENG-301-U03",
-      "type": "judgment",
-      "prompt_es": "¿Cómo se reporta una limitación útil?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Cómo se reporta una limitación útil?",
+      "web_prompt_variants_es": [
+        "¿Cómo se reporta una limitación útil?",
+        "Repaso: ¿Cómo se reporta una limitación útil?"
+      ],
+      "answer_display_es": "capacidad disponible · alternativa · riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "capacidad disponible",
         "alternativa",
@@ -138,10 +243,17 @@
       ]
     },
     {
-      "id": "ENG-301-Q013",
+      "id": "ENG-301-C013",
       "unit_id": "ENG-301-U04",
-      "type": "knowledge",
-      "prompt_es": "Nombra cuatro dependencias posibles.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción contiene cuatro dependencias posibles?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene cuatro dependencias posibles?",
+        "Nombra cuatro dependencias posibles."
+      ],
+      "answer_display_es": "energía · datos · refrigeración · control · hardware · autorización",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "energía",
         "datos",
@@ -152,10 +264,17 @@
       ]
     },
     {
-      "id": "ENG-301-Q014",
+      "id": "ENG-301-C014",
       "unit_id": "ENG-301-U04",
-      "type": "short_answer",
-      "prompt_es": "¿De qué depende Sensores?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿De qué depende Sensores?",
+      "web_prompt_variants_es": [
+        "¿De qué depende Sensores?",
+        "Repaso: ¿De qué depende Sensores?"
+      ],
+      "answer_display_es": "matrices · potencia · integridad · procesamiento · entorno",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "matrices",
         "potencia",
@@ -165,39 +284,67 @@
       ]
     },
     {
-      "id": "ENG-301-Q015",
+      "id": "ENG-301-C015",
       "unit_id": "ENG-301-U04",
-      "type": "judgment",
-      "prompt_es": "¿Por qué soporte vital tiene alta prioridad?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué soporte vital tiene alta prioridad?",
+      "web_prompt_variants_es": [
+        "¿Por qué soporte vital tiene alta prioridad?",
+        "Selecciona la explicación correcta:  soporte vital tiene alta prioridad."
+      ],
+      "answer_display_es": "habitabilidad · vidas",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "habitabilidad",
         "vidas"
       ]
     },
     {
-      "id": "ENG-301-Q016",
+      "id": "ENG-301-C016",
       "unit_id": "ENG-301-U04",
-      "type": "short_answer",
-      "prompt_es": "Explica efecto cascada.",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué opción explica correctamente efecto cascada?",
+      "web_prompt_variants_es": [
+        "¿Qué opción explica correctamente efecto cascada?",
+        "Explica efecto cascada."
+      ],
+      "answer_display_es": "fallo inicial produce consecuencias en dependientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "fallo inicial produce consecuencias en dependientes"
       ]
     },
     {
-      "id": "ENG-301-Q017",
+      "id": "ENG-301-C017",
       "unit_id": "ENG-301-U05",
-      "type": "compare",
-      "prompt_es": "Diferencia síntoma y causa.",
+      "source_type": "compare",
+      "web_prompt_es": "¿Qué opción diferencia correctamente síntoma y causa?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente síntoma y causa?",
+        "Diferencia síntoma y causa."
+      ],
+      "answer_display_es": "observación · explicación",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "observación",
         "explicación"
       ]
     },
     {
-      "id": "ENG-301-Q018",
+      "id": "ENG-301-C018",
       "unit_id": "ENG-301-U05",
-      "type": "procedure",
-      "prompt_es": "¿Qué pasos sigue diagnóstico?",
+      "source_type": "procedure",
+      "web_prompt_es": "¿Qué pasos sigue diagnóstico?",
+      "web_prompt_variants_es": [
+        "¿Qué pasos sigue diagnóstico?",
+        "Selecciona la respuesta correcta: Qué pasos sigue diagnóstico?"
+      ],
+      "answer_display_es": "confirmar · estado · prueba · comparar · aislar · actuar",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "confirmar",
         "estado",
@@ -208,10 +355,17 @@
       ]
     },
     {
-      "id": "ENG-301-Q019",
+      "id": "ENG-301-C019",
       "unit_id": "ENG-301-U05",
-      "type": "knowledge",
-      "prompt_es": "Nombra cuatro acciones de Ingeniería.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción contiene cuatro acciones de Ingeniería?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene cuatro acciones de Ingeniería?",
+        "Nombra cuatro acciones de Ingeniería."
+      ],
+      "answer_display_es": "diagnose · reroute · isolate · restart · repair · patch · replace · test",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "diagnose",
         "reroute",
@@ -224,10 +378,17 @@
       ]
     },
     {
-      "id": "ENG-301-Q020",
+      "id": "ENG-301-C020",
       "unit_id": "ENG-301-U05",
-      "type": "judgment",
-      "prompt_es": "¿Cuándo escalar?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Cuándo escalar?",
+      "web_prompt_variants_es": [
+        "¿Cuándo escalar?",
+        "Repaso: ¿Cuándo escalar?"
+      ],
+      "answer_display_es": "riesgo · incertidumbre · sistema crítico · recursos mayores",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "riesgo",
         "incertidumbre",
@@ -236,10 +397,17 @@
       ]
     },
     {
-      "id": "ENG-301-Q021",
+      "id": "ENG-301-C021",
       "unit_id": "ENG-301-U06",
-      "type": "knowledge",
-      "prompt_es": "¿Qué necesita saber el puente?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué necesita saber el puente?",
+      "web_prompt_variants_es": [
+        "¿Qué necesita saber el puente?",
+        "Selecciona la respuesta correcta: Qué necesita saber el puente?"
+      ],
+      "answer_display_es": "estado · capacidad · riesgo · ETA · restricciones",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estado",
         "capacidad",
@@ -249,31 +417,248 @@
       ]
     },
     {
-      "id": "ENG-301-Q022",
+      "id": "ENG-301-C022",
       "unit_id": "ENG-301-U06",
-      "type": "judgment",
-      "prompt_es": "¿Por qué «está mal» no sirve?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué «está mal» no sirve?",
+      "web_prompt_variants_es": [
+        "¿Por qué «está mal» no sirve?",
+        "Selecciona la explicación correcta:  «está mal» no sirve."
+      ],
+      "answer_display_es": "no cuantifica capacidad · no orienta decisión",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "no cuantifica capacidad",
         "no orienta decisión"
       ]
     },
     {
-      "id": "ENG-301-Q023",
+      "id": "ENG-301-C023",
       "unit_id": "ENG-301-U06",
-      "type": "short_answer",
-      "prompt_es": "¿Qué acompaña una ETA incierta?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué acompaña una ETA incierta?",
+      "web_prompt_variants_es": [
+        "¿Qué acompaña una ETA incierta?",
+        "Selecciona la respuesta correcta: Qué acompaña una ETA incierta?"
+      ],
+      "answer_display_es": "rango/confianza",
+      "accepted_short_answers_es": [
+        "rango/confianza"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "rango/confianza"
       ]
     },
     {
-      "id": "ENG-301-Q024",
+      "id": "ENG-301-C024",
       "unit_id": "ENG-301-U06",
-      "type": "judgment",
-      "prompt_es": "¿Quién decide si la opción excede Ingeniería?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Quién decide si la opción excede Ingeniería?",
+      "web_prompt_variants_es": [
+        "¿Quién decide si la opción excede Ingeniería?",
+        "Repaso: ¿Quién decide si la opción excede Ingeniería?"
+      ],
+      "answer_display_es": "Mando/autoridad competente",
+      "accepted_short_answers_es": [
+        "Mando/autoridad competente"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "Mando/autoridad competente"
+      ]
+    },
+    {
+      "id": "ENG-301-C025",
+      "unit_id": "ENG-301-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Reservas» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Reservas» en esta unidad?",
+        "Selecciona la definición correcta de «Reservas»."
+      ],
+      "answer_display_es": "Capacidad para absorber picos y contingencias; no son infinitas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Capacidad para absorber picos y contingencias; no son infinitas."
+      ]
+    },
+    {
+      "id": "ENG-301-C026",
+      "unit_id": "ENG-301-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Margen» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Margen» en esta unidad?",
+        "Selecciona la definición correcta de «Margen»."
+      ],
+      "answer_display_es": "Capacidad disponible antes de comprometer estabilidad, reservas u otros consumidores.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Capacidad disponible antes de comprometer estabilidad, reservas u otros consumidores."
+      ]
+    },
+    {
+      "id": "ENG-301-C027",
+      "unit_id": "ENG-301-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «RECURSO COMPARTIDO»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «RECURSO COMPARTIDO»?",
+        "Selecciona la idea correcta asociada a «RECURSO COMPARTIDO»."
+      ],
+      "answer_display_es": "Aumentar un sistema puede reducir capacidad disponible para otro.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Aumentar un sistema puede reducir capacidad disponible para otro."
+      ]
+    },
+    {
+      "id": "ENG-301-C028",
+      "unit_id": "ENG-301-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Prioridades»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Prioridades»?",
+        "En «Prioridades», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Seguridad",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Seguridad"
+      ]
+    },
+    {
+      "id": "ENG-301-C029",
+      "unit_id": "ENG-301-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Máximo» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Máximo» en esta unidad?",
+        "Selecciona la definición correcta de «Máximo»."
+      ],
+      "answer_display_es": "Capacidad pico disponible en condiciones concretas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Capacidad pico disponible en condiciones concretas."
+      ]
+    },
+    {
+      "id": "ENG-301-C030",
+      "unit_id": "ENG-301-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Sostenible» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Sostenible» en esta unidad?",
+        "Selecciona la definición correcta de «Sostenible»."
+      ],
+      "answer_display_es": "Capacidad que puede mantenerse durante un periodo razonable.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Capacidad que puede mantenerse durante un periodo razonable."
+      ]
+    },
+    {
+      "id": "ENG-301-C031",
+      "unit_id": "ENG-301-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «EFECTO CASCADA»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «EFECTO CASCADA»?",
+        "Selecciona la idea correcta asociada a «EFECTO CASCADA»."
+      ],
+      "answer_display_es": "Una degradación en distribución puede reducir Sensores y aumentar la incertidumbre de Navegación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Una degradación en distribución puede reducir Sensores y aumentar la incertidumbre de Navegación."
+      ]
+    },
+    {
+      "id": "ENG-301-C032",
+      "unit_id": "ENG-301-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Ejemplos»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Ejemplos»?",
+        "En «Ejemplos», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Sensores: matrices, potencia, integridad y procesamiento",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Sensores: matrices, potencia, integridad y procesamiento"
+      ]
+    },
+    {
+      "id": "ENG-301-C033",
+      "unit_id": "ENG-301-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «SÍNTOMA Y CAUSA»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «SÍNTOMA Y CAUSA»?",
+        "Selecciona la idea correcta asociada a «SÍNTOMA Y CAUSA»."
+      ],
+      "answer_display_es": "Un síntoma describe lo observado. Potencia, calibración, entorno o un componente pueden producir efectos parecidos.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Un síntoma describe lo observado. Potencia, calibración, entorno o un componente pueden producir efectos parecidos."
+      ]
+    },
+    {
+      "id": "ENG-301-C034",
+      "unit_id": "ENG-301-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Acciones»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Acciones»?",
+        "En «Acciones», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Diagnosticar",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Diagnosticar"
+      ]
+    },
+    {
+      "id": "ENG-301-C035",
+      "unit_id": "ENG-301-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Estados útiles»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Estados útiles»?",
+        "En «Estados útiles», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Normal",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Normal"
+      ]
+    },
+    {
+      "id": "ENG-301-C036",
+      "unit_id": "ENG-301-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+        "Selecciona la afirmación que coincide con los apuntes de esta unidad."
+      ],
+      "answer_display_es": "El puente necesita un informe técnico que describa estado, capacidad, margen, tiempo estimado y restricciones.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "El puente necesita un informe técnico que describa estado, capacidad, margen, tiempo estimado y restricciones."
       ]
     }
   ]

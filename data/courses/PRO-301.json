@@ -1,7 +1,7 @@
 {
   "subject": "Procedimientos operativos y trabajo interdepartamental",
   "code": "PRO-301",
-  "version": "1.1",
+  "version": "1.3",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/PRO-301/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/PRO-301/MANUAL_v1_0.md",
@@ -21,26 +21,12 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Una orden expresa qué debe lograrse y bajo qué límites. Puede dividirse en tareas con responsable, estado y resultado esperado."
+          "text": "**Una orden expresa qué debe lograrse y bajo qué límites.** Puede dividirse en tareas con responsable, estado y resultado esperado."
         },
         {
           "type": "callout",
           "label": "RESPONSABILIDAD",
-          "text": "El responsable confirma recepción, comprensión, capacidad y cualquier bloqueo relevante."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Diferencia orden e intención.",
-            "¿Por qué se descompone una orden?",
-            "¿Qué debe tener una tarea?",
-            "¿Qué confirma el responsable?",
-            "¿Qué significa responsabilidad profesional?"
-          ]
+          "text": "El **responsable** confirma recepción, comprensión, capacidad y cualquier bloqueo relevante."
         }
       ]
     },
@@ -51,17 +37,17 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Un informe operativo debe ayudar a decidir. Una estructura útil separa hecho, estado, riesgo y recomendación."
+          "text": "**Un informe operativo debe ayudar a decidir.** Una estructura útil separa hecho, estado, riesgo y recomendación."
         },
         {
           "type": "definition",
           "term": "Hecho",
-          "text": "Lo observado directamente."
+          "text": "**Lo observado directamente.**"
         },
         {
           "type": "definition",
           "term": "Estado",
-          "text": "Qué significa ahora para la operación."
+          "text": "**Qué significa ahora para la operación.**"
         },
         {
           "type": "definition",
@@ -72,20 +58,6 @@
           "type": "definition",
           "term": "Recomendación",
           "text": "Curso de acción propuesto; no es automáticamente una orden."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué cuatro capas puede tener un informe?",
-            "Diferencia hecho y estado.",
-            "¿Qué significa riesgo?",
-            "¿Quién convierte recomendación en decisión?",
-            "¿Qué prioriza un informe breve?"
-          ]
         }
       ]
     },
@@ -96,7 +68,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Un handoff transfiere una tarea, caso o paquete de información entre responsables."
+          "text": "**Un handoff transfiere una tarea, caso o paquete de información entre responsables.**"
         },
         {
           "type": "heading",
@@ -105,8 +77,8 @@
         {
           "type": "bullets",
           "items": [
-            "Identificador",
-            "Contexto",
+            "**Identificador**",
+            "**Contexto**",
             "Datos relevantes",
             "Procedencia",
             "Prioridad",
@@ -118,20 +90,6 @@
           "type": "callout",
           "label": "CONFIRMACIÓN",
           "text": "La transferencia no termina al enviar: debe existir recepción y responsabilidad confirmadas."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué es un handoff?",
-            "¿Qué datos necesita?",
-            "¿Por qué importa procedencia?",
-            "¿Qué respuestas puede dar el receptor?",
-            "¿Cuándo se completa la transferencia?"
-          ]
         }
       ]
     },
@@ -142,7 +100,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Dos necesidades legítimas pueden competir por recursos, tiempo o autoridad."
+          "text": "**Dos necesidades legítimas pueden competir por recursos, tiempo o autoridad.**"
         },
         {
           "type": "heading",
@@ -151,8 +109,8 @@
         {
           "type": "bullets",
           "items": [
-            "Misión",
-            "Seguridad",
+            "**Misión**",
+            "**Seguridad**",
             "Recursos",
             "Tiempo",
             "Reversibilidad",
@@ -172,20 +130,6 @@
           "type": "callout",
           "label": "TRAZABILIDAD",
           "text": "La decisión debe poder relacionarse con información disponible, contexto y autoridad."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué causa conflicto de prioridades?",
-            "¿Qué criterios se valoran?",
-            "¿Por qué no todo conflicto es técnico?",
-            "¿Cómo se escala?",
-            "¿Qué hace trazable una decisión?"
-          ]
         }
       ]
     },
@@ -196,7 +140,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "El Operational Event Log conserva hechos estructurados. No asigna notas, moralidad, relaciones ni valoraciones de rendimiento."
+          "text": "**El Operational Event Log conserva hechos estructurados.** No asigna notas, moralidad, relaciones ni valoraciones de rendimiento."
         },
         {
           "type": "heading",
@@ -219,25 +163,11 @@
         {
           "type": "callout",
           "label": "APPEND-ONLY",
-          "text": "Una corrección se añade como nuevo evento que referencia al anterior; la historia no se reescribe silenciosamente."
+          "text": "Una corrección se añade como nuevo evento que **referencia al anterior**; la historia no se reescribe silenciosamente."
         },
         {
           "type": "p",
           "text": "Que un evento exista no significa que todos los personajes conozcan su contenido."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué registra el Event Log?",
-            "¿Qué no debe asignar?",
-            "Diferencia evento y opinión.",
-            "¿Cómo se corrige un evento?",
-            "¿Por qué registrar no implica conocimiento universal?"
-          ]
         }
       ]
     },
@@ -248,11 +178,11 @@
       "blocks": [
         {
           "type": "quote",
-          "text": "orden → tareas → coordinación → ejecución → reporte → handoff → registro"
+          "text": "orden → tareas → **coordinación** → ejecución → reporte → handoff → registro"
         },
         {
           "type": "p",
-          "text": "La micro-misión integra objetivo, roles, restricciones, información conocida y autoridad. Durante la ejecución deben mantenerse responsables claros y comunicarse bloqueos."
+          "text": "**La micro-misión integra objetivo, roles, restricciones, información conocida y autoridad.** Durante la ejecución deben mantenerse responsables claros y comunicarse bloqueos."
         },
         {
           "type": "heading",
@@ -261,28 +191,15 @@
         {
           "type": "bullets",
           "items": [
-            "Resultado",
+            "**Resultado**",
             "Pendientes",
             "Registro",
             "Relevo o debrief"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué fases integra el ejercicio?",
-            "¿Qué se fija en briefing?",
-            "¿Cómo evitar duplicar trabajo?",
-            "¿Qué debe verificarse en handoff?",
-            "¿Qué cierra la misión?"
           ]
         }
       ]
     }
   ],
-  "status": "developed_content"
+  "status": "developed_content",
+  "assessmentModel": "concept_driven_v2_1"
 }

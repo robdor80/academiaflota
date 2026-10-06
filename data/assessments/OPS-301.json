@@ -1,16 +1,40 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.1.0",
   "course_id": "OPS-301",
-  "status": "editorially_aligned_with_developed_manual",
-  "source_manual": "gameplay/careers/academy_path/study_materials/third_class/OPS-301/MANUAL_v1_0.md",
-  "question_count": 24,
-  "rule": "No question may require knowledge that is not explicitly taught in OPS-301 or established prerequisites.",
-  "questions": [
+  "status": "concept_driven_autocorrectable_v2_1",
+  "source_bank": "question_bank_v1_0.json",
+  "policy": {
+    "theory_formats": [
+      "multiple_choice",
+      "short_answer"
+    ],
+    "multiple_choice_target_ratio": 0.8,
+    "short_answer_target_ratio": 0.2,
+    "deterministic_correction": true,
+    "web_and_game_share_concepts_not_question_instances": true,
+    "complex_judgment_moves_to_practice_and_simulation": true,
+    "source_rule": "Every evaluated concept must be explicitly taught in the course material or an established prerequisite."
+  },
+  "unit_review": {
+    "questions_per_attempt": 5,
+    "reshuffle_each_attempt": true,
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
+  },
+  "concepts": [
     {
-      "id": "OPS-301-Q001",
+      "id": "OPS-301-C001",
       "unit_id": "OPS-301-U01",
-      "type": "short_answer",
-      "prompt_es": "¿Por qué el puente es un sistema distribuido?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Por qué el puente es un sistema distribuido?",
+      "web_prompt_variants_es": [
+        "¿Por qué el puente es un sistema distribuido?",
+        "Selecciona la explicación correcta:  el puente es un sistema distribuido."
+      ],
+      "answer_display_es": "información · autoridad · capacidad repartidas",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "información",
         "autoridad",
@@ -18,20 +42,34 @@
       ]
     },
     {
-      "id": "OPS-301-Q002",
+      "id": "OPS-301-C002",
       "unit_id": "OPS-301-U01",
-      "type": "compare",
-      "prompt_es": "Diferencia rol y estación.",
+      "source_type": "compare",
+      "web_prompt_es": "¿Qué opción diferencia correctamente rol y estación?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente rol y estación?",
+        "Diferencia rol y estación."
+      ],
+      "answer_display_es": "rol = responsabilidad · estación = interfaz",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "rol = responsabilidad",
         "estación = interfaz"
       ]
     },
     {
-      "id": "OPS-301-Q003",
+      "id": "OPS-301-C003",
       "unit_id": "OPS-301-U01",
-      "type": "short_answer",
-      "prompt_es": "¿Qué conserva Mando?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué conserva Mando?",
+      "web_prompt_variants_es": [
+        "¿Qué conserva Mando?",
+        "Selecciona la respuesta correcta: Qué conserva Mando?"
+      ],
+      "answer_display_es": "intención · prioridad · decisión",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "intención",
         "prioridad",
@@ -39,10 +77,17 @@
       ]
     },
     {
-      "id": "OPS-301-Q004",
+      "id": "OPS-301-C004",
       "unit_id": "OPS-301-U01",
-      "type": "knowledge",
-      "prompt_es": "¿Qué permite reconstruir un evento operativo?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué permite reconstruir un evento operativo?",
+      "web_prompt_variants_es": [
+        "¿Qué permite reconstruir un evento operativo?",
+        "Selecciona la respuesta correcta: Qué permite reconstruir un evento operativo?"
+      ],
+      "answer_display_es": "quién detectó · informó · decidió · ejecutó · resultado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "quién detectó",
         "informó",
@@ -52,30 +97,51 @@
       ]
     },
     {
-      "id": "OPS-301-Q005",
+      "id": "OPS-301-C005",
       "unit_id": "OPS-301-U02",
-      "type": "compare",
-      "prompt_es": "Diferencia acuse y finalización.",
+      "source_type": "compare",
+      "web_prompt_es": "¿Qué opción diferencia correctamente acuse y finalización?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente acuse y finalización?",
+        "Diferencia acuse y finalización."
+      ],
+      "answer_display_es": "recibido · tarea completada",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "recibido",
         "tarea completada"
       ]
     },
     {
-      "id": "OPS-301-Q006",
+      "id": "OPS-301-C006",
       "unit_id": "OPS-301-U02",
-      "type": "procedure",
-      "prompt_es": "¿Qué haces ante una orden ambigua?",
+      "source_type": "procedure",
+      "web_prompt_es": "¿Qué haces ante una orden ambigua?",
+      "web_prompt_variants_es": [
+        "¿Qué haces ante una orden ambigua?",
+        "Selecciona la respuesta correcta: Qué haces ante una orden ambigua?"
+      ],
+      "answer_display_es": "pedir aclaración · no adivinar",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "pedir aclaración",
         "no adivinar"
       ]
     },
     {
-      "id": "OPS-301-Q007",
+      "id": "OPS-301-C007",
       "unit_id": "OPS-301-U02",
-      "type": "knowledge",
-      "prompt_es": "Nombra dos bloqueos que deben reportarse.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción contiene dos bloqueos que deben reportarse?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene dos bloqueos que deben reportarse?",
+        "Nombra dos bloqueos que deben reportarse."
+      ],
+      "answer_display_es": "demora · imposibilidad · falta de autoridad · cambio",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "demora",
         "imposibilidad",
@@ -84,10 +150,17 @@
       ]
     },
     {
-      "id": "OPS-301-Q008",
+      "id": "OPS-301-C008",
       "unit_id": "OPS-301-U02",
-      "type": "short_answer",
-      "prompt_es": "¿Qué incluye cierre de tarea?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué incluye cierre de tarea?",
+      "web_prompt_variants_es": [
+        "¿Qué incluye cierre de tarea?",
+        "Selecciona la respuesta correcta: Qué incluye cierre de tarea?"
+      ],
+      "answer_display_es": "acción · resultado · anomalías · pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "acción",
         "resultado",
@@ -96,19 +169,33 @@
       ]
     },
     {
-      "id": "OPS-301-Q009",
+      "id": "OPS-301-C009",
       "unit_id": "OPS-301-U03",
-      "type": "short_answer",
-      "prompt_es": "¿Qué es dependencia entre estaciones?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué es dependencia entre estaciones?",
+      "web_prompt_variants_es": [
+        "¿Qué es dependencia entre estaciones?",
+        "Selecciona la respuesta correcta: Qué es dependencia entre estaciones?"
+      ],
+      "answer_display_es": "una tarea necesita funciones de varias",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "una tarea necesita funciones de varias"
       ]
     },
     {
-      "id": "OPS-301-Q010",
+      "id": "OPS-301-C010",
       "unit_id": "OPS-301-U03",
-      "type": "knowledge",
-      "prompt_es": "¿Qué debe contener una petición?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué debe contener una petición?",
+      "web_prompt_variants_es": [
+        "¿Qué debe contener una petición?",
+        "Selecciona la respuesta correcta: Qué debe contener una petición?"
+      ],
+      "answer_display_es": "necesidad · motivo · prioridad · contexto · momento",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "necesidad",
         "motivo",
@@ -118,20 +205,34 @@
       ]
     },
     {
-      "id": "OPS-301-Q011",
+      "id": "OPS-301-C011",
       "unit_id": "OPS-301-U03",
-      "type": "judgment",
-      "prompt_es": "¿Quién resuelve conflicto de prioridad superior?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Quién resuelve conflicto de prioridad superior?",
+      "web_prompt_variants_es": [
+        "¿Quién resuelve conflicto de prioridad superior?",
+        "Repaso: ¿Quién resuelve conflicto de prioridad superior?"
+      ],
+      "answer_display_es": "autoridad competente · Mando/Ops según caso",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "autoridad competente",
         "Mando/Ops según caso"
       ]
     },
     {
-      "id": "OPS-301-Q012",
+      "id": "OPS-301-C012",
       "unit_id": "OPS-301-U03",
-      "type": "knowledge",
-      "prompt_es": "Nombra tres tipos de bloqueo.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción contiene tres tipos de bloqueo?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene tres tipos de bloqueo?",
+        "Nombra tres tipos de bloqueo."
+      ],
+      "answer_display_es": "técnico · energético · operativo · legal · autorización · información",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "técnico",
         "energético",
@@ -142,29 +243,52 @@
       ]
     },
     {
-      "id": "OPS-301-Q013",
+      "id": "OPS-301-C013",
       "unit_id": "OPS-301-U04",
-      "type": "short_answer",
-      "prompt_es": "¿Qué es imagen operativa común?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué es imagen operativa común?",
+      "web_prompt_variants_es": [
+        "¿Qué es imagen operativa común?",
+        "Selecciona la respuesta correcta: Qué es imagen operativa común?"
+      ],
+      "answer_display_es": "resumen compartido relevante",
+      "accepted_short_answers_es": [
+        "resumen compartido relevante"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "resumen compartido relevante"
       ]
     },
     {
-      "id": "OPS-301-Q014",
+      "id": "OPS-301-C014",
       "unit_id": "OPS-301-U04",
-      "type": "judgment",
-      "prompt_es": "¿Por qué no incluye todos los datos?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué no incluye todos los datos?",
+      "web_prompt_variants_es": [
+        "¿Por qué no incluye todos los datos?",
+        "Selecciona la explicación correcta:  no incluye todos los datos."
+      ],
+      "answer_display_es": "evitar ruido · relevancia",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "evitar ruido",
         "relevancia"
       ]
     },
     {
-      "id": "OPS-301-Q015",
+      "id": "OPS-301-C015",
       "unit_id": "OPS-301-U04",
-      "type": "short_answer",
-      "prompt_es": "¿Cómo se presenta contacto incierto?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Cómo se presenta contacto incierto?",
+      "web_prompt_variants_es": [
+        "¿Cómo se presenta contacto incierto?",
+        "Repaso: ¿Cómo se presenta contacto incierto?"
+      ],
+      "answer_display_es": "provisional · confianza · no elevar a certeza",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "provisional",
         "confianza",
@@ -172,20 +296,36 @@
       ]
     },
     {
-      "id": "OPS-301-Q016",
+      "id": "OPS-301-C016",
       "unit_id": "OPS-301-U04",
-      "type": "judgment",
-      "prompt_es": "¿Puede incluir peligro oculto?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Puede incluir peligro oculto?",
+      "web_prompt_variants_es": [
+        "¿Puede incluir peligro oculto?",
+        "Repaso: ¿Puede incluir peligro oculto?"
+      ],
+      "answer_display_es": "No — solo conocimiento disponible.",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no",
         "solo conocimiento disponible"
       ]
     },
     {
-      "id": "OPS-301-Q017",
+      "id": "OPS-301-C017",
       "unit_id": "OPS-301-U05",
-      "type": "short_answer",
-      "prompt_es": "¿Cuándo resolver localmente?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Cuándo resolver localmente?",
+      "web_prompt_variants_es": [
+        "¿Cuándo resolver localmente?",
+        "Repaso: ¿Cuándo resolver localmente?"
+      ],
+      "answer_display_es": "dentro función · autoridad · riesgo controlable",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "dentro función",
         "autoridad",
@@ -193,10 +333,17 @@
       ]
     },
     {
-      "id": "OPS-301-Q018",
+      "id": "OPS-301-C018",
       "unit_id": "OPS-301-U05",
-      "type": "knowledge",
-      "prompt_es": "¿Cuándo escalar?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Cuándo escalar?",
+      "web_prompt_variants_es": [
+        "¿Cuándo escalar?",
+        "Repaso: ¿Cuándo escalar?"
+      ],
+      "answer_display_es": "excede autoridad · recursos conflicto · riesgo · cambia misión",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "excede autoridad",
         "recursos conflicto",
@@ -205,20 +352,34 @@
       ]
     },
     {
-      "id": "OPS-301-Q019",
+      "id": "OPS-301-C019",
       "unit_id": "OPS-301-U05",
-      "type": "compare",
-      "prompt_es": "Diferencia urgencia y gravedad.",
+      "source_type": "compare",
+      "web_prompt_es": "¿Qué opción diferencia correctamente urgencia y gravedad?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente urgencia y gravedad?",
+        "Diferencia urgencia y gravedad."
+      ],
+      "answer_display_es": "tiempo crítico · impacto",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "tiempo crítico",
         "impacto"
       ]
     },
     {
-      "id": "OPS-301-Q020",
+      "id": "OPS-301-C020",
       "unit_id": "OPS-301-U05",
-      "type": "judgment",
-      "prompt_es": "¿Qué causa escalar todo?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Qué causa escalar todo?",
+      "web_prompt_variants_es": [
+        "¿Qué causa escalar todo?",
+        "Selecciona la respuesta correcta: Qué causa escalar todo?"
+      ],
+      "answer_display_es": "saturación · ruido · dependencia",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "saturación",
         "ruido",
@@ -226,10 +387,17 @@
       ]
     },
     {
-      "id": "OPS-301-Q021",
+      "id": "OPS-301-C021",
       "unit_id": "OPS-301-U06",
-      "type": "knowledge",
-      "prompt_es": "¿Qué integra una guardia supervisada?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué integra una guardia supervisada?",
+      "web_prompt_variants_es": [
+        "¿Qué integra una guardia supervisada?",
+        "Selecciona la respuesta correcta: Qué integra una guardia supervisada?"
+      ],
+      "answer_display_es": "rutina · órdenes · evento · coordinación · relevo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "rutina",
         "órdenes",
@@ -239,10 +407,17 @@
       ]
     },
     {
-      "id": "OPS-301-Q022",
+      "id": "OPS-301-C022",
       "unit_id": "OPS-301-U06",
-      "type": "judgment",
-      "prompt_es": "¿Por qué puede haber varias respuestas correctas?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué puede haber varias respuestas correctas?",
+      "web_prompt_variants_es": [
+        "¿Por qué puede haber varias respuestas correctas?",
+        "Selecciona la explicación correcta:  puede haber varias respuestas correctas."
+      ],
+      "answer_display_es": "contexto · juicio · varias opciones defendibles",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "juicio",
@@ -250,10 +425,17 @@
       ]
     },
     {
-      "id": "OPS-301-Q023",
+      "id": "OPS-301-C023",
       "unit_id": "OPS-301-U06",
-      "type": "short_answer",
-      "prompt_es": "¿Qué debe incluir el relevo?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué debe incluir el relevo?",
+      "web_prompt_variants_es": [
+        "¿Qué debe incluir el relevo?",
+        "Selecciona la respuesta correcta: Qué debe incluir el relevo?"
+      ],
+      "answer_display_es": "estado · pendientes · órdenes · incidencias · restricciones",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estado",
         "pendientes",
@@ -263,10 +445,17 @@
       ]
     },
     {
-      "id": "OPS-301-Q024",
+      "id": "OPS-301-C024",
       "unit_id": "OPS-301-U06",
-      "type": "knowledge",
-      "prompt_es": "¿Qué se evalúa además del resultado?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué se evalúa además del resultado?",
+      "web_prompt_variants_es": [
+        "¿Qué se evalúa además del resultado?",
+        "Selecciona la respuesta correcta: Qué se evalúa además del resultado?"
+      ],
+      "answer_display_es": "precisión · juicio · comunicación · disciplina · teamwork · ejecución",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "precisión",
         "juicio",
@@ -274,6 +463,198 @@
         "disciplina",
         "teamwork",
         "ejecución"
+      ]
+    },
+    {
+      "id": "OPS-301-C025",
+      "unit_id": "OPS-301-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Rol» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Rol» en esta unidad?",
+        "Selecciona la definición correcta de «Rol»."
+      ],
+      "answer_display_es": "Responsabilidad profesional del personaje.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Responsabilidad profesional del personaje."
+      ]
+    },
+    {
+      "id": "OPS-301-C026",
+      "unit_id": "OPS-301-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Estación» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Estación» en esta unidad?",
+        "Selecciona la definición correcta de «Estación»."
+      ],
+      "answer_display_es": "Interfaz desde la que se ejercen determinadas funciones.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Interfaz desde la que se ejercen determinadas funciones."
+      ]
+    },
+    {
+      "id": "OPS-301-C027",
+      "unit_id": "OPS-301-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «CIERRE»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «CIERRE»?",
+        "Selecciona la idea correcta asociada a «CIERRE»."
+      ],
+      "answer_display_es": "El reporte final indica qué se hizo, qué resultado hubo, anomalías y pendientes.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "El reporte final indica qué se hizo, qué resultado hubo, anomalías y pendientes."
+      ]
+    },
+    {
+      "id": "OPS-301-C028",
+      "unit_id": "OPS-301-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Si la orden no es clara»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Si la orden no es clara»?",
+        "En «Si la orden no es clara», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Pedir aclaración",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Pedir aclaración"
+      ]
+    },
+    {
+      "id": "OPS-301-C029",
+      "unit_id": "OPS-301-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «HANDOFF»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «HANDOFF»?",
+        "Selecciona la idea correcta asociada a «HANDOFF»."
+      ],
+      "answer_display_es": "Cuando otra estación asume parte del problema recibe contexto, datos, procedencia, prioridad y estado actual.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Cuando otra estación asume parte del problema recibe contexto, datos, procedencia, prioridad y estado actual."
+      ]
+    },
+    {
+      "id": "OPS-301-C030",
+      "unit_id": "OPS-301-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Bloqueos»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Bloqueos»?",
+        "En «Bloqueos», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Técnico",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Técnico"
+      ]
+    },
+    {
+      "id": "OPS-301-C031",
+      "unit_id": "OPS-301-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Orden de misión»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Orden de misión»?",
+        "En «Orden de misión», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Autoridad",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Autoridad"
+      ]
+    },
+    {
+      "id": "OPS-301-C032",
+      "unit_id": "OPS-301-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+        "Selecciona la afirmación que coincide con los apuntes de esta unidad."
+      ],
+      "answer_display_es": "La imagen operativa común resume lo relevante para la misión: estado de nave, contactos, riesgos, tareas, restricciones e incidencias.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "La imagen operativa común resume lo relevante para la misión: estado de nave, contactos, riesgos, tareas, restricciones e incidencias."
+      ]
+    },
+    {
+      "id": "OPS-301-C033",
+      "unit_id": "OPS-301-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Urgencia» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Urgencia» en esta unidad?",
+        "Selecciona la definición correcta de «Urgencia»."
+      ],
+      "answer_display_es": "Cuánto importa el tiempo de respuesta.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Cuánto importa el tiempo de respuesta."
+      ]
+    },
+    {
+      "id": "OPS-301-C034",
+      "unit_id": "OPS-301-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Gravedad» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Gravedad» en esta unidad?",
+        "Selecciona la definición correcta de «Gravedad»."
+      ],
+      "answer_display_es": "Magnitud potencial del impacto.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Magnitud potencial del impacto."
+      ]
+    },
+    {
+      "id": "OPS-301-C035",
+      "unit_id": "OPS-301-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «RELEVO»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «RELEVO»?",
+        "Selecciona la idea correcta asociada a «RELEVO»."
+      ],
+      "answer_display_es": "Debe transferir estado, pendientes, órdenes, incidencias y restricciones.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Debe transferir estado, pendientes, órdenes, incidencias y restricciones."
+      ]
+    },
+    {
+      "id": "OPS-301-C036",
+      "unit_id": "OPS-301-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Qué se evalúa»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Qué se evalúa»?",
+        "En «Qué se evalúa», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Precisión",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Precisión"
       ]
     }
   ]

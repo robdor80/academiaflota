@@ -1,16 +1,40 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.1.0",
   "course_id": "SEN-301",
-  "status": "editorially_aligned_with_developed_manual",
-  "source_manual": "gameplay/careers/academy_path/study_materials/third_class/SEN-301/MANUAL_v1_0.md",
-  "question_count": 24,
-  "rule": "No question may require knowledge that is not explicitly taught in SEN-301 or established prerequisites.",
-  "questions": [
+  "status": "concept_driven_autocorrectable_v2_1",
+  "source_bank": "question_bank_v1_0.json",
+  "policy": {
+    "theory_formats": [
+      "multiple_choice",
+      "short_answer"
+    ],
+    "multiple_choice_target_ratio": 0.8,
+    "short_answer_target_ratio": 0.2,
+    "deterministic_correction": true,
+    "web_and_game_share_concepts_not_question_instances": true,
+    "complex_judgment_moves_to_practice_and_simulation": true,
+    "source_rule": "Every evaluated concept must be explicitly taught in the course material or an established prerequisite."
+  },
+  "unit_review": {
+    "questions_per_attempt": 5,
+    "reshuffle_each_attempt": true,
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
+  },
+  "concepts": [
     {
-      "id": "SEN-301-Q001",
+      "id": "SEN-301-C001",
       "unit_id": "SEN-301-U01",
-      "type": "knowledge",
-      "prompt_es": "¿Qué se comprueba antes de operar?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué se comprueba antes de operar?",
+      "web_prompt_variants_es": [
+        "¿Qué se comprueba antes de operar?",
+        "Selecciona la respuesta correcta: Qué se comprueba antes de operar?"
+      ],
+      "answer_display_es": "estado · matrices · alcance · resolución · potencia · daños · interferencia",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estado",
         "matrices",
@@ -22,30 +46,53 @@
       ]
     },
     {
-      "id": "SEN-301-Q002",
+      "id": "SEN-301-C002",
       "unit_id": "SEN-301-U01",
-      "type": "compare",
-      "prompt_es": "Diferencia alcance nominal y efectivo.",
+      "source_type": "compare",
+      "web_prompt_es": "¿Qué opción diferencia correctamente alcance nominal y efectivo?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente alcance nominal y efectivo?",
+        "Diferencia alcance nominal y efectivo."
+      ],
+      "answer_display_es": "perfil teórico · condiciones reales",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "perfil teórico",
         "condiciones reales"
       ]
     },
     {
-      "id": "SEN-301-Q003",
+      "id": "SEN-301-C003",
       "unit_id": "SEN-301-U01",
-      "type": "judgment",
-      "prompt_es": "¿Puede Sensores apropiarse de energía de otros sistemas?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Puede Sensores apropiarse de energía de otros sistemas?",
+      "web_prompt_variants_es": [
+        "¿Puede Sensores apropiarse de energía de otros sistemas?",
+        "Repaso: ¿Puede Sensores apropiarse de energía de otros sistemas?"
+      ],
+      "answer_display_es": "No — solicita a Operaciones.",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no",
         "solicita a Operaciones"
       ]
     },
     {
-      "id": "SEN-301-Q004",
+      "id": "SEN-301-C004",
       "unit_id": "SEN-301-U01",
-      "type": "short_answer",
-      "prompt_es": "¿Por qué importa operación en curso?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Por qué importa operación en curso?",
+      "web_prompt_variants_es": [
+        "¿Por qué importa operación en curso?",
+        "Selecciona la explicación correcta:  importa operación en curso."
+      ],
+      "answer_display_es": "recursos · compatibilidad · cancelación/espera",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "recursos",
         "compatibilidad",
@@ -53,10 +100,17 @@
       ]
     },
     {
-      "id": "SEN-301-Q005",
+      "id": "SEN-301-C005",
       "unit_id": "SEN-301-U02",
-      "type": "knowledge",
-      "prompt_es": "¿Qué tres tipos de scan existen?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué tres tipos de scan existen?",
+      "web_prompt_variants_es": [
+        "¿Qué tres tipos de scan existen?",
+        "Selecciona la respuesta correcta: Qué tres tipos de scan existen?"
+      ],
+      "answer_display_es": "corto · largo · focalizado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "corto",
         "largo",
@@ -64,10 +118,17 @@
       ]
     },
     {
-      "id": "SEN-301-Q006",
+      "id": "SEN-301-C006",
       "unit_id": "SEN-301-U02",
-      "type": "knowledge",
-      "prompt_es": "¿Qué parámetros se configuran?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué parámetros se configuran?",
+      "web_prompt_variants_es": [
+        "¿Qué parámetros se configuran?",
+        "Selecciona la respuesta correcta: Qué parámetros se configuran?"
+      ],
+      "answer_display_es": "modo · objetivo · resolución · filtros · prioridad · duración",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "modo",
         "objetivo",
@@ -78,39 +139,69 @@
       ]
     },
     {
-      "id": "SEN-301-Q007",
+      "id": "SEN-301-C007",
       "unit_id": "SEN-301-U02",
-      "type": "short_answer",
-      "prompt_es": "¿Qué exige focalizado?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué exige focalizado?",
+      "web_prompt_variants_es": [
+        "¿Qué exige focalizado?",
+        "Selecciona la respuesta correcta: Qué exige focalizado?"
+      ],
+      "answer_display_es": "objetivo concreto",
+      "accepted_short_answers_es": [
+        "objetivo concreto"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "objetivo concreto"
       ]
     },
     {
-      "id": "SEN-301-Q008",
+      "id": "SEN-301-C008",
       "unit_id": "SEN-301-U02",
-      "type": "compare",
-      "prompt_es": "Diferencia traza y resuelto.",
+      "source_type": "compare",
+      "web_prompt_es": "¿Qué opción diferencia correctamente traza y resuelto?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente traza y resuelto?",
+        "Diferencia traza y resuelto."
+      ],
+      "answer_display_es": "detección mínima · clasificación/detalle superior",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "detección mínima",
         "clasificación/detalle superior"
       ]
     },
     {
-      "id": "SEN-301-Q009",
+      "id": "SEN-301-C009",
       "unit_id": "SEN-301-U03",
-      "type": "compare",
-      "prompt_es": "Diferencia barrido y búsqueda.",
+      "source_type": "compare",
+      "web_prompt_es": "¿Qué opción diferencia correctamente barrido y búsqueda?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente barrido y búsqueda?",
+        "Diferencia barrido y búsqueda."
+      ],
+      "answer_display_es": "observar zona · buscar candidato compatible",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "observar zona",
         "buscar candidato compatible"
       ]
     },
     {
-      "id": "SEN-301-Q010",
+      "id": "SEN-301-C010",
       "unit_id": "SEN-301-U03",
-      "type": "knowledge",
-      "prompt_es": "Nombra cinco objetivos de búsqueda.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción contiene cinco objetivos de búsqueda?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene cinco objetivos de búsqueda?",
+        "Nombra cinco objetivos de búsqueda."
+      ],
+      "answer_display_es": "nave · lanzadera · baliza · vida · energía · warp · transpondedor",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "nave",
         "lanzadera",
@@ -122,10 +213,17 @@
       ]
     },
     {
-      "id": "SEN-301-Q011",
+      "id": "SEN-301-C011",
       "unit_id": "SEN-301-U03",
-      "type": "judgment",
-      "prompt_es": "¿Qué coste tiene sensibilidad alta?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Qué coste tiene sensibilidad alta?",
+      "web_prompt_variants_es": [
+        "¿Qué coste tiene sensibilidad alta?",
+        "Selecciona la respuesta correcta: Qué coste tiene sensibilidad alta?"
+      ],
+      "answer_display_es": "ruido · falsos positivos · candidatos dudosos",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "ruido",
         "falsos positivos",
@@ -133,29 +231,54 @@
       ]
     },
     {
-      "id": "SEN-301-Q012",
+      "id": "SEN-301-C012",
       "unit_id": "SEN-301-U03",
-      "type": "judgment",
-      "prompt_es": "¿Una búsqueda garantiza identidad?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Una búsqueda garantiza identidad?",
+      "web_prompt_variants_es": [
+        "¿Una búsqueda garantiza identidad?",
+        "Repaso: ¿Una búsqueda garantiza identidad?"
+      ],
+      "answer_display_es": "No — solo candidatos compatibles.",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no",
         "solo candidatos compatibles"
       ]
     },
     {
-      "id": "SEN-301-Q013",
+      "id": "SEN-301-C013",
       "unit_id": "SEN-301-U04",
-      "type": "short_answer",
-      "prompt_es": "¿Qué representa un contacto?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué representa un contacto?",
+      "web_prompt_variants_es": [
+        "¿Qué representa un contacto?",
+        "Selecciona la respuesta correcta: Qué representa un contacto?"
+      ],
+      "answer_display_es": "ficha observacional persistente",
+      "accepted_short_answers_es": [
+        "ficha observacional persistente"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "ficha observacional persistente"
       ]
     },
     {
-      "id": "SEN-301-Q014",
+      "id": "SEN-301-C014",
       "unit_id": "SEN-301-U04",
-      "type": "knowledge",
-      "prompt_es": "Nombra cuatro campos de contacto.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción contiene cuatro campos de contacto?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene cuatro campos de contacto?",
+        "Nombra cuatro campos de contacto."
+      ],
+      "answer_display_es": "posición · distancia · vector · velocidad · firmas · confianza",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "posición",
         "distancia",
@@ -166,10 +289,17 @@
       ]
     },
     {
-      "id": "SEN-301-Q015",
+      "id": "SEN-301-C015",
       "unit_id": "SEN-301-U04",
-      "type": "judgment",
-      "prompt_es": "¿Por qué persiste identidad tras pérdida?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué persiste identidad tras pérdida?",
+      "web_prompt_variants_es": [
+        "¿Por qué persiste identidad tras pérdida?",
+        "Selecciona la explicación correcta:  persiste identidad tras pérdida."
+      ],
+      "answer_display_es": "historial · trayectoria · firmas compatibles",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "historial",
         "trayectoria",
@@ -177,10 +307,17 @@
       ]
     },
     {
-      "id": "SEN-301-Q016",
+      "id": "SEN-301-C016",
       "unit_id": "SEN-301-U04",
-      "type": "short_answer",
-      "prompt_es": "¿Qué se conserva al perder contacto?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué se conserva al perder contacto?",
+      "web_prompt_variants_es": [
+        "¿Qué se conserva al perder contacto?",
+        "Selecciona la respuesta correcta: Qué se conserva al perder contacto?"
+      ],
+      "answer_display_es": "última posición · rumbo · velocidad · firmas · hora",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "última posición",
         "rumbo",
@@ -190,10 +327,17 @@
       ]
     },
     {
-      "id": "SEN-301-Q017",
+      "id": "SEN-301-C017",
       "unit_id": "SEN-301-U05",
-      "type": "short_answer",
-      "prompt_es": "¿Qué mejora tracking?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué mejora tracking?",
+      "web_prompt_variants_es": [
+        "¿Qué mejora tracking?",
+        "Selecciona la respuesta correcta: Qué mejora tracking?"
+      ],
+      "answer_display_es": "posición · rumbo · velocidad · trayectoria",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "posición",
         "rumbo",
@@ -202,10 +346,17 @@
       ]
     },
     {
-      "id": "SEN-301-Q018",
+      "id": "SEN-301-C018",
       "unit_id": "SEN-301-U05",
-      "type": "judgment",
-      "prompt_es": "¿Por qué capacidad de tracking es finita?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué capacidad de tracking es finita?",
+      "web_prompt_variants_es": [
+        "¿Por qué capacidad de tracking es finita?",
+        "Selecciona la explicación correcta:  capacidad de tracking es finita."
+      ],
+      "answer_display_es": "recursos · matrices · potencia · daños",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "recursos",
         "matrices",
@@ -214,40 +365,68 @@
       ]
     },
     {
-      "id": "SEN-301-Q019",
+      "id": "SEN-301-C019",
       "unit_id": "SEN-301-U05",
-      "type": "short_answer",
-      "prompt_es": "¿Qué coste tiene priorizar contacto?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué coste tiene priorizar contacto?",
+      "web_prompt_variants_es": [
+        "¿Qué coste tiene priorizar contacto?",
+        "Selecciona la respuesta correcta: Qué coste tiene priorizar contacto?"
+      ],
+      "answer_display_es": "más recursos · menos para otros",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "más recursos",
         "menos para otros"
       ]
     },
     {
-      "id": "SEN-301-Q020",
+      "id": "SEN-301-C020",
       "unit_id": "SEN-301-U05",
-      "type": "judgment",
-      "prompt_es": "¿Por qué predicción no es certeza?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué predicción no es certeza?",
+      "web_prompt_variants_es": [
+        "¿Por qué predicción no es certeza?",
+        "Selecciona la explicación correcta:  predicción no es certeza."
+      ],
+      "answer_display_es": "incertidumbre crece · contacto puede maniobrar",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "incertidumbre crece",
         "contacto puede maniobrar"
       ]
     },
     {
-      "id": "SEN-301-Q021",
+      "id": "SEN-301-C021",
       "unit_id": "SEN-301-U06",
-      "type": "compare",
-      "prompt_es": "Diferencia interferencia ambiental y deliberada.",
+      "source_type": "compare",
+      "web_prompt_es": "¿Qué opción diferencia correctamente interferencia ambiental y deliberada?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente interferencia ambiental y deliberada?",
+        "Diferencia interferencia ambiental y deliberada."
+      ],
+      "answer_display_es": "natural/entorno · contramedida intencionada",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "natural/entorno",
         "contramedida intencionada"
       ]
     },
     {
-      "id": "SEN-301-Q022",
+      "id": "SEN-301-C022",
       "unit_id": "SEN-301-U06",
-      "type": "knowledge",
-      "prompt_es": "Nombra cuatro compensaciones.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción contiene cuatro compensaciones?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene cuatro compensaciones?",
+        "Nombra cuatro compensaciones."
+      ],
+      "answer_display_es": "automática · banda · potencia · resolución · integración · recuperar",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "automática",
         "banda",
@@ -258,10 +437,17 @@
       ]
     },
     {
-      "id": "SEN-301-Q023",
+      "id": "SEN-301-C023",
       "unit_id": "SEN-301-U06",
-      "type": "knowledge",
-      "prompt_es": "¿Qué costes puede tener compensar?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué costes puede tener compensar?",
+      "web_prompt_variants_es": [
+        "¿Qué costes puede tener compensar?",
+        "Selecciona la respuesta correcta: Qué costes puede tener compensar?"
+      ],
+      "answer_display_es": "energía · tiempo · resolución · cobertura · tracking",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "energía",
         "tiempo",
@@ -271,13 +457,214 @@
       ]
     },
     {
-      "id": "SEN-301-Q024",
+      "id": "SEN-301-C024",
       "unit_id": "SEN-301-U06",
-      "type": "judgment",
-      "prompt_es": "¿Compensar elimina la causa?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Compensar elimina la causa?",
+      "web_prompt_variants_es": [
+        "¿Compensar elimina la causa?",
+        "Repaso: ¿Compensar elimina la causa?"
+      ],
+      "answer_display_es": "No — reduce efecto.",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no",
         "reduce efecto"
+      ]
+    },
+    {
+      "id": "SEN-301-C025",
+      "unit_id": "SEN-301-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «POTENCIA»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «POTENCIA»?",
+        "Selecciona la idea correcta asociada a «POTENCIA»."
+      ],
+      "answer_display_es": "Sensores administra la potencia ya asignada. Si necesita más, debe solicitarla a Operaciones.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Sensores administra la potencia ya asignada. Si necesita más, debe solicitarla a Operaciones."
+      ]
+    },
+    {
+      "id": "SEN-301-C026",
+      "unit_id": "SEN-301-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+        "Selecciona la afirmación que coincide con los apuntes de esta unidad."
+      ],
+      "answer_display_es": "Antes de operar Sensores, el cadete debe comprobar estado general, matrices disponibles, alcance efectivo, resolución, potencia asignada, integridad, interferencias y operaciones en curso.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Antes de operar Sensores, el cadete debe comprobar estado general, matrices disponibles, alcance efectivo, resolución, potencia asignada, integridad, interferencias y operaciones en curso."
+      ]
+    },
+    {
+      "id": "SEN-301-C027",
+      "unit_id": "SEN-301-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «FOCALIZADO»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «FOCALIZADO»?",
+        "Selecciona la idea correcta asociada a «FOCALIZADO»."
+      ],
+      "answer_display_es": "Un barrido focalizado exige contacto, coordenadas o zona concreta.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Un barrido focalizado exige contacto, coordenadas o zona concreta."
+      ]
+    },
+    {
+      "id": "SEN-301-C028",
+      "unit_id": "SEN-301-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Parámetros»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Parámetros»?",
+        "En «Parámetros», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Modo activo/pasivo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Modo activo/pasivo"
+      ]
+    },
+    {
+      "id": "SEN-301-C029",
+      "unit_id": "SEN-301-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Barrido» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Barrido» en esta unidad?",
+        "Selecciona la definición correcta de «Barrido»."
+      ],
+      "answer_display_es": "Observar una zona para ver qué hay.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Observar una zona para ver qué hay."
+      ]
+    },
+    {
+      "id": "SEN-301-C030",
+      "unit_id": "SEN-301-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Búsqueda» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Búsqueda» en esta unidad?",
+        "Selecciona la definición correcta de «Búsqueda»."
+      ],
+      "answer_display_es": "Intentar localizar candidatos compatibles con algo que ya sabemos aproximadamente qué es.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Intentar localizar candidatos compatibles con algo que ya sabemos aproximadamente qué es."
+      ]
+    },
+    {
+      "id": "SEN-301-C031",
+      "unit_id": "SEN-301-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «PÉRDIDA ≠ BORRADO»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «PÉRDIDA ≠ BORRADO»?",
+        "Selecciona la idea correcta asociada a «PÉRDIDA ≠ BORRADO»."
+      ],
+      "answer_display_es": "Se conservan última posición, rumbo, velocidad, firmas y hora de pérdida.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Se conservan última posición, rumbo, velocidad, firmas y hora de pérdida."
+      ]
+    },
+    {
+      "id": "SEN-301-C032",
+      "unit_id": "SEN-301-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Campos habituales»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Campos habituales»?",
+        "En «Campos habituales», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Posición",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Posición"
+      ]
+    },
+    {
+      "id": "SEN-301-C033",
+      "unit_id": "SEN-301-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «PROCEDENCIA»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «PROCEDENCIA»?",
+        "Selecciona la idea correcta asociada a «PROCEDENCIA»."
+      ],
+      "answer_display_es": "Cada dato debe conservar fuente, hora, confianza y margen.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Cada dato debe conservar fuente, hora, confianza y margen."
+      ]
+    },
+    {
+      "id": "SEN-301-C034",
+      "unit_id": "SEN-301-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Readout»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Readout»?",
+        "En «Readout», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Intensidad",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Intensidad"
+      ]
+    },
+    {
+      "id": "SEN-301-C035",
+      "unit_id": "SEN-301-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «COMPENSAR ≠ ELIMINAR»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «COMPENSAR ≠ ELIMINAR»?",
+        "Selecciona la idea correcta asociada a «COMPENSAR ≠ ELIMINAR»."
+      ],
+      "answer_display_es": "La compensación reduce los efectos de la interferencia; no elimina mágicamente su causa.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "La compensación reduce los efectos de la interferencia; no elimina mágicamente su causa."
+      ]
+    },
+    {
+      "id": "SEN-301-C036",
+      "unit_id": "SEN-301-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Compensaciones»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Compensaciones»?",
+        "En «Compensaciones», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Automática",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Automática"
       ]
     }
   ]

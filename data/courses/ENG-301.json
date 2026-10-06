@@ -1,7 +1,7 @@
 {
   "subject": "Ingeniería y gestión de energía I",
   "code": "ENG-301",
-  "version": "1.1",
+  "version": "1.3",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/ENG-301/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/ENG-301/MANUAL_v1_0.md",
@@ -20,31 +20,17 @@
       "blocks": [
         {
           "type": "p",
-          "text": "El estado energético se entiende mediante fuentes activas, reservas, consumo, margen disponible, prioridades y degradaciones."
+          "text": "**El estado energético se entiende mediante fuentes activas, reservas, consumo, margen disponible, prioridades y degradaciones.**"
         },
         {
           "type": "definition",
           "term": "Reservas",
-          "text": "Capacidad para absorber picos y contingencias; no son infinitas."
+          "text": "Capacidad para **absorber picos** y contingencias; no son infinitas."
         },
         {
           "type": "definition",
           "term": "Margen",
-          "text": "Capacidad disponible antes de comprometer estabilidad, reservas u otros consumidores."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué forma el estado energético?",
-            "¿Para qué sirven reservas?",
-            "¿Por qué no son infinitas?",
-            "Nombra consumidores importantes.",
-            "¿Qué significa margen?"
-          ]
+          "text": "Capacidad disponible antes de comprometer estabilidad, **reservas** u otros consumidores."
         }
       ]
     },
@@ -55,7 +41,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Distribuir energía significa mantener, aumentar, reducir, aislar o redirigir capacidad hacia cargas concretas."
+          "text": "**Distribuir energía significa mantener, aumentar, reducir, aislar o redirigir capacidad hacia cargas concretas.**"
         },
         {
           "type": "heading",
@@ -64,8 +50,8 @@
         {
           "type": "bullets",
           "items": [
-            "Seguridad",
-            "Misión",
+            "**Seguridad**",
+            "**Misión**",
             "Mando",
             "Emergencia",
             "Estado técnico"
@@ -75,20 +61,6 @@
           "type": "callout",
           "label": "RECURSO COMPARTIDO",
           "text": "Aumentar un sistema puede reducir capacidad disponible para otro."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué significa distribuir energía?",
-            "¿De dónde vienen prioridades?",
-            "¿Qué ocurre si una ruta deja de estar disponible?",
-            "¿Para qué sirve aislar?",
-            "¿Por qué una reasignación tiene coste?"
-          ]
         }
       ]
     },
@@ -99,12 +71,12 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Una orden de vuelo tiene coste técnico. Ingeniería debe informar si es posible, cuánto puede sostenerse, qué margen existe y qué efecto tiene sobre otros sistemas."
+          "text": "**Una orden de vuelo tiene coste técnico.** Ingeniería debe informar si es posible, cuánto puede sostenerse, qué margen existe y qué efecto tiene sobre otros sistemas."
         },
         {
           "type": "definition",
           "term": "Máximo",
-          "text": "Capacidad pico disponible en condiciones concretas."
+          "text": "**Capacidad pico disponible en condiciones concretas.**"
         },
         {
           "type": "definition",
@@ -114,21 +86,7 @@
         {
           "type": "callout",
           "label": "INFORME ÚTIL",
-          "text": "Un informe útil indica capacidad disponible y alternativa sostenible, no un simple sí o no."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué debe responder Ingeniería?",
-            "Diferencia máximo y sostenible.",
-            "¿Qué limita warp?",
-            "¿Qué es capacidad de emergencia?",
-            "¿Cómo se reporta una limitación?"
-          ]
+          "text": "Un informe útil indica **capacidad disponible** y alternativa sostenible, no un simple sí o no."
         }
       ]
     },
@@ -139,7 +97,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Los sistemas dependen de energía, datos, refrigeración, control, hardware y autorización."
+          "text": "**Los sistemas dependen de energía, datos, refrigeración, control, hardware y autorización.**"
         },
         {
           "type": "heading",
@@ -148,9 +106,9 @@
         {
           "type": "bullets",
           "items": [
-            "Sensores: matrices, potencia, integridad y procesamiento",
+            "**Sensores: matrices, potencia, integridad y procesamiento**",
             "Escudos: recursos y estado",
-            "Transportadores: energía, condiciones, objetivo y autorización",
+            "Transportadores: energía, condiciones, objetivo y **autorización**",
             "Soporte vital: habitabilidad y seguridad"
           ]
         },
@@ -158,20 +116,6 @@
           "type": "callout",
           "label": "EFECTO CASCADA",
           "text": "Una degradación en distribución puede reducir Sensores y aumentar la incertidumbre de Navegación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Nombra dependencias posibles.",
-            "¿De qué depende Sensores?",
-            "¿Por qué soporte vital tiene alta prioridad?",
-            "¿Qué limita transportadores?",
-            "Explica un efecto cascada."
-          ]
         }
       ]
     },
@@ -192,8 +136,8 @@
         {
           "type": "numbered",
           "items": [
-            "Confirmar síntoma",
-            "Consultar estado",
+            "**Confirmar** síntoma",
+            "Consultar **estado**",
             "Ejecutar prueba",
             "Comparar",
             "Aislar causa probable",
@@ -216,20 +160,6 @@
             "Sustituir componente",
             "Ejecutar prueba"
           ]
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Diferencia síntoma y causa.",
-            "¿Qué pasos sigue diagnóstico?",
-            "Nombra cuatro acciones.",
-            "¿Qué limita al cadete?",
-            "¿Cuándo debe escalar?"
-          ]
         }
       ]
     },
@@ -240,7 +170,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "El puente necesita un informe técnico que describa estado, capacidad, margen, tiempo estimado y restricciones."
+          "text": "**El puente necesita un informe técnico que describa estado, capacidad, margen, tiempo estimado y restricciones.**"
         },
         {
           "type": "heading",
@@ -249,7 +179,7 @@
         {
           "type": "bullets",
           "items": [
-            "Normal",
+            "**Normal**",
             "Degradado",
             "Limitado",
             "Crítico",
@@ -259,23 +189,10 @@
         {
           "type": "p",
           "text": "Una estimación técnica debe expresar incertidumbre cuando corresponda. Ingeniería puede recomendar una opción; Mando decide cuando la cuestión excede la autoridad técnica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué necesita saber el puente?",
-            "¿Por qué una frase vaga no sirve?",
-            "¿Qué significa informar capacidad?",
-            "¿Qué acompaña una estimación incierta?",
-            "¿Quién decide cuando excede Ingeniería?"
-          ]
         }
       ]
     }
   ],
-  "status": "developed_content"
+  "status": "developed_content",
+  "assessmentModel": "concept_driven_v2_1"
 }
