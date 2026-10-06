@@ -1,7 +1,7 @@
 {
   "subject": "Comunicaciones y equipo personal",
   "code": "COM-402",
-  "version": "1.2",
+  "version": "1.3",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/COM-402/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/COM-402/MANUAL_v1_0.md",
@@ -21,7 +21,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Un comunicador no es solo un botón para hablar: una comunicación necesita origen, destino, canal, estado del enlace y contenido transmitido."
+          "text": "**Un comunicador no es solo un botón para hablar: una comunicación necesita origen, destino, canal, estado del enlace y contenido transmitido.**"
         },
         {
           "type": "heading",
@@ -30,7 +30,7 @@
         {
           "type": "bullets",
           "items": [
-            "Interno",
+            "**Interno**",
             "Subespacio directo",
             "Relay",
             "Haz estrecho",
@@ -49,7 +49,7 @@
         {
           "type": "bullets",
           "items": [
-            "Conectando",
+            "**Conectando**",
             "Abierto",
             "Degradado",
             "Bloqueado",
@@ -67,7 +67,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "El tricorder se introduce como herramienta portátil de adquisición y consulta. En esta etapa no se exige dominar modos especializados."
+          "text": "**El tricorder se introduce como herramienta portátil de adquisición y consulta.** En esta etapa no se exige dominar modos especializados."
         },
         {
           "type": "heading",
@@ -76,8 +76,8 @@
         {
           "type": "bullets",
           "items": [
-            "Observación",
-            "Medición",
+            "**Observación**",
+            "**Medición**",
             "Consulta",
             "Registro",
             "Análisis preliminar"
@@ -112,7 +112,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Una comunicación interna debe dirigirse a la persona, puesto, departamento o equipo que realmente pueda actuar."
+          "text": "**Una comunicación interna debe dirigirse a la persona, puesto, departamento o equipo que realmente pueda actuar.**"
         },
         {
           "type": "heading",
@@ -121,9 +121,9 @@
         {
           "type": "numbered",
           "items": [
-            "Destinatario",
+            "**Destinatario**",
             "Hecho o situación",
-            "Solicitud si existe",
+            "**Solicitud** si existe",
             "Prioridad si procede",
             "Confirmación cuando sea necesaria"
           ]
@@ -150,7 +150,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Contactar con otra nave, estación o autoridad representa a la unidad y exige más cuidado que un mensaje interno rutinario."
+          "text": "**Contactar con otra nave, estación o autoridad representa a la unidad y exige más cuidado que un mensaje interno rutinario.**"
         },
         {
           "type": "heading",
@@ -159,8 +159,8 @@
         {
           "type": "bullets",
           "items": [
-            "Identificación propia",
-            "Destinatario",
+            "**Identificación propia**",
+            "**Destinatario**",
             "Intención básica",
             "Petición de enlace"
           ]
@@ -193,17 +193,17 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Un mensaje profesional convierte información desordenada en hecho, estado, solicitud y urgencia."
+          "text": "**Un mensaje profesional convierte información desordenada en hecho, estado, solicitud y urgencia.**"
         },
         {
           "type": "definition",
           "term": "Hecho",
-          "text": "Lo observado directamente."
+          "text": "**Lo observado directamente.**"
         },
         {
           "type": "definition",
           "term": "Estado",
-          "text": "La situación actual relevante."
+          "text": "**La situación actual relevante.**"
         },
         {
           "type": "definition",
@@ -229,7 +229,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Una salida empieza antes de abandonar la nave: objetivo, entorno, duración, riesgos, comunicación y equipo."
+          "text": "**Una salida empieza antes de abandonar la nave: objetivo, entorno, duración, riesgos, comunicación y equipo.**"
         },
         {
           "type": "heading",
@@ -238,7 +238,7 @@
         {
           "type": "bullets",
           "items": [
-            "Comunicador",
+            "**Comunicador**",
             "Tricorder",
             "Suministros",
             "Protección",
@@ -253,7 +253,7 @@
         {
           "type": "bullets",
           "items": [
-            "Comprobar estado",
+            "**Comprobar** estado",
             "Saber para qué sirve",
             "Mantenerlo",
             "Informar fallos",
@@ -273,5 +273,5 @@
     }
   ],
   "status": "developed_content",
-  "assessmentModel": "concept_driven_v2"
+  "assessmentModel": "concept_driven_v2_1"
 }

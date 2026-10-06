@@ -1,7 +1,7 @@
 {
   "subject": "Preparación física II",
   "code": "PHY-402",
-  "version": "1.2",
+  "version": "1.3",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/PHY-402/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/PHY-402/MANUAL_v1_0.md",
@@ -22,7 +22,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "La continuidad importa más que un día espectacular. La preparación mejora cuando frecuencia, carga, recuperación y tiempo forman una rutina sostenible."
+          "text": "**La continuidad importa más que un día espectacular.** La preparación mejora cuando frecuencia, carga, recuperación y tiempo forman una rutina sostenible."
         },
         {
           "type": "definition",
@@ -36,8 +36,8 @@
         {
           "type": "bullets",
           "items": [
-            "Duración",
-            "Complejidad",
+            "**Duración**",
+            "**Complejidad**",
             "Resistencia",
             "Densidad de trabajo",
             "Autonomía",
@@ -62,7 +62,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "La resistencia aplicada traslada la base de PHY-401 a tareas donde el personaje debe sostener esfuerzo con control."
+          "text": "**La resistencia aplicada traslada la base de PHY-401 a tareas donde el personaje debe sostener esfuerzo con control.**"
         },
         {
           "type": "heading",
@@ -71,7 +71,7 @@
         {
           "type": "bullets",
           "items": [
-            "Desplazamientos",
+            "**Desplazamientos**",
             "Circuitos funcionales",
             "Actividad prolongada",
             "Tareas repetidas",
@@ -84,7 +84,7 @@
         },
         {
           "type": "p",
-          "text": "Salir demasiado rápido puede empeorar técnica, aumentar fatiga y comprometer la recuperación. También importa cómo vuelve el personaje a un estado funcional entre bloques."
+          "text": "Salir demasiado rápido puede empeorar técnica, aumentar **fatiga** y comprometer la recuperación. También importa cómo vuelve el personaje a un estado funcional entre bloques."
         },
         {
           "type": "callout",
@@ -100,17 +100,17 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Fuerza y coordinación se trabajan juntas porque una tarea real exige aplicar fuerza en la dirección y el momento correctos, con equilibrio y control."
+          "text": "**Fuerza y coordinación se trabajan juntas porque una tarea real exige aplicar fuerza en la dirección y el momento correctos, con equilibrio y control.**"
         },
         {
           "type": "definition",
           "term": "Equilibrio",
-          "text": "Capacidad para estabilizarse, cambiar dirección y controlar el cuerpo en condiciones variables."
+          "text": "Capacidad para estabilizarse, **cambiar dirección** y controlar el cuerpo en condiciones variables."
         },
         {
           "type": "definition",
           "term": "Coordinación",
-          "text": "Organización eficiente de movimientos durante desplazamiento, manipulación de equipo o tareas combinadas."
+          "text": "Organización eficiente de movimientos durante **desplazamiento**, manipulación de equipo o tareas combinadas."
         },
         {
           "type": "heading",
@@ -141,7 +141,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Una actividad colectiva necesita sincronización. El rendimiento del grupo no es simplemente la suma de máximos individuales."
+          "text": "**Una actividad colectiva necesita sincronización.** El rendimiento del grupo no es simplemente la suma de máximos individuales."
         },
         {
           "type": "heading",
@@ -158,8 +158,8 @@
         {
           "type": "bullets",
           "items": [
-            "Repartir peso",
-            "Alternar esfuerzo",
+            "**Repartir peso**",
+            "**Alternar esfuerzo**",
             "Guiar",
             "Asegurar",
             "Informar",
@@ -180,7 +180,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "La actividad acuática es una opción de entrenamiento, no una prueba universal idéntica. Si no es apropiada para una especie o contexto, se sustituye por una actividad funcional equivalente."
+          "text": "**La actividad acuática es una opción de entrenamiento, no una prueba universal idéntica.** Si no es apropiada para una especie o contexto, se sustituye por una actividad funcional equivalente."
         },
         {
           "type": "heading",
@@ -189,8 +189,8 @@
         {
           "type": "bullets",
           "items": [
-            "Capacidad previa",
-            "Entorno",
+            "**Capacidad previa**",
+            "**Entorno**",
             "Supervisión",
             "Equipo",
             "Riesgos específicos",
@@ -215,7 +215,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Una rutina útil debe poder cambiar cuando aumentan estudio, simulaciones, guardias, estrés o fatiga."
+          "text": "**Una rutina útil debe poder cambiar cuando aumentan estudio, simulaciones, guardias, estrés o fatiga.**"
         },
         {
           "type": "heading",
@@ -223,7 +223,7 @@
         },
         {
           "type": "p",
-          "text": "Ante fatiga puede reducirse intensidad, duración, frecuencia o complejidad. Ajustar temporalmente no equivale a perder todo el progreso."
+          "text": "Ante fatiga puede reducirse intensidad, duración, frecuencia o **complejidad**. Ajustar temporalmente no equivale a perder todo el progreso."
         },
         {
           "type": "heading",
@@ -240,7 +240,7 @@
         {
           "type": "bullets",
           "items": [
-            "Qué funciona",
+            "**Qué funciona**",
             "Qué genera fatiga excesiva",
             "Qué obligaciones han cambiado",
             "Qué puede mantenerse",
@@ -251,5 +251,5 @@
     }
   ],
   "status": "developed_content",
-  "assessmentModel": "concept_driven_v2"
+  "assessmentModel": "concept_driven_v2_1"
 }

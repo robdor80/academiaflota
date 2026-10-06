@@ -1,7 +1,7 @@
 {
-  "schema_version": "2.0.0",
+  "schema_version": "2.1.0",
   "course_id": "COM-402",
-  "status": "concept_driven_autocorrectable",
+  "status": "concept_driven_autocorrectable_v2_1",
   "source_bank": "question_bank_v1_0.json",
   "policy": {
     "theory_formats": [
@@ -16,9 +16,11 @@
     "source_rule": "Every evaluated concept must be explicitly taught in the course material or an established prerequisite."
   },
   "unit_review": {
-    "questions_per_attempt": 3,
+    "questions_per_attempt": 5,
     "reshuffle_each_attempt": true,
-    "preferred_short_answers_per_attempt": 1
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
   },
   "concepts": [
     {
@@ -460,6 +462,198 @@
       "answer_key_es": [
         "no",
         "requiere entrenamiento/autorización"
+      ]
+    },
+    {
+      "id": "COM-402-C025",
+      "unit_id": "COM-402-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Tipos y prioridad»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Tipos y prioridad»?",
+        "En «Tipos y prioridad», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Interno",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Interno"
+      ]
+    },
+    {
+      "id": "COM-402-C026",
+      "unit_id": "COM-402-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Estado del enlace»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Estado del enlace»?",
+        "En «Estado del enlace», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Conectando",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Conectando"
+      ]
+    },
+    {
+      "id": "COM-402-C027",
+      "unit_id": "COM-402-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «LECTURA ≠ EXPLICACIÓN»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «LECTURA ≠ EXPLICACIÓN»?",
+        "Selecciona la idea correcta asociada a «LECTURA ≠ EXPLICACIÓN»."
+      ],
+      "answer_display_es": "«Radiación elevada» es un dato. «Existe sabotaje» es una hipótesis que necesita evidencia adicional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "«Radiación elevada» es un dato. «Existe sabotaje» es una hipótesis que necesita evidencia adicional."
+      ]
+    },
+    {
+      "id": "COM-402-C028",
+      "unit_id": "COM-402-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Funciones generales»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Funciones generales»?",
+        "En «Funciones generales», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Observación",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Observación"
+      ]
+    },
+    {
+      "id": "COM-402-C029",
+      "unit_id": "COM-402-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «BREVEDAD»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «BREVEDAD»?",
+        "Selecciona la idea correcta asociada a «BREVEDAD»."
+      ],
+      "answer_display_es": "Breve no significa incompleto. El mensaje debe ser corto y suficiente para actuar.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Breve no significa incompleto. El mensaje debe ser corto y suficiente para actuar."
+      ]
+    },
+    {
+      "id": "COM-402-C030",
+      "unit_id": "COM-402-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+        "Selecciona la afirmación que coincide con los apuntes de esta unidad."
+      ],
+      "answer_display_es": "Una comunicación interna debe dirigirse a la persona, puesto, departamento o equipo que realmente pueda actuar.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Una comunicación interna debe dirigirse a la persona, puesto, departamento o equipo que realmente pueda actuar."
+      ]
+    },
+    {
+      "id": "COM-402-C031",
+      "unit_id": "COM-402-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «AUTORIDAD»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «AUTORIDAD»?",
+        "Selecciona la idea correcta asociada a «AUTORIDAD»."
+      ],
+      "answer_display_es": "Poder abrir un canal no autoriza a negociar tratados, declarar hostilidad, prometer recursos o revelar información restringida.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Poder abrir un canal no autoriza a negociar tratados, declarar hostilidad, prometer recursos o revelar información restringida."
+      ]
+    },
+    {
+      "id": "COM-402-C032",
+      "unit_id": "COM-402-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Apertura»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Apertura»?",
+        "En «Apertura», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Identificación propia",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Identificación propia"
+      ]
+    },
+    {
+      "id": "COM-402-C033",
+      "unit_id": "COM-402-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Hecho» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Hecho» en esta unidad?",
+        "Selecciona la definición correcta de «Hecho»."
+      ],
+      "answer_display_es": "Lo observado directamente.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Lo observado directamente."
+      ]
+    },
+    {
+      "id": "COM-402-C034",
+      "unit_id": "COM-402-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Estado» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Estado» en esta unidad?",
+        "Selecciona la definición correcta de «Estado»."
+      ],
+      "answer_display_es": "La situación actual relevante.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "La situación actual relevante."
+      ]
+    },
+    {
+      "id": "COM-402-C035",
+      "unit_id": "COM-402-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «MÁS NO SIEMPRE ES MEJOR»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «MÁS NO SIEMPRE ES MEJOR»?",
+        "Selecciona la idea correcta asociada a «MÁS NO SIEMPRE ES MEJOR»."
+      ],
+      "answer_display_es": "El equipo extra añade peso, complejidad y dependencia. Debe responder a la misión.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "El equipo extra añade peso, complejidad y dependencia. Debe responder a la misión."
+      ]
+    },
+    {
+      "id": "COM-402-C036",
+      "unit_id": "COM-402-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Equipo contextual»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Equipo contextual»?",
+        "En «Equipo contextual», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Comunicador",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Comunicador"
       ]
     }
   ]
