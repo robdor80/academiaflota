@@ -3,7 +3,7 @@ import {
   updateProfile, deleteProfile, exportProfile, importProfile,
   setStorageOwner, getStorageOwner, onProfileChange
 } from "./storage.js";
-import { loadStudyData, loadStudyFile, renderLesson, checkUnitReview } from "./study.js?v=0.7.3";
+import { loadStudyData, loadStudyFile, renderLesson, checkUnitReview } from "./study.js?v=0.8.0";
 import { loadEvaluationData, renderExam, gradeExam, renderResult } from "./evaluation.js?v=0.5.0";
 import { firebaseConfigured } from "./firebase-config.js";
 import { createFirebaseClient } from "./firebase-client.js";
@@ -242,7 +242,7 @@ async function ensureData() {
   if (!app.exam) app.exam = await loadEvaluationData();
 
   if (!app.curriculum) {
-    const response = await fetch("data/curriculum.json?v=0.7.0");
+    const response = await fetch("data/curriculum.json?v=0.8.0");
     if (!response.ok) throw new Error("No se pudo cargar el currículo académico.");
     app.curriculum = await response.json();
   }

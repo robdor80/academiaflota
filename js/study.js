@@ -1,7 +1,7 @@
 export async function loadStudyFile(path) {
   if (!path) throw new Error("El material de estudio no tiene un archivo asociado.");
   const separator = path.includes("?") ? "&" : "?";
-  const response = await fetch(path + separator + "v=0.7.3");
+  const response = await fetch(path + separator + "v=0.8.0");
   if (!response.ok) throw new Error("No se pudo cargar el material académico.");
   return response.json();
 }
