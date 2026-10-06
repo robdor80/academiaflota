@@ -252,6 +252,12 @@
 .supplementary button:hover{border-color:#aab6c2}
 .supplementary button strong{display:block;color:var(--navy-900)}
 .supplementary button small{display:block;margin-top:4px;color:var(--muted)}
+.supplementary--branch-library{margin-top:0;padding-top:0;border-top:0}
+.operational-materials{margin-top:24px;padding:18px;border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:7px;background:#fafbfc}
+.operational-materials>.overline{display:block;margin-bottom:6px}
+.operational-materials>h3{margin:0 0 6px}
+.operational-materials>p{margin:0 0 14px;color:var(--muted);font-size:.86rem;line-height:1.5}
+
 
 .subject-layout{display:grid;grid-template-columns:300px minmax(0,1fr);gap:30px}
 .subject-sidebar{align-self:start;position:sticky;top:155px}
