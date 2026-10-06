@@ -1,15 +1,45 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.1.0",
   "branch_id": "medical",
-  "status": "generated_from_authoritative_branch_curriculum",
-  "question_count": 60,
-  "questions": [
+  "status": "concept_driven_autocorrectable_v2_1",
+  "scope": "year3_201_203_only",
+  "source_bank": "question_bank_v1_0.json",
+  "year3_courses": [
+    "MED-201",
+    "MED-202",
+    "MED-203"
+  ],
+  "year3_status": "developed_and_synced_v2_1",
+  "policy": {
+    "theory_formats": [
+      "multiple_choice",
+      "short_answer"
+    ],
+    "deterministic_correction": true,
+    "web_and_game_share_concepts_not_question_instances": true,
+    "complex_judgment_moves_to_practice_and_simulation": true,
+    "source_rule": "Every evaluated concept must be explicitly taught in the branch material or an established prerequisite."
+  },
+  "unit_review": {
+    "questions_per_attempt": 5,
+    "reshuffle_each_attempt": true,
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
+  },
+  "concepts": [
     {
-      "id": "MEDICAL-Q001",
-      "course_id": "MED-201",
+      "id": "MEDICAL-C001",
       "unit_id": "MED-201-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica síntomas desde la perspectiva de Medicina: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente síntomas desde la perspectiva de Medicina?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente síntomas desde la perspectiva de Medicina?",
+        "Explica síntomas desde la perspectiva de Medicina: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "síntomas · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "síntomas",
         "aplicación",
@@ -17,11 +47,17 @@
       ]
     },
     {
-      "id": "MEDICAL-Q002",
-      "course_id": "MED-201",
+      "id": "MEDICAL-C002",
       "unit_id": "MED-201-U01",
-      "type": "scenario",
-      "prompt_es": "Entrevista paciente. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Entrevista paciente»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Entrevista paciente»?",
+        "Entrevista paciente. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -30,11 +66,17 @@
       ]
     },
     {
-      "id": "MEDICAL-Q003",
-      "course_id": "MED-201",
+      "id": "MEDICAL-C003",
       "unit_id": "MED-201-U01",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Historia y evaluación para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Historia y evaluación?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Historia y evaluación?",
+        "¿Qué evidencia conservarías tras Historia y evaluación para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -44,11 +86,17 @@
       ]
     },
     {
-      "id": "MEDICAL-Q004",
-      "course_id": "MED-201",
+      "id": "MEDICAL-C004",
       "unit_id": "MED-201-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica tricorder desde la perspectiva de Medicina: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente tricorder desde la perspectiva de Medicina?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente tricorder desde la perspectiva de Medicina?",
+        "Explica tricorder desde la perspectiva de Medicina: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "tricorder · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "tricorder",
         "aplicación",
@@ -56,11 +104,17 @@
       ]
     },
     {
-      "id": "MEDICAL-Q005",
-      "course_id": "MED-201",
+      "id": "MEDICAL-C005",
       "unit_id": "MED-201-U02",
-      "type": "scenario",
-      "prompt_es": "Obtener datos. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Obtener datos»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Obtener datos»?",
+        "Obtener datos. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -69,11 +123,17 @@
       ]
     },
     {
-      "id": "MEDICAL-Q006",
-      "course_id": "MED-201",
+      "id": "MEDICAL-C006",
       "unit_id": "MED-201-U02",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Diagnóstico instrumental para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Diagnóstico instrumental?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Diagnóstico instrumental?",
+        "¿Qué evidencia conservarías tras Diagnóstico instrumental para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -83,11 +143,17 @@
       ]
     },
     {
-      "id": "MEDICAL-Q007",
-      "course_id": "MED-201",
+      "id": "MEDICAL-C007",
       "unit_id": "MED-201-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica diferencial desde la perspectiva de Medicina: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente diferencial desde la perspectiva de Medicina?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente diferencial desde la perspectiva de Medicina?",
+        "Explica diferencial desde la perspectiva de Medicina: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "diferencial · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "diferencial",
         "aplicación",
@@ -95,11 +161,17 @@
       ]
     },
     {
-      "id": "MEDICAL-Q008",
-      "course_id": "MED-201",
+      "id": "MEDICAL-C008",
       "unit_id": "MED-201-U03",
-      "type": "scenario",
-      "prompt_es": "Caso clínico. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Caso clínico»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Caso clínico»?",
+        "Caso clínico. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -108,11 +180,17 @@
       ]
     },
     {
-      "id": "MEDICAL-Q009",
-      "course_id": "MED-201",
+      "id": "MEDICAL-C009",
       "unit_id": "MED-201-U03",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Razonamiento diagnóstico para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Razonamiento diagnóstico?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Razonamiento diagnóstico?",
+        "¿Qué evidencia conservarías tras Razonamiento diagnóstico para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -122,11 +200,17 @@
       ]
     },
     {
-      "id": "MEDICAL-Q010",
-      "course_id": "MED-201",
+      "id": "MEDICAL-C010",
       "unit_id": "MED-201-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica indicación desde la perspectiva de Medicina: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente indicación desde la perspectiva de Medicina?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente indicación desde la perspectiva de Medicina?",
+        "Explica indicación desde la perspectiva de Medicina: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "indicación · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "indicación",
         "aplicación",
@@ -134,11 +218,17 @@
       ]
     },
     {
-      "id": "MEDICAL-Q011",
-      "course_id": "MED-201",
+      "id": "MEDICAL-C011",
       "unit_id": "MED-201-U04",
-      "type": "scenario",
-      "prompt_es": "Procedimiento simulado. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Procedimiento simulado»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Procedimiento simulado»?",
+        "Procedimiento simulado. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -147,11 +237,17 @@
       ]
     },
     {
-      "id": "MEDICAL-Q012",
-      "course_id": "MED-201",
+      "id": "MEDICAL-C012",
       "unit_id": "MED-201-U04",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Tratamiento supervisado para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Tratamiento supervisado?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Tratamiento supervisado?",
+        "¿Qué evidencia conservarías tras Tratamiento supervisado para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -161,11 +257,17 @@
       ]
     },
     {
-      "id": "MEDICAL-Q013",
-      "course_id": "MED-202",
+      "id": "MEDICAL-C013",
       "unit_id": "MED-202-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica variación desde la perspectiva de Medicina: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente variación desde la perspectiva de Medicina?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente variación desde la perspectiva de Medicina?",
+        "Explica variación desde la perspectiva de Medicina: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "variación · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "variación",
         "aplicación",
@@ -173,11 +275,17 @@
       ]
     },
     {
-      "id": "MEDICAL-Q014",
-      "course_id": "MED-202",
+      "id": "MEDICAL-C014",
       "unit_id": "MED-202-U01",
-      "type": "scenario",
-      "prompt_es": "Caso interespecie. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Caso interespecie»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Caso interespecie»?",
+        "Caso interespecie. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -186,11 +294,17 @@
       ]
     },
     {
-      "id": "MEDICAL-Q015",
-      "course_id": "MED-202",
+      "id": "MEDICAL-C015",
       "unit_id": "MED-202-U01",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Xenofisiología aplicada para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Xenofisiología aplicada?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Xenofisiología aplicada?",
+        "¿Qué evidencia conservarías tras Xenofisiología aplicada para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -200,11 +314,17 @@
       ]
     },
     {
-      "id": "MEDICAL-Q016",
-      "course_id": "MED-202",
+      "id": "MEDICAL-C016",
       "unit_id": "MED-202-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica triaje desde la perspectiva de Medicina: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente triaje desde la perspectiva de Medicina?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente triaje desde la perspectiva de Medicina?",
+        "Explica triaje desde la perspectiva de Medicina: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "triaje · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "triaje",
         "aplicación",
@@ -212,11 +332,17 @@
       ]
     },
     {
-      "id": "MEDICAL-Q017",
-      "course_id": "MED-202",
+      "id": "MEDICAL-C017",
       "unit_id": "MED-202-U02",
-      "type": "scenario",
-      "prompt_es": "Simulación. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Simulación»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Simulación»?",
+        "Simulación. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -225,11 +351,17 @@
       ]
     },
     {
-      "id": "MEDICAL-Q018",
-      "course_id": "MED-202",
+      "id": "MEDICAL-C018",
       "unit_id": "MED-202-U02",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Emergencia para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Emergencia?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Emergencia?",
+        "¿Qué evidencia conservarías tras Emergencia para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -239,11 +371,17 @@
       ]
     },
     {
-      "id": "MEDICAL-Q019",
-      "course_id": "MED-202",
+      "id": "MEDICAL-C019",
       "unit_id": "MED-202-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica capacidad desde la perspectiva de Medicina: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente capacidad desde la perspectiva de Medicina?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente capacidad desde la perspectiva de Medicina?",
+        "Explica capacidad desde la perspectiva de Medicina: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "capacidad · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "capacidad",
         "aplicación",
@@ -251,11 +389,17 @@
       ]
     },
     {
-      "id": "MEDICAL-Q020",
-      "course_id": "MED-202",
+      "id": "MEDICAL-C020",
       "unit_id": "MED-202-U03",
-      "type": "scenario",
-      "prompt_es": "Escenario. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Escenario»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Escenario»?",
+        "Escenario. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -264,11 +408,17 @@
       ]
     },
     {
-      "id": "MEDICAL-Q021",
-      "course_id": "MED-202",
+      "id": "MEDICAL-C021",
       "unit_id": "MED-202-U03",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Múltiples pacientes para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Múltiples pacientes?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Múltiples pacientes?",
+        "¿Qué evidencia conservarías tras Múltiples pacientes para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -278,11 +428,17 @@
       ]
     },
     {
-      "id": "MEDICAL-Q022",
-      "course_id": "MED-202",
+      "id": "MEDICAL-C022",
       "unit_id": "MED-202-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica consentimiento desde la perspectiva de Medicina: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente consentimiento desde la perspectiva de Medicina?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente consentimiento desde la perspectiva de Medicina?",
+        "Explica consentimiento desde la perspectiva de Medicina: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "consentimiento · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "consentimiento",
         "aplicación",
@@ -290,11 +446,17 @@
       ]
     },
     {
-      "id": "MEDICAL-Q023",
-      "course_id": "MED-202",
+      "id": "MEDICAL-C023",
       "unit_id": "MED-202-U04",
-      "type": "scenario",
-      "prompt_es": "Caso. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Caso»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Caso»?",
+        "Caso. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -303,11 +465,17 @@
       ]
     },
     {
-      "id": "MEDICAL-Q024",
-      "course_id": "MED-202",
+      "id": "MEDICAL-C024",
       "unit_id": "MED-202-U04",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Ética clínica para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Ética clínica?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Ética clínica?",
+        "¿Qué evidencia conservarías tras Ética clínica para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -317,11 +485,17 @@
       ]
     },
     {
-      "id": "MEDICAL-Q025",
-      "course_id": "MED-203",
+      "id": "MEDICAL-C025",
       "unit_id": "MED-203-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica pacientes desde la perspectiva de Medicina: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente pacientes desde la perspectiva de Medicina?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente pacientes desde la perspectiva de Medicina?",
+        "Explica pacientes desde la perspectiva de Medicina: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "pacientes · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "pacientes",
         "aplicación",
@@ -329,11 +503,17 @@
       ]
     },
     {
-      "id": "MEDICAL-Q026",
-      "course_id": "MED-203",
+      "id": "MEDICAL-C026",
       "unit_id": "MED-203-U01",
-      "type": "scenario",
-      "prompt_es": "Servicio supervisado. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Servicio supervisado»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Servicio supervisado»?",
+        "Servicio supervisado. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -342,11 +522,17 @@
       ]
     },
     {
-      "id": "MEDICAL-Q027",
-      "course_id": "MED-203",
+      "id": "MEDICAL-C027",
       "unit_id": "MED-203-U01",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Turno clínico para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Turno clínico?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Turno clínico?",
+        "¿Qué evidencia conservarías tras Turno clínico para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -356,11 +542,17 @@
       ]
     },
     {
-      "id": "MEDICAL-Q028",
-      "course_id": "MED-203",
+      "id": "MEDICAL-C028",
       "unit_id": "MED-203-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica evaluación desde la perspectiva de Medicina: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente evaluación desde la perspectiva de Medicina?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente evaluación desde la perspectiva de Medicina?",
+        "Explica evaluación desde la perspectiva de Medicina: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "evaluación · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "evaluación",
         "aplicación",
@@ -368,11 +560,17 @@
       ]
     },
     {
-      "id": "MEDICAL-Q029",
-      "course_id": "MED-203",
+      "id": "MEDICAL-C029",
       "unit_id": "MED-203-U02",
-      "type": "scenario",
-      "prompt_es": "Caso longitudinal. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Caso longitudinal»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Caso longitudinal»?",
+        "Caso longitudinal. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -381,11 +579,17 @@
       ]
     },
     {
-      "id": "MEDICAL-Q030",
-      "course_id": "MED-203",
+      "id": "MEDICAL-C030",
       "unit_id": "MED-203-U02",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Caso completo para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Caso completo?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Caso completo?",
+        "¿Qué evidencia conservarías tras Caso completo para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -395,11 +599,17 @@
       ]
     },
     {
-      "id": "MEDICAL-Q031",
-      "course_id": "MED-203",
+      "id": "MEDICAL-C031",
       "unit_id": "MED-203-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica mando desde la perspectiva de Medicina: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente mando desde la perspectiva de Medicina?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente mando desde la perspectiva de Medicina?",
+        "Explica mando desde la perspectiva de Medicina: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "mando · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "mando",
         "aplicación",
@@ -407,11 +617,17 @@
       ]
     },
     {
-      "id": "MEDICAL-Q032",
-      "course_id": "MED-203",
+      "id": "MEDICAL-C032",
       "unit_id": "MED-203-U03",
-      "type": "scenario",
-      "prompt_es": "Simulación. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Simulación»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Simulación»?",
+        "Simulación. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -420,11 +636,17 @@
       ]
     },
     {
-      "id": "MEDICAL-Q033",
-      "course_id": "MED-203",
+      "id": "MEDICAL-C033",
       "unit_id": "MED-203-U03",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Emergencia en nave para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Emergencia en nave?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Emergencia en nave?",
+        "¿Qué evidencia conservarías tras Emergencia en nave para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -434,11 +656,17 @@
       ]
     },
     {
-      "id": "MEDICAL-Q034",
-      "course_id": "MED-203",
+      "id": "MEDICAL-C034",
       "unit_id": "MED-203-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica seguridad desde la perspectiva de Medicina: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente seguridad desde la perspectiva de Medicina?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente seguridad desde la perspectiva de Medicina?",
+        "Explica seguridad desde la perspectiva de Medicina: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "seguridad · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "seguridad",
         "aplicación",
@@ -446,11 +674,17 @@
       ]
     },
     {
-      "id": "MEDICAL-Q035",
-      "course_id": "MED-203",
+      "id": "MEDICAL-C035",
       "unit_id": "MED-203-U04",
-      "type": "scenario",
-      "prompt_es": "Evaluación integrada. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Evaluación integrada»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Evaluación integrada»?",
+        "Evaluación integrada. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -459,11 +693,17 @@
       ]
     },
     {
-      "id": "MEDICAL-Q036",
-      "course_id": "MED-203",
+      "id": "MEDICAL-C036",
       "unit_id": "MED-203-U04",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Cualificación intermedia para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Cualificación intermedia?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Cualificación intermedia?",
+        "¿Qué evidencia conservarías tras Cualificación intermedia para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -472,6 +712,584 @@
         "feedback o pendientes"
       ]
     },
+    {
+      "id": "MEDICAL-C037",
+      "unit_id": "MED-201-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Síntomas» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Síntomas» en esta unidad?",
+        "Selecciona la definición correcta de «Síntomas»."
+      ],
+      "answer_display_es": "Son observaciones del paciente que orientan la evaluación pero no equivalen por sí solas a diagnóstico.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Son observaciones del paciente que orientan la evaluación pero no equivalen por sí solas a diagnóstico."
+      ]
+    },
+    {
+      "id": "MEDICAL-C038",
+      "unit_id": "MED-201-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Contexto» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Contexto» en esta unidad?",
+        "Selecciona la definición correcta de «Contexto»."
+      ],
+      "answer_display_es": "Incluye especie, antecedentes, entorno y circunstancias que cambian el significado de un dato clínico.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Incluye especie, antecedentes, entorno y circunstancias que cambian el significado de un dato clínico."
+      ]
+    },
+    {
+      "id": "MEDICAL-C039",
+      "unit_id": "MED-201-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Especie» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Especie» en esta unidad?",
+        "Selecciona la definición correcta de «Especie»."
+      ],
+      "answer_display_es": "Obliga a evitar extrapolaciones automáticas entre fisiologías y a usar referencias adecuadas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Obliga a evitar extrapolaciones automáticas entre fisiologías y a usar referencias adecuadas."
+      ]
+    },
+    {
+      "id": "MEDICAL-C040",
+      "unit_id": "MED-201-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Tricorder» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Tricorder» en esta unidad?",
+        "Selecciona la definición correcta de «Tricorder»."
+      ],
+      "answer_display_es": "Aporta datos clínicos que deben interpretarse con calibración, contexto y limitaciones conocidas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Aporta datos clínicos que deben interpretarse con calibración, contexto y limitaciones conocidas."
+      ]
+    },
+    {
+      "id": "MEDICAL-C041",
+      "unit_id": "MED-201-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Biocama contextual» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Biocama contextual» en esta unidad?",
+        "Selecciona la definición correcta de «Biocama contextual»."
+      ],
+      "answer_display_es": "Integra monitorización y soporte diagnóstico según la era y el equipamiento disponible.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Integra monitorización y soporte diagnóstico según la era y el equipamiento disponible."
+      ]
+    },
+    {
+      "id": "MEDICAL-C042",
+      "unit_id": "MED-201-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Datos» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Datos» en esta unidad?",
+        "Selecciona la definición correcta de «Datos»."
+      ],
+      "answer_display_es": "Deben conservar origen, contexto, calidad y recencia suficientes para sostener una decisión.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Deben conservar origen, contexto, calidad y recencia suficientes para sostener una decisión."
+      ]
+    },
+    {
+      "id": "MEDICAL-C043",
+      "unit_id": "MED-201-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Diferencial» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Diferencial» en esta unidad?",
+        "Selecciona la definición correcta de «Diferencial»."
+      ],
+      "answer_display_es": "Es la lista razonada de causas posibles que se priorizan y se revisan con nueva evidencia.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Es la lista razonada de causas posibles que se priorizan y se revisan con nueva evidencia."
+      ]
+    },
+    {
+      "id": "MEDICAL-C044",
+      "unit_id": "MED-201-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Evidencia» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Evidencia» en esta unidad?",
+        "Selecciona la definición correcta de «Evidencia»."
+      ],
+      "answer_display_es": "Debe ser observable y trazable: dato, hallazgo o respuesta que apoya o debilita una hipótesis.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Debe ser observable y trazable: dato, hallazgo o respuesta que apoya o debilita una hipótesis."
+      ]
+    },
+    {
+      "id": "MEDICAL-C045",
+      "unit_id": "MED-201-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Confirmación» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Confirmación» en esta unidad?",
+        "Selecciona la definición correcta de «Confirmación»."
+      ],
+      "answer_display_es": "Verifica recepción, comprensión o resultado en los puntos donde un error tendría consecuencias operativas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Verifica recepción, comprensión o resultado en los puntos donde un error tendría consecuencias operativas."
+      ]
+    },
+    {
+      "id": "MEDICAL-C046",
+      "unit_id": "MED-201-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Indicación» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Indicación» en esta unidad?",
+        "Selecciona la definición correcta de «Indicación»."
+      ],
+      "answer_display_es": "Es la razón clínica que justifica un tratamiento para un problema concreto.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Es la razón clínica que justifica un tratamiento para un problema concreto."
+      ]
+    },
+    {
+      "id": "MEDICAL-C047",
+      "unit_id": "MED-201-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Contraindicación» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Contraindicación» en esta unidad?",
+        "Selecciona la definición correcta de «Contraindicación»."
+      ],
+      "answer_display_es": "Es una condición que aumenta riesgo o hace inapropiado un tratamiento.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Es una condición que aumenta riesgo o hace inapropiado un tratamiento."
+      ]
+    },
+    {
+      "id": "MEDICAL-C048",
+      "unit_id": "MED-201-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Monitorización» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Monitorización» en esta unidad?",
+        "Selecciona la definición correcta de «Monitorización»."
+      ],
+      "answer_display_es": "Comprueba respuesta y detecta deterioro o efectos adversos tras una intervención.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Comprueba respuesta y detecta deterioro o efectos adversos tras una intervención."
+      ]
+    },
+    {
+      "id": "MEDICAL-C049",
+      "unit_id": "MED-202-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Variación» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Variación» en esta unidad?",
+        "Selecciona la definición correcta de «Variación»."
+      ],
+      "answer_display_es": "Reconoce diferencias fisiológicas relevantes dentro y entre especies.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Reconoce diferencias fisiológicas relevantes dentro y entre especies."
+      ]
+    },
+    {
+      "id": "MEDICAL-C050",
+      "unit_id": "MED-202-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Riesgo» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Riesgo» en esta unidad?",
+        "Selecciona la definición correcta de «Riesgo»."
+      ],
+      "answer_display_es": "Combina probabilidad, impacto y exposición y se compara con autoridad, misión y alternativas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Combina probabilidad, impacto y exposición y se compara con autoridad, misión y alternativas."
+      ]
+    },
+    {
+      "id": "MEDICAL-C051",
+      "unit_id": "MED-202-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «No extrapolación» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «No extrapolación» en esta unidad?",
+        "Selecciona la definición correcta de «No extrapolación»."
+      ],
+      "answer_display_es": "Impide asumir que una respuesta humana o de otra especie es válida sin evidencia.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Impide asumir que una respuesta humana o de otra especie es válida sin evidencia."
+      ]
+    },
+    {
+      "id": "MEDICAL-C052",
+      "unit_id": "MED-202-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Triaje» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Triaje» en esta unidad?",
+        "Selecciona la definición correcta de «Triaje»."
+      ],
+      "answer_display_es": "Prioriza atención según gravedad, urgencia, beneficio probable y recursos disponibles.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Prioriza atención según gravedad, urgencia, beneficio probable y recursos disponibles."
+      ]
+    },
+    {
+      "id": "MEDICAL-C053",
+      "unit_id": "MED-202-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Estabilización» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Estabilización» en esta unidad?",
+        "Selecciona la definición correcta de «Estabilización»."
+      ],
+      "answer_display_es": "Protege funciones vitales y evita deterioro antes de completar diagnóstico o tratamiento definitivo.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Protege funciones vitales y evita deterioro antes de completar diagnóstico o tratamiento definitivo."
+      ]
+    },
+    {
+      "id": "MEDICAL-C054",
+      "unit_id": "MED-202-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Prioridad» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Prioridad» en esta unidad?",
+        "Selecciona la definición correcta de «Prioridad»."
+      ],
+      "answer_display_es": "prioridad organiza la respuesta comparando seguridad, misión, tiempo e impacto.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "prioridad organiza la respuesta comparando seguridad, misión, tiempo e impacto."
+      ]
+    },
+    {
+      "id": "MEDICAL-C055",
+      "unit_id": "MED-202-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Capacidad» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Capacidad» en esta unidad?",
+        "Selecciona la definición correcta de «Capacidad»."
+      ],
+      "answer_display_es": "Describe qué puede hacer realmente un sistema o equipo en su estado actual.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Describe qué puede hacer realmente un sistema o equipo en su estado actual."
+      ]
+    },
+    {
+      "id": "MEDICAL-C056",
+      "unit_id": "MED-202-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Prioridad» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Prioridad» en esta unidad?",
+        "Selecciona la definición correcta de «Prioridad»."
+      ],
+      "answer_display_es": "prioridad organiza la respuesta comparando seguridad, misión, tiempo e impacto.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "prioridad organiza la respuesta comparando seguridad, misión, tiempo e impacto."
+      ]
+    },
+    {
+      "id": "MEDICAL-C057",
+      "unit_id": "MED-202-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Equipo» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Equipo» en esta unidad?",
+        "Selecciona la definición correcta de «Equipo»."
+      ],
+      "answer_display_es": "Se organiza por función, competencia, comunicación y responsabilidad.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Se organiza por función, competencia, comunicación y responsabilidad."
+      ]
+    },
+    {
+      "id": "MEDICAL-C058",
+      "unit_id": "MED-202-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Consentimiento» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Consentimiento» en esta unidad?",
+        "Selecciona la definición correcta de «Consentimiento»."
+      ],
+      "answer_display_es": "Exige capacidad e información suficientes salvo excepciones justificadas por emergencia o normativa.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Exige capacidad e información suficientes salvo excepciones justificadas por emergencia o normativa."
+      ]
+    },
+    {
+      "id": "MEDICAL-C059",
+      "unit_id": "MED-202-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Confidencialidad» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Confidencialidad» en esta unidad?",
+        "Selecciona la definición correcta de «Confidencialidad»."
+      ],
+      "answer_display_es": "Restringe información clínica a usos y personas autorizadas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Restringe información clínica a usos y personas autorizadas."
+      ]
+    },
+    {
+      "id": "MEDICAL-C060",
+      "unit_id": "MED-202-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Autoridad médica» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Autoridad médica» en esta unidad?",
+        "Selecciona la definición correcta de «Autoridad médica»."
+      ],
+      "answer_display_es": "Permite decisiones clínicas dentro de competencia profesional y obligaciones de seguridad.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Permite decisiones clínicas dentro de competencia profesional y obligaciones de seguridad."
+      ]
+    },
+    {
+      "id": "MEDICAL-C061",
+      "unit_id": "MED-203-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Pacientes» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Pacientes» en esta unidad?",
+        "Selecciona la definición correcta de «Pacientes»."
+      ],
+      "answer_display_es": "Se gestionan individualmente, conservando identificación, prioridad, estado y continuidad asistencial.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Se gestionan individualmente, conservando identificación, prioridad, estado y continuidad asistencial."
+      ]
+    },
+    {
+      "id": "MEDICAL-C062",
+      "unit_id": "MED-203-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Rutina» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Rutina» en esta unidad?",
+        "Selecciona la definición correcta de «Rutina»."
+      ],
+      "answer_display_es": "rutina en Medicina se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "rutina en Medicina se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "MEDICAL-C063",
+      "unit_id": "MED-203-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Registro» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Registro» en esta unidad?",
+        "Selecciona la definición correcta de «Registro»."
+      ],
+      "answer_display_es": "registro preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "registro preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes."
+      ]
+    },
+    {
+      "id": "MEDICAL-C064",
+      "unit_id": "MED-203-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Evaluación» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Evaluación» en esta unidad?",
+        "Selecciona la definición correcta de «Evaluación»."
+      ],
+      "answer_display_es": "evaluación en Medicina se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "evaluación en Medicina se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "MEDICAL-C065",
+      "unit_id": "MED-203-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Diagnóstico» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Diagnóstico» en esta unidad?",
+        "Selecciona la definición correcta de «Diagnóstico»."
+      ],
+      "answer_display_es": "Relaciona síntomas con causas posibles y usa pruebas para reducir incertidumbre antes de intervenir.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Relaciona síntomas con causas posibles y usa pruebas para reducir incertidumbre antes de intervenir."
+      ]
+    },
+    {
+      "id": "MEDICAL-C066",
+      "unit_id": "MED-203-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Tratamiento» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Tratamiento» en esta unidad?",
+        "Selecciona la definición correcta de «Tratamiento»."
+      ],
+      "answer_display_es": "tratamiento en Medicina se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "tratamiento en Medicina se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "MEDICAL-C067",
+      "unit_id": "MED-203-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Mando» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Mando» en esta unidad?",
+        "Selecciona la definición correcta de «Mando»."
+      ],
+      "answer_display_es": "mando en Medicina se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "mando en Medicina se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "MEDICAL-C068",
+      "unit_id": "MED-203-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Seguridad» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Seguridad» en esta unidad?",
+        "Selecciona la definición correcta de «Seguridad»."
+      ],
+      "answer_display_es": "Limita cualquier procedimiento y exige identificar peligros, protecciones y condición de aborto.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Limita cualquier procedimiento y exige identificar peligros, protecciones y condición de aborto."
+      ]
+    },
+    {
+      "id": "MEDICAL-C069",
+      "unit_id": "MED-203-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Recursos» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Recursos» en esta unidad?",
+        "Selecciona la definición correcta de «Recursos»."
+      ],
+      "answer_display_es": "Incluyen tiempo, energía, personal, capacidad y atención; no pueden asignarse dos veces sin mostrar el conflicto.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Incluyen tiempo, energía, personal, capacidad y atención; no pueden asignarse dos veces sin mostrar el conflicto."
+      ]
+    },
+    {
+      "id": "MEDICAL-C070",
+      "unit_id": "MED-203-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Seguridad» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Seguridad» en esta unidad?",
+        "Selecciona la definición correcta de «Seguridad»."
+      ],
+      "answer_display_es": "Limita cualquier procedimiento y exige identificar peligros, protecciones y condición de aborto.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Limita cualquier procedimiento y exige identificar peligros, protecciones y condición de aborto."
+      ]
+    },
+    {
+      "id": "MEDICAL-C071",
+      "unit_id": "MED-203-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Razonamiento» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Razonamiento» en esta unidad?",
+        "Selecciona la definición correcta de «Razonamiento»."
+      ],
+      "answer_display_es": "razonamiento en Medicina se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "razonamiento en Medicina se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "MEDICAL-C072",
+      "unit_id": "MED-203-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Comunicación» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Comunicación» en esta unidad?",
+        "Selecciona la definición correcta de «Comunicación»."
+      ],
+      "answer_display_es": "comunicación preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "comunicación preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes."
+      ]
+    }
+  ],
+  "legacy_year4_questions": [
     {
       "id": "MEDICAL-Q037",
       "course_id": "MED-101",
@@ -776,12 +1594,5 @@
         "feedback"
       ]
     }
-  ],
-  "year3_status": "editorially_aligned_with_developed_year3_branch_material",
-  "year3_rule": "Only concepts explicitly taught in the 201–203 branch stages or established prerequisites may be required.",
-  "year3_courses": [
-    "MED-201",
-    "MED-202",
-    "MED-203"
   ]
 }

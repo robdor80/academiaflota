@@ -1,15 +1,45 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.1.0",
   "branch_id": "security_tactical",
-  "status": "generated_from_authoritative_branch_curriculum",
-  "question_count": 60,
-  "questions": [
+  "status": "concept_driven_autocorrectable_v2_1",
+  "scope": "year3_201_203_only",
+  "source_bank": "question_bank_v1_0.json",
+  "year3_courses": [
+    "SEC-201",
+    "SEC-202",
+    "SEC-203"
+  ],
+  "year3_status": "developed_and_synced_v2_1",
+  "policy": {
+    "theory_formats": [
+      "multiple_choice",
+      "short_answer"
+    ],
+    "deterministic_correction": true,
+    "web_and_game_share_concepts_not_question_instances": true,
+    "complex_judgment_moves_to_practice_and_simulation": true,
+    "source_rule": "Every evaluated concept must be explicitly taught in the branch material or an established prerequisite."
+  },
+  "unit_review": {
+    "questions_per_attempt": 5,
+    "reshuffle_each_attempt": true,
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
+  },
+  "concepts": [
     {
-      "id": "SECURITY_TACTICAL-Q001",
-      "course_id": "SEC-201",
+      "id": "SECURITY_TACTICAL-C001",
       "unit_id": "SEC-201-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica escudos desde la perspectiva de Seguridad / Táctica: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente escudos desde la perspectiva de Seguridad / Táctica?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente escudos desde la perspectiva de Seguridad / Táctica?",
+        "Explica escudos desde la perspectiva de Seguridad / Táctica: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "escudos · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "escudos",
         "aplicación",
@@ -17,11 +47,17 @@
       ]
     },
     {
-      "id": "SECURITY_TACTICAL-Q002",
-      "course_id": "SEC-201",
+      "id": "SECURITY_TACTICAL-C002",
       "unit_id": "SEC-201-U01",
-      "type": "scenario",
-      "prompt_es": "Familiarización. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Familiarización»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Familiarización»?",
+        "Familiarización. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -30,11 +66,17 @@
       ]
     },
     {
-      "id": "SECURITY_TACTICAL-Q003",
-      "course_id": "SEC-201",
+      "id": "SECURITY_TACTICAL-C003",
       "unit_id": "SEC-201-U01",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Sistemas defensivos para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Sistemas defensivos?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Sistemas defensivos?",
+        "¿Qué evidencia conservarías tras Sistemas defensivos para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -44,11 +86,17 @@
       ]
     },
     {
-      "id": "SECURITY_TACTICAL-Q004",
-      "course_id": "SEC-201",
+      "id": "SECURITY_TACTICAL-C004",
       "unit_id": "SEC-201-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica capacidad desde la perspectiva de Seguridad / Táctica: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente capacidad desde la perspectiva de Seguridad / Táctica?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente capacidad desde la perspectiva de Seguridad / Táctica?",
+        "Explica capacidad desde la perspectiva de Seguridad / Táctica: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "capacidad · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "capacidad",
         "aplicación",
@@ -56,11 +104,17 @@
       ]
     },
     {
-      "id": "SECURITY_TACTICAL-Q005",
-      "course_id": "SEC-201",
+      "id": "SECURITY_TACTICAL-C005",
       "unit_id": "SEC-201-U02",
-      "type": "scenario",
-      "prompt_es": "Clasificar contacto. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Clasificar contacto»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Clasificar contacto»?",
+        "Clasificar contacto. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -69,11 +123,17 @@
       ]
     },
     {
-      "id": "SECURITY_TACTICAL-Q006",
-      "course_id": "SEC-201",
+      "id": "SECURITY_TACTICAL-C006",
       "unit_id": "SEC-201-U02",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Análisis de amenaza para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Análisis de amenaza?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Análisis de amenaza?",
+        "¿Qué evidencia conservarías tras Análisis de amenaza para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -83,11 +143,17 @@
       ]
     },
     {
-      "id": "SECURITY_TACTICAL-Q007",
-      "course_id": "SEC-201",
+      "id": "SECURITY_TACTICAL-C007",
       "unit_id": "SEC-201-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica accesos desde la perspectiva de Seguridad / Táctica: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente accesos desde la perspectiva de Seguridad / Táctica?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente accesos desde la perspectiva de Seguridad / Táctica?",
+        "Explica accesos desde la perspectiva de Seguridad / Táctica: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "accesos · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "accesos",
         "aplicación",
@@ -95,11 +161,17 @@
       ]
     },
     {
-      "id": "SECURITY_TACTICAL-Q008",
-      "course_id": "SEC-201",
+      "id": "SECURITY_TACTICAL-C008",
       "unit_id": "SEC-201-U03",
-      "type": "scenario",
-      "prompt_es": "Simulación. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Simulación»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Simulación»?",
+        "Simulación. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -108,11 +180,17 @@
       ]
     },
     {
-      "id": "SECURITY_TACTICAL-Q009",
-      "course_id": "SEC-201",
+      "id": "SECURITY_TACTICAL-C009",
       "unit_id": "SEC-201-U03",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Seguridad interna para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Seguridad interna?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Seguridad interna?",
+        "¿Qué evidencia conservarías tras Seguridad interna para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -122,11 +200,17 @@
       ]
     },
     {
-      "id": "SECURITY_TACTICAL-Q010",
-      "course_id": "SEC-201",
+      "id": "SECURITY_TACTICAL-C010",
       "unit_id": "SEC-201-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica autoridad desde la perspectiva de Seguridad / Táctica: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente autoridad desde la perspectiva de Seguridad / Táctica?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente autoridad desde la perspectiva de Seguridad / Táctica?",
+        "Explica autoridad desde la perspectiva de Seguridad / Táctica: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "autoridad · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "autoridad",
         "aplicación",
@@ -134,11 +218,17 @@
       ]
     },
     {
-      "id": "SECURITY_TACTICAL-Q011",
-      "course_id": "SEC-201",
+      "id": "SECURITY_TACTICAL-C011",
       "unit_id": "SEC-201-U04",
-      "type": "scenario",
-      "prompt_es": "Caso situacional. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Caso situacional»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Caso situacional»?",
+        "Caso situacional. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -147,11 +237,17 @@
       ]
     },
     {
-      "id": "SECURITY_TACTICAL-Q012",
-      "course_id": "SEC-201",
+      "id": "SECURITY_TACTICAL-C012",
       "unit_id": "SEC-201-U04",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Uso proporcional de fuerza para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Uso proporcional de fuerza?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Uso proporcional de fuerza?",
+        "¿Qué evidencia conservarías tras Uso proporcional de fuerza para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -161,11 +257,17 @@
       ]
     },
     {
-      "id": "SECURITY_TACTICAL-Q013",
-      "course_id": "SEC-202",
+      "id": "SECURITY_TACTICAL-C013",
       "unit_id": "SEC-202-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica posición desde la perspectiva de Seguridad / Táctica: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente posición desde la perspectiva de Seguridad / Táctica?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente posición desde la perspectiva de Seguridad / Táctica?",
+        "Explica posición desde la perspectiva de Seguridad / Táctica: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "posición · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "posición",
         "aplicación",
@@ -173,11 +275,17 @@
       ]
     },
     {
-      "id": "SECURITY_TACTICAL-Q014",
-      "course_id": "SEC-202",
+      "id": "SECURITY_TACTICAL-C014",
       "unit_id": "SEC-202-U01",
-      "type": "scenario",
-      "prompt_es": "Simulación. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Simulación»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Simulación»?",
+        "Simulación. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -186,11 +294,17 @@
       ]
     },
     {
-      "id": "SECURITY_TACTICAL-Q015",
-      "course_id": "SEC-202",
+      "id": "SECURITY_TACTICAL-C015",
       "unit_id": "SEC-202-U01",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Táctica defensiva para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Táctica defensiva?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Táctica defensiva?",
+        "¿Qué evidencia conservarías tras Táctica defensiva para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -200,11 +314,17 @@
       ]
     },
     {
-      "id": "SECURITY_TACTICAL-Q016",
-      "course_id": "SEC-202",
+      "id": "SECURITY_TACTICAL-C016",
       "unit_id": "SEC-202-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica detección desde la perspectiva de Seguridad / Táctica: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente detección desde la perspectiva de Seguridad / Táctica?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente detección desde la perspectiva de Seguridad / Táctica?",
+        "Explica detección desde la perspectiva de Seguridad / Táctica: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "detección · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "detección",
         "aplicación",
@@ -212,11 +332,17 @@
       ]
     },
     {
-      "id": "SECURITY_TACTICAL-Q017",
-      "course_id": "SEC-202",
+      "id": "SECURITY_TACTICAL-C017",
       "unit_id": "SEC-202-U02",
-      "type": "scenario",
-      "prompt_es": "Ejercicio. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Ejercicio»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Ejercicio»?",
+        "Ejercicio. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -225,11 +351,17 @@
       ]
     },
     {
-      "id": "SECURITY_TACTICAL-Q018",
-      "course_id": "SEC-202",
+      "id": "SECURITY_TACTICAL-C018",
       "unit_id": "SEC-202-U02",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Respuesta a abordaje para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Respuesta a abordaje?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Respuesta a abordaje?",
+        "¿Qué evidencia conservarías tras Respuesta a abordaje para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -239,11 +371,17 @@
       ]
     },
     {
-      "id": "SECURITY_TACTICAL-Q019",
-      "course_id": "SEC-202",
+      "id": "SECURITY_TACTICAL-C019",
       "unit_id": "SEC-202-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica prioridad desde la perspectiva de Seguridad / Táctica: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente prioridad desde la perspectiva de Seguridad / Táctica?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente prioridad desde la perspectiva de Seguridad / Táctica?",
+        "Explica prioridad desde la perspectiva de Seguridad / Táctica: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "prioridad · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "prioridad",
         "aplicación",
@@ -251,11 +389,17 @@
       ]
     },
     {
-      "id": "SECURITY_TACTICAL-Q020",
-      "course_id": "SEC-202",
+      "id": "SECURITY_TACTICAL-C020",
       "unit_id": "SEC-202-U03",
-      "type": "scenario",
-      "prompt_es": "Escenario. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Escenario»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Escenario»?",
+        "Escenario. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -264,11 +408,17 @@
       ]
     },
     {
-      "id": "SECURITY_TACTICAL-Q021",
-      "course_id": "SEC-202",
+      "id": "SECURITY_TACTICAL-C021",
       "unit_id": "SEC-202-U03",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Amenazas múltiples para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Amenazas múltiples?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Amenazas múltiples?",
+        "¿Qué evidencia conservarías tras Amenazas múltiples para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -278,11 +428,17 @@
       ]
     },
     {
-      "id": "SECURITY_TACTICAL-Q022",
-      "course_id": "SEC-202",
+      "id": "SECURITY_TACTICAL-C022",
       "unit_id": "SEC-202-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica roles desde la perspectiva de Seguridad / Táctica: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente roles desde la perspectiva de Seguridad / Táctica?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente roles desde la perspectiva de Seguridad / Táctica?",
+        "Explica roles desde la perspectiva de Seguridad / Táctica: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "roles · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "roles",
         "aplicación",
@@ -290,11 +446,17 @@
       ]
     },
     {
-      "id": "SECURITY_TACTICAL-Q023",
-      "course_id": "SEC-202",
+      "id": "SECURITY_TACTICAL-C023",
       "unit_id": "SEC-202-U04",
-      "type": "scenario",
-      "prompt_es": "Dirigir célula. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Dirigir célula»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Dirigir célula»?",
+        "Dirigir célula. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -303,11 +465,17 @@
       ]
     },
     {
-      "id": "SECURITY_TACTICAL-Q024",
-      "course_id": "SEC-202",
+      "id": "SECURITY_TACTICAL-C024",
       "unit_id": "SEC-202-U04",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Equipo de seguridad para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Equipo de seguridad?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Equipo de seguridad?",
+        "¿Qué evidencia conservarías tras Equipo de seguridad para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -317,11 +485,17 @@
       ]
     },
     {
-      "id": "SECURITY_TACTICAL-Q025",
-      "course_id": "SEC-203",
+      "id": "SECURITY_TACTICAL-C025",
       "unit_id": "SEC-203-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica estado desde la perspectiva de Seguridad / Táctica: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente estado desde la perspectiva de Seguridad / Táctica?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente estado desde la perspectiva de Seguridad / Táctica?",
+        "Explica estado desde la perspectiva de Seguridad / Táctica: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "estado · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estado",
         "aplicación",
@@ -329,11 +503,17 @@
       ]
     },
     {
-      "id": "SECURITY_TACTICAL-Q026",
-      "course_id": "SEC-203",
+      "id": "SECURITY_TACTICAL-C026",
       "unit_id": "SEC-203-U01",
-      "type": "scenario",
-      "prompt_es": "Turno supervisado. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Turno supervisado»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Turno supervisado»?",
+        "Turno supervisado. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -342,11 +522,17 @@
       ]
     },
     {
-      "id": "SECURITY_TACTICAL-Q027",
-      "course_id": "SEC-203",
+      "id": "SECURITY_TACTICAL-C027",
       "unit_id": "SEC-203-U01",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Guardia táctica para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Guardia táctica?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Guardia táctica?",
+        "¿Qué evidencia conservarías tras Guardia táctica para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -356,11 +542,17 @@
       ]
     },
     {
-      "id": "SECURITY_TACTICAL-Q028",
-      "course_id": "SEC-203",
+      "id": "SECURITY_TACTICAL-C028",
       "unit_id": "SEC-203-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica amenaza desde la perspectiva de Seguridad / Táctica: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente amenaza desde la perspectiva de Seguridad / Táctica?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente amenaza desde la perspectiva de Seguridad / Táctica?",
+        "Explica amenaza desde la perspectiva de Seguridad / Táctica: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "amenaza · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "amenaza",
         "aplicación",
@@ -368,11 +560,17 @@
       ]
     },
     {
-      "id": "SECURITY_TACTICAL-Q029",
-      "course_id": "SEC-203",
+      "id": "SECURITY_TACTICAL-C029",
       "unit_id": "SEC-203-U02",
-      "type": "scenario",
-      "prompt_es": "Diseñar plan. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Diseñar plan»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Diseñar plan»?",
+        "Diseñar plan. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -381,11 +579,17 @@
       ]
     },
     {
-      "id": "SECURITY_TACTICAL-Q030",
-      "course_id": "SEC-203",
+      "id": "SECURITY_TACTICAL-C030",
       "unit_id": "SEC-203-U02",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Plan de seguridad para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Plan de seguridad?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Plan de seguridad?",
+        "¿Qué evidencia conservarías tras Plan de seguridad para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -395,11 +599,17 @@
       ]
     },
     {
-      "id": "SECURITY_TACTICAL-Q031",
-      "course_id": "SEC-203",
+      "id": "SECURITY_TACTICAL-C031",
       "unit_id": "SEC-203-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica externo desde la perspectiva de Seguridad / Táctica: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente externo desde la perspectiva de Seguridad / Táctica?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente externo desde la perspectiva de Seguridad / Táctica?",
+        "Explica externo desde la perspectiva de Seguridad / Táctica: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "externo · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "externo",
         "aplicación",
@@ -407,11 +617,17 @@
       ]
     },
     {
-      "id": "SECURITY_TACTICAL-Q032",
-      "course_id": "SEC-203",
+      "id": "SECURITY_TACTICAL-C032",
       "unit_id": "SEC-203-U03",
-      "type": "scenario",
-      "prompt_es": "Simulación. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Simulación»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Simulación»?",
+        "Simulación. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -420,11 +636,17 @@
       ]
     },
     {
-      "id": "SECURITY_TACTICAL-Q033",
-      "course_id": "SEC-203",
+      "id": "SECURITY_TACTICAL-C033",
       "unit_id": "SEC-203-U03",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Incidente complejo para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Incidente complejo?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Incidente complejo?",
+        "¿Qué evidencia conservarías tras Incidente complejo para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -434,11 +656,17 @@
       ]
     },
     {
-      "id": "SECURITY_TACTICAL-Q034",
-      "course_id": "SEC-203",
+      "id": "SECURITY_TACTICAL-C034",
       "unit_id": "SEC-203-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica disciplina desde la perspectiva de Seguridad / Táctica: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente disciplina desde la perspectiva de Seguridad / Táctica?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente disciplina desde la perspectiva de Seguridad / Táctica?",
+        "Explica disciplina desde la perspectiva de Seguridad / Táctica: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "disciplina · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "disciplina",
         "aplicación",
@@ -446,11 +674,17 @@
       ]
     },
     {
-      "id": "SECURITY_TACTICAL-Q035",
-      "course_id": "SEC-203",
+      "id": "SECURITY_TACTICAL-C035",
       "unit_id": "SEC-203-U04",
-      "type": "scenario",
-      "prompt_es": "Evaluación integrada. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Evaluación integrada»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Evaluación integrada»?",
+        "Evaluación integrada. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -459,11 +693,17 @@
       ]
     },
     {
-      "id": "SECURITY_TACTICAL-Q036",
-      "course_id": "SEC-203",
+      "id": "SECURITY_TACTICAL-C036",
       "unit_id": "SEC-203-U04",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Cualificación intermedia para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Cualificación intermedia?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Cualificación intermedia?",
+        "¿Qué evidencia conservarías tras Cualificación intermedia para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -472,6 +712,584 @@
         "feedback o pendientes"
       ]
     },
+    {
+      "id": "SECURITY_TACTICAL-C037",
+      "unit_id": "SEC-201-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Escudos» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Escudos» en esta unidad?",
+        "Selecciona la definición correcta de «Escudos»."
+      ],
+      "answer_display_es": "Son una capacidad defensiva cuyo estado, cobertura y disponibilidad deben conocerse antes de asumir protección.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Son una capacidad defensiva cuyo estado, cobertura y disponibilidad deben conocerse antes de asumir protección."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C038",
+      "unit_id": "SEC-201-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Armamento» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Armamento» en esta unidad?",
+        "Selecciona la definición correcta de «Armamento»."
+      ],
+      "answer_display_es": "Se opera solo bajo autoridad y reglas aplicables, con estado y disponibilidad conocidos.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Se opera solo bajo autoridad y reglas aplicables, con estado y disponibilidad conocidos."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C039",
+      "unit_id": "SEC-201-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Estado» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Estado» en esta unidad?",
+        "Selecciona la definición correcta de «Estado»."
+      ],
+      "answer_display_es": "Fija la condición real de partida y debe actualizarse cuando cambian sistemas, personas o entorno.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Fija la condición real de partida y debe actualizarse cuando cambian sistemas, personas o entorno."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C040",
+      "unit_id": "SEC-201-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Capacidad» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Capacidad» en esta unidad?",
+        "Selecciona la definición correcta de «Capacidad»."
+      ],
+      "answer_display_es": "Describe qué puede hacer realmente un sistema o equipo en su estado actual.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Describe qué puede hacer realmente un sistema o equipo en su estado actual."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C041",
+      "unit_id": "SEC-201-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Intención» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Intención» en esta unidad?",
+        "Selecciona la definición correcta de «Intención»."
+      ],
+      "answer_display_es": "Expresa el efecto que se quiere conseguir y permite adaptar la ejecución sin perder el propósito de la orden.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Expresa el efecto que se quiere conseguir y permite adaptar la ejecución sin perder el propósito de la orden."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C042",
+      "unit_id": "SEC-201-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Posición» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Posición» en esta unidad?",
+        "Selecciona la definición correcta de «Posición»."
+      ],
+      "answer_display_es": "Modifica exposición, opciones y capacidad de proteger o responder.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Modifica exposición, opciones y capacidad de proteger o responder."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C043",
+      "unit_id": "SEC-201-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Accesos» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Accesos» en esta unidad?",
+        "Selecciona la definición correcta de «Accesos»."
+      ],
+      "answer_display_es": "Se controlan según autorización, necesidad y situación de seguridad.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Se controlan según autorización, necesidad y situación de seguridad."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C044",
+      "unit_id": "SEC-201-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Patrulla» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Patrulla» en esta unidad?",
+        "Selecciona la definición correcta de «Patrulla»."
+      ],
+      "answer_display_es": "Mantiene presencia, observación y capacidad de respuesta sin sustituir un objetivo definido.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Mantiene presencia, observación y capacidad de respuesta sin sustituir un objetivo definido."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C045",
+      "unit_id": "SEC-201-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Incidente» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Incidente» en esta unidad?",
+        "Selecciona la definición correcta de «Incidente»."
+      ],
+      "answer_display_es": "Exige detección, evaluación, acción proporcional, escalado y seguimiento.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Exige detección, evaluación, acción proporcional, escalado y seguimiento."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C046",
+      "unit_id": "SEC-201-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Autoridad» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Autoridad» en esta unidad?",
+        "Selecciona la definición correcta de «Autoridad»."
+      ],
+      "answer_display_es": "Delimita quién puede ordenar, aprobar o modificar una acción; debe estar clara antes de comprometer personas o sistemas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Delimita quién puede ordenar, aprobar o modificar una acción; debe estar clara antes de comprometer personas o sistemas."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C047",
+      "unit_id": "SEC-201-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Escalada» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Escalada» en esta unidad?",
+        "Selecciona la definición correcta de «Escalada»."
+      ],
+      "answer_display_es": "Aumenta nivel de respuesta solo cuando la situación lo requiere y debe poder justificarse.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Aumenta nivel de respuesta solo cuando la situación lo requiere y debe poder justificarse."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C048",
+      "unit_id": "SEC-201-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Alternativas» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Alternativas» en esta unidad?",
+        "Selecciona la definición correcta de «Alternativas»."
+      ],
+      "answer_display_es": "Se comparan por viabilidad, riesgo, recursos, reversibilidad y efecto en misión.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Se comparan por viabilidad, riesgo, recursos, reversibilidad y efecto en misión."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C049",
+      "unit_id": "SEC-202-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Posición» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Posición» en esta unidad?",
+        "Selecciona la definición correcta de «Posición»."
+      ],
+      "answer_display_es": "Modifica exposición, opciones y capacidad de proteger o responder.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Modifica exposición, opciones y capacidad de proteger o responder."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C050",
+      "unit_id": "SEC-202-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Escudos» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Escudos» en esta unidad?",
+        "Selecciona la definición correcta de «Escudos»."
+      ],
+      "answer_display_es": "Son una capacidad defensiva cuyo estado, cobertura y disponibilidad deben conocerse antes de asumir protección.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Son una capacidad defensiva cuyo estado, cobertura y disponibilidad deben conocerse antes de asumir protección."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C051",
+      "unit_id": "SEC-202-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Maniobra» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Maniobra» en esta unidad?",
+        "Selecciona la definición correcta de «Maniobra»."
+      ],
+      "answer_display_es": "maniobra en Seguridad / Táctica se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "maniobra en Seguridad / Táctica se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C052",
+      "unit_id": "SEC-202-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Detección» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Detección» en esta unidad?",
+        "Selecciona la definición correcta de «Detección»."
+      ],
+      "answer_display_es": "Reconoce una amenaza o desviación con datos suficientes para iniciar una respuesta.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Reconoce una amenaza o desviación con datos suficientes para iniciar una respuesta."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C053",
+      "unit_id": "SEC-202-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Contención» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Contención» en esta unidad?",
+        "Selecciona la definición correcta de «Contención»."
+      ],
+      "answer_display_es": "Limita movimiento, propagación o impacto mientras se organiza una solución definitiva.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Limita movimiento, propagación o impacto mientras se organiza una solución definitiva."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C054",
+      "unit_id": "SEC-202-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Equipo» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Equipo» en esta unidad?",
+        "Selecciona la definición correcta de «Equipo»."
+      ],
+      "answer_display_es": "Se organiza por función, competencia, comunicación y responsabilidad.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Se organiza por función, competencia, comunicación y responsabilidad."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C055",
+      "unit_id": "SEC-202-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Prioridad» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Prioridad» en esta unidad?",
+        "Selecciona la definición correcta de «Prioridad»."
+      ],
+      "answer_display_es": "prioridad organiza la respuesta comparando seguridad, misión, tiempo e impacto.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "prioridad organiza la respuesta comparando seguridad, misión, tiempo e impacto."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C056",
+      "unit_id": "SEC-202-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Protección» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Protección» en esta unidad?",
+        "Selecciona la definición correcta de «Protección»."
+      ],
+      "answer_display_es": "Prioriza reducir daño a personas y funciones críticas mediante medidas proporcionales.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Prioriza reducir daño a personas y funciones críticas mediante medidas proporcionales."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C057",
+      "unit_id": "SEC-202-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Misión» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Misión» en esta unidad?",
+        "Selecciona la definición correcta de «Misión»."
+      ],
+      "answer_display_es": "Define el propósito y las restricciones que permiten priorizar opciones.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Define el propósito y las restricciones que permiten priorizar opciones."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C058",
+      "unit_id": "SEC-202-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Roles» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Roles» en esta unidad?",
+        "Selecciona la definición correcta de «Roles»."
+      ],
+      "answer_display_es": "Delimitan responsabilidad y autoridad dentro del equipo.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Delimitan responsabilidad y autoridad dentro del equipo."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C059",
+      "unit_id": "SEC-202-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Comunicación» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Comunicación» en esta unidad?",
+        "Selecciona la definición correcta de «Comunicación»."
+      ],
+      "answer_display_es": "comunicación preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "comunicación preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C060",
+      "unit_id": "SEC-202-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Detención» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Detención» en esta unidad?",
+        "Selecciona la definición correcta de «Detención»."
+      ],
+      "answer_display_es": "Debe ajustarse a autoridad, necesidad, seguridad y proporcionalidad.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Debe ajustarse a autoridad, necesidad, seguridad y proporcionalidad."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C061",
+      "unit_id": "SEC-203-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Estado» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Estado» en esta unidad?",
+        "Selecciona la definición correcta de «Estado»."
+      ],
+      "answer_display_es": "Fija la condición real de partida y debe actualizarse cuando cambian sistemas, personas o entorno.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Fija la condición real de partida y debe actualizarse cuando cambian sistemas, personas o entorno."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C062",
+      "unit_id": "SEC-203-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Contactos» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Contactos» en esta unidad?",
+        "Selecciona la definición correcta de «Contactos»."
+      ],
+      "answer_display_es": "contactos en Seguridad / Táctica se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "contactos en Seguridad / Táctica se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C063",
+      "unit_id": "SEC-203-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Reglas» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Reglas» en esta unidad?",
+        "Selecciona la definición correcta de «Reglas»."
+      ],
+      "answer_display_es": "Fijan restricciones legales, de seguridad o procedimiento que no desaparecen por urgencia.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Fijan restricciones legales, de seguridad o procedimiento que no desaparecen por urgencia."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C064",
+      "unit_id": "SEC-203-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Amenaza» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Amenaza» en esta unidad?",
+        "Selecciona la definición correcta de «Amenaza»."
+      ],
+      "answer_display_es": "amenaza se evalúa por probabilidad, impacto, exposición y mitigación antes de comprometer la operación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "amenaza se evalúa por probabilidad, impacto, exposición y mitigación antes de comprometer la operación."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C065",
+      "unit_id": "SEC-203-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Zonas» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Zonas» en esta unidad?",
+        "Selecciona la definición correcta de «Zonas»."
+      ],
+      "answer_display_es": "Representan regiones con reglas, riesgos o condiciones que afectan la planificación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Representan regiones con reglas, riesgos o condiciones que afectan la planificación."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C066",
+      "unit_id": "SEC-203-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Personal» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Personal» en esta unidad?",
+        "Selecciona la definición correcta de «Personal»."
+      ],
+      "answer_display_es": "personal se organiza por función, competencia, carga y responsabilidad, con supervisión proporcional al riesgo.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "personal se organiza por función, competencia, carga y responsabilidad, con supervisión proporcional al riesgo."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C067",
+      "unit_id": "SEC-203-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Externo» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Externo» en esta unidad?",
+        "Selecciona la definición correcta de «Externo»."
+      ],
+      "answer_display_es": "externo en Seguridad / Táctica se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "externo en Seguridad / Táctica se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C068",
+      "unit_id": "SEC-203-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Interno» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Interno» en esta unidad?",
+        "Selecciona la definición correcta de «Interno»."
+      ],
+      "answer_display_es": "interno en Seguridad / Táctica se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "interno en Seguridad / Táctica se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C069",
+      "unit_id": "SEC-203-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Coordinación» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Coordinación» en esta unidad?",
+        "Selecciona la definición correcta de «Coordinación»."
+      ],
+      "answer_display_es": "coordinación en Seguridad / Táctica se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "coordinación en Seguridad / Táctica se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C070",
+      "unit_id": "SEC-203-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Disciplina» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Disciplina» en esta unidad?",
+        "Selecciona la definición correcta de «Disciplina»."
+      ],
+      "answer_display_es": "Sostiene procedimientos y comunicación bajo presión sin impedir informar de un riesgo real.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Sostiene procedimientos y comunicación bajo presión sin impedir informar de un riesgo real."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C071",
+      "unit_id": "SEC-203-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Proporcionalidad» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Proporcionalidad» en esta unidad?",
+        "Selecciona la definición correcta de «Proporcionalidad»."
+      ],
+      "answer_display_es": "Ajusta la respuesta a la amenaza y al objetivo, evitando fuerza o riesgo innecesarios.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Ajusta la respuesta a la amenaza y al objetivo, evitando fuerza o riesgo innecesarios."
+      ]
+    },
+    {
+      "id": "SECURITY_TACTICAL-C072",
+      "unit_id": "SEC-203-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Comunicación» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Comunicación» en esta unidad?",
+        "Selecciona la definición correcta de «Comunicación»."
+      ],
+      "answer_display_es": "comunicación preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "comunicación preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes."
+      ]
+    }
+  ],
+  "legacy_year4_questions": [
     {
       "id": "SECURITY_TACTICAL-Q037",
       "course_id": "SEC-101",
@@ -776,12 +1594,5 @@
         "feedback"
       ]
     }
-  ],
-  "year3_status": "editorially_aligned_with_developed_year3_branch_material",
-  "year3_rule": "Only concepts explicitly taught in the 201–203 branch stages or established prerequisites may be required.",
-  "year3_courses": [
-    "SEC-201",
-    "SEC-202",
-    "SEC-203"
   ]
 }

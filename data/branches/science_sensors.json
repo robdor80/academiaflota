@@ -1,7 +1,7 @@
 {
   "subject": "Ciencia / Sensores",
   "code": "SCIENCE_SENSORS",
-  "version": "1.1",
+  "version": "1.2",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/branches/science_sensors/branch_curriculum_v1_0.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/branches/science_sensors/MANUAL_v1_0.md",
@@ -32,10 +32,10 @@
         {
           "type": "bullets",
           "items": [
-            "Objetivo: Define qué fenómeno, contacto o propiedad se intenta observar; de él dependen canales, resolución, alcance y tiempo de barrido.",
-            "Canales: Seleccionan qué familias de señal se adquieren; elegir canales irrelevantes consume tiempo o capacidad sin mejorar la respuesta.",
-            "Resolución: Determina el nivel de detalle de una lectura y suele intercambiarse con alcance, cobertura o tiempo de integración.",
-            "Alcance: Marca hasta qué distancia o volumen una configuración ofrece datos útiles con una confianza determinada."
+            "**Objetivo**: Define qué fenómeno, contacto o propiedad se intenta observar; de él dependen canales, resolución, alcance y tiempo de barrido.",
+            "**Canales**: Seleccionan qué familias de señal se adquieren; elegir canales irrelevantes consume tiempo o capacidad sin mejorar la respuesta.",
+            "**Resolución**: Determina el nivel de detalle de una lectura y suele intercambiarse con alcance, cobertura o tiempo de integración.",
+            "**Alcance**: Marca hasta qué distancia o volumen una configuración ofrece datos útiles con una confianza determinada."
           ]
         },
         {
@@ -47,19 +47,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica objetivo desde la perspectiva de Ciencia / Sensores.",
-            "Resuelve: Configurar barrido.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -96,10 +83,10 @@
         {
           "type": "bullets",
           "items": [
-            "Patrones: Organizan la búsqueda espacial o temporal para cubrir un área sin dejar huecos innecesarios.",
-            "Firmas: Son rasgos medibles usados para detectar o diferenciar objetivos; deben tratarse con confianza y no como identidad automática.",
-            "Filtros: Reducen componentes no deseados de la señal, pero pueden eliminar información útil; su efecto debe quedar documentado.",
-            "Cobertura: Describe qué zona, intervalo o dominio ha sido realmente observado y qué parte sigue sin explorar."
+            "**Patrones**: Organizan la búsqueda espacial o temporal para cubrir un área sin dejar huecos innecesarios.",
+            "**Firmas**: Son rasgos medibles usados para detectar o diferenciar objetivos; deben tratarse con confianza y no como identidad automática.",
+            "**Filtros**: Reducen componentes no deseados de la señal, pero pueden eliminar información útil; su efecto debe quedar documentado.",
+            "**Cobertura**: Describe qué zona, intervalo o dominio ha sido realmente observado y qué parte sigue sin explorar."
           ]
         },
         {
@@ -111,19 +98,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Práctica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica patrones desde la perspectiva de Ciencia / Sensores.",
-            "Resuelve: Localizar objetivo débil.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -160,10 +134,10 @@
         {
           "type": "bullets",
           "items": [
-            "Medidas: Son valores obtenidos del sensor con unidad, contexto y calidad suficientes para poder compararlos.",
-            "Calidad: Expresa fiabilidad, ruido, resolución y limitaciones del dato; una lectura pobre no debe presentarse como certeza.",
-            "Comparación: Contrasta lecturas con referencias o mediciones anteriores manteniendo visibles las diferencias de contexto.",
-            "Registro: Conserva configuración, datos, procesamiento, resultado e incertidumbre para reproducir o revisar el análisis."
+            "**Medidas**: Son valores obtenidos del sensor con unidad, contexto y calidad suficientes para poder compararlos.",
+            "**Calidad**: Expresa fiabilidad, ruido, resolución y limitaciones del dato; una lectura pobre no debe presentarse como certeza.",
+            "**Comparación**: Contrasta lecturas con referencias o mediciones anteriores manteniendo visibles las diferencias de contexto.",
+            "**Registro**: Conserva configuración, datos, procesamiento, resultado e incertidumbre para reproducir o revisar el análisis."
           ]
         },
         {
@@ -175,19 +149,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica medidas desde la perspectiva de Ciencia / Sensores.",
-            "Resuelve: Construir readout.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -224,10 +185,10 @@
         {
           "type": "bullets",
           "items": [
-            "Hipótesis: Es una explicación provisional que debe poder confirmarse o descartarse mediante observaciones adicionales.",
-            "Medición: Debe vincular valor, método, configuración y condiciones para que el resultado tenga significado operacional.",
-            "Prueba: Diseña una observación capaz de distinguir entre explicaciones rivales, no solo de confirmar la preferida.",
-            "Límite: Define hasta dónde los datos permiten concluir; fuera de ese margen se informa incertidumbre."
+            "**Hipótesis**: Es una explicación provisional que debe poder confirmarse o descartarse mediante observaciones adicionales.",
+            "**Medición**: Debe vincular valor, método, configuración y condiciones para que el resultado tenga significado operacional.",
+            "**Prueba**: Diseña una observación capaz de distinguir entre explicaciones rivales, no solo de confirmar la preferida.",
+            "**Límite**: Define hasta dónde los datos permiten concluir; fuera de ese margen se informa incertidumbre."
           ]
         },
         {
@@ -239,19 +200,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Juicio."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica hipótesis desde la perspectiva de Ciencia / Sensores.",
-            "Resuelve: Diseñar observación.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -288,10 +236,10 @@
         {
           "type": "bullets",
           "items": [
-            "Prioridad: Ordena contactos y tareas de sensor según misión, riesgo, urgencia y valor informativo.",
-            "Identidad: Es una conclusión sustentada por evidencia correlacionada; una firma parcial solo permite clasificación provisional.",
-            "Historial: Mantiene la evolución de un contacto y permite detectar cambios de rumbo, firma, velocidad o comportamiento.",
-            "Pérdida: Cuando se pierde un track se conserva la última solución válida, su incertidumbre y el área probable de reacquisición."
+            "**Prioridad**: Ordena contactos y tareas de sensor según misión, riesgo, urgencia y valor informativo.",
+            "**Identidad**: Es una conclusión sustentada por evidencia correlacionada; una firma parcial solo permite clasificación provisional.",
+            "**Historial**: Mantiene la evolución de un contacto y permite detectar cambios de rumbo, firma, velocidad o comportamiento.",
+            "**Pérdida**: Cuando se pierde un track se conserva la última solución válida, su incertidumbre y el área probable de reacquisición."
           ]
         },
         {
@@ -303,19 +251,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica prioridad desde la perspectiva de Ciencia / Sensores.",
-            "Resuelve: Gestionar tráfico.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -352,9 +287,9 @@
         {
           "type": "bullets",
           "items": [
-            "Actualización: Incorpora nuevas observaciones al track sin borrar la incertidumbre previa ni saltar a una certeza injustificada.",
-            "Predicción: Estima posición o estado futuro usando el historial y debe incluir un margen creciente de incertidumbre.",
-            "Incertidumbre: Se expresa explícitamente para separar dato medido, inferencia y desconocido."
+            "**Actualización**: Incorpora nuevas observaciones al track sin borrar la incertidumbre previa ni saltar a una certeza injustificada.",
+            "**Predicción**: Estima posición o estado futuro usando el historial y debe incluir un margen creciente de incertidumbre.",
+            "**Incertidumbre**: Se expresa explícitamente para separar dato medido, inferencia y desconocido."
           ]
         },
         {
@@ -366,19 +301,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Práctica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica actualización desde la perspectiva de Ciencia / Sensores.",
-            "Resuelve: Mantener varios tracks.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -415,10 +337,10 @@
         {
           "type": "bullets",
           "items": [
-            "Ruido: Es señal no útil o variación que reduce la confianza; se caracteriza antes de filtrarla.",
-            "Fuente: Identificar la fuente de interferencia permite elegir compensación sin degradar innecesariamente otras lecturas.",
-            "Filtros: Reducen componentes no deseados de la señal, pero pueden eliminar información útil; su efecto debe quedar documentado.",
-            "Trade-offs: Toda compensación puede ganar claridad a costa de cobertura, detalle, tiempo o sensibilidad; el operador debe hacer visible ese intercambio."
+            "**Ruido**: Es señal no útil o variación que reduce la confianza; se caracteriza antes de filtrarla.",
+            "**Fuente**: Identificar la fuente de interferencia permite elegir compensación sin degradar innecesariamente otras lecturas.",
+            "**Filtros**: Reducen componentes no deseados de la señal, pero pueden eliminar información útil; su efecto debe quedar documentado.",
+            "**Trade-offs**: Toda compensación puede ganar claridad a costa de cobertura, detalle, tiempo o sensibilidad; el operador debe hacer visible ese intercambio."
           ]
         },
         {
@@ -430,19 +352,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Juicio."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica ruido desde la perspectiva de Ciencia / Sensores.",
-            "Resuelve: Recuperar señal.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -479,10 +388,10 @@
         {
           "type": "bullets",
           "items": [
-            "Sensores: sensores en Ciencia / Sensores se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
-            "Bases de datos: Aportan referencias para correlación, pero no sustituyen la evidencia actual ni garantizan identidad.",
-            "Otras estaciones: Aportan observaciones independientes que pueden confirmar, contradecir o contextualizar un resultado.",
-            "Consistencia: Comprueba si distintas fuentes y medidas pueden coexistir sin contradicciones relevantes."
+            "**Sensores**: sensores en Ciencia / Sensores se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "**Bases de datos**: Aportan referencias para correlación, pero no sustituyen la evidencia actual ni garantizan identidad.",
+            "**Otras estaciones**: Aportan observaciones independientes que pueden confirmar, contradecir o contextualizar un resultado.",
+            "**Consistencia**: Comprueba si distintas fuentes y medidas pueden coexistir sin contradicciones relevantes."
           ]
         },
         {
@@ -494,19 +403,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica sensores desde la perspectiva de Ciencia / Sensores.",
-            "Resuelve: Fusionar evidencias.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -543,10 +439,10 @@
         {
           "type": "bullets",
           "items": [
-            "Datos: Deben conservar origen, contexto, calidad y recencia suficientes para sostener una decisión.",
-            "Procesamiento: Transforma datos brutos mediante pasos trazables; cada filtro o cálculo debe poder explicarse.",
-            "Conclusión: Resume lo que los datos permiten afirmar, con nivel de confianza y límites.",
-            "Registro: Conserva configuración, datos, procesamiento, resultado e incertidumbre para reproducir o revisar el análisis."
+            "**Datos**: Deben conservar origen, contexto, calidad y recencia suficientes para sostener una decisión.",
+            "**Procesamiento**: Transforma datos brutos mediante pasos trazables; cada filtro o cálculo debe poder explicarse.",
+            "**Conclusión**: Resume lo que los datos permiten afirmar, con nivel de confianza y límites.",
+            "**Registro**: Conserva configuración, datos, procesamiento, resultado e incertidumbre para reproducir o revisar el análisis."
           ]
         },
         {
@@ -558,19 +454,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica datos desde la perspectiva de Ciencia / Sensores.",
-            "Resuelve: Emitir resultado reproducible.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -607,10 +490,10 @@
         {
           "type": "bullets",
           "items": [
-            "Anomalía: Es una diferencia respecto al comportamiento esperado; primero se descarta fallo instrumental antes de atribuirla al fenómeno.",
-            "Self-test: Comprueba salud y coherencia interna del sistema antes de confiar en una lectura sospechosa.",
-            "Degradación: Reduce sensibilidad, cobertura o fiabilidad y debe reflejarse en el nivel de confianza del resultado.",
-            "Handoff a Ingeniería: Transfiere síntomas, pruebas realizadas, estado, impacto y datos suficientes para que Ingeniería diagnostique sin repetir todo el proceso."
+            "**Anomalía**: Es una diferencia respecto al comportamiento esperado; primero se descarta fallo instrumental antes de atribuirla al fenómeno.",
+            "**Self-test**: Comprueba salud y coherencia interna del sistema antes de confiar en una lectura sospechosa.",
+            "**Degradación**: Reduce sensibilidad, cobertura o fiabilidad y debe reflejarse en el nivel de confianza del resultado.",
+            "**Handoff a Ingeniería**: Transfiere síntomas, pruebas realizadas, estado, impacto y datos suficientes para que Ingeniería diagnostique sin repetir todo el proceso."
           ]
         },
         {
@@ -622,19 +505,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Práctica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica anomalía desde la perspectiva de Ciencia / Sensores.",
-            "Resuelve: Resolver fallo.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -671,10 +541,10 @@
         {
           "type": "bullets",
           "items": [
-            "Observación: Debe partir de una pregunta u objetivo y conservar configuración, tiempo, datos y contexto.",
-            "Prioridad: Ordena contactos y tareas de sensor según misión, riesgo, urgencia y valor informativo.",
-            "Reporte: Entrega hechos, interpretación, confianza, límites y recomendación sin presentar hipótesis como certezas.",
-            "Consulta: Se solicita cuando el fenómeno excede competencia, la evidencia es ambigua o otra especialidad puede aportar una interpretación relevante."
+            "**Observación**: Debe partir de una pregunta u objetivo y conservar configuración, tiempo, datos y contexto.",
+            "**Prioridad**: Ordena contactos y tareas de sensor según misión, riesgo, urgencia y valor informativo.",
+            "**Reporte**: Entrega hechos, interpretación, confianza, límites y recomendación sin presentar hipótesis como certezas.",
+            "**Consulta**: Se solicita cuando el fenómeno excede competencia, la evidencia es ambigua o otra especialidad puede aportar una interpretación relevante."
           ]
         },
         {
@@ -686,19 +556,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica observación desde la perspectiva de Ciencia / Sensores.",
-            "Resuelve: Turno supervisado.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -735,10 +592,10 @@
         {
           "type": "bullets",
           "items": [
-            "Medición: Debe vincular valor, método, configuración y condiciones para que el resultado tenga significado operacional.",
-            "Interpretación: Relaciona mediciones con modelos o referencias manteniendo separadas observación e inferencia.",
-            "Incertidumbre: Se expresa explícitamente para separar dato medido, inferencia y desconocido.",
-            "Comunicación: Debe transmitir resultados útiles para la decisión: qué se observó, con qué confianza, qué falta y qué se recomienda."
+            "**Medición**: Debe vincular valor, método, configuración y condiciones para que el resultado tenga significado operacional.",
+            "**Interpretación**: Relaciona mediciones con modelos o referencias manteniendo separadas observación e inferencia.",
+            "**Incertidumbre**: Se expresa explícitamente para separar dato medido, inferencia y desconocido.",
+            "**Comunicación**: Debe transmitir resultados útiles para la decisión: qué se observó, con qué confianza, qué falta y qué se recomienda."
           ]
         },
         {
@@ -750,19 +607,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evidencia."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica medición desde la perspectiva de Ciencia / Sensores.",
-            "Resuelve: Caso integrado.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -1264,5 +1108,6 @@
     }
   ],
   "year3Status": "developed_content",
-  "year3Scope": "201-203"
+  "year3Scope": "201-203",
+  "assessmentModel": "concept_driven_v2_1_year3"
 }

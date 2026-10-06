@@ -1,7 +1,7 @@
 {
   "subject": "Ingeniería",
   "code": "ENGINEERING",
-  "version": "1.1",
+  "version": "1.2",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/branches/engineering/branch_curriculum_v1_0.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/branches/engineering/MANUAL_v1_0.md",
@@ -32,10 +32,10 @@
         {
           "type": "bullets",
           "items": [
-            "Fuentes: Son orígenes de energía o capacidad y su disponibilidad condiciona la distribución.",
-            "Buses: Son rutas de distribución que conectan fuentes y cargas y cuyo estado afecta redundancia y aislamiento.",
-            "Reservas: Protegen funciones críticas frente a picos, fallos o cambios de prioridad.",
-            "Cargas: Son consumidores de energía que deben priorizarse según misión y seguridad."
+            "**Fuentes**: Son orígenes de energía o capacidad y su disponibilidad condiciona la distribución.",
+            "**Buses**: Son rutas de distribución que conectan fuentes y cargas y cuyo estado afecta redundancia y aislamiento.",
+            "**Reservas**: Protegen funciones críticas frente a picos, fallos o cambios de prioridad.",
+            "**Cargas**: Son consumidores de energía que deben priorizarse según misión y seguridad."
           ]
         },
         {
@@ -47,19 +47,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica fuentes desde la perspectiva de Ingeniería.",
-            "Resuelve: Configurar energía.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -96,10 +83,10 @@
         {
           "type": "bullets",
           "items": [
-            "Subsistemas: Permiten dividir una función compleja en elementos cuyo estado y dependencia pueden diagnosticarse.",
-            "Estado: Fija la condición real de partida y debe actualizarse cuando cambian sistemas, personas o entorno.",
-            "Demanda: Es la capacidad solicitada por una función y debe compararse con disponibilidad y margen.",
-            "Seguridad: Limita cualquier procedimiento y exige identificar peligros, protecciones y condición de aborto."
+            "**Subsistemas**: Permiten dividir una función compleja en elementos cuyo estado y dependencia pueden diagnosticarse.",
+            "**Estado**: Fija la condición real de partida y debe actualizarse cuando cambian sistemas, personas o entorno.",
+            "**Demanda**: Es la capacidad solicitada por una función y debe compararse con disponibilidad y margen.",
+            "**Seguridad**: Limita cualquier procedimiento y exige identificar peligros, protecciones y condición de aborto."
           ]
         },
         {
@@ -111,19 +98,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Práctica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica subsistemas desde la perspectiva de Ingeniería.",
-            "Resuelve: Caso operativo.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -160,9 +134,9 @@
         {
           "type": "bullets",
           "items": [
-            "Potencia: Es capacidad energética disponible para una función y debe gestionarse con demanda, margen y prioridades.",
-            "Refrigeración contextual: Controla condiciones térmicas necesarias para mantener capacidad segura bajo carga.",
-            "Capacidad: Describe qué puede hacer realmente un sistema o equipo en su estado actual."
+            "**Potencia**: Es capacidad energética disponible para una función y debe gestionarse con demanda, margen y prioridades.",
+            "**Refrigeración contextual**: Controla condiciones térmicas necesarias para mantener capacidad segura bajo carga.",
+            "**Capacidad**: Describe qué puede hacer realmente un sistema o equipo en su estado actual."
           ]
         },
         {
@@ -174,19 +148,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica potencia desde la perspectiva de Ingeniería.",
-            "Resuelve: Coordinar con vuelo.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -223,10 +184,10 @@
         {
           "type": "bullets",
           "items": [
-            "Síntoma: síntoma en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
-            "Telemetría: Aporta medidas de estado útiles para localizar degradaciones y comprobar hipótesis.",
-            "Hipótesis: Es una explicación provisional que debe poder confirmarse o descartarse con pruebas.",
-            "Prueba: Debe distinguir entre causas posibles y minimizar cambios innecesarios en el sistema."
+            "**Síntoma**: síntoma en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "**Telemetría**: Aporta medidas de estado útiles para localizar degradaciones y comprobar hipótesis.",
+            "**Hipótesis**: Es una explicación provisional que debe poder confirmarse o descartarse con pruebas.",
+            "**Prueba**: Debe distinguir entre causas posibles y minimizar cambios innecesarios en el sistema."
           ]
         },
         {
@@ -238,19 +199,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Juicio."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica síntoma desde la perspectiva de Ingeniería.",
-            "Resuelve: Diagnosticar fallo.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -287,10 +235,10 @@
         {
           "type": "bullets",
           "items": [
-            "Sección: Delimita el área o subsistema afectado para aislar un fallo sin desconectar más capacidad de la necesaria.",
-            "Riesgo: Combina probabilidad, impacto y exposición y se compara con autoridad, misión y alternativas.",
-            "Bypass: Crea una ruta alternativa cuando la normal está degradada, con límites y riesgos explícitos.",
-            "Seguridad: Limita cualquier procedimiento y exige identificar peligros, protecciones y condición de aborto."
+            "**Sección**: Delimita el área o subsistema afectado para aislar un fallo sin desconectar más capacidad de la necesaria.",
+            "**Riesgo**: Combina probabilidad, impacto y exposición y se compara con autoridad, misión y alternativas.",
+            "**Bypass**: Crea una ruta alternativa cuando la normal está degradada, con límites y riesgos explícitos.",
+            "**Seguridad**: Limita cualquier procedimiento y exige identificar peligros, protecciones y condición de aborto."
           ]
         },
         {
@@ -302,19 +250,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica sección desde la perspectiva de Ingeniería.",
-            "Resuelve: Práctica.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -351,10 +286,10 @@
         {
           "type": "bullets",
           "items": [
-            "Misión: Define el propósito y las restricciones que permiten priorizar opciones.",
-            "Vida: Tiene prioridad cuando existe amenaza inmediata para personas y exige medidas proporcionadas de protección.",
-            "Propulsión: propulsión en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
-            "Defensa: Se prioriza según amenaza y misión, equilibrando supervivencia con otras funciones críticas."
+            "**Misión**: Define el propósito y las restricciones que permiten priorizar opciones.",
+            "**Vida**: Tiene prioridad cuando existe amenaza inmediata para personas y exige medidas proporcionadas de protección.",
+            "**Propulsión**: propulsión en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "**Defensa**: Se prioriza según amenaza y misión, equilibrando supervivencia con otras funciones críticas."
           ]
         },
         {
@@ -366,19 +301,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Juicio."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica misión desde la perspectiva de Ingeniería.",
-            "Resuelve: Planificar reparación.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -415,10 +337,10 @@
         {
           "type": "bullets",
           "items": [
-            "Equipo: Se organiza por función, competencia, comunicación y responsabilidad.",
-            "Sellado: Contiene una pérdida o peligro para evitar propagación y proteger compartimentos o sistemas.",
-            "Energía: energía en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
-            "Restauración: Devuelve capacidad de forma verificada y controlada, no solo elimina una alarma."
+            "**Equipo**: Se organiza por función, competencia, comunicación y responsabilidad.",
+            "**Sellado**: Contiene una pérdida o peligro para evitar propagación y proteger compartimentos o sistemas.",
+            "**Energía**: energía en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "**Restauración**: Devuelve capacidad de forma verificada y controlada, no solo elimina una alarma."
           ]
         },
         {
@@ -430,19 +352,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Práctica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica equipo desde la perspectiva de Ingeniería.",
-            "Resuelve: Simulación.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -479,9 +388,9 @@
         {
           "type": "bullets",
           "items": [
-            "Cascada: Describe cómo un fallo se propaga por dependencias y obliga a proteger funciones críticas.",
-            "Causa raíz: Es la causa que explica el fallo, no solo el síntoma; corregirla reduce recurrencia.",
-            "Recuperación: recuperación en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+            "**Cascada**: Describe cómo un fallo se propaga por dependencias y obliga a proteger funciones críticas.",
+            "**Causa raíz**: Es la causa que explica el fallo, no solo el síntoma; corregirla reduce recurrencia.",
+            "**Recuperación**: recuperación en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -493,19 +402,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica cascada desde la perspectiva de Ingeniería.",
-            "Resuelve: Caso complejo.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -542,9 +438,9 @@
         {
           "type": "bullets",
           "items": [
-            "Estado: Fija la condición real de partida y debe actualizarse cuando cambian sistemas, personas o entorno.",
-            "Mantenimiento: Conserva fiabilidad mediante inspección, ajuste y sustitución antes de que aparezca una avería operativa.",
-            "Avisos: Se interpretan por gravedad, contexto, tendencia e impacto, evitando tanto ignorarlos como saturar la respuesta."
+            "**Estado**: Fija la condición real de partida y debe actualizarse cuando cambian sistemas, personas o entorno.",
+            "**Mantenimiento**: Conserva fiabilidad mediante inspección, ajuste y sustitución antes de que aparezca una avería operativa.",
+            "**Avisos**: Se interpretan por gravedad, contexto, tendencia e impacto, evitando tanto ignorarlos como saturar la respuesta."
           ]
         },
         {
@@ -556,19 +452,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica estado desde la perspectiva de Ingeniería.",
-            "Resuelve: Turno supervisado.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -605,10 +488,10 @@
         {
           "type": "bullets",
           "items": [
-            "Temperatura contextual: temperatura contextual en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
-            "Potencia: Es capacidad energética disponible para una función y debe gestionarse con demanda, margen y prioridades.",
-            "Margen: Es capacidad restante disponible para absorber demanda, error o contingencia.",
-            "Reserva: reserva en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+            "**Temperatura contextual**: temperatura contextual en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "**Potencia**: Es capacidad energética disponible para una función y debe gestionarse con demanda, margen y prioridades.",
+            "**Margen**: Es capacidad restante disponible para absorber demanda, error o contingencia.",
+            "**Reserva**: reserva en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -620,19 +503,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Práctica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica temperatura contextual desde la perspectiva de Ingeniería.",
-            "Resuelve: Misión extendida.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -669,9 +539,9 @@
         {
           "type": "bullets",
           "items": [
-            "Diagnóstico: Relaciona síntomas con causas posibles y usa pruebas para reducir incertidumbre antes de intervenir.",
-            "Prioridad: prioridad organiza la respuesta comparando seguridad, misión, tiempo e impacto.",
-            "Coordinación: coordinación en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+            "**Diagnóstico**: Relaciona síntomas con causas posibles y usa pruebas para reducir incertidumbre antes de intervenir.",
+            "**Prioridad**: prioridad organiza la respuesta comparando seguridad, misión, tiempo e impacto.",
+            "**Coordinación**: coordinación en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -683,19 +553,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Juicio."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica diagnóstico desde la perspectiva de Ingeniería.",
-            "Resuelve: Simulación.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -732,10 +589,10 @@
         {
           "type": "bullets",
           "items": [
-            "Seguridad: Limita cualquier procedimiento y exige identificar peligros, protecciones y condición de aborto.",
-            "Diagnóstico: Relaciona síntomas con causas posibles y usa pruebas para reducir incertidumbre antes de intervenir.",
-            "Ejecución: ejecución en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
-            "Reporte: reporte preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes."
+            "**Seguridad**: Limita cualquier procedimiento y exige identificar peligros, protecciones y condición de aborto.",
+            "**Diagnóstico**: Relaciona síntomas con causas posibles y usa pruebas para reducir incertidumbre antes de intervenir.",
+            "**Ejecución**: ejecución en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "**Reporte**: reporte preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes."
           ]
         },
         {
@@ -747,19 +604,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evidencia."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica seguridad desde la perspectiva de Ingeniería.",
-            "Resuelve: Evaluación integrada.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -1258,5 +1102,6 @@
     }
   ],
   "year3Status": "developed_content",
-  "year3Scope": "201-203"
+  "year3Scope": "201-203",
+  "assessmentModel": "concept_driven_v2_1_year3"
 }

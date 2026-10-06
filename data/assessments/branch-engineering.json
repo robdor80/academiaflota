@@ -1,15 +1,45 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.1.0",
   "branch_id": "engineering",
-  "status": "generated_from_authoritative_branch_curriculum",
-  "question_count": 60,
-  "questions": [
+  "status": "concept_driven_autocorrectable_v2_1",
+  "scope": "year3_201_203_only",
+  "source_bank": "question_bank_v1_0.json",
+  "year3_courses": [
+    "ENG-201",
+    "ENG-202",
+    "ENG-203"
+  ],
+  "year3_status": "developed_and_synced_v2_1",
+  "policy": {
+    "theory_formats": [
+      "multiple_choice",
+      "short_answer"
+    ],
+    "deterministic_correction": true,
+    "web_and_game_share_concepts_not_question_instances": true,
+    "complex_judgment_moves_to_practice_and_simulation": true,
+    "source_rule": "Every evaluated concept must be explicitly taught in the branch material or an established prerequisite."
+  },
+  "unit_review": {
+    "questions_per_attempt": 5,
+    "reshuffle_each_attempt": true,
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
+  },
+  "concepts": [
     {
-      "id": "ENGINEERING-Q001",
-      "course_id": "ENG-201",
+      "id": "ENGINEERING-C001",
       "unit_id": "ENG-201-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica fuentes desde la perspectiva de Ingeniería: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente fuentes desde la perspectiva de Ingeniería?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente fuentes desde la perspectiva de Ingeniería?",
+        "Explica fuentes desde la perspectiva de Ingeniería: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "fuentes · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "fuentes",
         "aplicación",
@@ -17,11 +47,17 @@
       ]
     },
     {
-      "id": "ENGINEERING-Q002",
-      "course_id": "ENG-201",
+      "id": "ENGINEERING-C002",
       "unit_id": "ENG-201-U01",
-      "type": "scenario",
-      "prompt_es": "Configurar energía. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Configurar energía»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Configurar energía»?",
+        "Configurar energía. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -30,11 +66,17 @@
       ]
     },
     {
-      "id": "ENGINEERING-Q003",
-      "course_id": "ENG-201",
+      "id": "ENGINEERING-C003",
       "unit_id": "ENG-201-U01",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Generación y distribución para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Generación y distribución?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Generación y distribución?",
+        "¿Qué evidencia conservarías tras Generación y distribución para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -44,11 +86,17 @@
       ]
     },
     {
-      "id": "ENGINEERING-Q004",
-      "course_id": "ENG-201",
+      "id": "ENGINEERING-C004",
       "unit_id": "ENG-201-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica subsistemas desde la perspectiva de Ingeniería: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente subsistemas desde la perspectiva de Ingeniería?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente subsistemas desde la perspectiva de Ingeniería?",
+        "Explica subsistemas desde la perspectiva de Ingeniería: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "subsistemas · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "subsistemas",
         "aplicación",
@@ -56,11 +104,17 @@
       ]
     },
     {
-      "id": "ENGINEERING-Q005",
-      "course_id": "ENG-201",
+      "id": "ENGINEERING-C005",
       "unit_id": "ENG-201-U02",
-      "type": "scenario",
-      "prompt_es": "Caso operativo. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Caso operativo»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Caso operativo»?",
+        "Caso operativo. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -69,11 +123,17 @@
       ]
     },
     {
-      "id": "ENGINEERING-Q006",
-      "course_id": "ENG-201",
+      "id": "ENGINEERING-C006",
       "unit_id": "ENG-201-U02",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Propulsión warp para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Propulsión warp?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Propulsión warp?",
+        "¿Qué evidencia conservarías tras Propulsión warp para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -83,11 +143,17 @@
       ]
     },
     {
-      "id": "ENGINEERING-Q007",
-      "course_id": "ENG-201",
+      "id": "ENGINEERING-C007",
       "unit_id": "ENG-201-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica potencia desde la perspectiva de Ingeniería: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente potencia desde la perspectiva de Ingeniería?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente potencia desde la perspectiva de Ingeniería?",
+        "Explica potencia desde la perspectiva de Ingeniería: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "potencia · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "potencia",
         "aplicación",
@@ -95,11 +161,17 @@
       ]
     },
     {
-      "id": "ENGINEERING-Q008",
-      "course_id": "ENG-201",
+      "id": "ENGINEERING-C008",
       "unit_id": "ENG-201-U03",
-      "type": "scenario",
-      "prompt_es": "Coordinar con vuelo. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Coordinar con vuelo»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Coordinar con vuelo»?",
+        "Coordinar con vuelo. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -108,11 +180,17 @@
       ]
     },
     {
-      "id": "ENGINEERING-Q009",
-      "course_id": "ENG-201",
+      "id": "ENGINEERING-C009",
       "unit_id": "ENG-201-U03",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Impulso y maniobra para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Impulso y maniobra?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Impulso y maniobra?",
+        "¿Qué evidencia conservarías tras Impulso y maniobra para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -122,11 +200,17 @@
       ]
     },
     {
-      "id": "ENGINEERING-Q010",
-      "course_id": "ENG-201",
+      "id": "ENGINEERING-C010",
       "unit_id": "ENG-201-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica síntoma desde la perspectiva de Ingeniería: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente síntoma desde la perspectiva de Ingeniería?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente síntoma desde la perspectiva de Ingeniería?",
+        "Explica síntoma desde la perspectiva de Ingeniería: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "síntoma · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "síntoma",
         "aplicación",
@@ -134,11 +218,17 @@
       ]
     },
     {
-      "id": "ENGINEERING-Q011",
-      "course_id": "ENG-201",
+      "id": "ENGINEERING-C011",
       "unit_id": "ENG-201-U04",
-      "type": "scenario",
-      "prompt_es": "Diagnosticar fallo. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Diagnosticar fallo»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Diagnosticar fallo»?",
+        "Diagnosticar fallo. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -147,11 +237,17 @@
       ]
     },
     {
-      "id": "ENGINEERING-Q012",
-      "course_id": "ENG-201",
+      "id": "ENGINEERING-C012",
       "unit_id": "ENG-201-U04",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Diagnóstico sistemático para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Diagnóstico sistemático?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Diagnóstico sistemático?",
+        "¿Qué evidencia conservarías tras Diagnóstico sistemático para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -161,11 +257,17 @@
       ]
     },
     {
-      "id": "ENGINEERING-Q013",
-      "course_id": "ENG-202",
+      "id": "ENGINEERING-C013",
       "unit_id": "ENG-202-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica sección desde la perspectiva de Ingeniería: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente sección desde la perspectiva de Ingeniería?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente sección desde la perspectiva de Ingeniería?",
+        "Explica sección desde la perspectiva de Ingeniería: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "sección · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "sección",
         "aplicación",
@@ -173,11 +275,17 @@
       ]
     },
     {
-      "id": "ENGINEERING-Q014",
-      "course_id": "ENG-202",
+      "id": "ENGINEERING-C014",
       "unit_id": "ENG-202-U01",
-      "type": "scenario",
-      "prompt_es": "Práctica. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Práctica»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Práctica»?",
+        "Práctica. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -186,11 +294,17 @@
       ]
     },
     {
-      "id": "ENGINEERING-Q015",
-      "course_id": "ENG-202",
+      "id": "ENGINEERING-C015",
       "unit_id": "ENG-202-U01",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Aislamiento de fallos para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Aislamiento de fallos?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Aislamiento de fallos?",
+        "¿Qué evidencia conservarías tras Aislamiento de fallos para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -200,11 +314,17 @@
       ]
     },
     {
-      "id": "ENGINEERING-Q016",
-      "course_id": "ENG-202",
+      "id": "ENGINEERING-C016",
       "unit_id": "ENG-202-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica misión desde la perspectiva de Ingeniería: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente misión desde la perspectiva de Ingeniería?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente misión desde la perspectiva de Ingeniería?",
+        "Explica misión desde la perspectiva de Ingeniería: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "misión · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "misión",
         "aplicación",
@@ -212,11 +332,17 @@
       ]
     },
     {
-      "id": "ENGINEERING-Q017",
-      "course_id": "ENG-202",
+      "id": "ENGINEERING-C017",
       "unit_id": "ENG-202-U02",
-      "type": "scenario",
-      "prompt_es": "Planificar reparación. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Planificar reparación»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Planificar reparación»?",
+        "Planificar reparación. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -225,11 +351,17 @@
       ]
     },
     {
-      "id": "ENGINEERING-Q018",
-      "course_id": "ENG-202",
+      "id": "ENGINEERING-C018",
       "unit_id": "ENG-202-U02",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Reparación priorizada para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Reparación priorizada?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Reparación priorizada?",
+        "¿Qué evidencia conservarías tras Reparación priorizada para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -239,11 +371,17 @@
       ]
     },
     {
-      "id": "ENGINEERING-Q019",
-      "course_id": "ENG-202",
+      "id": "ENGINEERING-C019",
       "unit_id": "ENG-202-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica equipo desde la perspectiva de Ingeniería: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente equipo desde la perspectiva de Ingeniería?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente equipo desde la perspectiva de Ingeniería?",
+        "Explica equipo desde la perspectiva de Ingeniería: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "equipo · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "equipo",
         "aplicación",
@@ -251,11 +389,17 @@
       ]
     },
     {
-      "id": "ENGINEERING-Q020",
-      "course_id": "ENG-202",
+      "id": "ENGINEERING-C020",
       "unit_id": "ENG-202-U03",
-      "type": "scenario",
-      "prompt_es": "Simulación. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Simulación»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Simulación»?",
+        "Simulación. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -264,11 +408,17 @@
       ]
     },
     {
-      "id": "ENGINEERING-Q021",
-      "course_id": "ENG-202",
+      "id": "ENGINEERING-C021",
       "unit_id": "ENG-202-U03",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Control de daños para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Control de daños?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Control de daños?",
+        "¿Qué evidencia conservarías tras Control de daños para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -278,11 +428,17 @@
       ]
     },
     {
-      "id": "ENGINEERING-Q022",
-      "course_id": "ENG-202",
+      "id": "ENGINEERING-C022",
       "unit_id": "ENG-202-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica cascada desde la perspectiva de Ingeniería: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente cascada desde la perspectiva de Ingeniería?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente cascada desde la perspectiva de Ingeniería?",
+        "Explica cascada desde la perspectiva de Ingeniería: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "cascada · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "cascada",
         "aplicación",
@@ -290,11 +446,17 @@
       ]
     },
     {
-      "id": "ENGINEERING-Q023",
-      "course_id": "ENG-202",
+      "id": "ENGINEERING-C023",
       "unit_id": "ENG-202-U04",
-      "type": "scenario",
-      "prompt_es": "Caso complejo. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Caso complejo»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Caso complejo»?",
+        "Caso complejo. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -303,11 +465,17 @@
       ]
     },
     {
-      "id": "ENGINEERING-Q024",
-      "course_id": "ENG-202",
+      "id": "ENGINEERING-C024",
       "unit_id": "ENG-202-U04",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Sistemas encadenados para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Sistemas encadenados?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Sistemas encadenados?",
+        "¿Qué evidencia conservarías tras Sistemas encadenados para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -317,11 +485,17 @@
       ]
     },
     {
-      "id": "ENGINEERING-Q025",
-      "course_id": "ENG-203",
+      "id": "ENGINEERING-C025",
       "unit_id": "ENG-203-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica estado desde la perspectiva de Ingeniería: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente estado desde la perspectiva de Ingeniería?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente estado desde la perspectiva de Ingeniería?",
+        "Explica estado desde la perspectiva de Ingeniería: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "estado · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estado",
         "aplicación",
@@ -329,11 +503,17 @@
       ]
     },
     {
-      "id": "ENGINEERING-Q026",
-      "course_id": "ENG-203",
+      "id": "ENGINEERING-C026",
       "unit_id": "ENG-203-U01",
-      "type": "scenario",
-      "prompt_es": "Turno supervisado. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Turno supervisado»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Turno supervisado»?",
+        "Turno supervisado. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -342,11 +522,17 @@
       ]
     },
     {
-      "id": "ENGINEERING-Q027",
-      "course_id": "ENG-203",
+      "id": "ENGINEERING-C027",
       "unit_id": "ENG-203-U01",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Guardia de Ingeniería para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Guardia de Ingeniería?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Guardia de Ingeniería?",
+        "¿Qué evidencia conservarías tras Guardia de Ingeniería para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -356,11 +542,17 @@
       ]
     },
     {
-      "id": "ENGINEERING-Q028",
-      "course_id": "ENG-203",
+      "id": "ENGINEERING-C028",
       "unit_id": "ENG-203-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica temperatura contextual desde la perspectiva de Ingeniería: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente temperatura contextual desde la perspectiva de Ingeniería?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente temperatura contextual desde la perspectiva de Ingeniería?",
+        "Explica temperatura contextual desde la perspectiva de Ingeniería: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "temperatura contextual · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "temperatura contextual",
         "aplicación",
@@ -368,11 +560,17 @@
       ]
     },
     {
-      "id": "ENGINEERING-Q029",
-      "course_id": "ENG-203",
+      "id": "ENGINEERING-C029",
       "unit_id": "ENG-203-U02",
-      "type": "scenario",
-      "prompt_es": "Misión extendida. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Misión extendida»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Misión extendida»?",
+        "Misión extendida. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -381,11 +579,17 @@
       ]
     },
     {
-      "id": "ENGINEERING-Q030",
-      "course_id": "ENG-203",
+      "id": "ENGINEERING-C030",
       "unit_id": "ENG-203-U02",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Carga sostenida para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Carga sostenida?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Carga sostenida?",
+        "¿Qué evidencia conservarías tras Carga sostenida para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -395,11 +599,17 @@
       ]
     },
     {
-      "id": "ENGINEERING-Q031",
-      "course_id": "ENG-203",
+      "id": "ENGINEERING-C031",
       "unit_id": "ENG-203-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica diagnóstico desde la perspectiva de Ingeniería: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente diagnóstico desde la perspectiva de Ingeniería?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente diagnóstico desde la perspectiva de Ingeniería?",
+        "Explica diagnóstico desde la perspectiva de Ingeniería: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "diagnóstico · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "diagnóstico",
         "aplicación",
@@ -407,11 +617,17 @@
       ]
     },
     {
-      "id": "ENGINEERING-Q032",
-      "course_id": "ENG-203",
+      "id": "ENGINEERING-C032",
       "unit_id": "ENG-203-U03",
-      "type": "scenario",
-      "prompt_es": "Simulación. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Simulación»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Simulación»?",
+        "Simulación. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -420,11 +636,17 @@
       ]
     },
     {
-      "id": "ENGINEERING-Q033",
-      "course_id": "ENG-203",
+      "id": "ENGINEERING-C033",
       "unit_id": "ENG-203-U03",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Emergencia técnica para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Emergencia técnica?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Emergencia técnica?",
+        "¿Qué evidencia conservarías tras Emergencia técnica para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -434,11 +656,17 @@
       ]
     },
     {
-      "id": "ENGINEERING-Q034",
-      "course_id": "ENG-203",
+      "id": "ENGINEERING-C034",
       "unit_id": "ENG-203-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica seguridad desde la perspectiva de Ingeniería: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente seguridad desde la perspectiva de Ingeniería?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente seguridad desde la perspectiva de Ingeniería?",
+        "Explica seguridad desde la perspectiva de Ingeniería: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "seguridad · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "seguridad",
         "aplicación",
@@ -446,11 +674,17 @@
       ]
     },
     {
-      "id": "ENGINEERING-Q035",
-      "course_id": "ENG-203",
+      "id": "ENGINEERING-C035",
       "unit_id": "ENG-203-U04",
-      "type": "scenario",
-      "prompt_es": "Evaluación integrada. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Evaluación integrada»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Evaluación integrada»?",
+        "Evaluación integrada. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -459,11 +693,17 @@
       ]
     },
     {
-      "id": "ENGINEERING-Q036",
-      "course_id": "ENG-203",
+      "id": "ENGINEERING-C036",
       "unit_id": "ENG-203-U04",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Cualificación intermedia para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Cualificación intermedia?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Cualificación intermedia?",
+        "¿Qué evidencia conservarías tras Cualificación intermedia para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -472,6 +712,584 @@
         "feedback o pendientes"
       ]
     },
+    {
+      "id": "ENGINEERING-C037",
+      "unit_id": "ENG-201-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Fuentes» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Fuentes» en esta unidad?",
+        "Selecciona la definición correcta de «Fuentes»."
+      ],
+      "answer_display_es": "Son orígenes de energía o capacidad y su disponibilidad condiciona la distribución.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Son orígenes de energía o capacidad y su disponibilidad condiciona la distribución."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C038",
+      "unit_id": "ENG-201-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Buses» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Buses» en esta unidad?",
+        "Selecciona la definición correcta de «Buses»."
+      ],
+      "answer_display_es": "Son rutas de distribución que conectan fuentes y cargas y cuyo estado afecta redundancia y aislamiento.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Son rutas de distribución que conectan fuentes y cargas y cuyo estado afecta redundancia y aislamiento."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C039",
+      "unit_id": "ENG-201-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Reservas» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Reservas» en esta unidad?",
+        "Selecciona la definición correcta de «Reservas»."
+      ],
+      "answer_display_es": "Protegen funciones críticas frente a picos, fallos o cambios de prioridad.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Protegen funciones críticas frente a picos, fallos o cambios de prioridad."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C040",
+      "unit_id": "ENG-201-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Subsistemas» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Subsistemas» en esta unidad?",
+        "Selecciona la definición correcta de «Subsistemas»."
+      ],
+      "answer_display_es": "Permiten dividir una función compleja en elementos cuyo estado y dependencia pueden diagnosticarse.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Permiten dividir una función compleja en elementos cuyo estado y dependencia pueden diagnosticarse."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C041",
+      "unit_id": "ENG-201-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Estado» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Estado» en esta unidad?",
+        "Selecciona la definición correcta de «Estado»."
+      ],
+      "answer_display_es": "Fija la condición real de partida y debe actualizarse cuando cambian sistemas, personas o entorno.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Fija la condición real de partida y debe actualizarse cuando cambian sistemas, personas o entorno."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C042",
+      "unit_id": "ENG-201-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Demanda» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Demanda» en esta unidad?",
+        "Selecciona la definición correcta de «Demanda»."
+      ],
+      "answer_display_es": "Es la capacidad solicitada por una función y debe compararse con disponibilidad y margen.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Es la capacidad solicitada por una función y debe compararse con disponibilidad y margen."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C043",
+      "unit_id": "ENG-201-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Potencia» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Potencia» en esta unidad?",
+        "Selecciona la definición correcta de «Potencia»."
+      ],
+      "answer_display_es": "Es capacidad energética disponible para una función y debe gestionarse con demanda, margen y prioridades.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Es capacidad energética disponible para una función y debe gestionarse con demanda, margen y prioridades."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C044",
+      "unit_id": "ENG-201-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Refrigeración contextual» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Refrigeración contextual» en esta unidad?",
+        "Selecciona la definición correcta de «Refrigeración contextual»."
+      ],
+      "answer_display_es": "Controla condiciones térmicas necesarias para mantener capacidad segura bajo carga.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Controla condiciones térmicas necesarias para mantener capacidad segura bajo carga."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C045",
+      "unit_id": "ENG-201-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Capacidad» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Capacidad» en esta unidad?",
+        "Selecciona la definición correcta de «Capacidad»."
+      ],
+      "answer_display_es": "Describe qué puede hacer realmente un sistema o equipo en su estado actual.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Describe qué puede hacer realmente un sistema o equipo en su estado actual."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C046",
+      "unit_id": "ENG-201-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Síntoma» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Síntoma» en esta unidad?",
+        "Selecciona la definición correcta de «Síntoma»."
+      ],
+      "answer_display_es": "síntoma en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "síntoma en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C047",
+      "unit_id": "ENG-201-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Telemetría» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Telemetría» en esta unidad?",
+        "Selecciona la definición correcta de «Telemetría»."
+      ],
+      "answer_display_es": "Aporta medidas de estado útiles para localizar degradaciones y comprobar hipótesis.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Aporta medidas de estado útiles para localizar degradaciones y comprobar hipótesis."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C048",
+      "unit_id": "ENG-201-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Hipótesis» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Hipótesis» en esta unidad?",
+        "Selecciona la definición correcta de «Hipótesis»."
+      ],
+      "answer_display_es": "Es una explicación provisional que debe poder confirmarse o descartarse con pruebas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Es una explicación provisional que debe poder confirmarse o descartarse con pruebas."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C049",
+      "unit_id": "ENG-202-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Sección» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Sección» en esta unidad?",
+        "Selecciona la definición correcta de «Sección»."
+      ],
+      "answer_display_es": "Delimita el área o subsistema afectado para aislar un fallo sin desconectar más capacidad de la necesaria.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Delimita el área o subsistema afectado para aislar un fallo sin desconectar más capacidad de la necesaria."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C050",
+      "unit_id": "ENG-202-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Riesgo» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Riesgo» en esta unidad?",
+        "Selecciona la definición correcta de «Riesgo»."
+      ],
+      "answer_display_es": "Combina probabilidad, impacto y exposición y se compara con autoridad, misión y alternativas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Combina probabilidad, impacto y exposición y se compara con autoridad, misión y alternativas."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C051",
+      "unit_id": "ENG-202-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Bypass» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Bypass» en esta unidad?",
+        "Selecciona la definición correcta de «Bypass»."
+      ],
+      "answer_display_es": "Crea una ruta alternativa cuando la normal está degradada, con límites y riesgos explícitos.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Crea una ruta alternativa cuando la normal está degradada, con límites y riesgos explícitos."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C052",
+      "unit_id": "ENG-202-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Misión» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Misión» en esta unidad?",
+        "Selecciona la definición correcta de «Misión»."
+      ],
+      "answer_display_es": "Define el propósito y las restricciones que permiten priorizar opciones.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Define el propósito y las restricciones que permiten priorizar opciones."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C053",
+      "unit_id": "ENG-202-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Vida» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Vida» en esta unidad?",
+        "Selecciona la definición correcta de «Vida»."
+      ],
+      "answer_display_es": "Tiene prioridad cuando existe amenaza inmediata para personas y exige medidas proporcionadas de protección.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Tiene prioridad cuando existe amenaza inmediata para personas y exige medidas proporcionadas de protección."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C054",
+      "unit_id": "ENG-202-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Propulsión» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Propulsión» en esta unidad?",
+        "Selecciona la definición correcta de «Propulsión»."
+      ],
+      "answer_display_es": "propulsión en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "propulsión en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C055",
+      "unit_id": "ENG-202-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Equipo» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Equipo» en esta unidad?",
+        "Selecciona la definición correcta de «Equipo»."
+      ],
+      "answer_display_es": "Se organiza por función, competencia, comunicación y responsabilidad.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Se organiza por función, competencia, comunicación y responsabilidad."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C056",
+      "unit_id": "ENG-202-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Sellado» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Sellado» en esta unidad?",
+        "Selecciona la definición correcta de «Sellado»."
+      ],
+      "answer_display_es": "Contiene una pérdida o peligro para evitar propagación y proteger compartimentos o sistemas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Contiene una pérdida o peligro para evitar propagación y proteger compartimentos o sistemas."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C057",
+      "unit_id": "ENG-202-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Energía» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Energía» en esta unidad?",
+        "Selecciona la definición correcta de «Energía»."
+      ],
+      "answer_display_es": "energía en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "energía en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C058",
+      "unit_id": "ENG-202-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Cascada» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Cascada» en esta unidad?",
+        "Selecciona la definición correcta de «Cascada»."
+      ],
+      "answer_display_es": "Describe cómo un fallo se propaga por dependencias y obliga a proteger funciones críticas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Describe cómo un fallo se propaga por dependencias y obliga a proteger funciones críticas."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C059",
+      "unit_id": "ENG-202-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Causa raíz» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Causa raíz» en esta unidad?",
+        "Selecciona la definición correcta de «Causa raíz»."
+      ],
+      "answer_display_es": "Es la causa que explica el fallo, no solo el síntoma; corregirla reduce recurrencia.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Es la causa que explica el fallo, no solo el síntoma; corregirla reduce recurrencia."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C060",
+      "unit_id": "ENG-202-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Recuperación» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Recuperación» en esta unidad?",
+        "Selecciona la definición correcta de «Recuperación»."
+      ],
+      "answer_display_es": "recuperación en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "recuperación en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C061",
+      "unit_id": "ENG-203-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Estado» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Estado» en esta unidad?",
+        "Selecciona la definición correcta de «Estado»."
+      ],
+      "answer_display_es": "Fija la condición real de partida y debe actualizarse cuando cambian sistemas, personas o entorno.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Fija la condición real de partida y debe actualizarse cuando cambian sistemas, personas o entorno."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C062",
+      "unit_id": "ENG-203-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Mantenimiento» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Mantenimiento» en esta unidad?",
+        "Selecciona la definición correcta de «Mantenimiento»."
+      ],
+      "answer_display_es": "Conserva fiabilidad mediante inspección, ajuste y sustitución antes de que aparezca una avería operativa.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Conserva fiabilidad mediante inspección, ajuste y sustitución antes de que aparezca una avería operativa."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C063",
+      "unit_id": "ENG-203-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Avisos» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Avisos» en esta unidad?",
+        "Selecciona la definición correcta de «Avisos»."
+      ],
+      "answer_display_es": "Se interpretan por gravedad, contexto, tendencia e impacto, evitando tanto ignorarlos como saturar la respuesta.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Se interpretan por gravedad, contexto, tendencia e impacto, evitando tanto ignorarlos como saturar la respuesta."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C064",
+      "unit_id": "ENG-203-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Temperatura contextual» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Temperatura contextual» en esta unidad?",
+        "Selecciona la definición correcta de «Temperatura contextual»."
+      ],
+      "answer_display_es": "temperatura contextual en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "temperatura contextual en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C065",
+      "unit_id": "ENG-203-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Potencia» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Potencia» en esta unidad?",
+        "Selecciona la definición correcta de «Potencia»."
+      ],
+      "answer_display_es": "Es capacidad energética disponible para una función y debe gestionarse con demanda, margen y prioridades.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Es capacidad energética disponible para una función y debe gestionarse con demanda, margen y prioridades."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C066",
+      "unit_id": "ENG-203-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Margen» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Margen» en esta unidad?",
+        "Selecciona la definición correcta de «Margen»."
+      ],
+      "answer_display_es": "Es capacidad restante disponible para absorber demanda, error o contingencia.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Es capacidad restante disponible para absorber demanda, error o contingencia."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C067",
+      "unit_id": "ENG-203-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Diagnóstico» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Diagnóstico» en esta unidad?",
+        "Selecciona la definición correcta de «Diagnóstico»."
+      ],
+      "answer_display_es": "Relaciona síntomas con causas posibles y usa pruebas para reducir incertidumbre antes de intervenir.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Relaciona síntomas con causas posibles y usa pruebas para reducir incertidumbre antes de intervenir."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C068",
+      "unit_id": "ENG-203-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Prioridad» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Prioridad» en esta unidad?",
+        "Selecciona la definición correcta de «Prioridad»."
+      ],
+      "answer_display_es": "prioridad organiza la respuesta comparando seguridad, misión, tiempo e impacto.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "prioridad organiza la respuesta comparando seguridad, misión, tiempo e impacto."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C069",
+      "unit_id": "ENG-203-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Coordinación» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Coordinación» en esta unidad?",
+        "Selecciona la definición correcta de «Coordinación»."
+      ],
+      "answer_display_es": "coordinación en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "coordinación en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C070",
+      "unit_id": "ENG-203-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Seguridad» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Seguridad» en esta unidad?",
+        "Selecciona la definición correcta de «Seguridad»."
+      ],
+      "answer_display_es": "Limita cualquier procedimiento y exige identificar peligros, protecciones y condición de aborto.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Limita cualquier procedimiento y exige identificar peligros, protecciones y condición de aborto."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C071",
+      "unit_id": "ENG-203-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Diagnóstico» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Diagnóstico» en esta unidad?",
+        "Selecciona la definición correcta de «Diagnóstico»."
+      ],
+      "answer_display_es": "Relaciona síntomas con causas posibles y usa pruebas para reducir incertidumbre antes de intervenir.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Relaciona síntomas con causas posibles y usa pruebas para reducir incertidumbre antes de intervenir."
+      ]
+    },
+    {
+      "id": "ENGINEERING-C072",
+      "unit_id": "ENG-203-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Ejecución» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Ejecución» en esta unidad?",
+        "Selecciona la definición correcta de «Ejecución»."
+      ],
+      "answer_display_es": "ejecución en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "ejecución en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    }
+  ],
+  "legacy_year4_questions": [
     {
       "id": "ENGINEERING-Q037",
       "course_id": "ENG-101",
@@ -776,12 +1594,5 @@
         "feedback"
       ]
     }
-  ],
-  "year3_status": "editorially_aligned_with_developed_year3_branch_material",
-  "year3_rule": "Only concepts explicitly taught in the 201–203 branch stages or established prerequisites may be required.",
-  "year3_courses": [
-    "ENG-201",
-    "ENG-202",
-    "ENG-203"
   ]
 }

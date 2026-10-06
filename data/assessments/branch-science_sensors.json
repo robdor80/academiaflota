@@ -1,15 +1,45 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.1.0",
   "branch_id": "science_sensors",
-  "status": "generated_from_authoritative_branch_curriculum",
-  "question_count": 60,
-  "questions": [
+  "status": "concept_driven_autocorrectable_v2_1",
+  "scope": "year3_201_203_only",
+  "source_bank": "question_bank_v1_0.json",
+  "year3_courses": [
+    "SCI-201",
+    "SCI-202",
+    "SCI-203"
+  ],
+  "year3_status": "developed_and_synced_v2_1",
+  "policy": {
+    "theory_formats": [
+      "multiple_choice",
+      "short_answer"
+    ],
+    "deterministic_correction": true,
+    "web_and_game_share_concepts_not_question_instances": true,
+    "complex_judgment_moves_to_practice_and_simulation": true,
+    "source_rule": "Every evaluated concept must be explicitly taught in the branch material or an established prerequisite."
+  },
+  "unit_review": {
+    "questions_per_attempt": 5,
+    "reshuffle_each_attempt": true,
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
+  },
+  "concepts": [
     {
-      "id": "SCIENCE_SENSORS-Q001",
-      "course_id": "SCI-201",
+      "id": "SCIENCE_SENSORS-C001",
       "unit_id": "SCI-201-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica objetivo desde la perspectiva de Ciencia / Sensores: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente objetivo desde la perspectiva de Ciencia / Sensores?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente objetivo desde la perspectiva de Ciencia / Sensores?",
+        "Explica objetivo desde la perspectiva de Ciencia / Sensores: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "objetivo · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "objetivo",
         "aplicación",
@@ -17,11 +47,17 @@
       ]
     },
     {
-      "id": "SCIENCE_SENSORS-Q002",
-      "course_id": "SCI-201",
+      "id": "SCIENCE_SENSORS-C002",
       "unit_id": "SCI-201-U01",
-      "type": "scenario",
-      "prompt_es": "Configurar barrido. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Configurar barrido»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Configurar barrido»?",
+        "Configurar barrido. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -30,11 +66,17 @@
       ]
     },
     {
-      "id": "SCIENCE_SENSORS-Q003",
-      "course_id": "SCI-201",
+      "id": "SCIENCE_SENSORS-C003",
       "unit_id": "SCI-201-U01",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Configuración de sensores para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Configuración de sensores?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Configuración de sensores?",
+        "¿Qué evidencia conservarías tras Configuración de sensores para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -44,11 +86,17 @@
       ]
     },
     {
-      "id": "SCIENCE_SENSORS-Q004",
-      "course_id": "SCI-201",
+      "id": "SCIENCE_SENSORS-C004",
       "unit_id": "SCI-201-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica patrones desde la perspectiva de Ciencia / Sensores: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente patrones desde la perspectiva de Ciencia / Sensores?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente patrones desde la perspectiva de Ciencia / Sensores?",
+        "Explica patrones desde la perspectiva de Ciencia / Sensores: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "patrones · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "patrones",
         "aplicación",
@@ -56,11 +104,17 @@
       ]
     },
     {
-      "id": "SCIENCE_SENSORS-Q005",
-      "course_id": "SCI-201",
+      "id": "SCIENCE_SENSORS-C005",
       "unit_id": "SCI-201-U02",
-      "type": "scenario",
-      "prompt_es": "Localizar objetivo débil. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Localizar objetivo débil»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Localizar objetivo débil»?",
+        "Localizar objetivo débil. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -69,11 +123,17 @@
       ]
     },
     {
-      "id": "SCIENCE_SENSORS-Q006",
-      "course_id": "SCI-201",
+      "id": "SCIENCE_SENSORS-C006",
       "unit_id": "SCI-201-U02",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Búsqueda avanzada para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Búsqueda avanzada?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Búsqueda avanzada?",
+        "¿Qué evidencia conservarías tras Búsqueda avanzada para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -83,11 +143,17 @@
       ]
     },
     {
-      "id": "SCIENCE_SENSORS-Q007",
-      "course_id": "SCI-201",
+      "id": "SCIENCE_SENSORS-C007",
       "unit_id": "SCI-201-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica medidas desde la perspectiva de Ciencia / Sensores: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente medidas desde la perspectiva de Ciencia / Sensores?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente medidas desde la perspectiva de Ciencia / Sensores?",
+        "Explica medidas desde la perspectiva de Ciencia / Sensores: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "medidas · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "medidas",
         "aplicación",
@@ -95,11 +161,17 @@
       ]
     },
     {
-      "id": "SCIENCE_SENSORS-Q008",
-      "course_id": "SCI-201",
+      "id": "SCIENCE_SENSORS-C008",
       "unit_id": "SCI-201-U03",
-      "type": "scenario",
-      "prompt_es": "Construir readout. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Construir readout»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Construir readout»?",
+        "Construir readout. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -108,11 +180,17 @@
       ]
     },
     {
-      "id": "SCIENCE_SENSORS-Q009",
-      "course_id": "SCI-201",
+      "id": "SCIENCE_SENSORS-C009",
       "unit_id": "SCI-201-U03",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Caracterización para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Caracterización?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Caracterización?",
+        "¿Qué evidencia conservarías tras Caracterización para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -122,11 +200,17 @@
       ]
     },
     {
-      "id": "SCIENCE_SENSORS-Q010",
-      "course_id": "SCI-201",
+      "id": "SCIENCE_SENSORS-C010",
       "unit_id": "SCI-201-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica hipótesis desde la perspectiva de Ciencia / Sensores: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente hipótesis desde la perspectiva de Ciencia / Sensores?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente hipótesis desde la perspectiva de Ciencia / Sensores?",
+        "Explica hipótesis desde la perspectiva de Ciencia / Sensores: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "hipótesis · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "hipótesis",
         "aplicación",
@@ -134,11 +218,17 @@
       ]
     },
     {
-      "id": "SCIENCE_SENSORS-Q011",
-      "course_id": "SCI-201",
+      "id": "SCIENCE_SENSORS-C011",
       "unit_id": "SCI-201-U04",
-      "type": "scenario",
-      "prompt_es": "Diseñar observación. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Diseñar observación»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Diseñar observación»?",
+        "Diseñar observación. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -147,11 +237,17 @@
       ]
     },
     {
-      "id": "SCIENCE_SENSORS-Q012",
-      "course_id": "SCI-201",
+      "id": "SCIENCE_SENSORS-C012",
       "unit_id": "SCI-201-U04",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Método científico operacional para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Método científico operacional?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Método científico operacional?",
+        "¿Qué evidencia conservarías tras Método científico operacional para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -161,11 +257,17 @@
       ]
     },
     {
-      "id": "SCIENCE_SENSORS-Q013",
-      "course_id": "SCI-202",
+      "id": "SCIENCE_SENSORS-C013",
       "unit_id": "SCI-202-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica prioridad desde la perspectiva de Ciencia / Sensores: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente prioridad desde la perspectiva de Ciencia / Sensores?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente prioridad desde la perspectiva de Ciencia / Sensores?",
+        "Explica prioridad desde la perspectiva de Ciencia / Sensores: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "prioridad · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "prioridad",
         "aplicación",
@@ -173,11 +275,17 @@
       ]
     },
     {
-      "id": "SCIENCE_SENSORS-Q014",
-      "course_id": "SCI-202",
+      "id": "SCIENCE_SENSORS-C014",
       "unit_id": "SCI-202-U01",
-      "type": "scenario",
-      "prompt_es": "Gestionar tráfico. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Gestionar tráfico»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Gestionar tráfico»?",
+        "Gestionar tráfico. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -186,11 +294,17 @@
       ]
     },
     {
-      "id": "SCIENCE_SENSORS-Q015",
-      "course_id": "SCI-202",
+      "id": "SCIENCE_SENSORS-C015",
       "unit_id": "SCI-202-U01",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Gestión de contactos para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Gestión de contactos?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Gestión de contactos?",
+        "¿Qué evidencia conservarías tras Gestión de contactos para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -200,11 +314,17 @@
       ]
     },
     {
-      "id": "SCIENCE_SENSORS-Q016",
-      "course_id": "SCI-202",
+      "id": "SCIENCE_SENSORS-C016",
       "unit_id": "SCI-202-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica actualización desde la perspectiva de Ciencia / Sensores: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente actualización desde la perspectiva de Ciencia / Sensores?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente actualización desde la perspectiva de Ciencia / Sensores?",
+        "Explica actualización desde la perspectiva de Ciencia / Sensores: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "actualización · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "actualización",
         "aplicación",
@@ -212,11 +332,17 @@
       ]
     },
     {
-      "id": "SCIENCE_SENSORS-Q017",
-      "course_id": "SCI-202",
+      "id": "SCIENCE_SENSORS-C017",
       "unit_id": "SCI-202-U02",
-      "type": "scenario",
-      "prompt_es": "Mantener varios tracks. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Mantener varios tracks»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Mantener varios tracks»?",
+        "Mantener varios tracks. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -225,11 +351,17 @@
       ]
     },
     {
-      "id": "SCIENCE_SENSORS-Q018",
-      "course_id": "SCI-202",
+      "id": "SCIENCE_SENSORS-C018",
       "unit_id": "SCI-202-U02",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Tracking para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Tracking?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Tracking?",
+        "¿Qué evidencia conservarías tras Tracking para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -239,11 +371,17 @@
       ]
     },
     {
-      "id": "SCIENCE_SENSORS-Q019",
-      "course_id": "SCI-202",
+      "id": "SCIENCE_SENSORS-C019",
       "unit_id": "SCI-202-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica ruido desde la perspectiva de Ciencia / Sensores: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente ruido desde la perspectiva de Ciencia / Sensores?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente ruido desde la perspectiva de Ciencia / Sensores?",
+        "Explica ruido desde la perspectiva de Ciencia / Sensores: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "ruido · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "ruido",
         "aplicación",
@@ -251,11 +389,17 @@
       ]
     },
     {
-      "id": "SCIENCE_SENSORS-Q020",
-      "course_id": "SCI-202",
+      "id": "SCIENCE_SENSORS-C020",
       "unit_id": "SCI-202-U03",
-      "type": "scenario",
-      "prompt_es": "Recuperar señal. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Recuperar señal»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Recuperar señal»?",
+        "Recuperar señal. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -264,11 +408,17 @@
       ]
     },
     {
-      "id": "SCIENCE_SENSORS-Q021",
-      "course_id": "SCI-202",
+      "id": "SCIENCE_SENSORS-C021",
       "unit_id": "SCI-202-U03",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Interferencia y compensación para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Interferencia y compensación?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Interferencia y compensación?",
+        "¿Qué evidencia conservarías tras Interferencia y compensación para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -278,11 +428,17 @@
       ]
     },
     {
-      "id": "SCIENCE_SENSORS-Q022",
-      "course_id": "SCI-202",
+      "id": "SCIENCE_SENSORS-C022",
       "unit_id": "SCI-202-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica sensores desde la perspectiva de Ciencia / Sensores: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente sensores desde la perspectiva de Ciencia / Sensores?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente sensores desde la perspectiva de Ciencia / Sensores?",
+        "Explica sensores desde la perspectiva de Ciencia / Sensores: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "sensores · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "sensores",
         "aplicación",
@@ -290,11 +446,17 @@
       ]
     },
     {
-      "id": "SCIENCE_SENSORS-Q023",
-      "course_id": "SCI-202",
+      "id": "SCIENCE_SENSORS-C023",
       "unit_id": "SCI-202-U04",
-      "type": "scenario",
-      "prompt_es": "Fusionar evidencias. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Fusionar evidencias»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Fusionar evidencias»?",
+        "Fusionar evidencias. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -303,11 +465,17 @@
       ]
     },
     {
-      "id": "SCIENCE_SENSORS-Q024",
-      "course_id": "SCI-202",
+      "id": "SCIENCE_SENSORS-C024",
       "unit_id": "SCI-202-U04",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Correlación para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Correlación?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Correlación?",
+        "¿Qué evidencia conservarías tras Correlación para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -317,11 +485,17 @@
       ]
     },
     {
-      "id": "SCIENCE_SENSORS-Q025",
-      "course_id": "SCI-203",
+      "id": "SCIENCE_SENSORS-C025",
       "unit_id": "SCI-203-U01",
-      "type": "knowledge",
-      "prompt_es": "Explica datos desde la perspectiva de Ciencia / Sensores: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente datos desde la perspectiva de Ciencia / Sensores?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente datos desde la perspectiva de Ciencia / Sensores?",
+        "Explica datos desde la perspectiva de Ciencia / Sensores: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "datos · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "datos",
         "aplicación",
@@ -329,11 +503,17 @@
       ]
     },
     {
-      "id": "SCIENCE_SENSORS-Q026",
-      "course_id": "SCI-203",
+      "id": "SCIENCE_SENSORS-C026",
       "unit_id": "SCI-203-U01",
-      "type": "scenario",
-      "prompt_es": "Emitir resultado reproducible. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Emitir resultado reproducible»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Emitir resultado reproducible»?",
+        "Emitir resultado reproducible. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -342,11 +522,17 @@
       ]
     },
     {
-      "id": "SCIENCE_SENSORS-Q027",
-      "course_id": "SCI-203",
+      "id": "SCIENCE_SENSORS-C027",
       "unit_id": "SCI-203-U01",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Resultados y trazabilidad para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Resultados y trazabilidad?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Resultados y trazabilidad?",
+        "¿Qué evidencia conservarías tras Resultados y trazabilidad para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -356,11 +542,17 @@
       ]
     },
     {
-      "id": "SCIENCE_SENSORS-Q028",
-      "course_id": "SCI-203",
+      "id": "SCIENCE_SENSORS-C028",
       "unit_id": "SCI-203-U02",
-      "type": "knowledge",
-      "prompt_es": "Explica anomalía desde la perspectiva de Ciencia / Sensores: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente anomalía desde la perspectiva de Ciencia / Sensores?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente anomalía desde la perspectiva de Ciencia / Sensores?",
+        "Explica anomalía desde la perspectiva de Ciencia / Sensores: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "anomalía · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "anomalía",
         "aplicación",
@@ -368,11 +560,17 @@
       ]
     },
     {
-      "id": "SCIENCE_SENSORS-Q029",
-      "course_id": "SCI-203",
+      "id": "SCIENCE_SENSORS-C029",
       "unit_id": "SCI-203-U02",
-      "type": "scenario",
-      "prompt_es": "Resolver fallo. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Resolver fallo»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Resolver fallo»?",
+        "Resolver fallo. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -381,11 +579,17 @@
       ]
     },
     {
-      "id": "SCIENCE_SENSORS-Q030",
-      "course_id": "SCI-203",
+      "id": "SCIENCE_SENSORS-C030",
       "unit_id": "SCI-203-U02",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Diagnóstico de sensores para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Diagnóstico de sensores?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Diagnóstico de sensores?",
+        "¿Qué evidencia conservarías tras Diagnóstico de sensores para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -395,11 +599,17 @@
       ]
     },
     {
-      "id": "SCIENCE_SENSORS-Q031",
-      "course_id": "SCI-203",
+      "id": "SCIENCE_SENSORS-C031",
       "unit_id": "SCI-203-U03",
-      "type": "knowledge",
-      "prompt_es": "Explica observación desde la perspectiva de Ciencia / Sensores: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente observación desde la perspectiva de Ciencia / Sensores?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente observación desde la perspectiva de Ciencia / Sensores?",
+        "Explica observación desde la perspectiva de Ciencia / Sensores: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "observación · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "observación",
         "aplicación",
@@ -407,11 +617,17 @@
       ]
     },
     {
-      "id": "SCIENCE_SENSORS-Q032",
-      "course_id": "SCI-203",
+      "id": "SCIENCE_SENSORS-C032",
       "unit_id": "SCI-203-U03",
-      "type": "scenario",
-      "prompt_es": "Turno supervisado. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Turno supervisado»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Turno supervisado»?",
+        "Turno supervisado. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -420,11 +636,17 @@
       ]
     },
     {
-      "id": "SCIENCE_SENSORS-Q033",
-      "course_id": "SCI-203",
+      "id": "SCIENCE_SENSORS-C033",
       "unit_id": "SCI-203-U03",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Guardia científica para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Guardia científica?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Guardia científica?",
+        "¿Qué evidencia conservarías tras Guardia científica para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -434,11 +656,17 @@
       ]
     },
     {
-      "id": "SCIENCE_SENSORS-Q034",
-      "course_id": "SCI-203",
+      "id": "SCIENCE_SENSORS-C034",
       "unit_id": "SCI-203-U04",
-      "type": "knowledge",
-      "prompt_es": "Explica medición desde la perspectiva de Ciencia / Sensores: qué significa, qué limita y cómo influye en la decisión.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción describe correctamente medición desde la perspectiva de Ciencia / Sensores?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente medición desde la perspectiva de Ciencia / Sensores?",
+        "Explica medición desde la perspectiva de Ciencia / Sensores: qué significa, qué limita y cómo influye en la decisión."
+      ],
+      "answer_display_es": "medición · aplicación · límite o riesgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "medición",
         "aplicación",
@@ -446,11 +674,17 @@
       ]
     },
     {
-      "id": "SCIENCE_SENSORS-Q035",
-      "course_id": "SCI-203",
+      "id": "SCIENCE_SENSORS-C035",
       "unit_id": "SCI-203-U04",
-      "type": "scenario",
-      "prompt_es": "Caso integrado. Describe preparación, decisión, comunicación y escalado.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué secuencia describe correctamente «Caso integrado»?",
+      "web_prompt_variants_es": [
+        "¿Qué secuencia describe correctamente «Caso integrado»?",
+        "Caso integrado. Describe preparación, decisión, comunicación y escalado."
+      ],
+      "answer_display_es": "preparación · decisión · comunicación · escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "preparación",
         "decisión",
@@ -459,11 +693,17 @@
       ]
     },
     {
-      "id": "SCIENCE_SENSORS-Q036",
-      "course_id": "SCI-203",
+      "id": "SCIENCE_SENSORS-C036",
       "unit_id": "SCI-203-U04",
-      "type": "evidence",
-      "prompt_es": "¿Qué evidencia conservarías tras Cualificación intermedia para demostrar competencia real?",
+      "source_type": "evidence",
+      "web_prompt_es": "¿Qué conjunto de elementos constituye una evidencia adecuada tras Cualificación intermedia?",
+      "web_prompt_variants_es": [
+        "¿Qué conjunto de elementos constituye una evidencia adecuada tras Cualificación intermedia?",
+        "¿Qué evidencia conservarías tras Cualificación intermedia para demostrar competencia real?"
+      ],
+      "answer_display_es": "contexto · acciones · resultado · limitaciones · feedback o pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "acciones",
@@ -472,6 +712,584 @@
         "feedback o pendientes"
       ]
     },
+    {
+      "id": "SCIENCE_SENSORS-C037",
+      "unit_id": "SCI-201-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Objetivo» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Objetivo» en esta unidad?",
+        "Selecciona la definición correcta de «Objetivo»."
+      ],
+      "answer_display_es": "Define qué fenómeno, contacto o propiedad se intenta observar; de él dependen canales, resolución, alcance y tiempo de barrido.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Define qué fenómeno, contacto o propiedad se intenta observar; de él dependen canales, resolución, alcance y tiempo de barrido."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C038",
+      "unit_id": "SCI-201-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Canales» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Canales» en esta unidad?",
+        "Selecciona la definición correcta de «Canales»."
+      ],
+      "answer_display_es": "Seleccionan qué familias de señal se adquieren; elegir canales irrelevantes consume tiempo o capacidad sin mejorar la respuesta.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Seleccionan qué familias de señal se adquieren; elegir canales irrelevantes consume tiempo o capacidad sin mejorar la respuesta."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C039",
+      "unit_id": "SCI-201-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Resolución» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Resolución» en esta unidad?",
+        "Selecciona la definición correcta de «Resolución»."
+      ],
+      "answer_display_es": "Determina el nivel de detalle de una lectura y suele intercambiarse con alcance, cobertura o tiempo de integración.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Determina el nivel de detalle de una lectura y suele intercambiarse con alcance, cobertura o tiempo de integración."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C040",
+      "unit_id": "SCI-201-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Patrones» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Patrones» en esta unidad?",
+        "Selecciona la definición correcta de «Patrones»."
+      ],
+      "answer_display_es": "Organizan la búsqueda espacial o temporal para cubrir un área sin dejar huecos innecesarios.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Organizan la búsqueda espacial o temporal para cubrir un área sin dejar huecos innecesarios."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C041",
+      "unit_id": "SCI-201-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Firmas» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Firmas» en esta unidad?",
+        "Selecciona la definición correcta de «Firmas»."
+      ],
+      "answer_display_es": "Son rasgos medibles usados para detectar o diferenciar objetivos; deben tratarse con confianza y no como identidad automática.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Son rasgos medibles usados para detectar o diferenciar objetivos; deben tratarse con confianza y no como identidad automática."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C042",
+      "unit_id": "SCI-201-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Filtros» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Filtros» en esta unidad?",
+        "Selecciona la definición correcta de «Filtros»."
+      ],
+      "answer_display_es": "Reducen componentes no deseados de la señal, pero pueden eliminar información útil; su efecto debe quedar documentado.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Reducen componentes no deseados de la señal, pero pueden eliminar información útil; su efecto debe quedar documentado."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C043",
+      "unit_id": "SCI-201-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Medidas» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Medidas» en esta unidad?",
+        "Selecciona la definición correcta de «Medidas»."
+      ],
+      "answer_display_es": "Son valores obtenidos del sensor con unidad, contexto y calidad suficientes para poder compararlos.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Son valores obtenidos del sensor con unidad, contexto y calidad suficientes para poder compararlos."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C044",
+      "unit_id": "SCI-201-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Calidad» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Calidad» en esta unidad?",
+        "Selecciona la definición correcta de «Calidad»."
+      ],
+      "answer_display_es": "Expresa fiabilidad, ruido, resolución y limitaciones del dato; una lectura pobre no debe presentarse como certeza.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Expresa fiabilidad, ruido, resolución y limitaciones del dato; una lectura pobre no debe presentarse como certeza."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C045",
+      "unit_id": "SCI-201-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Comparación» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Comparación» en esta unidad?",
+        "Selecciona la definición correcta de «Comparación»."
+      ],
+      "answer_display_es": "Contrasta lecturas con referencias o mediciones anteriores manteniendo visibles las diferencias de contexto.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Contrasta lecturas con referencias o mediciones anteriores manteniendo visibles las diferencias de contexto."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C046",
+      "unit_id": "SCI-201-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Hipótesis» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Hipótesis» en esta unidad?",
+        "Selecciona la definición correcta de «Hipótesis»."
+      ],
+      "answer_display_es": "Es una explicación provisional que debe poder confirmarse o descartarse mediante observaciones adicionales.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Es una explicación provisional que debe poder confirmarse o descartarse mediante observaciones adicionales."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C047",
+      "unit_id": "SCI-201-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Medición» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Medición» en esta unidad?",
+        "Selecciona la definición correcta de «Medición»."
+      ],
+      "answer_display_es": "Debe vincular valor, método, configuración y condiciones para que el resultado tenga significado operacional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Debe vincular valor, método, configuración y condiciones para que el resultado tenga significado operacional."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C048",
+      "unit_id": "SCI-201-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Prueba» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Prueba» en esta unidad?",
+        "Selecciona la definición correcta de «Prueba»."
+      ],
+      "answer_display_es": "Diseña una observación capaz de distinguir entre explicaciones rivales, no solo de confirmar la preferida.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Diseña una observación capaz de distinguir entre explicaciones rivales, no solo de confirmar la preferida."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C049",
+      "unit_id": "SCI-202-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Prioridad» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Prioridad» en esta unidad?",
+        "Selecciona la definición correcta de «Prioridad»."
+      ],
+      "answer_display_es": "Ordena contactos y tareas de sensor según misión, riesgo, urgencia y valor informativo.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Ordena contactos y tareas de sensor según misión, riesgo, urgencia y valor informativo."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C050",
+      "unit_id": "SCI-202-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Identidad» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Identidad» en esta unidad?",
+        "Selecciona la definición correcta de «Identidad»."
+      ],
+      "answer_display_es": "Es una conclusión sustentada por evidencia correlacionada; una firma parcial solo permite clasificación provisional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Es una conclusión sustentada por evidencia correlacionada; una firma parcial solo permite clasificación provisional."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C051",
+      "unit_id": "SCI-202-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Historial» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Historial» en esta unidad?",
+        "Selecciona la definición correcta de «Historial»."
+      ],
+      "answer_display_es": "Mantiene la evolución de un contacto y permite detectar cambios de rumbo, firma, velocidad o comportamiento.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Mantiene la evolución de un contacto y permite detectar cambios de rumbo, firma, velocidad o comportamiento."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C052",
+      "unit_id": "SCI-202-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Actualización» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Actualización» en esta unidad?",
+        "Selecciona la definición correcta de «Actualización»."
+      ],
+      "answer_display_es": "Incorpora nuevas observaciones al track sin borrar la incertidumbre previa ni saltar a una certeza injustificada.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Incorpora nuevas observaciones al track sin borrar la incertidumbre previa ni saltar a una certeza injustificada."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C053",
+      "unit_id": "SCI-202-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Predicción» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Predicción» en esta unidad?",
+        "Selecciona la definición correcta de «Predicción»."
+      ],
+      "answer_display_es": "Estima posición o estado futuro usando el historial y debe incluir un margen creciente de incertidumbre.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Estima posición o estado futuro usando el historial y debe incluir un margen creciente de incertidumbre."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C054",
+      "unit_id": "SCI-202-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Incertidumbre» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Incertidumbre» en esta unidad?",
+        "Selecciona la definición correcta de «Incertidumbre»."
+      ],
+      "answer_display_es": "Se expresa explícitamente para separar dato medido, inferencia y desconocido.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Se expresa explícitamente para separar dato medido, inferencia y desconocido."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C055",
+      "unit_id": "SCI-202-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Ruido» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Ruido» en esta unidad?",
+        "Selecciona la definición correcta de «Ruido»."
+      ],
+      "answer_display_es": "Es señal no útil o variación que reduce la confianza; se caracteriza antes de filtrarla.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Es señal no útil o variación que reduce la confianza; se caracteriza antes de filtrarla."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C056",
+      "unit_id": "SCI-202-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Fuente» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Fuente» en esta unidad?",
+        "Selecciona la definición correcta de «Fuente»."
+      ],
+      "answer_display_es": "Identificar la fuente de interferencia permite elegir compensación sin degradar innecesariamente otras lecturas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Identificar la fuente de interferencia permite elegir compensación sin degradar innecesariamente otras lecturas."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C057",
+      "unit_id": "SCI-202-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Filtros» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Filtros» en esta unidad?",
+        "Selecciona la definición correcta de «Filtros»."
+      ],
+      "answer_display_es": "Reducen componentes no deseados de la señal, pero pueden eliminar información útil; su efecto debe quedar documentado.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Reducen componentes no deseados de la señal, pero pueden eliminar información útil; su efecto debe quedar documentado."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C058",
+      "unit_id": "SCI-202-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Sensores» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Sensores» en esta unidad?",
+        "Selecciona la definición correcta de «Sensores»."
+      ],
+      "answer_display_es": "sensores en Ciencia / Sensores se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "sensores en Ciencia / Sensores se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C059",
+      "unit_id": "SCI-202-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Bases de datos» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Bases de datos» en esta unidad?",
+        "Selecciona la definición correcta de «Bases de datos»."
+      ],
+      "answer_display_es": "Aportan referencias para correlación, pero no sustituyen la evidencia actual ni garantizan identidad.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Aportan referencias para correlación, pero no sustituyen la evidencia actual ni garantizan identidad."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C060",
+      "unit_id": "SCI-202-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Otras estaciones» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Otras estaciones» en esta unidad?",
+        "Selecciona la definición correcta de «Otras estaciones»."
+      ],
+      "answer_display_es": "Aportan observaciones independientes que pueden confirmar, contradecir o contextualizar un resultado.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Aportan observaciones independientes que pueden confirmar, contradecir o contextualizar un resultado."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C061",
+      "unit_id": "SCI-203-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Datos» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Datos» en esta unidad?",
+        "Selecciona la definición correcta de «Datos»."
+      ],
+      "answer_display_es": "Deben conservar origen, contexto, calidad y recencia suficientes para sostener una decisión.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Deben conservar origen, contexto, calidad y recencia suficientes para sostener una decisión."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C062",
+      "unit_id": "SCI-203-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Procesamiento» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Procesamiento» en esta unidad?",
+        "Selecciona la definición correcta de «Procesamiento»."
+      ],
+      "answer_display_es": "Transforma datos brutos mediante pasos trazables; cada filtro o cálculo debe poder explicarse.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Transforma datos brutos mediante pasos trazables; cada filtro o cálculo debe poder explicarse."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C063",
+      "unit_id": "SCI-203-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Conclusión» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Conclusión» en esta unidad?",
+        "Selecciona la definición correcta de «Conclusión»."
+      ],
+      "answer_display_es": "Resume lo que los datos permiten afirmar, con nivel de confianza y límites.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Resume lo que los datos permiten afirmar, con nivel de confianza y límites."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C064",
+      "unit_id": "SCI-203-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Anomalía» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Anomalía» en esta unidad?",
+        "Selecciona la definición correcta de «Anomalía»."
+      ],
+      "answer_display_es": "Es una diferencia respecto al comportamiento esperado; primero se descarta fallo instrumental antes de atribuirla al fenómeno.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Es una diferencia respecto al comportamiento esperado; primero se descarta fallo instrumental antes de atribuirla al fenómeno."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C065",
+      "unit_id": "SCI-203-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Self-test» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Self-test» en esta unidad?",
+        "Selecciona la definición correcta de «Self-test»."
+      ],
+      "answer_display_es": "Comprueba salud y coherencia interna del sistema antes de confiar en una lectura sospechosa.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Comprueba salud y coherencia interna del sistema antes de confiar en una lectura sospechosa."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C066",
+      "unit_id": "SCI-203-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Degradación» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Degradación» en esta unidad?",
+        "Selecciona la definición correcta de «Degradación»."
+      ],
+      "answer_display_es": "Reduce sensibilidad, cobertura o fiabilidad y debe reflejarse en el nivel de confianza del resultado.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Reduce sensibilidad, cobertura o fiabilidad y debe reflejarse en el nivel de confianza del resultado."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C067",
+      "unit_id": "SCI-203-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Observación» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Observación» en esta unidad?",
+        "Selecciona la definición correcta de «Observación»."
+      ],
+      "answer_display_es": "Debe partir de una pregunta u objetivo y conservar configuración, tiempo, datos y contexto.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Debe partir de una pregunta u objetivo y conservar configuración, tiempo, datos y contexto."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C068",
+      "unit_id": "SCI-203-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Prioridad» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Prioridad» en esta unidad?",
+        "Selecciona la definición correcta de «Prioridad»."
+      ],
+      "answer_display_es": "Ordena contactos y tareas de sensor según misión, riesgo, urgencia y valor informativo.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Ordena contactos y tareas de sensor según misión, riesgo, urgencia y valor informativo."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C069",
+      "unit_id": "SCI-203-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Reporte» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Reporte» en esta unidad?",
+        "Selecciona la definición correcta de «Reporte»."
+      ],
+      "answer_display_es": "Entrega hechos, interpretación, confianza, límites y recomendación sin presentar hipótesis como certezas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Entrega hechos, interpretación, confianza, límites y recomendación sin presentar hipótesis como certezas."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C070",
+      "unit_id": "SCI-203-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Medición» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Medición» en esta unidad?",
+        "Selecciona la definición correcta de «Medición»."
+      ],
+      "answer_display_es": "Debe vincular valor, método, configuración y condiciones para que el resultado tenga significado operacional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Debe vincular valor, método, configuración y condiciones para que el resultado tenga significado operacional."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C071",
+      "unit_id": "SCI-203-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Interpretación» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Interpretación» en esta unidad?",
+        "Selecciona la definición correcta de «Interpretación»."
+      ],
+      "answer_display_es": "Relaciona mediciones con modelos o referencias manteniendo separadas observación e inferencia.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Relaciona mediciones con modelos o referencias manteniendo separadas observación e inferencia."
+      ]
+    },
+    {
+      "id": "SCIENCE_SENSORS-C072",
+      "unit_id": "SCI-203-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Incertidumbre» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Incertidumbre» en esta unidad?",
+        "Selecciona la definición correcta de «Incertidumbre»."
+      ],
+      "answer_display_es": "Se expresa explícitamente para separar dato medido, inferencia y desconocido.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Se expresa explícitamente para separar dato medido, inferencia y desconocido."
+      ]
+    }
+  ],
+  "legacy_year4_questions": [
     {
       "id": "SCIENCE_SENSORS-Q037",
       "course_id": "SCI-101",
@@ -776,12 +1594,5 @@
         "feedback"
       ]
     }
-  ],
-  "year3_status": "editorially_aligned_with_developed_year3_branch_material",
-  "year3_rule": "Only concepts explicitly taught in the 201–203 branch stages or established prerequisites may be required.",
-  "year3_courses": [
-    "SCI-201",
-    "SCI-202",
-    "SCI-203"
   ]
 }

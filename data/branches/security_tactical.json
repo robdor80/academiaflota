@@ -1,7 +1,7 @@
 {
   "subject": "Seguridad / Táctica",
   "code": "SECURITY_TACTICAL",
-  "version": "1.1",
+  "version": "1.2",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/branches/security_tactical/branch_curriculum_v1_0.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/branches/security_tactical/MANUAL_v1_0.md",
@@ -32,10 +32,10 @@
         {
           "type": "bullets",
           "items": [
-            "Escudos: Son una capacidad defensiva cuyo estado, cobertura y disponibilidad deben conocerse antes de asumir protección.",
-            "Armamento: Se opera solo bajo autoridad y reglas aplicables, con estado y disponibilidad conocidos.",
-            "Estado: Fija la condición real de partida y debe actualizarse cuando cambian sistemas, personas o entorno.",
-            "Seguridad: Limita cualquier procedimiento y exige identificar peligros, protecciones y condición de aborto."
+            "**Escudos**: Son una capacidad defensiva cuyo estado, cobertura y disponibilidad deben conocerse antes de asumir protección.",
+            "**Armamento**: Se opera solo bajo autoridad y reglas aplicables, con estado y disponibilidad conocidos.",
+            "**Estado**: Fija la condición real de partida y debe actualizarse cuando cambian sistemas, personas o entorno.",
+            "**Seguridad**: Limita cualquier procedimiento y exige identificar peligros, protecciones y condición de aborto."
           ]
         },
         {
@@ -47,19 +47,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica escudos desde la perspectiva de Seguridad / Táctica.",
-            "Resuelve: Familiarización.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -96,10 +83,10 @@
         {
           "type": "bullets",
           "items": [
-            "Capacidad: Describe qué puede hacer realmente un sistema o equipo en su estado actual.",
-            "Intención: Expresa el efecto que se quiere conseguir y permite adaptar la ejecución sin perder el propósito de la orden.",
-            "Posición: Modifica exposición, opciones y capacidad de proteger o responder.",
-            "Incertidumbre: Se expresa explícitamente para separar lo conocido de lo inferido."
+            "**Capacidad**: Describe qué puede hacer realmente un sistema o equipo en su estado actual.",
+            "**Intención**: Expresa el efecto que se quiere conseguir y permite adaptar la ejecución sin perder el propósito de la orden.",
+            "**Posición**: Modifica exposición, opciones y capacidad de proteger o responder.",
+            "**Incertidumbre**: Se expresa explícitamente para separar lo conocido de lo inferido."
           ]
         },
         {
@@ -111,19 +98,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Caso."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica capacidad desde la perspectiva de Seguridad / Táctica.",
-            "Resuelve: Clasificar contacto.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -160,10 +134,10 @@
         {
           "type": "bullets",
           "items": [
-            "Accesos: Se controlan según autorización, necesidad y situación de seguridad.",
-            "Patrulla: Mantiene presencia, observación y capacidad de respuesta sin sustituir un objetivo definido.",
-            "Incidente: Exige detección, evaluación, acción proporcional, escalado y seguimiento.",
-            "Custodia: Protege personas, evidencias y continuidad del procedimiento dentro de autoridad."
+            "**Accesos**: Se controlan según autorización, necesidad y situación de seguridad.",
+            "**Patrulla**: Mantiene presencia, observación y capacidad de respuesta sin sustituir un objetivo definido.",
+            "**Incidente**: Exige detección, evaluación, acción proporcional, escalado y seguimiento.",
+            "**Custodia**: Protege personas, evidencias y continuidad del procedimiento dentro de autoridad."
           ]
         },
         {
@@ -175,19 +149,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Práctica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica accesos desde la perspectiva de Seguridad / Táctica.",
-            "Resuelve: Simulación.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -224,10 +185,10 @@
         {
           "type": "bullets",
           "items": [
-            "Autoridad: Delimita quién puede ordenar, aprobar o modificar una acción; debe estar clara antes de comprometer personas o sistemas.",
-            "Escalada: Aumenta nivel de respuesta solo cuando la situación lo requiere y debe poder justificarse.",
-            "Alternativas: Se comparan por viabilidad, riesgo, recursos, reversibilidad y efecto en misión.",
-            "Registro: registro preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes."
+            "**Autoridad**: Delimita quién puede ordenar, aprobar o modificar una acción; debe estar clara antes de comprometer personas o sistemas.",
+            "**Escalada**: Aumenta nivel de respuesta solo cuando la situación lo requiere y debe poder justificarse.",
+            "**Alternativas**: Se comparan por viabilidad, riesgo, recursos, reversibilidad y efecto en misión.",
+            "**Registro**: registro preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes."
           ]
         },
         {
@@ -239,19 +200,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Juicio."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica autoridad desde la perspectiva de Seguridad / Táctica.",
-            "Resuelve: Caso situacional.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -288,10 +236,10 @@
         {
           "type": "bullets",
           "items": [
-            "Posición: Modifica exposición, opciones y capacidad de proteger o responder.",
-            "Escudos: Son una capacidad defensiva cuyo estado, cobertura y disponibilidad deben conocerse antes de asumir protección.",
-            "Maniobra: maniobra en Seguridad / Táctica se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
-            "Fuego: fuego en Seguridad / Táctica se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+            "**Posición**: Modifica exposición, opciones y capacidad de proteger o responder.",
+            "**Escudos**: Son una capacidad defensiva cuyo estado, cobertura y disponibilidad deben conocerse antes de asumir protección.",
+            "**Maniobra**: maniobra en Seguridad / Táctica se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "**Fuego**: fuego en Seguridad / Táctica se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -303,19 +251,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica posición desde la perspectiva de Seguridad / Táctica.",
-            "Resuelve: Simulación.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -352,10 +287,10 @@
         {
           "type": "bullets",
           "items": [
-            "Detección: Reconoce una amenaza o desviación con datos suficientes para iniciar una respuesta.",
-            "Contención: Limita movimiento, propagación o impacto mientras se organiza una solución definitiva.",
-            "Equipo: Se organiza por función, competencia, comunicación y responsabilidad.",
-            "Mando: mando en Seguridad / Táctica se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+            "**Detección**: Reconoce una amenaza o desviación con datos suficientes para iniciar una respuesta.",
+            "**Contención**: Limita movimiento, propagación o impacto mientras se organiza una solución definitiva.",
+            "**Equipo**: Se organiza por función, competencia, comunicación y responsabilidad.",
+            "**Mando**: mando en Seguridad / Táctica se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -367,19 +302,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Práctica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica detección desde la perspectiva de Seguridad / Táctica.",
-            "Resuelve: Ejercicio.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -416,9 +338,9 @@
         {
           "type": "bullets",
           "items": [
-            "Prioridad: prioridad organiza la respuesta comparando seguridad, misión, tiempo e impacto.",
-            "Protección: Prioriza reducir daño a personas y funciones críticas mediante medidas proporcionales.",
-            "Misión: Define el propósito y las restricciones que permiten priorizar opciones."
+            "**Prioridad**: prioridad organiza la respuesta comparando seguridad, misión, tiempo e impacto.",
+            "**Protección**: Prioriza reducir daño a personas y funciones críticas mediante medidas proporcionales.",
+            "**Misión**: Define el propósito y las restricciones que permiten priorizar opciones."
           ]
         },
         {
@@ -430,19 +352,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Juicio."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica prioridad desde la perspectiva de Seguridad / Táctica.",
-            "Resuelve: Escenario.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -479,10 +388,10 @@
         {
           "type": "bullets",
           "items": [
-            "Roles: Delimitan responsabilidad y autoridad dentro del equipo.",
-            "Comunicación: comunicación preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes.",
-            "Detención: Debe ajustarse a autoridad, necesidad, seguridad y proporcionalidad.",
-            "Handoff: Transfiere estado, acciones, riesgos, órdenes y pendientes sin perder continuidad."
+            "**Roles**: Delimitan responsabilidad y autoridad dentro del equipo.",
+            "**Comunicación**: comunicación preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes.",
+            "**Detención**: Debe ajustarse a autoridad, necesidad, seguridad y proporcionalidad.",
+            "**Handoff**: Transfiere estado, acciones, riesgos, órdenes y pendientes sin perder continuidad."
           ]
         },
         {
@@ -494,19 +403,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica roles desde la perspectiva de Seguridad / Táctica.",
-            "Resuelve: Dirigir célula.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -543,10 +439,10 @@
         {
           "type": "bullets",
           "items": [
-            "Estado: Fija la condición real de partida y debe actualizarse cuando cambian sistemas, personas o entorno.",
-            "Contactos: contactos en Seguridad / Táctica se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
-            "Reglas: Fijan restricciones legales, de seguridad o procedimiento que no desaparecen por urgencia.",
-            "Relevo: relevo en Seguridad / Táctica se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+            "**Estado**: Fija la condición real de partida y debe actualizarse cuando cambian sistemas, personas o entorno.",
+            "**Contactos**: contactos en Seguridad / Táctica se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "**Reglas**: Fijan restricciones legales, de seguridad o procedimiento que no desaparecen por urgencia.",
+            "**Relevo**: relevo en Seguridad / Táctica se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -558,19 +454,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica estado desde la perspectiva de Seguridad / Táctica.",
-            "Resuelve: Turno supervisado.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -607,10 +490,10 @@
         {
           "type": "bullets",
           "items": [
-            "Amenaza: amenaza se evalúa por probabilidad, impacto, exposición y mitigación antes de comprometer la operación.",
-            "Zonas: Representan regiones con reglas, riesgos o condiciones que afectan la planificación.",
-            "Personal: personal se organiza por función, competencia, carga y responsabilidad, con supervisión proporcional al riesgo.",
-            "Contingencia: contingencia en Seguridad / Táctica se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+            "**Amenaza**: amenaza se evalúa por probabilidad, impacto, exposición y mitigación antes de comprometer la operación.",
+            "**Zonas**: Representan regiones con reglas, riesgos o condiciones que afectan la planificación.",
+            "**Personal**: personal se organiza por función, competencia, carga y responsabilidad, con supervisión proporcional al riesgo.",
+            "**Contingencia**: contingencia en Seguridad / Táctica se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -622,19 +505,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Revisión."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica amenaza desde la perspectiva de Seguridad / Táctica.",
-            "Resuelve: Diseñar plan.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -671,9 +541,9 @@
         {
           "type": "bullets",
           "items": [
-            "Externo: externo en Seguridad / Táctica se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
-            "Interno: interno en Seguridad / Táctica se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
-            "Coordinación: coordinación en Seguridad / Táctica se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
+            "**Externo**: externo en Seguridad / Táctica se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "**Interno**: interno en Seguridad / Táctica se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "**Coordinación**: coordinación en Seguridad / Táctica se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -685,19 +555,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Juicio."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica externo desde la perspectiva de Seguridad / Táctica.",
-            "Resuelve: Simulación.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -734,9 +591,9 @@
         {
           "type": "bullets",
           "items": [
-            "Disciplina: Sostiene procedimientos y comunicación bajo presión sin impedir informar de un riesgo real.",
-            "Proporcionalidad: Ajusta la respuesta a la amenaza y al objetivo, evitando fuerza o riesgo innecesarios.",
-            "Comunicación: comunicación preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes."
+            "**Disciplina**: Sostiene procedimientos y comunicación bajo presión sin impedir informar de un riesgo real.",
+            "**Proporcionalidad**: Ajusta la respuesta a la amenaza y al objetivo, evitando fuerza o riesgo innecesarios.",
+            "**Comunicación**: comunicación preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes."
           ]
         },
         {
@@ -748,19 +605,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evidencia."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica disciplina desde la perspectiva de Seguridad / Táctica.",
-            "Resuelve: Evaluación integrada.",
-            "¿Qué límite de competencia o autoridad debes respetar?",
-            "¿Qué evidencia demostraría que puedes repetir la tarea en otro contexto?"
-          ]
         },
         {
           "type": "heading",
@@ -1258,5 +1102,6 @@
     }
   ],
   "year3Status": "developed_content",
-  "year3Scope": "201-203"
+  "year3Scope": "201-203",
+  "assessmentModel": "concept_driven_v2_1_year3"
 }
