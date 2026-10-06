@@ -3,7 +3,7 @@ import {
   updateProfile, deleteProfile, exportProfile, importProfile,
   setStorageOwner, getStorageOwner, onProfileChange
 } from "./storage.js";
-import { loadStudyData, loadStudyFile, renderLesson, checkUnitReview } from "./study.js?v=0.7.0";
+import { loadStudyData, loadStudyFile, renderLesson, checkUnitReview } from "./study.js?v=0.7.1";
 import { loadEvaluationData, renderExam, gradeExam, renderResult } from "./evaluation.js?v=0.5.0";
 import { firebaseConfigured } from "./firebase-config.js";
 import { createFirebaseClient } from "./firebase-client.js";

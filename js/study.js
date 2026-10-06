@@ -1,7 +1,7 @@
 export async function loadStudyFile(path) {
   if (!path) throw new Error("El material de estudio no tiene un archivo asociado.");
   const separator = path.includes("?") ? "&" : "?";
-  const response = await fetch(path + separator + "v=0.7.0");
+  const response = await fetch(path + separator + "v=0.7.1");
   if (!response.ok) throw new Error("No se pudo cargar el material académico.");
   return response.json();
 }
@@ -89,11 +89,15 @@ function renderReview(assessment, unitId) {
 
   const questions = chosen.map(function(concept, index) {
     const answer = escapeHtml(concept.answer_display_es);
+    const promptVariants = Array.isArray(concept.web_prompt_variants_es) && concept.web_prompt_variants_es.length
+      ? concept.web_prompt_variants_es
+      : [concept.web_prompt_es];
+    const prompt = shuffle(promptVariants)[0] || concept.web_prompt_es;
     if (shortIds.has(concept.id)) {
       const encoded = encodeURIComponent(JSON.stringify(concept.accepted_short_answers_es));
       return '<article class="unit-review__question" data-review-question data-mode="short" data-accepted="' + encoded +
         '" data-answer="' + encodeURIComponent(concept.answer_display_es) + '">' +
-        '<h3>' + (index + 1) + ". " + escapeHtml(concept.web_prompt_es) + '</h3>' +
+        '<h3>' + (index + 1) + ". " + escapeHtml(prompt) + '</h3>' +
         '<input class="unit-review__short" type="text" autocomplete="off" placeholder="Respuesta corta">' +
         '<p class="unit-review__feedback" data-review-feedback></p></article>';
     }
@@ -106,7 +110,7 @@ function renderReview(assessment, unitId) {
 
     return '<article class="unit-review__question" data-review-question data-mode="mcq" data-answer="' +
       encodeURIComponent(concept.answer_display_es) + '"><h3>' + (index + 1) + ". " +
-      escapeHtml(concept.web_prompt_es) + '</h3><div class="unit-review__options">' + options +
+      escapeHtml(prompt) + '</h3><div class="unit-review__options">' + options +
       '</div><p class="unit-review__feedback" data-review-feedback></p></article>';
   }).join("");
 
