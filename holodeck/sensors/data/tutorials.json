@@ -330,8 +330,8 @@
       "title": "Lectura y transferencia",
       "scenario_id": "standard_sector",
       "guidance": "full",
-      "objective": "Revisa la firma subespacial de C-07 y remite los datos a Ciencia.",
-      "hint": "Lectura sensorial → Firma subespacial → Enviar a Ciencia.",
+      "objective": "Abre la lectura sensorial del Contacto 07, entra en «Firma subespacial» y envía los datos a Ciencia para su interpretación.",
+      "hint": "En Lectura sensorial, pulsa el submenú «Firma subespacial» (debajo de «Firma energética»). «Tipo de firma» solo te dice qué firmas existen.",
       "completion_feedback": "Práctica completada. Sabes revisar una evidencia concreta y transferirla a la consola competente.",
       "steps": [
         {
@@ -368,16 +368,16 @@
           "concept": "Sensores no es omnisciente."
         },
         {
-          "label": "Revisar Firma subespacial",
+          "label": "Abrir «Firma subespacial»",
           "event": "NAV_SECONDARY",
           "match": {
             "primaryId": "sensor_readout",
             "secondaryId": "subspace_signature"
           },
-          "what": "Examinas la evidencia subespacial.",
-          "why": "C-07 presenta una firma parcial que merece análisis.",
-          "effect": "Compruebas valor, confianza y procedencia.",
-          "concept": "Una firma parcial es evidencia, no certeza."
+          "what": "Abres el submenú «Firma subespacial» dentro de Lectura sensorial para consultar específicamente esa lectura de C-07.",
+          "why": "«Tipo de firma» solo indica qué clases de firma se han detectado. Para revisar la evidencia subespacial debes abrir su lectura específica.",
+          "effect": "La consola muestra el valor subespacial disponible, su confianza, incertidumbre, momento y procedencia.",
+          "concept": "Detectar que existe una firma y revisar su lectura concreta son pasos distintos."
         },
         {
           "label": "Enviar a Ciencia",
