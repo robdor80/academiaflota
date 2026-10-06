@@ -33,17 +33,28 @@ async function load(){
   ]);
   shell.model=m;shell.context=c;shell.interaction=i;shell.powerContract=p;shell.scenarios=s;
   shell.sim=createSimulation(s.scenarios[0]);
-  bind();render();log("SIMULATOR READY · "+shell.sim.scenarioTitle);
+  const scenarioSelect=$("#scenario-select");
+  scenarioSelect.innerHTML=s.scenarios.map(x=>'<option value="'+esc(x.id)+'">'+esc(x.title)+'</option>').join("");
+  scenarioSelect.value=shell.sim.scenarioId;
+  bind();render();syncScenarioControl();log("SIMULATOR READY · "+shell.sim.scenarioTitle);
   initTeacherMode({resetScenario,logTeacher:teacherLog});
 }
 function bind(){
   $("#reset-sim").addEventListener("click",()=>resetScenario("manual",shell.sim.scenarioId));
   $("#toggle-log").addEventListener("click",()=>{$("#log-panel").hidden=!$("#log-panel").hidden});
+  $("#scenario-select").addEventListener("change",()=>{if($("#mode-select").value==="free")resetScenario("free:scenario-select",$("#scenario-select").value)});
+  $("#mode-select").addEventListener("change",syncScenarioControl);
+}
+function syncScenarioControl(){
+  const select=$("#scenario-select");if(!select)return;
+  select.disabled=$("#mode-select").value==="teacher";
+  select.title=select.disabled?"El escenario lo determina la práctica del profesor.":"Selecciona un escenario para el Modo Libre.";
 }
 function resetScenario(source="manual",scenarioId=null){
   clearTimers();
   const scenario=scenarioById(scenarioId||shell.sim?.scenarioId||shell.scenarios.scenarios[0].id);
   shell.sim=createSimulation(scenario);
+  if($("#scenario-select"))$("#scenario-select").value=scenario.id;
   shell.primaryId="status";shell.secondaryId="general_status";shell.special=null;shell.prefill=null;
   shell.selectedArrayId=shell.sim.activeArray;shell.selectedResultId=null;shell.message=null;
   log("RESET scenario · "+source+" · "+scenario.id);render();
