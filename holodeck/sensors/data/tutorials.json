@@ -82,14 +82,22 @@
           "event": "NAV_PRIMARY",
           "match": {
             "primaryId": "contacts"
-          }
+          },
+          "what": "Abres la memoria operativa de objetos ya detectados.",
+          "why": "C-07 ya existe como contacto; no necesitas explorar todo el espacio otra vez.",
+          "effect": "Accedes a sus datos, historial y acciones aplicables.",
+          "concept": "Un contacto es conocimiento persistente."
         },
         {
           "label": "Seleccionar C-07",
           "event": "SELECT_CONTACT",
           "match": {
             "contactId": "C-07"
-          }
+          },
+          "what": "Estableces C-07 como objeto de trabajo.",
+          "why": "Las acciones contextuales necesitan saber sobre qué contacto van a actuar.",
+          "effect": "La consola conserva C-07 como contexto al navegar.",
+          "concept": "Contexto = objetivo actual + estado conocido."
         },
         {
           "label": "Usar Barrido focalizado",
@@ -97,7 +105,11 @@
           "match": {
             "actionId": "focused_scan",
             "contactId": "C-07"
-          }
+          },
+          "what": "Pides un barrido concentrado sobre C-07.",
+          "why": "Ya sabes dónde está aproximadamente; ahora interesa obtener una lectura mejor.",
+          "effect": "La consola abre Barridos/Focalizado con C-07 preseleccionado.",
+          "concept": "La acción contextual reduce pasos, no decide por ti."
         },
         {
           "label": "Ejecutar sobre C-07",
@@ -105,7 +117,11 @@
           "match": {
             "scanType": "focused",
             "contactId": "C-07"
-          }
+          },
+          "what": "Ordenas que el barrido focalizado comience.",
+          "why": "Aunque el objetivo venga rellenado, el operador debe revisar y ejecutar.",
+          "effect": "Se emplean recursos sensorios específicamente sobre C-07.",
+          "concept": "Preconfigurar no equivale a ejecutar."
         },
         {
           "label": "Completar barrido",
@@ -113,9 +129,14 @@
           "match": {
             "scanType": "focused",
             "contactId": "C-07"
-          }
+          },
+          "what": "Esperas a que finalice y se incorpore el resultado.",
+          "why": "Solo una observación terminada puede compararse con lo que ya sabías.",
+          "effect": "Puede aumentar la confianza o el detalle, sin garantizar identificación.",
+          "concept": "Más observaciones mejoran conocimiento, no garantizan certeza."
         }
-      ]
+      ],
+      "lesson_summary": "Has aprendido a partir de un contacto ya conocido y usar una acción contextual para mejorar su observación sin repetir pasos innecesarios."
     },
     {
       "id": "TUT-03",
@@ -129,37 +150,58 @@
           "event": "NAV_PRIMARY",
           "match": {
             "primaryId": "contacts"
-          }
+          },
+          "what": "Abres la lista de contactos disponibles.",
+          "why": "Para iniciar tracking necesitas una identidad de contacto ya registrada.",
+          "effect": "Puedes escoger el objeto exacto que quieres mantener bajo observación.",
+          "concept": "Seguimiento requiere una identidad de contacto."
         },
         {
           "label": "Seleccionar C-07",
           "event": "SELECT_CONTACT",
           "match": {
             "contactId": "C-07"
-          }
+          },
+          "what": "Seleccionas C-07.",
+          "why": "El sistema debe saber qué contacto consumirá capacidad de seguimiento.",
+          "effect": "Las acciones de tracking pasan a aplicarse a C-07.",
+          "concept": "Los recursos de tracking se asignan a contactos concretos."
         },
         {
           "label": "Iniciar seguimiento",
           "event": "TRACK_START",
           "match": {
             "contactId": "C-07"
-          }
+          },
+          "what": "Ordenas mantener C-07 bajo observación continuada.",
+          "why": "Un barrido es una foto; el seguimiento acumula observaciones para actualizar posición y movimiento.",
+          "effect": "C-07 ocupa capacidad de tracking y aparece en el panel persistente.",
+          "concept": "Tracking = observación continua."
         },
         {
           "label": "Cambiar de menú",
           "event": "NAV_PRIMARY",
           "matchNot": {
             "primaryId": "contacts"
-          }
+          },
+          "what": "Abandonas visualmente CONTACTOS y abres otra función.",
+          "why": "Queremos comprobar que navegar por la interfaz no cancela una operación real.",
+          "effect": "Cambias de espacio de trabajo, pero C-07 sigue bajo seguimiento.",
+          "concept": "Vista de interfaz y estado operativo son cosas distintas."
         },
         {
           "label": "Tracking sigue activo",
           "event": "NAV_PRIMARY",
           "requiresState": {
             "contactTracked": "C-07"
-          }
+          },
+          "what": "Compruebas el panel derecho después de cambiar de menú.",
+          "why": "El estado persistente debe mantener tu conciencia de situación.",
+          "effect": "Puedes seguir viendo C-07 sin volver a CONTACTOS.",
+          "concept": "El panel persistente conserva operaciones en segundo plano."
         }
-      ]
+      ],
+      "lesson_summary": "Has aprendido que el seguimiento es un proceso persistente: puedes cambiar de pantalla mientras la consola continúa observando el contacto."
     },
     {
       "id": "TUT-04",
