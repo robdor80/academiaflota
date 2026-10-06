@@ -1,43 +1,94 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.1.0",
   "course_id": "SEC-302",
-  "status": "editorially_aligned_with_developed_manual",
-  "source_manual": "gameplay/careers/academy_path/study_materials/third_class/SEC-302/MANUAL_v1_0.md",
-  "question_count": 24,
-  "rule": "No question may require knowledge that is not explicitly taught in SEC-302 or established prerequisites.",
-  "questions": [
+  "status": "concept_driven_autocorrectable_v2_1",
+  "source_bank": "question_bank_v1_0.json",
+  "policy": {
+    "theory_formats": [
+      "multiple_choice",
+      "short_answer"
+    ],
+    "multiple_choice_target_ratio": 0.8,
+    "short_answer_target_ratio": 0.2,
+    "deterministic_correction": true,
+    "web_and_game_share_concepts_not_question_instances": true,
+    "complex_judgment_moves_to_practice_and_simulation": true,
+    "source_rule": "Every evaluated concept must be explicitly taught in the course material or an established prerequisite."
+  },
+  "unit_review": {
+    "questions_per_attempt": 5,
+    "reshuffle_each_attempt": true,
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
+  },
+  "concepts": [
     {
-      "id": "SEC-302-Q001",
+      "id": "SEC-302-C001",
       "unit_id": "SEC-302-U01",
-      "type": "short_answer",
-      "prompt_es": "¿Qué significa conciencia de amenaza?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué significa conciencia de amenaza?",
+      "web_prompt_variants_es": [
+        "¿Qué significa conciencia de amenaza?",
+        "Repaso: ¿Qué significa conciencia de amenaza?"
+      ],
+      "answer_display_es": "observar cambios relevantes",
+      "accepted_short_answers_es": [
+        "observar cambios relevantes"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "observar cambios relevantes"
       ]
     },
     {
-      "id": "SEC-302-Q002",
+      "id": "SEC-302-C002",
       "unit_id": "SEC-302-U01",
-      "type": "short_answer",
-      "prompt_es": "¿Para qué sirve baseline?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Para qué sirve baseline?",
+      "web_prompt_variants_es": [
+        "¿Para qué sirve baseline?",
+        "Repaso: ¿Para qué sirve baseline?"
+      ],
+      "answer_display_es": "distinguir normal de anomalía",
+      "accepted_short_answers_es": [
+        "distinguir normal de anomalía"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "distinguir normal de anomalía"
       ]
     },
     {
-      "id": "SEC-302-Q003",
+      "id": "SEC-302-C003",
       "unit_id": "SEC-302-U01",
-      "type": "judgment",
-      "prompt_es": "¿Una señal aislada demuestra hostilidad?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Una señal aislada demuestra hostilidad?",
+      "web_prompt_variants_es": [
+        "¿Una señal aislada demuestra hostilidad?",
+        "Repaso: ¿Una señal aislada demuestra hostilidad?"
+      ],
+      "answer_display_es": "no",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no"
       ]
     },
     {
-      "id": "SEC-302-Q004",
+      "id": "SEC-302-C004",
       "unit_id": "SEC-302-U01",
-      "type": "knowledge",
-      "prompt_es": "¿Qué conviene identificar antes de operar?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué conviene identificar antes de operar?",
+      "web_prompt_variants_es": [
+        "¿Qué conviene identificar antes de operar?",
+        "Repaso: ¿Qué conviene identificar antes de operar?"
+      ],
+      "answer_display_es": "salidas · reunión · zonas protegidas · comunicaciones",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "salidas",
         "reunión",
@@ -46,10 +97,17 @@
       ]
     },
     {
-      "id": "SEC-302-Q005",
+      "id": "SEC-302-C005",
       "unit_id": "SEC-302-U02",
-      "type": "knowledge",
-      "prompt_es": "¿Qué limita uso de phaser?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué limita uso de phaser?",
+      "web_prompt_variants_es": [
+        "¿Qué limita uso de phaser?",
+        "Repaso: ¿Qué limita uso de phaser?"
+      ],
+      "answer_display_es": "autoridad · entrenamiento · configuración · contexto",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "autoridad",
         "entrenamiento",
@@ -58,28 +116,53 @@
       ]
     },
     {
-      "id": "SEC-302-Q006",
+      "id": "SEC-302-C006",
       "unit_id": "SEC-302-U02",
-      "type": "judgment",
-      "prompt_es": "¿Acceso físico equivale a autoridad?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Acceso físico equivale a autoridad?",
+      "web_prompt_variants_es": [
+        "¿Acceso físico equivale a autoridad?",
+        "Repaso: ¿Acceso físico equivale a autoridad?"
+      ],
+      "answer_display_es": "no",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no"
       ]
     },
     {
-      "id": "SEC-302-Q007",
+      "id": "SEC-302-C007",
       "unit_id": "SEC-302-U02",
-      "type": "short_answer",
-      "prompt_es": "¿Qué significa proporcionalidad?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué significa proporcionalidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa proporcionalidad?",
+        "Repaso: ¿Qué significa proporcionalidad?"
+      ],
+      "answer_display_es": "respuesta acorde al riesgo",
+      "accepted_short_answers_es": [
+        "respuesta acorde al riesgo"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "respuesta acorde al riesgo"
       ]
     },
     {
-      "id": "SEC-302-Q008",
+      "id": "SEC-302-C008",
       "unit_id": "SEC-302-U02",
-      "type": "judgment",
-      "prompt_es": "¿Por qué el uso debe ser trazable?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué el uso debe ser trazable?",
+      "web_prompt_variants_es": [
+        "¿Por qué el uso debe ser trazable?",
+        "Repaso: ¿Por qué el uso debe ser trazable?"
+      ],
+      "answer_display_es": "responsabilidad · registro · evaluación",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "responsabilidad",
         "registro",
@@ -87,10 +170,17 @@
       ]
     },
     {
-      "id": "SEC-302-Q009",
+      "id": "SEC-302-C009",
       "unit_id": "SEC-302-U03",
-      "type": "knowledge",
-      "prompt_es": "¿Qué forma seguridad a bordo?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué forma seguridad a bordo?",
+      "web_prompt_variants_es": [
+        "¿Qué forma seguridad a bordo?",
+        "Repaso: ¿Qué forma seguridad a bordo?"
+      ],
+      "answer_display_es": "acceso · zonas · identidad · incidentes · coordinación",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "acceso",
         "zonas",
@@ -100,10 +190,17 @@
       ]
     },
     {
-      "id": "SEC-302-Q010",
+      "id": "SEC-302-C010",
       "unit_id": "SEC-302-U03",
-      "type": "short_answer",
-      "prompt_es": "¿Por qué restringir una zona?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Por qué restringir una zona?",
+      "web_prompt_variants_es": [
+        "¿Por qué restringir una zona?",
+        "Repaso: ¿Por qué restringir una zona?"
+      ],
+      "answer_display_es": "clasificación · riesgo · privacidad · emergencia · investigación",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "clasificación",
         "riesgo",
@@ -113,10 +210,17 @@
       ]
     },
     {
-      "id": "SEC-302-Q011",
+      "id": "SEC-302-C011",
       "unit_id": "SEC-302-U03",
-      "type": "procedure",
-      "prompt_es": "¿Qué haces ante intrusión?",
+      "source_type": "procedure",
+      "web_prompt_es": "¿Qué haces ante intrusión?",
+      "web_prompt_variants_es": [
+        "¿Qué haces ante intrusión?",
+        "Repaso: ¿Qué haces ante intrusión?"
+      ],
+      "answer_display_es": "confirmar · informar · proteger · seguir instrucciones",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "confirmar",
         "informar",
@@ -125,10 +229,17 @@
       ]
     },
     {
-      "id": "SEC-302-Q012",
+      "id": "SEC-302-C012",
       "unit_id": "SEC-302-U03",
-      "type": "judgment",
-      "prompt_es": "¿Por qué preservar información importa?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué preservar información importa?",
+      "web_prompt_variants_es": [
+        "¿Por qué preservar información importa?",
+        "Repaso: ¿Por qué preservar información importa?"
+      ],
+      "answer_display_es": "evidencia · registros · trazabilidad",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "evidencia",
         "registros",
@@ -136,10 +247,17 @@
       ]
     },
     {
-      "id": "SEC-302-Q013",
+      "id": "SEC-302-C013",
       "unit_id": "SEC-302-U04",
-      "type": "short_answer",
-      "prompt_es": "¿De qué depende loadout?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿De qué depende loadout?",
+      "web_prompt_variants_es": [
+        "¿De qué depende loadout?",
+        "Repaso: ¿De qué depende loadout?"
+      ],
+      "answer_display_es": "objetivo · entorno · duración · rol · riesgo · comunicaciones",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "objetivo",
         "entorno",
@@ -150,19 +268,35 @@
       ]
     },
     {
-      "id": "SEC-302-Q014",
+      "id": "SEC-302-C014",
       "unit_id": "SEC-302-U04",
-      "type": "judgment",
-      "prompt_es": "¿Por qué roles llevan equipo distinto?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué roles llevan equipo distinto?",
+      "web_prompt_variants_es": [
+        "¿Por qué roles llevan equipo distinto?",
+        "Repaso: ¿Por qué roles llevan equipo distinto?"
+      ],
+      "answer_display_es": "funciones diferentes",
+      "accepted_short_answers_es": [
+        "funciones diferentes"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "funciones diferentes"
       ]
     },
     {
-      "id": "SEC-302-Q015",
+      "id": "SEC-302-C015",
       "unit_id": "SEC-302-U04",
-      "type": "knowledge",
-      "prompt_es": "¿Qué incluye plan de comunicaciones?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué incluye plan de comunicaciones?",
+      "web_prompt_variants_es": [
+        "¿Qué incluye plan de comunicaciones?",
+        "Repaso: ¿Qué incluye plan de comunicaciones?"
+      ],
+      "answer_display_es": "canal · check-in · emergencia · pérdida contacto",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "canal",
         "check-in",
@@ -171,10 +305,17 @@
       ]
     },
     {
-      "id": "SEC-302-Q016",
+      "id": "SEC-302-C016",
       "unit_id": "SEC-302-U04",
-      "type": "judgment",
-      "prompt_es": "¿Por qué más equipo no siempre es mejor?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué más equipo no siempre es mejor?",
+      "web_prompt_variants_es": [
+        "¿Por qué más equipo no siempre es mejor?",
+        "Repaso: ¿Por qué más equipo no siempre es mejor?"
+      ],
+      "answer_display_es": "carga · complejidad · tiempo · pérdida",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "carga",
         "complejidad",
@@ -183,10 +324,17 @@
       ]
     },
     {
-      "id": "SEC-302-Q017",
+      "id": "SEC-302-C017",
       "unit_id": "SEC-302-U05",
-      "type": "knowledge",
-      "prompt_es": "Nombra prioridades de supervivencia.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción contiene prioridades de supervivencia?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene prioridades de supervivencia?",
+        "Nombra prioridades de supervivencia."
+      ],
+      "answer_display_es": "seguridad · refugio · recursos · orientación · comunicación",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "seguridad",
         "refugio",
@@ -196,19 +344,35 @@
       ]
     },
     {
-      "id": "SEC-302-Q018",
+      "id": "SEC-302-C018",
       "unit_id": "SEC-302-U05",
-      "type": "short_answer",
-      "prompt_es": "¿Qué debe proporcionar refugio?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué debe proporcionar refugio?",
+      "web_prompt_variants_es": [
+        "¿Qué debe proporcionar refugio?",
+        "Repaso: ¿Qué debe proporcionar refugio?"
+      ],
+      "answer_display_es": "protección entorno",
+      "accepted_short_answers_es": [
+        "protección entorno"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "protección entorno"
       ]
     },
     {
-      "id": "SEC-302-Q019",
+      "id": "SEC-302-C019",
       "unit_id": "SEC-302-U05",
-      "type": "knowledge",
-      "prompt_es": "¿Qué recursos deben controlarse?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué recursos deben controlarse?",
+      "web_prompt_variants_es": [
+        "¿Qué recursos deben controlarse?",
+        "Repaso: ¿Qué recursos deben controlarse?"
+      ],
+      "answer_display_es": "agua · alimentos · energía · suministros · herramientas",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "agua",
         "alimentos",
@@ -218,10 +382,17 @@
       ]
     },
     {
-      "id": "SEC-302-Q020",
+      "id": "SEC-302-C020",
       "unit_id": "SEC-302-U05",
-      "type": "short_answer",
-      "prompt_es": "¿Qué hace útil una señal de rescate?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué hace útil una señal de rescate?",
+      "web_prompt_variants_es": [
+        "¿Qué hace útil una señal de rescate?",
+        "Repaso: ¿Qué hace útil una señal de rescate?"
+      ],
+      "answer_display_es": "detectable · persistente · compatible · segura",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "detectable",
         "persistente",
@@ -230,10 +401,17 @@
       ]
     },
     {
-      "id": "SEC-302-Q021",
+      "id": "SEC-302-C021",
       "unit_id": "SEC-302-U06",
-      "type": "short_answer",
-      "prompt_es": "¿De qué depende formación?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿De qué depende formación?",
+      "web_prompt_variants_es": [
+        "¿De qué depende formación?",
+        "Repaso: ¿De qué depende formación?"
+      ],
+      "answer_display_es": "terreno · misión · visibilidad · riesgo · equipo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "terreno",
         "misión",
@@ -243,10 +421,17 @@
       ]
     },
     {
-      "id": "SEC-302-Q022",
+      "id": "SEC-302-C022",
       "unit_id": "SEC-302-U06",
-      "type": "judgment",
-      "prompt_es": "¿Cuándo retirarse puede ser correcto?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Cuándo retirarse puede ser correcto?",
+      "web_prompt_variants_es": [
+        "¿Cuándo retirarse puede ser correcto?",
+        "Repaso: ¿Cuándo retirarse puede ser correcto?"
+      ],
+      "answer_display_es": "riesgo · pérdida apoyo · herido · capacidad superada",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "riesgo",
         "pérdida apoyo",
@@ -255,10 +440,17 @@
       ]
     },
     {
-      "id": "SEC-302-Q023",
+      "id": "SEC-302-C023",
       "unit_id": "SEC-302-U06",
-      "type": "short_answer",
-      "prompt_es": "¿Cómo cambia la misión un herido?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Cómo cambia la misión un herido?",
+      "web_prompt_variants_es": [
+        "¿Cómo cambia la misión un herido?",
+        "Repaso: ¿Cómo cambia la misión un herido?"
+      ],
+      "answer_display_es": "ritmo · movilidad · recursos · prioridad",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "ritmo",
         "movilidad",
@@ -267,14 +459,213 @@
       ]
     },
     {
-      "id": "SEC-302-Q024",
+      "id": "SEC-302-C024",
       "unit_id": "SEC-302-U06",
-      "type": "judgment",
-      "prompt_es": "¿Por qué cohesión importa?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué cohesión importa?",
+      "web_prompt_variants_es": [
+        "¿Por qué cohesión importa?",
+        "Repaso: ¿Por qué cohesión importa?"
+      ],
+      "answer_display_es": "evitar aislamiento · comunicación · apoyo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "evitar aislamiento",
         "comunicación",
         "apoyo"
+      ]
+    },
+    {
+      "id": "SEC-302-C025",
+      "unit_id": "SEC-302-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Baseline» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Baseline» en esta unidad?",
+        "Selecciona la definición correcta de «Baseline»."
+      ],
+      "answer_display_es": "Lo normal en un contexto; permite reconocer anomalías sin convertir cada detalle en amenaza.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Lo normal en un contexto; permite reconocer anomalías sin convertir cada detalle en amenaza."
+      ]
+    },
+    {
+      "id": "SEC-302-C026",
+      "unit_id": "SEC-302-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «PROPORCIONALIDAD»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «PROPORCIONALIDAD»?",
+        "Selecciona la idea correcta asociada a «PROPORCIONALIDAD»."
+      ],
+      "answer_display_es": "Una señal aislada no demuestra hostilidad. Puede justificar observar, informar o aumentar preparación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Una señal aislada no demuestra hostilidad. Puede justificar observar, informar o aumentar preparación."
+      ]
+    },
+    {
+      "id": "SEC-302-C027",
+      "unit_id": "SEC-302-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «ACCESO ≠ AUTORIDAD»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «ACCESO ≠ AUTORIDAD»?",
+        "Selecciona la idea correcta asociada a «ACCESO ≠ AUTORIDAD»."
+      ],
+      "answer_display_es": "Tener acceso físico no autoriza su uso en cualquier situación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Tener acceso físico no autoriza su uso en cualquier situación."
+      ]
+    },
+    {
+      "id": "SEC-302-C028",
+      "unit_id": "SEC-302-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Principios de seguridad»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Principios de seguridad»?",
+        "En «Principios de seguridad», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Comprobar estado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Comprobar estado"
+      ]
+    },
+    {
+      "id": "SEC-302-C029",
+      "unit_id": "SEC-302-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «PRESERVAR INFORMACIÓN»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «PRESERVAR INFORMACIÓN»?",
+        "Selecciona la idea correcta asociada a «PRESERVAR INFORMACIÓN»."
+      ],
+      "answer_display_es": "Una respuesta desordenada puede destruir registros, contexto o trazabilidad.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Una respuesta desordenada puede destruir registros, contexto o trazabilidad."
+      ]
+    },
+    {
+      "id": "SEC-302-C030",
+      "unit_id": "SEC-302-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+        "Selecciona la afirmación que coincide con los apuntes de esta unidad."
+      ],
+      "answer_display_es": "Seguridad a bordo incluye control de accesos, zonas restringidas, verificación de identidad, respuesta a incidencias y coordinación con Mando.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Seguridad a bordo incluye control de accesos, zonas restringidas, verificación de identidad, respuesta a incidencias y coordinación con Mando."
+      ]
+    },
+    {
+      "id": "SEC-302-C031",
+      "unit_id": "SEC-302-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Responsabilidad individual»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Responsabilidad individual»?",
+        "En «Responsabilidad individual», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Comprobar equipo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Comprobar equipo"
+      ]
+    },
+    {
+      "id": "SEC-302-C032",
+      "unit_id": "SEC-302-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+        "Selecciona la afirmación que coincide con los apuntes de esta unidad."
+      ],
+      "answer_display_es": "El equipo de salida depende de objetivo, entorno, duración, rol, riesgo y comunicaciones.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "El equipo de salida depende de objetivo, entorno, duración, rol, riesgo y comunicaciones."
+      ]
+    },
+    {
+      "id": "SEC-302-C033",
+      "unit_id": "SEC-302-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «SEÑALIZACIÓN»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «SEÑALIZACIÓN»?",
+        "Selecciona la idea correcta asociada a «SEÑALIZACIÓN»."
+      ],
+      "answer_display_es": "Una señal de rescate debe ser detectable, compatible, persistente y segura para el contexto.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Una señal de rescate debe ser detectable, compatible, persistente y segura para el contexto."
+      ]
+    },
+    {
+      "id": "SEC-302-C034",
+      "unit_id": "SEC-302-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Recursos»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Recursos»?",
+        "En «Recursos», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Agua",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Agua"
+      ]
+    },
+    {
+      "id": "SEC-302-C035",
+      "unit_id": "SEC-302-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «HERIDO»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «HERIDO»?",
+        "Selecciona la idea correcta asociada a «HERIDO»."
+      ],
+      "answer_display_es": "Un herido cambia ritmo, movilidad, recursos, prioridad y posibilidad de continuar.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Un herido cambia ritmo, movilidad, recursos, prioridad y posibilidad de continuar."
+      ]
+    },
+    {
+      "id": "SEC-302-C036",
+      "unit_id": "SEC-302-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+        "Selecciona la afirmación que coincide con los apuntes de esta unidad."
+      ],
+      "answer_display_es": "Una formación organiza posiciones y responsabilidades según terreno, misión, visibilidad, riesgo, equipo y número de personas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Una formación organiza posiciones y responsabilidades según terreno, misión, visibilidad, riesgo, equipo y número de personas."
       ]
     }
   ]

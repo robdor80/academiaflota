@@ -1,26 +1,57 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.1.0",
   "course_id": "REG-302",
-  "status": "editorially_aligned_with_developed_manual",
-  "source_manual": "gameplay/careers/academy_path/study_materials/third_class/REG-302/MANUAL_v1_0.md",
-  "question_count": 24,
-  "rule": "No question may require knowledge that is not explicitly taught in REG-302 or established prerequisites.",
-  "questions": [
+  "status": "concept_driven_autocorrectable_v2_1",
+  "source_bank": "question_bank_v1_0.json",
+  "policy": {
+    "theory_formats": [
+      "multiple_choice",
+      "short_answer"
+    ],
+    "multiple_choice_target_ratio": 0.8,
+    "short_answer_target_ratio": 0.2,
+    "deterministic_correction": true,
+    "web_and_game_share_concepts_not_question_instances": true,
+    "complex_judgment_moves_to_practice_and_simulation": true,
+    "source_rule": "Every evaluated concept must be explicitly taught in the course material or an established prerequisite."
+  },
+  "unit_review": {
+    "questions_per_attempt": 5,
+    "reshuffle_each_attempt": true,
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
+  },
+  "concepts": [
     {
-      "id": "REG-302-Q001",
+      "id": "REG-302-C001",
       "unit_id": "REG-302-U01",
-      "type": "compare",
-      "prompt_es": "Diferencia capacidad técnica y autoridad.",
+      "source_type": "compare",
+      "web_prompt_es": "¿Qué opción diferencia correctamente capacidad técnica y autoridad?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente capacidad técnica y autoridad?",
+        "Diferencia capacidad técnica y autoridad."
+      ],
+      "answer_display_es": "posibilidad física · permiso/competencia",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "posibilidad física",
         "permiso/competencia"
       ]
     },
     {
-      "id": "REG-302-Q002",
+      "id": "REG-302-C002",
       "unit_id": "REG-302-U01",
-      "type": "knowledge",
-      "prompt_es": "¿Qué factores influyen en una orden?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué factores influyen en una orden?",
+      "web_prompt_variants_es": [
+        "¿Qué factores influyen en una orden?",
+        "Repaso: ¿Qué factores influyen en una orden?"
+      ],
+      "answer_display_es": "función · cadena · misión · regulación · autoridad especial",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "función",
         "cadena",
@@ -30,19 +61,35 @@
       ]
     },
     {
-      "id": "REG-302-Q003",
+      "id": "REG-302-C003",
       "unit_id": "REG-302-U01",
-      "type": "judgment",
-      "prompt_es": "¿Cumplir una orden elimina responsabilidad?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Cumplir una orden elimina responsabilidad?",
+      "web_prompt_variants_es": [
+        "¿Cumplir una orden elimina responsabilidad?",
+        "Repaso: ¿Cumplir una orden elimina responsabilidad?"
+      ],
+      "answer_display_es": "no",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no"
       ]
     },
     {
-      "id": "REG-302-Q004",
+      "id": "REG-302-C004",
       "unit_id": "REG-302-U01",
-      "type": "procedure",
-      "prompt_es": "¿Qué haces ante duda razonable?",
+      "source_type": "procedure",
+      "web_prompt_es": "¿Qué haces ante duda razonable?",
+      "web_prompt_variants_es": [
+        "¿Qué haces ante duda razonable?",
+        "Repaso: ¿Qué haces ante duda razonable?"
+      ],
+      "answer_display_es": "identificar · aclarar · consultar · escalar",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "identificar",
         "aclarar",
@@ -51,19 +98,35 @@
       ]
     },
     {
-      "id": "REG-302-Q005",
+      "id": "REG-302-C005",
       "unit_id": "REG-302-U02",
-      "type": "short_answer",
-      "prompt_es": "¿Cuál es el principio central de la Primera Directiva?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Cuál es el principio central de la Primera Directiva?",
+      "web_prompt_variants_es": [
+        "¿Cuál es el principio central de la Primera Directiva?",
+        "Repaso: ¿Cuál es el principio central de la Primera Directiva?"
+      ],
+      "answer_display_es": "no interferencia",
+      "accepted_short_answers_es": [
+        "no interferencia"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no interferencia"
       ]
     },
     {
-      "id": "REG-302-Q006",
+      "id": "REG-302-C006",
       "unit_id": "REG-302-U02",
-      "type": "knowledge",
-      "prompt_es": "Nombra ámbitos de interferencia.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción contiene ámbitos de interferencia?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene ámbitos de interferencia?",
+        "Nombra ámbitos de interferencia."
+      ],
+      "answer_display_es": "cultural · tecnológica · social · política · primer contacto",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "cultural",
         "tecnológica",
@@ -73,20 +136,36 @@
       ]
     },
     {
-      "id": "REG-302-Q007",
+      "id": "REG-302-C007",
       "unit_id": "REG-302-U02",
-      "type": "judgment",
-      "prompt_es": "¿La Directiva bloquea físicamente una acción?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿La Directiva bloquea físicamente una acción?",
+      "web_prompt_variants_es": [
+        "¿La Directiva bloquea físicamente una acción?",
+        "Repaso: ¿La Directiva bloquea físicamente una acción?"
+      ],
+      "answer_display_es": "No — puede desobedecerse con consecuencias.",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no",
         "puede desobedecerse con consecuencias"
       ]
     },
     {
-      "id": "REG-302-Q008",
+      "id": "REG-302-C008",
       "unit_id": "REG-302-U02",
-      "type": "knowledge",
-      "prompt_es": "Nombra consecuencias de infracción.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción contiene consecuencias de infracción?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene consecuencias de infracción?",
+        "Nombra consecuencias de infracción."
+      ],
+      "answer_display_es": "advertencia · investigación · disciplina · diplomacia · reputación",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "advertencia",
         "investigación",
@@ -96,10 +175,17 @@
       ]
     },
     {
-      "id": "REG-302-Q009",
+      "id": "REG-302-C009",
       "unit_id": "REG-302-U03",
-      "type": "knowledge",
-      "prompt_es": "¿Qué puede hacer problemática una orden?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué puede hacer problemática una orden?",
+      "web_prompt_variants_es": [
+        "¿Qué puede hacer problemática una orden?",
+        "Repaso: ¿Qué puede hacer problemática una orden?"
+      ],
+      "answer_display_es": "ambigua · contradictoria · imposible · conflicto · regulación · autoridad",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "ambigua",
         "contradictoria",
@@ -110,29 +196,52 @@
       ]
     },
     {
-      "id": "REG-302-Q010",
+      "id": "REG-302-C010",
       "unit_id": "REG-302-U03",
-      "type": "judgment",
-      "prompt_es": "¿Por qué no inventar doctrina?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué no inventar doctrina?",
+      "web_prompt_variants_es": [
+        "¿Por qué no inventar doctrina?",
+        "Repaso: ¿Por qué no inventar doctrina?"
+      ],
+      "answer_display_es": "solo normas validadas · evitar falsas excepciones",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "solo normas validadas",
         "evitar falsas excepciones"
       ]
     },
     {
-      "id": "REG-302-Q011",
+      "id": "REG-302-C011",
       "unit_id": "REG-302-U03",
-      "type": "procedure",
-      "prompt_es": "¿Qué busca una aclaración?",
+      "source_type": "procedure",
+      "web_prompt_es": "¿Qué busca una aclaración?",
+      "web_prompt_variants_es": [
+        "¿Qué busca una aclaración?",
+        "Repaso: ¿Qué busca una aclaración?"
+      ],
+      "answer_display_es": "resolver ambigüedad/conflicto",
+      "accepted_short_answers_es": [
+        "resolver ambigüedad/conflicto"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "resolver ambigüedad/conflicto"
       ]
     },
     {
-      "id": "REG-302-Q012",
+      "id": "REG-302-C012",
       "unit_id": "REG-302-U03",
-      "type": "knowledge",
-      "prompt_es": "¿Qué datos ayudan a resolver conflicto entre órdenes?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué datos ayudan a resolver conflicto entre órdenes?",
+      "web_prompt_variants_es": [
+        "¿Qué datos ayudan a resolver conflicto entre órdenes?",
+        "Repaso: ¿Qué datos ayudan a resolver conflicto entre órdenes?"
+      ],
+      "answer_display_es": "fecha · prioridad · autoridad · sustitución",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "fecha",
         "prioridad",
@@ -141,19 +250,35 @@
       ]
     },
     {
-      "id": "REG-302-Q013",
+      "id": "REG-302-C013",
       "unit_id": "REG-302-U04",
-      "type": "short_answer",
-      "prompt_es": "¿Qué significa autoridad especial?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué significa autoridad especial?",
+      "web_prompt_variants_es": [
+        "¿Qué significa autoridad especial?",
+        "Repaso: ¿Qué significa autoridad especial?"
+      ],
+      "answer_display_es": "competencia limitada a ámbito",
+      "accepted_short_answers_es": [
+        "competencia limitada a ámbito"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "competencia limitada a ámbito"
       ]
     },
     {
-      "id": "REG-302-Q014",
+      "id": "REG-302-C014",
       "unit_id": "REG-302-U04",
-      "type": "knowledge",
-      "prompt_es": "¿Qué puede hacer el CMO?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué puede hacer el CMO?",
+      "web_prompt_variants_es": [
+        "¿Qué puede hacer el CMO?",
+        "Repaso: ¿Qué puede hacer el CMO?"
+      ],
+      "answer_display_es": "declarar no apto · incluido CO · documentación",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "declarar no apto",
         "incluido CO",
@@ -161,38 +286,72 @@
       ]
     },
     {
-      "id": "REG-302-Q015",
+      "id": "REG-302-C015",
       "unit_id": "REG-302-U04",
-      "type": "judgment",
-      "prompt_es": "¿El CMO asume mando automáticamente?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿El CMO asume mando automáticamente?",
+      "web_prompt_variants_es": [
+        "¿El CMO asume mando automáticamente?",
+        "Repaso: ¿El CMO asume mando automáticamente?"
+      ],
+      "answer_display_es": "No — sucesión normal.",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no",
         "sucesión normal"
       ]
     },
     {
-      "id": "REG-302-Q016",
+      "id": "REG-302-C016",
       "unit_id": "REG-302-U04",
-      "type": "short_answer",
-      "prompt_es": "¿Por qué ninguna autoridad es universal?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Por qué ninguna autoridad es universal?",
+      "web_prompt_variants_es": [
+        "¿Por qué ninguna autoridad es universal?",
+        "Repaso: ¿Por qué ninguna autoridad es universal?"
+      ],
+      "answer_display_es": "ámbitos y límites distintos",
+      "accepted_short_answers_es": [
+        "ámbitos y límites distintos"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "ámbitos y límites distintos"
       ]
     },
     {
-      "id": "REG-302-Q017",
+      "id": "REG-302-C017",
       "unit_id": "REG-302-U05",
-      "type": "short_answer",
-      "prompt_es": "¿Qué significa need-to-know?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué significa need-to-know?",
+      "web_prompt_variants_es": [
+        "¿Qué significa need-to-know?",
+        "Repaso: ¿Qué significa need-to-know?"
+      ],
+      "answer_display_es": "necesidad funcional real",
+      "accepted_short_answers_es": [
+        "necesidad funcional real"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "necesidad funcional real"
       ]
     },
     {
-      "id": "REG-302-Q018",
+      "id": "REG-302-C018",
       "unit_id": "REG-302-U05",
-      "type": "judgment",
-      "prompt_es": "¿Por qué rango no basta?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué rango no basta?",
+      "web_prompt_variants_es": [
+        "¿Por qué rango no basta?",
+        "Repaso: ¿Por qué rango no basta?"
+      ],
+      "answer_display_es": "clearance · función · misión · autorización",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "clearance",
         "función",
@@ -201,10 +360,17 @@
       ]
     },
     {
-      "id": "REG-302-Q019",
+      "id": "REG-302-C019",
       "unit_id": "REG-302-U05",
-      "type": "knowledge",
-      "prompt_es": "¿Qué debe comprobarse antes de divulgar?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué debe comprobarse antes de divulgar?",
+      "web_prompt_variants_es": [
+        "¿Qué debe comprobarse antes de divulgar?",
+        "Repaso: ¿Qué debe comprobarse antes de divulgar?"
+      ],
+      "answer_display_es": "destinatario · necesidad · nivel · contexto · medio",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "destinatario",
         "necesidad",
@@ -214,19 +380,35 @@
       ]
     },
     {
-      "id": "REG-302-Q020",
+      "id": "REG-302-C020",
       "unit_id": "REG-302-U05",
-      "type": "judgment",
-      "prompt_es": "¿Por qué una negativa no debe revelar detalles?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué una negativa no debe revelar detalles?",
+      "web_prompt_variants_es": [
+        "¿Por qué una negativa no debe revelar detalles?",
+        "Repaso: ¿Por qué una negativa no debe revelar detalles?"
+      ],
+      "answer_display_es": "evitar fuga indirecta",
+      "accepted_short_answers_es": [
+        "evitar fuga indirecta"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "evitar fuga indirecta"
       ]
     },
     {
-      "id": "REG-302-Q021",
+      "id": "REG-302-C021",
       "unit_id": "REG-302-U06",
-      "type": "knowledge",
-      "prompt_es": "¿Qué cinco capas se separan?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué cinco capas se separan?",
+      "web_prompt_variants_es": [
+        "¿Qué cinco capas se separan?",
+        "Repaso: ¿Qué cinco capas se separan?"
+      ],
+      "answer_display_es": "hechos · norma · autoridad · decisión · registro",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "hechos",
         "norma",
@@ -236,34 +418,249 @@
       ]
     },
     {
-      "id": "REG-302-Q022",
+      "id": "REG-302-C022",
       "unit_id": "REG-302-U06",
-      "type": "judgment",
-      "prompt_es": "¿Por qué empezar por hechos?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué empezar por hechos?",
+      "web_prompt_variants_es": [
+        "¿Por qué empezar por hechos?",
+        "Repaso: ¿Por qué empezar por hechos?"
+      ],
+      "answer_display_es": "evitar suposiciones",
+      "accepted_short_answers_es": [
+        "evitar suposiciones"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "evitar suposiciones"
       ]
     },
     {
-      "id": "REG-302-Q023",
+      "id": "REG-302-C023",
       "unit_id": "REG-302-U06",
-      "type": "judgment",
-      "prompt_es": "¿Por qué evitar hindsight?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué evitar hindsight?",
+      "web_prompt_variants_es": [
+        "¿Por qué evitar hindsight?",
+        "Repaso: ¿Por qué evitar hindsight?"
+      ],
+      "answer_display_es": "decisión se valora con información disponible",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "decisión se valora con información disponible"
       ]
     },
     {
-      "id": "REG-302-Q024",
+      "id": "REG-302-C024",
       "unit_id": "REG-302-U06",
-      "type": "short_answer",
-      "prompt_es": "¿Qué debe quedar registrado?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué debe quedar registrado?",
+      "web_prompt_variants_es": [
+        "¿Qué debe quedar registrado?",
+        "Repaso: ¿Qué debe quedar registrado?"
+      ],
+      "answer_display_es": "hechos · autoridad · decisión · resultado · correcciones",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "hechos",
         "autoridad",
         "decisión",
         "resultado",
         "correcciones"
+      ]
+    },
+    {
+      "id": "REG-302-C025",
+      "unit_id": "REG-302-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «RANGO ≠ AUTORIDAD UNIVERSAL»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «RANGO ≠ AUTORIDAD UNIVERSAL»?",
+        "Selecciona la idea correcta asociada a «RANGO ≠ AUTORIDAD UNIVERSAL»."
+      ],
+      "answer_display_es": "Función, misión, regulación y autoridades especiales también importan.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Función, misión, regulación y autoridades especiales también importan."
+      ]
+    },
+    {
+      "id": "REG-302-C026",
+      "unit_id": "REG-302-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+        "Selecciona la afirmación que coincide con los apuntes de esta unidad."
+      ],
+      "answer_display_es": "Que una acción sea físicamente posible no significa que esté autorizada.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Que una acción sea físicamente posible no significa que esté autorizada."
+      ]
+    },
+    {
+      "id": "REG-302-C027",
+      "unit_id": "REG-302-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «NO ES UN MURO INVISIBLE»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «NO ES UN MURO INVISIBLE»?",
+        "Selecciona la idea correcta asociada a «NO ES UN MURO INVISIBLE»."
+      ],
+      "answer_display_es": "La norma puede desobedecerse; el mundo reacciona con consecuencias institucionales o diplomáticas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "La norma puede desobedecerse; el mundo reacciona con consecuencias institucionales o diplomáticas."
+      ]
+    },
+    {
+      "id": "REG-302-C028",
+      "unit_id": "REG-302-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Riesgo de interferencia»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Riesgo de interferencia»?",
+        "En «Riesgo de interferencia», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Alterar desarrollo interno",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Alterar desarrollo interno"
+      ]
+    },
+    {
+      "id": "REG-302-C029",
+      "unit_id": "REG-302-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «NO INVENTAR DOCTRINA»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «NO INVENTAR DOCTRINA»?",
+        "Selecciona la idea correcta asociada a «NO INVENTAR DOCTRINA»."
+      ],
+      "answer_display_es": "El cadete trabaja con normas conocidas y autoridad real; no crea excepciones o permisos.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "El cadete trabaja con normas conocidas y autoridad real; no crea excepciones o permisos."
+      ]
+    },
+    {
+      "id": "REG-302-C030",
+      "unit_id": "REG-302-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+        "Selecciona la afirmación que coincide con los apuntes de esta unidad."
+      ],
+      "answer_display_es": "Una orden puede ser ambigua, contradictoria, imposible, incompatible con otra instrucción o potencialmente contraria a regulación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Una orden puede ser ambigua, contradictoria, imposible, incompatible con otra instrucción o potencialmente contraria a regulación."
+      ]
+    },
+    {
+      "id": "REG-302-C031",
+      "unit_id": "REG-302-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Autoridad médica» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Autoridad médica» en esta unidad?",
+        "Selecciona la definición correcta de «Autoridad médica»."
+      ],
+      "answer_display_es": "El Chief Medical Officer puede declarar no apta para servicio a una persona, incluso al oficial al mando, cuando existe base médica profesional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "El Chief Medical Officer puede declarar no apta para servicio a una persona, incluso al oficial al mando, cuando existe base médica profesional."
+      ]
+    },
+    {
+      "id": "REG-302-C032",
+      "unit_id": "REG-302-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «IMPORTANTE»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «IMPORTANTE»?",
+        "Selecciona la idea correcta asociada a «IMPORTANTE»."
+      ],
+      "answer_display_es": "Relevar al CO por aptitud médica no convierte al CMO en capitán; se activa la sucesión normal.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Relevar al CO por aptitud médica no convierte al CMO en capitán; se activa la sucesión normal."
+      ]
+    },
+    {
+      "id": "REG-302-C033",
+      "unit_id": "REG-302-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Need-to-know» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Need-to-know» en esta unidad?",
+        "Selecciona la definición correcta de «Need-to-know»."
+      ],
+      "answer_display_es": "Necesidad funcional real de acceder a información restringida.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Necesidad funcional real de acceder a información restringida."
+      ]
+    },
+    {
+      "id": "REG-302-C034",
+      "unit_id": "REG-302-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «NEGATIVA SEGURA»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «NEGATIVA SEGURA»?",
+        "Selecciona la idea correcta asociada a «NEGATIVA SEGURA»."
+      ],
+      "answer_display_es": "No hace falta revelar contenido protegido para explicar que el acceso no está autorizado.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "No hace falta revelar contenido protegido para explicar que el acceso no está autorizado."
+      ]
+    },
+    {
+      "id": "REG-302-C035",
+      "unit_id": "REG-302-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «SIN HINDSIGHT»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «SIN HINDSIGHT»?",
+        "Selecciona la idea correcta asociada a «SIN HINDSIGHT»."
+      ],
+      "answer_display_es": "La decisión se valora con la información disponible en ese momento, no solo con lo que se supo después.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "La decisión se valora con la información disponible en ese momento, no solo con lo que se supo después."
+      ]
+    },
+    {
+      "id": "REG-302-C036",
+      "unit_id": "REG-302-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+        "Selecciona la afirmación que coincide con los apuntes de esta unidad."
+      ],
+      "answer_display_es": "Un caso complejo se analiza separando primero lo ocurrido, después qué regla aplica, quién tiene autoridad, qué decisión se toma y qué debe quedar registrado.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Un caso complejo se analiza separando primero lo ocurrido, después qué regla aplica, quién tiene autoridad, qué decisión se toma y qué debe quedar registrado."
       ]
     }
   ]

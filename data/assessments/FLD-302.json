@@ -1,16 +1,40 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.1.0",
   "course_id": "FLD-302",
-  "status": "editorially_aligned_with_developed_manual",
-  "source_manual": "gameplay/careers/academy_path/study_materials/third_class/FLD-302/MANUAL_v1_0.md",
-  "question_count": 24,
-  "rule": "No question may require knowledge that is not explicitly taught in FLD-302 or established prerequisites.",
-  "questions": [
+  "status": "concept_driven_autocorrectable_v2_1",
+  "source_bank": "question_bank_v1_0.json",
+  "policy": {
+    "theory_formats": [
+      "multiple_choice",
+      "short_answer"
+    ],
+    "multiple_choice_target_ratio": 0.8,
+    "short_answer_target_ratio": 0.2,
+    "deterministic_correction": true,
+    "web_and_game_share_concepts_not_question_instances": true,
+    "complex_judgment_moves_to_practice_and_simulation": true,
+    "source_rule": "Every evaluated concept must be explicitly taught in the course material or an established prerequisite."
+  },
+  "unit_review": {
+    "questions_per_attempt": 5,
+    "reshuffle_each_attempt": true,
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
+  },
+  "concepts": [
     {
-      "id": "FLD-302-Q001",
+      "id": "FLD-302-C001",
       "unit_id": "FLD-302-U01",
-      "type": "knowledge",
-      "prompt_es": "¿Qué debe contener briefing?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué debe contener briefing?",
+      "web_prompt_variants_es": [
+        "¿Qué debe contener briefing?",
+        "Repaso: ¿Qué debe contener briefing?"
+      ],
+      "answer_display_es": "objetivo · área · información · restricciones · autoridad · duración · apoyo · abort",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "objetivo",
         "área",
@@ -23,10 +47,17 @@
       ]
     },
     {
-      "id": "FLD-302-Q002",
+      "id": "FLD-302-C002",
       "unit_id": "FLD-302-U01",
-      "type": "short_answer",
-      "prompt_es": "¿Qué debe conocer cada rol?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué debe conocer cada rol?",
+      "web_prompt_variants_es": [
+        "¿Qué debe conocer cada rol?",
+        "Repaso: ¿Qué debe conocer cada rol?"
+      ],
+      "answer_display_es": "función · responsable · equipo · tareas · límites",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "función",
         "responsable",
@@ -36,28 +67,53 @@
       ]
     },
     {
-      "id": "FLD-302-Q003",
+      "id": "FLD-302-C003",
       "unit_id": "FLD-302-U01",
-      "type": "judgment",
-      "prompt_es": "¿Por qué objetivo debe ser observable?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué objetivo debe ser observable?",
+      "web_prompt_variants_es": [
+        "¿Por qué objetivo debe ser observable?",
+        "Repaso: ¿Por qué objetivo debe ser observable?"
+      ],
+      "answer_display_es": "permite saber si se cumplió",
+      "accepted_short_answers_es": [
+        "permite saber si se cumplió"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "permite saber si se cumplió"
       ]
     },
     {
-      "id": "FLD-302-Q004",
+      "id": "FLD-302-C004",
       "unit_id": "FLD-302-U01",
-      "type": "short_answer",
-      "prompt_es": "¿Para qué sirven criterios de abort?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Para qué sirven criterios de abort?",
+      "web_prompt_variants_es": [
+        "¿Para qué sirven criterios de abort?",
+        "Repaso: ¿Para qué sirven criterios de abort?"
+      ],
+      "answer_display_es": "decidir retirada/detención con marco previo",
+      "accepted_short_answers_es": [
+        "decidir retirada/detención con marco previo"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "decidir retirada/detención con marco previo"
       ]
     },
     {
-      "id": "FLD-302-Q005",
+      "id": "FLD-302-C005",
       "unit_id": "FLD-302-U02",
-      "type": "knowledge",
-      "prompt_es": "¿Qué herramientas apoyan orientación?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué herramientas apoyan orientación?",
+      "web_prompt_variants_es": [
+        "¿Qué herramientas apoyan orientación?",
+        "Repaso: ¿Qué herramientas apoyan orientación?"
+      ],
+      "answer_display_es": "mapa · sensores · referencias · coordenadas · comunicaciones",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "mapa",
         "sensores",
@@ -67,10 +123,17 @@
       ]
     },
     {
-      "id": "FLD-302-Q006",
+      "id": "FLD-302-C006",
       "unit_id": "FLD-302-U02",
-      "type": "short_answer",
-      "prompt_es": "¿Qué posición debe conservarse?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué posición debe conservarse?",
+      "web_prompt_variants_es": [
+        "¿Qué posición debe conservarse?",
+        "Repaso: ¿Qué posición debe conservarse?"
+      ],
+      "answer_display_es": "actual · dirección · ruta · destino · retorno",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "actual",
         "dirección",
@@ -80,10 +143,17 @@
       ]
     },
     {
-      "id": "FLD-302-Q007",
+      "id": "FLD-302-C007",
       "unit_id": "FLD-302-U02",
-      "type": "judgment",
-      "prompt_es": "¿Por qué cohesión importa?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué cohesión importa?",
+      "web_prompt_variants_es": [
+        "¿Por qué cohesión importa?",
+        "Repaso: ¿Por qué cohesión importa?"
+      ],
+      "answer_display_es": "contacto · apoyo · reacción",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contacto",
         "apoyo",
@@ -91,19 +161,35 @@
       ]
     },
     {
-      "id": "FLD-302-Q008",
+      "id": "FLD-302-C008",
       "unit_id": "FLD-302-U02",
-      "type": "judgment",
-      "prompt_es": "¿Por qué no depender de una sola fuente?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué no depender de una sola fuente?",
+      "web_prompt_variants_es": [
+        "¿Por qué no depender de una sola fuente?",
+        "Repaso: ¿Por qué no depender de una sola fuente?"
+      ],
+      "answer_display_es": "puede fallar/interferirse",
+      "accepted_short_answers_es": [
+        "puede fallar/interferirse"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "puede fallar/interferirse"
       ]
     },
     {
-      "id": "FLD-302-Q009",
+      "id": "FLD-302-C009",
       "unit_id": "FLD-302-U03",
-      "type": "knowledge",
-      "prompt_es": "¿Qué factores ambientales se revisan?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué factores ambientales se revisan?",
+      "web_prompt_variants_es": [
+        "¿Qué factores ambientales se revisan?",
+        "Repaso: ¿Qué factores ambientales se revisan?"
+      ],
+      "answer_display_es": "atmósfera · temperatura · presión · radiación · terreno · exposición",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "atmósfera",
         "temperatura",
@@ -114,29 +200,52 @@
       ]
     },
     {
-      "id": "FLD-302-Q010",
+      "id": "FLD-302-C010",
       "unit_id": "FLD-302-U03",
-      "type": "judgment",
-      "prompt_es": "¿Por qué especie importa?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué especie importa?",
+      "web_prompt_variants_es": [
+        "¿Por qué especie importa?",
+        "Repaso: ¿Por qué especie importa?"
+      ],
+      "answer_display_es": "tolerancias distintas",
+      "accepted_short_answers_es": [
+        "tolerancias distintas"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "tolerancias distintas"
       ]
     },
     {
-      "id": "FLD-302-Q011",
+      "id": "FLD-302-C011",
       "unit_id": "FLD-302-U03",
-      "type": "short_answer",
-      "prompt_es": "¿Por qué duración modifica riesgo?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Por qué duración modifica riesgo?",
+      "web_prompt_variants_es": [
+        "¿Por qué duración modifica riesgo?",
+        "Repaso: ¿Por qué duración modifica riesgo?"
+      ],
+      "answer_display_es": "exposición acumulada · autonomía",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "exposición acumulada",
         "autonomía"
       ]
     },
     {
-      "id": "FLD-302-Q012",
+      "id": "FLD-302-C012",
       "unit_id": "FLD-302-U03",
-      "type": "procedure",
-      "prompt_es": "¿Qué haces si cambian condiciones?",
+      "source_type": "procedure",
+      "web_prompt_es": "¿Qué haces si cambian condiciones?",
+      "web_prompt_variants_es": [
+        "¿Qué haces si cambian condiciones?",
+        "Repaso: ¿Qué haces si cambian condiciones?"
+      ],
+      "answer_display_es": "reevaluar · informar · adaptar · abort si procede",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "reevaluar",
         "informar",
@@ -145,10 +254,17 @@
       ]
     },
     {
-      "id": "FLD-302-Q013",
+      "id": "FLD-302-C013",
       "unit_id": "FLD-302-U04",
-      "type": "knowledge",
-      "prompt_es": "¿Qué define plan de comunicaciones?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué define plan de comunicaciones?",
+      "web_prompt_variants_es": [
+        "¿Qué define plan de comunicaciones?",
+        "Repaso: ¿Qué define plan de comunicaciones?"
+      ],
+      "answer_display_es": "canal · identificadores · check-in · alternativo · pérdida contacto",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "canal",
         "identificadores",
@@ -158,10 +274,17 @@
       ]
     },
     {
-      "id": "FLD-302-Q014",
+      "id": "FLD-302-C014",
       "unit_id": "FLD-302-U04",
-      "type": "short_answer",
-      "prompt_es": "¿Qué contiene check-in?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué contiene check-in?",
+      "web_prompt_variants_es": [
+        "¿Qué contiene check-in?",
+        "Repaso: ¿Qué contiene check-in?"
+      ],
+      "answer_display_es": "posición · estado · progreso · incidencias",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "posición",
         "estado",
@@ -170,10 +293,17 @@
       ]
     },
     {
-      "id": "FLD-302-Q015",
+      "id": "FLD-302-C015",
       "unit_id": "FLD-302-U04",
-      "type": "procedure",
-      "prompt_es": "¿Qué hacer ante pérdida de enlace?",
+      "source_type": "procedure",
+      "web_prompt_es": "¿Qué hacer ante pérdida de enlace?",
+      "web_prompt_variants_es": [
+        "¿Qué hacer ante pérdida de enlace?",
+        "Repaso: ¿Qué hacer ante pérdida de enlace?"
+      ],
+      "answer_display_es": "alternativo · reunión · relay · espera · escalar",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "alternativo",
         "reunión",
@@ -183,10 +313,17 @@
       ]
     },
     {
-      "id": "FLD-302-Q016",
+      "id": "FLD-302-C016",
       "unit_id": "FLD-302-U04",
-      "type": "short_answer",
-      "prompt_es": "¿Qué prioriza mensaje de campo?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué prioriza mensaje de campo?",
+      "web_prompt_variants_es": [
+        "¿Qué prioriza mensaje de campo?",
+        "Repaso: ¿Qué prioriza mensaje de campo?"
+      ],
+      "answer_display_es": "quién · dónde · qué · necesidad",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "quién",
         "dónde",
@@ -195,10 +332,17 @@
       ]
     },
     {
-      "id": "FLD-302-Q017",
+      "id": "FLD-302-C017",
       "unit_id": "FLD-302-U05",
-      "type": "short_answer",
-      "prompt_es": "¿Qué puede cambiar un incidente?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué puede cambiar un incidente?",
+      "web_prompt_variants_es": [
+        "¿Qué puede cambiar un incidente?",
+        "Repaso: ¿Qué puede cambiar un incidente?"
+      ],
+      "answer_display_es": "objetivo · prioridad · retirada · apoyo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "objetivo",
         "prioridad",
@@ -207,10 +351,17 @@
       ]
     },
     {
-      "id": "FLD-302-Q018",
+      "id": "FLD-302-C018",
       "unit_id": "FLD-302-U05",
-      "type": "knowledge",
-      "prompt_es": "¿Cómo afecta un herido?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Cómo afecta un herido?",
+      "web_prompt_variants_es": [
+        "¿Cómo afecta un herido?",
+        "Repaso: ¿Cómo afecta un herido?"
+      ],
+      "answer_display_es": "movilidad · ritmo · recursos · prioridad",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "movilidad",
         "ritmo",
@@ -219,20 +370,34 @@
       ]
     },
     {
-      "id": "FLD-302-Q019",
+      "id": "FLD-302-C019",
       "unit_id": "FLD-302-U05",
-      "type": "compare",
-      "prompt_es": "Diferencia riesgo conocido e incertidumbre.",
+      "source_type": "compare",
+      "web_prompt_es": "¿Qué opción diferencia correctamente riesgo conocido e incertidumbre?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente riesgo conocido e incertidumbre?",
+        "Diferencia riesgo conocido e incertidumbre."
+      ],
+      "answer_display_es": "identificado · no resuelto",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "identificado",
         "no resuelto"
       ]
     },
     {
-      "id": "FLD-302-Q020",
+      "id": "FLD-302-C020",
       "unit_id": "FLD-302-U05",
-      "type": "judgment",
-      "prompt_es": "¿Cuándo retirarse es correcto?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Cuándo retirarse es correcto?",
+      "web_prompt_variants_es": [
+        "¿Cuándo retirarse es correcto?",
+        "Repaso: ¿Cuándo retirarse es correcto?"
+      ],
+      "answer_display_es": "abort · capacidad perdida · herido · riesgo · orden",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "abort",
         "capacidad perdida",
@@ -242,10 +407,17 @@
       ]
     },
     {
-      "id": "FLD-302-Q021",
+      "id": "FLD-302-C021",
       "unit_id": "FLD-302-U06",
-      "type": "knowledge",
-      "prompt_es": "¿Qué incluye recuento?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué incluye recuento?",
+      "web_prompt_variants_es": [
+        "¿Qué incluye recuento?",
+        "Repaso: ¿Qué incluye recuento?"
+      ],
+      "answer_display_es": "personas · equipo · material · pérdidas",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "personas",
         "equipo",
@@ -254,10 +426,17 @@
       ]
     },
     {
-      "id": "FLD-302-Q022",
+      "id": "FLD-302-C022",
       "unit_id": "FLD-302-U06",
-      "type": "knowledge",
-      "prompt_es": "¿Qué necesita extracción?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué necesita extracción?",
+      "web_prompt_variants_es": [
+        "¿Qué necesita extracción?",
+        "Repaso: ¿Qué necesita extracción?"
+      ],
+      "answer_display_es": "punto · ventana · comunicaciones · acceso · prioridad",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "punto",
         "ventana",
@@ -267,10 +446,17 @@
       ]
     },
     {
-      "id": "FLD-302-Q023",
+      "id": "FLD-302-C023",
       "unit_id": "FLD-302-U06",
-      "type": "short_answer",
-      "prompt_es": "¿Qué debe conservar registro?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué debe conservar registro?",
+      "web_prompt_variants_es": [
+        "¿Qué debe conservar registro?",
+        "Repaso: ¿Qué debe conservar registro?"
+      ],
+      "answer_display_es": "hechos · tiempos · decisiones · cambios · incidencias · resultado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "hechos",
         "tiempos",
@@ -281,14 +467,213 @@
       ]
     },
     {
-      "id": "FLD-302-Q024",
+      "id": "FLD-302-C024",
       "unit_id": "FLD-302-U06",
-      "type": "short_answer",
-      "prompt_es": "¿Qué busca debrief?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué busca debrief?",
+      "web_prompt_variants_es": [
+        "¿Qué busca debrief?",
+        "Repaso: ¿Qué busca debrief?"
+      ],
+      "answer_display_es": "reconstruir · aprender · mejorar",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "reconstruir",
         "aprender",
         "mejorar"
+      ]
+    },
+    {
+      "id": "FLD-302-C025",
+      "unit_id": "FLD-302-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «ABORT CRITERIA»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «ABORT CRITERIA»?",
+        "Selecciona la idea correcta asociada a «ABORT CRITERIA»."
+      ],
+      "answer_display_es": "Definir antes qué condiciones obligan a detener, volver o pedir extracción evita improvisar bajo presión.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Definir antes qué condiciones obligan a detener, volver o pedir extracción evita improvisar bajo presión."
+      ]
+    },
+    {
+      "id": "FLD-302-C026",
+      "unit_id": "FLD-302-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Cada rol debe conocer»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Cada rol debe conocer»?",
+        "En «Cada rol debe conocer», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Función",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Función"
+      ]
+    },
+    {
+      "id": "FLD-302-C027",
+      "unit_id": "FLD-302-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «COHESIÓN»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «COHESIÓN»?",
+        "Selecciona la idea correcta asociada a «COHESIÓN»."
+      ],
+      "answer_display_es": "El ritmo debe permitir mantener contacto, compartir información, asistir y reaccionar.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "El ritmo debe permitir mantener contacto, compartir información, asistir y reaccionar."
+      ]
+    },
+    {
+      "id": "FLD-302-C028",
+      "unit_id": "FLD-302-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+        "Selecciona la afirmación que coincide con los apuntes de esta unidad."
+      ],
+      "answer_display_es": "El movimiento de campo usa mapa, sensores portátiles, referencias, coordenadas y comunicaciones.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "El movimiento de campo usa mapa, sensores portátiles, referencias, coordenadas y comunicaciones."
+      ]
+    },
+    {
+      "id": "FLD-302-C029",
+      "unit_id": "FLD-302-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «BIOLOGÍA»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «BIOLOGÍA»?",
+        "Selecciona la idea correcta asociada a «BIOLOGÍA»."
+      ],
+      "answer_display_es": "Un entorno compatible con una especie puede no serlo con otra.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Un entorno compatible con una especie puede no serlo con otra."
+      ]
+    },
+    {
+      "id": "FLD-302-C030",
+      "unit_id": "FLD-302-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Protección»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Protección»?",
+        "En «Protección», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Ropa o traje",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Ropa o traje"
+      ]
+    },
+    {
+      "id": "FLD-302-C031",
+      "unit_id": "FLD-302-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Check-in» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Check-in» en esta unidad?",
+        "Selecciona la definición correcta de «Check-in»."
+      ],
+      "answer_display_es": "Confirmación breve de posición, estado, progreso e incidencias.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Confirmación breve de posición, estado, progreso e incidencias."
+      ]
+    },
+    {
+      "id": "FLD-302-C032",
+      "unit_id": "FLD-302-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Pérdida de contacto»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Pérdida de contacto»?",
+        "En «Pérdida de contacto», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Aplicar tiempo de espera previsto",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Aplicar tiempo de espera previsto"
+      ]
+    },
+    {
+      "id": "FLD-302-C033",
+      "unit_id": "FLD-302-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «HERIDO»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «HERIDO»?",
+        "Selecciona la idea correcta asociada a «HERIDO»."
+      ],
+      "answer_display_es": "Un herido altera movilidad, comunicaciones, recursos y prioridad; la misión original puede dejar de ser prioritaria.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Un herido altera movilidad, comunicaciones, recursos y prioridad; la misión original puede dejar de ser prioritaria."
+      ]
+    },
+    {
+      "id": "FLD-302-C034",
+      "unit_id": "FLD-302-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+        "Selecciona la afirmación que coincide con los apuntes de esta unidad."
+      ],
+      "answer_display_es": "Un incidente puede modificar objetivo, prioridad, ritmo, recursos y necesidad de retirada.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Un incidente puede modificar objetivo, prioridad, ritmo, recursos y necesidad de retirada."
+      ]
+    },
+    {
+      "id": "FLD-302-C035",
+      "unit_id": "FLD-302-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «SIN CULPA RETROSPECTIVA»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «SIN CULPA RETROSPECTIVA»?",
+        "Selecciona la idea correcta asociada a «SIN CULPA RETROSPECTIVA»."
+      ],
+      "answer_display_es": "El debrief reconstruye y aprende; no inventa responsabilidad usando información que no estaba disponible durante la misión.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "El debrief reconstruye y aprende; no inventa responsabilidad usando información que no estaba disponible durante la misión."
+      ]
+    },
+    {
+      "id": "FLD-302-C036",
+      "unit_id": "FLD-302-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Debrief»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Debrief»?",
+        "En «Debrief», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Qué se sabía",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Qué se sabía"
       ]
     }
   ]

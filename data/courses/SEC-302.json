@@ -1,7 +1,7 @@
 {
   "subject": "Seguridad, supervivencia y equipos de salida",
   "code": "SEC-302",
-  "version": "1.1",
+  "version": "1.3",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/SEC-302/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/SEC-302/MANUAL_v1_0.md",
@@ -21,7 +21,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Conciencia de amenaza significa detectar cambios relevantes en entorno, personas, accesos, salidas, comunicaciones y estado de alerta."
+          "text": "**Conciencia de amenaza significa detectar cambios relevantes en entorno, personas, accesos, salidas, comunicaciones y estado de alerta.**"
         },
         {
           "type": "definition",
@@ -32,20 +32,6 @@
           "type": "callout",
           "label": "PROPORCIONALIDAD",
           "text": "Una señal aislada no demuestra hostilidad. Puede justificar observar, informar o aumentar preparación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué significa conciencia de amenaza?",
-            "¿Para qué sirve baseline?",
-            "¿Una señal aislada demuestra hostilidad?",
-            "¿Qué conviene identificar antes?",
-            "¿Qué significa alerta proporcional?"
-          ]
         }
       ]
     },
@@ -56,7 +42,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "El phaser es una herramienta controlada: su uso depende de autorización, entrenamiento, configuración, contexto y reglas."
+          "text": "**El phaser es una herramienta controlada: su uso depende de autorización, entrenamiento, configuración, contexto y reglas.**"
         },
         {
           "type": "heading",
@@ -65,7 +51,7 @@
         {
           "type": "bullets",
           "items": [
-            "Comprobar estado",
+            "**Comprobar estado**",
             "Mantener control",
             "Seguir instrucciones",
             "No alterar configuraciones fuera de autorización",
@@ -80,20 +66,6 @@
         {
           "type": "p",
           "text": "La respuesta debe ser proporcional al riesgo; una situación tensa no obliga a escalar."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué limita el uso?",
-            "¿Qué principios de seguridad se enseñan?",
-            "¿Acceso equivale a autoridad?",
-            "¿Qué significa proporcionalidad?",
-            "¿Por qué el uso debe ser trazable?"
-          ]
         }
       ]
     },
@@ -104,7 +76,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Seguridad a bordo incluye control de accesos, zonas restringidas, verificación de identidad, respuesta a incidencias y coordinación con Mando."
+          "text": "**Seguridad a bordo incluye control de accesos, zonas restringidas, verificación de identidad, respuesta a incidencias y coordinación con Mando.**"
         },
         {
           "type": "heading",
@@ -113,8 +85,8 @@
         {
           "type": "numbered",
           "items": [
-            "Confirmar lo observado",
-            "Informar",
+            "**Confirmar** lo observado",
+            "**Informar**",
             "Proteger personas",
             "Evitar escalada innecesaria",
             "Seguir instrucciones"
@@ -128,20 +100,6 @@
           "type": "callout",
           "label": "PRESERVAR INFORMACIÓN",
           "text": "Una respuesta desordenada puede destruir registros, contexto o trazabilidad."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué forma seguridad a bordo?",
-            "¿Por qué restringir zonas?",
-            "¿Qué pasos siguen a intrusión?",
-            "¿Qué limita una intervención?",
-            "¿Por qué preservar información?"
-          ]
         }
       ]
     },
@@ -152,7 +110,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "El equipo de salida depende de objetivo, entorno, duración, rol, riesgo y comunicaciones."
+          "text": "**El equipo de salida depende de objetivo, entorno, duración, rol, riesgo y comunicaciones.**"
         },
         {
           "type": "heading",
@@ -161,7 +119,7 @@
         {
           "type": "bullets",
           "items": [
-            "Comprobar equipo",
+            "**Comprobar equipo**",
             "Saber qué se lleva",
             "Informar fallos",
             "Conservarlo",
@@ -170,21 +128,7 @@
         },
         {
           "type": "p",
-          "text": "Roles distintos priorizan herramientas distintas. Más equipo puede aumentar carga, complejidad y tiempo."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿De qué depende loadout?",
-            "¿Por qué roles llevan equipo distinto?",
-            "¿Qué incluye plan de comunicaciones?",
-            "¿Qué responsabilidad tiene cada miembro?",
-            "¿Por qué más equipo no siempre es mejor?"
-          ]
+          "text": "Roles distintos priorizan herramientas distintas. Más equipo puede aumentar carga, **complejidad** y tiempo."
         }
       ]
     },
@@ -195,7 +139,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En aislamiento, las prioridades pueden incluir seguridad inmediata, refugio, recursos, orientación, comunicación y señalización."
+          "text": "**En aislamiento, las prioridades pueden incluir seguridad inmediata, refugio, recursos, orientación, comunicación y señalización.**"
         },
         {
           "type": "heading",
@@ -205,8 +149,8 @@
           "type": "bullets",
           "items": [
             "Agua",
-            "Alimentos",
-            "Energía",
+            "**Alimentos**",
+            "**Energía**",
             "Suministros",
             "Herramientas",
             "Capacidad médica"
@@ -220,20 +164,6 @@
           "type": "callout",
           "label": "SEÑALIZACIÓN",
           "text": "Una señal de rescate debe ser detectable, compatible, persistente y segura para el contexto."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué prioridades aparecen?",
-            "¿Qué debe proporcionar refugio?",
-            "¿Qué recursos se controlan?",
-            "¿Qué mantiene orientación?",
-            "¿Qué hace útil una señal?"
-          ]
         }
       ]
     },
@@ -244,7 +174,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Una formación organiza posiciones y responsabilidades según terreno, misión, visibilidad, riesgo, equipo y número de personas."
+          "text": "**Una formación organiza posiciones y responsabilidades según terreno, misión, visibilidad, riesgo, equipo y número de personas.**"
         },
         {
           "type": "heading",
@@ -252,29 +182,16 @@
         },
         {
           "type": "p",
-          "text": "El equipo debe conservar capacidad de observar, comunicar, apoyar y retirarse. Retirarse puede ser correcto cuando cambia el riesgo o se supera la capacidad."
+          "text": "El equipo debe conservar capacidad de observar, comunicar, apoyar y retirarse. Retirarse puede ser correcto cuando cambia el **riesgo** o se supera la capacidad."
         },
         {
           "type": "callout",
           "label": "HERIDO",
-          "text": "Un herido cambia ritmo, movilidad, recursos, prioridad y posibilidad de continuar."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿De qué depende una formación?",
-            "¿Qué significa cobertura?",
-            "¿Cuándo retirarse puede ser correcto?",
-            "¿Cómo cambia la misión un herido?",
-            "¿Por qué cohesión importa?"
-          ]
+          "text": "Un herido cambia ritmo, **movilidad**, recursos, prioridad y posibilidad de continuar."
         }
       ]
     }
   ],
-  "status": "developed_content"
+  "status": "developed_content",
+  "assessmentModel": "concept_driven_v2_1"
 }

@@ -1,7 +1,7 @@
 {
   "subject": "Formación de campo I",
   "code": "FLD-302",
-  "version": "1.1",
+  "version": "1.3",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/FLD-302/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/FLD-302/MANUAL_v1_0.md",
@@ -21,7 +21,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Una salida empieza con briefing, roles, objetivos, equipo, restricciones, apoyo y criterios de abort."
+          "text": "**Una salida empieza con briefing, roles, objetivos, equipo, restricciones, apoyo y criterios de abort.**"
         },
         {
           "type": "heading",
@@ -30,8 +30,8 @@
         {
           "type": "bullets",
           "items": [
-            "Función",
-            "Responsable directo",
+            "**Función**",
+            "**Responsable** directo",
             "Equipo",
             "Tareas",
             "Límites"
@@ -41,20 +41,6 @@
           "type": "callout",
           "label": "ABORT CRITERIA",
           "text": "Definir antes qué condiciones obligan a detener, volver o pedir extracción evita improvisar bajo presión."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué debe contener briefing?",
-            "¿Qué conoce cada rol?",
-            "¿Por qué el objetivo debe ser observable?",
-            "¿De qué depende el equipo?",
-            "¿Para qué sirven criterios de abort?"
-          ]
         }
       ]
     },
@@ -65,34 +51,20 @@
       "blocks": [
         {
           "type": "p",
-          "text": "El movimiento de campo usa mapa, sensores portátiles, referencias, coordenadas y comunicaciones."
+          "text": "**El movimiento de campo usa mapa, sensores portátiles, referencias, coordenadas y comunicaciones.**"
         },
         {
           "type": "p",
-          "text": "El grupo conserva posición actual, dirección, ruta recorrida, destino y punto de retorno."
+          "text": "El grupo conserva posición actual, **dirección**, ruta recorrida, destino y punto de retorno."
         },
         {
           "type": "callout",
           "label": "COHESIÓN",
-          "text": "El ritmo debe permitir mantener contacto, compartir información, asistir y reaccionar."
+          "text": "El ritmo debe permitir mantener **contacto**, compartir información, asistir y reaccionar."
         },
         {
           "type": "p",
           "text": "Los puntos de reunión se fijan antes de necesitarlos y los sensores portátiles no deben ser la única fuente si existen alternativas."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué herramientas apoyan orientación?",
-            "¿Qué información de posición se conserva?",
-            "¿Por qué importa cohesión?",
-            "¿Para qué sirve punto de reunión?",
-            "¿Por qué no depender de una sola fuente?"
-          ]
         }
       ]
     },
@@ -103,7 +75,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "El entorno se evalúa mediante atmósfera, temperatura, presión, radiación contextual, terreno, agentes conocidos y duración de exposición."
+          "text": "**El entorno se evalúa mediante atmósfera, temperatura, presión, radiación contextual, terreno, agentes conocidos y duración de exposición.**"
         },
         {
           "type": "heading",
@@ -112,7 +84,7 @@
         {
           "type": "bullets",
           "items": [
-            "Ropa o traje",
+            "**Ropa o traje**",
             "Respiración asistida",
             "Protección térmica",
             "Aislamiento",
@@ -127,20 +99,6 @@
         {
           "type": "p",
           "text": "Si las condiciones cambian, se reevalúa, se informa y se aplica criterio de abort cuando corresponda."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué factores ambientales se revisan?",
-            "¿Qué protección puede existir?",
-            "¿Por qué especie importa?",
-            "¿Por qué duración modifica riesgo?",
-            "¿Qué haces si cambian condiciones?"
-          ]
         }
       ]
     },
@@ -151,12 +109,12 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Antes de salir se fija canal, identificadores, frecuencia de check-in, canal alternativo y procedimiento de pérdida de contacto."
+          "text": "**Antes de salir se fija canal, identificadores, frecuencia de check-in, canal alternativo y procedimiento de pérdida de contacto.**"
         },
         {
           "type": "definition",
           "term": "Check-in",
-          "text": "Confirmación breve de posición, estado, progreso e incidencias."
+          "text": "Confirmación breve de posición, estado, progreso e **incidencias**."
         },
         {
           "type": "heading",
@@ -165,25 +123,11 @@
         {
           "type": "bullets",
           "items": [
-            "Aplicar tiempo de espera previsto",
+            "**Aplicar tiempo de espera previsto**",
             "Canal alternativo",
             "Punto de reunión",
             "Intento de relay",
             "Escalado"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué define plan de comunicaciones?",
-            "¿Qué contiene check-in?",
-            "¿Qué se hace al perder contacto?",
-            "¿Qué prioriza mensaje de campo?",
-            "¿Por qué registrar comunicaciones?"
           ]
         }
       ]
@@ -195,30 +139,16 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Un incidente puede modificar objetivo, prioridad, ritmo, recursos y necesidad de retirada."
+          "text": "**Un incidente puede modificar objetivo, prioridad, ritmo, recursos y necesidad de retirada.**"
         },
         {
           "type": "callout",
           "label": "HERIDO",
-          "text": "Un herido altera movilidad, comunicaciones, recursos y prioridad; la misión original puede dejar de ser prioritaria."
+          "text": "Un herido altera movilidad, comunicaciones, recursos y **prioridad**; la misión original puede dejar de ser prioritaria."
         },
         {
           "type": "p",
-          "text": "El equipo distingue riesgo conocido, riesgo estimado e incertidumbre. Un cambio de misión debe estar autorizado y comunicado cuando corresponda."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué puede cambiar un incidente?",
-            "¿Cómo afecta un herido?",
-            "Diferencia riesgo conocido e incertidumbre.",
-            "¿Qué necesita un cambio de misión?",
-            "¿Cuándo retirarse es correcto?"
-          ]
+          "text": "El equipo distingue **riesgo** conocido, riesgo estimado e incertidumbre. Un cambio de misión debe estar autorizado y comunicado cuando corresponda."
         }
       ]
     },
@@ -229,7 +159,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "El cierre incluye recuento de personas, equipo y materiales; extracción; handoff de pacientes, muestras o datos; registro y debrief."
+          "text": "**El cierre incluye recuento de personas, equipo y materiales; extracción; handoff de pacientes, muestras o datos; registro y debrief.**"
         },
         {
           "type": "heading",
@@ -238,7 +168,7 @@
         {
           "type": "bullets",
           "items": [
-            "Qué se sabía",
+            "**Qué se sabía**",
             "Qué ocurrió",
             "Qué se decidió",
             "Qué funcionó",
@@ -249,23 +179,10 @@
           "type": "callout",
           "label": "SIN CULPA RETROSPECTIVA",
           "text": "El debrief reconstruye y aprende; no inventa responsabilidad usando información que no estaba disponible durante la misión."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué incluye recuento?",
-            "¿Qué necesita extracción?",
-            "¿Qué requiere handoff?",
-            "¿Qué debe conservar registro?",
-            "¿Qué busca debrief?"
-          ]
         }
       ]
     }
   ],
-  "status": "developed_content"
+  "status": "developed_content",
+  "assessmentModel": "concept_driven_v2_1"
 }

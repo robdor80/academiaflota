@@ -1,7 +1,7 @@
 {
   "subject": "Relaciones interespecies y contacto",
   "code": "XEN-302",
-  "version": "1.1",
+  "version": "1.3",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/XEN-302/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/XEN-302/MANUAL_v1_0.md",
@@ -20,17 +20,17 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Biología, cultura, costumbre e individuo son capas distintas. Una tendencia cultural puede orientar una pregunta, pero no predecir automáticamente a la persona."
+          "text": "**Biología, cultura, costumbre e individuo son capas distintas.** Una tendencia cultural puede orientar una pregunta, pero no predecir automáticamente a la persona."
         },
         {
           "type": "definition",
           "term": "Biología",
-          "text": "Características fisiológicas de una especie."
+          "text": "**Características fisiológicas de una especie.**"
         },
         {
           "type": "definition",
           "term": "Cultura",
-          "text": "Valores, normas y prácticas compartidas."
+          "text": "**Valores, normas y prácticas compartidas.**"
         },
         {
           "type": "definition",
@@ -41,20 +41,6 @@
           "type": "definition",
           "term": "Individuo",
           "text": "Persona con historia y decisiones propias."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Diferencia las cuatro capas.",
-            "¿Qué convierte una generalización en estereotipo?",
-            "¿Por qué existe variación interna?",
-            "¿Qué error aparece al confundir biología y cultura?",
-            "¿Cómo se usa conocimiento cultural previo?"
-          ]
         }
       ]
     },
@@ -65,7 +51,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "El contexto, jerarquía, formalidad, relación y situación pueden cambiar el significado social de un mensaje."
+          "text": "**El contexto, jerarquía, formalidad, relación y situación pueden cambiar el significado social de un mensaje.**"
         },
         {
           "type": "heading",
@@ -75,9 +61,9 @@
           "type": "numbered",
           "items": [
             "No atribuir intención negativa de inmediato",
-            "Revisar contexto",
+            "**Revisar** contexto",
             "Pedir aclaración",
-            "Adaptar forma",
+            "**Adaptar** forma",
             "Registrar si es operativamente relevante"
           ]
         },
@@ -85,20 +71,6 @@
           "type": "callout",
           "label": "ESCUCHA",
           "text": "Escuchar implica confirmar, resumir, preguntar y reconocer ambigüedad."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué cambia el significado social?",
-            "¿Por qué tono puede variar?",
-            "Nombra tabúes posibles.",
-            "¿Qué pasos ayudan ante malentendido?",
-            "¿Qué implica escucha profesional?"
-          ]
         }
       ]
     },
@@ -109,7 +81,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Antes de un encuentro formal conviene revisar participantes, autoridad, propósito, protocolo conocido, símbolos relevantes y límites de seguridad."
+          "text": "**Antes de un encuentro formal conviene revisar participantes, autoridad, propósito, protocolo conocido, símbolos relevantes y límites de seguridad.**"
         },
         {
           "type": "heading",
@@ -117,26 +89,12 @@
         },
         {
           "type": "p",
-          "text": "Comida, regalos, emblemas o posición en una sala pueden tener significado ritual o político; no se presumen neutrales."
+          "text": "Comida, regalos, emblemas o posición en una sala pueden tener significado **ritual** o político; no se presumen neutrales."
         },
         {
           "type": "callout",
           "label": "PRUDENCIA",
-          "text": "Cuando existe duda, es preferible una forma formal y prudente hasta confirmar el protocolo."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué conviene conocer antes de un encuentro?",
-            "¿Por qué una forma prudente ayuda?",
-            "¿Qué significados puede tener hospitalidad?",
-            "¿Por qué importan símbolos?",
-            "¿Es universal el espacio personal?"
-          ]
+          "text": "Cuando existe duda, es preferible una forma formal y prudente hasta confirmar el **protocolo**."
         }
       ]
     },
@@ -147,7 +105,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "El Traductor Universal ayuda a convertir lenguaje, pero no garantiza equivalencia perfecta, comprensión cultural o intención correcta."
+          "text": "**El Traductor Universal ayuda a convertir lenguaje, pero no garantiza equivalencia perfecta, comprensión cultural o intención correcta.**"
         },
         {
           "type": "heading",
@@ -156,8 +114,8 @@
         {
           "type": "bullets",
           "items": [
-            "Polisemia",
-            "Ironía",
+            "**Polisemia**",
+            "**Ironía**",
             "Uso ritual",
             "Referencia histórica",
             "Conceptos sin equivalente"
@@ -167,20 +125,6 @@
           "type": "callout",
           "label": "SEÑAL DE ALERTA",
           "text": "Una respuesta ilógica o un término que cambia de sentido puede indicar problema de traducción."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué no garantiza el Traductor Universal?",
-            "¿Qué crea ambigüedad?",
-            "¿Qué hacer con concepto sin equivalente?",
-            "¿Por qué puede fallar?",
-            "¿Qué señales sugieren problema?"
-          ]
         }
       ]
     },
@@ -191,30 +135,16 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Primer Contacto exige observar antes de intervenir y revisar datos, misión, Primera Directiva, equipo, traducción, protocolo y contingencias."
+          "text": "**Primer Contacto exige observar antes de intervenir y revisar datos, misión, Primera Directiva, equipo, traducción, protocolo y contingencias.**"
         },
         {
           "type": "callout",
           "label": "AUTORIDAD",
-          "text": "Un cadete no inicia una política de Primer Contacto por decisión propia; participa dentro de una misión y supervisión."
+          "text": "Un cadete no inicia una política de Primer Contacto por decisión propia; participa dentro de una **misión** y supervisión."
         },
         {
           "type": "p",
           "text": "Una acción pequeña puede revelar tecnología, alterar poder interno o ser interpretada como compromiso."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Por qué observar antes de intervenir?",
-            "¿Qué se revisa antes del contacto?",
-            "¿Puede un cadete iniciarlo por su cuenta?",
-            "¿Qué riesgos culturales puede crear una acción pequeña?",
-            "¿Qué hacer cuando falta información?"
-          ]
         }
       ]
     },
@@ -226,12 +156,12 @@
         {
           "type": "definition",
           "term": "Posición",
-          "text": "Lo que una parte dice que quiere."
+          "text": "**Lo que una parte dice que quiere.**"
         },
         {
           "type": "definition",
           "term": "Interés",
-          "text": "La necesidad o motivo que intenta proteger."
+          "text": "**La necesidad o motivo que intenta proteger.**"
         },
         {
           "type": "heading",
@@ -251,23 +181,10 @@
           "type": "callout",
           "label": "LÍMITES",
           "text": "Un cadete no puede prometer tratados, recursos importantes o compromisos políticos sin autoridad."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Diferencia posición e interés.",
-            "¿Qué busca una buena escucha?",
-            "Nombra técnicas de desescalada.",
-            "¿Qué no puede prometer un cadete?",
-            "¿Por qué no acuerdo no siempre es fracaso?"
-          ]
         }
       ]
     }
   ],
-  "status": "developed_content"
+  "status": "developed_content",
+  "assessmentModel": "concept_driven_v2_1"
 }

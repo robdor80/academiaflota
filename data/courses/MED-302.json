@@ -1,7 +1,7 @@
 {
   "subject": "Medicina de emergencia y primeros auxilios",
   "code": "MED-302",
-  "version": "1.1",
+  "version": "1.3",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/MED-302/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/MED-302/MANUAL_v1_0.md",
@@ -21,7 +21,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Antes de atender a un paciente se evalúa la escena para evitar que quien ayuda se convierta en otra víctima."
+          "text": "**Antes de atender a un paciente se evalúa la escena para evitar que quien ayuda se convierta en otra víctima.**"
         },
         {
           "type": "heading",
@@ -30,8 +30,8 @@
         {
           "type": "bullets",
           "items": [
-            "Ambiente",
-            "Sistemas activos",
+            "**Ambiente**",
+            "**Sistemas** activos",
             "Atmósfera",
             "Estructura",
             "Amenaza",
@@ -43,20 +43,6 @@
           "type": "callout",
           "label": "ALERTA MÉDICA",
           "text": "Debe indicar localización, número aproximado de afectados, riesgo visible, acceso y estado general observable."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué se evalúa antes de acercarse?",
-            "¿Qué formas de protección existen?",
-            "¿Qué incluye una alerta médica?",
-            "¿Por qué asegurar escena puede preceder a asistir?",
-            "¿Qué haces si el riesgo excede tu competencia?"
-          ]
         }
       ]
     },
@@ -67,7 +53,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "La valoración inicial identifica problemas urgentes con la información disponible; no establece automáticamente un diagnóstico definitivo."
+          "text": "**La valoración inicial identifica problemas urgentes con la información disponible; no establece automáticamente un diagnóstico definitivo.**"
         },
         {
           "type": "p",
@@ -77,20 +63,6 @@
           "type": "callout",
           "label": "SÍNTOMA ≠ DIAGNÓSTICO",
           "text": "Dolor, debilidad o confusión son datos observables; no prueban por sí solos una causa."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Cuál es el objetivo de valoración inicial?",
-            "¿Por qué importa la especie?",
-            "¿Síntoma equivale a diagnóstico?",
-            "¿Qué debe registrarse?",
-            "¿Qué limita la asistencia del cadete?"
-          ]
         }
       ]
     },
@@ -101,7 +73,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "El triaje organiza prioridad cuando existen varios pacientes y recursos limitados."
+          "text": "**El triaje organiza prioridad cuando existen varios pacientes y recursos limitados.**"
         },
         {
           "type": "heading",
@@ -110,8 +82,8 @@
         {
           "type": "bullets",
           "items": [
-            "Minor",
-            "Delayed",
+            "**Minor**",
+            "**Delayed**",
             "Urgent",
             "Immediate",
             "Expectant or deceased"
@@ -120,20 +92,6 @@
         {
           "type": "p",
           "text": "La prioridad puede cambiar cuando cambia el estado del paciente. El triaje organiza recursos; no decide quién merece ayuda."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Para qué sirve triaje?",
-            "¿Qué niveles usa el modelo?",
-            "¿Qué influye en prioridad?",
-            "¿Puede cambiar una categoría?",
-            "¿Qué límite mantiene el cadete?"
-          ]
         }
       ]
     },
@@ -144,7 +102,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Estabilizar significa evitar que la situación empeore mientras llega ayuda o se prepara traslado."
+          "text": "**Estabilizar significa evitar que la situación empeore mientras llega ayuda o se prepara traslado.**"
         },
         {
           "type": "heading",
@@ -153,9 +111,9 @@
         {
           "type": "bullets",
           "items": [
-            "Actuar dentro de entrenamiento",
+            "**Actuar dentro de entrenamiento**",
             "Adaptar a especie y lesión",
-            "Reevaluar tras intervenir",
+            "**Reevaluar** tras intervenir",
             "Registrar cambios",
             "Preparar handoff"
           ]
@@ -164,20 +122,6 @@
           "type": "callout",
           "label": "NO HAY TÉCNICA UNIVERSAL",
           "text": "Inmovilización o posición dependen del contexto, del paciente y de la situación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué significa estabilizar?",
-            "¿Qué puede hacer un cadete dentro de competencia?",
-            "¿Por qué inmovilización depende del contexto?",
-            "¿Existe posición universal?",
-            "¿Qué hacer después de intervenir?"
-          ]
         }
       ]
     },
@@ -188,7 +132,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "El tricorder médico obtiene datos, pero una capacidad diagnóstica no garantiza certeza."
+          "text": "**El tricorder médico obtiene datos, pero una capacidad diagnóstica no garantiza certeza.**"
         },
         {
           "type": "p",
@@ -198,20 +142,6 @@
           "type": "callout",
           "label": "EQUIPO ≠ CUALIFICACIÓN",
           "text": "Tener una herramienta médica no concede formación avanzada ni autoridad para tratamientos especializados."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué función cumple tricorder médico?",
-            "¿Garantiza diagnóstico?",
-            "¿Por qué importa la especie?",
-            "¿De qué depende el kit?",
-            "¿Qué no concede poseer equipo?"
-          ]
         }
       ]
     },
@@ -222,7 +152,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "El handoff a Medicina debe transferir identidad si se conoce, contexto, estado inicial, síntomas observados, cambios, intervenciones y secuencia temporal."
+          "text": "**El handoff a Medicina debe transferir identidad si se conoce, contexto, estado inicial, síntomas observados, cambios, intervenciones y secuencia temporal.**"
         },
         {
           "type": "callout",
@@ -232,23 +162,10 @@
         {
           "type": "p",
           "text": "Una entrega clara evita que el personal médico tenga que reconstruir desde cero lo ya observado."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué debe contener un handoff?",
-            "¿Por qué separar síntomas y diagnóstico?",
-            "¿Qué cambios deben informarse?",
-            "¿Por qué importa la secuencia temporal?",
-            "¿Qué objetivo tiene la entrega?"
-          ]
         }
       ]
     }
   ],
-  "status": "developed_content"
+  "status": "developed_content",
+  "assessmentModel": "concept_driven_v2_1"
 }

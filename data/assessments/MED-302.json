@@ -1,16 +1,40 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.1.0",
   "course_id": "MED-302",
-  "status": "editorially_aligned_with_developed_manual",
-  "source_manual": "gameplay/careers/academy_path/study_materials/third_class/MED-302/MANUAL_v1_0.md",
-  "question_count": 24,
-  "rule": "No question may require knowledge that is not explicitly taught in MED-302 or established prerequisites.",
-  "questions": [
+  "status": "concept_driven_autocorrectable_v2_1",
+  "source_bank": "question_bank_v1_0.json",
+  "policy": {
+    "theory_formats": [
+      "multiple_choice",
+      "short_answer"
+    ],
+    "multiple_choice_target_ratio": 0.8,
+    "short_answer_target_ratio": 0.2,
+    "deterministic_correction": true,
+    "web_and_game_share_concepts_not_question_instances": true,
+    "complex_judgment_moves_to_practice_and_simulation": true,
+    "source_rule": "Every evaluated concept must be explicitly taught in the course material or an established prerequisite."
+  },
+  "unit_review": {
+    "questions_per_attempt": 5,
+    "reshuffle_each_attempt": true,
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
+  },
+  "concepts": [
     {
-      "id": "MED-302-Q001",
+      "id": "MED-302-C001",
       "unit_id": "MED-302-U01",
-      "type": "knowledge",
-      "prompt_es": "¿Qué debe evaluarse antes de acercarse?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué debe evaluarse antes de acercarse?",
+      "web_prompt_variants_es": [
+        "¿Qué debe evaluarse antes de acercarse?",
+        "Repaso: ¿Qué debe evaluarse antes de acercarse?"
+      ],
+      "answer_display_es": "ambiente · sistemas · atmósfera · estructura · amenaza · acceso",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "ambiente",
         "sistemas",
@@ -21,10 +45,17 @@
       ]
     },
     {
-      "id": "MED-302-Q002",
+      "id": "MED-302-C002",
       "unit_id": "MED-302-U01",
-      "type": "short_answer",
-      "prompt_es": "¿Qué puede incluir protección?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué puede incluir protección?",
+      "web_prompt_variants_es": [
+        "¿Qué puede incluir protección?",
+        "Repaso: ¿Qué puede incluir protección?"
+      ],
+      "answer_display_es": "equipo · distancia · aislamiento · Seguridad · espera",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "equipo",
         "distancia",
@@ -34,10 +65,17 @@
       ]
     },
     {
-      "id": "MED-302-Q003",
+      "id": "MED-302-C003",
       "unit_id": "MED-302-U01",
-      "type": "knowledge",
-      "prompt_es": "¿Qué debe incluir alerta médica?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué debe incluir alerta médica?",
+      "web_prompt_variants_es": [
+        "¿Qué debe incluir alerta médica?",
+        "Repaso: ¿Qué debe incluir alerta médica?"
+      ],
+      "answer_display_es": "localización · afectados · riesgo · acceso · estado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "localización",
         "afectados",
@@ -47,50 +85,85 @@
       ]
     },
     {
-      "id": "MED-302-Q004",
+      "id": "MED-302-C004",
       "unit_id": "MED-302-U01",
-      "type": "judgment",
-      "prompt_es": "¿Qué haces si riesgo excede tu competencia?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Qué haces si riesgo excede tu competencia?",
+      "web_prompt_variants_es": [
+        "¿Qué haces si riesgo excede tu competencia?",
+        "Repaso: ¿Qué haces si riesgo excede tu competencia?"
+      ],
+      "answer_display_es": "no exponerse · pedir apoyo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "no exponerse",
         "pedir apoyo"
       ]
     },
     {
-      "id": "MED-302-Q005",
+      "id": "MED-302-C005",
       "unit_id": "MED-302-U02",
-      "type": "short_answer",
-      "prompt_es": "¿Cuál es objetivo de valoración inicial?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Cuál es objetivo de valoración inicial?",
+      "web_prompt_variants_es": [
+        "¿Cuál es objetivo de valoración inicial?",
+        "Repaso: ¿Cuál es objetivo de valoración inicial?"
+      ],
+      "answer_display_es": "detectar problemas urgentes · no diagnóstico final",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "detectar problemas urgentes",
         "no diagnóstico final"
       ]
     },
     {
-      "id": "MED-302-Q006",
+      "id": "MED-302-C006",
       "unit_id": "MED-302-U02",
-      "type": "judgment",
-      "prompt_es": "¿Por qué especie importa?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué especie importa?",
+      "web_prompt_variants_es": [
+        "¿Por qué especie importa?",
+        "Repaso: ¿Por qué especie importa?"
+      ],
+      "answer_display_es": "fisiología distinta · humano no universal",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "fisiología distinta",
         "humano no universal"
       ]
     },
     {
-      "id": "MED-302-Q007",
+      "id": "MED-302-C007",
       "unit_id": "MED-302-U02",
-      "type": "compare",
-      "prompt_es": "Diferencia síntoma y diagnóstico.",
+      "source_type": "compare",
+      "web_prompt_es": "¿Qué opción diferencia correctamente síntoma y diagnóstico?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente síntoma y diagnóstico?",
+        "Diferencia síntoma y diagnóstico."
+      ],
+      "answer_display_es": "observación · causa interpretada",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "observación",
         "causa interpretada"
       ]
     },
     {
-      "id": "MED-302-Q008",
+      "id": "MED-302-C008",
       "unit_id": "MED-302-U02",
-      "type": "knowledge",
-      "prompt_es": "¿Qué debe registrarse?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué debe registrarse?",
+      "web_prompt_variants_es": [
+        "¿Qué debe registrarse?",
+        "Repaso: ¿Qué debe registrarse?"
+      ],
+      "answer_display_es": "observaciones · hora · cambios · intervenciones",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "observaciones",
         "hora",
@@ -99,19 +172,35 @@
       ]
     },
     {
-      "id": "MED-302-Q009",
+      "id": "MED-302-C009",
       "unit_id": "MED-302-U03",
-      "type": "short_answer",
-      "prompt_es": "¿Para qué sirve triaje?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Para qué sirve triaje?",
+      "web_prompt_variants_es": [
+        "¿Para qué sirve triaje?",
+        "Repaso: ¿Para qué sirve triaje?"
+      ],
+      "answer_display_es": "priorizar atención con recursos limitados",
+      "accepted_short_answers_es": [
+        "priorizar atención con recursos limitados"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "priorizar atención con recursos limitados"
       ]
     },
     {
-      "id": "MED-302-Q010",
+      "id": "MED-302-C010",
       "unit_id": "MED-302-U03",
-      "type": "knowledge",
-      "prompt_es": "¿Qué niveles usa el modelo?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué niveles usa el modelo?",
+      "web_prompt_variants_es": [
+        "¿Qué niveles usa el modelo?",
+        "Repaso: ¿Qué niveles usa el modelo?"
+      ],
+      "answer_display_es": "minor · delayed · urgent · immediate · expectant_or_deceased",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "minor",
         "delayed",
@@ -121,20 +210,37 @@
       ]
     },
     {
-      "id": "MED-302-Q011",
+      "id": "MED-302-C011",
       "unit_id": "MED-302-U03",
-      "type": "judgment",
-      "prompt_es": "¿Puede cambiar la categoría?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Puede cambiar la categoría?",
+      "web_prompt_variants_es": [
+        "¿Puede cambiar la categoría?",
+        "Repaso: ¿Puede cambiar la categoría?"
+      ],
+      "answer_display_es": "Sí — estado cambia .",
+      "accepted_short_answers_es": [
+        "sí",
+        "si"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "sí",
         "estado cambia"
       ]
     },
     {
-      "id": "MED-302-Q012",
+      "id": "MED-302-C012",
       "unit_id": "MED-302-U03",
-      "type": "short_answer",
-      "prompt_es": "¿Qué límite mantiene cadete?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué límite mantiene cadete?",
+      "web_prompt_variants_es": [
+        "¿Qué límite mantiene cadete?",
+        "Repaso: ¿Qué límite mantiene cadete?"
+      ],
+      "answer_display_es": "protocolo · supervisión · no sustituye profesional",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "protocolo",
         "supervisión",
@@ -142,38 +248,72 @@
       ]
     },
     {
-      "id": "MED-302-Q013",
+      "id": "MED-302-C013",
       "unit_id": "MED-302-U04",
-      "type": "short_answer",
-      "prompt_es": "¿Qué significa estabilizar?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué significa estabilizar?",
+      "web_prompt_variants_es": [
+        "¿Qué significa estabilizar?",
+        "Repaso: ¿Qué significa estabilizar?"
+      ],
+      "answer_display_es": "evitar empeoramiento hasta ayuda/traslado",
+      "accepted_short_answers_es": [
+        "evitar empeoramiento hasta ayuda/traslado"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "evitar empeoramiento hasta ayuda/traslado"
       ]
     },
     {
-      "id": "MED-302-Q014",
+      "id": "MED-302-C014",
       "unit_id": "MED-302-U04",
-      "type": "judgment",
-      "prompt_es": "¿Existe técnica universal de inmovilización?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Existe técnica universal de inmovilización?",
+      "web_prompt_variants_es": [
+        "¿Existe técnica universal de inmovilización?",
+        "Repaso: ¿Existe técnica universal de inmovilización?"
+      ],
+      "answer_display_es": "No — depende lesión/especie/contexto .",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no",
         "depende lesión/especie/contexto"
       ]
     },
     {
-      "id": "MED-302-Q015",
+      "id": "MED-302-C015",
       "unit_id": "MED-302-U04",
-      "type": "judgment",
-      "prompt_es": "¿Existe posición universal para pacientes?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Existe posición universal para pacientes?",
+      "web_prompt_variants_es": [
+        "¿Existe posición universal para pacientes?",
+        "Repaso: ¿Existe posición universal para pacientes?"
+      ],
+      "answer_display_es": "no",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no"
       ]
     },
     {
-      "id": "MED-302-Q016",
+      "id": "MED-302-C016",
       "unit_id": "MED-302-U04",
-      "type": "procedure",
-      "prompt_es": "¿Qué haces tras una medida?",
+      "source_type": "procedure",
+      "web_prompt_es": "¿Qué haces tras una medida?",
+      "web_prompt_variants_es": [
+        "¿Qué haces tras una medida?",
+        "Repaso: ¿Qué haces tras una medida?"
+      ],
+      "answer_display_es": "reevaluar · registrar · handoff",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "reevaluar",
         "registrar",
@@ -181,28 +321,53 @@
       ]
     },
     {
-      "id": "MED-302-Q017",
+      "id": "MED-302-C017",
       "unit_id": "MED-302-U05",
-      "type": "short_answer",
-      "prompt_es": "¿Qué función cumple tricorder médico?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué función cumple tricorder médico?",
+      "web_prompt_variants_es": [
+        "¿Qué función cumple tricorder médico?",
+        "Repaso: ¿Qué función cumple tricorder médico?"
+      ],
+      "answer_display_es": "obtener datos",
+      "accepted_short_answers_es": [
+        "obtener datos"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "obtener datos"
       ]
     },
     {
-      "id": "MED-302-Q018",
+      "id": "MED-302-C018",
       "unit_id": "MED-302-U05",
-      "type": "judgment",
-      "prompt_es": "¿Garantiza diagnóstico?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Garantiza diagnóstico?",
+      "web_prompt_variants_es": [
+        "¿Garantiza diagnóstico?",
+        "Repaso: ¿Garantiza diagnóstico?"
+      ],
+      "answer_display_es": "no",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no"
       ]
     },
     {
-      "id": "MED-302-Q019",
+      "id": "MED-302-C019",
       "unit_id": "MED-302-U05",
-      "type": "knowledge",
-      "prompt_es": "¿De qué depende kit?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿De qué depende kit?",
+      "web_prompt_variants_es": [
+        "¿De qué depende kit?",
+        "Repaso: ¿De qué depende kit?"
+      ],
+      "answer_display_es": "misión · inventario · era · necesidad",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "misión",
         "inventario",
@@ -211,19 +376,35 @@
       ]
     },
     {
-      "id": "MED-302-Q020",
+      "id": "MED-302-C020",
       "unit_id": "MED-302-U05",
-      "type": "judgment",
-      "prompt_es": "¿Tener equipo concede competencia avanzada?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Tener equipo concede competencia avanzada?",
+      "web_prompt_variants_es": [
+        "¿Tener equipo concede competencia avanzada?",
+        "Repaso: ¿Tener equipo concede competencia avanzada?"
+      ],
+      "answer_display_es": "no",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no"
       ]
     },
     {
-      "id": "MED-302-Q021",
+      "id": "MED-302-C021",
       "unit_id": "MED-302-U06",
-      "type": "knowledge",
-      "prompt_es": "¿Qué debe contener handoff?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué debe contener handoff?",
+      "web_prompt_variants_es": [
+        "¿Qué debe contener handoff?",
+        "Repaso: ¿Qué debe contener handoff?"
+      ],
+      "answer_display_es": "identidad · contexto · estado · síntomas · cambios · intervenciones · tiempo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "identidad",
         "contexto",
@@ -235,20 +416,34 @@
       ]
     },
     {
-      "id": "MED-302-Q022",
+      "id": "MED-302-C022",
       "unit_id": "MED-302-U06",
-      "type": "compare",
-      "prompt_es": "Diferencia hecho clínico observable y diagnóstico.",
+      "source_type": "compare",
+      "web_prompt_es": "¿Qué opción diferencia correctamente hecho clínico observable y diagnóstico?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente hecho clínico observable y diagnóstico?",
+        "Diferencia hecho clínico observable y diagnóstico."
+      ],
+      "answer_display_es": "signo/síntoma · interpretación profesional",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "signo/síntoma",
         "interpretación profesional"
       ]
     },
     {
-      "id": "MED-302-Q023",
+      "id": "MED-302-C023",
       "unit_id": "MED-302-U06",
-      "type": "short_answer",
-      "prompt_es": "¿Qué cambios deben informarse?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué cambios deben informarse?",
+      "web_prompt_variants_es": [
+        "¿Qué cambios deben informarse?",
+        "Repaso: ¿Qué cambios deben informarse?"
+      ],
+      "answer_display_es": "mejora · empeora · sin cambio · nuevo signo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "mejora",
         "empeora",
@@ -257,14 +452,213 @@
       ]
     },
     {
-      "id": "MED-302-Q024",
+      "id": "MED-302-C024",
       "unit_id": "MED-302-U06",
-      "type": "short_answer",
-      "prompt_es": "¿Qué objetivo tiene handoff?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué objetivo tiene handoff?",
+      "web_prompt_variants_es": [
+        "¿Qué objetivo tiene handoff?",
+        "Repaso: ¿Qué objetivo tiene handoff?"
+      ],
+      "answer_display_es": "continuidad · ahorrar reconstrucción · preservar información",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "continuidad",
         "ahorrar reconstrucción",
         "preservar información"
+      ]
+    },
+    {
+      "id": "MED-302-C025",
+      "unit_id": "MED-302-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «ALERTA MÉDICA»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «ALERTA MÉDICA»?",
+        "Selecciona la idea correcta asociada a «ALERTA MÉDICA»."
+      ],
+      "answer_display_es": "Debe indicar localización, número aproximado de afectados, riesgo visible, acceso y estado general observable.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Debe indicar localización, número aproximado de afectados, riesgo visible, acceso y estado general observable."
+      ]
+    },
+    {
+      "id": "MED-302-C026",
+      "unit_id": "MED-302-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Qué revisar»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Qué revisar»?",
+        "En «Qué revisar», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Ambiente",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Ambiente"
+      ]
+    },
+    {
+      "id": "MED-302-C027",
+      "unit_id": "MED-302-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «SÍNTOMA ≠ DIAGNÓSTICO»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «SÍNTOMA ≠ DIAGNÓSTICO»?",
+        "Selecciona la idea correcta asociada a «SÍNTOMA ≠ DIAGNÓSTICO»."
+      ],
+      "answer_display_es": "Dolor, debilidad o confusión son datos observables; no prueban por sí solos una causa.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Dolor, debilidad o confusión son datos observables; no prueban por sí solos una causa."
+      ]
+    },
+    {
+      "id": "MED-302-C028",
+      "unit_id": "MED-302-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+        "Selecciona la afirmación que coincide con los apuntes de esta unidad."
+      ],
+      "answer_display_es": "La valoración inicial identifica problemas urgentes con la información disponible; no establece automáticamente un diagnóstico definitivo.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "La valoración inicial identifica problemas urgentes con la información disponible; no establece automáticamente un diagnóstico definitivo."
+      ]
+    },
+    {
+      "id": "MED-302-C029",
+      "unit_id": "MED-302-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Niveles del modelo»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Niveles del modelo»?",
+        "En «Niveles del modelo», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Minor",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Minor"
+      ]
+    },
+    {
+      "id": "MED-302-C030",
+      "unit_id": "MED-302-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+        "Selecciona la afirmación que coincide con los apuntes de esta unidad."
+      ],
+      "answer_display_es": "El triaje organiza prioridad cuando existen varios pacientes y recursos limitados.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "El triaje organiza prioridad cuando existen varios pacientes y recursos limitados."
+      ]
+    },
+    {
+      "id": "MED-302-C031",
+      "unit_id": "MED-302-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «NO HAY TÉCNICA UNIVERSAL»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «NO HAY TÉCNICA UNIVERSAL»?",
+        "Selecciona la idea correcta asociada a «NO HAY TÉCNICA UNIVERSAL»."
+      ],
+      "answer_display_es": "Inmovilización o posición dependen del contexto, del paciente y de la situación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Inmovilización o posición dependen del contexto, del paciente y de la situación."
+      ]
+    },
+    {
+      "id": "MED-302-C032",
+      "unit_id": "MED-302-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Principios»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Principios»?",
+        "En «Principios», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Actuar dentro de entrenamiento",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Actuar dentro de entrenamiento"
+      ]
+    },
+    {
+      "id": "MED-302-C033",
+      "unit_id": "MED-302-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «EQUIPO ≠ CUALIFICACIÓN»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «EQUIPO ≠ CUALIFICACIÓN»?",
+        "Selecciona la idea correcta asociada a «EQUIPO ≠ CUALIFICACIÓN»."
+      ],
+      "answer_display_es": "Tener una herramienta médica no concede formación avanzada ni autoridad para tratamientos especializados.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Tener una herramienta médica no concede formación avanzada ni autoridad para tratamientos especializados."
+      ]
+    },
+    {
+      "id": "MED-302-C034",
+      "unit_id": "MED-302-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+        "Selecciona la afirmación que coincide con los apuntes de esta unidad."
+      ],
+      "answer_display_es": "El tricorder médico obtiene datos, pero una capacidad diagnóstica no garantiza certeza.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "El tricorder médico obtiene datos, pero una capacidad diagnóstica no garantiza certeza."
+      ]
+    },
+    {
+      "id": "MED-302-C035",
+      "unit_id": "MED-302-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «HECHOS ANTES QUE TEORÍA»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «HECHOS ANTES QUE TEORÍA»?",
+        "Selecciona la idea correcta asociada a «HECHOS ANTES QUE TEORÍA»."
+      ],
+      "answer_display_es": "«Presentaba dificultad respiratoria» es una observación; afirmar una enfermedad concreta exige evidencia.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "«Presentaba dificultad respiratoria» es una observación; afirmar una enfermedad concreta exige evidencia."
+      ]
+    },
+    {
+      "id": "MED-302-C036",
+      "unit_id": "MED-302-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+        "Selecciona la afirmación que coincide con los apuntes de esta unidad."
+      ],
+      "answer_display_es": "El handoff a Medicina debe transferir identidad si se conoce, contexto, estado inicial, síntomas observados, cambios, intervenciones y secuencia temporal.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "El handoff a Medicina debe transferir identidad si se conoce, contexto, estado inicial, síntomas observados, cambios, intervenciones y secuencia temporal."
       ]
     }
   ]
