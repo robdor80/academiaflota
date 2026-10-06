@@ -1,7 +1,7 @@
 {
   "subject": "Práctica de especialidad II",
   "code": "PRA-202",
-  "version": "1.1",
+  "version": "1.3",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/second_class/courses/PRA-202/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/second_class/PRA-202/MANUAL_v1_0.md",
@@ -21,7 +21,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
@@ -34,8 +34,8 @@
         {
           "type": "bullets",
           "items": [
-            "Objetivo: objetivo se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
-            "Estado: Fija la condición real de partida —normal, degradada, limitada o desconocida— antes de actuar; si cambia, el plan debe revisarse.",
+            "**Objetivo**: objetivo se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "**Estado**: Fija la condición real de partida —normal, degradada, limitada o desconocida— antes de actuar; si cambia, el plan debe revisarse.",
             "Riesgos: Deben expresarse de forma concreta: qué puede ocurrir, con qué impacto y qué mitigación existe.",
             "Recursos: Incluyen energía, tiempo, personal, capacidad de sistemas y atención; su disponibilidad determina opciones viables."
           ]
@@ -49,19 +49,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica objetivo desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Preparar tarea con briefing mínimo.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -87,7 +74,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
@@ -100,10 +87,10 @@
         {
           "type": "bullets",
           "items": [
-            "Problema: problema se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "**Problema**: problema se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Diagnóstico: Relaciona síntomas con causas posibles y usa pruebas para reducir incertidumbre antes de actuar.",
             "Opciones: opciones se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
-            "Acción: acción se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
+            "**Acción**: acción se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -115,19 +102,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Juicio."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica problema desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Resolver sin receta explícita.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -153,7 +127,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
@@ -166,9 +140,9 @@
         {
           "type": "bullets",
           "items": [
-            "Tiempo: Es un recurso operativo: esperar puede mejorar información, pero también aumentar riesgo o cerrar una ventana.",
+            "**Tiempo**: Es un recurso operativo: esperar puede mejorar información, pero también aumentar riesgo o cerrar una ventana.",
             "Interrupciones: interrupciones se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
-            "Prioridad: Ordena demandas según seguridad, misión, urgencia, impacto y reversibilidad.",
+            "Prioridad: Ordena demandas según **seguridad**, misión, urgencia, impacto y reversibilidad.",
             "Comunicación: Debe ser proporcional, precisa y dirigida a quien puede actuar; demasiado ruido también degrada la operación."
           ]
         },
@@ -181,19 +155,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Observación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica tiempo desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Práctica cronometrada contextual.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -219,7 +180,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
@@ -232,9 +193,9 @@
         {
           "type": "bullets",
           "items": [
-            "Cascada: cascada se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "**Cascada**: cascada se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Contención: Limita propagación o impacto mientras se prepara una solución más completa.",
-            "Escalado: Transfiere una decisión a la autoridad o especialidad adecuada cuando se exceden límites, recursos o riesgo aceptable."
+            "Escalado: Transfiere una decisión a la **autoridad** o especialidad adecuada cuando se exceden límites, recursos o riesgo aceptable."
           ]
         },
         {
@@ -246,19 +207,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Práctica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica cascada desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Gestionar degradación añadida.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -284,7 +232,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
@@ -297,8 +245,8 @@
         {
           "type": "bullets",
           "items": [
-            "Estado: Fija la condición real de partida —normal, degradada, limitada o desconocida— antes de actuar; si cambia, el plan debe revisarse.",
-            "Pendientes: pendientes se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "**Estado**: Fija la condición real de partida —normal, degradada, limitada o desconocida— antes de actuar; si cambia, el plan debe revisarse.",
+            "**Pendientes**: pendientes se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Riesgo: Combina probabilidad, impacto y exposición; se reduce, acepta dentro de autoridad o se escala.",
             "Recomendación: recomendación se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
           ]
@@ -312,19 +260,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación de continuidad."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica estado desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Entregar puesto/caso.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -350,7 +285,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
@@ -363,8 +298,8 @@
         {
           "type": "bullets",
           "items": [
-            "Decisión: Debe justificarse con información disponible, objetivo, riesgo, autoridad y alternativas.",
-            "Alternativa: Es una vía distinta para alcanzar el objetivo cuando el método principal no es viable.",
+            "Decisión: Debe justificarse con información disponible, objetivo, riesgo, **autoridad** y alternativas.",
+            "Alternativa: Es una vía distinta para alcanzar el **objetivo** cuando el método principal no es viable.",
             "Resultado: resultado se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Sesgo retrospectivo: sesgo retrospectivo se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
           ]
@@ -378,19 +313,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica decisión desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Comparar ejecuciones.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -410,5 +332,6 @@
       ]
     }
   ],
-  "status": "developed_content"
+  "status": "developed_content",
+  "assessmentModel": "concept_driven_v2_1"
 }

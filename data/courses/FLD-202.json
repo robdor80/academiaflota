@@ -1,7 +1,7 @@
 {
   "subject": "Operaciones de campo y EVA II",
   "code": "FLD-202",
-  "version": "1.1",
+  "version": "1.3",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/second_class/courses/FLD-202/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/second_class/FLD-202/MANUAL_v1_0.md",
@@ -21,11 +21,11 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
-          "text": "Ejecutar operaciones de campo y extravehiculares con mayor autonomía, riesgo y coordinación nave-equipo."
+          "text": "Ejecutar operaciones de campo y extravehiculares con mayor autonomía, **riesgo** y coordinación nave-equipo."
         },
         {
           "type": "heading",
@@ -34,7 +34,7 @@
         {
           "type": "bullets",
           "items": [
-            "Objetivos: objetivos debe expresarse como resultado o condición verificable, relacionado con la intención de misión y sus restricciones.",
+            "**Objetivos**: objetivos debe expresarse como resultado o condición verificable, relacionado con la intención de misión y sus restricciones.",
             "Amenazas: amenazas se analiza por probabilidad, impacto, exposición y mitigación, con condición clara de escalado.",
             "Equipo: equipo se organiza por funciones, competencia, carga y responsabilidad, con apoyo proporcional al riesgo.",
             "Abort criteria: abort criteria debe expresarse como resultado o condición verificable, relacionado con la intención de misión y sus restricciones.",
@@ -50,19 +50,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica objetivos desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Preparar misión.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -88,11 +75,11 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
-          "text": "Ejecutar operaciones de campo y extravehiculares con mayor autonomía, riesgo y coordinación nave-equipo."
+          "text": "Ejecutar operaciones de campo y extravehiculares con mayor autonomía, **riesgo** y coordinación nave-equipo."
         },
         {
           "type": "heading",
@@ -101,7 +88,7 @@
         {
           "type": "bullets",
           "items": [
-            "Integridad: integridad se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "**Integridad**: integridad se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Soporte: soporte se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Movilidad: movilidad se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Limitaciones: limitaciones se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
@@ -116,19 +103,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Checklist."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica integridad desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Preparación de equipo ambiental/EVA según era.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -154,11 +128,11 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
-          "text": "Ejecutar operaciones de campo y extravehiculares con mayor autonomía, riesgo y coordinación nave-equipo."
+          "text": "Ejecutar operaciones de campo y extravehiculares con mayor autonomía, **riesgo** y coordinación nave-equipo."
         },
         {
           "type": "heading",
@@ -167,7 +141,7 @@
         {
           "type": "bullets",
           "items": [
-            "Desplazamiento: desplazamiento se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "**Desplazamiento**: desplazamiento se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Anclaje: anclaje se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Comunicación: Debe ser proporcional, precisa y dirigida a quien puede actuar; demasiado ruido también degrada la operación.",
             "Orientación: orientación se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
@@ -182,19 +156,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Práctica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica desplazamiento desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Ejercicio EVA simulado/real autorizado.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -220,11 +181,11 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
-          "text": "Ejecutar operaciones de campo y extravehiculares con mayor autonomía, riesgo y coordinación nave-equipo."
+          "text": "Ejecutar operaciones de campo y extravehiculares con mayor autonomía, **riesgo** y coordinación nave-equipo."
         },
         {
           "type": "heading",
@@ -233,7 +194,7 @@
         {
           "type": "bullets",
           "items": [
-            "Herramientas: herramientas se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "**Herramientas**: herramientas se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Muestras: muestras se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Reparación contextual: reparación contextual se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Seguridad: Limita cualquier procedimiento: se identifican peligros, protecciones, condición de aborto y quién puede autorizar continuar."
@@ -248,19 +209,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica herramientas desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Tarea de rama en exterior.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -286,11 +234,11 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
-          "text": "Ejecutar operaciones de campo y extravehiculares con mayor autonomía, riesgo y coordinación nave-equipo."
+          "text": "Ejecutar operaciones de campo y extravehiculares con mayor autonomía, **riesgo** y coordinación nave-equipo."
         },
         {
           "type": "heading",
@@ -299,7 +247,7 @@
         {
           "type": "bullets",
           "items": [
-            "Pérdida de contacto: pérdida de contacto se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "**Pérdida de contacto**: pérdida de contacto se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Fallo de equipo: fallo de equipo se gestiona identificando función perdida, capacidad restante, riesgo inmediato, alternativa y recuperación segura.",
             "Herido: herido se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Extracción: extracción se gestiona identificando función perdida, capacidad restante, riesgo inmediato, alternativa y recuperación segura."
@@ -314,19 +262,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Juicio."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica pérdida de contacto desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Incidente simulado.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -352,11 +287,11 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
-          "text": "Ejecutar operaciones de campo y extravehiculares con mayor autonomía, riesgo y coordinación nave-equipo."
+          "text": "Ejecutar operaciones de campo y extravehiculares con mayor autonomía, **riesgo** y coordinación nave-equipo."
         },
         {
           "type": "heading",
@@ -365,7 +300,7 @@
         {
           "type": "bullets",
           "items": [
-            "Ventanas: ventanas se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "**Ventanas**: ventanas se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Transportador: transportador se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Lanzadera: lanzadera se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Reporte: Separa hechos, interpretación, resultado, limitaciones y pendientes para que otro pueda actuar.",
@@ -381,19 +316,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación integrada."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica ventanas desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Cerrar operación.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -413,5 +335,6 @@
       ]
     }
   ],
-  "status": "developed_content"
+  "status": "developed_content",
+  "assessmentModel": "concept_driven_v2_1"
 }

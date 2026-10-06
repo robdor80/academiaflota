@@ -1,14 +1,40 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.1.0",
   "course_id": "BRN-202",
-  "status": "editorially_aligned_with_developed_manual",
-  "question_count": 24,
-  "questions": [
+  "status": "concept_driven_autocorrectable_v2_1",
+  "source_bank": "question_bank_v1_0.json",
+  "policy": {
+    "theory_formats": [
+      "multiple_choice",
+      "short_answer"
+    ],
+    "multiple_choice_target_ratio": 0.8,
+    "short_answer_target_ratio": 0.2,
+    "deterministic_correction": true,
+    "web_and_game_share_concepts_not_question_instances": true,
+    "complex_judgment_moves_to_practice_and_simulation": true,
+    "source_rule": "Every evaluated concept must be explicitly taught in the course material or an established prerequisite."
+  },
+  "unit_review": {
+    "questions_per_attempt": 5,
+    "reshuffle_each_attempt": true,
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
+  },
+  "concepts": [
     {
-      "id": "BRN-202-Q001",
+      "id": "BRN-202-C001",
       "unit_id": "BRN-202-U01",
-      "type": "professional_knowledge",
-      "prompt_es": "Explica qué significa variantes en esta unidad y cómo puede cambiar una decisión.",
+      "source_type": "professional_knowledge",
+      "web_prompt_es": "¿Qué opción explica correctamente qué significa variantes en esta unidad y cómo puede cambiar una decisión?",
+      "web_prompt_variants_es": [
+        "¿Qué opción explica correctamente qué significa variantes en esta unidad y cómo puede cambiar una decisión?",
+        "Explica qué significa variantes en esta unidad y cómo puede cambiar una decisión."
+      ],
+      "answer_display_es": "variantes · contexto · impacto en decisión",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "variantes",
         "contexto",
@@ -16,10 +42,17 @@
       ]
     },
     {
-      "id": "BRN-202-Q002",
+      "id": "BRN-202-C002",
       "unit_id": "BRN-202-U01",
-      "type": "planning",
-      "prompt_es": "Planifica esta tarea: Caso avanzado guiado.",
+      "source_type": "planning",
+      "web_prompt_es": "Planifica esta tarea: Caso avanzado guiado.",
+      "web_prompt_variants_es": [
+        "Planifica esta tarea: Caso avanzado guiado.",
+        "Repaso: Planifica esta tarea: Caso avanzado guiado."
+      ],
+      "answer_display_es": "objetivo · riesgos · recursos · autoridad · criterio de éxito",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "objetivo",
         "riesgos",
@@ -29,10 +62,17 @@
       ]
     },
     {
-      "id": "BRN-202-Q003",
+      "id": "BRN-202-C003",
       "unit_id": "BRN-202-U01",
-      "type": "contingency",
-      "prompt_es": "Durante Procedimientos avanzados cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "source_type": "contingency",
+      "web_prompt_es": "Durante Procedimientos avanzados cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "web_prompt_variants_es": [
+        "Durante Procedimientos avanzados cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+        "Repaso: Durante Procedimientos avanzados cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?"
+      ],
+      "answer_display_es": "estado · seguridad · riesgo · autoridad · adaptación o escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estado",
         "seguridad",
@@ -42,10 +82,17 @@
       ]
     },
     {
-      "id": "BRN-202-Q004",
+      "id": "BRN-202-C004",
       "unit_id": "BRN-202-U01",
-      "type": "handoff",
-      "prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "source_type": "handoff",
+      "web_prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+        "Repaso: ¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?"
+      ],
+      "answer_display_es": "acción · resultado · limitaciones · riesgos · pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "acción",
         "resultado",
@@ -55,10 +102,17 @@
       ]
     },
     {
-      "id": "BRN-202-Q005",
+      "id": "BRN-202-C005",
       "unit_id": "BRN-202-U02",
-      "type": "professional_knowledge",
-      "prompt_es": "Explica qué significa datos incompletos en esta unidad y cómo puede cambiar una decisión.",
+      "source_type": "professional_knowledge",
+      "web_prompt_es": "¿Qué opción explica correctamente qué significa datos incompletos en esta unidad y cómo puede cambiar una decisión?",
+      "web_prompt_variants_es": [
+        "¿Qué opción explica correctamente qué significa datos incompletos en esta unidad y cómo puede cambiar una decisión?",
+        "Explica qué significa datos incompletos en esta unidad y cómo puede cambiar una decisión."
+      ],
+      "answer_display_es": "datos incompletos · contexto · impacto en decisión",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "datos incompletos",
         "contexto",
@@ -66,10 +120,17 @@
       ]
     },
     {
-      "id": "BRN-202-Q006",
+      "id": "BRN-202-C006",
       "unit_id": "BRN-202-U02",
-      "type": "planning",
-      "prompt_es": "Planifica esta tarea: Resolver problema ambiguo.",
+      "source_type": "planning",
+      "web_prompt_es": "Planifica esta tarea: Resolver problema ambiguo.",
+      "web_prompt_variants_es": [
+        "Planifica esta tarea: Resolver problema ambiguo.",
+        "Repaso: Planifica esta tarea: Resolver problema ambiguo."
+      ],
+      "answer_display_es": "objetivo · riesgos · recursos · autoridad · criterio de éxito",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "objetivo",
         "riesgos",
@@ -79,10 +140,17 @@
       ]
     },
     {
-      "id": "BRN-202-Q007",
+      "id": "BRN-202-C007",
       "unit_id": "BRN-202-U02",
-      "type": "contingency",
-      "prompt_es": "Durante Incertidumbre cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "source_type": "contingency",
+      "web_prompt_es": "Durante Incertidumbre cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "web_prompt_variants_es": [
+        "Durante Incertidumbre cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+        "Repaso: Durante Incertidumbre cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?"
+      ],
+      "answer_display_es": "estado · seguridad · riesgo · autoridad · adaptación o escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estado",
         "seguridad",
@@ -92,10 +160,17 @@
       ]
     },
     {
-      "id": "BRN-202-Q008",
+      "id": "BRN-202-C008",
       "unit_id": "BRN-202-U02",
-      "type": "handoff",
-      "prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "source_type": "handoff",
+      "web_prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+        "Repaso: ¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?"
+      ],
+      "answer_display_es": "acción · resultado · limitaciones · riesgos · pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "acción",
         "resultado",
@@ -105,10 +180,17 @@
       ]
     },
     {
-      "id": "BRN-202-Q009",
+      "id": "BRN-202-C009",
       "unit_id": "BRN-202-U03",
-      "type": "professional_knowledge",
-      "prompt_es": "Explica qué significa prioridad en esta unidad y cómo puede cambiar una decisión.",
+      "source_type": "professional_knowledge",
+      "web_prompt_es": "¿Qué opción explica correctamente qué significa prioridad en esta unidad y cómo puede cambiar una decisión?",
+      "web_prompt_variants_es": [
+        "¿Qué opción explica correctamente qué significa prioridad en esta unidad y cómo puede cambiar una decisión?",
+        "Explica qué significa prioridad en esta unidad y cómo puede cambiar una decisión."
+      ],
+      "answer_display_es": "prioridad · contexto · impacto en decisión",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "prioridad",
         "contexto",
@@ -116,10 +198,17 @@
       ]
     },
     {
-      "id": "BRN-202-Q010",
+      "id": "BRN-202-C010",
       "unit_id": "BRN-202-U03",
-      "type": "planning",
-      "prompt_es": "Planifica esta tarea: Gestionar carga concurrente.",
+      "source_type": "planning",
+      "web_prompt_es": "Planifica esta tarea: Gestionar carga concurrente.",
+      "web_prompt_variants_es": [
+        "Planifica esta tarea: Gestionar carga concurrente.",
+        "Repaso: Planifica esta tarea: Gestionar carga concurrente."
+      ],
+      "answer_display_es": "objetivo · riesgos · recursos · autoridad · criterio de éxito",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "objetivo",
         "riesgos",
@@ -129,10 +218,17 @@
       ]
     },
     {
-      "id": "BRN-202-Q011",
+      "id": "BRN-202-C011",
       "unit_id": "BRN-202-U03",
-      "type": "contingency",
-      "prompt_es": "Durante Múltiples demandas cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "source_type": "contingency",
+      "web_prompt_es": "Durante Múltiples demandas cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "web_prompt_variants_es": [
+        "Durante Múltiples demandas cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+        "Repaso: Durante Múltiples demandas cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?"
+      ],
+      "answer_display_es": "estado · seguridad · riesgo · autoridad · adaptación o escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estado",
         "seguridad",
@@ -142,10 +238,17 @@
       ]
     },
     {
-      "id": "BRN-202-Q012",
+      "id": "BRN-202-C012",
       "unit_id": "BRN-202-U03",
-      "type": "handoff",
-      "prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "source_type": "handoff",
+      "web_prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+        "Repaso: ¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?"
+      ],
+      "answer_display_es": "acción · resultado · limitaciones · riesgos · pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "acción",
         "resultado",
@@ -155,10 +258,17 @@
       ]
     },
     {
-      "id": "BRN-202-Q013",
+      "id": "BRN-202-C013",
       "unit_id": "BRN-202-U04",
-      "type": "professional_knowledge",
-      "prompt_es": "Explica qué significa detección en esta unidad y cómo puede cambiar una decisión.",
+      "source_type": "professional_knowledge",
+      "web_prompt_es": "¿Qué opción explica correctamente qué significa detección en esta unidad y cómo puede cambiar una decisión?",
+      "web_prompt_variants_es": [
+        "¿Qué opción explica correctamente qué significa detección en esta unidad y cómo puede cambiar una decisión?",
+        "Explica qué significa detección en esta unidad y cómo puede cambiar una decisión."
+      ],
+      "answer_display_es": "detección · contexto · impacto en decisión",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "detección",
         "contexto",
@@ -166,10 +276,17 @@
       ]
     },
     {
-      "id": "BRN-202-Q014",
+      "id": "BRN-202-C014",
       "unit_id": "BRN-202-U04",
-      "type": "planning",
-      "prompt_es": "Planifica esta tarea: Recuperar de fallo inducido.",
+      "source_type": "planning",
+      "web_prompt_es": "Planifica esta tarea: Recuperar de fallo inducido.",
+      "web_prompt_variants_es": [
+        "Planifica esta tarea: Recuperar de fallo inducido.",
+        "Repaso: Planifica esta tarea: Recuperar de fallo inducido."
+      ],
+      "answer_display_es": "objetivo · riesgos · recursos · autoridad · criterio de éxito",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "objetivo",
         "riesgos",
@@ -179,10 +296,17 @@
       ]
     },
     {
-      "id": "BRN-202-Q015",
+      "id": "BRN-202-C015",
       "unit_id": "BRN-202-U04",
-      "type": "contingency",
-      "prompt_es": "Durante Error y recuperación cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "source_type": "contingency",
+      "web_prompt_es": "Durante Error y recuperación cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "web_prompt_variants_es": [
+        "Durante Error y recuperación cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+        "Repaso: Durante Error y recuperación cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?"
+      ],
+      "answer_display_es": "estado · seguridad · riesgo · autoridad · adaptación o escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estado",
         "seguridad",
@@ -192,10 +316,17 @@
       ]
     },
     {
-      "id": "BRN-202-Q016",
+      "id": "BRN-202-C016",
       "unit_id": "BRN-202-U04",
-      "type": "handoff",
-      "prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "source_type": "handoff",
+      "web_prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+        "Repaso: ¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?"
+      ],
+      "answer_display_es": "acción · resultado · limitaciones · riesgos · pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "acción",
         "resultado",
@@ -205,10 +336,17 @@
       ]
     },
     {
-      "id": "BRN-202-Q017",
+      "id": "BRN-202-C017",
       "unit_id": "BRN-202-U05",
-      "type": "professional_knowledge",
-      "prompt_es": "Explica qué significa dependencias en esta unidad y cómo puede cambiar una decisión.",
+      "source_type": "professional_knowledge",
+      "web_prompt_es": "¿Qué opción explica correctamente qué significa dependencias en esta unidad y cómo puede cambiar una decisión?",
+      "web_prompt_variants_es": [
+        "¿Qué opción explica correctamente qué significa dependencias en esta unidad y cómo puede cambiar una decisión?",
+        "Explica qué significa dependencias en esta unidad y cómo puede cambiar una decisión."
+      ],
+      "answer_display_es": "dependencias · contexto · impacto en decisión",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "dependencias",
         "contexto",
@@ -216,10 +354,17 @@
       ]
     },
     {
-      "id": "BRN-202-Q018",
+      "id": "BRN-202-C018",
       "unit_id": "BRN-202-U05",
-      "type": "planning",
-      "prompt_es": "Planifica esta tarea: Trabajar con dos departamentos.",
+      "source_type": "planning",
+      "web_prompt_es": "Planifica esta tarea: Trabajar con dos departamentos.",
+      "web_prompt_variants_es": [
+        "Planifica esta tarea: Trabajar con dos departamentos.",
+        "Repaso: Planifica esta tarea: Trabajar con dos departamentos."
+      ],
+      "answer_display_es": "objetivo · riesgos · recursos · autoridad · criterio de éxito",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "objetivo",
         "riesgos",
@@ -229,10 +374,17 @@
       ]
     },
     {
-      "id": "BRN-202-Q019",
+      "id": "BRN-202-C019",
       "unit_id": "BRN-202-U05",
-      "type": "contingency",
-      "prompt_es": "Durante Coordinación avanzada cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "source_type": "contingency",
+      "web_prompt_es": "Durante Coordinación avanzada cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "web_prompt_variants_es": [
+        "Durante Coordinación avanzada cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+        "Repaso: Durante Coordinación avanzada cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?"
+      ],
+      "answer_display_es": "estado · seguridad · riesgo · autoridad · adaptación o escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estado",
         "seguridad",
@@ -242,10 +394,17 @@
       ]
     },
     {
-      "id": "BRN-202-Q020",
+      "id": "BRN-202-C020",
       "unit_id": "BRN-202-U05",
-      "type": "handoff",
-      "prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "source_type": "handoff",
+      "web_prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+        "Repaso: ¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?"
+      ],
+      "answer_display_es": "acción · resultado · limitaciones · riesgos · pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "acción",
         "resultado",
@@ -255,10 +414,17 @@
       ]
     },
     {
-      "id": "BRN-202-Q021",
+      "id": "BRN-202-C021",
       "unit_id": "BRN-202-U06",
-      "type": "professional_knowledge",
-      "prompt_es": "Explica qué significa misión en esta unidad y cómo puede cambiar una decisión.",
+      "source_type": "professional_knowledge",
+      "web_prompt_es": "¿Qué opción explica correctamente qué significa misión en esta unidad y cómo puede cambiar una decisión?",
+      "web_prompt_variants_es": [
+        "¿Qué opción explica correctamente qué significa misión en esta unidad y cómo puede cambiar una decisión?",
+        "Explica qué significa misión en esta unidad y cómo puede cambiar una decisión."
+      ],
+      "answer_display_es": "misión · contexto · impacto en decisión",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "misión",
         "contexto",
@@ -266,10 +432,17 @@
       ]
     },
     {
-      "id": "BRN-202-Q022",
+      "id": "BRN-202-C022",
       "unit_id": "BRN-202-U06",
-      "type": "planning",
-      "prompt_es": "Planifica esta tarea: Caso integrado.",
+      "source_type": "planning",
+      "web_prompt_es": "Planifica esta tarea: Caso integrado.",
+      "web_prompt_variants_es": [
+        "Planifica esta tarea: Caso integrado.",
+        "Repaso: Planifica esta tarea: Caso integrado."
+      ],
+      "answer_display_es": "objetivo · riesgos · recursos · autoridad · criterio de éxito",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "objetivo",
         "riesgos",
@@ -279,10 +452,17 @@
       ]
     },
     {
-      "id": "BRN-202-Q023",
+      "id": "BRN-202-C023",
       "unit_id": "BRN-202-U06",
-      "type": "contingency",
-      "prompt_es": "Durante Caso de rama II cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "source_type": "contingency",
+      "web_prompt_es": "Durante Caso de rama II cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "web_prompt_variants_es": [
+        "Durante Caso de rama II cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+        "Repaso: Durante Caso de rama II cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?"
+      ],
+      "answer_display_es": "estado · seguridad · riesgo · autoridad · adaptación o escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estado",
         "seguridad",
@@ -292,10 +472,17 @@
       ]
     },
     {
-      "id": "BRN-202-Q024",
+      "id": "BRN-202-C024",
       "unit_id": "BRN-202-U06",
-      "type": "handoff",
-      "prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "source_type": "handoff",
+      "web_prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+        "Repaso: ¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?"
+      ],
+      "answer_display_es": "acción · resultado · limitaciones · riesgos · pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "acción",
         "resultado",
@@ -303,8 +490,198 @@
         "riesgos",
         "pendientes"
       ]
+    },
+    {
+      "id": "BRN-202-C025",
+      "unit_id": "BRN-202-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Contenidos»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Contenidos»?",
+        "En «Contenidos», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Variantes: variantes se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Variantes: variantes se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "BRN-202-C026",
+      "unit_id": "BRN-202-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+        "En «Autoevaluación», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Explica variantes desde el punto de vista profesional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Explica variantes desde el punto de vista profesional."
+      ]
+    },
+    {
+      "id": "BRN-202-C027",
+      "unit_id": "BRN-202-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Contenidos»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Contenidos»?",
+        "En «Contenidos», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Datos incompletos: Obligan a separar lo conocido, lo inferido y lo desconocido; una hipótesis no se eleva a hecho.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Datos incompletos: Obligan a separar lo conocido, lo inferido y lo desconocido; una hipótesis no se eleva a hecho."
+      ]
+    },
+    {
+      "id": "BRN-202-C028",
+      "unit_id": "BRN-202-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+        "En «Autoevaluación», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Explica datos incompletos desde el punto de vista profesional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Explica datos incompletos desde el punto de vista profesional."
+      ]
+    },
+    {
+      "id": "BRN-202-C029",
+      "unit_id": "BRN-202-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Contenidos»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Contenidos»?",
+        "En «Contenidos», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Prioridad: Ordena demandas según seguridad, misión, urgencia, impacto y reversibilidad.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Prioridad: Ordena demandas según seguridad, misión, urgencia, impacto y reversibilidad."
+      ]
+    },
+    {
+      "id": "BRN-202-C030",
+      "unit_id": "BRN-202-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+        "En «Autoevaluación», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Explica prioridad desde el punto de vista profesional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Explica prioridad desde el punto de vista profesional."
+      ]
+    },
+    {
+      "id": "BRN-202-C031",
+      "unit_id": "BRN-202-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Contenidos»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Contenidos»?",
+        "En «Contenidos», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Detección: Reconoce una desviación mediante datos, síntomas o alertas antes de seleccionar respuesta.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Detección: Reconoce una desviación mediante datos, síntomas o alertas antes de seleccionar respuesta."
+      ]
+    },
+    {
+      "id": "BRN-202-C032",
+      "unit_id": "BRN-202-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+        "En «Autoevaluación», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Explica detección desde el punto de vista profesional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Explica detección desde el punto de vista profesional."
+      ]
+    },
+    {
+      "id": "BRN-202-C033",
+      "unit_id": "BRN-202-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Contenidos»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Contenidos»?",
+        "En «Contenidos», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Dependencias: Existen cuando una tarea necesita información, recursos o acción de otra función.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Dependencias: Existen cuando una tarea necesita información, recursos o acción de otra función."
+      ]
+    },
+    {
+      "id": "BRN-202-C034",
+      "unit_id": "BRN-202-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+        "En «Autoevaluación», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Explica dependencias desde el punto de vista profesional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Explica dependencias desde el punto de vista profesional."
+      ]
+    },
+    {
+      "id": "BRN-202-C035",
+      "unit_id": "BRN-202-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Contenidos»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Contenidos»?",
+        "En «Contenidos», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Misión: Define qué se intenta conseguir y bajo qué restricciones; las decisiones locales deben relacionarse con esa intención.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Misión: Define qué se intenta conseguir y bajo qué restricciones; las decisiones locales deben relacionarse con esa intención."
+      ]
+    },
+    {
+      "id": "BRN-202-C036",
+      "unit_id": "BRN-202-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+        "En «Autoevaluación», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Explica misión desde el punto de vista profesional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Explica misión desde el punto de vista profesional."
+      ]
     }
-  ],
-  "source_manual": "gameplay/careers/academy_path/study_materials/second_class/BRN-202/MANUAL_v1_0.md",
-  "rule": "No question may require knowledge that is not explicitly taught in BRN-202 or established prerequisites."
+  ]
 }

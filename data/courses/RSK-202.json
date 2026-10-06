@@ -1,7 +1,7 @@
 {
   "subject": "Operaciones degradadas y contingencias",
   "code": "RSK-202",
-  "version": "1.1",
+  "version": "1.3",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/second_class/courses/RSK-202/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/second_class/RSK-202/MANUAL_v1_0.md",
@@ -22,7 +22,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
@@ -35,8 +35,8 @@
         {
           "type": "bullets",
           "items": [
-            "Capacidad reducida: capacidad reducida se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
-            "Backup: backup se gestiona identificando función perdida, capacidad restante, riesgo de propagación, alternativa y recuperación segura.",
+            "**Capacidad reducida**: capacidad reducida se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Backup: backup se gestiona identificando función perdida, capacidad restante, **riesgo** de propagación, alternativa y recuperación segura.",
             "Aislamiento: aislamiento se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Margen: margen se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
           ]
@@ -50,19 +50,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Caso."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica capacidad reducida desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Interpretar estado degradado.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -89,7 +76,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
@@ -102,10 +89,10 @@
         {
           "type": "bullets",
           "items": [
-            "Calidad: calidad se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "**Calidad**: calidad se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Confirmación: confirmación se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Supuestos: supuestos se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
-            "Riesgo: Combina probabilidad, impacto y exposición; se reduce, acepta dentro de autoridad o se escala."
+            "Riesgo: Combina probabilidad, impacto y exposición; se reduce, acepta dentro de **autoridad** o se escala."
           ]
         },
         {
@@ -117,19 +104,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica calidad desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Decidir con datos parciales.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -156,7 +130,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
@@ -169,7 +143,7 @@
         {
           "type": "bullets",
           "items": [
-            "Prioridades: prioridades ordena la actuación comparando seguridad, misión, tiempo, impacto y recursos disponibles.",
+            "**Prioridades**: prioridades ordena la actuación comparando seguridad, misión, tiempo, impacto y recursos disponibles.",
             "Servicio mínimo: servicio mínimo se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Procedimiento alternativo: procedimiento alternativo se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
           ]
@@ -183,19 +157,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Simulación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica prioridades desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Continuar misión limitada.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -222,7 +183,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
@@ -235,9 +196,9 @@
         {
           "type": "bullets",
           "items": [
-            "Reparto: reparto se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "**Reparto**: reparto se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Cross-training: Permite apoyo auxiliar fuera de la rama principal, pero no elimina límites de competencia ni certificación.",
-            "Fatiga: Reduce atención, memoria de trabajo y calidad de decisión y debe incorporarse al reparto de carga.",
+            "Fatiga: Reduce atención, memoria de trabajo y calidad de decisión y debe incorporarse al **reparto** de carga.",
             "Seguridad: Limita cualquier procedimiento: se identifican peligros, protecciones, condición de aborto y quién puede autorizar continuar."
           ]
         },
@@ -250,19 +211,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Caso."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica reparto desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Reconfigurar equipo.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -289,7 +237,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
@@ -302,9 +250,9 @@
         {
           "type": "bullets",
           "items": [
-            "Efecto cascada: efecto cascada se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "**Efecto cascada**: efecto cascada se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Triage operacional: triage operacional se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
-            "Escalado: Transfiere una decisión a la autoridad o especialidad adecuada cuando se exceden límites, recursos o riesgo aceptable."
+            "Escalado: Transfiere una decisión a la **autoridad** o especialidad adecuada cuando se exceden límites, recursos o riesgo aceptable."
           ]
         },
         {
@@ -316,19 +264,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Práctica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica efecto cascada desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Resolver secuencia de fallos.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -355,7 +290,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
@@ -368,8 +303,8 @@
         {
           "type": "bullets",
           "items": [
-            "Verificación: Comprueba que una lectura, acción o recuperación produce el efecto esperado antes de darla por válida.",
-            "Handoff: Transfiere continuidad: estado, acciones, resultado, riesgos, órdenes y pendientes deben quedar claros para quien recibe.",
+            "**Verificación**: Comprueba que una lectura, acción o recuperación produce el efecto esperado antes de darla por válida.",
+            "Handoff: Transfiere continuidad: estado, acciones, resultado, riesgos, órdenes y **pendientes** deben quedar claros para quien recibe.",
             "Logs: logs preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes.",
             "Lecciones: lecciones se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
           ]
@@ -383,19 +318,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación integrada."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica verificación desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Cerrar contingencia.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -416,5 +338,6 @@
       ]
     }
   ],
-  "status": "developed_content"
+  "status": "developed_content",
+  "assessmentModel": "concept_driven_v2_1"
 }
