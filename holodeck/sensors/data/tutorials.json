@@ -286,8 +286,8 @@
     {
       "id": "TUT-05",
       "title": "Lectura y transferencia",
-      "objective": "Abre una lectura sensorial del Contacto 07 y envía los datos a Ciencia para su interpretación.",
-      "hint": "Sensores mide; Ciencia interpreta. Busca la acción de Lectura sensorial en la ficha del contacto.",
+      "objective": "Abre la lectura sensorial del Contacto 07, revisa su firma subespacial y envía los datos a Ciencia para su interpretación.",
+      "hint": "Tras abrir Lectura sensorial, revisa la categoría Firma subespacial. Después remite los datos a Ciencia.",
       "completion_feedback": "Correcto. Has mantenido la frontera funcional: Sensores entrega observaciones; Ciencia recibe los datos para interpretarlos.",
       "steps": [
         {
@@ -324,15 +324,16 @@
           "concept": "Sensores informa medidas y estimaciones, no verdad omnisciente."
         },
         {
-          "label": "Revisar lectura",
+          "label": "Revisar Firma subespacial",
           "event": "NAV_SECONDARY",
           "match": {
-            "primaryId": "sensor_readout"
+            "primaryId": "sensor_readout",
+            "secondaryId": "subspace_signature"
           },
-          "what": "Examinas una categoría concreta de la lectura.",
-          "why": "Un dato con baja confianza no debe tratarse como un hecho absoluto.",
-          "effect": "Ves el valor junto a su confianza y procedencia.",
-          "concept": "La incertidumbre forma parte del dato."
+          "what": "Abres la lectura de firma subespacial de C-07.",
+          "why": "El contacto presenta una firma subespacial parcial. Revisarla permite saber qué evidencia concreta tienes antes de escalar el análisis.",
+          "effect": "Ves el valor disponible junto con su confianza y procedencia, sin convertir una señal incompleta en una conclusión absoluta.",
+          "concept": "Una firma parcial es evidencia, no identificación definitiva."
         },
         {
           "label": "Enviar a Ciencia",
@@ -347,11 +348,11 @@
           "concept": "Sensores mide; Ciencia interpreta."
         }
       ],
-      "lesson_summary": "Has aprendido la frontera entre Sensores y Ciencia: Sensores mide y organiza observaciones; Ciencia interpreta fenómenos complejos.",
+      "lesson_summary": "Has aprendido a abrir una lectura, comprobar una evidencia concreta —la firma subespacial— y transferirla a Ciencia sin confundir observación con interpretación.",
       "order": {
         "source": "Teniente Cmdr. Hale · Instructor de Sensores",
-        "order": "Cadete {name}, revise la lectura sensorial del contacto C-07 y remita los datos a Ciencia para análisis.",
-        "note": "Sensores debe entregar observaciones y medidas. La interpretación científica profunda corresponde a Ciencia."
+        "order": "Cadete {name}, revise la lectura sensorial del contacto C-07, compruebe su firma subespacial y remita los datos a Ciencia para análisis.",
+        "note": "La orden te pide primero observar un dato concreto y después transferirlo. Sensores mide; Ciencia interpreta."
       }
     }
   ]
