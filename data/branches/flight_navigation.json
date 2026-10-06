@@ -1,7 +1,7 @@
 {
   "subject": "Vuelo / Navegación",
   "code": "FLIGHT_NAVIGATION",
-  "version": "1.0",
+  "version": "1.1",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/branches/flight_navigation/branch_curriculum_v1_0.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/branches/flight_navigation/MANUAL_v1_0.md",
@@ -22,16 +22,20 @@
       "subtitle": "NAV-201 · Vuelo y navegación II",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Vuelo / Navegación: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "rumbo",
-            "velocidad",
-            "vector",
-            "márgenes"
+            "Rumbo: Es la orientación ordenada de la nave y se verifica contra referencia, ruta y restricciones.",
+            "Velocidad: Se elige según objetivo, seguridad, entorno, capacidad de propulsión y margen de reacción.",
+            "Vector: Combina dirección y magnitud de movimiento y permite prever posición relativa y maniobras.",
+            "Márgenes: Son reservas de espacio, tiempo o capacidad que absorben error e incertidumbre."
           ]
         },
         {
@@ -82,16 +86,20 @@
       "subtitle": "NAV-201 · Vuelo y navegación II",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Vuelo / Navegación: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "rutas",
-            "waypoints",
-            "ETA",
-            "restricciones"
+            "Rutas: Conectan origen y destino mediante tramos verificables, restricciones y puntos de decisión.",
+            "Waypoints: Son referencias intermedias usadas para estructurar, comprobar o modificar una ruta.",
+            "ETA: Es una estimación condicionada por ruta, velocidad y restricciones; debe actualizarse si cambian.",
+            "Restricciones: Son límites de seguridad, misión, espacio, capacidad o autoridad que condicionan el plan."
           ]
         },
         {
@@ -142,16 +150,20 @@
       "subtitle": "NAV-201 · Vuelo y navegación II",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Vuelo / Navegación: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "entrada",
-            "salida",
-            "zonas",
-            "ajuste"
+            "Entrada: Define las condiciones para iniciar una fase de navegación o tránsito de forma controlada.",
+            "Salida: Define cómo finalizar un tramo o abandonar una condición de navegación manteniendo seguridad y control.",
+            "Zonas: Representan regiones con reglas, riesgos o condiciones que afectan la planificación.",
+            "Ajuste: Corrige ruta o maniobra con cambios proporcionados y verificación del nuevo resultado."
           ]
         },
         {
@@ -202,15 +214,19 @@
       "subtitle": "NAV-201 · Vuelo y navegación II",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Vuelo / Navegación: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "órbita",
-            "rendezvous",
-            "acoplamiento contextual"
+            "Órbita: Requiere controlar trayectoria relativa, estabilidad y margen de seguridad respecto al cuerpo.",
+            "Rendezvous: Coordina posición, velocidad y tiempo para aproximarse a otro objeto de forma controlada.",
+            "Acoplamiento contextual: Integra aproximación, alineación, autorización y condiciones específicas del punto de atraque."
           ]
         },
         {
@@ -261,15 +277,19 @@
       "subtitle": "NAV-202 · Vuelo y navegación III",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Vuelo / Navegación: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "sensores parciales",
-            "estimación",
-            "margen"
+            "Sensores parciales: Obligan a aumentar margen y hacer visible qué parte de la solución depende de estimación.",
+            "Estimación: Es una aproximación sustentada por datos disponibles y debe incluir incertidumbre.",
+            "Margen: Es capacidad restante disponible para absorber demanda, error o contingencia."
           ]
         },
         {
@@ -320,15 +340,19 @@
       "subtitle": "NAV-202 · Vuelo y navegación III",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Vuelo / Navegación: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "abort",
-            "evasión",
-            "propulsión limitada"
+            "Abort: Es la decisión de interrumpir una maniobra cuando continuar supera límites de seguridad o control.",
+            "Evasión: Prioriza separación segura frente al objetivo original cuando aparece una amenaza inmediata.",
+            "Propulsión limitada: Reduce opciones de maniobra y obliga a recalcular ruta, reserva y contingencias."
           ]
         },
         {
@@ -379,15 +403,19 @@
       "subtitle": "NAV-202 · Vuelo y navegación III",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Vuelo / Navegación: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "anomalías",
-            "gravedad",
-            "tráfico"
+            "Anomalías: Se incorporan como condiciones que pueden alterar navegación, sensores o seguridad y exigen margen adicional.",
+            "Gravedad: Afecta trayectoria y energía de maniobra y debe considerarse en aproximaciones y rutas cercanas.",
+            "Tráfico: Exige separación, previsión y coordinación para evitar conflictos de trayectoria."
           ]
         },
         {
@@ -438,15 +466,19 @@
       "subtitle": "NAV-202 · Vuelo y navegación III",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Vuelo / Navegación: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "datos",
-            "potencia",
-            "capacidad"
+            "Datos: Deben conservar origen, contexto, calidad y recencia suficientes para sostener una decisión.",
+            "Potencia: Es capacidad energética disponible para una función y debe gestionarse con demanda, margen y prioridades.",
+            "Capacidad: Describe qué puede hacer realmente un sistema o equipo en su estado actual."
           ]
         },
         {
@@ -497,15 +529,19 @@
       "subtitle": "NAV-203 · Vuelo integrado",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Vuelo / Navegación: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "rutina",
-            "relevo",
-            "monitorización"
+            "Rutina: rutina en Vuelo / Navegación se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "Relevo: relevo en Vuelo / Navegación se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "Monitorización: Comprueba respuesta y detecta deterioro o efectos adversos tras una intervención."
           ]
         },
         {
@@ -556,15 +592,19 @@
       "subtitle": "NAV-203 · Vuelo integrado",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Vuelo / Navegación: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "rutas",
-            "cambios",
-            "reserva"
+            "Rutas: Conectan origen y destino mediante tramos verificables, restricciones y puntos de decisión.",
+            "Cambios: cambios en Vuelo / Navegación se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "Reserva: reserva en Vuelo / Navegación se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -615,15 +655,19 @@
       "subtitle": "NAV-203 · Vuelo integrado",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Vuelo / Navegación: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "desvío",
-            "riesgo",
-            "reporte"
+            "Desvío: desvío en Vuelo / Navegación se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "Riesgo: Combina probabilidad, impacto y exposición y se compara con autoridad, misión y alternativas.",
+            "Reporte: reporte preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes."
           ]
         },
         {
@@ -674,15 +718,19 @@
       "subtitle": "NAV-203 · Vuelo integrado",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Vuelo / Navegación: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "precisión",
-            "seguridad",
-            "comunicación"
+            "Precisión: precisión en Vuelo / Navegación se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "Seguridad: Limita cualquier procedimiento y exige identificar peligros, protecciones y condición de aborto.",
+            "Comunicación: comunicación preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes."
           ]
         },
         {
@@ -1201,5 +1249,7 @@
         }
       ]
     }
-  ]
+  ],
+  "year3Status": "developed_content",
+  "year3Scope": "201-203"
 }

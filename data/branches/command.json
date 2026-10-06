@@ -1,7 +1,7 @@
 {
   "subject": "Mando",
   "code": "COMMAND",
-  "version": "1.0",
+  "version": "1.1",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/branches/command/branch_curriculum_v1_0.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/branches/command/MANUAL_v1_0.md",
@@ -22,15 +22,19 @@
       "subtitle": "CMD-201 · Mando I — autoridad y puente",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Mando: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "autoridad",
-            "responsabilidad",
-            "intención"
+            "Autoridad: Delimita quién puede ordenar, aprobar o modificar una acción; debe estar clara antes de comprometer personas o sistemas.",
+            "Responsabilidad: Obliga a responder por decisiones dentro del propio ámbito y a escalar lo que lo excede.",
+            "Intención: Expresa el efecto que se quiere conseguir y permite adaptar la ejecución sin perder el propósito de la orden."
           ]
         },
         {
@@ -81,16 +85,20 @@
       "subtitle": "CMD-201 · Mando I — autoridad y puente",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Mando: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "misión",
-            "nave",
-            "tripulación",
-            "entorno"
+            "Misión: Define el propósito y las restricciones que permiten priorizar opciones.",
+            "Nave: Se considera por su estado, capacidades, limitaciones y margen disponible para sostener la misión.",
+            "Tripulación: Se valora por seguridad, competencia, carga y disponibilidad, no solo por número de personas.",
+            "Entorno: Incluye condiciones externas que afectan visibilidad, movimiento, riesgo y capacidad de actuación."
           ]
         },
         {
@@ -141,15 +149,19 @@
       "subtitle": "CMD-201 · Mando I — autoridad y puente",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Mando: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "claridad",
-            "delegación",
-            "confirmación"
+            "Claridad: Una instrucción clara identifica acción, objetivo y límites suficientes para que el destinatario no tenga que adivinar.",
+            "Delegación: Asigna una tarea a quien tiene capacidad suficiente y mantiene seguimiento proporcional al riesgo.",
+            "Confirmación: Verifica recepción, comprensión o resultado en los puntos donde un error tendría consecuencias operativas."
           ]
         },
         {
@@ -200,16 +212,20 @@
       "subtitle": "CMD-201 · Mando I — autoridad y puente",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Mando: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "opciones",
-            "riesgo",
-            "reglas",
-            "tiempo"
+            "Opciones: Deben compararse por viabilidad, riesgo, recursos, reversibilidad y efecto en misión.",
+            "Riesgo: Combina probabilidad, impacto y exposición y se compara con autoridad, misión y alternativas.",
+            "Reglas: Fijan restricciones legales, de seguridad o procedimiento que no desaparecen por urgencia.",
+            "Tiempo: Es un recurso operativo: esperar puede mejorar información, pero también cerrar una ventana o aumentar exposición."
           ]
         },
         {
@@ -260,16 +276,20 @@
       "subtitle": "CMD-202 · Mando II — crisis y coordinación",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Mando: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "vida",
-            "misión",
-            "nave",
-            "regulación"
+            "Vida: Tiene prioridad cuando existe amenaza inmediata para personas y exige medidas proporcionadas de protección.",
+            "Misión: Define el propósito y las restricciones que permiten priorizar opciones.",
+            "Nave: Se considera por su estado, capacidades, limitaciones y margen disponible para sostener la misión.",
+            "Regulación: Delimita acciones permitidas y responsabilidades; una orden operativa no anula una prohibición aplicable."
           ]
         },
         {
@@ -320,16 +340,20 @@
       "subtitle": "CMD-202 · Mando II — crisis y coordinación",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Mando: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "datos",
-            "supuestos",
-            "consulta",
-            "tiempo"
+            "Datos: Deben conservar origen, contexto, calidad y recencia suficientes para sostener una decisión.",
+            "Supuestos: Se declaran explícitamente para no confundir inferencia con hecho.",
+            "Consulta: Se usa cuando otra autoridad o especialidad puede reducir una incertidumbre relevante antes de decidir.",
+            "Tiempo: Es un recurso operativo: esperar puede mejorar información, pero también cerrar una ventana o aumentar exposición."
           ]
         },
         {
@@ -380,15 +404,19 @@
       "subtitle": "CMD-202 · Mando II — crisis y coordinación",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Mando: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "recursos",
-            "conflictos",
-            "handoff"
+            "Recursos: Incluyen tiempo, energía, personal, capacidad y atención; no pueden asignarse dos veces sin mostrar el conflicto.",
+            "Conflictos: Se hacen visibles con sus impactos y se elevan a la autoridad que puede resolver prioridades.",
+            "Handoff: Transfiere estado, acciones, riesgos, órdenes y pendientes sin perder continuidad."
           ]
         },
         {
@@ -439,15 +467,19 @@
       "subtitle": "CMD-202 · Mando II — crisis y coordinación",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Mando: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "desescalada",
-            "intereses",
-            "autoridad"
+            "Desescalada: Busca reducir tensión y riesgo sin renunciar a la misión ni a las obligaciones de seguridad.",
+            "Intereses: Permiten entender qué necesita cada parte y construir opciones compatibles o, al menos, explícitas.",
+            "Autoridad: Delimita quién puede ordenar, aprobar o modificar una acción; debe estar clara antes de comprometer personas o sistemas."
           ]
         },
         {
@@ -498,15 +530,19 @@
       "subtitle": "CMD-203 · Mando III — guardia integrada",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Mando: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "estado",
-            "órdenes",
-            "autoridad delegada"
+            "Estado: Fija la condición real de partida y debe actualizarse cuando cambian sistemas, personas o entorno.",
+            "Órdenes: órdenes en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "Autoridad delegada: autoridad delegada en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -557,16 +593,20 @@
       "subtitle": "CMD-203 · Mando III — guardia integrada",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Mando: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "objetivo",
-            "riesgo",
-            "recursos",
-            "contingencia"
+            "Objetivo: objetivo en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "Riesgo: Combina probabilidad, impacto y exposición y se compara con autoridad, misión y alternativas.",
+            "Recursos: Incluyen tiempo, energía, personal, capacidad y atención; no pueden asignarse dos veces sin mostrar el conflicto.",
+            "Contingencia: contingencia en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -617,16 +657,20 @@
       "subtitle": "CMD-203 · Mando III — guardia integrada",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Mando: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "brief",
-            "órdenes",
-            "seguimiento",
-            "cierre"
+            "Brief: brief en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "Órdenes: órdenes en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "Seguimiento: Comprueba evolución, respuesta y necesidad de modificar tratamiento o restricciones.",
+            "Cierre: cierre en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -677,16 +721,20 @@
       "subtitle": "CMD-203 · Mando III — guardia integrada",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Mando: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "liderazgo",
-            "juicio",
-            "comunicación",
-            "ética"
+            "Liderazgo: liderazgo en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "Juicio: juicio en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "Comunicación: comunicación preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes.",
+            "Ética: ética en Mando se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -1206,5 +1254,7 @@
         }
       ]
     }
-  ]
+  ],
+  "year3Status": "developed_content",
+  "year3Scope": "201-203"
 }

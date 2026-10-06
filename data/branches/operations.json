@@ -1,7 +1,7 @@
 {
   "subject": "Operaciones",
   "code": "OPERATIONS",
-  "version": "1.0",
+  "version": "1.1",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/branches/operations/branch_curriculum_v1_0.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/branches/operations/MANUAL_v1_0.md",
@@ -22,16 +22,20 @@
       "subtitle": "OPR-201 · Operaciones II — recursos y sistemas",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Operaciones: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "energía",
-            "tiempo",
-            "capacidad",
-            "prioridad"
+            "Energía: energía en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "Tiempo: Es un recurso operativo: esperar puede mejorar información, pero también cerrar una ventana o aumentar exposición.",
+            "Capacidad: Describe qué puede hacer realmente un sistema o equipo en su estado actual.",
+            "Prioridad: prioridad organiza la respuesta comparando seguridad, misión, tiempo e impacto."
           ]
         },
         {
@@ -82,15 +86,19 @@
       "subtitle": "OPR-201 · Operaciones II — recursos y sistemas",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Operaciones: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "dependencias",
-            "servicios",
-            "peticiones"
+            "Dependencias: dependencias en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "Servicios: servicios en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "Peticiones: peticiones en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -141,15 +149,19 @@
       "subtitle": "OPR-201 · Operaciones II — recursos y sistemas",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Operaciones: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "configuración",
-            "logística",
-            "información"
+            "Configuración: configuración en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "Logística: logística en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "Información: información en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -200,16 +212,20 @@
       "subtitle": "OPR-201 · Operaciones II — recursos y sistemas",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Operaciones: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "capacidad",
-            "seguridad",
-            "ventanas",
-            "límites"
+            "Capacidad: Describe qué puede hacer realmente un sistema o equipo en su estado actual.",
+            "Seguridad: Limita cualquier procedimiento y exige identificar peligros, protecciones y condición de aborto.",
+            "Ventanas: ventanas en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "Límites: límites en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -260,16 +276,20 @@
       "subtitle": "OPR-202 · Operaciones III — carga y contingencia",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Operaciones: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "inventario",
-            "personal",
-            "capacidad",
-            "prioridad"
+            "Inventario: inventario en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "Personal: personal se organiza por función, competencia, carga y responsabilidad, con supervisión proporcional al riesgo.",
+            "Capacidad: Describe qué puede hacer realmente un sistema o equipo en su estado actual.",
+            "Prioridad: prioridad organiza la respuesta comparando seguridad, misión, tiempo e impacto."
           ]
         },
         {
@@ -320,15 +340,19 @@
       "subtitle": "OPR-202 · Operaciones III — carga y contingencia",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Operaciones: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "servicio mínimo",
-            "reroute",
-            "coordination"
+            "Servicio mínimo: servicio mínimo en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "Reroute: reroute en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "Coordination: coordination en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -379,15 +403,19 @@
       "subtitle": "OPR-202 · Operaciones III — carga y contingencia",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Operaciones: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "colas",
-            "urgencia",
-            "conflictos"
+            "Colas: colas en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "Urgencia: Determina cuánto importa el tiempo para evitar deterioro o pérdida de oportunidad terapéutica.",
+            "Conflictos: Se hacen visibles con sus impactos y se elevan a la autoridad que puede resolver prioridades."
           ]
         },
         {
@@ -438,16 +466,20 @@
       "subtitle": "OPR-202 · Operaciones III — carga y contingencia",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Operaciones: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "ingeniería",
-            "ciencia",
-            "táctica",
-            "médico"
+            "Ingeniería: ingeniería en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "Ciencia: ciencia en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "Táctica: táctica en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "Médico: médico en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -498,15 +530,19 @@
       "subtitle": "OPR-203 · Operaciones integradas",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Operaciones: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "estado",
-            "peticiones",
-            "registro"
+            "Estado: Fija la condición real de partida y debe actualizarse cuando cambian sistemas, personas o entorno.",
+            "Peticiones: peticiones en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "Registro: registro preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes."
           ]
         },
         {
@@ -557,15 +593,19 @@
       "subtitle": "OPR-203 · Operaciones integradas",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Operaciones: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "recursos",
-            "sistemas",
-            "plan"
+            "Recursos: Incluyen tiempo, energía, personal, capacidad y atención; no pueden asignarse dos veces sin mostrar el conflicto.",
+            "Sistemas: sistemas en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "Plan: plan en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -616,15 +656,19 @@
       "subtitle": "OPR-203 · Operaciones integradas",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Operaciones: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "priorización",
-            "reroute",
-            "handoff"
+            "Priorización: priorización organiza la respuesta comparando seguridad, misión, tiempo e impacto.",
+            "Reroute: reroute en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "Handoff: Transfiere estado, acciones, riesgos, órdenes y pendientes sin perder continuidad."
           ]
         },
         {
@@ -675,15 +719,19 @@
       "subtitle": "OPR-203 · Operaciones integradas",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Operaciones: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "consistencia",
-            "seguridad",
-            "comunicación"
+            "Consistencia: consistencia en Operaciones se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "Seguridad: Limita cualquier procedimiento y exige identificar peligros, protecciones y condición de aborto.",
+            "Comunicación: comunicación preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes."
           ]
         },
         {
@@ -1203,5 +1251,7 @@
         }
       ]
     }
-  ]
+  ],
+  "year3Status": "developed_content",
+  "year3Scope": "201-203"
 }

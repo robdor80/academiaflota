@@ -1,7 +1,7 @@
 {
   "subject": "Medicina",
   "code": "MEDICAL",
-  "version": "1.0",
+  "version": "1.1",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/branches/medical/branch_curriculum_v1_0.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/branches/medical/MANUAL_v1_0.md",
@@ -22,16 +22,20 @@
       "subtitle": "MED-201 · Medicina II — diagnóstico y práctica clínica",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Medicina: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "síntomas",
-            "contexto",
-            "especie",
-            "riesgo"
+            "Síntomas: Son observaciones del paciente que orientan la evaluación pero no equivalen por sí solas a diagnóstico.",
+            "Contexto: Incluye especie, antecedentes, entorno y circunstancias que cambian el significado de un dato clínico.",
+            "Especie: Obliga a evitar extrapolaciones automáticas entre fisiologías y a usar referencias adecuadas.",
+            "Riesgo: Combina probabilidad, impacto y exposición y se compara con autoridad, misión y alternativas."
           ]
         },
         {
@@ -82,16 +86,20 @@
       "subtitle": "MED-201 · Medicina II — diagnóstico y práctica clínica",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Medicina: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "tricorder",
-            "biocama contextual",
-            "datos",
-            "límites"
+            "Tricorder: Aporta datos clínicos que deben interpretarse con calibración, contexto y limitaciones conocidas.",
+            "Biocama contextual: Integra monitorización y soporte diagnóstico según la era y el equipamiento disponible.",
+            "Datos: Deben conservar origen, contexto, calidad y recencia suficientes para sostener una decisión.",
+            "Límites: límites en Medicina se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -142,16 +150,20 @@
       "subtitle": "MED-201 · Medicina II — diagnóstico y práctica clínica",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Medicina: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "diferencial",
-            "evidencia",
-            "confirmación",
-            "urgencia"
+            "Diferencial: Es la lista razonada de causas posibles que se priorizan y se revisan con nueva evidencia.",
+            "Evidencia: Debe ser observable y trazable: dato, hallazgo o respuesta que apoya o debilita una hipótesis.",
+            "Confirmación: Verifica recepción, comprensión o resultado en los puntos donde un error tendría consecuencias operativas.",
+            "Urgencia: Determina cuánto importa el tiempo para evitar deterioro o pérdida de oportunidad terapéutica."
           ]
         },
         {
@@ -202,16 +214,20 @@
       "subtitle": "MED-201 · Medicina II — diagnóstico y práctica clínica",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Medicina: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "indicación",
-            "contraindicación",
-            "monitorización",
-            "handoff"
+            "Indicación: Es la razón clínica que justifica un tratamiento para un problema concreto.",
+            "Contraindicación: Es una condición que aumenta riesgo o hace inapropiado un tratamiento.",
+            "Monitorización: Comprueba respuesta y detecta deterioro o efectos adversos tras una intervención.",
+            "Handoff: Transfiere estado, acciones, riesgos, órdenes y pendientes sin perder continuidad."
           ]
         },
         {
@@ -262,16 +278,20 @@
       "subtitle": "MED-202 · Medicina III — emergencia y xenomedicina",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Medicina: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "variación",
-            "riesgo",
-            "no extrapolación",
-            "datos"
+            "Variación: Reconoce diferencias fisiológicas relevantes dentro y entre especies.",
+            "Riesgo: Combina probabilidad, impacto y exposición y se compara con autoridad, misión y alternativas.",
+            "No extrapolación: Impide asumir que una respuesta humana o de otra especie es válida sin evidencia.",
+            "Datos: Deben conservar origen, contexto, calidad y recencia suficientes para sostener una decisión."
           ]
         },
         {
@@ -322,16 +342,20 @@
       "subtitle": "MED-202 · Medicina III — emergencia y xenomedicina",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Medicina: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "triaje",
-            "estabilización",
-            "prioridad",
-            "recursos"
+            "Triaje: Prioriza atención según gravedad, urgencia, beneficio probable y recursos disponibles.",
+            "Estabilización: Protege funciones vitales y evita deterioro antes de completar diagnóstico o tratamiento definitivo.",
+            "Prioridad: prioridad organiza la respuesta comparando seguridad, misión, tiempo e impacto.",
+            "Recursos: Incluyen tiempo, energía, personal, capacidad y atención; no pueden asignarse dos veces sin mostrar el conflicto."
           ]
         },
         {
@@ -382,16 +406,20 @@
       "subtitle": "MED-202 · Medicina III — emergencia y xenomedicina",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Medicina: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "capacidad",
-            "prioridad",
-            "equipo",
-            "comunicación"
+            "Capacidad: Describe qué puede hacer realmente un sistema o equipo en su estado actual.",
+            "Prioridad: prioridad organiza la respuesta comparando seguridad, misión, tiempo e impacto.",
+            "Equipo: Se organiza por función, competencia, comunicación y responsabilidad.",
+            "Comunicación: comunicación preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes."
           ]
         },
         {
@@ -442,15 +470,19 @@
       "subtitle": "MED-202 · Medicina III — emergencia y xenomedicina",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Medicina: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "consentimiento",
-            "confidencialidad",
-            "autoridad médica"
+            "Consentimiento: Exige capacidad e información suficientes salvo excepciones justificadas por emergencia o normativa.",
+            "Confidencialidad: Restringe información clínica a usos y personas autorizadas.",
+            "Autoridad médica: Permite decisiones clínicas dentro de competencia profesional y obligaciones de seguridad."
           ]
         },
         {
@@ -501,16 +533,20 @@
       "subtitle": "MED-203 · Práctica clínica integrada",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Medicina: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "pacientes",
-            "rutina",
-            "registro",
-            "consulta"
+            "Pacientes: Se gestionan individualmente, conservando identificación, prioridad, estado y continuidad asistencial.",
+            "Rutina: rutina en Medicina se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "Registro: registro preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes.",
+            "Consulta: Se usa cuando otra autoridad o especialidad puede reducir una incertidumbre relevante antes de decidir."
           ]
         },
         {
@@ -561,16 +597,20 @@
       "subtitle": "MED-203 · Práctica clínica integrada",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Medicina: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "evaluación",
-            "diagnóstico",
-            "tratamiento",
-            "seguimiento"
+            "Evaluación: evaluación en Medicina se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "Diagnóstico: Relaciona síntomas con causas posibles y usa pruebas para reducir incertidumbre antes de intervenir.",
+            "Tratamiento: tratamiento en Medicina se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "Seguimiento: Comprueba evolución, respuesta y necesidad de modificar tratamiento o restricciones."
           ]
         },
         {
@@ -621,16 +661,20 @@
       "subtitle": "MED-203 · Práctica clínica integrada",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Medicina: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "mando",
-            "seguridad",
-            "recursos",
-            "evacuación"
+            "Mando: mando en Medicina se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "Seguridad: Limita cualquier procedimiento y exige identificar peligros, protecciones y condición de aborto.",
+            "Recursos: Incluyen tiempo, energía, personal, capacidad y atención; no pueden asignarse dos veces sin mostrar el conflicto.",
+            "Evacuación: Transfiere al paciente a un nivel o lugar de atención más adecuado conservando estabilidad e información."
           ]
         },
         {
@@ -681,16 +725,20 @@
       "subtitle": "MED-203 · Práctica clínica integrada",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Medicina: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "seguridad",
-            "razonamiento",
-            "comunicación",
-            "ética"
+            "Seguridad: Limita cualquier procedimiento y exige identificar peligros, protecciones y condición de aborto.",
+            "Razonamiento: razonamiento en Medicina se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "Comunicación: comunicación preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes.",
+            "Ética: ética en Medicina se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -1214,5 +1262,7 @@
         }
       ]
     }
-  ]
+  ],
+  "year3Status": "developed_content",
+  "year3Scope": "201-203"
 }

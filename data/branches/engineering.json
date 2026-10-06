@@ -1,7 +1,7 @@
 {
   "subject": "Ingeniería",
   "code": "ENGINEERING",
-  "version": "1.0",
+  "version": "1.1",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/branches/engineering/branch_curriculum_v1_0.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/branches/engineering/MANUAL_v1_0.md",
@@ -22,16 +22,20 @@
       "subtitle": "ENG-201 · Ingeniería II — potencia y propulsión",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Ingeniería: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "fuentes",
-            "buses",
-            "reservas",
-            "cargas"
+            "Fuentes: Son orígenes de energía o capacidad y su disponibilidad condiciona la distribución.",
+            "Buses: Son rutas de distribución que conectan fuentes y cargas y cuyo estado afecta redundancia y aislamiento.",
+            "Reservas: Protegen funciones críticas frente a picos, fallos o cambios de prioridad.",
+            "Cargas: Son consumidores de energía que deben priorizarse según misión y seguridad."
           ]
         },
         {
@@ -82,16 +86,20 @@
       "subtitle": "ENG-201 · Ingeniería II — potencia y propulsión",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Ingeniería: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "subsistemas",
-            "estado",
-            "demanda",
-            "seguridad"
+            "Subsistemas: Permiten dividir una función compleja en elementos cuyo estado y dependencia pueden diagnosticarse.",
+            "Estado: Fija la condición real de partida y debe actualizarse cuando cambian sistemas, personas o entorno.",
+            "Demanda: Es la capacidad solicitada por una función y debe compararse con disponibilidad y margen.",
+            "Seguridad: Limita cualquier procedimiento y exige identificar peligros, protecciones y condición de aborto."
           ]
         },
         {
@@ -142,15 +150,19 @@
       "subtitle": "ENG-201 · Ingeniería II — potencia y propulsión",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Ingeniería: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "potencia",
-            "refrigeración contextual",
-            "capacidad"
+            "Potencia: Es capacidad energética disponible para una función y debe gestionarse con demanda, margen y prioridades.",
+            "Refrigeración contextual: Controla condiciones térmicas necesarias para mantener capacidad segura bajo carga.",
+            "Capacidad: Describe qué puede hacer realmente un sistema o equipo en su estado actual."
           ]
         },
         {
@@ -201,16 +213,20 @@
       "subtitle": "ENG-201 · Ingeniería II — potencia y propulsión",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Ingeniería: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "síntoma",
-            "telemetría",
-            "hipótesis",
-            "prueba"
+            "Síntoma: síntoma en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "Telemetría: Aporta medidas de estado útiles para localizar degradaciones y comprobar hipótesis.",
+            "Hipótesis: Es una explicación provisional que debe poder confirmarse o descartarse con pruebas.",
+            "Prueba: Debe distinguir entre causas posibles y minimizar cambios innecesarios en el sistema."
           ]
         },
         {
@@ -261,16 +277,20 @@
       "subtitle": "ENG-202 · Ingeniería III — reparación y daños",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Ingeniería: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "sección",
-            "riesgo",
-            "bypass",
-            "seguridad"
+            "Sección: Delimita el área o subsistema afectado para aislar un fallo sin desconectar más capacidad de la necesaria.",
+            "Riesgo: Combina probabilidad, impacto y exposición y se compara con autoridad, misión y alternativas.",
+            "Bypass: Crea una ruta alternativa cuando la normal está degradada, con límites y riesgos explícitos.",
+            "Seguridad: Limita cualquier procedimiento y exige identificar peligros, protecciones y condición de aborto."
           ]
         },
         {
@@ -321,16 +341,20 @@
       "subtitle": "ENG-202 · Ingeniería III — reparación y daños",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Ingeniería: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "misión",
-            "vida",
-            "propulsión",
-            "defensa"
+            "Misión: Define el propósito y las restricciones que permiten priorizar opciones.",
+            "Vida: Tiene prioridad cuando existe amenaza inmediata para personas y exige medidas proporcionadas de protección.",
+            "Propulsión: propulsión en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "Defensa: Se prioriza según amenaza y misión, equilibrando supervivencia con otras funciones críticas."
           ]
         },
         {
@@ -381,16 +405,20 @@
       "subtitle": "ENG-202 · Ingeniería III — reparación y daños",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Ingeniería: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "equipo",
-            "sellado",
-            "energía",
-            "restauración"
+            "Equipo: Se organiza por función, competencia, comunicación y responsabilidad.",
+            "Sellado: Contiene una pérdida o peligro para evitar propagación y proteger compartimentos o sistemas.",
+            "Energía: energía en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "Restauración: Devuelve capacidad de forma verificada y controlada, no solo elimina una alarma."
           ]
         },
         {
@@ -441,15 +469,19 @@
       "subtitle": "ENG-202 · Ingeniería III — reparación y daños",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Ingeniería: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "cascada",
-            "causa raíz",
-            "recuperación"
+            "Cascada: Describe cómo un fallo se propaga por dependencias y obliga a proteger funciones críticas.",
+            "Causa raíz: Es la causa que explica el fallo, no solo el síntoma; corregirla reduce recurrencia.",
+            "Recuperación: recuperación en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -500,15 +532,19 @@
       "subtitle": "ENG-203 · Ingeniería operacional",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Ingeniería: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "estado",
-            "mantenimiento",
-            "avisos"
+            "Estado: Fija la condición real de partida y debe actualizarse cuando cambian sistemas, personas o entorno.",
+            "Mantenimiento: Conserva fiabilidad mediante inspección, ajuste y sustitución antes de que aparezca una avería operativa.",
+            "Avisos: Se interpretan por gravedad, contexto, tendencia e impacto, evitando tanto ignorarlos como saturar la respuesta."
           ]
         },
         {
@@ -559,16 +595,20 @@
       "subtitle": "ENG-203 · Ingeniería operacional",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Ingeniería: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "temperatura contextual",
-            "potencia",
-            "margen",
-            "reserva"
+            "Temperatura contextual: temperatura contextual en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "Potencia: Es capacidad energética disponible para una función y debe gestionarse con demanda, margen y prioridades.",
+            "Margen: Es capacidad restante disponible para absorber demanda, error o contingencia.",
+            "Reserva: reserva en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -619,15 +659,19 @@
       "subtitle": "ENG-203 · Ingeniería operacional",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Ingeniería: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "diagnóstico",
-            "prioridad",
-            "coordinación"
+            "Diagnóstico: Relaciona síntomas con causas posibles y usa pruebas para reducir incertidumbre antes de intervenir.",
+            "Prioridad: prioridad organiza la respuesta comparando seguridad, misión, tiempo e impacto.",
+            "Coordinación: coordinación en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -678,16 +722,20 @@
       "subtitle": "ENG-203 · Ingeniería operacional",
       "blocks": [
         {
+          "type": "p",
+          "text": "Tramo de 2.ª clase de Ingeniería: esta unidad se trabaja como competencia profesional observable, con ejecución, límites de autoridad, seguridad, comunicación y evidencia."
+        },
+        {
           "type": "heading",
           "text": "Contenidos"
         },
         {
           "type": "bullets",
           "items": [
-            "seguridad",
-            "diagnóstico",
-            "ejecución",
-            "reporte"
+            "Seguridad: Limita cualquier procedimiento y exige identificar peligros, protecciones y condición de aborto.",
+            "Diagnóstico: Relaciona síntomas con causas posibles y usa pruebas para reducir incertidumbre antes de intervenir.",
+            "Ejecución: ejecución en Ingeniería se trata como una variable profesional observable: significado, impacto, límite y condición de escalado deben quedar claros.",
+            "Reporte: reporte preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes."
           ]
         },
         {
@@ -1208,5 +1256,7 @@
         }
       ]
     }
-  ]
+  ],
+  "year3Status": "developed_content",
+  "year3Scope": "201-203"
 }
