@@ -1,0 +1,228 @@
+{
+  "schema_version": "0.1.0",
+  "simulator": "sensors",
+  "tutorials": [
+    {
+      "id": "TUT-01",
+      "title": "Barrido básico",
+      "objective": "Realiza un barrido de largo alcance del sector 041 con prioridad a emisiones subespaciales.",
+      "hint": "Empieza en BARRIDOS. El tipo de barrido, el área y la prioridad son tres decisiones distintas.",
+      "completion_feedback": "Correcto. Has convertido una orden verbal en una operación sensora estructurada sin que la consola decidiera por ti.",
+      "steps": [
+        {
+          "label": "Abrir BARRIDOS",
+          "event": "NAV_PRIMARY",
+          "match": {
+            "primaryId": "scans"
+          }
+        },
+        {
+          "label": "Elegir Largo alcance",
+          "event": "NAV_SECONDARY",
+          "match": {
+            "primaryId": "scans",
+            "secondaryId": "long_range"
+          }
+        },
+        {
+          "label": "Configurar Sector 041",
+          "event": "SCAN_EXECUTE",
+          "match": {
+            "scanType": "long_range",
+            "targetValue": "sector"
+          }
+        },
+        {
+          "label": "Prioridad Subespacio",
+          "event": "SCAN_EXECUTE",
+          "match": {
+            "scanType": "long_range",
+            "priority": "subspace"
+          }
+        },
+        {
+          "label": "Completar barrido",
+          "event": "SCAN_COMPLETE",
+          "match": {
+            "scanType": "long_range"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TUT-02",
+      "title": "Contacto sospechoso",
+      "objective": "Abre el Contacto 07 y ejecuta sobre él un barrido focalizado.",
+      "hint": "No necesitas volver manualmente a Barridos si la ficha del contacto te ofrece una acción contextual válida.",
+      "completion_feedback": "Correcto. Has usado el contexto del Contacto 07 para saltar directamente a la operación que necesitabas.",
+      "steps": [
+        {
+          "label": "Abrir CONTACTOS",
+          "event": "NAV_PRIMARY",
+          "match": {
+            "primaryId": "contacts"
+          }
+        },
+        {
+          "label": "Seleccionar C-07",
+          "event": "SELECT_CONTACT",
+          "match": {
+            "contactId": "C-07"
+          }
+        },
+        {
+          "label": "Usar Barrido focalizado",
+          "event": "ACTION",
+          "match": {
+            "actionId": "focused_scan",
+            "contactId": "C-07"
+          }
+        },
+        {
+          "label": "Ejecutar sobre C-07",
+          "event": "SCAN_EXECUTE",
+          "match": {
+            "scanType": "focused",
+            "contactId": "C-07"
+          }
+        },
+        {
+          "label": "Completar barrido",
+          "event": "SCAN_COMPLETE",
+          "match": {
+            "scanType": "focused",
+            "contactId": "C-07"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TUT-03",
+      "title": "Seguimiento de contacto",
+      "objective": "Pon el Contacto 07 bajo seguimiento y comprueba que el tracking persiste aunque navegues por la consola.",
+      "hint": "La propia ficha del contacto puede iniciar el seguimiento. Después abre otro menú: el panel derecho debe conservar C-07.",
+      "completion_feedback": "Correcto. Has comprobado una regla central: navegar por la consola no detiene un proceso operativo persistente.",
+      "steps": [
+        {
+          "label": "Abrir CONTACTOS",
+          "event": "NAV_PRIMARY",
+          "match": {
+            "primaryId": "contacts"
+          }
+        },
+        {
+          "label": "Seleccionar C-07",
+          "event": "SELECT_CONTACT",
+          "match": {
+            "contactId": "C-07"
+          }
+        },
+        {
+          "label": "Iniciar seguimiento",
+          "event": "TRACK_START",
+          "match": {
+            "contactId": "C-07"
+          }
+        },
+        {
+          "label": "Cambiar de menú",
+          "event": "NAV_PRIMARY",
+          "matchNot": {
+            "primaryId": "contacts"
+          }
+        },
+        {
+          "label": "Tracking sigue activo",
+          "event": "NAV_PRIMARY",
+          "requiresState": {
+            "contactTracked": "C-07"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TUT-04",
+      "title": "Potencia adicional",
+      "objective": "Solicita potencia adicional a Operaciones para mejorar una situación sensora limitada.",
+      "hint": "C-07 tiene una señal muy débil. La consola puede ofrecer SOLICITAR POTENCIA ADICIONAL, pero OPS decide cuánto concede.",
+      "completion_feedback": "Correcto. Sensores ha solicitado recursos; no ha decidido qué otro sistema debía cederlos.",
+      "steps": [
+        {
+          "label": "Abrir CONTACTOS",
+          "event": "NAV_PRIMARY",
+          "match": {
+            "primaryId": "contacts"
+          }
+        },
+        {
+          "label": "Seleccionar C-07",
+          "event": "SELECT_CONTACT",
+          "match": {
+            "contactId": "C-07"
+          }
+        },
+        {
+          "label": "Abrir solicitud",
+          "event": "ACTION",
+          "match": {
+            "actionId": "request_additional_power",
+            "contactId": "C-07"
+          }
+        },
+        {
+          "label": "Enviar a OPS",
+          "event": "POWER_REQUEST"
+        },
+        {
+          "label": "Recibir respuesta",
+          "event": "POWER_RESPONSE"
+        }
+      ]
+    },
+    {
+      "id": "TUT-05",
+      "title": "Lectura y transferencia",
+      "objective": "Abre una lectura sensorial del Contacto 07 y envía los datos a Ciencia para su interpretación.",
+      "hint": "Sensores mide; Ciencia interpreta. Busca la acción de Lectura sensorial en la ficha del contacto.",
+      "completion_feedback": "Correcto. Has mantenido la frontera funcional: Sensores entrega observaciones; Ciencia recibe los datos para interpretarlos.",
+      "steps": [
+        {
+          "label": "Abrir CONTACTOS",
+          "event": "NAV_PRIMARY",
+          "match": {
+            "primaryId": "contacts"
+          }
+        },
+        {
+          "label": "Seleccionar C-07",
+          "event": "SELECT_CONTACT",
+          "match": {
+            "contactId": "C-07"
+          }
+        },
+        {
+          "label": "Abrir Lectura sensorial",
+          "event": "READOUT_OPEN",
+          "match": {
+            "contactId": "C-07"
+          }
+        },
+        {
+          "label": "Revisar lectura",
+          "event": "NAV_SECONDARY",
+          "match": {
+            "primaryId": "sensor_readout"
+          }
+        },
+        {
+          "label": "Enviar a Ciencia",
+          "event": "HANDOFF",
+          "match": {
+            "target": "science",
+            "contactId": "C-07"
+          }
+        }
+      ]
+    }
+  ]
+}

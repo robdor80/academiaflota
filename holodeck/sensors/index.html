@@ -12,8 +12,37 @@
 <div id="app" class="console-shell">
 <header class="console-header">
   <div><span class="eyebrow">ACADEMIA DE LA FLOTA ESTELAR · HOLOCUBIERTA</span><h1>Consola de Sensores</h1></div>
-  <div class="header-actions"><span class="prototype">PROTOTIPO TÉCNICO v0.1</span><a href="../">← Holocubierta</a></div>
+  <div class="header-actions">
+    <label class="mode-control">MODO
+      <select id="mode-select" aria-label="Modo de simulación">
+        <option value="free">Libre</option>
+        <option value="teacher">Profesor</option>
+      </select>
+    </label>
+    <span class="prototype">PROTOTIPO TÉCNICO v0.2</span>
+    <a href="../">← Holocubierta</a>
+  </div>
 </header>
+<section id="teacher-panel" class="teacher-panel" hidden>
+  <div class="teacher-main">
+    <div class="teacher-heading">
+      <span class="teacher-badge">INSTRUCTOR</span>
+      <div><small id="teacher-kicker">PRÁCTICA GUIADA</small><h2 id="teacher-title">Modo profesor</h2></div>
+    </div>
+    <p id="teacher-objective"></p>
+    <ol id="teacher-steps" class="teacher-steps"></ol>
+    <div id="teacher-feedback" class="teacher-feedback" hidden></div>
+  </div>
+  <aside class="teacher-controls">
+    <label>Práctica
+      <select id="tutorial-select"></select>
+    </label>
+    <div class="teacher-progress"><span>PROGRESO</span><strong id="teacher-progress">0 / 0</strong></div>
+    <button id="teacher-hint" class="ghost">Mostrar pista</button>
+    <button id="teacher-reset" class="ghost">Reiniciar práctica</button>
+    <div id="teacher-hint-text" class="teacher-hint" hidden></div>
+  </aside>
+</section>
 <div class="console-grid">
   <aside class="panel primary-panel">
     <div class="panel-title"><span>01</span><strong>FUNCIONES</strong></div>

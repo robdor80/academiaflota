@@ -1,13 +1,15 @@
+import { initTeacherMode, emitTeacherEvent } from "./teacher_mode.js";
+function initialContacts(){return [
+  {id:"C-03",name:"Contacto 03",status:"identified",classification:"Lanzadera tipo 6",distance:"18.400 km",confidence:94,signal:"FUERTE",signature:"Warp / EM",tracked:true,marked:false},
+  {id:"C-07",name:"Contacto 07",status:"unidentified",classification:"No identificado",distance:"43.000 km",confidence:22,signal:"MUY DÉBIL",signature:"Subespacial parcial",tracked:false,marked:true},
+  {id:"C-12",name:"Contacto 12",status:"identified",classification:"Nave mercante",distance:"71.200 km",confidence:86,signal:"MEDIA",signature:"EM / térmica",tracked:true,marked:false},
+  {id:"C-19",name:"Contacto 19",status:"lost",classification:"Desconocido",distance:"Última: 96.000 km",confidence:31,signal:"PERDIDA",signature:"Warp residual",tracked:false,marked:false}
+]}
 const state={
   model:null,context:null,interaction:null,powerContract:null,
   primaryId:"status",secondaryId:"general_status",special:null,
   power:72,basePower:72,interference:"BAJA",matrix:"PRINCIPAL",trackingCapacity:8,
-  contacts:[
-    {id:"C-03",name:"Contacto 03",status:"identified",classification:"Lanzadera tipo 6",distance:"18.400 km",confidence:94,signal:"FUERTE",signature:"Warp / EM",tracked:true,marked:false},
-    {id:"C-07",name:"Contacto 07",status:"unidentified",classification:"No identificado",distance:"43.000 km",confidence:22,signal:"MUY DÉBIL",signature:"Subespacial parcial",tracked:false,marked:true},
-    {id:"C-12",name:"Contacto 12",status:"identified",classification:"Nave mercante",distance:"71.200 km",confidence:86,signal:"MEDIA",signature:"EM / térmica",tracked:true,marked:false},
-    {id:"C-19",name:"Contacto 19",status:"lost",classification:"Desconocido",distance:"Última: 96.000 km",confidence:31,signal:"PERDIDA",signature:"Warp residual",tracked:false,marked:false}
-  ],
+  contacts:initialContacts(),
   selectedContactId:"C-07",activeOperations:[],results:[],powerRequest:null,logs:[]
 };
 const $=s=>document.querySelector(s);
@@ -23,19 +25,25 @@ async function load(){
     fetch("./data/sensor_to_operations_power_request.json").then(r=>r.json())
   ]);
   state.model=m;state.context=c;state.interaction=i;state.powerContract=p;
-  bind();render();log("SIMULATOR READY · escenario SENSOR-LAB-01");
+  bind();render();initTeacherMode({resetScenario});log("SIMULATOR READY · escenario SENSOR-LAB-01");
 }
 function bind(){
-  $("#reset-sim").addEventListener("click",()=>location.reload());
+  $("#reset-sim").addEventListener("click",()=>resetScenario("manual"));
   $("#toggle-log").addEventListener("click",()=>{$("#log-panel").hidden=!$("#log-panel").hidden});
+}
+function resetScenario(source="teacher"){
+  state.primaryId="status";state.secondaryId="general_status";state.special=null;
+  state.power=72;state.basePower=72;state.interference="BAJA";state.matrix="PRINCIPAL";state.trackingCapacity=8;
+  state.contacts=initialContacts();state.selectedContactId="C-07";state.activeOperations=[];state.results=[];state.powerRequest=null;
+  log("RESET scenario · "+source);render();emitTeacherEvent("SCENARIO_RESET",{source});
 }
 function render(){renderPrimary();renderSecondary();renderWorkspace();renderStatus();renderLog()}
 function primary(){return state.model.root.find(x=>x.id===state.primaryId)}
 function secondary(){return primary()?.secondary?.find(x=>x.id===state.secondaryId)}
 function navPrimary(id){
-  state.primaryId=id;state.special=null;state.secondaryId=state.model.root.find(x=>x.id===id)?.secondary?.[0]?.id||null;log("OPEN "+id);render()
+  state.primaryId=id;state.special=null;state.secondaryId=state.model.root.find(x=>x.id===id)?.secondary?.[0]?.id||null;log("OPEN "+id);emitTeacherEvent("NAV_PRIMARY",{primaryId:id});render()
 }
-function navSecondary(id){state.secondaryId=id;state.special=null;log("OPEN "+state.primaryId+"/"+id);render()}
+function navSecondary(id){state.secondaryId=id;state.special=null;log("OPEN "+state.primaryId+"/"+id);emitTeacherEvent("NAV_SECONDARY",{primaryId:state.primaryId,secondaryId:id});render()}
 function renderPrimary(){
   $("#primary-nav").innerHTML=state.model.root.map(x=>'<button class="primary-button '+(x.id===state.primaryId?"active":"")+'" data-p="'+x.id+'">'+x.display_es+'</button>').join("");
   document.querySelectorAll("[data-p]").forEach(b=>b.onclick=()=>navPrimary(b.dataset.p));
@@ -107,7 +115,7 @@ function contactActions(c){
   if(c.confidence<60)a.push("high_resolution_scan","request_additional_power");
   return a;
 }
-function wireContacts(){document.querySelectorAll("[data-contact]").forEach(el=>el.onclick=()=>{state.selectedContactId=el.dataset.contact;log("SELECT "+el.dataset.contact);render()})}
+function wireContacts(){document.querySelectorAll("[data-contact]").forEach(el=>el.onclick=()=>{state.selectedContactId=el.dataset.contact;log("SELECT "+el.dataset.contact);emitTeacherEvent("SELECT_CONTACT",{contactId:el.dataset.contact});render()})}
 function scanView(){
   const s=secondary();if(!s)return "";
   const c=contact();const focused=s.id==="focused";
@@ -123,15 +131,15 @@ function scanView(){
 function fieldSelect(id,label,opts){return '<div class="field"><label>'+label+'</label><select id="'+id+'">'+opts.map(([v,t])=>'<option value="'+v+'">'+t+'</option>').join("")+'</select></div>'}
 function wireScanForm(){const b=$("#execute-scan");if(b)b.onclick=executeScan}
 function executeScan(){
-  const type=state.secondaryId;const op={id:"SCN-"+String(Date.now()).slice(-4),type,progress:0,target:$("#target-scope")?.selectedOptions[0]?.textContent||"—",resolution:$("#resolution")?.value||"standard"};
-  state.activeOperations.push(op);log("EXECUTE scan "+type+" · "+op.target);renderStatus();
+  const type=state.secondaryId;const op={id:"SCN-"+String(Date.now()).slice(-4),type,progress:0,target:$("#target-scope")?.selectedOptions[0]?.textContent||"—",targetValue:$("#target-scope")?.value||"",resolution:$("#resolution")?.value||"standard",priority:$("#priority")?.value||"none",mode:$("#scan-mode")?.value||"passive",duration:$("#duration")?.value||"standard"};
+  state.activeOperations.push(op);log("EXECUTE scan "+type+" · "+op.target);emitTeacherEvent("SCAN_EXECUTE",{scanType:type,target:op.target,targetValue:op.targetValue,priority:op.priority,resolution:op.resolution,mode:op.mode,duration:op.duration,contactId:contact()?.id||null});renderStatus();
   const timer=setInterval(()=>{op.progress=Math.min(100,op.progress+10);renderStatus();if(op.progress>=100){clearInterval(timer);finishScan(op)}},350);
 }
 function finishScan(op){
   state.activeOperations=state.activeOperations.filter(x=>x!==op);
   const c=contact();if(c && (op.type==="focused"||op.target.includes(c.id))){const gain=state.power>=80?38:22;c.confidence=Math.min(99,c.confidence+gain);c.signal=c.confidence>60?"MEDIA":"DÉBIL"}
   state.results.unshift({id:op.id,time:new Date().toLocaleTimeString("es-ES",{hour12:false}),type:op.type,target:op.target,summary:c?"Confianza "+c.id+": "+c.confidence+" %":"Barrido completado"});
-  log("COMPLETE "+op.id+" · result stored");render();
+  log("COMPLETE "+op.id+" · result stored");emitTeacherEvent("SCAN_COMPLETE",{scanType:op.type,target:op.target,contactId:contact()?.id||null,resultId:op.id});render();
 }
 function trackingView(){
   const s=secondary();const c=contact();
@@ -159,19 +167,19 @@ function powerRequestView(){
 function wirePowerForm(){
   $("#cancel-power").onclick=()=>{state.special=null;render()};
   $("#send-power").onclick=()=>{
-    const delta=Number($("#power-delta").value);state.powerRequest={state:"PENDIENTE",requested:delta,granted:0};log("POWER REQUEST +"+delta+"% → OPS");state.special=null;render();
-    setTimeout(()=>{const grant=Math.max(5,Math.floor(delta*.7));state.powerRequest={state:"APROBADA PARCIAL",requested:delta,granted:grant};state.power=Math.min(100,state.power+grant);log("OPS RESPONSE partial +"+grant+"%");render()},900);
+    const delta=Number($("#power-delta").value);state.powerRequest={state:"PENDIENTE",requested:delta,granted:0};log("POWER REQUEST +"+delta+"% → OPS");emitTeacherEvent("POWER_REQUEST",{requestedDelta:delta,contactId:contact()?.id||null});state.special=null;render();
+    setTimeout(()=>{const grant=Math.max(5,Math.floor(delta*.7));state.powerRequest={state:"APROBADA PARCIAL",requested:delta,granted:grant};state.power=Math.min(100,state.power+grant);log("OPS RESPONSE partial +"+grant+"%");emitTeacherEvent("POWER_RESPONSE",{state:"partially_approved",grantedDelta:grant});render()},900);
   }
 }
 function doAction(id){
-  log("ACTION "+id);
+  log("ACTION "+id);emitTeacherEvent("ACTION",{actionId:id,contactId:contact()?.id||null});
   if(id==="request_additional_power"){state.special="power_request";renderWorkspace();return}
   if(id==="focused_scan"||id==="high_resolution_scan"){state.primaryId="scans";state.secondaryId="focused";state.special=null;render();return}
-  if(id==="start_tracking"){contact().tracked=true;render();return}
-  if(id==="stop_tracking"||id==="release_tracking_slot"){contact().tracked=false;render();return}
+  if(id==="start_tracking"){contact().tracked=true;emitTeacherEvent("TRACK_START",{contactId:contact().id});render();return}
+  if(id==="stop_tracking"||id==="release_tracking_slot"){const idc=contact().id;contact().tracked=false;emitTeacherEvent("TRACK_STOP",{contactId:idc});render();return}
   if(id==="mark_contact"){contact().marked=true;render();return}
   if(id==="unmark_contact"){contact().marked=false;render();return}
-  if(id==="open_sensor_readout"){state.primaryId="sensor_readout";state.secondaryId="signal_strength";render();return}
+  if(id==="open_sensor_readout"){state.primaryId="sensor_readout";state.secondaryId="signal_strength";emitTeacherEvent("READOUT_OPEN",{contactId:contact()?.id||null,readout:"signal_strength"});render();return}
   if(id==="compare_readings"){state.primaryId="results";state.secondaryId="compare_readings";render();return}
   if(id==="open_current_result"){state.primaryId="results";state.secondaryId="current_operation";render();return}
   if(id==="open_interference"||id==="automatic_compensation"||id==="manual_compensation"||id==="change_band"||id==="extend_integration"||id==="recover_signal"){state.primaryId="interference";state.secondaryId=id==="open_interference"?"interference_status":({automatic_compensation:"automatic_compensation",manual_compensation:"manual_adjustment",change_band:"change_band_frequency",extend_integration:"extend_integration",recover_signal:"recover_signal"}[id]);render();return}
@@ -181,7 +189,7 @@ function doAction(id){
   if(id==="reacquire_contact"||id==="predict_trajectory"){state.primaryId="tracking";state.secondaryId=id==="reacquire_contact"?"reacquire_lost_contact":"predict_trajectory";render();return}
   if(id==="cancel_power_request"){state.powerRequest={state:"CANCELADA"};render();return}
   if(id==="cancel_operation"){state.activeOperations=[];render();return}
-  if(id==="send_to_science"||id==="send_data"||id==="send_to_tactical"){alert("Transferencia simulada: "+actionDef(id).display_es+"\n\nEn esta primera versión solo registramos el handoff.");return}
+  if(id==="send_to_science"||id==="send_data"||id==="send_to_tactical"){emitTeacherEvent("HANDOFF",{target:id==="send_to_science"?"science":id==="send_to_tactical"?"tactical":"generic",contactId:contact()?.id||null});alert("Transferencia simulada: "+actionDef(id).display_es+"\n\nEn esta primera versión solo registramos el handoff.");return}
   alert("Acción registrada en el prototipo: "+actionDef(id).display_es);
 }
 function renderStatus(){
