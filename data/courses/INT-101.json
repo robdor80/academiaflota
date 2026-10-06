@@ -1,7 +1,7 @@
 {
   "subject": "Operaciones integradas de nave III",
   "code": "INT-101",
-  "version": "1.0",
+  "version": "2.0",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/first_class/courses/INT-101/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/first_class/INT-101/MANUAL_v1_0.md",
@@ -17,11 +17,10 @@
     {
       "id": "INT-101-U01",
       "title": "Estado global de nave",
-      "subtitle": "UNIDAD 01 · INT-101",
       "blocks": [
         {
           "type": "p",
-          "text": "Pensar en la nave como sistema completo y anticipar efectos cruzados de decisiones profesionales."
+          "text": "Esta unidad aplica «Estado global de nave» a situaciones de servicio. Al terminar, el cadete debe poder **reconocer la situación, decidir dentro de su autoridad, ejecutar con seguridad y explicar por qué actuó así**."
         },
         {
           "type": "heading",
@@ -30,11 +29,19 @@
         {
           "type": "bullets",
           "items": [
-            "misión",
-            "sistemas",
-            "tripulación",
-            "entorno"
+            "**misión**: propósito operativo junto con restricciones, prioridades y condiciones de éxito; guía decisiones sin anular seguridad ni regulación.",
+            "**sistemas**: capacidades técnicas de la nave consideradas por estado, dependencias, reservas y limitaciones.",
+            "**tripulación**: personas disponibles con su competencia, carga, estado y distribución; no es solo un número de efectivos.",
+            "**entorno**: condiciones externas que afectan sensores, movimiento, seguridad, comunicaciones y opciones operativas."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Los conceptos anteriores se usan juntos: primero se establece qué se sabe y qué falta, después se comprueban autoridad y límites, se comparan alternativas y se mantiene registro suficiente para seguimiento y relevo."
         },
         {
           "type": "callout",
@@ -43,47 +50,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "El estándar es mantener una picture compartida, decisiones trazables y continuidad entre personas y departamentos."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica misión como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Construir picture integrado.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/ship_operations/bridge_station_model.json",
-            "gameplay/ship_operations/operational_event_log/README.md"
-          ]
+          "text": "Evaluación. La evaluación distingue **calidad del proceso, conducta profesional y resultado**; un resultado favorable no compensa una decisión temeraria y un resultado adverso no invalida automáticamente una decisión razonable."
         }
       ]
     },
     {
       "id": "INT-101-U02",
       "title": "Efectos cruzados",
-      "subtitle": "UNIDAD 02 · INT-101",
       "blocks": [
         {
           "type": "p",
-          "text": "Pensar en la nave como sistema completo y anticipar efectos cruzados de decisiones profesionales."
+          "text": "Esta unidad aplica «Efectos cruzados» a situaciones de servicio. Al terminar, el cadete debe poder **reconocer la situación, decidir dentro de su autoridad, ejecutar con seguridad y explicar por qué actuó así**."
         },
         {
           "type": "heading",
@@ -92,12 +75,20 @@
         {
           "type": "bullets",
           "items": [
-            "energía",
-            "sensores",
-            "movimiento",
-            "defensa",
-            "médico"
+            "**energía**: recurso distribuido entre sistemas con límites de generación, reserva y prioridad; reasignarlo crea efectos cruzados.",
+            "**sensores**: conjunto de sistemas que obtiene observaciones; sus datos deben interpretarse con cobertura, resolución, ruido y confianza.",
+            "**movimiento**: capacidad de cambiar posición y velocidad dentro de límites de navegación, propulsión, entorno y misión.",
+            "**defensa**: medidas de protección cuya disponibilidad y empleo afectan energía, firma, maniobra y riesgo.",
+            "**médico**: capacidad sanitaria de la unidad, condicionada por pacientes, personal, recursos, aislamiento y carga asistencial."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Los conceptos anteriores se usan juntos: primero se establece qué se sabe y qué falta, después se comprueban autoridad y límites, se comparan alternativas y se mantiene registro suficiente para seguimiento y relevo."
         },
         {
           "type": "callout",
@@ -106,47 +97,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "El estándar es mantener una picture compartida, decisiones trazables y continuidad entre personas y departamentos."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Caso."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica energía como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Analizar decisión multi-sistema.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/ship_operations/bridge_station_model.json",
-            "gameplay/ship_operations/operational_event_log/README.md"
-          ]
+          "text": "Caso. La evaluación distingue **calidad del proceso, conducta profesional y resultado**; un resultado favorable no compensa una decisión temeraria y un resultado adverso no invalida automáticamente una decisión razonable."
         }
       ]
     },
     {
       "id": "INT-101-U03",
       "title": "Coordinación bajo presión",
-      "subtitle": "UNIDAD 03 · INT-101",
       "blocks": [
         {
           "type": "p",
-          "text": "Pensar en la nave como sistema completo y anticipar efectos cruzados de decisiones profesionales."
+          "text": "Esta unidad aplica «Coordinación bajo presión» a situaciones de servicio. Al terminar, el cadete debe poder **reconocer la situación, decidir dentro de su autoridad, ejecutar con seguridad y explicar por qué actuó así**."
         },
         {
           "type": "heading",
@@ -155,11 +122,19 @@
         {
           "type": "bullets",
           "items": [
-            "peticiones",
-            "prioridad",
-            "capacidad",
-            "mando"
+            "**peticiones**: demandas de recursos o acciones que deben registrar origen, urgencia, impacto y responsable antes de priorizarse.",
+            "**prioridad**: posición relativa de una demanda frente a otras según seguridad, misión, urgencia e impacto.",
+            "**capacidad**: margen real de una persona o sistema para asumir trabajo sin superar límites de seguridad o rendimiento.",
+            "**mando**: función que integra información, fija prioridades y asume la decisión dentro de la autoridad recibida."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Los conceptos anteriores se usan juntos: primero se establece qué se sabe y qué falta, después se comprueban autoridad y límites, se comparan alternativas y se mantiene registro suficiente para seguimiento y relevo."
         },
         {
           "type": "callout",
@@ -168,47 +143,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "El estándar es mantener una picture compartida, decisiones trazables y continuidad entre personas y departamentos."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Práctica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica peticiones como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Resolver conflicto entre departamentos.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/ship_operations/bridge_station_model.json",
-            "gameplay/ship_operations/operational_event_log/README.md"
-          ]
+          "text": "Práctica. La evaluación distingue **calidad del proceso, conducta profesional y resultado**; un resultado favorable no compensa una decisión temeraria y un resultado adverso no invalida automáticamente una decisión razonable."
         }
       ]
     },
     {
       "id": "INT-101-U04",
       "title": "Cambio de misión",
-      "subtitle": "UNIDAD 04 · INT-101",
       "blocks": [
         {
           "type": "p",
-          "text": "Pensar en la nave como sistema completo y anticipar efectos cruzados de decisiones profesionales."
+          "text": "Esta unidad aplica «Cambio de misión» a situaciones de servicio. Al terminar, el cadete debe poder **reconocer la situación, decidir dentro de su autoridad, ejecutar con seguridad y explicar por qué actuó así**."
         },
         {
           "type": "heading",
@@ -217,10 +168,18 @@
         {
           "type": "bullets",
           "items": [
-            "nueva prioridad",
-            "reconfiguración",
-            "handoff"
+            "**nueva prioridad**: cambio de orden relativo entre objetivos que debe comunicarse y traducirse en recursos, tareas y pendientes actualizados.",
+            "**reconfiguración**: cambio controlado del estado de sistemas o equipo para responder a una nueva misión, amenaza o limitación.",
+            "**handoff**: transferencia estructurada de estado, órdenes, riesgos, acciones y pendientes para mantener continuidad entre responsables."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Los conceptos anteriores se usan juntos: primero se establece qué se sabe y qué falta, después se comprueban autoridad y límites, se comparan alternativas y se mantiene registro suficiente para seguimiento y relevo."
         },
         {
           "type": "callout",
@@ -229,47 +188,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "El estándar es mantener una picture compartida, decisiones trazables y continuidad entre personas y departamentos."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica nueva prioridad como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Adaptar operación.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/ship_operations/bridge_station_model.json",
-            "gameplay/ship_operations/operational_event_log/README.md"
-          ]
+          "text": "Evaluación. La evaluación distingue **calidad del proceso, conducta profesional y resultado**; un resultado favorable no compensa una decisión temeraria y un resultado adverso no invalida automáticamente una decisión razonable."
         }
       ]
     },
     {
       "id": "INT-101-U05",
       "title": "Continuidad y recuperación",
-      "subtitle": "UNIDAD 05 · INT-101",
       "blocks": [
         {
           "type": "p",
-          "text": "Pensar en la nave como sistema completo y anticipar efectos cruzados de decisiones profesionales."
+          "text": "Esta unidad aplica «Continuidad y recuperación» a situaciones de servicio. Al terminar, el cadete debe poder **reconocer la situación, decidir dentro de su autoridad, ejecutar con seguridad y explicar por qué actuó así**."
         },
         {
           "type": "heading",
@@ -278,11 +213,19 @@
         {
           "type": "bullets",
           "items": [
-            "degradación",
-            "restauración",
-            "registro",
-            "pendientes"
+            "**degradación**: pérdida parcial de capacidad que obliga a recalcular márgenes, alternativas y restricciones.",
+            "**restauración**: recuperación controlada de una capacidad con verificación funcional antes de declararla disponible.",
+            "**registro**: constancia factual de lo ocurrido y de quién hizo qué, preservada para continuidad, revisión y responsabilidad.",
+            "**pendientes**: acciones no cerradas que conservan responsable, prioridad, estado y condición prevista de resolución."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Los conceptos anteriores se usan juntos: primero se establece qué se sabe y qué falta, después se comprueban autoridad y límites, se comparan alternativas y se mantiene registro suficiente para seguimiento y relevo."
         },
         {
           "type": "callout",
@@ -291,47 +234,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "El estándar es mantener una picture compartida, decisiones trazables y continuidad entre personas y departamentos."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Práctica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica degradación como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Cerrar incidente sistémico.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/ship_operations/bridge_station_model.json",
-            "gameplay/ship_operations/operational_event_log/README.md"
-          ]
+          "text": "Práctica. La evaluación distingue **calidad del proceso, conducta profesional y resultado**; un resultado favorable no compensa una decisión temeraria y un resultado adverso no invalida automáticamente una decisión razonable."
         }
       ]
     },
     {
       "id": "INT-101-U06",
       "title": "Ejercicio integrado III",
-      "subtitle": "UNIDAD 06 · INT-101",
       "blocks": [
         {
           "type": "p",
-          "text": "Pensar en la nave como sistema completo y anticipar efectos cruzados de decisiones profesionales."
+          "text": "Esta unidad aplica «Ejercicio integrado III» a situaciones de servicio. Al terminar, el cadete debe poder **reconocer la situación, decidir dentro de su autoridad, ejecutar con seguridad y explicar por qué actuó así**."
         },
         {
           "type": "heading",
@@ -340,12 +259,20 @@
         {
           "type": "bullets",
           "items": [
-            "misión",
-            "fallo",
-            "personas",
-            "decisión",
-            "cierre"
+            "**misión**: propósito operativo junto con restricciones, prioridades y condiciones de éxito; guía decisiones sin anular seguridad ni regulación.",
+            "**fallo**: comportamiento fuera de especificación cuya causa debe distinguirse de sus síntomas.",
+            "**personas**: factor operativo que incluye seguridad, competencia, carga, comunicación y consecuencias humanas de una decisión.",
+            "**decisión**: selección consciente de un curso de acción tras valorar información, alternativas, límites, riesgo y tiempo disponible.",
+            "**cierre**: confirmación de resultado, estado final, pendientes, registro y transferencia de responsabilidad cuando proceda."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Los conceptos anteriores se usan juntos: primero se establece qué se sabe y qué falta, después se comprueban autoridad y límites, se comparan alternativas y se mantiene registro suficiente para seguimiento y relevo."
         },
         {
           "type": "callout",
@@ -354,38 +281,16 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "El estándar es mantener una picture compartida, decisiones trazables y continuidad entre personas y departamentos."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación integrada."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica misión como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Simulación compleja.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/ship_operations/bridge_station_model.json",
-            "gameplay/ship_operations/operational_event_log/README.md"
-          ]
+          "text": "Evaluación integrada. La evaluación distingue **calidad del proceso, conducta profesional y resultado**; un resultado favorable no compensa una decisión temeraria y un resultado adverso no invalida automáticamente una decisión razonable."
         }
       ]
     }
-  ]
+  ],
+  "assessmentModel": "concept_driven_v2_1"
 }

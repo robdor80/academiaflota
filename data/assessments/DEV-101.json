@@ -1,313 +1,648 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.1.0",
   "course_id": "DEV-101",
-  "status": "generated_from_authoritative_curriculum",
-  "question_count": 24,
-  "questions": [
+  "status": "developed_concept_driven_autocorrectable_v2_1",
+  "source_course": "curriculum/first_class/courses/DEV-101/course.json",
+  "policy": {
+    "theory_formats": [
+      "multiple_choice",
+      "short_answer"
+    ],
+    "multiple_choice_target_ratio": 0.8,
+    "short_answer_target_ratio": 0.2,
+    "deterministic_correction": true,
+    "web_and_game_share_concepts_not_question_instances": true,
+    "complex_judgment_moves_to_practice_and_simulation": true,
+    "source_rule": "Every evaluated concept is explicitly taught in the developed Year 4 material or an established prerequisite."
+  },
+  "unit_review": {
+    "questions_per_attempt": 5,
+    "reshuffle_each_attempt": true,
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
+  },
+  "concepts": [
     {
-      "id": "DEV-101-Q001",
+      "id": "DEV-101-C001",
       "unit_id": "DEV-101-U01",
-      "type": "service_readiness",
-      "prompt_es": "Explica cuatro años como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: historial acumulado de aprendizaje y desempeño que permite valorar tendencia y consistencia, no solo episodios aislados?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: historial acumulado de aprendizaje y desempeño que permite valorar tendencia y consistencia, no solo episodios aislados?",
+        "Selecciona el concepto de «Expediente acumulado» descrito así: historial acumulado de aprendizaje y desempeño que permite valorar tendencia y consistencia, no solo episodios aislados."
+      ],
+      "answer_display_es": "cuatro años",
+      "accepted_short_answers_es": [
+        "cuatro años"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "cuatro años",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "cuatro años"
       ]
     },
     {
-      "id": "DEV-101-Q002",
+      "id": "DEV-101-C002",
       "unit_id": "DEV-101-U01",
-      "type": "scenario",
-      "prompt_es": "Escenario: Revisar historial. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: capacidades demostradas de forma repetida y con evidencia; sirven para asignar responsabilidad, no para asumir que el cadete nunca fallará?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: capacidades demostradas de forma repetida y con evidencia; sirven para asignar responsabilidad, no para asumir que el cadete nunca fallará?",
+        "Selecciona el concepto de «Expediente acumulado» descrito así: capacidades demostradas de forma repetida y con evidencia; sirven para asignar responsabilidad, no para asumir que el cadete nunca fallará."
+      ],
+      "answer_display_es": "fortalezas",
+      "accepted_short_answers_es": [
+        "fortalezas"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "fortalezas"
       ]
     },
     {
-      "id": "DEV-101-Q003",
+      "id": "DEV-101-C003",
       "unit_id": "DEV-101-U01",
-      "type": "debrief",
-      "prompt_es": "Tras Expediente acumulado, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: eventos relevantes que deben contextualizarse por causas, actuación, consecuencias y aprendizaje posterior?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: eventos relevantes que deben contextualizarse por causas, actuación, consecuencias y aprendizaje posterior?",
+        "Selecciona el concepto de «Expediente acumulado» descrito así: eventos relevantes que deben contextualizarse por causas, actuación, consecuencias y aprendizaje posterior."
+      ],
+      "answer_display_es": "incidentes",
+      "accepted_short_answers_es": [
+        "incidentes"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "incidentes"
       ]
     },
     {
-      "id": "DEV-101-Q004",
+      "id": "DEV-101-C004",
       "unit_id": "DEV-101-U01",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: reconocimientos de competencia concreta basados en evidencia; habilitan tareas definidas, no autoridad universal?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: reconocimientos de competencia concreta basados en evidencia; habilitan tareas definidas, no autoridad universal?",
+        "Selecciona el concepto de «Expediente acumulado» descrito así: reconocimientos de competencia concreta basados en evidencia; habilitan tareas definidas, no autoridad universal."
+      ],
+      "answer_display_es": "cualificaciones",
+      "accepted_short_answers_es": [
+        "cualificaciones"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "cualificaciones"
       ]
     },
     {
-      "id": "DEV-101-Q005",
+      "id": "DEV-101-C005",
+      "unit_id": "DEV-101-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica está asociada a la unidad «Expediente acumulado»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica está asociada a la unidad «Expediente acumulado»?",
+        "Repaso de «Expediente acumulado»: ¿Qué práctica está asociada a la unidad «Expediente acumulado»?"
+      ],
+      "answer_display_es": "Revisar historial.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Revisar historial."
+      ]
+    },
+    {
+      "id": "DEV-101-C006",
+      "unit_id": "DEV-101-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué forma de evaluación se asocia a «Expediente acumulado»?",
+      "web_prompt_variants_es": [
+        "¿Qué forma de evaluación se asocia a «Expediente acumulado»?",
+        "Repaso de «Expediente acumulado»: ¿Qué forma de evaluación se asocia a «Expediente acumulado»?"
+      ],
+      "answer_display_es": "Tutoría.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Tutoría."
+      ]
+    },
+    {
+      "id": "DEV-101-C007",
       "unit_id": "DEV-101-U02",
-      "type": "service_readiness",
-      "prompt_es": "Explica largo plazo como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: dirección profesional de varios destinos o etapas, útil para orientar desarrollo sin convertirla en garantía?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: dirección profesional de varios destinos o etapas, útil para orientar desarrollo sin convertirla en garantía?",
+        "Selecciona el concepto de «Objetivos de carrera» descrito así: dirección profesional de varios destinos o etapas, útil para orientar desarrollo sin convertirla en garantía."
+      ],
+      "answer_display_es": "largo plazo",
+      "accepted_short_answers_es": [
+        "largo plazo"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "largo plazo",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "largo plazo"
       ]
     },
     {
-      "id": "DEV-101-Q006",
+      "id": "DEV-101-C008",
       "unit_id": "DEV-101-U02",
-      "type": "scenario",
-      "prompt_es": "Escenario: Actualizar objetivos. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: objetivo alcanzable mediante próximos destinos, cursos o cualificaciones y revisable según experiencia y necesidades?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: objetivo alcanzable mediante próximos destinos, cursos o cualificaciones y revisable según experiencia y necesidades?",
+        "Selecciona el concepto de «Objetivos de carrera» descrito así: objetivo alcanzable mediante próximos destinos, cursos o cualificaciones y revisable según experiencia y necesidades."
+      ],
+      "answer_display_es": "medio plazo",
+      "accepted_short_answers_es": [
+        "medio plazo"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "medio plazo"
       ]
     },
     {
-      "id": "DEV-101-Q007",
+      "id": "DEV-101-C009",
       "unit_id": "DEV-101-U02",
-      "type": "debrief",
-      "prompt_es": "Tras Objetivos de carrera, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: caminos profesionales distintos que conservan opciones cuando cambian vacantes, intereses, rendimiento o necesidades?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: caminos profesionales distintos que conservan opciones cuando cambian vacantes, intereses, rendimiento o necesidades?",
+        "Selecciona el concepto de «Objetivos de carrera» descrito así: caminos profesionales distintos que conservan opciones cuando cambian vacantes, intereses, rendimiento o necesidades."
+      ],
+      "answer_display_es": "rutas alternativas",
+      "accepted_short_answers_es": [
+        "rutas alternativas"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "rutas alternativas"
       ]
     },
     {
-      "id": "DEV-101-Q008",
+      "id": "DEV-101-C010",
       "unit_id": "DEV-101-U02",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica está asociada a la unidad «Objetivos de carrera»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica está asociada a la unidad «Objetivos de carrera»?",
+        "Repaso de «Objetivos de carrera»: ¿Qué práctica está asociada a la unidad «Objetivos de carrera»?"
+      ],
+      "answer_display_es": "Actualizar objetivos.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "Actualizar objetivos."
       ]
     },
     {
-      "id": "DEV-101-Q009",
+      "id": "DEV-101-C011",
+      "unit_id": "DEV-101-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué forma de evaluación se asocia a «Objetivos de carrera»?",
+      "web_prompt_variants_es": [
+        "¿Qué forma de evaluación se asocia a «Objetivos de carrera»?",
+        "Repaso de «Objetivos de carrera»: ¿Qué forma de evaluación se asocia a «Objetivos de carrera»?"
+      ],
+      "answer_display_es": "Revisión.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Revisión."
+      ]
+    },
+    {
+      "id": "DEV-101-C012",
+      "unit_id": "DEV-101-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio profesional debe guiar «Objetivos de carrera»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio profesional debe guiar «Objetivos de carrera»?",
+        "Repaso de «Objetivos de carrera»: ¿Qué criterio profesional debe guiar «Objetivos de carrera»?"
+      ],
+      "answer_display_es": "Las preferencias y objetivos orientan el desarrollo, pero no sustituyen evidencia, requisitos ni necesidades reales del servicio.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Las preferencias y objetivos orientan el desarrollo, pero no sustituyen evidencia, requisitos ni necesidades reales del servicio."
+      ]
+    },
+    {
+      "id": "DEV-101-C013",
       "unit_id": "DEV-101-U03",
-      "type": "service_readiness",
-      "prompt_es": "Explica conocimiento como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: comprensión teórica necesaria para decidir y actuar, que por sí sola no demuestra competencia práctica?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: comprensión teórica necesaria para decidir y actuar, que por sí sola no demuestra competencia práctica?",
+        "Selecciona el concepto de «Brechas de preparación» descrito así: comprensión teórica necesaria para decidir y actuar, que por sí sola no demuestra competencia práctica."
+      ],
+      "answer_display_es": "conocimiento",
+      "accepted_short_answers_es": [
+        "conocimiento"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "conocimiento",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "conocimiento"
       ]
     },
     {
-      "id": "DEV-101-Q010",
+      "id": "DEV-101-C014",
       "unit_id": "DEV-101-U03",
-      "type": "scenario",
-      "prompt_es": "Escenario: Identificar carencias. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: exposición práctica contextual que gana valor cuando queda acompañada por feedback y evidencia de desempeño?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: exposición práctica contextual que gana valor cuando queda acompañada por feedback y evidencia de desempeño?",
+        "Selecciona el concepto de «Brechas de preparación» descrito así: exposición práctica contextual que gana valor cuando queda acompañada por feedback y evidencia de desempeño."
+      ],
+      "answer_display_es": "experiencia",
+      "accepted_short_answers_es": [
+        "experiencia"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "experiencia"
       ]
     },
     {
-      "id": "DEV-101-Q011",
+      "id": "DEV-101-C015",
       "unit_id": "DEV-101-U03",
-      "type": "debrief",
-      "prompt_es": "Tras Brechas de preparación, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: capacidad de orientar personas hacia un objetivo manteniendo seguridad, claridad, responsabilidad y desarrollo del equipo?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: capacidad de orientar personas hacia un objetivo manteniendo seguridad, claridad, responsabilidad y desarrollo del equipo?",
+        "Selecciona el concepto de «Brechas de preparación» descrito así: capacidad de orientar personas hacia un objetivo manteniendo seguridad, claridad, responsabilidad y desarrollo del equipo."
+      ],
+      "answer_display_es": "liderazgo",
+      "accepted_short_answers_es": [
+        "liderazgo"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "liderazgo"
       ]
     },
     {
-      "id": "DEV-101-Q012",
+      "id": "DEV-101-C016",
       "unit_id": "DEV-101-U03",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: formación fuera de la especialidad principal suficiente para coordinarse, reconocer límites y apoyar sin suplantar al especialista?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: formación fuera de la especialidad principal suficiente para coordinarse, reconocer límites y apoyar sin suplantar al especialista?",
+        "Selecciona el concepto de «Brechas de preparación» descrito así: formación fuera de la especialidad principal suficiente para coordinarse, reconocer límites y apoyar sin suplantar al especialista."
+      ],
+      "answer_display_es": "cross-training",
+      "accepted_short_answers_es": [
+        "cross-training"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "cross-training"
       ]
     },
     {
-      "id": "DEV-101-Q013",
+      "id": "DEV-101-C017",
+      "unit_id": "DEV-101-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica está asociada a la unidad «Brechas de preparación»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica está asociada a la unidad «Brechas de preparación»?",
+        "Repaso de «Brechas de preparación»: ¿Qué práctica está asociada a la unidad «Brechas de preparación»?"
+      ],
+      "answer_display_es": "Identificar carencias.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Identificar carencias."
+      ]
+    },
+    {
+      "id": "DEV-101-C018",
+      "unit_id": "DEV-101-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué forma de evaluación se asocia a «Brechas de preparación»?",
+      "web_prompt_variants_es": [
+        "¿Qué forma de evaluación se asocia a «Brechas de preparación»?",
+        "Repaso de «Brechas de preparación»: ¿Qué forma de evaluación se asocia a «Brechas de preparación»?"
+      ],
+      "answer_display_es": "Plan.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Plan."
+      ]
+    },
+    {
+      "id": "DEV-101-C019",
       "unit_id": "DEV-101-U04",
-      "type": "service_readiness",
-      "prompt_es": "Explica tipo de unidad como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: clase funcional de destino — nave, estación u otra instalación — que condiciona tareas, ritmo y oportunidades?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: clase funcional de destino — nave, estación u otra instalación — que condiciona tareas, ritmo y oportunidades?",
+        "Selecciona el concepto de «Preferencias de servicio» descrito así: clase funcional de destino — nave, estación u otra instalación — que condiciona tareas, ritmo y oportunidades."
+      ],
+      "answer_display_es": "tipo de unidad",
+      "accepted_short_answers_es": [
+        "tipo de unidad"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "tipo de unidad",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "tipo de unidad"
       ]
     },
     {
-      "id": "DEV-101-Q014",
+      "id": "DEV-101-C020",
       "unit_id": "DEV-101-U04",
-      "type": "scenario",
-      "prompt_es": "Escenario: Registrar preferencias no vinculantes. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: propósito operativo junto con restricciones, prioridades y condiciones de éxito; guía decisiones sin anular seguridad ni regulación?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: propósito operativo junto con restricciones, prioridades y condiciones de éxito; guía decisiones sin anular seguridad ni regulación?",
+        "Selecciona el concepto de «Preferencias de servicio» descrito así: propósito operativo junto con restricciones, prioridades y condiciones de éxito; guía decisiones sin anular seguridad ni regulación."
+      ],
+      "answer_display_es": "misión",
+      "accepted_short_answers_es": [
+        "misión"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "misión"
       ]
     },
     {
-      "id": "DEV-101-Q015",
+      "id": "DEV-101-C021",
       "unit_id": "DEV-101-U04",
-      "type": "debrief",
-      "prompt_es": "Tras Preferencias de servicio, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: condiciones externas que afectan sensores, movimiento, seguridad, comunicaciones y opciones operativas?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: condiciones externas que afectan sensores, movimiento, seguridad, comunicaciones y opciones operativas?",
+        "Selecciona el concepto de «Preferencias de servicio» descrito así: condiciones externas que afectan sensores, movimiento, seguridad, comunicaciones y opciones operativas."
+      ],
+      "answer_display_es": "entorno",
+      "accepted_short_answers_es": [
+        "entorno"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "entorno"
       ]
     },
     {
-      "id": "DEV-101-Q016",
+      "id": "DEV-101-C022",
       "unit_id": "DEV-101-U04",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: zona de servicio que afecta distancia, apoyo disponible, misión y contexto, pero no crea derecho a una vacante?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: zona de servicio que afecta distancia, apoyo disponible, misión y contexto, pero no crea derecho a una vacante?",
+        "Selecciona el concepto de «Preferencias de servicio» descrito así: zona de servicio que afecta distancia, apoyo disponible, misión y contexto, pero no crea derecho a una vacante."
+      ],
+      "answer_display_es": "ubicación",
+      "accepted_short_answers_es": [
+        "ubicación"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "ubicación"
       ]
     },
     {
-      "id": "DEV-101-Q017",
+      "id": "DEV-101-C023",
+      "unit_id": "DEV-101-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica está asociada a la unidad «Preferencias de servicio»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica está asociada a la unidad «Preferencias de servicio»?",
+        "Repaso de «Preferencias de servicio»: ¿Qué práctica está asociada a la unidad «Preferencias de servicio»?"
+      ],
+      "answer_display_es": "Registrar preferencias no vinculantes.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Registrar preferencias no vinculantes."
+      ]
+    },
+    {
+      "id": "DEV-101-C024",
+      "unit_id": "DEV-101-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué forma de evaluación se asocia a «Preferencias de servicio»?",
+      "web_prompt_variants_es": [
+        "¿Qué forma de evaluación se asocia a «Preferencias de servicio»?",
+        "Repaso de «Preferencias de servicio»: ¿Qué forma de evaluación se asocia a «Preferencias de servicio»?"
+      ],
+      "answer_display_es": "Validación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Validación."
+      ]
+    },
+    {
+      "id": "DEV-101-C025",
       "unit_id": "DEV-101-U05",
-      "type": "service_readiness",
-      "prompt_es": "Explica instructores como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: personal que evalúa aprendizaje y desempeño académico mediante observación y criterios establecidos?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: personal que evalúa aprendizaje y desempeño académico mediante observación y criterios establecidos?",
+        "Selecciona el concepto de «Recomendaciones» descrito así: personal que evalúa aprendizaje y desempeño académico mediante observación y criterios establecidos."
+      ],
+      "answer_display_es": "instructores",
+      "accepted_short_answers_es": [
+        "instructores"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "instructores",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "instructores"
       ]
     },
     {
-      "id": "DEV-101-Q018",
+      "id": "DEV-101-C026",
       "unit_id": "DEV-101-U05",
-      "type": "scenario",
-      "prompt_es": "Escenario: Entrevista profesional. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: profesionales que orientan desarrollo y contexto de carrera sin sustituir la cadena formal de evaluación?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: profesionales que orientan desarrollo y contexto de carrera sin sustituir la cadena formal de evaluación?",
+        "Selecciona el concepto de «Recomendaciones» descrito así: profesionales que orientan desarrollo y contexto de carrera sin sustituir la cadena formal de evaluación."
+      ],
+      "answer_display_es": "mentores",
+      "accepted_short_answers_es": [
+        "mentores"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "mentores"
       ]
     },
     {
-      "id": "DEV-101-Q019",
+      "id": "DEV-101-C027",
       "unit_id": "DEV-101-U05",
-      "type": "debrief",
-      "prompt_es": "Tras Recomendaciones, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: registro verificable de contexto, información disponible, acciones, resultados y feedback; debe poder revisarse después sin reescribir lo ocurrido?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: registro verificable de contexto, información disponible, acciones, resultados y feedback; debe poder revisarse después sin reescribir lo ocurrido?",
+        "Selecciona el concepto de «Recomendaciones» descrito así: registro verificable de contexto, información disponible, acciones, resultados y feedback; debe poder revisarse después sin reescribir lo ocurrido."
+      ],
+      "answer_display_es": "evidencia",
+      "accepted_short_answers_es": [
+        "evidencia"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "evidencia"
       ]
     },
     {
-      "id": "DEV-101-Q020",
+      "id": "DEV-101-C028",
       "unit_id": "DEV-101-U05",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: fronteras técnicas, legales, de autoridad o competencia que obligan a detener, adaptar o escalar una acción?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: fronteras técnicas, legales, de autoridad o competencia que obligan a detener, adaptar o escalar una acción?",
+        "Selecciona el concepto de «Recomendaciones» descrito así: fronteras técnicas, legales, de autoridad o competencia que obligan a detener, adaptar o escalar una acción."
+      ],
+      "answer_display_es": "límites",
+      "accepted_short_answers_es": [
+        "límites"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "límites"
       ]
     },
     {
-      "id": "DEV-101-Q021",
-      "unit_id": "DEV-101-U06",
-      "type": "service_readiness",
-      "prompt_es": "Explica primer destino como se lo explicarías a un Alférez que recibe su primer destino.",
+      "id": "DEV-101-C029",
+      "unit_id": "DEV-101-U05",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica está asociada a la unidad «Recomendaciones»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica está asociada a la unidad «Recomendaciones»?",
+        "Repaso de «Recomendaciones»: ¿Qué práctica está asociada a la unidad «Recomendaciones»?"
+      ],
+      "answer_display_es": "Entrevista profesional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "primer destino",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "Entrevista profesional."
       ]
     },
     {
-      "id": "DEV-101-Q022",
-      "unit_id": "DEV-101-U06",
-      "type": "scenario",
-      "prompt_es": "Escenario: Crear plan inicial. Describe decisión inicial, alternativas y condición de escalado.",
+      "id": "DEV-101-C030",
+      "unit_id": "DEV-101-U05",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué forma de evaluación se asocia a «Recomendaciones»?",
+      "web_prompt_variants_es": [
+        "¿Qué forma de evaluación se asocia a «Recomendaciones»?",
+        "Repaso de «Recomendaciones»: ¿Qué forma de evaluación se asocia a «Recomendaciones»?"
+      ],
+      "answer_display_es": "Registro.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "Registro."
       ]
     },
     {
-      "id": "DEV-101-Q023",
+      "id": "DEV-101-C031",
       "unit_id": "DEV-101-U06",
-      "type": "debrief",
-      "prompt_es": "Tras Plan post-Academia, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: primera asignación tras la comisión, determinada por perfil, vacantes y necesidades, no solo por preferencia?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: primera asignación tras la comisión, determinada por perfil, vacantes y necesidades, no solo por preferencia?",
+        "Selecciona el concepto de «Plan post-Academia» descrito así: primera asignación tras la comisión, determinada por perfil, vacantes y necesidades, no solo por preferencia."
+      ],
+      "answer_display_es": "primer destino",
+      "accepted_short_answers_es": [
+        "primer destino"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "primer destino"
       ]
     },
     {
-      "id": "DEV-101-Q024",
+      "id": "DEV-101-C032",
       "unit_id": "DEV-101-U06",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: acompañamiento profesional continuado para convertir experiencia inicial en aprendizaje y desarrollo dirigido?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: acompañamiento profesional continuado para convertir experiencia inicial en aprendizaje y desarrollo dirigido?",
+        "Selecciona el concepto de «Plan post-Academia» descrito así: acompañamiento profesional continuado para convertir experiencia inicial en aprendizaje y desarrollo dirigido."
+      ],
+      "answer_display_es": "mentoría",
+      "accepted_short_answers_es": [
+        "mentoría"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "mentoría"
+      ]
+    },
+    {
+      "id": "DEV-101-C033",
+      "unit_id": "DEV-101-U06",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: competencias posteriores a la Academia que se obtienen mediante servicio, entrenamiento y evidencia adicional?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: competencias posteriores a la Academia que se obtienen mediante servicio, entrenamiento y evidencia adicional?",
+        "Selecciona el concepto de «Plan post-Academia» descrito así: competencias posteriores a la Academia que se obtienen mediante servicio, entrenamiento y evidencia adicional."
+      ],
+      "answer_display_es": "cualificaciones futuras",
+      "accepted_short_answers_es": [
+        "cualificaciones futuras"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "cualificaciones futuras"
+      ]
+    },
+    {
+      "id": "DEV-101-C034",
+      "unit_id": "DEV-101-U06",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: proceso continuo de cerrar brechas, ampliar competencia y asumir responsabilidad progresiva?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: proceso continuo de cerrar brechas, ampliar competencia y asumir responsabilidad progresiva?",
+        "Selecciona el concepto de «Plan post-Academia» descrito así: proceso continuo de cerrar brechas, ampliar competencia y asumir responsabilidad progresiva."
+      ],
+      "answer_display_es": "desarrollo",
+      "accepted_short_answers_es": [
+        "desarrollo"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "desarrollo"
+      ]
+    },
+    {
+      "id": "DEV-101-C035",
+      "unit_id": "DEV-101-U06",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica está asociada a la unidad «Plan post-Academia»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica está asociada a la unidad «Plan post-Academia»?",
+        "Repaso de «Plan post-Academia»: ¿Qué práctica está asociada a la unidad «Plan post-Academia»?"
+      ],
+      "answer_display_es": "Crear plan inicial.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Crear plan inicial."
+      ]
+    },
+    {
+      "id": "DEV-101-C036",
+      "unit_id": "DEV-101-U06",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué forma de evaluación se asocia a «Plan post-Academia»?",
+      "web_prompt_variants_es": [
+        "¿Qué forma de evaluación se asocia a «Plan post-Academia»?",
+        "Repaso de «Plan post-Academia»: ¿Qué forma de evaluación se asocia a «Plan post-Academia»?"
+      ],
+      "answer_display_es": "Evaluación cualitativa.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación cualitativa."
       ]
     }
   ]

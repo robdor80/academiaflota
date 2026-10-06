@@ -1,313 +1,650 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.1.0",
   "course_id": "LDR-101",
-  "status": "generated_from_authoritative_curriculum",
-  "question_count": 24,
-  "questions": [
+  "status": "developed_concept_driven_autocorrectable_v2_1",
+  "source_course": "curriculum/first_class/courses/LDR-101/course.json",
+  "policy": {
+    "theory_formats": [
+      "multiple_choice",
+      "short_answer"
+    ],
+    "multiple_choice_target_ratio": 0.8,
+    "short_answer_target_ratio": 0.2,
+    "deterministic_correction": true,
+    "web_and_game_share_concepts_not_question_instances": true,
+    "complex_judgment_moves_to_practice_and_simulation": true,
+    "source_rule": "Every evaluated concept is explicitly taught in the developed Year 4 material or an established prerequisite."
+  },
+  "unit_review": {
+    "questions_per_attempt": 5,
+    "reshuffle_each_attempt": true,
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
+  },
+  "concepts": [
     {
-      "id": "LDR-101-Q001",
+      "id": "LDR-101-C001",
       "unit_id": "LDR-101-U01",
-      "type": "service_readiness",
-      "prompt_es": "Explica objetivos como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: resultados profesionales concretos, observables y revisables que orientan el siguiente tramo de desarrollo?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: resultados profesionales concretos, observables y revisables que orientan el siguiente tramo de desarrollo?",
+        "Selecciona el concepto de «Liderazgo de turno» descrito así: resultados profesionales concretos, observables y revisables que orientan el siguiente tramo de desarrollo."
+      ],
+      "answer_display_es": "objetivos",
+      "accepted_short_answers_es": [
+        "objetivos"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "objetivos",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "objetivos"
       ]
     },
     {
-      "id": "LDR-101-Q002",
+      "id": "LDR-101-C002",
       "unit_id": "LDR-101-U01",
-      "type": "scenario",
-      "prompt_es": "Escenario: Dirigir un turno simulado. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: responsabilidades asignadas que aclaran quién decide, ejecuta, informa y apoya cada parte de una tarea?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: responsabilidades asignadas que aclaran quién decide, ejecuta, informa y apoya cada parte de una tarea?",
+        "Selecciona el concepto de «Liderazgo de turno» descrito así: responsabilidades asignadas que aclaran quién decide, ejecuta, informa y apoya cada parte de una tarea."
+      ],
+      "answer_display_es": "roles",
+      "accepted_short_answers_es": [
+        "roles"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "roles"
       ]
     },
     {
-      "id": "LDR-101-Q003",
+      "id": "LDR-101-C003",
       "unit_id": "LDR-101-U01",
-      "type": "debrief",
-      "prompt_es": "Tras Liderazgo de turno, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: criterios mínimos de ejecución y seguridad que permiten evaluar si un trabajo es aceptable y repetible?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: criterios mínimos de ejecución y seguridad que permiten evaluar si un trabajo es aceptable y repetible?",
+        "Selecciona el concepto de «Liderazgo de turno» descrito así: criterios mínimos de ejecución y seguridad que permiten evaluar si un trabajo es aceptable y repetible."
+      ],
+      "answer_display_es": "estándares",
+      "accepted_short_answers_es": [
+        "estándares"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "estándares"
       ]
     },
     {
-      "id": "LDR-101-Q004",
+      "id": "LDR-101-C004",
       "unit_id": "LDR-101-U01",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: comprobación posterior de que una acción produjo el efecto esperado y de que no quedan riesgos o tareas abiertas?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: comprobación posterior de que una acción produjo el efecto esperado y de que no quedan riesgos o tareas abiertas?",
+        "Selecciona el concepto de «Liderazgo de turno» descrito así: comprobación posterior de que una acción produjo el efecto esperado y de que no quedan riesgos o tareas abiertas."
+      ],
+      "answer_display_es": "seguimiento",
+      "accepted_short_answers_es": [
+        "seguimiento"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "seguimiento"
       ]
     },
     {
-      "id": "LDR-101-Q005",
+      "id": "LDR-101-C005",
+      "unit_id": "LDR-101-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica está asociada a la unidad «Liderazgo de turno»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica está asociada a la unidad «Liderazgo de turno»?",
+        "Repaso de «Liderazgo de turno»: ¿Qué práctica está asociada a la unidad «Liderazgo de turno»?"
+      ],
+      "answer_display_es": "Dirigir un turno simulado.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Dirigir un turno simulado."
+      ]
+    },
+    {
+      "id": "LDR-101-C006",
+      "unit_id": "LDR-101-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué forma de evaluación se asocia a «Liderazgo de turno»?",
+      "web_prompt_variants_es": [
+        "¿Qué forma de evaluación se asocia a «Liderazgo de turno»?",
+        "Repaso de «Liderazgo de turno»: ¿Qué forma de evaluación se asocia a «Liderazgo de turno»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
+    },
+    {
+      "id": "LDR-101-C007",
       "unit_id": "LDR-101-U02",
-      "type": "service_readiness",
-      "prompt_es": "Explica novato como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: persona que necesita más estructura, supervisión y comprobaciones porque aún no ha demostrado consistencia suficiente?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: persona que necesita más estructura, supervisión y comprobaciones porque aún no ha demostrado consistencia suficiente?",
+        "Selecciona el concepto de «Personal con distinta experiencia» descrito así: persona que necesita más estructura, supervisión y comprobaciones porque aún no ha demostrado consistencia suficiente."
+      ],
+      "answer_display_es": "novato",
+      "accepted_short_answers_es": [
+        "novato"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "novato",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "novato"
       ]
     },
     {
-      "id": "LDR-101-Q006",
+      "id": "LDR-101-C008",
       "unit_id": "LDR-101-U02",
-      "type": "scenario",
-      "prompt_es": "Escenario: Asignar tareas razonadamente. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: persona que ejecuta al estándar habitual con autonomía normal dentro de su cualificación?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: persona que ejecuta al estándar habitual con autonomía normal dentro de su cualificación?",
+        "Selecciona el concepto de «Personal con distinta experiencia» descrito así: persona que ejecuta al estándar habitual con autonomía normal dentro de su cualificación."
+      ],
+      "answer_display_es": "competente",
+      "accepted_short_answers_es": [
+        "competente"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "competente"
       ]
     },
     {
-      "id": "LDR-101-Q007",
+      "id": "LDR-101-C009",
       "unit_id": "LDR-101-U02",
-      "type": "debrief",
-      "prompt_es": "Tras Personal con distinta experiencia, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: persona con experiencia y profundidad suficiente para manejar excepciones y asesorar, sin quedar exenta de límites y procedimientos?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: persona con experiencia y profundidad suficiente para manejar excepciones y asesorar, sin quedar exenta de límites y procedimientos?",
+        "Selecciona el concepto de «Personal con distinta experiencia» descrito así: persona con experiencia y profundidad suficiente para manejar excepciones y asesorar, sin quedar exenta de límites y procedimientos."
+      ],
+      "answer_display_es": "experto",
+      "accepted_short_answers_es": [
+        "experto"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "experto"
       ]
     },
     {
-      "id": "LDR-101-Q008",
+      "id": "LDR-101-C010",
       "unit_id": "LDR-101-U02",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: asignación de una tarea a una persona con capacidad suficiente, manteniendo quien delega la responsabilidad de supervisar lo necesario?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: asignación de una tarea a una persona con capacidad suficiente, manteniendo quien delega la responsabilidad de supervisar lo necesario?",
+        "Selecciona el concepto de «Personal con distinta experiencia» descrito así: asignación de una tarea a una persona con capacidad suficiente, manteniendo quien delega la responsabilidad de supervisar lo necesario."
+      ],
+      "answer_display_es": "delegación",
+      "accepted_short_answers_es": [
+        "delegación"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "delegación"
       ]
     },
     {
-      "id": "LDR-101-Q009",
+      "id": "LDR-101-C011",
+      "unit_id": "LDR-101-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica está asociada a la unidad «Personal con distinta experiencia»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica está asociada a la unidad «Personal con distinta experiencia»?",
+        "Repaso de «Personal con distinta experiencia»: ¿Qué práctica está asociada a la unidad «Personal con distinta experiencia»?"
+      ],
+      "answer_display_es": "Asignar tareas razonadamente.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Asignar tareas razonadamente."
+      ]
+    },
+    {
+      "id": "LDR-101-C012",
+      "unit_id": "LDR-101-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué forma de evaluación se asocia a «Personal con distinta experiencia»?",
+      "web_prompt_variants_es": [
+        "¿Qué forma de evaluación se asocia a «Personal con distinta experiencia»?",
+        "Repaso de «Personal con distinta experiencia»: ¿Qué forma de evaluación se asocia a «Personal con distinta experiencia»?"
+      ],
+      "answer_display_es": "Caso.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Caso."
+      ]
+    },
+    {
+      "id": "LDR-101-C013",
       "unit_id": "LDR-101-U03",
-      "type": "service_readiness",
-      "prompt_es": "Explica seguridad como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: condición que protege personas, nave, misión y entorno mediante márgenes, comprobaciones y límites de actuación?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: condición que protege personas, nave, misión y entorno mediante márgenes, comprobaciones y límites de actuación?",
+        "Selecciona el concepto de «Error de subordinado» descrito así: condición que protege personas, nave, misión y entorno mediante márgenes, comprobaciones y límites de actuación."
+      ],
+      "answer_display_es": "seguridad",
+      "accepted_short_answers_es": [
+        "seguridad"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "seguridad",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "seguridad"
       ]
     },
     {
-      "id": "LDR-101-Q010",
+      "id": "LDR-101-C014",
       "unit_id": "LDR-101-U03",
-      "type": "scenario",
-      "prompt_es": "Escenario: Gestionar un error. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: intervención destinada a detener o reconducir un error con la intensidad mínima necesaria para preservar seguridad y aprendizaje?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: intervención destinada a detener o reconducir un error con la intensidad mínima necesaria para preservar seguridad y aprendizaje?",
+        "Selecciona el concepto de «Error de subordinado» descrito así: intervención destinada a detener o reconducir un error con la intensidad mínima necesaria para preservar seguridad y aprendizaje."
+      ],
+      "answer_display_es": "corrección",
+      "accepted_short_answers_es": [
+        "corrección"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "corrección"
       ]
     },
     {
-      "id": "LDR-101-Q011",
+      "id": "LDR-101-C015",
       "unit_id": "LDR-101-U03",
-      "type": "debrief",
-      "prompt_es": "Tras Error de subordinado, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: obligación de responder por decisiones y acciones dentro del propio ámbito, incluida la decisión de delegar o escalar?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: obligación de responder por decisiones y acciones dentro del propio ámbito, incluida la decisión de delegar o escalar?",
+        "Selecciona el concepto de «Error de subordinado» descrito así: obligación de responder por decisiones y acciones dentro del propio ámbito, incluida la decisión de delegar o escalar."
+      ],
+      "answer_display_es": "responsabilidad",
+      "accepted_short_answers_es": [
+        "responsabilidad"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "responsabilidad"
       ]
     },
     {
-      "id": "LDR-101-Q012",
+      "id": "LDR-101-C016",
       "unit_id": "LDR-101-U03",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: constancia factual de lo ocurrido y de quién hizo qué, preservada para continuidad, revisión y responsabilidad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: constancia factual de lo ocurrido y de quién hizo qué, preservada para continuidad, revisión y responsabilidad?",
+        "Selecciona el concepto de «Error de subordinado» descrito así: constancia factual de lo ocurrido y de quién hizo qué, preservada para continuidad, revisión y responsabilidad."
+      ],
+      "answer_display_es": "registro",
+      "accepted_short_answers_es": [
+        "registro"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "registro"
       ]
     },
     {
-      "id": "LDR-101-Q013",
+      "id": "LDR-101-C017",
+      "unit_id": "LDR-101-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica está asociada a la unidad «Error de subordinado»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica está asociada a la unidad «Error de subordinado»?",
+        "Repaso de «Error de subordinado»: ¿Qué práctica está asociada a la unidad «Error de subordinado»?"
+      ],
+      "answer_display_es": "Gestionar un error.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Gestionar un error."
+      ]
+    },
+    {
+      "id": "LDR-101-C018",
+      "unit_id": "LDR-101-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué forma de evaluación se asocia a «Error de subordinado»?",
+      "web_prompt_variants_es": [
+        "¿Qué forma de evaluación se asocia a «Error de subordinado»?",
+        "Repaso de «Error de subordinado»: ¿Qué forma de evaluación se asocia a «Error de subordinado»?"
+      ],
+      "answer_display_es": "Escena.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Escena."
+      ]
+    },
+    {
+      "id": "LDR-101-C019",
       "unit_id": "LDR-101-U04",
-      "type": "service_readiness",
-      "prompt_es": "Explica desacuerdo como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: diferencia profesional que debe expresarse con hechos, riesgo y alternativa sin degradar disciplina ni cadena de mando?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: diferencia profesional que debe expresarse con hechos, riesgo y alternativa sin degradar disciplina ni cadena de mando?",
+        "Selecciona el concepto de «Conflicto profesional» descrito así: diferencia profesional que debe expresarse con hechos, riesgo y alternativa sin degradar disciplina ni cadena de mando."
+      ],
+      "answer_display_es": "desacuerdo",
+      "accepted_short_answers_es": [
+        "desacuerdo"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "desacuerdo",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "desacuerdo"
       ]
     },
     {
-      "id": "LDR-101-Q014",
+      "id": "LDR-101-C020",
       "unit_id": "LDR-101-U04",
-      "type": "scenario",
-      "prompt_es": "Escenario: Resolver conflicto. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: facultad reconocida para decidir u ordenar dentro de un ámbito; no equivale a competencia técnica ilimitada?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: facultad reconocida para decidir u ordenar dentro de un ámbito; no equivale a competencia técnica ilimitada?",
+        "Selecciona el concepto de «Conflicto profesional» descrito así: facultad reconocida para decidir u ordenar dentro de un ámbito; no equivale a competencia técnica ilimitada."
+      ],
+      "answer_display_es": "autoridad",
+      "accepted_short_answers_es": [
+        "autoridad"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "autoridad"
       ]
     },
     {
-      "id": "LDR-101-Q015",
+      "id": "LDR-101-C021",
       "unit_id": "LDR-101-U04",
-      "type": "debrief",
-      "prompt_es": "Tras Conflicto profesional, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: obtención activa de información y objeciones relevantes antes de decidir, especialmente cuando otros poseen conocimiento especializado?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: obtención activa de información y objeciones relevantes antes de decidir, especialmente cuando otros poseen conocimiento especializado?",
+        "Selecciona el concepto de «Conflicto profesional» descrito así: obtención activa de información y objeciones relevantes antes de decidir, especialmente cuando otros poseen conocimiento especializado."
+      ],
+      "answer_display_es": "escucha",
+      "accepted_short_answers_es": [
+        "escucha"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "escucha"
       ]
     },
     {
-      "id": "LDR-101-Q016",
+      "id": "LDR-101-C022",
       "unit_id": "LDR-101-U04",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: selección consciente de un curso de acción tras valorar información, alternativas, límites, riesgo y tiempo disponible?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: selección consciente de un curso de acción tras valorar información, alternativas, límites, riesgo y tiempo disponible?",
+        "Selecciona el concepto de «Conflicto profesional» descrito así: selección consciente de un curso de acción tras valorar información, alternativas, límites, riesgo y tiempo disponible."
+      ],
+      "answer_display_es": "decisión",
+      "accepted_short_answers_es": [
+        "decisión"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "decisión"
       ]
     },
     {
-      "id": "LDR-101-Q017",
+      "id": "LDR-101-C023",
+      "unit_id": "LDR-101-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica está asociada a la unidad «Conflicto profesional»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica está asociada a la unidad «Conflicto profesional»?",
+        "Repaso de «Conflicto profesional»: ¿Qué práctica está asociada a la unidad «Conflicto profesional»?"
+      ],
+      "answer_display_es": "Resolver conflicto.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Resolver conflicto."
+      ]
+    },
+    {
+      "id": "LDR-101-C024",
+      "unit_id": "LDR-101-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué forma de evaluación se asocia a «Conflicto profesional»?",
+      "web_prompt_variants_es": [
+        "¿Qué forma de evaluación se asocia a «Conflicto profesional»?",
+        "Repaso de «Conflicto profesional»: ¿Qué forma de evaluación se asocia a «Conflicto profesional»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
+    },
+    {
+      "id": "LDR-101-C025",
       "unit_id": "LDR-101-U05",
-      "type": "service_readiness",
-      "prompt_es": "Explica riesgo como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: combinación de probabilidad, impacto y exposición; se gestiona, comunica y acepta solo dentro de la autoridad disponible?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: combinación de probabilidad, impacto y exposición; se gestiona, comunica y acepta solo dentro de la autoridad disponible?",
+        "Selecciona el concepto de «Fatiga y capacidad» descrito así: combinación de probabilidad, impacto y exposición; se gestiona, comunica y acepta solo dentro de la autoridad disponible."
+      ],
+      "answer_display_es": "riesgo",
+      "accepted_short_answers_es": [
+        "riesgo"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "riesgo",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "riesgo"
       ]
     },
     {
-      "id": "LDR-101-Q018",
+      "id": "LDR-101-C026",
       "unit_id": "LDR-101-U05",
-      "type": "scenario",
-      "prompt_es": "Escenario: Tomar decisión sobre personal. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: transferencia formal de responsabilidad que exige entregar estado, órdenes, riesgos, pendientes y acciones futuras?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: transferencia formal de responsabilidad que exige entregar estado, órdenes, riesgos, pendientes y acciones futuras?",
+        "Selecciona el concepto de «Fatiga y capacidad» descrito así: transferencia formal de responsabilidad que exige entregar estado, órdenes, riesgos, pendientes y acciones futuras."
+      ],
+      "answer_display_es": "relevo",
+      "accepted_short_answers_es": [
+        "relevo"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "relevo"
       ]
     },
     {
-      "id": "LDR-101-Q019",
+      "id": "LDR-101-C027",
       "unit_id": "LDR-101-U05",
-      "type": "debrief",
-      "prompt_es": "Tras Fatiga y capacidad, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: posición relativa de una demanda frente a otras según seguridad, misión, urgencia e impacto?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: posición relativa de una demanda frente a otras según seguridad, misión, urgencia e impacto?",
+        "Selecciona el concepto de «Fatiga y capacidad» descrito así: posición relativa de una demanda frente a otras según seguridad, misión, urgencia e impacto."
+      ],
+      "answer_display_es": "prioridad",
+      "accepted_short_answers_es": [
+        "prioridad"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "prioridad"
       ]
     },
     {
-      "id": "LDR-101-Q020",
+      "id": "LDR-101-C028",
       "unit_id": "LDR-101-U05",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: estado físico y psicológico suficiente para desempeñar la función de forma segura; puede exigir ajuste de carga o relevo?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: estado físico y psicológico suficiente para desempeñar la función de forma segura; puede exigir ajuste de carga o relevo?",
+        "Selecciona el concepto de «Fatiga y capacidad» descrito así: estado físico y psicológico suficiente para desempeñar la función de forma segura; puede exigir ajuste de carga o relevo."
+      ],
+      "answer_display_es": "bienestar",
+      "accepted_short_answers_es": [
+        "bienestar"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "bienestar"
       ]
     },
     {
-      "id": "LDR-101-Q021",
-      "unit_id": "LDR-101-U06",
-      "type": "service_readiness",
-      "prompt_es": "Explica resultado como se lo explicarías a un Alférez que recibe su primer destino.",
+      "id": "LDR-101-C029",
+      "unit_id": "LDR-101-U05",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica está asociada a la unidad «Fatiga y capacidad»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica está asociada a la unidad «Fatiga y capacidad»?",
+        "Repaso de «Fatiga y capacidad»: ¿Qué práctica está asociada a la unidad «Fatiga y capacidad»?"
+      ],
+      "answer_display_es": "Tomar decisión sobre personal.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "resultado",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "Tomar decisión sobre personal."
       ]
     },
     {
-      "id": "LDR-101-Q022",
-      "unit_id": "LDR-101-U06",
-      "type": "scenario",
-      "prompt_es": "Escenario: Revisar desempeño. Describe decisión inicial, alternativas y condición de escalado.",
+      "id": "LDR-101-C030",
+      "unit_id": "LDR-101-U05",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué forma de evaluación se asocia a «Fatiga y capacidad»?",
+      "web_prompt_variants_es": [
+        "¿Qué forma de evaluación se asocia a «Fatiga y capacidad»?",
+        "Repaso de «Fatiga y capacidad»: ¿Qué forma de evaluación se asocia a «Fatiga y capacidad»?"
+      ],
+      "answer_display_es": "Juicio.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "Juicio."
       ]
     },
     {
-      "id": "LDR-101-Q023",
+      "id": "LDR-101-C031",
       "unit_id": "LDR-101-U06",
-      "type": "debrief",
-      "prompt_es": "Tras Debrief de liderazgo, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: efecto observado tras la acción; se analiza separado de la calidad del proceso que llevó a decidir?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: efecto observado tras la acción; se analiza separado de la calidad del proceso que llevó a decidir?",
+        "Selecciona el concepto de «Debrief de liderazgo» descrito así: efecto observado tras la acción; se analiza separado de la calidad del proceso que llevó a decidir."
+      ],
+      "answer_display_es": "resultado",
+      "accepted_short_answers_es": [
+        "resultado"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "resultado"
       ]
     },
     {
-      "id": "LDR-101-Q024",
+      "id": "LDR-101-C032",
       "unit_id": "LDR-101-U06",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: secuencia de obtención de información, valoración, decisión, ejecución y seguimiento que permite evaluar cómo se llegó al resultado?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: secuencia de obtención de información, valoración, decisión, ejecución y seguimiento que permite evaluar cómo se llegó al resultado?",
+        "Selecciona el concepto de «Debrief de liderazgo» descrito así: secuencia de obtención de información, valoración, decisión, ejecución y seguimiento que permite evaluar cómo se llegó al resultado."
+      ],
+      "answer_display_es": "proceso",
+      "accepted_short_answers_es": [
+        "proceso"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "proceso"
+      ]
+    },
+    {
+      "id": "LDR-101-C033",
+      "unit_id": "LDR-101-U06",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: personas y capacidades que trabajan con roles coordinados; su rendimiento depende de carga, competencia, comunicación y liderazgo?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: personas y capacidades que trabajan con roles coordinados; su rendimiento depende de carga, competencia, comunicación y liderazgo?",
+        "Selecciona el concepto de «Debrief de liderazgo» descrito así: personas y capacidades que trabajan con roles coordinados; su rendimiento depende de carga, competencia, comunicación y liderazgo."
+      ],
+      "answer_display_es": "equipo",
+      "accepted_short_answers_es": [
+        "equipo"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "equipo"
+      ]
+    },
+    {
+      "id": "LDR-101-C034",
+      "unit_id": "LDR-101-U06",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: cambio concreto derivado de evidencia y debrief que modifica entrenamiento, procedimiento, hábito o sistema?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: cambio concreto derivado de evidencia y debrief que modifica entrenamiento, procedimiento, hábito o sistema?",
+        "Selecciona el concepto de «Debrief de liderazgo» descrito así: cambio concreto derivado de evidencia y debrief que modifica entrenamiento, procedimiento, hábito o sistema."
+      ],
+      "answer_display_es": "mejora",
+      "accepted_short_answers_es": [
+        "mejora"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "mejora"
+      ]
+    },
+    {
+      "id": "LDR-101-C035",
+      "unit_id": "LDR-101-U06",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica está asociada a la unidad «Debrief de liderazgo»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica está asociada a la unidad «Debrief de liderazgo»?",
+        "Repaso de «Debrief de liderazgo»: ¿Qué práctica está asociada a la unidad «Debrief de liderazgo»?"
+      ],
+      "answer_display_es": "Revisar desempeño.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Revisar desempeño."
+      ]
+    },
+    {
+      "id": "LDR-101-C036",
+      "unit_id": "LDR-101-U06",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué forma de evaluación se asocia a «Debrief de liderazgo»?",
+      "web_prompt_variants_es": [
+        "¿Qué forma de evaluación se asocia a «Debrief de liderazgo»?",
+        "Repaso de «Debrief de liderazgo»: ¿Qué forma de evaluación se asocia a «Debrief de liderazgo»?"
+      ],
+      "answer_display_es": "Evaluación longitudinal.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación longitudinal."
       ]
     }
   ]

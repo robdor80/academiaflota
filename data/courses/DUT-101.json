@@ -1,7 +1,7 @@
 {
   "subject": "Servicio operativo avanzado",
   "code": "DUT-101",
-  "version": "1.0",
+  "version": "2.0",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/first_class/courses/DUT-101/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/first_class/DUT-101/MANUAL_v1_0.md",
@@ -16,11 +16,10 @@
     {
       "id": "DUT-101-U01",
       "title": "Incorporación avanzada",
-      "subtitle": "UNIDAD 01 · DUT-101",
       "blocks": [
         {
           "type": "p",
-          "text": "Convertir el servicio supervisado previo en guardias largas y realistas con intervención mínima del instructor."
+          "text": "Esta unidad aplica «Incorporación avanzada» a situaciones de servicio. Al terminar, el cadete debe poder **reconocer la situación, decidir dentro de su autoridad, ejecutar con seguridad y explicar por qué actuó así**."
         },
         {
           "type": "heading",
@@ -29,11 +28,19 @@
         {
           "type": "bullets",
           "items": [
-            "órdenes vigentes",
-            "estado",
-            "pendientes",
-            "riesgos"
+            "**órdenes vigentes**: instrucciones actualmente aplicables al puesto; deben conocerse junto con prioridad, alcance, autoridad emisora y condiciones de finalización.",
+            "**estado**: descripción actual y verificable de capacidad, configuración, degradaciones y acciones en curso.",
+            "**pendientes**: acciones no cerradas que conservan responsable, prioridad, estado y condición prevista de resolución.",
+            "**riesgos**: amenazas o consecuencias plausibles que deben identificarse antes de actuar y reevaluarse cuando cambia la situación."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Los conceptos anteriores se usan juntos: primero se establece qué se sabe y qué falta, después se comprueban autoridad y límites, se comparan alternativas y se mantiene registro suficiente para seguimiento y relevo."
         },
         {
           "type": "callout",
@@ -42,46 +49,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "La autonomía no consiste en trabajar sin supervisión, sino en resolver lo rutinario dentro de autoridad y escalar pronto lo que supera competencia o riesgo aceptable."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica órdenes vigentes como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Tomar puesto con briefing realista.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "lore/federation/starfleet/duty_shifts/shift_model.json"
-          ]
+          "text": "Evaluación. La evaluación distingue **calidad del proceso, conducta profesional y resultado**; un resultado favorable no compensa una decisión temeraria y un resultado adverso no invalida automáticamente una decisión razonable."
         }
       ]
     },
     {
       "id": "DUT-101-U02",
       "title": "Rutina sostenida",
-      "subtitle": "UNIDAD 02 · DUT-101",
       "blocks": [
         {
           "type": "p",
-          "text": "Convertir el servicio supervisado previo en guardias largas y realistas con intervención mínima del instructor."
+          "text": "Esta unidad aplica «Rutina sostenida» a situaciones de servicio. Al terminar, el cadete debe poder **reconocer la situación, decidir dentro de su autoridad, ejecutar con seguridad y explicar por qué actuó así**."
         },
         {
           "type": "heading",
@@ -90,11 +74,19 @@
         {
           "type": "bullets",
           "items": [
-            "monitorización",
-            "tareas periódicas",
-            "registros",
-            "comunicaciones"
+            "**monitorización**: observación deliberada de variables relevantes para detectar tendencias, límites o cambios antes de que se conviertan en incidentes.",
+            "**tareas periódicas**: acciones recurrentes con frecuencia y criterio definidos; su cumplimiento evita que la rutina oculte degradaciones.",
+            "**registros**: evidencia cronológica y factual de eventos, acciones, fuentes, decisiones y resultados necesaria para continuidad y auditoría.",
+            "**comunicaciones**: intercambio operativo que prioriza claridad, destinatario correcto, confirmación cuando importa y mínima ambigüedad."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Los conceptos anteriores se usan juntos: primero se establece qué se sabe y qué falta, después se comprueban autoridad y límites, se comparan alternativas y se mantiene registro suficiente para seguimiento y relevo."
         },
         {
           "type": "callout",
@@ -103,46 +95,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "La autonomía no consiste en trabajar sin supervisión, sino en resolver lo rutinario dentro de autoridad y escalar pronto lo que supera competencia o riesgo aceptable."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Constancia."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica monitorización como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Guardia prolongada sin incidentes forzados.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "lore/federation/starfleet/duty_shifts/shift_model.json"
-          ]
+          "text": "Constancia. La evaluación distingue **calidad del proceso, conducta profesional y resultado**; un resultado favorable no compensa una decisión temeraria y un resultado adverso no invalida automáticamente una decisión razonable."
         }
       ]
     },
     {
       "id": "DUT-101-U03",
       "title": "Incidencia operativa",
-      "subtitle": "UNIDAD 03 · DUT-101",
       "blocks": [
         {
           "type": "p",
-          "text": "Convertir el servicio supervisado previo en guardias largas y realistas con intervención mínima del instructor."
+          "text": "Esta unidad aplica «Incidencia operativa» a situaciones de servicio. Al terminar, el cadete debe poder **reconocer la situación, decidir dentro de su autoridad, ejecutar con seguridad y explicar por qué actuó así**."
         },
         {
           "type": "heading",
@@ -151,11 +120,19 @@
         {
           "type": "bullets",
           "items": [
-            "detección",
-            "respuesta",
-            "escalado",
-            "seguimiento"
+            "**detección**: reconocimiento de una desviación o evento a partir de indicios suficientes, sin confundir observación con diagnóstico.",
+            "**respuesta**: acción inicial proporcionada que protege seguridad y gana tiempo mientras se confirma la situación.",
+            "**escalado**: transferencia de una decisión o problema a la autoridad o especialidad adecuada cuando supera competencia, riesgo o límites propios.",
+            "**seguimiento**: comprobación posterior de que una acción produjo el efecto esperado y de que no quedan riesgos o tareas abiertas."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Los conceptos anteriores se usan juntos: primero se establece qué se sabe y qué falta, después se comprueban autoridad y límites, se comparan alternativas y se mantiene registro suficiente para seguimiento y relevo."
         },
         {
           "type": "callout",
@@ -164,46 +141,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "La autonomía no consiste en trabajar sin supervisión, sino en resolver lo rutinario dentro de autoridad y escalar pronto lo que supera competencia o riesgo aceptable."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Juicio."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica detección como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Resolver evento contextual.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "lore/federation/starfleet/duty_shifts/shift_model.json"
-          ]
+          "text": "Juicio. La evaluación distingue **calidad del proceso, conducta profesional y resultado**; un resultado favorable no compensa una decisión temeraria y un resultado adverso no invalida automáticamente una decisión razonable."
         }
       ]
     },
     {
       "id": "DUT-101-U04",
       "title": "Interrupciones y carga",
-      "subtitle": "UNIDAD 04 · DUT-101",
       "blocks": [
         {
           "type": "p",
-          "text": "Convertir el servicio supervisado previo en guardias largas y realistas con intervención mínima del instructor."
+          "text": "Esta unidad aplica «Interrupciones y carga» a situaciones de servicio. Al terminar, el cadete debe poder **reconocer la situación, decidir dentro de su autoridad, ejecutar con seguridad y explicar por qué actuó así**."
         },
         {
           "type": "heading",
@@ -212,11 +166,19 @@
         {
           "type": "bullets",
           "items": [
-            "prioridades",
-            "multitarea",
-            "delegación",
-            "fatiga"
+            "**prioridades**: orden explícito entre demandas competidoras según misión, seguridad, urgencia, impacto y autoridad.",
+            "**multitarea**: gestión de varias demandas sin perder prioridades ni trazabilidad; implica secuenciar, delegar o rechazar carga cuando sea necesario.",
+            "**delegación**: asignación de una tarea a una persona con capacidad suficiente, manteniendo quien delega la responsabilidad de supervisar lo necesario.",
+            "**fatiga**: degradación de capacidad por carga y tiempo; es un riesgo operativo que debe declararse, mitigarse y, si procede, provocar relevo."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Los conceptos anteriores se usan juntos: primero se establece qué se sabe y qué falta, después se comprueban autoridad y límites, se comparan alternativas y se mantiene registro suficiente para seguimiento y relevo."
         },
         {
           "type": "callout",
@@ -225,46 +187,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "La autonomía no consiste en trabajar sin supervisión, sino en resolver lo rutinario dentro de autoridad y escalar pronto lo que supera competencia o riesgo aceptable."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica prioridades como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Gestionar varias demandas.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "lore/federation/starfleet/duty_shifts/shift_model.json"
-          ]
+          "text": "Evaluación. La evaluación distingue **calidad del proceso, conducta profesional y resultado**; un resultado favorable no compensa una decisión temeraria y un resultado adverso no invalida automáticamente una decisión razonable."
         }
       ]
     },
     {
       "id": "DUT-101-U05",
       "title": "Relevo profesional",
-      "subtitle": "UNIDAD 05 · DUT-101",
       "blocks": [
         {
           "type": "p",
-          "text": "Convertir el servicio supervisado previo en guardias largas y realistas con intervención mínima del instructor."
+          "text": "Esta unidad aplica «Relevo profesional» a situaciones de servicio. Al terminar, el cadete debe poder **reconocer la situación, decidir dentro de su autoridad, ejecutar con seguridad y explicar por qué actuó así**."
         },
         {
           "type": "heading",
@@ -273,11 +212,19 @@
         {
           "type": "bullets",
           "items": [
-            "estado",
-            "pendientes",
-            "órdenes",
-            "riesgo"
+            "**estado**: descripción actual y verificable de capacidad, configuración, degradaciones y acciones en curso.",
+            "**pendientes**: acciones no cerradas que conservan responsable, prioridad, estado y condición prevista de resolución.",
+            "**órdenes**: instrucciones operativas que deben ser claras, legítimas, comprendidas y compatibles con límites superiores.",
+            "**riesgo**: combinación de probabilidad, impacto y exposición; se gestiona, comunica y acepta solo dentro de la autoridad disponible."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Los conceptos anteriores se usan juntos: primero se establece qué se sabe y qué falta, después se comprueban autoridad y límites, se comparan alternativas y se mantiene registro suficiente para seguimiento y relevo."
         },
         {
           "type": "callout",
@@ -286,46 +233,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "La autonomía no consiste en trabajar sin supervisión, sino en resolver lo rutinario dentro de autoridad y escalar pronto lo que supera competencia o riesgo aceptable."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Calidad del handoff."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica estado como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Entregar puesto.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "lore/federation/starfleet/duty_shifts/shift_model.json"
-          ]
+          "text": "Calidad del handoff. La evaluación distingue **calidad del proceso, conducta profesional y resultado**; un resultado favorable no compensa una decisión temeraria y un resultado adverso no invalida automáticamente una decisión razonable."
         }
       ]
     },
     {
       "id": "DUT-101-U06",
       "title": "Informe de supervisor",
-      "subtitle": "UNIDAD 06 · DUT-101",
       "blocks": [
         {
           "type": "p",
-          "text": "Convertir el servicio supervisado previo en guardias largas y realistas con intervención mínima del instructor."
+          "text": "Esta unidad aplica «Informe de supervisor» a situaciones de servicio. Al terminar, el cadete debe poder **reconocer la situación, decidir dentro de su autoridad, ejecutar con seguridad y explicar por qué actuó así**."
         },
         {
           "type": "heading",
@@ -334,11 +258,19 @@
         {
           "type": "bullets",
           "items": [
-            "competencia",
-            "conducta",
-            "autonomía",
-            "límites"
+            "**competencia**: capacidad demostrada para realizar una tarea al estándar requerido en más de un contexto, no mera exposición previa.",
+            "**conducta**: forma observable de actuar respecto a disciplina, integridad, comunicación, seguridad y responsabilidad.",
+            "**autonomía**: capacidad de actuar sin guía continua dentro del ámbito autorizado, sabiendo cuándo detenerse y escalar.",
+            "**límites**: fronteras técnicas, legales, de autoridad o competencia que obligan a detener, adaptar o escalar una acción."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Los conceptos anteriores se usan juntos: primero se establece qué se sabe y qué falta, después se comprueban autoridad y límites, se comparan alternativas y se mantiene registro suficiente para seguimiento y relevo."
         },
         {
           "type": "callout",
@@ -347,37 +279,16 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "La autonomía no consiste en trabajar sin supervisión, sino en resolver lo rutinario dentro de autoridad y escalar pronto lo que supera competencia o riesgo aceptable."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Registro en expediente."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica competencia como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Debrief formal.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "lore/federation/starfleet/duty_shifts/shift_model.json"
-          ]
+          "text": "Registro en expediente. La evaluación distingue **calidad del proceso, conducta profesional y resultado**; un resultado favorable no compensa una decisión temeraria y un resultado adverso no invalida automáticamente una decisión razonable."
         }
       ]
     }
-  ]
+  ],
+  "assessmentModel": "concept_driven_v2_1"
 }

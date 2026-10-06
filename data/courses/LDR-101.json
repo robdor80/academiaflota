@@ -1,7 +1,7 @@
 {
   "subject": "Liderazgo profesional y supervisión III",
   "code": "LDR-101",
-  "version": "1.0",
+  "version": "2.0",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/first_class/courses/LDR-101/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/first_class/LDR-101/MANUAL_v1_0.md",
@@ -17,11 +17,10 @@
     {
       "id": "LDR-101-U01",
       "title": "Liderazgo de turno",
-      "subtitle": "UNIDAD 01 · LDR-101",
       "blocks": [
         {
           "type": "p",
-          "text": "Ejercer liderazgo sobre trabajo realista, personas con capacidades distintas y consecuencias profesionales."
+          "text": "Esta unidad aplica «Liderazgo de turno» a situaciones de servicio. Al terminar, el cadete debe poder **reconocer la situación, decidir dentro de su autoridad, ejecutar con seguridad y explicar por qué actuó así**."
         },
         {
           "type": "heading",
@@ -30,11 +29,19 @@
         {
           "type": "bullets",
           "items": [
-            "objetivos",
-            "roles",
-            "estándares",
-            "seguimiento"
+            "**objetivos**: resultados profesionales concretos, observables y revisables que orientan el siguiente tramo de desarrollo.",
+            "**roles**: responsabilidades asignadas que aclaran quién decide, ejecuta, informa y apoya cada parte de una tarea.",
+            "**estándares**: criterios mínimos de ejecución y seguridad que permiten evaluar si un trabajo es aceptable y repetible.",
+            "**seguimiento**: comprobación posterior de que una acción produjo el efecto esperado y de que no quedan riesgos o tareas abiertas."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Los conceptos anteriores se usan juntos: primero se establece qué se sabe y qué falta, después se comprueban autoridad y límites, se comparan alternativas y se mantiene registro suficiente para seguimiento y relevo."
         },
         {
           "type": "callout",
@@ -43,47 +50,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "El estándar es mantener una picture compartida, decisiones trazables y continuidad entre personas y departamentos."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica objetivos como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Dirigir un turno simulado.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "lore/federation/starfleet/command_structure/succession_rules.json"
-          ]
+          "text": "Evaluación. La evaluación distingue **calidad del proceso, conducta profesional y resultado**; un resultado favorable no compensa una decisión temeraria y un resultado adverso no invalida automáticamente una decisión razonable."
         }
       ]
     },
     {
       "id": "LDR-101-U02",
       "title": "Personal con distinta experiencia",
-      "subtitle": "UNIDAD 02 · LDR-101",
       "blocks": [
         {
           "type": "p",
-          "text": "Ejercer liderazgo sobre trabajo realista, personas con capacidades distintas y consecuencias profesionales."
+          "text": "Esta unidad aplica «Personal con distinta experiencia» a situaciones de servicio. Al terminar, el cadete debe poder **reconocer la situación, decidir dentro de su autoridad, ejecutar con seguridad y explicar por qué actuó así**."
         },
         {
           "type": "heading",
@@ -92,11 +75,19 @@
         {
           "type": "bullets",
           "items": [
-            "novato",
-            "competente",
-            "experto",
-            "delegación"
+            "**novato**: persona que necesita más estructura, supervisión y comprobaciones porque aún no ha demostrado consistencia suficiente.",
+            "**competente**: persona que ejecuta al estándar habitual con autonomía normal dentro de su cualificación.",
+            "**experto**: persona con experiencia y profundidad suficiente para manejar excepciones y asesorar, sin quedar exenta de límites y procedimientos.",
+            "**delegación**: asignación de una tarea a una persona con capacidad suficiente, manteniendo quien delega la responsabilidad de supervisar lo necesario."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Los conceptos anteriores se usan juntos: primero se establece qué se sabe y qué falta, después se comprueban autoridad y límites, se comparan alternativas y se mantiene registro suficiente para seguimiento y relevo."
         },
         {
           "type": "callout",
@@ -105,47 +96,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "El estándar es mantener una picture compartida, decisiones trazables y continuidad entre personas y departamentos."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Caso."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica novato como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Asignar tareas razonadamente.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "lore/federation/starfleet/command_structure/succession_rules.json"
-          ]
+          "text": "Caso. La evaluación distingue **calidad del proceso, conducta profesional y resultado**; un resultado favorable no compensa una decisión temeraria y un resultado adverso no invalida automáticamente una decisión razonable."
         }
       ]
     },
     {
       "id": "LDR-101-U03",
       "title": "Error de subordinado",
-      "subtitle": "UNIDAD 03 · LDR-101",
       "blocks": [
         {
           "type": "p",
-          "text": "Ejercer liderazgo sobre trabajo realista, personas con capacidades distintas y consecuencias profesionales."
+          "text": "Esta unidad aplica «Error de subordinado» a situaciones de servicio. Al terminar, el cadete debe poder **reconocer la situación, decidir dentro de su autoridad, ejecutar con seguridad y explicar por qué actuó así**."
         },
         {
           "type": "heading",
@@ -154,11 +121,19 @@
         {
           "type": "bullets",
           "items": [
-            "seguridad",
-            "corrección",
-            "responsabilidad",
-            "registro"
+            "**seguridad**: condición que protege personas, nave, misión y entorno mediante márgenes, comprobaciones y límites de actuación.",
+            "**corrección**: intervención destinada a detener o reconducir un error con la intensidad mínima necesaria para preservar seguridad y aprendizaje.",
+            "**responsabilidad**: obligación de responder por decisiones y acciones dentro del propio ámbito, incluida la decisión de delegar o escalar.",
+            "**registro**: constancia factual de lo ocurrido y de quién hizo qué, preservada para continuidad, revisión y responsabilidad."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Los conceptos anteriores se usan juntos: primero se establece qué se sabe y qué falta, después se comprueban autoridad y límites, se comparan alternativas y se mantiene registro suficiente para seguimiento y relevo."
         },
         {
           "type": "callout",
@@ -167,47 +142,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "El estándar es mantener una picture compartida, decisiones trazables y continuidad entre personas y departamentos."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Escena."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica seguridad como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Gestionar un error.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "lore/federation/starfleet/command_structure/succession_rules.json"
-          ]
+          "text": "Escena. La evaluación distingue **calidad del proceso, conducta profesional y resultado**; un resultado favorable no compensa una decisión temeraria y un resultado adverso no invalida automáticamente una decisión razonable."
         }
       ]
     },
     {
       "id": "LDR-101-U04",
       "title": "Conflicto profesional",
-      "subtitle": "UNIDAD 04 · LDR-101",
       "blocks": [
         {
           "type": "p",
-          "text": "Ejercer liderazgo sobre trabajo realista, personas con capacidades distintas y consecuencias profesionales."
+          "text": "Esta unidad aplica «Conflicto profesional» a situaciones de servicio. Al terminar, el cadete debe poder **reconocer la situación, decidir dentro de su autoridad, ejecutar con seguridad y explicar por qué actuó así**."
         },
         {
           "type": "heading",
@@ -216,11 +167,19 @@
         {
           "type": "bullets",
           "items": [
-            "desacuerdo",
-            "autoridad",
-            "escucha",
-            "decisión"
+            "**desacuerdo**: diferencia profesional que debe expresarse con hechos, riesgo y alternativa sin degradar disciplina ni cadena de mando.",
+            "**autoridad**: facultad reconocida para decidir u ordenar dentro de un ámbito; no equivale a competencia técnica ilimitada.",
+            "**escucha**: obtención activa de información y objeciones relevantes antes de decidir, especialmente cuando otros poseen conocimiento especializado.",
+            "**decisión**: selección consciente de un curso de acción tras valorar información, alternativas, límites, riesgo y tiempo disponible."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Los conceptos anteriores se usan juntos: primero se establece qué se sabe y qué falta, después se comprueban autoridad y límites, se comparan alternativas y se mantiene registro suficiente para seguimiento y relevo."
         },
         {
           "type": "callout",
@@ -229,47 +188,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "El estándar es mantener una picture compartida, decisiones trazables y continuidad entre personas y departamentos."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica desacuerdo como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Resolver conflicto.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "lore/federation/starfleet/command_structure/succession_rules.json"
-          ]
+          "text": "Evaluación. La evaluación distingue **calidad del proceso, conducta profesional y resultado**; un resultado favorable no compensa una decisión temeraria y un resultado adverso no invalida automáticamente una decisión razonable."
         }
       ]
     },
     {
       "id": "LDR-101-U05",
       "title": "Fatiga y capacidad",
-      "subtitle": "UNIDAD 05 · LDR-101",
       "blocks": [
         {
           "type": "p",
-          "text": "Ejercer liderazgo sobre trabajo realista, personas con capacidades distintas y consecuencias profesionales."
+          "text": "Esta unidad aplica «Fatiga y capacidad» a situaciones de servicio. Al terminar, el cadete debe poder **reconocer la situación, decidir dentro de su autoridad, ejecutar con seguridad y explicar por qué actuó así**."
         },
         {
           "type": "heading",
@@ -278,11 +213,19 @@
         {
           "type": "bullets",
           "items": [
-            "riesgo",
-            "relevo",
-            "prioridad",
-            "bienestar"
+            "**riesgo**: combinación de probabilidad, impacto y exposición; se gestiona, comunica y acepta solo dentro de la autoridad disponible.",
+            "**relevo**: transferencia formal de responsabilidad que exige entregar estado, órdenes, riesgos, pendientes y acciones futuras.",
+            "**prioridad**: posición relativa de una demanda frente a otras según seguridad, misión, urgencia e impacto.",
+            "**bienestar**: estado físico y psicológico suficiente para desempeñar la función de forma segura; puede exigir ajuste de carga o relevo."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Los conceptos anteriores se usan juntos: primero se establece qué se sabe y qué falta, después se comprueban autoridad y límites, se comparan alternativas y se mantiene registro suficiente para seguimiento y relevo."
         },
         {
           "type": "callout",
@@ -291,47 +234,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "El estándar es mantener una picture compartida, decisiones trazables y continuidad entre personas y departamentos."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Juicio."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica riesgo como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Tomar decisión sobre personal.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "lore/federation/starfleet/command_structure/succession_rules.json"
-          ]
+          "text": "Juicio. La evaluación distingue **calidad del proceso, conducta profesional y resultado**; un resultado favorable no compensa una decisión temeraria y un resultado adverso no invalida automáticamente una decisión razonable."
         }
       ]
     },
     {
       "id": "LDR-101-U06",
       "title": "Debrief de liderazgo",
-      "subtitle": "UNIDAD 06 · LDR-101",
       "blocks": [
         {
           "type": "p",
-          "text": "Ejercer liderazgo sobre trabajo realista, personas con capacidades distintas y consecuencias profesionales."
+          "text": "Esta unidad aplica «Debrief de liderazgo» a situaciones de servicio. Al terminar, el cadete debe poder **reconocer la situación, decidir dentro de su autoridad, ejecutar con seguridad y explicar por qué actuó así**."
         },
         {
           "type": "heading",
@@ -340,11 +259,19 @@
         {
           "type": "bullets",
           "items": [
-            "resultado",
-            "proceso",
-            "equipo",
-            "mejora"
+            "**resultado**: efecto observado tras la acción; se analiza separado de la calidad del proceso que llevó a decidir.",
+            "**proceso**: secuencia de obtención de información, valoración, decisión, ejecución y seguimiento que permite evaluar cómo se llegó al resultado.",
+            "**equipo**: personas y capacidades que trabajan con roles coordinados; su rendimiento depende de carga, competencia, comunicación y liderazgo.",
+            "**mejora**: cambio concreto derivado de evidencia y debrief que modifica entrenamiento, procedimiento, hábito o sistema."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Los conceptos anteriores se usan juntos: primero se establece qué se sabe y qué falta, después se comprueban autoridad y límites, se comparan alternativas y se mantiene registro suficiente para seguimiento y relevo."
         },
         {
           "type": "callout",
@@ -353,38 +280,16 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "El estándar es mantener una picture compartida, decisiones trazables y continuidad entre personas y departamentos."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación longitudinal."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica resultado como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Revisar desempeño.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "lore/federation/starfleet/command_structure/succession_rules.json"
-          ]
+          "text": "Evaluación longitudinal. La evaluación distingue **calidad del proceso, conducta profesional y resultado**; un resultado favorable no compensa una decisión temeraria y un resultado adverso no invalida automáticamente una decisión razonable."
         }
       ]
     }
-  ]
+  ],
+  "assessmentModel": "concept_driven_v2_1"
 }

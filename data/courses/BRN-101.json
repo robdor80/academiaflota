@@ -1,7 +1,7 @@
 {
   "subject": "Especialización profesional avanzada I",
   "code": "BRN-101",
-  "version": "1.0",
+  "version": "2.0",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/first_class/courses/BRN-101/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/first_class/BRN-101/MANUAL_v1_0.md",
@@ -18,11 +18,10 @@
     {
       "id": "BRN-101-U01",
       "title": "Revisión de cualificación intermedia",
-      "subtitle": "UNIDAD 01 · BRN-101",
       "blocks": [
         {
           "type": "p",
-          "text": "Consolidar la rama elegida en problemas avanzados, supervisión y criterio profesional."
+          "text": "Esta unidad aplica «Revisión de cualificación intermedia» a situaciones de servicio. Al terminar, el cadete debe poder **reconocer la situación, decidir dentro de su autoridad, ejecutar con seguridad y explicar por qué actuó así**."
         },
         {
           "type": "heading",
@@ -31,11 +30,19 @@
         {
           "type": "bullets",
           "items": [
-            "fortalezas",
-            "carencias",
-            "evidencia",
-            "objetivos"
+            "**fortalezas**: capacidades demostradas de forma repetida y con evidencia; sirven para asignar responsabilidad, no para asumir que el cadete nunca fallará.",
+            "**carencias**: áreas en las que la evidencia muestra preparación insuficiente o inconsistente y que requieren entrenamiento, supervisión o límites explícitos.",
+            "**evidencia**: registro verificable de contexto, información disponible, acciones, resultados y feedback; debe poder revisarse después sin reescribir lo ocurrido.",
+            "**objetivos**: resultados profesionales concretos, observables y revisables que orientan el siguiente tramo de desarrollo."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Los conceptos anteriores se usan juntos: primero se establece qué se sabe y qué falta, después se comprueban autoridad y límites, se comparan alternativas y se mantiene registro suficiente para seguimiento y relevo."
         },
         {
           "type": "callout",
@@ -44,48 +51,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "El especialista novel debe poder explicar el estado de su área, reconocer límites, comparar opciones y formular una recomendación útil al mando."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Plan individual."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica fortalezas como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Analizar resultado de QUA-203.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/academy_path/curriculum/branches"
-          ]
+          "text": "Plan individual. La evaluación distingue **calidad del proceso, conducta profesional y resultado**; un resultado favorable no compensa una decisión temeraria y un resultado adverso no invalida automáticamente una decisión razonable."
         }
       ]
     },
     {
       "id": "BRN-101-U02",
       "title": "Herramientas avanzadas de rama",
-      "subtitle": "UNIDAD 02 · BRN-101",
       "blocks": [
         {
           "type": "p",
-          "text": "Consolidar la rama elegida en problemas avanzados, supervisión y criterio profesional."
+          "text": "Esta unidad aplica «Herramientas avanzadas de rama» a situaciones de servicio. Al terminar, el cadete debe poder **reconocer la situación, decidir dentro de su autoridad, ejecutar con seguridad y explicar por qué actuó así**."
         },
         {
           "type": "heading",
@@ -94,11 +76,19 @@
         {
           "type": "bullets",
           "items": [
-            "configuración",
-            "límites",
-            "fallos",
-            "seguridad"
+            "**configuración**: estado deliberado de sistemas, herramientas y parámetros antes de ejecutar una tarea; debe corresponder a misión, entorno y límites de seguridad.",
+            "**límites**: fronteras técnicas, legales, de autoridad o competencia que obligan a detener, adaptar o escalar una acción.",
+            "**fallos**: desviaciones respecto al funcionamiento esperado; se diagnostican por síntomas y evidencia antes de atribuir una causa.",
+            "**seguridad**: condición que protege personas, nave, misión y entorno mediante márgenes, comprobaciones y límites de actuación."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Los conceptos anteriores se usan juntos: primero se establece qué se sabe y qué falta, después se comprueban autoridad y límites, se comparan alternativas y se mantiene registro suficiente para seguimiento y relevo."
         },
         {
           "type": "callout",
@@ -107,48 +97,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "El especialista novel debe poder explicar el estado de su área, reconocer límites, comparar opciones y formular una recomendación útil al mando."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica configuración como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Práctica avanzada según especialidad.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/academy_path/curriculum/branches"
-          ]
+          "text": "Evaluación. La evaluación distingue **calidad del proceso, conducta profesional y resultado**; un resultado favorable no compensa una decisión temeraria y un resultado adverso no invalida automáticamente una decisión razonable."
         }
       ]
     },
     {
       "id": "BRN-101-U03",
       "title": "Decisión profesional",
-      "subtitle": "UNIDAD 03 · BRN-101",
       "blocks": [
         {
           "type": "p",
-          "text": "Consolidar la rama elegida en problemas avanzados, supervisión y criterio profesional."
+          "text": "Esta unidad aplica «Decisión profesional» a situaciones de servicio. Al terminar, el cadete debe poder **reconocer la situación, decidir dentro de su autoridad, ejecutar con seguridad y explicar por qué actuó así**."
         },
         {
           "type": "heading",
@@ -157,11 +122,19 @@
         {
           "type": "bullets",
           "items": [
-            "opciones",
-            "riesgo",
-            "misión",
-            "recomendación"
+            "**opciones**: cursos de acción viables que deben compararse por riesgo, recursos, tiempo, reversibilidad y efecto sobre la misión.",
+            "**riesgo**: combinación de probabilidad, impacto y exposición; se gestiona, comunica y acepta solo dentro de la autoridad disponible.",
+            "**misión**: propósito operativo junto con restricciones, prioridades y condiciones de éxito; guía decisiones sin anular seguridad ni regulación.",
+            "**recomendación**: propuesta profesional respaldada por datos, alternativas y riesgos; debe indicar qué se aconseja y por qué."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Los conceptos anteriores se usan juntos: primero se establece qué se sabe y qué falta, después se comprueban autoridad y límites, se comparan alternativas y se mantiene registro suficiente para seguimiento y relevo."
         },
         {
           "type": "callout",
@@ -170,48 +143,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "El especialista novel debe poder explicar el estado de su área, reconocer límites, comparar opciones y formular una recomendación útil al mando."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Juicio."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica opciones como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Resolver caso sin receta.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/academy_path/curriculum/branches"
-          ]
+          "text": "Juicio. La evaluación distingue **calidad del proceso, conducta profesional y resultado**; un resultado favorable no compensa una decisión temeraria y un resultado adverso no invalida automáticamente una decisión razonable."
         }
       ]
     },
     {
       "id": "BRN-101-U04",
       "title": "Supervisión de tarea",
-      "subtitle": "UNIDAD 04 · BRN-101",
       "blocks": [
         {
           "type": "p",
-          "text": "Consolidar la rama elegida en problemas avanzados, supervisión y criterio profesional."
+          "text": "Esta unidad aplica «Supervisión de tarea» a situaciones de servicio. Al terminar, el cadete debe poder **reconocer la situación, decidir dentro de su autoridad, ejecutar con seguridad y explicar por qué actuó así**."
         },
         {
           "type": "heading",
@@ -220,11 +168,19 @@
         {
           "type": "bullets",
           "items": [
-            "briefing",
-            "delegación",
-            "control",
-            "cierre"
+            "**briefing**: comunicación previa que alinea objetivo, situación, roles, límites, riesgos y criterios de escalado antes de actuar.",
+            "**delegación**: asignación de una tarea a una persona con capacidad suficiente, manteniendo quien delega la responsabilidad de supervisar lo necesario.",
+            "**control**: seguimiento proporcional al riesgo para comprobar progreso, desviaciones y necesidad de intervención.",
+            "**cierre**: confirmación de resultado, estado final, pendientes, registro y transferencia de responsabilidad cuando proceda."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Los conceptos anteriores se usan juntos: primero se establece qué se sabe y qué falta, después se comprueban autoridad y límites, se comparan alternativas y se mantiene registro suficiente para seguimiento y relevo."
         },
         {
           "type": "callout",
@@ -233,48 +189,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "El especialista novel debe poder explicar el estado de su área, reconocer límites, comparar opciones y formular una recomendación útil al mando."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica briefing como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Supervisar micro-equipo.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/academy_path/curriculum/branches"
-          ]
+          "text": "Evaluación. La evaluación distingue **calidad del proceso, conducta profesional y resultado**; un resultado favorable no compensa una decisión temeraria y un resultado adverso no invalida automáticamente una decisión razonable."
         }
       ]
     },
     {
       "id": "BRN-101-U05",
       "title": "Interfaz con mando",
-      "subtitle": "UNIDAD 05 · BRN-101",
       "blocks": [
         {
           "type": "p",
-          "text": "Consolidar la rama elegida en problemas avanzados, supervisión y criterio profesional."
+          "text": "Esta unidad aplica «Interfaz con mando» a situaciones de servicio. Al terminar, el cadete debe poder **reconocer la situación, decidir dentro de su autoridad, ejecutar con seguridad y explicar por qué actuó así**."
         },
         {
           "type": "heading",
@@ -283,11 +214,19 @@
         {
           "type": "bullets",
           "items": [
-            "estado",
-            "riesgo",
-            "opciones",
-            "ETA/recomendación"
+            "**estado**: descripción actual y verificable de capacidad, configuración, degradaciones y acciones en curso.",
+            "**riesgo**: combinación de probabilidad, impacto y exposición; se gestiona, comunica y acepta solo dentro de la autoridad disponible.",
+            "**opciones**: cursos de acción viables que deben compararse por riesgo, recursos, tiempo, reversibilidad y efecto sobre la misión.",
+            "**ETA/recomendación**: ETA/recomendación agrupa alternativas o dominios que deben distinguirse según el contexto; antes de actuar se identifica cuál aplica realmente y qué límites introduce."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Los conceptos anteriores se usan juntos: primero se establece qué se sabe y qué falta, después se comprueban autoridad y límites, se comparan alternativas y se mantiene registro suficiente para seguimiento y relevo."
         },
         {
           "type": "callout",
@@ -296,48 +235,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "El especialista novel debe poder explicar el estado de su área, reconocer límites, comparar opciones y formular una recomendación útil al mando."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Comunicación y criterio."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica estado como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Briefing profesional.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/academy_path/curriculum/branches"
-          ]
+          "text": "Comunicación y criterio. La evaluación distingue **calidad del proceso, conducta profesional y resultado**; un resultado favorable no compensa una decisión temeraria y un resultado adverso no invalida automáticamente una decisión razonable."
         }
       ]
     },
     {
       "id": "BRN-101-U06",
       "title": "Caso avanzado I",
-      "subtitle": "UNIDAD 06 · BRN-101",
       "blocks": [
         {
           "type": "p",
-          "text": "Consolidar la rama elegida en problemas avanzados, supervisión y criterio profesional."
+          "text": "Esta unidad aplica «Caso avanzado I» a situaciones de servicio. Al terminar, el cadete debe poder **reconocer la situación, decidir dentro de su autoridad, ejecutar con seguridad y explicar por qué actuó así**."
         },
         {
           "type": "heading",
@@ -346,11 +260,19 @@
         {
           "type": "bullets",
           "items": [
-            "situación",
-            "ejecución",
-            "cambio",
-            "debrief"
+            "**situación**: picture operativo formado por hechos confirmados, incertidumbres, actores, recursos, órdenes y cambios relevantes.",
+            "**ejecución**: realización de la acción planificada con monitorización continua y adaptación dentro de los límites autorizados.",
+            "**cambio**: variación relevante de condiciones que obliga a reevaluar supuestos, prioridades, riesgos o plan.",
+            "**debrief**: revisión estructurada posterior que separa hechos, decisiones, resultado, lecciones y acciones de mejora."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Los conceptos anteriores se usan juntos: primero se establece qué se sabe y qué falta, después se comprueban autoridad y límites, se comparan alternativas y se mantiene registro suficiente para seguimiento y relevo."
         },
         {
           "type": "callout",
@@ -359,39 +281,16 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "El especialista novel debe poder explicar el estado de su área, reconocer límites, comparar opciones y formular una recomendación útil al mando."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación continua."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica situación como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Caso de rama completo.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/academy_path/specializations.json",
-            "gameplay/careers/academy_path/specialization_rules.md",
-            "gameplay/careers/academy_path/curriculum/branches"
-          ]
+          "text": "Evaluación continua. La evaluación distingue **calidad del proceso, conducta profesional y resultado**; un resultado favorable no compensa una decisión temeraria y un resultado adverso no invalida automáticamente una decisión razonable."
         }
       ]
     }
-  ]
+  ],
+  "assessmentModel": "concept_driven_v2_1"
 }

@@ -1,313 +1,648 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.1.0",
   "course_id": "BRN-101",
-  "status": "generated_from_authoritative_curriculum",
-  "question_count": 24,
-  "questions": [
+  "status": "developed_concept_driven_autocorrectable_v2_1",
+  "source_course": "curriculum/first_class/courses/BRN-101/course.json",
+  "policy": {
+    "theory_formats": [
+      "multiple_choice",
+      "short_answer"
+    ],
+    "multiple_choice_target_ratio": 0.8,
+    "short_answer_target_ratio": 0.2,
+    "deterministic_correction": true,
+    "web_and_game_share_concepts_not_question_instances": true,
+    "complex_judgment_moves_to_practice_and_simulation": true,
+    "source_rule": "Every evaluated concept is explicitly taught in the developed Year 4 material or an established prerequisite."
+  },
+  "unit_review": {
+    "questions_per_attempt": 5,
+    "reshuffle_each_attempt": true,
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
+  },
+  "concepts": [
     {
-      "id": "BRN-101-Q001",
+      "id": "BRN-101-C001",
       "unit_id": "BRN-101-U01",
-      "type": "service_readiness",
-      "prompt_es": "Explica fortalezas como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: capacidades demostradas de forma repetida y con evidencia; sirven para asignar responsabilidad, no para asumir que el cadete nunca fallará?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: capacidades demostradas de forma repetida y con evidencia; sirven para asignar responsabilidad, no para asumir que el cadete nunca fallará?",
+        "Selecciona el concepto de «Revisión de cualificación intermedia» descrito así: capacidades demostradas de forma repetida y con evidencia; sirven para asignar responsabilidad, no para asumir que el cadete nunca fallará."
+      ],
+      "answer_display_es": "fortalezas",
+      "accepted_short_answers_es": [
+        "fortalezas"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "fortalezas",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "fortalezas"
       ]
     },
     {
-      "id": "BRN-101-Q002",
+      "id": "BRN-101-C002",
       "unit_id": "BRN-101-U01",
-      "type": "scenario",
-      "prompt_es": "Escenario: Analizar resultado de QUA-203. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: áreas en las que la evidencia muestra preparación insuficiente o inconsistente y que requieren entrenamiento, supervisión o límites explícitos?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: áreas en las que la evidencia muestra preparación insuficiente o inconsistente y que requieren entrenamiento, supervisión o límites explícitos?",
+        "Selecciona el concepto de «Revisión de cualificación intermedia» descrito así: áreas en las que la evidencia muestra preparación insuficiente o inconsistente y que requieren entrenamiento, supervisión o límites explícitos."
+      ],
+      "answer_display_es": "carencias",
+      "accepted_short_answers_es": [
+        "carencias"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "carencias"
       ]
     },
     {
-      "id": "BRN-101-Q003",
+      "id": "BRN-101-C003",
       "unit_id": "BRN-101-U01",
-      "type": "debrief",
-      "prompt_es": "Tras Revisión de cualificación intermedia, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: registro verificable de contexto, información disponible, acciones, resultados y feedback; debe poder revisarse después sin reescribir lo ocurrido?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: registro verificable de contexto, información disponible, acciones, resultados y feedback; debe poder revisarse después sin reescribir lo ocurrido?",
+        "Selecciona el concepto de «Revisión de cualificación intermedia» descrito así: registro verificable de contexto, información disponible, acciones, resultados y feedback; debe poder revisarse después sin reescribir lo ocurrido."
+      ],
+      "answer_display_es": "evidencia",
+      "accepted_short_answers_es": [
+        "evidencia"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "evidencia"
       ]
     },
     {
-      "id": "BRN-101-Q004",
+      "id": "BRN-101-C004",
       "unit_id": "BRN-101-U01",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: resultados profesionales concretos, observables y revisables que orientan el siguiente tramo de desarrollo?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: resultados profesionales concretos, observables y revisables que orientan el siguiente tramo de desarrollo?",
+        "Selecciona el concepto de «Revisión de cualificación intermedia» descrito así: resultados profesionales concretos, observables y revisables que orientan el siguiente tramo de desarrollo."
+      ],
+      "answer_display_es": "objetivos",
+      "accepted_short_answers_es": [
+        "objetivos"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "objetivos"
       ]
     },
     {
-      "id": "BRN-101-Q005",
+      "id": "BRN-101-C005",
+      "unit_id": "BRN-101-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica está asociada a la unidad «Revisión de cualificación intermedia»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica está asociada a la unidad «Revisión de cualificación intermedia»?",
+        "Repaso de «Revisión de cualificación intermedia»: ¿Qué práctica está asociada a la unidad «Revisión de cualificación intermedia»?"
+      ],
+      "answer_display_es": "Analizar resultado de QUA-203.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Analizar resultado de QUA-203."
+      ]
+    },
+    {
+      "id": "BRN-101-C006",
+      "unit_id": "BRN-101-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué forma de evaluación se asocia a «Revisión de cualificación intermedia»?",
+      "web_prompt_variants_es": [
+        "¿Qué forma de evaluación se asocia a «Revisión de cualificación intermedia»?",
+        "Repaso de «Revisión de cualificación intermedia»: ¿Qué forma de evaluación se asocia a «Revisión de cualificación intermedia»?"
+      ],
+      "answer_display_es": "Plan individual.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Plan individual."
+      ]
+    },
+    {
+      "id": "BRN-101-C007",
       "unit_id": "BRN-101-U02",
-      "type": "service_readiness",
-      "prompt_es": "Explica configuración como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: estado deliberado de sistemas, herramientas y parámetros antes de ejecutar una tarea; debe corresponder a misión, entorno y límites de seguridad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: estado deliberado de sistemas, herramientas y parámetros antes de ejecutar una tarea; debe corresponder a misión, entorno y límites de seguridad?",
+        "Selecciona el concepto de «Herramientas avanzadas de rama» descrito así: estado deliberado de sistemas, herramientas y parámetros antes de ejecutar una tarea; debe corresponder a misión, entorno y límites de seguridad."
+      ],
+      "answer_display_es": "configuración",
+      "accepted_short_answers_es": [
+        "configuración"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "configuración",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "configuración"
       ]
     },
     {
-      "id": "BRN-101-Q006",
+      "id": "BRN-101-C008",
       "unit_id": "BRN-101-U02",
-      "type": "scenario",
-      "prompt_es": "Escenario: Práctica avanzada según especialidad. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: fronteras técnicas, legales, de autoridad o competencia que obligan a detener, adaptar o escalar una acción?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: fronteras técnicas, legales, de autoridad o competencia que obligan a detener, adaptar o escalar una acción?",
+        "Selecciona el concepto de «Herramientas avanzadas de rama» descrito así: fronteras técnicas, legales, de autoridad o competencia que obligan a detener, adaptar o escalar una acción."
+      ],
+      "answer_display_es": "límites",
+      "accepted_short_answers_es": [
+        "límites"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "límites"
       ]
     },
     {
-      "id": "BRN-101-Q007",
+      "id": "BRN-101-C009",
       "unit_id": "BRN-101-U02",
-      "type": "debrief",
-      "prompt_es": "Tras Herramientas avanzadas de rama, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: desviaciones respecto al funcionamiento esperado; se diagnostican por síntomas y evidencia antes de atribuir una causa?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: desviaciones respecto al funcionamiento esperado; se diagnostican por síntomas y evidencia antes de atribuir una causa?",
+        "Selecciona el concepto de «Herramientas avanzadas de rama» descrito así: desviaciones respecto al funcionamiento esperado; se diagnostican por síntomas y evidencia antes de atribuir una causa."
+      ],
+      "answer_display_es": "fallos",
+      "accepted_short_answers_es": [
+        "fallos"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "fallos"
       ]
     },
     {
-      "id": "BRN-101-Q008",
+      "id": "BRN-101-C010",
       "unit_id": "BRN-101-U02",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: condición que protege personas, nave, misión y entorno mediante márgenes, comprobaciones y límites de actuación?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: condición que protege personas, nave, misión y entorno mediante márgenes, comprobaciones y límites de actuación?",
+        "Selecciona el concepto de «Herramientas avanzadas de rama» descrito así: condición que protege personas, nave, misión y entorno mediante márgenes, comprobaciones y límites de actuación."
+      ],
+      "answer_display_es": "seguridad",
+      "accepted_short_answers_es": [
+        "seguridad"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "seguridad"
       ]
     },
     {
-      "id": "BRN-101-Q009",
+      "id": "BRN-101-C011",
+      "unit_id": "BRN-101-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica está asociada a la unidad «Herramientas avanzadas de rama»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica está asociada a la unidad «Herramientas avanzadas de rama»?",
+        "Repaso de «Herramientas avanzadas de rama»: ¿Qué práctica está asociada a la unidad «Herramientas avanzadas de rama»?"
+      ],
+      "answer_display_es": "Práctica avanzada según especialidad.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Práctica avanzada según especialidad."
+      ]
+    },
+    {
+      "id": "BRN-101-C012",
+      "unit_id": "BRN-101-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué forma de evaluación se asocia a «Herramientas avanzadas de rama»?",
+      "web_prompt_variants_es": [
+        "¿Qué forma de evaluación se asocia a «Herramientas avanzadas de rama»?",
+        "Repaso de «Herramientas avanzadas de rama»: ¿Qué forma de evaluación se asocia a «Herramientas avanzadas de rama»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
+    },
+    {
+      "id": "BRN-101-C013",
       "unit_id": "BRN-101-U03",
-      "type": "service_readiness",
-      "prompt_es": "Explica opciones como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: cursos de acción viables que deben compararse por riesgo, recursos, tiempo, reversibilidad y efecto sobre la misión?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: cursos de acción viables que deben compararse por riesgo, recursos, tiempo, reversibilidad y efecto sobre la misión?",
+        "Selecciona el concepto de «Decisión profesional» descrito así: cursos de acción viables que deben compararse por riesgo, recursos, tiempo, reversibilidad y efecto sobre la misión."
+      ],
+      "answer_display_es": "opciones",
+      "accepted_short_answers_es": [
+        "opciones"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "opciones",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "opciones"
       ]
     },
     {
-      "id": "BRN-101-Q010",
+      "id": "BRN-101-C014",
       "unit_id": "BRN-101-U03",
-      "type": "scenario",
-      "prompt_es": "Escenario: Resolver caso sin receta. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: combinación de probabilidad, impacto y exposición; se gestiona, comunica y acepta solo dentro de la autoridad disponible?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: combinación de probabilidad, impacto y exposición; se gestiona, comunica y acepta solo dentro de la autoridad disponible?",
+        "Selecciona el concepto de «Decisión profesional» descrito así: combinación de probabilidad, impacto y exposición; se gestiona, comunica y acepta solo dentro de la autoridad disponible."
+      ],
+      "answer_display_es": "riesgo",
+      "accepted_short_answers_es": [
+        "riesgo"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "riesgo"
       ]
     },
     {
-      "id": "BRN-101-Q011",
+      "id": "BRN-101-C015",
       "unit_id": "BRN-101-U03",
-      "type": "debrief",
-      "prompt_es": "Tras Decisión profesional, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: propósito operativo junto con restricciones, prioridades y condiciones de éxito; guía decisiones sin anular seguridad ni regulación?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: propósito operativo junto con restricciones, prioridades y condiciones de éxito; guía decisiones sin anular seguridad ni regulación?",
+        "Selecciona el concepto de «Decisión profesional» descrito así: propósito operativo junto con restricciones, prioridades y condiciones de éxito; guía decisiones sin anular seguridad ni regulación."
+      ],
+      "answer_display_es": "misión",
+      "accepted_short_answers_es": [
+        "misión"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "misión"
       ]
     },
     {
-      "id": "BRN-101-Q012",
+      "id": "BRN-101-C016",
       "unit_id": "BRN-101-U03",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: propuesta profesional respaldada por datos, alternativas y riesgos; debe indicar qué se aconseja y por qué?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: propuesta profesional respaldada por datos, alternativas y riesgos; debe indicar qué se aconseja y por qué?",
+        "Selecciona el concepto de «Decisión profesional» descrito así: propuesta profesional respaldada por datos, alternativas y riesgos; debe indicar qué se aconseja y por qué."
+      ],
+      "answer_display_es": "recomendación",
+      "accepted_short_answers_es": [
+        "recomendación"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "recomendación"
       ]
     },
     {
-      "id": "BRN-101-Q013",
+      "id": "BRN-101-C017",
+      "unit_id": "BRN-101-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica está asociada a la unidad «Decisión profesional»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica está asociada a la unidad «Decisión profesional»?",
+        "Repaso de «Decisión profesional»: ¿Qué práctica está asociada a la unidad «Decisión profesional»?"
+      ],
+      "answer_display_es": "Resolver caso sin receta.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Resolver caso sin receta."
+      ]
+    },
+    {
+      "id": "BRN-101-C018",
+      "unit_id": "BRN-101-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué forma de evaluación se asocia a «Decisión profesional»?",
+      "web_prompt_variants_es": [
+        "¿Qué forma de evaluación se asocia a «Decisión profesional»?",
+        "Repaso de «Decisión profesional»: ¿Qué forma de evaluación se asocia a «Decisión profesional»?"
+      ],
+      "answer_display_es": "Juicio.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Juicio."
+      ]
+    },
+    {
+      "id": "BRN-101-C019",
       "unit_id": "BRN-101-U04",
-      "type": "service_readiness",
-      "prompt_es": "Explica briefing como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: comunicación previa que alinea objetivo, situación, roles, límites, riesgos y criterios de escalado antes de actuar?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: comunicación previa que alinea objetivo, situación, roles, límites, riesgos y criterios de escalado antes de actuar?",
+        "Selecciona el concepto de «Supervisión de tarea» descrito así: comunicación previa que alinea objetivo, situación, roles, límites, riesgos y criterios de escalado antes de actuar."
+      ],
+      "answer_display_es": "briefing",
+      "accepted_short_answers_es": [
+        "briefing"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "briefing",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "briefing"
       ]
     },
     {
-      "id": "BRN-101-Q014",
+      "id": "BRN-101-C020",
       "unit_id": "BRN-101-U04",
-      "type": "scenario",
-      "prompt_es": "Escenario: Supervisar micro-equipo. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: asignación de una tarea a una persona con capacidad suficiente, manteniendo quien delega la responsabilidad de supervisar lo necesario?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: asignación de una tarea a una persona con capacidad suficiente, manteniendo quien delega la responsabilidad de supervisar lo necesario?",
+        "Selecciona el concepto de «Supervisión de tarea» descrito así: asignación de una tarea a una persona con capacidad suficiente, manteniendo quien delega la responsabilidad de supervisar lo necesario."
+      ],
+      "answer_display_es": "delegación",
+      "accepted_short_answers_es": [
+        "delegación"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "delegación"
       ]
     },
     {
-      "id": "BRN-101-Q015",
+      "id": "BRN-101-C021",
       "unit_id": "BRN-101-U04",
-      "type": "debrief",
-      "prompt_es": "Tras Supervisión de tarea, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: seguimiento proporcional al riesgo para comprobar progreso, desviaciones y necesidad de intervención?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: seguimiento proporcional al riesgo para comprobar progreso, desviaciones y necesidad de intervención?",
+        "Selecciona el concepto de «Supervisión de tarea» descrito así: seguimiento proporcional al riesgo para comprobar progreso, desviaciones y necesidad de intervención."
+      ],
+      "answer_display_es": "control",
+      "accepted_short_answers_es": [
+        "control"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "control"
       ]
     },
     {
-      "id": "BRN-101-Q016",
+      "id": "BRN-101-C022",
       "unit_id": "BRN-101-U04",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: confirmación de resultado, estado final, pendientes, registro y transferencia de responsabilidad cuando proceda?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: confirmación de resultado, estado final, pendientes, registro y transferencia de responsabilidad cuando proceda?",
+        "Selecciona el concepto de «Supervisión de tarea» descrito así: confirmación de resultado, estado final, pendientes, registro y transferencia de responsabilidad cuando proceda."
+      ],
+      "answer_display_es": "cierre",
+      "accepted_short_answers_es": [
+        "cierre"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "cierre"
       ]
     },
     {
-      "id": "BRN-101-Q017",
+      "id": "BRN-101-C023",
+      "unit_id": "BRN-101-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica está asociada a la unidad «Supervisión de tarea»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica está asociada a la unidad «Supervisión de tarea»?",
+        "Repaso de «Supervisión de tarea»: ¿Qué práctica está asociada a la unidad «Supervisión de tarea»?"
+      ],
+      "answer_display_es": "Supervisar micro-equipo.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Supervisar micro-equipo."
+      ]
+    },
+    {
+      "id": "BRN-101-C024",
+      "unit_id": "BRN-101-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué forma de evaluación se asocia a «Supervisión de tarea»?",
+      "web_prompt_variants_es": [
+        "¿Qué forma de evaluación se asocia a «Supervisión de tarea»?",
+        "Repaso de «Supervisión de tarea»: ¿Qué forma de evaluación se asocia a «Supervisión de tarea»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
+    },
+    {
+      "id": "BRN-101-C025",
       "unit_id": "BRN-101-U05",
-      "type": "service_readiness",
-      "prompt_es": "Explica estado como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: descripción actual y verificable de capacidad, configuración, degradaciones y acciones en curso?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: descripción actual y verificable de capacidad, configuración, degradaciones y acciones en curso?",
+        "Selecciona el concepto de «Interfaz con mando» descrito así: descripción actual y verificable de capacidad, configuración, degradaciones y acciones en curso."
+      ],
+      "answer_display_es": "estado",
+      "accepted_short_answers_es": [
+        "estado"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "estado"
       ]
     },
     {
-      "id": "BRN-101-Q018",
+      "id": "BRN-101-C026",
       "unit_id": "BRN-101-U05",
-      "type": "scenario",
-      "prompt_es": "Escenario: Briefing profesional. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: combinación de probabilidad, impacto y exposición; se gestiona, comunica y acepta solo dentro de la autoridad disponible?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: combinación de probabilidad, impacto y exposición; se gestiona, comunica y acepta solo dentro de la autoridad disponible?",
+        "Selecciona el concepto de «Interfaz con mando» descrito así: combinación de probabilidad, impacto y exposición; se gestiona, comunica y acepta solo dentro de la autoridad disponible."
+      ],
+      "answer_display_es": "riesgo",
+      "accepted_short_answers_es": [
+        "riesgo"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "riesgo"
       ]
     },
     {
-      "id": "BRN-101-Q019",
+      "id": "BRN-101-C027",
       "unit_id": "BRN-101-U05",
-      "type": "debrief",
-      "prompt_es": "Tras Interfaz con mando, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: cursos de acción viables que deben compararse por riesgo, recursos, tiempo, reversibilidad y efecto sobre la misión?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: cursos de acción viables que deben compararse por riesgo, recursos, tiempo, reversibilidad y efecto sobre la misión?",
+        "Selecciona el concepto de «Interfaz con mando» descrito así: cursos de acción viables que deben compararse por riesgo, recursos, tiempo, reversibilidad y efecto sobre la misión."
+      ],
+      "answer_display_es": "opciones",
+      "accepted_short_answers_es": [
+        "opciones"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "opciones"
       ]
     },
     {
-      "id": "BRN-101-Q020",
+      "id": "BRN-101-C028",
       "unit_id": "BRN-101-U05",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: ETA/recomendación agrupa alternativas o dominios que deben distinguirse según el contexto; antes de actuar se identifica cuál aplica realmente y qué límites introduce?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: ETA/recomendación agrupa alternativas o dominios que deben distinguirse según el contexto; antes de actuar se identifica cuál aplica realmente y qué límites introduce?",
+        "Selecciona el concepto de «Interfaz con mando» descrito así: ETA/recomendación agrupa alternativas o dominios que deben distinguirse según el contexto; antes de actuar se identifica cuál aplica realmente y qué límites introduce."
+      ],
+      "answer_display_es": "ETA/recomendación",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "ETA/recomendación"
       ]
     },
     {
-      "id": "BRN-101-Q021",
-      "unit_id": "BRN-101-U06",
-      "type": "service_readiness",
-      "prompt_es": "Explica situación como se lo explicarías a un Alférez que recibe su primer destino.",
+      "id": "BRN-101-C029",
+      "unit_id": "BRN-101-U05",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica está asociada a la unidad «Interfaz con mando»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica está asociada a la unidad «Interfaz con mando»?",
+        "Repaso de «Interfaz con mando»: ¿Qué práctica está asociada a la unidad «Interfaz con mando»?"
+      ],
+      "answer_display_es": "Briefing profesional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "situación",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "Briefing profesional."
       ]
     },
     {
-      "id": "BRN-101-Q022",
-      "unit_id": "BRN-101-U06",
-      "type": "scenario",
-      "prompt_es": "Escenario: Caso de rama completo. Describe decisión inicial, alternativas y condición de escalado.",
+      "id": "BRN-101-C030",
+      "unit_id": "BRN-101-U05",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué forma de evaluación se asocia a «Interfaz con mando»?",
+      "web_prompt_variants_es": [
+        "¿Qué forma de evaluación se asocia a «Interfaz con mando»?",
+        "Repaso de «Interfaz con mando»: ¿Qué forma de evaluación se asocia a «Interfaz con mando»?"
+      ],
+      "answer_display_es": "Comunicación y criterio.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "Comunicación y criterio."
       ]
     },
     {
-      "id": "BRN-101-Q023",
+      "id": "BRN-101-C031",
       "unit_id": "BRN-101-U06",
-      "type": "debrief",
-      "prompt_es": "Tras Caso avanzado I, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: picture operativo formado por hechos confirmados, incertidumbres, actores, recursos, órdenes y cambios relevantes?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: picture operativo formado por hechos confirmados, incertidumbres, actores, recursos, órdenes y cambios relevantes?",
+        "Selecciona el concepto de «Caso avanzado I» descrito así: picture operativo formado por hechos confirmados, incertidumbres, actores, recursos, órdenes y cambios relevantes."
+      ],
+      "answer_display_es": "situación",
+      "accepted_short_answers_es": [
+        "situación"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "situación"
       ]
     },
     {
-      "id": "BRN-101-Q024",
+      "id": "BRN-101-C032",
       "unit_id": "BRN-101-U06",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: realización de la acción planificada con monitorización continua y adaptación dentro de los límites autorizados?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: realización de la acción planificada con monitorización continua y adaptación dentro de los límites autorizados?",
+        "Selecciona el concepto de «Caso avanzado I» descrito así: realización de la acción planificada con monitorización continua y adaptación dentro de los límites autorizados."
+      ],
+      "answer_display_es": "ejecución",
+      "accepted_short_answers_es": [
+        "ejecución"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "ejecución"
+      ]
+    },
+    {
+      "id": "BRN-101-C033",
+      "unit_id": "BRN-101-U06",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: variación relevante de condiciones que obliga a reevaluar supuestos, prioridades, riesgos o plan?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: variación relevante de condiciones que obliga a reevaluar supuestos, prioridades, riesgos o plan?",
+        "Selecciona el concepto de «Caso avanzado I» descrito así: variación relevante de condiciones que obliga a reevaluar supuestos, prioridades, riesgos o plan."
+      ],
+      "answer_display_es": "cambio",
+      "accepted_short_answers_es": [
+        "cambio"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "cambio"
+      ]
+    },
+    {
+      "id": "BRN-101-C034",
+      "unit_id": "BRN-101-U06",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: revisión estructurada posterior que separa hechos, decisiones, resultado, lecciones y acciones de mejora?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: revisión estructurada posterior que separa hechos, decisiones, resultado, lecciones y acciones de mejora?",
+        "Selecciona el concepto de «Caso avanzado I» descrito así: revisión estructurada posterior que separa hechos, decisiones, resultado, lecciones y acciones de mejora."
+      ],
+      "answer_display_es": "debrief",
+      "accepted_short_answers_es": [
+        "debrief"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "debrief"
+      ]
+    },
+    {
+      "id": "BRN-101-C035",
+      "unit_id": "BRN-101-U06",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica está asociada a la unidad «Caso avanzado I»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica está asociada a la unidad «Caso avanzado I»?",
+        "Repaso de «Caso avanzado I»: ¿Qué práctica está asociada a la unidad «Caso avanzado I»?"
+      ],
+      "answer_display_es": "Caso de rama completo.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Caso de rama completo."
+      ]
+    },
+    {
+      "id": "BRN-101-C036",
+      "unit_id": "BRN-101-U06",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué forma de evaluación se asocia a «Caso avanzado I»?",
+      "web_prompt_variants_es": [
+        "¿Qué forma de evaluación se asocia a «Caso avanzado I»?",
+        "Repaso de «Caso avanzado I»: ¿Qué forma de evaluación se asocia a «Caso avanzado I»?"
+      ],
+      "answer_display_es": "Evaluación continua.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación continua."
       ]
     }
   ]

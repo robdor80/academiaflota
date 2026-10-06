@@ -1,7 +1,7 @@
 {
   "subject": "Desarrollo profesional avanzado",
   "code": "DEV-101",
-  "version": "1.0",
+  "version": "2.0",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/first_class/courses/DEV-101/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/first_class/DEV-101/MANUAL_v1_0.md",
@@ -18,11 +18,10 @@
     {
       "id": "DEV-101-U01",
       "title": "Expediente acumulado",
-      "subtitle": "UNIDAD 01 · DEV-101",
       "blocks": [
         {
           "type": "p",
-          "text": "Preparar la transición de cadete a oficial usando expediente, objetivos, cualificaciones y áreas reales de desarrollo."
+          "text": "Esta unidad aplica «Expediente acumulado» a situaciones de servicio. Al terminar, el cadete debe poder **reconocer la situación, decidir dentro de su autoridad, ejecutar con seguridad y explicar por qué actuó así**."
         },
         {
           "type": "heading",
@@ -31,11 +30,19 @@
         {
           "type": "bullets",
           "items": [
-            "cuatro años",
-            "fortalezas",
-            "incidentes",
-            "cualificaciones"
+            "**cuatro años**: historial acumulado de aprendizaje y desempeño que permite valorar tendencia y consistencia, no solo episodios aislados.",
+            "**fortalezas**: capacidades demostradas de forma repetida y con evidencia; sirven para asignar responsabilidad, no para asumir que el cadete nunca fallará.",
+            "**incidentes**: eventos relevantes que deben contextualizarse por causas, actuación, consecuencias y aprendizaje posterior.",
+            "**cualificaciones**: reconocimientos de competencia concreta basados en evidencia; habilitan tareas definidas, no autoridad universal."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Los conceptos anteriores se usan juntos: primero se establece qué se sabe y qué falta, después se comprueban autoridad y límites, se comparan alternativas y se mantiene registro suficiente para seguimiento y relevo."
         },
         {
           "type": "callout",
@@ -44,48 +51,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Las preferencias y objetivos orientan el desarrollo, pero no sustituyen evidencia, requisitos ni necesidades reales del servicio."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Tutoría."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica cuatro años como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Revisar historial.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/characters/objectives/trajectory_coherence_rules.md",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/careers/post_academy/qualification_and_mentorship_model.json"
-          ]
+          "text": "Tutoría. La evaluación distingue **calidad del proceso, conducta profesional y resultado**; un resultado favorable no compensa una decisión temeraria y un resultado adverso no invalida automáticamente una decisión razonable."
         }
       ]
     },
     {
       "id": "DEV-101-U02",
       "title": "Objetivos de carrera",
-      "subtitle": "UNIDAD 02 · DEV-101",
       "blocks": [
         {
           "type": "p",
-          "text": "Preparar la transición de cadete a oficial usando expediente, objetivos, cualificaciones y áreas reales de desarrollo."
+          "text": "Esta unidad aplica «Objetivos de carrera» a situaciones de servicio. Al terminar, el cadete debe poder **reconocer la situación, decidir dentro de su autoridad, ejecutar con seguridad y explicar por qué actuó así**."
         },
         {
           "type": "heading",
@@ -94,10 +76,18 @@
         {
           "type": "bullets",
           "items": [
-            "largo plazo",
-            "medio plazo",
-            "rutas alternativas"
+            "**largo plazo**: dirección profesional de varios destinos o etapas, útil para orientar desarrollo sin convertirla en garantía.",
+            "**medio plazo**: objetivo alcanzable mediante próximos destinos, cursos o cualificaciones y revisable según experiencia y necesidades.",
+            "**rutas alternativas**: caminos profesionales distintos que conservan opciones cuando cambian vacantes, intereses, rendimiento o necesidades."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Los conceptos anteriores se usan juntos: primero se establece qué se sabe y qué falta, después se comprueban autoridad y límites, se comparan alternativas y se mantiene registro suficiente para seguimiento y relevo."
         },
         {
           "type": "callout",
@@ -106,48 +96,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Las preferencias y objetivos orientan el desarrollo, pero no sustituyen evidencia, requisitos ni necesidades reales del servicio."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Revisión."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica largo plazo como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Actualizar objetivos.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/characters/objectives/trajectory_coherence_rules.md",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/careers/post_academy/qualification_and_mentorship_model.json"
-          ]
+          "text": "Revisión. La evaluación distingue **calidad del proceso, conducta profesional y resultado**; un resultado favorable no compensa una decisión temeraria y un resultado adverso no invalida automáticamente una decisión razonable."
         }
       ]
     },
     {
       "id": "DEV-101-U03",
       "title": "Brechas de preparación",
-      "subtitle": "UNIDAD 03 · DEV-101",
       "blocks": [
         {
           "type": "p",
-          "text": "Preparar la transición de cadete a oficial usando expediente, objetivos, cualificaciones y áreas reales de desarrollo."
+          "text": "Esta unidad aplica «Brechas de preparación» a situaciones de servicio. Al terminar, el cadete debe poder **reconocer la situación, decidir dentro de su autoridad, ejecutar con seguridad y explicar por qué actuó así**."
         },
         {
           "type": "heading",
@@ -156,11 +121,19 @@
         {
           "type": "bullets",
           "items": [
-            "conocimiento",
-            "experiencia",
-            "liderazgo",
-            "cross-training"
+            "**conocimiento**: comprensión teórica necesaria para decidir y actuar, que por sí sola no demuestra competencia práctica.",
+            "**experiencia**: exposición práctica contextual que gana valor cuando queda acompañada por feedback y evidencia de desempeño.",
+            "**liderazgo**: capacidad de orientar personas hacia un objetivo manteniendo seguridad, claridad, responsabilidad y desarrollo del equipo.",
+            "**cross-training**: formación fuera de la especialidad principal suficiente para coordinarse, reconocer límites y apoyar sin suplantar al especialista."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Los conceptos anteriores se usan juntos: primero se establece qué se sabe y qué falta, después se comprueban autoridad y límites, se comparan alternativas y se mantiene registro suficiente para seguimiento y relevo."
         },
         {
           "type": "callout",
@@ -169,48 +142,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Las preferencias y objetivos orientan el desarrollo, pero no sustituyen evidencia, requisitos ni necesidades reales del servicio."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Plan."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica conocimiento como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Identificar carencias.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/characters/objectives/trajectory_coherence_rules.md",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/careers/post_academy/qualification_and_mentorship_model.json"
-          ]
+          "text": "Plan. La evaluación distingue **calidad del proceso, conducta profesional y resultado**; un resultado favorable no compensa una decisión temeraria y un resultado adverso no invalida automáticamente una decisión razonable."
         }
       ]
     },
     {
       "id": "DEV-101-U04",
       "title": "Preferencias de servicio",
-      "subtitle": "UNIDAD 04 · DEV-101",
       "blocks": [
         {
           "type": "p",
-          "text": "Preparar la transición de cadete a oficial usando expediente, objetivos, cualificaciones y áreas reales de desarrollo."
+          "text": "Esta unidad aplica «Preferencias de servicio» a situaciones de servicio. Al terminar, el cadete debe poder **reconocer la situación, decidir dentro de su autoridad, ejecutar con seguridad y explicar por qué actuó así**."
         },
         {
           "type": "heading",
@@ -219,11 +167,19 @@
         {
           "type": "bullets",
           "items": [
-            "tipo de unidad",
-            "misión",
-            "entorno",
-            "ubicación"
+            "**tipo de unidad**: clase funcional de destino — nave, estación u otra instalación — que condiciona tareas, ritmo y oportunidades.",
+            "**misión**: propósito operativo junto con restricciones, prioridades y condiciones de éxito; guía decisiones sin anular seguridad ni regulación.",
+            "**entorno**: condiciones externas que afectan sensores, movimiento, seguridad, comunicaciones y opciones operativas.",
+            "**ubicación**: zona de servicio que afecta distancia, apoyo disponible, misión y contexto, pero no crea derecho a una vacante."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Los conceptos anteriores se usan juntos: primero se establece qué se sabe y qué falta, después se comprueban autoridad y límites, se comparan alternativas y se mantiene registro suficiente para seguimiento y relevo."
         },
         {
           "type": "callout",
@@ -232,48 +188,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Las preferencias y objetivos orientan el desarrollo, pero no sustituyen evidencia, requisitos ni necesidades reales del servicio."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Validación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica tipo de unidad como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Registrar preferencias no vinculantes.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/characters/objectives/trajectory_coherence_rules.md",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/careers/post_academy/qualification_and_mentorship_model.json"
-          ]
+          "text": "Validación. La evaluación distingue **calidad del proceso, conducta profesional y resultado**; un resultado favorable no compensa una decisión temeraria y un resultado adverso no invalida automáticamente una decisión razonable."
         }
       ]
     },
     {
       "id": "DEV-101-U05",
       "title": "Recomendaciones",
-      "subtitle": "UNIDAD 05 · DEV-101",
       "blocks": [
         {
           "type": "p",
-          "text": "Preparar la transición de cadete a oficial usando expediente, objetivos, cualificaciones y áreas reales de desarrollo."
+          "text": "Esta unidad aplica «Recomendaciones» a situaciones de servicio. Al terminar, el cadete debe poder **reconocer la situación, decidir dentro de su autoridad, ejecutar con seguridad y explicar por qué actuó así**."
         },
         {
           "type": "heading",
@@ -282,11 +213,19 @@
         {
           "type": "bullets",
           "items": [
-            "instructores",
-            "mentores",
-            "evidencia",
-            "límites"
+            "**instructores**: personal que evalúa aprendizaje y desempeño académico mediante observación y criterios establecidos.",
+            "**mentores**: profesionales que orientan desarrollo y contexto de carrera sin sustituir la cadena formal de evaluación.",
+            "**evidencia**: registro verificable de contexto, información disponible, acciones, resultados y feedback; debe poder revisarse después sin reescribir lo ocurrido.",
+            "**límites**: fronteras técnicas, legales, de autoridad o competencia que obligan a detener, adaptar o escalar una acción."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Los conceptos anteriores se usan juntos: primero se establece qué se sabe y qué falta, después se comprueban autoridad y límites, se comparan alternativas y se mantiene registro suficiente para seguimiento y relevo."
         },
         {
           "type": "callout",
@@ -295,48 +234,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Las preferencias y objetivos orientan el desarrollo, pero no sustituyen evidencia, requisitos ni necesidades reales del servicio."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Registro."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica instructores como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Entrevista profesional.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/characters/objectives/trajectory_coherence_rules.md",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/careers/post_academy/qualification_and_mentorship_model.json"
-          ]
+          "text": "Registro. La evaluación distingue **calidad del proceso, conducta profesional y resultado**; un resultado favorable no compensa una decisión temeraria y un resultado adverso no invalida automáticamente una decisión razonable."
         }
       ]
     },
     {
       "id": "DEV-101-U06",
       "title": "Plan post-Academia",
-      "subtitle": "UNIDAD 06 · DEV-101",
       "blocks": [
         {
           "type": "p",
-          "text": "Preparar la transición de cadete a oficial usando expediente, objetivos, cualificaciones y áreas reales de desarrollo."
+          "text": "Esta unidad aplica «Plan post-Academia» a situaciones de servicio. Al terminar, el cadete debe poder **reconocer la situación, decidir dentro de su autoridad, ejecutar con seguridad y explicar por qué actuó así**."
         },
         {
           "type": "heading",
@@ -345,11 +259,19 @@
         {
           "type": "bullets",
           "items": [
-            "primer destino",
-            "mentoría",
-            "cualificaciones futuras",
-            "desarrollo"
+            "**primer destino**: primera asignación tras la comisión, determinada por perfil, vacantes y necesidades, no solo por preferencia.",
+            "**mentoría**: acompañamiento profesional continuado para convertir experiencia inicial en aprendizaje y desarrollo dirigido.",
+            "**cualificaciones futuras**: competencias posteriores a la Academia que se obtienen mediante servicio, entrenamiento y evidencia adicional.",
+            "**desarrollo**: proceso continuo de cerrar brechas, ampliar competencia y asumir responsabilidad progresiva."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Los conceptos anteriores se usan juntos: primero se establece qué se sabe y qué falta, después se comprueban autoridad y límites, se comparan alternativas y se mantiene registro suficiente para seguimiento y relevo."
         },
         {
           "type": "callout",
@@ -358,39 +280,16 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Las preferencias y objetivos orientan el desarrollo, pero no sustituyen evidencia, requisitos ni necesidades reales del servicio."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación cualitativa."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica primer destino como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Crear plan inicial.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/characters/objectives/trajectory_coherence_rules.md",
-            "gameplay/careers/starfleet_service/career_progression_rules.json",
-            "gameplay/careers/post_academy/qualification_and_mentorship_model.json"
-          ]
+          "text": "Evaluación cualitativa. La evaluación distingue **calidad del proceso, conducta profesional y resultado**; un resultado favorable no compensa una decisión temeraria y un resultado adverso no invalida automáticamente una decisión razonable."
         }
       ]
     }
-  ]
+  ],
+  "assessmentModel": "concept_driven_v2_1"
 }

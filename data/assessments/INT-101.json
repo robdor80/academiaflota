@@ -1,313 +1,652 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.1.0",
   "course_id": "INT-101",
-  "status": "generated_from_authoritative_curriculum",
-  "question_count": 24,
-  "questions": [
+  "status": "developed_concept_driven_autocorrectable_v2_1",
+  "source_course": "curriculum/first_class/courses/INT-101/course.json",
+  "policy": {
+    "theory_formats": [
+      "multiple_choice",
+      "short_answer"
+    ],
+    "multiple_choice_target_ratio": 0.8,
+    "short_answer_target_ratio": 0.2,
+    "deterministic_correction": true,
+    "web_and_game_share_concepts_not_question_instances": true,
+    "complex_judgment_moves_to_practice_and_simulation": true,
+    "source_rule": "Every evaluated concept is explicitly taught in the developed Year 4 material or an established prerequisite."
+  },
+  "unit_review": {
+    "questions_per_attempt": 5,
+    "reshuffle_each_attempt": true,
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
+  },
+  "concepts": [
     {
-      "id": "INT-101-Q001",
+      "id": "INT-101-C001",
       "unit_id": "INT-101-U01",
-      "type": "service_readiness",
-      "prompt_es": "Explica misión como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: propósito operativo junto con restricciones, prioridades y condiciones de éxito; guía decisiones sin anular seguridad ni regulación?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: propósito operativo junto con restricciones, prioridades y condiciones de éxito; guía decisiones sin anular seguridad ni regulación?",
+        "Selecciona el concepto de «Estado global de nave» descrito así: propósito operativo junto con restricciones, prioridades y condiciones de éxito; guía decisiones sin anular seguridad ni regulación."
+      ],
+      "answer_display_es": "misión",
+      "accepted_short_answers_es": [
+        "misión"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "misión",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "misión"
       ]
     },
     {
-      "id": "INT-101-Q002",
+      "id": "INT-101-C002",
       "unit_id": "INT-101-U01",
-      "type": "scenario",
-      "prompt_es": "Escenario: Construir picture integrado. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: capacidades técnicas de la nave consideradas por estado, dependencias, reservas y limitaciones?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: capacidades técnicas de la nave consideradas por estado, dependencias, reservas y limitaciones?",
+        "Selecciona el concepto de «Estado global de nave» descrito así: capacidades técnicas de la nave consideradas por estado, dependencias, reservas y limitaciones."
+      ],
+      "answer_display_es": "sistemas",
+      "accepted_short_answers_es": [
+        "sistemas"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "sistemas"
       ]
     },
     {
-      "id": "INT-101-Q003",
+      "id": "INT-101-C003",
       "unit_id": "INT-101-U01",
-      "type": "debrief",
-      "prompt_es": "Tras Estado global de nave, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: personas disponibles con su competencia, carga, estado y distribución; no es solo un número de efectivos?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: personas disponibles con su competencia, carga, estado y distribución; no es solo un número de efectivos?",
+        "Selecciona el concepto de «Estado global de nave» descrito así: personas disponibles con su competencia, carga, estado y distribución; no es solo un número de efectivos."
+      ],
+      "answer_display_es": "tripulación",
+      "accepted_short_answers_es": [
+        "tripulación"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "tripulación"
       ]
     },
     {
-      "id": "INT-101-Q004",
+      "id": "INT-101-C004",
       "unit_id": "INT-101-U01",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: condiciones externas que afectan sensores, movimiento, seguridad, comunicaciones y opciones operativas?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: condiciones externas que afectan sensores, movimiento, seguridad, comunicaciones y opciones operativas?",
+        "Selecciona el concepto de «Estado global de nave» descrito así: condiciones externas que afectan sensores, movimiento, seguridad, comunicaciones y opciones operativas."
+      ],
+      "answer_display_es": "entorno",
+      "accepted_short_answers_es": [
+        "entorno"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "entorno"
       ]
     },
     {
-      "id": "INT-101-Q005",
+      "id": "INT-101-C005",
+      "unit_id": "INT-101-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica está asociada a la unidad «Estado global de nave»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica está asociada a la unidad «Estado global de nave»?",
+        "Repaso de «Estado global de nave»: ¿Qué práctica está asociada a la unidad «Estado global de nave»?"
+      ],
+      "answer_display_es": "Construir picture integrado.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Construir picture integrado."
+      ]
+    },
+    {
+      "id": "INT-101-C006",
+      "unit_id": "INT-101-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué forma de evaluación se asocia a «Estado global de nave»?",
+      "web_prompt_variants_es": [
+        "¿Qué forma de evaluación se asocia a «Estado global de nave»?",
+        "Repaso de «Estado global de nave»: ¿Qué forma de evaluación se asocia a «Estado global de nave»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
+    },
+    {
+      "id": "INT-101-C007",
       "unit_id": "INT-101-U02",
-      "type": "service_readiness",
-      "prompt_es": "Explica energía como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: recurso distribuido entre sistemas con límites de generación, reserva y prioridad; reasignarlo crea efectos cruzados?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: recurso distribuido entre sistemas con límites de generación, reserva y prioridad; reasignarlo crea efectos cruzados?",
+        "Selecciona el concepto de «Efectos cruzados» descrito así: recurso distribuido entre sistemas con límites de generación, reserva y prioridad; reasignarlo crea efectos cruzados."
+      ],
+      "answer_display_es": "energía",
+      "accepted_short_answers_es": [
+        "energía"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "energía",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "energía"
       ]
     },
     {
-      "id": "INT-101-Q006",
+      "id": "INT-101-C008",
       "unit_id": "INT-101-U02",
-      "type": "scenario",
-      "prompt_es": "Escenario: Analizar decisión multi-sistema. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: conjunto de sistemas que obtiene observaciones; sus datos deben interpretarse con cobertura, resolución, ruido y confianza?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: conjunto de sistemas que obtiene observaciones; sus datos deben interpretarse con cobertura, resolución, ruido y confianza?",
+        "Selecciona el concepto de «Efectos cruzados» descrito así: conjunto de sistemas que obtiene observaciones; sus datos deben interpretarse con cobertura, resolución, ruido y confianza."
+      ],
+      "answer_display_es": "sensores",
+      "accepted_short_answers_es": [
+        "sensores"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "sensores"
       ]
     },
     {
-      "id": "INT-101-Q007",
+      "id": "INT-101-C009",
       "unit_id": "INT-101-U02",
-      "type": "debrief",
-      "prompt_es": "Tras Efectos cruzados, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: capacidad de cambiar posición y velocidad dentro de límites de navegación, propulsión, entorno y misión?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: capacidad de cambiar posición y velocidad dentro de límites de navegación, propulsión, entorno y misión?",
+        "Selecciona el concepto de «Efectos cruzados» descrito así: capacidad de cambiar posición y velocidad dentro de límites de navegación, propulsión, entorno y misión."
+      ],
+      "answer_display_es": "movimiento",
+      "accepted_short_answers_es": [
+        "movimiento"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "movimiento"
       ]
     },
     {
-      "id": "INT-101-Q008",
+      "id": "INT-101-C010",
       "unit_id": "INT-101-U02",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: medidas de protección cuya disponibilidad y empleo afectan energía, firma, maniobra y riesgo?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: medidas de protección cuya disponibilidad y empleo afectan energía, firma, maniobra y riesgo?",
+        "Selecciona el concepto de «Efectos cruzados» descrito así: medidas de protección cuya disponibilidad y empleo afectan energía, firma, maniobra y riesgo."
+      ],
+      "answer_display_es": "defensa",
+      "accepted_short_answers_es": [
+        "defensa"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "defensa"
       ]
     },
     {
-      "id": "INT-101-Q009",
+      "id": "INT-101-C011",
+      "unit_id": "INT-101-U02",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: capacidad sanitaria de la unidad, condicionada por pacientes, personal, recursos, aislamiento y carga asistencial?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: capacidad sanitaria de la unidad, condicionada por pacientes, personal, recursos, aislamiento y carga asistencial?",
+        "Selecciona el concepto de «Efectos cruzados» descrito así: capacidad sanitaria de la unidad, condicionada por pacientes, personal, recursos, aislamiento y carga asistencial."
+      ],
+      "answer_display_es": "médico",
+      "accepted_short_answers_es": [
+        "médico"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "médico"
+      ]
+    },
+    {
+      "id": "INT-101-C012",
+      "unit_id": "INT-101-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica está asociada a la unidad «Efectos cruzados»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica está asociada a la unidad «Efectos cruzados»?",
+        "Repaso de «Efectos cruzados»: ¿Qué práctica está asociada a la unidad «Efectos cruzados»?"
+      ],
+      "answer_display_es": "Analizar decisión multi-sistema.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Analizar decisión multi-sistema."
+      ]
+    },
+    {
+      "id": "INT-101-C013",
       "unit_id": "INT-101-U03",
-      "type": "service_readiness",
-      "prompt_es": "Explica peticiones como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: demandas de recursos o acciones que deben registrar origen, urgencia, impacto y responsable antes de priorizarse?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: demandas de recursos o acciones que deben registrar origen, urgencia, impacto y responsable antes de priorizarse?",
+        "Selecciona el concepto de «Coordinación bajo presión» descrito así: demandas de recursos o acciones que deben registrar origen, urgencia, impacto y responsable antes de priorizarse."
+      ],
+      "answer_display_es": "peticiones",
+      "accepted_short_answers_es": [
+        "peticiones"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "peticiones",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "peticiones"
       ]
     },
     {
-      "id": "INT-101-Q010",
+      "id": "INT-101-C014",
       "unit_id": "INT-101-U03",
-      "type": "scenario",
-      "prompt_es": "Escenario: Resolver conflicto entre departamentos. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: posición relativa de una demanda frente a otras según seguridad, misión, urgencia e impacto?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: posición relativa de una demanda frente a otras según seguridad, misión, urgencia e impacto?",
+        "Selecciona el concepto de «Coordinación bajo presión» descrito así: posición relativa de una demanda frente a otras según seguridad, misión, urgencia e impacto."
+      ],
+      "answer_display_es": "prioridad",
+      "accepted_short_answers_es": [
+        "prioridad"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "prioridad"
       ]
     },
     {
-      "id": "INT-101-Q011",
+      "id": "INT-101-C015",
       "unit_id": "INT-101-U03",
-      "type": "debrief",
-      "prompt_es": "Tras Coordinación bajo presión, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: margen real de una persona o sistema para asumir trabajo sin superar límites de seguridad o rendimiento?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: margen real de una persona o sistema para asumir trabajo sin superar límites de seguridad o rendimiento?",
+        "Selecciona el concepto de «Coordinación bajo presión» descrito así: margen real de una persona o sistema para asumir trabajo sin superar límites de seguridad o rendimiento."
+      ],
+      "answer_display_es": "capacidad",
+      "accepted_short_answers_es": [
+        "capacidad"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "capacidad"
       ]
     },
     {
-      "id": "INT-101-Q012",
+      "id": "INT-101-C016",
       "unit_id": "INT-101-U03",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: función que integra información, fija prioridades y asume la decisión dentro de la autoridad recibida?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: función que integra información, fija prioridades y asume la decisión dentro de la autoridad recibida?",
+        "Selecciona el concepto de «Coordinación bajo presión» descrito así: función que integra información, fija prioridades y asume la decisión dentro de la autoridad recibida."
+      ],
+      "answer_display_es": "mando",
+      "accepted_short_answers_es": [
+        "mando"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "mando"
       ]
     },
     {
-      "id": "INT-101-Q013",
+      "id": "INT-101-C017",
+      "unit_id": "INT-101-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica está asociada a la unidad «Coordinación bajo presión»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica está asociada a la unidad «Coordinación bajo presión»?",
+        "Repaso de «Coordinación bajo presión»: ¿Qué práctica está asociada a la unidad «Coordinación bajo presión»?"
+      ],
+      "answer_display_es": "Resolver conflicto entre departamentos.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Resolver conflicto entre departamentos."
+      ]
+    },
+    {
+      "id": "INT-101-C018",
+      "unit_id": "INT-101-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué forma de evaluación se asocia a «Coordinación bajo presión»?",
+      "web_prompt_variants_es": [
+        "¿Qué forma de evaluación se asocia a «Coordinación bajo presión»?",
+        "Repaso de «Coordinación bajo presión»: ¿Qué forma de evaluación se asocia a «Coordinación bajo presión»?"
+      ],
+      "answer_display_es": "Práctica.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Práctica."
+      ]
+    },
+    {
+      "id": "INT-101-C019",
       "unit_id": "INT-101-U04",
-      "type": "service_readiness",
-      "prompt_es": "Explica nueva prioridad como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: cambio de orden relativo entre objetivos que debe comunicarse y traducirse en recursos, tareas y pendientes actualizados?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: cambio de orden relativo entre objetivos que debe comunicarse y traducirse en recursos, tareas y pendientes actualizados?",
+        "Selecciona el concepto de «Cambio de misión» descrito así: cambio de orden relativo entre objetivos que debe comunicarse y traducirse en recursos, tareas y pendientes actualizados."
+      ],
+      "answer_display_es": "nueva prioridad",
+      "accepted_short_answers_es": [
+        "nueva prioridad"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "nueva prioridad",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "nueva prioridad"
       ]
     },
     {
-      "id": "INT-101-Q014",
+      "id": "INT-101-C020",
       "unit_id": "INT-101-U04",
-      "type": "scenario",
-      "prompt_es": "Escenario: Adaptar operación. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: cambio controlado del estado de sistemas o equipo para responder a una nueva misión, amenaza o limitación?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: cambio controlado del estado de sistemas o equipo para responder a una nueva misión, amenaza o limitación?",
+        "Selecciona el concepto de «Cambio de misión» descrito así: cambio controlado del estado de sistemas o equipo para responder a una nueva misión, amenaza o limitación."
+      ],
+      "answer_display_es": "reconfiguración",
+      "accepted_short_answers_es": [
+        "reconfiguración"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "reconfiguración"
       ]
     },
     {
-      "id": "INT-101-Q015",
+      "id": "INT-101-C021",
       "unit_id": "INT-101-U04",
-      "type": "debrief",
-      "prompt_es": "Tras Cambio de misión, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: transferencia estructurada de estado, órdenes, riesgos, acciones y pendientes para mantener continuidad entre responsables?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: transferencia estructurada de estado, órdenes, riesgos, acciones y pendientes para mantener continuidad entre responsables?",
+        "Selecciona el concepto de «Cambio de misión» descrito así: transferencia estructurada de estado, órdenes, riesgos, acciones y pendientes para mantener continuidad entre responsables."
+      ],
+      "answer_display_es": "handoff",
+      "accepted_short_answers_es": [
+        "handoff"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "handoff"
       ]
     },
     {
-      "id": "INT-101-Q016",
+      "id": "INT-101-C022",
       "unit_id": "INT-101-U04",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica está asociada a la unidad «Cambio de misión»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica está asociada a la unidad «Cambio de misión»?",
+        "Repaso de «Cambio de misión»: ¿Qué práctica está asociada a la unidad «Cambio de misión»?"
+      ],
+      "answer_display_es": "Adaptar operación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "Adaptar operación."
       ]
     },
     {
-      "id": "INT-101-Q017",
+      "id": "INT-101-C023",
+      "unit_id": "INT-101-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué forma de evaluación se asocia a «Cambio de misión»?",
+      "web_prompt_variants_es": [
+        "¿Qué forma de evaluación se asocia a «Cambio de misión»?",
+        "Repaso de «Cambio de misión»: ¿Qué forma de evaluación se asocia a «Cambio de misión»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
+    },
+    {
+      "id": "INT-101-C024",
+      "unit_id": "INT-101-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio profesional debe guiar «Cambio de misión»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio profesional debe guiar «Cambio de misión»?",
+        "Repaso de «Cambio de misión»: ¿Qué criterio profesional debe guiar «Cambio de misión»?"
+      ],
+      "answer_display_es": "El estándar es mantener una picture compartida, decisiones trazables y continuidad entre personas y departamentos.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "El estándar es mantener una picture compartida, decisiones trazables y continuidad entre personas y departamentos."
+      ]
+    },
+    {
+      "id": "INT-101-C025",
       "unit_id": "INT-101-U05",
-      "type": "service_readiness",
-      "prompt_es": "Explica degradación como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: pérdida parcial de capacidad que obliga a recalcular márgenes, alternativas y restricciones?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: pérdida parcial de capacidad que obliga a recalcular márgenes, alternativas y restricciones?",
+        "Selecciona el concepto de «Continuidad y recuperación» descrito así: pérdida parcial de capacidad que obliga a recalcular márgenes, alternativas y restricciones."
+      ],
+      "answer_display_es": "degradación",
+      "accepted_short_answers_es": [
+        "degradación"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "degradación",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "degradación"
       ]
     },
     {
-      "id": "INT-101-Q018",
+      "id": "INT-101-C026",
       "unit_id": "INT-101-U05",
-      "type": "scenario",
-      "prompt_es": "Escenario: Cerrar incidente sistémico. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: recuperación controlada de una capacidad con verificación funcional antes de declararla disponible?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: recuperación controlada de una capacidad con verificación funcional antes de declararla disponible?",
+        "Selecciona el concepto de «Continuidad y recuperación» descrito así: recuperación controlada de una capacidad con verificación funcional antes de declararla disponible."
+      ],
+      "answer_display_es": "restauración",
+      "accepted_short_answers_es": [
+        "restauración"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "restauración"
       ]
     },
     {
-      "id": "INT-101-Q019",
+      "id": "INT-101-C027",
       "unit_id": "INT-101-U05",
-      "type": "debrief",
-      "prompt_es": "Tras Continuidad y recuperación, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: constancia factual de lo ocurrido y de quién hizo qué, preservada para continuidad, revisión y responsabilidad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: constancia factual de lo ocurrido y de quién hizo qué, preservada para continuidad, revisión y responsabilidad?",
+        "Selecciona el concepto de «Continuidad y recuperación» descrito así: constancia factual de lo ocurrido y de quién hizo qué, preservada para continuidad, revisión y responsabilidad."
+      ],
+      "answer_display_es": "registro",
+      "accepted_short_answers_es": [
+        "registro"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "registro"
       ]
     },
     {
-      "id": "INT-101-Q020",
+      "id": "INT-101-C028",
       "unit_id": "INT-101-U05",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: acciones no cerradas que conservan responsable, prioridad, estado y condición prevista de resolución?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: acciones no cerradas que conservan responsable, prioridad, estado y condición prevista de resolución?",
+        "Selecciona el concepto de «Continuidad y recuperación» descrito así: acciones no cerradas que conservan responsable, prioridad, estado y condición prevista de resolución."
+      ],
+      "answer_display_es": "pendientes",
+      "accepted_short_answers_es": [
+        "pendientes"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "pendientes"
       ]
     },
     {
-      "id": "INT-101-Q021",
-      "unit_id": "INT-101-U06",
-      "type": "service_readiness",
-      "prompt_es": "Explica misión como se lo explicarías a un Alférez que recibe su primer destino.",
+      "id": "INT-101-C029",
+      "unit_id": "INT-101-U05",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica está asociada a la unidad «Continuidad y recuperación»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica está asociada a la unidad «Continuidad y recuperación»?",
+        "Repaso de «Continuidad y recuperación»: ¿Qué práctica está asociada a la unidad «Continuidad y recuperación»?"
+      ],
+      "answer_display_es": "Cerrar incidente sistémico.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "misión",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "Cerrar incidente sistémico."
       ]
     },
     {
-      "id": "INT-101-Q022",
-      "unit_id": "INT-101-U06",
-      "type": "scenario",
-      "prompt_es": "Escenario: Simulación compleja. Describe decisión inicial, alternativas y condición de escalado.",
+      "id": "INT-101-C030",
+      "unit_id": "INT-101-U05",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué forma de evaluación se asocia a «Continuidad y recuperación»?",
+      "web_prompt_variants_es": [
+        "¿Qué forma de evaluación se asocia a «Continuidad y recuperación»?",
+        "Repaso de «Continuidad y recuperación»: ¿Qué forma de evaluación se asocia a «Continuidad y recuperación»?"
+      ],
+      "answer_display_es": "Práctica.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "Práctica."
       ]
     },
     {
-      "id": "INT-101-Q023",
+      "id": "INT-101-C031",
       "unit_id": "INT-101-U06",
-      "type": "debrief",
-      "prompt_es": "Tras Ejercicio integrado III, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: propósito operativo junto con restricciones, prioridades y condiciones de éxito; guía decisiones sin anular seguridad ni regulación?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: propósito operativo junto con restricciones, prioridades y condiciones de éxito; guía decisiones sin anular seguridad ni regulación?",
+        "Selecciona el concepto de «Ejercicio integrado III» descrito así: propósito operativo junto con restricciones, prioridades y condiciones de éxito; guía decisiones sin anular seguridad ni regulación."
+      ],
+      "answer_display_es": "misión",
+      "accepted_short_answers_es": [
+        "misión"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "misión"
       ]
     },
     {
-      "id": "INT-101-Q024",
+      "id": "INT-101-C032",
       "unit_id": "INT-101-U06",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: comportamiento fuera de especificación cuya causa debe distinguirse de sus síntomas?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: comportamiento fuera de especificación cuya causa debe distinguirse de sus síntomas?",
+        "Selecciona el concepto de «Ejercicio integrado III» descrito así: comportamiento fuera de especificación cuya causa debe distinguirse de sus síntomas."
+      ],
+      "answer_display_es": "fallo",
+      "accepted_short_answers_es": [
+        "fallo"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "fallo"
+      ]
+    },
+    {
+      "id": "INT-101-C033",
+      "unit_id": "INT-101-U06",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: factor operativo que incluye seguridad, competencia, carga, comunicación y consecuencias humanas de una decisión?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: factor operativo que incluye seguridad, competencia, carga, comunicación y consecuencias humanas de una decisión?",
+        "Selecciona el concepto de «Ejercicio integrado III» descrito así: factor operativo que incluye seguridad, competencia, carga, comunicación y consecuencias humanas de una decisión."
+      ],
+      "answer_display_es": "personas",
+      "accepted_short_answers_es": [
+        "personas"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "personas"
+      ]
+    },
+    {
+      "id": "INT-101-C034",
+      "unit_id": "INT-101-U06",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: selección consciente de un curso de acción tras valorar información, alternativas, límites, riesgo y tiempo disponible?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: selección consciente de un curso de acción tras valorar información, alternativas, límites, riesgo y tiempo disponible?",
+        "Selecciona el concepto de «Ejercicio integrado III» descrito así: selección consciente de un curso de acción tras valorar información, alternativas, límites, riesgo y tiempo disponible."
+      ],
+      "answer_display_es": "decisión",
+      "accepted_short_answers_es": [
+        "decisión"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "decisión"
+      ]
+    },
+    {
+      "id": "INT-101-C035",
+      "unit_id": "INT-101-U06",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: confirmación de resultado, estado final, pendientes, registro y transferencia de responsabilidad cuando proceda?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: confirmación de resultado, estado final, pendientes, registro y transferencia de responsabilidad cuando proceda?",
+        "Selecciona el concepto de «Ejercicio integrado III» descrito así: confirmación de resultado, estado final, pendientes, registro y transferencia de responsabilidad cuando proceda."
+      ],
+      "answer_display_es": "cierre",
+      "accepted_short_answers_es": [
+        "cierre"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "cierre"
+      ]
+    },
+    {
+      "id": "INT-101-C036",
+      "unit_id": "INT-101-U06",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica está asociada a la unidad «Ejercicio integrado III»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica está asociada a la unidad «Ejercicio integrado III»?",
+        "Repaso de «Ejercicio integrado III»: ¿Qué práctica está asociada a la unidad «Ejercicio integrado III»?"
+      ],
+      "answer_display_es": "Simulación compleja.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Simulación compleja."
       ]
     }
   ]

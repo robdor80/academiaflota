@@ -1,313 +1,650 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.1.0",
   "course_id": "DUT-101",
-  "status": "generated_from_authoritative_curriculum",
-  "question_count": 24,
-  "questions": [
+  "status": "developed_concept_driven_autocorrectable_v2_1",
+  "source_course": "curriculum/first_class/courses/DUT-101/course.json",
+  "policy": {
+    "theory_formats": [
+      "multiple_choice",
+      "short_answer"
+    ],
+    "multiple_choice_target_ratio": 0.8,
+    "short_answer_target_ratio": 0.2,
+    "deterministic_correction": true,
+    "web_and_game_share_concepts_not_question_instances": true,
+    "complex_judgment_moves_to_practice_and_simulation": true,
+    "source_rule": "Every evaluated concept is explicitly taught in the developed Year 4 material or an established prerequisite."
+  },
+  "unit_review": {
+    "questions_per_attempt": 5,
+    "reshuffle_each_attempt": true,
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
+  },
+  "concepts": [
     {
-      "id": "DUT-101-Q001",
+      "id": "DUT-101-C001",
       "unit_id": "DUT-101-U01",
-      "type": "service_readiness",
-      "prompt_es": "Explica órdenes vigentes como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: instrucciones actualmente aplicables al puesto; deben conocerse junto con prioridad, alcance, autoridad emisora y condiciones de finalización?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: instrucciones actualmente aplicables al puesto; deben conocerse junto con prioridad, alcance, autoridad emisora y condiciones de finalización?",
+        "Selecciona el concepto de «Incorporación avanzada» descrito así: instrucciones actualmente aplicables al puesto; deben conocerse junto con prioridad, alcance, autoridad emisora y condiciones de finalización."
+      ],
+      "answer_display_es": "órdenes vigentes",
+      "accepted_short_answers_es": [
+        "órdenes vigentes"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "órdenes vigentes",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "órdenes vigentes"
       ]
     },
     {
-      "id": "DUT-101-Q002",
+      "id": "DUT-101-C002",
       "unit_id": "DUT-101-U01",
-      "type": "scenario",
-      "prompt_es": "Escenario: Tomar puesto con briefing realista. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: descripción actual y verificable de capacidad, configuración, degradaciones y acciones en curso?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: descripción actual y verificable de capacidad, configuración, degradaciones y acciones en curso?",
+        "Selecciona el concepto de «Incorporación avanzada» descrito así: descripción actual y verificable de capacidad, configuración, degradaciones y acciones en curso."
+      ],
+      "answer_display_es": "estado",
+      "accepted_short_answers_es": [
+        "estado"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "estado"
       ]
     },
     {
-      "id": "DUT-101-Q003",
+      "id": "DUT-101-C003",
       "unit_id": "DUT-101-U01",
-      "type": "debrief",
-      "prompt_es": "Tras Incorporación avanzada, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: acciones no cerradas que conservan responsable, prioridad, estado y condición prevista de resolución?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: acciones no cerradas que conservan responsable, prioridad, estado y condición prevista de resolución?",
+        "Selecciona el concepto de «Incorporación avanzada» descrito así: acciones no cerradas que conservan responsable, prioridad, estado y condición prevista de resolución."
+      ],
+      "answer_display_es": "pendientes",
+      "accepted_short_answers_es": [
+        "pendientes"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "pendientes"
       ]
     },
     {
-      "id": "DUT-101-Q004",
+      "id": "DUT-101-C004",
       "unit_id": "DUT-101-U01",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: amenazas o consecuencias plausibles que deben identificarse antes de actuar y reevaluarse cuando cambia la situación?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: amenazas o consecuencias plausibles que deben identificarse antes de actuar y reevaluarse cuando cambia la situación?",
+        "Selecciona el concepto de «Incorporación avanzada» descrito así: amenazas o consecuencias plausibles que deben identificarse antes de actuar y reevaluarse cuando cambia la situación."
+      ],
+      "answer_display_es": "riesgos",
+      "accepted_short_answers_es": [
+        "riesgos"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "riesgos"
       ]
     },
     {
-      "id": "DUT-101-Q005",
+      "id": "DUT-101-C005",
+      "unit_id": "DUT-101-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica está asociada a la unidad «Incorporación avanzada»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica está asociada a la unidad «Incorporación avanzada»?",
+        "Repaso de «Incorporación avanzada»: ¿Qué práctica está asociada a la unidad «Incorporación avanzada»?"
+      ],
+      "answer_display_es": "Tomar puesto con briefing realista.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Tomar puesto con briefing realista."
+      ]
+    },
+    {
+      "id": "DUT-101-C006",
+      "unit_id": "DUT-101-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué forma de evaluación se asocia a «Incorporación avanzada»?",
+      "web_prompt_variants_es": [
+        "¿Qué forma de evaluación se asocia a «Incorporación avanzada»?",
+        "Repaso de «Incorporación avanzada»: ¿Qué forma de evaluación se asocia a «Incorporación avanzada»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
+    },
+    {
+      "id": "DUT-101-C007",
       "unit_id": "DUT-101-U02",
-      "type": "service_readiness",
-      "prompt_es": "Explica monitorización como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: observación deliberada de variables relevantes para detectar tendencias, límites o cambios antes de que se conviertan en incidentes?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: observación deliberada de variables relevantes para detectar tendencias, límites o cambios antes de que se conviertan en incidentes?",
+        "Selecciona el concepto de «Rutina sostenida» descrito así: observación deliberada de variables relevantes para detectar tendencias, límites o cambios antes de que se conviertan en incidentes."
+      ],
+      "answer_display_es": "monitorización",
+      "accepted_short_answers_es": [
+        "monitorización"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "monitorización",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "monitorización"
       ]
     },
     {
-      "id": "DUT-101-Q006",
+      "id": "DUT-101-C008",
       "unit_id": "DUT-101-U02",
-      "type": "scenario",
-      "prompt_es": "Escenario: Guardia prolongada sin incidentes forzados. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: acciones recurrentes con frecuencia y criterio definidos; su cumplimiento evita que la rutina oculte degradaciones?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: acciones recurrentes con frecuencia y criterio definidos; su cumplimiento evita que la rutina oculte degradaciones?",
+        "Selecciona el concepto de «Rutina sostenida» descrito así: acciones recurrentes con frecuencia y criterio definidos; su cumplimiento evita que la rutina oculte degradaciones."
+      ],
+      "answer_display_es": "tareas periódicas",
+      "accepted_short_answers_es": [
+        "tareas periódicas"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "tareas periódicas"
       ]
     },
     {
-      "id": "DUT-101-Q007",
+      "id": "DUT-101-C009",
       "unit_id": "DUT-101-U02",
-      "type": "debrief",
-      "prompt_es": "Tras Rutina sostenida, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: evidencia cronológica y factual de eventos, acciones, fuentes, decisiones y resultados necesaria para continuidad y auditoría?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: evidencia cronológica y factual de eventos, acciones, fuentes, decisiones y resultados necesaria para continuidad y auditoría?",
+        "Selecciona el concepto de «Rutina sostenida» descrito así: evidencia cronológica y factual de eventos, acciones, fuentes, decisiones y resultados necesaria para continuidad y auditoría."
+      ],
+      "answer_display_es": "registros",
+      "accepted_short_answers_es": [
+        "registros"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "registros"
       ]
     },
     {
-      "id": "DUT-101-Q008",
+      "id": "DUT-101-C010",
       "unit_id": "DUT-101-U02",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: intercambio operativo que prioriza claridad, destinatario correcto, confirmación cuando importa y mínima ambigüedad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: intercambio operativo que prioriza claridad, destinatario correcto, confirmación cuando importa y mínima ambigüedad?",
+        "Selecciona el concepto de «Rutina sostenida» descrito así: intercambio operativo que prioriza claridad, destinatario correcto, confirmación cuando importa y mínima ambigüedad."
+      ],
+      "answer_display_es": "comunicaciones",
+      "accepted_short_answers_es": [
+        "comunicaciones"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "comunicaciones"
       ]
     },
     {
-      "id": "DUT-101-Q009",
-      "unit_id": "DUT-101-U03",
-      "type": "service_readiness",
-      "prompt_es": "Explica detección como se lo explicarías a un Alférez que recibe su primer destino.",
+      "id": "DUT-101-C011",
+      "unit_id": "DUT-101-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica está asociada a la unidad «Rutina sostenida»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica está asociada a la unidad «Rutina sostenida»?",
+        "Repaso de «Rutina sostenida»: ¿Qué práctica está asociada a la unidad «Rutina sostenida»?"
+      ],
+      "answer_display_es": "Guardia prolongada sin incidentes forzados.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "detección",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "Guardia prolongada sin incidentes forzados."
       ]
     },
     {
-      "id": "DUT-101-Q010",
-      "unit_id": "DUT-101-U03",
-      "type": "scenario",
-      "prompt_es": "Escenario: Resolver evento contextual. Describe decisión inicial, alternativas y condición de escalado.",
+      "id": "DUT-101-C012",
+      "unit_id": "DUT-101-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué forma de evaluación se asocia a «Rutina sostenida»?",
+      "web_prompt_variants_es": [
+        "¿Qué forma de evaluación se asocia a «Rutina sostenida»?",
+        "Repaso de «Rutina sostenida»: ¿Qué forma de evaluación se asocia a «Rutina sostenida»?"
+      ],
+      "answer_display_es": "Constancia.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
+        "Constancia."
+      ]
+    },
+    {
+      "id": "DUT-101-C013",
+      "unit_id": "DUT-101-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: reconocimiento de una desviación o evento a partir de indicios suficientes, sin confundir observación con diagnóstico?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: reconocimiento de una desviación o evento a partir de indicios suficientes, sin confundir observación con diagnóstico?",
+        "Selecciona el concepto de «Incidencia operativa» descrito así: reconocimiento de una desviación o evento a partir de indicios suficientes, sin confundir observación con diagnóstico."
+      ],
+      "answer_display_es": "detección",
+      "accepted_short_answers_es": [
+        "detección"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "detección"
+      ]
+    },
+    {
+      "id": "DUT-101-C014",
+      "unit_id": "DUT-101-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: acción inicial proporcionada que protege seguridad y gana tiempo mientras se confirma la situación?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: acción inicial proporcionada que protege seguridad y gana tiempo mientras se confirma la situación?",
+        "Selecciona el concepto de «Incidencia operativa» descrito así: acción inicial proporcionada que protege seguridad y gana tiempo mientras se confirma la situación."
+      ],
+      "answer_display_es": "respuesta",
+      "accepted_short_answers_es": [
+        "respuesta"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "respuesta"
+      ]
+    },
+    {
+      "id": "DUT-101-C015",
+      "unit_id": "DUT-101-U03",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: transferencia de una decisión o problema a la autoridad o especialidad adecuada cuando supera competencia, riesgo o límites propios?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: transferencia de una decisión o problema a la autoridad o especialidad adecuada cuando supera competencia, riesgo o límites propios?",
+        "Selecciona el concepto de «Incidencia operativa» descrito así: transferencia de una decisión o problema a la autoridad o especialidad adecuada cuando supera competencia, riesgo o límites propios."
+      ],
+      "answer_display_es": "escalado",
+      "accepted_short_answers_es": [
+        "escalado"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
         "escalado"
       ]
     },
     {
-      "id": "DUT-101-Q011",
+      "id": "DUT-101-C016",
       "unit_id": "DUT-101-U03",
-      "type": "debrief",
-      "prompt_es": "Tras Incidencia operativa, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: comprobación posterior de que una acción produjo el efecto esperado y de que no quedan riesgos o tareas abiertas?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: comprobación posterior de que una acción produjo el efecto esperado y de que no quedan riesgos o tareas abiertas?",
+        "Selecciona el concepto de «Incidencia operativa» descrito así: comprobación posterior de que una acción produjo el efecto esperado y de que no quedan riesgos o tareas abiertas."
+      ],
+      "answer_display_es": "seguimiento",
+      "accepted_short_answers_es": [
+        "seguimiento"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "seguimiento"
       ]
     },
     {
-      "id": "DUT-101-Q012",
+      "id": "DUT-101-C017",
       "unit_id": "DUT-101-U03",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica está asociada a la unidad «Incidencia operativa»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica está asociada a la unidad «Incidencia operativa»?",
+        "Repaso de «Incidencia operativa»: ¿Qué práctica está asociada a la unidad «Incidencia operativa»?"
+      ],
+      "answer_display_es": "Resolver evento contextual.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "Resolver evento contextual."
       ]
     },
     {
-      "id": "DUT-101-Q013",
+      "id": "DUT-101-C018",
+      "unit_id": "DUT-101-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué forma de evaluación se asocia a «Incidencia operativa»?",
+      "web_prompt_variants_es": [
+        "¿Qué forma de evaluación se asocia a «Incidencia operativa»?",
+        "Repaso de «Incidencia operativa»: ¿Qué forma de evaluación se asocia a «Incidencia operativa»?"
+      ],
+      "answer_display_es": "Juicio.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Juicio."
+      ]
+    },
+    {
+      "id": "DUT-101-C019",
       "unit_id": "DUT-101-U04",
-      "type": "service_readiness",
-      "prompt_es": "Explica prioridades como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: orden explícito entre demandas competidoras según misión, seguridad, urgencia, impacto y autoridad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: orden explícito entre demandas competidoras según misión, seguridad, urgencia, impacto y autoridad?",
+        "Selecciona el concepto de «Interrupciones y carga» descrito así: orden explícito entre demandas competidoras según misión, seguridad, urgencia, impacto y autoridad."
+      ],
+      "answer_display_es": "prioridades",
+      "accepted_short_answers_es": [
+        "prioridades"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "prioridades",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "prioridades"
       ]
     },
     {
-      "id": "DUT-101-Q014",
+      "id": "DUT-101-C020",
       "unit_id": "DUT-101-U04",
-      "type": "scenario",
-      "prompt_es": "Escenario: Gestionar varias demandas. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: gestión de varias demandas sin perder prioridades ni trazabilidad; implica secuenciar, delegar o rechazar carga cuando sea necesario?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: gestión de varias demandas sin perder prioridades ni trazabilidad; implica secuenciar, delegar o rechazar carga cuando sea necesario?",
+        "Selecciona el concepto de «Interrupciones y carga» descrito así: gestión de varias demandas sin perder prioridades ni trazabilidad; implica secuenciar, delegar o rechazar carga cuando sea necesario."
+      ],
+      "answer_display_es": "multitarea",
+      "accepted_short_answers_es": [
+        "multitarea"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "multitarea"
       ]
     },
     {
-      "id": "DUT-101-Q015",
+      "id": "DUT-101-C021",
       "unit_id": "DUT-101-U04",
-      "type": "debrief",
-      "prompt_es": "Tras Interrupciones y carga, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: asignación de una tarea a una persona con capacidad suficiente, manteniendo quien delega la responsabilidad de supervisar lo necesario?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: asignación de una tarea a una persona con capacidad suficiente, manteniendo quien delega la responsabilidad de supervisar lo necesario?",
+        "Selecciona el concepto de «Interrupciones y carga» descrito así: asignación de una tarea a una persona con capacidad suficiente, manteniendo quien delega la responsabilidad de supervisar lo necesario."
+      ],
+      "answer_display_es": "delegación",
+      "accepted_short_answers_es": [
+        "delegación"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "delegación"
       ]
     },
     {
-      "id": "DUT-101-Q016",
+      "id": "DUT-101-C022",
       "unit_id": "DUT-101-U04",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: degradación de capacidad por carga y tiempo; es un riesgo operativo que debe declararse, mitigarse y, si procede, provocar relevo?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: degradación de capacidad por carga y tiempo; es un riesgo operativo que debe declararse, mitigarse y, si procede, provocar relevo?",
+        "Selecciona el concepto de «Interrupciones y carga» descrito así: degradación de capacidad por carga y tiempo; es un riesgo operativo que debe declararse, mitigarse y, si procede, provocar relevo."
+      ],
+      "answer_display_es": "fatiga",
+      "accepted_short_answers_es": [
+        "fatiga"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "fatiga"
       ]
     },
     {
-      "id": "DUT-101-Q017",
+      "id": "DUT-101-C023",
+      "unit_id": "DUT-101-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica está asociada a la unidad «Interrupciones y carga»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica está asociada a la unidad «Interrupciones y carga»?",
+        "Repaso de «Interrupciones y carga»: ¿Qué práctica está asociada a la unidad «Interrupciones y carga»?"
+      ],
+      "answer_display_es": "Gestionar varias demandas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Gestionar varias demandas."
+      ]
+    },
+    {
+      "id": "DUT-101-C024",
+      "unit_id": "DUT-101-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué forma de evaluación se asocia a «Interrupciones y carga»?",
+      "web_prompt_variants_es": [
+        "¿Qué forma de evaluación se asocia a «Interrupciones y carga»?",
+        "Repaso de «Interrupciones y carga»: ¿Qué forma de evaluación se asocia a «Interrupciones y carga»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
+    },
+    {
+      "id": "DUT-101-C025",
       "unit_id": "DUT-101-U05",
-      "type": "service_readiness",
-      "prompt_es": "Explica estado como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: descripción actual y verificable de capacidad, configuración, degradaciones y acciones en curso?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: descripción actual y verificable de capacidad, configuración, degradaciones y acciones en curso?",
+        "Selecciona el concepto de «Relevo profesional» descrito así: descripción actual y verificable de capacidad, configuración, degradaciones y acciones en curso."
+      ],
+      "answer_display_es": "estado",
+      "accepted_short_answers_es": [
+        "estado"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "estado"
       ]
     },
     {
-      "id": "DUT-101-Q018",
+      "id": "DUT-101-C026",
       "unit_id": "DUT-101-U05",
-      "type": "scenario",
-      "prompt_es": "Escenario: Entregar puesto. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: acciones no cerradas que conservan responsable, prioridad, estado y condición prevista de resolución?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: acciones no cerradas que conservan responsable, prioridad, estado y condición prevista de resolución?",
+        "Selecciona el concepto de «Relevo profesional» descrito así: acciones no cerradas que conservan responsable, prioridad, estado y condición prevista de resolución."
+      ],
+      "answer_display_es": "pendientes",
+      "accepted_short_answers_es": [
+        "pendientes"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "pendientes"
       ]
     },
     {
-      "id": "DUT-101-Q019",
+      "id": "DUT-101-C027",
       "unit_id": "DUT-101-U05",
-      "type": "debrief",
-      "prompt_es": "Tras Relevo profesional, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: instrucciones operativas que deben ser claras, legítimas, comprendidas y compatibles con límites superiores?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: instrucciones operativas que deben ser claras, legítimas, comprendidas y compatibles con límites superiores?",
+        "Selecciona el concepto de «Relevo profesional» descrito así: instrucciones operativas que deben ser claras, legítimas, comprendidas y compatibles con límites superiores."
+      ],
+      "answer_display_es": "órdenes",
+      "accepted_short_answers_es": [
+        "órdenes"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "órdenes"
       ]
     },
     {
-      "id": "DUT-101-Q020",
+      "id": "DUT-101-C028",
       "unit_id": "DUT-101-U05",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: combinación de probabilidad, impacto y exposición; se gestiona, comunica y acepta solo dentro de la autoridad disponible?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: combinación de probabilidad, impacto y exposición; se gestiona, comunica y acepta solo dentro de la autoridad disponible?",
+        "Selecciona el concepto de «Relevo profesional» descrito así: combinación de probabilidad, impacto y exposición; se gestiona, comunica y acepta solo dentro de la autoridad disponible."
+      ],
+      "answer_display_es": "riesgo",
+      "accepted_short_answers_es": [
+        "riesgo"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "riesgo"
       ]
     },
     {
-      "id": "DUT-101-Q021",
-      "unit_id": "DUT-101-U06",
-      "type": "service_readiness",
-      "prompt_es": "Explica competencia como se lo explicarías a un Alférez que recibe su primer destino.",
+      "id": "DUT-101-C029",
+      "unit_id": "DUT-101-U05",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica está asociada a la unidad «Relevo profesional»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica está asociada a la unidad «Relevo profesional»?",
+        "Repaso de «Relevo profesional»: ¿Qué práctica está asociada a la unidad «Relevo profesional»?"
+      ],
+      "answer_display_es": "Entregar puesto.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "competencia",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "Entregar puesto."
       ]
     },
     {
-      "id": "DUT-101-Q022",
-      "unit_id": "DUT-101-U06",
-      "type": "scenario",
-      "prompt_es": "Escenario: Debrief formal. Describe decisión inicial, alternativas y condición de escalado.",
+      "id": "DUT-101-C030",
+      "unit_id": "DUT-101-U05",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué forma de evaluación se asocia a «Relevo profesional»?",
+      "web_prompt_variants_es": [
+        "¿Qué forma de evaluación se asocia a «Relevo profesional»?",
+        "Repaso de «Relevo profesional»: ¿Qué forma de evaluación se asocia a «Relevo profesional»?"
+      ],
+      "answer_display_es": "Calidad del handoff.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "Calidad del handoff."
       ]
     },
     {
-      "id": "DUT-101-Q023",
+      "id": "DUT-101-C031",
       "unit_id": "DUT-101-U06",
-      "type": "debrief",
-      "prompt_es": "Tras Informe de supervisor, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: capacidad demostrada para realizar una tarea al estándar requerido en más de un contexto, no mera exposición previa?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: capacidad demostrada para realizar una tarea al estándar requerido en más de un contexto, no mera exposición previa?",
+        "Selecciona el concepto de «Informe de supervisor» descrito así: capacidad demostrada para realizar una tarea al estándar requerido en más de un contexto, no mera exposición previa."
+      ],
+      "answer_display_es": "competencia",
+      "accepted_short_answers_es": [
+        "competencia"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "competencia"
       ]
     },
     {
-      "id": "DUT-101-Q024",
+      "id": "DUT-101-C032",
       "unit_id": "DUT-101-U06",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: forma observable de actuar respecto a disciplina, integridad, comunicación, seguridad y responsabilidad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: forma observable de actuar respecto a disciplina, integridad, comunicación, seguridad y responsabilidad?",
+        "Selecciona el concepto de «Informe de supervisor» descrito así: forma observable de actuar respecto a disciplina, integridad, comunicación, seguridad y responsabilidad."
+      ],
+      "answer_display_es": "conducta",
+      "accepted_short_answers_es": [
+        "conducta"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "conducta"
+      ]
+    },
+    {
+      "id": "DUT-101-C033",
+      "unit_id": "DUT-101-U06",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: capacidad de actuar sin guía continua dentro del ámbito autorizado, sabiendo cuándo detenerse y escalar?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: capacidad de actuar sin guía continua dentro del ámbito autorizado, sabiendo cuándo detenerse y escalar?",
+        "Selecciona el concepto de «Informe de supervisor» descrito así: capacidad de actuar sin guía continua dentro del ámbito autorizado, sabiendo cuándo detenerse y escalar."
+      ],
+      "answer_display_es": "autonomía",
+      "accepted_short_answers_es": [
+        "autonomía"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "autonomía"
+      ]
+    },
+    {
+      "id": "DUT-101-C034",
+      "unit_id": "DUT-101-U06",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: fronteras técnicas, legales, de autoridad o competencia que obligan a detener, adaptar o escalar una acción?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: fronteras técnicas, legales, de autoridad o competencia que obligan a detener, adaptar o escalar una acción?",
+        "Selecciona el concepto de «Informe de supervisor» descrito así: fronteras técnicas, legales, de autoridad o competencia que obligan a detener, adaptar o escalar una acción."
+      ],
+      "answer_display_es": "límites",
+      "accepted_short_answers_es": [
+        "límites"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "límites"
+      ]
+    },
+    {
+      "id": "DUT-101-C035",
+      "unit_id": "DUT-101-U06",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica está asociada a la unidad «Informe de supervisor»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica está asociada a la unidad «Informe de supervisor»?",
+        "Repaso de «Informe de supervisor»: ¿Qué práctica está asociada a la unidad «Informe de supervisor»?"
+      ],
+      "answer_display_es": "Debrief formal.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Debrief formal."
+      ]
+    },
+    {
+      "id": "DUT-101-C036",
+      "unit_id": "DUT-101-U06",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué forma de evaluación se asocia a «Informe de supervisor»?",
+      "web_prompt_variants_es": [
+        "¿Qué forma de evaluación se asocia a «Informe de supervisor»?",
+        "Repaso de «Informe de supervisor»: ¿Qué forma de evaluación se asocia a «Informe de supervisor»?"
+      ],
+      "answer_display_es": "Registro en expediente.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Registro en expediente."
       ]
     }
   ]
