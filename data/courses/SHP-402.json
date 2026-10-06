@@ -1,7 +1,7 @@
 {
   "subject": "Organización y vida a bordo",
   "code": "SHP-402",
-  "version": "1.2",
+  "version": "1.3",
   "status": "developed_content",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/SHP-402/course.json",
@@ -22,7 +22,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Una nave debe entenderse por funciones, no solo por planos memorizados. Las clases distribuyen sus espacios de forma distinta, pero las necesidades de mando, Ingeniería, Medicina, Seguridad, Ciencia, Operaciones y vida cotidiana permanecen."
+          "text": "**Una nave debe entenderse por funciones, no solo por planos memorizados.** Las clases distribuyen sus espacios de forma distinta, pero las necesidades de mando, Ingeniería, Medicina, Seguridad, Ciencia, Operaciones y vida cotidiana permanecen."
         },
         {
           "type": "heading",
@@ -31,7 +31,7 @@
         {
           "type": "definition",
           "term": "Puente",
-          "text": "Centro de mando y coordinación: recibe información, emite órdenes y conecta estaciones."
+          "text": "Centro de mando y **coordinación**: recibe información, emite órdenes y conecta estaciones."
         },
         {
           "type": "definition",
@@ -56,7 +56,7 @@
         {
           "type": "definition",
           "term": "Operaciones",
-          "text": "Coordinación de recursos, sistemas internos y apoyo de misión."
+          "text": "**Coordinación** de recursos, sistemas internos y apoyo de misión."
         },
         {
           "type": "callout",
@@ -72,7 +72,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Una nave es una organización. La tripulación se distribuye en departamentos, puestos, equipos y guardias; el puente no lo hace todo."
+          "text": "**Una nave es una organización.** La tripulación se distribuye en departamentos, puestos, equipos y guardias; el puente no lo hace todo."
         },
         {
           "type": "heading",
@@ -81,8 +81,8 @@
         {
           "type": "bullets",
           "items": [
-            "Mando",
-            "Control de vuelo / Navegación",
+            "**Mando**",
+            "**Control de vuelo** / Navegación",
             "Operaciones",
             "Ingeniería",
             "Seguridad",
@@ -124,7 +124,7 @@
         {
           "type": "callout",
           "label": "DEFINICIÓN",
-          "text": "Una estación se define por FUNCIÓN, SISTEMAS ACCESIBLES, AUTORIDAD e INFORMACIÓN DISPONIBLE."
+          "text": "Una estación se define por FUNCIÓN, **SISTEMAS ACCESIBLES**, AUTORIDAD e INFORMACIÓN DISPONIBLE."
         },
         {
           "type": "heading",
@@ -151,7 +151,7 @@
         },
         {
           "type": "p",
-          "text": "En el siglo XXIII Timón y Navegación pueden aparecer separados y Comunicaciones puede ser un puesto visible propio. En configuraciones del siglo XXIV Conn y Ops suelen ocupar las posiciones delanteras y Táctica una consola dedicada."
+          "text": "**En el siglo XXIII Timón y Navegación pueden aparecer separados y Comunicaciones puede ser un puesto visible propio.** En configuraciones del siglo XXIV Conn y Ops suelen ocupar las posiciones delanteras y Táctica una consola dedicada."
         },
         {
           "type": "heading",
@@ -159,7 +159,7 @@
         },
         {
           "type": "p",
-          "text": "Sentarse ante una consola no basta. Importan estación, puesto, cualificación, autoridad, estado de la nave y permisos."
+          "text": "Sentarse ante una consola no basta. Importan estación, puesto, **cualificación**, autoridad, estado de la nave y permisos."
         },
         {
           "type": "heading",
@@ -178,7 +178,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Una nave también es un hogar temporal. Misiones largas necesitan alojamiento, alimentación, higiene, descanso, ocio y privacidad."
+          "text": "**Una nave también es un hogar temporal.** Misiones largas necesitan alojamiento, alimentación, higiene, descanso, ocio y privacidad."
         },
         {
           "type": "heading",
@@ -186,7 +186,7 @@
         },
         {
           "type": "p",
-          "text": "Proporciona descanso, privacidad, almacenamiento personal y recuperación fuera de servicio. Su configuración depende de clase, era y rango."
+          "text": "Proporciona descanso, privacidad, **almacenamiento** personal y recuperación fuera de servicio. Su configuración depende de clase, era y rango."
         },
         {
           "type": "heading",
@@ -195,7 +195,7 @@
         {
           "type": "bullets",
           "items": [
-            "Alimentación",
+            "**Alimentación**",
             "Higiene",
             "Zonas de descanso",
             "Espacios sociales",
@@ -225,17 +225,17 @@
       "blocks": [
         {
           "type": "p",
-          "text": "No se estudian catálogos de memoria. Se estudia la relación misión ↔ capacidades necesarias."
+          "text": "**No se estudian catálogos de memoria.** Se estudia la relación misión ↔ capacidades necesarias."
         },
         {
           "type": "definition",
           "term": "Exploración",
-          "text": "Puede priorizar autonomía, sensores, ciencia, capacidad diplomática, apoyo médico y flexibilidad."
+          "text": "Puede priorizar autonomía, sensores, ciencia, capacidad diplomática, **apoyo médico** y flexibilidad."
         },
         {
           "type": "definition",
           "term": "Ciencia",
-          "text": "Puede priorizar laboratorios, sensores especializados, personal científico e instrumentación."
+          "text": "Puede priorizar laboratorios, **sensores** especializados, personal científico e instrumentación."
         },
         {
           "type": "definition",
@@ -266,7 +266,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Moverse por una nave también es una competencia. En emergencia, una mala ruta puede cruzar zonas peligrosas, violar restricciones o retrasar una evacuación."
+          "text": "**Moverse por una nave también es una competencia.** En emergencia, una mala ruta puede cruzar zonas peligrosas, violar restricciones o retrasar una evacuación."
         },
         {
           "type": "heading",
@@ -275,8 +275,8 @@
         {
           "type": "bullets",
           "items": [
-            "Origen y destino",
-            "Accesos disponibles",
+            "**Origen y destino**",
+            "**Accesos** disponibles",
             "Estado de compartimentos",
             "Daños",
             "Órdenes de emergencia",
@@ -311,5 +311,5 @@
       ]
     }
   ],
-  "assessmentModel": "concept_driven_v2"
+  "assessmentModel": "concept_driven_v2_1"
 }

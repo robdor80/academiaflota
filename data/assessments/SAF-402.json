@@ -1,7 +1,7 @@
 {
-  "schema_version": "2.0.0",
+  "schema_version": "2.1.0",
   "course_id": "SAF-402",
-  "status": "concept_driven_autocorrectable",
+  "status": "concept_driven_autocorrectable_v2_1",
   "source_bank": "question_bank_v1_0.json",
   "policy": {
     "theory_formats": [
@@ -16,9 +16,11 @@
     "source_rule": "Every evaluated concept must be explicitly taught in the course material or an established prerequisite."
   },
   "unit_review": {
-    "questions_per_attempt": 3,
+    "questions_per_attempt": 5,
     "reshuffle_each_attempt": true,
-    "preferred_short_answers_per_attempt": 1
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
   },
   "concepts": [
     {
@@ -478,6 +480,198 @@
         "qué se comunicó",
         "riesgo",
         "mejoras"
+      ]
+    },
+    {
+      "id": "SAF-402-C025",
+      "unit_id": "SAF-402-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «NO ADIVINAR»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «NO ADIVINAR»?",
+        "Selecciona la idea correcta asociada a «NO ADIVINAR»."
+      ],
+      "answer_display_es": "Si una señal no se entiende, se consulta o se pide aclaración; no se inventa su significado.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Si una señal no se entiende, se consulta o se pide aclaración; no se inventa su significado."
+      ]
+    },
+    {
+      "id": "SAF-402-C026",
+      "unit_id": "SAF-402-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Qué reconocer»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Qué reconocer»?",
+        "En «Qué reconocer», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Que existe una alerta",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Que existe una alerta"
+      ]
+    },
+    {
+      "id": "SAF-402-C027",
+      "unit_id": "SAF-402-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «LÍMITE»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «LÍMITE»?",
+        "Selecciona la idea correcta asociada a «LÍMITE»."
+      ],
+      "answer_display_es": "En 4.ª clase se aprende a alejarse del peligro, respetar cierres e informar; no a reparar una brecha estructural.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "En 4.ª clase se aprende a alejarse del peligro, respetar cierres e informar; no a reparar una brecha estructural."
+      ]
+    },
+    {
+      "id": "SAF-402-C028",
+      "unit_id": "SAF-402-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Rutas y recuento»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Rutas y recuento»?",
+        "En «Rutas y recuento», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Estado de compartimentos",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Estado de compartimentos"
+      ]
+    },
+    {
+      "id": "SAF-402-C029",
+      "unit_id": "SAF-402-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «PRIMERA RESPUESTA»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «PRIMERA RESPUESTA»?",
+        "Selecciona la idea correcta asociada a «PRIMERA RESPUESTA»."
+      ],
+      "answer_display_es": "Alertar, proteger a personas, aislar si procede y está autorizado, retirarse a zona segura y cooperar con personal cualificado.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Alertar, proteger a personas, aislar si procede y está autorizado, retirarse a zona segura y cooperar con personal cualificado."
+      ]
+    },
+    {
+      "id": "SAF-402-C030",
+      "unit_id": "SAF-402-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Seguridad de escena»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Seguridad de escena»?",
+        "En «Seguridad de escena», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Accesibilidad",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Accesibilidad"
+      ]
+    },
+    {
+      "id": "SAF-402-C031",
+      "unit_id": "SAF-402-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «NO DIAGNOSTICAR POR INTUICIÓN»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «NO DIAGNOSTICAR POR INTUICIÓN»?",
+        "Selecciona la idea correcta asociada a «NO DIAGNOSTICAR POR INTUICIÓN»."
+      ],
+      "answer_display_es": "Síntoma observado y diagnóstico conocido son cosas distintas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Síntoma observado y diagnóstico conocido son cosas distintas."
+      ]
+    },
+    {
+      "id": "SAF-402-C032",
+      "unit_id": "SAF-402-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Aviso médico»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Aviso médico»?",
+        "En «Aviso médico», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Localización",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Localización"
+      ]
+    },
+    {
+      "id": "SAF-402-C033",
+      "unit_id": "SAF-402-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «IMPROVISACIÓN»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «IMPROVISACIÓN»?",
+        "Selecciona la idea correcta asociada a «IMPROVISACIÓN»."
+      ],
+      "answer_display_es": "Una idea técnica solo funciona si recursos, conocimiento, compatibilidad y riesgo permiten validarla.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Una idea técnica solo funciona si recursos, conocimiento, compatibilidad y riesgo permiten validarla."
+      ]
+    },
+    {
+      "id": "SAF-402-C034",
+      "unit_id": "SAF-402-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Cómo puede ayudar un cadete»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Cómo puede ayudar un cadete»?",
+        "En «Cómo puede ayudar un cadete», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Transportar material",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Transportar material"
+      ]
+    },
+    {
+      "id": "SAF-402-C035",
+      "unit_id": "SAF-402-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «NO HEROÍSMO IMPROCEDENTE»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «NO HEROÍSMO IMPROCEDENTE»?",
+        "Selecciona la idea correcta asociada a «NO HEROÍSMO IMPROCEDENTE»."
+      ],
+      "answer_display_es": "Una acción no se vuelve correcta por ser peligrosa. El riesgo debe estar justificado por contexto, misión y alternativas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Una acción no se vuelve correcta por ser peligrosa. El riesgo debe estar justificado por contexto, misión y alternativas."
+      ]
+    },
+    {
+      "id": "SAF-402-C036",
+      "unit_id": "SAF-402-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Debrief»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Debrief»?",
+        "En «Debrief», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Qué se sabía",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Qué se sabía"
       ]
     }
   ]

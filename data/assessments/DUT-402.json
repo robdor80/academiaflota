@@ -1,7 +1,7 @@
 {
-  "schema_version": "2.0.0",
+  "schema_version": "2.1.0",
   "course_id": "DUT-402",
-  "status": "concept_driven_autocorrectable",
+  "status": "concept_driven_autocorrectable_v2_1",
   "source_bank": "question_bank_v1_0.json",
   "policy": {
     "theory_formats": [
@@ -16,9 +16,11 @@
     "source_rule": "Every evaluated concept must be explicitly taught in the course material or an established prerequisite."
   },
   "unit_review": {
-    "questions_per_attempt": 3,
+    "questions_per_attempt": 5,
     "reshuffle_each_attempt": true,
-    "preferred_short_answers_per_attempt": 1
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
   },
   "concepts": [
     {
@@ -476,6 +478,198 @@
         "continuidad",
         "atención",
         "procedimiento"
+      ]
+    },
+    {
+      "id": "DUT-402-C025",
+      "unit_id": "DUT-402-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Turno» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Turno» en esta unidad?",
+        "Selecciona la definición correcta de «Turno»."
+      ],
+      "answer_display_es": "Franja temporal de servicio.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Franja temporal de servicio."
+      ]
+    },
+    {
+      "id": "DUT-402-C026",
+      "unit_id": "DUT-402-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Puesto» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Puesto» en esta unidad?",
+        "Selecciona la definición correcta de «Puesto»."
+      ],
+      "answer_display_es": "Función desempeñada durante esa franja.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Función desempeñada durante esa franja."
+      ]
+    },
+    {
+      "id": "DUT-402-C027",
+      "unit_id": "DUT-402-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «IMPORTANTE»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «IMPORTANTE»?",
+        "Selecciona la idea correcta asociada a «IMPORTANTE»."
+      ],
+      "answer_display_es": "Una nueva guardia no borra las órdenes que siguen activas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Una nueva guardia no borra las órdenes que siguen activas."
+      ]
+    },
+    {
+      "id": "DUT-402-C028",
+      "unit_id": "DUT-402-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Briefing»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Briefing»?",
+        "En «Briefing», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Estado actual",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Estado actual"
+      ]
+    },
+    {
+      "id": "DUT-402-C029",
+      "unit_id": "DUT-402-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «BREVEDAD ÚTIL»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «BREVEDAD ÚTIL»?",
+        "Selecciona la idea correcta asociada a «BREVEDAD ÚTIL»."
+      ],
+      "answer_display_es": "El relevo no narra cada minuto: transmite lo necesario para continuar sin perder contexto.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "El relevo no narra cada minuto: transmite lo necesario para continuar sin perder contexto."
+      ]
+    },
+    {
+      "id": "DUT-402-C030",
+      "unit_id": "DUT-402-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Contenido mínimo»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Contenido mínimo»?",
+        "En «Contenido mínimo», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Estado del puesto",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Estado del puesto"
+      ]
+    },
+    {
+      "id": "DUT-402-C031",
+      "unit_id": "DUT-402-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «REGLA»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «REGLA»?",
+        "Selecciona la idea correcta asociada a «REGLA»."
+      ],
+      "answer_display_es": "Separar hecho, interpretación y solicitud. No afirmar como cierto lo que todavía es una conclusión.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Separar hecho, interpretación y solicitud. No afirmar como cierto lo que todavía es una conclusión."
+      ]
+    },
+    {
+      "id": "DUT-402-C032",
+      "unit_id": "DUT-402-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Qué informar»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Qué informar»?",
+        "En «Qué informar», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Hecho observado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Hecho observado"
+      ]
+    },
+    {
+      "id": "DUT-402-C033",
+      "unit_id": "DUT-402-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Responsable de puesto» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Responsable de puesto» en esta unidad?",
+        "Selecciona la definición correcta de «Responsable de puesto»."
+      ],
+      "answer_display_es": "Resuelve lo que entra dentro de su función, capacidad y autoridad.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Resuelve lo que entra dentro de su función, capacidad y autoridad."
+      ]
+    },
+    {
+      "id": "DUT-402-C034",
+      "unit_id": "DUT-402-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Supervisor» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Supervisor» en esta unidad?",
+        "Selecciona la definición correcta de «Supervisor»."
+      ],
+      "answer_display_es": "Apoya, revisa, autoriza e interviene cuando la situación excede al operador.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Apoya, revisa, autoriza e interviene cuando la situación excede al operador."
+      ]
+    },
+    {
+      "id": "DUT-402-C035",
+      "unit_id": "DUT-402-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «CONSTANCIA»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «CONSTANCIA»?",
+        "Selecciona la idea correcta asociada a «CONSTANCIA»."
+      ],
+      "answer_display_es": "La calidad profesional también se demuestra cuando no ocurre nada espectacular.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "La calidad profesional también se demuestra cuando no ocurre nada espectacular."
+      ]
+    },
+    {
+      "id": "DUT-402-C036",
+      "unit_id": "DUT-402-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Tareas periódicas»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Tareas periódicas»?",
+        "En «Tareas periódicas», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Verificaciones",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Verificaciones"
       ]
     }
   ]

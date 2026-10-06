@@ -1,7 +1,7 @@
 {
-  "schema_version": "2.0.0",
+  "schema_version": "2.1.0",
   "course_id": "SHP-402",
-  "status": "concept_driven_autocorrectable",
+  "status": "concept_driven_autocorrectable_v2_1",
   "source_bank": "question_bank_v1_0.json",
   "policy": {
     "theory_formats": [
@@ -16,9 +16,11 @@
     "source_rule": "Every evaluated concept must be explicitly taught in the course material or an established prerequisite."
   },
   "unit_review": {
-    "questions_per_attempt": 3,
+    "questions_per_attempt": 5,
     "reshuffle_each_attempt": true,
-    "preferred_short_answers_per_attempt": 1
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
   },
   "concepts": [
     {
@@ -488,6 +490,198 @@
         "que puedes intervenir técnicamente",
         "que tienes autoridad/cualificación",
         "debes informar y seguir instrucciones"
+      ]
+    },
+    {
+      "id": "SHP-402-C025",
+      "unit_id": "SHP-402-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Puente» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Puente» en esta unidad?",
+        "Selecciona la definición correcta de «Puente»."
+      ],
+      "answer_display_es": "Centro de mando y coordinación: recibe información, emite órdenes y conecta estaciones.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Centro de mando y coordinación: recibe información, emite órdenes y conecta estaciones."
+      ]
+    },
+    {
+      "id": "SHP-402-C026",
+      "unit_id": "SHP-402-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Ingeniería» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Ingeniería» en esta unidad?",
+        "Selecciona la definición correcta de «Ingeniería»."
+      ],
+      "answer_display_es": "Control, mantenimiento y recuperación de sistemas técnicos. Estar allí no concede por sí solo autoridad para intervenir.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Control, mantenimiento y recuperación de sistemas técnicos. Estar allí no concede por sí solo autoridad para intervenir."
+      ]
+    },
+    {
+      "id": "SHP-402-C027",
+      "unit_id": "SHP-402-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «IDEA CLAVE»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «IDEA CLAVE»?",
+        "Selecciona la idea correcta asociada a «IDEA CLAVE»."
+      ],
+      "answer_display_es": "La tripulación visible en una escena no representa necesariamente a toda la dotación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "La tripulación visible en una escena no representa necesariamente a toda la dotación."
+      ]
+    },
+    {
+      "id": "SHP-402-C028",
+      "unit_id": "SHP-402-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Departamentos habituales»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Departamentos habituales»?",
+        "En «Departamentos habituales», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Mando",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Mando"
+      ]
+    },
+    {
+      "id": "SHP-402-C029",
+      "unit_id": "SHP-402-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «DEFINICIÓN»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «DEFINICIÓN»?",
+        "Selecciona la idea correcta asociada a «DEFINICIÓN»."
+      ],
+      "answer_display_es": "Una estación se define por FUNCIÓN, SISTEMAS ACCESIBLES, AUTORIDAD e INFORMACIÓN DISPONIBLE.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Una estación se define por FUNCIÓN, SISTEMAS ACCESIBLES, AUTORIDAD e INFORMACIÓN DISPONIBLE."
+      ]
+    },
+    {
+      "id": "SHP-402-C030",
+      "unit_id": "SHP-402-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+        "Selecciona la afirmación que coincide con los apuntes de esta unidad."
+      ],
+      "answer_display_es": "En el siglo XXIII Timón y Navegación pueden aparecer separados y Comunicaciones puede ser un puesto visible propio.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "En el siglo XXIII Timón y Navegación pueden aparecer separados y Comunicaciones puede ser un puesto visible propio."
+      ]
+    },
+    {
+      "id": "SHP-402-C031",
+      "unit_id": "SHP-402-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Servicios y recreo»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Servicios y recreo»?",
+        "En «Servicios y recreo», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Alimentación",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Alimentación"
+      ]
+    },
+    {
+      "id": "SHP-402-C032",
+      "unit_id": "SHP-402-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+        "Selecciona la afirmación que coincide con los apuntes de esta unidad."
+      ],
+      "answer_display_es": "Una nave también es un hogar temporal.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Una nave también es un hogar temporal."
+      ]
+    },
+    {
+      "id": "SHP-402-C033",
+      "unit_id": "SHP-402-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Exploración» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Exploración» en esta unidad?",
+        "Selecciona la definición correcta de «Exploración»."
+      ],
+      "answer_display_es": "Puede priorizar autonomía, sensores, ciencia, capacidad diplomática, apoyo médico y flexibilidad.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Puede priorizar autonomía, sensores, ciencia, capacidad diplomática, apoyo médico y flexibilidad."
+      ]
+    },
+    {
+      "id": "SHP-402-C034",
+      "unit_id": "SHP-402-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Ciencia» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Ciencia» en esta unidad?",
+        "Selecciona la definición correcta de «Ciencia»."
+      ],
+      "answer_display_es": "Puede priorizar laboratorios, sensores especializados, personal científico e instrumentación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Puede priorizar laboratorios, sensores especializados, personal científico e instrumentación."
+      ]
+    },
+    {
+      "id": "SHP-402-C035",
+      "unit_id": "SHP-402-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «REGLA»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «REGLA»?",
+        "Selecciona la idea correcta asociada a «REGLA»."
+      ],
+      "answer_display_es": "Seguir la ruta segura y la instrucción vigente, no la ruta habitual por costumbre.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Seguir la ruta segura y la instrucción vigente, no la ruta habitual por costumbre."
+      ]
+    },
+    {
+      "id": "SHP-402-C036",
+      "unit_id": "SHP-402-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Qué modifica una ruta»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Qué modifica una ruta»?",
+        "En «Qué modifica una ruta», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Origen y destino",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Origen y destino"
       ]
     }
   ]

@@ -1,7 +1,7 @@
 {
   "subject": "Servicio, guardias y trabajo profesional",
   "code": "DUT-402",
-  "version": "1.2",
+  "version": "1.3",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/DUT-402/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/DUT-402/MANUAL_v1_0.md",
@@ -21,17 +21,17 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Una guardia es una franja de responsabilidad: el tripulante está asignado a una función, mantiene continuidad y responde dentro de su autoridad."
+          "text": "**Una guardia es una franja de responsabilidad: el tripulante está asignado a una función, mantiene continuidad y responde dentro de su autoridad.**"
         },
         {
           "type": "definition",
           "term": "Turno",
-          "text": "Franja temporal de servicio."
+          "text": "**Franja temporal de servicio.**"
         },
         {
           "type": "definition",
           "term": "Puesto",
-          "text": "Función desempeñada durante esa franja."
+          "text": "**Función desempeñada durante esa franja.**"
         },
         {
           "type": "heading",
@@ -63,7 +63,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "La presentación al puesto empieza antes de sentarse ante una consola: puntualidad, estado personal, equipo, conocimiento de la asignación y briefing."
+          "text": "**La presentación al puesto empieza antes de sentarse ante una consola: puntualidad, estado personal, equipo, conocimiento de la asignación y briefing.**"
         },
         {
           "type": "heading",
@@ -80,8 +80,8 @@
         {
           "type": "bullets",
           "items": [
-            "Estado actual",
-            "Órdenes vigentes",
+            "**Estado actual**",
+            "**Órdenes** vigentes",
             "Incidencias",
             "Pendientes",
             "Riesgos",
@@ -102,7 +102,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Un relevo es una transferencia estructurada de responsabilidad que debe preservar el contexto."
+          "text": "**Un relevo es una transferencia estructurada de responsabilidad que debe preservar el contexto.**"
         },
         {
           "type": "heading",
@@ -111,8 +111,8 @@
         {
           "type": "bullets",
           "items": [
-            "Estado del puesto",
-            "Órdenes activas",
+            "**Estado del puesto**",
+            "**Órdenes** activas",
             "Tareas pendientes",
             "Incidencias abiertas",
             "Riesgos conocidos",
@@ -147,7 +147,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Informar es convertir una observación en información útil para que otra persona comprenda la situación y pueda decidir."
+          "text": "**Informar es convertir una observación en información útil para que otra persona comprenda la situación y pueda decidir.**"
         },
         {
           "type": "heading",
@@ -156,10 +156,10 @@
         {
           "type": "bullets",
           "items": [
-            "Hecho observado",
+            "**Hecho observado**",
             "Cambio de estado",
             "Impedimento",
-            "Riesgo",
+            "**Riesgo**",
             "Resultado",
             "Necesidad de apoyo"
           ]
@@ -182,7 +182,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "La cadena de responsabilidad permite saber quién actúa, quién supervisa, quién necesita saber, quién autoriza y cuándo escalar."
+          "text": "**La cadena de responsabilidad permite saber quién actúa, quién supervisa, quién necesita saber, quién autoriza y cuándo escalar.**"
         },
         {
           "type": "definition",
@@ -218,7 +218,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Una guardia sin crisis sigue siendo trabajo profesional: monitorización, verificaciones, tareas periódicas, registros, pequeñas incidencias y relevo."
+          "text": "**Una guardia sin crisis sigue siendo trabajo profesional: monitorización, verificaciones, tareas periódicas, registros, pequeñas incidencias y relevo.**"
         },
         {
           "type": "heading",
@@ -226,7 +226,7 @@
         },
         {
           "type": "p",
-          "text": "Monitorizar significa conocer el estado normal, detectar cambios, reconocer qué importa y saber cuándo actuar."
+          "text": "Monitorizar significa conocer el estado normal, **detectar cambios**, reconocer qué importa y saber cuándo actuar."
         },
         {
           "type": "heading",
@@ -235,7 +235,7 @@
         {
           "type": "bullets",
           "items": [
-            "Verificaciones",
+            "**Verificaciones**",
             "Informes",
             "Mantenimiento programado",
             "Actualización de registros",
@@ -265,5 +265,5 @@
     }
   ],
   "status": "developed_content",
-  "assessmentModel": "concept_driven_v2"
+  "assessmentModel": "concept_driven_v2_1"
 }
