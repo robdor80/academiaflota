@@ -64,9 +64,9 @@ function signatureMatch(contact,filters=[]){
   const mapped=filters.map(f=>f==="biological"?"lifeform":f);
   return mapped.some(f=>sig.has(f)||contact.kind===f)?1:.35;
 }
-function revealContact(state,c,confidence,source){
+function revealContact(state,c,confidence,source,fingerprint=null){
   c.known=true;c.status=c.status==="lost"?"unidentified":c.status;c.confidence=clamp(Math.max(c.confidence,confidence));
-  c.lastObserved=now();c.history.unshift({time:c.lastObserved,source,confidence:c.confidence});
+  c.lastObserved=now();c.history.unshift({time:c.lastObserved,source,confidence:c.confidence,fingerprint});
   if(c.confidence>=82&&c.classification!=="No identificado"&&c.classification!=="Desconocido")c.status="identified";
 }
 export function createOperation(state,type,config){
@@ -92,9 +92,11 @@ export function resolveScan(state,op){
     if(cfg.scanType==="long_range"&&c.distanceKm<10000)score-=2;
     if(!c.known&&score<55)continue;
     if(c.status==="lost"&&score<60)continue;
+    const fingerprint=JSON.stringify([cfg.scanType,cfg.mode,cfg.targetValue,cfg.contactId,cfg.resolution,[...filters].sort(),cfg.priority,cfg.duration,state.power,state.activeArray,effectivePenalty(state)]);
+    const repeated=c.history.some(h=>h.fingerprint===fingerprint);
     const conf=clamp(Math.round((c.confidence*.55)+(score*.45)));
-    revealContact(state,c,conf,"scan:"+op.id);
-    if(focused&&c.id===cfg.contactId)c.confidence=clamp(c.confidence+(cfg.resolution==="high"?18:10)+(state.power>=82?6:0));
+    revealContact(state,c,conf,"scan:"+op.id,fingerprint);
+    if(focused&&c.id===cfg.contactId&&!repeated)c.confidence=clamp(c.confidence+(cfg.resolution==="high"?18:10)+(state.power>=82?6:0));
     contacts.push({id:c.id,confidence:c.confidence,status:c.status});
   }
   const result={
@@ -102,6 +104,7 @@ export function resolveScan(state,op){
     time:now(),configuration:clone(cfg),quality:q,observations:contacts,
     summary:contacts.length?contacts.map(x=>x.id+" "+x.confidence+"%").join(" · "):"Sin contactos concluyentes",
     emissionExposure:cfg.mode==="active"?"EMISIÓN ACTIVA DETECTABLE":"PASIVO / SIN EMISIÓN",
+    repeatedConfiguration:contacts.some(x=>getContact(state,x.id)?.history?.[0]?.fingerprint&&getContact(state,x.id)?.history?.slice(1).some(h=>h.fingerprint===getContact(state,x.id).history[0].fingerprint)),
     provenance:"Sensores / "+state.activeArray
   };
   state.results.unshift(result);op.progress=100;op.state="completed";op.completedAt=result.time;
