@@ -1,7 +1,7 @@
 {
   "subject": "Rotaciones operativas e integración",
   "code": "ROT-403",
-  "version": "1.1",
+  "version": "1.2",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/ROT-403/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/ROT-403/MANUAL_v1_0.md",
@@ -51,20 +51,6 @@
           "type": "callout",
           "label": "LÍMITE",
           "text": "Ocupar temporalmente una estación durante una rotación no concede autoridad general sobre el puente."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Cómo fluye una orden hasta un resultado?",
-            "¿Qué función general cumple Operaciones?",
-            "¿Por qué una estación no funciona aislada?",
-            "¿Qué limita al cadete?",
-            "¿Qué debe contener el informe final?"
-          ]
         }
       ]
     },
@@ -99,20 +85,6 @@
         {
           "type": "p",
           "text": "En una tarea técnica de baja complejidad el cadete sigue procedimiento, usa equipo adecuado y comunica si el estado real no coincide con el esperado."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué observa Ingeniería?",
-            "¿Por qué más potencia tiene coste?",
-            "¿Para qué sirve mantenimiento preventivo?",
-            "¿Qué haces si la tarea difiere del briefing?",
-            "¿Por qué una rotación breve no concede competencia de ingeniero?"
-          ]
         }
       ]
     },
@@ -143,20 +115,6 @@
           "type": "callout",
           "label": "REPORTE",
           "text": "Debe distinguir qué se observó, con qué confianza, qué sigue sin saberse y qué análisis adicional podría ayudar."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Diferencia Sensores y Ciencia.",
-            "¿Qué revisas antes de un barrido?",
-            "¿Por qué conservar incertidumbre?",
-            "¿Qué debe incluir el reporte?",
-            "¿Qué error cometes al convertir lectura en certeza?"
-          ]
         }
       ]
     },
@@ -186,20 +144,6 @@
           "type": "callout",
           "label": "SI NO PUEDE EJECUTARSE",
           "text": "El operador informa de la limitación y, cuando corresponda, ofrece una alternativa válida."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué necesita una solución de plotting?",
-            "¿Qué representa rumbo?",
-            "¿Por qué validar velocidad?",
-            "¿Qué hacer si la orden no puede ejecutarse?",
-            "Diferencia decidir destino y ejecutar movimiento."
-          ]
         }
       ]
     },
@@ -231,20 +175,6 @@
           "type": "callout",
           "label": "NO ES CUALIFICACIÓN",
           "text": "Completar una micro-rotación no convierte al cadete en oficial de Seguridad ni en profesional médico."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué observa el cadete en Seguridad?",
-            "¿Qué observa en Medicina?",
-            "¿Para qué sirve el triaje?",
-            "¿Por qué no se exige diagnóstico avanzado?",
-            "¿Qué límite mantiene el cadete?"
-          ]
         }
       ]
     },
@@ -276,23 +206,10 @@
           "type": "callout",
           "label": "NO ES ELECCIÓN FINAL",
           "text": "El debrief genera un registro descriptivo de intereses, fortalezas, dificultades y preguntas. No selecciona automáticamente especialización."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Por qué ROT-403 no elige especialización?",
-            "Diferencia interés y competencia.",
-            "¿Qué convierte una fortaleza en evidencia?",
-            "¿Por qué una dificultad puede ser útil?",
-            "¿Qué debe producir el debrief final?"
-          ]
         }
       ]
     }
   ],
-  "status": "developed_content"
+  "status": "developed_content",
+  "assessmentModel": "concept_driven_v2"
 }

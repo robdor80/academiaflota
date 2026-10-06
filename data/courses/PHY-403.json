@@ -1,7 +1,7 @@
 {
   "subject": "Preparación física III",
   "code": "PHY-403",
-  "version": "1.1",
+  "version": "1.2",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/PHY-403/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/PHY-403/MANUAL_v1_0.md",
@@ -40,19 +40,6 @@
           "type": "callout",
           "label": "IDEA CLAVE",
           "text": "La preparación física se modela como evidencia longitudinal del personaje, no como una barra de XP."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Resume el objetivo de esta unidad.",
-            "¿Qué evidencia sería relevante?",
-            "¿Qué decisión debe tomar el personaje?",
-            "¿Qué no debe convertir el sistema en una bonificación arcade?"
-          ]
         }
       ]
     },
@@ -82,19 +69,6 @@
           "type": "callout",
           "label": "IDEA CLAVE",
           "text": "La preparación física se modela como evidencia longitudinal del personaje, no como una barra de XP."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Resume el objetivo de esta unidad.",
-            "¿Qué evidencia sería relevante?",
-            "¿Qué decisión debe tomar el personaje?",
-            "¿Qué no debe convertir el sistema en una bonificación arcade?"
-          ]
         }
       ]
     },
@@ -124,19 +98,6 @@
           "type": "callout",
           "label": "IDEA CLAVE",
           "text": "La preparación física se modela como evidencia longitudinal del personaje, no como una barra de XP."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Resume el objetivo de esta unidad.",
-            "¿Qué evidencia sería relevante?",
-            "¿Qué decisión debe tomar el personaje?",
-            "¿Qué no debe convertir el sistema en una bonificación arcade?"
-          ]
         }
       ]
     },
@@ -165,19 +126,6 @@
           "type": "callout",
           "label": "IDEA CLAVE",
           "text": "La preparación física se modela como evidencia longitudinal del personaje, no como una barra de XP."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Resume el objetivo de esta unidad.",
-            "¿Qué evidencia sería relevante?",
-            "¿Qué decisión debe tomar el personaje?",
-            "¿Qué no debe convertir el sistema en una bonificación arcade?"
-          ]
         }
       ]
     },
@@ -207,19 +155,6 @@
           "type": "callout",
           "label": "IDEA CLAVE",
           "text": "La preparación física se modela como evidencia longitudinal del personaje, no como una barra de XP."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Resume el objetivo de esta unidad.",
-            "¿Qué evidencia sería relevante?",
-            "¿Qué decisión debe tomar el personaje?",
-            "¿Qué no debe convertir el sistema en una bonificación arcade?"
-          ]
         }
       ]
     },
@@ -248,22 +183,10 @@
           "type": "callout",
           "label": "IDEA CLAVE",
           "text": "La preparación física se modela como evidencia longitudinal del personaje, no como una barra de XP."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Resume el objetivo de esta unidad.",
-            "¿Qué evidencia sería relevante?",
-            "¿Qué decisión debe tomar el personaje?",
-            "¿Qué no debe convertir el sistema en una bonificación arcade?"
-          ]
         }
       ]
     }
   ],
-  "status": "developed_content"
+  "status": "developed_content",
+  "assessmentModel": "concept_driven_v2"
 }

@@ -1,7 +1,7 @@
 {
   "subject": "Ciencia, sensores y método científico I",
   "code": "SCI-403",
-  "version": "1.1",
+  "version": "1.2",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/SCI-403/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/SCI-403/MANUAL_v1_0.md",
@@ -31,20 +31,6 @@
           "type": "callout",
           "label": "REGLA",
           "text": "El objetivo no es acertar a la primera, sino construir una explicación compatible con los datos y revisarla cuando cambian."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Diferencia observación e hipótesis.",
-            "¿Para qué sirve formular una pregunta?",
-            "¿Qué hace útil una hipótesis?",
-            "¿Una sola lectura demuestra siempre una causa?",
-            "¿Qué haces si nueva evidencia contradice tu explicación?"
-          ]
         }
       ]
     },
@@ -78,20 +64,6 @@
         {
           "type": "p",
           "text": "El proyecto admite resultados confirmado, alta confianza, estimado, hipótesis, desconocido o contradictorio."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Por qué una medición no es perfecta?",
-            "¿Qué puede mejorar precisión?",
-            "¿Qué es ruido?",
-            "¿Qué significa límite de detección?",
-            "¿Por qué debe mostrarse confianza?"
-          ]
         }
       ]
     },
@@ -140,20 +112,6 @@
           "type": "callout",
           "label": "DETECCIÓN ≠ IDENTIDAD",
           "text": "Una firma compatible con una nave no demuestra automáticamente una nave concreta."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué hace un sensor?",
-            "Diferencia detección y clasificación.",
-            "¿Qué es una firma?",
-            "¿Por qué una coincidencia no es certeza?",
-            "¿Qué riesgo tiene filtrar demasiado?"
-          ]
         }
       ]
     },
@@ -180,20 +138,6 @@
         {
           "type": "p",
           "text": "Una opción técnicamente válida pero inapropiada puede ejecutarse: eso es un error profesional del operador, no de interfaz."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué caracteriza al pasivo?",
-            "¿Qué puede aportar el activo?",
-            "¿Qué coste estratégico puede tener?",
-            "¿Por qué no existe un modo siempre mejor?",
-            "¿Qué ocurre con una elección válida pero poco adecuada?"
-          ]
         }
       ]
     },
@@ -235,20 +179,6 @@
           "type": "callout",
           "label": "SENSORES MIDE · CIENCIA INTERPRETA",
           "text": "La interpretación científica se añade a la ficha común sin borrar las lecturas originales ni su procedencia."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué representa un contacto?",
-            "¿Qué puede mejorar un tracking?",
-            "¿Qué conserva un readout?",
-            "Diferencia Sensores y Ciencia.",
-            "¿Por qué una ficha compartida no crea omnisciencia?"
-          ]
         }
       ]
     },
@@ -308,24 +238,10 @@
           "type": "callout",
           "label": "ERROR HUMANO",
           "text": "Si la orden era sector 041 y el operador configura 014, la consola puede ejecutar 014 si es técnicamente válido."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué pasos configuran un barrido?",
-            "¿Qué exige un focalizado?",
-            "Diferencia filtro y prioridad.",
-            "¿Por qué la duración importa?",
-            "¿Repetir lo mismo revela más?",
-            "¿Qué ocurre ante un sector válido pero equivocado?"
-          ]
         }
       ]
     }
   ],
-  "status": "developed_content"
+  "status": "developed_content",
+  "assessmentModel": "concept_driven_v2"
 }

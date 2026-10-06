@@ -1,7 +1,7 @@
 {
   "subject": "Navegación y astrográfica I",
   "code": "NAV-403",
-  "version": "1.1",
+  "version": "1.2",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/NAV-403/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/NAV-403/MANUAL_v1_0.md",
@@ -45,20 +45,6 @@
         {
           "type": "p",
           "text": "La política también importa: fronteras, jurisdicciones, conflictos y apoyo disponible cambian según fecha y campaña."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Por qué un mapa no muestra toda la verdad?",
-            "¿Qué información puede contener?",
-            "¿Qué función cumplen sectores y regiones?",
-            "¿Por qué puede quedar desactualizado?",
-            "¿Cómo afecta la política a una ruta?"
-          ]
         }
       ]
     },
@@ -89,20 +75,6 @@
           "type": "callout",
           "label": "IMPORTANTE",
           "text": "Orientación y movimiento no son necesariamente lo mismo: una nave puede apuntar en una dirección y desplazarse en otra."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Diferencia posición absoluta y relativa.",
-            "¿Por qué una coordenada necesita referencia?",
-            "¿Cuándo es útil la posición relativa?",
-            "¿Qué representa un vector?",
-            "¿Orientación y movimiento son siempre iguales?"
-          ]
         }
       ]
     },
@@ -142,20 +114,6 @@
           "type": "callout",
           "label": "INCERTIDUMBRE",
           "text": "Cuando la confianza es menor, la ventana estimada de llegada debe ser más amplia."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿De dónde puede proceder una distancia?",
-            "¿Qué significa ETA?",
-            "¿Por qué ETA puede ser un rango?",
-            "Nombra cuatro causas de cambio.",
-            "¿Cómo afecta la confianza cartográfica?"
-          ]
         }
       ]
     },
@@ -195,20 +153,6 @@
             "Energía",
             "Daño",
             "Condiciones"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Para qué se usa impulso?",
-            "¿Para qué se usa warp?",
-            "¿Por qué warp no es teletransporte de mapa?",
-            "¿Qué valida un factor solicitado?",
-            "¿Qué restricciones pueden afectar el régimen?"
           ]
         }
       ]
@@ -258,20 +202,6 @@
           "type": "callout",
           "label": "NO FILTRAR EL MUNDO OCULTO",
           "text": "Un peligro desconocido puede existir en World State sin aparecer como advertencia para el jugador."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Por qué la ruta más corta no siempre es mejor?",
-            "Nombra tres preferencias.",
-            "Diferencia peligro conocido y oculto.",
-            "¿Debe avisarse de un peligro no detectado?",
-            "¿Qué consecuencias puede tener una frontera?"
-          ]
         }
       ]
     },
@@ -300,23 +230,10 @@
           "type": "callout",
           "label": "REEVALUACIÓN",
           "text": "La ruta puede cambiar si cambian velocidad, daño, energía, subespacio, frontera, encuentros o nueva detección de peligro."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué pasos sigue una solución básica?",
-            "¿Qué haces si destino es ambiguo?",
-            "¿Por qué generar rutas candidatas?",
-            "¿Qué contiene un reporte breve?",
-            "¿Qué cambios obligan a reevaluar?"
-          ]
         }
       ]
     }
   ],
-  "status": "developed_content"
+  "status": "developed_content",
+  "assessmentModel": "concept_driven_v2"
 }

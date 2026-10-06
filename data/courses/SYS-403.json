@@ -1,7 +1,7 @@
 {
   "subject": "Sistemas fundamentales de una nave estelar",
   "code": "SYS-403",
-  "version": "1.1",
+  "version": "1.2",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/SYS-403/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/SYS-403/MANUAL_v1_0.md",
@@ -44,20 +44,6 @@
           "type": "callout",
           "label": "DEPENDENCIAS",
           "text": "Una consola puede estar intacta y fallar si pierde energía, red de datos, el sistema remoto que controla o la autorización necesaria."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Por qué una nave es una red de sistemas?",
-            "Diferencia fuente, distribución y carga.",
-            "¿Puede una consola intacta no funcionar?",
-            "¿Qué significa dependencia?",
-            "¿Por qué la prioridad depende del contexto?"
-          ]
         }
       ]
     },
@@ -106,20 +92,6 @@
             "Condiciones locales",
             "Restricciones de misión"
           ]
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué función cumple impulso?",
-            "¿Qué significa subluz?",
-            "Diferencia propulsión y navegación.",
-            "¿Qué factores pueden limitar impulso?",
-            "¿Por qué no puede ignorarse el estado real de la nave?"
-          ]
         }
       ]
     },
@@ -164,20 +136,6 @@
             "Peligros",
             "Restricciones de ruta"
           ]
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué función cumple warp?",
-            "¿Qué significa factor de curvatura a este nivel?",
-            "¿Por qué no hay una ecuación universal única?",
-            "Diferencia máximo y sostenible.",
-            "¿Qué factores condicionan un viaje warp?"
-          ]
         }
       ]
     },
@@ -216,20 +174,6 @@
           "type": "definition",
           "term": "Computer service",
           "text": "Servicio distribuido de consulta y acciones autorizadas; no es omnipotente."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué función cumple soporte vital?",
-            "Diferencia sintetizador y replicador.",
-            "¿Qué limita un replicador?",
-            "¿Qué se exige saber del transportador?",
-            "¿Por qué la computadora no soluciona cualquier fallo?"
-          ]
         }
       ]
     },
@@ -272,20 +216,6 @@
         {
           "type": "p",
           "text": "Es dependiente de era y nave; no se retrotrae automáticamente a Pike o Kirk."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué sistemas contribuyen a defensa?",
-            "¿Tener armamento concede permiso?",
-            "¿Por qué Sensores es consumidor y proveedor?",
-            "¿Qué problema causa información pobre?",
-            "¿Por qué holodeck no se asume en todas las eras?"
-          ]
         }
       ]
     },
@@ -335,23 +265,10 @@
           "type": "callout",
           "label": "SÍNTOMA ≠ CAUSA",
           "text": "Una misma pérdida de función puede tener causas distintas. Ingeniería diagnostica; otras estaciones reportan efectos."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué significa degradación?",
-            "Diferencia primario y respaldo.",
-            "¿Qué es efecto cascada?",
-            "¿Qué factores influyen en prioridad?",
-            "¿Por qué un síntoma no demuestra la causa?"
-          ]
         }
       ]
     }
   ],
-  "status": "developed_content"
+  "status": "developed_content",
+  "assessmentModel": "concept_driven_v2"
 }
