@@ -330,12 +330,8 @@ function renderCurriculum() {
 
   let html =
     '<section class="curriculum-section curriculum-section--access">' +
-      '<header class="curriculum-section__header"><div><span class="overline">ANTES DE LA ACADEMIA</span><h2>' +
-      escapeHtml(pre.title) + '</h2><p>' + escapeHtml(pre.subtitle) + '</p></div><span class="badge">PREVIO AL ACCESO</span></header>' +
-      '<div class="curriculum-section__body">' + accessMaterials +
-      '<h3 class="preacademy-heading">Áreas de preparación</h3><ul class="preacademy-list">' +
-      pre.subjects.map(function(item){ return "<li>" + escapeHtml(item) + "</li>"; }).join("") +
-      '</ul></div></section>';
+      '<header class="curriculum-section__header"><div><h2>' + escapeHtml(pre.title) + '</h2></div></header>' +
+      '<div class="curriculum-section__body">' + accessMaterials + '</div></section>';
 
   app.curriculum.years.forEach(function(year, yearIndex) {
     const specializationText = year.specializations
