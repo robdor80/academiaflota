@@ -1,14 +1,40 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.1.0",
   "course_id": "SIM-203",
-  "status": "editorially_aligned_with_developed_manual",
-  "question_count": 24,
-  "questions": [
+  "status": "concept_driven_autocorrectable_v2_1",
+  "source_bank": "question_bank_v1_0.json",
+  "policy": {
+    "theory_formats": [
+      "multiple_choice",
+      "short_answer"
+    ],
+    "multiple_choice_target_ratio": 0.8,
+    "short_answer_target_ratio": 0.2,
+    "deterministic_correction": true,
+    "web_and_game_share_concepts_not_question_instances": true,
+    "complex_judgment_moves_to_practice_and_simulation": true,
+    "source_rule": "Every evaluated concept must be explicitly taught in the course material or an established prerequisite."
+  },
+  "unit_review": {
+    "questions_per_attempt": 5,
+    "reshuffle_each_attempt": true,
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
+  },
+  "concepts": [
     {
-      "id": "SIM-203-Q001",
+      "id": "SIM-203-C001",
       "unit_id": "SIM-203-U01",
-      "type": "professional_knowledge",
-      "prompt_es": "Explica qué significa datos conocidos en esta unidad y cómo puede cambiar una decisión.",
+      "source_type": "professional_knowledge",
+      "web_prompt_es": "¿Qué opción explica correctamente qué significa datos conocidos en esta unidad y cómo puede cambiar una decisión?",
+      "web_prompt_variants_es": [
+        "¿Qué opción explica correctamente qué significa datos conocidos en esta unidad y cómo puede cambiar una decisión?",
+        "Explica qué significa datos conocidos en esta unidad y cómo puede cambiar una decisión."
+      ],
+      "answer_display_es": "datos conocidos · contexto · impacto en decisión",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "datos conocidos",
         "contexto",
@@ -16,10 +42,17 @@
       ]
     },
     {
-      "id": "SIM-203-Q002",
+      "id": "SIM-203-C002",
       "unit_id": "SIM-203-U01",
-      "type": "planning",
-      "prompt_es": "Planifica esta tarea: Preparar misión.",
+      "source_type": "planning",
+      "web_prompt_es": "Planifica esta tarea: Preparar misión.",
+      "web_prompt_variants_es": [
+        "Planifica esta tarea: Preparar misión.",
+        "Repaso: Planifica esta tarea: Preparar misión."
+      ],
+      "answer_display_es": "objetivo · riesgos · recursos · autoridad · criterio de éxito",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "objetivo",
         "riesgos",
@@ -29,10 +62,17 @@
       ]
     },
     {
-      "id": "SIM-203-Q003",
+      "id": "SIM-203-C003",
       "unit_id": "SIM-203-U01",
-      "type": "contingency",
-      "prompt_es": "Durante Briefing incompleto cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "source_type": "contingency",
+      "web_prompt_es": "Durante Briefing incompleto cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "web_prompt_variants_es": [
+        "Durante Briefing incompleto cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+        "Repaso: Durante Briefing incompleto cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?"
+      ],
+      "answer_display_es": "estado · seguridad · riesgo · autoridad · adaptación o escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estado",
         "seguridad",
@@ -42,10 +82,17 @@
       ]
     },
     {
-      "id": "SIM-203-Q004",
+      "id": "SIM-203-C004",
       "unit_id": "SIM-203-U01",
-      "type": "handoff",
-      "prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "source_type": "handoff",
+      "web_prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+        "Repaso: ¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?"
+      ],
+      "answer_display_es": "acción · resultado · limitaciones · riesgos · pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "acción",
         "resultado",
@@ -55,10 +102,17 @@
       ]
     },
     {
-      "id": "SIM-203-Q005",
+      "id": "SIM-203-C005",
       "unit_id": "SIM-203-U02",
-      "type": "professional_knowledge",
-      "prompt_es": "Explica qué significa rutina en esta unidad y cómo puede cambiar una decisión.",
+      "source_type": "professional_knowledge",
+      "web_prompt_es": "¿Qué opción explica correctamente qué significa rutina en esta unidad y cómo puede cambiar una decisión?",
+      "web_prompt_variants_es": [
+        "¿Qué opción explica correctamente qué significa rutina en esta unidad y cómo puede cambiar una decisión?",
+        "Explica qué significa rutina en esta unidad y cómo puede cambiar una decisión."
+      ],
+      "answer_display_es": "rutina · contexto · impacto en decisión",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "rutina",
         "contexto",
@@ -66,10 +120,17 @@
       ]
     },
     {
-      "id": "SIM-203-Q006",
+      "id": "SIM-203-C006",
       "unit_id": "SIM-203-U02",
-      "type": "planning",
-      "prompt_es": "Planifica esta tarea: Operar durante periodo sostenido.",
+      "source_type": "planning",
+      "web_prompt_es": "Planifica esta tarea: Operar durante periodo sostenido.",
+      "web_prompt_variants_es": [
+        "Planifica esta tarea: Operar durante periodo sostenido.",
+        "Repaso: Planifica esta tarea: Operar durante periodo sostenido."
+      ],
+      "answer_display_es": "objetivo · riesgos · recursos · autoridad · criterio de éxito",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "objetivo",
         "riesgos",
@@ -79,10 +140,17 @@
       ]
     },
     {
-      "id": "SIM-203-Q007",
+      "id": "SIM-203-C007",
       "unit_id": "SIM-203-U02",
-      "type": "contingency",
-      "prompt_es": "Durante Fase normal extendida cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "source_type": "contingency",
+      "web_prompt_es": "Durante Fase normal extendida cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "web_prompt_variants_es": [
+        "Durante Fase normal extendida cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+        "Repaso: Durante Fase normal extendida cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?"
+      ],
+      "answer_display_es": "estado · seguridad · riesgo · autoridad · adaptación o escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estado",
         "seguridad",
@@ -92,10 +160,17 @@
       ]
     },
     {
-      "id": "SIM-203-Q008",
+      "id": "SIM-203-C008",
       "unit_id": "SIM-203-U02",
-      "type": "handoff",
-      "prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "source_type": "handoff",
+      "web_prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+        "Repaso: ¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?"
+      ],
+      "answer_display_es": "acción · resultado · limitaciones · riesgos · pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "acción",
         "resultado",
@@ -105,10 +180,17 @@
       ]
     },
     {
-      "id": "SIM-203-Q009",
+      "id": "SIM-203-C009",
       "unit_id": "SIM-203-U03",
-      "type": "professional_knowledge",
-      "prompt_es": "Explica qué significa detección en esta unidad y cómo puede cambiar una decisión.",
+      "source_type": "professional_knowledge",
+      "web_prompt_es": "¿Qué opción explica correctamente qué significa detección en esta unidad y cómo puede cambiar una decisión?",
+      "web_prompt_variants_es": [
+        "¿Qué opción explica correctamente qué significa detección en esta unidad y cómo puede cambiar una decisión?",
+        "Explica qué significa detección en esta unidad y cómo puede cambiar una decisión."
+      ],
+      "answer_display_es": "detección · contexto · impacto en decisión",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "detección",
         "contexto",
@@ -116,10 +198,17 @@
       ]
     },
     {
-      "id": "SIM-203-Q010",
+      "id": "SIM-203-C010",
       "unit_id": "SIM-203-U03",
-      "type": "planning",
-      "prompt_es": "Planifica esta tarea: Resolver evento.",
+      "source_type": "planning",
+      "web_prompt_es": "Planifica esta tarea: Resolver evento.",
+      "web_prompt_variants_es": [
+        "Planifica esta tarea: Resolver evento.",
+        "Repaso: Planifica esta tarea: Resolver evento."
+      ],
+      "answer_display_es": "objetivo · riesgos · recursos · autoridad · criterio de éxito",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "objetivo",
         "riesgos",
@@ -129,10 +218,17 @@
       ]
     },
     {
-      "id": "SIM-203-Q011",
+      "id": "SIM-203-C011",
       "unit_id": "SIM-203-U03",
-      "type": "contingency",
-      "prompt_es": "Durante Primer incidente cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "source_type": "contingency",
+      "web_prompt_es": "Durante Primer incidente cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "web_prompt_variants_es": [
+        "Durante Primer incidente cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+        "Repaso: Durante Primer incidente cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?"
+      ],
+      "answer_display_es": "estado · seguridad · riesgo · autoridad · adaptación o escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estado",
         "seguridad",
@@ -142,10 +238,17 @@
       ]
     },
     {
-      "id": "SIM-203-Q012",
+      "id": "SIM-203-C012",
       "unit_id": "SIM-203-U03",
-      "type": "handoff",
-      "prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "source_type": "handoff",
+      "web_prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+        "Repaso: ¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?"
+      ],
+      "answer_display_es": "acción · resultado · limitaciones · riesgos · pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "acción",
         "resultado",
@@ -155,10 +258,17 @@
       ]
     },
     {
-      "id": "SIM-203-Q013",
+      "id": "SIM-203-C013",
       "unit_id": "SIM-203-U04",
-      "type": "professional_knowledge",
-      "prompt_es": "Explica qué significa segundo problema en esta unidad y cómo puede cambiar una decisión.",
+      "source_type": "professional_knowledge",
+      "web_prompt_es": "¿Qué opción explica correctamente qué significa segundo problema en esta unidad y cómo puede cambiar una decisión?",
+      "web_prompt_variants_es": [
+        "¿Qué opción explica correctamente qué significa segundo problema en esta unidad y cómo puede cambiar una decisión?",
+        "Explica qué significa segundo problema en esta unidad y cómo puede cambiar una decisión."
+      ],
+      "answer_display_es": "segundo problema · contexto · impacto en decisión",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "segundo problema",
         "contexto",
@@ -166,10 +276,17 @@
       ]
     },
     {
-      "id": "SIM-203-Q014",
+      "id": "SIM-203-C014",
       "unit_id": "SIM-203-U04",
-      "type": "planning",
-      "prompt_es": "Planifica esta tarea: Adaptar plan.",
+      "source_type": "planning",
+      "web_prompt_es": "Planifica esta tarea: Adaptar plan.",
+      "web_prompt_variants_es": [
+        "Planifica esta tarea: Adaptar plan.",
+        "Repaso: Planifica esta tarea: Adaptar plan."
+      ],
+      "answer_display_es": "objetivo · riesgos · recursos · autoridad · criterio de éxito",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "objetivo",
         "riesgos",
@@ -179,10 +296,17 @@
       ]
     },
     {
-      "id": "SIM-203-Q015",
+      "id": "SIM-203-C015",
       "unit_id": "SIM-203-U04",
-      "type": "contingency",
-      "prompt_es": "Durante Escalada cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "source_type": "contingency",
+      "web_prompt_es": "Durante Escalada cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "web_prompt_variants_es": [
+        "Durante Escalada cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+        "Repaso: Durante Escalada cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?"
+      ],
+      "answer_display_es": "estado · seguridad · riesgo · autoridad · adaptación o escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estado",
         "seguridad",
@@ -192,10 +316,17 @@
       ]
     },
     {
-      "id": "SIM-203-Q016",
+      "id": "SIM-203-C016",
       "unit_id": "SIM-203-U04",
-      "type": "handoff",
-      "prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "source_type": "handoff",
+      "web_prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+        "Repaso: ¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?"
+      ],
+      "answer_display_es": "acción · resultado · limitaciones · riesgos · pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "acción",
         "resultado",
@@ -205,10 +336,17 @@
       ]
     },
     {
-      "id": "SIM-203-Q017",
+      "id": "SIM-203-C017",
       "unit_id": "SIM-203-U05",
-      "type": "professional_knowledge",
-      "prompt_es": "Explica qué significa éxito parcial en esta unidad y cómo puede cambiar una decisión.",
+      "source_type": "professional_knowledge",
+      "web_prompt_es": "¿Qué opción explica correctamente qué significa éxito parcial en esta unidad y cómo puede cambiar una decisión?",
+      "web_prompt_variants_es": [
+        "¿Qué opción explica correctamente qué significa éxito parcial en esta unidad y cómo puede cambiar una decisión?",
+        "Explica qué significa éxito parcial en esta unidad y cómo puede cambiar una decisión."
+      ],
+      "answer_display_es": "éxito parcial · contexto · impacto en decisión",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "éxito parcial",
         "contexto",
@@ -216,10 +354,17 @@
       ]
     },
     {
-      "id": "SIM-203-Q018",
+      "id": "SIM-203-C018",
       "unit_id": "SIM-203-U05",
-      "type": "planning",
-      "prompt_es": "Planifica esta tarea: Cerrar escenario.",
+      "source_type": "planning",
+      "web_prompt_es": "Planifica esta tarea: Cerrar escenario.",
+      "web_prompt_variants_es": [
+        "Planifica esta tarea: Cerrar escenario.",
+        "Repaso: Planifica esta tarea: Cerrar escenario."
+      ],
+      "answer_display_es": "objetivo · riesgos · recursos · autoridad · criterio de éxito",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "objetivo",
         "riesgos",
@@ -229,10 +374,17 @@
       ]
     },
     {
-      "id": "SIM-203-Q019",
+      "id": "SIM-203-C019",
       "unit_id": "SIM-203-U05",
-      "type": "contingency",
-      "prompt_es": "Durante Resolución y consecuencias cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "source_type": "contingency",
+      "web_prompt_es": "Durante Resolución y consecuencias cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "web_prompt_variants_es": [
+        "Durante Resolución y consecuencias cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+        "Repaso: Durante Resolución y consecuencias cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?"
+      ],
+      "answer_display_es": "estado · seguridad · riesgo · autoridad · adaptación o escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estado",
         "seguridad",
@@ -242,10 +394,17 @@
       ]
     },
     {
-      "id": "SIM-203-Q020",
+      "id": "SIM-203-C020",
       "unit_id": "SIM-203-U05",
-      "type": "handoff",
-      "prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "source_type": "handoff",
+      "web_prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+        "Repaso: ¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?"
+      ],
+      "answer_display_es": "acción · resultado · limitaciones · riesgos · pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "acción",
         "resultado",
@@ -255,10 +414,17 @@
       ]
     },
     {
-      "id": "SIM-203-Q021",
+      "id": "SIM-203-C021",
       "unit_id": "SIM-203-U06",
-      "type": "professional_knowledge",
-      "prompt_es": "Explica qué significa información disponible en esta unidad y cómo puede cambiar una decisión.",
+      "source_type": "professional_knowledge",
+      "web_prompt_es": "¿Qué opción explica correctamente qué significa información disponible en esta unidad y cómo puede cambiar una decisión?",
+      "web_prompt_variants_es": [
+        "¿Qué opción explica correctamente qué significa información disponible en esta unidad y cómo puede cambiar una decisión?",
+        "Explica qué significa información disponible en esta unidad y cómo puede cambiar una decisión."
+      ],
+      "answer_display_es": "información disponible · contexto · impacto en decisión",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "información disponible",
         "contexto",
@@ -266,10 +432,17 @@
       ]
     },
     {
-      "id": "SIM-203-Q022",
+      "id": "SIM-203-C022",
       "unit_id": "SIM-203-U06",
-      "type": "planning",
-      "prompt_es": "Planifica esta tarea: Debrief con evidencias.",
+      "source_type": "planning",
+      "web_prompt_es": "Planifica esta tarea: Debrief con evidencias.",
+      "web_prompt_variants_es": [
+        "Planifica esta tarea: Debrief con evidencias.",
+        "Repaso: Planifica esta tarea: Debrief con evidencias."
+      ],
+      "answer_display_es": "objetivo · riesgos · recursos · autoridad · criterio de éxito",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "objetivo",
         "riesgos",
@@ -279,10 +452,17 @@
       ]
     },
     {
-      "id": "SIM-203-Q023",
+      "id": "SIM-203-C023",
       "unit_id": "SIM-203-U06",
-      "type": "contingency",
-      "prompt_es": "Durante Debrief avanzado cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "source_type": "contingency",
+      "web_prompt_es": "Durante Debrief avanzado cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+      "web_prompt_variants_es": [
+        "Durante Debrief avanzado cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
+        "Repaso: Durante Debrief avanzado cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?"
+      ],
+      "answer_display_es": "estado · seguridad · riesgo · autoridad · adaptación o escalado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estado",
         "seguridad",
@@ -292,10 +472,17 @@
       ]
     },
     {
-      "id": "SIM-203-Q024",
+      "id": "SIM-203-C024",
       "unit_id": "SIM-203-U06",
-      "type": "handoff",
-      "prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "source_type": "handoff",
+      "web_prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
+        "Repaso: ¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?"
+      ],
+      "answer_display_es": "acción · resultado · limitaciones · riesgos · pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "acción",
         "resultado",
@@ -303,8 +490,198 @@
         "riesgos",
         "pendientes"
       ]
+    },
+    {
+      "id": "SIM-203-C025",
+      "unit_id": "SIM-203-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Contenidos»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Contenidos»?",
+        "En «Contenidos», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Datos conocidos: datos conocidos debe conservar origen, recencia, fiabilidad y contexto para sostener una decisión.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Datos conocidos: datos conocidos debe conservar origen, recencia, fiabilidad y contexto para sostener una decisión."
+      ]
+    },
+    {
+      "id": "SIM-203-C026",
+      "unit_id": "SIM-203-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+        "En «Autoevaluación», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Explica datos conocidos desde el punto de vista profesional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Explica datos conocidos desde el punto de vista profesional."
+      ]
+    },
+    {
+      "id": "SIM-203-C027",
+      "unit_id": "SIM-203-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Contenidos»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Contenidos»?",
+        "En «Contenidos», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Rutina: rutina se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Rutina: rutina se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "SIM-203-C028",
+      "unit_id": "SIM-203-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+        "En «Autoevaluación», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Explica rutina desde el punto de vista profesional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Explica rutina desde el punto de vista profesional."
+      ]
+    },
+    {
+      "id": "SIM-203-C029",
+      "unit_id": "SIM-203-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Contenidos»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Contenidos»?",
+        "En «Contenidos», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Detección: detección se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Detección: detección se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "SIM-203-C030",
+      "unit_id": "SIM-203-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+        "En «Autoevaluación», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Explica detección desde el punto de vista profesional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Explica detección desde el punto de vista profesional."
+      ]
+    },
+    {
+      "id": "SIM-203-C031",
+      "unit_id": "SIM-203-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Contenidos»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Contenidos»?",
+        "En «Contenidos», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Segundo problema: segundo problema se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Segundo problema: segundo problema se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "SIM-203-C032",
+      "unit_id": "SIM-203-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+        "En «Autoevaluación», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Explica segundo problema desde el punto de vista profesional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Explica segundo problema desde el punto de vista profesional."
+      ]
+    },
+    {
+      "id": "SIM-203-C033",
+      "unit_id": "SIM-203-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Contenidos»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Contenidos»?",
+        "En «Contenidos», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Éxito parcial: éxito parcial se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Éxito parcial: éxito parcial se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
+      ]
+    },
+    {
+      "id": "SIM-203-C034",
+      "unit_id": "SIM-203-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+        "En «Autoevaluación», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Explica éxito parcial desde el punto de vista profesional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Explica éxito parcial desde el punto de vista profesional."
+      ]
+    },
+    {
+      "id": "SIM-203-C035",
+      "unit_id": "SIM-203-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Contenidos»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Contenidos»?",
+        "En «Contenidos», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Información disponible: información disponible debe conservar origen, recencia, fiabilidad y contexto para sostener una decisión.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Información disponible: información disponible debe conservar origen, recencia, fiabilidad y contexto para sostener una decisión."
+      ]
+    },
+    {
+      "id": "SIM-203-C036",
+      "unit_id": "SIM-203-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Autoevaluación»?",
+        "En «Autoevaluación», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Explica información disponible desde el punto de vista profesional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Explica información disponible desde el punto de vista profesional."
+      ]
     }
-  ],
-  "source_manual": "gameplay/careers/academy_path/study_materials/second_class/SIM-203/MANUAL_v1_0.md",
-  "rule": "No question may require knowledge that is not explicitly taught in SIM-203 or established prerequisites."
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "subject": "Servicio supervisado de especialidad",
   "code": "DUT-203",
-  "version": "1.1",
+  "version": "1.3",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/second_class/courses/DUT-203/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/second_class/DUT-203/MANUAL_v1_0.md",
@@ -20,11 +20,11 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
-          "text": "Ocupar temporalmente un puesto de la rama bajo supervisión y generar evidencia profesional real."
+          "text": "Ocupar temporalmente un **puesto** de la rama bajo supervisión y generar evidencia profesional real."
         },
         {
           "type": "heading",
@@ -33,7 +33,7 @@
         {
           "type": "bullets",
           "items": [
-            "Puesto: puesto se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "**Puesto**: puesto se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Supervisor: Conserva responsabilidad de formación y seguridad; observa, interviene cuando corresponde y registra evidencia.",
             "Órdenes: órdenes se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Límites: Definen hasta dónde puede actuar el cadete por competencia, autoridad, estado y riesgo; fuera de ellos se consulta o escala."
@@ -48,19 +48,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación de preparación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica puesto desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Incorporación a turno.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -85,7 +72,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
@@ -98,9 +85,9 @@
         {
           "type": "bullets",
           "items": [
-            "Monitorización: monitorización se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "**Monitorización**: monitorización se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Tareas: tareas se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
-            "Registro: Conserva estado, decisiones, acciones, resultados y pendientes para continuidad y trazabilidad.",
+            "Registro: Conserva estado, decisiones, acciones, resultados y **pendientes** para continuidad y trazabilidad.",
             "Comunicación: Debe ser proporcional, precisa y dirigida a quien puede actuar; demasiado ruido también degrada la operación."
           ]
         },
@@ -113,19 +100,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Observación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica monitorización desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Bloque de servicio normal.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -150,7 +124,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
@@ -163,8 +137,8 @@
         {
           "type": "bullets",
           "items": [
-            "Detección: detección se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
-            "Acción: acción se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "**Detección**: detección se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "**Acción**: acción se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Escalado: Transfiere una decisión a la autoridad o especialidad adecuada cuando se exceden límites, recursos o riesgo aceptable.",
             "Seguimiento: seguimiento se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
           ]
@@ -178,19 +152,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Juicio."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica detección desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Responder a evento contextual.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -215,7 +176,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
@@ -228,8 +189,8 @@
         {
           "type": "bullets",
           "items": [
-            "Pendientes: pendientes se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
-            "Relevo: relevo preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes.",
+            "**Pendientes**: pendientes se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Relevo: relevo preserva continuidad mediante hechos, estado, acciones, resultado, **limitaciones** y pendientes.",
             "Estado: Fija la condición real de partida —normal, degradada, limitada o desconocida— antes de actuar; si cambia, el plan debe revisarse.",
             "Riesgo: Combina probabilidad, impacto y exposición; se reduce, acepta dentro de autoridad o se escala."
           ]
@@ -243,19 +204,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación de handoff."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica pendientes desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Entregar puesto.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -280,7 +228,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
@@ -293,10 +241,10 @@
         {
           "type": "bullets",
           "items": [
-            "Disciplina: disciplina se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "**Disciplina**: disciplina se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Integridad: integridad se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Teamwork: teamwork se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
-            "Límites: Definen hasta dónde puede actuar el cadete por competencia, autoridad, estado y riesgo; fuera de ellos se consulta o escala."
+            "Límites: Definen hasta dónde puede actuar el cadete por competencia, **autoridad**, estado y riesgo; fuera de ellos se consulta o escala."
           ]
         },
         {
@@ -308,19 +256,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Informe de supervisor."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica disciplina desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Evaluación longitudinal.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -345,11 +280,11 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
-          "text": "Ocupar temporalmente un puesto de la rama bajo supervisión y generar evidencia profesional real."
+          "text": "Ocupar temporalmente un puesto de la rama bajo supervisión y generar **evidencia** profesional real."
         },
         {
           "type": "heading",
@@ -358,7 +293,7 @@
         {
           "type": "bullets",
           "items": [
-            "Evidencia: Debe ser observable y trazable: qué se hizo, en qué contexto, con qué resultado y bajo qué supervisión.",
+            "**Evidencia**: Debe ser observable y trazable: qué se hizo, en qué contexto, con qué resultado y bajo qué supervisión.",
             "Fortalezas: fortalezas se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Carencias: carencias se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Plan: plan se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
@@ -373,19 +308,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Registro en expediente."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica evidencia desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Debrief formal.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -404,5 +326,6 @@
       ]
     }
   ],
-  "status": "developed_content"
+  "status": "developed_content",
+  "assessmentModel": "concept_driven_v2_1"
 }

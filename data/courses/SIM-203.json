@@ -1,7 +1,7 @@
 {
   "subject": "Simulación operacional compleja II",
   "code": "SIM-203",
-  "version": "1.1",
+  "version": "1.3",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/second_class/courses/SIM-203/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/second_class/SIM-203/MANUAL_v1_0.md",
@@ -21,11 +21,11 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
-          "text": "Probar la rama dentro de una misión que combina carga, degradación, personas y objetivos en conflicto."
+          "text": "Probar la rama dentro de una misión que combina carga, degradación, personas y **objetivo**s en conflicto."
         },
         {
           "type": "heading",
@@ -34,7 +34,7 @@
         {
           "type": "bullets",
           "items": [
-            "Datos conocidos: datos conocidos debe conservar origen, recencia, fiabilidad y contexto para sostener una decisión.",
+            "**Datos conocidos**: datos conocidos debe conservar origen, recencia, fiabilidad y contexto para sostener una decisión.",
             "Incertidumbre: Debe expresarse y gestionarse; ocultarla produce decisiones falsamente precisas.",
             "Roles: roles se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Restricciones: restricciones se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
@@ -49,19 +49,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica datos conocidos desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Preparar misión.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -87,11 +74,11 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
-          "text": "Probar la rama dentro de una misión que combina carga, degradación, personas y objetivos en conflicto."
+          "text": "Probar la rama dentro de una misión que combina carga, degradación, personas y **objetivo**s en conflicto."
         },
         {
           "type": "heading",
@@ -100,7 +87,7 @@
         {
           "type": "bullets",
           "items": [
-            "Rutina: rutina se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "**Rutina**: rutina se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Carga: carga se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Comunicación: Debe ser proporcional, precisa y dirigida a quien puede actuar; demasiado ruido también degrada la operación.",
             "Logs: logs preserva continuidad mediante hechos, estado, acciones, resultado, limitaciones y pendientes."
@@ -115,19 +102,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Observación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica rutina desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Operar durante periodo sostenido.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -153,11 +127,11 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
-          "text": "Probar la rama dentro de una misión que combina carga, degradación, personas y objetivos en conflicto."
+          "text": "Probar la rama dentro de una misión que combina carga, degradación, personas y **objetivo**s en conflicto."
         },
         {
           "type": "heading",
@@ -166,7 +140,7 @@
         {
           "type": "bullets",
           "items": [
-            "Detección: detección se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "**Detección**: detección se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Respuesta: respuesta se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Coordinación: coordinación se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
           ]
@@ -180,19 +154,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Juicio."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica detección desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Resolver evento.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -218,11 +179,11 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
-          "text": "Probar la rama dentro de una misión que combina carga, degradación, personas y objetivos en conflicto."
+          "text": "Probar la rama dentro de una misión que combina carga, degradación, personas y **objetivo**s en conflicto."
         },
         {
           "type": "heading",
@@ -231,7 +192,7 @@
         {
           "type": "bullets",
           "items": [
-            "Segundo problema: segundo problema se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "**Segundo problema**: segundo problema se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Recursos limitados: recursos limitados se evalúa por disponibilidad, demanda, dependencias y margen antes de comprometerlo.",
             "Prioridades: Ordenan seguridad, misión, continuidad y recursos y deben revisarse cuando cambia el contexto."
           ]
@@ -245,19 +206,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica segundo problema desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Adaptar plan.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -283,11 +231,11 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
-          "text": "Probar la rama dentro de una misión que combina carga, degradación, personas y objetivos en conflicto."
+          "text": "Probar la rama dentro de una misión que combina carga, degradación, personas y **objetivo**s en conflicto."
         },
         {
           "type": "heading",
@@ -296,7 +244,7 @@
         {
           "type": "bullets",
           "items": [
-            "Éxito parcial: éxito parcial se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "**Éxito parcial**: éxito parcial se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Costes: costes se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Seguridad: Limita cualquier procedimiento: se identifican peligros, protecciones, condición de aborto y quién puede autorizar continuar.",
             "Misión: Define qué se intenta conseguir y bajo qué restricciones; las decisiones locales deben relacionarse con esa intención."
@@ -311,19 +259,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Resultado contextual, no score único."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica éxito parcial desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Cerrar escenario.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -349,11 +284,11 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+          "text": "**En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia.**"
         },
         {
           "type": "p",
-          "text": "Probar la rama dentro de una misión que combina carga, degradación, personas y objetivos en conflicto."
+          "text": "Probar la rama dentro de una misión que combina carga, degradación, personas y **objetivo**s en conflicto."
         },
         {
           "type": "heading",
@@ -362,7 +297,7 @@
         {
           "type": "bullets",
           "items": [
-            "Información disponible: información disponible debe conservar origen, recencia, fiabilidad y contexto para sostener una decisión.",
+            "**Información disponible**: información disponible debe conservar origen, recencia, fiabilidad y contexto para sostener una decisión.",
             "Decisiones: decisiones se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
             "Alternativas: Se comparan por viabilidad, riesgo, recursos, reversibilidad y efecto en misión.",
             "Responsabilidad: responsabilidad se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
@@ -377,19 +312,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Evaluación descriptiva."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica información disponible desde el punto de vista profesional.",
-            "¿Qué riesgo o límite condiciona esta tarea?",
-            "Resuelve: Debrief con evidencias.",
-            "¿Qué evidencia dejarías en el expediente o relevo?"
-          ]
         },
         {
           "type": "heading",
@@ -409,5 +331,6 @@
       ]
     }
   ],
-  "status": "developed_content"
+  "status": "developed_content",
+  "assessmentModel": "concept_driven_v2_1"
 }
