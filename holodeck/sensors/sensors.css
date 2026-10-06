@@ -43,3 +43,5 @@
 .teacher-order blockquote{margin:0;padding:12px 14px;background:#f5ecd3;border-radius:6px;color:#263b4b;font-size:1rem;line-height:1.55;font-weight:700}
 .teacher-order p{margin:9px 0 11px;color:#5f5a4b;font-size:.84rem;line-height:1.5}
 .teacher-order .action{font-size:.82rem;padding:10px 13px}
+
+.console-grid.teacher-locked{pointer-events:none;opacity:.58;filter:saturate(.65)}

@@ -53,6 +53,7 @@ export async function initTeacherMode({resetScenario}){
   function render(){
     title.textContent=tutorial.title;objective.textContent=tutorial.objective;
     orderBox.hidden=orderAcknowledged;
+    document.querySelector(".console-grid").classList.toggle("teacher-locked",!orderAcknowledged);
     objective.hidden=!orderAcknowledged;
     stepsEl.hidden=!orderAcknowledged;
     document.querySelector("#teacher-explanation").hidden=!orderAcknowledged;
