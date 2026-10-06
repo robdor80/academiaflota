@@ -1,7 +1,7 @@
 export async function loadStudyFile(path) {
   if (!path) throw new Error("El material de estudio no tiene un archivo asociado.");
   const separator = path.includes("?") ? "&" : "?";
-  const response = await fetch(path + separator + "v=0.7.1");
+  const response = await fetch(path + separator + "v=0.7.2");
   if (!response.ok) throw new Error("No se pudo cargar el material académico.");
   return response.json();
 }
@@ -36,24 +36,28 @@ function normalizeAnswer(value) {
     .trim();
 }
 
+function richText(value) {
+  return escapeHtml(value).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+}
+
 function blockHtml(block) {
-  if (block.type === "p") return "<p>" + block.text + "</p>";
-  if (block.type === "quote") return '<blockquote class="lesson-quote">' + block.text + "</blockquote>";
-  if (block.type === "heading") return '<h2 class="lesson-section-title">' + block.text + "</h2>";
-  if (block.type === "definition") return '<div class="definition-block"><strong>' + block.term + '</strong><p>' + block.text + "</p></div>";
-  if (block.type === "bullets") return "<ul>" + block.items.map(function(item) { return "<li>" + item + "</li>"; }).join("") + "</ul>";
-  if (block.type === "numbered") return "<ol>" + block.items.map(function(item) { return "<li>" + item + "</li>"; }).join("") + "</ol>";
-  if (block.type === "callout") return '<div class="callout"><strong>' + block.label + "</strong><p>" + block.text + "</p></div>";
+  if (block.type === "p") return "<p>" + richText(block.text) + "</p>";
+  if (block.type === "quote") return '<blockquote class="lesson-quote">' + richText(block.text) + "</blockquote>";
+  if (block.type === "heading") return '<h2 class="lesson-section-title">' + richText(block.text) + "</h2>";
+  if (block.type === "definition") return '<div class="definition-block"><strong>' + escapeHtml(block.term) + '</strong><p>' + richText(block.text) + "</p></div>";
+  if (block.type === "bullets") return "<ul>" + block.items.map(function(item) { return "<li>" + richText(item) + "</li>"; }).join("") + "</ul>";
+  if (block.type === "numbered") return "<ol>" + block.items.map(function(item) { return "<li>" + richText(item) + "</li>"; }).join("") + "</ol>";
+  if (block.type === "callout") return '<div class="callout"><strong>' + escapeHtml(block.label) + "</strong><p>" + richText(block.text) + "</p></div>";
   if (block.type === "procedure") {
     return '<section class="procedure"><h3>' + block.title + "</h3><ol>" +
       block.steps.map(function(step) { return "<li>" + step + "</li>"; }).join("") + "</ol></section>";
   }
   if (block.type === "table") {
     return '<div class="data-table-wrap"><table class="data-table"><thead><tr>' +
-      block.headers.map(function(h) { return "<th>" + h + "</th>"; }).join("") +
+      block.headers.map(function(h) { return "<th>" + richText(h) + "</th>"; }).join("") +
       "</tr></thead><tbody>" +
       block.rows.map(function(row) {
-        return "<tr>" + row.map(function(cell) { return "<td>" + cell + "</td>"; }).join("") + "</tr>";
+        return "<tr>" + row.map(function(cell) { return "<td>" + richText(cell) + "</td>"; }).join("") + "</tr>";
       }).join("") +
       "</tbody></table></div>";
   }
@@ -62,12 +66,18 @@ function blockHtml(block) {
 
 function multipleChoiceOptions(concept, unitConcepts, allConcepts) {
   const correct = concept.answer_display_es;
-  const candidates = unitConcepts.concat(allConcepts)
+  const local = unitConcepts
     .filter(function(item) { return item.id !== concept.id && item.answer_display_es && item.answer_display_es !== correct; })
     .map(function(item) { return item.answer_display_es; });
+  const global = allConcepts
+    .filter(function(item) { return item.unit_id !== concept.unit_id && item.answer_display_es && item.answer_display_es !== correct; })
+    .map(function(item) { return item.answer_display_es; });
   const unique = [];
-  candidates.forEach(function(item) { if (!unique.includes(item)) unique.push(item); });
-  const distractors = shuffle(unique).slice(0, 3);
+  local.concat(global).forEach(function(item) { if (!unique.includes(item)) unique.push(item); });
+  const localUnique = unique.filter(function(item) { return local.includes(item); });
+  const fallback = unique.filter(function(item) { return !local.includes(item); });
+  const distractors = shuffle(localUnique).slice(0, 3);
+  if (distractors.length < 3) distractors.push.apply(distractors, shuffle(fallback).slice(0, 3 - distractors.length));
   while (distractors.length < 3) distractors.push("No corresponde con el contenido enseñado en esta unidad.");
   return shuffle([{ text: correct, correct: true }].concat(distractors.map(function(text) {
     return { text: text, correct: false };

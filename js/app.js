@@ -3,7 +3,7 @@ import {
   updateProfile, deleteProfile, exportProfile, importProfile,
   setStorageOwner, getStorageOwner, onProfileChange
 } from "./storage.js";
-import { loadStudyData, loadStudyFile, renderLesson, checkUnitReview } from "./study.js?v=0.7.1";
+import { loadStudyData, loadStudyFile, renderLesson, checkUnitReview } from "./study.js?v=0.7.2";
 import { loadEvaluationData, renderExam, gradeExam, renderResult } from "./evaluation.js?v=0.5.0";
 import { firebaseConfigured } from "./firebase-config.js";
 import { createFirebaseClient } from "./firebase-client.js";
@@ -751,8 +751,16 @@ document.querySelector("#import-profile").addEventListener("change", async funct
 });
 
 document.querySelector("#switch-profile").addEventListener("click", leaveProfile);
-document.querySelector("#prev-module").addEventListener("click", function() { renderModule(app.activeModule-1); });
-document.querySelector("#next-module").addEventListener("click", function() { renderModule(app.activeModule+1); });
+
+function moveModule(delta) {
+  renderModule(app.activeModule + delta);
+  requestAnimationFrame(function() {
+    lessonContent.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+}
+
+document.querySelector("#prev-module").addEventListener("click", function() { moveModule(-1); });
+document.querySelector("#next-module").addEventListener("click", function() { moveModule(1); });
 document.querySelector("#mark-complete").addEventListener("click", toggleModuleComplete);
 document.querySelector("#start-evaluation").addEventListener("click", startEvaluation);
 

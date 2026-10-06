@@ -521,3 +521,10 @@
 .unit-review__actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding-top:16px;border-top:1px solid var(--line)}
 .unit-review__score{margin-left:auto;color:var(--navy-900)}
 @media (max-width:767px){.unit-review__header{display:block}.unit-review__header p{margin-top:8px}.unit-review__actions .button{flex:1 1 100%}.unit-review__score{width:100%;margin-left:0}}
+
+/* v0.7.2 — lectura móvil y énfasis académico */
+#lesson-content{scroll-margin-top:84px}
+.lesson-content strong{font-weight:850;color:var(--navy-900)}
+@media (max-width:767px){
+  #lesson-content{scroll-margin-top:68px}
+}
