@@ -1,5 +1,5 @@
 {
-  "version": "2.1",
+  "version": "2.2",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceManifest": "gameplay/careers/academy_path/curriculum/curriculum_manifest_v1_0.json",
   "philosophy": "La web publica una vista derivada del currículo autoritativo del videojuego. No simula ni desbloquea la carrera del personaje.",
@@ -826,7 +826,76 @@
       "dataFile": "data/branches/science_sensors.json",
       "available": true,
       "unitCount": 20,
-      "assessmentFile": "data/assessments/branch-science_sensors.json"
+      "assessmentFile": "data/assessments/branch-science_sensors.json",
+      "operationalMaterials": [
+        {
+          "title": "Sensores — Introducción",
+          "studyId": "sensores-intro",
+          "source": "sensores",
+          "units": [
+            "00"
+          ],
+          "role": "operational_manual",
+          "parentBranchId": "science_sensors",
+          "subtitle": "Manual de Operador de Sensores · consola funcional v0.1"
+        },
+        {
+          "title": "Sensores I — Estado, barridos y búsqueda",
+          "studyId": "sensores-i",
+          "source": "sensores",
+          "units": [
+            "01",
+            "02",
+            "03"
+          ],
+          "role": "operational_manual",
+          "parentBranchId": "science_sensors",
+          "subtitle": "Manual de Operador de Sensores · consola funcional v0.1"
+        },
+        {
+          "title": "Sensores II — Contactos, seguimiento, lectura e interferencias",
+          "studyId": "sensores-ii",
+          "source": "sensores",
+          "units": [
+            "04",
+            "05",
+            "06",
+            "07"
+          ],
+          "role": "operational_manual",
+          "parentBranchId": "science_sensors",
+          "subtitle": "Manual de Operador de Sensores · consola funcional v0.1"
+        },
+        {
+          "title": "Sensores III — Configuración, resultados, diagnóstico e integración",
+          "studyId": "sensores-iii",
+          "source": "sensores",
+          "units": [
+            "08",
+            "09",
+            "10",
+            "11"
+          ],
+          "role": "operational_manual",
+          "parentBranchId": "science_sensors",
+          "subtitle": "Manual de Operador de Sensores · consola funcional v0.1"
+        },
+        {
+          "title": "Sensores — Material transversal",
+          "studyId": "sensores-transversal",
+          "source": "sensores",
+          "units": [
+            "12",
+            "13",
+            "14",
+            "15"
+          ],
+          "role": "operational_manual",
+          "parentBranchId": "science_sensors",
+          "subtitle": "Manual de Operador de Sensores · consola funcional v0.1"
+        }
+      ],
+      "operationalNote": "Material operativo de consola vinculado a Ciencia / Sensores. No constituye una especialización independiente."
     },
     {
       "branchId": "medical",
@@ -836,59 +905,6 @@
       "available": true,
       "unitCount": 20,
       "assessmentFile": "data/assessments/branch-medical.json"
-    }
-  ],
-  "legacySupplementary": [
-    {
-      "title": "Sensores — Introducción",
-      "studyId": "sensores-intro",
-      "source": "sensores",
-      "units": [
-        "00"
-      ]
-    },
-    {
-      "title": "Sensores I — Estado, barridos y búsqueda",
-      "studyId": "sensores-i",
-      "source": "sensores",
-      "units": [
-        "01",
-        "02",
-        "03"
-      ]
-    },
-    {
-      "title": "Sensores II — Contactos, seguimiento, lectura e interferencias",
-      "studyId": "sensores-ii",
-      "source": "sensores",
-      "units": [
-        "04",
-        "05",
-        "06",
-        "07"
-      ]
-    },
-    {
-      "title": "Sensores III — Configuración, resultados, diagnóstico e integración",
-      "studyId": "sensores-iii",
-      "source": "sensores",
-      "units": [
-        "08",
-        "09",
-        "10",
-        "11"
-      ]
-    },
-    {
-      "title": "Sensores — Material transversal",
-      "studyId": "sensores-transversal",
-      "source": "sensores",
-      "units": [
-        "12",
-        "13",
-        "14",
-        "15"
-      ]
     }
   ]
 }
