@@ -3,7 +3,7 @@ import {
   updateProfile, deleteProfile, exportProfile, importProfile,
   setStorageOwner, getStorageOwner, onProfileChange
 } from "./storage.js";
-import { loadStudyData, loadStudyFile, renderLesson } from "./study.js?v=0.5.0";
+import { loadStudyData, loadStudyFile, renderLesson, checkUnitReview } from "./study.js?v=0.7.0";
 import { loadEvaluationData, renderExam, gradeExam, renderResult } from "./evaluation.js?v=0.5.0";
 import { firebaseConfigured } from "./firebase-config.js";
 import { createFirebaseClient } from "./firebase-client.js";
@@ -15,6 +15,7 @@ const app = {
   profile: null,
   study: null,
   studyCache: {},
+  assessmentCache: {},
   accessManual: null,
   curriculum: null,
   exam: null,
@@ -241,7 +242,7 @@ async function ensureData() {
   if (!app.exam) app.exam = await loadEvaluationData();
 
   if (!app.curriculum) {
-    const response = await fetch("data/curriculum.json?v=0.5.0");
+    const response = await fetch("data/curriculum.json?v=0.7.0");
     if (!response.ok) throw new Error("No se pudo cargar el currículo académico.");
     app.curriculum = await response.json();
   }
@@ -413,6 +414,7 @@ function findStudyDefinition(studyId) {
             units: null,
             source: subject.source || "course",
             dataFile: subject.dataFile || null,
+            assessmentFile: subject.assessmentFile || null,
             label: subject.courseId || "MATERIAL ACADÉMICO"
           };
         }
@@ -506,6 +508,9 @@ async function openStudy(studyId) {
   if ((definition.source === "course" || definition.source === "branch") && !app.studyCache[studyId]) {
     app.studyCache[studyId] = await loadStudyFile(definition.dataFile);
   }
+  if (definition.source === "course" && definition.assessmentFile && !app.assessmentCache[studyId]) {
+    app.assessmentCache[studyId] = await loadStudyFile(definition.assessmentFile);
+  }
   if (request !== studyRequest || app.profile?.id !== profileId || owner !== getStorageOwner()) return;
   app.currentStudyId = studyId;
   app.activeModule = 0;
@@ -539,7 +544,7 @@ function renderModule(index) {
   app.activeModule = Math.max(0,Math.min(index,modules.length-1));
   const module = modules[app.activeModule];
   const definition = findStudyDefinition(app.currentStudyId);
-  lessonContent.innerHTML = renderLesson(module, { label: definition?.label || "MATERIAL DE ESTUDIO" });
+  lessonContent.innerHTML = renderLesson(module, { label: definition?.label || "MATERIAL DE ESTUDIO", assessment: app.assessmentCache[app.currentStudyId] || null });
   document.querySelector("#reader-position").textContent =
     module.id + " · " + (app.activeModule + 1) + " de " + modules.length;
   document.querySelector("#reader-completion").textContent = "PROGRESO " + currentStudyPercent() + "%";
@@ -688,6 +693,12 @@ document.addEventListener("click", function(event) {
   if (event.target.id === "show-practice-criteria") document.querySelector("#practice-criteria").hidden = false;
   if (event.target.id === "save-practice-answer") savePracticeAnswer();
   if (event.target.id === "complete-practice") togglePracticeComplete();
+
+  const checkReview = event.target.closest("[data-check-unit-review]");
+  if (checkReview) checkUnitReview(document.querySelector("#unit-review-" + checkReview.dataset.checkUnitReview));
+
+  const newReview = event.target.closest("[data-new-unit-review]");
+  if (newReview) renderModule(app.activeModule);
 });
 
 document.addEventListener("click", async function(event) {

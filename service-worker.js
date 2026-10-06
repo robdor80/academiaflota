@@ -1,4 +1,4 @@
-const CACHE_NAME = "academia-star-fleet-v1";
+const CACHE_NAME = "academia-star-fleet-v2";
 
 const APP_SHELL = [
   "./",
