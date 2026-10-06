@@ -1,7 +1,7 @@
 {
   "subject": "Liderazgo y responsabilidad I",
   "code": "LDR-303",
-  "version": "1.1",
+  "version": "1.3",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/LDR-303/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/LDR-303/MANUAL_v1_0.md",
@@ -20,26 +20,12 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Liderar empieza por aceptar una responsabilidad con tarea, objetivo, personas, recursos, límites y condición de cierre claros."
+          "text": "**Liderar empieza por aceptar una responsabilidad con tarea, objetivo, personas, recursos, límites y condición de cierre claros.**"
         },
         {
           "type": "callout",
           "label": "RENDICIÓN DE CUENTAS",
           "text": "El responsable debe poder explicar qué sabía, qué decidió, por qué, qué ocurrió y qué aprendió."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué debe quedar claro al aceptar responsabilidad?",
-            "¿Qué implica seguimiento?",
-            "¿Qué significa responsabilidad sobre equipo?",
-            "¿Un mal resultado prueba mal liderazgo?",
-            "¿Qué significa rendición de cuentas?"
-          ]
         }
       ]
     },
@@ -50,7 +36,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Una instrucción clara puede incluir objetivo, acción, límite, prioridad, tiempo y criterio de finalización."
+          "text": "**Una instrucción clara puede incluir objetivo, acción, límite, prioridad, tiempo y criterio de finalización.**"
         },
         {
           "type": "p",
@@ -59,21 +45,7 @@
         {
           "type": "callout",
           "label": "ACTUALIZAR NO ES DEBILIDAD",
-          "text": "Una instrucción puede cambiar cuando aparece nueva información."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué incluye una instrucción clara?",
-            "¿Para qué sirve intención?",
-            "¿Qué puede responder el receptor?",
-            "¿Qué límites existen?",
-            "¿Por qué cambiar una instrucción puede ser correcto?"
-          ]
+          "text": "Una instrucción puede cambiar cuando aparece **nueva información**."
         }
       ]
     },
@@ -84,7 +56,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Delegar es asignar una tarea manteniendo responsabilidad de seguimiento."
+          "text": "**Delegar es asignar una tarea manteniendo responsabilidad de seguimiento.**"
         },
         {
           "type": "heading",
@@ -93,8 +65,8 @@
         {
           "type": "bullets",
           "items": [
-            "Formación",
-            "Experiencia",
+            "**Formación**",
+            "**Experiencia**",
             "Autoridad",
             "Estado",
             "Carga actual",
@@ -105,20 +77,6 @@
           "type": "callout",
           "label": "CONFIANZA",
           "text": "Confiar no significa ausencia total de verificación; el seguimiento depende de riesgo, experiencia y complejidad."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué significa delegar?",
-            "¿Qué determina capacidad?",
-            "¿Por qué carga importa?",
-            "¿Qué fija seguimiento?",
-            "¿Confianza elimina verificación?"
-          ]
         }
       ]
     },
@@ -129,7 +87,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Corregir un error empieza por establecer qué ocurrió y qué riesgo creó."
+          "text": "**Corregir un error empieza por establecer qué ocurrió y qué riesgo creó.**"
         },
         {
           "type": "heading",
@@ -138,8 +96,8 @@
         {
           "type": "bullets",
           "items": [
-            "Conducta observada",
-            "Efecto",
+            "**Conducta observada**",
+            "**Efecto**",
             "Alternativa",
             "Expectativa futura"
           ]
@@ -152,20 +110,6 @@
         {
           "type": "p",
           "text": "Humillar no mejora seguridad ni aprendizaje."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Por qué empezar por hechos?",
-            "¿Qué cambia si hay riesgo inmediato?",
-            "¿Qué contiene feedback útil?",
-            "¿Por qué no humillar?",
-            "¿Cuándo escalar error?"
-          ]
         }
       ]
     },
@@ -176,7 +120,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Un desacuerdo profesional no es insubordinación automática. Bajo presión pueden empeorar escucha, tono y calidad de decisión."
+          "text": "**Un desacuerdo profesional no es insubordinación automática.** Bajo presión pueden empeorar escucha, tono y calidad de decisión."
         },
         {
           "type": "heading",
@@ -185,10 +129,10 @@
         {
           "type": "bullets",
           "items": [
-            "Resumir desacuerdo",
+            "**Resumir desacuerdo**",
             "Volver a hechos",
             "Separar urgencia de emoción",
-            "Pedir alternativas",
+            "Pedir **alternativas**",
             "Fijar autoridad de decisión"
           ]
         },
@@ -196,20 +140,6 @@
           "type": "callout",
           "label": "DECISIÓN",
           "text": "Cuando hay que decidir, no se espera consenso infinito: se explica criterio y se mantienen opciones de revisión."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Por qué desacuerdo no es insubordinación?",
-            "¿Qué efectos tiene presión?",
-            "Nombra técnicas de desescalada.",
-            "¿Cuándo debe cerrarse una decisión?",
-            "¿Por qué puede haber conversación posterior?"
-          ]
         }
       ]
     },
@@ -220,7 +150,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "En simulación, el líder prepara objetivo y roles, mantiene imagen general durante la ejecución y cierra con pendientes, handoffs y debrief."
+          "text": "**En simulación, el líder prepara objetivo y roles, mantiene imagen general durante la ejecución y cierra con pendientes, handoffs y debrief.**"
         },
         {
           "type": "callout",
@@ -229,24 +159,11 @@
         },
         {
           "type": "p",
-          "text": "La valoración usa observación, eventos, informes, resultados y comportamiento repetido."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué hace líder en briefing?",
-            "¿Por qué no micromanejar?",
-            "¿Qué obliga a redistribuir?",
-            "¿Qué se comprueba al cerrar?",
-            "¿En qué evidencia se basa valoración?"
-          ]
+          "text": "La valoración usa **observación**, eventos, informes, resultados y comportamiento repetido."
         }
       ]
     }
   ],
-  "status": "developed_content"
+  "status": "developed_content",
+  "assessmentModel": "concept_driven_v2_1"
 }

@@ -1,7 +1,7 @@
 {
   "subject": "Operaciones integradas y simulación I",
   "code": "SIM-303",
-  "version": "1.1",
+  "version": "1.3",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/SIM-303/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/SIM-303/MANUAL_v1_0.md",
@@ -20,26 +20,12 @@
       "blocks": [
         {
           "type": "p",
-          "text": "El briefing entrega misión, objetivos, roles, entorno, restricciones y recursos visibles. El escenario puede conservar estado oculto que el cadete no conoce."
+          "text": "**El briefing entrega misión, objetivos, roles, entorno, restricciones y recursos visibles.** El escenario puede conservar estado oculto que el cadete no conoce."
         },
         {
           "type": "callout",
           "label": "NO JUGAR CONTRA EL GUION",
           "text": "Los ejes ocultos de evaluación no se muestran como checklist; la IA tampoco revela el hidden state."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué contiene briefing?",
-            "¿Por qué existe estado oculto?",
-            "¿Qué conoce cada rol?",
-            "¿Qué se revisa antes?",
-            "¿Por qué no se muestran ejes ocultos?"
-          ]
         }
       ]
     },
@@ -50,26 +36,12 @@
       "blocks": [
         {
           "type": "p",
-          "text": "La fase normal evalúa guardia, monitorización, coordinación, ritmo y registro. La fiabilidad también se demuestra cuando no ocurre nada espectacular."
+          "text": "**La fase normal evalúa guardia, monitorización, coordinación, ritmo y registro.** La fiabilidad también se demuestra cuando no ocurre nada espectacular."
         },
         {
           "type": "callout",
           "label": "HECHOS Y EVALUACIÓN",
-          "text": "El Event Log conserva hechos; la valoración profesional pertenece a la capa de evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Por qué se evalúa rutina?",
-            "¿Qué es ritmo profesional?",
-            "¿Cómo coordinar sin saturar?",
-            "¿Qué va al log?",
-            "¿Qué capacidades se observan sin crisis?"
-          ]
+          "text": "El Event Log conserva hechos; la **valoración** profesional pertenece a la capa de evaluación."
         }
       ]
     },
@@ -80,7 +52,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Ante un evento inesperado, el equipo solo puede reaccionar a lo detectado, comunicado o conocido."
+          "text": "**Ante un evento inesperado, el equipo solo puede reaccionar a lo detectado, comunicado o conocido.**"
         },
         {
           "type": "heading",
@@ -90,30 +62,16 @@
           "type": "numbered",
           "items": [
             "Detectar",
-            "Informar hecho y confianza",
+            "Informar hecho y **confianza**",
             "Priorizar",
             "Adaptar tareas",
-            "Pedir apoyo o escalar"
+            "Pedir apoyo o **escalar**"
           ]
         },
         {
           "type": "callout",
           "label": "SIN GUION ÚNICO",
           "text": "Puede haber varias respuestas profesionalmente válidas; el motor resuelve consecuencias."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿A qué información puede reaccionarse?",
-            "¿Qué separa primer informe?",
-            "¿Qué compite al priorizar?",
-            "¿Qué significa adaptarse?",
-            "¿Por qué varias respuestas pueden ser válidas?"
-          ]
         }
       ]
     },
@@ -124,7 +82,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Una misión integrada crea dependencias entre departamentos. El handoff conserva datos, contexto, procedencia, prioridad y tarea."
+          "text": "**Una misión integrada crea dependencias entre departamentos.** El handoff conserva datos, contexto, procedencia, prioridad y tarea."
         },
         {
           "type": "heading",
@@ -133,8 +91,8 @@
         {
           "type": "bullets",
           "items": [
-            "Recursos limitados",
-            "Prioridades distintas",
+            "**Recursos limitados**",
+            "**Prioridades** distintas",
             "Datos contradictorios",
             "Autoridad"
           ]
@@ -143,20 +101,6 @@
           "type": "callout",
           "label": "TEAMWORK",
           "text": "Trabajar en equipo no significa acuerdo constante; significa coordinar el desacuerdo sin romper la operación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué crea dependencias?",
-            "¿Qué conserva un handoff?",
-            "Nombra conflictos.",
-            "¿Cómo se resuelven?",
-            "¿Teamwork exige acuerdo?"
-          ]
         }
       ]
     },
@@ -167,7 +111,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "El cierre comprueba resultado, seguridad, retorno, logs y pendientes. Una misión no está cerrada solo porque terminó la acción principal."
+          "text": "**El cierre comprueba resultado, seguridad, retorno, logs y pendientes.** Una misión no está cerrada solo porque terminó la acción principal."
         },
         {
           "type": "heading",
@@ -176,8 +120,8 @@
         {
           "type": "bullets",
           "items": [
-            "Personal",
-            "Sistemas",
+            "**Personal**",
+            "**Sistemas**",
             "Equipo",
             "Entorno",
             "Pendientes"
@@ -187,20 +131,6 @@
           "type": "callout",
           "label": "LOGS",
           "text": "No se reescribe el historial para que el resultado parezca mejor."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué responde cierre?",
-            "¿Qué se comprueba?",
-            "¿Qué mantiene retorno?",
-            "¿Por qué no reescribir logs?",
-            "¿Qué hacer con pendientes?"
-          ]
         }
       ]
     },
@@ -211,33 +141,20 @@
       "blocks": [
         {
           "type": "quote",
-          "text": "hechos → información disponible → decisiones → consecuencias → alternativas → aprendizaje"
+          "text": "hechos → información disponible → decisiones → **consecuencias** → alternativas → aprendizaje"
         },
         {
           "type": "callout",
           "label": "SIN HINDSIGHT",
-          "text": "Una decisión se valora con la información disponible cuando se tomó, no con el estado oculto revelado después."
+          "text": "Una decisión se valora con la **información** disponible cuando se tomó, no con el estado oculto revelado después."
         },
         {
           "type": "p",
-          "text": "La evaluación debe referenciar eventos, observaciones o informes. La IA puede resumir evidencia, pero no inventarla."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué capas separa debrief?",
-            "¿Qué significa evitar hindsight?",
-            "¿Para qué analizar alternativas?",
-            "¿Qué respalda evaluación?",
-            "¿Qué produce aprendizaje final?"
-          ]
+          "text": "**La evaluación debe referenciar eventos, observaciones o informes.** La IA puede resumir evidencia, pero no inventarla."
         }
       ]
     }
   ],
-  "status": "developed_content"
+  "status": "developed_content",
+  "assessmentModel": "concept_driven_v2_1"
 }

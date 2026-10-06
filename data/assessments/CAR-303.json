@@ -1,16 +1,40 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.1.0",
   "course_id": "CAR-303",
-  "status": "editorially_aligned_with_developed_manual",
-  "source_manual": "gameplay/careers/academy_path/study_materials/third_class/CAR-303/MANUAL_v1_0.md",
-  "question_count": 24,
-  "rule": "No question may require knowledge that is not explicitly taught in CAR-303 or established prerequisites.",
-  "questions": [
+  "status": "concept_driven_autocorrectable_v2_1",
+  "source_bank": "question_bank_v1_0.json",
+  "policy": {
+    "theory_formats": [
+      "multiple_choice",
+      "short_answer"
+    ],
+    "multiple_choice_target_ratio": 0.8,
+    "short_answer_target_ratio": 0.2,
+    "deterministic_correction": true,
+    "web_and_game_share_concepts_not_question_instances": true,
+    "complex_judgment_moves_to_practice_and_simulation": true,
+    "source_rule": "Every evaluated concept must be explicitly taught in the course material or an established prerequisite."
+  },
+  "unit_review": {
+    "questions_per_attempt": 5,
+    "reshuffle_each_attempt": true,
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
+  },
+  "concepts": [
     {
-      "id": "CAR-303-Q001",
+      "id": "CAR-303-C001",
       "unit_id": "CAR-303-U01",
-      "type": "knowledge",
-      "prompt_es": "¿Qué forma perfil académico?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué forma perfil académico?",
+      "web_prompt_variants_es": [
+        "¿Qué forma perfil académico?",
+        "Repaso: ¿Qué forma perfil académico?"
+      ],
+      "answer_display_es": "fortalezas · carencias · evidencia · preferencias · conducta · experiencias",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "fortalezas",
         "carencias",
@@ -21,10 +45,17 @@
       ]
     },
     {
-      "id": "CAR-303-Q002",
+      "id": "CAR-303-C002",
       "unit_id": "CAR-303-U01",
-      "type": "short_answer",
-      "prompt_es": "¿Qué convierte capacidad en fortaleza?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué convierte capacidad en fortaleza?",
+      "web_prompt_variants_es": [
+        "¿Qué convierte capacidad en fortaleza?",
+        "Repaso: ¿Qué convierte capacidad en fortaleza?"
+      ],
+      "answer_display_es": "evidencia repetida · práctica · observación",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "evidencia repetida",
         "práctica",
@@ -32,46 +63,89 @@
       ]
     },
     {
-      "id": "CAR-303-Q003",
+      "id": "CAR-303-C003",
       "unit_id": "CAR-303-U01",
-      "type": "judgment",
-      "prompt_es": "¿Carencia significa incompatibilidad?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Carencia significa incompatibilidad?",
+      "web_prompt_variants_es": [
+        "¿Carencia significa incompatibilidad?",
+        "Repaso: ¿Carencia significa incompatibilidad?"
+      ],
+      "answer_display_es": "no",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no"
       ]
     },
     {
-      "id": "CAR-303-Q004",
+      "id": "CAR-303-C004",
       "unit_id": "CAR-303-U01",
-      "type": "judgment",
-      "prompt_es": "¿Expediente determina destino?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Expediente determina destino?",
+      "web_prompt_variants_es": [
+        "¿Expediente determina destino?",
+        "Repaso: ¿Expediente determina destino?"
+      ],
+      "answer_display_es": "no",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no"
       ]
     },
     {
-      "id": "CAR-303-Q005",
+      "id": "CAR-303-C005",
       "unit_id": "CAR-303-U02",
-      "type": "knowledge",
-      "prompt_es": "¿Qué rama coordina recursos?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué rama coordina recursos?",
+      "web_prompt_variants_es": [
+        "¿Qué rama coordina recursos?",
+        "Repaso: ¿Qué rama coordina recursos?"
+      ],
+      "answer_display_es": "Operaciones",
+      "accepted_short_answers_es": [
+        "Operaciones"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "Operaciones"
       ]
     },
     {
-      "id": "CAR-303-Q006",
+      "id": "CAR-303-C006",
       "unit_id": "CAR-303-U02",
-      "type": "knowledge",
-      "prompt_es": "¿Qué rama prioriza análisis científico?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué rama prioriza análisis científico?",
+      "web_prompt_variants_es": [
+        "¿Qué rama prioriza análisis científico?",
+        "Repaso: ¿Qué rama prioriza análisis científico?"
+      ],
+      "answer_display_es": "Ciencia/Sensores",
+      "accepted_short_answers_es": [
+        "Ciencia/Sensores"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "Ciencia/Sensores"
       ]
     },
     {
-      "id": "CAR-303-Q007",
+      "id": "CAR-303-C007",
       "unit_id": "CAR-303-U02",
-      "type": "short_answer",
-      "prompt_es": "¿Qué combina competencia profesional?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué combina competencia profesional?",
+      "web_prompt_variants_es": [
+        "¿Qué combina competencia profesional?",
+        "Repaso: ¿Qué combina competencia profesional?"
+      ],
+      "answer_display_es": "técnica · procedimiento · comunicación · juicio · teamwork",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "técnica",
         "procedimiento",
@@ -81,29 +155,52 @@
       ]
     },
     {
-      "id": "CAR-303-Q008",
+      "id": "CAR-303-C008",
       "unit_id": "CAR-303-U02",
-      "type": "judgment",
-      "prompt_es": "¿Por qué importa estilo de servicio?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué importa estilo de servicio?",
+      "web_prompt_variants_es": [
+        "¿Por qué importa estilo de servicio?",
+        "Repaso: ¿Por qué importa estilo de servicio?"
+      ],
+      "answer_display_es": "tipo de trabajo/responsabilidad/ritmo",
+      "accepted_short_answers_es": [
+        "tipo de trabajo/responsabilidad/ritmo"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "tipo de trabajo/responsabilidad/ritmo"
       ]
     },
     {
-      "id": "CAR-303-Q009",
+      "id": "CAR-303-C009",
       "unit_id": "CAR-303-U03",
-      "type": "compare",
-      "prompt_es": "Diferencia aptitud y preferencia.",
+      "source_type": "compare",
+      "web_prompt_es": "¿Qué opción diferencia correctamente aptitud y preferencia?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente aptitud y preferencia?",
+        "Diferencia aptitud y preferencia."
+      ],
+      "answer_display_es": "capacidad · deseo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "capacidad",
         "deseo"
       ]
     },
     {
-      "id": "CAR-303-Q010",
+      "id": "CAR-303-C010",
       "unit_id": "CAR-303-U03",
-      "type": "knowledge",
-      "prompt_es": "¿Qué puede expresar recomendación?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué puede expresar recomendación?",
+      "web_prompt_variants_es": [
+        "¿Qué puede expresar recomendación?",
+        "Repaso: ¿Qué puede expresar recomendación?"
+      ],
+      "answer_display_es": "favorable · desarrollo · prudencia · más exposición",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "favorable",
         "desarrollo",
@@ -112,19 +209,35 @@
       ]
     },
     {
-      "id": "CAR-303-Q011",
+      "id": "CAR-303-C011",
       "unit_id": "CAR-303-U03",
-      "type": "judgment",
-      "prompt_es": "¿Recomendación obliga?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Recomendación obliga?",
+      "web_prompt_variants_es": [
+        "¿Recomendación obliga?",
+        "Repaso: ¿Recomendación obliga?"
+      ],
+      "answer_display_es": "no",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no"
       ]
     },
     {
-      "id": "CAR-303-Q012",
+      "id": "CAR-303-C012",
       "unit_id": "CAR-303-U03",
-      "type": "knowledge",
-      "prompt_es": "¿Qué puede bloquear objetivamente?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué puede bloquear objetivamente?",
+      "web_prompt_variants_es": [
+        "¿Qué puede bloquear objetivamente?",
+        "Repaso: ¿Qué puede bloquear objetivamente?"
+      ],
+      "answer_display_es": "prerequisitos · mínimos · cualificaciones",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "prerequisitos",
         "mínimos",
@@ -132,37 +245,72 @@
       ]
     },
     {
-      "id": "CAR-303-Q013",
+      "id": "CAR-303-C013",
       "unit_id": "CAR-303-U04",
-      "type": "short_answer",
-      "prompt_es": "¿Qué es objetivo profesional?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué es objetivo profesional?",
+      "web_prompt_variants_es": [
+        "¿Qué es objetivo profesional?",
+        "Repaso: ¿Qué es objetivo profesional?"
+      ],
+      "answer_display_es": "dirección de trayectoria",
+      "accepted_short_answers_es": [
+        "dirección de trayectoria"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "dirección de trayectoria"
       ]
     },
     {
-      "id": "CAR-303-Q014",
+      "id": "CAR-303-C014",
       "unit_id": "CAR-303-U04",
-      "type": "judgment",
-      "prompt_es": "¿Objetivo crea puesto?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Objetivo crea puesto?",
+      "web_prompt_variants_es": [
+        "¿Objetivo crea puesto?",
+        "Repaso: ¿Objetivo crea puesto?"
+      ],
+      "answer_display_es": "no",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no"
       ]
     },
     {
-      "id": "CAR-303-Q015",
+      "id": "CAR-303-C015",
       "unit_id": "CAR-303-U04",
-      "type": "judgment",
-      "prompt_es": "¿Puede haber rutas múltiples?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Puede haber rutas múltiples?",
+      "web_prompt_variants_es": [
+        "¿Puede haber rutas múltiples?",
+        "Repaso: ¿Puede haber rutas múltiples?"
+      ],
+      "answer_display_es": "sí",
+      "accepted_short_answers_es": [
+        "sí",
+        "si"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "sí"
       ]
     },
     {
-      "id": "CAR-303-Q016",
+      "id": "CAR-303-C016",
       "unit_id": "CAR-303-U04",
-      "type": "knowledge",
-      "prompt_es": "¿Qué determina coherencia?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué determina coherencia?",
+      "web_prompt_variants_es": [
+        "¿Qué determina coherencia?",
+        "Repaso: ¿Qué determina coherencia?"
+      ],
+      "answer_display_es": "objetivo · acciones · requisitos · oportunidades",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "objetivo",
         "acciones",
@@ -171,10 +319,17 @@
       ]
     },
     {
-      "id": "CAR-303-Q017",
+      "id": "CAR-303-C017",
       "unit_id": "CAR-303-U05",
-      "type": "short_answer",
-      "prompt_es": "¿Para qué sirve orientación?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Para qué sirve orientación?",
+      "web_prompt_variants_es": [
+        "¿Para qué sirve orientación?",
+        "Repaso: ¿Para qué sirve orientación?"
+      ],
+      "answer_display_es": "interpretar evidencia · intereses · dudas · desarrollo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "interpretar evidencia",
         "intereses",
@@ -183,10 +338,17 @@
       ]
     },
     {
-      "id": "CAR-303-Q018",
+      "id": "CAR-303-C018",
       "unit_id": "CAR-303-U05",
-      "type": "knowledge",
-      "prompt_es": "¿Qué debe separar feedback?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué debe separar feedback?",
+      "web_prompt_variants_es": [
+        "¿Qué debe separar feedback?",
+        "Repaso: ¿Qué debe separar feedback?"
+      ],
+      "answer_display_es": "observación · evaluación · recomendación · opinión",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "observación",
         "evaluación",
@@ -195,10 +357,17 @@
       ]
     },
     {
-      "id": "CAR-303-Q019",
+      "id": "CAR-303-C019",
       "unit_id": "CAR-303-U05",
-      "type": "knowledge",
-      "prompt_es": "Nombra apoyos posibles.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción contiene apoyos posibles?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene apoyos posibles?",
+        "Nombra apoyos posibles."
+      ],
+      "answer_display_es": "tutoría · optativas · práctica · rotación · catch-up",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "tutoría",
         "optativas",
@@ -208,28 +377,53 @@
       ]
     },
     {
-      "id": "CAR-303-Q020",
+      "id": "CAR-303-C020",
       "unit_id": "CAR-303-U05",
-      "type": "judgment",
-      "prompt_es": "¿Por qué no porcentaje oculto?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué no porcentaje oculto?",
+      "web_prompt_variants_es": [
+        "¿Por qué no porcentaje oculto?",
+        "Repaso: ¿Por qué no porcentaje oculto?"
+      ],
+      "answer_display_es": "evitar simplificación/score secreto",
+      "accepted_short_answers_es": [
+        "evitar simplificación/score secreto"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "evitar simplificación/score secreto"
       ]
     },
     {
-      "id": "CAR-303-Q021",
+      "id": "CAR-303-C021",
       "unit_id": "CAR-303-U06",
-      "type": "short_answer",
-      "prompt_es": "¿Quién decide especialización?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Quién decide especialización?",
+      "web_prompt_variants_es": [
+        "¿Quién decide especialización?",
+        "Repaso: ¿Quién decide especialización?"
+      ],
+      "answer_display_es": "jugador",
+      "accepted_short_answers_es": [
+        "jugador"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "jugador"
       ]
     },
     {
-      "id": "CAR-303-Q022",
+      "id": "CAR-303-C022",
       "unit_id": "CAR-303-U06",
-      "type": "knowledge",
-      "prompt_es": "¿Qué valida sistema?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué valida sistema?",
+      "web_prompt_variants_es": [
+        "¿Qué valida sistema?",
+        "Repaso: ¿Qué valida sistema?"
+      ],
+      "answer_display_es": "requisitos · cualificaciones · prerequisitos · restricciones",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "requisitos",
         "cualificaciones",
@@ -238,24 +432,232 @@
       ]
     },
     {
-      "id": "CAR-303-Q023",
+      "id": "CAR-303-C023",
       "unit_id": "CAR-303-U06",
-      "type": "judgment",
-      "prompt_es": "¿Especialización garantiza destino?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Especialización garantiza destino?",
+      "web_prompt_variants_es": [
+        "¿Especialización garantiza destino?",
+        "Repaso: ¿Especialización garantiza destino?"
+      ],
+      "answer_display_es": "no",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no"
       ]
     },
     {
-      "id": "CAR-303-Q024",
+      "id": "CAR-303-C024",
       "unit_id": "CAR-303-U06",
-      "type": "knowledge",
-      "prompt_es": "¿Qué puede requerir cambio futuro?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué puede requerir cambio futuro?",
+      "web_prompt_variants_es": [
+        "¿Qué puede requerir cambio futuro?",
+        "Repaso: ¿Qué puede requerir cambio futuro?"
+      ],
+      "answer_display_es": "tutoría · catch-up · evaluación · tiempo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "tutoría",
         "catch-up",
         "evaluación",
         "tiempo"
+      ]
+    },
+    {
+      "id": "CAR-303-C025",
+      "unit_id": "CAR-303-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «EVIDENCIA»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «EVIDENCIA»?",
+        "Selecciona la idea correcta asociada a «EVIDENCIA»."
+      ],
+      "answer_display_es": "Una fortaleza debe apoyarse en práctica, observación y resultados repetidos; una carencia no implica incompatibilidad automática.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Una fortaleza debe apoyarse en práctica, observación y resultados repetidos; una carencia no implica incompatibilidad automática."
+      ]
+    },
+    {
+      "id": "CAR-303-C026",
+      "unit_id": "CAR-303-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+        "Selecciona la afirmación que coincide con los apuntes de esta unidad."
+      ],
+      "answer_display_es": "El perfil académico reúne fortalezas, carencias, evidencia, preferencias, conducta y experiencias.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "El perfil académico reúne fortalezas, carencias, evidencia, preferencias, conducta y experiencias."
+      ]
+    },
+    {
+      "id": "CAR-303-C027",
+      "unit_id": "CAR-303-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Qué exige cada rama»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Qué exige cada rama»?",
+        "En «Qué exige cada rama», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Mando: coordinación y liderazgo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Mando: coordinación y liderazgo"
+      ]
+    },
+    {
+      "id": "CAR-303-C028",
+      "unit_id": "CAR-303-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+        "Selecciona la afirmación que coincide con los apuntes de esta unidad."
+      ],
+      "answer_display_es": "Cada rama combina un tipo de trabajo, responsabilidades, competencias y estilo de servicio distinto.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Cada rama combina un tipo de trabajo, responsabilidades, competencias y estilo de servicio distinto."
+      ]
+    },
+    {
+      "id": "CAR-303-C029",
+      "unit_id": "CAR-303-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Aptitud» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Aptitud» en esta unidad?",
+        "Selecciona la definición correcta de «Aptitud»."
+      ],
+      "answer_display_es": "Capacidad demostrada o razonablemente desarrollable.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Capacidad demostrada o razonablemente desarrollable."
+      ]
+    },
+    {
+      "id": "CAR-303-C030",
+      "unit_id": "CAR-303-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Preferencia» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Preferencia» en esta unidad?",
+        "Selecciona la definición correcta de «Preferencia»."
+      ],
+      "answer_display_es": "Lo que el personaje quiere hacer.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Lo que el personaje quiere hacer."
+      ]
+    },
+    {
+      "id": "CAR-303-C031",
+      "unit_id": "CAR-303-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «COHERENCIA»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «COHERENCIA»?",
+        "Selecciona la idea correcta asociada a «COHERENCIA»."
+      ],
+      "answer_display_es": "La trayectoria se valora con objetivo, acciones realizadas, requisitos y oportunidades reales.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "La trayectoria se valora con objetivo, acciones realizadas, requisitos y oportunidades reales."
+      ]
+    },
+    {
+      "id": "CAR-303-C032",
+      "unit_id": "CAR-303-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+        "Selecciona la afirmación que coincide con los apuntes de esta unidad."
+      ],
+      "answer_display_es": "Los objetivos de carrera marcan dirección, pero no crean puestos, promociones ni vacantes.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Los objetivos de carrera marcan dirección, pero no crean puestos, promociones ni vacantes."
+      ]
+    },
+    {
+      "id": "CAR-303-C033",
+      "unit_id": "CAR-303-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «REGISTRO CUALITATIVO»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «REGISTRO CUALITATIVO»?",
+        "Selecciona la idea correcta asociada a «REGISTRO CUALITATIVO»."
+      ],
+      "answer_display_es": "La orientación no genera un porcentaje oculto de compatibilidad.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "La orientación no genera un porcentaje oculto de compatibilidad."
+      ]
+    },
+    {
+      "id": "CAR-303-C034",
+      "unit_id": "CAR-303-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Apoyos posibles»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Apoyos posibles»?",
+        "En «Apoyos posibles», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Tutoría",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Tutoría"
+      ]
+    },
+    {
+      "id": "CAR-303-C035",
+      "unit_id": "CAR-303-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «NO GARANTIZA DESTINO»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «NO GARANTIZA DESTINO»?",
+        "Selecciona la idea correcta asociada a «NO GARANTIZA DESTINO»."
+      ],
+      "answer_display_es": "La especialización influye en la trayectoria, pero no determina automáticamente el primer destino.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "La especialización influye en la trayectoria, pero no determina automáticamente el primer destino."
+      ]
+    },
+    {
+      "id": "CAR-303-C036",
+      "unit_id": "CAR-303-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Efectos de la elección»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Efectos de la elección»?",
+        "En «Efectos de la elección», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Horario",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Horario"
       ]
     }
   ]

@@ -1,7 +1,7 @@
 {
   "subject": "Juicio operativo, informes y debriefing",
   "code": "JDG-303",
-  "version": "1.1",
+  "version": "1.3",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/JDG-303/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/JDG-303/MANUAL_v1_0.md",
@@ -20,17 +20,17 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Hecho, inferencia, supuesto e hipótesis son capas distintas. Mezclarlas produce falsa certeza."
+          "text": "**Hecho, inferencia, supuesto e hipótesis son capas distintas.** Mezclarlas produce falsa certeza."
         },
         {
           "type": "definition",
           "term": "Hecho",
-          "text": "Observación o registro con procedencia."
+          "text": "**Observación o registro con procedencia.**"
         },
         {
           "type": "definition",
           "term": "Inferencia",
-          "text": "Conclusión razonada a partir de hechos."
+          "text": "**Conclusión razonada a partir de hechos.**"
         },
         {
           "type": "definition",
@@ -41,20 +41,6 @@
           "type": "definition",
           "term": "Hipótesis",
           "text": "Explicación contrastable."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Diferencia hecho e inferencia.",
-            "¿Qué es supuesto?",
-            "¿Qué distingue hipótesis?",
-            "Nombra sesgos.",
-            "¿Por qué expresar incertidumbre?"
-          ]
         }
       ]
     },
@@ -65,12 +51,12 @@
       "blocks": [
         {
           "type": "p",
-          "text": "El riesgo es contextual: combina probabilidad estimada, impacto, exposición, tiempo, capacidad de respuesta e incertidumbre."
+          "text": "**El riesgo es contextual: combina probabilidad estimada, impacto, exposición, tiempo, capacidad de respuesta e incertidumbre.**"
         },
         {
           "type": "definition",
           "term": "Urgencia",
-          "text": "Cuánto importa actuar ahora."
+          "text": "**Cuánto importa actuar ahora.**"
         },
         {
           "type": "definition",
@@ -80,21 +66,7 @@
         {
           "type": "callout",
           "label": "SIN FALSA PRECISIÓN",
-          "text": "Una probabilidad desconocida no debe convertirse en un número inventado."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué forma riesgo contextual?",
-            "¿Por qué no inventar precisión?",
-            "Diferencia impacto y probabilidad.",
-            "Diferencia urgencia y gravedad.",
-            "¿Por qué importa reversibilidad?"
-          ]
+          "text": "Una **probabilidad** desconocida no debe convertirse en un número inventado."
         }
       ]
     },
@@ -105,7 +77,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Con información incompleta, esperar y actuar tienen costes. El cadete debe reconocer cuándo consultar, cuándo actuar y cuándo conservar opciones."
+          "text": "**Con información incompleta, esperar y actuar tienen costes.** El cadete debe reconocer cuándo consultar, cuándo actuar y cuándo conservar opciones."
         },
         {
           "type": "definition",
@@ -119,25 +91,11 @@
         {
           "type": "bullets",
           "items": [
-            "Nuevo scan",
-            "Opinión técnica",
+            "**Nuevo scan**",
+            "**Opinión técnica**",
             "Aclaración",
             "Informe",
             "Autoridad"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué costes tiene esperar?",
-            "¿Qué costes tiene actuar?",
-            "¿Qué es umbral?",
-            "¿Qué consultas reducen incertidumbre?",
-            "¿Cuándo esperar puede ser correcto?"
           ]
         }
       ]
@@ -149,7 +107,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Un informe operativo documenta hechos, acciones, resultado y pendientes."
+          "text": "**Un informe operativo documenta hechos, acciones, resultado y pendientes.**"
         },
         {
           "type": "heading",
@@ -158,8 +116,8 @@
         {
           "type": "bullets",
           "items": [
-            "Completado",
-            "Parcial",
+            "**Completado**",
+            "**Parcial**",
             "Fallido",
             "Cancelado",
             "Pendiente"
@@ -169,20 +127,6 @@
           "type": "callout",
           "label": "PENDIENTES",
           "text": "Cada pendiente debe conservar responsable, prioridad y siguiente acción."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué contiene informe?",
-            "¿Por qué procedencia importa?",
-            "¿Qué se registra de acción?",
-            "¿Qué estados puede tener resultado?",
-            "¿Qué debe tener pendiente?"
-          ]
         }
       ]
     },
@@ -198,26 +142,12 @@
         },
         {
           "type": "p",
-          "text": "Evitar hindsight no elimina responsabilidad: se revisa qué se sabía, qué debía saberse, qué procedimiento existía y si la decisión era defendible."
+          "text": "**Evitar hindsight no elimina responsabilidad: se revisa qué se sabía, qué debía saberse, qué procedimiento existía y si la decisión era defendible.**"
         },
         {
           "type": "callout",
           "label": "LECCIÓN ÚTIL",
-          "text": "Una lección debe ser específica y accionable, no «hacerlo mejor»."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué busca debrief?",
-            "¿Qué es hindsight?",
-            "¿Evitarlo elimina responsabilidad?",
-            "¿Para qué analizar alternativas?",
-            "¿Qué hace útil una lección?"
-          ]
+          "text": "Una lección debe ser específica y **accionable**, no «hacerlo mejor»."
         }
       ]
     },
@@ -228,33 +158,20 @@
       "blocks": [
         {
           "type": "p",
-          "text": "El caso integrado combina situación, decisión, consecuencia y documentación. Primero se reconstruye qué información existía en cada momento."
+          "text": "**El caso integrado combina situación, decisión, consecuencia y documentación.** Primero se reconstruye qué información existía en cada momento."
         },
         {
           "type": "callout",
           "label": "RESULTADO ≠ CALIDAD DE DECISIÓN",
-          "text": "Una decisión bien fundada puede tener mal resultado y una mala decisión puede tener suerte."
+          "text": "Una **decisión** bien fundada puede tener mal resultado y una mala decisión puede tener suerte."
         },
         {
           "type": "p",
-          "text": "La documentación debe conservar hechos, separar inferencias y evitar reescribir la historia."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué combina el caso?",
-            "¿Por qué ordenar línea temporal?",
-            "¿Con qué se compara una decisión?",
-            "¿Resultado bueno implica decisión buena?",
-            "¿Qué se revisa en documentación?"
-          ]
+          "text": "La **documentación** debe conservar hechos, separar inferencias y evitar reescribir la historia."
         }
       ]
     }
   ],
-  "status": "developed_content"
+  "status": "developed_content",
+  "assessmentModel": "concept_driven_v2_1"
 }

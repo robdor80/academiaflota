@@ -1,45 +1,92 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.1.0",
   "course_id": "JDG-303",
-  "status": "editorially_aligned_with_developed_manual",
-  "source_manual": "gameplay/careers/academy_path/study_materials/third_class/JDG-303/MANUAL_v1_0.md",
-  "question_count": 24,
-  "rule": "No question may require knowledge that is not explicitly taught in JDG-303 or established prerequisites.",
-  "questions": [
+  "status": "concept_driven_autocorrectable_v2_1",
+  "source_bank": "question_bank_v1_0.json",
+  "policy": {
+    "theory_formats": [
+      "multiple_choice",
+      "short_answer"
+    ],
+    "multiple_choice_target_ratio": 0.8,
+    "short_answer_target_ratio": 0.2,
+    "deterministic_correction": true,
+    "web_and_game_share_concepts_not_question_instances": true,
+    "complex_judgment_moves_to_practice_and_simulation": true,
+    "source_rule": "Every evaluated concept must be explicitly taught in the course material or an established prerequisite."
+  },
+  "unit_review": {
+    "questions_per_attempt": 5,
+    "reshuffle_each_attempt": true,
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
+  },
+  "concepts": [
     {
-      "id": "JDG-303-Q001",
+      "id": "JDG-303-C001",
       "unit_id": "JDG-303-U01",
-      "type": "compare",
-      "prompt_es": "Diferencia hecho e inferencia.",
+      "source_type": "compare",
+      "web_prompt_es": "¿Qué opción diferencia correctamente hecho e inferencia?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente hecho e inferencia?",
+        "Diferencia hecho e inferencia."
+      ],
+      "answer_display_es": "observado/registrado · conclusión razonada",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "observado/registrado",
         "conclusión razonada"
       ]
     },
     {
-      "id": "JDG-303-Q002",
+      "id": "JDG-303-C002",
       "unit_id": "JDG-303-U01",
-      "type": "short_answer",
-      "prompt_es": "¿Qué es supuesto?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué es supuesto?",
+      "web_prompt_variants_es": [
+        "¿Qué es supuesto?",
+        "Repaso: ¿Qué es supuesto?"
+      ],
+      "answer_display_es": "idea adoptada sin evidencia suficiente",
+      "accepted_short_answers_es": [
+        "idea adoptada sin evidencia suficiente"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "idea adoptada sin evidencia suficiente"
       ]
     },
     {
-      "id": "JDG-303-Q003",
+      "id": "JDG-303-C003",
       "unit_id": "JDG-303-U01",
-      "type": "short_answer",
-      "prompt_es": "¿Qué distingue hipótesis?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué distingue hipótesis?",
+      "web_prompt_variants_es": [
+        "¿Qué distingue hipótesis?",
+        "Repaso: ¿Qué distingue hipótesis?"
+      ],
+      "answer_display_es": "contrastable · puede ganar/perder apoyo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contrastable",
         "puede ganar/perder apoyo"
       ]
     },
     {
-      "id": "JDG-303-Q004",
+      "id": "JDG-303-C004",
       "unit_id": "JDG-303-U01",
-      "type": "knowledge",
-      "prompt_es": "Nombra fuentes de sesgo.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción contiene fuentes de sesgo?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene fuentes de sesgo?",
+        "Nombra fuentes de sesgo."
+      ],
+      "answer_display_es": "expectativa · experiencia · preferencia · presión · información incompleta",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "expectativa",
         "experiencia",
@@ -49,10 +96,17 @@
       ]
     },
     {
-      "id": "JDG-303-Q005",
+      "id": "JDG-303-C005",
       "unit_id": "JDG-303-U02",
-      "type": "knowledge",
-      "prompt_es": "¿Qué forma riesgo contextual?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué forma riesgo contextual?",
+      "web_prompt_variants_es": [
+        "¿Qué forma riesgo contextual?",
+        "Repaso: ¿Qué forma riesgo contextual?"
+      ],
+      "answer_display_es": "probabilidad · impacto · exposición · tiempo · respuesta · incertidumbre",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "probabilidad",
         "impacto",
@@ -63,39 +117,69 @@
       ]
     },
     {
-      "id": "JDG-303-Q006",
+      "id": "JDG-303-C006",
       "unit_id": "JDG-303-U02",
-      "type": "judgment",
-      "prompt_es": "¿Por qué no inventar precisión?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué no inventar precisión?",
+      "web_prompt_variants_es": [
+        "¿Por qué no inventar precisión?",
+        "Repaso: ¿Por qué no inventar precisión?"
+      ],
+      "answer_display_es": "falsa certeza",
+      "accepted_short_answers_es": [
+        "falsa certeza"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "falsa certeza"
       ]
     },
     {
-      "id": "JDG-303-Q007",
+      "id": "JDG-303-C007",
       "unit_id": "JDG-303-U02",
-      "type": "compare",
-      "prompt_es": "Diferencia urgencia y gravedad.",
+      "source_type": "compare",
+      "web_prompt_es": "¿Qué opción diferencia correctamente urgencia y gravedad?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente urgencia y gravedad?",
+        "Diferencia urgencia y gravedad."
+      ],
+      "answer_display_es": "tiempo · impacto",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "tiempo",
         "impacto"
       ]
     },
     {
-      "id": "JDG-303-Q008",
+      "id": "JDG-303-C008",
       "unit_id": "JDG-303-U02",
-      "type": "judgment",
-      "prompt_es": "¿Por qué importa reversibilidad?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué importa reversibilidad?",
+      "web_prompt_variants_es": [
+        "¿Por qué importa reversibilidad?",
+        "Repaso: ¿Por qué importa reversibilidad?"
+      ],
+      "answer_display_es": "opciones de corrección · cautela",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "opciones de corrección",
         "cautela"
       ]
     },
     {
-      "id": "JDG-303-Q009",
+      "id": "JDG-303-C009",
       "unit_id": "JDG-303-U03",
-      "type": "short_answer",
-      "prompt_es": "¿Qué costes tiene esperar?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué costes tiene esperar?",
+      "web_prompt_variants_es": [
+        "¿Qué costes tiene esperar?",
+        "Repaso: ¿Qué costes tiene esperar?"
+      ],
+      "answer_display_es": "tiempo · riesgo · oportunidad",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "tiempo",
         "riesgo",
@@ -103,19 +187,35 @@
       ]
     },
     {
-      "id": "JDG-303-Q010",
+      "id": "JDG-303-C010",
       "unit_id": "JDG-303-U03",
-      "type": "short_answer",
-      "prompt_es": "¿Qué es umbral de decisión?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué es umbral de decisión?",
+      "web_prompt_variants_es": [
+        "¿Qué es umbral de decisión?",
+        "Repaso: ¿Qué es umbral de decisión?"
+      ],
+      "answer_display_es": "información/urgencia suficiente para actuar",
+      "accepted_short_answers_es": [
+        "información/urgencia suficiente para actuar"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "información/urgencia suficiente para actuar"
       ]
     },
     {
-      "id": "JDG-303-Q011",
+      "id": "JDG-303-C011",
       "unit_id": "JDG-303-U03",
-      "type": "knowledge",
-      "prompt_es": "¿Qué consultas reducen incertidumbre?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué consultas reducen incertidumbre?",
+      "web_prompt_variants_es": [
+        "¿Qué consultas reducen incertidumbre?",
+        "Repaso: ¿Qué consultas reducen incertidumbre?"
+      ],
+      "answer_display_es": "scan · opinión técnica · aclaración · informe · autoridad",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "scan",
         "opinión técnica",
@@ -125,19 +225,35 @@
       ]
     },
     {
-      "id": "JDG-303-Q012",
+      "id": "JDG-303-C012",
       "unit_id": "JDG-303-U03",
-      "type": "judgment",
-      "prompt_es": "¿Cuándo esperar es correcto?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Cuándo esperar es correcto?",
+      "web_prompt_variants_es": [
+        "¿Cuándo esperar es correcto?",
+        "Repaso: ¿Cuándo esperar es correcto?"
+      ],
+      "answer_display_es": "mejora información sin riesgo desproporcionado",
+      "accepted_short_answers_es": [
+        "mejora información sin riesgo desproporcionado"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "mejora información sin riesgo desproporcionado"
       ]
     },
     {
-      "id": "JDG-303-Q013",
+      "id": "JDG-303-C013",
       "unit_id": "JDG-303-U04",
-      "type": "knowledge",
-      "prompt_es": "¿Qué cuatro elementos contiene informe?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué cuatro elementos contiene informe?",
+      "web_prompt_variants_es": [
+        "¿Qué cuatro elementos contiene informe?",
+        "Repaso: ¿Qué cuatro elementos contiene informe?"
+      ],
+      "answer_display_es": "hechos · acciones · resultado · pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "hechos",
         "acciones",
@@ -146,10 +262,17 @@
       ]
     },
     {
-      "id": "JDG-303-Q014",
+      "id": "JDG-303-C014",
       "unit_id": "JDG-303-U04",
-      "type": "short_answer",
-      "prompt_es": "¿Qué se registra de una acción?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué se registra de una acción?",
+      "web_prompt_variants_es": [
+        "¿Qué se registra de una acción?",
+        "Repaso: ¿Qué se registra de una acción?"
+      ],
+      "answer_display_es": "qué · quién · autoridad · cuándo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "qué",
         "quién",
@@ -158,10 +281,17 @@
       ]
     },
     {
-      "id": "JDG-303-Q015",
+      "id": "JDG-303-C015",
       "unit_id": "JDG-303-U04",
-      "type": "knowledge",
-      "prompt_es": "¿Qué estados de resultado existen?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué estados de resultado existen?",
+      "web_prompt_variants_es": [
+        "¿Qué estados de resultado existen?",
+        "Repaso: ¿Qué estados de resultado existen?"
+      ],
+      "answer_display_es": "completado · parcial · fallido · cancelado · pendiente",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "completado",
         "parcial",
@@ -171,10 +301,17 @@
       ]
     },
     {
-      "id": "JDG-303-Q016",
+      "id": "JDG-303-C016",
       "unit_id": "JDG-303-U04",
-      "type": "short_answer",
-      "prompt_es": "¿Qué debe tener pendiente?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué debe tener pendiente?",
+      "web_prompt_variants_es": [
+        "¿Qué debe tener pendiente?",
+        "Repaso: ¿Qué debe tener pendiente?"
+      ],
+      "answer_display_es": "responsable · prioridad · siguiente acción",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "responsable",
         "prioridad",
@@ -182,28 +319,53 @@
       ]
     },
     {
-      "id": "JDG-303-Q017",
+      "id": "JDG-303-C017",
       "unit_id": "JDG-303-U05",
-      "type": "short_answer",
-      "prompt_es": "¿Qué es hindsight bias?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué es hindsight bias?",
+      "web_prompt_variants_es": [
+        "¿Qué es hindsight bias?",
+        "Repaso: ¿Qué es hindsight bias?"
+      ],
+      "answer_display_es": "juzgar con conocimiento futuro",
+      "accepted_short_answers_es": [
+        "juzgar con conocimiento futuro"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "juzgar con conocimiento futuro"
       ]
     },
     {
-      "id": "JDG-303-Q018",
+      "id": "JDG-303-C018",
       "unit_id": "JDG-303-U05",
-      "type": "judgment",
-      "prompt_es": "¿Evitar hindsight elimina responsabilidad?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Evitar hindsight elimina responsabilidad?",
+      "web_prompt_variants_es": [
+        "¿Evitar hindsight elimina responsabilidad?",
+        "Repaso: ¿Evitar hindsight elimina responsabilidad?"
+      ],
+      "answer_display_es": "no",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no"
       ]
     },
     {
-      "id": "JDG-303-Q019",
+      "id": "JDG-303-C019",
       "unit_id": "JDG-303-U05",
-      "type": "short_answer",
-      "prompt_es": "¿Para qué analizar alternativas?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Para qué analizar alternativas?",
+      "web_prompt_variants_es": [
+        "¿Para qué analizar alternativas?",
+        "Repaso: ¿Para qué analizar alternativas?"
+      ],
+      "answer_display_es": "comparar costes · riesgos · aprendizaje",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "comparar costes",
         "riesgos",
@@ -211,20 +373,34 @@
       ]
     },
     {
-      "id": "JDG-303-Q020",
+      "id": "JDG-303-C020",
       "unit_id": "JDG-303-U05",
-      "type": "judgment",
-      "prompt_es": "¿Qué hace útil una lección?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Qué hace útil una lección?",
+      "web_prompt_variants_es": [
+        "¿Qué hace útil una lección?",
+        "Repaso: ¿Qué hace útil una lección?"
+      ],
+      "answer_display_es": "accionable · específica",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "accionable",
         "específica"
       ]
     },
     {
-      "id": "JDG-303-Q021",
+      "id": "JDG-303-C021",
       "unit_id": "JDG-303-U06",
-      "type": "knowledge",
-      "prompt_es": "¿Qué combina caso integrado?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué combina caso integrado?",
+      "web_prompt_variants_es": [
+        "¿Qué combina caso integrado?",
+        "Repaso: ¿Qué combina caso integrado?"
+      ],
+      "answer_display_es": "información · riesgo · autoridad · decisión · consecuencia · documentación",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "información",
         "riesgo",
@@ -235,33 +411,250 @@
       ]
     },
     {
-      "id": "JDG-303-Q022",
+      "id": "JDG-303-C022",
       "unit_id": "JDG-303-U06",
-      "type": "short_answer",
-      "prompt_es": "¿Por qué ordenar línea temporal?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Por qué ordenar línea temporal?",
+      "web_prompt_variants_es": [
+        "¿Por qué ordenar línea temporal?",
+        "Repaso: ¿Por qué ordenar línea temporal?"
+      ],
+      "answer_display_es": "saber qué información existía",
+      "accepted_short_answers_es": [
+        "saber qué información existía"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "saber qué información existía"
       ]
     },
     {
-      "id": "JDG-303-Q023",
+      "id": "JDG-303-C023",
       "unit_id": "JDG-303-U06",
-      "type": "judgment",
-      "prompt_es": "¿Resultado bueno implica decisión buena?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Resultado bueno implica decisión buena?",
+      "web_prompt_variants_es": [
+        "¿Resultado bueno implica decisión buena?",
+        "Repaso: ¿Resultado bueno implica decisión buena?"
+      ],
+      "answer_display_es": "no",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no"
       ]
     },
     {
-      "id": "JDG-303-Q024",
+      "id": "JDG-303-C024",
       "unit_id": "JDG-303-U06",
-      "type": "knowledge",
-      "prompt_es": "¿Qué se revisa en documentación?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué se revisa en documentación?",
+      "web_prompt_variants_es": [
+        "¿Qué se revisa en documentación?",
+        "Repaso: ¿Qué se revisa en documentación?"
+      ],
+      "answer_display_es": "log · inferencias · debrief · historia",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "log",
         "inferencias",
         "debrief",
         "historia"
+      ]
+    },
+    {
+      "id": "JDG-303-C025",
+      "unit_id": "JDG-303-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Hecho» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Hecho» en esta unidad?",
+        "Selecciona la definición correcta de «Hecho»."
+      ],
+      "answer_display_es": "Observación o registro con procedencia.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Observación o registro con procedencia."
+      ]
+    },
+    {
+      "id": "JDG-303-C026",
+      "unit_id": "JDG-303-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Inferencia» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Inferencia» en esta unidad?",
+        "Selecciona la definición correcta de «Inferencia»."
+      ],
+      "answer_display_es": "Conclusión razonada a partir de hechos.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Conclusión razonada a partir de hechos."
+      ]
+    },
+    {
+      "id": "JDG-303-C027",
+      "unit_id": "JDG-303-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Urgencia» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Urgencia» en esta unidad?",
+        "Selecciona la definición correcta de «Urgencia»."
+      ],
+      "answer_display_es": "Cuánto importa actuar ahora.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Cuánto importa actuar ahora."
+      ]
+    },
+    {
+      "id": "JDG-303-C028",
+      "unit_id": "JDG-303-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Reversibilidad» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Reversibilidad» en esta unidad?",
+        "Selecciona la definición correcta de «Reversibilidad»."
+      ],
+      "answer_display_es": "Capacidad de corregir o deshacer una decisión después.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Capacidad de corregir o deshacer una decisión después."
+      ]
+    },
+    {
+      "id": "JDG-303-C029",
+      "unit_id": "JDG-303-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Umbral de decisión» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Umbral de decisión» en esta unidad?",
+        "Selecciona la definición correcta de «Umbral de decisión»."
+      ],
+      "answer_display_es": "Nivel de información o urgencia suficiente para actuar en ese contexto.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Nivel de información o urgencia suficiente para actuar en ese contexto."
+      ]
+    },
+    {
+      "id": "JDG-303-C030",
+      "unit_id": "JDG-303-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Consultas útiles»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Consultas útiles»?",
+        "En «Consultas útiles», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Nuevo scan",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Nuevo scan"
+      ]
+    },
+    {
+      "id": "JDG-303-C031",
+      "unit_id": "JDG-303-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «PENDIENTES»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «PENDIENTES»?",
+        "Selecciona la idea correcta asociada a «PENDIENTES»."
+      ],
+      "answer_display_es": "Cada pendiente debe conservar responsable, prioridad y siguiente acción.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Cada pendiente debe conservar responsable, prioridad y siguiente acción."
+      ]
+    },
+    {
+      "id": "JDG-303-C032",
+      "unit_id": "JDG-303-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Resultado»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Resultado»?",
+        "En «Resultado», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Completado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Completado"
+      ]
+    },
+    {
+      "id": "JDG-303-C033",
+      "unit_id": "JDG-303-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Hindsight bias» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Hindsight bias» en esta unidad?",
+        "Selecciona la definición correcta de «Hindsight bias»."
+      ],
+      "answer_display_es": "Juzgar una decisión pasada como si la persona hubiera conocido el resultado futuro.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Juzgar una decisión pasada como si la persona hubiera conocido el resultado futuro."
+      ]
+    },
+    {
+      "id": "JDG-303-C034",
+      "unit_id": "JDG-303-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «LECCIÓN ÚTIL»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «LECCIÓN ÚTIL»?",
+        "Selecciona la idea correcta asociada a «LECCIÓN ÚTIL»."
+      ],
+      "answer_display_es": "Una lección debe ser específica y accionable, no «hacerlo mejor».",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Una lección debe ser específica y accionable, no «hacerlo mejor»."
+      ]
+    },
+    {
+      "id": "JDG-303-C035",
+      "unit_id": "JDG-303-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «RESULTADO ≠ CALIDAD DE DECISIÓN»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «RESULTADO ≠ CALIDAD DE DECISIÓN»?",
+        "Selecciona la idea correcta asociada a «RESULTADO ≠ CALIDAD DE DECISIÓN»."
+      ],
+      "answer_display_es": "Una decisión bien fundada puede tener mal resultado y una mala decisión puede tener suerte.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Una decisión bien fundada puede tener mal resultado y una mala decisión puede tener suerte."
+      ]
+    },
+    {
+      "id": "JDG-303-C036",
+      "unit_id": "JDG-303-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+        "Selecciona la afirmación que coincide con los apuntes de esta unidad."
+      ],
+      "answer_display_es": "El caso integrado combina situación, decisión, consecuencia y documentación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "El caso integrado combina situación, decisión, consecuencia y documentación."
       ]
     }
   ]

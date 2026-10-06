@@ -1,16 +1,40 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.1.0",
   "course_id": "SIM-303",
-  "status": "editorially_aligned_with_developed_manual",
-  "source_manual": "gameplay/careers/academy_path/study_materials/third_class/SIM-303/MANUAL_v1_0.md",
-  "question_count": 24,
-  "rule": "No question may require knowledge that is not explicitly taught in SIM-303 or established prerequisites.",
-  "questions": [
+  "status": "concept_driven_autocorrectable_v2_1",
+  "source_bank": "question_bank_v1_0.json",
+  "policy": {
+    "theory_formats": [
+      "multiple_choice",
+      "short_answer"
+    ],
+    "multiple_choice_target_ratio": 0.8,
+    "short_answer_target_ratio": 0.2,
+    "deterministic_correction": true,
+    "web_and_game_share_concepts_not_question_instances": true,
+    "complex_judgment_moves_to_practice_and_simulation": true,
+    "source_rule": "Every evaluated concept must be explicitly taught in the course material or an established prerequisite."
+  },
+  "unit_review": {
+    "questions_per_attempt": 5,
+    "reshuffle_each_attempt": true,
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
+  },
+  "concepts": [
     {
-      "id": "SIM-303-Q001",
+      "id": "SIM-303-C001",
       "unit_id": "SIM-303-U01",
-      "type": "knowledge",
-      "prompt_es": "¿Qué contiene briefing visible?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué contiene briefing visible?",
+      "web_prompt_variants_es": [
+        "¿Qué contiene briefing visible?",
+        "Repaso: ¿Qué contiene briefing visible?"
+      ],
+      "answer_display_es": "misión · objetivos · roles · entorno · restricciones · recursos",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "misión",
         "objetivos",
@@ -21,20 +45,34 @@
       ]
     },
     {
-      "id": "SIM-303-Q002",
+      "id": "SIM-303-C002",
       "unit_id": "SIM-303-U01",
-      "type": "judgment",
-      "prompt_es": "¿Por qué existe estado oculto?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué existe estado oculto?",
+      "web_prompt_variants_es": [
+        "¿Por qué existe estado oculto?",
+        "Repaso: ¿Por qué existe estado oculto?"
+      ],
+      "answer_display_es": "simulación realista · información limitada",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "simulación realista",
         "información limitada"
       ]
     },
     {
-      "id": "SIM-303-Q003",
+      "id": "SIM-303-C003",
       "unit_id": "SIM-303-U01",
-      "type": "knowledge",
-      "prompt_es": "¿Qué debe conocer un rol?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué debe conocer un rol?",
+      "web_prompt_variants_es": [
+        "¿Qué debe conocer un rol?",
+        "Repaso: ¿Qué debe conocer un rol?"
+      ],
+      "answer_display_es": "función · autoridad · dependencias · reporte",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "función",
         "autoridad",
@@ -43,19 +81,35 @@
       ]
     },
     {
-      "id": "SIM-303-Q004",
+      "id": "SIM-303-C004",
       "unit_id": "SIM-303-U01",
-      "type": "judgment",
-      "prompt_es": "¿Por qué no mostrar ejes ocultos?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué no mostrar ejes ocultos?",
+      "web_prompt_variants_es": [
+        "¿Por qué no mostrar ejes ocultos?",
+        "Repaso: ¿Por qué no mostrar ejes ocultos?"
+      ],
+      "answer_display_es": "evitar jugar contra checklist",
+      "accepted_short_answers_es": [
+        "evitar jugar contra checklist"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "evitar jugar contra checklist"
       ]
     },
     {
-      "id": "SIM-303-Q005",
+      "id": "SIM-303-C005",
       "unit_id": "SIM-303-U02",
-      "type": "short_answer",
-      "prompt_es": "¿Por qué se evalúa rutina?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Por qué se evalúa rutina?",
+      "web_prompt_variants_es": [
+        "¿Por qué se evalúa rutina?",
+        "Repaso: ¿Por qué se evalúa rutina?"
+      ],
+      "answer_display_es": "fiabilidad · disciplina · continuidad",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "fiabilidad",
         "disciplina",
@@ -63,40 +117,68 @@
       ]
     },
     {
-      "id": "SIM-303-Q006",
+      "id": "SIM-303-C006",
       "unit_id": "SIM-303-U02",
-      "type": "short_answer",
-      "prompt_es": "¿Qué significa ritmo profesional?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué significa ritmo profesional?",
+      "web_prompt_variants_es": [
+        "¿Qué significa ritmo profesional?",
+        "Repaso: ¿Qué significa ritmo profesional?"
+      ],
+      "answer_display_es": "atención proporcional · prioridades",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "atención proporcional",
         "prioridades"
       ]
     },
     {
-      "id": "SIM-303-Q007",
+      "id": "SIM-303-C007",
       "unit_id": "SIM-303-U02",
-      "type": "judgment",
-      "prompt_es": "¿Cómo coordinar sin saturar?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Cómo coordinar sin saturar?",
+      "web_prompt_variants_es": [
+        "¿Cómo coordinar sin saturar?",
+        "Repaso: ¿Cómo coordinar sin saturar?"
+      ],
+      "answer_display_es": "información relevante · destinatario correcto",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "información relevante",
         "destinatario correcto"
       ]
     },
     {
-      "id": "SIM-303-Q008",
+      "id": "SIM-303-C008",
       "unit_id": "SIM-303-U02",
-      "type": "compare",
-      "prompt_es": "¿Qué va a log y qué a evaluación?",
+      "source_type": "compare",
+      "web_prompt_es": "¿Qué va a log y qué a evaluación?",
+      "web_prompt_variants_es": [
+        "¿Qué va a log y qué a evaluación?",
+        "Repaso: ¿Qué va a log y qué a evaluación?"
+      ],
+      "answer_display_es": "hechos · valoración",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "hechos",
         "valoración"
       ]
     },
     {
-      "id": "SIM-303-Q009",
+      "id": "SIM-303-C009",
       "unit_id": "SIM-303-U03",
-      "type": "short_answer",
-      "prompt_es": "¿A qué información puede reaccionar el equipo?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿A qué información puede reaccionar el equipo?",
+      "web_prompt_variants_es": [
+        "¿A qué información puede reaccionar el equipo?",
+        "Repaso: ¿A qué información puede reaccionar el equipo?"
+      ],
+      "answer_display_es": "detectada · comunicada · conocida",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "detectada",
         "comunicada",
@@ -104,10 +186,17 @@
       ]
     },
     {
-      "id": "SIM-303-Q010",
+      "id": "SIM-303-C010",
       "unit_id": "SIM-303-U03",
-      "type": "knowledge",
-      "prompt_es": "¿Qué separa primer informe?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué separa primer informe?",
+      "web_prompt_variants_es": [
+        "¿Qué separa primer informe?",
+        "Repaso: ¿Qué separa primer informe?"
+      ],
+      "answer_display_es": "hecho · confianza · impacto · necesidad",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "hecho",
         "confianza",
@@ -116,10 +205,17 @@
       ]
     },
     {
-      "id": "SIM-303-Q011",
+      "id": "SIM-303-C011",
       "unit_id": "SIM-303-U03",
-      "type": "short_answer",
-      "prompt_es": "¿Qué significa adaptarse?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué significa adaptarse?",
+      "web_prompt_variants_es": [
+        "¿Qué significa adaptarse?",
+        "Repaso: ¿Qué significa adaptarse?"
+      ],
+      "answer_display_es": "actualizar · cambiar tareas · apoyo · escalar · modificar plan",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "actualizar",
         "cambiar tareas",
@@ -129,10 +225,17 @@
       ]
     },
     {
-      "id": "SIM-303-Q012",
+      "id": "SIM-303-C012",
       "unit_id": "SIM-303-U03",
-      "type": "judgment",
-      "prompt_es": "¿Por qué varias respuestas pueden ser válidas?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué varias respuestas pueden ser válidas?",
+      "web_prompt_variants_es": [
+        "¿Por qué varias respuestas pueden ser válidas?",
+        "Repaso: ¿Por qué varias respuestas pueden ser válidas?"
+      ],
+      "answer_display_es": "contexto · juicio · consecuencias",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "contexto",
         "juicio",
@@ -140,10 +243,17 @@
       ]
     },
     {
-      "id": "SIM-303-Q013",
+      "id": "SIM-303-C013",
       "unit_id": "SIM-303-U04",
-      "type": "knowledge",
-      "prompt_es": "¿Qué conserva handoff?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué conserva handoff?",
+      "web_prompt_variants_es": [
+        "¿Qué conserva handoff?",
+        "Repaso: ¿Qué conserva handoff?"
+      ],
+      "answer_display_es": "datos · contexto · procedencia · prioridad · tarea",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "datos",
         "contexto",
@@ -153,10 +263,17 @@
       ]
     },
     {
-      "id": "SIM-303-Q014",
+      "id": "SIM-303-C014",
       "unit_id": "SIM-303-U04",
-      "type": "knowledge",
-      "prompt_es": "Nombra conflictos interdepartamentales.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción contiene conflictos interdepartamentales?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene conflictos interdepartamentales?",
+        "Nombra conflictos interdepartamentales."
+      ],
+      "answer_display_es": "recursos · prioridades · datos contradictorios · autoridad",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "recursos",
         "prioridades",
@@ -165,10 +282,17 @@
       ]
     },
     {
-      "id": "SIM-303-Q015",
+      "id": "SIM-303-C015",
       "unit_id": "SIM-303-U04",
-      "type": "procedure",
-      "prompt_es": "¿Cómo resolver conflicto?",
+      "source_type": "procedure",
+      "web_prompt_es": "¿Cómo resolver conflicto?",
+      "web_prompt_variants_es": [
+        "¿Cómo resolver conflicto?",
+        "Repaso: ¿Cómo resolver conflicto?"
+      ],
+      "answer_display_es": "identificar · hechos · opciones · escalar · registrar",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "identificar",
         "hechos",
@@ -178,19 +302,35 @@
       ]
     },
     {
-      "id": "SIM-303-Q016",
+      "id": "SIM-303-C016",
       "unit_id": "SIM-303-U04",
-      "type": "judgment",
-      "prompt_es": "¿Teamwork exige acuerdo constante?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Teamwork exige acuerdo constante?",
+      "web_prompt_variants_es": [
+        "¿Teamwork exige acuerdo constante?",
+        "Repaso: ¿Teamwork exige acuerdo constante?"
+      ],
+      "answer_display_es": "no",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no"
       ]
     },
     {
-      "id": "SIM-303-Q017",
+      "id": "SIM-303-C017",
       "unit_id": "SIM-303-U05",
-      "type": "short_answer",
-      "prompt_es": "¿Qué responde el cierre?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué responde el cierre?",
+      "web_prompt_variants_es": [
+        "¿Qué responde el cierre?",
+        "Repaso: ¿Qué responde el cierre?"
+      ],
+      "answer_display_es": "cumplido · pendiente · cambios · riesgos",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "cumplido",
         "pendiente",
@@ -199,10 +339,17 @@
       ]
     },
     {
-      "id": "SIM-303-Q018",
+      "id": "SIM-303-C018",
       "unit_id": "SIM-303-U05",
-      "type": "knowledge",
-      "prompt_es": "¿Qué se comprueba antes de terminar?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué se comprueba antes de terminar?",
+      "web_prompt_variants_es": [
+        "¿Qué se comprueba antes de terminar?",
+        "Repaso: ¿Qué se comprueba antes de terminar?"
+      ],
+      "answer_display_es": "personal · sistemas · equipo · entorno · pendientes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "personal",
         "sistemas",
@@ -212,30 +359,51 @@
       ]
     },
     {
-      "id": "SIM-303-Q019",
+      "id": "SIM-303-C019",
       "unit_id": "SIM-303-U05",
-      "type": "judgment",
-      "prompt_es": "¿Por qué no reescribir logs?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué no reescribir logs?",
+      "web_prompt_variants_es": [
+        "¿Por qué no reescribir logs?",
+        "Repaso: ¿Por qué no reescribir logs?"
+      ],
+      "answer_display_es": "trazabilidad · historia factual",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "trazabilidad",
         "historia factual"
       ]
     },
     {
-      "id": "SIM-303-Q020",
+      "id": "SIM-303-C020",
       "unit_id": "SIM-303-U05",
-      "type": "procedure",
-      "prompt_es": "¿Qué hacer con pendientes?",
+      "source_type": "procedure",
+      "web_prompt_es": "¿Qué hacer con pendientes?",
+      "web_prompt_variants_es": [
+        "¿Qué hacer con pendientes?",
+        "Repaso: ¿Qué hacer con pendientes?"
+      ],
+      "answer_display_es": "handoff · asignar responsable",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "handoff",
         "asignar responsable"
       ]
     },
     {
-      "id": "SIM-303-Q021",
+      "id": "SIM-303-C021",
       "unit_id": "SIM-303-U06",
-      "type": "knowledge",
-      "prompt_es": "¿Qué capas separa debrief?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué capas separa debrief?",
+      "web_prompt_variants_es": [
+        "¿Qué capas separa debrief?",
+        "Repaso: ¿Qué capas separa debrief?"
+      ],
+      "answer_display_es": "hechos · información · decisiones · consecuencias · alternativas · aprendizaje",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "hechos",
         "información",
@@ -246,33 +414,250 @@
       ]
     },
     {
-      "id": "SIM-303-Q022",
+      "id": "SIM-303-C022",
       "unit_id": "SIM-303-U06",
-      "type": "short_answer",
-      "prompt_es": "¿Qué significa evitar hindsight?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué significa evitar hindsight?",
+      "web_prompt_variants_es": [
+        "¿Qué significa evitar hindsight?",
+        "Repaso: ¿Qué significa evitar hindsight?"
+      ],
+      "answer_display_es": "evaluar con información de entonces",
+      "accepted_short_answers_es": [
+        "evaluar con información de entonces"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "evaluar con información de entonces"
       ]
     },
     {
-      "id": "SIM-303-Q023",
+      "id": "SIM-303-C023",
       "unit_id": "SIM-303-U06",
-      "type": "judgment",
-      "prompt_es": "¿Puede IA inventar evidencia?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Puede IA inventar evidencia?",
+      "web_prompt_variants_es": [
+        "¿Puede IA inventar evidencia?",
+        "Repaso: ¿Puede IA inventar evidencia?"
+      ],
+      "answer_display_es": "no",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no"
       ]
     },
     {
-      "id": "SIM-303-Q024",
+      "id": "SIM-303-C024",
       "unit_id": "SIM-303-U06",
-      "type": "short_answer",
-      "prompt_es": "¿Qué produce aprendizaje final?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué produce aprendizaje final?",
+      "web_prompt_variants_es": [
+        "¿Qué produce aprendizaje final?",
+        "Repaso: ¿Qué produce aprendizaje final?"
+      ],
+      "answer_display_es": "mantener · cambiar · practicar · investigar",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "mantener",
         "cambiar",
         "practicar",
         "investigar"
+      ]
+    },
+    {
+      "id": "SIM-303-C025",
+      "unit_id": "SIM-303-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «NO JUGAR CONTRA EL GUION»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «NO JUGAR CONTRA EL GUION»?",
+        "Selecciona la idea correcta asociada a «NO JUGAR CONTRA EL GUION»."
+      ],
+      "answer_display_es": "Los ejes ocultos de evaluación no se muestran como checklist; la IA tampoco revela el hidden state.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Los ejes ocultos de evaluación no se muestran como checklist; la IA tampoco revela el hidden state."
+      ]
+    },
+    {
+      "id": "SIM-303-C026",
+      "unit_id": "SIM-303-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+        "Selecciona la afirmación que coincide con los apuntes de esta unidad."
+      ],
+      "answer_display_es": "El briefing entrega misión, objetivos, roles, entorno, restricciones y recursos visibles.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "El briefing entrega misión, objetivos, roles, entorno, restricciones y recursos visibles."
+      ]
+    },
+    {
+      "id": "SIM-303-C027",
+      "unit_id": "SIM-303-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «HECHOS Y EVALUACIÓN»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «HECHOS Y EVALUACIÓN»?",
+        "Selecciona la idea correcta asociada a «HECHOS Y EVALUACIÓN»."
+      ],
+      "answer_display_es": "El Event Log conserva hechos; la valoración profesional pertenece a la capa de evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "El Event Log conserva hechos; la valoración profesional pertenece a la capa de evaluación."
+      ]
+    },
+    {
+      "id": "SIM-303-C028",
+      "unit_id": "SIM-303-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+        "Selecciona la afirmación que coincide con los apuntes de esta unidad."
+      ],
+      "answer_display_es": "La fase normal evalúa guardia, monitorización, coordinación, ritmo y registro.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "La fase normal evalúa guardia, monitorización, coordinación, ritmo y registro."
+      ]
+    },
+    {
+      "id": "SIM-303-C029",
+      "unit_id": "SIM-303-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «SIN GUION ÚNICO»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «SIN GUION ÚNICO»?",
+        "Selecciona la idea correcta asociada a «SIN GUION ÚNICO»."
+      ],
+      "answer_display_es": "Puede haber varias respuestas profesionalmente válidas; el motor resuelve consecuencias.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Puede haber varias respuestas profesionalmente válidas; el motor resuelve consecuencias."
+      ]
+    },
+    {
+      "id": "SIM-303-C030",
+      "unit_id": "SIM-303-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+        "Selecciona la afirmación que coincide con los apuntes de esta unidad."
+      ],
+      "answer_display_es": "Ante un evento inesperado, el equipo solo puede reaccionar a lo detectado, comunicado o conocido.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Ante un evento inesperado, el equipo solo puede reaccionar a lo detectado, comunicado o conocido."
+      ]
+    },
+    {
+      "id": "SIM-303-C031",
+      "unit_id": "SIM-303-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «TEAMWORK»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «TEAMWORK»?",
+        "Selecciona la idea correcta asociada a «TEAMWORK»."
+      ],
+      "answer_display_es": "Trabajar en equipo no significa acuerdo constante; significa coordinar el desacuerdo sin romper la operación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Trabajar en equipo no significa acuerdo constante; significa coordinar el desacuerdo sin romper la operación."
+      ]
+    },
+    {
+      "id": "SIM-303-C032",
+      "unit_id": "SIM-303-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Conflictos posibles»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Conflictos posibles»?",
+        "En «Conflictos posibles», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Recursos limitados",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Recursos limitados"
+      ]
+    },
+    {
+      "id": "SIM-303-C033",
+      "unit_id": "SIM-303-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «LOGS»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «LOGS»?",
+        "Selecciona la idea correcta asociada a «LOGS»."
+      ],
+      "answer_display_es": "No se reescribe el historial para que el resultado parezca mejor.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "No se reescribe el historial para que el resultado parezca mejor."
+      ]
+    },
+    {
+      "id": "SIM-303-C034",
+      "unit_id": "SIM-303-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Antes de terminar»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Antes de terminar»?",
+        "En «Antes de terminar», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Personal",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Personal"
+      ]
+    },
+    {
+      "id": "SIM-303-C035",
+      "unit_id": "SIM-303-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «SIN HINDSIGHT»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «SIN HINDSIGHT»?",
+        "Selecciona la idea correcta asociada a «SIN HINDSIGHT»."
+      ],
+      "answer_display_es": "Una decisión se valora con la información disponible cuando se tomó, no con el estado oculto revelado después.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Una decisión se valora con la información disponible cuando se tomó, no con el estado oculto revelado después."
+      ]
+    },
+    {
+      "id": "SIM-303-C036",
+      "unit_id": "SIM-303-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+        "Selecciona la afirmación que coincide con los apuntes de esta unidad."
+      ],
+      "answer_display_es": "La evaluación debe referenciar eventos, observaciones o informes.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "La evaluación debe referenciar eventos, observaciones o informes."
       ]
     }
   ]
