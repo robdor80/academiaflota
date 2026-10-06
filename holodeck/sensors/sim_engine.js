@@ -85,6 +85,8 @@ export function resolveScan(state,op){
   for(const c of state.contacts){
     if(focused&&cfg.contactId&&c.id!==cfg.contactId)continue;
     let score=q*signatureMatch(c,filters)+(c.signal||0)*.22;
+    if(cfg.targetValue==="sector_014")score-=55;
+    if(cfg.targetValue==="surrounding"&&c.distanceKm>35000)score-=30;
     if(cfg.priority&&cfg.priority!=="none"&&(c.signatures||[]).includes(cfg.priority))score+=10;
     if(cfg.scanType==="short_range"&&c.distanceKm>35000)score-=28;
     if(cfg.scanType==="long_range"&&c.distanceKm<10000)score-=2;
@@ -99,6 +101,7 @@ export function resolveScan(state,op){
     id:op.id,type:"scan",subtype:cfg.scanType,target:cfg.targetLabel||cfg.targetValue||cfg.contactId||"Área",
     time:now(),configuration:clone(cfg),quality:q,observations:contacts,
     summary:contacts.length?contacts.map(x=>x.id+" "+x.confidence+"%").join(" · "):"Sin contactos concluyentes",
+    emissionExposure:cfg.mode==="active"?"EMISIÓN ACTIVA DETECTABLE":"PASIVO / SIN EMISIÓN",
     provenance:"Sensores / "+state.activeArray
   };
   state.results.unshift(result);op.progress=100;op.state="completed";op.completedAt=result.time;
@@ -127,6 +130,8 @@ export function resolveSearch(state,config){
     }
     if(!compatible)continue;
     let match=q*.72+(c.signal||0)*.28;
+    if(config.area==="local"&&c.distanceKm>30000)match-=35;
+    if(config.area==="sector_014")match-=55;
     if(config.sensitivity==="high")match+=8;
     if(config.sensitivity==="maximum")match+=12;
     if(match<42)continue;
@@ -209,6 +214,7 @@ export function loadProfile(state,id){
   Object.assign(state.config,clone(p.settings),{profile:id});return {ok:true};
 }
 export function saveProfile(state,id,name){
+  if(state.profiles[id]?.readOnly)return {ok:false,reason:"No se puede sobrescribir un perfil Starfleet protegido"};
   state.profiles[id]={origin:"Operador",readOnly:false,name,settings:clone({...state.config,profile:undefined})};return {ok:true};
 }
 export function deleteProfile(state,id){if(state.profiles[id]?.readOnly)return {ok:false,reason:"Perfil de Flota protegido"};delete state.profiles[id];return {ok:true}}
