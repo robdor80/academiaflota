@@ -25,7 +25,7 @@
         {
           "type": "definition",
           "term": "Reservas",
-          "text": "Capacidad para **absorber picos** y **contingencia**s; no son infinitas."
+          "text": "Capacidad para **absorber picos** y contingencias; no son infinitas."
         },
         {
           "type": "definition",
@@ -52,8 +52,8 @@
           "items": [
             "**Seguridad**",
             "**Misión**",
-            "**Mando**",
-            "**Emergencia**",
+            "Mando",
+            "Emergencia",
             "Estado técnico"
           ]
         },
@@ -76,7 +76,7 @@
         {
           "type": "definition",
           "term": "Máximo",
-          "text": "**Capacidad pico disponible en **condiciones** concretas.**"
+          "text": "**Capacidad pico disponible en condiciones concretas.**"
         },
         {
           "type": "definition",
@@ -86,7 +86,7 @@
         {
           "type": "callout",
           "label": "INFORME ÚTIL",
-          "text": "Un informe útil indica **capacidad disponible** y **alternativa** sostenible, no un simple sí o no."
+          "text": "Un informe útil indica **capacidad disponible** y alternativa sostenible, no un simple sí o no."
         }
       ]
     },
@@ -106,9 +106,9 @@
         {
           "type": "bullets",
           "items": [
-            "**Sensores: matrices, potencia, integridad y **procesamiento****",
+            "**Sensores: matrices, potencia, integridad y procesamiento**",
             "Escudos: recursos y estado",
-            "Transportadores: **energía**, condiciones, objetivo y **autorización**",
+            "Transportadores: energía, condiciones, objetivo y **autorización**",
             "Soporte vital: habitabilidad y seguridad"
           ]
         },
@@ -138,8 +138,8 @@
           "items": [
             "**Confirmar** síntoma",
             "Consultar **estado**",
-            "Ejecutar **prueba**",
-            "**Comparar**",
+            "Ejecutar prueba",
+            "Comparar",
             "Aislar causa probable",
             "Actuar o escalar"
           ]
@@ -188,7 +188,7 @@
         },
         {
           "type": "p",
-          "text": "**Una estimación técnica debe expresar incertidumbre cuando corresponda.** Ingeniería puede recomendar una opción; Mando decide cuando la cuestión excede la autoridad técnica."
+          "text": "Una estimación técnica debe expresar incertidumbre cuando corresponda. Ingeniería puede recomendar una opción; Mando decide cuando la cuestión excede la autoridad técnica."
         }
       ]
     }
