@@ -10,7 +10,7 @@ export function createSimulation(scenario){
   const contacts=s.contacts.map(c=>({...c,history:[],tracked:false,trackingMode:null,trackingPriority:"normal",lastObserved:null}));
   const capacity=s.trackingCapacity||8;
   const state={
-    scenarioId:s.id,scenarioTitle:s.title,serial:1,time:0,
+    scenarioId:s.id,scenarioTitle:s.title,sector:s.sector||"041",serial:1,time:0,
     basePower:72,power:72,powerBudget:s.powerBudget||12,powerRequest:null,
     arrays:s.arrays,activeArray:(s.arrays.find(a=>a.available)||s.arrays[0])?.id||null,
     interference:{...s.interference,originalPenalty:s.interference.penalty,compensation:"none",previous:null},
@@ -84,8 +84,8 @@ export function resolveScan(state,op){
   const focused=cfg.scanType==="focused";
   for(const c of state.contacts){
     if(focused&&cfg.contactId&&c.id!==cfg.contactId)continue;
+    if(cfg.targetValue?.startsWith("sector_")){const requested=cfg.targetValue.split("_")[1],contactSector=c.sector||state.sector;if(contactSector!==requested)continue}
     let score=q*signatureMatch(c,filters)+(c.signal||0)*.22;
-    if(cfg.targetValue==="sector_014")score-=55;
     if(cfg.targetValue==="surrounding"&&c.distanceKm>35000)score-=30;
     if(cfg.priority&&cfg.priority!=="none"&&(c.signatures||[]).includes(cfg.priority))score+=10;
     if(cfg.scanType==="short_range"&&c.distanceKm>35000)score-=28;
@@ -132,9 +132,9 @@ export function resolveSearch(state,config){
       compatible=c.signatures.some(x=>x.includes(needle))||c.classification.toLowerCase().includes(needle);
     }
     if(!compatible)continue;
+    if(config.area?.startsWith("sector_")){const requested=config.area.split("_")[1],contactSector=c.sector||state.sector;if(contactSector!==requested)continue}
     let match=q*.72+(c.signal||0)*.28;
     if(config.area==="local"&&c.distanceKm>30000)match-=35;
-    if(config.area==="sector_014")match-=55;
     if(config.sensitivity==="high")match+=8;
     if(config.sensitivity==="maximum")match+=12;
     if(match<42)continue;
