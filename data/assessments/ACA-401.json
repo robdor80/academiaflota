@@ -16,7 +16,7 @@
     "source_rule": "Every evaluated concept must be explicitly taught in the course material or an established prerequisite."
   },
   "unit_review": {
-    "questions_per_attempt": 4,
+    "questions_per_attempt": 3,
     "reshuffle_each_attempt": true,
     "preferred_short_answers_per_attempt": 1
   },
@@ -26,9 +26,15 @@
       "unit_id": "ACA-401-U01",
       "source_type": "knowledge",
       "web_prompt_es": "¿Cuántos años dura el programa estándar y qué clase corresponde al primer año?",
+      "web_prompt_variants_es": [
+        "¿Cuántos años dura el programa estándar y qué clase corresponde al primer año?",
+        "Repaso: ¿Cuántos años dura el programa estándar y qué clase corresponde al primer año?"
+      ],
       "answer_display_es": "cuatro años · Cadete de 4.ª clase",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "cuatro años"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "cuatro años",
         "Cadete de 4.ª clase"
@@ -39,11 +45,13 @@
       "unit_id": "ACA-401-U01",
       "source_type": "knowledge",
       "web_prompt_es": "¿Cuál es el rango comisionado inicial normal tras graduarse?",
-      "answer_display_es": "Alférez",
-      "accepted_short_answers_es": [
-        "Alférez"
+      "web_prompt_variants_es": [
+        "¿Cuál es el rango comisionado inicial normal tras graduarse?",
+        "Repaso: ¿Cuál es el rango comisionado inicial normal tras graduarse?"
       ],
-      "preferred_mode": "short_answer",
+      "answer_display_es": "Alférez",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "Alférez"
       ]
@@ -52,7 +60,11 @@
       "id": "ACA-401-C003",
       "unit_id": "ACA-401-U01",
       "source_type": "compare",
-      "web_prompt_es": "¿por qué teoría y práctica no son equivalentes?",
+      "web_prompt_es": "¿Por qué teoría y práctica no son equivalentes?",
+      "web_prompt_variants_es": [
+        "¿Por qué teoría y práctica no son equivalentes?",
+        "Explica por qué teoría y práctica no son equivalentes."
+      ],
       "answer_display_es": "teoría = conocimiento · práctica = ejecución · conocer no garantiza saber hacer",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -66,7 +78,11 @@
       "id": "ACA-401-C004",
       "unit_id": "ACA-401-U01",
       "source_type": "short_answer",
-      "web_prompt_es": "¿Qué opción contiene correctamente cuatro factores que pueden afectar a la progresión anual.",
+      "web_prompt_es": "¿Qué opción contiene cuatro factores que pueden afectar a la progresión anual?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene cuatro factores que pueden afectar a la progresión anual?",
+        "Nombra cuatro factores que pueden afectar a la progresión anual."
+      ],
       "answer_display_es": "requisitos académicos · prácticos · evaluaciones · conducta · cualificaciones · formación de campo",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -84,6 +100,10 @@
       "unit_id": "ACA-401-U02",
       "source_type": "short_answer",
       "web_prompt_es": "¿Por qué la integridad académica afecta a la seguridad profesional futura?",
+      "web_prompt_variants_es": [
+        "¿Por qué la integridad académica afecta a la seguridad profesional futura?",
+        "Selecciona la explicación correcta:  la integridad académica afecta a la seguridad profesional futura."
+      ],
       "answer_display_es": "el expediente debe reflejar competencia real · responsabilidades futuras dependen de esa evidencia · fraude puede ocultar carencias",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -98,9 +118,15 @@
       "unit_id": "ACA-401-U02",
       "source_type": "judgment",
       "web_prompt_es": "¿Toda colaboración entre cadetes es fraude?",
-      "answer_display_es": "No. depende de reglas de actividad; puede haber colaboración autorizada; no debe falsear competencia individual.",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "web_prompt_variants_es": [
+        "¿Toda colaboración entre cadetes es fraude?",
+        "Repaso: ¿Toda colaboración entre cadetes es fraude?"
+      ],
+      "answer_display_es": "No — depende de reglas de actividad; puede haber colaboración autorizada; no debe falsear competencia individual.",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no",
         "depende de reglas de actividad",
@@ -113,6 +139,10 @@
       "unit_id": "ACA-401-U02",
       "source_type": "scenario",
       "web_prompt_es": "Un cadete usa IA para estudiar y luego resuelve personalmente la práctica. ¿Qué principio se aplica?",
+      "web_prompt_variants_es": [
+        "Un cadete usa IA para estudiar y luego resuelve personalmente la práctica. ¿Qué principio se aplica?",
+        "Repaso: Un cadete usa IA para estudiar y luego resuelve personalmente la práctica. ¿Qué principio se aplica?"
+      ],
       "answer_display_es": "apoyo permitido si no falsea evidencia · la competencia evaluada debe ser del cadete · la IA no decide cualificación",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -127,6 +157,10 @@
       "unit_id": "ACA-401-U02",
       "source_type": "judgment",
       "web_prompt_es": "¿Por qué un encubrimiento puede agravar un error?",
+      "web_prompt_variants_es": [
+        "¿Por qué un encubrimiento puede agravar un error?",
+        "Selecciona la explicación correcta:  un encubrimiento puede agravar un error."
+      ],
       "answer_display_es": "impide corrección · destruye confianza · falsea el expediente · puede aumentar consecuencias",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -142,9 +176,15 @@
       "unit_id": "ACA-401-U03",
       "source_type": "short_answer",
       "web_prompt_es": "¿Por qué no existe una tabla universal «falta = castigo»?",
+      "web_prompt_variants_es": [
+        "¿Por qué no existe una tabla universal «falta = castigo»?",
+        "Selecciona la explicación correcta:  no existe una tabla universal «falta = castigo»."
+      ],
       "answer_display_es": "importa contexto · intención · consecuencias · órdenes · antecedentes · autoridad",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "importa contexto"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "importa contexto",
         "intención",
@@ -158,7 +198,11 @@
       "id": "ACA-401-C010",
       "unit_id": "ACA-401-U03",
       "source_type": "compare",
-      "web_prompt_es": "¿Qué opción diferencia correctamente error honesto y encubrimiento deliberado.",
+      "web_prompt_es": "¿Qué opción diferencia correctamente error honesto y encubrimiento deliberado?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente error honesto y encubrimiento deliberado?",
+        "Diferencia error honesto y encubrimiento deliberado."
+      ],
       "answer_display_es": "intención distinta · encubrimiento oculta hechos · puede agravar responsabilidad",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -172,7 +216,11 @@
       "id": "ACA-401-C011",
       "unit_id": "ACA-401-U03",
       "source_type": "scenario",
-      "web_prompt_es": "¿Qué opción compara correctamente llegar tarde una vez avisando con falsificar un registro para ocultar una falta. ¿Por qué no deben tratarse igual?",
+      "web_prompt_es": "Compara llegar tarde una vez avisando con falsificar un registro para ocultar una falta. ¿Por qué no deben tratarse igual?",
+      "web_prompt_variants_es": [
+        "Compara llegar tarde una vez avisando con falsificar un registro para ocultar una falta. ¿Por qué no deben tratarse igual?",
+        "Repaso: Compara llegar tarde una vez avisando con falsificar un registro para ocultar una falta. ¿Por qué no deben tratarse igual?"
+      ],
       "answer_display_es": "gravedad contextual · honestidad · intención · efecto sobre confianza y registro",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -188,11 +236,13 @@
       "unit_id": "ACA-401-U03",
       "source_type": "knowledge",
       "web_prompt_es": "¿Puede una IA imponer por sí sola una sanción académica?",
-      "answer_display_es": "No. requiere hechos registrados; autoridad competente; sistemas autoritativos.",
-      "accepted_short_answers_es": [
-        "no"
+      "web_prompt_variants_es": [
+        "¿Puede una IA imponer por sí sola una sanción académica?",
+        "Selecciona la respuesta correcta para este caso: ¿Puede una IA imponer por sí sola una sanción académica?"
       ],
-      "preferred_mode": "short_answer",
+      "answer_display_es": "No — requiere hechos registrados; autoridad competente; sistemas autoritativos.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "no",
         "requiere hechos registrados",
@@ -205,9 +255,15 @@
       "unit_id": "ACA-401-U04",
       "source_type": "knowledge",
       "web_prompt_es": "¿En qué área se sitúa la Academia terrestre para las eras jugables?",
+      "web_prompt_variants_es": [
+        "¿En qué área se sitúa la Academia terrestre para las eras jugables?",
+        "Repaso: ¿En qué área se sitúa la Academia terrestre para las eras jugables?"
+      ],
       "answer_display_es": "San Francisco · Golden Gate · Presidio/Marin según instalaciones",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "San Francisco"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "San Francisco",
         "Golden Gate",
@@ -218,7 +274,11 @@
       "id": "ACA-401-C014",
       "unit_id": "ACA-401-U04",
       "source_type": "compare",
-      "web_prompt_es": "¿Qué opción contiene correctamente dos instalaciones retenidas del lore y dos añadidas para jugabilidad.",
+      "web_prompt_es": "¿Qué opción contiene dos instalaciones retenidas del lore y dos añadidas para jugabilidad?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene dos instalaciones retenidas del lore y dos añadidas para jugabilidad?",
+        "Nombra dos instalaciones retenidas del lore y dos añadidas para jugabilidad."
+      ],
       "answer_display_es": "Escuela de Mando/Escuela de Vuelo/Escuela Táctica/Academia Médica/patio · alojamiento/comedor/centro de estudio/complejo de simulación/núcleo académico",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -231,7 +291,11 @@
       "id": "ACA-401-C015",
       "unit_id": "ACA-401-U04",
       "source_type": "planning",
-      "web_prompt_es": "¿Qué opción representa correctamente una jornada sin solapar clase, práctica, estudio, entrenamiento, comida y descanso.",
+      "web_prompt_es": "¿Qué opción representa una solución correcta para una jornada sin solapar clase, práctica, estudio, entrenamiento, comida y descanso?",
+      "web_prompt_variants_es": [
+        "¿Qué opción representa una solución correcta para una jornada sin solapar clase, práctica, estudio, entrenamiento, comida y descanso?",
+        "Diseña una jornada sin solapar clase, práctica, estudio, entrenamiento, comida y descanso."
+      ],
       "answer_display_es": "no solapar · priorizar obligaciones · reservar recuperación · tiempo finito",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -247,6 +311,10 @@
       "unit_id": "ACA-401-U04",
       "source_type": "judgment",
       "web_prompt_es": "¿Por qué no conviene representar cada rutina diaria como una escena completa?",
+      "web_prompt_variants_es": [
+        "¿Por qué no conviene representar cada rutina diaria como una escena completa?",
+        "Selecciona la explicación correcta:  no conviene representar cada rutina diaria como una escena completa."
+      ],
       "answer_display_es": "evitar repetición · avance temporal inteligente · conservar eventos relevantes · hacer que cuatro años sean jugables",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -262,9 +330,15 @@
       "unit_id": "ACA-401-U05",
       "source_type": "short_answer",
       "web_prompt_es": "¿Cuál es el objetivo de una tutoría?",
+      "web_prompt_variants_es": [
+        "¿Cuál es el objetivo de una tutoría?",
+        "Repaso: ¿Cuál es el objetivo de una tutoría?"
+      ],
       "answer_display_es": "identificar carencia · aportar ayuda concreta · planificar recuperación · mejorar evidencia",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "identificar carencia"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "identificar carencia",
         "aportar ayuda concreta",
@@ -277,6 +351,10 @@
       "unit_id": "ACA-401-U05",
       "source_type": "compare",
       "web_prompt_es": "¿Por qué un fallo teórico y uno de ejecución pueden requerir recuperaciones distintas?",
+      "web_prompt_variants_es": [
+        "¿Por qué un fallo teórico y uno de ejecución pueden requerir recuperaciones distintas?",
+        "Selecciona la explicación correcta:  un fallo teórico y uno de ejecución pueden requerir recuperaciones distintas."
+      ],
       "answer_display_es": "causas diferentes · tutoría conceptual vs práctica · remediación dirigida",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -290,7 +368,11 @@
       "id": "ACA-401-C019",
       "unit_id": "ACA-401-U05",
       "source_type": "scenario",
-      "web_prompt_es": "¿Un cadete conoce bien la teoría pero falla la práctica. Propón una recuperación proporcionada?",
+      "web_prompt_es": "Un cadete conoce bien la teoría pero falla la práctica. Propón una recuperación proporcionada.",
+      "web_prompt_variants_es": [
+        "Un cadete conoce bien la teoría pero falla la práctica. Propón una recuperación proporcionada.",
+        "Repaso: Un cadete conoce bien la teoría pero falla la práctica. Propón una recuperación proporcionada."
+      ],
       "answer_display_es": "práctica adicional · supervisión/feedback · reevaluación práctica · no repetir teoría innecesariamente",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -306,11 +388,13 @@
       "unit_id": "ACA-401-U05",
       "source_type": "knowledge",
       "web_prompt_es": "¿Una reevaluación borra el intento anterior?",
-      "answer_display_es": "No. el historial persiste; la nueva evidencia se añade.",
-      "accepted_short_answers_es": [
-        "no"
+      "web_prompt_variants_es": [
+        "¿Una reevaluación borra el intento anterior?",
+        "Repaso: ¿Una reevaluación borra el intento anterior?"
       ],
-      "preferred_mode": "short_answer",
+      "answer_display_es": "No — el historial persiste; la nueva evidencia se añade.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "no",
         "el historial persiste",
@@ -322,9 +406,15 @@
       "unit_id": "ACA-401-U06",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué necesita un reparto de tareas eficaz?",
+      "web_prompt_variants_es": [
+        "¿Qué necesita un reparto de tareas eficaz?",
+        "Selecciona la respuesta correcta: Qué necesita un reparto de tareas eficaz?"
+      ],
       "answer_display_es": "objetivo común · roles claros · reparto razonable · comunicación · seguimiento",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "objetivo común"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "objetivo común",
         "roles claros",
@@ -337,7 +427,11 @@
       "id": "ACA-401-C022",
       "unit_id": "ACA-401-U06",
       "source_type": "compare",
-      "web_prompt_es": "¿Qué opción diferencia correctamente responsabilidad del equipo y responsabilidad individual.",
+      "web_prompt_es": "¿Qué opción diferencia correctamente responsabilidad del equipo y responsabilidad individual?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente responsabilidad del equipo y responsabilidad individual?",
+        "Diferencia responsabilidad del equipo y responsabilidad individual."
+      ],
       "answer_display_es": "resultado/coordinación común · contribución y conducta propia · ambas pueden evaluarse",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -352,6 +446,10 @@
       "unit_id": "ACA-401-U06",
       "source_type": "scenario",
       "web_prompt_es": "No podrás terminar tu parte de una práctica de equipo. ¿Cuál es la conducta profesional?",
+      "web_prompt_variants_es": [
+        "No podrás terminar tu parte de una práctica de equipo. ¿Cuál es la conducta profesional?",
+        "Repaso: No podrás terminar tu parte de una práctica de equipo. ¿Cuál es la conducta profesional?"
+      ],
       "answer_display_es": "comunicar pronto · explicar bloqueo · permitir redistribución/ayuda · no ocultar hasta el final",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -367,6 +465,10 @@
       "unit_id": "ACA-401-U06",
       "source_type": "debrief",
       "web_prompt_es": "¿Qué debería revisar un debrief de trabajo en equipo?",
+      "web_prompt_variants_es": [
+        "¿Qué debería revisar un debrief de trabajo en equipo?",
+        "Selecciona la respuesta correcta: Qué debería revisar un debrief de trabajo en equipo?"
+      ],
       "answer_display_es": "qué funcionó · qué falló · comunicación · roles · acciones de mejora",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",

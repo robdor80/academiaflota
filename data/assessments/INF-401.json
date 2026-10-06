@@ -16,7 +16,7 @@
     "source_rule": "Every evaluated concept must be explicitly taught in the course material or an established prerequisite."
   },
   "unit_review": {
-    "questions_per_attempt": 4,
+    "questions_per_attempt": 3,
     "reshuffle_each_attempt": true,
     "preferred_short_answers_per_attempt": 1
   },
@@ -26,9 +26,15 @@
       "unit_id": "INF-401-U01",
       "source_type": "short_answer",
       "web_prompt_es": "¿Por qué la computadora no debe tratarse como una única consola?",
+      "web_prompt_variants_es": [
+        "¿Por qué la computadora no debe tratarse como una única consola?",
+        "Selecciona la explicación correcta:  la computadora no debe tratarse como una única consola."
+      ],
       "answer_display_es": "es un servicio distribuido · múltiples puntos de acceso · la autoridad no depende solo del terminal",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "es un servicio distribuido"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "es un servicio distribuido",
         "múltiples puntos de acceso",
@@ -39,7 +45,11 @@
       "id": "INF-401-C002",
       "unit_id": "INF-401-U01",
       "source_type": "compare",
-      "web_prompt_es": "¿Qué opción diferencia correctamente consulta y acción.",
+      "web_prompt_es": "¿Qué opción diferencia correctamente consulta y acción?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente consulta y acción?",
+        "Diferencia consulta y acción."
+      ],
       "answer_display_es": "consulta recupera información · acción solicita cambiar algo · acciones requieren validación",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -54,6 +64,10 @@
       "unit_id": "INF-401-U01",
       "source_type": "judgment",
       "web_prompt_es": "¿Por qué «no detectado» no significa «no existe»?",
+      "web_prompt_variants_es": [
+        "¿Por qué «no detectado» no significa «no existe»?",
+        "Selecciona la explicación correcta:  «no detectado» no significa «no existe»."
+      ],
       "answer_display_es": "conocimiento limitado · sensores/estado pueden no detectar · no afirmar verdad universal",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -68,11 +82,13 @@
       "unit_id": "INF-401-U01",
       "source_type": "knowledge",
       "web_prompt_es": "¿Puede una IA cambiar directamente el estado de la nave?",
-      "answer_display_es": "No. interpreta/estructura; sistemas autoritativos validan y ejecutan.",
-      "accepted_short_answers_es": [
-        "no"
+      "web_prompt_variants_es": [
+        "¿Puede una IA cambiar directamente el estado de la nave?",
+        "Selecciona la respuesta correcta para este caso: ¿Puede una IA cambiar directamente el estado de la nave?"
       ],
-      "preferred_mode": "short_answer",
+      "answer_display_es": "No — interpreta/estructura; sistemas autoritativos validan y ejecutan.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "no",
         "interpreta/estructura",
@@ -84,6 +100,10 @@
       "unit_id": "INF-401-U02",
       "source_type": "short_answer",
       "web_prompt_es": "¿Por qué un PADD se modela como interfaz y no como dueño del documento?",
+      "web_prompt_variants_es": [
+        "¿Por qué un PADD se modela como interfaz y no como dueño del documento?",
+        "Selecciona la explicación correcta:  un PADD se modela como interfaz y no como dueño del documento."
+      ],
       "answer_display_es": "información persiste fuera del dispositivo · puede accederse desde otras interfaces · el registro pertenece al sistema/persona/institución",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -97,10 +117,16 @@
       "id": "INF-401-C006",
       "unit_id": "INF-401-U02",
       "source_type": "knowledge",
-      "web_prompt_es": "¿Qué opción contiene correctamente cuatro factores que pueden limitar sincronización o acceso.",
+      "web_prompt_es": "¿Qué opción contiene cuatro factores que pueden limitar sincronización o acceso?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene cuatro factores que pueden limitar sincronización o acceso?",
+        "Nombra cuatro factores que pueden limitar sincronización o acceso."
+      ],
       "answer_display_es": "identidad · permisos · contexto · conectividad · privacidad · tipo de dato",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "identidad"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "identidad",
         "permisos",
@@ -114,7 +140,11 @@
       "id": "INF-401-C007",
       "unit_id": "INF-401-U02",
       "source_type": "compare",
-      "web_prompt_es": "¿Qué opción diferencia correctamente borrador y registro final.",
+      "web_prompt_es": "¿Qué opción diferencia correctamente borrador y registro final?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente borrador y registro final?",
+        "Diferencia borrador y registro final."
+      ],
       "answer_display_es": "borrador puede editarse · registro final conserva estado aprobado · no reescribir hechos autoritativos silenciosamente",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -128,7 +158,11 @@
       "id": "INF-401-C008",
       "unit_id": "INF-401-U02",
       "source_type": "procedure",
-      "web_prompt_es": "¿Cuál opción describe correctamente un flujo básico de trabajo académico con PADD.",
+      "web_prompt_es": "¿Qué opción describe correctamente un flujo básico de trabajo académico con PADD?",
+      "web_prompt_variants_es": [
+        "¿Qué opción describe correctamente un flujo básico de trabajo académico con PADD?",
+        "Describe un flujo básico de trabajo académico con PADD."
+      ],
       "answer_display_es": "abrir · consultar · trabajar/anotar · guardar · revisar · entregar",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -145,10 +179,16 @@
       "id": "INF-401-C009",
       "unit_id": "INF-401-U03",
       "source_type": "compare",
-      "web_prompt_es": "¿Qué opción diferencia correctamente autenticación y autorización.",
+      "web_prompt_es": "¿Qué opción diferencia correctamente autenticación y autorización?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente autenticación y autorización?",
+        "Diferencia autenticación y autorización."
+      ],
       "answer_display_es": "autenticación = quién eres · autorización = qué puedes hacer",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "autenticación = quién eres"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "autenticación = quién eres",
         "autorización = qué puedes hacer"
@@ -159,6 +199,10 @@
       "unit_id": "INF-401-U03",
       "source_type": "judgment",
       "web_prompt_es": "¿Por qué el rango no concede acceso universal?",
+      "web_prompt_variants_es": [
+        "¿Por qué el rango no concede acceso universal?",
+        "Selecciona la explicación correcta:  el rango no concede acceso universal."
+      ],
       "answer_display_es": "datos restringidos · puesto/departamento/clearance importan · necesidad funcional",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -172,7 +216,11 @@
       "id": "INF-401-C011",
       "unit_id": "INF-401-U03",
       "source_type": "knowledge",
-      "web_prompt_es": "¿Qué opción contiene correctamente cuatro factores que pueden influir en autorización.",
+      "web_prompt_es": "¿Qué opción contiene cuatro factores que pueden influir en autorización?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene cuatro factores que pueden influir en autorización?",
+        "Nombra cuatro factores que pueden influir en autorización."
+      ],
       "answer_display_es": "rango · puesto · departamento · duty status · clearance · alerta · ubicación · función · autorización temporal",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -193,6 +241,10 @@
       "unit_id": "INF-401-U03",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué significa principio de mínimo acceso?",
+      "web_prompt_variants_es": [
+        "¿Qué significa principio de mínimo acceso?",
+        "Selecciona la respuesta correcta: Qué significa principio de mínimo acceso?"
+      ],
       "answer_display_es": "acceso suficiente para función · no acceso universal · reducir riesgo/exposición",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -207,9 +259,15 @@
       "unit_id": "INF-401-U04",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué debe especificar una buena consulta de información?",
+      "web_prompt_variants_es": [
+        "¿Qué debe especificar una buena consulta de información?",
+        "Selecciona la respuesta correcta: Qué debe especificar una buena consulta de información?"
+      ],
       "answer_display_es": "objetivo · ámbito · filtros · fuentes autorizadas",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "objetivo"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "objetivo",
         "ámbito",
@@ -222,6 +280,10 @@
       "unit_id": "INF-401-U04",
       "source_type": "judgment",
       "web_prompt_es": "¿Por qué importa conservar la fuente de un resultado?",
+      "web_prompt_variants_es": [
+        "¿Por qué importa conservar la fuente de un resultado?",
+        "Selecciona la explicación correcta:  importa conservar la fuente de un resultado."
+      ],
       "answer_display_es": "procedencia condiciona significado · distinguir medición/informe/opinión · permite auditar",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -235,7 +297,11 @@
       "id": "INF-401-C015",
       "unit_id": "INF-401-U04",
       "source_type": "compare",
-      "web_prompt_es": "¿Qué opción diferencia correctamente resultado e interpretación.",
+      "web_prompt_es": "¿Qué opción diferencia correctamente resultado e interpretación?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente resultado e interpretación?",
+        "Diferencia resultado e interpretación."
+      ],
       "answer_display_es": "resultado = dato recuperado · interpretación = explicación/conclusión · requiere evidencia adicional",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -250,6 +316,10 @@
       "unit_id": "INF-401-U04",
       "source_type": "scenario",
       "web_prompt_es": "Pides resumir eventos de seis horas para explicar una pérdida de potencia. ¿Qué límites debe respetar el sistema?",
+      "web_prompt_variants_es": [
+        "Pides resumir eventos de seis horas para explicar una pérdida de potencia. ¿Qué límites debe respetar el sistema?",
+        "Repaso: Pides resumir eventos de seis horas para explicar una pérdida de potencia. ¿Qué límites debe respetar el sistema?"
+      ],
       "answer_display_es": "fuentes autorizadas · no inventar eventos · conservar incertidumbre · separar correlación de certeza",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -265,9 +335,15 @@
       "unit_id": "INF-401-U05",
       "source_type": "short_answer",
       "web_prompt_es": "¿Para qué sirve la trazabilidad?",
+      "web_prompt_variants_es": [
+        "¿Para qué sirve la trazabilidad?",
+        "Repaso: ¿Para qué sirve la trazabilidad?"
+      ],
       "answer_display_es": "reconstruir qué ocurrió · continuidad · debrief · evaluación · investigación · responsabilidad",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "reconstruir qué ocurrió"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "reconstruir qué ocurrió",
         "continuidad",
@@ -281,7 +357,11 @@
       "id": "INF-401-C018",
       "unit_id": "INF-401-U05",
       "source_type": "compare",
-      "web_prompt_es": "¿Qué opción diferencia correctamente Operational Event Log y log personal.",
+      "web_prompt_es": "¿Qué opción diferencia correctamente Operational Event Log y log personal?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente Operational Event Log y log personal?",
+        "Diferencia Operational Event Log y log personal."
+      ],
       "answer_display_es": "event log = hechos autoritativos · personal log = registro subjetivo · opinión no equivale a verdad",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -296,11 +376,13 @@
       "unit_id": "INF-401-U05",
       "source_type": "judgment",
       "web_prompt_es": "¿Debe borrarse un registro antiguo cuando aparece una corrección?",
-      "answer_display_es": "No. append-only; registrar corrección posterior; preservar historia.",
-      "accepted_short_answers_es": [
-        "no"
+      "web_prompt_variants_es": [
+        "¿Debe borrarse un registro antiguo cuando aparece una corrección?",
+        "Selecciona la respuesta correcta para este caso: ¿Debe borrarse un registro antiguo cuando aparece una corrección?"
       ],
-      "preferred_mode": "short_answer",
+      "answer_display_es": "No — append-only; registrar corrección posterior; preservar historia.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "no",
         "append-only",
@@ -313,6 +395,10 @@
       "unit_id": "INF-401-U05",
       "source_type": "knowledge",
       "web_prompt_es": "¿Qué metadatos básicos ayudan a auditar un registro?",
+      "web_prompt_variants_es": [
+        "¿Qué metadatos básicos ayudan a auditar un registro?",
+        "Selecciona la respuesta correcta: Qué metadatos básicos ayudan a auditar un registro?"
+      ],
       "answer_display_es": "autor · hora · tipo · referencias · permisos",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -328,7 +414,11 @@
       "id": "INF-401-C021",
       "unit_id": "INF-401-U06",
       "source_type": "compare",
-      "web_prompt_es": "¿Qué opción diferencia correctamente acceso técnico y autorización.",
+      "web_prompt_es": "¿Qué opción diferencia correctamente acceso técnico y autorización?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente acceso técnico y autorización?",
+        "Diferencia acceso técnico y autorización."
+      ],
       "answer_display_es": "ser técnicamente posible no implica permiso · autorización depende de reglas/contexto",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -341,10 +431,16 @@
       "id": "INF-401-C022",
       "unit_id": "INF-401-U06",
       "source_type": "knowledge",
-      "web_prompt_es": "¿Qué opción contiene correctamente cuatro tipos de información que pueden estar restringidos.",
+      "web_prompt_es": "¿Qué opción contiene cuatro tipos de información que pueden estar restringidos?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene cuatro tipos de información que pueden estar restringidos?",
+        "Nombra cuatro tipos de información que pueden estar restringidos."
+      ],
       "answer_display_es": "médica · Seguridad · Inteligencia · clasificada · logs personales · expedientes sensibles",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "médica"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "médica",
         "Seguridad",
@@ -359,6 +455,10 @@
       "unit_id": "INF-401-U06",
       "source_type": "judgment",
       "web_prompt_es": "¿Por qué un mensaje de acceso denegado no debe filtrar contenido protegido?",
+      "web_prompt_variants_es": [
+        "¿Por qué un mensaje de acceso denegado no debe filtrar contenido protegido?",
+        "Selecciona la explicación correcta:  un mensaje de acceso denegado no debe filtrar contenido protegido."
+      ],
       "answer_display_es": "evitar fuga indirecta · privacidad · seguridad",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -373,7 +473,11 @@
       "unit_id": "INF-401-U06",
       "source_type": "scenario",
       "web_prompt_es": "Sabes que existe un log privado de un instructor. ¿Te concede eso derecho a leerlo?",
-      "answer_display_es": "No. existencia no equivale a permiso; requiere autorización válida.",
+      "web_prompt_variants_es": [
+        "Sabes que existe un log privado de un instructor. ¿Te concede eso derecho a leerlo?",
+        "Repaso: Sabes que existe un log privado de un instructor. ¿Te concede eso derecho a leerlo?"
+      ],
+      "answer_display_es": "No — existencia no equivale a permiso; requiere autorización válida.",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
       "answer_key_es": [
