@@ -6,6 +6,7 @@ export async function initTeacherMode({resetScenario}){
   const mode=document.querySelector("#mode-select"),panel=document.querySelector("#teacher-panel"),select=document.querySelector("#tutorial-select");
   const title=document.querySelector("#teacher-title"),objective=document.querySelector("#teacher-objective"),stepsEl=document.querySelector("#teacher-steps");
   const progressEl=document.querySelector("#teacher-progress"),feedback=document.querySelector("#teacher-feedback"),hintBtn=document.querySelector("#teacher-hint"),hintText=document.querySelector("#teacher-hint-text"),resetBtn=document.querySelector("#teacher-reset");
+  const expKicker=document.querySelector("#teacher-explanation-kicker"),expTitle=document.querySelector("#teacher-explanation-title"),expWhat=document.querySelector("#teacher-explanation-what"),expWhy=document.querySelector("#teacher-explanation-why"),expEffect=document.querySelector("#teacher-explanation-effect"),expConcept=document.querySelector("#teacher-explanation-concept");
   const data=await fetch("./data/tutorials.json").then(r=>r.json());
   let tutorial=data.tutorials[0],done=new Set(),current=0;
   select.innerHTML=data.tutorials.map(t=>'<option value="'+t.id+'">'+t.id+' · '+t.title+'</option>').join("");
@@ -28,7 +29,25 @@ export async function initTeacherMode({resetScenario}){
     title.textContent=tutorial.title;objective.textContent=tutorial.objective;
     progressEl.textContent=done.size+" / "+tutorial.steps.length;
     stepsEl.innerHTML=tutorial.steps.map((s,i)=>'<li class="teacher-step '+(done.has(i)?"done":i===current?"current":"")+'">'+s.label+'</li>').join("");
-    if(done.size===tutorial.steps.length){feedback.hidden=false;feedback.textContent="✓ "+tutorial.completion_feedback}else{feedback.hidden=true;feedback.textContent=""}
+    const complete=done.size===tutorial.steps.length;
+    if(complete){
+      expKicker.textContent="PRÁCTICA COMPLETADA";
+      expTitle.textContent="Qué has aprendido";
+      expWhat.textContent=tutorial.lesson_summary||tutorial.completion_feedback;
+      expWhy.textContent="La secuencia ya está validada; ahora lo importante es comprender el criterio operativo para poder aplicarlo en situaciones diferentes.";
+      expEffect.textContent="Puedes repetir el flujo en Modo Libre sin asistencia y probar variantes.";
+      expConcept.textContent="Comprender el procedimiento es más importante que memorizar botones.";
+      feedback.hidden=false;feedback.textContent="✓ "+tutorial.completion_feedback;
+    }else{
+      const step=tutorial.steps[current];
+      expKicker.textContent="PASO "+(current+1)+" DE "+tutorial.steps.length;
+      expTitle.textContent=step.label;
+      expWhat.textContent=step.what||"";
+      expWhy.textContent=step.why||"";
+      expEffect.textContent=step.effect||"";
+      expConcept.textContent=step.concept||"";
+      feedback.hidden=true;feedback.textContent="";
+    }
   }
   function start(id,{reset=true}={}){
     tutorial=data.tutorials.find(t=>t.id===id)||data.tutorials[0];select.value=tutorial.id;done=new Set();current=0;hintText.hidden=true;hintText.textContent=tutorial.hint;hintBtn.textContent="Mostrar pista";
