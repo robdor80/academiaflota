@@ -25,7 +25,7 @@
         },
         {
           "type": "quote",
-          "text": "detección → interpretación → **decisión** → ejecución → **resultado** → actualización"
+          "text": "detección → interpretación → decisión → ejecución → **resultado** → actualización"
         },
         {
           "type": "definition",
@@ -40,7 +40,7 @@
         {
           "type": "callout",
           "label": "MANDO",
-          "text": "Mando mantiene **intención** y prioridad, asigna tareas y resuelve decisiones que exceden a una estación individual."
+          "text": "Mando mantiene intención y prioridad, asigna tareas y resuelve decisiones que exceden a una estación individual."
         }
       ]
     },
@@ -68,12 +68,12 @@
         },
         {
           "type": "p",
-          "text": "**Durante la ejecución deben comunicarse bloqueos, demoras o cambios que alteren la intención de mando.**"
+          "text": "Durante la ejecución deben comunicarse bloqueos, demoras o cambios que alteren la intención de mando."
         },
         {
           "type": "callout",
           "label": "CIERRE",
-          "text": "El reporte final indica qué se hizo, qué resultado hubo, anomalías y **pendientes**."
+          "text": "El reporte final indica qué se hizo, qué resultado hubo, anomalías y pendientes."
         }
       ]
     },
@@ -95,15 +95,15 @@
           "items": [
             "**Técnico**",
             "**Energético**",
-            "**Operativo**",
-            "**Legal**",
+            "Operativo",
+            "Legal",
             "Autorización",
             "Información"
           ]
         },
         {
           "type": "p",
-          "text": "**Si dos estaciones compiten por recursos o autoridad, el operador identifica el conflicto y lo eleva a quien pueda decidir.**"
+          "text": "Si dos estaciones compiten por recursos o autoridad, el operador identifica el conflicto y lo eleva a quien pueda decidir."
         },
         {
           "type": "callout",
@@ -123,7 +123,7 @@
         },
         {
           "type": "p",
-          "text": "**No es una copia de todos los datos.** Debe **evitar ruido** y conservar incertidumbre."
+          "text": "No es una copia de todos los datos. Debe **evitar ruido** y conservar incertidumbre."
         },
         {
           "type": "heading",
@@ -140,7 +140,7 @@
         {
           "type": "bullets",
           "items": [
-            "**Autoridad**",
+            "Autoridad",
             "Objetivo",
             "Prioridad",
             "Área o destino",
@@ -167,12 +167,12 @@
         {
           "type": "definition",
           "term": "Gravedad",
-          "text": "**Magnitud potencial del **impacto**.**"
+          "text": "**Magnitud potencial del impacto.**"
         },
         {
           "type": "callout",
           "label": "EQUILIBRIO",
-          "text": "Escalar todo satura; no escalar nada oculta riesgos y fuerza decisiones fuera de **autoridad**."
+          "text": "Escalar todo satura; no escalar nada oculta riesgos y fuerza decisiones fuera de autoridad."
         }
       ]
     },
@@ -187,7 +187,7 @@
         },
         {
           "type": "p",
-          "text": "**No siempre existe una única respuesta correcta: varias decisiones pueden ser defendibles si respetan información, autoridad, seguridad y misión.**"
+          "text": "No siempre existe una única respuesta correcta: varias decisiones pueden ser defendibles si respetan información, autoridad, seguridad y misión."
         },
         {
           "type": "heading",
@@ -198,8 +198,8 @@
           "items": [
             "**Precisión**",
             "**Juicio**",
-            "**Comunicación**",
-            "**Disciplina**",
+            "Comunicación",
+            "Disciplina",
             "Trabajo en equipo",
             "Ejecución"
           ]
