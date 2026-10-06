@@ -97,6 +97,15 @@ function humanTarget(value){
   const map={sector_041:"Sector 041",sector_014:"Sector 014",local:"Espacio local",system:"Sistema estelar",wide:"Volumen ampliado",surrounding:"Espacio circundante",coordinates:"Coordenadas definidas",vector:"Vector definido",defined_zone:"Zona definida"};
   return map[value]||value||"—";
 }
+function resultSubject(r){
+  const direct=r?.configuration?.contactId;
+  if(direct)return "Contacto "+direct;
+  const ids=(r?.observations||[]).filter(o=>!o.falsePositive&&getContact(shell.sim,o.id)).map(o=>o.id);
+  if(ids.length===1)return "Contacto "+ids[0];
+  if(ids.length>1)return "Contactos: "+ids.join(" · ");
+  const target=humanTarget(r?.target);
+  return target!=="—"?target:"Sin contacto asociado";
+}
 function fieldSelect(id,label,opts,value=""){return '<div class="field"><label>'+esc(label)+'</label><select id="'+id+'">'+opts.map(([v,t])=>'<option value="'+esc(v)+'" '+(String(v)===String(value)?"selected":"")+'>'+esc(t)+'</option>').join("")+'</select></div>'}
 function fieldMultiSelect(id,label,opts,values=[]){const set=new Set(Array.isArray(values)?values:[values]);return '<div class="field"><label>'+esc(label)+'</label><select id="'+id+'" multiple size="5">'+opts.map(([v,t])=>'<option value="'+esc(v)+'" '+(set.has(v)?"selected":"")+'>'+esc(t)+'</option>').join("")+'</select><small class="field-help">Ctrl/Cmd + clic para combinar filtros</small></div>'}
 function fieldInput(id,label,value="",placeholder=""){return '<div class="field"><label>'+esc(label)+'</label><input id="'+id+'" value="'+esc(value)+'" placeholder="'+esc(placeholder)+'"></div>'}
@@ -254,7 +263,7 @@ function configurationView(){
   return '<div class="card"><h3>'+esc(label)+'</h3><p>Los cambios modifican valores predeterminados; no ejecutan operaciones por sí solos.</p>'+fieldSelect("config-value",label,opts,val)+'<div class="action-grid">'+taskButton("apply_setting","Aplicar")+taskButton("restore_ship_standard","Restaurar estándar","secondary")+(s.id==="sensor_power"?button("request_additional_power","secondary")+(sim.powerRequest?button("cancel_power_request","secondary"):""):"")+(s.id==="sensor_array"?taskButton("open_array_status","Abrir estado de matrices","secondary"):"")+'</div></div>';
 }
 function resultCard(r){
-  return '<div class="contact-row '+(r.id===shell.selectedResultId?"active":"")+'" data-result="'+r.id+'"><strong>'+esc(r.id)+'</strong><span><b>'+esc(operationLabel(r))+'</b><br><small>'+esc(humanTarget(r.target))+' · '+esc(r.summary)+'</small></span><strong>'+esc(r.time)+'</strong></div>';
+  return '<div class="contact-row '+(r.id===shell.selectedResultId?"active":"")+'" data-result="'+r.id+'"><strong>'+esc(r.id)+'</strong><span><b>'+esc(operationLabel(r))+'</b><br><small>'+esc(resultSubject(r))+'</small><br><small>'+esc(r.summary)+'</small></span><strong>'+esc(r.time)+'</strong></div>';
 }
 function resultsView(){
   const s=secondary(),sim=shell.sim;
@@ -265,16 +274,16 @@ function resultsView(){
   if(s.id==="recent_results")return '<div class="card"><h3>Resultados recientes</h3><div class="contact-list">'+(sim.results.map(resultCard).join("")||'<div class="notice">Sin resultados.</div>')+'</div></div>'+selectedResultDetail();
   if(s.id==="saved_readings"){const rows=sim.savedReadings.map(r=>'<div class="contact-row '+(r.savedId===shell.selectedResultId?"active":"")+'" data-saved-result="'+r.savedId+'"><strong>'+esc(r.savedId)+'</strong><span>'+esc(r.label)+'<br><small>'+esc(r.summary)+'</small></span><strong>'+esc(r.time)+'</strong></div>').join("");const selected=sim.savedReadings.find(x=>x.savedId===shell.selectedResultId);return '<div class="card"><h3>Lecturas guardadas</h3><div class="contact-list">'+(rows||'<div class="notice">No hay lecturas guardadas.</div>')+'</div></div>'+(selected?'<div class="card"><h3>Lectura guardada · '+esc(selected.savedId)+'</h3>'+resultDetail(selected)+'</div>':"")}
   if(s.id==="compare_readings"){
-    const all=[...sim.results.map(r=>[r.id,r.id+" · "+operationLabel(r)+" · "+r.summary]),...sim.savedReadings.map(r=>[r.savedId,r.savedId+" · "+r.label])];
+    const all=[...sim.results.map(r=>[r.id,r.id+" · "+operationLabel(r)+" · "+resultSubject(r)]),...sim.savedReadings.map(r=>[r.savedId,r.savedId+" · "+r.label])];
     return '<div class="card"><h3>Comparar lecturas</h3><div class="form-grid">'+fieldSelect("compare-a","Lectura A",all,all[0]?.[0]||"")+fieldSelect("compare-b","Lectura B",all,all[1]?.[0]||all[0]?.[0]||"")+'</div><div class="action-grid">'+taskButton("execute_comparison","Comparar")+'</div></div>'+(sim.comparisons[0]?'<div class="card"><h3>Última comparación</h3><p>'+esc(sim.comparisons[0].summary)+'</p></div>':"");
   }
   if(s.id==="repeat_operation"){
-    const scans=sim.results.filter(r=>r.type==="scan"||r.type==="search").map(r=>[r.id,r.id+" · "+operationLabel(r)]);
+    const scans=sim.results.filter(r=>r.type==="scan"||r.type==="search").map(r=>[r.id,r.id+" · "+operationLabel(r)+" · "+resultSubject(r)]);
     return '<div class="card"><h3>Repetir operación</h3>'+fieldSelect("repeat-source","Resultado origen",scans,scans[0]?.[0]||"")+'<p>Se reutiliza la configuración, pero el resultado se resuelve contra el estado actual del escenario.</p><div class="action-grid">'+taskButton("execute_repeated_operation","Repetir operación")+taskButton("edit_before_repeat","Editar antes de repetir","secondary")+taskButton("cancel","Cancelar","secondary")+'</div></div>';
   }
   return "";
 }
-function resultDetail(r){return '<div class="data-grid">'+datum("ID de operación",r.id||r.savedId||"—")+datum("Operación",operationLabel(r))+datum("Objetivo",humanTarget(r.target))+datum("Calidad",r.quality??"—")+datum("Procedencia",r.provenance)+datum("Resumen",r.summary)+datum("Observaciones",r.observations?.length??0)+(r.emissionExposure?datum("Exposición del barrido",r.emissionExposure):"")+'</div><div class="action-grid">'+button("save_reading")+button("compare_readings","secondary")+button("repeat_operation","secondary")+button("send_data","secondary")+'</div>'}
+function resultDetail(r){return '<div class="data-grid">'+datum("ID de operación",r.id||r.savedId||"—")+datum("Operación",operationLabel(r))+datum("Contacto(s)",resultSubject(r))+datum("Objetivo",humanTarget(r.target))+datum("Calidad",r.quality??"—")+datum("Procedencia",r.provenance)+datum("Resumen",r.summary)+datum("Observaciones",r.observations?.length??0)+(r.emissionExposure?datum("Exposición del barrido",r.emissionExposure):"")+'</div><div class="action-grid">'+button("save_reading")+button("compare_readings","secondary")+button("repeat_operation","secondary")+button("send_data","secondary")+'</div>'}
 function selectedResultDetail(){
   const r=shell.sim.results.find(x=>x.id===shell.selectedResultId);
   if(!r)return "";
