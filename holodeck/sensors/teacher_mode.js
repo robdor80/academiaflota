@@ -36,8 +36,11 @@ export async function initTeacherMode({resetScenario}){
   }
   function onEvent(ev){
     if(mode.value!=="teacher"||done.size===tutorial.steps.length)return;
-    const step=tutorial.steps[current];
-    if(stepMatches(step,ev)){done.add(current);current++;render()}
+    let advanced=false;
+    while(current<tutorial.steps.length && stepMatches(tutorial.steps[current],ev)){
+      done.add(current);current++;advanced=true;
+    }
+    if(advanced)render();
   }
   listeners.push(onEvent);
   mode.addEventListener("change",()=>{
