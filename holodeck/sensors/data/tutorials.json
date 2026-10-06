@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.2.0",
+  "schema_version": "0.3.0",
   "simulator": "sensors",
   "tutorials": [
     {
@@ -68,7 +68,12 @@
           "concept": "La consola prepara; el mundo resuelve la observación."
         }
       ],
-      "lesson_summary": "Has aprendido a transformar una orden verbal en una observación sensora estructurada: elegir tipo de barrido, delimitar dónde mirar, priorizar una firma y ejecutar."
+      "lesson_summary": "Has aprendido a transformar una orden verbal en una observación sensora estructurada: elegir tipo de barrido, delimitar dónde mirar, priorizar una firma y ejecutar.",
+      "order": {
+        "source": "Teniente Cmdr. Hale · Instructor de Sensores",
+        "order": "Cadete {name}, ejecute un barrido de largo alcance del sector 041 con prioridad a emisiones subespaciales. Informe cuando disponga de resultados.",
+        "note": "La orden especifica función, alcance, área y prioridad. Tu trabajo es traducirla correctamente a la consola."
+      }
     },
     {
       "id": "TUT-02",
@@ -136,7 +141,12 @@
           "concept": "Más observaciones mejoran conocimiento, no garantizan certeza."
         }
       ],
-      "lesson_summary": "Has aprendido a partir de un contacto ya conocido y usar una acción contextual para mejorar su observación sin repetir pasos innecesarios."
+      "lesson_summary": "Has aprendido a partir de un contacto ya conocido y usar una acción contextual para mejorar su observación sin repetir pasos innecesarios.",
+      "order": {
+        "source": "Teniente Cmdr. Hale · Instructor de Sensores",
+        "order": "Cadete {name}, revise el contacto C-07. Efectúe un barrido focalizado sobre el objetivo y actualice su lectura.",
+        "note": "Ya existe un contacto. No se te pide explorar una zona completa, sino concentrar capacidad sensora sobre un objetivo conocido."
+      }
     },
     {
       "id": "TUT-03",
@@ -201,7 +211,12 @@
           "concept": "El panel persistente conserva operaciones en segundo plano."
         }
       ],
-      "lesson_summary": "Has aprendido que el seguimiento es un proceso persistente: puedes cambiar de pantalla mientras la consola continúa observando el contacto."
+      "lesson_summary": "Has aprendido que el seguimiento es un proceso persistente: puedes cambiar de pantalla mientras la consola continúa observando el contacto.",
+      "order": {
+        "source": "Teniente Cmdr. Hale · Instructor de Sensores",
+        "order": "Cadete {name}, establezca seguimiento sobre el contacto C-07 y manténgalo mientras continúa con otras tareas de consola.",
+        "note": "La clave de esta orden es «manténgalo»: el seguimiento debe persistir aunque cambies de pantalla o de función."
+      }
     },
     {
       "id": "TUT-04",
@@ -261,7 +276,12 @@
           "concept": "Solicitar no garantiza obtener."
         }
       ],
-      "lesson_summary": "Has aprendido que la potencia es un recurso compartido: Sensores puede solicitar más, pero no decide de dónde sale ni cuánto recibirá."
+      "lesson_summary": "Has aprendido que la potencia es un recurso compartido: Sensores puede solicitar más, pero no decide de dónde sale ni cuánto recibirá.",
+      "order": {
+        "source": "Teniente Cmdr. Hale · Instructor de Sensores",
+        "order": "Cadete {name}, la señal del contacto C-07 es insuficiente. Solicite a Operaciones potencia adicional para Sensores y confirme la nueva asignación.",
+        "note": "Sensores detecta la necesidad, pero la redistribución de energía pertenece a Operaciones. Debes solicitarla, no apropiártela."
+      }
     },
     {
       "id": "TUT-05",
@@ -327,7 +347,12 @@
           "concept": "Sensores mide; Ciencia interpreta."
         }
       ],
-      "lesson_summary": "Has aprendido la frontera entre Sensores y Ciencia: Sensores mide y organiza observaciones; Ciencia interpreta fenómenos complejos."
+      "lesson_summary": "Has aprendido la frontera entre Sensores y Ciencia: Sensores mide y organiza observaciones; Ciencia interpreta fenómenos complejos.",
+      "order": {
+        "source": "Teniente Cmdr. Hale · Instructor de Sensores",
+        "order": "Cadete {name}, revise la lectura sensorial del contacto C-07 y remita los datos a Ciencia para análisis.",
+        "note": "Sensores debe entregar observaciones y medidas. La interpretación científica profunda corresponde a Ciencia."
+      }
     }
   ]
 }

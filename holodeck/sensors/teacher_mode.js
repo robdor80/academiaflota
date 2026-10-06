@@ -6,9 +6,34 @@ export async function initTeacherMode({resetScenario}){
   const mode=document.querySelector("#mode-select"),panel=document.querySelector("#teacher-panel"),select=document.querySelector("#tutorial-select");
   const title=document.querySelector("#teacher-title"),objective=document.querySelector("#teacher-objective"),stepsEl=document.querySelector("#teacher-steps");
   const progressEl=document.querySelector("#teacher-progress"),feedback=document.querySelector("#teacher-feedback"),hintBtn=document.querySelector("#teacher-hint"),hintText=document.querySelector("#teacher-hint-text"),resetBtn=document.querySelector("#teacher-reset");
+  const orderBox=document.querySelector("#teacher-order"),orderSource=document.querySelector("#teacher-order-source"),orderText=document.querySelector("#teacher-order-text"),orderNote=document.querySelector("#teacher-order-note"),orderAck=document.querySelector("#teacher-order-ack");
   const expKicker=document.querySelector("#teacher-explanation-kicker"),expTitle=document.querySelector("#teacher-explanation-title"),expWhat=document.querySelector("#teacher-explanation-what"),expWhy=document.querySelector("#teacher-explanation-why"),expEffect=document.querySelector("#teacher-explanation-effect"),expConcept=document.querySelector("#teacher-explanation-concept");
   const data=await fetch("./data/tutorials.json").then(r=>r.json());
-  let tutorial=data.tutorials[0],done=new Set(),current=0;
+  let tutorial=data.tutorials[0],done=new Set(),current=0,orderAcknowledged=false;
+  function activeProfileName(){
+    try{
+      const sessionKeys=Object.keys(sessionStorage).filter(k=>k.startsWith("starfleetAcademy.activeProfile.v1"));
+      for(const sk of sessionKeys){
+        const id=sessionStorage.getItem(sk); if(!id) continue;
+        const suffix=sk.slice("starfleetAcademy.activeProfile.v1".length);
+        const candidates=[
+          "starfleetAcademy.profiles.v1"+suffix,
+          "starfleetAcademy.profiles.v1"
+        ];
+        for(const lk of candidates){
+          const raw=localStorage.getItem(lk); if(!raw) continue;
+          const profiles=JSON.parse(raw);
+          const p=Array.isArray(profiles)?profiles.find(x=>x?.id===id&&!x?.deletedAt):null;
+          if(p?.name) return p.name.trim();
+        }
+      }
+    }catch{}
+    return "Cadete";
+  }
+  function formatOrder(text){
+    const name=activeProfileName();
+    return String(text||"").replaceAll("{name}",name==="Cadete"?"":name).replace(/Cadete\s+,/g,"Cadete,");
+  }
   select.innerHTML=data.tutorials.map(t=>'<option value="'+t.id+'">'+t.id+' · '+t.title+'</option>').join("");
   function stateOk(step){
     if(!step.requiresState)return true;
@@ -27,6 +52,15 @@ export async function initTeacherMode({resetScenario}){
   }
   function render(){
     title.textContent=tutorial.title;objective.textContent=tutorial.objective;
+    orderBox.hidden=orderAcknowledged;
+    objective.hidden=!orderAcknowledged;
+    stepsEl.hidden=!orderAcknowledged;
+    document.querySelector("#teacher-explanation").hidden=!orderAcknowledged;
+    if(tutorial.order){
+      orderSource.textContent=tutorial.order.source||"Instructor";
+      orderText.textContent=formatOrder(tutorial.order.order);
+      orderNote.textContent=tutorial.order.note||"";
+    }
     progressEl.textContent=done.size+" / "+tutorial.steps.length;
     stepsEl.innerHTML=tutorial.steps.map((s,i)=>'<li class="teacher-step '+(done.has(i)?"done":i===current?"current":"")+'">'+s.label+'</li>').join("");
     const complete=done.size===tutorial.steps.length;
@@ -50,11 +84,11 @@ export async function initTeacherMode({resetScenario}){
     }
   }
   function start(id,{reset=true}={}){
-    tutorial=data.tutorials.find(t=>t.id===id)||data.tutorials[0];select.value=tutorial.id;done=new Set();current=0;hintText.hidden=true;hintText.textContent=tutorial.hint;hintBtn.textContent="Mostrar pista";
+    tutorial=data.tutorials.find(t=>t.id===id)||data.tutorials[0];select.value=tutorial.id;done=new Set();current=0;orderAcknowledged=false;hintText.hidden=true;hintText.textContent=tutorial.hint;hintBtn.textContent="Mostrar pista";
     if(reset)resetScenario("teacher:"+tutorial.id);render();
   }
   function onEvent(ev){
-    if(mode.value!=="teacher"||done.size===tutorial.steps.length)return;
+    if(mode.value!=="teacher"||!orderAcknowledged||done.size===tutorial.steps.length)return;
     let advanced=false;
     while(current<tutorial.steps.length && stepMatches(tutorial.steps[current],ev)){
       done.add(current);current++;advanced=true;
@@ -69,6 +103,7 @@ export async function initTeacherMode({resetScenario}){
   });
   select.addEventListener("change",()=>start(select.value,{reset:true}));
   resetBtn.addEventListener("click",()=>start(tutorial.id,{reset:true}));
+  orderAck.addEventListener("click",()=>{orderAcknowledged=true;render();});
   hintBtn.addEventListener("click",()=>{hintText.hidden=!hintText.hidden;hintBtn.textContent=hintText.hidden?"Mostrar pista":"Ocultar pista"});
   const saved=sessionStorage.getItem("sensorMode");
   if(saved==="teacher"){mode.value="teacher";panel.hidden=false;start(select.value,{reset:false})}
