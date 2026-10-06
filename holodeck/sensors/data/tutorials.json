@@ -1028,17 +1028,17 @@
       "scenario_id": "standard_sector",
       "guidance": "guided",
       "objective": "Recupera C-19 usando su historial y mantén el contacto bajo seguimiento.",
-      "hint": "Seguimiento → Recuperar contacto perdido.",
+      "hint": "Abre SEGUIMIENTO en el menú principal y después «Recuperar contacto perdido».",
       "completion_feedback": "Práctica completada. Sabes recuperar un contacto sin perder su identidad histórica.",
       "steps": [
         {
-          "label": "Abrir Recuperar contacto",
+          "label": "Abrir SEGUIMIENTO → Recuperar contacto perdido",
           "event": "NAV_SECONDARY",
           "match": {
             "primaryId": "tracking",
             "secondaryId": "reacquire_lost_contact"
           },
-          "what": "Abres la herramienta de reacquisición.",
+          "what": "Abres SEGUIMIENTO y entras en la herramienta «Recuperar contacto perdido».",
           "why": "C-19 ya tiene historial.",
           "effect": "La búsqueda puede usar última posición y firma.",
           "concept": "Perdido no significa olvidado."
