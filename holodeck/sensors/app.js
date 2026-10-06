@@ -390,7 +390,7 @@ function executeSearch(){
   if(cfg.searchType==="custom_signature"&&!cfg.criteria.trim()){notify("Una firma definida necesita al menos un criterio de búsqueda.","danger");return}
   const op=createOperation(shell.sim,"search:"+cfg.searchType,cfg);
   log("EXECUTE search "+cfg.searchType+" · "+cfg.area);emitTeacherEvent("SEARCH_EXECUTE",{...cfg,operationId:op.id});
-  runTimed(op,()=>{const r=resolveSearch(shell.sim,cfg);op.state="completed";op.progress=100;return r},"SEARCH");
+  runTimed(op,()=>{const r=resolveSearch(shell.sim,cfg,op.id);op.state="completed";op.progress=100;return r},"SEARCH");
   renderStatus();
 }
 function doTask(id){
@@ -480,7 +480,7 @@ function doTask(id){
     const rid=$("#repeat-source").value,r=sim.results.find(x=>x.id===rid);if(!r){notify("Resultado no encontrado.","danger");return}
     log("REPEAT "+rid);emitTeacherEvent("RESULT_REPEAT",{sourceResultId:rid,type:r.type});
     if(r.type==="scan"){const op=createOperation(sim,"scan:"+r.subtype,r.configuration);runTimed(op,()=>resolveScan(sim,op),"SCAN");renderStatus()}
-    else if(r.type==="search"){const op=createOperation(sim,"search:"+r.subtype,r.configuration);runTimed(op,()=>{const rr=resolveSearch(sim,r.configuration);op.state="completed";op.progress=100;return rr},"SEARCH");renderStatus()}
+    else if(r.type==="search"){const op=createOperation(sim,"search:"+r.subtype,r.configuration);runTimed(op,()=>{const rr=resolveSearch(sim,r.configuration,op.id);op.state="completed";op.progress=100;return rr},"SEARCH");renderStatus()}
     return;
   }
   if(id==="run_diagnostic"){const d=runDiagnostic(sim,$("#diag-scope").value);log("DIAGNOSTIC "+d.id+" · "+d.status);emitTeacherEvent("DIAGNOSTIC_RUN",{scope:d.scope,status:d.status,issues:d.issues.length});render();return}
