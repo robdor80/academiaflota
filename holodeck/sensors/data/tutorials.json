@@ -26,7 +26,7 @@
         },
         {
           "label": "Configurar Sector 041",
-          "event": "SCAN_EXECUTE",
+          "event": "SCAN_CONFIG_CHANGE",
           "match": {
             "scanType": "long_range",
             "targetValue": "sector"
@@ -34,7 +34,7 @@
         },
         {
           "label": "Prioridad Subespacio",
-          "event": "SCAN_EXECUTE",
+          "event": "SCAN_CONFIG_CHANGE",
           "match": {
             "scanType": "long_range",
             "priority": "subspace"

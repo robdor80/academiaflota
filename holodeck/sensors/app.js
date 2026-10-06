@@ -129,10 +129,33 @@ function scanView(){
     '</div><div class="action-grid"><button id="execute-scan" class="action">Ejecutar barrido</button>'+button("request_additional_power","secondary")+'</div></div>';
 }
 function fieldSelect(id,label,opts){return '<div class="field"><label>'+label+'</label><select id="'+id+'">'+opts.map(([v,t])=>'<option value="'+v+'">'+t+'</option>').join("")+'</select></div>'}
-function wireScanForm(){const b=$("#execute-scan");if(b)b.onclick=executeScan}
+function scanConfigSnapshot(){
+  return {
+    scanType:state.secondaryId,
+    targetValue:$("#target-scope")?.value||"",
+    targetLabel:$("#target-scope")?.selectedOptions?.[0]?.textContent||"",
+    priority:$("#priority")?.value||"none",
+    resolution:$("#resolution")?.value||"standard",
+    mode:$("#scan-mode")?.value||"passive",
+    duration:$("#duration")?.value||"standard",
+    filters:$("#filters")?.value||"all",
+    contactId:contact()?.id||null
+  };
+}
+function wireScanForm(){
+  const b=$("#execute-scan");if(b)b.onclick=executeScan;
+  ["scan-mode","target-scope","resolution","priority","duration","filters"].forEach(id=>{
+    const el=$("#"+id);
+    if(el)el.addEventListener("change",()=>{
+      const snapshot=scanConfigSnapshot();
+      log("CONFIG "+id+"="+el.value);
+      emitTeacherEvent("SCAN_CONFIG_CHANGE",{controlId:id,value:el.value,...snapshot});
+    });
+  });
+}
 function executeScan(){
-  const type=state.secondaryId;const op={id:"SCN-"+String(Date.now()).slice(-4),type,progress:0,target:$("#target-scope")?.selectedOptions[0]?.textContent||"—",targetValue:$("#target-scope")?.value||"",resolution:$("#resolution")?.value||"standard",priority:$("#priority")?.value||"none",mode:$("#scan-mode")?.value||"passive",duration:$("#duration")?.value||"standard"};
-  state.activeOperations.push(op);log("EXECUTE scan "+type+" · "+op.target);emitTeacherEvent("SCAN_EXECUTE",{scanType:type,target:op.target,targetValue:op.targetValue,priority:op.priority,resolution:op.resolution,mode:op.mode,duration:op.duration,contactId:contact()?.id||null});renderStatus();
+  const cfg=scanConfigSnapshot();const type=state.secondaryId;const op={id:"SCN-"+String(Date.now()).slice(-4),type,progress:0,target:cfg.targetLabel||"—",targetValue:cfg.targetValue,resolution:cfg.resolution,priority:cfg.priority,mode:cfg.mode,duration:cfg.duration};
+  state.activeOperations.push(op);log("EXECUTE scan "+type+" · "+op.target);emitTeacherEvent("SCAN_EXECUTE",{...cfg,target:op.target});renderStatus();
   const timer=setInterval(()=>{op.progress=Math.min(100,op.progress+10);renderStatus();if(op.progress>=100){clearInterval(timer);finishScan(op)}},350);
 }
 function finishScan(op){
