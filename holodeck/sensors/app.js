@@ -86,6 +86,17 @@ function renderSecondary(){
 function datum(k,v){return '<div class="datum"><small>'+esc(k)+'</small><strong>'+esc(v)+'</strong></div>'}
 function button(id,cls=""){return '<button class="action '+cls+'" data-action="'+id+'">'+esc(actionDef(id).display_es)+'</button>'}
 function taskButton(id,label,cls=""){return '<button class="action '+cls+'" data-task="'+id+'">'+esc(label)+'</button>'}
+function operationLabel(r){
+  const primaryId=r?.type==="search"?"search_localize":r?.type==="scan"?"scans":null;
+  const display=primaryId?shell.model?.root?.find(x=>x.id===primaryId)?.secondary?.find(x=>x.id===r.subtype)?.display_es:null;
+  if(r?.type==="search")return "Búsqueda de "+String(display||r.subtype||"objetivo").toLocaleLowerCase("es-ES");
+  if(r?.type==="scan")return "Barrido "+String(display||r.subtype||"sensorial").toLocaleLowerCase("es-ES");
+  return String(r?.type||"Operación");
+}
+function humanTarget(value){
+  const map={sector_041:"Sector 041",sector_014:"Sector 014",local:"Espacio local",system:"Sistema estelar",wide:"Volumen ampliado",surrounding:"Espacio circundante",coordinates:"Coordenadas definidas",vector:"Vector definido",defined_zone:"Zona definida"};
+  return map[value]||value||"—";
+}
 function fieldSelect(id,label,opts,value=""){return '<div class="field"><label>'+esc(label)+'</label><select id="'+id+'">'+opts.map(([v,t])=>'<option value="'+esc(v)+'" '+(String(v)===String(value)?"selected":"")+'>'+esc(t)+'</option>').join("")+'</select></div>'}
 function fieldMultiSelect(id,label,opts,values=[]){const set=new Set(Array.isArray(values)?values:[values]);return '<div class="field"><label>'+esc(label)+'</label><select id="'+id+'" multiple size="5">'+opts.map(([v,t])=>'<option value="'+esc(v)+'" '+(set.has(v)?"selected":"")+'>'+esc(t)+'</option>').join("")+'</select><small class="field-help">Ctrl/Cmd + clic para combinar filtros</small></div>'}
 function fieldInput(id,label,value="",placeholder=""){return '<div class="field"><label>'+esc(label)+'</label><input id="'+id+'" value="'+esc(value)+'" placeholder="'+esc(placeholder)+'"></div>'}
@@ -243,7 +254,7 @@ function configurationView(){
   return '<div class="card"><h3>'+esc(label)+'</h3><p>Los cambios modifican valores predeterminados; no ejecutan operaciones por sí solos.</p>'+fieldSelect("config-value",label,opts,val)+'<div class="action-grid">'+taskButton("apply_setting","Aplicar")+taskButton("restore_ship_standard","Restaurar estándar","secondary")+(s.id==="sensor_power"?button("request_additional_power","secondary")+(sim.powerRequest?button("cancel_power_request","secondary"):""):"")+(s.id==="sensor_array"?taskButton("open_array_status","Abrir estado de matrices","secondary"):"")+'</div></div>';
 }
 function resultCard(r){
-  return '<div class="contact-row '+(r.id===shell.selectedResultId?"active":"")+'" data-result="'+r.id+'"><strong>'+r.id+'</strong><span>'+esc(r.target||r.subtype)+'<br><small>'+esc(r.summary)+'</small></span><strong>'+esc(r.time)+'</strong></div>';
+  return '<div class="contact-row '+(r.id===shell.selectedResultId?"active":"")+'" data-result="'+r.id+'"><strong>'+esc(r.id)+'</strong><span><b>'+esc(operationLabel(r))+'</b><br><small>'+esc(humanTarget(r.target))+' · '+esc(r.summary)+'</small></span><strong>'+esc(r.time)+'</strong></div>';
 }
 function resultsView(){
   const s=secondary(),sim=shell.sim;
@@ -254,21 +265,21 @@ function resultsView(){
   if(s.id==="recent_results")return '<div class="card"><h3>Resultados recientes</h3><div class="contact-list">'+(sim.results.map(resultCard).join("")||'<div class="notice">Sin resultados.</div>')+'</div></div>'+selectedResultDetail();
   if(s.id==="saved_readings"){const rows=sim.savedReadings.map(r=>'<div class="contact-row '+(r.savedId===shell.selectedResultId?"active":"")+'" data-saved-result="'+r.savedId+'"><strong>'+esc(r.savedId)+'</strong><span>'+esc(r.label)+'<br><small>'+esc(r.summary)+'</small></span><strong>'+esc(r.time)+'</strong></div>').join("");const selected=sim.savedReadings.find(x=>x.savedId===shell.selectedResultId);return '<div class="card"><h3>Lecturas guardadas</h3><div class="contact-list">'+(rows||'<div class="notice">No hay lecturas guardadas.</div>')+'</div></div>'+(selected?'<div class="card"><h3>Lectura guardada · '+esc(selected.savedId)+'</h3>'+resultDetail(selected)+'</div>':"")}
   if(s.id==="compare_readings"){
-    const all=[...sim.results.map(r=>[r.id,r.id+" · "+r.summary]),...sim.savedReadings.map(r=>[r.savedId,r.savedId+" · "+r.label])];
+    const all=[...sim.results.map(r=>[r.id,r.id+" · "+operationLabel(r)+" · "+r.summary]),...sim.savedReadings.map(r=>[r.savedId,r.savedId+" · "+r.label])];
     return '<div class="card"><h3>Comparar lecturas</h3><div class="form-grid">'+fieldSelect("compare-a","Lectura A",all,all[0]?.[0]||"")+fieldSelect("compare-b","Lectura B",all,all[1]?.[0]||all[0]?.[0]||"")+'</div><div class="action-grid">'+taskButton("execute_comparison","Comparar")+'</div></div>'+(sim.comparisons[0]?'<div class="card"><h3>Última comparación</h3><p>'+esc(sim.comparisons[0].summary)+'</p></div>':"");
   }
   if(s.id==="repeat_operation"){
-    const scans=sim.results.filter(r=>r.type==="scan"||r.type==="search").map(r=>[r.id,r.id+" · "+r.subtype]);
+    const scans=sim.results.filter(r=>r.type==="scan"||r.type==="search").map(r=>[r.id,r.id+" · "+operationLabel(r)]);
     return '<div class="card"><h3>Repetir operación</h3>'+fieldSelect("repeat-source","Resultado origen",scans,scans[0]?.[0]||"")+'<p>Se reutiliza la configuración, pero el resultado se resuelve contra el estado actual del escenario.</p><div class="action-grid">'+taskButton("execute_repeated_operation","Repetir operación")+taskButton("edit_before_repeat","Editar antes de repetir","secondary")+taskButton("cancel","Cancelar","secondary")+'</div></div>';
   }
   return "";
 }
-function resultDetail(r){return '<div class="data-grid">'+datum("Tipo",r.type+" / "+r.subtype)+datum("Objetivo",r.target)+datum("Calidad",r.quality??"—")+datum("Procedencia",r.provenance)+datum("Resumen",r.summary)+datum("Observaciones",r.observations?.length??0)+(r.emissionExposure?datum("Exposición del barrido",r.emissionExposure):"")+'</div><div class="action-grid">'+button("save_reading")+button("compare_readings","secondary")+button("repeat_operation","secondary")+button("send_data","secondary")+'</div>'}
+function resultDetail(r){return '<div class="data-grid">'+datum("ID de operación",r.id||r.savedId||"—")+datum("Operación",operationLabel(r))+datum("Objetivo",humanTarget(r.target))+datum("Calidad",r.quality??"—")+datum("Procedencia",r.provenance)+datum("Resumen",r.summary)+datum("Observaciones",r.observations?.length??0)+(r.emissionExposure?datum("Exposición del barrido",r.emissionExposure):"")+'</div><div class="action-grid">'+button("save_reading")+button("compare_readings","secondary")+button("repeat_operation","secondary")+button("send_data","secondary")+'</div>'}
 function selectedResultDetail(){
   const r=shell.sim.results.find(x=>x.id===shell.selectedResultId);
   if(!r)return "";
   const candidates=r.type==="search"?'<div class="result-candidates"><h3>Candidatos observados</h3>'+resultCandidatesHtml(r)+'</div>':"";
-  return '<div class="card"><h3>Detalle · '+r.id+'</h3>'+resultDetail(r)+candidates+'</div>';
+  return '<div class="card"><h3>Detalle · '+esc(r.id)+' · '+esc(operationLabel(r))+'</h3>'+resultDetail(r)+candidates+'</div>';
 }
 function resultCandidatesHtml(r){
   const observations=r?.observations||[];
@@ -284,7 +295,7 @@ function resultCandidatesHtml(r){
 }
 function latestResultMini(type){
   const r=shell.sim.results.find(x=>x.type===type);
-  return r?'<div class="card"><h3>Último resultado</h3>'+resultCandidatesHtml(r)+'</div>':"";
+  return r?'<div class="card"><h3>Último resultado · '+esc(r.id)+' · '+esc(operationLabel(r))+'</h3>'+resultCandidatesHtml(r)+'</div>':"";
 }
 function diagnosticsView(){
   const s=secondary(),sim=shell.sim;
