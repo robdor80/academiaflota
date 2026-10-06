@@ -1,7 +1,7 @@
 {
   "subject": "Organización y protocolo de Starfleet",
   "code": "STF-401",
-  "version": "1.1",
+  "version": "1.2",
   "status": "developed_content",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/STF-401/course.json",
@@ -88,20 +88,6 @@
           "type": "callout",
           "label": "PRÁCTICA",
           "text": "Clasifica cinco casos por función principal y secundaria: cartografiar un sistema, investigar una anomalía, evacuar una colonia, escoltar una nave civil y transportar una delegación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica con tus palabras cuál es la misión general de Starfleet.",
-            "¿Por qué Starfleet y la Federación no son la misma institución?",
-            "¿Puede una misión pertenecer a más de una función? Pon un ejemplo.",
-            "¿Por qué defensa no significa que Starfleet se defina únicamente como una fuerza de guerra?",
-            "¿Qué error podría cometer un oficial si confundiera autoridad operativa con autoridad política?"
-          ]
         }
       ]
     },
@@ -244,20 +230,6 @@
           "type": "callout",
           "label": "PRÁCTICA",
           "text": "Identifica por separado rango, puesto y autoridad en varios ejemplos de tripulación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué diferencia existe entre rango y puesto?",
-            "¿Por qué el oficial de mayor rango no decide necesariamente cada cuestión técnica?",
-            "¿Cuál es el rango comisionado inicial normal tras graduarse?",
-            "¿Qué parte del sistema de divisas es una estandarización del proyecto?",
-            "¿Qué información adicional necesitas antes de decidir quién tiene autoridad sobre una acción?"
-          ]
         }
       ]
     },
@@ -319,20 +291,6 @@
           "type": "callout",
           "label": "PRÁCTICA",
           "text": "Representa una presentación ante un instructor, un reporte a un superior y una coordinación con otro departamento."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Para qué sirve realmente el protocolo verbal?",
-            "¿Cuándo puede ser más útil emplear un cargo que un rango?",
-            "¿Qué diferencia existe entre respeto profesional y obediencia ciega?",
-            "¿Qué debe contener una petición de permiso útil?",
-            "¿Por qué un tono informal no elimina necesariamente las responsabilidades del servicio?"
-          ]
         }
       ]
     },
@@ -397,20 +355,6 @@
           "type": "callout",
           "label": "PRÁCTICA",
           "text": "Resuelve a quién informarías y de quién aceptarías instrucciones en varios casos de guardia ordinaria."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Cuál es la secuencia básica de sucesión?",
-            "¿Por qué el rango por sí solo no basta para resolver una sucesión?",
-            "¿Qué significa autoridad temporal?",
-            "¿Qué harías si recibes una instrucción ambigua?",
-            "Pon un ejemplo de autoridad limitada a un ámbito concreto."
-          ]
         }
       ]
     },
@@ -499,20 +443,6 @@
           "type": "callout",
           "label": "PRÁCTICA",
           "text": "Construye un organigrama básico diferenciando división, departamento, puesto, rango y estación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Nombra las tres grandes divisiones del proyecto.",
-            "¿Por qué división y departamento no son exactamente lo mismo?",
-            "¿Qué diferencia existe entre puesto y estación?",
-            "¿Pueden dos personas con la misma especialidad ocupar puestos distintos?",
-            "¿Por qué «Operaciones» puede significar una división amplia y también un puesto o departamento concreto según el contexto?"
-          ]
         }
       ]
     },
@@ -602,22 +532,9 @@
           "type": "callout",
           "label": "PRÁCTICA",
           "text": "Mini-simulación completa de llegada, presentación, recepción de instrucción, aclaración, ejecución y reporte final."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué debes identificar al recibir una instrucción?",
-            "¿Qué diferencia existe entre confirmar y obedecer ciegamente?",
-            "¿Cuándo debes informar de un impedimento?",
-            "¿Por qué reconocer un límite profesional es una fortaleza y no una debilidad?",
-            "Describe una llegada correcta a una unidad de entrenamiento."
-          ]
         }
       ]
     }
-  ]
+  ],
+  "assessmentModel": "concept_driven_v2"
 }

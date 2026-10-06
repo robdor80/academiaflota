@@ -1,7 +1,7 @@
 {
   "subject": "Preparación física I",
   "code": "PHY-401",
-  "version": "1.1",
+  "version": "1.2",
   "status": "developed_content",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/PHY-401/course.json",
@@ -58,20 +58,6 @@
             "Recomendación de rutina",
             "Revisión adicional"
           ]
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Para qué sirve la evaluación inicial?",
-            "¿Qué cuatro áreas observa?",
-            "¿Por qué no se comparan directamente especies distintas?",
-            "¿Qué significa producir evidencia?",
-            "Diferencia condición funcional y puntuación RPG."
-          ]
         }
       ]
     },
@@ -124,20 +110,6 @@
           "type": "callout",
           "label": "PRÁCTICA",
           "text": "Rutina supervisada centrada en movilidad y técnica. El objetivo es ejecutar correctamente, no terminar antes que otros."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué significa movilidad funcional?",
-            "¿Para qué sirve un calentamiento?",
-            "¿Qué factores definen técnica segura?",
-            "¿Por qué prevención no significa riesgo cero?",
-            "¿Qué valor tiene responder bien al feedback?"
-          ]
         }
       ]
     },
@@ -187,20 +159,6 @@
         {
           "type": "p",
           "text": "El progreso no tiene que ser lineal: fatiga, enfermedad, lesión o carga académica pueden alterar temporalmente el rendimiento."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué significa resistencia básica?",
-            "¿Por qué una sesión intensa no demuestra adaptación?",
-            "¿Qué relación existe entre ritmo y sostenibilidad?",
-            "¿Qué variables observa el sistema?",
-            "¿Por qué el progreso no tiene que ser lineal?"
-          ]
         }
       ]
     },
@@ -256,20 +214,6 @@
           "type": "callout",
           "label": "TRANSFERENCIA",
           "text": "La fuerza general puede ayudar a otras tareas, pero no concede automáticamente una cualificación de Seguridad, EVA o Ingeniería."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Diferencia fuerza máxima y funcional.",
-            "Nombra cuatro patrones básicos.",
-            "¿Por qué importa el control?",
-            "¿Cómo puede progresar una tarea sin subir solo peso?",
-            "¿Por qué fuerza general no concede cualificación profesional?"
-          ]
         }
       ]
     },
@@ -314,20 +258,6 @@
         {
           "type": "p",
           "text": "Una interrupción breve no castiga de forma absurda. Periodos prolongados sí pueden afectar adaptación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Por qué recuperación forma parte del entrenamiento?",
-            "Diferencia fatiga aguda y carga acumulada.",
-            "¿Una buena noche borra un mes de sobrecarga?",
-            "¿Por qué una lesión puede cambiar la rutina?",
-            "¿Qué diferencia hay entre una pausa breve y meses de inactividad?"
-          ]
         }
       ]
     },
@@ -390,22 +320,9 @@
           "type": "callout",
           "label": "AGENCIA",
           "text": "La Academia fija obligaciones. El jugador decide prioridades y rutina; el personaje realiza la actividad y el sistema observa evidencia y consecuencias."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Cómo se forma una rutina?",
-            "¿Qué significa sostenibilidad?",
-            "¿Por qué una actividad agradable no da una bonificación universal?",
-            "Nombra tres causas de interrupción.",
-            "¿Qué decide el jugador y qué observa el sistema?"
-          ]
         }
       ]
     }
-  ]
+  ],
+  "assessmentModel": "concept_driven_v2"
 }

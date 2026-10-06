@@ -1,7 +1,7 @@
 {
   "subject": "Sistemas de información Starfleet",
   "code": "INF-401",
-  "version": "1.1",
+  "version": "1.2",
   "status": "developed_content",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/INF-401/course.json",
@@ -57,20 +57,6 @@
         {
           "type": "p",
           "text": "La IA puede entender lenguaje complejo o resumir datos, pero no muta por sí sola el mundo. Los sistemas autoritativos validan y ejecutan."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Por qué la computadora no es una única consola?",
-            "Diferencia consulta y acción.",
-            "¿Por qué «no detectado» no significa «no existe»?",
-            "¿Puede una IA cambiar directamente el estado de la nave?",
-            "Pon dos ejemplos de consulta rutinaria."
-          ]
         }
       ]
     },
@@ -127,20 +113,6 @@
           "type": "callout",
           "label": "NO CONFUNDIR",
           "text": "Un borrador puede editarse. Un registro final o hecho autoritativo no debe reescribirse silenciosamente."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Por qué el PADD es una interfaz?",
-            "¿Qué factores pueden limitar sincronización?",
-            "Diferencia borrador y registro final.",
-            "¿Por qué no aparece automáticamente información restringida?",
-            "Describe un flujo académico básico."
-          ]
         }
       ]
     },
@@ -199,20 +171,6 @@
         {
           "type": "p",
           "text": "Pueden requerir confirmación, código, doble autorización u override válido. Los overrides de emergencia deben ser auditables."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Diferencia autenticación y autorización.",
-            "¿Por qué el rango no concede acceso universal?",
-            "Nombra cuatro factores de autorización.",
-            "¿Qué significa mínimo acceso?",
-            "¿Por qué un override debe quedar auditado?"
-          ]
         }
       ]
     },
@@ -263,20 +221,6 @@
           "type": "callout",
           "label": "PRÁCTICA",
           "text": "Formula búsquedas para localizar un reglamento, una incidencia técnica y un resultado de sensores sin pedir conclusiones no contenidas en la fuente."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué debe especificar una buena consulta?",
-            "¿Por qué importa la fuente?",
-            "Diferencia resultado e interpretación.",
-            "¿Puede un resumen incluir hechos no registrados?",
-            "Pon un ejemplo de búsqueda compleja legítima."
-          ]
         }
       ]
     },
@@ -328,20 +272,6 @@
             "Tipo de registro",
             "Referencias",
             "Permisos"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Para qué sirve la trazabilidad?",
-            "Diferencia Event Log y log personal.",
-            "¿Se borra un registro antiguo al corregirlo?",
-            "¿Por qué importan autoría y hora?",
-            "¿Puede una opinión convertirse automáticamente en verdad?"
           ]
         }
       ]
@@ -402,22 +332,9 @@
           "type": "callout",
           "label": "CASO",
           "text": "Saber que existe un log privado de un instructor no concede derecho a leerlo."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Diferencia acceso técnico y autorización.",
-            "Nombra cuatro datos restringidos.",
-            "¿Por qué un acceso denegado no debe filtrar contenido?",
-            "¿Para qué sirve auditar accesos?",
-            "¿Puede la IA reconstruir información privada para ayudar?"
-          ]
         }
       ]
     }
-  ]
+  ],
+  "assessmentModel": "concept_driven_v2"
 }

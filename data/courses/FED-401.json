@@ -1,7 +1,7 @@
 {
   "subject": "Federación: fundamentos políticos y sociales",
   "code": "FED-401",
-  "version": "1.1",
+  "version": "1.2",
   "status": "developed_content",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/FED-401/course.json",
@@ -66,20 +66,6 @@
           "type": "callout",
           "label": "PRÁCTICA",
           "text": "Decide cuáles de varias afirmaciones describen correctamente a la Federación y justifica la respuesta."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué tipo de entidad política es la Federación?",
-            "¿En qué año se funda según el proyecto?",
-            "¿Cuáles son los cuatro miembros fundadores retenidos?",
-            "¿Por qué no debe extrapolarse la escala de 2373 a la era de Pike?",
-            "¿Por qué pertenecer a la Federación no elimina la diversidad cultural?"
-          ]
         }
       ]
     },
@@ -147,20 +133,6 @@
           "type": "callout",
           "label": "PRÁCTICA",
           "text": "Clasifica varios asuntos como civil, planetario/local, Starfleet/operativo o dependiente de coordinación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué dos instituciones federales mínimas retiene el proyecto?",
-            "¿Por qué no se detallan elecciones o mandatos sin base suficiente?",
-            "¿Qué significa que Starfleet esté subordinada a autoridad civil?",
-            "¿Puede un capitán sustituir automáticamente a una autoridad política?",
-            "¿Qué debes hacer cuando la competencia institucional no está clara?"
-          ]
         }
       ]
     },
@@ -222,20 +194,6 @@
           "type": "callout",
           "label": "CASO",
           "text": "Una oficial vulcana de Starfleet en otro mundo miembro no representa automáticamente al gobierno vulcano ni posee autoridad civil local."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica la regla «especie ≠ ciudadanía».",
-            "¿Por qué mundo y gobierno se modelan por separado?",
-            "¿Qué puede cambiar cuando un mundo entra o sale de una estructura política?",
-            "¿Ser oficial de Starfleet concede autoridad civil universal?",
-            "¿Qué datos necesitarías antes de decidir qué jurisdicción se aplica?"
-          ]
         }
       ]
     },
@@ -287,20 +245,6 @@
           "type": "callout",
           "label": "PRÁCTICA",
           "text": "Distingue en varios casos decisión política, ejecución operativa, negociación y consecuencia de World State."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Resume en una frase la relación entre Federación y Starfleet.",
-            "¿Qué significa subordinación civil?",
-            "¿Puede una conversación generada por IA cambiar un tratado por sí sola?",
-            "¿Qué ocurre con los eventos canónicos posteriores al inicio de campaña?",
-            "Pon un ejemplo de una decisión civil que limite una operación de Starfleet."
-          ]
         }
       ]
     },
@@ -348,20 +292,6 @@
           "type": "callout",
           "label": "PRÁCTICA",
           "text": "Compara «son de esa especie; ya sé cómo funcionan» con «conozco una tradición asociada, pero confirmaré cómo la aplica esta persona y este contexto»."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Por qué la Federación no debe representarse como una cultura única?",
-            "Diferencia especie, cultura e individuo.",
-            "¿Qué es una suposición antropocéntrica?",
-            "¿Por qué conocer una tradición no permite predecir automáticamente a una persona?",
-            "¿Qué harías ante una norma cultural que no comprendes?"
-          ]
         }
       ]
     },
@@ -425,22 +355,9 @@
           "type": "callout",
           "label": "CASO",
           "text": "Un cadete presencia una disputa civil en un mundo miembro. Su uniforme no le concede automáticamente autoridad local; puede proteger una vida ante una emergencia, pedir ayuda y comunicar la situación sin inventar competencias."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Por qué esta asignatura no enumera una constitución completa?",
-            "¿Qué significa responsabilidad pública para un cadete?",
-            "Explica «debido proceso» a nivel introductorio.",
-            "¿Por qué un uniforme de Starfleet no concede autoridad ilimitada?",
-            "¿Qué preguntas debes hacerte antes de intervenir en un asunto civil?"
-          ]
         }
       ]
     }
-  ]
+  ],
+  "assessmentModel": "concept_driven_v2"
 }

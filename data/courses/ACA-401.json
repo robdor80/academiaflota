@@ -1,7 +1,7 @@
 {
   "subject": "Vida académica, conducta y responsabilidad profesional",
   "code": "ACA-401",
-  "version": "1.1",
+  "version": "1.2",
   "status": "developed_content",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/ACA-401/course.json",
@@ -85,20 +85,6 @@
           "type": "callout",
           "label": "IDEA CLAVE",
           "text": "Una dificultad académica no significa automáticamente game over."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Cuántos años dura el programa estándar?",
-            "¿Qué clase corresponde al primer año?",
-            "¿Cuál es el rango normal tras graduarse?",
-            "¿Por qué teoría y práctica no son equivalentes?",
-            "¿Qué factores además de las notas pueden afectar a la progresión?"
-          ]
         }
       ]
     },
@@ -149,20 +135,6 @@
           "type": "callout",
           "label": "CASO",
           "text": "Usar IA para comprender una materia y resolver después personalmente la práctica es distinto de entregar como propio un trabajo generado íntegramente para una evaluación individual."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Por qué la integridad afecta a la seguridad profesional?",
-            "¿Toda colaboración es fraude?",
-            "¿Cuándo una ayuda falsea evidencia?",
-            "¿Por qué encubrir un error puede ser peor que cometerlo?",
-            "¿Puede una IA decidir una cualificación académica?"
-          ]
         }
       ]
     },
@@ -224,20 +196,6 @@
           "type": "callout",
           "label": "PRÁCTICA",
           "text": "Compara llegar tarde avisando, saltarse una restricción de seguridad y falsificar un registro para ocultar un error."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Por qué no existe una tabla universal falta=castigo?",
-            "¿Qué factores importan en una incidencia?",
-            "¿Qué diferencia hay entre error y encubrimiento?",
-            "¿Puede una IA sancionar arbitrariamente?",
-            "¿Por qué importa la proporcionalidad?"
-          ]
         }
       ]
     },
@@ -299,20 +257,6 @@
         {
           "type": "p",
           "text": "El cadete no puede estar en dos sitios a la vez. Estudio, entrenamiento, relaciones y descanso compiten por tiempo real sin convertirse en simples barras que optimizar."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Dónde se sitúa la Academia terrestre?",
-            "Nombra dos instalaciones retenidas y dos añadidas.",
-            "¿Por qué los horarios no son universales?",
-            "¿Qué significa que el tiempo sea finito?",
-            "¿Por qué no conviene convertir cada rutina en una escena completa?"
-          ]
         }
       ]
     },
@@ -368,20 +312,6 @@
           "type": "callout",
           "label": "PRÁCTICA",
           "text": "Diseña un plan para un cadete que conoce la teoría pero falla una práctica concreta."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué objetivo tiene una tutoría?",
-            "¿Por qué teoría y ejecución pueden requerir recuperaciones distintas?",
-            "¿Una reevaluación borra el intento anterior?",
-            "¿Qué significa recuperación dirigida?",
-            "¿Cuándo podría ser razonable repetir un módulo o un año?"
-          ]
         }
       ]
     },
@@ -440,22 +370,9 @@
           "type": "callout",
           "label": "PRÁCTICA",
           "text": "Realiza una actividad con roles definidos y termina con un debrief sobre comunicación, bloqueos y mejora."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué necesita un reparto eficaz?",
-            "¿Qué diferencia existe entre responsabilidad de equipo e individual?",
-            "¿Por qué un desacuerdo no es automáticamente mala conducta?",
-            "¿Cuándo debe comunicarse un bloqueo?",
-            "¿Qué debe revisar un debrief de equipo?"
-          ]
         }
       ]
     }
-  ]
+  ],
+  "assessmentModel": "concept_driven_v2"
 }
