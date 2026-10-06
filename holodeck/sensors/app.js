@@ -264,7 +264,22 @@ function resultsView(){
 }
 function resultDetail(r){return '<div class="data-grid">'+datum("Tipo",r.type+" / "+r.subtype)+datum("Objetivo",r.target)+datum("Calidad",r.quality??"—")+datum("Procedencia",r.provenance)+datum("Resumen",r.summary)+datum("Observaciones",r.observations?.length??0)+(r.emissionExposure?datum("Exposición del barrido",r.emissionExposure):"")+'</div><div class="action-grid">'+button("save_reading")+button("compare_readings","secondary")+button("repeat_operation","secondary")+button("send_data","secondary")+'</div>'}
 function selectedResultDetail(){const r=shell.sim.results.find(x=>x.id===shell.selectedResultId);return r?'<div class="card"><h3>Detalle · '+r.id+'</h3>'+resultDetail(r)+'</div>':""}
-function latestResultMini(type){const r=shell.sim.results.find(x=>x.type===type);return r?'<div class="card"><h3>Último resultado</h3><p>'+esc(r.summary)+'</p></div>':""}
+function resultCandidatesHtml(r){
+  const observations=r?.observations||[];
+  if(!observations.length)return '<div class="notice">Sin candidatos concluyentes.</div>';
+  return '<div class="contact-list">'+observations.map(o=>{
+    const real=!o.falsePositive&&!!getContact(shell.sim,o.id);
+    const attrs=real?' data-search-contact="'+esc(o.id)+'" title="Seleccionar '+esc(o.id)+'"':"";
+    const cls='contact-row '+(real?'result-contact-selectable':'result-contact-nonselectable');
+    const label=o.classification||getContact(shell.sim,o.id)?.classification||"Contacto";
+    const confidence=o.match??o.confidence??"—";
+    return '<div class="'+cls+'"'+attrs+'><strong>'+esc(o.id)+'</strong><span>'+esc(label)+(o.falsePositive?'<br><small>Traza no confirmada · posible falso positivo</small>':'<br><small>Pulsar para seleccionar contacto</small>')+'</span><strong>'+esc(confidence)+'%</strong></div>';
+  }).join("")+'</div>';
+}
+function latestResultMini(type){
+  const r=shell.sim.results.find(x=>x.type===type);
+  return r?'<div class="card"><h3>Último resultado</h3>'+resultCandidatesHtml(r)+'</div>':"";
+}
 function diagnosticsView(){
   const s=secondary(),sim=shell.sim;
   if(s.id==="self_test")return '<div class="card"><h3>Autodiagnóstico</h3>'+fieldSelect("diag-scope","Ámbito",[["all","Todos los sensores"],...sim.arrays.map(a=>[a.id,a.name])],"all")+'<div class="action-grid">'+taskButton("run_diagnostic","Ejecutar autodiagnóstico")+'</div></div>'+diagnosticLatest();
@@ -297,6 +312,18 @@ function activeOpsHtml(){
 function wireSpecific(){
   document.querySelectorAll("[data-contact]").forEach(el=>el.onclick=()=>{shell.sim.selectedContactId=el.dataset.contact;log("SELECT "+el.dataset.contact);emitTeacherEvent("SELECT_CONTACT",{contactId:el.dataset.contact});render()});
   document.querySelectorAll("[data-array]").forEach(el=>el.onclick=()=>{shell.selectedArrayId=el.dataset.array;renderWorkspace()});
+  document.querySelectorAll("[data-search-contact]").forEach(el=>el.onclick=()=>{
+    const id=el.dataset.searchContact;
+    if(!getContact(shell.sim,id))return;
+    shell.sim.selectedContactId=id;
+    log("SELECT "+id+" · from search result");
+    emitTeacherEvent("SELECT_CONTACT",{contactId:id,source:"search_result"});
+    shell.primaryId="contacts";
+    shell.secondaryId="all";
+    shell.special=null;
+    shell.prefill=null;
+    render();
+  });
   document.querySelectorAll("[data-result]").forEach(el=>el.onclick=()=>{shell.selectedResultId=el.dataset.result;renderWorkspace()});
   document.querySelectorAll("[data-saved-result]").forEach(el=>el.onclick=()=>{shell.selectedResultId=el.dataset.savedResult;renderWorkspace()});
   if(shell.primaryId==="scans")["scan-mode","target-scope","resolution","priority","duration","filters"].forEach(id=>{const el=$("#"+id);if(el)el.addEventListener("change",()=>{const cfg=scanConfig();log("CONFIG "+id+"="+el.value);emitTeacherEvent("SCAN_CONFIG_CHANGE",{controlId:id,value:el.value,...cfg})})});
