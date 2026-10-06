@@ -1028,7 +1028,7 @@
       "scenario_id": "standard_sector",
       "guidance": "guided",
       "objective": "Recupera C-19 usando su historial y mantén el contacto bajo seguimiento.",
-      "hint": "Abre SEGUIMIENTO en el menú principal y después «Recuperar contacto perdido».",
+      "hint": "Tras seleccionar C-19, comprueba el panel ESTADO PERSISTENTE de la derecha y pulsa C-19 dentro de SEGUIMIENTO.",
       "completion_feedback": "Práctica completada. Sabes recuperar un contacto sin perder su identidad histórica.",
       "steps": [
         {
@@ -1077,15 +1077,18 @@
           "concept": "Identidad y confianza son conceptos distintos."
         },
         {
-          "label": "Cambiar de menú",
-          "event": "NAV_PRIMARY",
-          "what": "Compruebas que el seguimiento continúa.",
-          "why": "La recuperación debe desembocar en tracking estable.",
-          "effect": "C-19 permanece en panel persistente.",
-          "concept": "Reacquisición y seguimiento se encadenan.",
-          "matchNot": {
-            "primaryId": "contacts"
-          }
+          "label": "Comprobar seguimiento persistente de C-19",
+          "event": "PERSISTENT_TRACK_OPEN",
+          "match": {
+            "contactId": "C-19"
+          },
+          "requiresState": {
+            "contactTracked": "C-19"
+          },
+          "what": "Compruebas en el panel de estado persistente que C-19 continúa bajo seguimiento.",
+          "why": "Recuperar el contacto no basta: la orden exige mantener observación continua después de la readquisición.",
+          "effect": "Confirmas que C-19 conserva su identidad y permanece integrado en el tracking activo.",
+          "concept": "Readquisición y seguimiento forman una misma continuidad operativa."
         }
       ],
       "lesson_summary": "Sabes recuperar un contacto sin perder su identidad histórica.",
