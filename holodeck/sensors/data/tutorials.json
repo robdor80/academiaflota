@@ -483,7 +483,7 @@
       "scenario_id": "standard_sector",
       "guidance": "full",
       "objective": "Busca actividad warp en el sector 041 y revisa los candidatos.",
-      "hint": "Usa Búsqueda / localización → Firma warp.",
+      "hint": "Abre RESULTADOS → Resultados recientes y pulsa el resultado SRC de la búsqueda de firma warp.",
       "completion_feedback": "Práctica completada. Sabes buscar una firma física y tratar el resultado como evidencia revisable.",
       "steps": [
         {
@@ -533,15 +533,16 @@
           "concept": "Ausencia también sería un resultado válido."
         },
         {
-          "label": "Abrir RESULTADOS",
-          "event": "NAV_PRIMARY",
+          "label": "Revisar resultado de búsqueda",
+          "event": "RESULT_OPEN",
           "match": {
-            "primaryId": "results"
+            "type": "search",
+            "subtype": "warp_signature"
           },
-          "what": "Consultas el registro de la operación.",
-          "why": "Los resultados deben poder revisarse después.",
-          "effect": "Preservas configuración y procedencia.",
-          "concept": "Una operación debe dejar rastro."
+          "what": "Abres el resultado concreto de la búsqueda y revisas los candidatos obtenidos.",
+          "why": "Entrar en RESULTADOS no basta: debes abrir la operación que generó la evidencia.",
+          "effect": "Ves configuración, calidad, procedencia y los contactos candidatos de esa búsqueda.",
+          "concept": "Un resultado operativo debe poder inspeccionarse, no solo existir en un historial."
         }
       ],
       "lesson_summary": "Sabes buscar una firma física y tratar el resultado como evidencia revisable.",
