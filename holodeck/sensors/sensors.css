@@ -57,3 +57,7 @@
 .teacher-panel.guidance-evaluation.practice-complete .teacher-explanation{display:block!important}
 .contact-row .action{padding:6px 8px;font-size:.68rem;margin-left:4px}
 .workspace-content .notice.success{border-left-color:var(--ok);background:#eef6f2;color:#285741}
+
+.log-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.developer-log-button{border-color:#a77f27!important;color:#7a5b18!important;background:#fff8e8!important;font-weight:900;letter-spacing:.04em}
+.copy-log-status{font-size:.74rem;font-weight:800;color:#3f7d5d;min-height:1em}
