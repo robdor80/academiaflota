@@ -64,3 +64,8 @@
 .log-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .developer-log-button{border-color:#a77f27!important;color:#7a5b18!important;background:#fff8e8!important;font-weight:900;letter-spacing:.04em}
 .copy-log-status{font-size:.74rem;font-weight:800;color:#3f7d5d;min-height:1em}
+
+.result-contact-selectable{cursor:pointer}
+.result-contact-selectable:hover{border-color:#315f78;background:#eaf3f7}
+.result-contact-nonselectable{cursor:default;opacity:.72}
+.result-contact-nonselectable:hover{border-color:#d5dfe6;background:#fff}
