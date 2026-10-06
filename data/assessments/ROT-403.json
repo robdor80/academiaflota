@@ -16,7 +16,7 @@
     "source_rule": "Every evaluated concept must be explicitly taught in the course material or an established prerequisite."
   },
   "unit_review": {
-    "questions_per_attempt": 4,
+    "questions_per_attempt": 3,
     "reshuffle_each_attempt": true,
     "preferred_short_answers_per_attempt": 1
   },
@@ -26,9 +26,15 @@
       "unit_id": "ROT-403-U01",
       "source_type": "procedure",
       "web_prompt_es": "¿Cómo fluye una orden desde Mando hasta un resultado?",
+      "web_prompt_variants_es": [
+        "¿Cómo fluye una orden desde Mando hasta un resultado?",
+        "Repaso: ¿Cómo fluye una orden desde Mando hasta un resultado?"
+      ],
       "answer_display_es": "intención · interpretación · validación · ejecución · reporte",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "intención"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "intención",
         "interpretación",
@@ -42,6 +48,10 @@
       "unit_id": "ROT-403-U01",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué función general cumple Operaciones?",
+      "web_prompt_variants_es": [
+        "¿Qué función general cumple Operaciones?",
+        "Selecciona la respuesta correcta: Qué función general cumple Operaciones?"
+      ],
       "answer_display_es": "coordinar recursos · sistemas · apoyo de misión · prioridades",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -57,6 +67,10 @@
       "unit_id": "ROT-403-U01",
       "source_type": "judgment",
       "web_prompt_es": "¿Por qué una estación no funciona aislada?",
+      "web_prompt_variants_es": [
+        "¿Por qué una estación no funciona aislada?",
+        "Selecciona la explicación correcta:  una estación no funciona aislada."
+      ],
       "answer_display_es": "depende de otras · comparte información · coordina",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -71,7 +85,11 @@
       "unit_id": "ROT-403-U01",
       "source_type": "judgment",
       "web_prompt_es": "¿Ocupar temporalmente una estación concede autoridad general?",
-      "answer_display_es": "No. rotación supervisada; límites.",
+      "web_prompt_variants_es": [
+        "¿Ocupar temporalmente una estación concede autoridad general?",
+        "Repaso: ¿Ocupar temporalmente una estación concede autoridad general?"
+      ],
+      "answer_display_es": "No — rotación supervisada; límites.",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
       "answer_key_es": [
@@ -85,9 +103,15 @@
       "unit_id": "ROT-403-U02",
       "source_type": "knowledge",
       "web_prompt_es": "¿Qué información observa Ingeniería?",
+      "web_prompt_variants_es": [
+        "¿Qué información observa Ingeniería?",
+        "Selecciona la respuesta correcta: Qué información observa Ingeniería?"
+      ],
       "answer_display_es": "sistemas · energía · daños · recursos · seguridad",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "sistemas"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "sistemas",
         "energía",
@@ -101,6 +125,10 @@
       "unit_id": "ROT-403-U02",
       "source_type": "judgment",
       "web_prompt_es": "¿Por qué más potencia tiene coste?",
+      "web_prompt_variants_es": [
+        "¿Por qué más potencia tiene coste?",
+        "Selecciona la explicación correcta:  más potencia tiene coste."
+      ],
       "answer_display_es": "recurso compartido · afecta otros sistemas",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -114,6 +142,10 @@
       "unit_id": "ROT-403-U02",
       "source_type": "short_answer",
       "web_prompt_es": "¿Para qué sirve mantenimiento preventivo?",
+      "web_prompt_variants_es": [
+        "¿Para qué sirve mantenimiento preventivo?",
+        "Repaso: ¿Para qué sirve mantenimiento preventivo?"
+      ],
       "answer_display_es": "evitar fallos · detectar degradación · conservar capacidad",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -128,6 +160,10 @@
       "unit_id": "ROT-403-U02",
       "source_type": "scenario",
       "web_prompt_es": "La tarea real no coincide con el briefing. ¿Qué haces?",
+      "web_prompt_variants_es": [
+        "La tarea real no coincide con el briefing. ¿Qué haces?",
+        "Repaso: La tarea real no coincide con el briefing. ¿Qué haces?"
+      ],
       "answer_display_es": "detener/consultar · informar · no improvisar fuera de competencia",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -141,10 +177,16 @@
       "id": "ROT-403-C009",
       "unit_id": "ROT-403-U03",
       "source_type": "compare",
-      "web_prompt_es": "¿Qué opción diferencia correctamente Sensores y Ciencia.",
+      "web_prompt_es": "¿Qué opción diferencia correctamente Sensores y Ciencia?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente Sensores y Ciencia?",
+        "Diferencia Sensores y Ciencia."
+      ],
       "answer_display_es": "medición · interpretación",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "medición"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "medición",
         "interpretación"
@@ -155,6 +197,10 @@
       "unit_id": "ROT-403-U03",
       "source_type": "procedure",
       "web_prompt_es": "¿Qué pasos revisas antes de un barrido guiado?",
+      "web_prompt_variants_es": [
+        "¿Qué pasos revisas antes de un barrido guiado?",
+        "Selecciona la respuesta correcta: Qué pasos revisas antes de un barrido guiado?"
+      ],
       "answer_display_es": "objetivo · modo · configuración · ejecución · resultado",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -171,6 +217,10 @@
       "unit_id": "ROT-403-U03",
       "source_type": "judgment",
       "web_prompt_es": "¿Por qué conservar incertidumbre?",
+      "web_prompt_variants_es": [
+        "¿Por qué conservar incertidumbre?",
+        "Selecciona la explicación correcta:  conservar incertidumbre."
+      ],
       "answer_display_es": "no exagerar conocimiento · decisiones correctas",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -184,6 +234,10 @@
       "unit_id": "ROT-403-U03",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué debe contener un reporte inicial?",
+      "web_prompt_variants_es": [
+        "¿Qué debe contener un reporte inicial?",
+        "Selecciona la respuesta correcta: Qué debe contener un reporte inicial?"
+      ],
       "answer_display_es": "observación · confianza · desconocidos · necesidad de análisis",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -199,9 +253,15 @@
       "unit_id": "ROT-403-U04",
       "source_type": "knowledge",
       "web_prompt_es": "¿Qué necesita una solución de plotting?",
+      "web_prompt_variants_es": [
+        "¿Qué necesita una solución de plotting?",
+        "Selecciona la respuesta correcta: Qué necesita una solución de plotting?"
+      ],
       "answer_display_es": "origen · destino · restricciones · capacidad · riesgos · ETA",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "origen"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "origen",
         "destino",
@@ -216,11 +276,13 @@
       "unit_id": "ROT-403-U04",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué representa rumbo?",
-      "answer_display_es": "dirección operacional",
-      "accepted_short_answers_es": [
-        "dirección operacional"
+      "web_prompt_variants_es": [
+        "¿Qué representa rumbo?",
+        "Selecciona la respuesta correcta: Qué representa rumbo?"
       ],
-      "preferred_mode": "short_answer",
+      "answer_display_es": "dirección operacional",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "dirección operacional"
       ]
@@ -230,6 +292,10 @@
       "unit_id": "ROT-403-U04",
       "source_type": "judgment",
       "web_prompt_es": "¿Qué haces si una orden de movimiento no puede ejecutarse?",
+      "web_prompt_variants_es": [
+        "¿Qué haces si una orden de movimiento no puede ejecutarse?",
+        "Selecciona la respuesta correcta: Qué haces si una orden de movimiento no puede ejecutarse?"
+      ],
       "answer_display_es": "informar · explicar limitación · proponer alternativa si procede",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -243,7 +309,11 @@
       "id": "ROT-403-C016",
       "unit_id": "ROT-403-U04",
       "source_type": "compare",
-      "web_prompt_es": "¿Qué opción diferencia correctamente decidir destino y ejecutar movimiento.",
+      "web_prompt_es": "¿Qué opción diferencia correctamente decidir destino y ejecutar movimiento?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente decidir destino y ejecutar movimiento?",
+        "Diferencia decidir destino y ejecutar movimiento."
+      ],
       "answer_display_es": "Mando/intención · Conn/Navegación/ejecución",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -257,9 +327,15 @@
       "unit_id": "ROT-403-U05",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué observa el cadete en Seguridad?",
+      "web_prompt_variants_es": [
+        "¿Qué observa el cadete en Seguridad?",
+        "Selecciona la respuesta correcta: Qué observa el cadete en Seguridad?"
+      ],
       "answer_display_es": "protección · acceso · incidentes · riesgo · coordinación",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "protección"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "protección",
         "acceso",
@@ -273,6 +349,10 @@
       "unit_id": "ROT-403-U05",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué observa en Medicina?",
+      "web_prompt_variants_es": [
+        "¿Qué observa en Medicina?",
+        "Selecciona la respuesta correcta: Qué observa en Medicina?"
+      ],
       "answer_display_es": "seguridad de escena · estado · triage · asistencia · relevo",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -289,6 +369,10 @@
       "unit_id": "ROT-403-U05",
       "source_type": "knowledge",
       "web_prompt_es": "¿Para qué sirve el triaje?",
+      "web_prompt_variants_es": [
+        "¿Para qué sirve el triaje?",
+        "Repaso: ¿Para qué sirve el triaje?"
+      ],
       "answer_display_es": "priorizar pacientes · recursos limitados · urgencia",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -303,11 +387,13 @@
       "unit_id": "ROT-403-U05",
       "source_type": "judgment",
       "web_prompt_es": "¿Una micro-rotación concede cualificación profesional?",
-      "answer_display_es": "no",
-      "accepted_short_answers_es": [
-        "no"
+      "web_prompt_variants_es": [
+        "¿Una micro-rotación concede cualificación profesional?",
+        "Repaso: ¿Una micro-rotación concede cualificación profesional?"
       ],
-      "preferred_mode": "short_answer",
+      "answer_display_es": "no",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "no"
       ]
@@ -316,10 +402,16 @@
       "id": "ROT-403-C021",
       "unit_id": "ROT-403-U06",
       "source_type": "compare",
-      "web_prompt_es": "¿Qué opción diferencia correctamente interés y competencia.",
+      "web_prompt_es": "¿Qué opción diferencia correctamente interés y competencia?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente interés y competencia?",
+        "Diferencia interés y competencia."
+      ],
       "answer_display_es": "preferencia/motivación · capacidad demostrada",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "preferencia/motivación"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "preferencia/motivación",
         "capacidad demostrada"
@@ -330,6 +422,10 @@
       "unit_id": "ROT-403-U06",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué convierte una fortaleza en evidencia?",
+      "web_prompt_variants_es": [
+        "¿Qué convierte una fortaleza en evidencia?",
+        "Selecciona la respuesta correcta: Qué convierte una fortaleza en evidencia?"
+      ],
       "answer_display_es": "observaciones repetidas · resultados · feedback · contexto",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -345,6 +441,10 @@
       "unit_id": "ROT-403-U06",
       "source_type": "judgment",
       "web_prompt_es": "¿Por qué una dificultad puede ser útil?",
+      "web_prompt_variants_es": [
+        "¿Por qué una dificultad puede ser útil?",
+        "Selecciona la explicación correcta:  una dificultad puede ser útil."
+      ],
       "answer_display_es": "orienta entrenamiento · tutoría · autoconocimiento",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -359,6 +459,10 @@
       "unit_id": "ROT-403-U06",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué produce el debrief final?",
+      "web_prompt_variants_es": [
+        "¿Qué produce el debrief final?",
+        "Selecciona la respuesta correcta: Qué produce el debrief final?"
+      ],
       "answer_display_es": "registro descriptivo · intereses · fortalezas · dificultades · preguntas · no elección final",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",

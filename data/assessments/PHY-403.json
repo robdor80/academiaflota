@@ -16,7 +16,7 @@
     "source_rule": "Every evaluated concept must be explicitly taught in the course material or an established prerequisite."
   },
   "unit_review": {
-    "questions_per_attempt": 4,
+    "questions_per_attempt": 3,
     "reshuffle_each_attempt": true,
     "preferred_short_answers_per_attempt": 1
   },
@@ -26,9 +26,15 @@
       "unit_id": "PHY-403-U01",
       "source_type": "short_answer",
       "web_prompt_es": "¿Contra qué debe compararse el progreso?",
+      "web_prompt_variants_es": [
+        "¿Contra qué debe compararse el progreso?",
+        "Repaso: ¿Contra qué debe compararse el progreso?"
+      ],
       "answer_display_es": "estado inicial · historial propio",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "estado inicial"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "estado inicial",
         "historial propio"
@@ -39,11 +45,13 @@
       "unit_id": "PHY-403-U01",
       "source_type": "judgment",
       "web_prompt_es": "¿Una semana peor demuestra regresión?",
-      "answer_display_es": "No. puede ser fluctuación; contexto.",
-      "accepted_short_answers_es": [
-        "no"
+      "web_prompt_variants_es": [
+        "¿Una semana peor demuestra regresión?",
+        "Repaso: ¿Una semana peor demuestra regresión?"
       ],
-      "preferred_mode": "short_answer",
+      "answer_display_es": "No — puede ser fluctuación; contexto.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "no",
         "puede ser fluctuación",
@@ -54,7 +62,11 @@
       "id": "PHY-403-C003",
       "unit_id": "PHY-403-U01",
       "source_type": "knowledge",
-      "web_prompt_es": "¿Qué opción contiene correctamente tres tipos de evidencia acumulada.",
+      "web_prompt_es": "¿Qué opción contiene tres tipos de evidencia acumulada?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene tres tipos de evidencia acumulada?",
+        "Nombra tres tipos de evidencia acumulada."
+      ],
       "answer_display_es": "sesiones · evaluaciones · actividad personal · incidencias · lesiones · descanso",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -71,7 +83,11 @@
       "id": "PHY-403-C004",
       "unit_id": "PHY-403-U01",
       "source_type": "compare",
-      "web_prompt_es": "¿Qué opción diferencia correctamente fluctuación y tendencia.",
+      "web_prompt_es": "¿Qué opción diferencia correctamente fluctuación y tendencia?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente fluctuación y tendencia?",
+        "Diferencia fluctuación y tendencia."
+      ],
       "answer_display_es": "cambio corto plazo · patrón longitudinal",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -85,9 +101,15 @@
       "unit_id": "PHY-403-U02",
       "source_type": "knowledge",
       "web_prompt_es": "¿Qué dimensiones forman condición funcional?",
+      "web_prompt_variants_es": [
+        "¿Qué dimensiones forman condición funcional?",
+        "Selecciona la respuesta correcta: Qué dimensiones forman condición funcional?"
+      ],
       "answer_display_es": "resistencia · fuerza · movilidad · coordinación",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "resistencia"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "resistencia",
         "fuerza",
@@ -100,6 +122,10 @@
       "unit_id": "PHY-403-U02",
       "source_type": "judgment",
       "web_prompt_es": "¿Por qué no se resume todo en una cifra?",
+      "web_prompt_variants_es": [
+        "¿Por qué no se resume todo en una cifra?",
+        "Selecciona la explicación correcta:  no se resume todo en una cifra."
+      ],
       "answer_display_es": "dimensiones distintas · contexto · biología",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -114,11 +140,13 @@
       "unit_id": "PHY-403-U02",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué significa adecuación al servicio?",
-      "answer_display_es": "capacidad segura/razonable para demandas comunes",
-      "accepted_short_answers_es": [
-        "capacidad segura/razonable para demandas comunes"
+      "web_prompt_variants_es": [
+        "¿Qué significa adecuación al servicio?",
+        "Selecciona la respuesta correcta: Qué significa adecuación al servicio?"
       ],
-      "preferred_mode": "short_answer",
+      "answer_display_es": "capacidad segura/razonable para demandas comunes",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "capacidad segura/razonable para demandas comunes"
       ]
@@ -128,6 +156,10 @@
       "unit_id": "PHY-403-U02",
       "source_type": "judgment",
       "web_prompt_es": "¿Por qué biología modifica evaluación?",
+      "web_prompt_variants_es": [
+        "¿Por qué biología modifica evaluación?",
+        "Selecciona la explicación correcta:  biología modifica evaluación."
+      ],
       "answer_display_es": "especies/fisiología diferentes · estándar contextual",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -141,9 +173,15 @@
       "unit_id": "PHY-403-U03",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué significa autogestión?",
+      "web_prompt_variants_es": [
+        "¿Qué significa autogestión?",
+        "Selecciona la respuesta correcta: Qué significa autogestión?"
+      ],
       "answer_display_es": "planificar carga · descanso · recuperación · prioridades · riesgos",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "planificar carga"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "planificar carga",
         "descanso",
@@ -156,7 +194,11 @@
       "id": "PHY-403-C010",
       "unit_id": "PHY-403-U03",
       "source_type": "knowledge",
-      "web_prompt_es": "¿Qué opción contiene correctamente tres señales de riesgo.",
+      "web_prompt_es": "¿Qué opción contiene tres señales de riesgo?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene tres señales de riesgo?",
+        "Nombra tres señales de riesgo."
+      ],
       "answer_display_es": "fatiga persistente · dolor · peor técnica · poco sueño · caída rendimiento",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -173,6 +215,10 @@
       "unit_id": "PHY-403-U03",
       "source_type": "judgment",
       "web_prompt_es": "¿Por qué no existe un horario perfecto universal?",
+      "web_prompt_variants_es": [
+        "¿Por qué no existe un horario perfecto universal?",
+        "Selecciona la explicación correcta:  no existe un horario perfecto universal."
+      ],
       "answer_display_es": "contexto individual · obligaciones · recuperación",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -187,6 +233,10 @@
       "unit_id": "PHY-403-U03",
       "source_type": "scenario",
       "web_prompt_es": "¿Cuándo debe pedirse ayuda?",
+      "web_prompt_variants_es": [
+        "¿Cuándo debe pedirse ayuda?",
+        "Repaso: ¿Cuándo debe pedirse ayuda?"
+      ],
       "answer_display_es": "dolor/lesión · fatiga persistente · riesgo · necesidad de ajuste",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -202,11 +252,13 @@
       "unit_id": "PHY-403-U04",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué significa ajustar sin abandonar?",
-      "answer_display_es": "reducir carga manteniendo continuidad",
-      "accepted_short_answers_es": [
-        "reducir carga manteniendo continuidad"
+      "web_prompt_variants_es": [
+        "¿Qué significa ajustar sin abandonar?",
+        "Selecciona la respuesta correcta: Qué significa ajustar sin abandonar?"
       ],
-      "preferred_mode": "short_answer",
+      "answer_display_es": "reducir carga manteniendo continuidad",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "reducir carga manteniendo continuidad"
       ]
@@ -216,9 +268,15 @@
       "unit_id": "PHY-403-U04",
       "source_type": "knowledge",
       "web_prompt_es": "¿Qué puede reducirse en semana de exámenes?",
+      "web_prompt_variants_es": [
+        "¿Qué puede reducirse en semana de exámenes?",
+        "Selecciona la respuesta correcta: Qué puede reducirse en semana de exámenes?"
+      ],
       "answer_display_es": "duración · intensidad · frecuencia",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "duración"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "duración",
         "intensidad",
@@ -230,6 +288,10 @@
       "unit_id": "PHY-403-U04",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué significa consistencia?",
+      "web_prompt_variants_es": [
+        "¿Qué significa consistencia?",
+        "Selecciona la respuesta correcta: Qué significa consistencia?"
+      ],
       "answer_display_es": "continuidad sostenible · no repetir exactamente",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -243,6 +305,10 @@
       "unit_id": "PHY-403-U04",
       "source_type": "judgment",
       "web_prompt_es": "¿Por qué proteger sueño puede ser prioritario?",
+      "web_prompt_variants_es": [
+        "¿Por qué proteger sueño puede ser prioritario?",
+        "Selecciona la explicación correcta:  proteger sueño puede ser prioritario."
+      ],
       "answer_display_es": "recuperación · rendimiento académico/físico",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -256,7 +322,11 @@
       "unit_id": "PHY-403-U05",
       "source_type": "judgment",
       "web_prompt_es": "¿Una actividad personal se convierte automáticamente en nota?",
-      "answer_display_es": "No. evidencia separada.",
+      "web_prompt_variants_es": [
+        "¿Una actividad personal se convierte automáticamente en nota?",
+        "Repaso: ¿Una actividad personal se convierte automáticamente en nota?"
+      ],
+      "answer_display_es": "No — evidencia separada.",
       "accepted_short_answers_es": [
         "no"
       ],
@@ -271,6 +341,10 @@
       "unit_id": "PHY-403-U05",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué significa transferencia?",
+      "web_prompt_variants_es": [
+        "¿Qué significa transferencia?",
+        "Selecciona la respuesta correcta: Qué significa transferencia?"
+      ],
       "answer_display_es": "una capacidad ayuda a otra · no cualificación automática",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -284,6 +358,10 @@
       "unit_id": "PHY-403-U05",
       "source_type": "knowledge",
       "web_prompt_es": "¿Qué debe contener un registro de actividad personal?",
+      "web_prompt_variants_es": [
+        "¿Qué debe contener un registro de actividad personal?",
+        "Selecciona la respuesta correcta: Qué debe contener un registro de actividad personal?"
+      ],
       "answer_display_es": "actividad · duración · regularidad · contexto · relevancia",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -300,6 +378,10 @@
       "unit_id": "PHY-403-U05",
       "source_type": "judgment",
       "web_prompt_es": "¿Por qué una afición puede ser valiosa aunque no sea obligatoria?",
+      "web_prompt_variants_es": [
+        "¿Por qué una afición puede ser valiosa aunque no sea obligatoria?",
+        "Selecciona la explicación correcta:  una afición puede ser valiosa aunque no sea obligatoria."
+      ],
       "answer_display_es": "motivación · continuidad · evidencia · vida del personaje",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -315,9 +397,15 @@
       "unit_id": "PHY-403-U06",
       "source_type": "knowledge",
       "web_prompt_es": "¿Qué persiste al cerrar el año?",
+      "web_prompt_variants_es": [
+        "¿Qué persiste al cerrar el año?",
+        "Selecciona la respuesta correcta: Qué persiste al cerrar el año?"
+      ],
       "answer_display_es": "hábitos · experiencia · estado · fortalezas · mejoras",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "hábitos"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "hábitos",
         "experiencia",
@@ -331,6 +419,10 @@
       "unit_id": "PHY-403-U06",
       "source_type": "knowledge",
       "web_prompt_es": "¿Qué resultados descriptivos puede producir el curso?",
+      "web_prompt_variants_es": [
+        "¿Qué resultados descriptivos puede producir el curso?",
+        "Selecciona la respuesta correcta: Qué resultados descriptivos puede producir el curso?"
+      ],
       "answer_display_es": "apto · apto con apoyo recomendado · recuperación concreta",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -345,6 +437,10 @@
       "unit_id": "PHY-403-U06",
       "source_type": "judgment",
       "web_prompt_es": "¿Por qué una recomendación no es una etiqueta permanente?",
+      "web_prompt_variants_es": [
+        "¿Por qué una recomendación no es una etiqueta permanente?",
+        "Selecciona la explicación correcta:  una recomendación no es una etiqueta permanente."
+      ],
       "answer_display_es": "orienta · puede cambiar con progreso",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -358,6 +454,10 @@
       "unit_id": "PHY-403-U06",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué puede incluir un plan para 3.ª clase?",
+      "web_prompt_variants_es": [
+        "¿Qué puede incluir un plan para 3.ª clase?",
+        "Selecciona la respuesta correcta: Qué puede incluir un plan para 3.ª clase?"
+      ],
       "answer_display_es": "mantener rutina · corregir debilidad · afición · apoyo · adaptar carga",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",

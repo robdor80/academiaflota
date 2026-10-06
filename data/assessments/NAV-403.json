@@ -16,7 +16,7 @@
     "source_rule": "Every evaluated concept must be explicitly taught in the course material or an established prerequisite."
   },
   "unit_review": {
-    "questions_per_attempt": 4,
+    "questions_per_attempt": 3,
     "reshuffle_each_attempt": true,
     "preferred_short_answers_per_attempt": 1
   },
@@ -26,9 +26,15 @@
       "unit_id": "NAV-403-U01",
       "source_type": "short_answer",
       "web_prompt_es": "¿Por qué un mapa estelar no representa toda la verdad?",
+      "web_prompt_variants_es": [
+        "¿Por qué un mapa estelar no representa toda la verdad?",
+        "Selecciona la explicación correcta:  un mapa estelar no representa toda la verdad."
+      ],
       "answer_display_es": "conocimiento limitado · puede estar incompleto/desactualizado · World State separado",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "conocimiento limitado"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "conocimiento limitado",
         "puede estar incompleto/desactualizado",
@@ -40,6 +46,10 @@
       "unit_id": "NAV-403-U01",
       "source_type": "knowledge",
       "web_prompt_es": "¿Qué información puede contener una carta?",
+      "web_prompt_variants_es": [
+        "¿Qué información puede contener una carta?",
+        "Selecciona la respuesta correcta: Qué información puede contener una carta?"
+      ],
       "answer_display_es": "sistemas · sectores · rutas · fronteras · peligros conocidos · instalaciones",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -57,6 +67,10 @@
       "unit_id": "NAV-403-U01",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué función cumplen sectores y regiones?",
+      "web_prompt_variants_es": [
+        "¿Qué función cumplen sectores y regiones?",
+        "Selecciona la respuesta correcta: Qué función cumplen sectores y regiones?"
+      ],
       "answer_display_es": "organizar espacio · localizar · comunicar · planificar",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -72,6 +86,10 @@
       "unit_id": "NAV-403-U01",
       "source_type": "judgment",
       "web_prompt_es": "¿Cómo puede afectar política a una ruta?",
+      "web_prompt_variants_es": [
+        "¿Cómo puede afectar política a una ruta?",
+        "Repaso: ¿Cómo puede afectar política a una ruta?"
+      ],
       "answer_display_es": "fronteras · jurisdicción · restricciones · conflictos · permisos",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -87,10 +105,16 @@
       "id": "NAV-403-C005",
       "unit_id": "NAV-403-U02",
       "source_type": "compare",
-      "web_prompt_es": "¿Qué opción diferencia correctamente posición absoluta y relativa.",
+      "web_prompt_es": "¿Qué opción diferencia correctamente posición absoluta y relativa?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente posición absoluta y relativa?",
+        "Diferencia posición absoluta y relativa."
+      ],
       "answer_display_es": "marco global/referencia · relación con otro objeto",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "marco global/referencia"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "marco global/referencia",
         "relación con otro objeto"
@@ -101,6 +125,10 @@
       "unit_id": "NAV-403-U02",
       "source_type": "short_answer",
       "web_prompt_es": "¿Por qué una coordenada necesita referencia?",
+      "web_prompt_variants_es": [
+        "¿Por qué una coordenada necesita referencia?",
+        "Selecciona la explicación correcta:  una coordenada necesita referencia."
+      ],
       "answer_display_es": "evitar ambigüedad · saber desde dónde se mide",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -114,6 +142,10 @@
       "unit_id": "NAV-403-U02",
       "source_type": "knowledge",
       "web_prompt_es": "¿Qué representa un vector conceptualmente?",
+      "web_prompt_variants_es": [
+        "¿Qué representa un vector conceptualmente?",
+        "Selecciona la respuesta correcta: Qué representa un vector conceptualmente?"
+      ],
       "answer_display_es": "dirección · magnitud",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -127,7 +159,11 @@
       "unit_id": "NAV-403-U02",
       "source_type": "judgment",
       "web_prompt_es": "¿Orientación y movimiento son siempre iguales?",
-      "answer_display_es": "No. puede apuntar distinto a trayectoria.",
+      "web_prompt_variants_es": [
+        "¿Orientación y movimiento son siempre iguales?",
+        "Repaso: ¿Orientación y movimiento son siempre iguales?"
+      ],
+      "answer_display_es": "No — puede apuntar distinto a trayectoria.",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
       "answer_key_es": [
@@ -140,6 +176,10 @@
       "unit_id": "NAV-403-U03",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué significa ETA?",
+      "web_prompt_variants_es": [
+        "¿Qué significa ETA?",
+        "Selecciona la respuesta correcta: Qué significa ETA?"
+      ],
       "answer_display_es": "tiempo/hora estimada de llegada",
       "accepted_short_answers_es": [
         "tiempo/hora estimada de llegada"
@@ -154,6 +194,10 @@
       "unit_id": "NAV-403-U03",
       "source_type": "judgment",
       "web_prompt_es": "¿Por qué ETA puede ser un rango?",
+      "web_prompt_variants_es": [
+        "¿Por qué ETA puede ser un rango?",
+        "Selecciona la explicación correcta:  ETA puede ser un rango."
+      ],
       "answer_display_es": "incertidumbre · condiciones variables · distancia/velocidad no exactas",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -167,7 +211,11 @@
       "id": "NAV-403-C011",
       "unit_id": "NAV-403-U03",
       "source_type": "knowledge",
-      "web_prompt_es": "¿Qué opción contiene correctamente cuatro causas de cambio de ETA.",
+      "web_prompt_es": "¿Qué opción contiene cuatro causas de cambio de ETA?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene cuatro causas de cambio de ETA?",
+        "Nombra cuatro causas de cambio de ETA."
+      ],
       "answer_display_es": "velocidad · ruta · daño · energía · subespacio · fronteras · encuentros",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -186,6 +234,10 @@
       "unit_id": "NAV-403-U03",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué efecto tiene baja confianza cartográfica sobre ETA?",
+      "web_prompt_variants_es": [
+        "¿Qué efecto tiene baja confianza cartográfica sobre ETA?",
+        "Selecciona la respuesta correcta: Qué efecto tiene baja confianza cartográfica sobre ETA?"
+      ],
       "answer_display_es": "ventana más amplia · menor precisión",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -198,10 +250,16 @@
       "id": "NAV-403-C013",
       "unit_id": "NAV-403-U04",
       "source_type": "compare",
-      "web_prompt_es": "¿Qué opción diferencia correctamente uso general de impulso y warp.",
+      "web_prompt_es": "¿Qué opción diferencia correctamente uso general de impulso y warp?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente uso general de impulso y warp?",
+        "Diferencia uso general de impulso y warp."
+      ],
       "answer_display_es": "subluz/local · superlumínico/interestelar",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "subluz/local"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "subluz/local",
         "superlumínico/interestelar"
@@ -212,6 +270,10 @@
       "unit_id": "NAV-403-U04",
       "source_type": "judgment",
       "web_prompt_es": "¿Por qué entrar en warp no es teletransporte de mapa?",
+      "web_prompt_variants_es": [
+        "¿Por qué entrar en warp no es teletransporte de mapa?",
+        "Selecciona la explicación correcta:  entrar en warp no es teletransporte de mapa."
+      ],
       "answer_display_es": "ruta persiste · progreso por segmentos · ETA/eventos",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -226,6 +288,10 @@
       "unit_id": "NAV-403-U04",
       "source_type": "knowledge",
       "web_prompt_es": "¿Qué valida un factor warp solicitado?",
+      "web_prompt_variants_es": [
+        "¿Qué valida un factor warp solicitado?",
+        "Selecciona la respuesta correcta: Qué valida un factor warp solicitado?"
+      ],
       "answer_display_es": "capacidad · sostenibilidad · energía · daño · condiciones",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -241,7 +307,11 @@
       "id": "NAV-403-C016",
       "unit_id": "NAV-403-U04",
       "source_type": "knowledge",
-      "web_prompt_es": "¿Qué opción contiene correctamente tres restricciones de navegación.",
+      "web_prompt_es": "¿Qué opción contiene tres restricciones de navegación?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene tres restricciones de navegación?",
+        "Nombra tres restricciones de navegación."
+      ],
       "answer_display_es": "fronteras · peligros · zonas restringidas · incertidumbre",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -257,9 +327,15 @@
       "unit_id": "NAV-403-U05",
       "source_type": "judgment",
       "web_prompt_es": "¿Por qué ruta más corta no siempre es mejor?",
+      "web_prompt_variants_es": [
+        "¿Por qué ruta más corta no siempre es mejor?",
+        "Selecciona la explicación correcta:  ruta más corta no siempre es mejor."
+      ],
       "answer_display_es": "riesgo · restricciones · soporte · confianza · territorio",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "riesgo"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "riesgo",
         "restricciones",
@@ -272,7 +348,11 @@
       "id": "NAV-403-C018",
       "unit_id": "NAV-403-U05",
       "source_type": "knowledge",
-      "web_prompt_es": "¿Qué opción contiene correctamente tres preferencias de ruta.",
+      "web_prompt_es": "¿Qué opción contiene tres preferencias de ruta?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene tres preferencias de ruta?",
+        "Nombra tres preferencias de ruta."
+      ],
       "answer_display_es": "rápida · segura · evitar hostil · evitar restringido · preferir cartografiada · preferir apoyo",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -289,7 +369,11 @@
       "id": "NAV-403-C019",
       "unit_id": "NAV-403-U05",
       "source_type": "compare",
-      "web_prompt_es": "¿Qué opción diferencia correctamente peligro conocido y oculto.",
+      "web_prompt_es": "¿Qué opción diferencia correctamente peligro conocido y oculto?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente peligro conocido y oculto?",
+        "Diferencia peligro conocido y oculto."
+      ],
       "answer_display_es": "uno está en conocimiento del personaje · otro solo en World State",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -303,11 +387,13 @@
       "unit_id": "NAV-403-U05",
       "source_type": "judgment",
       "web_prompt_es": "¿Debe el sistema avisar de un peligro que nadie ha detectado?",
-      "answer_display_es": "No. evitar ground-truth leakage.",
-      "accepted_short_answers_es": [
-        "no"
+      "web_prompt_variants_es": [
+        "¿Debe el sistema avisar de un peligro que nadie ha detectado?",
+        "Selecciona la respuesta correcta para este caso: ¿Debe el sistema avisar de un peligro que nadie ha detectado?"
       ],
-      "preferred_mode": "short_answer",
+      "answer_display_es": "No — evitar ground-truth leakage.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "no",
         "evitar ground-truth leakage"
@@ -318,9 +404,15 @@
       "unit_id": "NAV-403-U06",
       "source_type": "procedure",
       "web_prompt_es": "¿Qué pasos básicos sigue una solución de navegación?",
+      "web_prompt_variants_es": [
+        "¿Qué pasos básicos sigue una solución de navegación?",
+        "Selecciona la respuesta correcta: Qué pasos básicos sigue una solución de navegación?"
+      ],
       "answer_display_es": "origen · destino · restricciones · rutas · selección · ETA · reporte",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "origen"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "origen",
         "destino",
@@ -336,6 +428,10 @@
       "unit_id": "NAV-403-U06",
       "source_type": "judgment",
       "web_prompt_es": "¿Qué hacer si el destino es ambiguo?",
+      "web_prompt_variants_es": [
+        "¿Qué hacer si el destino es ambiguo?",
+        "Selecciona la respuesta correcta: Qué hacer si el destino es ambiguo?"
+      ],
       "answer_display_es": "pedir aclaración · no ejecutar a ciegas",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -349,6 +445,10 @@
       "unit_id": "NAV-403-U06",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué debe contener un reporte breve de navegación?",
+      "web_prompt_variants_es": [
+        "¿Qué debe contener un reporte breve de navegación?",
+        "Selecciona la respuesta correcta: Qué debe contener un reporte breve de navegación?"
+      ],
       "answer_display_es": "ruta · ETA · riesgo/restricción · confianza si relevante",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -363,7 +463,11 @@
       "id": "NAV-403-C024",
       "unit_id": "NAV-403-U06",
       "source_type": "knowledge",
-      "web_prompt_es": "¿Qué opción contiene correctamente tres cambios que obligan a reevaluar ruta.",
+      "web_prompt_es": "¿Qué opción contiene tres cambios que obligan a reevaluar ruta?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene tres cambios que obligan a reevaluar ruta?",
+        "Nombra tres cambios que obligan a reevaluar ruta."
+      ],
       "answer_display_es": "velocidad · daño · energía · subespacio · frontera · encuentro · peligro",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",

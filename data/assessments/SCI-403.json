@@ -16,7 +16,7 @@
     "source_rule": "Every evaluated concept must be explicitly taught in the course material or an established prerequisite."
   },
   "unit_review": {
-    "questions_per_attempt": 4,
+    "questions_per_attempt": 3,
     "reshuffle_each_attempt": true,
     "preferred_short_answers_per_attempt": 1
   },
@@ -25,10 +25,16 @@
       "id": "SCI-403-C001",
       "unit_id": "SCI-403-U01",
       "source_type": "compare",
-      "web_prompt_es": "¿Qué opción diferencia correctamente observación e hipótesis.",
+      "web_prompt_es": "¿Qué opción diferencia correctamente observación e hipótesis?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente observación e hipótesis?",
+        "Diferencia observación e hipótesis."
+      ],
       "answer_display_es": "observación = dato · hipótesis = explicación provisional",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "observación = dato"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "observación = dato",
         "hipótesis = explicación provisional"
@@ -39,6 +45,10 @@
       "unit_id": "SCI-403-U01",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué hace útil una hipótesis?",
+      "web_prompt_variants_es": [
+        "¿Qué hace útil una hipótesis?",
+        "Selecciona la respuesta correcta: Qué hace útil una hipótesis?"
+      ],
       "answer_display_es": "puede contrastarse · predice evidencia · puede debilitarse/revisarse",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -53,11 +63,13 @@
       "unit_id": "SCI-403-U01",
       "source_type": "judgment",
       "web_prompt_es": "¿Una sola lectura demuestra siempre una causa?",
-      "answer_display_es": "No. requiere evidencia; puede haber alternativas.",
-      "accepted_short_answers_es": [
-        "no"
+      "web_prompt_variants_es": [
+        "¿Una sola lectura demuestra siempre una causa?",
+        "Repaso: ¿Una sola lectura demuestra siempre una causa?"
       ],
-      "preferred_mode": "short_answer",
+      "answer_display_es": "No — requiere evidencia; puede haber alternativas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "no",
         "requiere evidencia",
@@ -69,6 +81,10 @@
       "unit_id": "SCI-403-U01",
       "source_type": "procedure",
       "web_prompt_es": "¿Qué haces si nueva evidencia contradice tu explicación?",
+      "web_prompt_variants_es": [
+        "¿Qué haces si nueva evidencia contradice tu explicación?",
+        "Selecciona la respuesta correcta: Qué haces si nueva evidencia contradice tu explicación?"
+      ],
       "answer_display_es": "revisar hipótesis · no ignorar datos",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -82,9 +98,15 @@
       "unit_id": "SCI-403-U02",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué significa incertidumbre de medición?",
+      "web_prompt_variants_es": [
+        "¿Qué significa incertidumbre de medición?",
+        "Selecciona la respuesta correcta: Qué significa incertidumbre de medición?"
+      ],
       "answer_display_es": "límite/margen · calidad no perfecta",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "límite/margen"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "límite/margen",
         "calidad no perfecta"
@@ -94,7 +116,11 @@
       "id": "SCI-403-C006",
       "unit_id": "SCI-403-U02",
       "source_type": "knowledge",
-      "web_prompt_es": "¿Qué opción contiene correctamente tres factores que pueden mejorar precisión.",
+      "web_prompt_es": "¿Qué opción contiene tres factores que pueden mejorar precisión?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene tres factores que pueden mejorar precisión?",
+        "Nombra tres factores que pueden mejorar precisión."
+      ],
       "answer_display_es": "tiempo · potencia · resolución · menos interferencia",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -110,6 +136,10 @@
       "unit_id": "SCI-403-U02",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué es ruido?",
+      "web_prompt_variants_es": [
+        "¿Qué es ruido?",
+        "Selecciona la respuesta correcta: Qué es ruido?"
+      ],
       "answer_display_es": "información no deseada que dificulta señal",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -122,6 +152,10 @@
       "unit_id": "SCI-403-U02",
       "source_type": "judgment",
       "web_prompt_es": "¿Por qué no detectado no significa inexistente?",
+      "web_prompt_variants_es": [
+        "¿Por qué no detectado no significa inexistente?",
+        "Selecciona la explicación correcta:  no detectado no significa inexistente."
+      ],
       "answer_display_es": "límite de detección · capacidad/configuración",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -135,9 +169,15 @@
       "unit_id": "SCI-403-U03",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué hace un sensor?",
+      "web_prompt_variants_es": [
+        "¿Qué hace un sensor?",
+        "Selecciona la respuesta correcta: Qué hace un sensor?"
+      ],
       "answer_display_es": "detectar · medir · localizar · observar",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "detectar"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "detectar",
         "medir",
@@ -149,7 +189,11 @@
       "id": "SCI-403-C010",
       "unit_id": "SCI-403-U03",
       "source_type": "compare",
-      "web_prompt_es": "¿Qué opción diferencia correctamente detección y clasificación.",
+      "web_prompt_es": "¿Qué opción diferencia correctamente detección y clasificación?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente detección y clasificación?",
+        "Diferencia detección y clasificación."
+      ],
       "answer_display_es": "saber que hay señal/contacto · determinar tipo/identidad con confianza",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -162,7 +206,11 @@
       "id": "SCI-403-C011",
       "unit_id": "SCI-403-U03",
       "source_type": "knowledge",
-      "web_prompt_es": "¿Qué opción contiene correctamente cuatro tipos de firma.",
+      "web_prompt_es": "¿Qué opción contiene cuatro tipos de firma?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene cuatro tipos de firma?",
+        "Nombra cuatro tipos de firma."
+      ],
       "answer_display_es": "electromagnética · subespacial · gravimétrica · térmica · biológica · warp · transpondedor",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -181,6 +229,10 @@
       "unit_id": "SCI-403-U03",
       "source_type": "judgment",
       "web_prompt_es": "¿Por qué una coincidencia de patrón no es certeza?",
+      "web_prompt_variants_es": [
+        "¿Por qué una coincidencia de patrón no es certeza?",
+        "Selecciona la explicación correcta:  una coincidencia de patrón no es certeza."
+      ],
       "answer_display_es": "puede ser parcial · confianza · otras fuentes",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -194,10 +246,16 @@
       "id": "SCI-403-C013",
       "unit_id": "SCI-403-U04",
       "source_type": "compare",
-      "web_prompt_es": "¿Qué opción diferencia correctamente modo pasivo y activo.",
+      "web_prompt_es": "¿Qué opción diferencia correctamente modo pasivo y activo?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente modo pasivo y activo?",
+        "Diferencia modo pasivo y activo."
+      ],
       "answer_display_es": "pasivo observa emisiones disponibles · activo emite/interactúa para mejorar observación",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "pasivo observa emisiones disponibles"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "pasivo observa emisiones disponibles",
         "activo emite/interactúa para mejorar observación"
@@ -207,7 +265,11 @@
       "id": "SCI-403-C014",
       "unit_id": "SCI-403-U04",
       "source_type": "knowledge",
-      "web_prompt_es": "¿Qué opción contiene correctamente un coste del modo activo.",
+      "web_prompt_es": "¿Qué opción contiene un coste del modo activo?",
+      "web_prompt_variants_es": [
+        "¿Qué opción contiene un coste del modo activo?",
+        "Nombra un coste del modo activo."
+      ],
       "answer_display_es": "detectabilidad · potencia · tiempo",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -222,7 +284,11 @@
       "unit_id": "SCI-403-U04",
       "source_type": "judgment",
       "web_prompt_es": "¿Existe un modo siempre mejor?",
-      "answer_display_es": "No. depende contexto.",
+      "web_prompt_variants_es": [
+        "¿Existe un modo siempre mejor?",
+        "Repaso: ¿Existe un modo siempre mejor?"
+      ],
+      "answer_display_es": "No — depende contexto.",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
       "answer_key_es": [
@@ -235,6 +301,10 @@
       "unit_id": "SCI-403-U04",
       "source_type": "scenario",
       "web_prompt_es": "El operador elige activo cuando debía mantener discreción, pero el modo es técnicamente válido. ¿Qué ocurre?",
+      "web_prompt_variants_es": [
+        "El operador elige activo cuando debía mantener discreción, pero el modo es técnicamente válido. ¿Qué ocurre?",
+        "Repaso: El operador elige activo cuando debía mantener discreción, pero el modo es técnicamente válido. ¿Qué ocurre?"
+      ],
       "answer_display_es": "se ejecuta · error profesional · puede aumentar exposición",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -249,9 +319,15 @@
       "unit_id": "SCI-403-U05",
       "source_type": "short_answer",
       "web_prompt_es": "¿Qué representa un contacto?",
+      "web_prompt_variants_es": [
+        "¿Qué representa un contacto?",
+        "Selecciona la respuesta correcta: Qué representa un contacto?"
+      ],
       "answer_display_es": "conocimiento persistente observado · no entidad oculta",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "conocimiento persistente observado"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "conocimiento persistente observado",
         "no entidad oculta"
@@ -262,6 +338,10 @@
       "unit_id": "SCI-403-U05",
       "source_type": "knowledge",
       "web_prompt_es": "¿Qué puede mejorar un tracking?",
+      "web_prompt_variants_es": [
+        "¿Qué puede mejorar un tracking?",
+        "Selecciona la respuesta correcta: Qué puede mejorar un tracking?"
+      ],
       "answer_display_es": "posición · rumbo · velocidad · trayectoria",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -276,7 +356,11 @@
       "id": "SCI-403-C019",
       "unit_id": "SCI-403-U05",
       "source_type": "compare",
-      "web_prompt_es": "¿Qué opción diferencia correctamente Sensores y Ciencia.",
+      "web_prompt_es": "¿Qué opción diferencia correctamente Sensores y Ciencia?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente Sensores y Ciencia?",
+        "Diferencia Sensores y Ciencia."
+      ],
       "answer_display_es": "Sensores mide/organiza · Ciencia interpreta",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -290,6 +374,10 @@
       "unit_id": "SCI-403-U05",
       "source_type": "judgment",
       "web_prompt_es": "¿Por qué una ficha compartida no crea omnisciencia?",
+      "web_prompt_variants_es": [
+        "¿Por qué una ficha compartida no crea omnisciencia?",
+        "Selecciona la explicación correcta:  una ficha compartida no crea omnisciencia."
+      ],
       "answer_display_es": "cada dato conserva procedencia · solo conocimiento realmente obtenido",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -302,10 +390,16 @@
       "id": "SCI-403-C021",
       "unit_id": "SCI-403-U06",
       "source_type": "procedure",
-      "web_prompt_es": "¿Qué opción enumera correctamente los pasos básicos de configuración de un barrido.",
+      "web_prompt_es": "¿Qué opción enumera correctamente los pasos básicos de configuración de un barrido?",
+      "web_prompt_variants_es": [
+        "¿Qué opción enumera correctamente los pasos básicos de configuración de un barrido?",
+        "Enumera los pasos básicos de configuración de un barrido."
+      ],
       "answer_display_es": "tipo · modo · área/objetivo · resolución · filtros · prioridad · duración · revisar · ejecutar",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "tipo"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "tipo",
         "modo",
@@ -322,7 +416,11 @@
       "id": "SCI-403-C022",
       "unit_id": "SCI-403-U06",
       "source_type": "compare",
-      "web_prompt_es": "¿Qué opción diferencia correctamente filtro y prioridad.",
+      "web_prompt_es": "¿Qué opción diferencia correctamente filtro y prioridad?",
+      "web_prompt_variants_es": [
+        "¿Qué opción diferencia correctamente filtro y prioridad?",
+        "Diferencia filtro y prioridad."
+      ],
       "answer_display_es": "filtro define firmas buscadas · prioridad destaca una sin excluir necesariamente",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
@@ -336,7 +434,11 @@
       "unit_id": "SCI-403-U06",
       "source_type": "judgment",
       "web_prompt_es": "¿Repetir el mismo barrido bajo las mismas condiciones debe revelar mágicamente más?",
-      "answer_display_es": "No. cambiar configuración/condiciones.",
+      "web_prompt_variants_es": [
+        "¿Repetir el mismo barrido bajo las mismas condiciones debe revelar mágicamente más?",
+        "Repaso: ¿Repetir el mismo barrido bajo las mismas condiciones debe revelar mágicamente más?"
+      ],
+      "answer_display_es": "No — cambiar configuración/condiciones.",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
       "answer_key_es": [
@@ -349,6 +451,10 @@
       "unit_id": "SCI-403-U06",
       "source_type": "scenario",
       "web_prompt_es": "La orden era sector 041 y configuras 014. El sector 014 es válido. ¿Qué debe hacer la consola?",
+      "web_prompt_variants_es": [
+        "La orden era sector 041 y configuras 014. El sector 014 es válido. ¿Qué debe hacer la consola?",
+        "Repaso: La orden era sector 041 y configuras 014. El sector 014 es válido. ¿Qué debe hacer la consola?"
+      ],
       "answer_display_es": "ejecutar si técnicamente válido · registrar resultado · error del operador",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
