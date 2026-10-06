@@ -937,7 +937,7 @@
       "scenario_id": "tracking_load",
       "guidance": "guided",
       "objective": "Pon C-43 bajo seguimiento y calcula una trayectoria a 15 minutos.",
-      "hint": "Primero asegúrate de que C-43 está seguido; después Predicción de trayectoria.",
+      "hint": "Mira el panel ESTADO PERSISTENTE de la derecha: en SEGUIMIENTO debe seguir apareciendo C-43. Puedes pulsar C-43 allí o cambiar a otra función principal y comprobar que continúa seguido.",
       "completion_feedback": "Práctica completada. Sabes distinguir observación continua de una predicción y tratar la incertidumbre temporal.",
       "steps": [
         {
@@ -988,14 +988,30 @@
         },
         {
           "label": "Consultar estado persistente",
-          "event": "NAV_PRIMARY",
-          "what": "Sigues trabajando sin perder el tracking.",
+          "alternatives": [
+            {
+              "event": "PERSISTENT_TRACK_OPEN",
+              "match": {
+                "contactId": "C-43"
+              },
+              "requiresState": {
+                "contactTracked": "C-43"
+              }
+            },
+            {
+              "event": "NAV_PRIMARY",
+              "matchNot": {
+                "primaryId": "tracking"
+              },
+              "requiresState": {
+                "contactTracked": "C-43"
+              }
+            }
+          ],
+          "what": "Compruebas que C-43 continúa bajo seguimiento mientras trabajas en otra función.",
           "why": "La predicción no cancela el proceso de observación.",
-          "effect": "C-43 continúa seguido.",
-          "concept": "Procesos y resultados coexisten.",
-          "matchNot": {
-            "primaryId": "tracking"
-          }
+          "effect": "C-43 permanece visible en el estado persistente y puedes volver a su ficha desde ahí.",
+          "concept": "Procesos y resultados coexisten."
         }
       ],
       "lesson_summary": "Sabes distinguir observación continua de una predicción y tratar la incertidumbre temporal.",
