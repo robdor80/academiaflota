@@ -1,7 +1,7 @@
 {
-  "schema_version": "2.0.0",
+  "schema_version": "2.1.0",
   "course_id": "STF-401",
-  "status": "concept_driven_autocorrectable",
+  "status": "concept_driven_autocorrectable_v2_1",
   "source_bank": "question_bank_v1_0.json",
   "policy": {
     "theory_formats": [
@@ -16,9 +16,11 @@
     "source_rule": "Every evaluated concept must be explicitly taught in the course material or an established prerequisite."
   },
   "unit_review": {
-    "questions_per_attempt": 3,
+    "questions_per_attempt": 5,
     "reshuffle_each_attempt": true,
-    "preferred_short_answers_per_attempt": 1
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
   },
   "concepts": [
     {
@@ -472,6 +474,198 @@
         "evita ocultar riesgo",
         "mantiene trazabilidad y responsabilidad",
         "ocultar puede agravar el problema"
+      ]
+    },
+    {
+      "id": "STF-401-C025",
+      "unit_id": "STF-401-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Exploración» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Exploración» en esta unidad?",
+        "Selecciona la definición correcta de «Exploración»."
+      ],
+      "answer_display_es": "Ampliar el conocimiento disponible: estudiar regiones desconocidas, cartografiar espacio, localizar fenómenos y entrar en contacto con nuevos entornos o sociedades cuando las reglas aplicables lo permitan.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Ampliar el conocimiento disponible: estudiar regiones desconocidas, cartografiar espacio, localizar fenómenos y entrar en contacto con nuevos entornos o sociedades cuando las reglas aplicables lo permitan."
+      ]
+    },
+    {
+      "id": "STF-401-C026",
+      "unit_id": "STF-401-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Ciencia» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Ciencia» en esta unidad?",
+        "Selecciona la definición correcta de «Ciencia»."
+      ],
+      "answer_display_es": "Observar, medir e investigar fenómenos físicos, biológicos, astronómicos o tecnológicos. La ciencia informa las decisiones, pero no sustituye automáticamente a la autoridad que debe tomarlas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Observar, medir e investigar fenómenos físicos, biológicos, astronómicos o tecnológicos. La ciencia informa las decisiones, pero no sustituye automáticamente a la autoridad que debe tomarlas."
+      ]
+    },
+    {
+      "id": "STF-401-C027",
+      "unit_id": "STF-401-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Rango» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Rango» en esta unidad?",
+        "Selecciona la definición correcta de «Rango»."
+      ],
+      "answer_display_es": "Posición jerárquica general del oficial.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Posición jerárquica general del oficial."
+      ]
+    },
+    {
+      "id": "STF-401-C028",
+      "unit_id": "STF-401-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Puesto» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Puesto» en esta unidad?",
+        "Selecciona la definición correcta de «Puesto»."
+      ],
+      "answer_display_es": "Responsabilidad concreta asignada: por ejemplo, Primer Oficial, Oficial de Operaciones o Jefe de Ingeniería.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Responsabilidad concreta asignada: por ejemplo, Primer Oficial, Oficial de Operaciones o Jefe de Ingeniería."
+      ]
+    },
+    {
+      "id": "STF-401-C029",
+      "unit_id": "STF-401-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «REGLA DEL PROYECTO»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «REGLA DEL PROYECTO»?",
+        "Selecciona la idea correcta asociada a «REGLA DEL PROYECTO»."
+      ],
+      "answer_display_es": "No se impone una fórmula verbal única para todas las eras cuando el lore validado no la exige. La regla estable es claridad profesional y respeto a rango, cargo y contexto.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "No se impone una fórmula verbal única para todas las eras cuando el lore validado no la exige. La regla estable es claridad profesional y respeto a rango, cargo y contexto."
+      ]
+    },
+    {
+      "id": "STF-401-C030",
+      "unit_id": "STF-401-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Superiores, iguales y subordinados»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Superiores, iguales y subordinados»?",
+        "En «Superiores, iguales y subordinados», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Con un superior: comunicar con claridad, reconocer autoridad válida y pedir aclaración si la instrucción es ambigua.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Con un superior: comunicar con claridad, reconocer autoridad válida y pedir aclaración si la instrucción es ambigua."
+      ]
+    },
+    {
+      "id": "STF-401-C031",
+      "unit_id": "STF-401-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «IMPORTANTE»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «IMPORTANTE»?",
+        "Selecciona la idea correcta asociada a «IMPORTANTE»."
+      ],
+      "answer_display_es": "Asumir mando temporal no cambia automáticamente el rango permanente del personaje.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Asumir mando temporal no cambia automáticamente el rango permanente del personaje."
+      ]
+    },
+    {
+      "id": "STF-401-C032",
+      "unit_id": "STF-401-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Antes de ejecutar una orden relevante»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Antes de ejecutar una orden relevante»?",
+        "En «Antes de ejecutar una orden relevante», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Comprueba quién la da.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Comprueba quién la da."
+      ]
+    },
+    {
+      "id": "STF-401-C033",
+      "unit_id": "STF-401-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Mando» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Mando» en esta unidad?",
+        "Selecciona la definición correcta de «Mando»."
+      ],
+      "answer_display_es": "Incluye funciones de dirección y, habitualmente, control de vuelo y navegación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Incluye funciones de dirección y, habitualmente, control de vuelo y navegación."
+      ]
+    },
+    {
+      "id": "STF-401-C034",
+      "unit_id": "STF-401-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Operaciones» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Operaciones» en esta unidad?",
+        "Selecciona la definición correcta de «Operaciones»."
+      ],
+      "answer_display_es": "Incluye áreas como gestión de operaciones, Ingeniería, Seguridad, Táctica y Comunicaciones.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Incluye áreas como gestión de operaciones, Ingeniería, Seguridad, Táctica y Comunicaciones."
+      ]
+    },
+    {
+      "id": "STF-401-C035",
+      "unit_id": "STF-401-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Escuchar» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Escuchar» en esta unidad?",
+        "Selecciona la definición correcta de «Escuchar»."
+      ],
+      "answer_display_es": "No interrumpir ni anticipar lo que crees que el superior va a decir.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "No interrumpir ni anticipar lo que crees que el superior va a decir."
+      ]
+    },
+    {
+      "id": "STF-401-C036",
+      "unit_id": "STF-401-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Comprender» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Comprender» en esta unidad?",
+        "Selecciona la definición correcta de «Comprender»."
+      ],
+      "answer_display_es": "Identificar objetivo, tarea, restricciones, prioridad y plazo cuando exista.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Identificar objetivo, tarea, restricciones, prioridad y plazo cuando exista."
       ]
     }
   ]

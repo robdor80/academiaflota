@@ -1,7 +1,7 @@
 {
-  "schema_version": "2.0.0",
+  "schema_version": "2.1.0",
   "course_id": "ACA-401",
-  "status": "concept_driven_autocorrectable",
+  "status": "concept_driven_autocorrectable_v2_1",
   "source_bank": "question_bank_v1_0.json",
   "policy": {
     "theory_formats": [
@@ -16,9 +16,11 @@
     "source_rule": "Every evaluated concept must be explicitly taught in the course material or an established prerequisite."
   },
   "unit_review": {
-    "questions_per_attempt": 3,
+    "questions_per_attempt": 5,
     "reshuffle_each_attempt": true,
-    "preferred_short_answers_per_attempt": 1
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
   },
   "concepts": [
     {
@@ -474,6 +476,198 @@
         "comunicación",
         "roles",
         "acciones de mejora"
+      ]
+    },
+    {
+      "id": "ACA-401-C025",
+      "unit_id": "ACA-401-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «IDEA CLAVE»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «IDEA CLAVE»?",
+        "Selecciona la idea correcta asociada a «IDEA CLAVE»."
+      ],
+      "answer_display_es": "Una dificultad académica no significa automáticamente game over.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Una dificultad académica no significa automáticamente game over."
+      ]
+    },
+    {
+      "id": "ACA-401-C026",
+      "unit_id": "ACA-401-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Posibles resultados»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Posibles resultados»?",
+        "En «Posibles resultados», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Avanzar",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Avanzar"
+      ]
+    },
+    {
+      "id": "ACA-401-C027",
+      "unit_id": "ACA-401-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «CASO»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «CASO»?",
+        "Selecciona la idea correcta asociada a «CASO»."
+      ],
+      "answer_display_es": "Usar IA para comprender una materia y resolver después personalmente la práctica es distinto de entregar como propio un trabajo generado íntegramente para una evaluación individual.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Usar IA para comprender una materia y resolver después personalmente la práctica es distinto de entregar como propio un trabajo generado íntegramente para una evaluación individual."
+      ]
+    },
+    {
+      "id": "ACA-401-C028",
+      "unit_id": "ACA-401-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Autoría y colaboración»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Autoría y colaboración»?",
+        "En «Autoría y colaboración», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Trabajo en equipo autorizado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Trabajo en equipo autorizado"
+      ]
+    },
+    {
+      "id": "ACA-401-C029",
+      "unit_id": "ACA-401-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «REGLA»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «REGLA»?",
+        "Selecciona la idea correcta asociada a «REGLA»."
+      ],
+      "answer_display_es": "La respuesta disciplinaria debe ser proporcional, estar basada en hechos y proceder de una autoridad competente.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "La respuesta disciplinaria debe ser proporcional, estar basada en hechos y proceder de una autoridad competente."
+      ]
+    },
+    {
+      "id": "ACA-401-C030",
+      "unit_id": "ACA-401-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Factores de una incidencia»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Factores de una incidencia»?",
+        "En «Factores de una incidencia», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Conducta",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Conducta"
+      ]
+    },
+    {
+      "id": "ACA-401-C031",
+      "unit_id": "ACA-401-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «GAME ADDITION»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «GAME ADDITION»?",
+        "Selecciona la idea correcta asociada a «GAME ADDITION»."
+      ],
+      "answer_display_es": "Los espacios funcionales añadidos existen para hacer jugable la vida académica y no se presentan como canon oculto.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Los espacios funcionales añadidos existen para hacer jugable la vida académica y no se presentan como canon oculto."
+      ]
+    },
+    {
+      "id": "ACA-401-C032",
+      "unit_id": "ACA-401-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Elementos retenidos»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Elementos retenidos»?",
+        "En «Elementos retenidos», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Campus y terrenos",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Campus y terrenos"
+      ]
+    },
+    {
+      "id": "ACA-401-C033",
+      "unit_id": "ACA-401-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «RECUPERACIÓN DIRIGIDA»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «RECUPERACIÓN DIRIGIDA»?",
+        "Selecciona la idea correcta asociada a «RECUPERACIÓN DIRIGIDA»."
+      ],
+      "answer_display_es": "No se repite todo por defecto. La respuesta debe atacar la causa concreta del fallo.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "No se repite todo por defecto. La respuesta debe atacar la causa concreta del fallo."
+      ]
+    },
+    {
+      "id": "ACA-401-C034",
+      "unit_id": "ACA-401-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Problemas distintos, respuestas distintas»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Problemas distintos, respuestas distintas»?",
+        "En «Problemas distintos, respuestas distintas», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Conocimiento insuficiente",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Conocimiento insuficiente"
+      ]
+    },
+    {
+      "id": "ACA-401-C035",
+      "unit_id": "ACA-401-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Responsabilidad del equipo» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Responsabilidad del equipo» en esta unidad?",
+        "Selecciona la definición correcta de «Responsabilidad del equipo»."
+      ],
+      "answer_display_es": "Resultado común y calidad de la coordinación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Resultado común y calidad de la coordinación."
+      ]
+    },
+    {
+      "id": "ACA-401-C036",
+      "unit_id": "ACA-401-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Responsabilidad individual» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Responsabilidad individual» en esta unidad?",
+        "Selecciona la definición correcta de «Responsabilidad individual»."
+      ],
+      "answer_display_es": "Contribución propia, conducta, honestidad y cumplimiento del rol.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Contribución propia, conducta, honestidad y cumplimiento del rol."
       ]
     }
   ]

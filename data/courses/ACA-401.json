@@ -1,7 +1,7 @@
 {
   "subject": "Vida académica, conducta y responsabilidad profesional",
   "code": "ACA-401",
-  "version": "1.2",
+  "version": "1.3",
   "status": "developed_content",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/ACA-401/course.json",
@@ -23,7 +23,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "El programa estándar de formación de oficiales dura cuatro años y la progresión se organiza de Cadete de 4.ª clase a Cadete de 1.ª clase."
+          "text": "**El programa estándar de formación de oficiales dura cuatro años y la progresión se organiza de Cadete de 4.ª clase a Cadete de 1.ª clase.**"
         },
         {
           "type": "table",
@@ -52,7 +52,7 @@
         },
         {
           "type": "p",
-          "text": "Tras graduarse, el rango comisionado inicial normal del proyecto es Alférez."
+          "text": "Tras graduarse, el rango comisionado inicial normal del proyecto es **Alférez**."
         },
         {
           "type": "heading",
@@ -64,7 +64,7 @@
         },
         {
           "type": "p",
-          "text": "Conocer algo no equivale todavía a saber hacerlo. La progresión puede depender de requisitos académicos, prácticos, evaluaciones, conducta, cualificaciones y formación de campo."
+          "text": "Conocer algo no equivale todavía a saber hacerlo. La progresión puede depender de **requisitos académicos**, prácticos, evaluaciones, conducta, cualificaciones y formación de campo."
         },
         {
           "type": "heading",
@@ -95,7 +95,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "La integridad académica exige que el expediente represente de forma razonable lo que el cadete realmente sabe, hizo y produjo."
+          "text": "**La integridad académica exige que el expediente represente de forma razonable lo que el cadete realmente sabe, hizo y produjo.**"
         },
         {
           "type": "heading",
@@ -108,7 +108,7 @@
         {
           "type": "bullets",
           "items": [
-            "Trabajo en equipo autorizado",
+            "**Trabajo en equipo autorizado**",
             "Tutoría",
             "Revisión de un compañero",
             "Consulta de material permitido",
@@ -121,7 +121,7 @@
         },
         {
           "type": "p",
-          "text": "El fraude puede producir un expediente falso y permitir que alguien reciba responsabilidades para las que no está preparado. El encubrimiento agrava una situación porque impide corregirla y destruye confianza."
+          "text": "El fraude puede producir un expediente falso y permitir que alguien reciba responsabilidades para las que no está preparado. El encubrimiento agrava una situación porque impide corregirla y **destruye confianza**."
         },
         {
           "type": "heading",
@@ -145,7 +145,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "La disciplina sostiene seguridad, responsabilidad y funcionamiento institucional. No se modela como una barra ni como una tabla rígida de «falta X = castigo Y»."
+          "text": "**La disciplina sostiene seguridad, responsabilidad y funcionamiento institucional.** No se modela como una barra ni como una tabla rígida de «falta X = castigo Y»."
         },
         {
           "type": "heading",
@@ -154,8 +154,8 @@
         {
           "type": "bullets",
           "items": [
-            "Conducta",
-            "Intención",
+            "**Conducta**",
+            "**Intención**",
             "Consecuencias",
             "Órdenes existentes",
             "Daños causados",
@@ -206,7 +206,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "La Academia es un lugar vivido: alojamiento, clases, estudio, simulaciones, entrenamiento, clubes, amistades, tutorías, permisos y tiempo libre forman parte de la experiencia."
+          "text": "**La Academia es un lugar vivido: alojamiento, clases, estudio, simulaciones, entrenamiento, clubes, amistades, tutorías, permisos y tiempo libre forman parte de la experiencia.**"
         },
         {
           "type": "heading",
@@ -214,7 +214,7 @@
         },
         {
           "type": "p",
-          "text": "Para las eras jugables, la Academia terrestre se sitúa en el área de San Francisco / Golden Gate, con instalaciones vinculadas al Presidio y terrenos al norte del puente."
+          "text": "Para las eras jugables, la Academia terrestre se sitúa en el área de **San Francisco** / Golden Gate, con instalaciones vinculadas al Presidio y terrenos al norte del puente."
         },
         {
           "type": "heading",
@@ -223,7 +223,7 @@
         {
           "type": "bullets",
           "items": [
-            "Campus y terrenos",
+            "**Campus y terrenos**",
             "Patio de instrucción",
             "Escuela de Mando",
             "Escuela de Vuelo",
@@ -267,7 +267,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "Una tutoría sirve para identificar la carencia concreta y decidir qué tipo de ayuda necesita el cadete. Pedir ayuda forma parte de la formación."
+          "text": "**Una tutoría sirve para identificar la carencia concreta y decidir qué tipo de ayuda necesita el cadete.** Pedir ayuda forma parte de la formación."
         },
         {
           "type": "heading",
@@ -276,7 +276,7 @@
         {
           "type": "bullets",
           "items": [
-            "Conocimiento insuficiente",
+            "**Conocimiento insuficiente**",
             "Mala ejecución",
             "Falta de práctica",
             "Error de juicio",
@@ -322,7 +322,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "La Academia entrena cooperación porque una nave funciona mediante personas que comparten información, responsabilidad y tiempo."
+          "text": "**La Academia entrena cooperación porque una nave funciona mediante personas que comparten información, responsabilidad y tiempo.**"
         },
         {
           "type": "heading",
@@ -331,8 +331,8 @@
         {
           "type": "bullets",
           "items": [
-            "Objetivo común",
-            "Roles comprensibles",
+            "**Objetivo común**",
+            "**Roles** comprensibles",
             "Reparto razonable",
             "Comunicación",
             "Seguimiento",
@@ -374,5 +374,5 @@
       ]
     }
   ],
-  "assessmentModel": "concept_driven_v2"
+  "assessmentModel": "concept_driven_v2_1"
 }

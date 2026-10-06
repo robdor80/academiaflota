@@ -1,7 +1,7 @@
 {
   "subject": "Federación: fundamentos políticos y sociales",
   "code": "FED-401",
-  "version": "1.2",
+  "version": "1.3",
   "status": "developed_content",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/FED-401/course.json",
@@ -22,7 +22,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "La Federación Unida de Planetas es una república federal interestelar formada por mundos miembros que cooperan bajo instituciones comunes. No es una alianza militar ni una extensión de Starfleet: es una entidad política civil."
+          "text": "**La Federación Unida de Planetas es una república federal interestelar formada por mundos miembros que cooperan bajo instituciones comunes.** No es una alianza militar ni una extensión de Starfleet: es una entidad política civil."
         },
         {
           "type": "heading",
@@ -30,12 +30,12 @@
         },
         {
           "type": "p",
-          "text": "El proyecto fija la fundación en 2161, con ceremonia fundacional en San Francisco, Tierra."
+          "text": "El proyecto fija la fundación en 2161, con ceremonia fundacional en San Francisco, **Tierra**."
         },
         {
           "type": "bullets",
           "items": [
-            "Tierra",
+            "**Tierra**",
             "Vulcano",
             "Andoria",
             "Tellar Prime"
@@ -76,7 +76,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "La Federación posee un gobierno civil propio. Starfleet está subordinada a esa autoridad civil y no sustituye al gobierno."
+          "text": "**La Federación posee un gobierno civil propio.** Starfleet está subordinada a esa autoridad civil y no sustituye al gobierno."
         },
         {
           "type": "heading",
@@ -85,8 +85,8 @@
         {
           "type": "bullets",
           "items": [
-            "Presidente de la Federación",
-            "Consejo de la Federación",
+            "**Presidente de la Federación**",
+            "**Consejo de la Federación**",
             "Participación de los mundos miembros en la gobernanza federal"
           ]
         },
@@ -148,7 +148,7 @@
         },
         {
           "type": "p",
-          "text": "Ser vulcano, humano, andoriano o tellarita no demuestra por sí solo ciudadanía, lealtad política, autoridad gubernamental ni pertenencia a Starfleet."
+          "text": "**Ser vulcano, humano, andoriano o tellarita no demuestra por sí solo ciudadanía, lealtad política, autoridad gubernamental ni pertenencia a Starfleet.**"
         },
         {
           "type": "heading",
@@ -165,8 +165,8 @@
         {
           "type": "bullets",
           "items": [
-            "Jurisdicción",
-            "Tránsito",
+            "**Jurisdicción**",
+            "**Tránsito**",
             "Tratados",
             "Acceso diplomático",
             "Respuesta de Starfleet",
@@ -205,7 +205,7 @@
         {
           "type": "definition",
           "term": "Federación",
-          "text": "Entidad política y civil."
+          "text": "**Entidad política y civil.**"
         },
         {
           "type": "definition",
@@ -218,7 +218,7 @@
         },
         {
           "type": "p",
-          "text": "La cadena operativa de Starfleet existe dentro de un marco político. Órdenes civiles, autorizaciones de misión, restricciones diplomáticas y directivas de emergencia pueden condicionar operaciones."
+          "text": "**La cadena operativa de Starfleet existe dentro de un marco político.** Órdenes civiles, autorizaciones de misión, restricciones diplomáticas y directivas de emergencia pueden condicionar operaciones."
         },
         {
           "type": "heading",
@@ -255,12 +255,12 @@
       "blocks": [
         {
           "type": "p",
-          "text": "La Federación no debe representarse como «humanidad ampliada». La pluralidad cultural es estructural y obliga a distinguir biología, cultura e individuo."
+          "text": "**La Federación no debe representarse como «humanidad ampliada».** La pluralidad cultural es estructural y obliga a distinguir biología, cultura e individuo."
         },
         {
           "type": "definition",
           "term": "Especie",
-          "text": "Biología y, cuando proceda, tradiciones ampliamente asociadas."
+          "text": "**Biología y, cuando proceda, tradiciones ampliamente asociadas.**"
         },
         {
           "type": "definition",
@@ -302,7 +302,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "FED-401 trabaja principios generales. No inventa una constitución completa ni procedimientos judiciales exhaustivos."
+          "text": "**FED-401 trabaja principios generales.** No inventa una constitución completa ni procedimientos judiciales exhaustivos."
         },
         {
           "type": "definition",
@@ -312,12 +312,12 @@
         {
           "type": "definition",
           "term": "Responsabilidad pública",
-          "text": "Quien ejerce autoridad debe responder por sus decisiones, registrar acciones relevantes y reconocer límites y errores."
+          "text": "Quien ejerce autoridad debe responder por sus decisiones, **registrar acciones relevantes** y reconocer límites y errores."
         },
         {
           "type": "definition",
           "term": "Debido proceso — nivel introductorio",
-          "text": "Las actuaciones con consecuencias importantes no deben depender del capricho de una persona: requieren autoridad competente, una base reconocible y un procedimiento apropiado al contexto."
+          "text": "Las actuaciones con consecuencias importantes no deben depender del capricho de una persona: requieren autoridad competente, una base reconocible y un **procedimiento apropiado** al contexto."
         },
         {
           "type": "heading",
@@ -359,5 +359,5 @@
       ]
     }
   ],
-  "assessmentModel": "concept_driven_v2"
+  "assessmentModel": "concept_driven_v2_1"
 }

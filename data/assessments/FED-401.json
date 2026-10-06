@@ -1,7 +1,7 @@
 {
-  "schema_version": "2.0.0",
+  "schema_version": "2.1.0",
   "course_id": "FED-401",
-  "status": "concept_driven_autocorrectable",
+  "status": "concept_driven_autocorrectable_v2_1",
   "source_bank": "question_bank_v1_0.json",
   "policy": {
     "theory_formats": [
@@ -16,9 +16,11 @@
     "source_rule": "Every evaluated concept must be explicitly taught in the course material or an established prerequisite."
   },
   "unit_review": {
-    "questions_per_attempt": 3,
+    "questions_per_attempt": 5,
     "reshuffle_each_attempt": true,
-    "preferred_short_answers_per_attempt": 1
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
   },
   "concepts": [
     {
@@ -484,6 +486,198 @@
         "qué autoridad posee",
         "qué debe comunicar/registrar",
         "si debe escalar"
+      ]
+    },
+    {
+      "id": "FED-401-C025",
+      "unit_id": "FED-401-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «IDEA CLAVE»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «IDEA CLAVE»?",
+        "Selecciona la idea correcta asociada a «IDEA CLAVE»."
+      ],
+      "answer_display_es": "La Federación es una entidad política histórica y cambiante, no una fotografía eterna.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "La Federación es una entidad política histórica y cambiante, no una fotografía eterna."
+      ]
+    },
+    {
+      "id": "FED-401-C026",
+      "unit_id": "FED-401-U01",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Fundación y miembros fundadores»?",
+      "web_prompt_variants_es": [
+        "¿Cuál de estas opciones forma parte de «Fundación y miembros fundadores»?",
+        "En «Fundación y miembros fundadores», ¿qué elemento aparece en los apuntes?"
+      ],
+      "answer_display_es": "Tierra",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Tierra"
+      ]
+    },
+    {
+      "id": "FED-401-C027",
+      "unit_id": "FED-401-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Autoridad civil federal» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Autoridad civil federal» en esta unidad?",
+        "Selecciona la definición correcta de «Autoridad civil federal»."
+      ],
+      "answer_display_es": "Toma decisiones políticas y civiles dentro de las competencias de la Federación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Toma decisiones políticas y civiles dentro de las competencias de la Federación."
+      ]
+    },
+    {
+      "id": "FED-401-C028",
+      "unit_id": "FED-401-U02",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Gobiernos miembros» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Gobiernos miembros» en esta unidad?",
+        "Selecciona la definición correcta de «Gobiernos miembros»."
+      ],
+      "answer_display_es": "Conservan su existencia política y competencias locales.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Conservan su existencia política y competencias locales."
+      ]
+    },
+    {
+      "id": "FED-401-C029",
+      "unit_id": "FED-401-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «REGLA CENTRAL»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «REGLA CENTRAL»?",
+        "Selecciona la idea correcta asociada a «REGLA CENTRAL»."
+      ],
+      "answer_display_es": "ESPECIE ≠ MUNDO ≠ GOBIERNO ≠ FEDERACIÓN ≠ STARFLEET, y ESPECIE ≠ CIUDADANÍA.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "ESPECIE ≠ MUNDO ≠ GOBIERNO ≠ FEDERACIÓN ≠ STARFLEET, y ESPECIE ≠ CIUDADANÍA."
+      ]
+    },
+    {
+      "id": "FED-401-C030",
+      "unit_id": "FED-401-U03",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué expresa el aviso «CASO»?",
+      "web_prompt_variants_es": [
+        "¿Qué expresa el aviso «CASO»?",
+        "Selecciona la idea correcta asociada a «CASO»."
+      ],
+      "answer_display_es": "Una oficial vulcana de Starfleet en otro mundo miembro no representa automáticamente al gobierno vulcano ni posee autoridad civil local.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Una oficial vulcana de Starfleet en otro mundo miembro no representa automáticamente al gobierno vulcano ni posee autoridad civil local."
+      ]
+    },
+    {
+      "id": "FED-401-C031",
+      "unit_id": "FED-401-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Federación» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Federación» en esta unidad?",
+        "Selecciona la definición correcta de «Federación»."
+      ],
+      "answer_display_es": "Entidad política y civil.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Entidad política y civil."
+      ]
+    },
+    {
+      "id": "FED-401-C032",
+      "unit_id": "FED-401-U04",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Starfleet» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Starfleet» en esta unidad?",
+        "Selecciona la definición correcta de «Starfleet»."
+      ],
+      "answer_display_es": "Servicio federal con funciones operativas, científicas, exploratorias, diplomáticas, de asistencia y defensa.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Servicio federal con funciones operativas, científicas, exploratorias, diplomáticas, de asistencia y defensa."
+      ]
+    },
+    {
+      "id": "FED-401-C033",
+      "unit_id": "FED-401-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Especie» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Especie» en esta unidad?",
+        "Selecciona la definición correcta de «Especie»."
+      ],
+      "answer_display_es": "Biología y, cuando proceda, tradiciones ampliamente asociadas.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Biología y, cuando proceda, tradiciones ampliamente asociadas."
+      ]
+    },
+    {
+      "id": "FED-401-C034",
+      "unit_id": "FED-401-U05",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Cultura» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Cultura» en esta unidad?",
+        "Selecciona la definición correcta de «Cultura»."
+      ],
+      "answer_display_es": "Normas, prácticas, valores y costumbres compartidas por un grupo concreto.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Normas, prácticas, valores y costumbres compartidas por un grupo concreto."
+      ]
+    },
+    {
+      "id": "FED-401-C035",
+      "unit_id": "FED-401-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Protección de la vida» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Protección de la vida» en esta unidad?",
+        "Selecciona la definición correcta de «Protección de la vida»."
+      ],
+      "answer_display_es": "Las decisiones profesionales deben reconocer el coste humano y evitar daño innecesario cuando sea posible.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Las decisiones profesionales deben reconocer el coste humano y evitar daño innecesario cuando sea posible."
+      ]
+    },
+    {
+      "id": "FED-401-C036",
+      "unit_id": "FED-401-U06",
+      "source_type": "study_anchor",
+      "web_prompt_es": "¿Qué significa «Responsabilidad pública» en esta unidad?",
+      "web_prompt_variants_es": [
+        "¿Qué significa «Responsabilidad pública» en esta unidad?",
+        "Selecciona la definición correcta de «Responsabilidad pública»."
+      ],
+      "answer_display_es": "Quien ejerce autoridad debe responder por sus decisiones, registrar acciones relevantes y reconocer límites y errores.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Quien ejerce autoridad debe responder por sus decisiones, registrar acciones relevantes y reconocer límites y errores."
       ]
     }
   ]
