@@ -1,7 +1,7 @@
 export async function loadStudyFile(path) {
   if (!path) throw new Error("El material de estudio no tiene un archivo asociado.");
   const separator = path.includes("?") ? "&" : "?";
-  const response = await fetch(path + separator + "v=0.7.2");
+  const response = await fetch(path + separator + "v=0.7.3");
   if (!response.ok) throw new Error("No se pudo cargar el material académico.");
   return response.json();
 }
@@ -85,7 +85,7 @@ function multipleChoiceOptions(concept, unitConcepts, allConcepts) {
 }
 
 function renderReview(assessment, unitId) {
-  if (!assessment || assessment.schema_version !== "2.0.0" || !Array.isArray(assessment.concepts)) return "";
+  if (!assessment || !/^2\./.test(String(assessment.schema_version || "")) || !Array.isArray(assessment.concepts)) return "";
   const unitConcepts = assessment.concepts.filter(function(item) { return item.unit_id === unitId; });
   if (!unitConcepts.length) return "";
 
