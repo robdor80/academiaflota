@@ -1,13 +1,44 @@
 {
-  "schema_version": "0.3.0",
+  "schema_version": "1.0.0",
   "simulator": "sensors",
+  "program_title": "Habilitación práctica de Operador de Sensores",
+  "levels": [
+    {
+      "id": 1,
+      "title": "Operador básico",
+      "description": "Órdenes simples y explicación completa."
+    },
+    {
+      "id": 2,
+      "title": "Operación normal",
+      "description": "Búsquedas, perfiles, resultados y comparación."
+    },
+    {
+      "id": 3,
+      "title": "Operación avanzada",
+      "description": "Tracking complejo, recuperación e historial."
+    },
+    {
+      "id": 4,
+      "title": "Incidencias",
+      "description": "Interferencia, capacidad, averías y coordinación técnica."
+    },
+    {
+      "id": 5,
+      "title": "Habilitación",
+      "description": "Escenarios integrados con mínima ayuda."
+    }
+  ],
   "tutorials": [
     {
       "id": "TUT-01",
+      "level": 1,
       "title": "Barrido básico",
+      "scenario_id": "standard_sector",
+      "guidance": "full",
       "objective": "Realiza un barrido de largo alcance del sector 041 con prioridad a emisiones subespaciales.",
-      "hint": "Empieza en BARRIDOS. El tipo de barrido, el área y la prioridad son tres decisiones distintas.",
-      "completion_feedback": "Correcto. Has convertido una orden verbal en una operación sensora estructurada sin que la consola decidiera por ti.",
+      "hint": "Barridos → Largo alcance. Configura sector 041 y prioridad Subespacio.",
+      "completion_feedback": "Práctica completada. Sabes transformar una orden verbal sencilla en un barrido estructurado.",
       "steps": [
         {
           "label": "Abrir BARRIDOS",
@@ -16,8 +47,8 @@
             "primaryId": "scans"
           },
           "what": "Entras en el área destinada a observar una región del espacio.",
-          "why": "La orden pide averiguar qué hay en un sector. Eso es un barrido; Búsqueda se usa cuando intentas localizar algo de una clase concreta.",
-          "effect": "Preparas la consola para crear una operación de escaneo; aún no se consume tiempo de observación.",
+          "why": "La orden pide observar una zona, no localizar una clase concreta de objeto.",
+          "effect": "Preparas una operación de escaneo.",
           "concept": "Barrido = observar una zona para descubrir qué hay."
         },
         {
@@ -27,9 +58,9 @@
             "primaryId": "scans",
             "secondaryId": "long_range"
           },
-          "what": "Seleccionas un barrido pensado para cubrir distancias mayores.",
-          "why": "El sector 041 no es el espacio inmediato de la nave. El largo alcance prioriza cobertura a distancia.",
-          "effect": "La operación adopta un perfil de mayor alcance, con posibles compromisos de tiempo o detalle.",
+          "what": "Seleccionas el perfil para distancias mayores.",
+          "why": "El sector indicado no pertenece al entorno inmediato de la nave.",
+          "effect": "La matriz se prepara para cobertura a distancia.",
           "concept": "Alcance y resolución se equilibran."
         },
         {
@@ -37,12 +68,12 @@
           "event": "SCAN_CONFIG_CHANGE",
           "match": {
             "scanType": "long_range",
-            "targetValue": "sector"
+            "targetValue": "sector_041"
           },
-          "what": "Delimitas el espacio que debe observar el sistema.",
-          "why": "Sin un ámbito espacial claro la consola no sabe dónde concentrar el barrido.",
-          "effect": "El procesamiento se centra en el sector indicado y evita gastar capacidad en zonas ajenas.",
-          "concept": "Toda observación necesita un ámbito u objetivo."
+          "what": "Delimitas el volumen espacial de la observación.",
+          "why": "Sin área, una orden de barrido está incompleta.",
+          "effect": "Evitas gastar capacidad fuera de la zona ordenada.",
+          "concept": "Toda observación necesita ámbito."
         },
         {
           "label": "Prioridad Subespacio",
@@ -51,36 +82,40 @@
             "scanType": "long_range",
             "priority": "subspace"
           },
-          "what": "Indicas que las emisiones subespaciales merecen atención preferente.",
-          "why": "La prioridad sigue la intención de la orden sin descartar necesariamente el resto de firmas.",
-          "effect": "El sistema presta más atención de procesamiento a señales subespaciales.",
-          "concept": "Priorizar no es lo mismo que filtrar."
+          "what": "Das atención preferente a firmas subespaciales.",
+          "why": "La prioridad expresa la intención de la orden sin excluir necesariamente otras firmas.",
+          "effect": "Mejora la atención sobre ese tipo de señal.",
+          "concept": "Priorizar no es filtrar."
         },
         {
           "label": "Completar barrido",
           "event": "SCAN_COMPLETE",
           "match": {
-            "scanType": "long_range"
+            "subtype": "long_range",
+            "targetValue": "sector_041"
           },
-          "what": "Ejecutas la configuración y esperas a que la observación termine.",
-          "why": "Configurar no produce información nueva; solo al ejecutar se consulta el escenario.",
-          "effect": "Se consume tiempo y capacidad sensora y se genera un resultado.",
-          "concept": "La consola prepara; el mundo resuelve la observación."
+          "what": "Dejas terminar la observación.",
+          "why": "Configurar no genera información; ejecutar sí.",
+          "effect": "Se produce un resultado sensorial trazable.",
+          "concept": "La consola prepara; el mundo resuelve."
         }
       ],
-      "lesson_summary": "Has aprendido a transformar una orden verbal en una observación sensora estructurada: elegir tipo de barrido, delimitar dónde mirar, priorizar una firma y ejecutar.",
+      "lesson_summary": "Sabes transformar una orden verbal sencilla en un barrido estructurado.",
       "order": {
         "source": "Teniente Cmdr. Hale · Instructor de Sensores",
         "order": "Cadete {name}, ejecute un barrido de largo alcance del sector 041 con prioridad a emisiones subespaciales. Informe cuando disponga de resultados.",
-        "note": "La orden especifica función, alcance, área y prioridad. Tu trabajo es traducirla correctamente a la consola."
+        "note": "La orden contiene función, alcance, área y prioridad. Debes traducirla a parámetros de consola."
       }
     },
     {
       "id": "TUT-02",
+      "level": 1,
       "title": "Contacto sospechoso",
-      "objective": "Abre el Contacto 07 y ejecuta sobre él un barrido focalizado.",
-      "hint": "No necesitas volver manualmente a Barridos si la ficha del contacto te ofrece una acción contextual válida.",
-      "completion_feedback": "Correcto. Has usado el contexto del Contacto 07 para saltar directamente a la operación que necesitabas.",
+      "scenario_id": "standard_sector",
+      "guidance": "full",
+      "objective": "Selecciona C-07 y mejora su observación mediante un barrido focalizado.",
+      "hint": "Abre Contactos, selecciona C-07 y utiliza la acción contextual de barrido focalizado.",
+      "completion_feedback": "Práctica completada. Sabes mejorar un contacto conocido usando acciones contextuales sin perder el control de la decisión.",
       "steps": [
         {
           "label": "Abrir CONTACTOS",
@@ -88,10 +123,10 @@
           "match": {
             "primaryId": "contacts"
           },
-          "what": "Abres la memoria operativa de objetos ya detectados.",
-          "why": "C-07 ya existe como contacto; no necesitas explorar todo el espacio otra vez.",
-          "effect": "Accedes a sus datos, historial y acciones aplicables.",
-          "concept": "Un contacto es conocimiento persistente."
+          "what": "Abres la memoria operativa de contactos.",
+          "why": "C-07 ya ha sido detectado previamente.",
+          "effect": "Accedes a su ficha persistente.",
+          "concept": "Un contacto conserva conocimiento entre operaciones."
         },
         {
           "label": "Seleccionar C-07",
@@ -99,10 +134,10 @@
           "match": {
             "contactId": "C-07"
           },
-          "what": "Estableces C-07 como objeto de trabajo.",
-          "why": "Las acciones contextuales necesitan saber sobre qué contacto van a actuar.",
-          "effect": "La consola conserva C-07 como contexto al navegar.",
-          "concept": "Contexto = objetivo actual + estado conocido."
+          "what": "Estableces C-07 como contexto actual.",
+          "why": "Las acciones necesitan saber sobre qué objeto actuar.",
+          "effect": "La consola ofrece acciones aplicables a ese contacto.",
+          "concept": "Contexto = objetivo + estado conocido."
         },
         {
           "label": "Usar Barrido focalizado",
@@ -111,10 +146,10 @@
             "actionId": "focused_scan",
             "contactId": "C-07"
           },
-          "what": "Pides un barrido concentrado sobre C-07.",
-          "why": "Ya sabes dónde está aproximadamente; ahora interesa obtener una lectura mejor.",
-          "effect": "La consola abre Barridos/Focalizado con C-07 preseleccionado.",
-          "concept": "La acción contextual reduce pasos, no decide por ti."
+          "what": "Solicitas observar con detalle el objetivo.",
+          "why": "Ya conoces aproximadamente dónde está.",
+          "effect": "Se abre Barridos/Focalizado con el contacto preparado.",
+          "concept": "Un acceso contextual reduce pasos, no decide por ti."
         },
         {
           "label": "Ejecutar sobre C-07",
@@ -123,37 +158,40 @@
             "scanType": "focused",
             "contactId": "C-07"
           },
-          "what": "Ordenas que el barrido focalizado comience.",
-          "why": "Aunque el objetivo venga rellenado, el operador debe revisar y ejecutar.",
-          "effect": "Se emplean recursos sensorios específicamente sobre C-07.",
+          "what": "Confirmas la operación.",
+          "why": "El operador debe revisar la configuración antes de comprometer recursos.",
+          "effect": "Comienza la observación focalizada.",
           "concept": "Preconfigurar no equivale a ejecutar."
         },
         {
           "label": "Completar barrido",
           "event": "SCAN_COMPLETE",
           "match": {
-            "scanType": "focused",
+            "subtype": "focused",
             "contactId": "C-07"
           },
-          "what": "Esperas a que finalice y se incorpore el resultado.",
-          "why": "Solo una observación terminada puede compararse con lo que ya sabías.",
-          "effect": "Puede aumentar la confianza o el detalle, sin garantizar identificación.",
-          "concept": "Más observaciones mejoran conocimiento, no garantizan certeza."
+          "what": "Esperas el resultado completo.",
+          "why": "Una lectura terminada puede actualizar la ficha del contacto.",
+          "effect": "Aumenta la confianza si la observación aporta evidencia.",
+          "concept": "Más datos no garantizan identificación."
         }
       ],
-      "lesson_summary": "Has aprendido a partir de un contacto ya conocido y usar una acción contextual para mejorar su observación sin repetir pasos innecesarios.",
+      "lesson_summary": "Sabes mejorar un contacto conocido usando acciones contextuales sin perder el control de la decisión.",
       "order": {
         "source": "Teniente Cmdr. Hale · Instructor de Sensores",
         "order": "Cadete {name}, revise el contacto C-07. Efectúe un barrido focalizado sobre el objetivo y actualice su lectura.",
-        "note": "Ya existe un contacto. No se te pide explorar una zona completa, sino concentrar capacidad sensora sobre un objetivo conocido."
+        "note": "El contacto ya existe: no hace falta volver a explorar todo el sector."
       }
     },
     {
       "id": "TUT-03",
+      "level": 1,
       "title": "Seguimiento de contacto",
-      "objective": "Pon el Contacto 07 bajo seguimiento y comprueba que el tracking persiste aunque navegues por la consola.",
-      "hint": "La propia ficha del contacto puede iniciar el seguimiento. Después abre otro menú: el panel derecho debe conservar C-07.",
-      "completion_feedback": "Correcto. Has comprobado una regla central: navegar por la consola no detiene un proceso operativo persistente.",
+      "scenario_id": "standard_sector",
+      "guidance": "full",
+      "objective": "Pon C-07 bajo seguimiento y comprueba que continúa activo mientras navegas por otras funciones.",
+      "hint": "Selecciona C-07, inicia seguimiento y después cambia de menú.",
+      "completion_feedback": "Práctica completada. Comprendes la diferencia entre navegar por la interfaz y mantener una operación persistente.",
       "steps": [
         {
           "label": "Abrir CONTACTOS",
@@ -161,10 +199,10 @@
           "match": {
             "primaryId": "contacts"
           },
-          "what": "Abres la lista de contactos disponibles.",
-          "why": "Para iniciar tracking necesitas una identidad de contacto ya registrada.",
-          "effect": "Puedes escoger el objeto exacto que quieres mantener bajo observación.",
-          "concept": "Seguimiento requiere una identidad de contacto."
+          "what": "Abres la lista de contactos.",
+          "why": "Necesitas partir de una identidad conocida.",
+          "effect": "Puedes asignar recursos a C-07.",
+          "concept": "Tracking se asigna a contactos."
         },
         {
           "label": "Seleccionar C-07",
@@ -172,10 +210,10 @@
           "match": {
             "contactId": "C-07"
           },
-          "what": "Seleccionas C-07.",
-          "why": "El sistema debe saber qué contacto consumirá capacidad de seguimiento.",
-          "effect": "Las acciones de tracking pasan a aplicarse a C-07.",
-          "concept": "Los recursos de tracking se asignan a contactos concretos."
+          "what": "Seleccionas el contacto objetivo.",
+          "why": "El sistema necesita una referencia persistente.",
+          "effect": "Las acciones pasan a operar sobre C-07.",
+          "concept": "Identidad y seguimiento permanecen enlazados."
         },
         {
           "label": "Iniciar seguimiento",
@@ -183,47 +221,50 @@
           "match": {
             "contactId": "C-07"
           },
-          "what": "Ordenas mantener C-07 bajo observación continuada.",
-          "why": "Un barrido es una foto; el seguimiento acumula observaciones para actualizar posición y movimiento.",
-          "effect": "C-07 ocupa capacidad de tracking y aparece en el panel persistente.",
+          "what": "Mantienes observación continuada.",
+          "why": "Un barrido es una fotografía; el tracking acumula observaciones.",
+          "effect": "C-07 consume una ranura de seguimiento.",
           "concept": "Tracking = observación continua."
         },
         {
           "label": "Cambiar de menú",
           "event": "NAV_PRIMARY",
+          "what": "Abandonas visualmente Contactos.",
+          "why": "La navegación de interfaz no debe cancelar procesos reales.",
+          "effect": "El tracking permanece en el panel derecho.",
+          "concept": "Vista y estado operativo son distintos.",
           "matchNot": {
             "primaryId": "contacts"
-          },
-          "what": "Abandonas visualmente CONTACTOS y abres otra función.",
-          "why": "Queremos comprobar que navegar por la interfaz no cancela una operación real.",
-          "effect": "Cambias de espacio de trabajo, pero C-07 sigue bajo seguimiento.",
-          "concept": "Vista de interfaz y estado operativo son cosas distintas."
+          }
         },
         {
-          "label": "Tracking sigue activo",
+          "label": "Comprobar persistencia",
           "event": "NAV_PRIMARY",
+          "what": "Compruebas que C-07 sigue apareciendo en estado persistente.",
+          "why": "La conciencia de situación no debe depender de una pantalla concreta.",
+          "effect": "Puedes trabajar en otra tarea sin perder el seguimiento.",
+          "concept": "Las operaciones viven en segundo plano.",
           "requiresState": {
             "contactTracked": "C-07"
-          },
-          "what": "Compruebas el panel derecho después de cambiar de menú.",
-          "why": "El estado persistente debe mantener tu conciencia de situación.",
-          "effect": "Puedes seguir viendo C-07 sin volver a CONTACTOS.",
-          "concept": "El panel persistente conserva operaciones en segundo plano."
+          }
         }
       ],
-      "lesson_summary": "Has aprendido que el seguimiento es un proceso persistente: puedes cambiar de pantalla mientras la consola continúa observando el contacto.",
+      "lesson_summary": "Comprendes la diferencia entre navegar por la interfaz y mantener una operación persistente.",
       "order": {
         "source": "Teniente Cmdr. Hale · Instructor de Sensores",
         "order": "Cadete {name}, establezca seguimiento sobre el contacto C-07 y manténgalo mientras continúa con otras tareas de consola.",
-        "note": "La clave de esta orden es «manténgalo»: el seguimiento debe persistir aunque cambies de pantalla o de función."
+        "note": "La palabra clave es «manténgalo»: tracking es un proceso persistente."
       }
     },
     {
       "id": "TUT-04",
+      "level": 1,
       "title": "Potencia adicional",
-      "objective": "Solicita potencia adicional a Operaciones para mejorar una situación sensora limitada.",
-      "hint": "C-07 tiene una señal muy débil. La consola puede ofrecer SOLICITAR POTENCIA ADICIONAL, pero OPS decide cuánto concede.",
-      "completion_feedback": "Correcto. Sensores ha solicitado recursos; no ha decidido qué otro sistema debía cederlos.",
+      "scenario_id": "standard_sector",
+      "guidance": "full",
+      "objective": "Solicita potencia adicional a Operaciones para una lectura limitada.",
+      "hint": "Desde C-07 utiliza Solicitar potencia adicional y envía una petición a OPS.",
+      "completion_feedback": "Práctica completada. Sabes pedir recursos sin invadir la autoridad funcional de Operaciones.",
       "steps": [
         {
           "label": "Abrir CONTACTOS",
@@ -231,10 +272,10 @@
           "match": {
             "primaryId": "contacts"
           },
-          "what": "Abres los contactos para partir de una necesidad concreta.",
-          "why": "Una solicitud de recursos debe tener una justificación operativa.",
-          "effect": "Puedes evaluar qué contacto presenta una limitación real.",
-          "concept": "Los recursos se solicitan para una necesidad concreta."
+          "what": "Buscas la necesidad concreta.",
+          "why": "Los recursos no se solicitan por costumbre.",
+          "effect": "Partes de una limitación operacional real.",
+          "concept": "Toda petición necesita motivo."
         },
         {
           "label": "Seleccionar C-07",
@@ -242,10 +283,10 @@
           "match": {
             "contactId": "C-07"
           },
-          "what": "Seleccionas un contacto con señal muy débil.",
-          "why": "C-07 es un buen caso para valorar si más potencia puede ayudar.",
-          "effect": "La consola puede ofrecer la solicitud como acción contextual.",
-          "concept": "Señal débil puede justificar más recursos, pero no obliga a pedirlos."
+          "what": "Seleccionas la señal débil.",
+          "why": "Es el contacto cuya lectura quieres mejorar.",
+          "effect": "La solicitud queda contextualizada.",
+          "concept": "Más potencia puede ayudar; no siempre es la solución."
         },
         {
           "label": "Abrir solicitud",
@@ -254,41 +295,44 @@
             "actionId": "request_additional_power",
             "contactId": "C-07"
           },
-          "what": "Abres el formulario de potencia adicional.",
-          "why": "Sensores solo controla la energía ya asignada; para superar ese límite debe pedirla.",
-          "effect": "Preparas cantidad, prioridad y duración de la petición.",
-          "concept": "Sensores solicita; no redistribuye la nave por su cuenta."
+          "what": "Abres el contrato de solicitud a OPS.",
+          "why": "Sensores no puede apropiarse de energía ajena.",
+          "effect": "Defines cuánto, prioridad y duración.",
+          "concept": "Sensores solicita; OPS autoriza."
         },
         {
           "label": "Enviar a OPS",
           "event": "POWER_REQUEST",
-          "what": "Envías formalmente la petición a Operaciones.",
-          "why": "OPS conoce las prioridades globales y el coste de quitar energía a otros sistemas.",
-          "effect": "La petición queda pendiente hasta que otra autoridad decida.",
-          "concept": "La energía es un recurso compartido y priorizado."
+          "what": "Envías la petición.",
+          "why": "OPS conoce el estado global de la nave.",
+          "effect": "La solicitud queda pendiente.",
+          "concept": "La energía es un recurso compartido."
         },
         {
           "label": "Recibir respuesta",
           "event": "POWER_RESPONSE",
-          "what": "Recibes la decisión de Operaciones.",
-          "why": "La nave puede no disponer de todo lo solicitado; una aprobación parcial es perfectamente válida.",
-          "effect": "Sensores trabaja con la potencia realmente concedida.",
+          "what": "Lees la decisión de OPS.",
+          "why": "Puede concederse todo, una parte o nada.",
+          "effect": "La asignación real cambia según lo concedido.",
           "concept": "Solicitar no garantiza obtener."
         }
       ],
-      "lesson_summary": "Has aprendido que la potencia es un recurso compartido: Sensores puede solicitar más, pero no decide de dónde sale ni cuánto recibirá.",
+      "lesson_summary": "Sabes pedir recursos sin invadir la autoridad funcional de Operaciones.",
       "order": {
         "source": "Teniente Cmdr. Hale · Instructor de Sensores",
         "order": "Cadete {name}, la señal del contacto C-07 es insuficiente. Solicite a Operaciones potencia adicional para Sensores y confirme la nueva asignación.",
-        "note": "Sensores detecta la necesidad, pero la redistribución de energía pertenece a Operaciones. Debes solicitarla, no apropiártela."
+        "note": "Sensores detecta la necesidad; Operaciones decide la redistribución."
       }
     },
     {
       "id": "TUT-05",
+      "level": 1,
       "title": "Lectura y transferencia",
-      "objective": "Abre la lectura sensorial del Contacto 07, revisa su firma subespacial y envía los datos a Ciencia para su interpretación.",
-      "hint": "Tras abrir Lectura sensorial, revisa la categoría Firma subespacial. Después remite los datos a Ciencia.",
-      "completion_feedback": "Correcto. Has mantenido la frontera funcional: Sensores entrega observaciones; Ciencia recibe los datos para interpretarlos.",
+      "scenario_id": "standard_sector",
+      "guidance": "full",
+      "objective": "Revisa la firma subespacial de C-07 y remite los datos a Ciencia.",
+      "hint": "Lectura sensorial → Firma subespacial → Enviar a Ciencia.",
+      "completion_feedback": "Práctica completada. Sabes revisar una evidencia concreta y transferirla a la consola competente.",
       "steps": [
         {
           "label": "Abrir CONTACTOS",
@@ -296,9 +340,9 @@
           "match": {
             "primaryId": "contacts"
           },
-          "what": "Abres los objetos conocidos.",
-          "why": "La lectura debe permanecer unida al contacto que la originó.",
-          "effect": "Puedes trabajar con datos asociados específicamente a C-07.",
+          "what": "Partes de la ficha del contacto.",
+          "why": "La lectura debe conservar procedencia.",
+          "effect": "Mantienes datos y objeto enlazados.",
           "concept": "Toda lectura necesita procedencia."
         },
         {
@@ -307,10 +351,10 @@
           "match": {
             "contactId": "C-07"
           },
-          "what": "Seleccionas el contacto cuya información quieres examinar.",
-          "why": "Esto evita mezclar observaciones de objetos distintos.",
-          "effect": "Las lecturas y transferencias quedan vinculadas a C-07.",
-          "concept": "Identidad del contacto y lectura deben permanecer enlazadas."
+          "what": "Fijas el objeto a inspeccionar.",
+          "why": "Evitas mezclar observaciones.",
+          "effect": "La lectura queda vinculada a C-07.",
+          "concept": "Contacto y lectura permanecen unidos."
         },
         {
           "label": "Abrir Lectura sensorial",
@@ -318,10 +362,10 @@
           "match": {
             "contactId": "C-07"
           },
-          "what": "Abres los valores observados o estimados por Sensores.",
-          "why": "Antes de concluir nada debes saber qué midió realmente el sistema y con qué incertidumbre.",
-          "effect": "Accedes a intensidad, firmas, movimiento, masa estimada, confianza y otros datos.",
-          "concept": "Sensores informa medidas y estimaciones, no verdad omnisciente."
+          "what": "Accedes a magnitudes observadas o estimadas.",
+          "why": "Antes de interpretar debes ver qué se ha medido.",
+          "effect": "Obtienes valores con confianza e incertidumbre.",
+          "concept": "Sensores no es omnisciente."
         },
         {
           "label": "Revisar Firma subespacial",
@@ -330,10 +374,10 @@
             "primaryId": "sensor_readout",
             "secondaryId": "subspace_signature"
           },
-          "what": "Abres la lectura de firma subespacial de C-07.",
-          "why": "El contacto presenta una firma subespacial parcial. Revisarla permite saber qué evidencia concreta tienes antes de escalar el análisis.",
-          "effect": "Ves el valor disponible junto con su confianza y procedencia, sin convertir una señal incompleta en una conclusión absoluta.",
-          "concept": "Una firma parcial es evidencia, no identificación definitiva."
+          "what": "Examinas la evidencia subespacial.",
+          "why": "C-07 presenta una firma parcial que merece análisis.",
+          "effect": "Compruebas valor, confianza y procedencia.",
+          "concept": "Una firma parcial es evidencia, no certeza."
         },
         {
           "label": "Enviar a Ciencia",
@@ -342,17 +386,1436 @@
             "target": "science",
             "contactId": "C-07"
           },
-          "what": "Transfieres la observación a Ciencia.",
-          "why": "Explicar la causa o naturaleza profunda de un fenómeno corresponde a Ciencia, no a Sensores.",
-          "effect": "Ciencia recibe datos observados sin que Sensores invente una interpretación causal.",
+          "what": "Transfieres la observación.",
+          "why": "La interpretación causal profunda corresponde a Ciencia.",
+          "effect": "Ciencia recibe los datos originales.",
           "concept": "Sensores mide; Ciencia interpreta."
         }
       ],
-      "lesson_summary": "Has aprendido a abrir una lectura, comprobar una evidencia concreta —la firma subespacial— y transferirla a Ciencia sin confundir observación con interpretación.",
+      "lesson_summary": "Sabes revisar una evidencia concreta y transferirla a la consola competente.",
       "order": {
         "source": "Teniente Cmdr. Hale · Instructor de Sensores",
         "order": "Cadete {name}, revise la lectura sensorial del contacto C-07, compruebe su firma subespacial y remita los datos a Ciencia para análisis.",
-        "note": "La orden te pide primero observar un dato concreto y después transferirlo. Sensores mide; Ciencia interpreta."
+        "note": "Sensores mide; Ciencia interpreta."
+      }
+    },
+    {
+      "id": "TUT-06",
+      "level": 2,
+      "title": "Buscar una lanzadera",
+      "scenario_id": "search_rescue",
+      "guidance": "full",
+      "objective": "Localiza una lanzadera desaparecida en el sector 041 usando sensibilidad alta.",
+      "hint": "Utiliza Búsqueda / localización → Lanzadera. Aumenta sensibilidad antes de iniciar.",
+      "completion_feedback": "Práctica completada. Distingues barrido de búsqueda y sabes localizar una clase de objetivo débil.",
+      "steps": [
+        {
+          "label": "Abrir BÚSQUEDA",
+          "event": "NAV_PRIMARY",
+          "match": {
+            "primaryId": "search_localize"
+          },
+          "what": "Abres herramientas de localización.",
+          "why": "Conoces la clase de objetivo.",
+          "effect": "Puedes optimizar el procesamiento para una lanzadera.",
+          "concept": "Búsqueda = encontrar algo que ya sabes describir."
+        },
+        {
+          "label": "Elegir Lanzadera",
+          "event": "NAV_SECONDARY",
+          "match": {
+            "primaryId": "search_localize",
+            "secondaryId": "shuttle"
+          },
+          "what": "Seleccionas la clase objetivo.",
+          "why": "Las lanzaderas son pequeñas y pueden tener señales débiles.",
+          "effect": "Los candidatos se comparan con esa clase.",
+          "concept": "Buscar una clase no identifica automáticamente."
+        },
+        {
+          "label": "Iniciar con sensibilidad alta",
+          "event": "SEARCH_EXECUTE",
+          "match": {
+            "searchType": "shuttle",
+            "area": "sector_041",
+            "sensitivity": "high"
+          },
+          "what": "Lanzas la búsqueda con sensibilidad elevada.",
+          "why": "La señal esperada puede ser débil.",
+          "effect": "Aumenta detección, pero también ruido potencial.",
+          "concept": "Sensibilidad alta tiene costes."
+        },
+        {
+          "label": "Completar búsqueda",
+          "event": "SEARCH_COMPLETE",
+          "match": {
+            "subtype": "shuttle",
+            "targetValue": "sector_041"
+          },
+          "what": "Esperas candidatos.",
+          "why": "La búsqueda devuelve compatibilidades, no certezas.",
+          "effect": "La consola puede revelar C-31.",
+          "concept": "Candidato no equivale a identificación."
+        },
+        {
+          "label": "Seleccionar C-31",
+          "event": "SELECT_CONTACT",
+          "match": {
+            "contactId": "C-31"
+          },
+          "what": "Abres el candidato encontrado.",
+          "why": "Debes revisar el objeto antes de sacar conclusiones.",
+          "effect": "C-31 pasa a ser contexto operativo.",
+          "concept": "El resultado se convierte en contacto persistente."
+        }
+      ],
+      "lesson_summary": "Distingues barrido de búsqueda y sabes localizar una clase de objetivo débil.",
+      "order": {
+        "source": "Teniente Cmdr. Hale · Instructor de Sensores",
+        "order": "Cadete {name}, tenemos una lanzadera fuera de contacto en el sector 041. Localícela. Emplee sensibilidad alta y comunique cualquier candidato.",
+        "note": "Aquí ya sabes qué buscas: corresponde a Búsqueda, no a un barrido general."
+      }
+    },
+    {
+      "id": "TUT-07",
+      "level": 2,
+      "title": "Rastrear firma warp",
+      "scenario_id": "standard_sector",
+      "guidance": "full",
+      "objective": "Busca actividad warp en el sector 041 y revisa los candidatos.",
+      "hint": "Usa Búsqueda / localización → Firma warp.",
+      "completion_feedback": "Práctica completada. Sabes buscar una firma física y tratar el resultado como evidencia revisable.",
+      "steps": [
+        {
+          "label": "Abrir BÚSQUEDA",
+          "event": "NAV_PRIMARY",
+          "match": {
+            "primaryId": "search_localize"
+          },
+          "what": "Abres localización especializada.",
+          "why": "La orden contiene una firma, no un objeto conocido.",
+          "effect": "Preparas criterios de detección.",
+          "concept": "Las búsquedas pueden centrarse en evidencias."
+        },
+        {
+          "label": "Elegir Firma warp",
+          "event": "NAV_SECONDARY",
+          "match": {
+            "primaryId": "search_localize",
+            "secondaryId": "warp_signature"
+          },
+          "what": "Seleccionas el patrón buscado.",
+          "why": "Una firma puede pertenecer a varios tipos de contacto.",
+          "effect": "El motor compara candidatos compatibles.",
+          "concept": "Firma no implica identidad."
+        },
+        {
+          "label": "Ejecutar búsqueda",
+          "event": "SEARCH_EXECUTE",
+          "match": {
+            "searchType": "warp_signature",
+            "area": "sector_041"
+          },
+          "what": "Inicias la localización.",
+          "why": "Solo el mundo puede responder si existen candidatos.",
+          "effect": "Se consultan firmas observables.",
+          "concept": "La consola no crea objetivos al buscarlos."
+        },
+        {
+          "label": "Completar búsqueda",
+          "event": "SEARCH_COMPLETE",
+          "match": {
+            "subtype": "warp_signature"
+          },
+          "what": "Recibes candidatos.",
+          "why": "Pueden aparecer firmas activas o residuales.",
+          "effect": "Se genera resultado trazable.",
+          "concept": "Ausencia también sería un resultado válido."
+        },
+        {
+          "label": "Abrir RESULTADOS",
+          "event": "NAV_PRIMARY",
+          "match": {
+            "primaryId": "results"
+          },
+          "what": "Consultas el registro de la operación.",
+          "why": "Los resultados deben poder revisarse después.",
+          "effect": "Preservas configuración y procedencia.",
+          "concept": "Una operación debe dejar rastro."
+        }
+      ],
+      "lesson_summary": "Sabes buscar una firma física y tratar el resultado como evidencia revisable.",
+      "order": {
+        "source": "Teniente Cmdr. Hale · Instructor de Sensores",
+        "order": "Cadete {name}, busque firmas warp activas o residuales en el sector 041. Priorice la detección de candidatos y revise el resultado.",
+        "note": "Buscar una firma es distinto de buscar una nave concreta: el criterio es la evidencia física."
+      }
+    },
+    {
+      "id": "TUT-08",
+      "level": 2,
+      "title": "Baliza de baja potencia",
+      "scenario_id": "standard_sector",
+      "guidance": "full",
+      "objective": "Localiza una señal de transpondedor débil y marca el contacto resultante.",
+      "hint": "Busca Señal / transpondedor con sensibilidad alta.",
+      "completion_feedback": "Práctica completada. Sabes localizar una señal artificial débil y conservar el contacto como relevante.",
+      "steps": [
+        {
+          "label": "Abrir BÚSQUEDA",
+          "event": "NAV_PRIMARY",
+          "match": {
+            "primaryId": "search_localize"
+          },
+          "what": "Abres la herramienta adecuada.",
+          "why": "Conoces el tipo de emisión buscada.",
+          "effect": "La búsqueda puede centrarse en transpondedores.",
+          "concept": "La firma guía la búsqueda."
+        },
+        {
+          "label": "Elegir Señal / transpondedor",
+          "event": "NAV_SECONDARY",
+          "match": {
+            "primaryId": "search_localize",
+            "secondaryId": "signal_transponder"
+          },
+          "what": "Seleccionas el criterio principal.",
+          "why": "Una baliza puede emitir muy poco.",
+          "effect": "Ajustas el detector a transmisiones artificiales.",
+          "concept": "Artificial no significa identificado."
+        },
+        {
+          "label": "Buscar con sensibilidad alta",
+          "event": "SEARCH_EXECUTE",
+          "match": {
+            "searchType": "signal_transponder",
+            "sensitivity": "high"
+          },
+          "what": "Ejecutas una búsqueda sensible.",
+          "why": "La emisión es intermitente y débil.",
+          "effect": "Aumenta la oportunidad de resolver C-22.",
+          "concept": "Sensibilidad también eleva falsos positivos."
+        },
+        {
+          "label": "Seleccionar C-22",
+          "event": "SELECT_CONTACT",
+          "match": {
+            "contactId": "C-22"
+          },
+          "what": "Abres el contacto descubierto.",
+          "why": "Necesitas comprobar y gestionar el candidato.",
+          "effect": "La ficha pasa a contexto.",
+          "concept": "Los contactos sobreviven al resultado que los creó."
+        },
+        {
+          "label": "Marcar C-22",
+          "event": "CONTACT_MARK",
+          "match": {
+            "contactId": "C-22",
+            "marked": true
+          },
+          "what": "Señalas el contacto como relevante.",
+          "why": "La orden pide conservarlo para trabajo posterior.",
+          "effect": "Aparece en la vista Marcados.",
+          "concept": "Marcar organiza prioridades humanas."
+        }
+      ],
+      "lesson_summary": "Sabes localizar una señal artificial débil y conservar el contacto como relevante.",
+      "order": {
+        "source": "Teniente Cmdr. Hale · Instructor de Sensores",
+        "order": "Cadete {name}, detectamos una transmisión intermitente en el sector 041. Localice el transpondedor y marque el contacto para seguimiento posterior.",
+        "note": "La orden combina localización por señal y gestión posterior del contacto."
+      }
+    },
+    {
+      "id": "TUT-09",
+      "level": 2,
+      "title": "Comparar dos observaciones",
+      "scenario_id": "standard_sector",
+      "guidance": "full",
+      "objective": "Obtén dos observaciones de C-07 con distinta resolución y compáralas.",
+      "hint": "Realiza un focalizado estándar, luego otro con resolución alta y usa Resultados → Comparar lecturas.",
+      "completion_feedback": "Práctica completada. Sabes crear una línea base y evaluar el efecto de modificar resolución.",
+      "steps": [
+        {
+          "label": "Seleccionar C-07",
+          "event": "SELECT_CONTACT",
+          "match": {
+            "contactId": "C-07"
+          },
+          "what": "Fijas el objeto común a ambas observaciones.",
+          "why": "Una comparación útil necesita contexto comparable.",
+          "effect": "Ambos resultados hablarán del mismo contacto.",
+          "concept": "Comparar exige procedencia compatible."
+        },
+        {
+          "label": "Primer barrido focalizado",
+          "event": "SCAN_COMPLETE",
+          "match": {
+            "subtype": "focused",
+            "contactId": "C-07"
+          },
+          "what": "Obtienes una línea base.",
+          "why": "Necesitas una observación inicial antes de mejorar parámetros.",
+          "effect": "Queda un resultado almacenado.",
+          "concept": "La línea base permite medir cambios."
+        },
+        {
+          "label": "Elegir resolución alta",
+          "event": "SCAN_CONFIG_CHANGE",
+          "match": {
+            "scanType": "focused",
+            "resolution": "high"
+          },
+          "what": "Aumentas detalle para la segunda observación.",
+          "why": "Quieres comprobar qué aporta más resolución.",
+          "effect": "La operación consumirá más capacidad potencial.",
+          "concept": "Más resolución tiene coste."
+        },
+        {
+          "label": "Segundo barrido focalizado",
+          "event": "SCAN_COMPLETE",
+          "match": {
+            "subtype": "focused",
+            "contactId": "C-07"
+          },
+          "what": "Obtienes la observación mejorada.",
+          "why": "Ahora existen dos resultados del mismo objetivo.",
+          "effect": "Puedes evaluar diferencias reales.",
+          "concept": "Repetir con cambios sí puede aportar información."
+        },
+        {
+          "label": "Comparar lecturas",
+          "event": "RESULT_COMPARE",
+          "what": "Cruzas ambos resultados.",
+          "why": "La comparación evita depender de memoria subjetiva.",
+          "effect": "Se genera un resumen de diferencias.",
+          "concept": "Comparar es una operación sobre historial."
+        }
+      ],
+      "lesson_summary": "Sabes crear una línea base y evaluar el efecto de modificar resolución.",
+      "order": {
+        "source": "Teniente Cmdr. Hale · Instructor de Sensores",
+        "order": "Cadete {name}, obtenga dos observaciones del contacto C-07, la segunda a alta resolución, y compare los resultados.",
+        "note": "Comparar observaciones sirve para saber qué información nueva aporta cambiar la configuración."
+      }
+    },
+    {
+      "id": "TUT-10",
+      "level": 2,
+      "title": "Perfil de largo alcance",
+      "scenario_id": "standard_sector",
+      "guidance": "full",
+      "objective": "Carga el perfil Starfleet de largo alcance y úsalo para preparar un barrido.",
+      "hint": "Configuración → Perfiles / preajustes → long_range.",
+      "completion_feedback": "Práctica completada. Sabes usar perfiles como punto de partida sin ceder la decisión operacional.",
+      "steps": [
+        {
+          "label": "Abrir CONFIGURACIÓN",
+          "event": "NAV_PRIMARY",
+          "match": {
+            "primaryId": "configuration"
+          },
+          "what": "Abres parámetros persistentes.",
+          "why": "La orden afecta valores predeterminados.",
+          "effect": "Los cambios preparan operaciones futuras.",
+          "concept": "Configurar no ejecuta."
+        },
+        {
+          "label": "Abrir Perfiles",
+          "event": "NAV_SECONDARY",
+          "match": {
+            "primaryId": "configuration",
+            "secondaryId": "profiles_presets"
+          },
+          "what": "Accedes a preajustes conocidos.",
+          "why": "Starfleet mantiene configuraciones estándar.",
+          "effect": "Puedes cargar un conjunto coherente.",
+          "concept": "Un perfil es configuración, no bonificación oculta."
+        },
+        {
+          "label": "Cargar long_range",
+          "event": "PROFILE_LOAD",
+          "match": {
+            "profileId": "long_range"
+          },
+          "what": "Aplicas el perfil de largo alcance.",
+          "why": "Reduce trabajo repetitivo.",
+          "effect": "Cambian sensibilidad, banda, filtros y prioridad predeterminados.",
+          "concept": "Los perfiles son transparentes."
+        },
+        {
+          "label": "Abrir Barrido largo alcance",
+          "event": "NAV_SECONDARY",
+          "match": {
+            "primaryId": "scans",
+            "secondaryId": "long_range"
+          },
+          "what": "Preparas una operación que usará los valores cargados.",
+          "why": "Quieres comprobar el efecto del perfil en una tarea real.",
+          "effect": "El formulario parte de nuevos defaults.",
+          "concept": "El operador puede modificar cualquier valor antes de ejecutar."
+        },
+        {
+          "label": "Ejecutar barrido",
+          "event": "SCAN_EXECUTE",
+          "match": {
+            "scanType": "long_range",
+            "targetValue": "sector_041",
+            "priority": "subspace"
+          },
+          "what": "Confirmas y ejecutas.",
+          "why": "El perfil solo prepara; tú autorizas la operación.",
+          "effect": "Se crea una operación normal con configuración explícita.",
+          "concept": "Automatizar preparación no automatiza decisión."
+        }
+      ],
+      "lesson_summary": "Sabes usar perfiles como punto de partida sin ceder la decisión operacional.",
+      "order": {
+        "source": "Teniente Cmdr. Hale · Instructor de Sensores",
+        "order": "Cadete {name}, cargue el perfil estándar de largo alcance y prepare con él un barrido del sector 041.",
+        "note": "Los perfiles ahorran configuración repetitiva, pero no ejecutan nada por sí mismos."
+      }
+    },
+    {
+      "id": "TUT-11",
+      "level": 3,
+      "title": "Gestionar seguimiento múltiple",
+      "scenario_id": "tracking_load",
+      "guidance": "guided",
+      "objective": "Reorganiza el seguimiento de tráfico: libera C-44, incorpora C-43 y dale prioridad.",
+      "hint": "Usa Seguimiento → Seguimiento múltiple.",
+      "completion_feedback": "Práctica completada. Sabes administrar capacidad de tracking y justificar prioridades.",
+      "steps": [
+        {
+          "label": "Abrir Seguimiento múltiple",
+          "event": "NAV_SECONDARY",
+          "match": {
+            "primaryId": "tracking",
+            "secondaryId": "multi_track"
+          },
+          "what": "Abres gestión de capacidad.",
+          "why": "Varios contactos compiten por recursos.",
+          "effect": "Ves coste y ocupación.",
+          "concept": "Tracking es un recurso limitado."
+        },
+        {
+          "label": "Liberar C-44",
+          "event": "TRACK_STOP",
+          "match": {
+            "contactId": "C-44"
+          },
+          "what": "Dejas de gastar una ranura en un objetivo menos importante.",
+          "why": "La orden cambia prioridades.",
+          "effect": "Recuperas capacidad.",
+          "concept": "Liberar recursos también es operar."
+        },
+        {
+          "label": "Seguir C-43",
+          "event": "TRACK_START",
+          "match": {
+            "contactId": "C-43"
+          },
+          "what": "Incorporas el nuevo objetivo.",
+          "why": "Necesitas observación continua de C-43.",
+          "effect": "Consume capacidad disponible.",
+          "concept": "Cada seguimiento tiene coste."
+        },
+        {
+          "label": "Priorizar C-43",
+          "event": "TRACK_PRIORITY",
+          "match": {
+            "contactId": "C-43",
+            "priority": "priority"
+          },
+          "what": "Aumentas prioridad de actualización.",
+          "why": "La orden considera C-43 más relevante.",
+          "effect": "Consume más capacidad pero mejora atención.",
+          "concept": "Prioridad es un intercambio de recursos."
+        },
+        {
+          "label": "Revisar capacidad",
+          "event": "NAV_SECONDARY",
+          "match": {
+            "primaryId": "tracking",
+            "secondaryId": "tracked_contacts"
+          },
+          "what": "Compruebas el estado final.",
+          "why": "Toda redistribución debe verificarse.",
+          "effect": "Ves ocupación y asignaciones.",
+          "concept": "Operar incluye comprobar el resultado."
+        }
+      ],
+      "lesson_summary": "Sabes administrar capacidad de tracking y justificar prioridades.",
+      "order": {
+        "source": "Teniente Cmdr. Hale · Instructor de Sensores",
+        "order": "Cadete {name}, libere el seguimiento de C-44. Incorpore C-43 y asígnele seguimiento prioritario.",
+        "note": "La capacidad de tracking es finita: priorizar significa decidir qué merece recursos."
+      }
+    },
+    {
+      "id": "TUT-12",
+      "level": 3,
+      "title": "Seguir una firma concreta",
+      "scenario_id": "tracking_load",
+      "guidance": "guided",
+      "objective": "Mantén seguimiento prioritario de la firma warp de C-43.",
+      "hint": "Usa Seguimiento → Seguir firma concreta.",
+      "completion_feedback": "Práctica completada. Sabes fijar seguimiento sobre una firma concreta y entender su mayor coste.",
+      "steps": [
+        {
+          "label": "Abrir Seguir firma concreta",
+          "event": "NAV_SECONDARY",
+          "match": {
+            "primaryId": "tracking",
+            "secondaryId": "track_signature"
+          },
+          "what": "Abres un tracking especializado.",
+          "why": "No te interesa solo la posición del objeto, sino una firma específica.",
+          "effect": "Configuras un vínculo sensorial más exigente.",
+          "concept": "Una firma puede ser un ancla de seguimiento."
+        },
+        {
+          "label": "Iniciar firma warp",
+          "event": "TRACK_SIGNATURE",
+          "match": {
+            "contactId": "C-43",
+            "signature": "warp"
+          },
+          "what": "Asignas recursos a esa firma.",
+          "why": "La orden prioriza continuidad del patrón warp.",
+          "effect": "El coste de tracking aumenta.",
+          "concept": "Seguimiento especializado cuesta más."
+        },
+        {
+          "label": "Abrir Contactos seguidos",
+          "event": "NAV_SECONDARY",
+          "match": {
+            "primaryId": "tracking",
+            "secondaryId": "tracked_contacts"
+          },
+          "what": "Compruebas la asignación.",
+          "why": "Debes verificar que la orden se mantiene.",
+          "effect": "La lista muestra modo y prioridad.",
+          "concept": "La conciencia de situación se confirma."
+        },
+        {
+          "label": "Cambiar a otra función",
+          "event": "NAV_PRIMARY",
+          "what": "Te apartas del menú de tracking.",
+          "why": "La operación debe persistir.",
+          "effect": "El estado sigue visible a la derecha.",
+          "concept": "Persistencia no depende de la pantalla.",
+          "matchNot": {
+            "primaryId": "tracking"
+          }
+        },
+        {
+          "label": "Volver a Seguimiento",
+          "event": "NAV_PRIMARY",
+          "match": {
+            "primaryId": "tracking"
+          },
+          "what": "Regresas al área de seguimiento.",
+          "why": "Compruebas que la asignación no desapareció.",
+          "effect": "La consola conserva el proceso.",
+          "concept": "Estado operativo > navegación."
+        }
+      ],
+      "lesson_summary": "Sabes fijar seguimiento sobre una firma concreta y entender su mayor coste.",
+      "order": {
+        "source": "Teniente Cmdr. Hale · Instructor de Sensores",
+        "order": "Cadete {name}, siga específicamente la firma warp del contacto C-43 con prioridad alta.",
+        "note": "Seguir una firma concreta consume más recursos, pero ayuda cuando el objeto puede cambiar o enmascarar otras señales."
+      }
+    },
+    {
+      "id": "TUT-13",
+      "level": 3,
+      "title": "Predicción de trayectoria",
+      "scenario_id": "tracking_load",
+      "guidance": "guided",
+      "objective": "Pon C-43 bajo seguimiento y calcula una trayectoria a 15 minutos.",
+      "hint": "Primero asegúrate de que C-43 está seguido; después Predicción de trayectoria.",
+      "completion_feedback": "Práctica completada. Sabes distinguir observación continua de una predicción y tratar la incertidumbre temporal.",
+      "steps": [
+        {
+          "label": "Seleccionar C-43",
+          "event": "SELECT_CONTACT",
+          "match": {
+            "contactId": "C-43"
+          },
+          "what": "Fijas el contacto.",
+          "why": "Toda estimación necesita una identidad.",
+          "effect": "Preparas el objetivo.",
+          "concept": "La predicción parte del historial del contacto."
+        },
+        {
+          "label": "Iniciar seguimiento",
+          "event": "TRACK_START",
+          "match": {
+            "contactId": "C-43"
+          },
+          "what": "Acumulas observaciones de movimiento.",
+          "why": "Sin tracking la estimación sería menos fundamentada.",
+          "effect": "Se mantiene actualización continuada.",
+          "concept": "Más observaciones mejoran movimiento, no naturaleza."
+        },
+        {
+          "label": "Abrir Predicción",
+          "event": "NAV_SECONDARY",
+          "match": {
+            "primaryId": "tracking",
+            "secondaryId": "predict_trajectory"
+          },
+          "what": "Entras en la herramienta de proyección.",
+          "why": "La orden pide futuro, no solo posición actual.",
+          "effect": "Puedes escoger horizonte.",
+          "concept": "Predecir no es medir."
+        },
+        {
+          "label": "Calcular a 15 min",
+          "event": "TRACK_OPERATION",
+          "match": {
+            "contactId": "C-43",
+            "operation": "trajectory"
+          },
+          "what": "Calculas una proyección.",
+          "why": "El error crece con el tiempo.",
+          "effect": "Obtienes vector futuro con confianza reducida.",
+          "concept": "Predicción nunca es certeza."
+        },
+        {
+          "label": "Consultar estado persistente",
+          "event": "NAV_PRIMARY",
+          "what": "Sigues trabajando sin perder el tracking.",
+          "why": "La predicción no cancela el proceso de observación.",
+          "effect": "C-43 continúa seguido.",
+          "concept": "Procesos y resultados coexisten.",
+          "matchNot": {
+            "primaryId": "tracking"
+          }
+        }
+      ],
+      "lesson_summary": "Sabes distinguir observación continua de una predicción y tratar la incertidumbre temporal.",
+      "order": {
+        "source": "Teniente Cmdr. Hale · Instructor de Sensores",
+        "order": "Cadete {name}, establezca seguimiento sobre C-43 y proyecte su trayectoria a quince minutos.",
+        "note": "Una predicción depende de observaciones previas y su confianza cae con el horizonte temporal."
+      }
+    },
+    {
+      "id": "TUT-14",
+      "level": 3,
+      "title": "Recuperar un contacto perdido",
+      "scenario_id": "standard_sector",
+      "guidance": "guided",
+      "objective": "Recupera C-19 usando su historial y mantén el contacto bajo seguimiento.",
+      "hint": "Seguimiento → Recuperar contacto perdido.",
+      "completion_feedback": "Práctica completada. Sabes recuperar un contacto sin perder su identidad histórica.",
+      "steps": [
+        {
+          "label": "Abrir Recuperar contacto",
+          "event": "NAV_SECONDARY",
+          "match": {
+            "primaryId": "tracking",
+            "secondaryId": "reacquire_lost_contact"
+          },
+          "what": "Abres la herramienta de reacquisición.",
+          "why": "C-19 ya tiene historial.",
+          "effect": "La búsqueda puede usar última posición y firma.",
+          "concept": "Perdido no significa olvidado."
+        },
+        {
+          "label": "Iniciar recuperación",
+          "event": "REACQUIRE",
+          "match": {
+            "contactId": "C-19"
+          },
+          "what": "Intentas reencontrar el mismo objeto.",
+          "why": "La identidad persistente permite correlacionar la nueva señal.",
+          "effect": "C-19 vuelve a estado observable.",
+          "concept": "Reacquirir reutiliza contact_id si la evidencia encaja."
+        },
+        {
+          "label": "Abrir CONTACTOS",
+          "event": "NAV_PRIMARY",
+          "match": {
+            "primaryId": "contacts"
+          },
+          "what": "Revisas la ficha recuperada.",
+          "why": "Debes comprobar qué cambió.",
+          "effect": "La identidad C-19 se conserva.",
+          "concept": "La memoria de la nave es persistente."
+        },
+        {
+          "label": "Seleccionar C-19",
+          "event": "SELECT_CONTACT",
+          "match": {
+            "contactId": "C-19"
+          },
+          "what": "Trabajas sobre el contacto recuperado.",
+          "why": "Confirma que no se creó un contacto distinto.",
+          "effect": "La ficha muestra nueva confianza.",
+          "concept": "Identidad y confianza son conceptos distintos."
+        },
+        {
+          "label": "Cambiar de menú",
+          "event": "NAV_PRIMARY",
+          "what": "Compruebas que el seguimiento continúa.",
+          "why": "La recuperación debe desembocar en tracking estable.",
+          "effect": "C-19 permanece en panel persistente.",
+          "concept": "Reacquisición y seguimiento se encadenan.",
+          "matchNot": {
+            "primaryId": "contacts"
+          }
+        }
+      ],
+      "lesson_summary": "Sabes recuperar un contacto sin perder su identidad histórica.",
+      "order": {
+        "source": "Teniente Cmdr. Hale · Instructor de Sensores",
+        "order": "Cadete {name}, recupere el contacto C-19 utilizando su última posición y firma conocida. Mantenga seguimiento tras la recuperación.",
+        "note": "Un contacto perdido conserva identidad e historial; no vuelves a empezar desde cero."
+      }
+    },
+    {
+      "id": "TUT-15",
+      "level": 3,
+      "title": "Historial, guardado y repetición",
+      "scenario_id": "standard_sector",
+      "guidance": "guided",
+      "objective": "Guarda un resultado, repite la operación y compara la nueva lectura con la anterior.",
+      "hint": "Necesitas al menos un barrido completado; luego usa Resultados.",
+      "completion_feedback": "Práctica completada. Sabes conservar, repetir y comparar observaciones sin confundir configuración con resultado.",
+      "steps": [
+        {
+          "label": "Completar un barrido",
+          "event": "SCAN_COMPLETE",
+          "match": {
+            "subtype": "focused",
+            "contactId": "C-07"
+          },
+          "what": "Generas un resultado inicial.",
+          "why": "Necesitas una referencia histórica.",
+          "effect": "La operación queda registrada.",
+          "concept": "Los resultados son datos persistentes."
+        },
+        {
+          "label": "Guardar lectura",
+          "event": "RESULT_SAVE",
+          "what": "Conservas explícitamente la lectura.",
+          "why": "Algunas observaciones merecen referencia futura.",
+          "effect": "Se crea una entrada guardada.",
+          "concept": "Guardar separa evidencia relevante del historial general."
+        },
+        {
+          "label": "Abrir Repetir operación",
+          "event": "NAV_SECONDARY",
+          "match": {
+            "primaryId": "results",
+            "secondaryId": "repeat_operation"
+          },
+          "what": "Preparas una nueva ejecución basada en una anterior.",
+          "why": "La configuración puede reutilizarse.",
+          "effect": "No se copia el resultado, solo parámetros.",
+          "concept": "Repetir configuración ≠ repetir realidad."
+        },
+        {
+          "label": "Repetir",
+          "event": "RESULT_REPEAT",
+          "what": "Lanzas otra observación.",
+          "why": "El mundo puede haber cambiado.",
+          "effect": "Se crea una operación nueva.",
+          "concept": "Cada observación tiene su propio momento."
+        },
+        {
+          "label": "Comparar",
+          "event": "RESULT_COMPARE",
+          "what": "Cruzas lecturas.",
+          "why": "Quieres medir qué cambió.",
+          "effect": "Se genera comparación trazable.",
+          "concept": "Historial permite detectar evolución."
+        }
+      ],
+      "lesson_summary": "Sabes conservar, repetir y comparar observaciones sin confundir configuración con resultado.",
+      "order": {
+        "source": "Teniente Cmdr. Hale · Instructor de Sensores",
+        "order": "Cadete {name}, conserve una lectura de C-07, repita la operación y compare ambos resultados.",
+        "note": "Repetir una operación consulta el estado actual: no reproduce un resultado almacenado."
+      }
+    },
+    {
+      "id": "TUT-16",
+      "level": 4,
+      "title": "Compensación automática",
+      "scenario_id": "interference_field",
+      "guidance": "reduced",
+      "objective": "Reduce una interferencia subespacial fuerte mediante compensación automática y vuelve a observar C-51.",
+      "hint": "Revisa Interferencias y aplica una compensación antes de escanear.",
+      "completion_feedback": "Práctica completada. Sabes aplicar compensación automática y verificar su efecto en una observación real.",
+      "steps": [
+        {
+          "label": "Abrir Interferencias",
+          "event": "NAV_PRIMARY",
+          "match": {
+            "primaryId": "interference"
+          },
+          "what": "Evalúas el problema antes de actuar.",
+          "why": "No todo contacto débil necesita potencia.",
+          "effect": "Accedes a severidad y causa observable.",
+          "concept": "Diagnosticar antes de compensar."
+        },
+        {
+          "label": "Aplicar automática",
+          "event": "INTERFERENCE_ACTION",
+          "match": {
+            "action": "automatic"
+          },
+          "what": "Dejas que el sistema aplique un ajuste seguro.",
+          "why": "Es una respuesta rápida, no necesariamente óptima.",
+          "effect": "Baja la penalización efectiva.",
+          "concept": "Automático prioriza seguridad y rapidez."
+        },
+        {
+          "label": "Seleccionar C-51",
+          "event": "SELECT_CONTACT",
+          "match": {
+            "contactId": "C-51"
+          },
+          "what": "Fijas el contacto afectado.",
+          "why": "Quieres comprobar el efecto sobre el mismo objetivo.",
+          "effect": "Mantienes comparabilidad.",
+          "concept": "Mismo objetivo, condiciones distintas."
+        },
+        {
+          "label": "Completar focalizado",
+          "event": "SCAN_COMPLETE",
+          "match": {
+            "subtype": "focused",
+            "contactId": "C-51"
+          },
+          "what": "Repites observación tras compensar.",
+          "why": "Necesitas verificar si mejoró la lectura.",
+          "effect": "Obtienes nueva confianza.",
+          "concept": "Una compensación se valida midiendo."
+        },
+        {
+          "label": "Abrir Resultados",
+          "event": "NAV_PRIMARY",
+          "match": {
+            "primaryId": "results"
+          },
+          "what": "Revisas evidencia.",
+          "why": "No basta con asumir que el ajuste funcionó.",
+          "effect": "Puedes comparar con observaciones previas.",
+          "concept": "Toda intervención debe comprobarse."
+        }
+      ],
+      "lesson_summary": "Sabes aplicar compensación automática y verificar su efecto en una observación real.",
+      "order": {
+        "source": "Teniente Cmdr. Hale · Instructor de Sensores",
+        "order": "Cadete {name}, la interferencia está degradando la lectura de C-51. Aplique compensación automática y obtenga una nueva observación.",
+        "note": "La compensación reduce el efecto del ruido; no elimina su causa física."
+      }
+    },
+    {
+      "id": "TUT-17",
+      "level": 4,
+      "title": "Compensación manual",
+      "scenario_id": "interference_field",
+      "guidance": "reduced",
+      "objective": "Ajusta manualmente la interferencia y cambia de banda antes de prolongar integración.",
+      "hint": "Usa Ajuste manual, luego Cambio de banda o Integración según la situación.",
+      "completion_feedback": "Práctica completada. Sabes combinar estrategias manuales y entender sus intercambios.",
+      "steps": [
+        {
+          "label": "Abrir Ajuste manual",
+          "event": "NAV_SECONDARY",
+          "match": {
+            "primaryId": "interference",
+            "secondaryId": "manual_adjustment"
+          },
+          "what": "Tomas control fino de la compensación.",
+          "why": "La respuesta automática puede no ser óptima.",
+          "effect": "Puedes combinar varios parámetros.",
+          "concept": "Manual puede rendir más, pero permite error."
+        },
+        {
+          "label": "Aplicar manual",
+          "event": "INTERFERENCE_ACTION",
+          "match": {
+            "action": "manual"
+          },
+          "what": "Aplicas una estrategia elegida por ti.",
+          "why": "La orden exige intervención del operador.",
+          "effect": "La penalización se reduce más.",
+          "concept": "Mayor control implica responsabilidad."
+        },
+        {
+          "label": "Cambiar banda",
+          "event": "INTERFERENCE_ACTION",
+          "match": {
+            "action": "band"
+          },
+          "what": "Desplazas observación a otra banda.",
+          "why": "El ruido no afecta igual a todo el espectro.",
+          "effect": "Evitas parte de la interferencia.",
+          "concept": "Cambiar banda puede perder otras firmas."
+        },
+        {
+          "label": "Prolongar integración",
+          "event": "INTERFERENCE_ACTION",
+          "match": {
+            "action": "extend_integration"
+          },
+          "what": "Acumulas señal durante más tiempo.",
+          "why": "Una señal débil puede emerger del ruido.",
+          "effect": "Mejora señal/ruido a costa de tiempo.",
+          "concept": "Tiempo es un recurso sensorial."
+        },
+        {
+          "label": "Revisar estado",
+          "event": "NAV_SECONDARY",
+          "match": {
+            "primaryId": "interference",
+            "secondaryId": "interference_status"
+          },
+          "what": "Compruebas el nuevo estado.",
+          "why": "Los ajustes deben verificarse.",
+          "effect": "Ves la penalización efectiva actual.",
+          "concept": "Compensar no significa eliminar la fuente."
+        }
+      ],
+      "lesson_summary": "Sabes combinar estrategias manuales y entender sus intercambios.",
+      "order": {
+        "source": "Teniente Cmdr. Hale · Instructor de Sensores",
+        "order": "Cadete {name}, la compensación automática no es suficiente. Ajuste manualmente Sensores, cambie a una banda menos afectada y prolongue la integración.",
+        "note": "Aquí debes aceptar intercambios: tiempo, resolución, cobertura y potencia."
+      }
+    },
+    {
+      "id": "TUT-18",
+      "level": 4,
+      "title": "Capacidad de tracking",
+      "scenario_id": "tracking_load",
+      "guidance": "reduced",
+      "objective": "Reorganiza el tracking para mantener C-43 prioritario sin sobrecargar la capacidad.",
+      "hint": "Libera un seguimiento menos importante antes de priorizar C-43.",
+      "completion_feedback": "Práctica completada. Sabes redistribuir tracking bajo capacidad limitada.",
+      "steps": [
+        {
+          "label": "Abrir Seguimiento múltiple",
+          "event": "NAV_SECONDARY",
+          "match": {
+            "primaryId": "tracking",
+            "secondaryId": "multi_track"
+          },
+          "what": "Ves ocupación global.",
+          "why": "Antes de asignar más recursos necesitas saber qué está consumido.",
+          "effect": "La consola muestra coste por contacto.",
+          "concept": "La capacidad no es infinita."
+        },
+        {
+          "label": "Liberar C-44",
+          "event": "TRACK_STOP",
+          "match": {
+            "contactId": "C-44"
+          },
+          "what": "Recuperas una ranura.",
+          "why": "C-44 es menos prioritario en este ejercicio.",
+          "effect": "Aumenta capacidad disponible.",
+          "concept": "Priorizar exige renunciar."
+        },
+        {
+          "label": "Seguir C-43",
+          "event": "TRACK_START",
+          "match": {
+            "contactId": "C-43"
+          },
+          "what": "Asignas tracking al objetivo relevante.",
+          "why": "Necesitas datos continuos.",
+          "effect": "Consume una ranura.",
+          "concept": "Cada contacto tiene coste."
+        },
+        {
+          "label": "Priorizar C-43",
+          "event": "TRACK_PRIORITY",
+          "match": {
+            "contactId": "C-43",
+            "priority": "priority"
+          },
+          "what": "Le das mayor atención.",
+          "why": "La orden lo exige explícitamente.",
+          "effect": "Sube el coste del contacto.",
+          "concept": "Prioridad cambia recursos reales."
+        },
+        {
+          "label": "Revisar Contactos seguidos",
+          "event": "NAV_SECONDARY",
+          "match": {
+            "primaryId": "tracking",
+            "secondaryId": "tracked_contacts"
+          },
+          "what": "Verificas la distribución final.",
+          "why": "No debes exceder capacidad.",
+          "effect": "La lista refleja la asignación.",
+          "concept": "Gestionar recursos incluye auditoría."
+        }
+      ],
+      "lesson_summary": "Sabes redistribuir tracking bajo capacidad limitada.",
+      "order": {
+        "source": "Teniente Cmdr. Hale · Instructor de Sensores",
+        "order": "Cadete {name}, necesitamos seguimiento prioritario de C-43. Reorganice las asignaciones sin exceder la capacidad de Sensores.",
+        "note": "No todo puede tener prioridad. La gestión de capacidad es una decisión operacional."
+      }
+    },
+    {
+      "id": "TUT-19",
+      "level": 4,
+      "title": "Matriz degradada",
+      "scenario_id": "degraded_array",
+      "guidance": "reduced",
+      "objective": "Diagnostica la matriz primaria, calibra si procede y conmuta a la auxiliar para recuperar rendimiento.",
+      "hint": "Empieza por Diagnóstico; no asumas que toda degradación se arregla con calibración.",
+      "completion_feedback": "Práctica completada. Sabes diferenciar calibración de daño y usar redundancia de matrices.",
+      "steps": [
+        {
+          "label": "Ejecutar diagnóstico PRIMARY",
+          "event": "DIAGNOSTIC_RUN",
+          "match": {
+            "scope": "PRIMARY"
+          },
+          "what": "Compruebas la matriz afectada.",
+          "why": "Necesitas distinguir daño de mala calibración.",
+          "effect": "Obtienes códigos y severidad.",
+          "concept": "Diagnóstico antes de intervención."
+        },
+        {
+          "label": "Calibrar PRIMARY",
+          "event": "CALIBRATION",
+          "match": {
+            "arrayId": "PRIMARY"
+          },
+          "what": "Corriges desviación de calibración.",
+          "why": "Parte del problema puede ser ajustable por Sensores.",
+          "effect": "Mejora calibración, no integridad.",
+          "concept": "Calibrar no repara hardware."
+        },
+        {
+          "label": "Abrir Configuración de matriz",
+          "event": "NAV_SECONDARY",
+          "match": {
+            "primaryId": "configuration",
+            "secondaryId": "sensor_array"
+          },
+          "what": "Preparas una conmutación.",
+          "why": "La primaria sigue físicamente degradada.",
+          "effect": "Puedes escoger una matriz disponible.",
+          "concept": "Redundancia permite continuidad."
+        },
+        {
+          "label": "Seleccionar AUX",
+          "event": "CONFIG_APPLY",
+          "match": {
+            "setting": "sensor_array",
+            "value": "AUX"
+          },
+          "what": "Conmutas a la matriz sana.",
+          "why": "Quieres recuperar rendimiento sin esperar reparación.",
+          "effect": "Cambia la fuente sensora activa.",
+          "concept": "Elegir hardware disponible es función de Sensores."
+        },
+        {
+          "label": "Revisar Rendimiento",
+          "event": "NAV_SECONDARY",
+          "match": {
+            "primaryId": "diagnostics",
+            "secondaryId": "performance"
+          },
+          "what": "Compruebas el efecto final.",
+          "why": "Toda conmutación debe verificarse.",
+          "effect": "Ves nueva integridad, calibración y penalización.",
+          "concept": "Verificar cierra el procedimiento."
+        }
+      ],
+      "lesson_summary": "Sabes diferenciar calibración de daño y usar redundancia de matrices.",
+      "order": {
+        "source": "Teniente Cmdr. Hale · Instructor de Sensores",
+        "order": "Cadete {name}, el rendimiento de Sensores ha caído. Diagnostique la matriz primaria, intente calibrarla y, si persiste la degradación, conmuten a una matriz disponible.",
+        "note": "Calibración corrige desviación; no repara daño físico."
+      }
+    },
+    {
+      "id": "TUT-20",
+      "level": 4,
+      "title": "Escalar avería a Ingeniería",
+      "scenario_id": "degraded_array",
+      "guidance": "reduced",
+      "objective": "Documenta la avería de la matriz primaria y solicita soporte de Ingeniería.",
+      "hint": "Ejecuta diagnóstico y utiliza Solicitar soporte de Ingeniería.",
+      "completion_feedback": "Práctica completada. Sabes escalar una avería sin confundir diagnóstico con reparación.",
+      "steps": [
+        {
+          "label": "Diagnosticar PRIMARY",
+          "event": "DIAGNOSTIC_RUN",
+          "match": {
+            "scope": "PRIMARY"
+          },
+          "what": "Generas evidencia técnica.",
+          "why": "Ingeniería necesita datos, no una impresión subjetiva.",
+          "effect": "Obtienes código y efecto.",
+          "concept": "Una incidencia debe ser reproducible."
+        },
+        {
+          "label": "Abrir Errores / degradación",
+          "event": "NAV_SECONDARY",
+          "match": {
+            "primaryId": "diagnostics",
+            "secondaryId": "errors_degradation"
+          },
+          "what": "Revisas el informe.",
+          "why": "Debes conocer qué estás escalando.",
+          "effect": "Ves códigos y severidad.",
+          "concept": "El diagnóstico viaja con la solicitud."
+        },
+        {
+          "label": "Abrir Soporte Ingeniería",
+          "event": "NAV_SECONDARY",
+          "match": {
+            "primaryId": "diagnostics",
+            "secondaryId": "request_engineering_support"
+          },
+          "what": "Preparas el handoff técnico.",
+          "why": "La reparación está fuera del ámbito de Sensores.",
+          "effect": "Defines componente, código y prioridad.",
+          "concept": "Separación de responsabilidades."
+        },
+        {
+          "label": "Enviar solicitud",
+          "event": "ENGINEERING_REQUEST",
+          "match": {
+            "component": "PRIMARY"
+          },
+          "what": "Remites la incidencia.",
+          "why": "Ingeniería puede planificar intervención.",
+          "effect": "Queda una solicitud persistente.",
+          "concept": "Reportar no equivale a reparar."
+        },
+        {
+          "label": "Revisar Estado de sensores",
+          "event": "NAV_PRIMARY",
+          "match": {
+            "primaryId": "status"
+          },
+          "what": "Continúas operando con la avería conocida.",
+          "why": "La solicitud no detiene automáticamente la consola.",
+          "effect": "El estado sigue reflejando degradación.",
+          "concept": "Los procesos interconsola son asíncronos."
+        }
+      ],
+      "lesson_summary": "Sabes escalar una avería sin confundir diagnóstico con reparación.",
+      "order": {
+        "source": "Teniente Cmdr. Hale · Instructor de Sensores",
+        "order": "Cadete {name}, documente la degradación de la matriz primaria y remita una solicitud operativa a Ingeniería con el diagnóstico adjunto.",
+        "note": "Sensores diagnostica y reporta; Ingeniería repara físicamente."
+      }
+    },
+    {
+      "id": "TUT-21",
+      "level": 5,
+      "title": "Evaluación · Búsqueda y rescate",
+      "scenario_id": "search_rescue",
+      "guidance": "evaluation",
+      "objective": "Localiza la lanzadera desaparecida, establece seguimiento y comunica el contacto a Mando.",
+      "hint": "No hay ruta guiada. Interpreta la orden y opera.",
+      "completion_feedback": "Práctica completada. Has resuelto un flujo completo de búsqueda y rescate sin instrucciones de botones.",
+      "steps": [
+        {
+          "label": "Localizar lanzadera",
+          "event": "SEARCH_COMPLETE",
+          "match": {
+            "subtype": "shuttle"
+          },
+          "what": "",
+          "why": "",
+          "effect": "",
+          "concept": ""
+        },
+        {
+          "label": "Seleccionar el candidato",
+          "event": "SELECT_CONTACT",
+          "match": {
+            "contactId": "C-31"
+          },
+          "what": "",
+          "why": "",
+          "effect": "",
+          "concept": ""
+        },
+        {
+          "label": "Establecer seguimiento",
+          "event": "TRACK_START",
+          "match": {
+            "contactId": "C-31"
+          },
+          "what": "",
+          "why": "",
+          "effect": "",
+          "concept": ""
+        },
+        {
+          "label": "Enviar a Mando",
+          "event": "HANDOFF",
+          "match": {
+            "target": "command",
+            "contactId": "C-31"
+          },
+          "what": "",
+          "why": "",
+          "effect": "",
+          "concept": ""
+        }
+      ],
+      "lesson_summary": "Has resuelto un flujo completo de búsqueda y rescate sin instrucciones de botones.",
+      "order": {
+        "source": "Teniente Cmdr. Hale · Instructor de Sensores",
+        "order": "Cadete {name}, una lanzadera ha desaparecido en el sector 041. Localícela, mantenga contacto sensorial y comunique la posición a Mando.",
+        "note": "Evaluación integrada: decide tú la secuencia y los parámetros adecuados."
+      }
+    },
+    {
+      "id": "TUT-22",
+      "level": 5,
+      "title": "Evaluación · Contacto débil",
+      "scenario_id": "standard_sector",
+      "guidance": "evaluation",
+      "objective": "Mejora la información disponible de C-07 y remite una lectura útil a Ciencia.",
+      "hint": "No hay ruta guiada. Decide si necesitas resolución, potencia o ambas.",
+      "completion_feedback": "Práctica completada. Has decidido cómo mejorar una observación y has respetado la frontera Sensores/Ciencia.",
+      "steps": [
+        {
+          "label": "Obtener nueva observación",
+          "event": "SCAN_COMPLETE",
+          "match": {
+            "subtype": "focused",
+            "contactId": "C-07"
+          },
+          "what": "",
+          "why": "",
+          "effect": "",
+          "concept": ""
+        },
+        {
+          "label": "Revisar firma subespacial",
+          "event": "NAV_SECONDARY",
+          "match": {
+            "primaryId": "sensor_readout",
+            "secondaryId": "subspace_signature"
+          },
+          "what": "",
+          "why": "",
+          "effect": "",
+          "concept": ""
+        },
+        {
+          "label": "Enviar a Ciencia",
+          "event": "HANDOFF",
+          "match": {
+            "target": "science",
+            "contactId": "C-07"
+          },
+          "what": "",
+          "why": "",
+          "effect": "",
+          "concept": ""
+        }
+      ],
+      "lesson_summary": "Has decidido cómo mejorar una observación y has respetado la frontera Sensores/Ciencia.",
+      "order": {
+        "source": "Teniente Cmdr. Hale · Instructor de Sensores",
+        "order": "Cadete {name}, necesitamos una lectura fiable del contacto C-07. Mejore la observación y remita los datos relevantes a Ciencia.",
+        "note": "No se te prescribe cómo obtenerla: debes valorar recursos y calidad."
+      }
+    },
+    {
+      "id": "TUT-23",
+      "level": 5,
+      "title": "Evaluación · Contacto perdido",
+      "scenario_id": "standard_sector",
+      "guidance": "evaluation",
+      "objective": "Recupera C-19, mantén tracking y calcula una predicción de trayectoria.",
+      "hint": "No hay ruta guiada.",
+      "completion_feedback": "Práctica completada. Has recuperado identidad persistente y convertido observaciones en una proyección útil.",
+      "steps": [
+        {
+          "label": "Recuperar C-19",
+          "event": "REACQUIRE",
+          "match": {
+            "contactId": "C-19"
+          },
+          "what": "",
+          "why": "",
+          "effect": "",
+          "concept": ""
+        },
+        {
+          "label": "Calcular trayectoria",
+          "event": "TRACK_OPERATION",
+          "match": {
+            "contactId": "C-19",
+            "operation": "trajectory"
+          },
+          "what": "",
+          "why": "",
+          "effect": "",
+          "concept": ""
+        },
+        {
+          "label": "Mantener tracking",
+          "event": "NAV_PRIMARY",
+          "what": "",
+          "why": "",
+          "effect": "",
+          "concept": "",
+          "requiresState": {
+            "contactTracked": "C-19"
+          }
+        }
+      ],
+      "lesson_summary": "Has recuperado identidad persistente y convertido observaciones en una proyección útil.",
+      "order": {
+        "source": "Teniente Cmdr. Hale · Instructor de Sensores",
+        "order": "Cadete {name}, hemos perdido C-19. Recupérelo, manténgalo bajo seguimiento y proporcione una predicción de trayectoria.",
+        "note": "Debes explotar memoria de contacto, reacquisición y seguimiento persistente."
+      }
+    },
+    {
+      "id": "TUT-24",
+      "level": 5,
+      "title": "Evaluación · Fallo de sensores",
+      "scenario_id": "degraded_array",
+      "guidance": "evaluation",
+      "objective": "Restaura la capacidad operacional ante una matriz primaria degradada y escala lo que no puedas reparar.",
+      "hint": "No hay ruta guiada.",
+      "completion_feedback": "Práctica completada. Has recuperado servicio con redundancia y escalado correctamente el daño físico.",
+      "steps": [
+        {
+          "label": "Diagnosticar",
+          "event": "DIAGNOSTIC_RUN",
+          "what": "",
+          "why": "",
+          "effect": "",
+          "concept": ""
+        },
+        {
+          "label": "Conmutar a AUX",
+          "event": "CONFIG_APPLY",
+          "match": {
+            "setting": "sensor_array",
+            "value": "AUX"
+          },
+          "what": "",
+          "why": "",
+          "effect": "",
+          "concept": ""
+        },
+        {
+          "label": "Solicitar Ingeniería",
+          "event": "ENGINEERING_REQUEST",
+          "match": {
+            "component": "PRIMARY"
+          },
+          "what": "",
+          "why": "",
+          "effect": "",
+          "concept": ""
+        }
+      ],
+      "lesson_summary": "Has recuperado servicio con redundancia y escalado correctamente el daño físico.",
+      "order": {
+        "source": "Teniente Cmdr. Hale · Instructor de Sensores",
+        "order": "Cadete {name}, Sensores informa de degradación. Restablezca la mejor capacidad disponible y notifique a Ingeniería cualquier avería física pendiente.",
+        "note": "Decide qué pertenece a calibración, conmutación y soporte técnico."
+      }
+    },
+    {
+      "id": "TUT-25",
+      "level": 5,
+      "title": "Evaluación · Contramedidas",
+      "scenario_id": "hostile_jamming",
+      "guidance": "evaluation",
+      "objective": "Mitiga la interferencia deliberada, mejora la observación de C-71, mantén seguimiento y remite la evidencia a Táctica.",
+      "hint": "No hay ruta guiada. Puedes escoger compensación automática o manual.",
+      "completion_feedback": "Práctica completada. Has resuelto una situación integrada bajo contramedidas y coordinado Sensores con Táctica.",
+      "steps": [
+        {
+          "label": "Compensar interferencia",
+          "alternatives": [
+            {
+              "event": "INTERFERENCE_ACTION",
+              "match": {
+                "action": "automatic"
+              }
+            },
+            {
+              "event": "INTERFERENCE_ACTION",
+              "match": {
+                "action": "manual"
+              }
+            },
+            {
+              "event": "INTERFERENCE_ACTION",
+              "match": {
+                "action": "band"
+              }
+            }
+          ],
+          "what": "",
+          "why": "",
+          "effect": "",
+          "concept": ""
+        },
+        {
+          "label": "Observar C-71",
+          "event": "SCAN_COMPLETE",
+          "match": {
+            "subtype": "focused",
+            "contactId": "C-71"
+          },
+          "what": "",
+          "why": "",
+          "effect": "",
+          "concept": ""
+        },
+        {
+          "label": "Mantener seguimiento",
+          "event": "TRACK_START",
+          "match": {
+            "contactId": "C-71"
+          },
+          "what": "",
+          "why": "",
+          "effect": "",
+          "concept": ""
+        },
+        {
+          "label": "Enviar a Táctica",
+          "event": "HANDOFF",
+          "match": {
+            "target": "tactical",
+            "contactId": "C-71"
+          },
+          "what": "",
+          "why": "",
+          "effect": "",
+          "concept": ""
+        }
+      ],
+      "lesson_summary": "Has resuelto una situación integrada bajo contramedidas y coordinado Sensores con Táctica.",
+      "order": {
+        "source": "Teniente Cmdr. Hale · Instructor de Sensores",
+        "order": "Cadete {name}, estamos recibiendo interferencia artificial. Reduzca su efecto, mantenga una solución sensora sobre C-71 y remita los datos a Táctica.",
+        "note": "Evaluación final: interferencia, observación, tracking y coordinación interconsola."
       }
     }
   ]
