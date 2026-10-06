@@ -31,10 +31,8 @@
         "Repaso: ¿Cuántos años dura el programa estándar y qué clase corresponde al primer año?"
       ],
       "answer_display_es": "cuatro años · Cadete de 4.ª clase",
-      "accepted_short_answers_es": [
-        "cuatro años"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "cuatro años",
         "Cadete de 4.ª clase"
@@ -50,8 +48,10 @@
         "Repaso: ¿Cuál es el rango comisionado inicial normal tras graduarse?"
       ],
       "answer_display_es": "Alférez",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "Alférez"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "Alférez"
       ]
@@ -123,10 +123,8 @@
         "Repaso: ¿Toda colaboración entre cadetes es fraude?"
       ],
       "answer_display_es": "No — depende de reglas de actividad; puede haber colaboración autorizada; no debe falsear competencia individual.",
-      "accepted_short_answers_es": [
-        "no"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "no",
         "depende de reglas de actividad",
@@ -181,10 +179,8 @@
         "Selecciona la explicación correcta:  no existe una tabla universal «falta = castigo»."
       ],
       "answer_display_es": "importa contexto · intención · consecuencias · órdenes · antecedentes · autoridad",
-      "accepted_short_answers_es": [
-        "importa contexto"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "importa contexto",
         "intención",
@@ -241,8 +237,10 @@
         "Selecciona la respuesta correcta para este caso: ¿Puede una IA imponer por sí sola una sanción académica?"
       ],
       "answer_display_es": "No — requiere hechos registrados; autoridad competente; sistemas autoritativos.",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no",
         "requiere hechos registrados",
@@ -260,10 +258,8 @@
         "Repaso: ¿En qué área se sitúa la Academia terrestre para las eras jugables?"
       ],
       "answer_display_es": "San Francisco · Golden Gate · Presidio/Marin según instalaciones",
-      "accepted_short_answers_es": [
-        "San Francisco"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "San Francisco",
         "Golden Gate",
@@ -393,8 +389,10 @@
         "Repaso: ¿Una reevaluación borra el intento anterior?"
       ],
       "answer_display_es": "No — el historial persiste; la nueva evidencia se añade.",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no",
         "el historial persiste",
@@ -411,10 +409,8 @@
         "Selecciona la respuesta correcta: Qué necesita un reparto de tareas eficaz?"
       ],
       "answer_display_es": "objetivo común · roles claros · reparto razonable · comunicación · seguimiento",
-      "accepted_short_answers_es": [
-        "objetivo común"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "objetivo común",
         "roles claros",

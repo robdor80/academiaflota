@@ -49,10 +49,8 @@
         "Repaso: Una nave cartografía un sistema, investiga una anomalía y evacua a civiles. ¿Qué funciones de Starfleet están presentes?"
       ],
       "answer_display_es": "exploración · ciencia · asistencia · puede haber más de una función simultánea",
-      "accepted_short_answers_es": [
-        "exploración"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "exploración",
         "ciencia",
@@ -106,10 +104,8 @@
         "Selecciona la respuesta correcta: Qué diferencia existe entre rango, puesto y autoridad?"
       ],
       "answer_display_es": "rango = posición jerárquica · puesto = responsabilidad asignada · autoridad = capacidad válida para decidir/ordenar en contexto",
-      "accepted_short_answers_es": [
-        "rango = posición jerárquica"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "rango = posición jerárquica",
         "puesto = responsabilidad asignada",
@@ -145,8 +141,10 @@
         "Repaso: Un Comandante y un Teniente trabajan en una tarea técnica dirigida formalmente por el Teniente especialista. ¿Puede asumirse que el Comandante debe decidir cada detalle por tener mayor rango?"
       ],
       "answer_display_es": "No — el rango no determina por sí solo toda autoridad; puesto/cualificación/órdenes/contexto importan.",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no",
         "el rango no determina por sí solo toda autoridad",
@@ -257,10 +255,8 @@
         "Indica la secuencia básica de sucesión de mando del proyecto."
       ],
       "answer_display_es": "Oficial al Mando · Primer Oficial · Segundo Oficial · sucesor cualificado designado",
-      "accepted_short_answers_es": [
-        "Oficial al Mando"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "Oficial al Mando",
         "Primer Oficial",
@@ -317,8 +313,10 @@
         "Repaso: ¿Asumir mando temporal cambia automáticamente el rango permanente del personaje?"
       ],
       "answer_display_es": "No — la autoridad temporal puede ser de guardia, emergencia o misión; rango y mando temporal son conceptos distintos.",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no",
         "la autoridad temporal puede ser de guardia, emergencia o misión",
@@ -335,10 +333,8 @@
         "Nombra las tres grandes divisiones utilizadas por el proyecto."
       ],
       "answer_display_es": "Mando · Operaciones · Ciencias",
-      "accepted_short_answers_es": [
-        "Mando"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "Mando",
         "Operaciones",
@@ -410,10 +406,8 @@
         "Enumera las fases básicas para recibir una instrucción profesional."
       ],
       "answer_display_es": "escuchar · comprender · confirmar cuando sea necesario · ejecutar dentro de autoridad/capacidad · informar",
-      "accepted_short_answers_es": [
-        "escuchar"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "escuchar",
         "comprender",
@@ -451,8 +445,10 @@
         "Selecciona la respuesta correcta: Qué significa acusar recibo de una orden?"
       ],
       "answer_display_es": "confirmar que se recibió · confirmar que se entendió · no implica obediencia ciega ni fingir capacidad",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "confirmar que se recibió"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "confirmar que se recibió",
         "confirmar que se entendió",

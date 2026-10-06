@@ -31,10 +31,8 @@
         "Repaso: ¿Para qué sirve la evaluación funcional inicial?"
       ],
       "answer_display_es": "establecer referencia · detectar limitaciones/riesgos · orientar rutina · comparar progreso",
-      "accepted_short_answers_es": [
-        "establecer referencia"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "establecer referencia",
         "detectar limitaciones/riesgos",
@@ -278,10 +276,8 @@
         "Nombra cuatro patrones básicos de fuerza funcional."
       ],
       "answer_display_es": "empujar · tirar · levantarse · agacharse · transportar · estabilizar · rotar/resistir rotación",
-      "accepted_short_answers_es": [
-        "empujar"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "empujar",
         "tirar",
@@ -341,10 +337,8 @@
         "Diferencia fatiga aguda y carga acumulada."
       ],
       "answer_display_es": "aguda = corto plazo · acumulada = patrón de semanas/meses · efectos y recuperación distintos",
-      "accepted_short_answers_es": [
-        "aguda = corto plazo"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "aguda = corto plazo",
         "acumulada = patrón de semanas/meses",
@@ -361,8 +355,10 @@
         "Repaso: ¿Una buena noche elimina un mes de sobrecarga?"
       ],
       "answer_display_es": "No — mejora estado inmediato; patrón longitudinal persiste parcialmente.",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no",
         "mejora estado inmediato",
@@ -416,10 +412,8 @@
         "Repaso: ¿Cómo se forma una rutina en el sistema?"
       ],
       "answer_display_es": "repetición real · frecuencia · continuidad · patrón observado · no perk seleccionado",
-      "accepted_short_answers_es": [
-        "repetición real"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "repetición real",
         "frecuencia",

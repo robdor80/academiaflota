@@ -31,10 +31,8 @@
         "Selecciona la respuesta correcta: Qué tipo de entidad política es la Federación Unida de Planetas?"
       ],
       "answer_display_es": "república federal interestelar · unión política de mundos miembros · instituciones comunes",
-      "accepted_short_answers_es": [
-        "república federal interestelar"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "república federal interestelar",
         "unión política de mundos miembros",
@@ -108,10 +106,8 @@
         "Selecciona la respuesta correcta: Qué instituciones federales mínimas retiene el proyecto con suficiente base?"
       ],
       "answer_display_es": "Presidente de la Federación · Consejo de la Federación · participación de mundos miembros",
-      "accepted_short_answers_es": [
-        "Presidente de la Federación"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "Presidente de la Federación",
         "Consejo de la Federación",
@@ -128,8 +124,10 @@
         "Selecciona la respuesta correcta: Qué significa que Starfleet esté subordinada a autoridad civil?"
       ],
       "answer_display_es": "Starfleet no sustituye al gobierno · opera dentro de autoridad federal · decisiones políticas pueden condicionar operaciones",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "Starfleet no sustituye al gobierno"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "Starfleet no sustituye al gobierno",
         "opera dentro de autoridad federal",
@@ -238,10 +236,8 @@
         "Nombra tres cosas que la membresía de un mundo en la Federación puede afectar."
       ],
       "answer_display_es": "jurisdicción · tránsito · tratados · acceso diplomático · respuesta de Starfleet · destinos/misiones · derechos/obligaciones reconocidos",
-      "accepted_short_answers_es": [
-        "jurisdicción"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "jurisdicción",
         "tránsito",
@@ -262,10 +258,8 @@
         "Repaso: Resume la relación entre Federación y Starfleet."
       ],
       "answer_display_es": "Federación = entidad política/civil · Starfleet = servicio federal · Starfleet sujeta a autoridad civil",
-      "accepted_short_answers_es": [
-        "Federación = entidad política/civil"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "Federación = entidad política/civil",
         "Starfleet = servicio federal",
@@ -302,8 +296,10 @@
         "Selecciona la respuesta correcta para este caso: ¿Puede una negociación generada por IA cambiar por sí sola un tratado?"
       ],
       "answer_display_es": "No — la IA puede presentar/proponer; el sistema autoritativo resuelve y registra consecuencias.",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no",
         "la IA puede presentar/proponer",
@@ -320,8 +316,10 @@
         "Repaso: La campaña comienza antes de una guerra conocida por el jugador. ¿Debe el juego imponer automáticamente esa guerra cuando llegue la fecha?"
       ],
       "answer_display_es": "No — no future destiny; World State autoritativo después del inicio; el resultado puede cambiar.",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no",
         "no future destiny",
@@ -339,10 +337,8 @@
         "Diferencia especie, cultura e individuo."
       ],
       "answer_display_es": "especie = biología/agrupación · cultura = normas/prácticas compartidas · individuo = persona concreta con historia propia",
-      "accepted_short_answers_es": [
-        "especie = biología/agrupación"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "especie = biología/agrupación",
         "cultura = normas/prácticas compartidas",
@@ -458,8 +454,10 @@
         "Repaso: Un cadete presencia una disputa civil durante una visita a un mundo miembro. ¿Le concede el uniforme autoridad civil automática?"
       ],
       "answer_display_es": "No — puede proteger vida ante emergencia; debe pedir ayuda/comunicar; no inventar competencias.",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no",
         "puede proteger vida ante emergencia",

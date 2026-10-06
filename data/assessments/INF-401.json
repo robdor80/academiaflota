@@ -31,10 +31,8 @@
         "Selecciona la explicación correcta:  la computadora no debe tratarse como una única consola."
       ],
       "answer_display_es": "es un servicio distribuido · múltiples puntos de acceso · la autoridad no depende solo del terminal",
-      "accepted_short_answers_es": [
-        "es un servicio distribuido"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "es un servicio distribuido",
         "múltiples puntos de acceso",
@@ -87,8 +85,10 @@
         "Selecciona la respuesta correcta para este caso: ¿Puede una IA cambiar directamente el estado de la nave?"
       ],
       "answer_display_es": "No — interpreta/estructura; sistemas autoritativos validan y ejecutan.",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no",
         "interpreta/estructura",
@@ -123,10 +123,8 @@
         "Nombra cuatro factores que pueden limitar sincronización o acceso."
       ],
       "answer_display_es": "identidad · permisos · contexto · conectividad · privacidad · tipo de dato",
-      "accepted_short_answers_es": [
-        "identidad"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "identidad",
         "permisos",
@@ -185,10 +183,8 @@
         "Diferencia autenticación y autorización."
       ],
       "answer_display_es": "autenticación = quién eres · autorización = qué puedes hacer",
-      "accepted_short_answers_es": [
-        "autenticación = quién eres"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "autenticación = quién eres",
         "autorización = qué puedes hacer"
@@ -246,8 +242,10 @@
         "Selecciona la respuesta correcta: Qué significa principio de mínimo acceso?"
       ],
       "answer_display_es": "acceso suficiente para función · no acceso universal · reducir riesgo/exposición",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "acceso suficiente para función"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "acceso suficiente para función",
         "no acceso universal",
@@ -264,10 +262,8 @@
         "Selecciona la respuesta correcta: Qué debe especificar una buena consulta de información?"
       ],
       "answer_display_es": "objetivo · ámbito · filtros · fuentes autorizadas",
-      "accepted_short_answers_es": [
-        "objetivo"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "objetivo",
         "ámbito",
@@ -340,10 +336,8 @@
         "Repaso: ¿Para qué sirve la trazabilidad?"
       ],
       "answer_display_es": "reconstruir qué ocurrió · continuidad · debrief · evaluación · investigación · responsabilidad",
-      "accepted_short_answers_es": [
-        "reconstruir qué ocurrió"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "reconstruir qué ocurrió",
         "continuidad",
@@ -381,8 +375,10 @@
         "Selecciona la respuesta correcta para este caso: ¿Debe borrarse un registro antiguo cuando aparece una corrección?"
       ],
       "answer_display_es": "No — append-only; registrar corrección posterior; preservar historia.",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no",
         "append-only",
@@ -437,10 +433,8 @@
         "Nombra cuatro tipos de información que pueden estar restringidos."
       ],
       "answer_display_es": "médica · Seguridad · Inteligencia · clasificada · logs personales · expedientes sensibles",
-      "accepted_short_answers_es": [
-        "médica"
-      ],
-      "preferred_mode": "short_answer",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "médica",
         "Seguridad",
