@@ -1,7 +1,7 @@
 {
   "subject": "Continuidad de guardia y responsabilidad de puesto",
   "code": "WCH-102",
-  "version": "1.0",
+  "version": "2.0",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/first_class/courses/WCH-102/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/first_class/WCH-102/MANUAL_v1_0.md",
@@ -17,11 +17,10 @@
     {
       "id": "WCH-102-U01",
       "title": "Estado heredado",
-      "subtitle": "UNIDAD 01 · WCH-102",
       "blocks": [
         {
           "type": "p",
-          "text": "Garantizar que información, órdenes y problemas sobrevivan correctamente al cambio de turno."
+          "text": "Al completar esta unidad, el cadete debe integrar los elementos de **Estado heredado** sin perder seguridad, prioridades ni continuidad."
         },
         {
           "type": "heading",
@@ -30,11 +29,19 @@
         {
           "type": "bullets",
           "items": [
-            "órdenes vigentes",
-            "pendientes",
-            "degradaciones",
-            "riesgos"
+            "**órdenes vigentes**: instrucciones actualmente aplicables, conocidas junto con prioridad, alcance, autoridad emisora y condiciones de finalización.",
+            "**pendientes**: acciones abiertas con responsable, prioridad, estado y condición prevista de cierre.",
+            "**degradaciones**: pérdidas parciales de capacidad que obligan a recalcular márgenes y alternativas.",
+            "**riesgos**: consecuencias plausibles que deben identificarse, priorizarse y reevaluarse cuando cambia la situación."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Antes de actuar se distingue lo confirmado de lo incierto, se comprueban límites y responsables, se ejecuta la opción proporcionada y se conserva lo necesario para seguimiento, relevo y debrief."
         },
         {
           "type": "callout",
@@ -43,47 +50,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "La profesionalidad consiste en conservar una picture compartida, decisiones trazables y continuidad entre turnos y departamentos."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica órdenes vigentes como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Recibir un relevo complejo.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "lore/federation/starfleet/duty_shifts/shift_model.json",
-            "gameplay/ship_operations/operational_event_log/README.md"
-          ]
+          "text": "Evaluación. Se valora el proceso con la información disponible entonces, no solo el resultado conocido después."
         }
       ]
     },
     {
       "id": "WCH-102-U02",
       "title": "Seguimiento longitudinal",
-      "subtitle": "UNIDAD 02 · WCH-102",
       "blocks": [
         {
           "type": "p",
-          "text": "Garantizar que información, órdenes y problemas sobrevivan correctamente al cambio de turno."
+          "text": "Al completar esta unidad, el cadete debe integrar los elementos de **Seguimiento longitudinal** sin perder seguridad, prioridades ni continuidad."
         },
         {
           "type": "heading",
@@ -92,11 +75,19 @@
         {
           "type": "bullets",
           "items": [
-            "incidencias",
-            "tendencias",
-            "ETA",
-            "responsables"
+            "**incidencias**: problemas o desviaciones abiertas que requieren responsable, seguimiento y criterio de cierre.",
+            "**tendencias**: cambios sostenidos observados a lo largo del tiempo que pueden revelar degradación antes de un fallo.",
+            "**ETA**: ETA debe concretarse en hechos observables, límites y acciones dentro de «Seguimiento longitudinal», evitando usar el término como una etiqueta vacía.",
+            "**responsables**: personas o puestos que poseen la acción o decisión pendiente y deben mantener su seguimiento."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Antes de actuar se distingue lo confirmado de lo incierto, se comprueban límites y responsables, se ejecuta la opción proporcionada y se conserva lo necesario para seguimiento, relevo y debrief."
         },
         {
           "type": "callout",
@@ -105,47 +96,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "La profesionalidad consiste en conservar una picture compartida, decisiones trazables y continuidad entre turnos y departamentos."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Práctica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica incidencias como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Mantener asuntos abiertos.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "lore/federation/starfleet/duty_shifts/shift_model.json",
-            "gameplay/ship_operations/operational_event_log/README.md"
-          ]
+          "text": "Práctica. Se valora el proceso con la información disponible entonces, no solo el resultado conocido después."
         }
       ]
     },
     {
       "id": "WCH-102-U03",
       "title": "Registro factual",
-      "subtitle": "UNIDAD 03 · WCH-102",
       "blocks": [
         {
           "type": "p",
-          "text": "Garantizar que información, órdenes y problemas sobrevivan correctamente al cambio de turno."
+          "text": "Al completar esta unidad, el cadete debe integrar los elementos de **Registro factual** sin perder seguridad, prioridades ni continuidad."
         },
         {
           "type": "heading",
@@ -154,11 +121,19 @@
         {
           "type": "bullets",
           "items": [
-            "evento",
-            "acción",
-            "resultado",
-            "fuente"
+            "**evento**: cambio observable que puede modificar el estado operativo y exige registrar relevancia, fuente y respuesta.",
+            "**acción**: intervención concreta ejecutada por una persona o sistema y vinculada a un objetivo.",
+            "**resultado**: efecto observado tras una acción; debe analizarse separado de la calidad de la decisión que lo produjo.",
+            "**fuente**: origen de un dato o informe, necesario para valorar fiabilidad, contexto y trazabilidad."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Antes de actuar se distingue lo confirmado de lo incierto, se comprueban límites y responsables, se ejecuta la opción proporcionada y se conserva lo necesario para seguimiento, relevo y debrief."
         },
         {
           "type": "callout",
@@ -167,47 +142,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "La profesionalidad consiste en conservar una picture compartida, decisiones trazables y continuidad entre turnos y departamentos."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Revisión."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica evento como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Actualizar event log/registro.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "lore/federation/starfleet/duty_shifts/shift_model.json",
-            "gameplay/ship_operations/operational_event_log/README.md"
-          ]
+          "text": "Revisión. Se valora el proceso con la información disponible entonces, no solo el resultado conocido después."
         }
       ]
     },
     {
       "id": "WCH-102-U04",
       "title": "Cambio de prioridad",
-      "subtitle": "UNIDAD 04 · WCH-102",
       "blocks": [
         {
           "type": "p",
-          "text": "Garantizar que información, órdenes y problemas sobrevivan correctamente al cambio de turno."
+          "text": "Al completar esta unidad, el cadete debe integrar los elementos de **Cambio de prioridad** sin perder seguridad, prioridades ni continuidad."
         },
         {
           "type": "heading",
@@ -216,10 +167,18 @@
         {
           "type": "bullets",
           "items": [
-            "nueva orden",
-            "impacto",
-            "comunicación"
+            "**nueva orden**: instrucción posterior que puede modificar prioridades previas y exige confirmar impacto en tareas abiertas.",
+            "**impacto**: magnitud de las consecuencias que un evento o decisión puede producir.",
+            "**comunicación**: transmisión clara de hechos, intención, límites y necesidades al destinatario correcto."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Antes de actuar se distingue lo confirmado de lo incierto, se comprueban límites y responsables, se ejecuta la opción proporcionada y se conserva lo necesario para seguimiento, relevo y debrief."
         },
         {
           "type": "callout",
@@ -228,47 +187,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "La profesionalidad consiste en conservar una picture compartida, decisiones trazables y continuidad entre turnos y departamentos."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Caso."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica nueva orden como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Reorganizar pendientes.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "lore/federation/starfleet/duty_shifts/shift_model.json",
-            "gameplay/ship_operations/operational_event_log/README.md"
-          ]
+          "text": "Caso. Se valora el proceso con la información disponible entonces, no solo el resultado conocido después."
         }
       ]
     },
     {
       "id": "WCH-102-U05",
       "title": "Entrega de guardia",
-      "subtitle": "UNIDAD 05 · WCH-102",
       "blocks": [
         {
           "type": "p",
-          "text": "Garantizar que información, órdenes y problemas sobrevivan correctamente al cambio de turno."
+          "text": "Al completar esta unidad, el cadete debe integrar los elementos de **Entrega de guardia** sin perder seguridad, prioridades ni continuidad."
         },
         {
           "type": "heading",
@@ -277,11 +212,19 @@
         {
           "type": "bullets",
           "items": [
-            "resumen",
-            "alertas",
-            "acciones futuras",
-            "confirmación"
+            "**resumen**: síntesis suficiente para comprender el estado sin ocultar riesgos, excepciones ni pendientes críticos.",
+            "**alertas**: condiciones que requieren atención inmediata o vigilancia especial por superar un umbral o margen.",
+            "**acciones futuras**: tareas previstas que aún no se han ejecutado y deben conservar responsable, momento o condición de activación.",
+            "**confirmación**: verificación de recepción, comprensión o resultado cuando un error tendría consecuencias operativas."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Antes de actuar se distingue lo confirmado de lo incierto, se comprueban límites y responsables, se ejecuta la opción proporcionada y se conserva lo necesario para seguimiento, relevo y debrief."
         },
         {
           "type": "callout",
@@ -290,47 +233,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "La profesionalidad consiste en conservar una picture compartida, decisiones trazables y continuidad entre turnos y departamentos."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica resumen como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Handoff formal.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "lore/federation/starfleet/duty_shifts/shift_model.json",
-            "gameplay/ship_operations/operational_event_log/README.md"
-          ]
+          "text": "Evaluación. Se valora el proceso con la información disponible entonces, no solo el resultado conocido después."
         }
       ]
     },
     {
       "id": "WCH-102-U06",
       "title": "Responsabilidad posterior",
-      "subtitle": "UNIDAD 06 · WCH-102",
       "blocks": [
         {
           "type": "p",
-          "text": "Garantizar que información, órdenes y problemas sobrevivan correctamente al cambio de turno."
+          "text": "Al completar esta unidad, el cadete debe integrar los elementos de **Responsabilidad posterior** sin perder seguridad, prioridades ni continuidad."
         },
         {
           "type": "heading",
@@ -339,11 +258,19 @@
         {
           "type": "bullets",
           "items": [
-            "decisiones anteriores",
-            "auditoría",
-            "consulta",
-            "debrief"
+            "**decisiones anteriores**: elecciones ya tomadas que siguen condicionando estado, compromisos, riesgos o responsabilidades actuales.",
+            "**auditoría**: revisión posterior que necesita evidencia íntegra para reconstruir hechos y responsabilidades sin depender de memoria.",
+            "**consulta**: petición de criterio a otra autoridad o especialidad para reducir incertidumbre o confirmar límites.",
+            "**debrief**: revisión posterior estructurada que separa hechos, decisiones, resultados, lecciones y acciones de mejora."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Antes de actuar se distingue lo confirmado de lo incierto, se comprueban límites y responsables, se ejecuta la opción proporcionada y se conserva lo necesario para seguimiento, relevo y debrief."
         },
         {
           "type": "callout",
@@ -352,38 +279,16 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "La profesionalidad consiste en conservar una picture compartida, decisiones trazables y continuidad entre turnos y departamentos."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Juicio."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica decisiones anteriores como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Responder por una decisión pasada.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "lore/federation/starfleet/duty_shifts/shift_model.json",
-            "gameplay/ship_operations/operational_event_log/README.md"
-          ]
+          "text": "Juicio. Se valora el proceso con la información disponible entonces, no solo el resultado conocido después."
         }
       ]
     }
-  ]
+  ],
+  "assessmentModel": "concept_driven_v2_1"
 }

@@ -1,313 +1,649 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.1.0",
   "course_id": "BRN-102",
-  "status": "generated_from_authoritative_curriculum",
-  "question_count": 24,
-  "questions": [
+  "status": "developed_concept_driven_autocorrectable_v2_1",
+  "policy": {
+    "theory_formats": [
+      "multiple_choice",
+      "short_answer"
+    ],
+    "multiple_choice_target_ratio": 0.8,
+    "short_answer_target_ratio": 0.2,
+    "deterministic_correction": true,
+    "web_and_game_share_concepts_not_question_instances": true,
+    "complex_judgment_moves_to_practice_and_simulation": true,
+    "source_rule": "Every evaluated concept is explicitly taught in the developed Year 4 material or an established prerequisite."
+  },
+  "unit_review": {
+    "questions_per_attempt": 5,
+    "reshuffle_each_attempt": true,
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
+  },
+  "concepts": [
     {
-      "id": "BRN-102-Q001",
+      "id": "BRN-102-C001",
       "unit_id": "BRN-102-U01",
-      "type": "service_readiness",
-      "prompt_es": "Explica objetivo como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: efecto concreto que la misión o tarea debe conseguir; debe ser comprensible, comprobable y compatible con restricciones superiores?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: efecto concreto que la misión o tarea debe conseguir; debe ser comprensible, comprobable y compatible con restricciones superiores?",
+        "En «Preparación de misión de rama», selecciona el concepto descrito así: efecto concreto que la misión o tarea debe conseguir; debe ser comprensible, comprobable y compatible con restricciones superiores."
+      ],
+      "answer_display_es": "objetivo",
+      "accepted_short_answers_es": [
+        "objetivo"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "objetivo",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "objetivo"
       ]
     },
     {
-      "id": "BRN-102-Q002",
+      "id": "BRN-102-C002",
       "unit_id": "BRN-102-U01",
-      "type": "scenario",
-      "prompt_es": "Escenario: Plan de especialidad. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: tiempo, personal, energía, material, capacidad y atención disponibles; asignarlos a una tarea reduce el margen para otras?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: tiempo, personal, energía, material, capacidad y atención disponibles; asignarlos a una tarea reduce el margen para otras?",
+        "En «Preparación de misión de rama», selecciona el concepto descrito así: tiempo, personal, energía, material, capacidad y atención disponibles; asignarlos a una tarea reduce el margen para otras."
+      ],
+      "answer_display_es": "recursos",
+      "accepted_short_answers_es": [
+        "recursos"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "recursos"
       ]
     },
     {
-      "id": "BRN-102-Q003",
+      "id": "BRN-102-C003",
       "unit_id": "BRN-102-U01",
-      "type": "debrief",
-      "prompt_es": "Tras Preparación de misión de rama, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: consecuencias plausibles que deben identificarse, priorizarse y reevaluarse cuando cambia la situación?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: consecuencias plausibles que deben identificarse, priorizarse y reevaluarse cuando cambia la situación?",
+        "En «Preparación de misión de rama», selecciona el concepto descrito así: consecuencias plausibles que deben identificarse, priorizarse y reevaluarse cuando cambia la situación."
+      ],
+      "answer_display_es": "riesgos",
+      "accepted_short_answers_es": [
+        "riesgos"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "riesgos"
       ]
     },
     {
-      "id": "BRN-102-Q004",
+      "id": "BRN-102-C004",
       "unit_id": "BRN-102-U01",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: respuestas preparadas para desviaciones previsibles, con condiciones claras de activación y responsables?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: respuestas preparadas para desviaciones previsibles, con condiciones claras de activación y responsables?",
+        "En «Preparación de misión de rama», selecciona el concepto descrito así: respuestas preparadas para desviaciones previsibles, con condiciones claras de activación y responsables."
+      ],
+      "answer_display_es": "contingencias",
+      "accepted_short_answers_es": [
+        "contingencias"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "contingencias"
       ]
     },
     {
-      "id": "BRN-102-Q005",
+      "id": "BRN-102-C005",
+      "unit_id": "BRN-102-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Preparación de misión de rama»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Preparación de misión de rama»?",
+        "Repaso de «Preparación de misión de rama»: ¿Qué práctica corresponde a «Preparación de misión de rama»?"
+      ],
+      "answer_display_es": "Plan de especialidad.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Plan de especialidad."
+      ]
+    },
+    {
+      "id": "BRN-102-C006",
+      "unit_id": "BRN-102-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Preparación de misión de rama»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Preparación de misión de rama»?",
+        "Repaso de «Preparación de misión de rama»: ¿Qué evaluación se asocia a «Preparación de misión de rama»?"
+      ],
+      "answer_display_es": "Revisión.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Revisión."
+      ]
+    },
+    {
+      "id": "BRN-102-C007",
       "unit_id": "BRN-102-U02",
-      "type": "service_readiness",
-      "prompt_es": "Explica continuidad como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: capacidad de mantener la función a través de cambios de turno, degradaciones y eventos sin perder información ni responsabilidad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: capacidad de mantener la función a través de cambios de turno, degradaciones y eventos sin perder información ni responsabilidad?",
+        "En «Operación prolongada», selecciona el concepto descrito así: capacidad de mantener la función a través de cambios de turno, degradaciones y eventos sin perder información ni responsabilidad."
+      ],
+      "answer_display_es": "continuidad",
+      "accepted_short_answers_es": [
+        "continuidad"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "continuidad",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "continuidad"
       ]
     },
     {
-      "id": "BRN-102-Q006",
+      "id": "BRN-102-C008",
       "unit_id": "BRN-102-U02",
-      "type": "scenario",
-      "prompt_es": "Escenario: Ejecutar bloque extenso. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: cantidad y complejidad de trabajo que una persona o sistema puede sostener antes de degradar seguridad o calidad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: cantidad y complejidad de trabajo que una persona o sistema puede sostener antes de degradar seguridad o calidad?",
+        "En «Operación prolongada», selecciona el concepto descrito así: cantidad y complejidad de trabajo que una persona o sistema puede sostener antes de degradar seguridad o calidad."
+      ],
+      "answer_display_es": "carga",
+      "accepted_short_answers_es": [
+        "carga"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "carga"
       ]
     },
     {
-      "id": "BRN-102-Q007",
+      "id": "BRN-102-C009",
       "unit_id": "BRN-102-U02",
-      "type": "debrief",
-      "prompt_es": "Tras Operación prolongada, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: grado en que una salida cumple precisión, integridad, oportunidad y estándar suficiente para ser utilizada por otros?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: grado en que una salida cumple precisión, integridad, oportunidad y estándar suficiente para ser utilizada por otros?",
+        "En «Operación prolongada», selecciona el concepto descrito así: grado en que una salida cumple precisión, integridad, oportunidad y estándar suficiente para ser utilizada por otros."
+      ],
+      "answer_display_es": "calidad",
+      "accepted_short_answers_es": [
+        "calidad"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "calidad"
       ]
     },
     {
-      "id": "BRN-102-Q008",
+      "id": "BRN-102-C010",
       "unit_id": "BRN-102-U02",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: constancia factual de evento, fuente, acción, decisión y resultado que sostiene continuidad y auditoría?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: constancia factual de evento, fuente, acción, decisión y resultado que sostiene continuidad y auditoría?",
+        "En «Operación prolongada», selecciona el concepto descrito así: constancia factual de evento, fuente, acción, decisión y resultado que sostiene continuidad y auditoría."
+      ],
+      "answer_display_es": "registro",
+      "accepted_short_answers_es": [
+        "registro"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "registro"
       ]
     },
     {
-      "id": "BRN-102-Q009",
+      "id": "BRN-102-C011",
+      "unit_id": "BRN-102-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Operación prolongada»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Operación prolongada»?",
+        "Repaso de «Operación prolongada»: ¿Qué práctica corresponde a «Operación prolongada»?"
+      ],
+      "answer_display_es": "Ejecutar bloque extenso.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Ejecutar bloque extenso."
+      ]
+    },
+    {
+      "id": "BRN-102-C012",
+      "unit_id": "BRN-102-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Operación prolongada»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Operación prolongada»?",
+        "Repaso de «Operación prolongada»: ¿Qué evaluación se asocia a «Operación prolongada»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
+    },
+    {
+      "id": "BRN-102-C013",
       "unit_id": "BRN-102-U03",
-      "type": "service_readiness",
-      "prompt_es": "Explica incertidumbre como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: parte relevante de la situación que no está confirmada; debe declararse en lugar de rellenarse con suposiciones?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: parte relevante de la situación que no está confirmada; debe declararse en lugar de rellenarse con suposiciones?",
+        "En «Problema complejo», selecciona el concepto descrito así: parte relevante de la situación que no está confirmada; debe declararse en lugar de rellenarse con suposiciones."
+      ],
+      "answer_display_es": "incertidumbre",
+      "accepted_short_answers_es": [
+        "incertidumbre"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "incertidumbre",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "incertidumbre"
       ]
     },
     {
-      "id": "BRN-102-Q010",
+      "id": "BRN-102-C014",
       "unit_id": "BRN-102-U03",
-      "type": "scenario",
-      "prompt_es": "Escenario: Resolver incidente. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: desviaciones del funcionamiento esperado que requieren diagnóstico por evidencia antes de atribuir una causa?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: desviaciones del funcionamiento esperado que requieren diagnóstico por evidencia antes de atribuir una causa?",
+        "En «Problema complejo», selecciona el concepto descrito así: desviaciones del funcionamiento esperado que requieren diagnóstico por evidencia antes de atribuir una causa."
+      ],
+      "answer_display_es": "fallos",
+      "accepted_short_answers_es": [
+        "fallos"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "fallos"
       ]
     },
     {
-      "id": "BRN-102-Q011",
+      "id": "BRN-102-C015",
       "unit_id": "BRN-102-U03",
-      "type": "debrief",
-      "prompt_es": "Tras Problema complejo, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: factor operativo que incluye seguridad, competencia, carga, comunicación y consecuencias humanas?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: factor operativo que incluye seguridad, competencia, carga, comunicación y consecuencias humanas?",
+        "En «Problema complejo», selecciona el concepto descrito así: factor operativo que incluye seguridad, competencia, carga, comunicación y consecuencias humanas."
+      ],
+      "answer_display_es": "personas",
+      "accepted_short_answers_es": [
+        "personas"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "personas"
       ]
     },
     {
-      "id": "BRN-102-Q012",
+      "id": "BRN-102-C016",
       "unit_id": "BRN-102-U03",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: recurso operativo: esperar puede mejorar información, pero también cerrar una ventana o aumentar exposición?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: recurso operativo: esperar puede mejorar información, pero también cerrar una ventana o aumentar exposición?",
+        "En «Problema complejo», selecciona el concepto descrito así: recurso operativo: esperar puede mejorar información, pero también cerrar una ventana o aumentar exposición."
+      ],
+      "answer_display_es": "tiempo",
+      "accepted_short_answers_es": [
+        "tiempo"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "tiempo"
       ]
     },
     {
-      "id": "BRN-102-Q013",
+      "id": "BRN-102-C017",
+      "unit_id": "BRN-102-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Problema complejo»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Problema complejo»?",
+        "Repaso de «Problema complejo»: ¿Qué práctica corresponde a «Problema complejo»?"
+      ],
+      "answer_display_es": "Resolver incidente.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Resolver incidente."
+      ]
+    },
+    {
+      "id": "BRN-102-C018",
+      "unit_id": "BRN-102-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Problema complejo»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Problema complejo»?",
+        "Repaso de «Problema complejo»: ¿Qué evaluación se asocia a «Problema complejo»?"
+      ],
+      "answer_display_es": "Juicio.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Juicio."
+      ]
+    },
+    {
+      "id": "BRN-102-C019",
       "unit_id": "BRN-102-U04",
-      "type": "service_readiness",
-      "prompt_es": "Explica dato como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: observación o valor con origen, contexto, recencia y calidad suficientes para apoyar una decisión?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: observación o valor con origen, contexto, recencia y calidad suficientes para apoyar una decisión?",
+        "En «Asesoramiento profesional», selecciona el concepto descrito así: observación o valor con origen, contexto, recencia y calidad suficientes para apoyar una decisión."
+      ],
+      "answer_display_es": "dato",
+      "accepted_short_answers_es": [
+        "dato"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "dato",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "dato"
       ]
     },
     {
-      "id": "BRN-102-Q014",
+      "id": "BRN-102-C020",
       "unit_id": "BRN-102-U04",
-      "type": "scenario",
-      "prompt_es": "Escenario: Briefing a mando. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: cursos de acción viables comparados por riesgo, recursos, tiempo, reversibilidad y efecto en misión?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: cursos de acción viables comparados por riesgo, recursos, tiempo, reversibilidad y efecto en misión?",
+        "En «Asesoramiento profesional», selecciona el concepto descrito así: cursos de acción viables comparados por riesgo, recursos, tiempo, reversibilidad y efecto en misión."
+      ],
+      "answer_display_es": "opciones",
+      "accepted_short_answers_es": [
+        "opciones"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "opciones"
       ]
     },
     {
-      "id": "BRN-102-Q015",
+      "id": "BRN-102-C021",
       "unit_id": "BRN-102-U04",
-      "type": "debrief",
-      "prompt_es": "Tras Asesoramiento profesional, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: combinación de probabilidad, impacto y exposición; se compara con misión, alternativas, autoridad y reversibilidad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: combinación de probabilidad, impacto y exposición; se compara con misión, alternativas, autoridad y reversibilidad?",
+        "En «Asesoramiento profesional», selecciona el concepto descrito así: combinación de probabilidad, impacto y exposición; se compara con misión, alternativas, autoridad y reversibilidad."
+      ],
+      "answer_display_es": "riesgo",
+      "accepted_short_answers_es": [
+        "riesgo"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "riesgo"
       ]
     },
     {
-      "id": "BRN-102-Q016",
+      "id": "BRN-102-C022",
       "unit_id": "BRN-102-U04",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: acción aconsejada respaldada por datos, alternativas y riesgos, expresada con suficiente claridad para que mando pueda decidir?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: acción aconsejada respaldada por datos, alternativas y riesgos, expresada con suficiente claridad para que mando pueda decidir?",
+        "En «Asesoramiento profesional», selecciona el concepto descrito así: acción aconsejada respaldada por datos, alternativas y riesgos, expresada con suficiente claridad para que mando pueda decidir."
+      ],
+      "answer_display_es": "recomendación",
+      "accepted_short_answers_es": [
+        "recomendación"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "recomendación"
       ]
     },
     {
-      "id": "BRN-102-Q017",
+      "id": "BRN-102-C023",
+      "unit_id": "BRN-102-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Asesoramiento profesional»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Asesoramiento profesional»?",
+        "Repaso de «Asesoramiento profesional»: ¿Qué práctica corresponde a «Asesoramiento profesional»?"
+      ],
+      "answer_display_es": "Briefing a mando.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Briefing a mando."
+      ]
+    },
+    {
+      "id": "BRN-102-C024",
+      "unit_id": "BRN-102-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Asesoramiento profesional»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Asesoramiento profesional»?",
+        "Repaso de «Asesoramiento profesional»: ¿Qué evaluación se asocia a «Asesoramiento profesional»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
+    },
+    {
+      "id": "BRN-102-C025",
       "unit_id": "BRN-102-U05",
-      "type": "service_readiness",
-      "prompt_es": "Explica restauración como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: recuperación controlada de una capacidad con verificación funcional antes de declararla disponible?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: recuperación controlada de una capacidad con verificación funcional antes de declararla disponible?",
+        "En «Recuperación y handoff», selecciona el concepto descrito así: recuperación controlada de una capacidad con verificación funcional antes de declararla disponible."
+      ],
+      "answer_display_es": "restauración",
+      "accepted_short_answers_es": [
+        "restauración"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "restauración",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "restauración"
       ]
     },
     {
-      "id": "BRN-102-Q018",
+      "id": "BRN-102-C026",
       "unit_id": "BRN-102-U05",
-      "type": "scenario",
-      "prompt_es": "Escenario: Cerrar operación. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: acciones abiertas con responsable, prioridad, estado y condición prevista de cierre?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: acciones abiertas con responsable, prioridad, estado y condición prevista de cierre?",
+        "En «Recuperación y handoff», selecciona el concepto descrito así: acciones abiertas con responsable, prioridad, estado y condición prevista de cierre."
+      ],
+      "answer_display_es": "pendientes",
+      "accepted_short_answers_es": [
+        "pendientes"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "pendientes"
       ]
     },
     {
-      "id": "BRN-102-Q019",
+      "id": "BRN-102-C027",
       "unit_id": "BRN-102-U05",
-      "type": "debrief",
-      "prompt_es": "Tras Recuperación y handoff, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: registro verificable de contexto, información disponible, actuación, resultado y feedback?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: registro verificable de contexto, información disponible, actuación, resultado y feedback?",
+        "En «Recuperación y handoff», selecciona el concepto descrito así: registro verificable de contexto, información disponible, actuación, resultado y feedback."
+      ],
+      "answer_display_es": "evidencia",
+      "accepted_short_answers_es": [
+        "evidencia"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "evidencia"
       ]
     },
     {
-      "id": "BRN-102-Q020",
+      "id": "BRN-102-C028",
       "unit_id": "BRN-102-U05",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: transferencia formal de responsabilidad que entrega estado, órdenes, riesgos, pendientes y próximas acciones?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: transferencia formal de responsabilidad que entrega estado, órdenes, riesgos, pendientes y próximas acciones?",
+        "En «Recuperación y handoff», selecciona el concepto descrito así: transferencia formal de responsabilidad que entrega estado, órdenes, riesgos, pendientes y próximas acciones."
+      ],
+      "answer_display_es": "relevo",
+      "accepted_short_answers_es": [
+        "relevo"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "relevo"
       ]
     },
     {
-      "id": "BRN-102-Q021",
-      "unit_id": "BRN-102-U06",
-      "type": "service_readiness",
-      "prompt_es": "Explica misión completa como se lo explicarías a un Alférez que recibe su primer destino.",
+      "id": "BRN-102-C029",
+      "unit_id": "BRN-102-U05",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Recuperación y handoff»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Recuperación y handoff»?",
+        "Repaso de «Recuperación y handoff»: ¿Qué práctica corresponde a «Recuperación y handoff»?"
+      ],
+      "answer_display_es": "Cerrar operación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "misión completa",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "Cerrar operación."
       ]
     },
     {
-      "id": "BRN-102-Q022",
-      "unit_id": "BRN-102-U06",
-      "type": "scenario",
-      "prompt_es": "Escenario: Caso final de rama antes de CAP-103. Describe decisión inicial, alternativas y condición de escalado.",
+      "id": "BRN-102-C030",
+      "unit_id": "BRN-102-U05",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Recuperación y handoff»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Recuperación y handoff»?",
+        "Repaso de «Recuperación y handoff»: ¿Qué evaluación se asocia a «Recuperación y handoff»?"
+      ],
+      "answer_display_es": "Práctica.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "Práctica."
       ]
     },
     {
-      "id": "BRN-102-Q023",
+      "id": "BRN-102-C031",
       "unit_id": "BRN-102-U06",
-      "type": "debrief",
-      "prompt_es": "Tras Caso avanzado II, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: ciclo operativo desde briefing y preparación hasta ejecución, adaptación, relevo y cierre?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: ciclo operativo desde briefing y preparación hasta ejecución, adaptación, relevo y cierre?",
+        "En «Caso avanzado II», selecciona el concepto descrito así: ciclo operativo desde briefing y preparación hasta ejecución, adaptación, relevo y cierre."
+      ],
+      "answer_display_es": "misión completa",
+      "accepted_short_answers_es": [
+        "misión completa"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "misión completa"
       ]
     },
     {
-      "id": "BRN-102-Q024",
+      "id": "BRN-102-C032",
       "unit_id": "BRN-102-U06",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: variaciones relevantes que obligan a revisar supuestos, prioridades, riesgo o configuración?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: variaciones relevantes que obligan a revisar supuestos, prioridades, riesgo o configuración?",
+        "En «Caso avanzado II», selecciona el concepto descrito así: variaciones relevantes que obligan a revisar supuestos, prioridades, riesgo o configuración."
+      ],
+      "answer_display_es": "cambios",
+      "accepted_short_answers_es": [
+        "cambios"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "cambios"
+      ]
+    },
+    {
+      "id": "BRN-102-C033",
+      "unit_id": "BRN-102-U06",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: efecto observado tras una acción; debe analizarse separado de la calidad de la decisión que lo produjo?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: efecto observado tras una acción; debe analizarse separado de la calidad de la decisión que lo produjo?",
+        "En «Caso avanzado II», selecciona el concepto descrito así: efecto observado tras una acción; debe analizarse separado de la calidad de la decisión que lo produjo."
+      ],
+      "answer_display_es": "resultado",
+      "accepted_short_answers_es": [
+        "resultado"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "resultado"
+      ]
+    },
+    {
+      "id": "BRN-102-C034",
+      "unit_id": "BRN-102-U06",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: revisión posterior estructurada que separa hechos, decisiones, resultados, lecciones y acciones de mejora?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: revisión posterior estructurada que separa hechos, decisiones, resultados, lecciones y acciones de mejora?",
+        "En «Caso avanzado II», selecciona el concepto descrito así: revisión posterior estructurada que separa hechos, decisiones, resultados, lecciones y acciones de mejora."
+      ],
+      "answer_display_es": "debrief",
+      "accepted_short_answers_es": [
+        "debrief"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "debrief"
+      ]
+    },
+    {
+      "id": "BRN-102-C035",
+      "unit_id": "BRN-102-U06",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Caso avanzado II»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Caso avanzado II»?",
+        "Repaso de «Caso avanzado II»: ¿Qué práctica corresponde a «Caso avanzado II»?"
+      ],
+      "answer_display_es": "Caso final de rama antes de CAP-103.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Caso final de rama antes de CAP-103."
+      ]
+    },
+    {
+      "id": "BRN-102-C036",
+      "unit_id": "BRN-102-U06",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Caso avanzado II»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Caso avanzado II»?",
+        "Repaso de «Caso avanzado II»: ¿Qué evaluación se asocia a «Caso avanzado II»?"
+      ],
+      "answer_display_es": "Evaluación continua.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación continua."
       ]
     }
   ]

@@ -1,313 +1,647 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.1.0",
   "course_id": "WCH-102",
-  "status": "generated_from_authoritative_curriculum",
-  "question_count": 24,
-  "questions": [
+  "status": "developed_concept_driven_autocorrectable_v2_1",
+  "policy": {
+    "theory_formats": [
+      "multiple_choice",
+      "short_answer"
+    ],
+    "multiple_choice_target_ratio": 0.8,
+    "short_answer_target_ratio": 0.2,
+    "deterministic_correction": true,
+    "web_and_game_share_concepts_not_question_instances": true,
+    "complex_judgment_moves_to_practice_and_simulation": true,
+    "source_rule": "Every evaluated concept is explicitly taught in the developed Year 4 material or an established prerequisite."
+  },
+  "unit_review": {
+    "questions_per_attempt": 5,
+    "reshuffle_each_attempt": true,
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
+  },
+  "concepts": [
     {
-      "id": "WCH-102-Q001",
+      "id": "WCH-102-C001",
       "unit_id": "WCH-102-U01",
-      "type": "service_readiness",
-      "prompt_es": "Explica órdenes vigentes como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: instrucciones actualmente aplicables, conocidas junto con prioridad, alcance, autoridad emisora y condiciones de finalización?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: instrucciones actualmente aplicables, conocidas junto con prioridad, alcance, autoridad emisora y condiciones de finalización?",
+        "En «Estado heredado», selecciona el concepto descrito así: instrucciones actualmente aplicables, conocidas junto con prioridad, alcance, autoridad emisora y condiciones de finalización."
+      ],
+      "answer_display_es": "órdenes vigentes",
+      "accepted_short_answers_es": [
+        "órdenes vigentes"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "órdenes vigentes",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "órdenes vigentes"
       ]
     },
     {
-      "id": "WCH-102-Q002",
+      "id": "WCH-102-C002",
       "unit_id": "WCH-102-U01",
-      "type": "scenario",
-      "prompt_es": "Escenario: Recibir un relevo complejo. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: acciones abiertas con responsable, prioridad, estado y condición prevista de cierre?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: acciones abiertas con responsable, prioridad, estado y condición prevista de cierre?",
+        "En «Estado heredado», selecciona el concepto descrito así: acciones abiertas con responsable, prioridad, estado y condición prevista de cierre."
+      ],
+      "answer_display_es": "pendientes",
+      "accepted_short_answers_es": [
+        "pendientes"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "pendientes"
       ]
     },
     {
-      "id": "WCH-102-Q003",
+      "id": "WCH-102-C003",
       "unit_id": "WCH-102-U01",
-      "type": "debrief",
-      "prompt_es": "Tras Estado heredado, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: pérdidas parciales de capacidad que obligan a recalcular márgenes y alternativas?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: pérdidas parciales de capacidad que obligan a recalcular márgenes y alternativas?",
+        "En «Estado heredado», selecciona el concepto descrito así: pérdidas parciales de capacidad que obligan a recalcular márgenes y alternativas."
+      ],
+      "answer_display_es": "degradaciones",
+      "accepted_short_answers_es": [
+        "degradaciones"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "degradaciones"
       ]
     },
     {
-      "id": "WCH-102-Q004",
+      "id": "WCH-102-C004",
       "unit_id": "WCH-102-U01",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: consecuencias plausibles que deben identificarse, priorizarse y reevaluarse cuando cambia la situación?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: consecuencias plausibles que deben identificarse, priorizarse y reevaluarse cuando cambia la situación?",
+        "En «Estado heredado», selecciona el concepto descrito así: consecuencias plausibles que deben identificarse, priorizarse y reevaluarse cuando cambia la situación."
+      ],
+      "answer_display_es": "riesgos",
+      "accepted_short_answers_es": [
+        "riesgos"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "riesgos"
       ]
     },
     {
-      "id": "WCH-102-Q005",
+      "id": "WCH-102-C005",
+      "unit_id": "WCH-102-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Estado heredado»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Estado heredado»?",
+        "Repaso de «Estado heredado»: ¿Qué práctica corresponde a «Estado heredado»?"
+      ],
+      "answer_display_es": "Recibir un relevo complejo.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Recibir un relevo complejo."
+      ]
+    },
+    {
+      "id": "WCH-102-C006",
+      "unit_id": "WCH-102-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Estado heredado»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Estado heredado»?",
+        "Repaso de «Estado heredado»: ¿Qué evaluación se asocia a «Estado heredado»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
+    },
+    {
+      "id": "WCH-102-C007",
       "unit_id": "WCH-102-U02",
-      "type": "service_readiness",
-      "prompt_es": "Explica incidencias como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: problemas o desviaciones abiertas que requieren responsable, seguimiento y criterio de cierre?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: problemas o desviaciones abiertas que requieren responsable, seguimiento y criterio de cierre?",
+        "En «Seguimiento longitudinal», selecciona el concepto descrito así: problemas o desviaciones abiertas que requieren responsable, seguimiento y criterio de cierre."
+      ],
+      "answer_display_es": "incidencias",
+      "accepted_short_answers_es": [
+        "incidencias"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "incidencias",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "incidencias"
       ]
     },
     {
-      "id": "WCH-102-Q006",
+      "id": "WCH-102-C008",
       "unit_id": "WCH-102-U02",
-      "type": "scenario",
-      "prompt_es": "Escenario: Mantener asuntos abiertos. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: cambios sostenidos observados a lo largo del tiempo que pueden revelar degradación antes de un fallo?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: cambios sostenidos observados a lo largo del tiempo que pueden revelar degradación antes de un fallo?",
+        "En «Seguimiento longitudinal», selecciona el concepto descrito así: cambios sostenidos observados a lo largo del tiempo que pueden revelar degradación antes de un fallo."
+      ],
+      "answer_display_es": "tendencias",
+      "accepted_short_answers_es": [
+        "tendencias"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "tendencias"
       ]
     },
     {
-      "id": "WCH-102-Q007",
+      "id": "WCH-102-C009",
       "unit_id": "WCH-102-U02",
-      "type": "debrief",
-      "prompt_es": "Tras Seguimiento longitudinal, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: ETA debe concretarse en hechos observables, límites y acciones dentro de «Seguimiento longitudinal», evitando usar el término como una etiqueta vacía?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: ETA debe concretarse en hechos observables, límites y acciones dentro de «Seguimiento longitudinal», evitando usar el término como una etiqueta vacía?",
+        "En «Seguimiento longitudinal», selecciona el concepto descrito así: ETA debe concretarse en hechos observables, límites y acciones dentro de «Seguimiento longitudinal», evitando usar el término como una etiqueta vacía."
+      ],
+      "answer_display_es": "ETA",
+      "accepted_short_answers_es": [
+        "ETA"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "ETA"
       ]
     },
     {
-      "id": "WCH-102-Q008",
+      "id": "WCH-102-C010",
       "unit_id": "WCH-102-U02",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: personas o puestos que poseen la acción o decisión pendiente y deben mantener su seguimiento?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: personas o puestos que poseen la acción o decisión pendiente y deben mantener su seguimiento?",
+        "En «Seguimiento longitudinal», selecciona el concepto descrito así: personas o puestos que poseen la acción o decisión pendiente y deben mantener su seguimiento."
+      ],
+      "answer_display_es": "responsables",
+      "accepted_short_answers_es": [
+        "responsables"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "responsables"
       ]
     },
     {
-      "id": "WCH-102-Q009",
+      "id": "WCH-102-C011",
+      "unit_id": "WCH-102-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Seguimiento longitudinal»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Seguimiento longitudinal»?",
+        "Repaso de «Seguimiento longitudinal»: ¿Qué práctica corresponde a «Seguimiento longitudinal»?"
+      ],
+      "answer_display_es": "Mantener asuntos abiertos.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Mantener asuntos abiertos."
+      ]
+    },
+    {
+      "id": "WCH-102-C012",
+      "unit_id": "WCH-102-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Seguimiento longitudinal»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Seguimiento longitudinal»?",
+        "Repaso de «Seguimiento longitudinal»: ¿Qué evaluación se asocia a «Seguimiento longitudinal»?"
+      ],
+      "answer_display_es": "Práctica.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Práctica."
+      ]
+    },
+    {
+      "id": "WCH-102-C013",
       "unit_id": "WCH-102-U03",
-      "type": "service_readiness",
-      "prompt_es": "Explica evento como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: cambio observable que puede modificar el estado operativo y exige registrar relevancia, fuente y respuesta?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: cambio observable que puede modificar el estado operativo y exige registrar relevancia, fuente y respuesta?",
+        "En «Registro factual», selecciona el concepto descrito así: cambio observable que puede modificar el estado operativo y exige registrar relevancia, fuente y respuesta."
+      ],
+      "answer_display_es": "evento",
+      "accepted_short_answers_es": [
+        "evento"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "evento",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "evento"
       ]
     },
     {
-      "id": "WCH-102-Q010",
+      "id": "WCH-102-C014",
       "unit_id": "WCH-102-U03",
-      "type": "scenario",
-      "prompt_es": "Escenario: Actualizar event log/registro. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: intervención concreta ejecutada por una persona o sistema y vinculada a un objetivo?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: intervención concreta ejecutada por una persona o sistema y vinculada a un objetivo?",
+        "En «Registro factual», selecciona el concepto descrito así: intervención concreta ejecutada por una persona o sistema y vinculada a un objetivo."
+      ],
+      "answer_display_es": "acción",
+      "accepted_short_answers_es": [
+        "acción"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "acción"
       ]
     },
     {
-      "id": "WCH-102-Q011",
+      "id": "WCH-102-C015",
       "unit_id": "WCH-102-U03",
-      "type": "debrief",
-      "prompt_es": "Tras Registro factual, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: efecto observado tras una acción; debe analizarse separado de la calidad de la decisión que lo produjo?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: efecto observado tras una acción; debe analizarse separado de la calidad de la decisión que lo produjo?",
+        "En «Registro factual», selecciona el concepto descrito así: efecto observado tras una acción; debe analizarse separado de la calidad de la decisión que lo produjo."
+      ],
+      "answer_display_es": "resultado",
+      "accepted_short_answers_es": [
+        "resultado"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "resultado"
       ]
     },
     {
-      "id": "WCH-102-Q012",
+      "id": "WCH-102-C016",
       "unit_id": "WCH-102-U03",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: origen de un dato o informe, necesario para valorar fiabilidad, contexto y trazabilidad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: origen de un dato o informe, necesario para valorar fiabilidad, contexto y trazabilidad?",
+        "En «Registro factual», selecciona el concepto descrito así: origen de un dato o informe, necesario para valorar fiabilidad, contexto y trazabilidad."
+      ],
+      "answer_display_es": "fuente",
+      "accepted_short_answers_es": [
+        "fuente"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "fuente"
       ]
     },
     {
-      "id": "WCH-102-Q013",
+      "id": "WCH-102-C017",
+      "unit_id": "WCH-102-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Registro factual»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Registro factual»?",
+        "Repaso de «Registro factual»: ¿Qué práctica corresponde a «Registro factual»?"
+      ],
+      "answer_display_es": "Actualizar event log/registro.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Actualizar event log/registro."
+      ]
+    },
+    {
+      "id": "WCH-102-C018",
+      "unit_id": "WCH-102-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Registro factual»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Registro factual»?",
+        "Repaso de «Registro factual»: ¿Qué evaluación se asocia a «Registro factual»?"
+      ],
+      "answer_display_es": "Revisión.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Revisión."
+      ]
+    },
+    {
+      "id": "WCH-102-C019",
       "unit_id": "WCH-102-U04",
-      "type": "service_readiness",
-      "prompt_es": "Explica nueva orden como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: instrucción posterior que puede modificar prioridades previas y exige confirmar impacto en tareas abiertas?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: instrucción posterior que puede modificar prioridades previas y exige confirmar impacto en tareas abiertas?",
+        "En «Cambio de prioridad», selecciona el concepto descrito así: instrucción posterior que puede modificar prioridades previas y exige confirmar impacto en tareas abiertas."
+      ],
+      "answer_display_es": "nueva orden",
+      "accepted_short_answers_es": [
+        "nueva orden"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "nueva orden",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "nueva orden"
       ]
     },
     {
-      "id": "WCH-102-Q014",
+      "id": "WCH-102-C020",
       "unit_id": "WCH-102-U04",
-      "type": "scenario",
-      "prompt_es": "Escenario: Reorganizar pendientes. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: magnitud de las consecuencias que un evento o decisión puede producir?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: magnitud de las consecuencias que un evento o decisión puede producir?",
+        "En «Cambio de prioridad», selecciona el concepto descrito así: magnitud de las consecuencias que un evento o decisión puede producir."
+      ],
+      "answer_display_es": "impacto",
+      "accepted_short_answers_es": [
+        "impacto"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "impacto"
       ]
     },
     {
-      "id": "WCH-102-Q015",
+      "id": "WCH-102-C021",
       "unit_id": "WCH-102-U04",
-      "type": "debrief",
-      "prompt_es": "Tras Cambio de prioridad, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: transmisión clara de hechos, intención, límites y necesidades al destinatario correcto?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: transmisión clara de hechos, intención, límites y necesidades al destinatario correcto?",
+        "En «Cambio de prioridad», selecciona el concepto descrito así: transmisión clara de hechos, intención, límites y necesidades al destinatario correcto."
+      ],
+      "answer_display_es": "comunicación",
+      "accepted_short_answers_es": [
+        "comunicación"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "comunicación"
       ]
     },
     {
-      "id": "WCH-102-Q016",
+      "id": "WCH-102-C022",
       "unit_id": "WCH-102-U04",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Cambio de prioridad»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Cambio de prioridad»?",
+        "Repaso de «Cambio de prioridad»: ¿Qué práctica corresponde a «Cambio de prioridad»?"
+      ],
+      "answer_display_es": "Reorganizar pendientes.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "Reorganizar pendientes."
       ]
     },
     {
-      "id": "WCH-102-Q017",
+      "id": "WCH-102-C023",
+      "unit_id": "WCH-102-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Cambio de prioridad»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Cambio de prioridad»?",
+        "Repaso de «Cambio de prioridad»: ¿Qué evaluación se asocia a «Cambio de prioridad»?"
+      ],
+      "answer_display_es": "Caso.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Caso."
+      ]
+    },
+    {
+      "id": "WCH-102-C024",
+      "unit_id": "WCH-102-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué criterio profesional guía «Cambio de prioridad»?",
+      "web_prompt_variants_es": [
+        "¿Qué criterio profesional guía «Cambio de prioridad»?",
+        "Repaso de «Cambio de prioridad»: ¿Qué criterio profesional guía «Cambio de prioridad»?"
+      ],
+      "answer_display_es": "La profesionalidad consiste en conservar una picture compartida, decisiones trazables y continuidad entre turnos y departamentos.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "La profesionalidad consiste en conservar una picture compartida, decisiones trazables y continuidad entre turnos y departamentos."
+      ]
+    },
+    {
+      "id": "WCH-102-C025",
       "unit_id": "WCH-102-U05",
-      "type": "service_readiness",
-      "prompt_es": "Explica resumen como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: síntesis suficiente para comprender el estado sin ocultar riesgos, excepciones ni pendientes críticos?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: síntesis suficiente para comprender el estado sin ocultar riesgos, excepciones ni pendientes críticos?",
+        "En «Entrega de guardia», selecciona el concepto descrito así: síntesis suficiente para comprender el estado sin ocultar riesgos, excepciones ni pendientes críticos."
+      ],
+      "answer_display_es": "resumen",
+      "accepted_short_answers_es": [
+        "resumen"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "resumen",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "resumen"
       ]
     },
     {
-      "id": "WCH-102-Q018",
+      "id": "WCH-102-C026",
       "unit_id": "WCH-102-U05",
-      "type": "scenario",
-      "prompt_es": "Escenario: Handoff formal. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: condiciones que requieren atención inmediata o vigilancia especial por superar un umbral o margen?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: condiciones que requieren atención inmediata o vigilancia especial por superar un umbral o margen?",
+        "En «Entrega de guardia», selecciona el concepto descrito así: condiciones que requieren atención inmediata o vigilancia especial por superar un umbral o margen."
+      ],
+      "answer_display_es": "alertas",
+      "accepted_short_answers_es": [
+        "alertas"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "alertas"
       ]
     },
     {
-      "id": "WCH-102-Q019",
+      "id": "WCH-102-C027",
       "unit_id": "WCH-102-U05",
-      "type": "debrief",
-      "prompt_es": "Tras Entrega de guardia, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: tareas previstas que aún no se han ejecutado y deben conservar responsable, momento o condición de activación?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: tareas previstas que aún no se han ejecutado y deben conservar responsable, momento o condición de activación?",
+        "En «Entrega de guardia», selecciona el concepto descrito así: tareas previstas que aún no se han ejecutado y deben conservar responsable, momento o condición de activación."
+      ],
+      "answer_display_es": "acciones futuras",
+      "accepted_short_answers_es": [
+        "acciones futuras"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "acciones futuras"
       ]
     },
     {
-      "id": "WCH-102-Q020",
+      "id": "WCH-102-C028",
       "unit_id": "WCH-102-U05",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: verificación de recepción, comprensión o resultado cuando un error tendría consecuencias operativas?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: verificación de recepción, comprensión o resultado cuando un error tendría consecuencias operativas?",
+        "En «Entrega de guardia», selecciona el concepto descrito así: verificación de recepción, comprensión o resultado cuando un error tendría consecuencias operativas."
+      ],
+      "answer_display_es": "confirmación",
+      "accepted_short_answers_es": [
+        "confirmación"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "confirmación"
       ]
     },
     {
-      "id": "WCH-102-Q021",
-      "unit_id": "WCH-102-U06",
-      "type": "service_readiness",
-      "prompt_es": "Explica decisiones anteriores como se lo explicarías a un Alférez que recibe su primer destino.",
+      "id": "WCH-102-C029",
+      "unit_id": "WCH-102-U05",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Entrega de guardia»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Entrega de guardia»?",
+        "Repaso de «Entrega de guardia»: ¿Qué práctica corresponde a «Entrega de guardia»?"
+      ],
+      "answer_display_es": "Handoff formal.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "decisiones anteriores",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "Handoff formal."
       ]
     },
     {
-      "id": "WCH-102-Q022",
-      "unit_id": "WCH-102-U06",
-      "type": "scenario",
-      "prompt_es": "Escenario: Responder por una decisión pasada. Describe decisión inicial, alternativas y condición de escalado.",
+      "id": "WCH-102-C030",
+      "unit_id": "WCH-102-U05",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Entrega de guardia»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Entrega de guardia»?",
+        "Repaso de «Entrega de guardia»: ¿Qué evaluación se asocia a «Entrega de guardia»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "Evaluación."
       ]
     },
     {
-      "id": "WCH-102-Q023",
+      "id": "WCH-102-C031",
       "unit_id": "WCH-102-U06",
-      "type": "debrief",
-      "prompt_es": "Tras Responsabilidad posterior, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: elecciones ya tomadas que siguen condicionando estado, compromisos, riesgos o responsabilidades actuales?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: elecciones ya tomadas que siguen condicionando estado, compromisos, riesgos o responsabilidades actuales?",
+        "En «Responsabilidad posterior», selecciona el concepto descrito así: elecciones ya tomadas que siguen condicionando estado, compromisos, riesgos o responsabilidades actuales."
+      ],
+      "answer_display_es": "decisiones anteriores",
+      "accepted_short_answers_es": [
+        "decisiones anteriores"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "decisiones anteriores"
       ]
     },
     {
-      "id": "WCH-102-Q024",
+      "id": "WCH-102-C032",
       "unit_id": "WCH-102-U06",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: revisión posterior que necesita evidencia íntegra para reconstruir hechos y responsabilidades sin depender de memoria?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: revisión posterior que necesita evidencia íntegra para reconstruir hechos y responsabilidades sin depender de memoria?",
+        "En «Responsabilidad posterior», selecciona el concepto descrito así: revisión posterior que necesita evidencia íntegra para reconstruir hechos y responsabilidades sin depender de memoria."
+      ],
+      "answer_display_es": "auditoría",
+      "accepted_short_answers_es": [
+        "auditoría"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "auditoría"
+      ]
+    },
+    {
+      "id": "WCH-102-C033",
+      "unit_id": "WCH-102-U06",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: petición de criterio a otra autoridad o especialidad para reducir incertidumbre o confirmar límites?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: petición de criterio a otra autoridad o especialidad para reducir incertidumbre o confirmar límites?",
+        "En «Responsabilidad posterior», selecciona el concepto descrito así: petición de criterio a otra autoridad o especialidad para reducir incertidumbre o confirmar límites."
+      ],
+      "answer_display_es": "consulta",
+      "accepted_short_answers_es": [
+        "consulta"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "consulta"
+      ]
+    },
+    {
+      "id": "WCH-102-C034",
+      "unit_id": "WCH-102-U06",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: revisión posterior estructurada que separa hechos, decisiones, resultados, lecciones y acciones de mejora?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: revisión posterior estructurada que separa hechos, decisiones, resultados, lecciones y acciones de mejora?",
+        "En «Responsabilidad posterior», selecciona el concepto descrito así: revisión posterior estructurada que separa hechos, decisiones, resultados, lecciones y acciones de mejora."
+      ],
+      "answer_display_es": "debrief",
+      "accepted_short_answers_es": [
+        "debrief"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "debrief"
+      ]
+    },
+    {
+      "id": "WCH-102-C035",
+      "unit_id": "WCH-102-U06",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Responsabilidad posterior»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Responsabilidad posterior»?",
+        "Repaso de «Responsabilidad posterior»: ¿Qué práctica corresponde a «Responsabilidad posterior»?"
+      ],
+      "answer_display_es": "Responder por una decisión pasada.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Responder por una decisión pasada."
+      ]
+    },
+    {
+      "id": "WCH-102-C036",
+      "unit_id": "WCH-102-U06",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Responsabilidad posterior»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Responsabilidad posterior»?",
+        "Repaso de «Responsabilidad posterior»: ¿Qué evaluación se asocia a «Responsabilidad posterior»?"
+      ],
+      "answer_display_es": "Juicio.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Juicio."
       ]
     }
   ]

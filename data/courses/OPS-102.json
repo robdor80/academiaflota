@@ -1,7 +1,7 @@
 {
   "subject": "Operaciones integradas de misión",
   "code": "OPS-102",
-  "version": "1.0",
+  "version": "2.0",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/first_class/courses/OPS-102/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/first_class/OPS-102/MANUAL_v1_0.md",
@@ -18,11 +18,10 @@
     {
       "id": "OPS-102-U01",
       "title": "Briefing de misión",
-      "subtitle": "UNIDAD 01 · OPS-102",
       "blocks": [
         {
           "type": "p",
-          "text": "Vivir una misión completa desde briefing hasta debrief, con varias guardias y eventos emergentes."
+          "text": "Al completar esta unidad, el cadete debe integrar los elementos de **Briefing de misión** sin perder seguridad, prioridades ni continuidad."
         },
         {
           "type": "heading",
@@ -31,11 +30,19 @@
         {
           "type": "bullets",
           "items": [
-            "objetivos",
-            "autoridad",
-            "restricciones",
-            "riesgos"
+            "**objetivos**: resultados que deben alcanzarse y que permiten ordenar esfuerzos, recursos y criterios de éxito.",
+            "**autoridad**: facultad reconocida para decidir u ordenar dentro de un ámbito y unas condiciones definidas.",
+            "**restricciones**: condiciones legales, técnicas, éticas, temporales o de seguridad que reducen las acciones permitidas.",
+            "**riesgos**: consecuencias plausibles que deben identificarse, priorizarse y reevaluarse cuando cambia la situación."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Antes de actuar se distingue lo confirmado de lo incierto, se comprueban límites y responsables, se ejecuta la opción proporcionada y se conserva lo necesario para seguimiento, relevo y debrief."
         },
         {
           "type": "callout",
@@ -44,48 +51,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Una misión se evalúa desde preparación hasta cierre: la continuidad, el relevo y el registro importan tanto como el momento de máxima tensión."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica objetivos como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Preparación multi-rama.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/orders/starfleet_mission_tasking_order.json",
-            "gameplay/ship_operations/operational_event_log/operational_event_contract.json",
-            "gameplay/navigation/route_context_model.json"
-          ]
+          "text": "Evaluación. Se valora el proceso con la información disponible entonces, no solo el resultado conocido después."
         }
       ]
     },
     {
       "id": "OPS-102-U02",
       "title": "Preparación de nave/equipo",
-      "subtitle": "UNIDAD 02 · OPS-102",
       "blocks": [
         {
           "type": "p",
-          "text": "Vivir una misión completa desde briefing hasta debrief, con varias guardias y eventos emergentes."
+          "text": "Al completar esta unidad, el cadete debe integrar los elementos de **Preparación de nave/equipo** sin perder seguridad, prioridades ni continuidad."
         },
         {
           "type": "heading",
@@ -94,11 +76,19 @@
         {
           "type": "bullets",
           "items": [
-            "configuración",
-            "personal",
-            "recursos",
-            "checklists"
+            "**configuración**: estado deliberado de sistemas, herramientas y equipos antes de una fase de misión.",
+            "**personal**: personas disponibles consideradas por número, competencia, fatiga, asignación y capacidad de relevo.",
+            "**recursos**: tiempo, personal, energía, material, capacidad y atención disponibles; asignarlos a una tarea reduce el margen para otras.",
+            "**checklists**: secuencias de verificación para tareas críticas o repetitivas; reducen omisiones sin sustituir el juicio."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Antes de actuar se distingue lo confirmado de lo incierto, se comprueban límites y responsables, se ejecuta la opción proporcionada y se conserva lo necesario para seguimiento, relevo y debrief."
         },
         {
           "type": "callout",
@@ -107,48 +97,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Una misión se evalúa desde preparación hasta cierre: la continuidad, el relevo y el registro importan tanto como el momento de máxima tensión."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Práctica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica configuración como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Preparar salida.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/orders/starfleet_mission_tasking_order.json",
-            "gameplay/ship_operations/operational_event_log/operational_event_contract.json",
-            "gameplay/navigation/route_context_model.json"
-          ]
+          "text": "Práctica. Se valora el proceso con la información disponible entonces, no solo el resultado conocido después."
         }
       ]
     },
     {
       "id": "OPS-102-U03",
       "title": "Tránsito y rutina",
-      "subtitle": "UNIDAD 03 · OPS-102",
       "blocks": [
         {
           "type": "p",
-          "text": "Vivir una misión completa desde briefing hasta debrief, con varias guardias y eventos emergentes."
+          "text": "Al completar esta unidad, el cadete debe integrar los elementos de **Tránsito y rutina** sin perder seguridad, prioridades ni continuidad."
         },
         {
           "type": "heading",
@@ -157,11 +122,19 @@
         {
           "type": "bullets",
           "items": [
-            "guardias",
-            "registros",
-            "mantenimiento",
-            "observación"
+            "**guardias**: periodos de responsabilidad operativa que requieren incorporación, desempeño sostenido y relevo formal.",
+            "**registros**: conjunto cronológico de evidencias que permite entender qué ocurrió y qué permanece abierto.",
+            "**mantenimiento**: acciones preventivas y correctivas destinadas a conservar disponibilidad y reducir fallos futuros.",
+            "**observación**: obtención deliberada de información sin convertir automáticamente una lectura en conclusión."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Antes de actuar se distingue lo confirmado de lo incierto, se comprueban límites y responsables, se ejecuta la opción proporcionada y se conserva lo necesario para seguimiento, relevo y debrief."
         },
         {
           "type": "callout",
@@ -170,48 +143,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Una misión se evalúa desde preparación hasta cierre: la continuidad, el relevo y el registro importan tanto como el momento de máxima tensión."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación longitudinal."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica guardias como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Operación sostenida.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/orders/starfleet_mission_tasking_order.json",
-            "gameplay/ship_operations/operational_event_log/operational_event_contract.json",
-            "gameplay/navigation/route_context_model.json"
-          ]
+          "text": "Evaluación longitudinal. Se valora el proceso con la información disponible entonces, no solo el resultado conocido después."
         }
       ]
     },
     {
       "id": "OPS-102-U04",
       "title": "Objetivo principal",
-      "subtitle": "UNIDAD 04 · OPS-102",
       "blocks": [
         {
           "type": "p",
-          "text": "Vivir una misión completa desde briefing hasta debrief, con varias guardias y eventos emergentes."
+          "text": "Al completar esta unidad, el cadete debe integrar los elementos de **Objetivo principal** sin perder seguridad, prioridades ni continuidad."
         },
         {
           "type": "heading",
@@ -220,9 +168,17 @@
         {
           "type": "bullets",
           "items": [
-            "ciencia/diplomacia/logística/exploración contextual",
-            "coordinación"
+            "**ciencia/diplomacia/logística/exploración contextual**: naturaleza concreta del objetivo de misión; determina qué capacidades, reglas y especialistas deben coordinarse.",
+            "**coordinación**: alineación de personas, sistemas y departamentos para que acciones compatibles ocurran en el orden y momento adecuados."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Antes de actuar se distingue lo confirmado de lo incierto, se comprueban límites y responsables, se ejecuta la opción proporcionada y se conserva lo necesario para seguimiento, relevo y debrief."
         },
         {
           "type": "callout",
@@ -231,48 +187,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Una misión se evalúa desde preparación hasta cierre: la continuidad, el relevo y el registro importan tanto como el momento de máxima tensión."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica ciencia/diplomacia/logística/exploración contextual como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Ejecutar misión.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/orders/starfleet_mission_tasking_order.json",
-            "gameplay/ship_operations/operational_event_log/operational_event_contract.json",
-            "gameplay/navigation/route_context_model.json"
-          ]
+          "text": "Evaluación. Se valora el proceso con la información disponible entonces, no solo el resultado conocido después."
         }
       ]
     },
     {
       "id": "OPS-102-U05",
       "title": "Cambio de condiciones",
-      "subtitle": "UNIDAD 05 · OPS-102",
       "blocks": [
         {
           "type": "p",
-          "text": "Vivir una misión completa desde briefing hasta debrief, con varias guardias y eventos emergentes."
+          "text": "Al completar esta unidad, el cadete debe integrar los elementos de **Cambio de condiciones** sin perder seguridad, prioridades ni continuidad."
         },
         {
           "type": "heading",
@@ -281,11 +212,19 @@
         {
           "type": "bullets",
           "items": [
-            "evento",
-            "prioridad",
-            "adaptación",
-            "consecuencia"
+            "**evento**: cambio observable que puede modificar el estado operativo y exige registrar relevancia, fuente y respuesta.",
+            "**prioridad**: orden relativo entre demandas según seguridad, misión, urgencia, impacto y autoridad.",
+            "**adaptación**: modificación del plan cuando cambian condiciones, preservando intención, límites y trazabilidad.",
+            "**consecuencia**: efecto probable o real de una decisión sobre personas, nave, misión, relaciones o recursos."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Antes de actuar se distingue lo confirmado de lo incierto, se comprueban límites y responsables, se ejecuta la opción proporcionada y se conserva lo necesario para seguimiento, relevo y debrief."
         },
         {
           "type": "callout",
@@ -294,48 +233,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Una misión se evalúa desde preparación hasta cierre: la continuidad, el relevo y el registro importan tanto como el momento de máxima tensión."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Juicio."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica evento como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Responder sin guion fijo.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/orders/starfleet_mission_tasking_order.json",
-            "gameplay/ship_operations/operational_event_log/operational_event_contract.json",
-            "gameplay/navigation/route_context_model.json"
-          ]
+          "text": "Juicio. Se valora el proceso con la información disponible entonces, no solo el resultado conocido después."
         }
       ]
     },
     {
       "id": "OPS-102-U06",
       "title": "Regreso y cierre",
-      "subtitle": "UNIDAD 06 · OPS-102",
       "blocks": [
         {
           "type": "p",
-          "text": "Vivir una misión completa desde briefing hasta debrief, con varias guardias y eventos emergentes."
+          "text": "Al completar esta unidad, el cadete debe integrar los elementos de **Regreso y cierre** sin perder seguridad, prioridades ni continuidad."
         },
         {
           "type": "heading",
@@ -344,11 +258,19 @@
         {
           "type": "bullets",
           "items": [
-            "handoff",
-            "logs",
-            "pendientes",
-            "debrief"
+            "**handoff**: transferencia estructurada de estado, órdenes, riesgos, acciones y pendientes entre responsables.",
+            "**logs**: registros cronológicos técnicos u operativos usados para continuidad, diagnóstico y revisión.",
+            "**pendientes**: acciones abiertas con responsable, prioridad, estado y condición prevista de cierre.",
+            "**debrief**: revisión posterior estructurada que separa hechos, decisiones, resultados, lecciones y acciones de mejora."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Antes de actuar se distingue lo confirmado de lo incierto, se comprueban límites y responsables, se ejecuta la opción proporcionada y se conserva lo necesario para seguimiento, relevo y debrief."
         },
         {
           "type": "callout",
@@ -357,39 +279,16 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "Una misión se evalúa desde preparación hasta cierre: la continuidad, el relevo y el registro importan tanto como el momento de máxima tensión."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación integrada."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica handoff como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Cerrar misión.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/orders/starfleet_mission_tasking_order.json",
-            "gameplay/ship_operations/operational_event_log/operational_event_contract.json",
-            "gameplay/navigation/route_context_model.json"
-          ]
+          "text": "Evaluación integrada. Se valora el proceso con la información disponible entonces, no solo el resultado conocido después."
         }
       ]
     }
-  ]
+  ],
+  "assessmentModel": "concept_driven_v2_1"
 }

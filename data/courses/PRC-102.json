@@ -1,7 +1,7 @@
 {
   "subject": "Prácticum / crucero de formación",
   "code": "PRC-102",
-  "version": "1.0",
+  "version": "2.0",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/first_class/courses/PRC-102/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/first_class/PRC-102/MANUAL_v1_0.md",
@@ -17,11 +17,10 @@
     {
       "id": "PRC-102-U01",
       "title": "Asignación de prácticum",
-      "subtitle": "UNIDAD 01 · PRC-102",
       "blocks": [
         {
           "type": "p",
-          "text": "Exponer al cadete a servicio real o casi real durante un periodo significativo en una unidad o instalación apropiada."
+          "text": "Al completar esta unidad, el cadete debe integrar los elementos de **Asignación de prácticum** sin perder seguridad, prioridades ni continuidad."
         },
         {
           "type": "heading",
@@ -30,12 +29,20 @@
         {
           "type": "bullets",
           "items": [
-            "unidad",
-            "supervisor",
-            "puesto",
-            "alcance",
-            "reglas"
+            "**unidad**: nave, estación o instalación donde se presta servicio, con misión, organización y capacidades propias.",
+            "**supervisor**: responsable que observa, limita y valida el trabajo del cadete durante una actividad formativa.",
+            "**puesto**: función concreta con responsabilidades, autoridad, interfaces y requisitos definidos.",
+            "**alcance**: frontera de tareas y decisiones autorizadas durante una actividad o asignación.",
+            "**reglas**: normas y restricciones aplicables que continúan vigentes incluso bajo presión."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Antes de actuar se distingue lo confirmado de lo incierto, se comprueban límites y responsables, se ejecuta la opción proporcionada y se conserva lo necesario para seguimiento, relevo y debrief."
         },
         {
           "type": "callout",
@@ -44,47 +51,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "El prácticum observa servicio realista: no necesita una crisis artificial para producir evidencia sobre disciplina, constancia, juicio y convivencia profesional."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Validación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica unidad como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Recibir órdenes de incorporación.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/academy_path/field_training_model.json",
-            "gameplay/careers/academy_path/training_asset_model.json"
-          ]
+          "text": "Validación. Se valora el proceso con la información disponible entonces, no solo el resultado conocido después."
         }
       ]
     },
     {
       "id": "PRC-102-U02",
       "title": "Integración en tripulación",
-      "subtitle": "UNIDAD 02 · PRC-102",
       "blocks": [
         {
           "type": "p",
-          "text": "Exponer al cadete a servicio real o casi real durante un periodo significativo en una unidad o instalación apropiada."
+          "text": "Al completar esta unidad, el cadete debe integrar los elementos de **Integración en tripulación** sin perder seguridad, prioridades ni continuidad."
         },
         {
           "type": "heading",
@@ -93,11 +76,19 @@
         {
           "type": "bullets",
           "items": [
-            "alojamiento",
-            "guardias",
-            "cultura de unidad",
-            "cadena"
+            "**alojamiento**: integración cotidiana en la unidad que condiciona descanso, disponibilidad y convivencia profesional.",
+            "**guardias**: periodos de responsabilidad operativa que requieren incorporación, desempeño sostenido y relevo formal.",
+            "**cultura de unidad**: hábitos y prácticas locales válidos mientras no contradigan regulación, seguridad o estándares superiores.",
+            "**cadena**: línea de responsabilidad y escalado por la que circulan órdenes, informes y decisiones."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Antes de actuar se distingue lo confirmado de lo incierto, se comprueban límites y responsables, se ejecuta la opción proporcionada y se conserva lo necesario para seguimiento, relevo y debrief."
         },
         {
           "type": "callout",
@@ -106,47 +97,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "El prácticum observa servicio realista: no necesita una crisis artificial para producir evidencia sobre disciplina, constancia, juicio y convivencia profesional."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Observación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica alojamiento como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Primeros días jugables o resumidos según relevancia.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/academy_path/field_training_model.json",
-            "gameplay/careers/academy_path/training_asset_model.json"
-          ]
+          "text": "Observación. Se valora el proceso con la información disponible entonces, no solo el resultado conocido después."
         }
       ]
     },
     {
       "id": "PRC-102-U03",
       "title": "Servicio ordinario",
-      "subtitle": "UNIDAD 03 · PRC-102",
       "blocks": [
         {
           "type": "p",
-          "text": "Exponer al cadete a servicio real o casi real durante un periodo significativo en una unidad o instalación apropiada."
+          "text": "Al completar esta unidad, el cadete debe integrar los elementos de **Servicio ordinario** sin perder seguridad, prioridades ni continuidad."
         },
         {
           "type": "heading",
@@ -155,11 +122,19 @@
         {
           "type": "bullets",
           "items": [
-            "rutina",
-            "tareas",
-            "tiempo libre",
-            "relaciones profesionales"
+            "**rutina**: trabajo ordinario repetido que sostiene el servicio y donde también se evalúan disciplina, constancia y atención.",
+            "**tareas**: acciones asignadas con objetivo, responsable, prioridad y criterio de finalización.",
+            "**tiempo libre**: periodo fuera de guardia que permite descanso y vida personal sin eliminar obligaciones de disponibilidad establecidas.",
+            "**relaciones profesionales**: vínculos de trabajo basados en respeto, límites, confianza, rol y conducta."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Antes de actuar se distingue lo confirmado de lo incierto, se comprueban límites y responsables, se ejecuta la opción proporcionada y se conserva lo necesario para seguimiento, relevo y debrief."
         },
         {
           "type": "callout",
@@ -168,47 +143,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "El prácticum observa servicio realista: no necesita una crisis artificial para producir evidencia sobre disciplina, constancia, juicio y convivencia profesional."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evidencia longitudinal."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica rutina como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Bloques de servicio realista.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/academy_path/field_training_model.json",
-            "gameplay/careers/academy_path/training_asset_model.json"
-          ]
+          "text": "Evidencia longitudinal. Se valora el proceso con la información disponible entonces, no solo el resultado conocido después."
         }
       ]
     },
     {
       "id": "PRC-102-U04",
       "title": "Misión/actividad de unidad",
-      "subtitle": "UNIDAD 04 · PRC-102",
       "blocks": [
         {
           "type": "p",
-          "text": "Exponer al cadete a servicio real o casi real durante un periodo significativo en una unidad o instalación apropiada."
+          "text": "Al completar esta unidad, el cadete debe integrar los elementos de **Misión/actividad de unidad** sin perder seguridad, prioridades ni continuidad."
         },
         {
           "type": "heading",
@@ -217,11 +168,19 @@
         {
           "type": "bullets",
           "items": [
-            "objetivo",
-            "rol",
-            "supervisión",
-            "consecuencias"
+            "**objetivo**: efecto concreto que la misión o tarea debe conseguir; debe ser comprensible, comprobable y compatible con restricciones superiores.",
+            "**rol**: función asignada que determina qué debe hacer, informar y escalar una persona.",
+            "**supervisión**: nivel de observación e intervención necesario según riesgo, competencia demostrada y contexto.",
+            "**consecuencias**: efectos de una acción o evento sobre seguridad, misión, personas, relaciones y recursos."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Antes de actuar se distingue lo confirmado de lo incierto, se comprueban límites y responsables, se ejecuta la opción proporcionada y se conserva lo necesario para seguimiento, relevo y debrief."
         },
         {
           "type": "callout",
@@ -230,47 +189,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "El prácticum observa servicio realista: no necesita una crisis artificial para producir evidencia sobre disciplina, constancia, juicio y convivencia profesional."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica objetivo como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Participar en actividad real o equivalente.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/academy_path/field_training_model.json",
-            "gameplay/careers/academy_path/training_asset_model.json"
-          ]
+          "text": "Evaluación. Se valora el proceso con la información disponible entonces, no solo el resultado conocido después."
         }
       ]
     },
     {
       "id": "PRC-102-U05",
       "title": "Incidencias emergentes",
-      "subtitle": "UNIDAD 05 · PRC-102",
       "blocks": [
         {
           "type": "p",
-          "text": "Exponer al cadete a servicio real o casi real durante un periodo significativo en una unidad o instalación apropiada."
+          "text": "Al completar esta unidad, el cadete debe integrar los elementos de **Incidencias emergentes** sin perder seguridad, prioridades ni continuidad."
         },
         {
           "type": "heading",
@@ -279,10 +214,18 @@
         {
           "type": "bullets",
           "items": [
-            "mundo vivo",
-            "no crisis garantizada",
-            "respuesta"
+            "**mundo vivo**: estado persistente del juego que evoluciona por eventos y necesidades propias, no para fabricar una crisis al jugador.",
+            "**no crisis garantizada**: principio por el que una actividad puede transcurrir sin incidente artificial; la rutina también produce evidencia válida.",
+            "**respuesta**: acción inicial proporcionada que protege seguridad y gana tiempo mientras se confirma la situación."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Antes de actuar se distingue lo confirmado de lo incierto, se comprueban límites y responsables, se ejecuta la opción proporcionada y se conserva lo necesario para seguimiento, relevo y debrief."
         },
         {
           "type": "callout",
@@ -291,47 +234,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "El prácticum observa servicio realista: no necesita una crisis artificial para producir evidencia sobre disciplina, constancia, juicio y convivencia profesional."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evidencia contextual."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica mundo vivo como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Resolver lo que ocurra si ocurre.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/academy_path/field_training_model.json",
-            "gameplay/careers/academy_path/training_asset_model.json"
-          ]
+          "text": "Evidencia contextual. Se valora el proceso con la información disponible entonces, no solo el resultado conocido después."
         }
       ]
     },
     {
       "id": "PRC-102-U06",
       "title": "Informe final de prácticum",
-      "subtitle": "UNIDAD 06 · PRC-102",
       "blocks": [
         {
           "type": "p",
-          "text": "Exponer al cadete a servicio real o casi real durante un periodo significativo en una unidad o instalación apropiada."
+          "text": "Al completar esta unidad, el cadete debe integrar los elementos de **Informe final de prácticum** sin perder seguridad, prioridades ni continuidad."
         },
         {
           "type": "heading",
@@ -340,11 +259,19 @@
         {
           "type": "bullets",
           "items": [
-            "desempeño",
-            "conducta",
-            "autonomía",
-            "recomendaciones"
+            "**desempeño**: calidad observable con la que se ejecutan tareas a lo largo del tiempo y en distintos contextos.",
+            "**conducta**: forma de actuar respecto a disciplina, integridad, comunicación, seguridad y responsabilidad.",
+            "**autonomía**: capacidad de resolver trabajo sin guía continua dentro del propio ámbito y escalar cuando se supera.",
+            "**recomendaciones**: orientaciones derivadas de evidencia para desarrollo, asignación o supervisión futura."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Antes de actuar se distingue lo confirmado de lo incierto, se comprueban límites y responsables, se ejecuta la opción proporcionada y se conserva lo necesario para seguimiento, relevo y debrief."
         },
         {
           "type": "callout",
@@ -353,38 +280,16 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "El prácticum observa servicio realista: no necesita una crisis artificial para producir evidencia sobre disciplina, constancia, juicio y convivencia profesional."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Registro persistente."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica desempeño como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Entrevista de cierre.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/careers/academy_path/field_training_model.json",
-            "gameplay/careers/academy_path/training_asset_model.json"
-          ]
+          "text": "Registro persistente. Se valora el proceso con la información disponible entonces, no solo el resultado conocido después."
         }
       ]
     }
-  ]
+  ],
+  "assessmentModel": "concept_driven_v2_1"
 }

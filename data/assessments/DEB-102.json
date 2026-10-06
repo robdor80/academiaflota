@@ -1,313 +1,649 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.1.0",
   "course_id": "DEB-102",
-  "status": "generated_from_authoritative_curriculum",
-  "question_count": 24,
-  "questions": [
+  "status": "developed_concept_driven_autocorrectable_v2_1",
+  "policy": {
+    "theory_formats": [
+      "multiple_choice",
+      "short_answer"
+    ],
+    "multiple_choice_target_ratio": 0.8,
+    "short_answer_target_ratio": 0.2,
+    "deterministic_correction": true,
+    "web_and_game_share_concepts_not_question_instances": true,
+    "complex_judgment_moves_to_practice_and_simulation": true,
+    "source_rule": "Every evaluated concept is explicitly taught in the developed Year 4 material or an established prerequisite."
+  },
+  "unit_review": {
+    "questions_per_attempt": 5,
+    "reshuffle_each_attempt": true,
+    "preferred_short_answers_per_attempt": 1,
+    "concepts_available_per_unit": 6,
+    "avoid_duplicate_concepts": true
+  },
+  "concepts": [
     {
-      "id": "DEB-102-Q001",
+      "id": "DEB-102-C001",
       "unit_id": "DEB-102-U01",
-      "type": "service_readiness",
-      "prompt_es": "Explica timeline como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: secuencia temporal reconstruida a partir de fuentes para distinguir qué ocurrió y cuándo?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: secuencia temporal reconstruida a partir de fuentes para distinguir qué ocurrió y cuándo?",
+        "En «Reconstrucción factual», selecciona el concepto descrito así: secuencia temporal reconstruida a partir de fuentes para distinguir qué ocurrió y cuándo."
+      ],
+      "answer_display_es": "timeline",
+      "accepted_short_answers_es": [
+        "timeline"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "timeline",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "timeline"
       ]
     },
     {
-      "id": "DEB-102-Q002",
+      "id": "DEB-102-C002",
       "unit_id": "DEB-102-U01",
-      "type": "scenario",
-      "prompt_es": "Escenario: Reconstruir misión. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: orígenes independientes de información que deben conservarse para comparar fiabilidad y contradicciones?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: orígenes independientes de información que deben conservarse para comparar fiabilidad y contradicciones?",
+        "En «Reconstrucción factual», selecciona el concepto descrito así: orígenes independientes de información que deben conservarse para comparar fiabilidad y contradicciones."
+      ],
+      "answer_display_es": "fuentes",
+      "accepted_short_answers_es": [
+        "fuentes"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "fuentes"
       ]
     },
     {
-      "id": "DEB-102-Q003",
+      "id": "DEB-102-C003",
       "unit_id": "DEB-102-U01",
-      "type": "debrief",
-      "prompt_es": "Tras Reconstrucción factual, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: intervenciones ejecutadas, asociadas a responsable, momento, motivo y efecto observado?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: intervenciones ejecutadas, asociadas a responsable, momento, motivo y efecto observado?",
+        "En «Reconstrucción factual», selecciona el concepto descrito así: intervenciones ejecutadas, asociadas a responsable, momento, motivo y efecto observado."
+      ],
+      "answer_display_es": "acciones",
+      "accepted_short_answers_es": [
+        "acciones"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "acciones"
       ]
     },
     {
-      "id": "DEB-102-Q004",
+      "id": "DEB-102-C004",
       "unit_id": "DEB-102-U01",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: efectos observados de las acciones, separados de la intención y del proceso de decisión?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: efectos observados de las acciones, separados de la intención y del proceso de decisión?",
+        "En «Reconstrucción factual», selecciona el concepto descrito así: efectos observados de las acciones, separados de la intención y del proceso de decisión."
+      ],
+      "answer_display_es": "resultados",
+      "accepted_short_answers_es": [
+        "resultados"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "resultados"
       ]
     },
     {
-      "id": "DEB-102-Q005",
+      "id": "DEB-102-C005",
+      "unit_id": "DEB-102-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Reconstrucción factual»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Reconstrucción factual»?",
+        "Repaso de «Reconstrucción factual»: ¿Qué práctica corresponde a «Reconstrucción factual»?"
+      ],
+      "answer_display_es": "Reconstruir misión.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Reconstruir misión."
+      ]
+    },
+    {
+      "id": "DEB-102-C006",
+      "unit_id": "DEB-102-U01",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Reconstrucción factual»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Reconstrucción factual»?",
+        "Repaso de «Reconstrucción factual»: ¿Qué evaluación se asocia a «Reconstrucción factual»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
+    },
+    {
+      "id": "DEB-102-C007",
       "unit_id": "DEB-102-U02",
-      "type": "service_readiness",
-      "prompt_es": "Explica conocimiento como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: información que estaba realmente disponible en el momento de decidir, no la descubierta después?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: información que estaba realmente disponible en el momento de decidir, no la descubierta después?",
+        "En «Información disponible entonces», selecciona el concepto descrito así: información que estaba realmente disponible en el momento de decidir, no la descubierta después."
+      ],
+      "answer_display_es": "conocimiento",
+      "accepted_short_answers_es": [
+        "conocimiento"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "conocimiento",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "conocimiento"
       ]
     },
     {
-      "id": "DEB-102-Q006",
+      "id": "DEB-102-C008",
       "unit_id": "DEB-102-U02",
-      "type": "scenario",
-      "prompt_es": "Escenario: Separar hindsight. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: parte relevante de la situación que no está confirmada; debe declararse en lugar de rellenarse con suposiciones?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: parte relevante de la situación que no está confirmada; debe declararse en lugar de rellenarse con suposiciones?",
+        "En «Información disponible entonces», selecciona el concepto descrito así: parte relevante de la situación que no está confirmada; debe declararse en lugar de rellenarse con suposiciones."
+      ],
+      "answer_display_es": "incertidumbre",
+      "accepted_short_answers_es": [
+        "incertidumbre"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "incertidumbre"
       ]
     },
     {
-      "id": "DEB-102-Q007",
+      "id": "DEB-102-C009",
       "unit_id": "DEB-102-U02",
-      "type": "debrief",
-      "prompt_es": "Tras Información disponible entonces, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: proposiciones no confirmadas utilizadas provisionalmente; deben quedar explícitas para poder revisarlas?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: proposiciones no confirmadas utilizadas provisionalmente; deben quedar explícitas para poder revisarlas?",
+        "En «Información disponible entonces», selecciona el concepto descrito así: proposiciones no confirmadas utilizadas provisionalmente; deben quedar explícitas para poder revisarlas."
+      ],
+      "answer_display_es": "supuestos",
+      "accepted_short_answers_es": [
+        "supuestos"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "supuestos"
       ]
     },
     {
-      "id": "DEB-102-Q008",
+      "id": "DEB-102-C010",
       "unit_id": "DEB-102-U02",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: indicios que pueden apoyar una hipótesis sin equivaler por sí solos a una conclusión?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: indicios que pueden apoyar una hipótesis sin equivaler por sí solos a una conclusión?",
+        "En «Información disponible entonces», selecciona el concepto descrito así: indicios que pueden apoyar una hipótesis sin equivaler por sí solos a una conclusión."
+      ],
+      "answer_display_es": "señales",
+      "accepted_short_answers_es": [
+        "señales"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "señales"
       ]
     },
     {
-      "id": "DEB-102-Q009",
+      "id": "DEB-102-C011",
+      "unit_id": "DEB-102-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Información disponible entonces»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Información disponible entonces»?",
+        "Repaso de «Información disponible entonces»: ¿Qué práctica corresponde a «Información disponible entonces»?"
+      ],
+      "answer_display_es": "Separar hindsight.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Separar hindsight."
+      ]
+    },
+    {
+      "id": "DEB-102-C012",
+      "unit_id": "DEB-102-U02",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Información disponible entonces»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Información disponible entonces»?",
+        "Repaso de «Información disponible entonces»: ¿Qué evaluación se asocia a «Información disponible entonces»?"
+      ],
+      "answer_display_es": "Caso.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Caso."
+      ]
+    },
+    {
+      "id": "DEB-102-C013",
       "unit_id": "DEB-102-U03",
-      "type": "service_readiness",
-      "prompt_es": "Explica proceso como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: forma en que se obtuvieron datos, se compararon opciones, se decidió y se verificó el resultado?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: forma en que se obtuvieron datos, se compararon opciones, se decidió y se verificó el resultado?",
+        "En «Calidad de decisión», selecciona el concepto descrito así: forma en que se obtuvieron datos, se compararon opciones, se decidió y se verificó el resultado."
+      ],
+      "answer_display_es": "proceso",
+      "accepted_short_answers_es": [
+        "proceso"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "proceso",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "proceso"
       ]
     },
     {
-      "id": "DEB-102-Q010",
+      "id": "DEB-102-C014",
       "unit_id": "DEB-102-U03",
-      "type": "scenario",
-      "prompt_es": "Escenario: Evaluar decisión sin confundirla con resultado. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: combinación de probabilidad, impacto y exposición; se compara con misión, alternativas, autoridad y reversibilidad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: combinación de probabilidad, impacto y exposición; se compara con misión, alternativas, autoridad y reversibilidad?",
+        "En «Calidad de decisión», selecciona el concepto descrito así: combinación de probabilidad, impacto y exposición; se compara con misión, alternativas, autoridad y reversibilidad."
+      ],
+      "answer_display_es": "riesgo",
+      "accepted_short_answers_es": [
+        "riesgo"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "riesgo"
       ]
     },
     {
-      "id": "DEB-102-Q011",
+      "id": "DEB-102-C015",
       "unit_id": "DEB-102-U03",
-      "type": "debrief",
-      "prompt_es": "Tras Calidad de decisión, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: normas y restricciones aplicables que continúan vigentes incluso bajo presión?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: normas y restricciones aplicables que continúan vigentes incluso bajo presión?",
+        "En «Calidad de decisión», selecciona el concepto descrito así: normas y restricciones aplicables que continúan vigentes incluso bajo presión."
+      ],
+      "answer_display_es": "reglas",
+      "accepted_short_answers_es": [
+        "reglas"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "reglas"
       ]
     },
     {
-      "id": "DEB-102-Q012",
+      "id": "DEB-102-C016",
       "unit_id": "DEB-102-U03",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: cursos de acción distintos que permiten comparar riesgo, coste, tiempo y reversibilidad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: cursos de acción distintos que permiten comparar riesgo, coste, tiempo y reversibilidad?",
+        "En «Calidad de decisión», selecciona el concepto descrito así: cursos de acción distintos que permiten comparar riesgo, coste, tiempo y reversibilidad."
+      ],
+      "answer_display_es": "alternativas",
+      "accepted_short_answers_es": [
+        "alternativas"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "alternativas"
       ]
     },
     {
-      "id": "DEB-102-Q013",
+      "id": "DEB-102-C017",
+      "unit_id": "DEB-102-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Calidad de decisión»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Calidad de decisión»?",
+        "Repaso de «Calidad de decisión»: ¿Qué práctica corresponde a «Calidad de decisión»?"
+      ],
+      "answer_display_es": "Evaluar decisión sin confundirla con resultado.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluar decisión sin confundirla con resultado."
+      ]
+    },
+    {
+      "id": "DEB-102-C018",
+      "unit_id": "DEB-102-U03",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Calidad de decisión»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Calidad de decisión»?",
+        "Repaso de «Calidad de decisión»: ¿Qué evaluación se asocia a «Calidad de decisión»?"
+      ],
+      "answer_display_es": "Debate.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Debate."
+      ]
+    },
+    {
+      "id": "DEB-102-C019",
       "unit_id": "DEB-102-U04",
-      "type": "service_readiness",
-      "prompt_es": "Explica acción propia como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: parte de la actuación bajo responsabilidad directa de quien realiza el debrief?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: parte de la actuación bajo responsabilidad directa de quien realiza el debrief?",
+        "En «Responsabilidad», selecciona el concepto descrito así: parte de la actuación bajo responsabilidad directa de quien realiza el debrief."
+      ],
+      "answer_display_es": "acción propia",
+      "accepted_short_answers_es": [
+        "acción propia"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "acción propia",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "acción propia"
       ]
     },
     {
-      "id": "DEB-102-Q014",
+      "id": "DEB-102-C020",
       "unit_id": "DEB-102-U04",
-      "type": "scenario",
-      "prompt_es": "Escenario: Asumir y explicar decisiones. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: personas coordinadas mediante roles, comunicación y objetivos compartidos?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: personas coordinadas mediante roles, comunicación y objetivos compartidos?",
+        "En «Responsabilidad», selecciona el concepto descrito así: personas coordinadas mediante roles, comunicación y objetivos compartidos."
+      ],
+      "answer_display_es": "equipo",
+      "accepted_short_answers_es": [
+        "equipo"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "equipo"
       ]
     },
     {
-      "id": "DEB-102-Q015",
+      "id": "DEB-102-C021",
       "unit_id": "DEB-102-U04",
-      "type": "debrief",
-      "prompt_es": "Tras Responsabilidad, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: autoridad que integra información y decide prioridades cuando los conflictos superan el ámbito de un puesto?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: autoridad que integra información y decide prioridades cuando los conflictos superan el ámbito de un puesto?",
+        "En «Responsabilidad», selecciona el concepto descrito así: autoridad que integra información y decide prioridades cuando los conflictos superan el ámbito de un puesto."
+      ],
+      "answer_display_es": "mando",
+      "accepted_short_answers_es": [
+        "mando"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "mando"
       ]
     },
     {
-      "id": "DEB-102-Q016",
+      "id": "DEB-102-C022",
       "unit_id": "DEB-102-U04",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: constancia factual de evento, fuente, acción, decisión y resultado que sostiene continuidad y auditoría?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: constancia factual de evento, fuente, acción, decisión y resultado que sostiene continuidad y auditoría?",
+        "En «Responsabilidad», selecciona el concepto descrito así: constancia factual de evento, fuente, acción, decisión y resultado que sostiene continuidad y auditoría."
+      ],
+      "answer_display_es": "registro",
+      "accepted_short_answers_es": [
+        "registro"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "registro"
       ]
     },
     {
-      "id": "DEB-102-Q017",
+      "id": "DEB-102-C023",
+      "unit_id": "DEB-102-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Responsabilidad»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Responsabilidad»?",
+        "Repaso de «Responsabilidad»: ¿Qué práctica corresponde a «Responsabilidad»?"
+      ],
+      "answer_display_es": "Asumir y explicar decisiones.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Asumir y explicar decisiones."
+      ]
+    },
+    {
+      "id": "DEB-102-C024",
+      "unit_id": "DEB-102-U04",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Responsabilidad»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Responsabilidad»?",
+        "Repaso de «Responsabilidad»: ¿Qué evaluación se asocia a «Responsabilidad»?"
+      ],
+      "answer_display_es": "Evaluación.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Evaluación."
+      ]
+    },
+    {
+      "id": "DEB-102-C025",
       "unit_id": "DEB-102-U05",
-      "type": "service_readiness",
-      "prompt_es": "Explica procedimiento como se lo explicarías a un Alférez que recibe su primer destino.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: secuencia definida para realizar una tarea de forma segura y repetible, adaptable solo dentro de márgenes permitidos?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: secuencia definida para realizar una tarea de forma segura y repetible, adaptable solo dentro de márgenes permitidos?",
+        "En «Lecciones y cambio», selecciona el concepto descrito así: secuencia definida para realizar una tarea de forma segura y repetible, adaptable solo dentro de márgenes permitidos."
+      ],
+      "answer_display_es": "procedimiento",
+      "accepted_short_answers_es": [
+        "procedimiento"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "procedimiento",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "procedimiento"
       ]
     },
     {
-      "id": "DEB-102-Q018",
+      "id": "DEB-102-C026",
       "unit_id": "DEB-102-U05",
-      "type": "scenario",
-      "prompt_es": "Escenario: Proponer mejora. Describe decisión inicial, alternativas y condición de escalado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: conducta repetida que puede reforzar fiabilidad o introducir sesgos y debe revisarse con evidencia?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: conducta repetida que puede reforzar fiabilidad o introducir sesgos y debe revisarse con evidencia?",
+        "En «Lecciones y cambio», selecciona el concepto descrito así: conducta repetida que puede reforzar fiabilidad o introducir sesgos y debe revisarse con evidencia."
+      ],
+      "answer_display_es": "hábito",
+      "accepted_short_answers_es": [
+        "hábito"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "hábito"
       ]
     },
     {
-      "id": "DEB-102-Q019",
+      "id": "DEB-102-C027",
       "unit_id": "DEB-102-U05",
-      "type": "debrief",
-      "prompt_es": "Tras Lecciones y cambio, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: práctica diseñada para convertir conocimiento en desempeño repetible y corregir brechas concretas?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: práctica diseñada para convertir conocimiento en desempeño repetible y corregir brechas concretas?",
+        "En «Lecciones y cambio», selecciona el concepto descrito así: práctica diseñada para convertir conocimiento en desempeño repetible y corregir brechas concretas."
+      ],
+      "answer_display_es": "entrenamiento",
+      "accepted_short_answers_es": [
+        "entrenamiento"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "entrenamiento"
       ]
     },
     {
-      "id": "DEB-102-Q020",
+      "id": "DEB-102-C028",
       "unit_id": "DEB-102-U05",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: conjunto de personas, reglas y medios cuyo diseño puede facilitar o provocar determinados resultados?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: conjunto de personas, reglas y medios cuyo diseño puede facilitar o provocar determinados resultados?",
+        "En «Lecciones y cambio», selecciona el concepto descrito así: conjunto de personas, reglas y medios cuyo diseño puede facilitar o provocar determinados resultados."
+      ],
+      "answer_display_es": "sistema",
+      "accepted_short_answers_es": [
+        "sistema"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "sistema"
       ]
     },
     {
-      "id": "DEB-102-Q021",
-      "unit_id": "DEB-102-U06",
-      "type": "service_readiness",
-      "prompt_es": "Explica evidencia como se lo explicarías a un Alférez que recibe su primer destino.",
+      "id": "DEB-102-C029",
+      "unit_id": "DEB-102-U05",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Lecciones y cambio»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Lecciones y cambio»?",
+        "Repaso de «Lecciones y cambio»: ¿Qué práctica corresponde a «Lecciones y cambio»?"
+      ],
+      "answer_display_es": "Proponer mejora.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "evidencia",
-        "responsabilidad",
-        "límite",
-        "aplicación"
+        "Proponer mejora."
       ]
     },
     {
-      "id": "DEB-102-Q022",
-      "unit_id": "DEB-102-U06",
-      "type": "scenario",
-      "prompt_es": "Escenario: Sesión final. Describe decisión inicial, alternativas y condición de escalado.",
+      "id": "DEB-102-C030",
+      "unit_id": "DEB-102-U05",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Lecciones y cambio»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Lecciones y cambio»?",
+        "Repaso de «Lecciones y cambio»: ¿Qué evaluación se asocia a «Lecciones y cambio»?"
+      ],
+      "answer_display_es": "Revisión.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "situación",
-        "alternativas",
-        "riesgo",
-        "autoridad",
-        "escalado"
+        "Revisión."
       ]
     },
     {
-      "id": "DEB-102-Q023",
+      "id": "DEB-102-C031",
       "unit_id": "DEB-102-U06",
-      "type": "debrief",
-      "prompt_es": "Tras Debrief de prácticum, separa hechos, información disponible, decisión y resultado.",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: registro verificable de contexto, información disponible, actuación, resultado y feedback?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: registro verificable de contexto, información disponible, actuación, resultado y feedback?",
+        "En «Debrief de prácticum», selecciona el concepto descrito así: registro verificable de contexto, información disponible, actuación, resultado y feedback."
+      ],
+      "answer_display_es": "evidencia",
+      "accepted_short_answers_es": [
+        "evidencia"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "hechos",
-        "información disponible entonces",
-        "decisión",
-        "resultado",
-        "sin hindsight bias"
+        "evidencia"
       ]
     },
     {
-      "id": "DEB-102-Q024",
+      "id": "DEB-102-C032",
       "unit_id": "DEB-102-U06",
-      "type": "handoff",
-      "prompt_es": "¿Qué debe conocer el siguiente oficial para continuar esta tarea sin perder continuidad?",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: información específica sobre desempeño que debe vincular observación con mejora concreta?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: información específica sobre desempeño que debe vincular observación con mejora concreta?",
+        "En «Debrief de prácticum», selecciona el concepto descrito así: información específica sobre desempeño que debe vincular observación con mejora concreta."
+      ],
+      "answer_display_es": "feedback",
+      "accepted_short_answers_es": [
+        "feedback"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "estado",
-        "órdenes",
-        "riesgos",
-        "pendientes",
-        "acciones realizadas"
+        "feedback"
+      ]
+    },
+    {
+      "id": "DEB-102-C033",
+      "unit_id": "DEB-102-U06",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: evolución del desempeño a lo largo del tiempo, más informativa que una actuación aislada?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: evolución del desempeño a lo largo del tiempo, más informativa que una actuación aislada?",
+        "En «Debrief de prácticum», selecciona el concepto descrito así: evolución del desempeño a lo largo del tiempo, más informativa que una actuación aislada."
+      ],
+      "answer_display_es": "trayectoria",
+      "accepted_short_answers_es": [
+        "trayectoria"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "trayectoria"
+      ]
+    },
+    {
+      "id": "DEB-102-C034",
+      "unit_id": "DEB-102-U06",
+      "source_type": "taught_term",
+      "web_prompt_es": "¿Qué concepto corresponde a esta definición: grado en que conocimiento, práctica, juicio y conducta permiten asumir la siguiente responsabilidad?",
+      "web_prompt_variants_es": [
+        "¿Qué concepto corresponde a esta definición: grado en que conocimiento, práctica, juicio y conducta permiten asumir la siguiente responsabilidad?",
+        "En «Debrief de prácticum», selecciona el concepto descrito así: grado en que conocimiento, práctica, juicio y conducta permiten asumir la siguiente responsabilidad."
+      ],
+      "answer_display_es": "preparación",
+      "accepted_short_answers_es": [
+        "preparación"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "preparación"
+      ]
+    },
+    {
+      "id": "DEB-102-C035",
+      "unit_id": "DEB-102-U06",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué práctica corresponde a «Debrief de prácticum»?",
+      "web_prompt_variants_es": [
+        "¿Qué práctica corresponde a «Debrief de prácticum»?",
+        "Repaso de «Debrief de prácticum»: ¿Qué práctica corresponde a «Debrief de prácticum»?"
+      ],
+      "answer_display_es": "Sesión final.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Sesión final."
+      ]
+    },
+    {
+      "id": "DEB-102-C036",
+      "unit_id": "DEB-102-U06",
+      "source_type": "unit_principle",
+      "web_prompt_es": "¿Qué evaluación se asocia a «Debrief de prácticum»?",
+      "web_prompt_variants_es": [
+        "¿Qué evaluación se asocia a «Debrief de prácticum»?",
+        "Repaso de «Debrief de prácticum»: ¿Qué evaluación se asocia a «Debrief de prácticum»?"
+      ],
+      "answer_display_es": "Registro profesional.",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "Registro profesional."
       ]
     }
   ]

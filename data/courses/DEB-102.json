@@ -1,7 +1,7 @@
 {
   "subject": "Análisis operativo y debriefing avanzado",
   "code": "DEB-102",
-  "version": "1.0",
+  "version": "2.0",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/first_class/courses/DEB-102/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/first_class/DEB-102/MANUAL_v1_0.md",
@@ -16,11 +16,10 @@
     {
       "id": "DEB-102-U01",
       "title": "Reconstrucción factual",
-      "subtitle": "UNIDAD 01 · DEB-102",
       "blocks": [
         {
           "type": "p",
-          "text": "Analizar decisiones con rigor, distinguiendo información disponible, proceso y resultado."
+          "text": "Al completar esta unidad, el cadete debe integrar los elementos de **Reconstrucción factual** sin perder seguridad, prioridades ni continuidad."
         },
         {
           "type": "heading",
@@ -29,11 +28,19 @@
         {
           "type": "bullets",
           "items": [
-            "timeline",
-            "fuentes",
-            "acciones",
-            "resultados"
+            "**timeline**: secuencia temporal reconstruida a partir de fuentes para distinguir qué ocurrió y cuándo.",
+            "**fuentes**: orígenes independientes de información que deben conservarse para comparar fiabilidad y contradicciones.",
+            "**acciones**: intervenciones ejecutadas, asociadas a responsable, momento, motivo y efecto observado.",
+            "**resultados**: efectos observados de las acciones, separados de la intención y del proceso de decisión."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Antes de actuar se distingue lo confirmado de lo incierto, se comprueban límites y responsables, se ejecuta la opción proporcionada y se conserva lo necesario para seguimiento, relevo y debrief."
         },
         {
           "type": "callout",
@@ -42,46 +49,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "La profesionalidad consiste en conservar una picture compartida, decisiones trazables y continuidad entre turnos y departamentos."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica timeline como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Reconstruir misión.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/ship_operations/operational_event_log/README.md"
-          ]
+          "text": "Evaluación. Se valora el proceso con la información disponible entonces, no solo el resultado conocido después."
         }
       ]
     },
     {
       "id": "DEB-102-U02",
       "title": "Información disponible entonces",
-      "subtitle": "UNIDAD 02 · DEB-102",
       "blocks": [
         {
           "type": "p",
-          "text": "Analizar decisiones con rigor, distinguiendo información disponible, proceso y resultado."
+          "text": "Al completar esta unidad, el cadete debe integrar los elementos de **Información disponible entonces** sin perder seguridad, prioridades ni continuidad."
         },
         {
           "type": "heading",
@@ -90,11 +74,19 @@
         {
           "type": "bullets",
           "items": [
-            "conocimiento",
-            "incertidumbre",
-            "supuestos",
-            "señales"
+            "**conocimiento**: información que estaba realmente disponible en el momento de decidir, no la descubierta después.",
+            "**incertidumbre**: parte relevante de la situación que no está confirmada; debe declararse en lugar de rellenarse con suposiciones.",
+            "**supuestos**: proposiciones no confirmadas utilizadas provisionalmente; deben quedar explícitas para poder revisarlas.",
+            "**señales**: indicios que pueden apoyar una hipótesis sin equivaler por sí solos a una conclusión."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Antes de actuar se distingue lo confirmado de lo incierto, se comprueban límites y responsables, se ejecuta la opción proporcionada y se conserva lo necesario para seguimiento, relevo y debrief."
         },
         {
           "type": "callout",
@@ -103,46 +95,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "La profesionalidad consiste en conservar una picture compartida, decisiones trazables y continuidad entre turnos y departamentos."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Caso."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica conocimiento como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Separar hindsight.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/ship_operations/operational_event_log/README.md"
-          ]
+          "text": "Caso. Se valora el proceso con la información disponible entonces, no solo el resultado conocido después."
         }
       ]
     },
     {
       "id": "DEB-102-U03",
       "title": "Calidad de decisión",
-      "subtitle": "UNIDAD 03 · DEB-102",
       "blocks": [
         {
           "type": "p",
-          "text": "Analizar decisiones con rigor, distinguiendo información disponible, proceso y resultado."
+          "text": "Al completar esta unidad, el cadete debe integrar los elementos de **Calidad de decisión** sin perder seguridad, prioridades ni continuidad."
         },
         {
           "type": "heading",
@@ -151,11 +120,19 @@
         {
           "type": "bullets",
           "items": [
-            "proceso",
-            "riesgo",
-            "reglas",
-            "alternativas"
+            "**proceso**: forma en que se obtuvieron datos, se compararon opciones, se decidió y se verificó el resultado.",
+            "**riesgo**: combinación de probabilidad, impacto y exposición; se compara con misión, alternativas, autoridad y reversibilidad.",
+            "**reglas**: normas y restricciones aplicables que continúan vigentes incluso bajo presión.",
+            "**alternativas**: cursos de acción distintos que permiten comparar riesgo, coste, tiempo y reversibilidad."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Antes de actuar se distingue lo confirmado de lo incierto, se comprueban límites y responsables, se ejecuta la opción proporcionada y se conserva lo necesario para seguimiento, relevo y debrief."
         },
         {
           "type": "callout",
@@ -164,46 +141,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "La profesionalidad consiste en conservar una picture compartida, decisiones trazables y continuidad entre turnos y departamentos."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Debate."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica proceso como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Evaluar decisión sin confundirla con resultado.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/ship_operations/operational_event_log/README.md"
-          ]
+          "text": "Debate. Se valora el proceso con la información disponible entonces, no solo el resultado conocido después."
         }
       ]
     },
     {
       "id": "DEB-102-U04",
       "title": "Responsabilidad",
-      "subtitle": "UNIDAD 04 · DEB-102",
       "blocks": [
         {
           "type": "p",
-          "text": "Analizar decisiones con rigor, distinguiendo información disponible, proceso y resultado."
+          "text": "Al completar esta unidad, el cadete debe integrar los elementos de **Responsabilidad** sin perder seguridad, prioridades ni continuidad."
         },
         {
           "type": "heading",
@@ -212,11 +166,19 @@
         {
           "type": "bullets",
           "items": [
-            "acción propia",
-            "equipo",
-            "mando",
-            "registro"
+            "**acción propia**: parte de la actuación bajo responsabilidad directa de quien realiza el debrief.",
+            "**equipo**: personas coordinadas mediante roles, comunicación y objetivos compartidos.",
+            "**mando**: autoridad que integra información y decide prioridades cuando los conflictos superan el ámbito de un puesto.",
+            "**registro**: constancia factual de evento, fuente, acción, decisión y resultado que sostiene continuidad y auditoría."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Antes de actuar se distingue lo confirmado de lo incierto, se comprueban límites y responsables, se ejecuta la opción proporcionada y se conserva lo necesario para seguimiento, relevo y debrief."
         },
         {
           "type": "callout",
@@ -225,46 +187,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "La profesionalidad consiste en conservar una picture compartida, decisiones trazables y continuidad entre turnos y departamentos."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Evaluación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica acción propia como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Asumir y explicar decisiones.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/ship_operations/operational_event_log/README.md"
-          ]
+          "text": "Evaluación. Se valora el proceso con la información disponible entonces, no solo el resultado conocido después."
         }
       ]
     },
     {
       "id": "DEB-102-U05",
       "title": "Lecciones y cambio",
-      "subtitle": "UNIDAD 05 · DEB-102",
       "blocks": [
         {
           "type": "p",
-          "text": "Analizar decisiones con rigor, distinguiendo información disponible, proceso y resultado."
+          "text": "Al completar esta unidad, el cadete debe integrar los elementos de **Lecciones y cambio** sin perder seguridad, prioridades ni continuidad."
         },
         {
           "type": "heading",
@@ -273,11 +212,19 @@
         {
           "type": "bullets",
           "items": [
-            "procedimiento",
-            "hábito",
-            "entrenamiento",
-            "sistema"
+            "**procedimiento**: secuencia definida para realizar una tarea de forma segura y repetible, adaptable solo dentro de márgenes permitidos.",
+            "**hábito**: conducta repetida que puede reforzar fiabilidad o introducir sesgos y debe revisarse con evidencia.",
+            "**entrenamiento**: práctica diseñada para convertir conocimiento en desempeño repetible y corregir brechas concretas.",
+            "**sistema**: conjunto de personas, reglas y medios cuyo diseño puede facilitar o provocar determinados resultados."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Antes de actuar se distingue lo confirmado de lo incierto, se comprueban límites y responsables, se ejecuta la opción proporcionada y se conserva lo necesario para seguimiento, relevo y debrief."
         },
         {
           "type": "callout",
@@ -286,46 +233,23 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "La profesionalidad consiste en conservar una picture compartida, decisiones trazables y continuidad entre turnos y departamentos."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Revisión."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica procedimiento como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Proponer mejora.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/ship_operations/operational_event_log/README.md"
-          ]
+          "text": "Revisión. Se valora el proceso con la información disponible entonces, no solo el resultado conocido después."
         }
       ]
     },
     {
       "id": "DEB-102-U06",
       "title": "Debrief de prácticum",
-      "subtitle": "UNIDAD 06 · DEB-102",
       "blocks": [
         {
           "type": "p",
-          "text": "Analizar decisiones con rigor, distinguiendo información disponible, proceso y resultado."
+          "text": "Al completar esta unidad, el cadete debe integrar los elementos de **Debrief de prácticum** sin perder seguridad, prioridades ni continuidad."
         },
         {
           "type": "heading",
@@ -334,11 +258,19 @@
         {
           "type": "bullets",
           "items": [
-            "evidencia",
-            "feedback",
-            "trayectoria",
-            "preparación"
+            "**evidencia**: registro verificable de contexto, información disponible, actuación, resultado y feedback.",
+            "**feedback**: información específica sobre desempeño que debe vincular observación con mejora concreta.",
+            "**trayectoria**: evolución del desempeño a lo largo del tiempo, más informativa que una actuación aislada.",
+            "**preparación**: grado en que conocimiento, práctica, juicio y conducta permiten asumir la siguiente responsabilidad."
           ]
+        },
+        {
+          "type": "heading",
+          "text": "Aplicación profesional"
+        },
+        {
+          "type": "p",
+          "text": "Antes de actuar se distingue lo confirmado de lo incierto, se comprueban límites y responsables, se ejecuta la opción proporcionada y se conserva lo necesario para seguimiento, relevo y debrief."
         },
         {
           "type": "callout",
@@ -347,37 +279,16 @@
         },
         {
           "type": "callout",
+          "label": "CRITERIO DE SERVICIO",
+          "text": "La profesionalidad consiste en conservar una picture compartida, decisiones trazables y continuidad entre turnos y departamentos."
+        },
+        {
+          "type": "callout",
           "label": "EVALUACIÓN",
-          "text": "Registro profesional."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Explica evidencia como se lo explicarías a un Alférez novel.",
-            "¿Qué autoridad, riesgo o restricción condiciona la tarea?",
-            "Resuelve: Sesión final.",
-            "¿Qué debe quedar documentado para continuidad o auditoría?"
-          ]
-        },
-        {
-          "type": "heading",
-          "text": "Referencias internas"
-        },
-        {
-          "type": "bullets",
-          "items": [
-            "gameplay/careers/academy_path/course_resolution.md",
-            "gameplay/careers/academy_path/evaluation_model.json",
-            "gameplay/careers/academy_path/academy_era_profiles.json",
-            "gameplay/careers/starfleet_service/professional_evidence_model.json",
-            "gameplay/ship_operations/operational_event_log/README.md"
-          ]
+          "text": "Registro profesional. Se valora el proceso con la información disponible entonces, no solo el resultado conocido después."
         }
       ]
     }
-  ]
+  ],
+  "assessmentModel": "concept_driven_v2_1"
 }
