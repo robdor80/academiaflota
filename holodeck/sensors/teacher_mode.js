@@ -52,11 +52,12 @@ export async function initTeacherMode({resetScenario}){
   }
   function render(){
     title.textContent=tutorial.title;objective.textContent=tutorial.objective;
-    orderBox.hidden=orderAcknowledged;
-    document.querySelector(".console-grid").classList.toggle("teacher-locked",!orderAcknowledged);
-    objective.hidden=!orderAcknowledged;
-    stepsEl.hidden=!orderAcknowledged;
-    document.querySelector("#teacher-explanation").hidden=!orderAcknowledged;
+    const teacherMode=mode.value==="teacher";
+    orderBox.hidden=!teacherMode||orderAcknowledged;
+    document.querySelector(".console-grid").classList.toggle("teacher-locked",teacherMode&&!orderAcknowledged);
+    objective.hidden=!teacherMode||!orderAcknowledged;
+    stepsEl.hidden=!teacherMode||!orderAcknowledged;
+    document.querySelector("#teacher-explanation").hidden=!teacherMode||!orderAcknowledged;
     if(tutorial.order){
       orderSource.textContent=tutorial.order.source||"Instructor";
       orderText.textContent=formatOrder(tutorial.order.order);
@@ -98,15 +99,26 @@ export async function initTeacherMode({resetScenario}){
   }
   listeners.push(onEvent);
   mode.addEventListener("change",()=>{
-    const teacherMode=mode.value==="teacher";panel.hidden=!teacherMode;
+    const teacherMode=mode.value==="teacher";
+    panel.hidden=!teacherMode;
     sessionStorage.setItem("sensorMode",mode.value);
-    if(teacherMode)start(select.value,{reset:true});
+    if(teacherMode){
+      start(select.value,{reset:true});
+    }else{
+      orderAcknowledged=false;
+      document.querySelector(".console-grid").classList.remove("teacher-locked");
+      render();
+    }
   });
   select.addEventListener("change",()=>start(select.value,{reset:true}));
   resetBtn.addEventListener("click",()=>start(tutorial.id,{reset:true}));
   orderAck.addEventListener("click",()=>{orderAcknowledged=true;render();});
   hintBtn.addEventListener("click",()=>{hintText.hidden=!hintText.hidden;hintBtn.textContent=hintText.hidden?"Mostrar pista":"Ocultar pista"});
   const saved=sessionStorage.getItem("sensorMode");
-  if(saved==="teacher"){mode.value="teacher";panel.hidden=false;start(select.value,{reset:false})}
+  if(saved==="teacher"){
+    mode.value="teacher";panel.hidden=false;start(select.value,{reset:false});
+  }else{
+    mode.value="free";panel.hidden=true;document.querySelector(".console-grid").classList.remove("teacher-locked");
+  }
   render();
 }
