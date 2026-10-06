@@ -130,16 +130,16 @@ function scanView(){
     fieldSelect("priority","Prioridad",[["none","Ninguna"],["subspace","Subespacio"],["warp","Warp"],["em","Electromagnética"],["gravimetric","Gravimétrica"],["thermal","Térmica"],["ionizing_radiation","Radiación ionizante"],["particle","Partículas"],["biological","Biológica"],["transponder","Transpondedor"]],pf.priority||sim.config.defaultPriority)+
     fieldSelect("duration","Duración",[["quick","Rápida"],["standard","Estándar"],["extended","Extendida"],["custom","Personalizada"]],pf.duration||"standard")+
     fieldMultiSelect("filters","Filtros",[["all","Todas las firmas"],["em","Electromagnética"],["subspace","Subespacial"],["gravimetric","Gravimétrica"],["thermal","Térmica"],["ionizing_radiation","Radiación ionizante"],["particle","Partículas"],["biological","Biológica"],["warp","Firma warp"],["transponder","Transpondedor artificial"]],pf.filters||sim.config.defaultFilters||["all"])+
-    '</div><div class="action-grid">'+taskButton("review_scan_config","Revisar configuración","secondary")+taskButton("execute_scan","Ejecutar barrido")+taskButton("restore_scan_defaults","Restaurar valores","secondary")+button("request_additional_power","secondary")+taskButton("cancel_scan_setup","Cancelar","secondary")+'</div></div>';
+    '</div><div class="action-grid">'+taskButton("review_scan_configuration","Revisar configuración","secondary")+taskButton("execute_scan","Ejecutar barrido")+taskButton("restore_operation_defaults","Restaurar valores","secondary")+button("request_additional_power","secondary")+taskButton("cancel","Cancelar","secondary")+'</div></div>';
 }
 function searchView(){
-  const s=secondary();if(!s)return "";
+  const s=secondary(),pf=shell.prefill||{};if(!s)return "";
   return '<div class="card"><h3>'+esc(s.display_es)+'</h3><p>Búsqueda intenta localizar candidatos compatibles con lo que buscas; no garantiza identificación.</p><div class="form-grid">'+
-    fieldSelect("search-area","Área",[["local","Espacio local"],["sector_041","Sector 041"],["sector_014","Sector 014"],["system","Sistema estelar"],["coordinates","Coordenadas definidas"],["wide","Volumen ampliado"]],"sector_041")+
-    fieldSelect("search-sensitivity","Sensibilidad",[["low","Baja"],["standard","Estándar"],["high","Alta"],["maximum","Máxima"]],shell.sim.config.sensitivity)+
-    fieldSelect("search-resolution","Resolución",[["general","General"],["standard","Estándar"],["high","Alta"]],shell.sim.config.defaultResolution)+
-    fieldInput("search-criteria","Criterio adicional","",s.id==="custom_signature"?"p. ej. subspace, transponder…":"Opcional")+
-    '</div><div class="action-grid">'+taskButton("execute_search","Iniciar búsqueda")+taskButton("clear_search_criteria","Limpiar criterio","secondary")+button("request_additional_power","secondary")+taskButton("cancel_search_setup","Cancelar","secondary")+'</div></div>'+latestResultMini("search");
+    fieldSelect("search-area","Área",[["local","Espacio local"],["sector_041","Sector 041"],["sector_014","Sector 014"],["system","Sistema estelar"],["coordinates","Coordenadas definidas"],["wide","Volumen ampliado"]],pf.area||"sector_041")+
+    fieldSelect("search-sensitivity","Sensibilidad",[["low","Baja"],["standard","Estándar"],["high","Alta"],["maximum","Máxima"]],pf.sensitivity||shell.sim.config.sensitivity)+
+    fieldSelect("search-resolution","Resolución",[["general","General"],["standard","Estándar"],["high","Alta"]],pf.resolution||shell.sim.config.defaultResolution)+
+    fieldInput("search-criteria","Criterio adicional",pf.criteria||"",s.id==="custom_signature"?"p. ej. subspace, transponder…":"Opcional")+
+    '</div><div class="action-grid">'+taskButton("start_search","Iniciar búsqueda")+taskButton("clear_search_criteria","Limpiar criterio","secondary")+button("request_additional_power","secondary")+taskButton("cancel","Cancelar","secondary")+'</div></div>'+latestResultMini("search");
 }
 function contactsView(){
   const s=secondary();let list=knownContacts(shell.sim);
@@ -170,14 +170,15 @@ function trackingView(){
   }
   if(s.id==="acquire_contact")return '<div class="card"><h3>Fijar contacto</h3><div class="form-grid">'+fieldSelect("track-contact","Contacto",contactOpts,c?.id)+fieldSelect("track-mode","Modo",[["normal","Normal"],["signature","Firma concreta"]],"normal")+fieldSelect("track-priority","Prioridad",[["normal","Normal"],["priority","Prioritario"]],"normal")+'</div><div class="action-grid">'+taskButton("start_tracking_form","Iniciar seguimiento")+'</div></div>';
   if(s.id==="multi_track"){
-    return '<div class="card"><h3>Seguimiento múltiple</h3><div class="data-grid">'+datum("Capacidad usada",trackingUsed(sim)+" / "+sim.tracking.capacity)+datum("Potencia",sim.power+" %")+'</div><div class="contact-list">'+known.map(x=>'<div class="contact-row"><strong>'+x.id+'</strong><span>'+esc(x.classification)+'</span><span>'+(x.tracked?taskButton("track_toggle_priority:"+x.id,x.trackingPriority==="priority"?"Normalizar":"Priorizar","secondary")+taskButton("track_stop:"+x.id,"Liberar","secondary"):taskButton("track_start:"+x.id,"Seguir"))+'</span></div>').join("")+'</div><div class="action-grid">'+button("request_additional_power","secondary")+'</div></div>';
+    const rows=known.map(x=>{const a=sim.tracking.assignments.find(v=>v.contactId===x.id),value=!a?"off":a.priority==="priority"?"priority":"normal";return '<div class="contact-row"><strong>'+x.id+'</strong><span>'+esc(x.classification)+'</span><span><select class="tracking-plan" data-plan-contact="'+x.id+'"><option value="off" '+(value==="off"?"selected":"")+'>Sin seguimiento</option><option value="normal" '+(value==="normal"?"selected":"")+'>Normal</option><option value="priority" '+(value==="priority"?"selected":"")+'>Prioritario</option></select></span></div>'}).join("");
+    return '<div class="card"><h3>Seguimiento múltiple</h3><div class="data-grid">'+datum("Capacidad usada",trackingUsed(sim)+" / "+sim.tracking.capacity)+datum("Potencia",sim.power+" %")+'</div><div class="contact-list">'+rows+'</div><div class="action-grid">'+taskButton("apply_tracking_priorities","Aplicar prioridades")+button("request_additional_power","secondary")+taskButton("cancel","Cancelar","secondary")+'</div></div>';
   }
   if(s.id==="track_signature")return '<div class="card"><h3>Seguir firma concreta</h3><div class="form-grid">'+fieldSelect("sig-contact","Contacto",contactOpts,c?.id)+fieldSelect("sig-type","Firma",[["subspace","Subespacial"],["warp","Warp"],["em","Electromagnética"],["thermal","Térmica"],["transponder","Transpondedor"]],"subspace")+'</div><div class="action-grid">'+taskButton("start_signature_tracking","Iniciar seguimiento de firma")+'</div></div>';
   if(["update_position","estimate_course","estimate_velocity"].includes(s.id))return '<div class="card"><h3>'+esc(s.display_es)+'</h3><div class="form-grid">'+fieldSelect("track-op-contact","Contacto",contactOpts,c?.id)+fieldSelect("observation-window","Ventana de observación",[["short","Corta"],["standard","Estándar"],["extended","Extendida"]],"standard")+'</div><div class="action-grid">'+taskButton("tracking_operation",s.display_es)+'</div></div>';
   if(s.id==="predict_trajectory")return '<div class="card"><h3>Predecir trayectoria</h3><div class="form-grid">'+fieldSelect("track-op-contact","Contacto",contactOpts,c?.id)+fieldSelect("prediction-horizon","Horizonte",[["5 min","5 min"],["15 min","15 min"],["30 min","30 min"]],"5 min")+'</div><div class="action-grid">'+taskButton("tracking_operation","Calcular predicción")+'</div></div>';
   if(s.id==="reacquire_lost_contact"){
     const lost=known.filter(x=>x.status==="lost").map(x=>[x.id,x.id+" · última "+x.distanceKm.toLocaleString("es-ES")+" km"]);
-    return '<div class="card"><h3>Recuperar contacto perdido</h3><div class="form-grid">'+fieldSelect("lost-contact","Contacto perdido",lost,lost[0]?.[0]||"")+fieldSelect("search-window","Ventana de búsqueda",[["narrow","Estrecha"],["standard","Estándar"],["wide","Amplia"]],"standard")+'</div><div class="action-grid">'+taskButton("reacquire_lost","Iniciar recuperación")+button("request_additional_power","secondary")+'</div></div>';
+    return '<div class="card"><h3>Recuperar contacto perdido</h3><div class="form-grid">'+fieldSelect("lost-contact","Contacto perdido",lost,lost[0]?.[0]||"")+fieldSelect("search-window","Ventana de búsqueda",[["narrow","Estrecha"],["standard","Estándar"],["wide","Amplia"]],"standard")+'</div><div class="action-grid">'+taskButton("start_reacquisition","Iniciar recuperación")+button("request_additional_power","secondary")+taskButton("cancel","Cancelar","secondary")+'</div></div>';
   }
   return "";
 }
@@ -193,15 +194,15 @@ function interferenceSummary(){
 function interferenceView(){
   const s=secondary(),sim=shell.sim,i=sim.interference;
   if(["interference_status","interference_type"].includes(s.id))return interferenceSummary();
-  if(s.id==="automatic_compensation")return '<div class="card"><h3>Compensación automática</h3><p>El sistema aplicará un ajuste seguro y rápido. Puede no ser la solución óptima.</p><div class="data-grid">'+datum("Penalización actual",effectivePenalty(sim)+" pts")+datum("Estimación posterior",Math.round(effectivePenalty(sim)*.65)+" pts")+'</div><div class="action-grid">'+taskButton("apply_auto_comp","Aplicar compensación automática")+'</div></div>';
-  if(s.id==="manual_adjustment")return '<div class="card"><h3>Ajuste manual</h3><div class="form-grid">'+fieldSelect("manual-band","Banda",[["broad","Banda ancha"],["em","Electromagnética"],["subspace","Subespacial"],["thermal","Térmica"]],sim.config.bandFrequency)+fieldSelect("manual-sensitivity","Sensibilidad",[["low","Baja"],["standard","Estándar"],["high","Alta"]],sim.config.sensitivity)+fieldSelect("manual-resolution","Resolución",[["general","General"],["standard","Estándar"],["high","Alta"]],sim.config.defaultResolution)+fieldSelect("manual-integration","Integración",[["standard","Estándar"],["extended","Extendida"]],"standard")+'</div><div class="action-grid">'+taskButton("apply_manual_comp","Aplicar ajuste manual")+button("restore_previous_compensation","secondary")+button("request_additional_power","secondary")+'</div></div>';
-  if(s.id==="change_band_frequency")return '<div class="card"><h3>Cambiar banda / frecuencia</h3>'+fieldSelect("band-change","Nueva banda",[["em","Electromagnética"],["subspace","Subespacial"],["thermal","Térmica"],["gravimetric","Gravimétrica"]],sim.config.bandFrequency)+'<div class="action-grid">'+taskButton("apply_band","Aplicar cambio")+'</div></div>';
+  if(s.id==="automatic_compensation")return '<div class="card"><h3>Compensación automática</h3><p>El sistema aplicará un ajuste seguro y rápido. Puede no ser la solución óptima.</p><div class="data-grid">'+datum("Penalización actual",effectivePenalty(sim)+" pts")+datum("Estimación posterior",Math.round(effectivePenalty(sim)*.65)+" pts")+'</div><div class="action-grid">'+taskButton("apply_automatic_compensation","Aplicar compensación automática")+taskButton("cancel","Cancelar","secondary")+'</div></div>';
+  if(s.id==="manual_adjustment")return '<div class="card"><h3>Ajuste manual</h3><div class="form-grid">'+fieldSelect("manual-band","Banda",[["broad","Banda ancha"],["em","Electromagnética"],["subspace","Subespacial"],["thermal","Térmica"]],sim.config.bandFrequency)+fieldSelect("manual-sensitivity","Sensibilidad",[["low","Baja"],["standard","Estándar"],["high","Alta"]],sim.config.sensitivity)+fieldSelect("manual-resolution","Resolución",[["general","General"],["standard","Estándar"],["high","Alta"]],sim.config.defaultResolution)+fieldSelect("manual-integration","Integración",[["standard","Estándar"],["extended","Extendida"]],"standard")+'</div><div class="action-grid">'+taskButton("apply_manual_compensation","Aplicar ajuste manual")+button("restore_previous_compensation","secondary")+button("request_additional_power","secondary")+'</div></div>';
+  if(s.id==="change_band_frequency")return '<div class="card"><h3>Cambiar banda / frecuencia</h3>'+fieldSelect("band-change","Nueva banda",[["em","Electromagnética"],["subspace","Subespacial"],["thermal","Térmica"],["gravimetric","Gravimétrica"]],sim.config.bandFrequency)+'<div class="action-grid">'+taskButton("apply_band_change","Aplicar cambio")+taskButton("cancel","Cancelar","secondary")+'</div></div>';
   if(s.id==="increase_operation_power")return '<div class="card"><h3>Potencia de operación</h3>'+fieldSelect("operation-power","Uso de la asignación",[["60","60 %"],["75","75 %"],["90","90 %"],["100","100 %"]],String(sim.config.operationPower))+'<div class="action-grid">'+taskButton("apply_operation_power","Aplicar dentro de asignación")+button("request_additional_power","secondary")+'</div></div>';
-  if(s.id==="reduce_resolution")return '<div class="card"><h3>Sacrificar resolución</h3><p>Reduce detalle para ganar estabilidad frente a ruido.</p>'+fieldSelect("reduced-resolution","Resolución objetivo",[["general","General"],["standard","Estándar"]],"general")+'<div class="action-grid">'+taskButton("apply_reduced_resolution","Aplicar")+'</div></div>';
-  if(s.id==="extend_integration")return '<div class="card"><h3>Prolongar integración</h3><p>Acumula señal durante más tiempo; mejora señal/ruido a costa de tiempo.</p><div class="action-grid">'+taskButton("apply_extended_integration","Prolongar integración")+'</div></div>';
+  if(s.id==="reduce_resolution")return '<div class="card"><h3>Sacrificar resolución</h3><p>Reduce detalle para ganar estabilidad frente a ruido.</p>'+fieldSelect("reduced-resolution","Resolución objetivo",[["general","General"],["standard","Estándar"]],"general")+'<div class="action-grid">'+taskButton("apply_resolution_change","Aplicar")+taskButton("cancel","Cancelar","secondary")+'</div></div>';
+  if(s.id==="extend_integration")return '<div class="card"><h3>Prolongar integración</h3><p>Acumula señal durante más tiempo; mejora señal/ruido a costa de tiempo.</p><div class="action-grid">'+taskButton("apply_integration_extension","Prolongar integración")+taskButton("cancel","Cancelar","secondary")+'</div></div>';
   if(s.id==="recover_signal"){
     const opts=knownContacts(sim).map(x=>[x.id,x.id+" · "+x.classification]);
-    return '<div class="card"><h3>Recuperar señal</h3>'+fieldSelect("recover-contact","Contacto",opts,contact()?.id)+'<div class="action-grid">'+taskButton("recover_signal_task","Intentar recuperación")+button("request_additional_power","secondary")+'</div></div>';
+    return '<div class="card"><h3>Recuperar señal</h3>'+fieldSelect("recover-contact","Contacto",opts,contact()?.id)+'<div class="action-grid">'+taskButton("start_signal_recovery","Intentar recuperación")+button("request_additional_power","secondary")+'</div></div>';
   }
   return "";
 }
@@ -219,14 +220,14 @@ function configurationView(){
   };
   if(s.id==="profiles_presets"){
     const rows=Object.entries(sim.profiles).map(([id,p])=>'<div class="contact-row"><strong>'+esc(id)+'</strong><span>'+esc(p.name||id)+'<br><small>'+esc(p.origin)+(p.readOnly?" · protegido":"")+'</small></span><span>'+taskButton("load_profile:"+id,"Cargar")+(p.readOnly?"":taskButton("delete_profile:"+id,"Eliminar","secondary"))+'</span></div>').join("");
-    return '<div class="card"><h3>Perfiles / preajustes</h3><div class="contact-list">'+rows+'</div><div class="form-grid">'+fieldInput("profile-id","ID perfil","mi_perfil")+fieldInput("profile-name","Nombre","Mi perfil")+'</div><div class="action-grid">'+taskButton("save_profile","Guardar / actualizar perfil actual")+taskButton("restore_standard","Restaurar estándar","secondary")+'</div></div>';
+    return '<div class="card"><h3>Perfiles / preajustes</h3><div class="contact-list">'+rows+'</div><div class="form-grid">'+fieldInput("profile-id","ID perfil","mi_perfil")+fieldInput("profile-name","Nombre","Mi perfil")+'</div><div class="action-grid">'+taskButton("save_profile","Guardar / actualizar perfil actual")+taskButton("restore_ship_standard","Restaurar estándar","secondary")+'</div></div>';
   }
   if(s.id==="default_filters"){
-    return '<div class="card"><h3>Filtros predeterminados</h3><p>Puede combinar varias firmas. Estos filtros se cargarán por defecto en nuevos barridos.</p>'+fieldMultiSelect("config-value","Filtros",[["all","Todas"],["em","Electromagnética"],["subspace","Subespacial"],["gravimetric","Gravimétrica"],["thermal","Térmica"],["ionizing_radiation","Radiación ionizante"],["particle","Partículas"],["biological","Biológica"],["warp","Warp"],["transponder","Transpondedor"]],sim.config.defaultFilters)+'<div class="action-grid">'+taskButton("apply_config","Aplicar")+taskButton("restore_standard","Restaurar estándar","secondary")+'</div></div>';
+    return '<div class="card"><h3>Filtros predeterminados</h3><p>Puede combinar varias firmas. Estos filtros se cargarán por defecto en nuevos barridos.</p>'+fieldMultiSelect("config-value","Filtros",[["all","Todas"],["em","Electromagnética"],["subspace","Subespacial"],["gravimetric","Gravimétrica"],["thermal","Térmica"],["ionizing_radiation","Radiación ionizante"],["particle","Partículas"],["biological","Biológica"],["warp","Warp"],["transponder","Transpondedor"]],sim.config.defaultFilters)+'<div class="action-grid">'+taskButton("apply_setting","Aplicar")+taskButton("restore_ship_standard","Restaurar estándar","secondary")+'</div></div>';
   }
   const [label,opts,val]=map[s.id]||[];
   if(!label)return "";
-  return '<div class="card"><h3>'+esc(label)+'</h3><p>Los cambios modifican valores predeterminados; no ejecutan operaciones por sí solos.</p>'+fieldSelect("config-value",label,opts,val)+'<div class="action-grid">'+taskButton("apply_config","Aplicar")+taskButton("restore_standard","Restaurar estándar","secondary")+(s.id==="sensor_power"?button("request_additional_power","secondary")+(sim.powerRequest?button("cancel_power_request","secondary"):""):"")+(s.id==="sensor_array"?taskButton("open_array_status_task","Abrir estado de matrices","secondary"):"")+'</div></div>';
+  return '<div class="card"><h3>'+esc(label)+'</h3><p>Los cambios modifican valores predeterminados; no ejecutan operaciones por sí solos.</p>'+fieldSelect("config-value",label,opts,val)+'<div class="action-grid">'+taskButton("apply_setting","Aplicar")+taskButton("restore_ship_standard","Restaurar estándar","secondary")+(s.id==="sensor_power"?button("request_additional_power","secondary")+(sim.powerRequest?button("cancel_power_request","secondary"):""):"")+(s.id==="sensor_array"?taskButton("open_array_status","Abrir estado de matrices","secondary"):"")+'</div></div>';
 }
 function resultCard(r){
   return '<div class="contact-row '+(r.id===shell.selectedResultId?"active":"")+'" data-result="'+r.id+'"><strong>'+r.id+'</strong><span>'+esc(r.target||r.subtype)+'<br><small>'+esc(r.summary)+'</small></span><strong>'+esc(r.time)+'</strong></div>';
@@ -245,7 +246,7 @@ function resultsView(){
   }
   if(s.id==="repeat_operation"){
     const scans=sim.results.filter(r=>r.type==="scan"||r.type==="search").map(r=>[r.id,r.id+" · "+r.subtype]);
-    return '<div class="card"><h3>Repetir operación</h3>'+fieldSelect("repeat-source","Resultado origen",scans,scans[0]?.[0]||"")+'<p>Se reutiliza la configuración, pero el resultado se resuelve contra el estado actual del escenario.</p><div class="action-grid">'+taskButton("repeat_operation_task","Repetir operación")+'</div></div>';
+    return '<div class="card"><h3>Repetir operación</h3>'+fieldSelect("repeat-source","Resultado origen",scans,scans[0]?.[0]||"")+'<p>Se reutiliza la configuración, pero el resultado se resuelve contra el estado actual del escenario.</p><div class="action-grid">'+taskButton("execute_repeated_operation","Repetir operación")+taskButton("edit_before_repeat","Editar antes de repetir","secondary")+taskButton("cancel","Cancelar","secondary")+'</div></div>';
   }
   return "";
 }
@@ -256,7 +257,7 @@ function diagnosticsView(){
   const s=secondary(),sim=shell.sim;
   if(s.id==="self_test")return '<div class="card"><h3>Autodiagnóstico</h3>'+fieldSelect("diag-scope","Ámbito",[["all","Todos los sensores"],...sim.arrays.map(a=>[a.id,a.name])],"all")+'<div class="action-grid">'+taskButton("run_diagnostic","Ejecutar autodiagnóstico")+'</div></div>'+diagnosticLatest();
   if(s.id==="array_status")return '<div class="card"><h3>Estado por matriz</h3><div class="contact-list">'+sim.arrays.map(a=>'<div class="contact-row '+(a.id===shell.selectedArrayId?"active":"")+'" data-array="'+a.id+'"><strong>'+a.id+'</strong><span>'+esc(a.name)+'<br><small>'+esc(a.error||"Sin errores registrados")+'</small></span><strong>'+a.integrity+'%</strong></div>').join("")+'</div></div>'+arrayDetail();
-  if(s.id==="calibration")return '<div class="card"><h3>Calibración</h3>'+fieldSelect("cal-array","Matriz",sim.arrays.map(a=>[a.id,a.name]),sim.activeArray)+'<p>La matriz seleccionada estará ocupada durante el procedimiento.</p><div class="action-grid">'+taskButton("calibrate_form","Iniciar calibración")+'</div></div>';
+  if(s.id==="calibration")return '<div class="card"><h3>Calibración</h3>'+fieldSelect("cal-array","Matriz",sim.arrays.map(a=>[a.id,a.name]),sim.activeArray)+'<p>La matriz seleccionada estará ocupada durante el procedimiento.</p><div class="action-grid">'+taskButton("start_calibration","Iniciar calibración")+taskButton("cancel","Cancelar","secondary")+'</div></div>';
   if(s.id==="performance"){const a=getArray(sim);return '<div class="card"><h3>Rendimiento</h3><div class="data-grid">'+datum("Matriz activa",a?.name)+datum("Integridad",a?.integrity+" %")+datum("Calibración",a?.calibration+" %")+datum("Penalización total",effectivePenalty(sim)+" pts")+datum("Tracking",trackingUsed(sim)+" / "+sim.tracking.capacity)+datum("Potencia",sim.power+" %")+'</div><div class="action-grid">'+button("run_self_test")+button("request_engineering_support","secondary")+button("request_additional_power","secondary")+'</div></div>'}
   if(s.id==="errors_degradation"){
     const issues=sim.diagnostics.flatMap(d=>d.issues||[]);
@@ -268,7 +269,7 @@ function diagnosticsView(){
 function diagnosticLatest(){const d=shell.sim.diagnostics[0];return d?'<div class="card"><h3>Resultado '+d.id+'</h3><div class="data-grid">'+datum("Estado",d.status)+datum("Incidencias",d.issues.length)+datum("Ámbito",d.scope)+datum("Hora",d.time)+'</div></div>':""}
 function engineeringRequestForm(){
   const sim=shell.sim,a=getArray(sim);
-  return '<div class="card"><h3>Solicitud a Ingeniería</h3><div class="form-grid">'+fieldSelect("eng-component","Componente",sim.arrays.map(x=>[x.id,x.name]),a?.id)+fieldInput("eng-code","Código diagnóstico",a?.error||"")+fieldInput("eng-problem","Problema","Degradación de sensores")+fieldSelect("eng-priority","Prioridad",[["routine","Rutina"],["operational","Operativa"],["urgent","Urgente"]],"operational")+'</div><div class="action-grid">'+taskButton("send_engineering","Enviar solicitud")+'</div></div>';
+  return '<div class="card"><h3>Solicitud a Ingeniería</h3><div class="form-grid">'+fieldSelect("eng-component","Componente",sim.arrays.map(x=>[x.id,x.name]),a?.id)+fieldInput("eng-code","Código diagnóstico",a?.error||"")+fieldInput("eng-problem","Problema","Degradación de sensores")+fieldSelect("eng-priority","Prioridad",[["routine","Rutina"],["operational","Operativa"],["urgent","Urgente"]],"operational")+'</div><div class="action-grid">'+taskButton("send_engineering_support_request","Enviar solicitud")+taskButton("cancel","Cancelar","secondary")+'</div></div>';
 }
 function powerRequestView(){
   const sim=shell.sim;
@@ -329,12 +330,11 @@ function executeSearch(){
 function doTask(id){
   const sim=shell.sim,c=contact();
   if(id==="execute_scan"){executeScan();return}
-  if(id==="review_scan_config"){const cfg=scanConfig();notify("Configuración: "+cfg.scanType+" · "+cfg.targetLabel+" · "+cfg.mode+" · resolución "+cfg.resolution+" · filtros "+cfg.filters.join(", ")+" · prioridad "+cfg.priority+" · "+cfg.duration+".");emitTeacherEvent("SCAN_REVIEW",cfg);return}
-  if(id==="restore_scan_defaults"){shell.prefill=null;renderWorkspace();emitTeacherEvent("SCAN_DEFAULTS_RESTORED",{scanType:shell.secondaryId});return}
-  if(id==="cancel_scan_setup"){shell.primaryId="status";shell.secondaryId="general_status";render();return}
-  if(id==="execute_search"){executeSearch();return}
+  if(id==="review_scan_configuration"){const cfg=scanConfig();notify("Configuración: "+cfg.scanType+" · "+cfg.targetLabel+" · "+cfg.mode+" · resolución "+cfg.resolution+" · filtros "+cfg.filters.join(", ")+" · prioridad "+cfg.priority+" · "+cfg.duration+".");emitTeacherEvent("SCAN_REVIEW",cfg);return}
+  if(id==="restore_operation_defaults"){shell.prefill=null;renderWorkspace();emitTeacherEvent("SCAN_DEFAULTS_RESTORED",{scanType:shell.secondaryId});return}
+  if(id==="start_search"){executeSearch();return}
   if(id==="clear_search_criteria"){const el=$("#search-criteria");if(el)el.value="";emitTeacherEvent("SEARCH_CRITERIA_CLEAR",{searchType:shell.secondaryId});notify("Criterio adicional limpiado.");return}
-  if(id==="cancel_search_setup"){shell.primaryId="status";shell.secondaryId="general_status";render();return}
+  if(id==="cancel"){shell.special=null;shell.prefill=null;shell.secondaryId=primary()?.secondary?.[0]?.id||shell.secondaryId;emitTeacherEvent("TASK_CANCEL",{primaryId:shell.primaryId});render();return}
   if(id==="cancel_special"){shell.special=null;shell.prefill=null;renderWorkspace();return}
   if(id==="send_power_request"){
     const req={state:"PENDIENTE",requested:Number($("#power-delta").value),priority:$("#power-priority").value,duration:$("#power-duration").value,reason:$("#power-reason").value,contactId:c?.id||null};
@@ -345,45 +345,72 @@ function doTask(id){
     const target=$("#handoff-target").value,contactId=$("#handoff-contact").value,priority=$("#handoff-priority").value,request=$("#handoff-request").value;
     const tx=transferData(sim,target,contactId,{priority,request});log("TRANSFER "+contactId+" → "+target.toUpperCase());emitTeacherEvent("HANDOFF",{target,contactId,transferId:tx.id});shell.special=null;shell.prefill=null;notify("Datos enviados a "+target.toUpperCase()+".","success");return;
   }
-  if(id==="start_tracking_form"){
+  if(id==="start_tracking"){
     const cid=$("#track-contact").value,mode=$("#track-mode").value,priority=$("#track-priority").value,res=startTracking(sim,cid,mode,priority);
     if(!res.ok){notify(res.reason,"danger");return}log("TRACK START "+cid+" · "+mode+" · "+priority);emitTeacherEvent("TRACK_START",{contactId:cid,mode,priority});render();return;
   }
   if(id.startsWith("track_start:")){const cid=id.split(":")[1],res=startTracking(sim,cid);if(!res.ok){notify(res.reason,"danger");return}emitTeacherEvent("TRACK_START",{contactId:cid,mode:"normal",priority:"normal"});log("TRACK START "+cid);render();return}
   if(id.startsWith("track_stop:")){const cid=id.split(":")[1];stopTracking(sim,cid);emitTeacherEvent("TRACK_STOP",{contactId:cid});log("TRACK STOP "+cid);render();return}
   if(id.startsWith("track_toggle_priority:")){const cid=id.split(":")[1],x=getContact(sim,cid),prio=x.trackingPriority==="priority"?"normal":"priority",res=startTracking(sim,cid,x.trackingMode||"normal",prio);if(!res.ok){notify(res.reason,"danger");return}emitTeacherEvent("TRACK_PRIORITY",{contactId:cid,priority:prio});log("TRACK PRIORITY "+cid+" → "+prio);render();return}
+  if(id==="apply_tracking_priorities"){
+    const plan=[...document.querySelectorAll(".tracking-plan")].map(el=>({contactId:el.dataset.planContact,value:el.value}));
+    const total=plan.reduce((n,p)=>n+(p.value==="priority"?2:p.value==="normal"?1:0),0);
+    if(total>sim.tracking.capacity){notify("La distribución requiere "+total+" unidades y solo hay "+sim.tracking.capacity+".","danger");emitTeacherEvent("TRACK_CAPACITY_REJECTED",{requested:total,capacity:sim.tracking.capacity});return}
+    const before=new Map(sim.tracking.assignments.map(a=>[a.contactId,{...a}]));
+    for(const p of plan){if(p.value==="off"&&before.has(p.contactId)){stopTracking(sim,p.contactId);log("TRACK STOP "+p.contactId);emitTeacherEvent("TRACK_STOP",{contactId:p.contactId})}}
+    for(const p of plan){
+      if(p.value==="off")continue;
+      const old=before.get(p.contactId),priority=p.value==="priority"?"priority":"normal";
+      if(!old){
+        const res=startTracking(sim,p.contactId,"normal",priority);if(!res.ok){notify(res.reason,"danger");return}
+        log("TRACK START "+p.contactId+" · "+priority);emitTeacherEvent("TRACK_START",{contactId:p.contactId,mode:"normal",priority});
+        if(priority==="priority")emitTeacherEvent("TRACK_PRIORITY",{contactId:p.contactId,priority:"priority"});
+      }else if(old.priority!==priority){
+        const res=startTracking(sim,p.contactId,old.mode||"normal",priority);if(!res.ok){notify(res.reason,"danger");return}
+        log("TRACK PRIORITY "+p.contactId+" → "+priority);emitTeacherEvent("TRACK_PRIORITY",{contactId:p.contactId,priority});
+      }
+    }
+    emitTeacherEvent("TRACK_CAPACITY_APPLY",{used:trackingUsed(sim),capacity:sim.tracking.capacity});notify("Distribución de seguimiento aplicada: "+trackingUsed(sim)+" / "+sim.tracking.capacity+".","success");return;
+  }
   if(id==="start_signature_tracking"){
     const cid=$("#sig-contact").value,sig=$("#sig-type").value,res=startTracking(sim,cid,"signature","priority",sig);
     if(!res.ok){notify(res.reason,"danger");return}log("TRACK SIGNATURE "+cid+" · "+sig);emitTeacherEvent("TRACK_SIGNATURE",{contactId:cid,signature:sig});render();return;
   }
-  if(id==="tracking_operation"){
-    const cid=$("#track-op-contact").value,kind={update_position:"position",estimate_course:"course",estimate_velocity:"velocity",predict_trajectory:"trajectory"}[shell.secondaryId];
+  if(["execute_position_update","execute_course_estimation","execute_velocity_estimation","execute_trajectory_prediction"].includes(id)){
+    const cid=$("#track-op-contact").value,kind={execute_position_update:"position",execute_course_estimation:"course",execute_velocity_estimation:"velocity",execute_trajectory_prediction:"trajectory"}[id];
     const res=updateTracking(sim,cid,kind,{horizon:$("#prediction-horizon")?.value});
     if(!res.ok){notify(res.reason,"danger");return}log("TRACK "+kind.toUpperCase()+" "+cid+" · "+res.value);emitTeacherEvent("TRACK_OPERATION",{contactId:cid,operation:kind,value:res.value});notify(res.value,"success");return;
   }
-  if(id==="reacquire_lost"){
+  if(id==="start_reacquisition"){
     const cid=$("#lost-contact").value,res=updateTracking(sim,cid,"reacquire",{window:$("#search-window").value});
     if(!res.ok){notify(res.reason,"danger");return}shell.sim.selectedContactId=cid;log("REACQUIRE "+cid+" · "+res.value);emitTeacherEvent("REACQUIRE",{contactId:cid});notify(res.value,"success");return;
   }
-  if(id==="apply_auto_comp"){const res=applyInterference(sim,"automatic");log("INTERFERENCE AUTO");emitTeacherEvent("INTERFERENCE_ACTION",{action:"automatic"});notify(res.message,"success");return}
-  if(id==="apply_manual_comp"){const res=applyInterference(sim,"manual",{band:$("#manual-band").value});sim.config.sensitivity=$("#manual-sensitivity").value;sim.config.defaultResolution=$("#manual-resolution").value;if($("#manual-integration").value==="extended")applyInterference(sim,"extend");log("INTERFERENCE MANUAL");emitTeacherEvent("INTERFERENCE_ACTION",{action:"manual",band:sim.config.bandFrequency});notify(res.message,"success");return}
-  if(id==="apply_band"){const band=$("#band-change").value,res=applyInterference(sim,"band",{band});log("BAND "+band);emitTeacherEvent("INTERFERENCE_ACTION",{action:"band",band});notify(res.message,"success");return}
+  if(id==="apply_automatic_compensation"){const res=applyInterference(sim,"automatic");log("INTERFERENCE AUTO");emitTeacherEvent("INTERFERENCE_ACTION",{action:"automatic"});notify(res.message,"success");return}
+  if(id==="apply_manual_compensation"){const res=applyInterference(sim,"manual",{band:$("#manual-band").value});sim.config.sensitivity=$("#manual-sensitivity").value;sim.config.defaultResolution=$("#manual-resolution").value;if($("#manual-integration").value==="extended")applyInterference(sim,"extend");log("INTERFERENCE MANUAL");emitTeacherEvent("INTERFERENCE_ACTION",{action:"manual",band:sim.config.bandFrequency});notify(res.message,"success");return}
+  if(id==="apply_band_change"){const band=$("#band-change").value,res=applyInterference(sim,"band",{band});log("BAND "+band);emitTeacherEvent("INTERFERENCE_ACTION",{action:"band",band});notify(res.message,"success");return}
   if(id==="apply_operation_power"){const value=$("#operation-power").value,res=applyInterference(sim,"power",{value});emitTeacherEvent("INTERFERENCE_ACTION",{action:"operation_power",value:Number(value)});notify(res.message,"success");return}
-  if(id==="apply_reduced_resolution"){const resolution=$("#reduced-resolution").value,res=applyInterference(sim,"reduce_resolution",{resolution});emitTeacherEvent("INTERFERENCE_ACTION",{action:"reduce_resolution",resolution});notify(res.message,"success");return}
-  if(id==="apply_extended_integration"){const res=applyInterference(sim,"extend");emitTeacherEvent("INTERFERENCE_ACTION",{action:"extend_integration"});notify(res.message,"success");return}
-  if(id==="recover_signal_task"){const cid=$("#recover-contact").value,res=applyInterference(sim,"recover",{contactId:cid});if(!res.ok){notify(res.reason,"danger");return}emitTeacherEvent("INTERFERENCE_ACTION",{action:"recover_signal",contactId:cid});notify(res.message||res.value,"success");return}
-  if(id==="apply_config"){
+  if(id==="apply_resolution_change"){const resolution=$("#reduced-resolution").value,res=applyInterference(sim,"reduce_resolution",{resolution});emitTeacherEvent("INTERFERENCE_ACTION",{action:"reduce_resolution",resolution});notify(res.message,"success");return}
+  if(id==="apply_integration_extension"){const res=applyInterference(sim,"extend");emitTeacherEvent("INTERFERENCE_ACTION",{action:"extend_integration"});notify(res.message,"success");return}
+  if(id==="start_signal_recovery"){const cid=$("#recover-contact").value,res=applyInterference(sim,"recover",{contactId:cid});if(!res.ok){notify(res.reason,"danger");return}emitTeacherEvent("INTERFERENCE_ACTION",{action:"recover_signal",contactId:cid});notify(res.message||res.value,"success");return}
+  if(id==="apply_setting"){
     const sid=shell.secondaryId,key={sensitivity:"sensitivity",default_resolution:"defaultResolution",sensor_power:"sensor_power",sensor_array:"sensor_array",band_frequency:"bandFrequency",update_rate:"updateRate",default_filters:"defaultFilters",default_priorities:"defaultPriority"}[sid];
     const el=$("#config-value"),val=sid==="default_filters"?[...el.selectedOptions].map(o=>o.value):el.value;
     const actual=val,res=applyConfig(sim,key,actual);if(!res.ok){notify(res.reason,"danger");return}log("CONFIG APPLY "+sid+"="+(Array.isArray(val)?val.join(","):val));emitTeacherEvent("CONFIG_APPLY",{setting:sid,value:val});notify("Configuración aplicada.","success");return;
   }
-  if(id==="open_array_status_task"){shell.primaryId="status";shell.secondaryId="available_arrays";render();return}
-  if(id==="restore_standard"){restoreStandard(sim);log("CONFIG RESTORE STANDARD");emitTeacherEvent("CONFIG_RESTORE",{profile:"standard"});notify("Estándar de la nave restaurado.","success");return}
+  if(id==="open_array_status"){shell.primaryId="status";shell.secondaryId="available_arrays";render();return}
+  if(id==="restore_ship_standard"){restoreStandard(sim);log("CONFIG RESTORE STANDARD");emitTeacherEvent("CONFIG_RESTORE",{profile:"standard"});notify("Estándar de la nave restaurado.","success");return}
   if(id.startsWith("load_profile:")){const pid=id.split(":")[1],res=loadProfile(sim,pid);if(!res.ok){notify(res.reason,"danger");return}log("PROFILE LOAD "+pid);emitTeacherEvent("PROFILE_LOAD",{profileId:pid});notify("Perfil "+pid+" cargado.","success");return}
   if(id==="save_profile"){const pid=$("#profile-id").value.trim(),name=$("#profile-name").value.trim();if(!pid||!name){notify("Indique ID y nombre.","danger");return}const res=saveProfile(sim,pid,name);if(!res.ok){notify(res.reason,"danger");return}log("PROFILE SAVE "+pid);emitTeacherEvent("PROFILE_SAVE",{profileId:pid});render();return}
   if(id.startsWith("delete_profile:")){const pid=id.split(":")[1],res=deleteProfile(sim,pid);if(!res.ok){notify(res.reason,"danger");return}log("PROFILE DELETE "+pid);render();return}
   if(id==="execute_comparison"){const res=compareReadings(sim,$("#compare-a").value,$("#compare-b").value);if(!res.ok){notify(res.reason,"danger");return}log("COMPARE "+res.comparison.a+" ↔ "+res.comparison.b);emitTeacherEvent("RESULT_COMPARE",{a:res.comparison.a,b:res.comparison.b});notify(res.comparison.summary,"success");return}
-  if(id==="repeat_operation_task"){
+  if(id==="edit_before_repeat"){
+    const rid=$("#repeat-source").value,r=sim.results.find(x=>x.id===rid);if(!r){notify("Resultado no encontrado.","danger");return}
+    shell.prefill={...(r.configuration||{})};shell.special=null;
+    if(r.type==="scan"){shell.primaryId="scans";shell.secondaryId=r.subtype}
+    else{shell.primaryId="search_localize";shell.secondaryId=r.subtype}
+    log("EDIT BEFORE REPEAT "+rid);emitTeacherEvent("RESULT_EDIT_BEFORE_REPEAT",{sourceResultId:rid,type:r.type});render();return;
+  }
+  if(id==="execute_repeated_operation"){
     const rid=$("#repeat-source").value,r=sim.results.find(x=>x.id===rid);if(!r){notify("Resultado no encontrado.","danger");return}
     log("REPEAT "+rid);emitTeacherEvent("RESULT_REPEAT",{sourceResultId:rid,type:r.type});
     if(r.type==="scan"){const op=createOperation(sim,"scan:"+r.subtype,r.configuration);runTimed(op,()=>resolveScan(sim,op),"SCAN");renderStatus()}
@@ -391,8 +418,8 @@ function doTask(id){
     return;
   }
   if(id==="run_diagnostic"){const d=runDiagnostic(sim,$("#diag-scope").value);log("DIAGNOSTIC "+d.id+" · "+d.status);emitTeacherEvent("DIAGNOSTIC_RUN",{scope:d.scope,status:d.status,issues:d.issues.length});render();return}
-  if(id==="calibrate_form"){const aid=$("#cal-array").value,res=calibrateArray(sim,aid);if(!res.ok){notify(res.reason,"danger");return}log("CALIBRATE "+aid);emitTeacherEvent("CALIBRATION",{arrayId:aid});notify(res.message,"success");return}
-  if(id==="send_engineering"){const payload={component:$("#eng-component").value,diagnosticCode:$("#eng-code").value,problem:$("#eng-problem").value,priority:$("#eng-priority").value},req=requestEngineering(sim,payload);log("ENGINEERING REQUEST "+req.id+" · "+payload.component);emitTeacherEvent("ENGINEERING_REQUEST",{component:payload.component,priority:payload.priority,requestId:req.id});notify("Solicitud "+req.id+" enviada a Ingeniería.","success");return}
+  if(id==="start_calibration"){const aid=$("#cal-array").value,res=calibrateArray(sim,aid);if(!res.ok){notify(res.reason,"danger");return}log("CALIBRATE "+aid);emitTeacherEvent("CALIBRATION",{arrayId:aid});notify(res.message,"success");return}
+  if(id==="send_engineering_support_request"){const payload={component:$("#eng-component").value,diagnosticCode:$("#eng-code").value,problem:$("#eng-problem").value,priority:$("#eng-priority").value},req=requestEngineering(sim,payload);log("ENGINEERING REQUEST "+req.id+" · "+payload.component);emitTeacherEvent("ENGINEERING_REQUEST",{component:payload.component,priority:payload.priority,requestId:req.id});notify("Solicitud "+req.id+" enviada a Ingeniería.","success");return}
 }
 function doAction(id){
   const sim=shell.sim,c=contact();log("ACTION "+id);emitTeacherEvent("ACTION",{actionId:id,contactId:c?.id||null});
