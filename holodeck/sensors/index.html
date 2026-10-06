@@ -85,7 +85,11 @@
   </aside>
 </div>
 <footer class="operator-log">
-  <button id="toggle-log" class="ghost">LOG DE OPERADOR</button>
+  <div class="log-actions">
+    <button id="toggle-log" class="ghost">LOG DE OPERADOR</button>
+    <button id="copy-exercise-log" class="ghost developer-log-button" hidden>COPIAR LOG DEL EJERCICIO</button>
+    <span id="copy-log-status" class="copy-log-status" aria-live="polite"></span>
+  </div>
   <div id="log-panel" hidden><div id="log-list"></div></div>
 </footer>
 </div>
