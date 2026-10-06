@@ -336,7 +336,7 @@ function renderCurriculum() {
       pre.subjects.map(function(item){ return "<li>" + escapeHtml(item) + "</li>"; }).join("") +
       '</ul></div></section>';
 
-  app.curriculum.years.forEach(function(year) {
+  app.curriculum.years.forEach(function(year, yearIndex) {
     const specializationText = year.specializations
       ? '<div class="specialization-note"><strong>Ramas de especialización:</strong> ' +
         year.specializations.map(escapeHtml).join(" · ") +
@@ -352,7 +352,7 @@ function renderCurriculum() {
       : "";
 
     html +=
-      '<section class="curriculum-section">' +
+      '<section class="curriculum-section curriculum-section--year-' + (yearIndex + 1) + '">' +
         '<header class="curriculum-section__header"><div><span class="overline">' + escapeHtml(year.year) +
         '</span><h2>' + escapeHtml(year.title) + '</h2></div></header>' +
         '<div class="curriculum-section__body">' + specializationText +

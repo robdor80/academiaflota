@@ -384,6 +384,11 @@
 .curriculum-section--access{
   border-top:4px solid var(--gold);
 }
+
+.curriculum-section--year-1{border:2px solid var(--blue)}
+.curriculum-section--year-2{border:2px solid var(--gold)}
+.curriculum-section--year-3{border:2px solid var(--red)}
+.curriculum-section--year-4{border:2px solid var(--green)}
 .access-manual-card{
   display:grid;
   grid-template-columns:58px minmax(0,1fr) auto;
