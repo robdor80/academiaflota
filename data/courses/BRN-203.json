@@ -1,7 +1,7 @@
 {
   "subject": "Especialización profesional III",
   "code": "BRN-203",
-  "version": "1.0",
+  "version": "1.1",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/second_class/courses/BRN-203/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/second_class/BRN-203/MANUAL_v1_0.md",
@@ -22,6 +22,10 @@
       "blocks": [
         {
           "type": "p",
+          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+        },
+        {
+          "type": "p",
           "text": "Integrar conocimiento, ejecución y criterio antes del servicio supervisado y la cualificación intermedia."
         },
         {
@@ -31,10 +35,10 @@
         {
           "type": "bullets",
           "items": [
-            "situación",
-            "evidencia",
-            "prioridad",
-            "plan"
+            "Situación: situación se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Evidencia: Debe ser observable y trazable: qué se hizo, en qué contexto, con qué resultado y bajo qué supervisión.",
+            "Prioridad: Ordena demandas según seguridad, misión, urgencia, impacto y reversibilidad.",
+            "Plan: plan se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -85,6 +89,10 @@
       "blocks": [
         {
           "type": "p",
+          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+        },
+        {
+          "type": "p",
           "text": "Integrar conocimiento, ejecución y criterio antes del servicio supervisado y la cualificación intermedia."
         },
         {
@@ -94,10 +102,10 @@
         {
           "type": "bullets",
           "items": [
-            "carga",
-            "consistencia",
-            "monitorización",
-            "ajuste"
+            "Carga: carga se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Consistencia: consistencia se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Monitorización: monitorización se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Ajuste: ajuste se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -148,6 +156,10 @@
       "blocks": [
         {
           "type": "p",
+          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+        },
+        {
+          "type": "p",
           "text": "Integrar conocimiento, ejecución y criterio antes del servicio supervisado y la cualificación intermedia."
         },
         {
@@ -157,10 +169,10 @@
         {
           "type": "bullets",
           "items": [
-            "estado",
-            "riesgo",
-            "opciones",
-            "recomendación"
+            "Estado: Fija la condición real de partida —normal, degradada, limitada o desconocida— antes de actuar; si cambia, el plan debe revisarse.",
+            "Riesgo: Combina probabilidad, impacto y exposición; se reduce, acepta dentro de autoridad o se escala.",
+            "Opciones: opciones se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Recomendación: recomendación se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -211,6 +223,10 @@
       "blocks": [
         {
           "type": "p",
+          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+        },
+        {
+          "type": "p",
           "text": "Integrar conocimiento, ejecución y criterio antes del servicio supervisado y la cualificación intermedia."
         },
         {
@@ -220,10 +236,10 @@
         {
           "type": "bullets",
           "items": [
-            "equipo",
-            "otro departamento",
-            "mando",
-            "handoff"
+            "Equipo: equipo se organiza por funciones, competencia, carga y responsabilidad, con apoyo proporcional al riesgo.",
+            "Otro departamento: otro departamento se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Mando: mando se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Handoff: Transfiere continuidad: estado, acciones, resultado, riesgos, órdenes y pendientes deben quedar claros para quien recibe."
           ]
         },
         {
@@ -274,6 +290,10 @@
       "blocks": [
         {
           "type": "p",
+          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+        },
+        {
+          "type": "p",
           "text": "Integrar conocimiento, ejecución y criterio antes del servicio supervisado y la cualificación intermedia."
         },
         {
@@ -283,10 +303,10 @@
         {
           "type": "bullets",
           "items": [
-            "fallo",
-            "incertidumbre",
-            "tiempo",
-            "consecuencia"
+            "Fallo: fallo se gestiona identificando función perdida, capacidad restante, riesgo inmediato, alternativa y recuperación segura.",
+            "Incertidumbre: Debe expresarse y gestionarse; ocultarla produce decisiones falsamente precisas.",
+            "Tiempo: tiempo ordena la actuación comparando seguridad, misión, tiempo, impacto y recursos disponibles.",
+            "Consecuencia: consecuencia se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -337,6 +357,10 @@
       "blocks": [
         {
           "type": "p",
+          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+        },
+        {
+          "type": "p",
           "text": "Integrar conocimiento, ejecución y criterio antes del servicio supervisado y la cualificación intermedia."
         },
         {
@@ -346,10 +370,10 @@
         {
           "type": "bullets",
           "items": [
-            "límites",
-            "responsabilidad",
-            "criterios",
-            "documentación"
+            "Límites: Definen hasta dónde puede actuar el cadete por competencia, autoridad, estado y riesgo; fuera de ellos se consulta o escala.",
+            "Responsabilidad: responsabilidad se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Criterios: criterios debe expresarse como resultado o condición verificable, relacionado con la intención de misión y sus restricciones.",
+            "Documentación: documentación se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -393,5 +417,6 @@
         }
       ]
     }
-  ]
+  ],
+  "status": "developed_content"
 }

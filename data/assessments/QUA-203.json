@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "course_id": "QUA-203",
-  "status": "generated_from_authoritative_curriculum",
+  "status": "editorially_aligned_with_developed_manual",
   "question_count": 24,
   "questions": [
     {
       "id": "QUA-203-Q001",
       "unit_id": "QUA-203-U01",
       "type": "professional_knowledge",
-      "prompt_es": "Explica el principio profesional de cursos y cuándo condiciona una decisión.",
+      "prompt_es": "Explica qué significa cursos en esta unidad y cómo puede cambiar una decisión.",
       "answer_key_es": [
         "cursos",
         "contexto",
@@ -32,24 +32,24 @@
       "id": "QUA-203-Q003",
       "unit_id": "QUA-203-U01",
       "type": "contingency",
-      "prompt_es": "Durante Revisión de evidencia aparece una degradación inesperada. ¿Cómo decides si continuar, modificar el plan o escalar?",
+      "prompt_es": "Durante Revisión de evidencia cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
       "answer_key_es": [
+        "estado",
         "seguridad",
-        "capacidad restante",
-        "misión",
-        "alternativa",
-        "escalado"
+        "riesgo",
+        "autoridad",
+        "adaptación o escalado"
       ]
     },
     {
       "id": "QUA-203-Q004",
       "unit_id": "QUA-203-U01",
       "type": "handoff",
-      "prompt_es": "¿Qué información mínima dejarías al relevo o supervisor tras esta unidad?",
+      "prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
       "answer_key_es": [
-        "estado",
-        "acciones",
+        "acción",
         "resultado",
+        "limitaciones",
         "riesgos",
         "pendientes"
       ]
@@ -58,7 +58,7 @@
       "id": "QUA-203-Q005",
       "unit_id": "QUA-203-U02",
       "type": "professional_knowledge",
-      "prompt_es": "Explica el principio profesional de conceptos y cuándo condiciona una decisión.",
+      "prompt_es": "Explica qué significa conceptos en esta unidad y cómo puede cambiar una decisión.",
       "answer_key_es": [
         "conceptos",
         "contexto",
@@ -82,24 +82,24 @@
       "id": "QUA-203-Q007",
       "unit_id": "QUA-203-U02",
       "type": "contingency",
-      "prompt_es": "Durante Conocimiento de rama aparece una degradación inesperada. ¿Cómo decides si continuar, modificar el plan o escalar?",
+      "prompt_es": "Durante Conocimiento de rama cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
       "answer_key_es": [
+        "estado",
         "seguridad",
-        "capacidad restante",
-        "misión",
-        "alternativa",
-        "escalado"
+        "riesgo",
+        "autoridad",
+        "adaptación o escalado"
       ]
     },
     {
       "id": "QUA-203-Q008",
       "unit_id": "QUA-203-U02",
       "type": "handoff",
-      "prompt_es": "¿Qué información mínima dejarías al relevo o supervisor tras esta unidad?",
+      "prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
       "answer_key_es": [
-        "estado",
-        "acciones",
+        "acción",
         "resultado",
+        "limitaciones",
         "riesgos",
         "pendientes"
       ]
@@ -108,7 +108,7 @@
       "id": "QUA-203-Q009",
       "unit_id": "QUA-203-U03",
       "type": "professional_knowledge",
-      "prompt_es": "Explica el principio profesional de procedimiento y cuándo condiciona una decisión.",
+      "prompt_es": "Explica qué significa procedimiento en esta unidad y cómo puede cambiar una decisión.",
       "answer_key_es": [
         "procedimiento",
         "contexto",
@@ -132,24 +132,24 @@
       "id": "QUA-203-Q011",
       "unit_id": "QUA-203-U03",
       "type": "contingency",
-      "prompt_es": "Durante Ejecución práctica aparece una degradación inesperada. ¿Cómo decides si continuar, modificar el plan o escalar?",
+      "prompt_es": "Durante Ejecución práctica cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
       "answer_key_es": [
+        "estado",
         "seguridad",
-        "capacidad restante",
-        "misión",
-        "alternativa",
-        "escalado"
+        "riesgo",
+        "autoridad",
+        "adaptación o escalado"
       ]
     },
     {
       "id": "QUA-203-Q012",
       "unit_id": "QUA-203-U03",
       "type": "handoff",
-      "prompt_es": "¿Qué información mínima dejarías al relevo o supervisor tras esta unidad?",
+      "prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
       "answer_key_es": [
-        "estado",
-        "acciones",
+        "acción",
         "resultado",
+        "limitaciones",
         "riesgos",
         "pendientes"
       ]
@@ -158,7 +158,7 @@
       "id": "QUA-203-Q013",
       "unit_id": "QUA-203-U04",
       "type": "professional_knowledge",
-      "prompt_es": "Explica el principio profesional de incertidumbre y cuándo condiciona una decisión.",
+      "prompt_es": "Explica qué significa incertidumbre en esta unidad y cómo puede cambiar una decisión.",
       "answer_key_es": [
         "incertidumbre",
         "contexto",
@@ -182,24 +182,24 @@
       "id": "QUA-203-Q015",
       "unit_id": "QUA-203-U04",
       "type": "contingency",
-      "prompt_es": "Durante Juicio aparece una degradación inesperada. ¿Cómo decides si continuar, modificar el plan o escalar?",
+      "prompt_es": "Durante Juicio cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
       "answer_key_es": [
+        "estado",
         "seguridad",
-        "capacidad restante",
-        "misión",
-        "alternativa",
-        "escalado"
+        "riesgo",
+        "autoridad",
+        "adaptación o escalado"
       ]
     },
     {
       "id": "QUA-203-Q016",
       "unit_id": "QUA-203-U04",
       "type": "handoff",
-      "prompt_es": "¿Qué información mínima dejarías al relevo o supervisor tras esta unidad?",
+      "prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
       "answer_key_es": [
-        "estado",
-        "acciones",
+        "acción",
         "resultado",
+        "limitaciones",
         "riesgos",
         "pendientes"
       ]
@@ -208,7 +208,7 @@
       "id": "QUA-203-Q017",
       "unit_id": "QUA-203-U05",
       "type": "professional_knowledge",
-      "prompt_es": "Explica el principio profesional de fortalezas y cuándo condiciona una decisión.",
+      "prompt_es": "Explica qué significa fortalezas en esta unidad y cómo puede cambiar una decisión.",
       "answer_key_es": [
         "fortalezas",
         "contexto",
@@ -232,24 +232,24 @@
       "id": "QUA-203-Q019",
       "unit_id": "QUA-203-U05",
       "type": "contingency",
-      "prompt_es": "Durante Revisión de supervisor aparece una degradación inesperada. ¿Cómo decides si continuar, modificar el plan o escalar?",
+      "prompt_es": "Durante Revisión de supervisor cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
       "answer_key_es": [
+        "estado",
         "seguridad",
-        "capacidad restante",
-        "misión",
-        "alternativa",
-        "escalado"
+        "riesgo",
+        "autoridad",
+        "adaptación o escalado"
       ]
     },
     {
       "id": "QUA-203-Q020",
       "unit_id": "QUA-203-U05",
       "type": "handoff",
-      "prompt_es": "¿Qué información mínima dejarías al relevo o supervisor tras esta unidad?",
+      "prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
       "answer_key_es": [
-        "estado",
-        "acciones",
+        "acción",
         "resultado",
+        "limitaciones",
         "riesgos",
         "pendientes"
       ]
@@ -258,7 +258,7 @@
       "id": "QUA-203-Q021",
       "unit_id": "QUA-203-U06",
       "type": "professional_knowledge",
-      "prompt_es": "Explica el principio profesional de qualified y cuándo condiciona una decisión.",
+      "prompt_es": "Explica qué significa qualified en esta unidad y cómo puede cambiar una decisión.",
       "answer_key_es": [
         "qualified",
         "contexto",
@@ -282,27 +282,29 @@
       "id": "QUA-203-Q023",
       "unit_id": "QUA-203-U06",
       "type": "contingency",
-      "prompt_es": "Durante Resultado y plan aparece una degradación inesperada. ¿Cómo decides si continuar, modificar el plan o escalar?",
+      "prompt_es": "Durante Resultado y plan cambia una condición relevante. ¿Qué revisas antes de continuar, adaptar el plan o escalar?",
       "answer_key_es": [
+        "estado",
         "seguridad",
-        "capacidad restante",
-        "misión",
-        "alternativa",
-        "escalado"
+        "riesgo",
+        "autoridad",
+        "adaptación o escalado"
       ]
     },
     {
       "id": "QUA-203-Q024",
       "unit_id": "QUA-203-U06",
       "type": "handoff",
-      "prompt_es": "¿Qué información mínima dejarías al relevo o supervisor tras esta unidad?",
+      "prompt_es": "¿Qué evidencia mínima debe quedar registrada al cerrar esta unidad?",
       "answer_key_es": [
-        "estado",
-        "acciones",
+        "acción",
         "resultado",
+        "limitaciones",
         "riesgos",
         "pendientes"
       ]
     }
-  ]
+  ],
+  "source_manual": "gameplay/careers/academy_path/study_materials/second_class/QUA-203/MANUAL_v1_0.md",
+  "rule": "No question may require knowledge that is not explicitly taught in QUA-203 or established prerequisites."
 }

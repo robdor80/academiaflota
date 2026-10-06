@@ -1,7 +1,7 @@
 {
   "subject": "Formación cruzada II",
   "code": "XTR-202",
-  "version": "1.0",
+  "version": "1.1",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/second_class/courses/XTR-202/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/second_class/XTR-202/MANUAL_v1_0.md",
@@ -21,6 +21,10 @@
       "blocks": [
         {
           "type": "p",
+          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+        },
+        {
+          "type": "p",
           "text": "Convertir el foco secundario en capacidad útil y demostrable sin otorgar cualificación completa automática."
         },
         {
@@ -30,10 +34,10 @@
         {
           "type": "bullets",
           "items": [
-            "evidencia",
-            "recencia",
-            "carencias",
-            "objetivo"
+            "Evidencia: Debe ser observable y trazable: qué se hizo, en qué contexto, con qué resultado y bajo qué supervisión.",
+            "Recencia: recencia se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Carencias: carencias se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Objetivo: Describe el resultado que debe lograrse y debe estar claro antes de repartir tareas."
           ]
         },
         {
@@ -83,6 +87,10 @@
       "blocks": [
         {
           "type": "p",
+          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+        },
+        {
+          "type": "p",
           "text": "Convertir el foco secundario en capacidad útil y demostrable sin otorgar cualificación completa automática."
         },
         {
@@ -92,10 +100,10 @@
         {
           "type": "bullets",
           "items": [
-            "tarea",
-            "límites",
-            "seguridad",
-            "reporte"
+            "Tarea: tarea se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Límites: Definen hasta dónde puede actuar el cadete por competencia, autoridad, estado y riesgo; fuera de ellos se consulta o escala.",
+            "Seguridad: Limita cualquier procedimiento: se identifican peligros, protecciones, condición de aborto y quién puede autorizar continuar.",
+            "Reporte: Separa hechos, interpretación, resultado, limitaciones y pendientes para que otro pueda actuar."
           ]
         },
         {
@@ -145,6 +153,10 @@
       "blocks": [
         {
           "type": "p",
+          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+        },
+        {
+          "type": "p",
           "text": "Convertir el foco secundario en capacidad útil y demostrable sin otorgar cualificación completa automática."
         },
         {
@@ -154,9 +166,9 @@
         {
           "type": "bullets",
           "items": [
-            "integración con rama principal",
-            "prioridad",
-            "handoff"
+            "Integración con rama principal: integración con rama principal se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Prioridad: Ordena demandas según seguridad, misión, urgencia, impacto y reversibilidad.",
+            "Handoff: Transfiere continuidad: estado, acciones, resultado, riesgos, órdenes y pendientes deben quedar claros para quien recibe."
           ]
         },
         {
@@ -206,6 +218,10 @@
       "blocks": [
         {
           "type": "p",
+          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+        },
+        {
+          "type": "p",
           "text": "Convertir el foco secundario en capacidad útil y demostrable sin otorgar cualificación completa automática."
         },
         {
@@ -215,9 +231,9 @@
         {
           "type": "bullets",
           "items": [
-            "rol auxiliar",
-            "autoridad",
-            "comunicación"
+            "Rol auxiliar: rol auxiliar se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Autoridad: Determina quién puede decidir, aprobar o modificar una acción; competencia técnica no equivale automáticamente a autoridad.",
+            "Comunicación: Debe ser proporcional, precisa y dirigida a quien puede actuar; demasiado ruido también degrada la operación."
           ]
         },
         {
@@ -267,6 +283,10 @@
       "blocks": [
         {
           "type": "p",
+          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+        },
+        {
+          "type": "p",
           "text": "Convertir el foco secundario en capacidad útil y demostrable sin otorgar cualificación completa automática."
         },
         {
@@ -276,9 +296,9 @@
         {
           "type": "bullets",
           "items": [
-            "qué puede hacer",
-            "qué debe escalar",
-            "qué requiere certificación"
+            "Qué puede hacer: qué puede hacer se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Qué debe escalar: qué debe escalar se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Qué requiere certificación: qué requiere certificación delimita competencia y autorización; fuera de ese marco la decisión se transfiere a personal adecuado."
           ]
         },
         {
@@ -328,6 +348,10 @@
       "blocks": [
         {
           "type": "p",
+          "text": "En 2.ª clase este contenido se trabaja como competencia profesional: comprender, ejecutar, reconocer límites, comunicar y dejar evidencia."
+        },
+        {
+          "type": "p",
           "text": "Convertir el foco secundario en capacidad útil y demostrable sin otorgar cualificación completa automática."
         },
         {
@@ -337,9 +361,9 @@
         {
           "type": "bullets",
           "items": [
-            "capacidad demostrada",
-            "próximos pasos",
-            "sin equivalencia automática"
+            "Capacidad demostrada: capacidad demostrada se evalúa por disponibilidad, demanda, dependencias y margen antes de comprometerlo.",
+            "Próximos pasos: próximos pasos se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros.",
+            "Sin equivalencia automática: sin equivalencia automática se trata como un elemento operativo explícito: significado, impacto, límites y condición de escalado deben quedar claros."
           ]
         },
         {
@@ -382,5 +406,6 @@
         }
       ]
     }
-  ]
+  ],
+  "status": "developed_content"
 }
