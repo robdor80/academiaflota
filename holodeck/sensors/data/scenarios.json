@@ -1,0 +1,627 @@
+{
+  "schema_version": "1.0.0",
+  "scenarios": [
+    {
+      "id": "standard_sector",
+      "title": "Sector 041 · Operación estándar",
+      "powerBudget": 18,
+      "interference": {
+        "severity": "low",
+        "type": "subspace_noise",
+        "source": "Fondo subespacial natural",
+        "band": "subspace",
+        "penalty": 6
+      },
+      "arrays": [
+        {
+          "id": "PRIMARY",
+          "name": "Matriz primaria",
+          "integrity": 100,
+          "calibration": 96,
+          "available": true,
+          "bands": [
+            "EM",
+            "Subespacio",
+            "Gravimétrica",
+            "Térmica",
+            "Biológica"
+          ],
+          "range": 100,
+          "resolution": 100
+        },
+        {
+          "id": "LATERAL",
+          "name": "Matriz lateral",
+          "integrity": 94,
+          "calibration": 91,
+          "available": true,
+          "bands": [
+            "EM",
+            "Subespacio",
+            "Térmica"
+          ],
+          "range": 76,
+          "resolution": 82
+        }
+      ],
+      "contacts": [
+        {
+          "id": "C-03",
+          "known": true,
+          "status": "identified",
+          "classification": "Lanzadera tipo 6",
+          "kind": "shuttle",
+          "distanceKm": 18400,
+          "confidence": 94,
+          "signal": 88,
+          "signatures": [
+            "warp",
+            "em",
+            "transponder"
+          ],
+          "marked": false,
+          "vector": "014 / +03",
+          "velocity": "0,04c",
+          "mass": "52 t ±4%",
+          "dimensions": "8,5 × 4,1 × 2,7 m",
+          "lifeforms": "6 compatibles",
+          "band": "3,2 THz",
+          "energy": "Patrón Federación estable",
+          "subspace": "Firma warp residual baja",
+          "patternMatch": 96
+        },
+        {
+          "id": "C-07",
+          "known": true,
+          "status": "unidentified",
+          "classification": "No identificado",
+          "kind": "unknown",
+          "distanceKm": 43000,
+          "confidence": 22,
+          "signal": 24,
+          "signatures": [
+            "subspace",
+            "energy"
+          ],
+          "marked": true,
+          "vector": "031 / +12",
+          "velocity": "0,18c ±0,06c",
+          "mass": "1,1 ×10⁶ t ±34%",
+          "dimensions": "92–140 m",
+          "lifeforms": "No concluyente",
+          "band": "4,7 THz / subespacio",
+          "energy": "Intermitente",
+          "subspace": "Parcial / intermitente",
+          "patternMatch": 41
+        },
+        {
+          "id": "C-12",
+          "known": true,
+          "status": "identified",
+          "classification": "Nave mercante",
+          "kind": "starship",
+          "distanceKm": 71200,
+          "confidence": 86,
+          "signal": 61,
+          "signatures": [
+            "em",
+            "thermal",
+            "warp"
+          ],
+          "marked": false,
+          "vector": "287 / -04",
+          "velocity": "0,11c",
+          "mass": "3,7 ×10⁶ t ±12%",
+          "dimensions": "210 × 74 × 51 m",
+          "lifeforms": "84–110 compatibles",
+          "band": "2,1 THz",
+          "energy": "Reactor materia/antimateria",
+          "subspace": "Warp estable",
+          "patternMatch": 89
+        },
+        {
+          "id": "C-19",
+          "known": true,
+          "status": "lost",
+          "classification": "Desconocido",
+          "kind": "unknown",
+          "distanceKm": 96000,
+          "confidence": 31,
+          "signal": 0,
+          "signatures": [
+            "warp_residual"
+          ],
+          "marked": false,
+          "vector": "Último 122 / +06",
+          "velocity": "Última 0,23c",
+          "mass": "Sin resolver",
+          "dimensions": "Sin resolver",
+          "lifeforms": "Sin datos",
+          "band": "Residual",
+          "energy": "Sin lectura actual",
+          "subspace": "Rastro warp residual",
+          "patternMatch": 28
+        },
+        {
+          "id": "C-22",
+          "known": false,
+          "status": "unidentified",
+          "classification": "No identificado",
+          "kind": "probe_beacon",
+          "distanceKm": 56800,
+          "confidence": 18,
+          "signal": 19,
+          "signatures": [
+            "transponder",
+            "em"
+          ],
+          "marked": false,
+          "vector": "198 / +01",
+          "velocity": "Deriva",
+          "mass": "0,8 t ±30%",
+          "dimensions": "1,4 m",
+          "lifeforms": "Ninguna detectable",
+          "band": "121,5 MHz",
+          "energy": "Batería de baja potencia",
+          "subspace": "Ninguna",
+          "patternMatch": 67
+        }
+      ]
+    },
+    {
+      "id": "search_rescue",
+      "title": "Búsqueda y rescate · Lanzadera desaparecida",
+      "powerBudget": 14,
+      "interference": {
+        "severity": "medium",
+        "type": "charged_particles",
+        "source": "Frente de partículas cargadas",
+        "band": "em",
+        "penalty": 16
+      },
+      "arrays": [
+        {
+          "id": "PRIMARY",
+          "name": "Matriz primaria",
+          "integrity": 100,
+          "calibration": 95,
+          "available": true,
+          "bands": [
+            "EM",
+            "Subespacio",
+            "Térmica",
+            "Biológica"
+          ],
+          "range": 100,
+          "resolution": 100
+        },
+        {
+          "id": "VENTRAL",
+          "name": "Matriz ventral",
+          "integrity": 98,
+          "calibration": 97,
+          "available": true,
+          "bands": [
+            "EM",
+            "Térmica",
+            "Biológica"
+          ],
+          "range": 72,
+          "resolution": 94
+        }
+      ],
+      "contacts": [
+        {
+          "id": "C-31",
+          "known": false,
+          "status": "unidentified",
+          "classification": "No identificado",
+          "kind": "shuttle",
+          "distanceKm": 38600,
+          "confidence": 17,
+          "signal": 17,
+          "signatures": [
+            "em",
+            "thermal",
+            "transponder"
+          ],
+          "marked": false,
+          "vector": "061 / -09",
+          "velocity": "Deriva",
+          "mass": "47 t ±25%",
+          "dimensions": "8–10 m",
+          "lifeforms": "4–7 débiles",
+          "band": "Transpondedor intermitente",
+          "energy": "Reserva auxiliar",
+          "subspace": "Sin warp",
+          "patternMatch": 73
+        },
+        {
+          "id": "C-32",
+          "known": true,
+          "status": "identified",
+          "classification": "Restos metálicos",
+          "kind": "artificial_object",
+          "distanceKm": 22100,
+          "confidence": 78,
+          "signal": 34,
+          "signatures": [
+            "em",
+            "thermal"
+          ],
+          "marked": false,
+          "vector": "074 / -03",
+          "velocity": "Deriva",
+          "mass": "12 t ±15%",
+          "dimensions": "Dispersos",
+          "lifeforms": "Ninguna",
+          "band": "EM pasiva",
+          "energy": "Térmica residual",
+          "subspace": "Ninguna",
+          "patternMatch": 82
+        }
+      ]
+    },
+    {
+      "id": "tracking_load",
+      "title": "Tráfico denso · Saturación de seguimiento",
+      "powerBudget": 12,
+      "interference": {
+        "severity": "low",
+        "type": "natural_electromagnetic_activity",
+        "source": "Actividad estelar",
+        "band": "em",
+        "penalty": 7
+      },
+      "trackingCapacity": 6,
+      "arrays": [
+        {
+          "id": "PRIMARY",
+          "name": "Matriz primaria",
+          "integrity": 100,
+          "calibration": 94,
+          "available": true,
+          "bands": [
+            "EM",
+            "Subespacio",
+            "Térmica"
+          ],
+          "range": 100,
+          "resolution": 100
+        }
+      ],
+      "contacts": [
+        {
+          "id": "C-41",
+          "known": true,
+          "status": "identified",
+          "classification": "Carguero",
+          "kind": "starship",
+          "distanceKm": 28000,
+          "confidence": 92,
+          "signal": 71,
+          "signatures": [
+            "warp",
+            "em"
+          ],
+          "marked": false,
+          "vector": "101 / +02",
+          "velocity": "0,08c",
+          "mass": "4,2 ×10⁶ t",
+          "dimensions": "240 m",
+          "lifeforms": "62",
+          "band": "2,2 THz",
+          "energy": "Nominal",
+          "subspace": "Warp bajo",
+          "patternMatch": 93
+        },
+        {
+          "id": "C-42",
+          "known": true,
+          "status": "identified",
+          "classification": "Transporte",
+          "kind": "starship",
+          "distanceKm": 33200,
+          "confidence": 89,
+          "signal": 66,
+          "signatures": [
+            "warp",
+            "em"
+          ],
+          "marked": false,
+          "vector": "109 / +03",
+          "velocity": "0,09c",
+          "mass": "2,8 ×10⁶ t",
+          "dimensions": "180 m",
+          "lifeforms": "104",
+          "band": "2,4 THz",
+          "energy": "Nominal",
+          "subspace": "Warp bajo",
+          "patternMatch": 91
+        },
+        {
+          "id": "C-43",
+          "known": true,
+          "status": "unidentified",
+          "classification": "No identificado",
+          "kind": "starship",
+          "distanceKm": 45100,
+          "confidence": 51,
+          "signal": 44,
+          "signatures": [
+            "warp",
+            "subspace"
+          ],
+          "marked": true,
+          "vector": "118 / +04",
+          "velocity": "0,13c",
+          "mass": "3–6 ×10⁶ t",
+          "dimensions": "150–260 m",
+          "lifeforms": "No concluyente",
+          "band": "5,1 THz",
+          "energy": "Variable",
+          "subspace": "Modulada",
+          "patternMatch": 56
+        },
+        {
+          "id": "C-44",
+          "known": true,
+          "status": "identified",
+          "classification": "Lanzadera civil",
+          "kind": "shuttle",
+          "distanceKm": 9700,
+          "confidence": 95,
+          "signal": 82,
+          "signatures": [
+            "em",
+            "transponder"
+          ],
+          "marked": false,
+          "vector": "090 / 00",
+          "velocity": "0,02c",
+          "mass": "39 t",
+          "dimensions": "7,8 m",
+          "lifeforms": "5",
+          "band": "Civil",
+          "energy": "Baja",
+          "subspace": "Ninguna",
+          "patternMatch": 97
+        },
+        {
+          "id": "C-45",
+          "known": true,
+          "status": "unidentified",
+          "classification": "No identificado",
+          "kind": "unknown",
+          "distanceKm": 60400,
+          "confidence": 37,
+          "signal": 29,
+          "signatures": [
+            "thermal"
+          ],
+          "marked": false,
+          "vector": "130 / -02",
+          "velocity": "0,05c",
+          "mass": "Indeterminada",
+          "dimensions": "Indeterminadas",
+          "lifeforms": "Sin datos",
+          "band": "Térmica",
+          "energy": "Débil",
+          "subspace": "No detectada",
+          "patternMatch": 22
+        }
+      ],
+      "initialTracking": [
+        "C-41",
+        "C-42",
+        "C-44"
+      ]
+    },
+    {
+      "id": "interference_field",
+      "title": "Campo de interferencia · Ruido subespacial",
+      "powerBudget": 16,
+      "interference": {
+        "severity": "high",
+        "type": "subspace_noise",
+        "source": "Perturbación subespacial",
+        "band": "subspace",
+        "penalty": 32
+      },
+      "arrays": [
+        {
+          "id": "PRIMARY",
+          "name": "Matriz primaria",
+          "integrity": 96,
+          "calibration": 92,
+          "available": true,
+          "bands": [
+            "EM",
+            "Subespacio",
+            "Gravimétrica"
+          ],
+          "range": 92,
+          "resolution": 88
+        },
+        {
+          "id": "AUX",
+          "name": "Matriz auxiliar",
+          "integrity": 100,
+          "calibration": 99,
+          "available": true,
+          "bands": [
+            "EM",
+            "Térmica"
+          ],
+          "range": 62,
+          "resolution": 86
+        }
+      ],
+      "contacts": [
+        {
+          "id": "C-51",
+          "known": true,
+          "status": "unidentified",
+          "classification": "No identificado",
+          "kind": "starship",
+          "distanceKm": 67400,
+          "confidence": 28,
+          "signal": 21,
+          "signatures": [
+            "subspace",
+            "warp"
+          ],
+          "marked": true,
+          "vector": "222 / +08",
+          "velocity": "0,16c",
+          "mass": "2–8 ×10⁶ t",
+          "dimensions": "Sin resolver",
+          "lifeforms": "Sin datos",
+          "band": "Subespacio contaminado",
+          "energy": "No concluyente",
+          "subspace": "Firma enterrada en ruido",
+          "patternMatch": 33
+        }
+      ]
+    },
+    {
+      "id": "degraded_array",
+      "title": "Avería sensora · Matriz primaria degradada",
+      "powerBudget": 10,
+      "interference": {
+        "severity": "medium",
+        "type": "radiation",
+        "source": "Radiación local",
+        "band": "broad",
+        "penalty": 14
+      },
+      "arrays": [
+        {
+          "id": "PRIMARY",
+          "name": "Matriz primaria",
+          "integrity": 58,
+          "calibration": 61,
+          "available": true,
+          "bands": [
+            "EM",
+            "Subespacio",
+            "Gravimétrica",
+            "Térmica"
+          ],
+          "range": 58,
+          "resolution": 55,
+          "error": "S-214"
+        },
+        {
+          "id": "AUX",
+          "name": "Matriz auxiliar",
+          "integrity": 100,
+          "calibration": 96,
+          "available": true,
+          "bands": [
+            "EM",
+            "Subespacio",
+            "Térmica"
+          ],
+          "range": 68,
+          "resolution": 82
+        }
+      ],
+      "contacts": [
+        {
+          "id": "C-61",
+          "known": true,
+          "status": "identified",
+          "classification": "Baliza de navegación",
+          "kind": "probe_beacon",
+          "distanceKm": 12800,
+          "confidence": 82,
+          "signal": 64,
+          "signatures": [
+            "transponder",
+            "em"
+          ],
+          "marked": false,
+          "vector": "003 / 00",
+          "velocity": "Estacionaria",
+          "mass": "1,2 t",
+          "dimensions": "1,8 m",
+          "lifeforms": "Ninguna",
+          "band": "Canal navegación",
+          "energy": "Estable",
+          "subspace": "Ninguna",
+          "patternMatch": 95
+        }
+      ]
+    },
+    {
+      "id": "hostile_jamming",
+      "title": "Contramedidas · Interferencia deliberada",
+      "powerBudget": 20,
+      "interference": {
+        "severity": "severe",
+        "type": "jamming",
+        "source": "Emisión artificial no localizada",
+        "band": "broad",
+        "penalty": 42
+      },
+      "arrays": [
+        {
+          "id": "PRIMARY",
+          "name": "Matriz primaria",
+          "integrity": 100,
+          "calibration": 98,
+          "available": true,
+          "bands": [
+            "EM",
+            "Subespacio",
+            "Gravimétrica",
+            "Térmica"
+          ],
+          "range": 100,
+          "resolution": 100
+        },
+        {
+          "id": "TACTICAL_AUX",
+          "name": "Matriz táctica auxiliar",
+          "integrity": 97,
+          "calibration": 95,
+          "available": true,
+          "bands": [
+            "EM",
+            "Subespacio"
+          ],
+          "range": 78,
+          "resolution": 90
+        }
+      ],
+      "contacts": [
+        {
+          "id": "C-71",
+          "known": true,
+          "status": "unidentified",
+          "classification": "No identificado",
+          "kind": "starship",
+          "distanceKm": 52300,
+          "confidence": 26,
+          "signal": 18,
+          "signatures": [
+            "em",
+            "subspace",
+            "jamming"
+          ],
+          "marked": true,
+          "vector": "310 / +04",
+          "velocity": "0,21c",
+          "mass": "Sin resolver",
+          "dimensions": "Sin resolver",
+          "lifeforms": "No concluyente",
+          "band": "Banda ancha interferida",
+          "energy": "Picos artificiales",
+          "subspace": "Enmascarada",
+          "patternMatch": 36
+        }
+      ]
+    }
+  ]
+}
