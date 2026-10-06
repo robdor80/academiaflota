@@ -10,7 +10,7 @@ export function createSimulation(scenario){
   const contacts=s.contacts.map(c=>({...c,history:[],tracked:false,trackingMode:null,trackingPriority:"normal",lastObserved:null}));
   const capacity=s.trackingCapacity||8;
   const state={
-    scenarioId:s.id,scenarioTitle:s.title,sector:s.sector||"041",serial:1,time:0,
+    scenarioId:s.id,scenarioTitle:s.title,sector:s.sector||"041",serial:1,traceSerial:1,time:0,
     basePower:72,power:72,powerBudget:s.powerBudget||12,powerRequest:null,
     arrays:s.arrays,activeArray:(s.arrays.find(a=>a.available)||s.arrays[0])?.id||null,
     interference:{...s.interference,originalPenalty:s.interference.penalty,compensation:"none",previous:null},
@@ -117,8 +117,8 @@ const searchKinds={
   signal_transponder:["starship","shuttle","probe_beacon"],radiation_particle:["radiation_source","unknown"],
   custom_signature:["starship","shuttle","probe_beacon","artificial_object","unknown","lifeform"]
 };
-export function resolveSearch(state,config){
-  const id="SRC-"+String(state.serial++).padStart(4,"0"),q=qualityScore(state,config);
+export function resolveSearch(state,config,operationId=null){
+  const id=operationId||("SRC-"+String(state.serial++).padStart(4,"0")),q=qualityScore(state,config);
   const candidates=[];
   const accepted=new Set(searchKinds[config.searchType]||[]);
   for(const c of state.contacts){
@@ -143,7 +143,7 @@ export function resolveSearch(state,config){
     candidates.push({id:c.id,match:conf,classification:c.classification});
   }
   if((config.sensitivity==="maximum"||config.sensitivity==="high")&&effectivePenalty(state)>25){
-    candidates.push({id:"TRAZA-"+String(state.serial++).padStart(3,"0"),match:34,classification:"Falso positivo posible",falsePositive:true});
+    candidates.push({id:"TRAZA-"+String(state.traceSerial++).padStart(3,"0"),match:34,classification:"Falso positivo posible",falsePositive:true});
   }
   const result={id,type:"search",subtype:config.searchType,target:config.area||"Área",time:now(),configuration:clone(config),quality:q,observations:candidates,summary:candidates.length?candidates.map(c=>c.id+" "+c.match+"%").join(" · "):"Sin candidatos compatibles",provenance:"Sensores / "+state.activeArray};
   state.results.unshift(result);return result;
