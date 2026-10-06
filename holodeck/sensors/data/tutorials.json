@@ -215,14 +215,22 @@
           "event": "NAV_PRIMARY",
           "match": {
             "primaryId": "contacts"
-          }
+          },
+          "what": "Abres los contactos para partir de una necesidad concreta.",
+          "why": "Una solicitud de recursos debe tener una justificación operativa.",
+          "effect": "Puedes evaluar qué contacto presenta una limitación real.",
+          "concept": "Los recursos se solicitan para una necesidad concreta."
         },
         {
           "label": "Seleccionar C-07",
           "event": "SELECT_CONTACT",
           "match": {
             "contactId": "C-07"
-          }
+          },
+          "what": "Seleccionas un contacto con señal muy débil.",
+          "why": "C-07 es un buen caso para valorar si más potencia puede ayudar.",
+          "effect": "La consola puede ofrecer la solicitud como acción contextual.",
+          "concept": "Señal débil puede justificar más recursos, pero no obliga a pedirlos."
         },
         {
           "label": "Abrir solicitud",
@@ -230,17 +238,30 @@
           "match": {
             "actionId": "request_additional_power",
             "contactId": "C-07"
-          }
+          },
+          "what": "Abres el formulario de potencia adicional.",
+          "why": "Sensores solo controla la energía ya asignada; para superar ese límite debe pedirla.",
+          "effect": "Preparas cantidad, prioridad y duración de la petición.",
+          "concept": "Sensores solicita; no redistribuye la nave por su cuenta."
         },
         {
           "label": "Enviar a OPS",
-          "event": "POWER_REQUEST"
+          "event": "POWER_REQUEST",
+          "what": "Envías formalmente la petición a Operaciones.",
+          "why": "OPS conoce las prioridades globales y el coste de quitar energía a otros sistemas.",
+          "effect": "La petición queda pendiente hasta que otra autoridad decida.",
+          "concept": "La energía es un recurso compartido y priorizado."
         },
         {
           "label": "Recibir respuesta",
-          "event": "POWER_RESPONSE"
+          "event": "POWER_RESPONSE",
+          "what": "Recibes la decisión de Operaciones.",
+          "why": "La nave puede no disponer de todo lo solicitado; una aprobación parcial es perfectamente válida.",
+          "effect": "Sensores trabaja con la potencia realmente concedida.",
+          "concept": "Solicitar no garantiza obtener."
         }
-      ]
+      ],
+      "lesson_summary": "Has aprendido que la potencia es un recurso compartido: Sensores puede solicitar más, pero no decide de dónde sale ni cuánto recibirá."
     },
     {
       "id": "TUT-05",
@@ -254,28 +275,44 @@
           "event": "NAV_PRIMARY",
           "match": {
             "primaryId": "contacts"
-          }
+          },
+          "what": "Abres los objetos conocidos.",
+          "why": "La lectura debe permanecer unida al contacto que la originó.",
+          "effect": "Puedes trabajar con datos asociados específicamente a C-07.",
+          "concept": "Toda lectura necesita procedencia."
         },
         {
           "label": "Seleccionar C-07",
           "event": "SELECT_CONTACT",
           "match": {
             "contactId": "C-07"
-          }
+          },
+          "what": "Seleccionas el contacto cuya información quieres examinar.",
+          "why": "Esto evita mezclar observaciones de objetos distintos.",
+          "effect": "Las lecturas y transferencias quedan vinculadas a C-07.",
+          "concept": "Identidad del contacto y lectura deben permanecer enlazadas."
         },
         {
           "label": "Abrir Lectura sensorial",
           "event": "READOUT_OPEN",
           "match": {
             "contactId": "C-07"
-          }
+          },
+          "what": "Abres los valores observados o estimados por Sensores.",
+          "why": "Antes de concluir nada debes saber qué midió realmente el sistema y con qué incertidumbre.",
+          "effect": "Accedes a intensidad, firmas, movimiento, masa estimada, confianza y otros datos.",
+          "concept": "Sensores informa medidas y estimaciones, no verdad omnisciente."
         },
         {
           "label": "Revisar lectura",
           "event": "NAV_SECONDARY",
           "match": {
             "primaryId": "sensor_readout"
-          }
+          },
+          "what": "Examinas una categoría concreta de la lectura.",
+          "why": "Un dato con baja confianza no debe tratarse como un hecho absoluto.",
+          "effect": "Ves el valor junto a su confianza y procedencia.",
+          "concept": "La incertidumbre forma parte del dato."
         },
         {
           "label": "Enviar a Ciencia",
@@ -283,9 +320,14 @@
           "match": {
             "target": "science",
             "contactId": "C-07"
-          }
+          },
+          "what": "Transfieres la observación a Ciencia.",
+          "why": "Explicar la causa o naturaleza profunda de un fenómeno corresponde a Ciencia, no a Sensores.",
+          "effect": "Ciencia recibe datos observados sin que Sensores invente una interpretación causal.",
+          "concept": "Sensores mide; Ciencia interpreta."
         }
-      ]
+      ],
+      "lesson_summary": "Has aprendido la frontera entre Sensores y Ciencia: Sensores mide y organiza observaciones; Ciencia interpreta fenómenos complejos."
     }
   ]
 }
