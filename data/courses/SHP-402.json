@@ -1,7 +1,7 @@
 {
   "subject": "Organización y vida a bordo",
   "code": "SHP-402",
-  "version": "1.1",
+  "version": "1.2",
   "status": "developed_content",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/SHP-402/course.json",
@@ -62,20 +62,6 @@
           "type": "callout",
           "label": "PRÁCTICA",
           "text": "Recorrido guiado por una nave o simulador identificando áreas por función."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Por qué no basta memorizar un plano?",
-            "¿Qué función general cumple el puente?",
-            "¿Por qué estar en Ingeniería no concede autoridad técnica?",
-            "¿Qué diferencia hay entre un dato médico y toda la realidad del paciente?",
-            "¿Qué papel general cumplen Ciencia y Operaciones?"
-          ]
         }
       ]
     },
@@ -127,20 +113,6 @@
           "type": "callout",
           "label": "IDEA CLAVE",
           "text": "La tripulación visible en una escena no representa necesariamente a toda la dotación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Por qué una nave no es solo el puente?",
-            "¿Qué significa una jefatura?",
-            "¿Qué diferencia hay entre departamento y personal de guardia?",
-            "¿Por qué no toda la tripulación está simultáneamente de servicio?",
-            "Pon un ejemplo de una función de apoyo."
-          ]
         }
       ]
     },
@@ -196,20 +168,6 @@
         {
           "type": "p",
           "text": "Cada estación conoce una parte del problema. Sensores detecta, Ciencia interpreta, Mando decide, Conn maniobra e Ingeniería informa de capacidad técnica."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué cuatro elementos definen una estación?",
-            "¿Por qué sentarse no concede acceso?",
-            "Indica una diferencia entre puentes del siglo XXIII y XXIV.",
-            "¿Qué significa POV profesional?",
-            "¿Por qué ninguna estación debe conocer toda la realidad?"
-          ]
         }
       ]
     },
@@ -257,20 +215,6 @@
           "type": "callout",
           "label": "PRÁCTICA",
           "text": "Planifica una jornada a bordo con guardia, comida, descanso, actividad personal y preparación."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Por qué una nave necesita espacios de vida?",
-            "¿Qué funciones cumplen los alojamientos?",
-            "¿Por qué el ocio puede ser funcional?",
-            "¿Qué significa privacidad a bordo?",
-            "¿Debe toda rutina convertirse en escena?"
-          ]
         }
       ]
     },
@@ -312,20 +256,6 @@
           "type": "callout",
           "label": "IMPORTANTE",
           "text": "Una misma nave puede cumplir más de una función. Las etiquetas describen énfasis, no cajas absolutas."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Por qué se evita memorizar catálogos?",
-            "¿Qué capacidades son útiles en exploración?",
-            "¿Qué puede priorizar una nave científica?",
-            "¿Una nave tiene una sola función?",
-            "¿Qué significa diseñar desde misión hacia capacidad?"
-          ]
         }
       ]
     },
@@ -377,22 +307,9 @@
         {
           "type": "p",
           "text": "Llegar a una zona dañada no convierte al cadete en técnico de control de daños. Puede informar, evacuar, transportar equipo o ayudar bajo instrucciones."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué factores pueden cambiar una ruta?",
-            "¿Por qué una zona puede estar restringida?",
-            "¿Qué prioridad tiene la ruta segura?",
-            "¿Para qué sirve el recuento?",
-            "¿Por qué llegar a una zona dañada no autoriza a intervenir técnicamente?"
-          ]
         }
       ]
     }
-  ]
+  ],
+  "assessmentModel": "concept_driven_v2"
 }

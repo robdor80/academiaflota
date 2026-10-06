@@ -1,7 +1,7 @@
 {
   "subject": "Servicio, guardias y trabajo profesional",
   "code": "DUT-402",
-  "version": "1.1",
+  "version": "1.2",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/DUT-402/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/DUT-402/MANUAL_v1_0.md",
@@ -53,20 +53,6 @@
           "type": "callout",
           "label": "SUPERVISIÓN",
           "text": "Estar supervisado no elimina responsabilidad: hay que atender, informar, seguir procedimiento y reconocer límites."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Diferencia turno y puesto.",
-            "¿Qué convierte una franja en una guardia profesional?",
-            "¿Qué patrones admite el proyecto?",
-            "¿Por qué la supervisión no elimina responsabilidad?",
-            "¿Qué debes conocer antes de asumir una guardia?"
-          ]
         }
       ]
     },
@@ -106,20 +92,6 @@
           "type": "callout",
           "label": "IMPORTANTE",
           "text": "Una nueva guardia no borra las órdenes que siguen activas."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Por qué la puntualidad tiene efecto operativo?",
-            "¿Qué debes hacer si no estás apto?",
-            "¿Qué incluye un briefing?",
-            "¿Una nueva guardia cancela órdenes vigentes?",
-            "¿Por qué ocultar fatiga puede ser una mala decisión?"
-          ]
         }
       ]
     },
@@ -165,20 +137,6 @@
           "type": "callout",
           "label": "BREVEDAD ÚTIL",
           "text": "El relevo no narra cada minuto: transmite lo necesario para continuar sin perder contexto."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué objetivo tiene el relevo?",
-            "Nombra cinco elementos que deben transferirse.",
-            "¿Qué debe hacer quien recibe?",
-            "¿Por qué no debe ser excesivamente narrativo?",
-            "¿Qué puede causar una incidencia omitida?"
-          ]
         }
       ]
     },
@@ -214,20 +172,6 @@
           "type": "callout",
           "label": "REGLA",
           "text": "Separar hecho, interpretación y solicitud. No afirmar como cierto lo que todavía es una conclusión."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué debe lograr un informe?",
-            "¿Qué cambios deben informarse?",
-            "¿Por qué no todo se informa al Capitán?",
-            "¿Qué problema causa una conclusión no demostrada?",
-            "¿Cuándo puede ser necesaria confirmación?"
-          ]
         }
       ]
     },
@@ -264,20 +208,6 @@
           "type": "callout",
           "label": "ESCALAR NO ES FRACASAR",
           "text": "La competencia está en escalar ni demasiado pronto por miedo ni demasiado tarde por orgullo."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "Diferencia responsable y supervisor.",
-            "¿Qué corresponde al jefe de departamento?",
-            "¿Cuándo interviene Mando?",
-            "¿Por qué escalar es una competencia?",
-            "¿Qué problemas causa escalar demasiado o demasiado poco?"
-          ]
         }
       ]
     },
@@ -330,23 +260,10 @@
           "type": "callout",
           "label": "CONSTANCIA",
           "text": "La calidad profesional también se demuestra cuando no ocurre nada espectacular."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Por qué una guardia rutinaria genera evidencia?",
-            "¿Qué significa monitorizar activamente?",
-            "¿Para qué sirven las tareas periódicas?",
-            "¿Qué se hace antes del fin de turno?",
-            "¿Por qué importa la constancia?"
-          ]
         }
       ]
     }
   ],
-  "status": "developed_content"
+  "status": "developed_content",
+  "assessmentModel": "concept_driven_v2"
 }

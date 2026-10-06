@@ -1,7 +1,7 @@
 {
   "subject": "Seguridad y respuesta a emergencias I",
   "code": "SAF-402",
-  "version": "1.1",
+  "version": "1.2",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/SAF-402/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/SAF-402/MANUAL_v1_0.md",
@@ -40,20 +40,6 @@
           "type": "callout",
           "label": "NO ADIVINAR",
           "text": "Si una señal no se entiende, se consulta o se pide aclaración; no se inventa su significado."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué cambia con una alerta?",
-            "¿Una alarma local implica evacuar toda la nave?",
-            "¿Qué haces si no entiendes una señal?",
-            "¿Qué significa prioridad?",
-            "¿Por qué la presentación puede variar por era?"
-          ]
         }
       ]
     },
@@ -94,20 +80,6 @@
           "type": "callout",
           "label": "LÍMITE",
           "text": "En 4.ª clase se aprende a alejarse del peligro, respetar cierres e informar; no a reparar una brecha estructural."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Cuál es el objetivo de una evacuación?",
-            "¿Para qué sirve aislar compartimentos?",
-            "¿Por qué no abrir un cierre por costumbre?",
-            "¿Para qué sirve el recuento?",
-            "¿Qué límites tiene un cadete ante una zona despresurizada?"
-          ]
         }
       ]
     },
@@ -147,20 +119,6 @@
           "type": "callout",
           "label": "PRIMERA RESPUESTA",
           "text": "Alertar, proteger a personas, aislar si procede y está autorizado, retirarse a zona segura y cooperar con personal cualificado."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué riesgos adicionales produce un incendio?",
-            "¿Qué debes comprobar antes de acercarte?",
-            "¿Por qué aislar puede ser mejor que entrar?",
-            "¿Puede una zona aparentemente limpia tener atmósfera peligrosa?",
-            "¿Cuál es la prioridad de un cadete no especialista?"
-          ]
         }
       ]
     },
@@ -203,20 +161,6 @@
         {
           "type": "p",
           "text": "Al llegar personal cualificado, se transmite qué ocurrió, qué se observó, qué ayuda se prestó y qué cambió."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué debes comprobar antes de acercarte?",
-            "¿Qué información conviene transmitir a Medicina?",
-            "Diferencia síntoma y diagnóstico.",
-            "¿Qué significa no exceder competencia?",
-            "¿Qué debe incluir el relevo?"
-          ]
         }
       ]
     },
@@ -261,20 +205,6 @@
           "type": "callout",
           "label": "IMPROVISACIÓN",
           "text": "Una idea técnica solo funciona si recursos, conocimiento, compatibilidad y riesgo permiten validarla."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué prioridades orientan el control de daños?",
-            "¿Qué es un riesgo secundario?",
-            "¿Cómo puede ayudar un cadete sin reparar?",
-            "¿Por qué una improvisación no funciona automáticamente?",
-            "¿Qué debe validarse?"
-          ]
         }
       ]
     },
@@ -329,23 +259,10 @@
             "Qué riesgo se asumió",
             "Qué puede mejorarse"
           ]
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué fases componen una respuesta integrada?",
-            "¿Qué prioriza un mensaje de emergencia?",
-            "¿Por qué peligro no equivale a heroísmo?",
-            "¿Qué límites siguen existiendo?",
-            "¿Qué debe revisarse en debrief?"
-          ]
         }
       ]
     }
   ],
-  "status": "developed_content"
+  "status": "developed_content",
+  "assessmentModel": "concept_driven_v2"
 }

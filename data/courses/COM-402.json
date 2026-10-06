@@ -1,7 +1,7 @@
 {
   "subject": "Comunicaciones y equipo personal",
   "code": "COM-402",
-  "version": "1.1",
+  "version": "1.2",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/COM-402/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/COM-402/MANUAL_v1_0.md",
@@ -57,20 +57,6 @@
             "Perdido",
             "Cerrado"
           ]
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué elementos forman un enlace?",
-            "¿Por qué importa identificar origen y destino?",
-            "Diferencia canal y contenido.",
-            "¿Por qué la prioridad debe usarse con criterio?",
-            "¿Qué significa enlace degradado?"
-          ]
         }
       ]
     },
@@ -116,20 +102,6 @@
             "Entorno",
             "Calidad de señal"
           ]
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué función general cumple un tricorder?",
-            "¿Por qué una lectura no es automáticamente una explicación?",
-            "Nombra tres limitaciones.",
-            "¿Qué metadatos pueden acompañar una medición?",
-            "¿Por qué los modelos pueden diferir?"
-          ]
         }
       ]
     },
@@ -168,20 +140,6 @@
         {
           "type": "p",
           "text": "Debe quedar claro qué necesitas, por qué, qué información compartes y qué responsabilidad sigue siendo propia."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Cómo eliges destinatario?",
-            "¿Qué elementos contiene un mensaje útil?",
-            "¿Brevedad significa omitir información?",
-            "¿Cuándo conviene pedir confirmación?",
-            "¿Qué debe quedar claro entre departamentos?"
-          ]
         }
       ]
     },
@@ -225,20 +183,6 @@
             "Cifrado",
             "Relay"
           ]
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Por qué una comunicación externa exige cuidado?",
-            "¿Qué incluye una apertura?",
-            "¿Abrir un canal concede autoridad diplomática?",
-            "¿Por qué registrar comunicaciones relevantes?",
-            "¿Qué problemas introducen traducción o interferencia?"
-          ]
         }
       ]
     },
@@ -275,20 +219,6 @@
           "type": "callout",
           "label": "HECHO ≠ HIPÓTESIS",
           "text": "«La puerta no responde» es un hecho. «La han saboteado» es una explicación no demostrada."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué cuatro elementos estructuran un mensaje?",
-            "Diferencia hecho y estado.",
-            "¿Cuándo incluir una solicitud?",
-            "¿Por qué no inflar urgencia?",
-            "¿Cómo distingues hecho e hipótesis?"
-          ]
         }
       ]
     },
@@ -338,23 +268,10 @@
         {
           "type": "p",
           "text": "Llevar una herramienta no concede automáticamente competencia para todas sus funciones."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué debes conocer antes de preparar equipo?",
-            "¿Por qué no existe kit universal?",
-            "¿Qué responsabilidades asumes?",
-            "¿Por qué más equipo no siempre es mejor?",
-            "¿Tener una herramienta concede competencia?"
-          ]
         }
       ]
     }
   ],
-  "status": "developed_content"
+  "status": "developed_content",
+  "assessmentModel": "concept_driven_v2"
 }

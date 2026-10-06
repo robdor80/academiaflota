@@ -1,26 +1,47 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "2.0.0",
   "course_id": "DUT-402",
-  "status": "editorially_aligned_with_developed_manual",
-  "source_manual": "gameplay/careers/academy_path/study_materials/fourth_class/DUT-402/MANUAL_v1_0.md",
-  "question_count": 24,
-  "rule": "No question may require knowledge that is not explicitly taught in DUT-402 or established prerequisites.",
-  "questions": [
+  "status": "concept_driven_autocorrectable",
+  "source_bank": "question_bank_v1_0.json",
+  "policy": {
+    "theory_formats": [
+      "multiple_choice",
+      "short_answer"
+    ],
+    "multiple_choice_target_ratio": 0.8,
+    "short_answer_target_ratio": 0.2,
+    "deterministic_correction": true,
+    "web_and_game_share_concepts_not_question_instances": true,
+    "complex_judgment_moves_to_practice_and_simulation": true,
+    "source_rule": "Every evaluated concept must be explicitly taught in the course material or an established prerequisite."
+  },
+  "unit_review": {
+    "questions_per_attempt": 4,
+    "reshuffle_each_attempt": true,
+    "preferred_short_answers_per_attempt": 1
+  },
+  "concepts": [
     {
-      "id": "DUT-402-Q001",
+      "id": "DUT-402-C001",
       "unit_id": "DUT-402-U01",
-      "type": "compare",
-      "prompt_es": "Diferencia turno y puesto.",
+      "source_type": "compare",
+      "web_prompt_es": "¿Qué opción diferencia correctamente turno y puesto.",
+      "answer_display_es": "turno = franja temporal · puesto = función",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "turno = franja temporal",
         "puesto = función"
       ]
     },
     {
-      "id": "DUT-402-Q002",
+      "id": "DUT-402-C002",
       "unit_id": "DUT-402-U01",
-      "type": "knowledge",
-      "prompt_es": "¿Qué patrones de guardia admite el proyecto?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué patrones de guardia admite el proyecto?",
+      "answer_display_es": "tres turnos · cuatro turnos · personalizado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "tres turnos",
         "cuatro turnos",
@@ -28,10 +49,13 @@
       ]
     },
     {
-      "id": "DUT-402-Q003",
+      "id": "DUT-402-C003",
       "unit_id": "DUT-402-U01",
-      "type": "short_answer",
-      "prompt_es": "¿Qué convierte una franja horaria en una guardia profesional?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué convierte una franja horaria en una guardia profesional?",
+      "answer_display_es": "asignación · responsabilidad · función · continuidad · autoridad",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "asignación",
         "responsabilidad",
@@ -41,10 +65,13 @@
       ]
     },
     {
-      "id": "DUT-402-Q004",
+      "id": "DUT-402-C004",
       "unit_id": "DUT-402-U01",
-      "type": "judgment",
-      "prompt_es": "¿Por qué la supervisión no elimina responsabilidad?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué la supervisión no elimina responsabilidad?",
+      "answer_display_es": "el cadete debe atender · informar · seguir procedimiento · reconocer límites",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "el cadete debe atender",
         "informar",
@@ -53,10 +80,13 @@
       ]
     },
     {
-      "id": "DUT-402-Q005",
+      "id": "DUT-402-C005",
       "unit_id": "DUT-402-U02",
-      "type": "judgment",
-      "prompt_es": "¿Por qué llegar tarde puede afectar a otra persona?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué llegar tarde puede afectar a otra persona?",
+      "answer_display_es": "prolonga relevo · deja puesto sin cubrir · rompe continuidad",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "prolonga relevo",
         "deja puesto sin cubrir",
@@ -64,10 +94,13 @@
       ]
     },
     {
-      "id": "DUT-402-Q006",
+      "id": "DUT-402-C006",
       "unit_id": "DUT-402-U02",
-      "type": "scenario",
-      "prompt_es": "Si estás lesionado o extremadamente fatigado antes de una guardia, ¿qué debes hacer?",
+      "source_type": "scenario",
+      "web_prompt_es": "Si estás lesionado o extremadamente fatigado antes de una guardia, ¿qué debes hacer?",
+      "answer_display_es": "comunicar estado · no ocultarlo · permitir evaluación/sustitución",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "comunicar estado",
         "no ocultarlo",
@@ -75,10 +108,13 @@
       ]
     },
     {
-      "id": "DUT-402-Q007",
+      "id": "DUT-402-C007",
       "unit_id": "DUT-402-U02",
-      "type": "knowledge",
-      "prompt_es": "¿Qué debe incluir un briefing de incorporación?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué debe incluir un briefing de incorporación?",
+      "answer_display_es": "estado · órdenes · incidencias · pendientes · riesgos · cambios",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estado",
         "órdenes",
@@ -89,10 +125,15 @@
       ]
     },
     {
-      "id": "DUT-402-Q008",
+      "id": "DUT-402-C008",
       "unit_id": "DUT-402-U02",
-      "type": "judgment",
-      "prompt_es": "¿Una nueva guardia cancela órdenes vigentes?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Una nueva guardia cancela órdenes vigentes?",
+      "answer_display_es": "No. deben transferirse; siguen hasta cancelación/cambio.",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "no",
         "deben transferirse",
@@ -100,10 +141,13 @@
       ]
     },
     {
-      "id": "DUT-402-Q009",
+      "id": "DUT-402-C009",
       "unit_id": "DUT-402-U03",
-      "type": "short_answer",
-      "prompt_es": "¿Cuál es el objetivo de un relevo?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Cuál es el objetivo de un relevo?",
+      "answer_display_es": "transferir responsabilidad · preservar contexto · continuidad",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "transferir responsabilidad",
         "preservar contexto",
@@ -111,10 +155,13 @@
       ]
     },
     {
-      "id": "DUT-402-Q010",
+      "id": "DUT-402-C010",
       "unit_id": "DUT-402-U03",
-      "type": "knowledge",
-      "prompt_es": "Nombra cinco elementos que debe contener un relevo.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción contiene correctamente cinco elementos que debe contener un relevo.",
+      "answer_display_es": "estado · órdenes · pendientes · incidencias · riesgos · cambios",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "estado",
         "órdenes",
@@ -125,10 +172,13 @@
       ]
     },
     {
-      "id": "DUT-402-Q011",
+      "id": "DUT-402-C011",
       "unit_id": "DUT-402-U03",
-      "type": "procedure",
-      "prompt_es": "¿Qué debe hacer quien recibe el relevo?",
+      "source_type": "procedure",
+      "web_prompt_es": "¿Qué debe hacer quien recibe el relevo?",
+      "answer_display_es": "escuchar · comprobar · preguntar · confirmar · asumir",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "escuchar",
         "comprobar",
@@ -138,10 +188,13 @@
       ]
     },
     {
-      "id": "DUT-402-Q012",
+      "id": "DUT-402-C012",
       "unit_id": "DUT-402-U03",
-      "type": "judgment",
-      "prompt_es": "¿Por qué un relevo no debe narrar cada minuto del turno?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué un relevo no debe narrar cada minuto del turno?",
+      "answer_display_es": "debe ser relevante · evitar ruido · centrarse en continuidad",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "debe ser relevante",
         "evitar ruido",
@@ -149,10 +202,13 @@
       ]
     },
     {
-      "id": "DUT-402-Q013",
+      "id": "DUT-402-C013",
       "unit_id": "DUT-402-U04",
-      "type": "short_answer",
-      "prompt_es": "¿Qué debe lograr un informe profesional?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué debe lograr un informe profesional?",
+      "answer_display_es": "transmitir hecho/cambio útil · permitir decisión · claridad",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "transmitir hecho/cambio útil",
         "permitir decisión",
@@ -160,10 +216,13 @@
       ]
     },
     {
-      "id": "DUT-402-Q014",
+      "id": "DUT-402-C014",
       "unit_id": "DUT-402-U04",
-      "type": "judgment",
-      "prompt_es": "¿Por qué no todo se informa al Capitán?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué no todo se informa al Capitán?",
+      "answer_display_es": "cadena de responsabilidad · destinatario adecuado · evitar saturación",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "cadena de responsabilidad",
         "destinatario adecuado",
@@ -171,10 +230,13 @@
       ]
     },
     {
-      "id": "DUT-402-Q015",
+      "id": "DUT-402-C015",
       "unit_id": "DUT-402-U04",
-      "type": "scenario",
-      "prompt_es": "Convierte «creo que algo raro pasa con los sensores» en un informe profesional.",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Convierte «creo que algo raro pasa con los sensores» en un informe profesional?",
+      "answer_display_es": "hecho observado · calidad/estado · sin conclusión no demostrada · solicitud si procede",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "hecho observado",
         "calidad/estado",
@@ -183,10 +245,13 @@
       ]
     },
     {
-      "id": "DUT-402-Q016",
+      "id": "DUT-402-C016",
       "unit_id": "DUT-402-U04",
-      "type": "knowledge",
-      "prompt_es": "¿Cuándo puede ser necesaria confirmación de recepción?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Cuándo puede ser necesaria confirmación de recepción?",
+      "answer_display_es": "información importante · riesgo · continuidad · orden crítica",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "información importante",
         "riesgo",
@@ -195,10 +260,13 @@
       ]
     },
     {
-      "id": "DUT-402-Q017",
+      "id": "DUT-402-C017",
       "unit_id": "DUT-402-U05",
-      "type": "compare",
-      "prompt_es": "Diferencia responsable de puesto, supervisor y jefe de departamento.",
+      "source_type": "compare",
+      "web_prompt_es": "¿Qué opción diferencia correctamente responsable de puesto, supervisor y jefe de departamento.",
+      "answer_display_es": "operación directa · supervisión/autorización · gestión del área",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "operación directa",
         "supervisión/autorización",
@@ -206,10 +274,13 @@
       ]
     },
     {
-      "id": "DUT-402-Q018",
+      "id": "DUT-402-C018",
       "unit_id": "DUT-402-U05",
-      "type": "scenario",
-      "prompt_es": "Una avería afecta a todo tu departamento. ¿A qué nivel debe escalarse normalmente?",
+      "source_type": "scenario",
+      "web_prompt_es": "Una avería afecta a todo tu departamento. ¿A qué nivel debe escalarse normalmente?",
+      "answer_display_es": "jefatura departamental · supervisor según contexto · Mando si afecta misión",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "jefatura departamental",
         "supervisor según contexto",
@@ -217,10 +288,13 @@
       ]
     },
     {
-      "id": "DUT-402-Q019",
+      "id": "DUT-402-C019",
       "unit_id": "DUT-402-U05",
-      "type": "judgment",
-      "prompt_es": "¿Por qué escalar no es fracasar?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué escalar no es fracasar?",
+      "answer_display_es": "reconoce límites · protege misión · usa autoridad correcta",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "reconoce límites",
         "protege misión",
@@ -228,10 +302,13 @@
       ]
     },
     {
-      "id": "DUT-402-Q020",
+      "id": "DUT-402-C020",
       "unit_id": "DUT-402-U05",
-      "type": "judgment",
-      "prompt_es": "¿Qué problemas causa escalar todo?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Qué problemas causa escalar todo?",
+      "answer_display_es": "saturación · ralentiza · evita responsabilidad propia",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "saturación",
         "ralentiza",
@@ -239,10 +316,13 @@
       ]
     },
     {
-      "id": "DUT-402-Q021",
+      "id": "DUT-402-C021",
       "unit_id": "DUT-402-U06",
-      "type": "short_answer",
-      "prompt_es": "¿Qué significa monitorizar activamente?",
+      "source_type": "short_answer",
+      "web_prompt_es": "¿Qué significa monitorizar activamente?",
+      "answer_display_es": "conocer normal · detectar cambios · valorar relevancia · actuar cuando corresponde",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "conocer normal",
         "detectar cambios",
@@ -251,10 +331,13 @@
       ]
     },
     {
-      "id": "DUT-402-Q022",
+      "id": "DUT-402-C022",
       "unit_id": "DUT-402-U06",
-      "type": "knowledge",
-      "prompt_es": "Nombra tres tareas propias de una guardia rutinaria.",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué opción contiene correctamente tres tareas propias de una guardia rutinaria.",
+      "answer_display_es": "verificaciones · informes · mantenimiento programado · registros · monitorización",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "verificaciones",
         "informes",
@@ -264,10 +347,13 @@
       ]
     },
     {
-      "id": "DUT-402-Q023",
+      "id": "DUT-402-C023",
       "unit_id": "DUT-402-U06",
-      "type": "procedure",
-      "prompt_es": "¿Qué debe hacerse antes de terminar un turno?",
+      "source_type": "procedure",
+      "web_prompt_es": "¿Qué debe hacerse antes de terminar un turno?",
+      "answer_display_es": "cerrar/marcar pendientes · actualizar estado · preparar relevo · transferir incidencias · confirmar entrega",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "cerrar/marcar pendientes",
         "actualizar estado",
@@ -277,10 +363,13 @@
       ]
     },
     {
-      "id": "DUT-402-Q024",
+      "id": "DUT-402-C024",
       "unit_id": "DUT-402-U06",
-      "type": "judgment",
-      "prompt_es": "¿Por qué una guardia sin crisis sigue siendo evaluable?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Por qué una guardia sin crisis sigue siendo evaluable?",
+      "answer_display_es": "constancia · disciplina · continuidad · atención · procedimiento",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "constancia",
         "disciplina",

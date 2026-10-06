@@ -1,7 +1,7 @@
 {
   "subject": "Preparación física II",
   "code": "PHY-402",
-  "version": "1.1",
+  "version": "1.2",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/PHY-402/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/fourth_class/PHY-402/MANUAL_v1_0.md",
@@ -52,20 +52,6 @@
         {
           "type": "p",
           "text": "Una semana con exámenes, simulaciones o poco sueño puede requerir bajar carga. La mejor sesión no siempre es la más dura."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Por qué continuidad importa más que una sesión espectacular?",
-            "¿Qué significa frecuencia?",
-            "¿De qué formas puede progresar una tarea?",
-            "Diferencia rendimiento puntual y adaptación.",
-            "¿Por qué la mejor sesión no siempre es la más dura?"
-          ]
         }
       ]
     },
@@ -104,20 +90,6 @@
           "type": "callout",
           "label": "PROGRESO INDIVIDUAL",
           "text": "Se compara con el punto de partida, historial, estado actual y demandas razonables, no con el cadete biológicamente más capaz."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué significa resistencia aplicada?",
-            "¿Por qué importa distribuir el esfuerzo?",
-            "¿Qué puede ocurrir si se sale demasiado rápido?",
-            "¿Por qué importa la recuperación entre bloques?",
-            "¿Con qué se compara el progreso individual?"
-          ]
         }
       ]
     },
@@ -159,20 +131,6 @@
           "type": "callout",
           "label": "SEGURIDAD",
           "text": "Se valora técnica, control, fatiga, respuesta a correcciones y capacidad de detenerse cuando el riesgo aumenta."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Por qué fuerza y coordinación se trabajan juntas?",
-            "¿Qué funciones cumple el equilibrio?",
-            "¿Qué significa coordinar movimiento?",
-            "¿Qué puede incluir un circuito?",
-            "¿Qué señales justifican reducir o detener la tarea?"
-          ]
         }
       ]
     },
@@ -212,20 +170,6 @@
           "type": "callout",
           "label": "SEGURIDAD COMPARTIDA",
           "text": "Cada participante atiende su propio estado, el de compañeros, el entorno y las instrucciones."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Qué significa ritmo de grupo?",
-            "¿Por qué el rendimiento del grupo no es suma de máximos?",
-            "Nombra tres formas de cooperación.",
-            "¿Qué significa seguridad compartida?",
-            "¿Qué conductas se observan además del rendimiento físico?"
-          ]
         }
       ]
     },
@@ -261,20 +205,6 @@
           "type": "callout",
           "label": "EVALUACIÓN",
           "text": "Se valora seguridad, control, seguimiento de instrucciones y capacidad funcional; no tiempos brutos comparados entre especies incompatibles."
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Por qué la actividad acuática no es universal?",
-            "¿Qué factores se revisan antes?",
-            "¿Qué significa adaptación fisiológica?",
-            "¿Qué se evalúa principalmente?",
-            "¿Qué debe conservar una actividad equivalente?"
-          ]
         }
       ]
     },
@@ -316,23 +246,10 @@
             "Qué puede mantenerse",
             "Qué conviene modificar"
           ]
-        },
-        {
-          "type": "heading",
-          "text": "Autoevaluación"
-        },
-        {
-          "type": "numbered",
-          "items": [
-            "¿Por qué una rutina debe poder cambiar?",
-            "¿Qué variables pueden reducirse ante fatiga?",
-            "¿Reducir una semana elimina todo progreso?",
-            "¿Por qué el descanso no es tiempo desperdiciado?",
-            "¿Qué preguntas ayudan a revisar la rutina?"
-          ]
         }
       ]
     }
   ],
-  "status": "developed_content"
+  "status": "developed_content",
+  "assessmentModel": "concept_driven_v2"
 }
