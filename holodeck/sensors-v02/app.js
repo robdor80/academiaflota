@@ -642,9 +642,11 @@ async function submitCommand(text,inputMode="text"){
       log("GEMINI RETRY SUCCESS · "+(interpreted.modelUsed||"unknown"));
     }
     if(interpreted.economyProtected){
-      const msg=interpreted.economyReason==="contract_validation"
-        ?"3.5 respondió, pero la orden no encaja todavía con seguridad en el contrato. 3.8 NO se ha usado para proteger su cuota."
-        :"3.5 pidió aclaración. 3.8 NO se ha usado para proteger su cuota.";
+      const msg=interpreted.economyReason==="local_contract_repair"
+        ?"3.5 entendió la intención pero devolvió una estructura incompatible. La Computadora la corrigió localmente sin usar 3.8."
+        :interpreted.economyReason==="contract_validation"
+          ?"3.5 respondió, pero la orden no encaja todavía con seguridad en el contrato. 3.8 NO se ha usado para proteger su cuota."
+          :"3.5 pidió aclaración. 3.8 NO se ha usado para proteger su cuota.";
       addMessage("system",msg,"AUTO ECONÓMICO");
       log("GEMINI ECONOMY PROTECT · "+(interpreted.economyReason||"unspecified")+" · 3.8 not used");
     }
