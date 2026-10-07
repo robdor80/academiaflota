@@ -25,13 +25,13 @@ function scenarioById(id){return shell.scenarios.scenarios.find(x=>x.id===id)||s
 function clearTimers(){for(const t of shell.timers)clearInterval(t);shell.timers.clear()}
 async function load(){
   const [m,c,i,p,s]=await Promise.all([
-    fetch("./data/sensor_menu_tree.json").then(r=>r.json()),
-    fetch("./data/sensor_context_actions.json").then(r=>r.json()),
-    fetch("./data/sensor_console_interaction_model.json").then(r=>r.json()),
-    fetch("./data/sensor_to_operations_power_request.json").then(r=>r.json()),
-    fetch("./data/scenarios.json").then(r=>r.json())
+    fetch("../sensors/data/sensor_menu_tree.json").then(r=>r.json()),
+    fetch("../sensors/data/sensor_context_actions.json").then(r=>r.json()),
+    fetch("../sensors/data/sensor_console_interaction_model.json").then(r=>r.json()),
+    fetch("../sensors/data/sensor_to_operations_power_request.json").then(r=>r.json()),
+    fetch("../sensors/data/scenarios.json").then(r=>r.json())
   ]);
-  shell.model=m;shell.context=c;shell.interaction=i;shell.powerContract=p;shell.scenarios=s;
+  shell.model=m;shell.context=c;shell.interaction=i;shell.powerContract=p;shell.scenarios=s;const rn=shell.model.root.find(x=>x.id==="results");if(rn)rn.display_es="Resultados e historial";
   shell.sim=createSimulation(s.scenarios[0]);
   const scenarioSelect=$("#scenario-select");
   scenarioSelect.innerHTML=s.scenarios.map(x=>'<option value="'+esc(x.id)+'">'+esc(x.title)+'</option>').join("");
