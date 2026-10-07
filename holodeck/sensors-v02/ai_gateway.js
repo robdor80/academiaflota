@@ -1,4 +1,5 @@
-import {CONTRACT_VERSION,CONTRACT_SPEC,INTERPRETER_INSTRUCTIONS,COMPUTER_PROFILES} from "./computer_contract.js";
+import {CONTRACT_VERSION,CONTRACT_SPEC,INTERPRETER_INSTRUCTIONS,COMPUTER_PROFILES,validateCommandPlan} from "./computer_contract.js";
+import {getComputerConfig} from "./computer_cloud.js";
 
 const norm=v=>String(v||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-z0-9%\-\s]/g," ").replace(/\s+/g," ").trim();
 const has=(t,...words)=>words.some(w=>t.includes(norm(w)));
@@ -194,16 +195,155 @@ export function localInterpret(text,context,profileId="picard"){
   return actionPlan(String(text||"").trim(),actions);
 }
 
+function configuredModels(){
+  const cloud=getComputerConfig();
+  const legacy=window.SENSOR_AI_CONFIG||{};
+  return {
+    cloud,
+    defaultModel:cloud?.defaultModel||legacy.defaultModel||localStorage.getItem("sensorAI.defaultModel")||"gemini-3.5-flash-lite",
+    escalationModel:cloud?.escalationModel||legacy.escalationModel||localStorage.getItem("sensorAI.escalationModel")||"gemini-3.8-flash"
+  };
+}
+
+function responseText(payload){
+  return (payload?.candidates?.[0]?.content?.parts||[]).map(p=>p?.text||"").join("").trim();
+}
+
+function cleanJsonText(raw){
+  const t=String(raw||"").trim();
+  if(!t.startsWith("```"))return t;
+  return t.replace(/^```(?:json)?\s*/i,"").replace(/\s*```$/,"").trim();
+}
+
+async function callGeminiDirect({apiKey,model,text,context,profileId,inputMode,routingMode}){
+  const endpoint="https://generativelanguage.googleapis.com/v1beta/models/"+encodeURIComponent(model)+":generateContent";
+  const interpreterPayload={
+    task:"interpret_starship_command",
+    profileId,inputMode,text,context,
+    routingMode,
+    contract:CONTRACT_SPEC
+  };
+  const res=await fetch(endpoint,{
+    method:"POST",
+    headers:{
+      "Content-Type":"application/json",
+      "x-goog-api-key":apiKey
+    },
+    body:JSON.stringify({
+      systemInstruction:{
+        parts:[{text:INTERPRETER_INSTRUCTIONS}]
+      },
+      contents:[{
+        role:"user",
+        parts:[{text:JSON.stringify(interpreterPayload)}]
+      }],
+      generationConfig:{
+        responseMimeType:"application/json",
+        temperature:0.1
+      }
+    })
+  });
+
+  if(!res.ok){
+    let detail="";
+    try{
+      const err=await res.json();
+      detail=err?.error?.message||"";
+    }catch{}
+    const e=new Error("Gemini "+res.status+(detail?": "+detail:""));
+    e.kind="api_error";
+    e.status=res.status;
+    throw e;
+  }
+
+  const payload=await res.json();
+  const raw=responseText(payload);
+  if(!raw){
+    const e=new Error("Gemini no devolvió contenido interpretable.");
+    e.kind="invalid_json";
+    throw e;
+  }
+
+  let plan;
+  try{
+    plan=JSON.parse(cleanJsonText(raw));
+  }catch{
+    const e=new Error("Gemini devolvió una respuesta que no es JSON válido.");
+    e.kind="invalid_json";
+    throw e;
+  }
+
+  return {
+    plan,
+    modelUsed:model,
+    modelVersion:payload?.modelVersion||null,
+    usageMetadata:payload?.usageMetadata||null
+  };
+}
+
+async function interpretDirectGemini({text,context,profileId,inputMode,routingMode,cloud,defaultModel,escalationModel}){
+  const selectedModel=routingMode==="flash38"?escalationModel:defaultModel;
+  let first;
+  try{
+    first=await callGeminiDirect({
+      apiKey:cloud.geminiApiKey,
+      model:selectedModel,
+      text,context,profileId,inputMode,routingMode
+    });
+  }catch(error){
+    if(routingMode==="auto"&&error?.kind==="invalid_json"&&escalationModel!==defaultModel){
+      const escalated=await callGeminiDirect({
+        apiKey:cloud.geminiApiKey,
+        model:escalationModel,
+        text,context,profileId,inputMode,routingMode
+      });
+      return {provider:"gemini",...escalated,escalated:true,routingMode};
+    }
+    throw error;
+  }
+
+  if(routingMode==="auto"&&selectedModel===defaultModel&&escalationModel!==defaultModel){
+    const validation=validateCommandPlan(first.plan,profileId);
+    const explicitUncertainty=first.plan?.interpreterUncertain===true;
+    if(!validation.ok||explicitUncertainty){
+      const escalated=await callGeminiDirect({
+        apiKey:cloud.geminiApiKey,
+        model:escalationModel,
+        text,context,profileId,inputMode,routingMode
+      });
+      return {provider:"gemini",...escalated,escalated:true,routingMode};
+    }
+  }
+
+  return {provider:"gemini",...first,escalated:false,routingMode};
+}
+
 export function aiEndpoint(){
+  if(getComputerConfig()?.geminiApiKey)return "gemini-direct";
   return window.SENSOR_AI_CONFIG?.endpoint||localStorage.getItem("sensorAI.endpoint")||"";
 }
 
 export async function interpretCommand({text,context,profileId="picard",inputMode="text",routingMode="auto"}){
-  const endpoint=aiEndpoint();
+  const {cloud,defaultModel,escalationModel}=configuredModels();
+
+  if(cloud?.geminiApiKey){
+    try{
+      return await interpretDirectGemini({
+        text,context,profileId,inputMode,routingMode,
+        cloud,defaultModel,escalationModel
+      });
+    }catch(error){
+      return {
+        provider:"fallback",
+        warning:"Gemini no disponible: "+(error.message||String(error)),
+        plan:localInterpret(text,context,profileId)
+      };
+    }
+  }
+
+  const endpoint=window.SENSOR_AI_CONFIG?.endpoint||localStorage.getItem("sensorAI.endpoint")||"";
   if(!endpoint)return {provider:"local",plan:localInterpret(text,context,profileId)};
-  const cfg=window.SENSOR_AI_CONFIG||{};
-  const defaultModel=cfg.defaultModel||localStorage.getItem("sensorAI.defaultModel")||"gemini-3.5-flash-lite";
-  const escalationModel=cfg.escalationModel||localStorage.getItem("sensorAI.escalationModel")||"gemini-3.8-flash";
+
   const requestedModel=routingMode==="flash38"?escalationModel:defaultModel;
   try{
     const res=await fetch(endpoint,{
