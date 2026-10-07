@@ -48,8 +48,9 @@ Modo **Auto económico**:
 3. Solo si 3.5 sigue dando 503 se escala a Gemini 3.8 Flash.
 4. 3.8 también dispone de un reintento ante 503.
 5. Si ambos modelos fallan técnicamente, se usa el intérprete local como último recurso.
-6. Un fallo de validación del `CommandPlan` o una interpretación incierta de 3.5 **no consume automáticamente una llamada a 3.8**: se solicita aclaración al oficial.
-7. El oficial puede seleccionar manualmente 3.5 o forzar 3.8.
+6. Si 3.5 devuelve un `CommandPlan` inválido, la Computadora intenta primero normalizar la intención con el intérprete local determinista. Si éste obtiene una única interpretación válida, se ejecuta sin usar 3.8.
+7. Solo si el plan sigue siendo ambiguo o no representable se solicita aclaración al oficial; un fallo de contrato no consume automáticamente una llamada a 3.8.
+8. El oficial puede seleccionar manualmente 3.5 o forzar 3.8.
 
 Esta política protege la cuota reducida del modelo 3.8 y reserva su uso automático para indisponibilidad técnica persistente de 3.5.
 
