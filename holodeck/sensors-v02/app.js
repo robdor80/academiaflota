@@ -594,4 +594,5 @@ async function copyCurrentExerciseLog(){
     console.error(e);
   }
 }
+window.SensorsConsoleV02={shell,log,render,renderWorkspace,renderStatus,resetScenario,navPrimary,navSecondary,contact,scenarioById,clearTimers};
 load().catch(e=>{$("#workspace-content").innerHTML='<div class="danger-note">Error cargando Sensores: '+esc(e.message)+'</div>';console.error(e)});
