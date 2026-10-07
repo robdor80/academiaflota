@@ -198,16 +198,27 @@ export function aiEndpoint(){
   return window.SENSOR_AI_CONFIG?.endpoint||localStorage.getItem("sensorAI.endpoint")||"";
 }
 
-export async function interpretCommand({text,context,profileId="picard",inputMode="text"}){
+export async function interpretCommand({text,context,profileId="picard",inputMode="text",routingMode="auto"}){
   const endpoint=aiEndpoint();
   if(!endpoint)return {provider:"local",plan:localInterpret(text,context,profileId)};
-  const model=window.SENSOR_AI_CONFIG?.model||localStorage.getItem("sensorAI.model")||"gemini";
+  const cfg=window.SENSOR_AI_CONFIG||{};
+  const defaultModel=cfg.defaultModel||localStorage.getItem("sensorAI.defaultModel")||"gemini-3.5-flash-lite";
+  const escalationModel=cfg.escalationModel||localStorage.getItem("sensorAI.escalationModel")||"gemini-3.8-flash";
+  const requestedModel=routingMode==="flash38"?escalationModel:defaultModel;
   try{
     const res=await fetch(endpoint,{
       method:"POST",headers:{"Content-Type":"application/json"},
       body:JSON.stringify({
         task:"interpret_starship_command",
-        model,profileId,inputMode,text,context,
+        model:requestedModel,profileId,inputMode,text,context,
+        routing:{
+          mode:routingMode,
+          defaultModel,
+          escalationModel,
+          autoPolicy:"conservative",
+          escalateOn:["schema_failure","invalid_json","explicit_interpreter_uncertainty"],
+          neverEscalateFor:["missing_human_decision","resource_conflict","authority_conflict"]
+        },
         instructions:INTERPRETER_INSTRUCTIONS,
         contract:CONTRACT_SPEC
       })
@@ -215,7 +226,7 @@ export async function interpretCommand({text,context,profileId="picard",inputMod
     if(!res.ok)throw new Error("HTTP "+res.status);
     const payload=await res.json();
     const plan=payload.plan||payload;
-    return {provider:"gemini",plan};
+    return {provider:"gemini",plan,modelUsed:payload.modelUsed||requestedModel,escalated:!!payload.escalated,routingMode};
   }catch(error){
     return {provider:"fallback",warning:"Gemini no disponible: "+error.message,plan:localInterpret(text,context,profileId)};
   }
