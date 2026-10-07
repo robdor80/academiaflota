@@ -2,114 +2,115 @@
 <html lang="es">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Sensores v0.2 · Holocubierta</title>
-<link rel="stylesheet" href="./sensors.css">
+<title>Sensores v0.2 · Computadora de a bordo</title>
+<link rel="stylesheet" href="./sensors-v02.css">
 </head>
 <body>
-<div id="device-blocker" class="device-blocker">
-  <div><strong>Consola no disponible en este formato</strong><p>Utiliza un PC o una tablet en horizontal.</p></div>
-</div>
-<div id="app" class="console-shell">
-<header class="console-header">
-  <div><span class="eyebrow">ACADEMIA DE LA FLOTA ESTELAR · HOLOCUBIERTA</span><h1>Consola de Sensores · v0.2 asistida</h1></div>
-  <div class="header-actions">
-    <label class="mode-control">MODO
-      <select id="mode-select" aria-label="Modo de simulación">
-        <option value="free">Libre</option>
-        <option value="teacher">Profesor</option>
-      </select>
-    </label>
-    <label class="mode-control">ESCENARIO
-      <select id="scenario-select" aria-label="Escenario de simulación"></select>
-    </label>
-    <label class="mode-control">COMPUTADORA<select id="computer-select-v02" aria-label="Computadora de a bordo"><option value="pike">Constitution 2259 · Pike</option><option value="kirk">Constitution 2266 · Kirk</option><option value="picard" selected>Galaxy 2364 · Picard</option></select></label><span class="prototype">SIMULADOR FUNCIONAL v0.2</span>
-    <a href="../sensors/">v0.1 manual</a><a href="../">← Holocubierta</a>
+<div id="device-blocker" class="device-blocker"><div><strong>Consola no disponible en este formato</strong><p>Utiliza un PC o una tablet en horizontal.</p></div></div>
+
+<div class="shell">
+<header class="topbar">
+  <div>
+    <span class="eyebrow">ACADEMIA DE LA FLOTA ESTELAR · HOLOCUBIERTA</span>
+    <h1>Sensores v0.2 · Computadora de a bordo</h1>
+  </div>
+  <div class="top-controls">
+    <label>MODO<select id="mode-select"><option value="free">Libre</option><option value="teacher">Profesor</option></select></label>
+    <label>ESCENARIO<select id="scenario-select"></select></label>
+    <label>COMPUTADORA<select id="computer-select"><option value="pike">Constitution 2259 · Pike</option><option value="kirk">Constitution 2266 · Kirk</option><option value="picard" selected>Galaxy 2364 · Picard</option></select></label>
+    <span id="ai-badge" class="badge">INTÉRPRETE LOCAL</span>
+    <a href="../sensors/">v0.1 manual</a>
+    <a href="../">← Holocubierta</a>
   </div>
 </header>
-<section id="computer-assistant-v02" class="computer-assistant-v02">
-  <div class="computer-assistant-head">
-    <div class="computer-id-v02"><span class="computer-orb-v02"></span><div><small>COMPUTADORA DE A BORDO</small><strong id="computer-name-v02">Galaxy 2364 · Picard</strong><span id="computer-era-v02">Asistencia contextual avanzada</span></div></div>
-    <div id="computer-caps-v02" class="computer-caps-v02"></div>
-    <button id="computer-toggle-v02" class="ghost">Ocultar</button>
-  </div>
-  <div id="computer-body-v02" class="computer-body-v02">
-    <div class="computer-command-v02">
-      <input id="computer-command-v02" placeholder="Ej.: Mantén seguimiento prioritario de la firma warp de C-43">
-      <button id="computer-run-v02" class="action">Ejecutar orden</button>
-    </div>
-    <div id="computer-suggestions-v02" class="computer-suggestions-v02"></div>
-    <div id="computer-response-v02" class="computer-response-v02" hidden></div>
-    <div class="computer-principle-v02"><strong>Computadora:</strong> automatiza procedimiento. <strong>Oficial:</strong> conserva objetivo, prioridad, autorizaciones y decisiones de recursos.</div>
-  </div>
+
+<section class="computer-banner">
+  <span class="computer-dot"></span>
+  <div class="computer-name"><small>COMPUTADORA ACTIVA</small><strong id="computer-name">Galaxy 2364 · Picard</strong><span id="computer-description">—</span></div>
+  <div id="computer-caps" class="caps"></div>
+  <div class="design-rule"><strong>El oficial decide.</strong><span>La computadora traduce intención, prepara y ejecuta procedimiento.</span></div>
 </section>
+
 <section id="teacher-panel" class="teacher-panel" hidden>
   <div class="teacher-main">
-    <div class="teacher-heading">
-      <span class="teacher-badge">INSTRUCTOR</span>
-      <div><small id="teacher-kicker">PRÁCTICA GUIADA</small><h2 id="teacher-title">Modo profesor</h2><span id="teacher-level-label" class="teacher-level-label"></span></div>
-    </div>
+    <div class="teacher-heading"><span class="teacher-badge">INSTRUCTOR</span><div><small>PRÁCTICA OPERATIVA</small><h2 id="teacher-title">Modo profesor</h2><span id="teacher-level-label"></span></div></div>
     <section id="teacher-order" class="teacher-order" hidden>
       <div class="teacher-order-head"><span>ORDEN RECIBIDA</span><strong id="teacher-order-source">INSTRUCTOR</strong></div>
-      <blockquote id="teacher-order-text"></blockquote>
-      <p id="teacher-order-note"></p>
-      <button id="teacher-order-ack" class="action">Orden recibida · Proceder</button>
+      <blockquote id="teacher-order-text"></blockquote><p id="teacher-order-note"></p>
+      <button id="teacher-order-ack" class="primary">Orden recibida · Proceder</button>
     </section>
-    <div id="teacher-order-summary" class="teacher-order-summary" hidden>
-      <small>ORDEN EN CURSO</small><span id="teacher-order-summary-text"></span>
-    </div>
+    <div id="teacher-order-summary" class="teacher-order-summary" hidden><small>ORDEN EN CURSO</small><span id="teacher-order-summary-text"></span></div>
     <p id="teacher-objective"></p>
-    <ol id="teacher-steps" class="teacher-steps"></ol>
-    <section id="teacher-explanation" class="teacher-explanation">
-      <div class="teacher-explanation-head">
-        <span id="teacher-explanation-kicker">PASO ACTUAL</span>
-        <strong id="teacher-explanation-title"></strong>
-      </div>
-      <div class="teacher-explanation-grid">
-        <div><small>QUÉ ESTÁS HACIENDO</small><p id="teacher-explanation-what"></p></div>
-        <div><small>POR QUÉ</small><p id="teacher-explanation-why"></p></div>
-        <div><small>QUÉ EFECTO TIENE</small><p id="teacher-explanation-effect"></p></div>
-      </div>
-      <div class="teacher-concept"><small>CONCEPTO CLAVE</small><strong id="teacher-explanation-concept"></strong></div>
-    </section>
-    <div id="teacher-feedback" class="teacher-feedback" hidden></div>
+    <ol id="teacher-steps"></ol>
+    <section id="teacher-explanation"><span id="teacher-explanation-kicker"></span><strong id="teacher-explanation-title"></strong><p id="teacher-explanation-what"></p><p id="teacher-explanation-why"></p><p id="teacher-explanation-effect"></p><strong id="teacher-explanation-concept"></strong></section>
+    <div id="teacher-feedback" hidden></div>
   </div>
   <aside class="teacher-controls">
-    <label>Práctica
-      <select id="tutorial-select"></select>
-    </label>
-    <div class="teacher-progress"><span>PROGRESO</span><strong id="teacher-progress">0 / 0</strong></div>
-    <button id="teacher-hint" class="ghost">Mostrar pista</button>
-    <button id="teacher-reset" class="ghost">Reiniciar práctica</button>
-    <div id="teacher-hint-text" class="teacher-hint" hidden></div>
+    <label>Práctica<select id="tutorial-select"></select></label>
+    <div class="progress-box"><span>PROGRESO</span><strong id="teacher-progress">0 / 0</strong></div>
+    <button id="teacher-hint" class="secondary">Pista</button>
+    <button id="teacher-reset" class="secondary">Reiniciar práctica</button>
+    <div id="teacher-hint-text" hidden></div>
   </aside>
 </section>
-<div class="console-grid">
-  <aside class="panel primary-panel">
-    <div class="panel-title"><span>01</span><strong>FUNCIONES</strong></div>
-    <nav id="primary-nav"></nav>
+
+<main class="console-grid">
+  <aside class="panel contacts-panel">
+    <div class="panel-title"><span>01</span><strong>CONTACTOS</strong></div>
+    <div id="contacts-list" class="contacts-list"></div>
   </aside>
-  <main class="panel workspace-panel">
-    <div class="workspace-head"><div><span id="workspace-kicker">SENSORES</span><h2 id="workspace-title">Estado de sensores</h2></div><button id="reset-sim" class="ghost">Reiniciar escenario</button></div>
-    <div class="workspace-body">
-      <aside id="secondary-nav" class="secondary-nav"></aside>
-      <section id="workspace-content" class="workspace-content"></section>
+
+  <section class="panel command-panel">
+    <div class="workspace-head">
+      <div><span>02 · OPERACIÓN</span><h2 id="context-title">Esperando órdenes</h2></div>
+      <button id="reset-sim" class="secondary">Reiniciar escenario</button>
     </div>
-  </main>
+
+    <div id="conversation" class="conversation"></div>
+
+    <section id="operator-attention" class="attention" hidden>
+      <small>DECISIÓN DEL OFICIAL NECESARIA</small>
+      <strong id="attention-title"></strong>
+      <p id="attention-text"></p>
+    </section>
+
+    <div id="quick-actions" class="quick-actions"></div>
+
+    <section class="command-box">
+      <textarea id="command-input" rows="3" placeholder="Escribe una orden natural. Ej.: «Mantén a C-43 bajo seguimiento prioritario y avísame si cambia de rumbo.»"></textarea>
+      <div class="command-actions">
+        <button id="voice-button" class="voice" title="Dictar orden">🎙 Voz</button>
+        <button id="send-command" class="primary">Enviar a la computadora</button>
+      </div>
+      <div id="voice-status" class="input-status"></div>
+    </section>
+
+    <details id="operation-details" class="operation-details">
+      <summary>Detalles técnicos de la última operación</summary>
+      <div id="operation-details-body"></div>
+    </details>
+
+    <div class="manual-link">¿Necesitas control fino, formación manual o una avería de automatización? <a href="../sensors/">Abrir consola manual v0.1 →</a></div>
+  </section>
+
   <aside class="panel status-panel">
-    <div class="panel-title"><span>03</span><strong>ESTADO PERSISTENTE</strong></div>
-    <div id="persistent-status"></div>
+    <div class="panel-title"><span>03</span><strong>SITUACIÓN</strong></div>
+    <div id="ship-status"></div>
+    <div id="tracking-status"></div>
+    <div id="watch-status"></div>
   </aside>
-</div>
+</main>
+
 <footer class="operator-log">
   <div class="log-actions">
-    <button id="toggle-log" class="ghost">LOG DE OPERADOR</button>
-    <button id="copy-exercise-log" class="ghost developer-log-button" hidden>COPIAR LOG DEL EJERCICIO</button>
-    <span id="copy-log-status" class="copy-log-status" aria-live="polite"></span>
+    <button id="toggle-log" class="secondary dark">LOG DE OPERADOR</button>
+    <button id="copy-exercise-log" class="secondary dark" hidden>COPIAR LOG DEL EJERCICIO</button>
+    <span id="copy-log-status"></span>
   </div>
   <div id="log-panel" hidden><div id="log-list"></div></div>
 </footer>
 </div>
+
 <script type="module" src="./app.js"></script>
-<script type="module" src="./assistant.js"></script>
 </body>
 </html>
