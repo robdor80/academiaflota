@@ -134,6 +134,15 @@ function parseOne(raw,context,profile){
 
 export function localInterpret(text,context,profileId="picard"){
   const profile=COMPUTER_PROFILES[profileId]||COMPUTER_PROFILES.picard;
+  const whole=norm(text);
+  const explicit=contactFrom(text),contextContact=explicit||selectedContact(context,profile);
+  if(profile.allowWatch&&contextContact&&has(whole,"seguimiento","sigue","seguir","manten","mantén")&&has(whole,"avisa","avisame","avísame","notifica")&&has(whole,"rumbo","curso")){
+    if(profile.maxActions<2)return clarify(profile.name+" necesita que divida la orden en dos instrucciones.","Orden compuesta no admitida");
+    return actionPlan(String(text||"").trim(),[
+      {type:"track_start",contactId:contextContact,priority:has(whole,"prioridad","prioritario","alta")?"priority":"normal"},
+      {type:"watch",contactId:contextContact,condition:"course_change",threshold:5}
+    ]);
+  }
   const parts=splitCommands(text);
   if(parts.length>profile.maxActions)return clarify(profile.name+" admite un máximo de "+profile.maxActions+" acciones por orden. Divida la instrucción.","Orden demasiado compleja para esta computadora");
   const actions=[];
