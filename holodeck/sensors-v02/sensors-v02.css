@@ -39,3 +39,21 @@ button,input,select,textarea{font:inherit}.shell{min-width:1050px;min-height:100
 .operator-log{background:#182f42;border-radius:8px;color:#dce7ed;padding:8px 10px}.log-actions{display:flex;gap:8px;align-items:center}.operator-log #log-panel{max-height:180px;overflow:auto;margin-top:7px;border-top:1px solid #40586a;padding-top:6px}.log-entry{font-family:Consolas,monospace;font-size:.66rem;padding:2px 0;color:#c7d5de}
 .device-blocker{display:none;position:fixed;inset:0;z-index:99;background:#10283b;color:#fff;align-items:center;justify-content:center;text-align:center;padding:28px}
 @media(orientation:portrait),(max-width:1049px){.device-blocker{display:flex}.shell{display:none}}
+
+
+/* Cuenta personal de la Computadora · Firebase + Gemini */
+.top-config-button{border:1px solid #698399;background:#173b57;color:#fff;border-radius:6px;padding:6px 9px;font-size:.62rem;font-weight:900;cursor:pointer}
+.top-config-button:hover{background:#214b69}.cloud-status.ready{border-color:#5d9d78;color:#d9f3e4}.cloud-status.warn{border-color:#b88a49;color:#f2dbb6}
+.cloud-dialog{width:min(620px,calc(100vw - 32px));border:1px solid #8ba0af;border-radius:12px;padding:0;background:#f8fafb;color:var(--ink);box-shadow:0 24px 80px rgba(8,24,36,.38)}
+.cloud-dialog::backdrop{background:rgba(7,19,29,.72);backdrop-filter:blur(2px)}
+.cloud-dialog-head{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:15px 18px;background:var(--navy2);color:#fff;border-radius:11px 11px 0 0}
+.cloud-dialog-head small{display:block;color:#d9bf7a;font-size:.58rem;font-weight:900;letter-spacing:.12em}.cloud-dialog-head h2{margin:2px 0 0;font-size:1.15rem}
+.dialog-close{border:0;background:transparent;color:#fff;font-size:1.65rem;line-height:1;cursor:pointer;padding:4px 7px}
+.cloud-section{padding:18px}.cloud-section p{font-size:.76rem;line-height:1.5;color:#526572}
+.cloud-account{display:flex;justify-content:space-between;gap:16px;align-items:center;border:1px solid #d5dfe6;background:#fff;border-radius:7px;padding:10px 12px;margin-bottom:12px}
+.cloud-account span{font-size:.6rem;font-weight:900;color:#7b6a3b;letter-spacing:.08em}.cloud-account strong{font-size:.76rem;overflow-wrap:anywhere}
+.cloud-key-state,.cloud-model-state{margin:7px 0 12px!important;font-size:.68rem!important}.cloud-field{display:grid;gap:5px;margin-top:10px}.cloud-field>span{font-size:.65rem;font-weight:900;color:#405463}
+.cloud-field input{width:100%;border:1px solid #b9c8d2;border-radius:7px;padding:9px 10px;background:#fff;color:var(--ink)}.cloud-field small{font-size:.6rem;color:#778691}
+.cloud-model-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.cloud-actions{display:flex;justify-content:space-between;gap:10px;margin-top:16px}
+.cloud-message{min-height:20px;margin:0 18px 16px;padding:0;font-size:.68rem;color:#5f6f7b}.cloud-message[data-kind="error"]{color:var(--bad);font-weight:750}.cloud-message[data-kind="ok"]{color:var(--ok);font-weight:750}
+@media(max-width:700px){.cloud-model-grid{grid-template-columns:1fr}.cloud-actions{flex-direction:column-reverse}.cloud-actions button{width:100%}}
