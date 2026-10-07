@@ -1,16 +1,16 @@
 {
   "subject": "Relaciones interespecies y contacto",
   "code": "XEN-302",
-  "version": "1.3",
+  "version": "1.4",
+  "status": "developed_operational_culture_content",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/XEN-302/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/XEN-302/MANUAL_v1_0.md",
   "sourceRefs": [
-    "gameplay/careers/academy_path/course_resolution.md",
-    "gameplay/careers/academy_path/evaluation_model.json",
-    "gameplay/careers/academy_path/academy_era_profiles.json",
-    "lore/federation/member_worlds/founding_members.json",
-    "localization/terminology/starfleet_terms.json"
+    "gameplay/careers/academy_path/cultural_operations_reference_v0.1.json",
+    "gameplay/species/culture_socialization_contract.json",
+    "lore/cultures/founding_species_interaction_profiles.json",
+    "lore/cultures/major_species_interaction_profiles.json"
   ],
   "modules": [
     {
@@ -20,27 +20,45 @@
       "blocks": [
         {
           "type": "p",
-          "text": "**Biología, cultura, costumbre e individuo son capas distintas.** Una tendencia cultural puede orientar una pregunta, pero no predecir automáticamente a la persona."
+          "text": "**Biología, cultura, costumbre e individuo son capas distintas.** Además: **especie ≠ cultura ≠ ciudadanía ≠ personalidad**."
         },
         {
           "type": "definition",
           "term": "Biología",
-          "text": "**Características fisiológicas de una especie.**"
+          "text": "Características fisiológicas de una especie."
         },
         {
           "type": "definition",
           "term": "Cultura",
-          "text": "**Valores, normas y prácticas compartidas.**"
+          "text": "Valores, normas y prácticas compartidas por un grupo."
         },
         {
           "type": "definition",
           "term": "Costumbre",
-          "text": "Práctica concreta dentro de un grupo."
+          "text": "Práctica concreta dentro de una cultura o subgrupo."
         },
         {
           "type": "definition",
           "term": "Individuo",
-          "text": "Persona con historia y decisiones propias."
+          "text": "Persona concreta con historia, personalidad y decisiones propias."
+        },
+        {
+          "type": "heading",
+          "text": "Casos fundadores"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "**Vulcanos:** la disciplina lógica y el control emocional no significan ausencia de emociones.",
+            "**Andorianos:** la directividad o tradición de desafío no implica agresión automática.",
+            "**Aenar:** la ceguera no implica incapacidad; telepatía y consentimiento son relevantes.",
+            "**Tellaritas:** discusión o queja pueden formar parte de una interacción normal y no demostrar hostilidad."
+          ]
+        },
+        {
+          "type": "callout",
+          "label": "REGLA PROFESIONAL",
+          "text": "El conocimiento cultural orienta preguntas y preparación; **nunca sustituye a la persona concreta**."
         }
       ]
     },
@@ -51,7 +69,27 @@
       "blocks": [
         {
           "type": "p",
-          "text": "**El contexto, jerarquía, formalidad, relación y situación pueden cambiar el significado social de un mensaje.**"
+          "text": "**Contexto, jerarquía, formalidad, relación y situación cambian el significado social de un mensaje.**"
+        },
+        {
+          "type": "heading",
+          "text": "Tellaritas y Andorianos"
+        },
+        {
+          "type": "p",
+          "text": "Un tono áspero o una forma directa no deben clasificarse automáticamente como hostilidad. Primero se comprueba **amenaza real, protocolo, contexto y conducta individual**."
+        },
+        {
+          "type": "heading",
+          "text": "Aenar, Betazoides y Vulcanos"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "**Aenar:** la lectura mental está culturalmente condicionada por consentimiento.",
+            "**Betazoides:** percibir emoción no equivale a conocer motivo o verdad objetiva; la capacidad varía por individuo.",
+            "**Vulcanos:** un mind meld no concede acceso ilimitado a recuerdos ni al World Truth."
+          ]
         },
         {
           "type": "heading",
@@ -61,40 +99,47 @@
           "type": "numbered",
           "items": [
             "No atribuir intención negativa de inmediato",
-            "**Revisar** contexto",
+            "Revisar contexto",
             "Pedir aclaración",
-            "**Adaptar** forma",
-            "Registrar si es operativamente relevante"
+            "Adaptar la forma",
+            "Registrar si tiene relevancia operativa"
           ]
         },
         {
           "type": "callout",
           "label": "ESCUCHA",
-          "text": "Escuchar implica confirmar, resumir, preguntar y reconocer ambigüedad."
+          "text": "Escuchar profesionalmente implica **confirmar, resumir, preguntar y reconocer ambigüedad**."
         }
       ]
     },
     {
       "id": "XEN-302-U03",
-      "title": "Protocolo básico",
+      "title": "Protocolo con culturas conocidas",
       "subtitle": "UNIDAD 03 · XEN-302",
       "blocks": [
         {
           "type": "p",
-          "text": "**Antes de un encuentro formal conviene revisar participantes, autoridad, propósito, protocolo conocido, símbolos relevantes y límites de seguridad.**"
+          "text": "Antes de un encuentro se revisan participantes, autoridad, propósito, protocolo, símbolos y qué datos culturales son **hechos** frente a hipótesis."
         },
         {
           "type": "heading",
-          "text": "Hospitalidad y símbolos"
+          "text": "Casos operativos"
         },
         {
-          "type": "p",
-          "text": "Comida, regalos, emblemas o posición en una sala pueden tener significado **ritual** o político; no se presumen neutrales."
+          "type": "bullets",
+          "items": [
+            "**Klingon:** honor y Casas pueden importar, pero especie no implica guerrero, agresión ni lealtad imperial automática.",
+            "**Romulano:** reserva y seguridad pueden ser relevantes; reserva no demuestra engaño ni pertenencia al Tal Shiar.",
+            "**Cardassiano:** jerarquía, orden y memoria de la ocupación pueden influir; especie no implica culpabilidad o lealtad a la Unión.",
+            "**Bajorano:** religión, soberanía y ocupación son contextos posibles; especie no implica fe, trauma ni pasado resistente.",
+            "**Ferengi:** comercio y contratos pueden ser relevantes; no demuestran fraude, avaricia ni profesión mercantil.",
+            "**Trill unido:** identidad vivida compuesta de huésped y simbionte; no es un huésped anterior resucitado."
+          ]
         },
         {
           "type": "callout",
           "label": "PRUDENCIA",
-          "text": "Cuando existe duda, es preferible una forma formal y prudente hasta confirmar el **protocolo**."
+          "text": "Una cultura prepara el encuentro. **No decide quién es la persona**."
         }
       ]
     },
@@ -105,26 +150,47 @@
       "blocks": [
         {
           "type": "p",
-          "text": "**El Traductor Universal ayuda a convertir lenguaje, pero no garantiza equivalencia perfecta, comprensión cultural o intención correcta.**"
+          "text": "**Traducir palabras no equivale a transferir cultura.** El Traductor Universal no garantiza equivalencia cultural, intención correcta ni contexto completo."
         },
         {
           "type": "heading",
-          "text": "Fuentes de ambigüedad"
+          "text": "Conceptos culturalmente cargados"
+        },
+        {
+          "type": "p",
+          "text": "Honor, religión, jerarquía, comercio, ritual o parentesco pueden requerir explicación adicional aunque la traducción literal sea correcta."
+        },
+        {
+          "type": "heading",
+          "text": "Concepto sin equivalente"
         },
         {
           "type": "bullets",
           "items": [
-            "**Polisemia**",
-            "**Ironía**",
-            "Uso ritual",
-            "Referencia histórica",
-            "Conceptos sin equivalente"
+            "Explicar",
+            "Contextualizar",
+            "Parafrasear",
+            "Confirmar significado con el interlocutor"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Señales de problema"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Incoherencia",
+            "Cambio de sentido",
+            "Construcción extraña",
+            "Confusión del interlocutor",
+            "Choque entre significado literal y contexto observado"
           ]
         },
         {
           "type": "callout",
-          "label": "SEÑAL DE ALERTA",
-          "text": "Una respuesta ilógica o un término que cambia de sentido puede indicar problema de traducción."
+          "label": "INCERTIDUMBRE",
+          "text": "No entender un término cultural **no autoriza a inventar su significado**."
         }
       ]
     },
@@ -135,33 +201,78 @@
       "blocks": [
         {
           "type": "p",
-          "text": "**Primer Contacto exige observar antes de intervenir y revisar datos, misión, Primera Directiva, equipo, traducción, protocolo y contingencias.**"
+          "text": "**Primer Contacto exige observar antes de proyectar.** Una especie nueva no se clasifica como «tipo Vulcano», «como Klingon» o «parecida a Ferengi» solo por semejanzas iniciales."
+        },
+        {
+          "type": "heading",
+          "text": "Preparación"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Datos disponibles",
+            "Misión y autoridad",
+            "Primera Directiva",
+            "Traducción",
+            "Protocolo",
+            "Contingencias",
+            "Hipótesis culturales aún sin confirmar"
+          ]
         },
         {
           "type": "callout",
           "label": "AUTORIDAD",
-          "text": "Un cadete no inicia una política de Primer Contacto por decisión propia; participa dentro de una **misión** y supervisión."
+          "text": "Un cadete no inicia una política de Primer Contacto por decisión propia."
+        },
+        {
+          "type": "heading",
+          "text": "Capacidades especiales"
         },
         {
           "type": "p",
-          "text": "Una acción pequeña puede revelar tecnología, alterar poder interno o ser interpretada como compromiso."
+          "text": "Telepatía, sensores o traducción **no sustituyen consentimiento, autoridad ni comprensión cultural**."
+        },
+        {
+          "type": "heading",
+          "text": "Cuando falta información"
+        },
+        {
+          "type": "p",
+          "text": "Se declara incertidumbre, se reduce intervención y se buscan más observaciones. Una acción pequeña puede revelar tecnología, alterar poder, crear expectativas o legitimar una facción."
         }
       ]
     },
     {
       "id": "XEN-302-U06",
-      "title": "Diplomacia básica",
+      "title": "Diplomacia básica y casos operativos",
       "subtitle": "UNIDAD 06 · XEN-302",
       "blocks": [
         {
           "type": "definition",
           "term": "Posición",
-          "text": "**Lo que una parte dice que quiere.**"
+          "text": "Lo que una parte dice que quiere."
         },
         {
           "type": "definition",
           "term": "Interés",
-          "text": "**La necesidad o motivo que intenta proteger.**"
+          "text": "La necesidad o motivo que intenta proteger."
+        },
+        {
+          "type": "heading",
+          "text": "No negociar con un estereotipo"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "**Klingon:** no convertir todo desacuerdo en desafío ritual.",
+            "**Romulano:** no convertir toda ambigüedad en conspiración o espionaje.",
+            "**Ferengi:** un marco comercial no demuestra fraude.",
+            "**Dominion:** distinguir Fundadores/Cambiantes, Vorta y Jem'Hadar; no son intercambiables."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "La apariencia copiada por un Cambiante **no copia recuerdos, autoridad, relaciones ni permisos**. Un Vorta necesita estado real para poseer un cargo concreto. La dependencia Jem'Hadar de ketracel-white no autoriza a inventar suministro o desenlace."
         },
         {
           "type": "heading",
@@ -180,11 +291,10 @@
         {
           "type": "callout",
           "label": "LÍMITES",
-          "text": "Un cadete no puede prometer tratados, recursos importantes o compromisos políticos sin autoridad."
+          "text": "Un cadete no puede prometer tratados, cesiones, recursos importantes ni compromisos políticos. **No acuerdo no equivale siempre a fracaso** si se evita una escalada innecesaria."
         }
       ]
     }
   ],
-  "status": "developed_content",
-  "assessmentModel": "concept_driven_v2_1"
+  "assessmentModel": "concept_driven_v2_2"
 }
