@@ -3,7 +3,7 @@ export const CONTRACT_VERSION="1.0";
 export const ACTION_TYPES=new Set([
   "scan","search","track_start","track_stop","track_priority","track_signature",
   "track_update","readout","transfer","power_request","power_release","interference",
-  "diagnostic","calibrate","select_array","engineering_request","mark","save_result",
+  "diagnostic","calibrate","select_array","engineering_request","mark","mark_matches","save_result",
   "compare_results","repeat_operation","cancel_operation","load_profile","save_profile",
   "delete_profile","restore_standard","apply_config","watch","status","query"
 ]);
@@ -69,6 +69,7 @@ export const CONTRACT_SPEC={
     select_array:{arrayId:"PRIMARY|AUX"},
     engineering_request:{component:"PRIMARY|AUX",diagnosticCode:"string|null",reason:"string",priority:"Baja|Normal|Alta|Urgente|null"},
     mark:{contactId:"string",marked:"boolean"},
+    mark_matches:{source:"last_scan|last_search|last_operation",newOnly:"boolean",minConfidence:"number",marked:"boolean"},
     save_result:{resultId:"string|null"},
     compare_results:{a:"string|null",b:"string|null"},
     repeat_operation:{resultId:"string|null",overrides:"object|null"},
@@ -100,6 +101,7 @@ Si el usuario pide "ver", "mostrar", "consultar", "qué hay", "cuánto queda" o 
 Si falta una decisión que no puede inferirse con seguridad, devuelve needsClarification=true y una única clarificationQuestion concreta.
 No decidas por el oficial qué contacto abandonar, qué objetivo atacar, qué riesgo aceptar, qué recurso sacrificar ni qué orden de mando contradecir.
 Nunca inventes un resultado de sensores, daño, permiso, potencia, contacto, diagnóstico o respuesta de otro departamento.
+Si una orden pide actuar sobre los contactos que produzca el barrido o búsqueda anterior, usa mark_matches en vez de inventar contactId. Ejemplo: "marca cualquier contacto nuevo que supere el 60% de confianza" => mark_matches con source="last_scan", newOnly=true, minConfidence=60, marked=true.
 La salida debe ser JSON válido, sin markdown ni texto adicional.
 `;
 
@@ -109,7 +111,7 @@ const REQUIRED={
   track_update:["contactId","operation"],readout:["contactId","readout"],transfer:["contactId","target"],
   power_request:["requested"],power_release:["mode"],interference:["operation"],diagnostic:["scope"],
   calibrate:["arrayId"],select_array:["arrayId"],engineering_request:["component"],
-  mark:["contactId","marked"],repeat_operation:[],cancel_operation:[],load_profile:["profileId"],
+  mark:["contactId","marked"],mark_matches:["source","newOnly","minConfidence","marked"],repeat_operation:[],cancel_operation:[],load_profile:["profileId"],
   save_profile:["profileId","name"],delete_profile:["profileId"],restore_standard:["scope"],
   apply_config:["setting"],watch:["contactId","condition"],status:["scope"],query:["domain"]
 };
@@ -139,6 +141,7 @@ export function validateCommandPlan(plan,profileId="picard"){
     if(a.type==="apply_config"&&!CONFIG_SETTINGS.has(a.setting))errors.push("Ajuste no permitido: "+a.setting);
     if(a.type==="interference"&&!INTERFERENCE_OPS.has(a.operation))errors.push("Operación de interferencia no permitida: "+a.operation);
     if(a.type==="power_request"&&(Number(a.requested)<=0||Number(a.requested)>100))errors.push("La potencia solicitada debe estar entre 1 y 100.");
+    if(a.type==="mark_matches"&&(Number(a.minConfidence)<0||Number(a.minConfidence)>100))errors.push("El umbral de confianza debe estar entre 0 y 100.");
   });
   return {ok:errors.length===0,errors,plan:{version:CONTRACT_VERSION,intentSummary:String(plan.intentSummary||""),needsClarification:false,clarificationQuestion:null,actions}};
 }
