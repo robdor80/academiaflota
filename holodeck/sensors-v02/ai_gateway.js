@@ -291,13 +291,23 @@ async function interpretDirectGemini({text,context,profileId,inputMode,routingMo
       text,context,profileId,inputMode,routingMode
     });
   }catch(error){
-    if(routingMode==="auto"&&error?.kind==="invalid_json"&&escalationModel!==defaultModel){
+    const transientDefaultFailure=
+      selectedModel===defaultModel &&
+      (error?.kind==="invalid_json" || error?.status===503);
+
+    if(routingMode==="auto"&&transientDefaultFailure&&escalationModel!==defaultModel){
       const escalated=await callGeminiDirect({
         apiKey:cloud.geminiApiKey,
         model:escalationModel,
         text,context,profileId,inputMode,routingMode
       });
-      return {provider:"gemini",...escalated,escalated:true,routingMode};
+      return {
+        provider:"gemini",
+        ...escalated,
+        escalated:true,
+        escalationReason:error?.status===503?"default_model_unavailable":"invalid_json",
+        routingMode
+      };
     }
     throw error;
   }
