@@ -194,6 +194,7 @@ async function executeAction(a){
   }
 
   if(a.type==="track_start"){
+    emitTeacherEvent("NAV_PRIMARY",{primaryId:"tracking"});emitTeacherEvent("NAV_SECONDARY",{primaryId:"tracking",secondaryId:"multi_track"});
     const r=startTracking(sim,a.contactId,"normal",a.priority||"normal");
     if(!r.ok)return needOperator("Capacidad de seguimiento",r.reason+". Indique qué asignación desea modificar.");
     state.selectedContactId=a.contactId;sim.selectedContactId=a.contactId;
@@ -204,12 +205,14 @@ async function executeAction(a){
   }
 
   if(a.type==="track_stop"){
+    emitTeacherEvent("NAV_PRIMARY",{primaryId:"tracking"});emitTeacherEvent("NAV_SECONDARY",{primaryId:"tracking",secondaryId:"multi_track"});
     stopTracking(sim,a.contactId);emitTeacherEvent("TRACK_STOP",{contactId:a.contactId});
     setDetails([detail("Contacto",a.contactId),detail("Seguimiento","finalizado"),detail("Capacidad",trackingUsed(sim)+" / "+sim.tracking.capacity)]);
     return {ok:true,text:"Seguimiento de "+a.contactId+" finalizado."};
   }
 
   if(a.type==="track_priority"){
+    emitTeacherEvent("NAV_PRIMARY",{primaryId:"tracking"});emitTeacherEvent("NAV_SECONDARY",{primaryId:"tracking",secondaryId:"multi_track"});
     const c=getContact(sim,a.contactId);if(!c?.tracked)return needOperator("Seguimiento inexistente",a.contactId+" no está actualmente en seguimiento.");
     const r=startTracking(sim,a.contactId,c.trackingMode||"normal",a.priority||"normal",c.trackingSignature||null);
     if(!r.ok)return needOperator("Capacidad de seguimiento",r.reason+".");
@@ -230,6 +233,9 @@ async function executeAction(a){
   }
 
   if(a.type==="track_update"){
+    emitTeacherEvent("NAV_PRIMARY",{primaryId:"tracking"});
+    if(a.operation==="trajectory")emitTeacherEvent("NAV_SECONDARY",{primaryId:"tracking",secondaryId:"predict_trajectory"});
+    if(a.operation==="reacquire")emitTeacherEvent("NAV_SECONDARY",{primaryId:"tracking",secondaryId:"reacquire_lost_contact"});
     const kind=a.operation==="reacquire"?"reacquire":a.operation;
     const r=updateTracking(sim,a.contactId,kind,{horizon:a.horizon||"5 min"});
     if(!r.ok)return needOperator("Operación de seguimiento",r.reason+".");
@@ -346,6 +352,8 @@ async function executeAction(a){
   }
 
   if(a.type==="status"){
+    if(a.scope==="tracking"){emitTeacherEvent("NAV_PRIMARY",{primaryId:"tracking"});emitTeacherEvent("NAV_SECONDARY",{primaryId:"tracking",secondaryId:"tracked_contacts"});}
+    else if(a.scope==="sensors")emitTeacherEvent("NAV_PRIMARY",{primaryId:"status"});
     const c=a.contactId?getContact(sim,a.contactId):selectedContact();
     let text;
     if(a.scope==="tracking")text="Seguimiento "+trackingUsed(sim)+"/"+sim.tracking.capacity+".";
