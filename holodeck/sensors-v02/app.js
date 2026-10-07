@@ -548,7 +548,16 @@ async function submitCommand(text,inputMode="text"){
         ?"3.5 Flash-Lite no disponible → escalado automático a 3.8 Flash."
         :"3.5 Flash-Lite no pudo interpretar la orden con suficiente seguridad → escalado automático a 3.8 Flash.";
       addMessage("system",reason,"RUTA GEMINI");
+      addMessage("system","3.8 Flash respondió correctamente → se usará su interpretación.","RUTA GEMINI");
       log("GEMINI ESCALATION · "+(interpreted.escalationReason||"unspecified")+" · "+(interpreted.modelUsed||"3.8"));
+    }else if(
+      interpreted.provider==="fallback" &&
+      state.routingMode==="auto" &&
+      (String(interpreted.warning||"").includes("Gemini 503") || String(interpreted.warning||"").toLowerCase().includes("json"))
+    ){
+      addMessage("system","3.5 Flash-Lite no disponible o respuesta no válida → se intentó automáticamente 3.8 Flash.","RUTA GEMINI");
+      addMessage("system","3.8 Flash tampoco pudo completar la interpretación → intérprete local.","RUTA GEMINI");
+      log("GEMINI AUTO ROUTE · 3.5 failed · 3.8 failed · local fallback");
     }
     if(interpreted.warning)addMessage("system",interpreted.warning);
     const validation=validateCommandPlan(interpreted.plan,state.profileId);
