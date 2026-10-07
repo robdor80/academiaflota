@@ -308,11 +308,11 @@ async function interpretDirectGemini({text,context,profileId,inputMode,routingMo
       text,context,profileId,inputMode,routingMode
     });
   }catch(error){
-    const transientDefaultFailure=
+    const persistentAvailabilityFailure=
       selectedModel===defaultModel &&
-      (error?.kind==="invalid_json" || error?.status===503);
+      error?.status===503;
 
-    if(routingMode==="auto"&&transientDefaultFailure&&escalationModel!==defaultModel){
+    if(routingMode==="auto"&&persistentAvailabilityFailure&&escalationModel!==defaultModel){
       const escalated=await callGeminiWithRetry({
         apiKey:cloud.geminiApiKey,
         model:escalationModel,
@@ -322,23 +322,37 @@ async function interpretDirectGemini({text,context,profileId,inputMode,routingMo
         provider:"gemini",
         ...escalated,
         escalated:true,
-        escalationReason:error?.status===503?"default_model_unavailable":"invalid_json",
+        escalationReason:"default_model_unavailable",
         routingMode
       };
     }
     throw error;
   }
 
-  if(routingMode==="auto"&&selectedModel===defaultModel&&escalationModel!==defaultModel){
+  if(routingMode==="auto"&&selectedModel===defaultModel){
     const validation=validateCommandPlan(first.plan,profileId);
     const explicitUncertainty=first.plan?.interpreterUncertain===true;
     if(!validation.ok||explicitUncertainty){
-      const escalated=await callGeminiWithRetry({
-        apiKey:cloud.geminiApiKey,
-        model:escalationModel,
-        text,context,profileId,inputMode,routingMode
-      });
-      return {provider:"gemini",...escalated,escalated:true,routingMode};
+      return {
+        provider:"gemini",
+        plan:{
+          version:CONTRACT_VERSION,
+          intentSummary:String(first.plan?.intentSummary||text||""),
+          needsClarification:true,
+          clarificationQuestion:!validation.ok
+            ?"La orden incluye una combinación que la Computadora todavía no puede representar con seguridad. Reformule indicando la acción principal y la condición que desea aplicar."
+            :"Necesito una aclaración concreta para ejecutar la orden sin asumir decisiones del oficial.",
+          actions:[]
+        },
+        modelUsed:first.modelUsed||defaultModel,
+        modelVersion:first.modelVersion||null,
+        usageMetadata:first.usageMetadata||null,
+        retryCount:first.retryCount||0,
+        escalated:false,
+        economyProtected:true,
+        economyReason:!validation.ok?"contract_validation":"interpreter_uncertainty",
+        routingMode
+      };
     }
   }
 
