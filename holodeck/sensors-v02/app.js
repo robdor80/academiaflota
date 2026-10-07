@@ -545,19 +545,25 @@ async function submitCommand(text,inputMode="text"){
     $("#ai-badge").textContent=interpreted.provider==="gemini"?(interpreted.escalated?"GEMINI 3.8 · ESCALADO":"GEMINI · "+(interpreted.modelUsed||"")):interpreted.provider==="fallback"?"GEMINI → FALLBACK":"INTÉRPRETE LOCAL";
     if(interpreted.escalated){
       const reason=interpreted.escalationReason==="default_model_unavailable"
-        ?"3.5 Flash-Lite no disponible → escalado automático a 3.8 Flash."
+        ?"3.5 Flash-Lite siguió sin disponible tras el reintento → escalado automático a 3.8 Flash."
         :"3.5 Flash-Lite no pudo interpretar la orden con suficiente seguridad → escalado automático a 3.8 Flash.";
       addMessage("system",reason,"RUTA GEMINI");
-      addMessage("system","3.8 Flash respondió correctamente → se usará su interpretación.","RUTA GEMINI");
+      addMessage("system",interpreted.retryCount>0
+        ?"3.8 Flash respondió correctamente tras un reintento → se usará su interpretación."
+        :"3.8 Flash respondió correctamente → se usará su interpretación.","RUTA GEMINI");
       log("GEMINI ESCALATION · "+(interpreted.escalationReason||"unspecified")+" · "+(interpreted.modelUsed||"3.8"));
     }else if(
       interpreted.provider==="fallback" &&
       state.routingMode==="auto" &&
       (String(interpreted.warning||"").includes("Gemini 503") || String(interpreted.warning||"").toLowerCase().includes("json"))
     ){
-      addMessage("system","3.5 Flash-Lite no disponible o respuesta no válida → se intentó automáticamente 3.8 Flash.","RUTA GEMINI");
-      addMessage("system","3.8 Flash tampoco pudo completar la interpretación → intérprete local.","RUTA GEMINI");
+      addMessage("system","3.5 Flash-Lite siguió fallando tras el reintento → se intentó automáticamente 3.8 Flash.","RUTA GEMINI");
+      addMessage("system","3.8 Flash también falló tras el reintento → intérprete local.","RUTA GEMINI");
       log("GEMINI AUTO ROUTE · 3.5 failed · 3.8 failed · local fallback");
+    }
+    if(interpreted.provider==="gemini"&&!interpreted.escalated&&interpreted.retryCount>0){
+      addMessage("system",(interpreted.modelUsed||"Gemini")+" respondió correctamente en el reintento.","RUTA GEMINI");
+      log("GEMINI RETRY SUCCESS · "+(interpreted.modelUsed||"unknown"));
     }
     if(interpreted.warning)addMessage("system",interpreted.warning);
     const validation=validateCommandPlan(interpreted.plan,state.profileId);
