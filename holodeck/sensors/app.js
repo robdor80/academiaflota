@@ -182,7 +182,7 @@ function contactsView(){
   if(s?.id==="recently_lost")list=list.filter(c=>c.status==="lost");
   const c=contact();
   let h='<div class="card"><h3>'+esc(s.display_es)+'</h3><div class="contact-list">'+list.map(x=>'<div class="contact-row '+(x.id===shell.sim.selectedContactId?"active":"")+'" data-contact="'+x.id+'"><strong>'+x.id+'</strong><span>'+esc(x.classification)+'<br><small>'+esc((x.signatures||[]).join(" · "))+'</small></span><strong>'+x.confidence+'%</strong></div>').join("")+'</div></div>';
-  if(c&&list.some(x=>x.id===c.id))h+='<div class="card"><h3>Ficha · '+c.id+'</h3><div class="data-grid">'+datum("Clasificación",c.classification)+datum("Distancia",c.distanceKm.toLocaleString("es-ES")+" km")+datum("Vector",c.vector)+datum("Velocidad",c.velocity)+datum("Firmas",(c.signatures||[]).join(" · "))+datum("Confianza",Math.round(c.confidence)+" %")+datum("Estado",c.status.toUpperCase())+datum("Seguimiento",c.tracked?(c.trackingMode||"normal").toUpperCase():"NO")+'</div><div class="action-grid">'+contactActions(c).map(a=>button(a,a==="request_additional_power"?"secondary":"")).join("")+'</div></div>';
+  if(c&&list.some(x=>x.id===c.id))h+='<div class="card"><h3>Ficha · '+c.id+'</h3><div class="data-grid">'+datum("Clasificación",c.classification)+datum("Distancia",c.distanceKm.toLocaleString("es-ES")+" km")+datum("Vector",c.vector)+datum("Velocidad",c.velocity)+datum("Firmas",(c.signatures||[]).join(" · "))+datum("Confianza",Math.round(c.confidence)+" %")+datum("Estado",c.status.toUpperCase())+datum("Seguimiento",c.tracked?(c.trackingMode||"normal").toUpperCase():"NO")+'</div><div class="action-grid">'+contactActions(c).map(a=>button(a)).join("")+'</div></div>';
   return h;
 }
 function contactActions(c){
