@@ -1,8 +1,7 @@
 {
-  "schema_version": "2.1.0",
+  "schema_version": "2.2.0",
   "course_id": "XEN-302",
-  "status": "concept_driven_autocorrectable_v2_1",
-  "source_bank": "question_bank_v1_0.json",
+  "status": "concept_driven_operational_culture_v2_2",
   "policy": {
     "theory_formats": [
       "multiple_choice",
@@ -13,7 +12,8 @@
     "deterministic_correction": true,
     "web_and_game_share_concepts_not_question_instances": true,
     "complex_judgment_moves_to_practice_and_simulation": true,
-    "source_rule": "Every evaluated concept must be explicitly taught in the course material or an established prerequisite."
+    "source_rule": "Every evaluated concept must be explicitly taught in the course material or an established prerequisite.",
+    "operational_culture_source": "gameplay/careers/academy_path/cultural_operations_reference_v0.1.json"
   },
   "unit_review": {
     "questions_per_attempt": 5,
@@ -27,146 +27,217 @@
       "id": "XEN-302-C001",
       "unit_id": "XEN-302-U01",
       "source_type": "compare",
-      "web_prompt_es": "¿Qué opción diferencia correctamente biología, cultura, costumbre e individuo?",
+      "web_prompt_es": "¿Qué cuatro capas deben distinguirse al analizar una conducta interespecie?",
       "web_prompt_variants_es": [
-        "¿Qué opción diferencia correctamente biología, cultura, costumbre e individuo?",
-        "Diferencia biología, cultura, costumbre e individuo."
+        "¿Qué cuatro capas deben distinguirse al analizar una conducta interespecie?",
+        "Repaso: ¿Qué cuatro capas deben distinguirse al analizar una conducta interespecie?"
       ],
-      "answer_display_es": "fisiología · valores compartidos · práctica concreta · persona",
+      "answer_display_es": "biología · cultura · costumbre · individuo",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "fisiología",
-        "valores compartidos",
-        "práctica concreta",
-        "persona"
+        "biología",
+        "cultura",
+        "costumbre",
+        "individuo"
       ]
     },
     {
       "id": "XEN-302-C002",
       "unit_id": "XEN-302-U01",
       "source_type": "judgment",
-      "web_prompt_es": "¿Qué convierte una generalización en estereotipo?",
+      "web_prompt_es": "¿Qué convierte una generalización cultural en estereotipo?",
       "web_prompt_variants_es": [
-        "¿Qué convierte una generalización en estereotipo?",
-        "Repaso: ¿Qué convierte una generalización en estereotipo?"
+        "¿Qué convierte una generalización cultural en estereotipo?",
+        "Repaso: ¿Qué convierte una generalización cultural en estereotipo?"
       ],
-      "answer_display_es": "tratarla como predicción absoluta",
+      "answer_display_es": "tratarla como predicción absoluta sobre una persona",
       "accepted_short_answers_es": [
         "tratarla como predicción absoluta"
       ],
       "preferred_mode": "short_answer",
       "answer_key_es": [
-        "tratarla como predicción absoluta"
+        "tratarla como predicción absoluta",
+        "persona concreta"
       ]
     },
     {
       "id": "XEN-302-C003",
       "unit_id": "XEN-302-U01",
       "source_type": "knowledge",
-      "web_prompt_es": "¿Qué opción contiene fuentes de variación interna?",
+      "web_prompt_es": "¿Qué expresa la regla «especie ≠ cultura ≠ ciudadanía ≠ personalidad»?",
       "web_prompt_variants_es": [
-        "¿Qué opción contiene fuentes de variación interna?",
-        "Nombra fuentes de variación interna."
+        "¿Qué expresa la regla «especie ≠ cultura ≠ ciudadanía ≠ personalidad»?",
+        "Repaso: ¿Qué expresa la regla «especie ≠ cultura ≠ ciudadanía ≠ personalidad»?"
       ],
-      "answer_display_es": "región · generación · religión · política · clase · profesión",
+      "answer_display_es": "la especie no determina automáticamente cultura, ciudadanía ni personalidad",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "región",
-        "generación",
-        "religión",
-        "política",
-        "clase",
-        "profesión"
+        "especie no determina cultura",
+        "especie no determina ciudadanía",
+        "especie no determina personalidad"
       ]
     },
     {
       "id": "XEN-302-C004",
       "unit_id": "XEN-302-U01",
-      "source_type": "judgment",
-      "web_prompt_es": "¿Cómo se usa conocimiento cultural previo?",
+      "source_type": "scenario",
+      "web_prompt_es": "Un vulcano mantiene gran control emocional. ¿Qué interpretación es profesionalmente correcta?",
       "web_prompt_variants_es": [
-        "¿Cómo se usa conocimiento cultural previo?",
-        "Repaso: ¿Cómo se usa conocimiento cultural previo?"
+        "Un vulcano mantiene gran control emocional. ¿Qué interpretación es profesionalmente correcta?",
+        "Repaso: Un vulcano mantiene gran control emocional. ¿Qué interpretación es profesionalmente correcta?"
       ],
-      "answer_display_es": "orienta preguntas · no sustituye observar individuo",
+      "answer_display_es": "es una disciplina cultural posible; no demuestra ausencia de emociones",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "orienta preguntas",
-        "no sustituye observar individuo"
+        "disciplina cultural",
+        "no ausencia de emociones"
       ]
     },
     {
       "id": "XEN-302-C005",
-      "unit_id": "XEN-302-U02",
-      "source_type": "knowledge",
-      "web_prompt_es": "¿Qué factores cambian significado social?",
+      "unit_id": "XEN-302-U01",
+      "source_type": "scenario",
+      "web_prompt_es": "Un tellarita formula una queja de forma áspera. ¿Qué NO debes concluir automáticamente?",
       "web_prompt_variants_es": [
-        "¿Qué factores cambian significado social?",
-        "Repaso: ¿Qué factores cambian significado social?"
+        "Un tellarita formula una queja de forma áspera. ¿Qué NO debes concluir automáticamente?",
+        "Repaso: Un tellarita formula una queja de forma áspera. ¿Qué NO debes concluir automáticamente?"
       ],
-      "answer_display_es": "jerarquía · formalidad · relación · situación · lugar",
+      "answer_display_es": "que existe hostilidad o amenaza",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "jerarquía",
-        "formalidad",
-        "relación",
-        "situación",
-        "lugar"
+        "no asumir hostilidad",
+        "no asumir amenaza"
       ]
     },
     {
       "id": "XEN-302-C006",
-      "unit_id": "XEN-302-U02",
-      "source_type": "short_answer",
-      "web_prompt_es": "¿Por qué tono puede variar culturalmente?",
+      "unit_id": "XEN-302-U01",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Para qué sirve el conocimiento cultural previo?",
       "web_prompt_variants_es": [
-        "¿Por qué tono puede variar culturalmente?",
-        "Repaso: ¿Por qué tono puede variar culturalmente?"
+        "¿Para qué sirve el conocimiento cultural previo?",
+        "Repaso: ¿Para qué sirve el conocimiento cultural previo?"
       ],
-      "answer_display_es": "interpretaciones distintas",
+      "answer_display_es": "orientar preguntas y preparación sin sustituir al individuo",
       "accepted_short_answers_es": [
-        "interpretaciones distintas"
+        "orientar preguntas",
+        "no sustituir al individuo"
       ],
       "preferred_mode": "short_answer",
       "answer_key_es": [
-        "interpretaciones distintas"
+        "orientar preguntas",
+        "preparación",
+        "no sustituir individuo"
       ]
     },
     {
       "id": "XEN-302-C007",
       "unit_id": "XEN-302-U02",
       "source_type": "procedure",
-      "web_prompt_es": "¿Qué haces ante malentendido?",
+      "web_prompt_es": "¿Qué haces primero ante un posible malentendido intercultural?",
       "web_prompt_variants_es": [
-        "¿Qué haces ante malentendido?",
-        "Repaso: ¿Qué haces ante malentendido?"
+        "¿Qué haces primero ante un posible malentendido intercultural?",
+        "Repaso: ¿Qué haces primero ante un posible malentendido intercultural?"
       ],
-      "answer_display_es": "no asumir · revisar · aclarar · adaptar",
+      "answer_display_es": "no atribuir intención negativa; revisar contexto y pedir aclaración",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "no asumir",
-        "revisar",
-        "aclarar",
-        "adaptar"
+        "no atribuir intención negativa",
+        "revisar contexto",
+        "pedir aclaración"
       ]
     },
     {
       "id": "XEN-302-C008",
       "unit_id": "XEN-302-U02",
-      "source_type": "short_answer",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué regla cultural Aenar afecta directamente al uso de telepatía?",
+      "web_prompt_variants_es": [
+        "¿Qué regla cultural Aenar afecta directamente al uso de telepatía?",
+        "Repaso: ¿Qué regla cultural Aenar afecta directamente al uso de telepatía?"
+      ],
+      "answer_display_es": "no leer la mente de otros sin permiso",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "consentimiento",
+        "no leer sin permiso"
+      ]
+    },
+    {
+      "id": "XEN-302-C009",
+      "unit_id": "XEN-302-U02",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Por qué un Betazoide no es un detector de mentiras infalible?",
+      "web_prompt_variants_es": [
+        "¿Por qué un Betazoide no es un detector de mentiras infalible?",
+        "Repaso: ¿Por qué un Betazoide no es un detector de mentiras infalible?"
+      ],
+      "answer_display_es": "percibir emoción o información telepática no equivale a conocer motivo o verdad objetiva",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "emoción no equivale a motivo",
+        "no verdad objetiva",
+        "capacidad variable"
+      ]
+    },
+    {
+      "id": "XEN-302-C010",
+      "unit_id": "XEN-302-U02",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué NO concede automáticamente un mind meld vulcano?",
+      "web_prompt_variants_es": [
+        "¿Qué NO concede automáticamente un mind meld vulcano?",
+        "Repaso: ¿Qué NO concede automáticamente un mind meld vulcano?"
+      ],
+      "answer_display_es": "acceso ilimitado a recuerdos o al World Truth",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "no acceso ilimitado",
+        "no omnisciencia",
+        "no World Truth"
+      ]
+    },
+    {
+      "id": "XEN-302-C011",
+      "unit_id": "XEN-302-U02",
+      "source_type": "scenario",
+      "web_prompt_es": "Un andoriano habla de forma muy directa. ¿Qué debe evaluar el cadete antes de clasificarlo como agresión?",
+      "web_prompt_variants_es": [
+        "Un andoriano habla de forma muy directa. ¿Qué debe evaluar el cadete antes de clasificarlo como agresión?",
+        "Repaso: Un andoriano habla de forma muy directa. ¿Qué debe evaluar el cadete antes de clasificarlo como agresión?"
+      ],
+      "answer_display_es": "amenaza real, protocolo, contexto y conducta individual",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "amenaza real",
+        "protocolo",
+        "contexto",
+        "individuo"
+      ]
+    },
+    {
+      "id": "XEN-302-C012",
+      "unit_id": "XEN-302-U02",
+      "source_type": "procedure",
       "web_prompt_es": "¿Qué implica escuchar profesionalmente?",
       "web_prompt_variants_es": [
         "¿Qué implica escuchar profesionalmente?",
         "Repaso: ¿Qué implica escuchar profesionalmente?"
       ],
       "answer_display_es": "confirmar · resumir · preguntar · reconocer ambigüedad",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "accepted_short_answers_es": [
+        "confirmar, resumir, preguntar y reconocer ambigüedad"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
         "confirmar",
         "resumir",
@@ -175,491 +246,444 @@
       ]
     },
     {
-      "id": "XEN-302-C009",
-      "unit_id": "XEN-302-U03",
-      "source_type": "knowledge",
-      "web_prompt_es": "¿Qué conviene preparar antes de encuentro formal?",
-      "web_prompt_variants_es": [
-        "¿Qué conviene preparar antes de encuentro formal?",
-        "Repaso: ¿Qué conviene preparar antes de encuentro formal?"
-      ],
-      "answer_display_es": "participantes · autoridad · propósito · protocolo · símbolos",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
-      "answer_key_es": [
-        "participantes",
-        "autoridad",
-        "propósito",
-        "protocolo",
-        "símbolos"
-      ]
-    },
-    {
-      "id": "XEN-302-C010",
-      "unit_id": "XEN-302-U03",
-      "source_type": "judgment",
-      "web_prompt_es": "¿Por qué usar forma prudente ante dudas?",
-      "web_prompt_variants_es": [
-        "¿Por qué usar forma prudente ante dudas?",
-        "Repaso: ¿Por qué usar forma prudente ante dudas?"
-      ],
-      "answer_display_es": "evitar familiaridad/título incorrecto",
-      "accepted_short_answers_es": [
-        "evitar familiaridad/título incorrecto"
-      ],
-      "preferred_mode": "short_answer",
-      "answer_key_es": [
-        "evitar familiaridad/título incorrecto"
-      ]
-    },
-    {
-      "id": "XEN-302-C011",
-      "unit_id": "XEN-302-U03",
-      "source_type": "short_answer",
-      "web_prompt_es": "¿Qué significado puede tener hospitalidad?",
-      "web_prompt_variants_es": [
-        "¿Qué significado puede tener hospitalidad?",
-        "Repaso: ¿Qué significado puede tener hospitalidad?"
-      ],
-      "answer_display_es": "cortesía · ritual · obligación · contexto",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
-      "answer_key_es": [
-        "cortesía",
-        "ritual",
-        "obligación",
-        "contexto"
-      ]
-    },
-    {
-      "id": "XEN-302-C012",
-      "unit_id": "XEN-302-U03",
-      "source_type": "judgment",
-      "web_prompt_es": "¿Es universal el espacio personal?",
-      "web_prompt_variants_es": [
-        "¿Es universal el espacio personal?",
-        "Repaso: ¿Es universal el espacio personal?"
-      ],
-      "answer_display_es": "no",
-      "accepted_short_answers_es": [
-        "no"
-      ],
-      "preferred_mode": "short_answer",
-      "answer_key_es": [
-        "no"
-      ]
-    },
-    {
       "id": "XEN-302-C013",
-      "unit_id": "XEN-302-U04",
-      "source_type": "judgment",
-      "web_prompt_es": "¿Qué no garantiza el Traductor Universal?",
+      "unit_id": "XEN-302-U03",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué error sería asumir ante un Klingon?",
       "web_prompt_variants_es": [
-        "¿Qué no garantiza el Traductor Universal?",
-        "Repaso: ¿Qué no garantiza el Traductor Universal?"
+        "¿Qué error sería asumir ante un Klingon?",
+        "Repaso: ¿Qué error sería asumir ante un Klingon?"
       ],
-      "answer_display_es": "equivalencia perfecta · cultura · intención",
+      "answer_display_es": "que por su especie es guerrero, agresivo o leal automáticamente al Imperio",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "equivalencia perfecta",
-        "cultura",
-        "intención"
+        "no guerrero automático",
+        "no agresión automática",
+        "no lealtad automática"
       ]
     },
     {
       "id": "XEN-302-C014",
-      "unit_id": "XEN-302-U04",
-      "source_type": "knowledge",
-      "web_prompt_es": "¿Qué crea ambigüedad?",
+      "unit_id": "XEN-302-U03",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué NO demuestra la reserva informativa de un Romulano?",
       "web_prompt_variants_es": [
-        "¿Qué crea ambigüedad?",
-        "Repaso: ¿Qué crea ambigüedad?"
+        "¿Qué NO demuestra la reserva informativa de un Romulano?",
+        "Repaso: ¿Qué NO demuestra la reserva informativa de un Romulano?"
       ],
-      "answer_display_es": "polisemia · ironía · ritual · historia",
+      "answer_display_es": "engaño, conspiración o pertenencia al Tal Shiar",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "polisemia",
-        "ironía",
-        "ritual",
-        "historia"
+        "no demuestra engaño",
+        "no Tal Shiar",
+        "no conspiración"
       ]
     },
     {
       "id": "XEN-302-C015",
+      "unit_id": "XEN-302-U03",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué error debe evitarse con un Cardassiano en contexto posocupación?",
+      "web_prompt_variants_es": [
+        "¿Qué error debe evitarse con un Cardassiano en contexto posocupación?",
+        "Repaso: ¿Qué error debe evitarse con un Cardassiano en contexto posocupación?"
+      ],
+      "answer_display_es": "atribuir culpabilidad, colaboración o lealtad estatal por especie",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "no culpabilidad automática",
+        "no colaboración automática",
+        "no lealtad estatal automática"
+      ]
+    },
+    {
+      "id": "XEN-302-C016",
+      "unit_id": "XEN-302-U03",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué NO puede inferirse solo porque una persona sea Bajorana?",
+      "web_prompt_variants_es": [
+        "¿Qué NO puede inferirse solo porque una persona sea Bajorana?",
+        "Repaso: ¿Qué NO puede inferirse solo porque una persona sea Bajorana?"
+      ],
+      "answer_display_es": "fe, ortodoxia, trauma o pasado en la resistencia",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "no fe automática",
+        "no trauma automático",
+        "no resistencia automática"
+      ]
+    },
+    {
+      "id": "XEN-302-C017",
+      "unit_id": "XEN-302-U03",
+      "source_type": "scenario",
+      "web_prompt_es": "¿Qué NO debe inferirse de un Ferengi?",
+      "web_prompt_variants_es": [
+        "¿Qué NO debe inferirse de un Ferengi?",
+        "Repaso: ¿Qué NO debe inferirse de un Ferengi?"
+      ],
+      "answer_display_es": "profesión mercantil, avaricia, fraude o deshonestidad",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "no comerciante automático",
+        "no avaricia automática",
+        "no fraude automático"
+      ]
+    },
+    {
+      "id": "XEN-302-C018",
+      "unit_id": "XEN-302-U03",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Cómo debe entenderse a un Trill unido?",
+      "web_prompt_variants_es": [
+        "¿Cómo debe entenderse a un Trill unido?",
+        "Repaso: ¿Cómo debe entenderse a un Trill unido?"
+      ],
+      "answer_display_es": "como identidad vivida compuesta de huésped y simbionte, no como un huésped anterior resucitado",
+      "accepted_short_answers_es": [
+        "identidad compuesta de huésped y simbionte"
+      ],
+      "preferred_mode": "short_answer",
+      "answer_key_es": [
+        "identidad compuesta",
+        "huésped y simbionte",
+        "no huésped anterior resucitado"
+      ]
+    },
+    {
+      "id": "XEN-302-C019",
+      "unit_id": "XEN-302-U04",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Qué NO garantiza el Traductor Universal?",
+      "web_prompt_variants_es": [
+        "¿Qué NO garantiza el Traductor Universal?",
+        "Repaso: ¿Qué NO garantiza el Traductor Universal?"
+      ],
+      "answer_display_es": "equivalencia cultural, intención correcta ni contexto completo",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "no equivalencia cultural",
+        "no intención correcta",
+        "no contexto completo"
+      ]
+    },
+    {
+      "id": "XEN-302-C020",
       "unit_id": "XEN-302-U04",
       "source_type": "procedure",
-      "web_prompt_es": "¿Qué hacer con concepto sin equivalente?",
+      "web_prompt_es": "¿Qué hacer con un concepto cultural sin equivalente directo?",
       "web_prompt_variants_es": [
-        "¿Qué hacer con concepto sin equivalente?",
-        "Repaso: ¿Qué hacer con concepto sin equivalente?"
+        "¿Qué hacer con un concepto cultural sin equivalente directo?",
+        "Repaso: ¿Qué hacer con un concepto cultural sin equivalente directo?"
       ],
-      "answer_display_es": "explicar · contextualizar · parafrasear",
+      "answer_display_es": "explicar, contextualizar, parafrasear y confirmar significado",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
       "answer_key_es": [
         "explicar",
         "contextualizar",
-        "parafrasear"
-      ]
-    },
-    {
-      "id": "XEN-302-C016",
-      "unit_id": "XEN-302-U04",
-      "source_type": "knowledge",
-      "web_prompt_es": "¿Qué señales sugieren fallo?",
-      "web_prompt_variants_es": [
-        "¿Qué señales sugieren fallo?",
-        "Repaso: ¿Qué señales sugieren fallo?"
-      ],
-      "answer_display_es": "ilógica · sentido cambia · término extraño · confusión",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
-      "answer_key_es": [
-        "ilógica",
-        "sentido cambia",
-        "término extraño",
-        "confusión"
-      ]
-    },
-    {
-      "id": "XEN-302-C017",
-      "unit_id": "XEN-302-U05",
-      "source_type": "short_answer",
-      "web_prompt_es": "¿Por qué observar antes de intervenir?",
-      "web_prompt_variants_es": [
-        "¿Por qué observar antes de intervenir?",
-        "Repaso: ¿Por qué observar antes de intervenir?"
-      ],
-      "answer_display_es": "reducir interferencia · comprender contexto",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
-      "answer_key_es": [
-        "reducir interferencia",
-        "comprender contexto"
-      ]
-    },
-    {
-      "id": "XEN-302-C018",
-      "unit_id": "XEN-302-U05",
-      "source_type": "knowledge",
-      "web_prompt_es": "¿Qué se revisa antes de contacto?",
-      "web_prompt_variants_es": [
-        "¿Qué se revisa antes de contacto?",
-        "Repaso: ¿Qué se revisa antes de contacto?"
-      ],
-      "answer_display_es": "datos · misión · Directiva · equipo · traducción · protocolo",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
-      "answer_key_es": [
-        "datos",
-        "misión",
-        "Directiva",
-        "equipo",
-        "traducción",
-        "protocolo"
-      ]
-    },
-    {
-      "id": "XEN-302-C019",
-      "unit_id": "XEN-302-U05",
-      "source_type": "judgment",
-      "web_prompt_es": "¿Puede cadete iniciar contacto por su cuenta?",
-      "web_prompt_variants_es": [
-        "¿Puede cadete iniciar contacto por su cuenta?",
-        "Repaso: ¿Puede cadete iniciar contacto por su cuenta?"
-      ],
-      "answer_display_es": "No — requiere autoridad .",
-      "accepted_short_answers_es": [
-        "no"
-      ],
-      "preferred_mode": "short_answer",
-      "answer_key_es": [
-        "no",
-        "requiere autoridad"
-      ]
-    },
-    {
-      "id": "XEN-302-C020",
-      "unit_id": "XEN-302-U05",
-      "source_type": "short_answer",
-      "web_prompt_es": "¿Qué hacer cuando falta información?",
-      "web_prompt_variants_es": [
-        "¿Qué hacer cuando falta información?",
-        "Repaso: ¿Qué hacer cuando falta información?"
-      ],
-      "answer_display_es": "declarar incertidumbre · actuar conservadoramente",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
-      "answer_key_es": [
-        "declarar incertidumbre",
-        "actuar conservadoramente"
+        "parafrasear",
+        "confirmar"
       ]
     },
     {
       "id": "XEN-302-C021",
-      "unit_id": "XEN-302-U06",
-      "source_type": "compare",
-      "web_prompt_es": "¿Qué opción diferencia correctamente posición e interés?",
+      "unit_id": "XEN-302-U04",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Por qué una traducción literal correcta puede seguir siendo insuficiente?",
       "web_prompt_variants_es": [
-        "¿Qué opción diferencia correctamente posición e interés?",
-        "Diferencia posición e interés."
+        "¿Por qué una traducción literal correcta puede seguir siendo insuficiente?",
+        "Repaso: ¿Por qué una traducción literal correcta puede seguir siendo insuficiente?"
       ],
-      "answer_display_es": "lo que dice querer · motivo subyacente",
+      "answer_display_es": "porque puede faltar significado social, ritual, político o histórico",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "lo que dice querer",
-        "motivo subyacente"
+        "significado social",
+        "ritual",
+        "político",
+        "histórico"
       ]
     },
     {
       "id": "XEN-302-C022",
-      "unit_id": "XEN-302-U06",
+      "unit_id": "XEN-302-U04",
       "source_type": "knowledge",
-      "web_prompt_es": "¿Qué opción contiene tres técnicas de desescalada?",
+      "web_prompt_es": "¿Qué señales pueden indicar un problema de traducción?",
       "web_prompt_variants_es": [
-        "¿Qué opción contiene tres técnicas de desescalada?",
-        "Nombra tres técnicas de desescalada."
+        "¿Qué señales pueden indicar un problema de traducción?",
+        "Repaso: ¿Qué señales pueden indicar un problema de traducción?"
       ],
-      "answer_display_es": "bajar tono · aclarar · pausa · opción reversible",
+      "answer_display_es": "incoherencia, cambio de sentido, construcciones extrañas o confusión del interlocutor",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "bajar tono",
-        "aclarar",
-        "pausa",
-        "opción reversible"
+        "incoherencia",
+        "cambio de sentido",
+        "construcción extraña",
+        "confusión"
       ]
     },
     {
       "id": "XEN-302-C023",
-      "unit_id": "XEN-302-U06",
+      "unit_id": "XEN-302-U04",
       "source_type": "judgment",
-      "web_prompt_es": "¿Qué no puede prometer un cadete?",
+      "web_prompt_es": "¿Conocer la lengua de una persona significa conocer su cultura?",
       "web_prompt_variants_es": [
-        "¿Qué no puede prometer un cadete?",
-        "Repaso: ¿Qué no puede prometer un cadete?"
+        "¿Conocer la lengua de una persona significa conocer su cultura?",
+        "Repaso: ¿Conocer la lengua de una persona significa conocer su cultura?"
       ],
-      "answer_display_es": "tratados · recursos · compromisos políticos",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
-      "answer_key_es": [
-        "tratados",
-        "recursos",
-        "compromisos políticos"
-      ]
-    },
-    {
-      "id": "XEN-302-C024",
-      "unit_id": "XEN-302-U06",
-      "source_type": "judgment",
-      "web_prompt_es": "¿No acuerdo equivale a fracaso?",
-      "web_prompt_variants_es": [
-        "¿No acuerdo equivale a fracaso?",
-        "Repaso: ¿No acuerdo equivale a fracaso?"
-      ],
-      "answer_display_es": "No — puede evitar escalada .",
+      "answer_display_es": "No — lengua, cultura e identidad individual son dimensiones distintas.",
       "accepted_short_answers_es": [
         "no"
       ],
       "preferred_mode": "short_answer",
       "answer_key_es": [
         "no",
-        "puede evitar escalada"
+        "lengua distinta de cultura",
+        "identidad individual distinta"
+      ]
+    },
+    {
+      "id": "XEN-302-C024",
+      "unit_id": "XEN-302-U04",
+      "source_type": "judgment",
+      "web_prompt_es": "Si un término cultural sigue sin comprenderse, ¿qué debe hacer el cadete?",
+      "web_prompt_variants_es": [
+        "Si un término cultural sigue sin comprenderse, ¿qué debe hacer el cadete?",
+        "Repaso: Si un término cultural sigue sin comprenderse, ¿qué debe hacer el cadete?"
+      ],
+      "answer_display_es": "declarar incertidumbre y no inventar significado",
+      "accepted_short_answers_es": [],
+      "preferred_mode": "multiple_choice",
+      "answer_key_es": [
+        "declarar incertidumbre",
+        "no inventar significado"
       ]
     },
     {
       "id": "XEN-302-C025",
-      "unit_id": "XEN-302-U01",
-      "source_type": "study_anchor",
-      "web_prompt_es": "¿Qué significa «Biología» en esta unidad?",
+      "unit_id": "XEN-302-U05",
+      "source_type": "procedure",
+      "web_prompt_es": "¿Por qué se observa antes de intervenir en Primer Contacto?",
       "web_prompt_variants_es": [
-        "¿Qué significa «Biología» en esta unidad?",
-        "Selecciona la definición correcta de «Biología»."
+        "¿Por qué se observa antes de intervenir en Primer Contacto?",
+        "Repaso: ¿Por qué se observa antes de intervenir en Primer Contacto?"
       ],
-      "answer_display_es": "Características fisiológicas de una especie.",
+      "answer_display_es": "para comprender contexto y reducir interferencia",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "Características fisiológicas de una especie."
+        "comprender contexto",
+        "reducir interferencia"
       ]
     },
     {
       "id": "XEN-302-C026",
-      "unit_id": "XEN-302-U01",
-      "source_type": "study_anchor",
-      "web_prompt_es": "¿Qué significa «Cultura» en esta unidad?",
+      "unit_id": "XEN-302-U05",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Puede un cadete iniciar una política de Primer Contacto por su cuenta?",
       "web_prompt_variants_es": [
-        "¿Qué significa «Cultura» en esta unidad?",
-        "Selecciona la definición correcta de «Cultura»."
+        "¿Puede un cadete iniciar una política de Primer Contacto por su cuenta?",
+        "Repaso: ¿Puede un cadete iniciar una política de Primer Contacto por su cuenta?"
       ],
-      "answer_display_es": "Valores, normas y prácticas compartidas.",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "answer_display_es": "No — requiere misión, supervisión y autoridad.",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "Valores, normas y prácticas compartidas."
+        "no",
+        "misión",
+        "supervisión",
+        "autoridad"
       ]
     },
     {
       "id": "XEN-302-C027",
-      "unit_id": "XEN-302-U02",
-      "source_type": "study_anchor",
-      "web_prompt_es": "¿Qué expresa el aviso «ESCUCHA»?",
+      "unit_id": "XEN-302-U05",
+      "source_type": "judgment",
+      "web_prompt_es": "Una especie nueva recuerda a una cultura conocida. ¿Qué debe evitarse?",
       "web_prompt_variants_es": [
-        "¿Qué expresa el aviso «ESCUCHA»?",
-        "Selecciona la idea correcta asociada a «ESCUCHA»."
+        "Una especie nueva recuerda a una cultura conocida. ¿Qué debe evitarse?",
+        "Repaso: Una especie nueva recuerda a una cultura conocida. ¿Qué debe evitarse?"
       ],
-      "answer_display_es": "Escuchar implica confirmar, resumir, preguntar y reconocer ambigüedad.",
+      "answer_display_es": "proyectar sobre ella el modelo cultural conocido como si fuera un hecho",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "Escuchar implica confirmar, resumir, preguntar y reconocer ambigüedad."
+        "no proyectar",
+        "no convertir analogía en hecho"
       ]
     },
     {
       "id": "XEN-302-C028",
-      "unit_id": "XEN-302-U02",
-      "source_type": "study_anchor",
-      "web_prompt_es": "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+      "unit_id": "XEN-302-U05",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Telepatía, sensores o traducción permiten saltarse consentimiento y protocolo?",
       "web_prompt_variants_es": [
-        "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
-        "Selecciona la afirmación que coincide con los apuntes de esta unidad."
+        "¿Telepatía, sensores o traducción permiten saltarse consentimiento y protocolo?",
+        "Repaso: ¿Telepatía, sensores o traducción permiten saltarse consentimiento y protocolo?"
       ],
-      "answer_display_es": "El contexto, jerarquía, formalidad, relación y situación pueden cambiar el significado social de un mensaje.",
+      "answer_display_es": "No — las capacidades no sustituyen autoridad, consentimiento ni comprensión cultural.",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "El contexto, jerarquía, formalidad, relación y situación pueden cambiar el significado social de un mensaje."
+        "no",
+        "no sustituyen autoridad",
+        "no sustituyen consentimiento",
+        "no sustituyen comprensión"
       ]
     },
     {
       "id": "XEN-302-C029",
-      "unit_id": "XEN-302-U03",
-      "source_type": "study_anchor",
-      "web_prompt_es": "¿Qué expresa el aviso «PRUDENCIA»?",
+      "unit_id": "XEN-302-U05",
+      "source_type": "procedure",
+      "web_prompt_es": "¿Qué hacer cuando falta información cultural?",
       "web_prompt_variants_es": [
-        "¿Qué expresa el aviso «PRUDENCIA»?",
-        "Selecciona la idea correcta asociada a «PRUDENCIA»."
+        "¿Qué hacer cuando falta información cultural?",
+        "Repaso: ¿Qué hacer cuando falta información cultural?"
       ],
-      "answer_display_es": "Cuando existe duda, es preferible una forma formal y prudente hasta confirmar el protocolo.",
+      "answer_display_es": "declarar incertidumbre, reducir intervención y obtener más observaciones",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "Cuando existe duda, es preferible una forma formal y prudente hasta confirmar el protocolo."
+        "declarar incertidumbre",
+        "reducir intervención",
+        "obtener observaciones"
       ]
     },
     {
       "id": "XEN-302-C030",
-      "unit_id": "XEN-302-U03",
-      "source_type": "study_anchor",
-      "web_prompt_es": "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+      "unit_id": "XEN-302-U05",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué puede provocar una acción pequeña durante Primer Contacto?",
       "web_prompt_variants_es": [
-        "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
-        "Selecciona la afirmación que coincide con los apuntes de esta unidad."
+        "¿Qué puede provocar una acción pequeña durante Primer Contacto?",
+        "Repaso: ¿Qué puede provocar una acción pequeña durante Primer Contacto?"
       ],
-      "answer_display_es": "Antes de un encuentro formal conviene revisar participantes, autoridad, propósito, protocolo conocido, símbolos relevantes y límites de seguridad.",
+      "answer_display_es": "revelar tecnología, alterar poder, crear expectativas o legitimar una facción",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "Antes de un encuentro formal conviene revisar participantes, autoridad, propósito, protocolo conocido, símbolos relevantes y límites de seguridad."
+        "revelar tecnología",
+        "alterar poder",
+        "crear expectativas",
+        "legitimar facción"
       ]
     },
     {
       "id": "XEN-302-C031",
-      "unit_id": "XEN-302-U04",
-      "source_type": "study_anchor",
-      "web_prompt_es": "¿Qué expresa el aviso «SEÑAL DE ALERTA»?",
+      "unit_id": "XEN-302-U06",
+      "source_type": "compare",
+      "web_prompt_es": "¿Qué diferencia posición e interés?",
       "web_prompt_variants_es": [
-        "¿Qué expresa el aviso «SEÑAL DE ALERTA»?",
-        "Selecciona la idea correcta asociada a «SEÑAL DE ALERTA»."
+        "¿Qué diferencia posición e interés?",
+        "Repaso: ¿Qué diferencia posición e interés?"
       ],
-      "answer_display_es": "Una respuesta ilógica o un término que cambia de sentido puede indicar problema de traducción.",
+      "answer_display_es": "posición = lo que se dice querer · interés = necesidad o motivo subyacente",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "Una respuesta ilógica o un término que cambia de sentido puede indicar problema de traducción."
+        "posición",
+        "interés",
+        "motivo subyacente"
       ]
     },
     {
       "id": "XEN-302-C032",
-      "unit_id": "XEN-302-U04",
-      "source_type": "study_anchor",
-      "web_prompt_es": "¿Cuál de estas opciones forma parte de «Fuentes de ambigüedad»?",
+      "unit_id": "XEN-302-U06",
+      "source_type": "scenario",
+      "web_prompt_es": "En una negociación Klingon, ¿qué error debe evitarse?",
       "web_prompt_variants_es": [
-        "¿Cuál de estas opciones forma parte de «Fuentes de ambigüedad»?",
-        "En «Fuentes de ambigüedad», ¿qué elemento aparece en los apuntes?"
+        "En una negociación Klingon, ¿qué error debe evitarse?",
+        "Repaso: En una negociación Klingon, ¿qué error debe evitarse?"
       ],
-      "answer_display_es": "Polisemia",
+      "answer_display_es": "convertir cada desacuerdo en desafío ritual o prueba de fuerza",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "Polisemia"
+        "no desafío automático",
+        "no prueba de fuerza automática"
       ]
     },
     {
       "id": "XEN-302-C033",
-      "unit_id": "XEN-302-U05",
-      "source_type": "study_anchor",
-      "web_prompt_es": "¿Qué expresa el aviso «AUTORIDAD»?",
+      "unit_id": "XEN-302-U06",
+      "source_type": "scenario",
+      "web_prompt_es": "En una negociación Romulana, ¿qué error debe evitarse ante una ambigüedad?",
       "web_prompt_variants_es": [
-        "¿Qué expresa el aviso «AUTORIDAD»?",
-        "Selecciona la idea correcta asociada a «AUTORIDAD»."
+        "En una negociación Romulana, ¿qué error debe evitarse ante una ambigüedad?",
+        "Repaso: En una negociación Romulana, ¿qué error debe evitarse ante una ambigüedad?"
       ],
-      "answer_display_es": "Un cadete no inicia una política de Primer Contacto por decisión propia; participa dentro de una misión y supervisión.",
+      "answer_display_es": "acusarla automáticamente de conspiración o espionaje",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "Un cadete no inicia una política de Primer Contacto por decisión propia; participa dentro de una misión y supervisión."
+        "no conspiración automática",
+        "no espionaje automático"
       ]
     },
     {
       "id": "XEN-302-C034",
-      "unit_id": "XEN-302-U05",
-      "source_type": "study_anchor",
-      "web_prompt_es": "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
+      "unit_id": "XEN-302-U06",
+      "source_type": "scenario",
+      "web_prompt_es": "En una negociación Ferengi, ¿qué NO demuestra un marco comercial?",
       "web_prompt_variants_es": [
-        "¿Qué afirmación recoge correctamente una idea clave de esta unidad?",
-        "Selecciona la afirmación que coincide con los apuntes de esta unidad."
+        "En una negociación Ferengi, ¿qué NO demuestra un marco comercial?",
+        "Repaso: En una negociación Ferengi, ¿qué NO demuestra un marco comercial?"
       ],
-      "answer_display_es": "Primer Contacto exige observar antes de intervenir y revisar datos, misión, Primera Directiva, equipo, traducción, protocolo y contingencias.",
+      "answer_display_es": "fraude o deshonestidad",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "Primer Contacto exige observar antes de intervenir y revisar datos, misión, Primera Directiva, equipo, traducción, protocolo y contingencias."
+        "no fraude automático",
+        "no deshonestidad automática"
       ]
     },
     {
       "id": "XEN-302-C035",
       "unit_id": "XEN-302-U06",
-      "source_type": "study_anchor",
-      "web_prompt_es": "¿Qué significa «Posición» en esta unidad?",
+      "source_type": "knowledge",
+      "web_prompt_es": "¿Qué debe distinguir el cadete dentro del Dominion?",
       "web_prompt_variants_es": [
-        "¿Qué significa «Posición» en esta unidad?",
-        "Selecciona la definición correcta de «Posición»."
+        "¿Qué debe distinguir el cadete dentro del Dominion?",
+        "Repaso: ¿Qué debe distinguir el cadete dentro del Dominion?"
       ],
-      "answer_display_es": "Lo que una parte dice que quiere.",
+      "answer_display_es": "Fundadores/Cambiantes, Vorta y Jem'Hadar tienen contextos y funciones distintos",
       "accepted_short_answers_es": [],
       "preferred_mode": "multiple_choice",
       "answer_key_es": [
-        "Lo que una parte dice que quiere."
+        "Fundadores",
+        "Vorta",
+        "Jem'Hadar",
+        "funciones distintas"
       ]
     },
     {
       "id": "XEN-302-C036",
       "unit_id": "XEN-302-U06",
-      "source_type": "study_anchor",
-      "web_prompt_es": "¿Qué significa «Interés» en esta unidad?",
+      "source_type": "judgment",
+      "web_prompt_es": "¿Una negociación sin acuerdo siempre es un fracaso?",
       "web_prompt_variants_es": [
-        "¿Qué significa «Interés» en esta unidad?",
-        "Selecciona la definición correcta de «Interés»."
+        "¿Una negociación sin acuerdo siempre es un fracaso?",
+        "Repaso: ¿Una negociación sin acuerdo siempre es un fracaso?"
       ],
-      "answer_display_es": "La necesidad o motivo que intenta proteger.",
-      "accepted_short_answers_es": [],
-      "preferred_mode": "multiple_choice",
+      "answer_display_es": "No — puede ser profesional si evita escalada y respeta límites de autoridad.",
+      "accepted_short_answers_es": [
+        "no"
+      ],
+      "preferred_mode": "short_answer",
       "answer_key_es": [
-        "La necesidad o motivo que intenta proteger."
+        "no",
+        "evita escalada",
+        "respeta límites"
       ]
     }
   ]
