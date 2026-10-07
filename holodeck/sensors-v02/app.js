@@ -618,6 +618,15 @@ async function submitCommand(text,inputMode="text"){
       log("GEMINI ECONOMY PROTECT · "+(interpreted.economyReason||"unspecified")+" · 3.8 not used");
     }
     if(interpreted.warning)addMessage("system",interpreted.warning);
+    const lowText=text.toLowerCase();
+    if(interpreted.provider==="fallback"&&lowText.includes("barrido")&&lowText.includes("marca")){
+      needOperator(
+        "Orden compuesta reservada para Gemini",
+        "Gemini no está disponible y el intérprete local no ejecutará parcialmente una condición posterior al barrido. Repita la orden cuando Gemini responda o divídala en dos órdenes."
+      );
+      log("LOCAL FALLBACK BLOCKED · compound scan + conditional mark");
+      return;
+    }
     const validation=validateCommandPlan(interpreted.plan,state.profileId);
     if(!validation.ok){
       needOperator("Contrato rechazado",validation.errors.join(" "));
