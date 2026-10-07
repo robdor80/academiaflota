@@ -20,6 +20,8 @@
     <label>COMPUTADORA<select id="computer-select"><option value="pike">Constitution 2259 · Pike</option><option value="kirk">Constitution 2266 · Kirk</option><option value="picard" selected>Galaxy 2364 · Picard</option></select></label>
     <label>MODELO<select id="model-route-select"><option value="auto" selected>Auto · 3.5 Lite → 3.8 si hace falta</option><option value="lite">3.5 Flash-Lite</option><option value="flash38">Forzar 3.8 Flash</option></select></label>
     <span id="ai-badge" class="badge">INTÉRPRETE LOCAL</span>
+    <span id="cloud-status" class="badge cloud-status">IA · CONECTANDO</span>
+    <button id="cloud-config-button" class="top-config-button" type="button">CUENTA IA</button>
     <a href="../sensors/">v0.1 manual</a>
     <a href="../">← Holocubierta</a>
   </div>
@@ -111,6 +113,54 @@
   <div id="log-panel" hidden><div id="log-list"></div></div>
 </footer>
 </div>
+
+<dialog id="cloud-dialog" class="cloud-dialog">
+  <form method="dialog" class="cloud-dialog-head">
+    <div>
+      <small>STAR TREK · COMPUTADORA</small>
+      <h2>Cuenta y Gemini</h2>
+    </div>
+    <button class="dialog-close" aria-label="Cerrar">×</button>
+  </form>
+
+  <section id="cloud-signed-out" class="cloud-section">
+    <p>Inicia sesión con tu cuenta Google para recuperar la configuración privada de la Computadora en este dispositivo.</p>
+    <button id="cloud-login" class="primary" type="button">Entrar con Google</button>
+  </section>
+
+  <section id="cloud-signed-in" class="cloud-section" hidden>
+    <div class="cloud-account">
+      <span>CUENTA</span>
+      <strong id="cloud-user-text"></strong>
+    </div>
+    <p id="cloud-key-state" class="cloud-key-state"></p>
+
+    <label class="cloud-field">
+      <span>Clave API de Gemini</span>
+      <input id="cloud-api-key" type="password" autocomplete="off" placeholder="Pega aquí la clave de Google AI Studio">
+      <small>Si ya existe una clave guardada, deja este campo vacío para conservarla.</small>
+    </label>
+
+    <div class="cloud-model-grid">
+      <label class="cloud-field">
+        <span>Modelo normal</span>
+        <input id="cloud-default-model" type="text" value="gemini-3.5-flash-lite">
+      </label>
+      <label class="cloud-field">
+        <span>Escalado</span>
+        <input id="cloud-escalation-model" type="text" value="gemini-3.8-flash">
+      </label>
+    </div>
+
+    <p id="cloud-model-state" class="cloud-model-state"></p>
+    <div class="cloud-actions">
+      <button id="cloud-logout" class="secondary" type="button">Cerrar sesión</button>
+      <button id="cloud-save" class="primary" type="button">Guardar configuración</button>
+    </div>
+  </section>
+
+  <p id="cloud-message" class="cloud-message" aria-live="polite"></p>
+</dialog>
 
 <script type="module" src="./app.js"></script>
 </body>
