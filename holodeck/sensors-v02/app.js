@@ -6,7 +6,7 @@ import {
   requestEngineering,makePowerResponse,transferData,saveReading,compareReadings
 } from "../sensors/sim_engine.js";
 import {COMPUTER_PROFILES,validateCommandPlan,planPreview} from "./computer_contract.js";
-import {interpretCommand,aiEndpoint} from "./ai_gateway.js";
+import {interpretCommand,aiEndpoint,localInterpret} from "./ai_gateway.js";
 import {createVoiceController} from "./voice_input.js";
 import {composeComputerResponse} from "./response_composer.js";
 
@@ -613,6 +613,22 @@ async function submitCommand(text,inputMode="text"){
   try{
     const context=buildContext();
     const interpreted=await interpretCommand({text,context,profileId:state.profileId,inputMode,routingMode:state.routingMode});
+
+    if(
+      state.routingMode==="auto" &&
+      interpreted.provider==="gemini" &&
+      !interpreted.escalated &&
+      interpreted.economyReason==="contract_validation"
+    ){
+      const localPlan=localInterpret(text,context,state.profileId);
+      const localValidation=validateCommandPlan(localPlan,state.profileId);
+      if(localValidation.ok&&!localValidation.plan?.needsClarification){
+        interpreted.plan=localValidation.plan;
+        interpreted.economyReason="local_interpreter_repair";
+        interpreted.locallyRepaired=true;
+      }
+    }
+
     state.aiRuntime={
       provider:interpreted.provider||null,
       modelUsed:interpreted.modelUsed||null,
@@ -644,9 +660,11 @@ async function submitCommand(text,inputMode="text"){
     if(interpreted.economyProtected){
       const msg=interpreted.economyReason==="local_contract_repair"
         ?"3.5 entendió la intención pero devolvió una estructura incompatible. La Computadora la corrigió localmente sin usar 3.8."
-        :interpreted.economyReason==="contract_validation"
-          ?"3.5 respondió, pero la orden no encaja todavía con seguridad en el contrato. 3.8 NO se ha usado para proteger su cuota."
-          :"3.5 pidió aclaración. 3.8 NO se ha usado para proteger su cuota.";
+        :interpreted.economyReason==="local_interpreter_repair"
+          ?"3.5 devolvió un contrato inválido, pero la intención era inequívoca. La Computadora la normalizó localmente sin usar 3.8."
+          :interpreted.economyReason==="contract_validation"
+            ?"3.5 respondió, pero la orden no encaja todavía con seguridad en el contrato. 3.8 NO se ha usado para proteger su cuota."
+            :"3.5 pidió aclaración. 3.8 NO se ha usado para proteger su cuota.";
       addMessage("system",msg,"AUTO ECONÓMICO");
       log("GEMINI ECONOMY PROTECT · "+(interpreted.economyReason||"unspecified")+" · 3.8 not used");
     }
