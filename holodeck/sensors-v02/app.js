@@ -2,7 +2,7 @@ import {initTeacherMode,emitTeacherEvent} from "./teacher_mode.js";
 import {
   createSimulation,knownContacts,getContact,getArray,trackingUsed,effectivePenalty,
   createOperation,resolveScan,resolveSearch,startTracking,stopTracking,updateTracking,
-  readout,applyInterference,applyConfig,loadProfile,runDiagnostic,calibrateArray,
+  readout,applyInterference,applyConfig,restoreStandard,loadProfile,saveProfile,deleteProfile,runDiagnostic,calibrateArray,
   requestEngineering,makePowerResponse,transferData,saveReading,compareReadings
 } from "../sensors/sim_engine.js";
 import {COMPUTER_PROFILES,validateCommandPlan,planPreview} from "./computer_contract.js";
@@ -271,15 +271,47 @@ async function executeAction(a){
     return {ok:true,text:"Operaciones responde "+sim.powerRequest.state+". Potencia concedida: "+sim.powerRequest.granted+"%."};
   }
 
+  if(a.type==="power_release"){
+    const req=sim.powerRequest;
+    if(!req)return {ok:true,text:"No hay ninguna solicitud de potencia activa."};
+    const granted=Number(req.granted||0);
+    if(a.mode==="cancel_pending"&&!granted){
+      req.state="CANCELADA";emitTeacherEvent("POWER_CANCEL",{});setDetails([detail("Solicitud","Cancelada"),detail("Potencia liberada","0 %")]);
+      return {ok:true,text:"Solicitud de potencia cancelada."};
+    }
+    if(granted>0){
+      sim.power=Math.max(sim.basePower,sim.power-granted);sim.powerBudget+=granted;req.state="LIBERADA";
+      emitTeacherEvent("POWER_RELEASE",{releasedDelta:granted});
+      setDetails([detail("Solicitud","Liberada"),detail("Potencia devuelta",granted+" %"),detail("Potencia actual",sim.power+" %")]);
+      return {ok:true,text:"Potencia adicional liberada y devuelta a Operaciones: "+granted+"%."};
+    }
+    req.state="CANCELADA";emitTeacherEvent("POWER_CANCEL",{});
+    return {ok:true,text:"Solicitud de potencia cancelada."};
+  }
+
   if(a.type==="interference"){
-    const map={extend:"extend",recover:"recover",restore:"restore",automatic:"automatic",manual:"manual",band:"band"};
-    const engineAction=map[a.operation]||a.operation;
-    const r=applyInterference(sim,engineAction,{band:a.band,contactId:a.contactId});
+    let engineAction=a.operation,payload={band:a.band,contactId:a.contactId,value:a.value,resolution:a.resolution};
+    if(a.operation==="extend_integration")engineAction="extend";
+    if(a.operation==="recover_signal")engineAction="recover";
+    if(a.operation==="operation_power")engineAction="power";
+    if(a.operation==="reduce_resolution")engineAction="reduce_resolution";
+    const r=applyInterference(sim,engineAction,payload);
     if(!r.ok)return needOperator("Compensación",r.reason||"No se pudo aplicar la compensación.");
-    const eventAction=a.operation==="extend"?"extend_integration":a.operation;
-    emitTeacherEvent("INTERFERENCE_ACTION",{action:eventAction});
-    setDetails([detail("Interferencia",a.operation),detail("Penalización efectiva",effectivePenalty(sim)),detail("Resultado",r.message)]);
-    return {ok:true,text:r.message+"."};
+    if(a.operation==="manual"){
+      if(a.sensitivity)sim.config.sensitivity=a.sensitivity;
+      if(a.resolution)sim.config.defaultResolution=a.resolution;
+      if(a.integration==="extended")applyInterference(sim,"extend");
+    }
+    emitTeacherEvent("INTERFERENCE_ACTION",{action:a.operation,band:a.band||null,value:a.value??null,resolution:a.resolution||null,contactId:a.contactId||null});
+    setDetails([
+      detail("Interferencia",a.operation),
+      detail("Banda",a.band||sim.config.bandFrequency),
+      detail("Resolución",a.resolution||sim.config.defaultResolution),
+      detail("Potencia operación",sim.config.operationPower+" %"),
+      detail("Penalización efectiva",effectivePenalty(sim)),
+      detail("Resultado",r.message||r.value||"Aplicado")
+    ]);
+    return {ok:true,text:(r.message||r.value||"Compensación aplicada")+"."};
   }
 
   if(a.type==="diagnostic"){
@@ -301,7 +333,7 @@ async function executeAction(a){
   }
 
   if(a.type==="engineering_request"){
-    const req=requestEngineering(sim,{component:a.component,reason:a.reason||"Solicitud de Sensores"});
+    const req=requestEngineering(sim,{component:a.component,diagnosticCode:a.diagnosticCode||"",problem:a.reason||"Solicitud de Sensores",priority:a.priority||"Normal"});
     emitTeacherEvent("ENGINEERING_REQUEST",{component:a.component,requestId:req.id});
     setDetails([detail("Solicitud",req.id),detail("Componente",a.component),detail("Estado",req.state)]);
     return {ok:true,text:"Solicitud enviada a Ingeniería para "+a.component+"."};
@@ -331,16 +363,70 @@ async function executeAction(a){
     return {ok:true,text:r.comparison.summary+"."};
   }
 
+  if(a.type==="repeat_operation"){
+    const source=a.resultId?sim.results.find(x=>x.id===a.resultId):sim.results[0];
+    if(!source)return needOperator("Repetición","No hay una operación anterior que repetir.");
+    const cfg={...(source.configuration||{}),...(a.overrides||{})};
+    log("COMPUTER REPEAT "+source.id);emitTeacherEvent("RESULT_REPEAT",{sourceResultId:source.id,type:source.type});
+    if(source.type==="scan"){
+      const op=createOperation(sim,"scan:"+source.subtype,cfg);await wait(650);const r=resolveScan(sim,op);
+      emitTeacherEvent("SCAN_COMPLETE",{operationId:op.id,resultId:r.id,subtype:r.subtype,contactId:cfg.contactId||null,targetValue:cfg.targetValue||null});
+      setDetails([detail("Origen",source.id),detail("Nueva operación",r.id),detail("Tipo","Barrido "+source.subtype),detail("Resultado",r.summary)]);
+      return {ok:true,text:"Operación "+source.id+" repetida como "+r.id+". "+r.summary};
+    }
+    if(source.type==="search"){
+      const op=createOperation(sim,"search:"+source.subtype,cfg);await wait(650);const r=resolveSearch(sim,cfg,op.id);op.state="completed";op.progress=100;
+      emitTeacherEvent("SEARCH_COMPLETE",{operationId:op.id,resultId:r.id,subtype:r.subtype,targetValue:cfg.area});
+      setDetails([detail("Origen",source.id),detail("Nueva operación",r.id),detail("Tipo","Búsqueda "+source.subtype),detail("Resultado",r.summary)]);
+      return {ok:true,text:"Operación "+source.id+" repetida como "+r.id+". "+r.summary};
+    }
+    return needOperator("Repetición","El tipo de resultado "+source.type+" no es repetible.");
+  }
+
+  if(a.type==="cancel_operation"){
+    const running=sim.operations.filter(x=>x.state==="running");
+    const op=a.operationId?running.find(x=>x.id===a.operationId):running[0];
+    if(!op)return {ok:true,text:"No hay ninguna operación activa que cancelar."};
+    op.state="cancelled";emitTeacherEvent("OPERATION_CANCEL",{operationId:op.id});
+    setDetails([detail("Operación",op.id),detail("Estado","CANCELADA")]);
+    return {ok:true,text:"Operación "+op.id+" cancelada."};
+  }
+
   if(a.type==="load_profile"){
     const r=loadProfile(sim,a.profileId);if(!r.ok)return needOperator("Perfil",r.reason);
     emitTeacherEvent("PROFILE_LOAD",{profileId:a.profileId});setDetails([detail("Perfil",a.profileId),detail("Resultado","Cargado")]);
     return {ok:true,text:"Perfil "+a.profileId+" cargado."};
   }
 
+  if(a.type==="save_profile"){
+    const r=saveProfile(sim,a.profileId,a.name);if(!r.ok)return needOperator("Guardar perfil",r.reason);
+    emitTeacherEvent("PROFILE_SAVE",{profileId:a.profileId});setDetails([detail("Perfil",a.profileId),detail("Nombre",a.name),detail("Resultado","Guardado")]);
+    return {ok:true,text:"Perfil "+a.name+" guardado como "+a.profileId+"."};
+  }
+
+  if(a.type==="delete_profile"){
+    const r=deleteProfile(sim,a.profileId);if(!r.ok)return needOperator("Eliminar perfil",r.reason);
+    setDetails([detail("Perfil",a.profileId),detail("Resultado","Eliminado")]);
+    return {ok:true,text:"Perfil "+a.profileId+" eliminado."};
+  }
+
+  if(a.type==="restore_standard"){
+    restoreStandard(sim);emitTeacherEvent("CONFIG_RESTORE",{profile:"standard"});
+    setDetails([detail("Configuración","Estándar de la nave"),detail("Perfil",sim.config.profile),detail("Matriz",sim.activeArray)]);
+    return {ok:true,text:"Configuración estándar de Sensores restaurada."};
+  }
+
   if(a.type==="apply_config"){
-    const r=applyConfig(sim,a.setting,a.value);if(!r.ok)return needOperator("Configuración",r.reason);
-    emitTeacherEvent("CONFIG_APPLY",{setting:a.setting,value:a.value});setDetails([detail("Ajuste",a.setting),detail("Valor",a.value)]);
-    return {ok:true,text:"Configuración aplicada: "+a.setting+" = "+a.value+"."};
+    const keyMap={
+      sensitivity:"sensitivity",default_resolution:"defaultResolution",sensor_power:"sensor_power",
+      sensor_array:"sensor_array",band_frequency:"bandFrequency",update_rate:"updateRate",
+      default_filters:"defaultFilters",default_priorities:"defaultPriority"
+    };
+    const key=keyMap[a.setting]||a.setting;
+    const r=applyConfig(sim,key,a.value);if(!r.ok)return needOperator("Configuración",r.reason);
+    emitTeacherEvent("CONFIG_APPLY",{setting:a.setting,value:a.value});
+    setDetails([detail("Ajuste",a.setting),detail("Valor",Array.isArray(a.value)?a.value.join(", "):a.value)]);
+    return {ok:true,text:"Configuración aplicada: "+a.setting+" = "+(Array.isArray(a.value)?a.value.join(", "):a.value)+"."};
   }
 
   if(a.type==="watch"){
@@ -349,6 +435,62 @@ async function executeAction(a){
     state.watchers.push({contactId:a.contactId,condition:a.condition,threshold:a.threshold??null,baseline:{vector:c.vector,status:c.status,confidence:c.confidence},createdAt:Date.now()});
     setDetails([detail("Contacto",a.contactId),detail("Vigilancia",a.condition),detail("Umbral",a.threshold??"—")]);
     return {ok:true,text:"Vigilancia activada sobre "+a.contactId+". Le avisaré si se cumple la condición."};
+  }
+
+  if(a.type==="query"){
+    let text="",rows=[];
+    const domain=a.domain,filter=a.filter||"all";
+    if(domain==="arrays"){
+      rows=sim.arrays.map(x=>detail(x.id,(x.available?"DISPONIBLE":"NO DISPONIBLE")+" · integridad "+x.integrity+"% · calibración "+x.calibration+"%"));
+      text=sim.arrays.map(x=>x.id+" "+(x.available?"disponible":"no disponible")+", integridad "+x.integrity+"%").join(". ")+".";
+    }else if(domain==="effective_range"){
+      const arr=getArray(sim);const range=Math.max(0,Math.round((arr?.integrity||0)*0.65+(arr?.calibration||0)*0.35-effectivePenalty(sim)*0.45));
+      rows=[detail("Alcance efectivo relativo",range+" %"),detail("Matriz",sim.activeArray),detail("Interferencia",effectivePenalty(sim)+" pts")];
+      text="Alcance efectivo relativo "+range+"% con la matriz "+sim.activeArray+".";
+    }else if(domain==="resolution"){
+      rows=[detail("Predeterminada",sim.config.defaultResolution),detail("Sensibilidad",sim.config.sensitivity),detail("Interferencia",effectivePenalty(sim)+" pts")];
+      text="Resolución predeterminada "+sim.config.defaultResolution+"; sensibilidad "+sim.config.sensitivity+".";
+    }else if(domain==="power"){
+      rows=[detail("Potencia sensores",sim.power+" %"),detail("Potencia operación",sim.config.operationPower+" %"),detail("Reserva disponible",sim.powerBudget+" %")];
+      text="Sensores al "+sim.power+"%. Potencia de operación "+sim.config.operationPower+"%. Reserva "+sim.powerBudget+"%.";
+    }else if(domain==="integrity"){
+      rows=sim.arrays.map(x=>detail(x.id,"integridad "+x.integrity+"% · calibración "+x.calibration+"%"));
+      text=sim.arrays.map(x=>x.id+" integridad "+x.integrity+"%").join(". ")+".";
+    }else if(domain==="interference"){
+      rows=[detail("Severidad",sim.interference.severity),detail("Banda",sim.interference.band),detail("Penalización efectiva",effectivePenalty(sim)),detail("Compensación",sim.interference.compensation)];
+      text="Interferencia "+sim.interference.severity+", penalización efectiva "+effectivePenalty(sim)+" puntos, compensación "+sim.interference.compensation+".";
+    }else if(domain==="active_operations"){
+      const ops=sim.operations.filter(x=>x.state==="running");
+      rows=ops.length?ops.map(x=>detail(x.id,x.type+" · "+x.state)):[detail("Operaciones","Ninguna activa")];
+      text=ops.length?ops.map(x=>x.id+" "+x.type).join(", "):"No hay operaciones activas.";
+    }else if(domain==="contacts"){
+      let list=knownContacts(sim);
+      if(filter==="unidentified")list=list.filter(x=>x.status==="unidentified");
+      if(filter==="identified")list=list.filter(x=>x.status==="identified");
+      if(filter==="marked")list=list.filter(x=>x.marked);
+      if(filter==="lost")list=list.filter(x=>x.status==="lost");
+      rows=list.map(x=>detail(x.id,x.classification+" · "+Math.round(x.confidence)+"%"+(x.tracked?" · seguido":"")));
+      text=list.length?list.map(x=>x.id+" "+x.classification+" "+Math.round(x.confidence)+"%").join(". ")+".":"No hay contactos que cumplan el filtro.";
+    }else if(domain==="tracking"){
+      rows=sim.tracking.assignments.length?sim.tracking.assignments.map(x=>detail(x.contactId,x.mode+" · "+x.priority+" · calidad "+Math.round(x.quality)+"%")):[detail("Seguimientos","Ninguno")];
+      rows.unshift(detail("Capacidad",trackingUsed(sim)+" / "+sim.tracking.capacity));
+      text="Seguimiento "+trackingUsed(sim)+"/"+sim.tracking.capacity+(sim.tracking.assignments.length?". "+sim.tracking.assignments.map(x=>x.contactId+" "+x.priority).join(", "):".");
+    }else if(domain==="results"){
+      let list=filter==="saved"?sim.savedReadings:sim.results;
+      list=list.slice(0,filter==="recent"?5:10);
+      rows=list.length?list.map(x=>detail(x.savedId||x.id,(x.type||"resultado")+" · "+(x.subtype||"")+" · "+(x.summary||x.label||""))):[detail("Resultados","Ninguno")];
+      text=list.length?list.map(x=>(x.savedId||x.id)+" "+(x.summary||x.label||"")).join(". ")+".":"No hay resultados disponibles.";
+    }else if(domain==="diagnostics"){
+      const list=sim.diagnostics.slice(0,10);
+      rows=list.length?list.map(x=>detail(x.id,x.status+" · "+x.scope+" · "+x.issues.length+" incidencia(s)")):[detail("Diagnósticos","Ninguno ejecutado")];
+      text=list.length?list.map(x=>x.id+" "+x.status).join(", "):"No se han ejecutado diagnósticos.";
+    }else if(domain==="profiles"){
+      rows=Object.entries(sim.profiles).map(([id,p])=>detail(id,(p.name||id)+" · "+p.origin+(p.readOnly?" · protegido":"")));
+      text=Object.keys(sim.profiles).join(", ")+".";
+    }else{
+      return executeAction({type:"status",scope:"sensors",contactId:a.contactId||null});
+    }
+    setDetails(rows);return {ok:true,text};
   }
 
   if(a.type==="status"){
