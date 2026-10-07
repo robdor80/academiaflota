@@ -8,6 +8,7 @@ import {
 import {COMPUTER_PROFILES,validateCommandPlan,planPreview} from "./computer_contract.js";
 import {interpretCommand,aiEndpoint} from "./ai_gateway.js";
 import {createVoiceController} from "./voice_input.js";
+import {composeComputerResponse} from "./response_composer.js";
 
 const $=s=>document.querySelector(s);
 const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
@@ -195,7 +196,14 @@ async function executeAction(a){
     };
     emitTeacherEvent("SCAN_COMPLETE",{operationId:op.id,resultId:r.id,subtype:r.subtype,contactId:cfg.contactId,targetValue:cfg.targetValue});
     setDetails([detail("Operación",r.id),detail("Tipo","Barrido "+cfg.scanType),detail("Objetivo",cfg.targetLabel),detail("Modo",cfg.mode),detail("Resolución",cfg.resolution),detail("Prioridad",cfg.priority),detail("Filtros",cfg.filters.join(", ")),detail("Resultado",r.summary)]);
-    return {ok:true,text:"Barrido completado. "+r.summary};
+    return {
+      ok:true,
+      kind:"scan",
+      text:"Barrido completado. "+r.summary,
+      resultId:r.id,
+      observations:(r.observations||[]).map(x=>({...x})),
+      newIds:[...(state.lastObservationBatch?.newIds||[])]
+    };
   }
 
   if(a.type==="search"){
@@ -216,7 +224,14 @@ async function executeAction(a){
     };
     emitTeacherEvent("SEARCH_COMPLETE",{operationId:op.id,resultId:r.id,subtype:r.subtype,targetValue:cfg.area});emitTeacherEvent("RESULT_OPEN",{resultId:r.id,type:"search",subtype:r.subtype,target:r.target});
     setDetails([detail("Operación",r.id),detail("Tipo","Búsqueda "+cfg.searchType),detail("Área",targetLabel(cfg.area)),detail("Sensibilidad",cfg.sensitivity),detail("Resolución",cfg.resolution),detail("Resultado",r.summary)]);
-    return {ok:true,text:"Búsqueda completada. "+r.summary};
+    return {
+      ok:true,
+      kind:"search",
+      text:"Búsqueda completada. "+r.summary,
+      resultId:r.id,
+      observations:(r.observations||[]).map(x=>({...x})),
+      newIds:[...(state.lastObservationBatch?.newIds||[])]
+    };
   }
 
   if(a.type==="track_start"){
@@ -398,8 +413,24 @@ async function executeAction(a){
       detail("Confianza mínima",min+" %"),
       detail("Coincidencias",changed.length?changed.join(", "):"Ninguna")
     ]);
-    if(!changed.length)return {ok:true,text:"Ningún contacto del último resultado cumple la condición de marcado."};
-    return {ok:true,text:(a.marked?"Marcados ":"Desmarcados ")+changed.join(", ")+" según la condición indicada."};
+    if(!changed.length)return {
+      ok:true,
+      kind:"mark_matches",
+      text:"Ningún contacto del último resultado cumple la condición de marcado.",
+      changedIds:[],
+      minConfidence:min,
+      newOnly:!!a.newOnly,
+      marked:!!a.marked
+    };
+    return {
+      ok:true,
+      kind:"mark_matches",
+      text:(a.marked?"Marcados ":"Desmarcados ")+changed.join(", ")+" según la condición indicada.",
+      changedIds:changed,
+      minConfidence:min,
+      newOnly:!!a.newOnly,
+      marked:!!a.marked
+    };
   }
 
   if(a.type==="save_result"){
@@ -641,7 +672,10 @@ async function submitCommand(text,inputMode="text"){
     setDetails(planPreview(plan));
     const results=await executePlan(plan);
     const ok=results.length&&results.every(x=>x.ok);
-    if(ok)addMessage("computer",results.map(x=>x.text).filter(Boolean).join(" "));
+    if(ok){
+      const response=composeComputerResponse({plan,results});
+      addMessage("computer",response||"Operación completada.");
+    }
   }catch(e){
     needOperator("Error de interpretación o ejecución",e.message||String(e));
     log("ERROR "+(e.stack||e.message||e));
