@@ -565,6 +565,13 @@ async function submitCommand(text,inputMode="text"){
       addMessage("system",(interpreted.modelUsed||"Gemini")+" respondió correctamente en el reintento.","RUTA GEMINI");
       log("GEMINI RETRY SUCCESS · "+(interpreted.modelUsed||"unknown"));
     }
+    if(interpreted.economyProtected){
+      const msg=interpreted.economyReason==="contract_validation"
+        ?"3.5 respondió, pero la orden no encaja todavía con seguridad en el contrato. 3.8 NO se ha usado para proteger su cuota."
+        :"3.5 pidió aclaración. 3.8 NO se ha usado para proteger su cuota.";
+      addMessage("system",msg,"AUTO ECONÓMICO");
+      log("GEMINI ECONOMY PROTECT · "+(interpreted.economyReason||"unspecified")+" · 3.8 not used");
+    }
     if(interpreted.warning)addMessage("system",interpreted.warning);
     const validation=validateCommandPlan(interpreted.plan,state.profileId);
     if(!validation.ok){
