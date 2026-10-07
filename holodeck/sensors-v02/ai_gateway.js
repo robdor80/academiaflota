@@ -1,5 +1,6 @@
 import {CONTRACT_VERSION,CONTRACT_SPEC,INTERPRETER_INSTRUCTIONS,COMPUTER_PROFILES,validateCommandPlan} from "./computer_contract.js";
 import {getComputerConfig} from "./computer_cloud.js";
+import {repairConditionalScanMark} from "./command_repair.js";
 
 const norm=v=>String(v||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-z0-9%\-\s]/g," ").replace(/\s+/g," ").trim();
 const has=(t,...words)=>words.some(w=>t.includes(norm(w)));
@@ -176,6 +177,8 @@ function parseOne(raw,context,profile){
 export function localInterpret(text,context,profileId="picard"){
   const profile=COMPUTER_PROFILES[profileId]||COMPUTER_PROFILES.picard;
   const whole=norm(text);
+  const repaired=repairConditionalScanMark(text,context,profileId);
+  if(repaired)return repaired;
   const explicit=contactFrom(text),contextContact=explicit||selectedContact(context,profile);
   if(profile.allowWatch&&contextContact&&has(whole,"seguimiento","sigue","seguir","manten","mantén")&&has(whole,"avisa","avisame","avísame","notifica")&&has(whole,"rumbo","curso")){
     if(profile.maxActions<2)return clarify(profile.name+" necesita que divida la orden en dos instrucciones.","Orden compuesta no admitida");
@@ -332,6 +335,24 @@ async function interpretDirectGemini({text,context,profileId,inputMode,routingMo
   if(routingMode==="auto"&&selectedModel===defaultModel){
     const validation=validateCommandPlan(first.plan,profileId);
     const explicitUncertainty=first.plan?.interpreterUncertain===true;
+    if(!validation.ok){
+      const repaired=repairConditionalScanMark(text,context,profileId);
+      if(repaired){
+        return {
+          provider:"gemini",
+          plan:repaired,
+          modelUsed:first.modelUsed||defaultModel,
+          modelVersion:first.modelVersion||null,
+          usageMetadata:first.usageMetadata||null,
+          retryCount:first.retryCount||0,
+          escalated:false,
+          economyProtected:true,
+          economyReason:"local_contract_repair",
+          locallyRepaired:true,
+          routingMode
+        };
+      }
+    }
     if(!validation.ok||explicitUncertainty){
       return {
         provider:"gemini",
