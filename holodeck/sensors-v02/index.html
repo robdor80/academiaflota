@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sensores v0.2 · Consola asistida</title>
+<link rel="stylesheet" href="./sensors-v02.css">
+</head>
+<body>
+<div id="device-blocker" class="device-blocker">
+  <div><strong>Consola no disponible en este formato</strong><p>Utiliza un PC o una tablet en horizontal.</p></div>
+</div>
+<div id="app" class="console-shell">
+<header class="console-header">
+  <div>
+    <span class="eyebrow">ACADEMIA DE LA FLOTA ESTELAR · PROTOTIPO UX</span>
+    <h1>Consola de Sensores · Asistida por Computadora</h1>
+  </div>
+  <div class="header-actions">
+    <label class="mode-control">ESCENARIO
+      <select id="scenario-select" aria-label="Escenario"></select>
+    </label>
+    <label class="mode-control">COMPUTADORA
+      <select id="computer-select" aria-label="Computadora de a bordo">
+        <option value="pike">Constitution 2259 · Pike</option>
+        <option value="kirk">Constitution 2266 · Kirk</option>
+        <option value="picard" selected>Galaxy 2364 · Picard</option>
+      </select>
+    </label>
+    <span class="prototype">PROTOTIPO v0.2</span>
+    <a href="../sensors/">v0.1 manual</a>
+    <a href="../">← Holocubierta</a>
+  </div>
+</header>
+
+<section class="computer-strip">
+  <div class="computer-identity">
+    <span class="computer-light"></span>
+    <div><small>COMPUTADORA DE A BORDO</small><strong id="computer-name">—</strong><span id="computer-era">—</span></div>
+  </div>
+  <div class="computer-capabilities" id="computer-capabilities"></div>
+  <div class="computer-mode" id="computer-mode"></div>
+</section>
+
+<div class="console-grid">
+  <aside class="panel primary-panel">
+    <div class="panel-title"><span>01</span><strong>TRABAJO</strong></div>
+    <nav id="primary-nav">
+      <button data-view="operate" class="primary-button active">Operar</button>
+      <button data-view="contacts" class="primary-button">Contactos</button>
+      <button data-view="tracking" class="primary-button">Seguimiento</button>
+      <button data-view="results" class="primary-button">Resultados</button>
+      <button data-view="advanced" class="primary-button">Control avanzado</button>
+    </nav>
+  </aside>
+
+  <main class="panel workspace-panel">
+    <div class="workspace-head">
+      <div><span id="workspace-kicker">SENSORES · OPERAR</span><h2 id="workspace-title">Asistencia de la computadora</h2></div>
+      <button id="reset-sim" class="ghost">Reiniciar escenario</button>
+    </div>
+    <section id="workspace-content" class="workspace-content"></section>
+  </main>
+
+  <aside class="panel status-panel">
+    <div class="panel-title"><span>03</span><strong>ESTADO</strong></div>
+    <div id="persistent-status"></div>
+  </aside>
+</div>
+
+<footer class="operator-log">
+  <div class="log-actions">
+    <button id="toggle-log" class="ghost">LOG DE OPERADOR</button>
+    <span class="footer-note">La computadora automatiza procedimiento; el oficial conserva decisiones y autoridad.</span>
+  </div>
+  <div id="log-panel" hidden><div id="log-list"></div></div>
+</footer>
+</div>
+<script type="module" src="./app.js"></script>
+</body>
+</html>
