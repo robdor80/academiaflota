@@ -302,7 +302,7 @@ async function interpretDirectGemini({text,context,profileId,inputMode,routingMo
   const selectedModel=routingMode==="flash38"?escalationModel:defaultModel;
   let first;
   try{
-    first=await callGeminiDirect({
+    first=await callGeminiWithRetry({
       apiKey:cloud.geminiApiKey,
       model:selectedModel,
       text,context,profileId,inputMode,routingMode
@@ -313,7 +313,7 @@ async function interpretDirectGemini({text,context,profileId,inputMode,routingMo
       (error?.kind==="invalid_json" || error?.status===503);
 
     if(routingMode==="auto"&&transientDefaultFailure&&escalationModel!==defaultModel){
-      const escalated=await callGeminiDirect({
+      const escalated=await callGeminiWithRetry({
         apiKey:cloud.geminiApiKey,
         model:escalationModel,
         text,context,profileId,inputMode,routingMode
@@ -333,7 +333,7 @@ async function interpretDirectGemini({text,context,profileId,inputMode,routingMo
     const validation=validateCommandPlan(first.plan,profileId);
     const explicitUncertainty=first.plan?.interpreterUncertain===true;
     if(!validation.ok||explicitUncertainty){
-      const escalated=await callGeminiDirect({
+      const escalated=await callGeminiWithRetry({
         apiKey:cloud.geminiApiKey,
         model:escalationModel,
         text,context,profileId,inputMode,routingMode
