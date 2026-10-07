@@ -16,7 +16,8 @@ const wait=ms=>new Promise(r=>setTimeout(r,ms));
 const state={
   scenarios:null,sim:null,profileId:"picard",selectedContactId:null,
   conversation:[],logs:[],lastDetails:[],watchers:[],busy:false,
-  attention:null,lastPlan:null,routingMode:"auto"
+  attention:null,lastPlan:null,routingMode:"auto",
+  aiRuntime:{provider:null,modelUsed:null,escalated:false}
 };
 
 function log(msg){
@@ -76,8 +77,17 @@ function renderComputer(){
   $("#computer-name").textContent=p.name;
   $("#computer-description").textContent=p.description;
   $("#computer-caps").innerHTML=p.caps.map(x=>'<span class="cap">'+esc(x)+'</span>').join("");
-  if(!aiEndpoint())$("#ai-badge").textContent="INTÉRPRETE LOCAL";
-  else $("#ai-badge").textContent=state.routingMode==="flash38"?"GEMINI 3.8":state.routingMode==="lite"?"GEMINI 3.5 LITE":"GEMINI AUTO";
+  if(state.aiRuntime.provider==="gemini"){
+    $("#ai-badge").textContent=state.aiRuntime.escalated
+      ?"GEMINI 3.8 · ESCALADO"
+      :"GEMINI · "+(state.aiRuntime.modelUsed||"ACTIVO");
+  }else if(state.aiRuntime.provider==="fallback"){
+    $("#ai-badge").textContent="GEMINI → FALLBACK";
+  }else if(!aiEndpoint()){
+    $("#ai-badge").textContent="INTÉRPRETE LOCAL";
+  }else{
+    $("#ai-badge").textContent=state.routingMode==="flash38"?"GEMINI 3.8":state.routingMode==="lite"?"GEMINI 3.5 LITE":"GEMINI AUTO";
+  }
 }
 function renderContacts(){
   const list=knownContacts(state.sim);
@@ -527,6 +537,11 @@ async function submitCommand(text,inputMode="text"){
   try{
     const context=buildContext();
     const interpreted=await interpretCommand({text,context,profileId:state.profileId,inputMode,routingMode:state.routingMode});
+    state.aiRuntime={
+      provider:interpreted.provider||null,
+      modelUsed:interpreted.modelUsed||null,
+      escalated:!!interpreted.escalated
+    };
     $("#ai-badge").textContent=interpreted.provider==="gemini"?(interpreted.escalated?"GEMINI 3.8 · ESCALADO":"GEMINI · "+(interpreted.modelUsed||"")):interpreted.provider==="fallback"?"GEMINI → FALLBACK":"INTÉRPRETE LOCAL";
     if(interpreted.warning)addMessage("system",interpreted.warning);
     const validation=validateCommandPlan(interpreted.plan,state.profileId);
