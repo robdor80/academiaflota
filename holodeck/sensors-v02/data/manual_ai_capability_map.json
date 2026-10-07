@@ -1,0 +1,507 @@
+{
+  "version": "1.0",
+  "source": "holodeck/sensors v0.1",
+  "target": "holodeck/sensors-v02 CommandPlan",
+  "principle": "capability parity, not button parity",
+  "coverageSummary": {
+    "operationalCapabilities": "covered",
+    "stateQueries": "covered",
+    "navigationOnlyControls": "intentionally_not_actions"
+  },
+  "mappings": [
+    {
+      "manual": "execute_scan",
+      "kind": "operation",
+      "ai": [
+        "scan"
+      ]
+    },
+    {
+      "manual": "review_scan_configuration",
+      "kind": "query",
+      "ai": [
+        "CommandPlan preview"
+      ]
+    },
+    {
+      "manual": "restore_operation_defaults",
+      "kind": "ui_only",
+      "ai": []
+    },
+    {
+      "manual": "start_search",
+      "kind": "operation",
+      "ai": [
+        "search"
+      ]
+    },
+    {
+      "manual": "clear_search_criteria",
+      "kind": "ui_only",
+      "ai": []
+    },
+    {
+      "manual": "send_power_request",
+      "kind": "operation",
+      "ai": [
+        "power_request"
+      ]
+    },
+    {
+      "manual": "cancel_power_request",
+      "kind": "operation",
+      "ai": [
+        "power_release"
+      ]
+    },
+    {
+      "manual": "send_handoff",
+      "kind": "operation",
+      "ai": [
+        "transfer"
+      ]
+    },
+    {
+      "manual": "start_tracking",
+      "kind": "operation",
+      "ai": [
+        "track_start"
+      ]
+    },
+    {
+      "manual": "track_start:*",
+      "kind": "operation",
+      "ai": [
+        "track_start"
+      ]
+    },
+    {
+      "manual": "track_stop:*",
+      "kind": "operation",
+      "ai": [
+        "track_stop"
+      ]
+    },
+    {
+      "manual": "track_toggle_priority:*",
+      "kind": "operation",
+      "ai": [
+        "track_priority"
+      ]
+    },
+    {
+      "manual": "apply_tracking_priorities",
+      "kind": "compound_operation",
+      "ai": [
+        "track_start",
+        "track_stop",
+        "track_priority"
+      ]
+    },
+    {
+      "manual": "start_signature_tracking",
+      "kind": "operation",
+      "ai": [
+        "track_signature"
+      ]
+    },
+    {
+      "manual": "execute_position_update",
+      "kind": "operation",
+      "ai": [
+        "track_update(position)"
+      ]
+    },
+    {
+      "manual": "execute_course_estimation",
+      "kind": "operation",
+      "ai": [
+        "track_update(course)"
+      ]
+    },
+    {
+      "manual": "execute_velocity_estimation",
+      "kind": "operation",
+      "ai": [
+        "track_update(velocity)"
+      ]
+    },
+    {
+      "manual": "execute_trajectory_prediction",
+      "kind": "operation",
+      "ai": [
+        "track_update(trajectory)"
+      ]
+    },
+    {
+      "manual": "start_reacquisition",
+      "kind": "operation",
+      "ai": [
+        "track_update(reacquire)"
+      ]
+    },
+    {
+      "manual": "apply_automatic_compensation",
+      "kind": "operation",
+      "ai": [
+        "interference(automatic)"
+      ]
+    },
+    {
+      "manual": "apply_manual_compensation",
+      "kind": "operation",
+      "ai": [
+        "interference(manual)"
+      ]
+    },
+    {
+      "manual": "apply_band_change",
+      "kind": "operation",
+      "ai": [
+        "interference(band)"
+      ]
+    },
+    {
+      "manual": "apply_operation_power",
+      "kind": "operation",
+      "ai": [
+        "interference(operation_power)"
+      ]
+    },
+    {
+      "manual": "apply_resolution_change",
+      "kind": "operation",
+      "ai": [
+        "interference(reduce_resolution)"
+      ]
+    },
+    {
+      "manual": "apply_integration_extension",
+      "kind": "operation",
+      "ai": [
+        "interference(extend_integration)"
+      ]
+    },
+    {
+      "manual": "start_signal_recovery",
+      "kind": "operation",
+      "ai": [
+        "interference(recover_signal)"
+      ]
+    },
+    {
+      "manual": "apply_setting",
+      "kind": "operation",
+      "ai": [
+        "apply_config"
+      ]
+    },
+    {
+      "manual": "restore_ship_standard",
+      "kind": "operation",
+      "ai": [
+        "restore_standard"
+      ]
+    },
+    {
+      "manual": "load_profile:*",
+      "kind": "operation",
+      "ai": [
+        "load_profile"
+      ]
+    },
+    {
+      "manual": "save_profile",
+      "kind": "operation",
+      "ai": [
+        "save_profile"
+      ]
+    },
+    {
+      "manual": "delete_profile:*",
+      "kind": "operation",
+      "ai": [
+        "delete_profile"
+      ]
+    },
+    {
+      "manual": "execute_comparison",
+      "kind": "operation",
+      "ai": [
+        "compare_results"
+      ]
+    },
+    {
+      "manual": "edit_before_repeat",
+      "kind": "ui_prepare",
+      "ai": [
+        "repeat_operation.overrides"
+      ]
+    },
+    {
+      "manual": "execute_repeated_operation",
+      "kind": "operation",
+      "ai": [
+        "repeat_operation"
+      ]
+    },
+    {
+      "manual": "run_diagnostic",
+      "kind": "operation",
+      "ai": [
+        "diagnostic"
+      ]
+    },
+    {
+      "manual": "start_calibration",
+      "kind": "operation",
+      "ai": [
+        "calibrate"
+      ]
+    },
+    {
+      "manual": "send_engineering_support_request",
+      "kind": "operation",
+      "ai": [
+        "engineering_request"
+      ]
+    },
+    {
+      "manual": "focused_scan",
+      "kind": "context_operation",
+      "ai": [
+        "scan(focused)"
+      ]
+    },
+    {
+      "manual": "high_resolution_scan",
+      "kind": "context_operation",
+      "ai": [
+        "scan(focused,resolution=high)"
+      ]
+    },
+    {
+      "manual": "stop_tracking",
+      "kind": "context_operation",
+      "ai": [
+        "track_stop"
+      ]
+    },
+    {
+      "manual": "release_tracking_slot",
+      "kind": "context_operation",
+      "ai": [
+        "track_stop"
+      ]
+    },
+    {
+      "manual": "set_priority_tracking",
+      "kind": "context_operation",
+      "ai": [
+        "track_priority(priority)"
+      ]
+    },
+    {
+      "manual": "set_normal_tracking",
+      "kind": "context_operation",
+      "ai": [
+        "track_priority(normal)"
+      ]
+    },
+    {
+      "manual": "mark_contact",
+      "kind": "context_operation",
+      "ai": [
+        "mark(true)"
+      ]
+    },
+    {
+      "manual": "unmark_contact",
+      "kind": "context_operation",
+      "ai": [
+        "mark(false)"
+      ]
+    },
+    {
+      "manual": "open_sensor_readout",
+      "kind": "query",
+      "ai": [
+        "readout"
+      ]
+    },
+    {
+      "manual": "compare_readings",
+      "kind": "operation",
+      "ai": [
+        "compare_results"
+      ]
+    },
+    {
+      "manual": "save_reading",
+      "kind": "operation",
+      "ai": [
+        "save_result"
+      ]
+    },
+    {
+      "manual": "repeat_operation",
+      "kind": "operation",
+      "ai": [
+        "repeat_operation"
+      ]
+    },
+    {
+      "manual": "send_data",
+      "kind": "operation",
+      "ai": [
+        "transfer"
+      ]
+    },
+    {
+      "manual": "send_to_science",
+      "kind": "operation",
+      "ai": [
+        "transfer(science)"
+      ]
+    },
+    {
+      "manual": "send_to_tactical",
+      "kind": "operation",
+      "ai": [
+        "transfer(tactical)"
+      ]
+    },
+    {
+      "manual": "request_additional_power",
+      "kind": "operation",
+      "ai": [
+        "power_request"
+      ]
+    },
+    {
+      "manual": "automatic_compensation",
+      "kind": "operation",
+      "ai": [
+        "interference(automatic)"
+      ]
+    },
+    {
+      "manual": "manual_compensation",
+      "kind": "operation",
+      "ai": [
+        "interference(manual)"
+      ]
+    },
+    {
+      "manual": "change_band",
+      "kind": "operation",
+      "ai": [
+        "interference(band)"
+      ]
+    },
+    {
+      "manual": "extend_integration",
+      "kind": "operation",
+      "ai": [
+        "interference(extend_integration)"
+      ]
+    },
+    {
+      "manual": "recover_signal",
+      "kind": "operation",
+      "ai": [
+        "interference(recover_signal)"
+      ]
+    },
+    {
+      "manual": "restore_previous_compensation",
+      "kind": "operation",
+      "ai": [
+        "interference(restore)"
+      ]
+    },
+    {
+      "manual": "run_self_test",
+      "kind": "operation",
+      "ai": [
+        "diagnostic(all)"
+      ]
+    },
+    {
+      "manual": "calibrate_array",
+      "kind": "operation",
+      "ai": [
+        "calibrate"
+      ]
+    },
+    {
+      "manual": "run_array_diagnostic",
+      "kind": "operation",
+      "ai": [
+        "diagnostic(array)"
+      ]
+    },
+    {
+      "manual": "select_array",
+      "kind": "operation",
+      "ai": [
+        "select_array"
+      ]
+    },
+    {
+      "manual": "request_engineering_support",
+      "kind": "operation",
+      "ai": [
+        "engineering_request"
+      ]
+    },
+    {
+      "manual": "cancel_operation",
+      "kind": "operation",
+      "ai": [
+        "cancel_operation"
+      ]
+    },
+    {
+      "manual": "status/*",
+      "kind": "query_family",
+      "ai": [
+        "status",
+        "query"
+      ]
+    },
+    {
+      "manual": "contacts/all|unidentified|identified|marked|recently_lost",
+      "kind": "query_family",
+      "ai": [
+        "query(contacts)"
+      ]
+    },
+    {
+      "manual": "sensor_readout/*",
+      "kind": "query_family",
+      "ai": [
+        "readout"
+      ]
+    },
+    {
+      "manual": "results/current|last|recent|saved",
+      "kind": "query_family",
+      "ai": [
+        "query(results)"
+      ]
+    },
+    {
+      "manual": "diagnostics/performance|errors",
+      "kind": "query_family",
+      "ai": [
+        "query(diagnostics)"
+      ]
+    },
+    {
+      "manual": "open_* / cancel UI / menu navigation",
+      "kind": "ui_only",
+      "ai": []
+    }
+  ]
+}
