@@ -33,35 +33,25 @@ La misma tubería admite:
 
 El prototipo usa Web Speech Recognition cuando el navegador lo permite y entrega la transcripción al mismo intérprete que el texto.
 
-## Endpoint Gemini
+## Gemini y configuración personal
 
-La web no debe contener una API key de Gemini en el repositorio ni en JavaScript público. La capa `ai_gateway.js` espera un endpoint seguro configurable:
+Este proyecto es de uso personal. La clave de Gemini no se publica en el repositorio. La aplicación usa Firebase Authentication con sesión persistente y recupera la configuración privada de la Computadora desde Firestore, en el espacio del UID autenticado.
 
-```js
-window.SENSOR_AI_CONFIG = {
-  endpoint: "https://<backend-seguro>/starship/interpret",
-  model: "<modelo-gemini>"
-};
-```
+La llamada a Gemini se realiza directamente desde el cliente autorizado. La misma configuración puede recuperarse desde Windows y Android iniciando sesión con la misma cuenta Google.
 
-También puede configurarse temporalmente con:
+### Política de modelos
 
-```js
-localStorage.setItem("sensorAI.endpoint", "https://<backend-seguro>/starship/interpret");
-localStorage.setItem("sensorAI.model", "<modelo-gemini>");
-```
+Modo **Auto económico**:
 
-El backend recibe un POST JSON con:
-- `task`;
-- `model`;
-- `profileId`;
-- `inputMode`;
-- `text`;
-- `context`;
-- `instructions`;
-- `contract`.
+1. Gemini 3.5 Flash-Lite es el modelo normal.
+2. Si devuelve HTTP 503, se espera 0,9 s y se reintenta una vez.
+3. Solo si 3.5 sigue dando 503 se escala a Gemini 3.8 Flash.
+4. 3.8 también dispone de un reintento ante 503.
+5. Si ambos modelos fallan técnicamente, se usa el intérprete local como último recurso.
+6. Un fallo de validación del `CommandPlan` o una interpretación incierta de 3.5 **no consume automáticamente una llamada a 3.8**: se solicita aclaración al oficial.
+7. El oficial puede seleccionar manualmente 3.5 o forzar 3.8.
 
-Debe responder directamente con un `CommandPlan` o con `{ "plan": <CommandPlan> }`.
+Esta política protege la cuota reducida del modelo 3.8 y reserva su uso automático para indisponibilidad técnica persistente de 3.5.
 
 ## Contrato
 
