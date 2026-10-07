@@ -26,6 +26,23 @@ function parseOne(raw,context,profile){
   const t=norm(raw),explicit=contactFrom(raw),cid=explicit||selectedContact(context,profile);
   const sector=sectorFrom(t)||currentSector(context,profile);
 
+  // Consultas equivalentes a las vistas manuales de v0.1.
+  if(has(t,"matrices disponibles","que matrices","qué matrices"))return {type:"query",domain:"arrays",filter:null,contactId:cid,resultId:null};
+  if(has(t,"alcance efectivo","que alcance","qué alcance"))return {type:"query",domain:"effective_range",filter:null,contactId:cid,resultId:null};
+  if(has(t,"resolucion disponible","resolución disponible","que resolucion","qué resolución"))return {type:"query",domain:"resolution",filter:null,contactId:cid,resultId:null};
+  if(has(t,"potencia asignada","cuanta potencia","cuánta potencia")&&!has(t,"solicita","solicitar","pide","pedir","aumenta","sube"))return {type:"query",domain:"power",filter:null,contactId:cid,resultId:null};
+  if(has(t,"integridad","danos","daños"))return {type:"query",domain:"integrity",filter:null,contactId:cid,resultId:null};
+  if(has(t,"operaciones activas","que operaciones","qué operaciones"))return {type:"query",domain:"active_operations",filter:null,contactId:cid,resultId:null};
+  if(has(t,"contactos marcados"))return {type:"query",domain:"contacts",filter:"marked",contactId:null,resultId:null};
+  if(has(t,"contactos no identificados","no identificados"))return {type:"query",domain:"contacts",filter:"unidentified",contactId:null,resultId:null};
+  if(has(t,"contactos identificados","identificados"))return {type:"query",domain:"contacts",filter:"identified",contactId:null,resultId:null};
+  if(has(t,"contactos perdidos","perdidos recientemente"))return {type:"query",domain:"contacts",filter:"lost",contactId:null,resultId:null};
+  if(has(t,"todos los contactos","lista de contactos","muestra los contactos"))return {type:"query",domain:"contacts",filter:"all",contactId:null,resultId:null};
+  if(has(t,"resultados recientes","ultimos resultados","últimos resultados"))return {type:"query",domain:"results",filter:"recent",contactId:null,resultId:null};
+  if(has(t,"lecturas guardadas","resultados guardados"))return {type:"query",domain:"results",filter:"saved",contactId:null,resultId:null};
+  if(has(t,"perfiles disponibles","lista de perfiles","que perfiles","qué perfiles"))return {type:"query",domain:"profiles",filter:null,contactId:null,resultId:null};
+  if(has(t,"diagnosticos","diagnósticos","errores de sensores","degradacion","degradación")&&!has(t,"ejecuta","haz","realiza","diagnostico de","diagnóstico de"))return {type:"query",domain:"diagnostics",filter:null,contactId:null,resultId:null};
+
   if(has(t,"estado","informe","situacion","situación")){
     if(has(t,"seguimiento","tracking"))return {type:"status",scope:"tracking",contactId:cid};
     if(cid)return {type:"status",scope:"contact",contactId:cid};
@@ -70,7 +87,7 @@ function parseOne(raw,context,profile){
 
   if(has(t,"busca","buscar","localiza","localizar","rastrea")){
     if(!sector)return {clarify:"¿En qué sector o área desea realizar la búsqueda?"};
-    const type=has(t,"lanzadera")?"shuttle":has(t,"firma warp","warp")?"warp_signature":has(t,"transpondedor","baliza","senal","señal")?"signal_transponder":has(t,"vida","forma de vida")?"lifeform":has(t,"subespacio","subespacial")?"subspace_emission":has(t,"energia","energía")?"energy_source":has(t,"nave")?"starship":null;
+    const type=has(t,"lanzadera")?"shuttle":has(t,"sonda","probe")?"probe_beacon":has(t,"objeto artificial")?"artificial_object":has(t,"radiacion","radiación","particulas","partículas")?"radiation_particle":has(t,"firma warp","warp")?"warp_signature":has(t,"transpondedor","baliza","senal","señal")?"signal_transponder":has(t,"vida","forma de vida")?"lifeform":has(t,"subespacio","subespacial")?"subspace_emission":has(t,"energia","energía")?"energy_source":has(t,"nave")?"starship":null;
     if(!type)return {clarify:"¿Qué clase de firma u objetivo desea localizar?"};
     return {type:"search",searchType:type,area:sector,sensitivity:has(t,"maxima","máxima")?"maximum":has(t,"alta")?"high":"standard",resolution:has(t,"alta resolucion","alta resolución")?"high":"standard",criteria:""};
   }
@@ -82,15 +99,21 @@ function parseOne(raw,context,profile){
     return {type:"transfer",contactId:cid,target};
   }
 
+  if(has(t,"potencia")&&has(t,"libera","liberar","devuelve","devolver"))return {type:"power_release",mode:"release_granted"};
+  if(has(t,"solicitud de potencia","peticion de potencia","petición de potencia")&&has(t,"cancela","cancelar"))return {type:"power_release",mode:"cancel_pending"};
+
   if(has(t,"potencia")&&has(t,"solicita","solicitar","pide","pedir")){
     return {type:"power_request",requested:numFrom(t)||10,priority:has(t,"urgente")?"Urgente":"Operativa",reason:"Solicitud del oficial"};
   }
 
   if(has(t,"interferencia","interferencias")){
     if(has(t,"restaura","restaurar"))return {type:"interference",operation:"restore",band:null,contactId:cid};
+    if(has(t,"aumenta potencia","sube potencia","potencia de operacion","potencia de operación"))return {type:"interference",operation:"operation_power",value:numFrom(t)||80,contactId:cid};
+    if(has(t,"reduce resolucion","reduce resolución","baja resolucion","baja resolución"))return {type:"interference",operation:"reduce_resolution",resolution:"general",contactId:cid};
+    if(has(t,"prolonga","integracion","integración"))return {type:"interference",operation:"extend_integration",band:null,contactId:cid};
+    if(has(t,"recupera senal","recupera señal","recuperar senal","recuperar señal"))return {type:"interference",operation:"recover_signal",band:null,contactId:cid};
     if(has(t,"manual"))return {type:"interference",operation:"manual",band:null,contactId:cid};
-    if(has(t,"banda"))return {type:"interference",operation:"band",band:"em",contactId:cid};
-    if(has(t,"prolonga","integracion","integración"))return {type:"interference",operation:"extend",band:null,contactId:cid};
+    if(has(t,"banda"))return {type:"interference",operation:"band",band:has(t,"subespacio")?"subspace":has(t,"termica","térmica")?"thermal":"em",contactId:cid};
     return {type:"interference",operation:"automatic",band:null,contactId:cid};
   }
 
@@ -117,12 +140,29 @@ function parseOne(raw,context,profile){
     return {type:"readout",contactId:cid,readout:"signature_type"};
   }
 
+  if(has(t,"cancela","cancelar")&&has(t,"operacion","operación","barrido","busqueda","búsqueda"))return {type:"cancel_operation",operationId:null};
+  if(has(t,"repite","repetir","hazlo otra vez","otra vez")&&has(t,"operacion","operación","barrido","busqueda","búsqueda","ultimo","último"))return {type:"repeat_operation",resultId:null,overrides:has(t,"alta resolucion","alta resolución")?{resolution:"high"}:null};
+
   if(has(t,"guarda","guardar")&&has(t,"resultado","lectura"))return {type:"save_result",resultId:null};
   if(has(t,"compara","comparar")&&has(t,"resultado","lecturas","lectura"))return {type:"compare_results",a:null,b:null};
+
+  if(has(t,"restaura","restaurar")&&has(t,"configuracion estandar","configuración estándar","estandar de la nave","estándar de la nave"))return {type:"restore_standard",scope:"sensors"};
+  if(has(t,"sensibilidad")&&has(t,"pon","ajusta","cambia","establece"))return {type:"apply_config",setting:"sensitivity",value:has(t,"maxima","máxima")?"maximum":has(t,"alta")?"high":has(t,"baja")?"low":"standard"};
+  if(has(t,"resolucion predeterminada","resolución predeterminada")&&has(t,"pon","ajusta","cambia","establece"))return {type:"apply_config",setting:"default_resolution",value:has(t,"alta")?"high":has(t,"general")?"general":"standard"};
+  if(has(t,"potencia de sensores","potencia sensores")&&has(t,"pon","ajusta","cambia","establece"))return {type:"apply_config",setting:"sensor_power",value:numFrom(t)||70};
+  if(has(t,"matriz")&&has(t,"usa","selecciona","cambia","pon"))return {type:"select_array",arrayId:has(t,"aux")?"AUX":"PRIMARY"};
+  if(has(t,"frecuencia de actualizacion","frecuencia de actualización")&&has(t,"pon","ajusta","cambia","establece"))return {type:"apply_config",setting:"update_rate",value:has(t,"rapida","rápida")?"fast":has(t,"lenta")?"slow":"standard"};
+  if(has(t,"prioridad predeterminada")&&has(t,"pon","ajusta","cambia","establece"))return {type:"apply_config",setting:"default_priorities",value:has(t,"subespacio")?"subspace":has(t,"warp")?"warp":"none"};
+  if(has(t,"banda predeterminada","frecuencia predeterminada")&&has(t,"pon","ajusta","cambia","establece"))return {type:"apply_config",setting:"band_frequency",value:has(t,"subespacio")?"subspace":has(t,"termica","térmica")?"thermal":"broad"};
+  if(has(t,"borra perfil","elimina perfil")){
+    const m=t.match(/(?:borra|elimina) perfil\s+([a-z0-9_\-]+)/);if(m)return {type:"delete_profile",profileId:m[1]};
+    return {clarify:"¿Qué perfil desea eliminar?"};
+  }
 
   if(has(t,"perfil")&&has(t,"largo alcance"))return {type:"load_profile",profileId:"long_range"};
   if(has(t,"perfil")&&has(t,"rescate"))return {type:"load_profile",profileId:"search_rescue"};
   if(has(t,"perfil")&&has(t,"ruido"))return {type:"load_profile",profileId:"low_noise"};
+  if(has(t,"perfil")&&has(t,"estandar","estándar"))return {type:"load_profile",profileId:"standard"};
 
   if(has(t,"avisa","avisame","avísame","notifica")&&cid){
     if(has(t,"rumbo","curso"))return {type:"watch",contactId:cid,condition:"course_change",threshold:5};
