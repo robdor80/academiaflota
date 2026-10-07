@@ -188,7 +188,7 @@ async function executeAction(a){
     emitTeacherEvent("SEARCH_EXECUTE",{...cfg,operationId:op.id});
     await wait(700);
     const r=resolveSearch(sim,cfg,op.id);op.state="completed";op.progress=100;
-    emitTeacherEvent("SEARCH_COMPLETE",{operationId:op.id,resultId:r.id,subtype:r.subtype,targetValue:cfg.area});
+    emitTeacherEvent("SEARCH_COMPLETE",{operationId:op.id,resultId:r.id,subtype:r.subtype,targetValue:cfg.area});emitTeacherEvent("RESULT_OPEN",{resultId:r.id,type:"search",subtype:r.subtype,target:r.target});
     setDetails([detail("Operación",r.id),detail("Tipo","Búsqueda "+cfg.searchType),detail("Área",targetLabel(cfg.area)),detail("Sensibilidad",cfg.sensitivity),detail("Resolución",cfg.resolution),detail("Resultado",r.summary)]);
     return {ok:true,text:"Búsqueda completada. "+r.summary};
   }
@@ -242,7 +242,7 @@ async function executeAction(a){
   if(a.type==="readout"){
     const r=readout(sim,a.contactId,a.readout);if(!r)return needOperator("Lectura no disponible","No existe una lectura válida para "+a.contactId+".");
     state.selectedContactId=a.contactId;sim.selectedContactId=a.contactId;
-    emitTeacherEvent("READOUT_OPEN",{contactId:a.contactId,readout:a.readout});
+    emitTeacherEvent("READOUT_OPEN",{contactId:a.contactId,readout:a.readout});emitTeacherEvent("NAV_PRIMARY",{primaryId:"sensor_readout"});
     const secondaryMap={subspace_signature:"subspace_signature",signal_strength:"signal_strength",signature_type:"signature_type"};
     if(secondaryMap[a.readout])emitTeacherEvent("NAV_SECONDARY",{primaryId:"sensor_readout",secondaryId:secondaryMap[a.readout]});
     setDetails([detail("Contacto",a.contactId),detail("Lectura",a.readout),detail("Valor",r.value),detail("Confianza",r.confidence+" %"),detail("Incertidumbre",r.uncertainty)]);
