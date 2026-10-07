@@ -543,6 +543,13 @@ async function submitCommand(text,inputMode="text"){
       escalated:!!interpreted.escalated
     };
     $("#ai-badge").textContent=interpreted.provider==="gemini"?(interpreted.escalated?"GEMINI 3.8 · ESCALADO":"GEMINI · "+(interpreted.modelUsed||"")):interpreted.provider==="fallback"?"GEMINI → FALLBACK":"INTÉRPRETE LOCAL";
+    if(interpreted.escalated){
+      const reason=interpreted.escalationReason==="default_model_unavailable"
+        ?"3.5 Flash-Lite no disponible → escalado automático a 3.8 Flash."
+        :"3.5 Flash-Lite no pudo interpretar la orden con suficiente seguridad → escalado automático a 3.8 Flash.";
+      addMessage("system",reason,"RUTA GEMINI");
+      log("GEMINI ESCALATION · "+(interpreted.escalationReason||"unspecified")+" · "+(interpreted.modelUsed||"3.8"));
+    }
     if(interpreted.warning)addMessage("system",interpreted.warning);
     const validation=validateCommandPlan(interpreted.plan,state.profileId);
     if(!validation.ok){
