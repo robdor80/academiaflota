@@ -281,6 +281,23 @@ async function callGeminiDirect({apiKey,model,text,context,profileId,inputMode,r
   };
 }
 
+const retryDelay=ms=>new Promise(resolve=>setTimeout(resolve,ms));
+
+async function callGeminiWithRetry(args){
+  let lastError=null;
+  for(let attempt=1;attempt<=2;attempt++){
+    try{
+      const result=await callGeminiDirect(args);
+      return {...result,retryCount:attempt-1};
+    }catch(error){
+      lastError=error;
+      if(error?.status!==503||attempt===2)throw error;
+      await retryDelay(900);
+    }
+  }
+  throw lastError;
+}
+
 async function interpretDirectGemini({text,context,profileId,inputMode,routingMode,cloud,defaultModel,escalationModel}){
   const selectedModel=routingMode==="flash38"?escalationModel:defaultModel;
   let first;
