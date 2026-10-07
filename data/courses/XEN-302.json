@@ -1,8 +1,8 @@
 {
   "subject": "Relaciones interespecies y contacto",
   "code": "XEN-302",
-  "version": "1.4",
-  "status": "developed_operational_culture_content",
+  "version": "1.5",
+  "status": "developed_operational_culture_content_wave_b_synced",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/third_class/courses/XEN-302/course.json",
   "sourceManual": "gameplay/careers/academy_path/study_materials/third_class/XEN-302/MANUAL_v1_0.md",
@@ -10,7 +10,12 @@
     "gameplay/careers/academy_path/cultural_operations_reference_v0.1.json",
     "gameplay/species/culture_socialization_contract.json",
     "lore/cultures/founding_species_interaction_profiles.json",
-    "lore/cultures/major_species_interaction_profiles.json"
+    "lore/cultures/major_species_interaction_profiles.json",
+    "lore/cultures/profiles/CARDASSIAN_CULTURAL_PROFILE_v0.1.json",
+    "lore/cultures/profiles/FERENGI_CULTURAL_PROFILE_v0.1.json",
+    "lore/cultures/profiles/TRILL_CULTURAL_PROFILE_v0.1.json",
+    "lore/cultures/profiles/BETAZOID_CULTURAL_PROFILE_v0.1.json",
+    "lore/cultures/profiles/DOMINION_CULTURAL_HIERARCHY_PROFILE_v0.1.json"
   ],
   "modules": [
     {
@@ -87,7 +92,7 @@
           "type": "bullets",
           "items": [
             "**Aenar:** la lectura mental está culturalmente condicionada por consentimiento.",
-            "**Betazoides:** percibir emoción no equivale a conocer motivo o verdad objetiva; la capacidad varía por individuo.",
+            "**Betazoides:** percibir emoción no equivale a conocer motivo o verdad objetiva; la capacidad varía por individuo y la franqueza cultural puede resultar brusca a otras especies sin eliminar privacidad o tacto profesional.",
             "**Vulcanos:** un mind meld no concede acceso ilimitado a recuerdos ni al World Truth."
           ]
         },
@@ -130,10 +135,10 @@
           "items": [
             "**Klingon:** honor y Casas pueden importar, pero especie no implica guerrero, agresión ni lealtad imperial automática.",
             "**Romulano:** reserva y seguridad pueden ser relevantes; reserva no demuestra engaño ni pertenencia al Tal Shiar.",
-            "**Cardassiano:** jerarquía, orden y memoria de la ocupación pueden influir; especie no implica culpabilidad o lealtad a la Unión.",
+            "**Cardassiano:** jerarquía, orden, familia y memoria de la ocupación pueden influir; edad/familia pueden tener peso social, pero especie no implica culpabilidad o lealtad a la Unión.",
             "**Bajorano:** religión, soberanía y ocupación son contextos posibles; especie no implica fe, trauma ni pasado resistente.",
-            "**Ferengi:** comercio y contratos pueden ser relevantes; no demuestran fraude, avaricia ni profesión mercantil.",
-            "**Trill unido:** identidad vivida compuesta de huésped y simbionte; no es un huésped anterior resucitado."
+            "**Ferengi:** comercio y contratos pueden ser relevantes; no demuestran fraude, avaricia ni profesión mercantil. Sus normas sociales y de propiedad cambian con la época.",
+            "**Trill unido:** identidad vivida compuesta de huésped y simbionte; no es un huésped anterior resucitado y sus relaciones previas no sustituyen automáticamente a las del huésped actual."
           ]
         },
         {
