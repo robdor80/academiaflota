@@ -63,7 +63,58 @@ function one(raw){
   return {ok:false,text:"No he podido convertir esa frase en una operación segura. Reformule indicando acción, objetivo y prioridad."}
 }
 function need(){return {ok:false,text:"Necesito identificar el contacto. Indique un ID como C-43."}}
-function runScan(cfg){const s=sim();tev("NAV_PRIMARY",{primaryId:"scans"});tev("NAV_SECONDARY",{primaryId:"scans",secondaryId:cfg.scanType});if(cfg.targetValue)tev("SCAN_CONFIG_CHANGE",{controlId:"target-scope",value:cfg.targetValue,...cfg});if(cfg.resolution)tev("SCAN_CONFIG_CHANGE",{controlId:"resolution",value:cfg.resolution,...cfg});if(cfg.priority&&cfg.priority!=="none")tev("SCAN_CONFIG_CHANGE",{controlId:"priority",value:cfg.priority,...cfg});if(cfg.contactId){s.selectedContactId=cfg.contactId;tev("SELECT_CONTACT",{contactId:cfg.contactId});tev("ACTION",{actionId:"focused_scan",contactId:cfg.contactId})}const op=createOperation(s,"scan:"+cfg.scanType,cfg);busy=true;log("EXECUTE scan "+cfg.scanType+" · "+cfg.targetLabel);tev("SCAN_EXECUTE",{...cfg,operationId:op.id});renderAssistant();setTimeout(()=>{const r=resolveScan(s,op);busy=false;log("COMPLETE "+r.id+" · "+r.summary);tev("SCAN_COMPLETE",{operationId:op.id,resultId:r.id,subtype:r.subtype,contactId:cfg.contactId||null,targetValue:cfg.targetValue||null});say("Operación "+r.id+" completada: "+r.summary,"ok");repaint()},900)}
-function runSearch(cfg){const s=sim();tev("NAV_PRIMARY",{primaryId:"search_localize"});tev("NAV_SECONDARY",{primaryId:"search_localize",secondaryId:cfg.searchType});const op=createOperation(s,"search:"+cfg.searchType,cfg);busy=true;log("EXECUTE search "+cfg.searchType+" · "+cfg.area);tev("SEARCH_EXECUTE",{...cfg,operationId:op.id});renderAssistant();setTimeout(()=>{const r=resolveSearch(s,cfg,op.id);op.state="completed";op.progress=100;busy=false;log("COMPLETE "+r.id+" · "+r.summary);tev("SEARCH_COMPLETE",{operationId:op.id,resultId:r.id,subtype:r.subtype,targetValue:cfg.area});say("Búsqueda "+r.id+" completada: "+r.summary,"ok");repaint()},900)}
+function setSelect(id,value){
+  const el=$(id);if(!el)return false;
+  el.value=value;
+  el.dispatchEvent(new Event("change",{bubbles:true}));
+  return true;
+}
+function setMulti(id,values){
+  const el=$(id);if(!el)return;
+  const set=new Set(values||[]);
+  [...el.options].forEach(o=>o.selected=set.has(o.value));
+  el.dispatchEvent(new Event("change",{bubbles:true}));
+}
+function awaitLatestResult(kind,previousId){
+  const check=()=>{
+    const r=sim()?.results?.[0];
+    if(r&&r.id!==previousId&&(kind==="scan"?r.type==="scan":r.type==="search")){
+      busy=false;log("COMPLETE "+r.id+" · "+r.summary);say("Operación "+r.id+" completada: "+r.summary,"ok");repaint();return;
+    }
+    setTimeout(check,180);
+  };
+  setTimeout(check,180);
+}
+function runScan(cfg){
+  const b=bridge(),s=sim();if(!b||!s)return;
+  const previous=s.results?.[0]?.id||null;
+  if(cfg.contactId){s.selectedContactId=cfg.contactId;lastContact=cfg.contactId}
+  b.navPrimary("scans");
+  b.navSecondary(cfg.scanType);
+  setSelect("#scan-mode",cfg.mode||"passive");
+  if(cfg.targetValue)setSelect("#target-scope",cfg.targetValue);
+  if(cfg.resolution)setSelect("#resolution",cfg.resolution);
+  if(cfg.priority)setSelect("#priority",cfg.priority);
+  if(cfg.duration)setSelect("#duration",cfg.duration);
+  if(cfg.filters)setMulti("#filters",cfg.filters);
+  busy=true;log("NATIVE SCAN "+cfg.scanType+" · "+cfg.targetLabel);
+  b.doTask("execute_scan");
+  renderAssistant();
+  awaitLatestResult("scan",previous);
+}
+function runSearch(cfg){
+  const b=bridge(),s=sim();if(!b||!s)return;
+  const previous=s.results?.[0]?.id||null;
+  b.navPrimary("search_localize");
+  b.navSecondary(cfg.searchType);
+  if(cfg.area)setSelect("#search-area",cfg.area);
+  if(cfg.sensitivity)setSelect("#search-sensitivity",cfg.sensitivity);
+  if(cfg.resolution)setSelect("#search-resolution",cfg.resolution);
+  const criteria=$("#search-criteria");if(criteria&&cfg.criteria!=null){criteria.value=cfg.criteria;criteria.dispatchEvent(new Event("change",{bubbles:true}))}
+  busy=true;log("NATIVE SEARCH "+cfg.searchType+" · "+cfg.area);
+  b.doTask("start_search");
+  renderAssistant();
+  awaitLatestResult("search",previous);
+}
 function init(){const sel=$("#computer-select-v02"),run=$("#computer-run-v02"),input=$("#computer-command-v02"),toggle=$("#computer-toggle-v02");if(!sel||!run||!input)return;profile=sel.value||"picard";sel.onchange=()=>{profile=sel.value;log("PROFILE "+profile.toUpperCase());say("Perfil cambiado a "+comp().name+".","ok");renderAssistant()};run.onclick=()=>execute(input.value);input.onkeydown=e=>{if(e.key==="Enter")execute(input.value)};toggle.onclick=()=>{const p=$("#computer-assistant-v02");p.classList.toggle("collapsed");toggle.textContent=p.classList.contains("collapsed")?"Mostrar":"Ocultar"};$("#mode-select")?.addEventListener("change",renderAssistant);$("#teacher-order-ack")?.addEventListener("click",()=>setTimeout(renderAssistant,0));renderAssistant()}
 if(window.SensorsConsoleV02?.shell?.sim)init();else window.addEventListener("sensors-ready-v02",init,{once:true});
