@@ -17,7 +17,8 @@ const state={
   scenarios:null,sim:null,profileId:"picard",selectedContactId:null,
   conversation:[],logs:[],lastDetails:[],watchers:[],busy:false,
   attention:null,lastPlan:null,routingMode:"auto",
-  aiRuntime:{provider:null,modelUsed:null,escalated:false}
+  aiRuntime:{provider:null,modelUsed:null,escalated:false},
+  lastObservationBatch:null
 };
 
 function log(msg){
@@ -65,7 +66,7 @@ function resetScenario(source="manual",scenarioId=null){
   const sc=scenarioById(scenarioId||state.sim?.scenarioId||state.scenarios.scenarios[0].id);
   state.sim=createSimulation(sc);
   state.selectedContactId=state.sim.selectedContactId;
-  state.watchers=[];state.attention=null;state.lastDetails=[];state.lastPlan=null;
+  state.watchers=[];state.attention=null;state.lastDetails=[];state.lastPlan=null;state.lastObservationBatch=null;
   if($("#scenario-select"))$("#scenario-select").value=sc.id;
   addMessage("system","Escenario reiniciado · "+sc.title);
   log("RESET scenario · "+source+" · "+sc.id);
@@ -180,11 +181,18 @@ async function executeAction(a){
     emitTeacherEvent("SCAN_CONFIG_CHANGE",{controlId:"target-scope",value:cfg.targetValue,...cfg});
     emitTeacherEvent("SCAN_CONFIG_CHANGE",{controlId:"resolution",value:cfg.resolution,...cfg});
     emitTeacherEvent("SCAN_CONFIG_CHANGE",{controlId:"priority",value:cfg.priority,...cfg});
+    const knownBefore=new Set(knownContacts(sim).map(x=>x.id));
     const op=createOperation(sim,"scan:"+cfg.scanType,cfg);
     log("COMPUTER EXECUTE scan "+cfg.scanType+" · "+cfg.targetLabel);
     emitTeacherEvent("SCAN_EXECUTE",{...cfg,operationId:op.id});
     await wait(700);
     const r=resolveScan(sim,op);
+    state.lastObservationBatch={
+      type:"scan",
+      resultId:r.id,
+      observations:(r.observations||[]).map(x=>({...x})),
+      newIds:(r.observations||[]).map(x=>x.id).filter(id=>!knownBefore.has(id))
+    };
     emitTeacherEvent("SCAN_COMPLETE",{operationId:op.id,resultId:r.id,subtype:r.subtype,contactId:cfg.contactId,targetValue:cfg.targetValue});
     setDetails([detail("Operación",r.id),detail("Tipo","Barrido "+cfg.scanType),detail("Objetivo",cfg.targetLabel),detail("Modo",cfg.mode),detail("Resolución",cfg.resolution),detail("Prioridad",cfg.priority),detail("Filtros",cfg.filters.join(", ")),detail("Resultado",r.summary)]);
     return {ok:true,text:"Barrido completado. "+r.summary};
@@ -194,11 +202,18 @@ async function executeAction(a){
     const cfg={searchType:a.searchType,area:a.area||"sector_041",sensitivity:a.sensitivity||"standard",resolution:a.resolution||"standard",criteria:a.criteria||"",duration:"standard"};
     emitTeacherEvent("NAV_PRIMARY",{primaryId:"search_localize"});
     emitTeacherEvent("NAV_SECONDARY",{primaryId:"search_localize",secondaryId:cfg.searchType});
+    const knownBefore=new Set(knownContacts(sim).map(x=>x.id));
     const op=createOperation(sim,"search:"+cfg.searchType,cfg);
     log("COMPUTER EXECUTE search "+cfg.searchType+" · "+cfg.area);
     emitTeacherEvent("SEARCH_EXECUTE",{...cfg,operationId:op.id});
     await wait(700);
     const r=resolveSearch(sim,cfg,op.id);op.state="completed";op.progress=100;
+    state.lastObservationBatch={
+      type:"search",
+      resultId:r.id,
+      observations:(r.observations||[]).map(x=>({...x})),
+      newIds:(r.observations||[]).map(x=>x.id).filter(id=>!knownBefore.has(id))
+    };
     emitTeacherEvent("SEARCH_COMPLETE",{operationId:op.id,resultId:r.id,subtype:r.subtype,targetValue:cfg.area});emitTeacherEvent("RESULT_OPEN",{resultId:r.id,type:"search",subtype:r.subtype,target:r.target});
     setDetails([detail("Operación",r.id),detail("Tipo","Búsqueda "+cfg.searchType),detail("Área",targetLabel(cfg.area)),detail("Sensibilidad",cfg.sensitivity),detail("Resolución",cfg.resolution),detail("Resultado",r.summary)]);
     return {ok:true,text:"Búsqueda completada. "+r.summary};
@@ -355,6 +370,36 @@ async function executeAction(a){
     c.marked=!!a.marked;emitTeacherEvent("CONTACT_MARK",{contactId:a.contactId,marked:!!a.marked});
     setDetails([detail("Contacto",a.contactId),detail("Marca",a.marked?"ACTIVA":"RETIRADA")]);
     return {ok:true,text:a.marked?a.contactId+" marcado como relevante.":"Marca retirada de "+a.contactId+"."};
+  }
+
+  if(a.type==="mark_matches"){
+    const batch=state.lastObservationBatch;
+    if(!batch)return needOperator("Sin resultados","No hay un barrido o búsqueda reciente sobre el que aplicar la condición.");
+    const sourceOk=a.source==="last_operation"||a.source==="last_"+batch.type;
+    if(!sourceOk)return needOperator("Resultado incompatible","La condición pide "+a.source+" pero el último resultado es "+batch.type+".");
+    const min=Number(a.minConfidence)||0;
+    const newSet=new Set(batch.newIds||[]);
+    const matches=(batch.observations||[]).filter(x=>{
+      if(a.newOnly&&!newSet.has(x.id))return false;
+      const score=Number(x.confidence??x.match??0);
+      return score>=min;
+    });
+    const changed=[];
+    for(const x of matches){
+      const contact=getContact(sim,x.id);
+      if(!contact)continue;
+      contact.marked=!!a.marked;
+      changed.push(contact.id);
+      emitTeacherEvent("CONTACT_MARK",{contactId:contact.id,marked:!!a.marked,conditional:true});
+    }
+    setDetails([
+      detail("Origen",batch.resultId),
+      detail("Solo nuevos",a.newOnly?"Sí":"No"),
+      detail("Confianza mínima",min+" %"),
+      detail("Coincidencias",changed.length?changed.join(", "):"Ninguna")
+    ]);
+    if(!changed.length)return {ok:true,text:"Ningún contacto del último resultado cumple la condición de marcado."};
+    return {ok:true,text:(a.marked?"Marcados ":"Desmarcados ")+changed.join(", ")+" según la condición indicada."};
   }
 
   if(a.type==="save_result"){
