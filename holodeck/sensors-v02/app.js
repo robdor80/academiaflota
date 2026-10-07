@@ -16,7 +16,7 @@ const wait=ms=>new Promise(r=>setTimeout(r,ms));
 const state={
   scenarios:null,sim:null,profileId:"picard",selectedContactId:null,
   conversation:[],logs:[],lastDetails:[],watchers:[],busy:false,
-  attention:null,lastPlan:null
+  attention:null,lastPlan:null,routingMode:"auto"
 };
 
 function log(msg){
@@ -76,7 +76,8 @@ function renderComputer(){
   $("#computer-name").textContent=p.name;
   $("#computer-description").textContent=p.description;
   $("#computer-caps").innerHTML=p.caps.map(x=>'<span class="cap">'+esc(x)+'</span>').join("");
-  $("#ai-badge").textContent=aiEndpoint()?"GEMINI CONFIGURADO":"INTÉRPRETE LOCAL";
+  if(!aiEndpoint())$("#ai-badge").textContent="INTÉRPRETE LOCAL";
+  else $("#ai-badge").textContent=state.routingMode==="flash38"?"GEMINI 3.8":state.routingMode==="lite"?"GEMINI 3.5 LITE":"GEMINI AUTO";
 }
 function renderContacts(){
   const list=knownContacts(state.sim);
@@ -525,8 +526,8 @@ async function submitCommand(text,inputMode="text"){
   addMessage("user",text,inputMode==="voice"?"VOZ":"TEXTO");log("ORDER "+text);
   try{
     const context=buildContext();
-    const interpreted=await interpretCommand({text,context,profileId:state.profileId,inputMode});
-    $("#ai-badge").textContent=interpreted.provider==="gemini"?"GEMINI":interpreted.provider==="fallback"?"GEMINI → FALLBACK":"INTÉRPRETE LOCAL";
+    const interpreted=await interpretCommand({text,context,profileId:state.profileId,inputMode,routingMode:state.routingMode});
+    $("#ai-badge").textContent=interpreted.provider==="gemini"?(interpreted.escalated?"GEMINI 3.8 · ESCALADO":"GEMINI · "+(interpreted.modelUsed||"")):interpreted.provider==="fallback"?"GEMINI → FALLBACK":"INTÉRPRETE LOCAL";
     if(interpreted.warning)addMessage("system",interpreted.warning);
     const validation=validateCommandPlan(interpreted.plan,state.profileId);
     if(!validation.ok){
@@ -580,6 +581,7 @@ async function copyExerciseLog(){
 function bind(){
   $("#scenario-select").onchange=()=>{if($("#mode-select").value==="free")resetScenario("free:scenario-select",$("#scenario-select").value)};
   $("#computer-select").onchange=()=>{state.profileId=$("#computer-select").value;addMessage("system","Computadora activa: "+profile().name);log("COMPUTER PROFILE "+state.profileId);render()};
+  $("#model-route-select").onchange=()=>{state.routingMode=$("#model-route-select").value;localStorage.setItem("sensorAI.routingMode",state.routingMode);addMessage("system","Ruta Gemini: "+($("#model-route-select").selectedOptions[0]?.textContent||state.routingMode));log("MODEL ROUTE "+state.routingMode);render()};
   $("#reset-sim").onclick=()=>resetScenario("manual",state.sim.scenarioId);
   $("#send-command").onclick=()=>{const el=$("#command-input"),v=el.value;el.value="";submitCommand(v,"text")};
   $("#command-input").addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&e.key==="Enter"){const v=e.currentTarget.value;e.currentTarget.value="";submitCommand(v,"text")}});
@@ -593,6 +595,8 @@ async function load(){
   $("#scenario-select").innerHTML=state.scenarios.scenarios.map(x=>'<option value="'+esc(x.id)+'">'+esc(x.title)+'</option>').join("");
   $("#scenario-select").value=state.sim.scenarioId;
   $("#computer-select").value=state.profileId;
+  state.routingMode=localStorage.getItem("sensorAI.routingMode")||"auto";
+  $("#model-route-select").value=state.routingMode;
   bind();
   const voice=createVoiceController({
     onTranscript:(text,isFinal)=>{
