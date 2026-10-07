@@ -1,7 +1,7 @@
 {
   "subject": "Federación: fundamentos políticos y sociales",
   "code": "FED-401",
-  "version": "1.3",
+  "version": "1.4",
   "status": "developed_content",
   "sourceRepository": "robdor80/Videojuego_StarTrek",
   "sourceCourse": "gameplay/careers/academy_path/curriculum/fourth_class/courses/FED-401/course.json",
@@ -12,7 +12,9 @@
     "lore/federation/member_worlds/README.md",
     "lore/federation/member_worlds/founding_members.json",
     "gameplay/diplomacy/federation_political_state.json",
-    "validation/consistency/federation_political_state_rules.md"
+    "validation/consistency/federation_political_state_rules.md",
+    "gameplay/careers/academy_path/cultural_operations_reference_v0.1.json",
+    "gameplay/species/culture_socialization_contract.json"
   ],
   "modules": [
     {
@@ -287,6 +289,23 @@
         {
           "type": "p",
           "text": "Dos personas de la misma especie o mundo pueden discrepar política, social o personalmente y aplicar de forma distinta una misma tradición."
+        },
+        {
+          "type": "heading",
+          "text": "Puente hacia XEN-302"
+        },
+        {
+          "type": "p",
+          "text": "En Año 1 no se memorizan protocolos de todas las culturas. Sí se fija la regla que después desarrolla **XEN-302**: una norma cultural puede orientar la preparación, pero no determina la personalidad individual."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "**Vulcano:** disciplina lógica ≠ ausencia de emociones.",
+            "**Andoriano:** directividad ≠ agresión automática.",
+            "**Aenar:** ceguera ≠ incapacidad; telepatía exige límites y consentimiento.",
+            "**Tellarita:** tono argumentativo ≠ hostilidad automática."
+          ]
         },
         {
           "type": "callout",
