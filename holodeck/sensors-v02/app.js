@@ -123,7 +123,7 @@ function renderContacts(){
     return '<div class="'+cls+'" data-contact="'+esc(c.id)+'">'+
       '<div class="contact-top"><strong>'+esc(c.id)+'</strong><strong>'+(isLost?"ÚLT. ":"")+Math.round(c.confidence)+'%</strong></div>'+
       '<span>'+esc(identity)+'</span>'+secondary+'<div class="contact-meta">'+
-      (isLost?'<span class="mini-tag lost-tag">CONTACTO PERDIDO</span>':'')+
+      (isLost?'<span class="mini-tag lost-tag">'+(c.initiallyLost?"PÉRDIDA PREVIA":"CONTACTO PERDIDO")+'</span>':'')+
       (needsAttention?'<span class="mini-tag alert-tag">NUEVO · DESCONOCIDO</span>':'')+
       (isPriority?'<span class="mini-tag priority-tag">PRIORITARIO</span>':'')+
       (c.affiliation?'<span class="mini-tag">'+esc(c.affiliation)+'</span>':'')+
