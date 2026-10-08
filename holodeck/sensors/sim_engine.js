@@ -56,12 +56,14 @@ const PASSIVE_EXPECTED_LOSS_REASONS=new Set([
 function passiveRecognition(contact){
   const classification=String(contact.classification||"").toLowerCase();
   const identified=classification!=="no identificado"&&classification!=="desconocido"&&classification!=="unknown";
-  const transponderPresent=!!contact.transponderRecognized||(contact.signatures||[]).includes("transponder");
-  const transponderRecognized=contact.transponderRecognized===true||(transponderPresent&&identified);
+  const transponderLabel=contact.transponderLabel||contact.transponder?.label||null;
+  const transponderPresent=contact.transponderPresent===true||contact.transponderRecognized===true||!!transponderLabel||(contact.signatures||[]).includes("transponder");
+  const transponderRecognized=contact.transponderRecognized===true||!!transponderLabel;
   return {
     identified,
     transponderPresent,
     transponderRecognized,
+    transponderLabel,
     identificationSource:transponderRecognized?"transponder":identified?"sensor_correlation":"unknown"
   };
 }
@@ -146,7 +148,7 @@ export function passiveSurveillanceCycle(state,options={}){
       signatures:[...(c.signatures||[])],
       transponderPresent:recognition.transponderPresent,
       transponderRecognized:recognition.transponderRecognized,
-      transponderLabel:c.transponderLabel||c.transponder?.label||null,
+      transponderLabel:recognition.transponderLabel,
       identificationSource:recognition.identificationSource,
       score
     });
