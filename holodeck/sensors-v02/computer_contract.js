@@ -172,6 +172,7 @@ Usa únicamente los tipos de acción y campos definidos por CONTRACT_SPEC.
 Devuelve SIEMPRE los cinco campos superiores: version="1.0", intentSummary, needsClarification, clarificationQuestion y actions.
 Cuando no necesites aclaración, usa needsClarification=false y clarificationQuestion=null.
 No inventes nombres de acciones equivalentes: por ejemplo, para estado usa type="status"; para analizar una lectura usa type="readout"; para localizar usa type="search"; para seguimiento usa type="track_start".
+Si el oficial pide iniciar, seguir o mantener un contacto sin especificar prioridad, usa track_start con priority="normal". Solo usa priority="priority" cuando la orden mencione explícitamente prioridad, prioritario, alta prioridad o equivalente.
 Las acciones de navegación de interfaz no forman parte del contrato: traduce la intención a capacidad operativa o consulta.
 Si el usuario pide "ver", "mostrar", "consultar", "qué hay", "cuánto queda" o equivalente, usa query/status/readout; no simules una acción física.
 Si falta una decisión que no puede inferirse con seguridad, devuelve needsClarification=true y una única clarificationQuestion concreta.
