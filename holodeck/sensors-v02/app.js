@@ -190,8 +190,11 @@ function renderContacts(){
 function renderConversation(){
   const box=$("#conversation");if(!box)return;
   const roleLabel=role=>role==="user"?"OFICIAL":role==="computer"?"COMPUTADORA":role==="bridge"?"OFICIAL AL MANDO":"SISTEMA";
-  box.innerHTML=state.conversation.map(m=>'<div class="message '+esc(m.role)+'"><small>'+esc(roleLabel(m.role))+(m.meta?" · "+esc(m.meta):"")+'</small>'+esc(m.text)+'</div>').join("");
-  box.scrollTop=box.scrollHeight;
+  const visible=state.conversation.slice(-5);
+  const hiddenCount=Math.max(0,state.conversation.length-visible.length);
+  box.innerHTML=
+    (hiddenCount?'<div class="conversation-history-note">'+hiddenCount+' comunicaciones anteriores conservadas en historial</div>':'')+
+    visible.map(m=>'<div class="message '+esc(m.role)+'"><small>'+esc(roleLabel(m.role))+(m.meta?" · "+esc(m.meta):"")+'</small>'+esc(m.text)+'</div>').join("");
 }
 function renderQuickActions(){
   const c=selectedContact(),p=profile();
