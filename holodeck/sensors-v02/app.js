@@ -113,11 +113,16 @@ function renderContacts(){
   $("#contacts-list").innerHTML=list.map(c=>{
     const needsAttention=unknownAttention.has(c.id);
     const cls=["contact-card",c.id===state.selectedContactId?"active":"",needsAttention?"routine-alert":""].filter(Boolean).join(" ");
+    const identity=c.transponderRecognized&&c.transponderLabel?c.transponderLabel:c.classification;
+    const secondary=c.transponderRecognized&&c.transponderLabel&&c.classification&&c.classification!==identity
+      ?'<span class="contact-classification">'+esc(c.classification)+'</span>'
+      :'';
     return '<div class="'+cls+'" data-contact="'+esc(c.id)+'">'+
       '<div class="contact-top"><strong>'+esc(c.id)+'</strong><strong>'+Math.round(c.confidence)+'%</strong></div>'+
-      '<span>'+esc(c.classification)+'</span><div class="contact-meta">'+
+      '<span>'+esc(identity)+'</span>'+secondary+'<div class="contact-meta">'+
       (needsAttention?'<span class="mini-tag alert-tag">NUEVO · DESCONOCIDO</span>':'')+
       (c.transponderRecognized?'<span class="mini-tag">transpondedor reconocido</span>':'')+
+      (!c.transponderRecognized&&(c.signatures||[]).includes("transponder")?'<span class="mini-tag">transpondedor detectado</span>':'')+
       (c.tracked?'<span class="mini-tag">seguimiento '+esc(c.trackingPriority)+'</span>':'')+
       (c.marked?'<span class="mini-tag">marcado</span>':'')+
       (c.signatures||[]).slice(0,2).map(x=>'<span class="mini-tag">'+esc(x)+'</span>').join("")+
