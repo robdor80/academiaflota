@@ -62,3 +62,8 @@ button,input,select,textarea{font:inherit}.shell{min-width:1050px;min-height:100
 .cloud-model-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.cloud-actions{display:flex;justify-content:space-between;gap:10px;margin-top:16px}
 .cloud-message{min-height:20px;margin:0 18px 16px;padding:0;font-size:.68rem;color:#5f6f7b}.cloud-message[data-kind="error"]{color:var(--bad);font-weight:750}.cloud-message[data-kind="ok"]{color:var(--ok);font-weight:750}
 @media(max-width:700px){.cloud-model-grid{grid-template-columns:1fr}.cloud-actions{flex-direction:column-reverse}.cloud-actions button{width:100%}}
+
+.world-test-launcher{display:flex;align-items:center;gap:7px;min-width:0}
+.world-test-launcher>span{font-size:.58rem;font-weight:900;letter-spacing:.08em;color:#d9bf7a}
+.world-test-launcher select{max-width:260px;border:1px solid #536a7b;background:#10283b;color:#dce7ed;border-radius:6px;padding:7px 9px;font-size:.68rem;font-weight:750}
+.world-test-launcher select:disabled,.world-test-launcher button:disabled{opacity:.6}
