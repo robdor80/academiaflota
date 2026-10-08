@@ -853,6 +853,21 @@ function routineWatchTick(){
         text:"ALERTA: "+prev.id+" ha desaparecido súbitamente de la solución de sensores. Última confianza "+prev.confidence+"% · última distancia "+Math.round(prev.distanceKm||0)+" km · último rumbo "+(prev.vector||"sin resolver")+" · última velocidad "+(prev.velocity||"sin resolver")+". Causa no determinada."
       });
     }else if(loss.expected){
+      const expectedMessages={
+        out_of_range:prev.id+" ha salido del alcance pasivo de sensores.",
+        known_interference:prev.id+" se ha perdido dentro de una zona de interferencia conocida.",
+        occlusion:prev.id+" ha quedado oculto por una oclusión conocida.",
+        warp_departure:prev.id+" ha entrado en curvatura. Contacto perdido por salida de seguimiento normal.",
+        docked:prev.id+" ya no genera una solución independiente de sensores al quedar atracado.",
+        landed:prev.id+" ya no genera una solución orbital independiente tras el aterrizaje.",
+        scheduled_shutdown:prev.id+" ha dejado de emitir conforme al apagado previsto.",
+        sensor_shadow:prev.id+" ha entrado en una sombra sensorial conocida."
+      };
+      events.push({
+        severity:"routine",
+        type:"expected_contact_loss",
+        text:expectedMessages[reason]||("Contacto "+prev.id+" perdido por una causa sensorial conocida: "+reason+".")
+      });
       log("ROUTINE WATCH · pérdida explicable "+prev.id+" · "+(reason||"sin detalle"));
     }else{
       events.push({
@@ -890,7 +905,9 @@ function routineWatchTick(){
       log("ROUTINE WATCH "+event.type+" · "+event.text);
     }
   }else{
-    state.routineWatch.status="Sin novedades";
+    state.routineWatch.status=state.routineWatch.alertCount
+      ?state.routineWatch.alertCount+" alerta(s) registrada(s)"
+      :"Sin novedades";
   }
   render();
 }
@@ -1022,12 +1039,83 @@ function scheduleAnomalousLossTest(){
   state.worldTestTimers.push(timer);
 }
 
+function scheduleWarpDepartureTest(){
+  if(!state.sim)return;
+  let contact=state.sim.contacts.find(c=>c.id==="C-T04");
+  if(!contact){
+    contact={
+      id:"C-T04",
+      known:true,
+      status:"identified",
+      classification:"Nave mercante de la Federación",
+      kind:"starship",
+      distanceKm:64000,
+      confidence:95,
+      signal:87,
+      signatures:["transponder","warp","em"],
+      marked:false,
+      vector:"082 / +01",
+      velocity:"0,09c",
+      mass:"3,1 ×10⁶ t ±9%",
+      dimensions:"228 × 81 × 54 m",
+      lifeforms:"96 compatibles",
+      band:"2,4 THz",
+      energy:"Patrón Federación estable",
+      subspace:"Firma warp estable",
+      patternMatch:98,
+      transponderRecognized:true,
+      transponderLabel:"SS Meridian · NAR-58217",
+      affiliation:"Federación",
+      military:false,
+      operationalPriority:"normal",
+      worldPresent:true,
+      sensorVisible:true,
+      history:[],
+      tracked:false,
+      trackingMode:null,
+      trackingPriority:"normal",
+      lastObserved:null
+    };
+    state.sim.contacts.push(contact);
+  }else{
+    Object.assign(contact,{
+      known:true,status:"identified",distanceKm:64000,confidence:95,signal:87,
+      vector:"082 / +01",velocity:"0,09c",transponderRecognized:true,
+      transponderLabel:"SS Meridian · NAR-58217",affiliation:"Federación",
+      military:false,operationalPriority:"normal",worldPresent:true,sensorVisible:true
+    });
+  }
+  delete contact.lossReason;
+  delete contact.sensorLossReason;
+  syncRoutineWatchBaseline();
+  render();
+  beginWorldTest("2/8 · salida normal a curvatura de C-T04",12);
+
+  const timer=setTimeout(()=>{
+    const c=state.sim?.contacts?.find(x=>x.id==="C-T04");
+    if(!c)return;
+    c.velocity="warp 2,1";
+    c.subspace="Transición a curvatura confirmada";
+    c.lossReason="warp_departure";
+    c.sensorLossReason="warp_departure";
+    c.sensorVisible=false;
+    c.worldPresent=true;
+    log("WORLD STATE · C-T04 entra en curvatura · pérdida esperada warp_departure");
+    const button=$("#world-test-run");
+    if(button)button.textContent="ESPERANDO CICLO DE SENSORES…";
+    const release=setTimeout(()=>setWorldTestIdle(),6000);
+    state.worldTestTimers.push(release);
+  },12000);
+  state.worldTestTimers.push(timer);
+}
+
 function launchWorldTest(){
   const selected=$("#world-test-select")?.value;
   if(selected==="known")return scheduleKnownLongRangeContactTest();
   if(selected==="unknown")return scheduleUnknownLongRangeContactTest();
   if(selected==="klingon")return scheduleKlingonLongRangeContactTest();
   if(selected==="anomalous-loss")return scheduleAnomalousLossTest();
+  if(selected==="warp-departure")return scheduleWarpDepartureTest();
 }
 
 function scheduleKnownLongRangeContactTest(){
