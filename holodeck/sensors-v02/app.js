@@ -911,6 +911,15 @@ function routineWatchTick(){
       state.routineWatch.newUnknownIds=state.routineWatch.newUnknownIds.filter(id=>id!==cur.id);
       events.push({severity:"routine",type:"classification_change",text:cur.id+" ha sido reclasificado como "+cur.classification+"."});
     }
+    if((!prev.transponderRecognized&&cur.transponderRecognized)||(prev.transponderLabel!==cur.transponderLabel&&cur.transponderLabel)){
+      state.routineWatch.newUnknownIds=state.routineWatch.newUnknownIds.filter(id=>id!==cur.id);
+      events.push({
+        severity:cur.operationalPriority==="high"?"warning":"routine",
+        type:"identity_resolved",
+        text:cur.id+" identificado: "+(cur.transponderLabel||cur.classification||"identidad resuelta")+
+          (cur.affiliation?" · "+cur.affiliation:"")+" · transpondedor reconocido."
+      });
+    }
     const thresholds=[40,60,80];
     if(thresholds.some(t=>prev.confidence<t&&cur.confidence>=t)){
       events.push({severity:"routine",type:"confidence_crossing",text:cur.id+" supera un umbral de confianza: "+cur.confidence+"%."});
