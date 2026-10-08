@@ -3,7 +3,7 @@ import {
   createSimulation,knownContacts,getContact,getArray,trackingUsed,effectivePenalty,
   createOperation,resolveScan,resolveSearch,startTracking,stopTracking,updateTracking,
   readout,applyInterference,applyConfig,restoreStandard,loadProfile,saveProfile,deleteProfile,runDiagnostic,calibrateArray,
-  requestEngineering,makePowerResponse,transferData,saveReading,compareReadings
+  requestEngineering,makePowerResponse,transferData,saveReading,compareReadings,passiveSurveillanceCycle
 } from "../sensors/sim_engine.js";
 import {COMPUTER_PROFILES,validateCommandPlan,planPreview} from "./computer_contract.js";
 import {interpretCommand,aiEndpoint,localInterpret} from "./ai_gateway.js";
@@ -28,7 +28,9 @@ const state={
     checks:0,
     alertCount:0,
     reportTo:"Oficial al mando del puente",
-    baseline:null
+    baseline:null,
+    newUnknownIds:[],
+    lastCycle:null
   }
 };
 
@@ -78,7 +80,7 @@ function resetScenario(source="manual",scenarioId=null){
   state.sim=createSimulation(sc);
   state.selectedContactId=state.sim.selectedContactId;
   state.watchers=[];state.attention=null;state.lastDetails=[];state.lastPlan=null;state.lastObservationBatch=null;
-  state.routineWatch.status="Sin novedades";state.routineWatch.alertCount=0;state.routineWatch.baseline=null;
+  state.routineWatch.status="Sin novedades";state.routineWatch.alertCount=0;state.routineWatch.baseline=null;state.routineWatch.newUnknownIds=[];state.routineWatch.lastCycle=null;
   if($("#scenario-select"))$("#scenario-select").value=sc.id;
   addMessage("system","Escenario reiniciado · "+sc.title);
   log("RESET scenario · "+source+" · "+sc.id);
@@ -104,15 +106,22 @@ function renderComputer(){
 }
 function renderContacts(){
   const list=knownContacts(state.sim);
-  $("#contacts-list").innerHTML=list.map(c=>'<div class="contact-card '+(c.id===state.selectedContactId?"active":"")+'" data-contact="'+esc(c.id)+'">'+
-    '<div class="contact-top"><strong>'+esc(c.id)+'</strong><strong>'+Math.round(c.confidence)+'%</strong></div>'+
-    '<span>'+esc(c.classification)+'</span><div class="contact-meta">'+
-    (c.tracked?'<span class="mini-tag">seguimiento '+esc(c.trackingPriority)+'</span>':'')+
-    (c.marked?'<span class="mini-tag">marcado</span>':'')+
-    (c.signatures||[]).slice(0,2).map(x=>'<span class="mini-tag">'+esc(x)+'</span>').join("")+
-    '</div></div>').join("");
+  const unknownAttention=new Set(state.routineWatch.newUnknownIds||[]);
+  $("#contacts-list").innerHTML=list.map(c=>{
+    const needsAttention=unknownAttention.has(c.id);
+    const cls=["contact-card",c.id===state.selectedContactId?"active":"",needsAttention?"routine-alert":""].filter(Boolean).join(" ");
+    return '<div class="'+cls+'" data-contact="'+esc(c.id)+'">'+
+      '<div class="contact-top"><strong>'+esc(c.id)+'</strong><strong>'+Math.round(c.confidence)+'%</strong></div>'+
+      '<span>'+esc(c.classification)+'</span><div class="contact-meta">'+
+      (needsAttention?'<span class="mini-tag alert-tag">NUEVO · DESCONOCIDO</span>':'')+
+      (c.tracked?'<span class="mini-tag">seguimiento '+esc(c.trackingPriority)+'</span>':'')+
+      (c.marked?'<span class="mini-tag">marcado</span>':'')+
+      (c.signatures||[]).slice(0,2).map(x=>'<span class="mini-tag">'+esc(x)+'</span>').join("")+
+      '</div></div>';
+  }).join("");
   document.querySelectorAll("[data-contact]").forEach(el=>el.onclick=()=>{
     state.selectedContactId=el.dataset.contact;state.sim.selectedContactId=el.dataset.contact;
+    state.routineWatch.newUnknownIds=(state.routineWatch.newUnknownIds||[]).filter(id=>id!==el.dataset.contact);
     log("SELECT "+el.dataset.contact);emitTeacherEvent("SELECT_CONTACT",{contactId:el.dataset.contact});
     render();
   });
@@ -146,7 +155,8 @@ function renderStatus(){
     (externalShipState()?line("Estado global","Conectado","ok"):line("Estado global","Proveedor preparado"))+
     '</section>'+
     '<section class="status-card"><h3>GUARDIA DE SENSORES</h3>'+
-    line("Vigilancia",state.routineWatch.enabled?state.routineWatch.mode:"Detenida",state.routineWatch.enabled?"ok":"warn")+
+    line("Vigilancia",state.routineWatch.enabled?"24/7 · "+state.routineWatch.mode:"Detenida",state.routineWatch.enabled?"ok":"warn")+
+    line("Cobertura","Corto + largo alcance")+
     line("Estado",state.routineWatch.status,state.routineWatch.alertCount?"warn":"ok")+
     line("Informa a",state.routineWatch.reportTo)+
     line("Último ciclo",state.routineWatch.lastCheck||"Preparando")+
@@ -729,18 +739,18 @@ async function submitCommand(text,inputMode="text"){
 
 function routineWatchSnapshot(){
   if(!state.sim)return null;
-  const sim=state.sim;
+  const cycle=passiveSurveillanceCycle(state.sim);
+  state.routineWatch.lastCycle=cycle;
   return {
-    contacts:knownContacts(sim).map(c=>({
-      id:c.id,status:c.status,classification:c.classification,
-      confidence:Math.round(c.confidence),vector:c.vector,velocity:c.velocity
-    })),
+    time:cycle.time,
+    contacts:cycle.observations.map(x=>({...x})),
+    nonDetections:cycle.nonDetections.map(x=>({...x})),
     sensors:{
-      array:sim.activeArray,
-      arrayAvailable:!!getArray(sim)?.available,
-      integrity:Number(getArray(sim)?.integrity||0),
-      calibration:Number(getArray(sim)?.calibration||0),
-      interference:effectivePenalty(sim)
+      array:state.sim.activeArray,
+      arrayAvailable:!!getArray(state.sim)?.available,
+      integrity:Number(getArray(state.sim)?.integrity||0),
+      calibration:Number(getArray(state.sim)?.calibration||0),
+      interference:effectivePenalty(state.sim)
     }
   };
 }
@@ -754,34 +764,87 @@ function syncRoutineWatchBaseline(){
 }
 
 function routineWatchTick(){
-  if(!state.routineWatch.enabled||!state.sim||state.busy)return;
+  if(!state.routineWatch.enabled||!state.sim)return;
   const current=routineWatchSnapshot();
   const previous=state.routineWatch.baseline;
   if(!previous){syncRoutineWatchBaseline();renderStatus();return}
 
   const events=[];
   const prevMap=new Map(previous.contacts.map(x=>[x.id,x]));
+  const currentMap=new Map(current.contacts.map(x=>[x.id,x]));
+  const nonDetectMap=new Map((current.nonDetections||[]).map(x=>[x.id,x]));
+
   for(const cur of current.contacts){
     const prev=prevMap.get(cur.id);
     if(!prev){
-      events.push("Nuevo contacto detectable: "+cur.id+" · "+cur.classification+" · "+cur.confidence+"%.");
+      const unknown=cur.identificationSource==="unknown"||cur.status==="unidentified"||String(cur.classification||"").toLowerCase().includes("no identificado");
+      if(unknown){
+        if(!state.routineWatch.newUnknownIds.includes(cur.id))state.routineWatch.newUnknownIds.push(cur.id);
+        events.push({
+          severity:"warning",
+          type:"new_unknown_contact",
+          text:"Nuevo contacto desconocido: "+cur.id+" · confianza "+cur.confidence+"% · distancia "+Math.round(cur.distanceKm||0)+" km · rumbo "+(cur.vector||"sin resolver")+"."
+        });
+      }else{
+        const source=cur.transponderRecognized?"transpondedor reconocido":"correlación de sensores";
+        events.push({
+          severity:"routine",
+          type:"new_identified_contact",
+          text:"Nuevo contacto identificado: "+cur.id+" · "+cur.classification+" · "+source+" · confianza "+cur.confidence+"% · distancia "+Math.round(cur.distanceKm||0)+" km · rumbo "+(cur.vector||"sin resolver")+"."
+        });
+      }
       continue;
     }
-    if(prev.status!==cur.status&&cur.status==="lost")events.push("Contacto perdido: "+cur.id+".");
-    if(prev.vector!==cur.vector)events.push(cur.id+" ha cambiado de rumbo: "+cur.vector+".");
-    if(prev.velocity!==cur.velocity)events.push(cur.id+" ha cambiado de velocidad: "+cur.velocity+".");
-    if(prev.classification!==cur.classification)events.push(cur.id+" reclasificado como "+cur.classification+".");
+
+    if(prev.vector!==cur.vector){
+      events.push({severity:"routine",type:"course_change",text:cur.id+" ha cambiado de rumbo: "+cur.vector+"."});
+    }
+    if(prev.velocity!==cur.velocity){
+      events.push({severity:"routine",type:"velocity_change",text:cur.id+" ha cambiado de velocidad: "+cur.velocity+"."});
+    }
+    if(prev.classification!==cur.classification){
+      state.routineWatch.newUnknownIds=state.routineWatch.newUnknownIds.filter(id=>id!==cur.id);
+      events.push({severity:"routine",type:"classification_change",text:cur.id+" ha sido reclasificado como "+cur.classification+"."});
+    }
     const thresholds=[40,60,80];
     if(thresholds.some(t=>prev.confidence<t&&cur.confidence>=t)){
-      events.push(cur.id+" supera un umbral de confianza: "+cur.confidence+"%.");
+      events.push({severity:"routine",type:"confidence_crossing",text:cur.id+" supera un umbral de confianza: "+cur.confidence+"%."});
+    }
+  }
+
+  for(const prev of previous.contacts){
+    if(currentMap.has(prev.id))continue;
+    const loss=nonDetectMap.get(prev.id)||{};
+    const contact=getContact(state.sim,prev.id);
+    const reason=loss.reason||contact?.sensorLossReason||contact?.lossReason||null;
+    const highConfidence=Number(prev.confidence)>=60;
+    const anomalous=highConfidence&&!loss.expected&&!reason;
+
+    if(contact)contact.status="lost";
+
+    if(anomalous){
+      state.routineWatch.newUnknownIds=state.routineWatch.newUnknownIds.filter(id=>id!==prev.id);
+      events.push({
+        severity:"critical",
+        type:"anomalous_contact_loss",
+        text:"ALERTA: "+prev.id+" ha desaparecido súbitamente de la solución de sensores. Última confianza "+prev.confidence+"% · última distancia "+Math.round(prev.distanceKm||0)+" km · último rumbo "+(prev.vector||"sin resolver")+" · última velocidad "+(prev.velocity||"sin resolver")+". Causa no determinada."
+      });
+    }else if(loss.expected){
+      log("ROUTINE WATCH · pérdida explicable "+prev.id+" · "+(reason||"sin detalle"));
+    }else{
+      events.push({
+        severity:"warning",
+        type:"contact_loss",
+        text:"Contacto perdido: "+prev.id+". La Computer no dispone de una causa confirmada."
+      });
     }
   }
 
   if(previous.sensors.arrayAvailable&&!current.sensors.arrayAvailable){
-    events.push("La matriz de sensores activa ha dejado de estar disponible.");
+    events.push({severity:"critical",type:"array_failure",text:"La matriz de sensores activa ha dejado de estar disponible."});
   }
   if(previous.sensors.interference<=28&&current.sensors.interference>28){
-    events.push("Interferencia de sensores fuera de tolerancia: "+current.sensors.interference+" puntos.");
+    events.push({severity:"warning",type:"interference",text:"Interferencia de sensores fuera de tolerancia: "+current.sensors.interference+" puntos."});
   }
 
   state.routineWatch.baseline=current;
@@ -789,14 +852,22 @@ function routineWatchTick(){
   state.routineWatch.checks++;
 
   if(events.length){
-    state.routineWatch.status=events.length+" novedad(es)";
-    state.routineWatch.alertCount+=events.length;
-    addMessage("computer",events.join(" "),"VIGILANCIA AUTOMÁTICA");
-    log("ROUTINE WATCH ALERT · "+events.join(" | "));
+    const important=events.filter(e=>e.severity!=="routine");
+    state.routineWatch.status=important.length?important.length+" alerta(s)":events.length+" novedad(es)";
+    state.routineWatch.alertCount+=important.length;
+    for(const event of events){
+      const meta=event.type==="anomalous_contact_loss"
+        ?"ALERTA · PÉRDIDA ANÓMALA"
+        :event.type==="new_unknown_contact"
+          ?"NUEVO CONTACTO · DESCONOCIDO"
+          :"VIGILANCIA AUTOMÁTICA";
+      addMessage("computer",event.text,meta);
+      log("ROUTINE WATCH "+event.type+" · "+event.text);
+    }
   }else{
     state.routineWatch.status="Sin novedades";
   }
-  renderStatus();
+  render();
 }
 
 function checkWatchers(){
@@ -853,7 +924,7 @@ async function load(){
     onStatus:(text,listening)=>{$("#voice-status").textContent=text;$("#voice-button").classList.toggle("listening",!!listening);$("#voice-button").textContent=listening?"■ Escuchando":"🎙 Voz"}
   });
   $("#voice-button").onclick=()=>voice.start();
-  addMessage("computer","Computadora de Sensores disponible. Vigilancia pasiva continua activa. Puede dar una orden por texto o por voz.");
+  addMessage("computer","Computadora de Sensores disponible. Vigilancia pasiva automática 24/7 de corto y largo alcance activa. Puede dar una orden por texto o por voz.");
   syncRoutineWatchBaseline();
   render();
   initTeacherMode({resetScenario,logTeacher:teacherLog});
