@@ -81,8 +81,9 @@ function resetScenario(source="manual",scenarioId=null){
   state.sim=createSimulation(sc);
   state.selectedContactId=state.sim.selectedContactId;
   state.watchers=[];state.attention=null;state.lastDetails=[];state.lastPlan=null;state.lastObservationBatch=null;
-  for(const id of state.worldTestTimers)clearTimeout(id);
+  for(const id of state.worldTestTimers){clearTimeout(id);clearInterval(id)}
   state.worldTestTimers=[];
+  setWorldTestIdle();
   state.routineWatch.status="Sin novedades";state.routineWatch.alertCount=0;state.routineWatch.baseline=null;state.routineWatch.newUnknownIds=[];state.routineWatch.lastCycle=null;
   if($("#scenario-select"))$("#scenario-select").value=sc.id;
   addMessage("system","Escenario reiniciado · "+sc.title);
@@ -918,6 +919,112 @@ async function copyExerciseLog(){
   try{await navigator.clipboard.writeText(text);status.textContent="✓ Log copiado";setTimeout(()=>status.textContent="",1800)}catch{status.textContent="No se pudo copiar"}
 }
 
+function setWorldTestIdle(){
+  const select=$("#world-test-select"),button=$("#world-test-run");
+  if(select)select.disabled=false;
+  if(button){button.disabled=false;button.textContent="EJECUTAR PRUEBA";}
+}
+
+function beginWorldTest(label,seconds){
+  const select=$("#world-test-select"),button=$("#world-test-run");
+  if(select)select.disabled=true;
+  let remaining=seconds;
+  if(button){button.disabled=true;button.textContent="EN CURSO · "+remaining+" s";}
+  const countdown=setInterval(()=>{
+    remaining--;
+    if(button&&remaining>0)button.textContent="EN CURSO · "+remaining+" s";
+    if(remaining<=0){clearInterval(countdown)}
+  },1000);
+  state.worldTestTimers.push(countdown);
+  log("WORLD TEST · "+label+" · cambio de World State previsto en "+seconds+" s");
+}
+
+function scheduleAnomalousLossTest(){
+  if(!state.sim)return;
+  let contact=state.sim.contacts.find(c=>c.id==="C-T03");
+  if(!contact){
+    contact={
+      id:"C-T03",
+      known:true,
+      status:"identified",
+      classification:"Crucero de ataque clase Vor'cha",
+      kind:"starship",
+      distanceKm:78000,
+      confidence:92,
+      signal:90,
+      signatures:["transponder","warp","subspace","energy"],
+      marked:false,
+      vector:"316 / -04",
+      velocity:"0,17c",
+      mass:"4,8 ×10⁶ t ±11%",
+      dimensions:"481 × 341 × 106 m",
+      lifeforms:"Lecturas compatibles con dotación numerosa",
+      band:"Subespacio militar",
+      energy:"Reactor materia/antimateria",
+      subspace:"Firma warp klingon correlacionada",
+      patternMatch:97,
+      transponderRecognized:true,
+      transponderLabel:"IKS Vornak",
+      affiliation:"Imperio Klingon",
+      military:true,
+      operationalPriority:"high",
+      worldPresent:true,
+      sensorVisible:true,
+      history:[],
+      tracked:false,
+      trackingMode:null,
+      trackingPriority:"normal",
+      lastObserved:null
+    };
+    state.sim.contacts.push(contact);
+  }else{
+    Object.assign(contact,{
+      known:true,
+      status:"identified",
+      classification:"Crucero de ataque clase Vor'cha",
+      distanceKm:78000,
+      confidence:92,
+      signal:90,
+      vector:"316 / -04",
+      velocity:"0,17c",
+      transponderRecognized:true,
+      transponderLabel:"IKS Vornak",
+      affiliation:"Imperio Klingon",
+      military:true,
+      operationalPriority:"high",
+      worldPresent:true,
+      sensorVisible:true
+    });
+  }
+  delete contact.sensorLossReason;
+  delete contact.lossReason;
+
+  state.routineWatch.newUnknownIds=state.routineWatch.newUnknownIds.filter(id=>id!=="C-T03");
+  syncRoutineWatchBaseline();
+  render();
+  beginWorldTest("1/8 · desaparición anómala de C-T03",12);
+
+  const timer=setTimeout(()=>{
+    const c=state.sim?.contacts?.find(x=>x.id==="C-T03");
+    if(!c)return;
+    c.sensorVisible=false;
+    c.worldPresent=true;
+    delete c.sensorLossReason;
+    delete c.lossReason;
+    log("WORLD STATE · C-T03 deja de ser detectable súbitamente · sin causa sensorial registrada");
+    setWorldTestIdle();
+  },12000);
+  state.worldTestTimers.push(timer);
+}
+
+function launchWorldTest(){
+  const selected=$("#world-test-select")?.value;
+  if(selected==="known")return scheduleKnownLongRangeContactTest();
+  if(selected==="unknown")return scheduleUnknownLongRangeContactTest();
+  if(selected==="klingon")return scheduleKlingonLongRangeContactTest();
+  if(selected==="anomalous-loss")return scheduleAnomalousLossTest();
+}
+
 function scheduleKnownLongRangeContactTest(){
   if(!state.sim)return;
   const existing=state.sim.contacts.find(c=>c.id==="C-T01");
@@ -953,9 +1060,8 @@ function scheduleKnownLongRangeContactTest(){
   state.sim.contacts.push(testContact);
   syncRoutineWatchBaseline();
 
-  const button=$("#world-test-known");
-  if(button){button.disabled=true;button.textContent="PRUEBA PROGRAMADA · 15 s";}
-  log("WORLD TEST · C-T01 creado fuera de alcance a 145000 km · entrada prevista en 15 s");
+  beginWorldTest("contacto conocido C-T01",15);
+  log("WORLD TEST · C-T01 creado fuera de alcance a 145000 km");
 
   const timer=setTimeout(()=>{
     const c=state.sim?.contacts?.find(x=>x.id==="C-T01");
@@ -965,7 +1071,7 @@ function scheduleKnownLongRangeContactTest(){
     c.vector="201 / -02";
     c.velocity="0,09c";
     log("WORLD STATE · C-T01 entra en largo alcance a 94000 km");
-    if(button){button.disabled=false;button.textContent="PRUEBA · CONTACTO CONOCIDO";}
+    setWorldTestIdle();
   },15000);
   state.worldTestTimers.push(timer);
 }
@@ -1004,9 +1110,8 @@ function scheduleUnknownLongRangeContactTest(){
   state.sim.contacts.push(testContact);
   syncRoutineWatchBaseline();
 
-  const button=$("#world-test-unknown");
-  if(button){button.disabled=true;button.textContent="PRUEBA PROGRAMADA · 15 s";}
-  log("WORLD TEST · C-T02 creado fuera de alcance a 138000 km · entrada prevista en 15 s");
+  beginWorldTest("contacto desconocido C-T02",15);
+  log("WORLD TEST · C-T02 creado fuera de alcance a 138000 km");
 
   const timer=setTimeout(()=>{
     const c=state.sim?.contacts?.find(x=>x.id==="C-T02");
@@ -1016,7 +1121,7 @@ function scheduleUnknownLongRangeContactTest(){
     c.vector="145 / +05";
     c.velocity="0,13c ±0,03c";
     log("WORLD STATE · C-T02 entra en largo alcance a 91000 km sin identificación");
-    if(button){button.disabled=false;button.textContent="PRUEBA · CONTACTO DESCONOCIDO";}
+    setWorldTestIdle();
   },15000);
   state.worldTestTimers.push(timer);
 }
@@ -1059,9 +1164,8 @@ function scheduleKlingonLongRangeContactTest(){
   state.sim.contacts.push(testContact);
   syncRoutineWatchBaseline();
 
-  const button=$("#world-test-klingon");
-  if(button){button.disabled=true;button.textContent="PRUEBA PROGRAMADA · 15 s";}
-  log("WORLD TEST · C-T03 nave klingon fuera de alcance a 152000 km · entrada prevista en 15 s");
+  beginWorldTest("nave klingon prioritaria C-T03",15);
+  log("WORLD TEST · C-T03 nave klingon fuera de alcance a 152000 km");
 
   const timer=setTimeout(()=>{
     const c=state.sim?.contacts?.find(x=>x.id==="C-T03");
@@ -1071,7 +1175,7 @@ function scheduleKlingonLongRangeContactTest(){
     c.vector="316 / -04";
     c.velocity="0,17c";
     log("WORLD STATE · C-T03 entra en largo alcance · transpondedor klingon reconocido");
-    if(button){button.disabled=false;button.textContent="PRUEBA · NAVE KLINGON";}
+    setWorldTestIdle();
   },15000);
   state.worldTestTimers.push(timer);
 }
@@ -1084,9 +1188,7 @@ function bind(){
   $("#send-command").onclick=()=>{const el=$("#command-input"),v=el.value;el.value="";submitCommand(v,"text")};
   $("#command-input").addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&e.key==="Enter"){const v=e.currentTarget.value;e.currentTarget.value="";submitCommand(v,"text")}});
   $("#toggle-log").onclick=()=>{$("#log-panel").hidden=!$("#log-panel").hidden};
-  $("#world-test-known").onclick=scheduleKnownLongRangeContactTest;
-  $("#world-test-unknown").onclick=scheduleUnknownLongRangeContactTest;
-  $("#world-test-klingon").onclick=scheduleKlingonLongRangeContactTest;
+  $("#world-test-run").onclick=launchWorldTest;
   $("#copy-exercise-log").onclick=copyExerciseLog;
 }
 async function load(){
