@@ -167,7 +167,7 @@ button{cursor:pointer}
   gap:7px;
   overflow:hidden;
 }
-.spatial-workspace{display:grid;grid-template-rows:auto minmax(0,1fr) auto}
+.spatial-workspace{display:grid;grid-template-rows:auto minmax(0,1fr) auto auto}
 .spatial-grid{
   min-height:0;
   height:100%;
@@ -403,6 +403,136 @@ button{cursor:pointer}
 .spatial-summary strong{color:#183b55;max-width:36%;overflow:hidden;text-overflow:ellipsis}
 .spatial-summary span{color:#5a6f7c}
 .spatial-summary .warn{color:var(--warn);font-weight:900}
+
+.contact-actions{
+  padding:6px 8px 8px;
+  border-top:1px solid #c2ced6;
+  background:#f5f8fa
+}
+.contact-actions-head{
+  min-height:20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  padding:0 2px 5px
+}
+.contact-actions-head strong{
+  color:#183b55;
+  font-size:.56rem;
+  letter-spacing:.1em
+}
+.contact-actions-head span{
+  min-width:0;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  color:#647985;
+  font-size:.51rem;
+  text-align:right
+}
+.contact-actions-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  grid-auto-rows:minmax(35px,auto);
+  gap:5px
+}
+.contact-actions-empty{
+  grid-column:1/-1;
+  min-height:35px;
+  display:grid;
+  place-items:center;
+  border:1px dashed #bdcbd4;
+  border-radius:6px;
+  color:#7a8993;
+  background:#fff;
+  font-size:.55rem
+}
+.contact-action{
+  min-width:0;
+  min-height:35px;
+  border:1px solid #aebfc9;
+  border-radius:6px;
+  padding:5px 8px;
+  background:#fff;
+  color:#26485c;
+  font:inherit;
+  font-size:.56rem;
+  font-weight:900;
+  letter-spacing:.035em;
+  line-height:1.05;
+  text-align:center;
+  cursor:pointer;
+  transition:background .12s ease,border-color .12s ease,transform .08s ease
+}
+.contact-action span{display:block;overflow:hidden;text-overflow:ellipsis}
+.contact-action small{
+  display:block;
+  margin-top:2px;
+  color:#7c8991;
+  font-size:.44rem;
+  font-weight:750;
+  letter-spacing:0;
+  line-height:1.05
+}
+.contact-action:hover:not(:disabled){background:#e7f0f5;border-color:#7293a6}
+.contact-action:active:not(:disabled){transform:translateY(1px)}
+.contact-action:disabled{cursor:not-allowed;opacity:.48}
+
+.action-primary{background:#eaf2f7;border-color:#7898aa;color:#173b57}
+.action-analysis{background:#f0f5f6;border-color:#8da6ad;color:#294f58}
+.action-navigation{background:#eef4f7;border-color:#8aa3b2;color:#2e5267}
+.action-watch{background:#fff6e3;border-color:#c8a35d;color:#725114}
+.action-science{background:#edf6f5;border-color:#86aaa6;color:#2d625d}
+.action-bridge{background:#f8f1df;border-color:#bda66c;color:#675522}
+.action-tactical{background:#f8ecec;border-color:#b88787;color:#743838}
+.action-muted{background:#f0f2f3;border-color:#a9b3b9;color:#56646d}
+
+.tracking-split{
+  position:relative;
+  min-width:0;
+  min-height:35px;
+  overflow:hidden;
+  border:1px solid #7898aa;
+  border-radius:6px;
+  background:#173b57
+}
+.tracking-split button{
+  position:absolute;
+  top:0;
+  bottom:0;
+  border:0;
+  color:#fff;
+  font:inherit;
+  font-size:.54rem;
+  font-weight:900;
+  letter-spacing:.025em;
+  cursor:pointer;
+  transition:filter .12s ease
+}
+.tracking-split button:hover:not(:disabled){filter:brightness(1.12)}
+.tracking-split button:disabled{cursor:not-allowed;opacity:.55}
+.tracking-split-left{
+  left:0;
+  width:67%;
+  padding:0 18% 0 7px;
+  background:#173b57;
+  clip-path:polygon(0 0,100% 0,84% 100%,0 100%);
+  text-align:left;
+  z-index:2
+}
+.tracking-split-right{
+  right:0;
+  width:44%;
+  padding:0 7px 0 20%;
+  background:#753e3e;
+  clip-path:polygon(22% 0,100% 0,100% 100%,0 100%);
+  text-align:right;
+  z-index:1
+}
+.tracking-split.priority{border-color:#b58b45;background:#8a641f}
+.tracking-split.priority .tracking-split-left{background:#8a641f}
+.tracking-split.priority .tracking-split-right{background:#753e3e}
 
 .computer-workspace{display:grid;grid-template-rows:auto minmax(0,1fr) auto auto;background:var(--computer)}
 .conversation{min-height:0;overflow:hidden;padding:8px 10px;display:flex;flex-direction:column;justify-content:flex-end;gap:6px}
