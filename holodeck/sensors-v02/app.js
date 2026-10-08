@@ -370,6 +370,24 @@ async function executeAction(a){
     emitTeacherEvent("READOUT_OPEN",{contactId:a.contactId,readout:a.readout});emitTeacherEvent("NAV_PRIMARY",{primaryId:"sensor_readout"});
     const secondaryMap={subspace_signature:"subspace_signature",signal_strength:"signal_strength",signature_type:"signature_type"};
     if(secondaryMap[a.readout])emitTeacherEvent("NAV_SECONDARY",{primaryId:"sensor_readout",secondaryId:secondaryMap[a.readout]});
+    if(r.current===false){
+      setDetails([
+        detail("Contacto",a.contactId),
+        detail("Estado","CONTACTO PERDIDO"),
+        detail("Lectura actual","No disponible"),
+        detail("Último dato registrado",r.lastValue),
+        detail("Última confianza",r.confidence+" %"),
+        detail("Procedencia",r.provenance)
+      ]);
+      return {
+        ok:false,
+        kind:"readout_unavailable",
+        text:a.contactId+" no está actualmente en sensores. No puedo realizar un análisis en tiempo real. Último dato registrado: "+r.lastValue+". Última confianza "+r.confidence+"%.",
+        contactId:a.contactId,
+        reason:"contact_lost",
+        lastValue:r.lastValue
+      };
+    }
     setDetails([detail("Contacto",a.contactId),detail("Lectura",a.readout),detail("Valor",r.value),detail("Confianza",r.confidence+" %"),detail("Incertidumbre",r.uncertainty)]);
     return {ok:true,text:a.contactId+": "+r.value+". Confianza "+r.confidence+"%."};
   }
@@ -665,7 +683,9 @@ async function executeAction(a){
     const c=a.contactId?getContact(sim,a.contactId):selectedContact();
     let text;
     if(a.scope==="tracking")text="Seguimiento "+trackingUsed(sim)+"/"+sim.tracking.capacity+".";
-    else if(a.scope==="contact"&&c)text=c.id+": "+c.classification+", confianza "+Math.round(c.confidence)+"%, "+(c.tracked?"en seguimiento.":"sin seguimiento.");
+    else if(a.scope==="contact"&&c)text=c.status==="lost"
+      ?c.id+": contacto perdido. Última clasificación "+c.classification+", última confianza "+Math.round(c.confidence)+"%."
+      :c.id+": "+c.classification+", confianza "+Math.round(c.confidence)+"%, "+(c.tracked?"en seguimiento.":"sin seguimiento.");
     else if(a.scope==="ship"&&externalShipState())text="Estado global de nave disponible en el proveedor conectado.";
     else text="Sensores "+(effectivePenalty(sim)>28?"degradados":"operativos")+". Potencia "+sim.power+"%. Matriz "+sim.activeArray+". Interferencia "+effectivePenalty(sim)+" puntos.";
     setDetails([detail("Consulta",a.scope),detail("Respuesta",text)]);return {ok:true,text};
