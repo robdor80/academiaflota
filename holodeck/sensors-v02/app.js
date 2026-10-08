@@ -182,6 +182,23 @@ function distanceLabel(v){
   if(v==null||Number.isNaN(Number(v)))return "Sin resolver";
   return Math.round(Number(v)).toLocaleString("es-ES")+" km";
 }
+function lostContactRecordSummary(c){
+  const s=contactSpatialSolution(c);
+  const identity=c.transponderRecognized&&c.transponderLabel?c.transponderLabel:(c.classification||c.id);
+  const parts=[
+    identity,
+    c.classification&&c.classification!==identity?c.classification:null,
+    c.energy?"energía: "+c.energy:null,
+    c.subspace?"firma subespacial: "+c.subspace:null,
+    "distancia "+distanceLabel(c.distanceKm),
+    "marcación "+angleLabel(s.bearingDeg),
+    "elevación "+angleLabel(s.elevationDeg,{signed:true}),
+    "curso "+courseLabel(c),
+    "velocidad "+(c.velocity||"sin resolver"),
+    "confianza "+Math.round(c.confidence||0)+"%"
+  ].filter(Boolean);
+  return parts.join(" · ");
+}
 function renderStatus(){
   const sim=state.sim,a=getArray(sim),pen=effectivePenalty(sim);
   $("#ship-status").innerHTML='<section class="status-card"><h3>SENSORES</h3>'+
@@ -379,11 +396,13 @@ async function executeAction(a){
         detail("Última confianza",r.confidence+" %"),
         detail("Procedencia",r.provenance)
       ]);
+      const lostContact=getContact(sim,a.contactId);
+      const historical=lostContact?lostContactRecordSummary(lostContact):("última lectura: "+r.lastValue+" · confianza "+r.confidence+"%");
       return {
         ok:true,
         available:false,
         kind:"readout_unavailable",
-        text:a.contactId+" no está actualmente en sensores. No puedo realizar un análisis en tiempo real. Último dato registrado: "+r.lastValue+". Última confianza "+r.confidence+"%.",
+        text:a.contactId+" no está actualmente en sensores. No puedo realizar un análisis en tiempo real. Última solución registrada: "+historical+".",
         contactId:a.contactId,
         reason:"contact_lost",
         lastValue:r.lastValue
