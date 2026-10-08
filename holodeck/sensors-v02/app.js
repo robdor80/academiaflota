@@ -665,7 +665,11 @@ async function submitCommand(text,inputMode="text"){
           :interpreted.economyReason==="contract_validation"
             ?"3.5 respondió, pero la orden no encaja todavía con seguridad en el contrato. 3.8 NO se ha usado para proteger su cuota."
             :"3.5 pidió aclaración. 3.8 NO se ha usado para proteger su cuota.";
-      addMessage("system",msg,"AUTO ECONÓMICO");
+      if(["local_contract_repair","local_interpreter_repair"].includes(interpreted.economyReason)){
+        log("AUTO ECONÓMICO · "+msg);
+      }else{
+        addMessage("system",msg,"AUTO ECONÓMICO");
+      }
       log("GEMINI ECONOMY PROTECT · "+(interpreted.economyReason||"unspecified")+" · 3.8 not used");
     }
     if(interpreted.warning)addMessage("system",interpreted.warning);
