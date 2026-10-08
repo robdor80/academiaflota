@@ -114,14 +114,16 @@ function renderContacts(){
   $("#contacts-list").innerHTML=list.map(c=>{
     const needsAttention=unknownAttention.has(c.id);
     const isPriority=c.operationalPriority==="high";
-    const cls=["contact-card",c.id===state.selectedContactId?"active":"",needsAttention?"routine-alert":"",isPriority?"priority-contact":""].filter(Boolean).join(" ");
+    const isLost=c.status==="lost";
+    const cls=["contact-card",c.id===state.selectedContactId?"active":"",needsAttention?"routine-alert":"",isPriority?"priority-contact":"",isLost?"lost-contact":""].filter(Boolean).join(" ");
     const identity=c.transponderRecognized&&c.transponderLabel?c.transponderLabel:c.classification;
     const secondary=c.transponderRecognized&&c.transponderLabel&&c.classification&&c.classification!==identity
       ?'<span class="contact-classification">'+esc(c.classification)+'</span>'
       :'';
     return '<div class="'+cls+'" data-contact="'+esc(c.id)+'">'+
-      '<div class="contact-top"><strong>'+esc(c.id)+'</strong><strong>'+Math.round(c.confidence)+'%</strong></div>'+
+      '<div class="contact-top"><strong>'+esc(c.id)+'</strong><strong>'+(isLost?"ÚLT. ":"")+Math.round(c.confidence)+'%</strong></div>'+
       '<span>'+esc(identity)+'</span>'+secondary+'<div class="contact-meta">'+
+      (isLost?'<span class="mini-tag lost-tag">CONTACTO PERDIDO</span>':'')+
       (needsAttention?'<span class="mini-tag alert-tag">NUEVO · DESCONOCIDO</span>':'')+
       (isPriority?'<span class="mini-tag priority-tag">PRIORITARIO</span>':'')+
       (c.affiliation?'<span class="mini-tag">'+esc(c.affiliation)+'</span>':'')+
@@ -1012,7 +1014,10 @@ function scheduleAnomalousLossTest(){
     delete c.sensorLossReason;
     delete c.lossReason;
     log("WORLD STATE · C-T03 deja de ser detectable súbitamente · sin causa sensorial registrada");
-    setWorldTestIdle();
+    const button=$("#world-test-run");
+    if(button)button.textContent="ESPERANDO CICLO DE SENSORES…";
+    const release=setTimeout(()=>setWorldTestIdle(),6000);
+    state.worldTestTimers.push(release);
   },12000);
   state.worldTestTimers.push(timer);
 }
