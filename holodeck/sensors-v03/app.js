@@ -1633,6 +1633,91 @@ function scheduleBehaviorChangeTest(){
   state.worldTestTimers.push(stage1,stage2,release);
 }
 
+function scheduleRomulanWarbirdVisualTest(){
+  if(!state.sim)return;
+  state.sim.contacts=state.sim.contacts.filter(c=>c.id!=="C-T07");
+
+  const contact={
+    id:"C-T07",
+    known:false,
+    status:"identified",
+    classification:"Ave de Guerra clase D'deridex",
+    kind:"starship",
+    distanceKm:138000,
+    confidence:97,
+    signal:78,
+    signatures:["warp","subspace","energy","transponder"],
+    marked:false,
+    vector:"118 / -07",
+    bearingDeg:118,
+    elevationDeg:-7,
+    courseBearingDeg:287,
+    courseElevationDeg:2,
+    velocity:"0,11c",
+    relativeMotion:"crossing",
+    closestApproachKm:31800,
+    tcpaMinutes:null,
+    mass:"4,3 ×10⁶ t ±12%",
+    dimensions:"1.041 × 772 × 285 m",
+    lifeforms:"Dotación numerosa compatible",
+    band:"3,1 THz",
+    energy:"Patrón militar romulano estable",
+    subspace:"Firma warp romulana correlacionada",
+    patternMatch:99,
+    transponderRecognized:true,
+    transponderLabel:"IRW T'Veren",
+    affiliation:"Imperio Estelar Romulano",
+    military:true,
+    operationalPriority:"high",
+    hostile:false,
+    worldPresent:true,
+    sensorVisible:true,
+    history:[],
+    tracked:false,
+    trackingMode:null,
+    trackingPriority:"normal",
+    lastObserved:null
+  };
+
+  state.sim.contacts.push(contact);
+  syncRoutineWatchBaseline();
+  render();
+
+  const select=$("#world-test-select"),button=$("#world-test-run");
+  if(select)select.disabled=true;
+  if(button){button.disabled=true;button.textContent="ESPERANDO CONTACTO ROMULANO…";}
+  log("WORLD TEST · 5/8 aparición nave de guerra romulana C-T07 · fuera de alcance");
+
+  const stage1=setTimeout(()=>{
+    const c=state.sim?.contacts?.find(x=>x.id==="C-T07");if(!c)return;
+    c.distanceKm=74200;
+    c.signal=91;
+    c.confidence=97;
+    c.bearingDeg=118;
+    c.elevationDeg=-7;
+    c.vector="118 / -07";
+    c.courseBearingDeg=287;
+    c.courseElevationDeg=2;
+    c.velocity="0,11c";
+    c.relativeMotion="crossing";
+    c.closestApproachKm=31800;
+    c.operationalPriority="high";
+    c.hostile=false;
+
+    state.selectedContactId="C-T07";
+    state.sim.selectedContactId="C-T07";
+    state.routineWatch.newUnknownIds=(state.routineWatch.newUnknownIds||[]).filter(id=>id!=="C-T07");
+
+    log("WORLD STATE · C-T07 entra en largo alcance · Ave de Guerra D'deridex identificada · prioridad alta · hostilidad no confirmada");
+    render();
+
+    if(button)button.textContent="COMPROBANDO REPRESENTACIÓN ESPACIAL…";
+  },8000);
+
+  const release=setTimeout(()=>setWorldTestIdle(),17000);
+  state.worldTestTimers.push(stage1,release);
+}
+
 function launchWorldTest(){
   const selected=$("#world-test-select")?.value;
   if(selected==="known")return scheduleKnownLongRangeContactTest();
@@ -1642,6 +1727,7 @@ function launchWorldTest(){
   if(selected==="warp-departure")return scheduleWarpDepartureTest();
   if(selected==="progressive-identification")return scheduleProgressiveIdentificationTest();
   if(selected==="behavior-change")return scheduleBehaviorChangeTest();
+  if(selected==="romulan-warbird-visual")return scheduleRomulanWarbirdVisualTest();
 }
 
 function scheduleKnownLongRangeContactTest(){
