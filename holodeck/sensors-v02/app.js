@@ -3,7 +3,7 @@ import {
   createSimulation,knownContacts,getContact,getArray,trackingUsed,effectivePenalty,
   createOperation,resolveScan,resolveSearch,startTracking,stopTracking,updateTracking,
   readout,applyInterference,applyConfig,restoreStandard,loadProfile,saveProfile,deleteProfile,runDiagnostic,calibrateArray,
-  requestEngineering,makePowerResponse,transferData,saveReading,compareReadings,passiveSurveillanceCycle
+  requestEngineering,makePowerResponse,transferData,saveReading,compareReadings,passiveSurveillanceCycle,contactSpatialSolution
 } from "../sensors/sim_engine.js";
 import {COMPUTER_PROFILES,validateCommandPlan,planPreview} from "./computer_contract.js";
 import {interpretCommand,aiEndpoint,localInterpret} from "./ai_gateway.js";
@@ -68,7 +68,11 @@ function buildContext(){
       tracking:{used:trackingUsed(sim),capacity:sim.tracking.capacity,assignments:sim.tracking.assignments.map(x=>({...x}))},
       contacts:knownContacts(sim).map(x=>({
         id:x.id,classification:x.classification,status:x.status,confidence:x.confidence,
-        signatures:x.signatures,distanceKm:x.distanceKm,vector:x.vector,velocity:x.velocity,
+        signatures:x.signatures,distanceKm:x.distanceKm,
+        bearingDeg:contactSpatialSolution(x).bearingDeg,elevationDeg:contactSpatialSolution(x).elevationDeg,
+        courseBearingDeg:contactSpatialSolution(x).courseBearingDeg,courseElevationDeg:contactSpatialSolution(x).courseElevationDeg,
+        velocity:x.velocity,relativeMotion:contactSpatialSolution(x).relativeMotion,
+        closestApproachKm:contactSpatialSolution(x).closestApproachKm,tcpaMinutes:contactSpatialSolution(x).tcpaMinutes,
         tracked:x.tracked,trackingMode:x.trackingMode,trackingPriority:x.trackingPriority,marked:!!x.marked
       })),
       recentResults:sim.results.slice(0,5).map(r=>({id:r.id,type:r.type,subtype:r.subtype,target:r.target,summary:r.summary,time:r.time}))
@@ -160,6 +164,24 @@ function renderQuickActions(){
   document.querySelectorAll("[data-quick]").forEach(b=>b.onclick=()=>submitCommand(b.dataset.quick,"text"));
 }
 function line(k,v,cls=""){return '<div class="status-line"><span>'+esc(k)+'</span><strong class="status-value '+cls+'">'+esc(v)+'</strong></div>'}
+function angleLabel(v,{signed=false}={}){
+  if(v==null||Number.isNaN(Number(v)))return "Sin resolver";
+  const n=Number(v);
+  if(signed&&n>0)return "+"+n+"°";
+  return n+"°";
+}
+function courseLabel(c){
+  const s=contactSpatialSolution(c);
+  if(s.courseBearingDeg==null)return "Sin resolver";
+  return angleLabel(s.courseBearingDeg)+" / "+angleLabel(s.courseElevationDeg??0,{signed:true});
+}
+function motionLabel(v){
+  return ({approaching:"Aproximándose",receding:"Alejándose",crossing:"Cruce lateral",stationary:"Estable",unknown:"Sin resolver"})[v]||v||"Sin resolver";
+}
+function distanceLabel(v){
+  if(v==null||Number.isNaN(Number(v)))return "Sin resolver";
+  return Math.round(Number(v)).toLocaleString("es-ES")+" km";
+}
 function renderStatus(){
   const sim=state.sim,a=getArray(sim),pen=effectivePenalty(sim);
   $("#ship-status").innerHTML='<section class="status-card"><h3>SENSORES</h3>'+
@@ -175,7 +197,21 @@ function renderStatus(){
     line("Estado",state.routineWatch.status,state.routineWatch.alertCount?"warn":"ok")+
     line("Informa a",state.routineWatch.reportTo)+
     line("Último ciclo",state.routineWatch.lastCheck||"Preparando")+
-    '</section>';
+    '</section>'+
+    (()=>{const c=selectedContact();if(!c)return "";
+      const s=contactSpatialSolution(c);
+      const identity=c.transponderRecognized&&c.transponderLabel?c.transponderLabel:c.classification;
+      return '<section class="status-card selected-contact-status"><h3>CONTACTO SELECCIONADO · '+esc(c.id)+'</h3>'+
+        line("Identidad",identity||"Sin resolver")+
+        line("Distancia",distanceLabel(c.distanceKm))+
+        line("Marcación",angleLabel(s.bearingDeg))+
+        line("Elevación",angleLabel(s.elevationDeg,{signed:true}))+
+        line("Curso",courseLabel(c))+
+        line("Velocidad",c.velocity||"Sin resolver")+
+        line("Movimiento relativo",motionLabel(s.relativeMotion),s.relativeMotion==="approaching"?"warn":"")+
+        line("Máxima aproximación prevista",s.closestApproachKm!=null?distanceLabel(s.closestApproachKm):"Sin resolver",s.closestApproachKm!=null&&s.closestApproachKm<15000?"warn":"")+
+        '</section>';
+    })();
   const used=trackingUsed(sim);
   $("#tracking-status").innerHTML='<section class="status-card"><h3>SEGUIMIENTO · '+used+'/'+sim.tracking.capacity+'</h3>'+
     (sim.tracking.assignments.length?sim.tracking.assignments.map(x=>'<div class="track-line">'+esc(x.contactId)+' · '+esc(x.mode)+' · '+esc(x.priority)+'</div>').join(""):'<div class="track-line">Ninguno</div>')+'</section>';
@@ -561,7 +597,8 @@ async function executeAction(a){
   if(a.type==="watch"){
     const c=getContact(sim,a.contactId);if(!c)return needOperator("Vigilancia","No encuentro "+a.contactId+".");
     state.watchers=state.watchers.filter(x=>!(x.contactId===a.contactId&&x.condition===a.condition));
-    state.watchers.push({contactId:a.contactId,condition:a.condition,threshold:a.threshold??null,baseline:{vector:c.vector,status:c.status,confidence:c.confidence},createdAt:Date.now()});
+    const spatial=contactSpatialSolution(c);
+    state.watchers.push({contactId:a.contactId,condition:a.condition,threshold:a.threshold??null,baseline:{courseBearingDeg:spatial.courseBearingDeg,courseElevationDeg:spatial.courseElevationDeg,status:c.status,confidence:c.confidence},createdAt:Date.now()});
     setDetails([detail("Contacto",a.contactId),detail("Vigilancia",a.condition),detail("Umbral",a.threshold??"—")]);
     return {ok:true,text:"Vigilancia activada sobre "+a.contactId+". Le avisaré si se cumple la condición."};
   }
@@ -801,7 +838,7 @@ function routineWatchTick(){
         events.push({
           severity:"warning",
           type:"new_unknown_contact",
-          text:"Nuevo contacto desconocido: "+cur.id+" · confianza "+cur.confidence+"% · distancia "+Math.round(cur.distanceKm||0)+" km · rumbo "+(cur.vector||"sin resolver")+"."
+          text:"Nuevo contacto desconocido: "+cur.id+" · confianza "+cur.confidence+"% · distancia "+distanceLabel(cur.distanceKm)+" · marcación "+angleLabel(cur.bearingDeg)+" · elevación "+angleLabel(cur.elevationDeg,{signed:true})+"."
         });
       }else{
         const source=cur.transponderRecognized?"transpondedor reconocido":"correlación de sensores";
@@ -812,15 +849,20 @@ function routineWatchTick(){
           type:priority?"new_priority_contact":"new_identified_contact",
           text:(priority?"CONTACTO PRIORITARIO: ":"Nuevo contacto identificado: ")+cur.id+" · "+identity+
             (cur.affiliation?" · "+cur.affiliation:"")+" · "+source+
-            " · confianza "+cur.confidence+"% · distancia "+Math.round(cur.distanceKm||0)+" km · rumbo "+(cur.vector||"sin resolver")+
+            " · confianza "+cur.confidence+"% · distancia "+distanceLabel(cur.distanceKm)+
+            " · marcación "+angleLabel(cur.bearingDeg)+" · elevación "+angleLabel(cur.elevationDeg,{signed:true})+
+            (cur.courseBearingDeg!=null?" · curso "+angleLabel(cur.courseBearingDeg)+" / "+angleLabel(cur.courseElevationDeg??0,{signed:true}):"")+
+            (cur.relativeMotion?" · "+motionLabel(cur.relativeMotion).toLowerCase():"")+
             (priority?". No se detecta actitud hostil confirmada.":".")
         });
       }
       continue;
     }
 
-    if(prev.vector!==cur.vector){
-      events.push({severity:"routine",type:"course_change",text:cur.id+" ha cambiado de rumbo: "+cur.vector+"."});
+    if(prev.courseBearingDeg!==cur.courseBearingDeg||prev.courseElevationDeg!==cur.courseElevationDeg){
+      if(prev.courseBearingDeg!=null||cur.courseBearingDeg!=null){
+        events.push({severity:"routine",type:"course_change",text:cur.id+" ha cambiado de curso: "+angleLabel(cur.courseBearingDeg)+" / "+angleLabel(cur.courseElevationDeg??0,{signed:true})+"."});
+      }
     }
     if(prev.velocity!==cur.velocity){
       events.push({severity:"routine",type:"velocity_change",text:cur.id+" ha cambiado de velocidad: "+cur.velocity+"."});
@@ -850,7 +892,7 @@ function routineWatchTick(){
       events.push({
         severity:"critical",
         type:"anomalous_contact_loss",
-        text:"ALERTA: "+prev.id+" ha desaparecido súbitamente de la solución de sensores. Última confianza "+prev.confidence+"% · última distancia "+Math.round(prev.distanceKm||0)+" km · último rumbo "+(prev.vector||"sin resolver")+" · última velocidad "+(prev.velocity||"sin resolver")+". Causa no determinada."
+        text:"ALERTA: "+prev.id+" ha desaparecido súbitamente de la solución de sensores. Última confianza "+prev.confidence+"%. Última posición: distancia "+distanceLabel(prev.distanceKm)+", marcación "+angleLabel(prev.bearingDeg)+", elevación "+angleLabel(prev.elevationDeg,{signed:true})+". Último curso: "+(prev.courseBearingDeg!=null?angleLabel(prev.courseBearingDeg)+" / "+angleLabel(prev.courseElevationDeg??0,{signed:true}):"sin resolver")+". Velocidad: "+(prev.velocity||"sin resolver")+". Movimiento relativo: "+motionLabel(prev.relativeMotion)+". Máxima aproximación prevista: "+(prev.closestApproachKm!=null?distanceLabel(prev.closestApproachKm):"sin resolver")+". Causa no determinada."
       });
     }else if(loss.expected){
       const expectedMessages={
@@ -917,9 +959,14 @@ function checkWatchers(){
     const c=getContact(state.sim,w.contactId);if(!c)continue;
     let triggered=false,msg="";
     if(w.condition==="contact_lost"&&c.status==="lost"&&w.baseline.status!=="lost"){triggered=true;msg=w.contactId+" se ha perdido de sensores."}
-    if(w.condition==="course_change"&&c.vector!==w.baseline.vector){triggered=true;msg=w.contactId+" ha cambiado de rumbo: "+c.vector+"."}
+    if(w.condition==="course_change"){
+      const spatial=contactSpatialSolution(c);
+      if(spatial.courseBearingDeg!==w.baseline.courseBearingDeg||spatial.courseElevationDeg!==w.baseline.courseElevationDeg){
+        triggered=true;msg=w.contactId+" ha cambiado de curso: "+courseLabel(c)+".";
+      }
+    }
     if(w.condition==="confidence_below"&&w.threshold!=null&&c.confidence<w.threshold&&w.baseline.confidence>=w.threshold){triggered=true;msg=w.contactId+" ha caído por debajo de "+w.threshold+"% de confianza."}
-    if(triggered){addMessage("computer",msg,"ALERTA");log("WATCH ALERT "+msg);w.baseline={vector:c.vector,status:c.status,confidence:c.confidence}}
+    if(triggered){addMessage("computer",msg,"ALERTA");log("WATCH ALERT "+msg);w.baseline={courseBearingDeg:contactSpatialSolution(c).courseBearingDeg,courseElevationDeg:contactSpatialSolution(c).courseElevationDeg,status:c.status,confidence:c.confidence}}
   }
 }
 
@@ -974,7 +1021,14 @@ function scheduleAnomalousLossTest(){
       signatures:["transponder","warp","subspace","energy"],
       marked:false,
       vector:"316 / -04",
+      bearingDeg:316,
+      elevationDeg:-4,
+      courseBearingDeg:142,
+      courseElevationDeg:1,
       velocity:"0,17c",
+      relativeMotion:"approaching",
+      closestApproachKm:12400,
+      tcpaMinutes:null,
       mass:"4,8 ×10⁶ t ±11%",
       dimensions:"481 × 341 × 106 m",
       lifeforms:"Lecturas compatibles con dotación numerosa",
@@ -1055,7 +1109,14 @@ function scheduleWarpDepartureTest(){
       signatures:["transponder","warp","em"],
       marked:false,
       vector:"082 / +01",
+      bearingDeg:82,
+      elevationDeg:1,
+      courseBearingDeg:96,
+      courseElevationDeg:0,
       velocity:"0,09c",
+      relativeMotion:"receding",
+      closestApproachKm:58200,
+      tcpaMinutes:null,
       mass:"3,1 ×10⁶ t ±9%",
       dimensions:"228 × 81 × 54 m",
       lifeforms:"96 compatibles",
@@ -1080,7 +1141,8 @@ function scheduleWarpDepartureTest(){
   }else{
     Object.assign(contact,{
       known:true,status:"identified",distanceKm:64000,confidence:95,signal:87,
-      vector:"082 / +01",velocity:"0,09c",transponderRecognized:true,
+      vector:"082 / +01",bearingDeg:82,elevationDeg:1,courseBearingDeg:96,courseElevationDeg:0,
+      velocity:"0,09c",relativeMotion:"receding",closestApproachKm:58200,tcpaMinutes:null,transponderRecognized:true,
       transponderLabel:"SS Meridian · NAR-58217",affiliation:"Federación",
       military:false,operationalPriority:"normal",worldPresent:true,sensorVisible:true
     });
@@ -1266,6 +1328,12 @@ function scheduleKlingonLongRangeContactTest(){
     c.distanceKm=96500;
     c.signal=84;
     c.vector="316 / -04";
+    c.bearingDeg=316;
+    c.elevationDeg=-4;
+    c.courseBearingDeg=142;
+    c.courseElevationDeg=1;
+    c.relativeMotion="approaching";
+    c.closestApproachKm=12400;
     c.velocity="0,17c";
     log("WORLD STATE · C-T03 entra en largo alcance · transpondedor klingon reconocido");
     setWorldTestIdle();
