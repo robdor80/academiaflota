@@ -255,18 +255,23 @@ function renderSpatialViewer(){
   const courseBearing=Number.isFinite(Number(s.courseBearingDeg))?Number(s.courseBearingDeg):null;
   const courseElevation=Number.isFinite(Number(s.courseElevationDeg))?Number(s.courseElevationDeg):0;
 
-  // El contacto se representa fuera de la silueta propia; la nave permanece fija y centrada.
   const p=polarPoint(bearing,38);
-  const q=courseBearing!=null?polarPoint(courseBearing,11,p.x,p.y):null;
+  const q=courseBearing!=null?polarPoint(courseBearing,10,p.x,p.y):null;
   const sideY=Math.max(13,Math.min(87,50-(elevation*2.35)));
-  const sideArrowY=Math.max(10,Math.min(90,sideY-(courseElevation*3.2)));
+  const sideArrowY=Math.max(10,Math.min(90,sideY-(courseElevation*3.0)));
 
   const identity=c.transponderRecognized&&c.transponderLabel?c.transponderLabel:(c.classification||c.id);
   const tone=c.hostile===true?"critical":c.operationalPriority==="high"?"priority":c.status==="lost"?"lost":"normal";
   const historic=c.status==="lost";
 
+  const topLabelRight=p.x<78;
+  const topLabelX=topLabelRight?Math.min(91,p.x+7):Math.max(9,p.x-7);
+  const topLabelY=Math.max(8,Math.min(92,p.y-4));
+  const topLeaderX=topLabelRight?topLabelX-1.8:topLabelX+1.8;
+  const topTextAnchor=topLabelRight?"start":"end";
+
   top.innerHTML=
-    '<svg class="spatial-svg spatial-sensor-display" viewBox="0 0 100 100" aria-label="Vista cenital">'+
+    '<svg class="spatial-svg spatial-sensor-display" viewBox="0 0 100 100" aria-label="Vista cenital" shape-rendering="geometricPrecision">'+
       '<circle class="range-ring outer" cx="50" cy="50" r="46"/>'+
       '<circle class="range-ring" cx="50" cy="50" r="35"/>'+
       '<circle class="range-ring inner" cx="50" cy="50" r="20"/>'+
@@ -283,44 +288,75 @@ function renderSpatialViewer(){
       '<text class="bearing-label major" x="5" y="51.5">270°</text>'+
       '<text class="bearing-label" x="17.3" y="17.5">315°</text>'+
       '<image class="ship-blueprint ship-blueprint-top" href="./assets/zenital_ncc1701d.webp" x="34" y="20" width="32" height="60" preserveAspectRatio="xMidYMid meet"/>'+
-      '<circle class="ownship-core" cx="50" cy="50" r="1.15"/>'+
+      '<circle class="ownship-core" cx="50" cy="50" r="1.05"/>'+
       '<line class="contact-line '+(historic?"historic":"")+'" x1="50" y1="50" x2="'+p.x.toFixed(1)+'" y2="'+p.y.toFixed(1)+'"/>'+
-      '<circle class="contact-halo '+tone+'" cx="'+p.x.toFixed(1)+'" cy="'+p.y.toFixed(1)+'" r="4.7"/>'+
-      '<circle class="contact-dot '+tone+'" cx="'+p.x.toFixed(1)+'" cy="'+p.y.toFixed(1)+'" r="2.6"/>'+
+
+      '<g class="contact-symbol '+tone+'">'+
+        '<circle class="contact-outer" cx="'+p.x.toFixed(1)+'" cy="'+p.y.toFixed(1)+'" r="3.15"/>'+
+        '<circle class="contact-mid" cx="'+p.x.toFixed(1)+'" cy="'+p.y.toFixed(1)+'" r="2.25"/>'+
+        '<circle class="contact-core" cx="'+p.x.toFixed(1)+'" cy="'+p.y.toFixed(1)+'" r="1.3"/>'+
+        '<line class="contact-reticle" x1="'+p.x.toFixed(1)+'" y1="'+(p.y-4.25).toFixed(1)+'" x2="'+p.x.toFixed(1)+'" y2="'+(p.y-3.35).toFixed(1)+'"/>'+
+        '<line class="contact-reticle" x1="'+p.x.toFixed(1)+'" y1="'+(p.y+3.35).toFixed(1)+'" x2="'+p.x.toFixed(1)+'" y2="'+(p.y+4.25).toFixed(1)+'"/>'+
+        '<line class="contact-reticle" x1="'+(p.x-4.25).toFixed(1)+'" y1="'+p.y.toFixed(1)+'" x2="'+(p.x-3.35).toFixed(1)+'" y2="'+p.y.toFixed(1)+'"/>'+
+        '<line class="contact-reticle" x1="'+(p.x+3.35).toFixed(1)+'" y1="'+p.y.toFixed(1)+'" x2="'+(p.x+4.25).toFixed(1)+'" y2="'+p.y.toFixed(1)+'"/>'+
+      '</g>'+
+
       (q?'<line class="course-arrow '+tone+'" x1="'+p.x.toFixed(1)+'" y1="'+p.y.toFixed(1)+'" x2="'+q.x.toFixed(1)+'" y2="'+q.y.toFixed(1)+'" marker-end="url(#arrowhead-top-'+tone+')"/>':'')+
-      '<text class="contact-id-label '+tone+'" x="'+Math.min(92,p.x+4).toFixed(1)+'" y="'+Math.max(8,p.y-4).toFixed(1)+'">'+esc(c.id)+'</text>'+
+
+      '<polyline class="contact-label-leader '+tone+'" points="'+
+        (topLabelRight?(p.x+3.4).toFixed(1):(p.x-3.4).toFixed(1))+','+(p.y-1.1).toFixed(1)+' '+
+        topLeaderX.toFixed(1)+','+topLabelY.toFixed(1)+'"/>'+
+      '<text class="contact-id-label '+tone+'" text-anchor="'+topTextAnchor+'" x="'+topLabelX.toFixed(1)+'" y="'+(topLabelY+1).toFixed(1)+'">'+esc(c.id)+'</text>'+
+
       '<defs>'+
-        '<marker id="arrowhead-top-normal" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path class="marker-normal" d="M0,0 L5,2.5 L0,5 Z"/></marker>'+
-        '<marker id="arrowhead-top-priority" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path class="marker-priority" d="M0,0 L5,2.5 L0,5 Z"/></marker>'+
-        '<marker id="arrowhead-top-critical" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path class="marker-critical" d="M0,0 L5,2.5 L0,5 Z"/></marker>'+
-        '<marker id="arrowhead-top-lost" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path class="marker-lost" d="M0,0 L5,2.5 L0,5 Z"/></marker>'+
+        '<marker id="arrowhead-top-normal" markerWidth="4" markerHeight="4" refX="3.4" refY="2" orient="auto"><path class="marker-normal" d="M0,0 L4,2 L0,4 Z"/></marker>'+
+        '<marker id="arrowhead-top-priority" markerWidth="4" markerHeight="4" refX="3.4" refY="2" orient="auto"><path class="marker-priority" d="M0,0 L4,2 L0,4 Z"/></marker>'+
+        '<marker id="arrowhead-top-critical" markerWidth="4" markerHeight="4" refX="3.4" refY="2" orient="auto"><path class="marker-critical" d="M0,0 L4,2 L0,4 Z"/></marker>'+
+        '<marker id="arrowhead-top-lost" markerWidth="4" markerHeight="4" refX="3.4" refY="2" orient="auto"><path class="marker-lost" d="M0,0 L4,2 L0,4 Z"/></marker>'+
       '</defs>'+
     '</svg>'+
     '<div class="spatial-caption"><strong>Marcación '+angleLabel(s.bearingDeg)+'</strong><span>'+distanceLabel(c.distanceKm)+'</span></div>';
 
+  const sideLabelY=Math.max(10,Math.min(90,sideY-5.2));
+
   side.innerHTML=
-    '<svg class="spatial-svg spatial-sensor-display" viewBox="0 0 100 100" aria-label="Vista lateral">'+
-      '<line class="elevation-grid" x1="7" y1="25" x2="93" y2="25"/>'+
+    '<svg class="spatial-svg spatial-sensor-display" viewBox="0 0 100 100" aria-label="Vista lateral" shape-rendering="geometricPrecision">'+
+      '<line class="elevation-grid major" x1="7" y1="25" x2="93" y2="25"/>'+
       '<line class="reference-plane" x1="7" y1="50" x2="93" y2="50"/>'+
-      '<line class="elevation-grid" x1="7" y1="75" x2="93" y2="75"/>'+
+      '<line class="elevation-grid major" x1="7" y1="75" x2="93" y2="75"/>'+
+      '<line class="elevation-grid minor" x1="7" y1="37.5" x2="93" y2="37.5"/>'+
+      '<line class="elevation-grid minor" x1="7" y1="62.5" x2="93" y2="62.5"/>'+
       '<line class="axis vertical" x1="50" y1="8" x2="50" y2="92"/>'+
       '<text class="elevation-label positive" x="9" y="23">+10°</text>'+
+      '<text class="elevation-label positive minor" x="9" y="36">+5°</text>'+
       '<text class="elevation-label zero" x="9" y="48">0°</text>'+
+      '<text class="elevation-label negative minor" x="9" y="61">−5°</text>'+
       '<text class="elevation-label negative" x="9" y="73">−10°</text>'+
       '<text class="elevation-polarity positive" x="95" y="15">+</text>'+
       '<text class="elevation-polarity negative" x="95" y="89">−</text>'+
       '<image class="ship-blueprint ship-blueprint-side" href="./assets/perfil_ncc1701d.webp" x="19" y="35" width="62" height="30" preserveAspectRatio="xMidYMid meet"/>'+
-      '<circle class="ownship-core" cx="50" cy="50" r="1.15"/>'+
+      '<circle class="ownship-core" cx="50" cy="50" r="1.05"/>'+
       '<line class="contact-line '+(historic?"historic":"")+'" x1="50" y1="50" x2="80" y2="'+sideY.toFixed(1)+'"/>'+
-      '<circle class="contact-halo '+tone+'" cx="80" cy="'+sideY.toFixed(1)+'" r="4.7"/>'+
-      '<circle class="contact-dot '+tone+'" cx="80" cy="'+sideY.toFixed(1)+'" r="2.6"/>'+
-      '<line class="course-arrow '+tone+'" x1="80" y1="'+sideY.toFixed(1)+'" x2="91" y2="'+sideArrowY.toFixed(1)+'" marker-end="url(#arrowhead-side-'+tone+')"/>'+
-      '<text class="contact-id-label '+tone+'" x="84" y="'+Math.max(8,sideY-4).toFixed(1)+'">'+esc(c.id)+'</text>'+
+
+      '<g class="contact-symbol '+tone+'">'+
+        '<circle class="contact-outer" cx="80" cy="'+sideY.toFixed(1)+'" r="3.15"/>'+
+        '<circle class="contact-mid" cx="80" cy="'+sideY.toFixed(1)+'" r="2.25"/>'+
+        '<circle class="contact-core" cx="80" cy="'+sideY.toFixed(1)+'" r="1.3"/>'+
+        '<line class="contact-reticle" x1="80" y1="'+(sideY-4.25).toFixed(1)+'" x2="80" y2="'+(sideY-3.35).toFixed(1)+'"/>'+
+        '<line class="contact-reticle" x1="80" y1="'+(sideY+3.35).toFixed(1)+'" x2="80" y2="'+(sideY+4.25).toFixed(1)+'"/>'+
+        '<line class="contact-reticle" x1="75.75" y1="'+sideY.toFixed(1)+'" x2="76.65" y2="'+sideY.toFixed(1)+'"/>'+
+        '<line class="contact-reticle" x1="83.35" y1="'+sideY.toFixed(1)+'" x2="84.25" y2="'+sideY.toFixed(1)+'"/>'+
+      '</g>'+
+
+      '<line class="course-arrow '+tone+'" x1="80" y1="'+sideY.toFixed(1)+'" x2="90" y2="'+sideArrowY.toFixed(1)+'" marker-end="url(#arrowhead-side-'+tone+')"/>'+
+      '<polyline class="contact-label-leader '+tone+'" points="82.8,'+(sideY-1.2).toFixed(1)+' 85.8,'+sideLabelY.toFixed(1)+'"/>'+
+      '<text class="contact-id-label '+tone+'" text-anchor="start" x="87" y="'+(sideLabelY+1).toFixed(1)+'">'+esc(c.id)+'</text>'+
+
       '<defs>'+
-        '<marker id="arrowhead-side-normal" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path class="marker-normal" d="M0,0 L5,2.5 L0,5 Z"/></marker>'+
-        '<marker id="arrowhead-side-priority" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path class="marker-priority" d="M0,0 L5,2.5 L0,5 Z"/></marker>'+
-        '<marker id="arrowhead-side-critical" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path class="marker-critical" d="M0,0 L5,2.5 L0,5 Z"/></marker>'+
-        '<marker id="arrowhead-side-lost" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path class="marker-lost" d="M0,0 L5,2.5 L0,5 Z"/></marker>'+
+        '<marker id="arrowhead-side-normal" markerWidth="4" markerHeight="4" refX="3.4" refY="2" orient="auto"><path class="marker-normal" d="M0,0 L4,2 L0,4 Z"/></marker>'+
+        '<marker id="arrowhead-side-priority" markerWidth="4" markerHeight="4" refX="3.4" refY="2" orient="auto"><path class="marker-priority" d="M0,0 L4,2 L0,4 Z"/></marker>'+
+        '<marker id="arrowhead-side-critical" markerWidth="4" markerHeight="4" refX="3.4" refY="2" orient="auto"><path class="marker-critical" d="M0,0 L4,2 L0,4 Z"/></marker>'+
+        '<marker id="arrowhead-side-lost" markerWidth="4" markerHeight="4" refX="3.4" refY="2" orient="auto"><path class="marker-lost" d="M0,0 L4,2 L0,4 Z"/></marker>'+
       '</defs>'+
     '</svg>'+
     '<div class="spatial-caption"><strong>Elevación '+angleLabel(s.elevationDeg,{signed:true})+'</strong><span>'+esc(courseElevation>=0?"vector +"+courseElevation+"°":"vector "+courseElevation+"°")+'</span></div>';
