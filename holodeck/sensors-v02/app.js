@@ -19,7 +19,17 @@ const state={
   conversation:[],logs:[],lastDetails:[],watchers:[],busy:false,
   attention:null,lastPlan:null,routingMode:"auto",
   aiRuntime:{provider:null,modelUsed:null,escalated:false},
-  lastObservationBatch:null
+  lastObservationBatch:null,
+  routineWatch:{
+    enabled:true,
+    mode:"Pasiva continua",
+    status:"Sin novedades",
+    lastCheck:null,
+    checks:0,
+    alertCount:0,
+    reportTo:"Oficial al mando del puente",
+    baseline:null
+  }
 };
 
 function log(msg){
@@ -68,6 +78,7 @@ function resetScenario(source="manual",scenarioId=null){
   state.sim=createSimulation(sc);
   state.selectedContactId=state.sim.selectedContactId;
   state.watchers=[];state.attention=null;state.lastDetails=[];state.lastPlan=null;state.lastObservationBatch=null;
+  state.routineWatch.status="Sin novedades";state.routineWatch.alertCount=0;state.routineWatch.baseline=null;
   if($("#scenario-select"))$("#scenario-select").value=sc.id;
   addMessage("system","Escenario reiniciado · "+sc.title);
   log("RESET scenario · "+source+" · "+sc.id);
@@ -133,6 +144,12 @@ function renderStatus(){
     line("Sector",sim.sector||"—")+'</section>'+
     '<section class="status-card"><h3>CONTEXTO DE NAVE</h3>'+
     (externalShipState()?line("Estado global","Conectado","ok"):line("Estado global","Proveedor preparado"))+
+    '</section>'+
+    '<section class="status-card"><h3>GUARDIA DE SENSORES</h3>'+
+    line("Vigilancia",state.routineWatch.enabled?state.routineWatch.mode:"Detenida",state.routineWatch.enabled?"ok":"warn")+
+    line("Estado",state.routineWatch.status,state.routineWatch.alertCount?"warn":"ok")+
+    line("Informa a",state.routineWatch.reportTo)+
+    line("Último ciclo",state.routineWatch.lastCheck||"Preparando")+
     '</section>';
   const used=trackingUsed(sim);
   $("#tracking-status").innerHTML='<section class="status-card"><h3>SEGUIMIENTO · '+used+'/'+sim.tracking.capacity+'</h3>'+
@@ -704,8 +721,82 @@ async function submitCommand(text,inputMode="text"){
     needOperator("Error de interpretación o ejecución",e.message||String(e));
     log("ERROR "+(e.stack||e.message||e));
   }finally{
-    state.busy=false;$("#send-command").disabled=false;$("#voice-button").disabled=false;render();
+    state.busy=false;
+    syncRoutineWatchBaseline();
+    $("#send-command").disabled=false;$("#voice-button").disabled=false;render();
   }
+}
+
+function routineWatchSnapshot(){
+  if(!state.sim)return null;
+  const sim=state.sim;
+  return {
+    contacts:knownContacts(sim).map(c=>({
+      id:c.id,status:c.status,classification:c.classification,
+      confidence:Math.round(c.confidence),vector:c.vector,velocity:c.velocity
+    })),
+    sensors:{
+      array:sim.activeArray,
+      arrayAvailable:!!getArray(sim)?.available,
+      integrity:Number(getArray(sim)?.integrity||0),
+      calibration:Number(getArray(sim)?.calibration||0),
+      interference:effectivePenalty(sim)
+    }
+  };
+}
+
+function syncRoutineWatchBaseline(){
+  const snap=routineWatchSnapshot();
+  if(!snap)return;
+  state.routineWatch.baseline=snap;
+  state.routineWatch.lastCheck=new Date().toLocaleTimeString("es-ES",{hour12:false});
+  state.routineWatch.checks++;
+}
+
+function routineWatchTick(){
+  if(!state.routineWatch.enabled||!state.sim||state.busy)return;
+  const current=routineWatchSnapshot();
+  const previous=state.routineWatch.baseline;
+  if(!previous){syncRoutineWatchBaseline();renderStatus();return}
+
+  const events=[];
+  const prevMap=new Map(previous.contacts.map(x=>[x.id,x]));
+  for(const cur of current.contacts){
+    const prev=prevMap.get(cur.id);
+    if(!prev){
+      events.push("Nuevo contacto detectable: "+cur.id+" · "+cur.classification+" · "+cur.confidence+"%.");
+      continue;
+    }
+    if(prev.status!==cur.status&&cur.status==="lost")events.push("Contacto perdido: "+cur.id+".");
+    if(prev.vector!==cur.vector)events.push(cur.id+" ha cambiado de rumbo: "+cur.vector+".");
+    if(prev.velocity!==cur.velocity)events.push(cur.id+" ha cambiado de velocidad: "+cur.velocity+".");
+    if(prev.classification!==cur.classification)events.push(cur.id+" reclasificado como "+cur.classification+".");
+    const thresholds=[40,60,80];
+    if(thresholds.some(t=>prev.confidence<t&&cur.confidence>=t)){
+      events.push(cur.id+" supera un umbral de confianza: "+cur.confidence+"%.");
+    }
+  }
+
+  if(previous.sensors.arrayAvailable&&!current.sensors.arrayAvailable){
+    events.push("La matriz de sensores activa ha dejado de estar disponible.");
+  }
+  if(previous.sensors.interference<=28&&current.sensors.interference>28){
+    events.push("Interferencia de sensores fuera de tolerancia: "+current.sensors.interference+" puntos.");
+  }
+
+  state.routineWatch.baseline=current;
+  state.routineWatch.lastCheck=new Date().toLocaleTimeString("es-ES",{hour12:false});
+  state.routineWatch.checks++;
+
+  if(events.length){
+    state.routineWatch.status=events.length+" novedad(es)";
+    state.routineWatch.alertCount+=events.length;
+    addMessage("computer",events.join(" "),"VIGILANCIA AUTOMÁTICA");
+    log("ROUTINE WATCH ALERT · "+events.join(" | "));
+  }else{
+    state.routineWatch.status="Sin novedades";
+  }
+  renderStatus();
 }
 
 function checkWatchers(){
@@ -762,10 +853,12 @@ async function load(){
     onStatus:(text,listening)=>{$("#voice-status").textContent=text;$("#voice-button").classList.toggle("listening",!!listening);$("#voice-button").textContent=listening?"■ Escuchando":"🎙 Voz"}
   });
   $("#voice-button").onclick=()=>voice.start();
-  addMessage("computer","Computadora de Sensores disponible. Puede dar una orden por texto o por voz.");
+  addMessage("computer","Computadora de Sensores disponible. Vigilancia pasiva continua activa. Puede dar una orden por texto o por voz.");
+  syncRoutineWatchBaseline();
   render();
   initTeacherMode({resetScenario,logTeacher:teacherLog});
   setInterval(checkWatchers,1200);
+  setInterval(routineWatchTick,5000);
   log("SIMULATOR READY · sensors v0.2 · "+state.sim.scenarioTitle);
 }
 load().catch(e=>{document.body.innerHTML='<pre style="padding:30px;color:#8a2f2f">Error cargando Sensores v0.2: '+esc(e.message)+'</pre>';console.error(e)});
