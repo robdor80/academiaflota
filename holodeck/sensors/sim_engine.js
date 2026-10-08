@@ -1,13 +1,46 @@
 const clone=v=>JSON.parse(JSON.stringify(v));
 const clamp=(v,min=0,max=100)=>Math.max(min,Math.min(max,v));
 const now=()=>new Date().toLocaleTimeString("es-ES",{hour12:false});
+
+function parseLegacyAnglePair(value){
+  const m=String(value??"").match(/(-?\d+(?:\.\d+)?)\s*\/\s*([+-]?\d+(?:\.\d+)?)/);
+  if(!m)return {primary:null,secondary:null};
+  return {primary:Number(m[1]),secondary:Number(m[2])};
+}
+function normalizeContactSpatial(contact){
+  const pos=parseLegacyAnglePair(contact.vector);
+  const course=parseLegacyAnglePair(contact.course);
+  return {
+    ...contact,
+    bearingDeg:Number.isFinite(Number(contact.bearingDeg))?Number(contact.bearingDeg):pos.primary,
+    elevationDeg:Number.isFinite(Number(contact.elevationDeg))?Number(contact.elevationDeg):pos.secondary,
+    courseBearingDeg:Number.isFinite(Number(contact.courseBearingDeg))?Number(contact.courseBearingDeg):course.primary,
+    courseElevationDeg:Number.isFinite(Number(contact.courseElevationDeg))?Number(contact.courseElevationDeg):course.secondary,
+    relativeMotion:contact.relativeMotion||null,
+    closestApproachKm:Number.isFinite(Number(contact.closestApproachKm))?Number(contact.closestApproachKm):null,
+    tcpaMinutes:Number.isFinite(Number(contact.tcpaMinutes))?Number(contact.tcpaMinutes):null
+  };
+}
+export function contactSpatialSolution(contact){
+  const c=normalizeContactSpatial(contact||{});
+  return {
+    bearingDeg:c.bearingDeg,
+    elevationDeg:c.elevationDeg,
+    courseBearingDeg:c.courseBearingDeg,
+    courseElevationDeg:c.courseElevationDeg,
+    velocity:c.velocity||null,
+    relativeMotion:c.relativeMotion||null,
+    closestApproachKm:c.closestApproachKm,
+    tcpaMinutes:c.tcpaMinutes
+  };
+}
 const labels={
   low:"BAJA",medium:"MEDIA",high:"ALTA",severe:"SEVERA",
   standard:"ESTÁNDAR",high_resolution:"ALTA",general:"GENERAL"
 };
 export function createSimulation(scenario){
   const s=clone(scenario);
-  const contacts=s.contacts.map(c=>({...c,initiallyLost:c.status==="lost",history:[],tracked:false,trackingMode:null,trackingPriority:"normal",lastObserved:null}));
+  const contacts=s.contacts.map(c=>normalizeContactSpatial({...c,initiallyLost:c.status==="lost",history:[],tracked:false,trackingMode:null,trackingPriority:"normal",lastObserved:null}));
   const capacity=s.trackingCapacity||8;
   const state={
     scenarioId:s.id,scenarioTitle:s.title,sector:s.sector||"041",serial:1,traceSerial:1,time:0,
@@ -152,6 +185,13 @@ export function passiveSurveillanceCycle(state,options={}){
       affiliation:c.affiliation||null,
       military:!!c.military,
       operationalPriority:c.operationalPriority||"normal",
+      bearingDeg:contactSpatialSolution(c).bearingDeg,
+      elevationDeg:contactSpatialSolution(c).elevationDeg,
+      courseBearingDeg:contactSpatialSolution(c).courseBearingDeg,
+      courseElevationDeg:contactSpatialSolution(c).courseElevationDeg,
+      relativeMotion:contactSpatialSolution(c).relativeMotion,
+      closestApproachKm:contactSpatialSolution(c).closestApproachKm,
+      tcpaMinutes:contactSpatialSolution(c).tcpaMinutes,
       identificationSource:recognition.identificationSource,
       score
     });
