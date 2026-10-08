@@ -169,6 +169,9 @@ Eres la capa de interpretación de la Computadora de a bordo.
 NO ejecutas acciones ni inventas resultados. Solo conviertes lenguaje humano en un contrato JSON.
 Debes tolerar faltas de ortografía, frases coloquiales, dictado imperfecto y referencias contextuales cuando el perfil de computadora lo permita.
 Usa únicamente los tipos de acción y campos definidos por CONTRACT_SPEC.
+Devuelve SIEMPRE los cinco campos superiores: version="1.0", intentSummary, needsClarification, clarificationQuestion y actions.
+Cuando no necesites aclaración, usa needsClarification=false y clarificationQuestion=null.
+No inventes nombres de acciones equivalentes: por ejemplo, para estado usa type="status"; para analizar una lectura usa type="readout"; para localizar usa type="search"; para seguimiento usa type="track_start".
 Las acciones de navegación de interfaz no forman parte del contrato: traduce la intención a capacidad operativa o consulta.
 Si el usuario pide "ver", "mostrar", "consultar", "qué hay", "cuánto queda" o equivalente, usa query/status/readout; no simules una acción física.
 Si falta una decisión que no puede inferirse con seguridad, devuelve needsClarification=true y una única clarificationQuestion concreta.
@@ -189,6 +192,63 @@ const REQUIRED={
   apply_config:["setting"],watch:["contactId","condition"],status:["scope"],query:["domain"]
 };
 
+function normalizeAction(raw){
+  if(!raw||typeof raw!=="object")return raw;
+  const a={...raw};
+  const rawType=String(a.type||a.action||a.actionType||a.kind||"").toLowerCase().trim();
+  const typeAliases={
+    sensor_status:"status",get_status:"status",report_status:"status",status_report:"status",
+    sensor_readout:"readout",analyze:"readout",analyse:"readout",analysis:"readout",read:"readout",
+    track:"track_start",tracking:"track_start",follow:"track_start",start_tracking:"track_start",
+    locate:"search",find:"search",search_signature:"search",
+    sensor_scan:"scan",sweep:"scan",scan_area:"scan",
+    monitor:"watch",alert_watch:"watch",
+    send:"transfer",handoff:"transfer",
+    diagnostics:"diagnostic",run_diagnostic:"diagnostic"
+  };
+  a.type=ACTION_TYPES.has(rawType)?rawType:(typeAliases[rawType]||rawType);
+
+  if(a.contactId==null)a.contactId=a.contact??a.targetContact??a.contact_id??null;
+  if(a.scanType==null)a.scanType=a.scan_type??a.rangeType??null;
+  if(a.searchType==null)a.searchType=a.search_type??a.signatureType??null;
+  if(a.readout==null)a.readout=a.reading??a.readoutType??a.analysisType??null;
+  if(a.scope==null)a.scope=a.targetScope??null;
+
+  if(a.type==="status"){
+    const scope=String(a.scope||"sensors").toLowerCase();
+    a.scope=({sensor:"sensors",sensors:"sensors",tracking:"tracking",contact:"contact",ship:"ship",nave:"ship"})[scope]||scope;
+  }
+  if(a.type==="scan"&&a.scanType){
+    const v=String(a.scanType).toLowerCase().replace(/[\s-]+/g,"_");
+    a.scanType=({long:"long_range",longrange:"long_range",short:"short_range",shortrange:"short_range",focus:"focused"})[v]||v;
+  }
+  if(a.type==="search"){
+    if(a.area==null&&a.target!=null)a.area=a.target;
+    const v=String(a.searchType||"").toLowerCase().replace(/[\s-]+/g,"_");
+    a.searchType=({
+      warp:"warp_signature",warp_signatures:"warp_signature",
+      subspace:"subspace_emission",subspace_signature:"subspace_emission",
+      transponder:"signal_transponder",life:"lifeform",lifeforms:"lifeform"
+    })[v]||v;
+  }
+  if(["track_start","track_priority","track_signature"].includes(a.type)){
+    const p=String(a.priority||"normal").toLowerCase();
+    a.priority=["high","alta","priority_high","prioritario","prioritaria"].includes(p)?"priority":p;
+  }
+  return a;
+}
+
+function normalizePlanShape(plan){
+  if(!plan||typeof plan!=="object")return plan;
+  const normalized={...plan};
+  if(normalized.version==null)normalized.version=CONTRACT_VERSION;
+  if(normalized.intentSummary==null)normalized.intentSummary="";
+  if(normalized.needsClarification==null)normalized.needsClarification=false;
+  if(normalized.clarificationQuestion===undefined)normalized.clarificationQuestion=null;
+  if(Array.isArray(normalized.actions))normalized.actions=normalized.actions.map(normalizeAction);
+  return normalized;
+}
+
 const CONFIG_SETTINGS=new Set(["sensitivity","default_resolution","sensor_power","sensor_array","band_frequency","update_rate","default_filters","default_priorities"]);
 const SEARCH_TYPES=new Set(["starship","shuttle","probe_beacon","lifeform","artificial_object","energy_source","warp_signature","subspace_emission","signal_transponder","radiation_particle","custom_signature"]);
 const INTERFERENCE_OPS=new Set(["automatic","manual","band","operation_power","reduce_resolution","extend_integration","recover_signal","restore"]);
@@ -197,6 +257,7 @@ export function validateCommandPlan(plan,profileId="picard"){
   const errors=[];
   const profile=COMPUTER_PROFILES[profileId]||COMPUTER_PROFILES.picard;
   if(!plan||typeof plan!=="object")return {ok:false,errors:["El intérprete no devolvió un objeto."]};
+  plan=normalizePlanShape(plan);
   if(plan.version&&plan.version!==CONTRACT_VERSION)errors.push("Versión de contrato no soportada: "+plan.version);
   if(plan.needsClarification){
     if(!String(plan.clarificationQuestion||"").trim())errors.push("Falta clarificationQuestion.");
