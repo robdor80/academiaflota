@@ -7,7 +7,7 @@ const labels={
 };
 export function createSimulation(scenario){
   const s=clone(scenario);
-  const contacts=s.contacts.map(c=>({...c,history:[],tracked:false,trackingMode:null,trackingPriority:"normal",lastObserved:null}));
+  const contacts=s.contacts.map(c=>({...c,initiallyLost:c.status==="lost",history:[],tracked:false,trackingMode:null,trackingPriority:"normal",lastObserved:null}));
   const capacity=s.trackingCapacity||8;
   const state={
     scenarioId:s.id,scenarioTitle:s.title,sector:s.sector||"041",serial:1,traceSerial:1,time:0,
