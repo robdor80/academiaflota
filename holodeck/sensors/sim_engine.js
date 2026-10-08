@@ -245,6 +245,7 @@ export function resolveScan(state,op){
   const focused=cfg.scanType==="focused";
   for(const c of state.contacts){
     if(focused&&cfg.contactId&&c.id!==cfg.contactId)continue;
+    if(c.worldPresent===false||c.sensorVisible===false)continue;
     if(cfg.targetValue?.startsWith("sector_")){const requested=cfg.targetValue.split("_")[1],contactSector=c.sector||state.sector;if(contactSector!==requested)continue}
     let score=q*signatureMatch(c,filters)+(c.signal||0)*.22;
     if(cfg.targetValue==="surrounding"&&c.distanceKm>35000)score-=30;
@@ -283,6 +284,7 @@ export function resolveSearch(state,config,operationId=null){
   const candidates=[];
   const accepted=new Set(searchKinds[config.searchType]||[]);
   for(const c of state.contacts){
+    if(c.worldPresent===false||c.sensorVisible===false)continue;
     let compatible=accepted.has(c.kind);
     if(config.searchType==="warp_signature")compatible=(c.signatures||[]).some(x=>x.includes("warp"));
     if(config.searchType==="subspace_emission")compatible=(c.signatures||[]).includes("subspace");
@@ -333,6 +335,7 @@ export function updateTracking(state,contactId,kind,options={}){
   if(kind==="trajectory"){const horizon=options.horizon||"5 min";return {ok:true,value:"Proyección "+c.vector+" · "+horizon,confidence:clamp(c.confidence-(horizon==="30 min"?28:horizon==="15 min"?18:9))}}
   if(kind==="reacquire"){
     if(c.status!=="lost")return {ok:false,reason:"El contacto no está perdido"};
+    if(c.worldPresent===false||c.sensorVisible===false)return {ok:false,reason:"No existe una señal actual detectable sobre la que readquirir el contacto"};
     const score=qualityScore(state,{resolution:"standard",duration:"extended",sensitivity:"high"});
     if(score<42)return {ok:false,reason:"Señal no recuperada"};
     c.status="unidentified";c.signal=Math.max(18,c.signal);c.confidence=clamp(Math.max(38,score*.7));c.known=true;
@@ -342,14 +345,42 @@ export function updateTracking(state,contactId,kind,options={}){
 }
 export function readout(state,contactId,readoutId){
   const c=getContact(state,contactId);if(!c)return null;
+  const spatial=contactSpatialSolution(c);
   const map={
     signal_strength:(c.signal||0)+" / 100",
     signature_type:(c.signatures||[]).join(" · ")||"No resuelta",
     band_frequency:c.band,energy_signature:c.energy,subspace_signature:c.subspace,
-    approx_mass:c.mass,approx_dimensions:c.dimensions,vector_velocity:c.vector+" · "+c.velocity,
+    approx_mass:c.mass,approx_dimensions:c.dimensions,
+    vector_velocity:[
+      "Marcación "+(spatial.bearingDeg??"sin resolver"),
+      "elevación "+(spatial.elevationDeg??"sin resolver"),
+      "curso "+(spatial.courseBearingDeg??"sin resolver")+" / "+(spatial.courseElevationDeg??"sin resolver"),
+      "velocidad "+(c.velocity||"sin resolver")
+    ].join(" · "),
     detectable_lifeforms:c.lifeforms,known_pattern_match:(c.patternMatch??0)+" %"
   };
-  return {value:map[readoutId]??"Sin dato",uncertainty:c.confidence>=80?"Baja":c.confidence>=55?"Media":"Alta",confidence:c.confidence,timestamp:c.lastObserved||"Observación inicial",provenance:"Sensores / "+state.activeArray,history:c.history};
+  const currentAvailable=c.status!=="lost"&&c.worldPresent!==false&&c.sensorVisible!==false;
+  const value=map[readoutId]??"Sin dato";
+  if(!currentAvailable){
+    return {
+      available:false,
+      current:false,
+      reason:"contact_lost",
+      value:null,
+      lastValue:value,
+      uncertainty:c.confidence>=80?"Baja":c.confidence>=55?"Media":"Alta",
+      confidence:c.confidence,
+      timestamp:c.lastObserved||"Última observación registrada",
+      provenance:"Registro de Sensores / "+state.activeArray,
+      history:c.history
+    };
+  }
+  return {
+    available:true,current:true,value,
+    uncertainty:c.confidence>=80?"Baja":c.confidence>=55?"Media":"Alta",
+    confidence:c.confidence,timestamp:c.lastObserved||"Observación actual",
+    provenance:"Sensores / "+state.activeArray,history:c.history
+  };
 }
 export function applyInterference(state,action,payload={}){
   const i=state.interference;
