@@ -91,6 +91,73 @@ export const CONTRACT_SPEC={
   }
 };
 
+export const GEMINI_RESPONSE_SCHEMA={
+  type:"object",
+  additionalProperties:false,
+  required:["version","intentSummary","needsClarification","clarificationQuestion","actions"],
+  properties:{
+    version:{type:"string",enum:[CONTRACT_VERSION]},
+    intentSummary:{type:"string"},
+    needsClarification:{type:"boolean"},
+    clarificationQuestion:{type:["string","null"]},
+    interpreterUncertain:{type:"boolean"},
+    actions:{
+      type:"array",
+      maxItems:8,
+      items:{
+        type:"object",
+        additionalProperties:false,
+        required:["type"],
+        properties:{
+          type:{type:"string",enum:[...ACTION_TYPES]},
+          contactId:{type:["string","null"]},
+          scanType:{type:["string","null"],enum:["short_range","long_range","focused",null]},
+          target:{type:["string","null"]},
+          mode:{type:["string","null"]},
+          resolution:{type:["string","null"]},
+          priority:{type:["string","null"]},
+          duration:{type:["string","null"]},
+          filters:{type:["array","null"],items:{type:"string"}},
+          searchType:{type:["string","null"],enum:["starship","shuttle","probe_beacon","lifeform","artificial_object","energy_source","warp_signature","subspace_emission","signal_transponder","radiation_particle","custom_signature",null]},
+          area:{type:["string","null"]},
+          sensitivity:{type:["string","null"]},
+          criteria:{type:["string","null"]},
+          signature:{type:["string","null"]},
+          operation:{type:["string","null"]},
+          horizon:{type:["string","null"]},
+          readout:{type:["string","null"]},
+          targetDepartment:{type:["string","null"]},
+          requested:{type:["number","null"]},
+          reason:{type:["string","null"]},
+          band:{type:["string","null"]},
+          value:{type:["string","number","boolean","array","null"],items:{type:"string"}},
+          integration:{type:["string","null"]},
+          scope:{type:["string","null"]},
+          arrayId:{type:["string","null"]},
+          component:{type:["string","null"]},
+          diagnosticCode:{type:["string","null"]},
+          marked:{type:["boolean","null"]},
+          source:{type:["string","null"],enum:["last_scan","last_search","last_operation",null]},
+          newOnly:{type:["boolean","null"]},
+          minConfidence:{type:["number","null"],minimum:0,maximum:100},
+          resultId:{type:["string","null"]},
+          a:{type:["string","null"]},
+          b:{type:["string","null"]},
+          overrides:{type:["object","null"]},
+          operationId:{type:["string","null"]},
+          profileId:{type:["string","null"]},
+          name:{type:["string","null"]},
+          setting:{type:["string","null"]},
+          condition:{type:["string","null"]},
+          threshold:{type:["number","null"]},
+          domain:{type:["string","null"]},
+          filter:{type:["string","null"]}
+        }
+      }
+    }
+  }
+};
+
 export const INTERPRETER_INSTRUCTIONS=`
 Eres la capa de interpretación de la Computadora de a bordo.
 NO ejecutas acciones ni inventas resultados. Solo conviertes lenguaje humano en un contrato JSON.
