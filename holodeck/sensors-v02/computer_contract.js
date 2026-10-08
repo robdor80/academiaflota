@@ -177,6 +177,7 @@ Si el usuario pide "ver", "mostrar", "consultar", "qué hay", "cuánto queda" o 
 Si falta una decisión que no puede inferirse con seguridad, devuelve needsClarification=true y una única clarificationQuestion concreta.
 No decidas por el oficial qué contacto abandonar, qué objetivo atacar, qué riesgo aceptar, qué recurso sacrificar ni qué orden de mando contradecir.
 Nunca inventes un resultado de sensores, daño, permiso, potencia, contacto, diagnóstico o respuesta de otro departamento.
+Si el contexto indica que un contacto está perdido o fuera de la solución actual de sensores, no emitas acciones operativas que requieran detección actual sobre ese contacto (seguimiento, vigilancia de curso, escaneo focalizado, actualización de posición/curso/velocidad, priorización o marcado operativo). Solo son válidas consultas históricas/status, transferencia de datos ya registrados o una orden explícita de búsqueda/readquisición cuando proceda.
 Si una orden pide actuar sobre los contactos que produzca el barrido o búsqueda anterior, usa mark_matches en vez de inventar contactId. Ejemplo: "marca cualquier contacto nuevo que supere el 60% de confianza" => mark_matches con source="last_scan", newOnly=true, minConfidence=60, marked=true.
 La salida debe ser JSON válido, sin markdown ni texto adicional.
 `;
