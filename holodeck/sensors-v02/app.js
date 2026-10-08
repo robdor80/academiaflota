@@ -1049,13 +1049,28 @@ function routineWatchTick(){
       continue;
     }
 
-    if(prev.courseBearingDeg!==cur.courseBearingDeg||prev.courseElevationDeg!==cur.courseElevationDeg){
-      if(prev.courseBearingDeg!=null||cur.courseBearingDeg!=null){
+    const courseChanged=prev.courseBearingDeg!==cur.courseBearingDeg||prev.courseElevationDeg!==cur.courseElevationDeg;
+    const velocityChanged=prev.velocity!==cur.velocity;
+    const becameApproaching=prev.relativeMotion!=="approaching"&&cur.relativeMotion==="approaching";
+    const closeApproach=cur.closestApproachKm!=null&&Number(cur.closestApproachKm)<=15000;
+    const significantMotion=(courseChanged||velocityChanged)&&becameApproaching&&closeApproach;
+
+    if(significantMotion){
+      events.push({
+        severity:"warning",
+        type:"significant_motion_change",
+        text:"CAMBIO DE COMPORTAMIENTO: "+cur.id+" ha modificado curso y velocidad. Ahora se aproxima. Curso "+
+          angleLabel(cur.courseBearingDeg)+" / "+angleLabel(cur.courseElevationDeg??0,{signed:true})+
+          " · velocidad "+(cur.velocity||"sin resolver")+" · máxima aproximación prevista "+distanceLabel(cur.closestApproachKm)+
+          ". Sin indicadores hostiles confirmados."
+      });
+    }else{
+      if(courseChanged&&(prev.courseBearingDeg!=null||cur.courseBearingDeg!=null)){
         events.push({severity:"routine",type:"course_change",text:cur.id+" ha cambiado de curso: "+angleLabel(cur.courseBearingDeg)+" / "+angleLabel(cur.courseElevationDeg??0,{signed:true})+"."});
       }
-    }
-    if(prev.velocity!==cur.velocity){
-      events.push({severity:"routine",type:"velocity_change",text:cur.id+" ha cambiado de velocidad: "+cur.velocity+"."});
+      if(velocityChanged){
+        events.push({severity:"routine",type:"velocity_change",text:cur.id+" ha cambiado de velocidad: "+cur.velocity+"."});
+      }
     }
     if(prev.classification!==cur.classification){
       state.routineWatch.newUnknownIds=state.routineWatch.newUnknownIds.filter(id=>id!==cur.id);
@@ -1147,7 +1162,9 @@ function routineWatchTick(){
             ?"ALERTA · CONTACTO PRIORITARIO"
             :event.type==="identity_resolved"
               ?"IDENTIDAD CONFIRMADA"
-              :"VIGILANCIA AUTOMÁTICA";
+              :event.type==="significant_motion_change"
+                ?"ALERTA · CAMBIO DE COMPORTAMIENTO"
+                :"VIGILANCIA AUTOMÁTICA";
       addMessage("computer",event.text,meta);
       log("ROUTINE WATCH "+event.type+" · "+event.text);
     }
@@ -1438,6 +1455,51 @@ function scheduleProgressiveIdentificationTest(){
   state.worldTestTimers.push(stage1,stage2,stage3,release);
 }
 
+function scheduleBehaviorChangeTest(){
+  if(!state.sim)return;
+  state.sim.contacts=state.sim.contacts.filter(c=>c.id!=="C-T06");
+
+  const contact={
+    id:"C-T06",known:false,status:"identified",classification:"Carguero civil de la Federación",kind:"starship",
+    distanceKm:136000,confidence:91,signal:82,signatures:["transponder","warp","em"],marked:false,
+    vector:"307 / +02",bearingDeg:307,elevationDeg:2,courseBearingDeg:214,courseElevationDeg:0,
+    velocity:"0,06c",relativeMotion:"crossing",closestApproachKm:46200,tcpaMinutes:null,
+    mass:"2,9 ×10⁶ t ±8%",dimensions:"212 × 76 × 49 m",lifeforms:"118 compatibles",
+    band:"2,6 THz",energy:"Patrón Federación estable",subspace:"Firma warp estable",patternMatch:98,
+    transponderRecognized:true,transponderLabel:"SS Valencia · NAR-70312",affiliation:"Federación",
+    military:false,operationalPriority:"normal",hostile:false,worldPresent:true,sensorVisible:true,
+    history:[],tracked:false,trackingMode:null,trackingPriority:"normal",lastObserved:null
+  };
+
+  state.sim.contacts.push(contact);
+  syncRoutineWatchBaseline();render();
+
+  const select=$("#world-test-select"),button=$("#world-test-run");
+  if(select)select.disabled=true;
+  if(button){button.disabled=true;button.textContent="FASE 1/2 · ENTRADA EN ALCANCE";}
+  log("WORLD TEST · 4/8 cambio de comportamiento C-T06");
+
+  const stage1=setTimeout(()=>{
+    const c=state.sim?.contacts?.find(x=>x.id==="C-T06");if(!c)return;
+    c.distanceKm=88500;c.signal=84;c.bearingDeg=305;c.elevationDeg=2;c.vector="305 / +02";
+    log("WORLD STATE · C-T06 entra en largo alcance · comportamiento normal");
+    if(button)button.textContent="FASE 2/2 · CAMBIO DE COMPORTAMIENTO";
+  },6000);
+
+  const stage2=setTimeout(()=>{
+    const c=state.sim?.contacts?.find(x=>x.id==="C-T06");if(!c)return;
+    c.distanceKm=76200;c.bearingDeg=304;c.elevationDeg=1;c.vector="304 / +01";
+    c.courseBearingDeg=125;c.courseElevationDeg=-1;
+    c.velocity="0,14c";c.relativeMotion="approaching";c.closestApproachKm=8500;
+    c.operationalPriority="high";c.hostile=false;
+    log("WORLD STATE · C-T06 cambia curso y velocidad · aproximación significativa · sin hostilidad confirmada");
+    if(button)button.textContent="ESPERANDO CICLO DE SENSORES…";
+  },16000);
+
+  const release=setTimeout(()=>setWorldTestIdle(),23000);
+  state.worldTestTimers.push(stage1,stage2,release);
+}
+
 function launchWorldTest(){
   const selected=$("#world-test-select")?.value;
   if(selected==="known")return scheduleKnownLongRangeContactTest();
@@ -1446,6 +1508,7 @@ function launchWorldTest(){
   if(selected==="anomalous-loss")return scheduleAnomalousLossTest();
   if(selected==="warp-departure")return scheduleWarpDepartureTest();
   if(selected==="progressive-identification")return scheduleProgressiveIdentificationTest();
+  if(selected==="behavior-change")return scheduleBehaviorChangeTest();
 }
 
 function scheduleKnownLongRangeContactTest(){
