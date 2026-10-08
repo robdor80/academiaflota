@@ -114,6 +114,7 @@ function renderContacts(){
       '<div class="contact-top"><strong>'+esc(c.id)+'</strong><strong>'+Math.round(c.confidence)+'%</strong></div>'+
       '<span>'+esc(c.classification)+'</span><div class="contact-meta">'+
       (needsAttention?'<span class="mini-tag alert-tag">NUEVO · DESCONOCIDO</span>':'')+
+      (c.transponderRecognized?'<span class="mini-tag">transpondedor reconocido</span>':'')+
       (c.tracked?'<span class="mini-tag">seguimiento '+esc(c.trackingPriority)+'</span>':'')+
       (c.marked?'<span class="mini-tag">marcado</span>':'')+
       (c.signatures||[]).slice(0,2).map(x=>'<span class="mini-tag">'+esc(x)+'</span>').join("")+
@@ -777,7 +778,7 @@ function routineWatchTick(){
   for(const cur of current.contacts){
     const prev=prevMap.get(cur.id);
     if(!prev){
-      const unknown=cur.identificationSource==="unknown"||cur.status==="unidentified"||String(cur.classification||"").toLowerCase().includes("no identificado");
+      const unknown=!cur.transponderRecognized&&(cur.identificationSource==="unknown"||cur.status==="unidentified"||String(cur.classification||"").toLowerCase().includes("no identificado"));
       if(unknown){
         if(!state.routineWatch.newUnknownIds.includes(cur.id))state.routineWatch.newUnknownIds.push(cur.id);
         events.push({
@@ -787,10 +788,11 @@ function routineWatchTick(){
         });
       }else{
         const source=cur.transponderRecognized?"transpondedor reconocido":"correlación de sensores";
+        const identity=cur.transponderLabel||cur.classification||"Identidad resuelta";
         events.push({
           severity:"routine",
           type:"new_identified_contact",
-          text:"Nuevo contacto identificado: "+cur.id+" · "+cur.classification+" · "+source+" · confianza "+cur.confidence+"% · distancia "+Math.round(cur.distanceKm||0)+" km · rumbo "+(cur.vector||"sin resolver")+"."
+          text:"Nuevo contacto identificado: "+cur.id+" · "+identity+" · "+source+" · confianza "+cur.confidence+"% · distancia "+Math.round(cur.distanceKm||0)+" km · rumbo "+(cur.vector||"sin resolver")+"."
         });
       }
       continue;
