@@ -576,3 +576,30 @@ button{cursor:pointer}
   padding-top:2px
 }
 .developer-popover .world-test-launcher{flex-wrap:wrap}
+
+.install-pwa-button{
+  border-color:#6fa48a;
+  color:#dcf4e7;
+}
+.install-pwa-button:hover{background:#234f3d}
+
+@media (display-mode: fullscreen),(display-mode: standalone){
+  html,body{background:#e8eef2}
+  .bridge-shell{
+    padding:
+      max(4px,env(safe-area-inset-top))
+      max(4px,env(safe-area-inset-right))
+      max(4px,env(safe-area-inset-bottom))
+      max(4px,env(safe-area-inset-left));
+    gap:4px
+  }
+  .operator-log{min-height:32px;padding:4px 6px}
+}
+html.pwa-runtime .bridge-shell{
+  padding:
+    max(4px,env(safe-area-inset-top))
+    max(4px,env(safe-area-inset-right))
+    max(4px,env(safe-area-inset-bottom))
+    max(4px,env(safe-area-inset-left));
+  gap:4px
+}
