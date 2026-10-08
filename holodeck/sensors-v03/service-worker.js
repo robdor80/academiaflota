@@ -1,4 +1,4 @@
-const CACHE_NAME="sensors-v03-pwa-v1";
+const CACHE_NAME="sensors-v03-pwa-v2";
 
 const APP_SHELL=[
   "./",
@@ -6,6 +6,7 @@ const APP_SHELL=[
   "./manifest.webmanifest",
   "./sensors-v03.css",
   "./app.js",
+  "./contact_actions.js",
   "./pwa.js",
   "./assets/zenital_ncc1701d.webp",
   "./assets/perfil_ncc1701d.webp",
