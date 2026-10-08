@@ -1260,6 +1260,61 @@ function scheduleWarpDepartureTest(){
   state.worldTestTimers.push(timer);
 }
 
+function scheduleProgressiveIdentificationTest(){
+  if(!state.sim)return;
+  state.sim.contacts=state.sim.contacts.filter(c=>c.id!=="C-T05");
+  const contact={
+    id:"C-T05",known:false,status:"unidentified",classification:"No identificado",kind:"starship",
+    distanceKm:132000,confidence:24,signal:72,signatures:["subspace","energy"],marked:false,
+    vector:"254 / +06",bearingDeg:254,elevationDeg:6,courseBearingDeg:74,courseElevationDeg:-1,
+    velocity:"0,13c",relativeMotion:"approaching",closestApproachKm:26800,tcpaMinutes:null,
+    mass:"Sin resolver",dimensions:"Sin resolver",lifeforms:"No concluyente",band:"Subespacio",
+    energy:"Patrón energético no correlacionado",subspace:"Firma warp parcial no correlacionada",
+    patternMatch:31,transponderRecognized:false,transponderLabel:null,affiliation:null,military:false,
+    operationalPriority:"normal",worldPresent:true,sensorVisible:true,history:[],tracked:false,
+    trackingMode:null,trackingPriority:"normal",lastObserved:null
+  };
+  state.sim.contacts.push(contact);
+  syncRoutineWatchBaseline();render();
+
+  const select=$("#world-test-select"),button=$("#world-test-run");
+  if(select)select.disabled=true;
+  if(button){button.disabled=true;button.textContent="FASE 1/3 · ENTRADA EN ALCANCE";}
+  log("WORLD TEST · 3/8 identificación progresiva C-T05");
+
+  const stage1=setTimeout(()=>{
+    const c=state.sim?.contacts?.find(x=>x.id==="C-T05");if(!c)return;
+    c.distanceKm=92000;c.signal=76;c.confidence=32;c.bearingDeg=251;c.elevationDeg=5;c.vector="251 / +05";
+    log("WORLD STATE · C-T05 entra en largo alcance sin identificación");
+    if(button)button.textContent="FASE 2/3 · CORRELACIÓN";
+  },6000);
+
+  const stage2=setTimeout(()=>{
+    const c=state.sim?.contacts?.find(x=>x.id==="C-T05");if(!c)return;
+    c.classification="Posible nave klingon";c.confidence=59;c.signal=80;
+    c.signatures=["warp","subspace","energy"];c.energy="Patrón compatible con tecnología klingon";
+    c.subspace="Firma warp parcialmente compatible con perfiles klingon";c.patternMatch=66;
+    c.affiliation="Probable Imperio Klingon";c.military=true;
+    log("WORLD STATE · C-T05 correlación parcial · posible nave klingon");
+    if(button)button.textContent="FASE 3/3 · IDENTIDAD";
+  },14000);
+
+  const stage3=setTimeout(()=>{
+    const c=state.sim?.contacts?.find(x=>x.id==="C-T05");if(!c)return;
+    c.classification="Crucero de ataque clase Vor'cha";c.status="identified";c.confidence=93;c.signal=88;
+    c.signatures=["warp","subspace","energy","transponder"];c.energy="Reactor materia/antimateria · patrón militar klingon";
+    c.subspace="Firma warp klingon correlacionada";c.patternMatch=99;c.affiliation="Imperio Klingon";
+    c.military=true;c.operationalPriority="high";c.transponderRecognized=true;c.transponderLabel="IKS Korath";
+    c.mass="4,8 ×10⁶ t ±14%";c.dimensions="481 × 341 × 106 m";c.lifeforms="Dotación numerosa compatible";
+    c.distanceKm=81500;c.bearingDeg=248;c.elevationDeg=4;c.vector="248 / +04";
+    log("WORLD STATE · C-T05 identificado por transpondedor");
+    if(button)button.textContent="ESPERANDO CICLO DE SENSORES…";
+  },23000);
+
+  const release=setTimeout(()=>setWorldTestIdle(),30000);
+  state.worldTestTimers.push(stage1,stage2,stage3,release);
+}
+
 function launchWorldTest(){
   const selected=$("#world-test-select")?.value;
   if(selected==="known")return scheduleKnownLongRangeContactTest();
@@ -1267,6 +1322,7 @@ function launchWorldTest(){
   if(selected==="klingon")return scheduleKlingonLongRangeContactTest();
   if(selected==="anomalous-loss")return scheduleAnomalousLossTest();
   if(selected==="warp-departure")return scheduleWarpDepartureTest();
+  if(selected==="progressive-identification")return scheduleProgressiveIdentificationTest();
 }
 
 function scheduleKnownLongRangeContactTest(){
