@@ -380,7 +380,8 @@ async function executeAction(a){
         detail("Procedencia",r.provenance)
       ]);
       return {
-        ok:false,
+        ok:true,
+        available:false,
         kind:"readout_unavailable",
         text:a.contactId+" no está actualmente en sensores. No puedo realizar un análisis en tiempo real. Último dato registrado: "+r.lastValue+". Última confianza "+r.confidence+"%.",
         contactId:a.contactId,
