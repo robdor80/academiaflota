@@ -80,7 +80,12 @@
     <div id="quick-actions" class="quick-actions"></div>
 
     <section class="command-box">
-      <textarea id="command-input" rows="3" placeholder="Escribe una orden natural. Ej.: «Mantén a C-43 bajo seguimiento prioritario y avísame si cambia de rumbo.»"></textarea>
+      <div class="input-destination" aria-label="Destino de la comunicación">
+        <span>DESTINO</span>
+        <button id="destination-computer" class="destination-button active" type="button">COMPUTADORA</button>
+        <button id="destination-bridge" class="destination-button" type="button">OFICIAL AL MANDO</button>
+      </div>
+      <textarea id="command-input" rows="3" placeholder="Escribe una orden natural. Ej.: «Sigue C-43 y avísame si cambia de curso.»"></textarea>
       <div class="command-actions">
         <button id="voice-button" class="voice" title="Dictar orden">🎙 Voz</button>
         <button id="send-command" class="primary">Enviar a la computadora</button>
