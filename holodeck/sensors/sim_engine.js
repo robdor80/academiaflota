@@ -145,6 +145,7 @@ export function passiveSurveillanceCycle(state,options={}){
       signatures:[...(c.signatures||[])],
       transponderPresent:recognition.transponderPresent,
       transponderRecognized:recognition.transponderRecognized,
+      transponderLabel:c.transponderLabel||c.transponder?.label||null,
       identificationSource:recognition.identificationSource,
       score
     });
