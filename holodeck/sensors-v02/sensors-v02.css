@@ -67,3 +67,6 @@ button,input,select,textarea{font:inherit}.shell{min-width:1050px;min-height:100
 .world-test-launcher>span{font-size:.58rem;font-weight:900;letter-spacing:.08em;color:#d9bf7a}
 .world-test-launcher select{max-width:260px;border:1px solid #536a7b;background:#10283b;color:#dce7ed;border-radius:6px;padding:7px 9px;font-size:.68rem;font-weight:750}
 .world-test-launcher select:disabled,.world-test-launcher button:disabled{opacity:.6}
+
+.contact-card.lost-contact{border-color:#963f3f;background:#fff0f0;box-shadow:0 0 0 2px rgba(150,63,63,.12)}
+.lost-tag{background:#f2cccc!important;color:#7a2626!important;font-weight:900!important}
