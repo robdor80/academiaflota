@@ -956,6 +956,57 @@ function scheduleKnownLongRangeContactTest(){
   state.worldTestTimers.push(timer);
 }
 
+function scheduleUnknownLongRangeContactTest(){
+  if(!state.sim)return;
+  const existing=state.sim.contacts.find(c=>c.id==="C-T02");
+  if(existing){
+    state.sim.contacts=state.sim.contacts.filter(c=>c.id!=="C-T02");
+  }
+
+  const testContact={
+    id:"C-T02",
+    known:false,
+    status:"unidentified",
+    classification:"No identificado",
+    kind:"unknown",
+    distanceKm:138000,
+    confidence:18,
+    signal:70,
+    signatures:["subspace","energy"],
+    marked:false,
+    vector:"147 / +05",
+    velocity:"0,12c ±0,03c",
+    mass:"Sin resolver",
+    dimensions:"Sin resolver",
+    lifeforms:"No concluyente",
+    band:"4,4 THz / subespacio",
+    energy:"Intermitente",
+    subspace:"Firma parcial no correlacionada",
+    patternMatch:26,
+    transponderRecognized:false,
+    worldPresent:true,
+    sensorVisible:true
+  };
+  state.sim.contacts.push(testContact);
+  syncRoutineWatchBaseline();
+
+  const button=$("#world-test-unknown");
+  if(button){button.disabled=true;button.textContent="PRUEBA PROGRAMADA · 15 s";}
+  log("WORLD TEST · C-T02 creado fuera de alcance a 138000 km · entrada prevista en 15 s");
+
+  const timer=setTimeout(()=>{
+    const c=state.sim?.contacts?.find(x=>x.id==="C-T02");
+    if(!c)return;
+    c.distanceKm=91000;
+    c.signal=73;
+    c.vector="145 / +05";
+    c.velocity="0,13c ±0,03c";
+    log("WORLD STATE · C-T02 entra en largo alcance a 91000 km sin identificación");
+    if(button){button.disabled=false;button.textContent="PRUEBA · CONTACTO DESCONOCIDO";}
+  },15000);
+  state.worldTestTimers.push(timer);
+}
+
 function bind(){
   $("#scenario-select").onchange=()=>{if($("#mode-select").value==="free")resetScenario("free:scenario-select",$("#scenario-select").value)};
   $("#computer-select").onchange=()=>{state.profileId=$("#computer-select").value;addMessage("system","Computadora activa: "+profile().name);log("COMPUTER PROFILE "+state.profileId);render()};
@@ -965,6 +1016,7 @@ function bind(){
   $("#command-input").addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&e.key==="Enter"){const v=e.currentTarget.value;e.currentTarget.value="";submitCommand(v,"text")}});
   $("#toggle-log").onclick=()=>{$("#log-panel").hidden=!$("#log-panel").hidden};
   $("#world-test-known").onclick=scheduleKnownLongRangeContactTest;
+  $("#world-test-unknown").onclick=scheduleUnknownLongRangeContactTest;
   $("#copy-exercise-log").onclick=copyExerciseLog;
 }
 async function load(){
