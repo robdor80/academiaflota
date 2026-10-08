@@ -147,8 +147,8 @@ function beginContactLossPresentation(contact,tone="routine"){
 function renderContacts(){
   const all=knownContacts(state.sim);
   const unknownAttention=new Set(state.routineWatch.newUnknownIds||[]);
-  const active=all.filter(c=>c.status!=="lost");
-  const lost=all.filter(c=>c.status==="lost");
+  const active=all.filter(c=>c.status!=="lost"||c.lossFlashActive);
+  const lost=all.filter(c=>c.status==="lost"&&!c.lossFlashActive);
   const list=state.contactView==="lost"?lost:state.contactView==="all"?all:active;
 
   const counts=$("#contact-counts");
