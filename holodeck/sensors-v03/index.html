@@ -2,8 +2,17 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#07131d">
+<meta name="application-name" content="Consola de Sensores">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Sensores">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <title>Sensores v0.3 · Estación operativa</title>
+<link rel="icon" type="image/svg+xml" href="../../starfleet-app-icon.svg?v=0.6.2">
+<link rel="apple-touch-icon" href="../../starfleet.png?v=0.6.1">
+<link rel="manifest" href="./manifest.webmanifest?v=0.3.0">
 <link rel="stylesheet" href="./sensors-v03.css">
 </head>
 <body>
@@ -135,6 +144,7 @@
               <option value="flash38">Forzar 3.8 Flash</option>
             </select></label>
             <button id="cloud-config-button" class="top-button" type="button">CUENTA IA</button>
+            <button id="install-pwa-button" class="top-button install-pwa-button" type="button" hidden>INSTALAR CONSOLA</button>
             <a href="../sensors-v02/">v0.2</a>
             <a href="../">← Consolas</a>
           </div>
@@ -212,6 +222,7 @@
 </dialog>
 
 <div id="teacher-panel" hidden></div>
+<script src="./pwa.js?v=0.3.0" defer></script>
 <script type="module" src="./app.js"></script>
 </body>
 </html>
