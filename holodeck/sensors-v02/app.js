@@ -112,7 +112,8 @@ function renderContacts(){
   const unknownAttention=new Set(state.routineWatch.newUnknownIds||[]);
   $("#contacts-list").innerHTML=list.map(c=>{
     const needsAttention=unknownAttention.has(c.id);
-    const cls=["contact-card",c.id===state.selectedContactId?"active":"",needsAttention?"routine-alert":""].filter(Boolean).join(" ");
+    const isPriority=c.operationalPriority==="high";
+    const cls=["contact-card",c.id===state.selectedContactId?"active":"",needsAttention?"routine-alert":"",isPriority?"priority-contact":""].filter(Boolean).join(" ");
     const identity=c.transponderRecognized&&c.transponderLabel?c.transponderLabel:c.classification;
     const secondary=c.transponderRecognized&&c.transponderLabel&&c.classification&&c.classification!==identity
       ?'<span class="contact-classification">'+esc(c.classification)+'</span>'
@@ -121,6 +122,8 @@ function renderContacts(){
       '<div class="contact-top"><strong>'+esc(c.id)+'</strong><strong>'+Math.round(c.confidence)+'%</strong></div>'+
       '<span>'+esc(identity)+'</span>'+secondary+'<div class="contact-meta">'+
       (needsAttention?'<span class="mini-tag alert-tag">NUEVO · DESCONOCIDO</span>':'')+
+      (isPriority?'<span class="mini-tag priority-tag">PRIORITARIO</span>':'')+
+      (c.affiliation?'<span class="mini-tag">'+esc(c.affiliation)+'</span>':'')+
       (c.transponderRecognized?'<span class="mini-tag">transpondedor reconocido</span>':'')+
       (!c.transponderRecognized&&(c.signatures||[]).includes("transponder")?'<span class="mini-tag">transpondedor detectado</span>':'')+
       (c.tracked?'<span class="mini-tag">seguimiento '+esc(c.trackingPriority)+'</span>':'')+
@@ -800,10 +803,14 @@ function routineWatchTick(){
       }else{
         const source=cur.transponderRecognized?"transpondedor reconocido":"correlación de sensores";
         const identity=cur.transponderLabel||cur.classification||"Identidad resuelta";
+        const priority=cur.operationalPriority==="high";
         events.push({
-          severity:"routine",
-          type:"new_identified_contact",
-          text:"Nuevo contacto identificado: "+cur.id+" · "+identity+" · "+source+" · confianza "+cur.confidence+"% · distancia "+Math.round(cur.distanceKm||0)+" km · rumbo "+(cur.vector||"sin resolver")+"."
+          severity:priority?"warning":"routine",
+          type:priority?"new_priority_contact":"new_identified_contact",
+          text:(priority?"CONTACTO PRIORITARIO: ":"Nuevo contacto identificado: ")+cur.id+" · "+identity+
+            (cur.affiliation?" · "+cur.affiliation:"")+" · "+source+
+            " · confianza "+cur.confidence+"% · distancia "+Math.round(cur.distanceKm||0)+" km · rumbo "+(cur.vector||"sin resolver")+
+            (priority?". No se detecta actitud hostil confirmada.":".")
         });
       }
       continue;
@@ -873,7 +880,9 @@ function routineWatchTick(){
         ?"ALERTA · PÉRDIDA ANÓMALA"
         :event.type==="new_unknown_contact"
           ?"NUEVO CONTACTO · DESCONOCIDO"
-          :"VIGILANCIA AUTOMÁTICA";
+          :event.type==="new_priority_contact"
+            ?"ALERTA · CONTACTO PRIORITARIO"
+            :"VIGILANCIA AUTOMÁTICA";
       addMessage("computer",event.text,meta);
       log("ROUTINE WATCH "+event.type+" · "+event.text);
     }
@@ -1012,6 +1021,61 @@ function scheduleUnknownLongRangeContactTest(){
   state.worldTestTimers.push(timer);
 }
 
+function scheduleKlingonLongRangeContactTest(){
+  if(!state.sim)return;
+  const existing=state.sim.contacts.find(c=>c.id==="C-T03");
+  if(existing){
+    state.sim.contacts=state.sim.contacts.filter(c=>c.id!=="C-T03");
+  }
+
+  const testContact={
+    id:"C-T03",
+    known:false,
+    status:"unidentified",
+    classification:"Crucero de ataque clase Vor'cha",
+    kind:"starship",
+    distanceKm:152000,
+    confidence:36,
+    signal:82,
+    signatures:["transponder","warp","subspace","energy"],
+    marked:false,
+    vector:"318 / -04",
+    velocity:"0,16c",
+    mass:"4,8 ×10⁶ t ±11%",
+    dimensions:"481 × 341 × 106 m",
+    lifeforms:"Lecturas compatibles con dotación numerosa",
+    band:"Subespacio militar",
+    energy:"Reactor materia/antimateria",
+    subspace:"Firma warp klingon correlacionada",
+    patternMatch:97,
+    transponderRecognized:true,
+    transponderLabel:"IKS Vornak",
+    affiliation:"Imperio Klingon",
+    military:true,
+    operationalPriority:"high",
+    worldPresent:true,
+    sensorVisible:true
+  };
+  state.sim.contacts.push(testContact);
+  syncRoutineWatchBaseline();
+
+  const button=$("#world-test-klingon");
+  if(button){button.disabled=true;button.textContent="PRUEBA PROGRAMADA · 15 s";}
+  log("WORLD TEST · C-T03 nave klingon fuera de alcance a 152000 km · entrada prevista en 15 s");
+
+  const timer=setTimeout(()=>{
+    const c=state.sim?.contacts?.find(x=>x.id==="C-T03");
+    if(!c)return;
+    c.distanceKm=96500;
+    c.signal=84;
+    c.vector="316 / -04";
+    c.velocity="0,17c";
+    log("WORLD STATE · C-T03 entra en largo alcance · transpondedor klingon reconocido");
+    if(button){button.disabled=false;button.textContent="PRUEBA · NAVE KLINGON";}
+  },15000);
+  state.worldTestTimers.push(timer);
+}
+
 function bind(){
   $("#scenario-select").onchange=()=>{if($("#mode-select").value==="free")resetScenario("free:scenario-select",$("#scenario-select").value)};
   $("#computer-select").onchange=()=>{state.profileId=$("#computer-select").value;addMessage("system","Computadora activa: "+profile().name);log("COMPUTER PROFILE "+state.profileId);render()};
@@ -1022,6 +1086,7 @@ function bind(){
   $("#toggle-log").onclick=()=>{$("#log-panel").hidden=!$("#log-panel").hidden};
   $("#world-test-known").onclick=scheduleKnownLongRangeContactTest;
   $("#world-test-unknown").onclick=scheduleUnknownLongRangeContactTest;
+  $("#world-test-klingon").onclick=scheduleKlingonLongRangeContactTest;
   $("#copy-exercise-log").onclick=copyExerciseLog;
 }
 async function load(){
