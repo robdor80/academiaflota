@@ -157,7 +157,7 @@ function renderQuickActions(){
     ["Barrido sector","Barrido de largo alcance del sector "+String(state.sim.sector||"041").padStart(3,"0")+", prioridad subespacio"]
   ];
   if(c)actions.push(["Analizar "+c.id,"Analiza "+c.id],["Seguir "+c.id,"Mantén "+c.id+" bajo seguimiento prioritario"]);
-  if(p.id==="picard"&&c)actions.push(["Vigilar rumbo","Mantén "+c.id+" bajo seguimiento y avísame si cambia de rumbo"]);
+  if(p.id==="picard"&&c)actions.push(["Vigilar curso","Mantén "+c.id+" bajo seguimiento y avísame si cambia de curso"]);
   if(p.id!=="pike"&&effectivePenalty(state.sim)>18)actions.push(["Compensar interferencia","Compensa automáticamente las interferencias"]);
   actions=actions.slice(0,p.id==="pike"?3:p.id==="kirk"?4:5);
   $("#quick-actions").innerHTML=actions.map(([label,cmd])=>'<button class="quick" data-quick="'+esc(cmd)+'">'+esc(label)+'</button>').join("");
