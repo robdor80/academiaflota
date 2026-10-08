@@ -313,6 +313,9 @@ export function resolveSearch(state,config,operationId=null){
 }
 export function startTracking(state,contactId,mode="normal",priority="normal",signature=null){
   const c=getContact(state,contactId);if(!c)return {ok:false,reason:"Contacto inexistente"};
+  if(c.status==="lost"||c.worldPresent===false||c.sensorVisible===false){
+    return {ok:false,reason:"Contacto perdido o fuera de la solución actual de sensores"};
+  }
   const existing=state.tracking.assignments.find(a=>a.contactId===contactId);
   const need=trackingCost(mode,priority)-(existing?trackingCost(existing.mode,existing.priority):0);
   if(trackingUsed(state)+need>state.tracking.capacity)return {ok:false,reason:"Capacidad de seguimiento insuficiente"};
@@ -327,6 +330,9 @@ export function stopTracking(state,contactId){
 }
 export function updateTracking(state,contactId,kind,options={}){
   const c=getContact(state,contactId);if(!c)return {ok:false,reason:"Contacto inexistente"};
+  if(kind!=="reacquire"&&(c.status==="lost"||c.worldPresent===false||c.sensorVisible===false)){
+    return {ok:false,reason:"Contacto perdido o fuera de la solución actual de sensores"};
+  }
   const a=state.tracking.assignments.find(x=>x.contactId===contactId);
   if(!a&&kind!=="reacquire")return {ok:false,reason:"El contacto no está en seguimiento"};
   if(kind==="position"){c.confidence=clamp(c.confidence+5);a.quality=clamp(a.quality+4);a.updatedAt=now();return {ok:true,value:"Posición actualizada · confianza "+c.confidence+"%"}}
