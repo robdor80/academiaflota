@@ -1059,7 +1059,14 @@ function scheduleAnomalousLossTest(){
       confidence:92,
       signal:90,
       vector:"316 / -04",
+      bearingDeg:316,
+      elevationDeg:-4,
+      courseBearingDeg:142,
+      courseElevationDeg:1,
       velocity:"0,17c",
+      relativeMotion:"approaching",
+      closestApproachKm:12400,
+      tcpaMinutes:null,
       transponderRecognized:true,
       transponderLabel:"IKS Vornak",
       affiliation:"Imperio Klingon",
@@ -1199,7 +1206,14 @@ function scheduleKnownLongRangeContactTest(){
     signatures:["transponder","warp","em"],
     marked:false,
     vector:"203 / -02",
+    bearingDeg:203,
+    elevationDeg:-2,
+    courseBearingDeg:221,
+    courseElevationDeg:0,
     velocity:"0,08c",
+    relativeMotion:"crossing",
+    closestApproachKm:73500,
+    tcpaMinutes:null,
     mass:"2,4 ×10⁶ t ±10%",
     dimensions:"165 × 74 × 41 m",
     lifeforms:"142 compatibles",
@@ -1224,6 +1238,12 @@ function scheduleKnownLongRangeContactTest(){
     c.distanceKm=94000;
     c.signal=76;
     c.vector="201 / -02";
+    c.bearingDeg=201;
+    c.elevationDeg=-2;
+    c.courseBearingDeg=221;
+    c.courseElevationDeg=0;
+    c.relativeMotion="crossing";
+    c.closestApproachKm=73500;
     c.velocity="0,09c";
     log("WORLD STATE · C-T01 entra en largo alcance a 94000 km");
     setWorldTestIdle();
@@ -1250,7 +1270,14 @@ function scheduleUnknownLongRangeContactTest(){
     signatures:["subspace","energy"],
     marked:false,
     vector:"147 / +05",
+    bearingDeg:147,
+    elevationDeg:5,
+    courseBearingDeg:null,
+    courseElevationDeg:null,
     velocity:"0,12c ±0,03c",
+    relativeMotion:"unknown",
+    closestApproachKm:null,
+    tcpaMinutes:null,
     mass:"Sin resolver",
     dimensions:"Sin resolver",
     lifeforms:"No concluyente",
@@ -1274,6 +1301,8 @@ function scheduleUnknownLongRangeContactTest(){
     c.distanceKm=91000;
     c.signal=73;
     c.vector="145 / +05";
+    c.bearingDeg=145;
+    c.elevationDeg=5;
     c.velocity="0,13c ±0,03c";
     log("WORLD STATE · C-T02 entra en largo alcance a 91000 km sin identificación");
     setWorldTestIdle();
