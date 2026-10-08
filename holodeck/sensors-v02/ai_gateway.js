@@ -1,4 +1,4 @@
-import {CONTRACT_VERSION,CONTRACT_SPEC,INTERPRETER_INSTRUCTIONS,COMPUTER_PROFILES,validateCommandPlan} from "./computer_contract.js";
+import {CONTRACT_VERSION,CONTRACT_SPEC,GEMINI_RESPONSE_SCHEMA,INTERPRETER_INSTRUCTIONS,COMPUTER_PROFILES,validateCommandPlan} from "./computer_contract.js";
 import {getComputerConfig} from "./computer_cloud.js";
 import {repairConditionalScanMark} from "./command_repair.js";
 
@@ -47,7 +47,9 @@ function parseOne(raw,context,profile){
 
   if(has(t,"estado","informe","situacion","situación")){
     if(has(t,"seguimiento","tracking"))return {type:"status",scope:"tracking",contactId:cid};
-    if(cid)return {type:"status",scope:"contact",contactId:cid};
+    if(has(t,"sensor","sensores"))return {type:"status",scope:"sensors",contactId:null};
+    if(explicit)return {type:"status",scope:"contact",contactId:explicit};
+    if(cid&&has(t,"contacto","objetivo"))return {type:"status",scope:"contact",contactId:cid};
     return {type:"status",scope:"sensors",contactId:null};
   }
 

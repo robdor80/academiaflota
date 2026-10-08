@@ -1,13 +1,46 @@
 const clone=v=>JSON.parse(JSON.stringify(v));
 const clamp=(v,min=0,max=100)=>Math.max(min,Math.min(max,v));
 const now=()=>new Date().toLocaleTimeString("es-ES",{hour12:false});
+
+function parseLegacyAnglePair(value){
+  const m=String(value??"").match(/(-?\d+(?:\.\d+)?)\s*\/\s*([+-]?\d+(?:\.\d+)?)/);
+  if(!m)return {primary:null,secondary:null};
+  return {primary:Number(m[1]),secondary:Number(m[2])};
+}
+function normalizeContactSpatial(contact){
+  const pos=parseLegacyAnglePair(contact.vector);
+  const course=parseLegacyAnglePair(contact.course);
+  return {
+    ...contact,
+    bearingDeg:Number.isFinite(Number(contact.bearingDeg))?Number(contact.bearingDeg):pos.primary,
+    elevationDeg:Number.isFinite(Number(contact.elevationDeg))?Number(contact.elevationDeg):pos.secondary,
+    courseBearingDeg:Number.isFinite(Number(contact.courseBearingDeg))?Number(contact.courseBearingDeg):course.primary,
+    courseElevationDeg:Number.isFinite(Number(contact.courseElevationDeg))?Number(contact.courseElevationDeg):course.secondary,
+    relativeMotion:contact.relativeMotion||null,
+    closestApproachKm:Number.isFinite(Number(contact.closestApproachKm))?Number(contact.closestApproachKm):null,
+    tcpaMinutes:Number.isFinite(Number(contact.tcpaMinutes))?Number(contact.tcpaMinutes):null
+  };
+}
+export function contactSpatialSolution(contact){
+  const c=normalizeContactSpatial(contact||{});
+  return {
+    bearingDeg:c.bearingDeg,
+    elevationDeg:c.elevationDeg,
+    courseBearingDeg:c.courseBearingDeg,
+    courseElevationDeg:c.courseElevationDeg,
+    velocity:c.velocity||null,
+    relativeMotion:c.relativeMotion||null,
+    closestApproachKm:c.closestApproachKm,
+    tcpaMinutes:c.tcpaMinutes
+  };
+}
 const labels={
   low:"BAJA",medium:"MEDIA",high:"ALTA",severe:"SEVERA",
   standard:"ESTÁNDAR",high_resolution:"ALTA",general:"GENERAL"
 };
 export function createSimulation(scenario){
   const s=clone(scenario);
-  const contacts=s.contacts.map(c=>({...c,history:[],tracked:false,trackingMode:null,trackingPriority:"normal",lastObserved:null}));
+  const contacts=s.contacts.map(c=>normalizeContactSpatial({...c,initiallyLost:c.status==="lost",history:[],tracked:false,trackingMode:null,trackingPriority:"normal",lastObserved:null}));
   const capacity=s.trackingCapacity||8;
   const state={
     scenarioId:s.id,scenarioTitle:s.title,sector:s.sector||"041",serial:1,traceSerial:1,time:0,
@@ -47,6 +80,134 @@ export function effectivePenalty(state){
   if(state.config.bandFrequency!=="broad"&&state.config.bandFrequency!==state.interference.band)p*=.72;
   return Math.round(p);
 }
+
+const PASSIVE_EXPECTED_LOSS_REASONS=new Set([
+  "out_of_range","known_interference","occlusion","warp_departure",
+  "docked","landed","scheduled_shutdown","sensor_shadow"
+]);
+
+function passiveRecognition(contact){
+  const classification=String(contact.classification||"").toLowerCase();
+  const identified=classification!=="no identificado"&&classification!=="desconocido"&&classification!=="unknown";
+  const transponderLabel=contact.transponderLabel||contact.transponder?.label||null;
+  const transponderPresent=contact.transponderPresent===true||contact.transponderRecognized===true||!!transponderLabel||(contact.signatures||[]).includes("transponder");
+  const transponderRecognized=contact.transponderRecognized===true||!!transponderLabel;
+  return {
+    identified,
+    transponderPresent,
+    transponderRecognized,
+    transponderLabel,
+    identificationSource:transponderRecognized?"transponder":identified?"sensor_correlation":"unknown"
+  };
+}
+
+export function passiveSurveillanceCycle(state,options={}){
+  const array=getArray(state);
+  const rangeKm=Math.max(1000,Number(options.rangeKm)||Number(array?.range||100)*1000);
+  const acquisitionThreshold=Number(options.acquisitionThreshold)||55;
+  const q=qualityScore(state,{
+    scanType:"long_range",
+    mode:"passive",
+    resolution:"standard",
+    duration:"standard",
+    sensitivity:state.config.sensitivity,
+    priority:"none"
+  });
+
+  const observations=[];
+  const nonDetections=[];
+
+  for(const c of state.contacts){
+    const worldPresent=c.worldPresent!==false;
+    const sensorVisible=c.sensorVisible!==false;
+    const inRange=Number(c.distanceKm||0)<=rangeKm;
+    const hasSignal=Number(c.signal||0)>0;
+    const explicitLossReason=c.sensorLossReason||c.lossReason||null;
+    const forcedLost=c.status==="lost"&&!hasSignal;
+    const score=clamp(Math.round(q+(Number(c.signal||0)*.22)));
+
+    const detectable=
+      worldPresent &&
+      sensorVisible &&
+      inRange &&
+      !forcedLost &&
+      score>=acquisitionThreshold;
+
+    if(!detectable){
+      if(c.known){
+        const reason=!worldPresent
+          ?explicitLossReason
+          :!sensorVisible
+            ?explicitLossReason
+            :!inRange
+              ?"out_of_range"
+              :forcedLost
+                ?explicitLossReason
+                :"below_passive_threshold";
+        nonDetections.push({
+          id:c.id,
+          reason:reason||null,
+          expected:PASSIVE_EXPECTED_LOSS_REASONS.has(String(reason||"")),
+          worldPresent,
+          sensorVisible,
+          inRange,
+          score
+        });
+      }
+      continue;
+    }
+
+    const recognition=passiveRecognition(c);
+    if(recognition.transponderRecognized)c.transponderRecognized=true;
+    if(!c.known){
+      const confidence=clamp(Math.round((Number(c.confidence||0)*.55)+(score*.45)));
+      revealContact(state,c,confidence,"passive_watch");
+      if(recognition.transponderRecognized)c.status="identified";
+      else if(!recognition.identified)c.status="unidentified";
+    }else if(c.status==="lost"){
+      c.status=recognition.identified?"identified":"unidentified";
+      c.lastObserved=now();
+    }
+
+    observations.push({
+      id:c.id,
+      classification:c.classification,
+      status:c.status,
+      confidence:Math.round(c.confidence),
+      distanceKm:c.distanceKm,
+      vector:c.vector,
+      velocity:c.velocity,
+      signal:c.signal,
+      signatures:[...(c.signatures||[])],
+      transponderPresent:recognition.transponderPresent,
+      transponderRecognized:recognition.transponderRecognized,
+      transponderLabel:recognition.transponderLabel,
+      affiliation:c.affiliation||null,
+      military:!!c.military,
+      operationalPriority:c.operationalPriority||"normal",
+      bearingDeg:contactSpatialSolution(c).bearingDeg,
+      elevationDeg:contactSpatialSolution(c).elevationDeg,
+      courseBearingDeg:contactSpatialSolution(c).courseBearingDeg,
+      courseElevationDeg:contactSpatialSolution(c).courseElevationDeg,
+      relativeMotion:contactSpatialSolution(c).relativeMotion,
+      closestApproachKm:contactSpatialSolution(c).closestApproachKm,
+      tcpaMinutes:contactSpatialSolution(c).tcpaMinutes,
+      identificationSource:recognition.identificationSource,
+      score
+    });
+  }
+
+  return {
+    time:now(),
+    mode:"passive_continuous",
+    shortRange:true,
+    longRange:true,
+    rangeKm,
+    quality:q,
+    observations,
+    nonDetections
+  };
+}
 function qualityScore(state,cfg={}){
   const a=getArray(state);
   const res={general:0,standard:8,high:18}[cfg.resolution||state.config.defaultResolution]||0;
@@ -84,6 +245,7 @@ export function resolveScan(state,op){
   const focused=cfg.scanType==="focused";
   for(const c of state.contacts){
     if(focused&&cfg.contactId&&c.id!==cfg.contactId)continue;
+    if(c.worldPresent===false||c.sensorVisible===false)continue;
     if(cfg.targetValue?.startsWith("sector_")){const requested=cfg.targetValue.split("_")[1],contactSector=c.sector||state.sector;if(contactSector!==requested)continue}
     let score=q*signatureMatch(c,filters)+(c.signal||0)*.22;
     if(cfg.targetValue==="surrounding"&&c.distanceKm>35000)score-=30;
@@ -122,6 +284,7 @@ export function resolveSearch(state,config,operationId=null){
   const candidates=[];
   const accepted=new Set(searchKinds[config.searchType]||[]);
   for(const c of state.contacts){
+    if(c.worldPresent===false||c.sensorVisible===false)continue;
     let compatible=accepted.has(c.kind);
     if(config.searchType==="warp_signature")compatible=(c.signatures||[]).some(x=>x.includes("warp"));
     if(config.searchType==="subspace_emission")compatible=(c.signatures||[]).includes("subspace");
@@ -150,6 +313,9 @@ export function resolveSearch(state,config,operationId=null){
 }
 export function startTracking(state,contactId,mode="normal",priority="normal",signature=null){
   const c=getContact(state,contactId);if(!c)return {ok:false,reason:"Contacto inexistente"};
+  if(c.status==="lost"||c.worldPresent===false||c.sensorVisible===false){
+    return {ok:false,reason:"Contacto perdido o fuera de la solución actual de sensores"};
+  }
   const existing=state.tracking.assignments.find(a=>a.contactId===contactId);
   const need=trackingCost(mode,priority)-(existing?trackingCost(existing.mode,existing.priority):0);
   if(trackingUsed(state)+need>state.tracking.capacity)return {ok:false,reason:"Capacidad de seguimiento insuficiente"};
@@ -164,6 +330,9 @@ export function stopTracking(state,contactId){
 }
 export function updateTracking(state,contactId,kind,options={}){
   const c=getContact(state,contactId);if(!c)return {ok:false,reason:"Contacto inexistente"};
+  if(kind!=="reacquire"&&(c.status==="lost"||c.worldPresent===false||c.sensorVisible===false)){
+    return {ok:false,reason:"Contacto perdido o fuera de la solución actual de sensores"};
+  }
   const a=state.tracking.assignments.find(x=>x.contactId===contactId);
   if(!a&&kind!=="reacquire")return {ok:false,reason:"El contacto no está en seguimiento"};
   if(kind==="position"){c.confidence=clamp(c.confidence+5);a.quality=clamp(a.quality+4);a.updatedAt=now();return {ok:true,value:"Posición actualizada · confianza "+c.confidence+"%"}}
@@ -172,6 +341,7 @@ export function updateTracking(state,contactId,kind,options={}){
   if(kind==="trajectory"){const horizon=options.horizon||"5 min";return {ok:true,value:"Proyección "+c.vector+" · "+horizon,confidence:clamp(c.confidence-(horizon==="30 min"?28:horizon==="15 min"?18:9))}}
   if(kind==="reacquire"){
     if(c.status!=="lost")return {ok:false,reason:"El contacto no está perdido"};
+    if(c.worldPresent===false||c.sensorVisible===false)return {ok:false,reason:"No existe una señal actual detectable sobre la que readquirir el contacto"};
     const score=qualityScore(state,{resolution:"standard",duration:"extended",sensitivity:"high"});
     if(score<42)return {ok:false,reason:"Señal no recuperada"};
     c.status="unidentified";c.signal=Math.max(18,c.signal);c.confidence=clamp(Math.max(38,score*.7));c.known=true;
@@ -181,14 +351,42 @@ export function updateTracking(state,contactId,kind,options={}){
 }
 export function readout(state,contactId,readoutId){
   const c=getContact(state,contactId);if(!c)return null;
+  const spatial=contactSpatialSolution(c);
   const map={
     signal_strength:(c.signal||0)+" / 100",
     signature_type:(c.signatures||[]).join(" · ")||"No resuelta",
     band_frequency:c.band,energy_signature:c.energy,subspace_signature:c.subspace,
-    approx_mass:c.mass,approx_dimensions:c.dimensions,vector_velocity:c.vector+" · "+c.velocity,
+    approx_mass:c.mass,approx_dimensions:c.dimensions,
+    vector_velocity:[
+      "Marcación "+(spatial.bearingDeg??"sin resolver"),
+      "elevación "+(spatial.elevationDeg??"sin resolver"),
+      "curso "+(spatial.courseBearingDeg??"sin resolver")+" / "+(spatial.courseElevationDeg??"sin resolver"),
+      "velocidad "+(c.velocity||"sin resolver")
+    ].join(" · "),
     detectable_lifeforms:c.lifeforms,known_pattern_match:(c.patternMatch??0)+" %"
   };
-  return {value:map[readoutId]??"Sin dato",uncertainty:c.confidence>=80?"Baja":c.confidence>=55?"Media":"Alta",confidence:c.confidence,timestamp:c.lastObserved||"Observación inicial",provenance:"Sensores / "+state.activeArray,history:c.history};
+  const currentAvailable=c.status!=="lost"&&c.worldPresent!==false&&c.sensorVisible!==false;
+  const value=map[readoutId]??"Sin dato";
+  if(!currentAvailable){
+    return {
+      available:false,
+      current:false,
+      reason:"contact_lost",
+      value:null,
+      lastValue:value,
+      uncertainty:c.confidence>=80?"Baja":c.confidence>=55?"Media":"Alta",
+      confidence:c.confidence,
+      timestamp:c.lastObserved||"Última observación registrada",
+      provenance:"Registro de Sensores / "+state.activeArray,
+      history:c.history
+    };
+  }
+  return {
+    available:true,current:true,value,
+    uncertainty:c.confidence>=80?"Baja":c.confidence>=55?"Media":"Alta",
+    confidence:c.confidence,timestamp:c.lastObserved||"Observación actual",
+    provenance:"Sensores / "+state.activeArray,history:c.history
+  };
 }
 export function applyInterference(state,action,payload={}){
   const i=state.interference;

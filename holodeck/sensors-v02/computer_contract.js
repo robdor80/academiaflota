@@ -91,16 +91,94 @@ export const CONTRACT_SPEC={
   }
 };
 
+export const GEMINI_RESPONSE_SCHEMA={
+  type:"object",
+  additionalProperties:false,
+  required:["version","intentSummary","needsClarification","clarificationQuestion","actions"],
+  properties:{
+    version:{type:"string",enum:[CONTRACT_VERSION]},
+    intentSummary:{type:"string"},
+    needsClarification:{type:"boolean"},
+    clarificationQuestion:{type:["string","null"]},
+    interpreterUncertain:{type:"boolean"},
+    actions:{
+      type:"array",
+      maxItems:8,
+      items:{
+        type:"object",
+        additionalProperties:false,
+        required:["type"],
+        properties:{
+          type:{type:"string",enum:[...ACTION_TYPES]},
+          contactId:{type:["string","null"]},
+          scanType:{type:["string","null"],enum:["short_range","long_range","focused",null]},
+          target:{type:["string","null"]},
+          mode:{type:["string","null"]},
+          resolution:{type:["string","null"]},
+          priority:{type:["string","null"]},
+          duration:{type:["string","null"]},
+          filters:{type:["array","null"],items:{type:"string"}},
+          searchType:{type:["string","null"],enum:["starship","shuttle","probe_beacon","lifeform","artificial_object","energy_source","warp_signature","subspace_emission","signal_transponder","radiation_particle","custom_signature",null]},
+          area:{type:["string","null"]},
+          sensitivity:{type:["string","null"]},
+          criteria:{type:["string","null"]},
+          signature:{type:["string","null"]},
+          operation:{type:["string","null"]},
+          horizon:{type:["string","null"]},
+          readout:{type:["string","null"]},
+          targetDepartment:{type:["string","null"]},
+          requested:{type:["number","null"]},
+          reason:{type:["string","null"]},
+          band:{type:["string","null"]},
+          value:{type:["string","number","boolean","array","null"],items:{type:"string"}},
+          integration:{type:["string","null"]},
+          scope:{type:["string","null"]},
+          arrayId:{type:["string","null"]},
+          component:{type:["string","null"]},
+          diagnosticCode:{type:["string","null"]},
+          marked:{type:["boolean","null"]},
+          source:{type:["string","null"],enum:["last_scan","last_search","last_operation",null]},
+          newOnly:{type:["boolean","null"]},
+          minConfidence:{type:["number","null"],minimum:0,maximum:100},
+          resultId:{type:["string","null"]},
+          a:{type:["string","null"]},
+          b:{type:["string","null"]},
+          overrides:{type:["object","null"]},
+          operationId:{type:["string","null"]},
+          profileId:{type:["string","null"]},
+          name:{type:["string","null"]},
+          setting:{type:["string","null"]},
+          condition:{type:["string","null"]},
+          threshold:{type:["number","null"]},
+          domain:{type:["string","null"]},
+          filter:{type:["string","null"]}
+        }
+      }
+    }
+  }
+};
+
+export const GEMINI_GENERATION_CONFIG={
+  responseMimeType:"application/json",
+  responseSchema:GEMINI_RESPONSE_SCHEMA,
+  temperature:0.1
+};
+
 export const INTERPRETER_INSTRUCTIONS=`
 Eres la capa de interpretación de la Computadora de a bordo.
 NO ejecutas acciones ni inventas resultados. Solo conviertes lenguaje humano en un contrato JSON.
 Debes tolerar faltas de ortografía, frases coloquiales, dictado imperfecto y referencias contextuales cuando el perfil de computadora lo permita.
 Usa únicamente los tipos de acción y campos definidos por CONTRACT_SPEC.
+Devuelve SIEMPRE los cinco campos superiores: version="1.0", intentSummary, needsClarification, clarificationQuestion y actions.
+Cuando no necesites aclaración, usa needsClarification=false y clarificationQuestion=null.
+No inventes nombres de acciones equivalentes: por ejemplo, para estado usa type="status"; para analizar una lectura usa type="readout"; para localizar usa type="search"; para seguimiento usa type="track_start".
+Si el oficial pide iniciar, seguir o mantener un contacto sin especificar prioridad, usa track_start con priority="normal". Solo usa priority="priority" cuando la orden mencione explícitamente prioridad, prioritario, alta prioridad o equivalente.
 Las acciones de navegación de interfaz no forman parte del contrato: traduce la intención a capacidad operativa o consulta.
 Si el usuario pide "ver", "mostrar", "consultar", "qué hay", "cuánto queda" o equivalente, usa query/status/readout; no simules una acción física.
 Si falta una decisión que no puede inferirse con seguridad, devuelve needsClarification=true y una única clarificationQuestion concreta.
 No decidas por el oficial qué contacto abandonar, qué objetivo atacar, qué riesgo aceptar, qué recurso sacrificar ni qué orden de mando contradecir.
 Nunca inventes un resultado de sensores, daño, permiso, potencia, contacto, diagnóstico o respuesta de otro departamento.
+Si el contexto indica que un contacto está perdido o fuera de la solución actual de sensores, no emitas acciones operativas que requieran detección actual sobre ese contacto (seguimiento, vigilancia de curso, escaneo focalizado, actualización de posición/curso/velocidad, priorización o marcado operativo). Solo son válidas consultas históricas/status, transferencia de datos ya registrados o una orden explícita de búsqueda/readquisición cuando proceda.
 Si una orden pide actuar sobre los contactos que produzca el barrido o búsqueda anterior, usa mark_matches en vez de inventar contactId. Ejemplo: "marca cualquier contacto nuevo que supere el 60% de confianza" => mark_matches con source="last_scan", newOnly=true, minConfidence=60, marked=true.
 La salida debe ser JSON válido, sin markdown ni texto adicional.
 `;
@@ -116,6 +194,63 @@ const REQUIRED={
   apply_config:["setting"],watch:["contactId","condition"],status:["scope"],query:["domain"]
 };
 
+function normalizeAction(raw){
+  if(!raw||typeof raw!=="object")return raw;
+  const a={...raw};
+  const rawType=String(a.type||a.action||a.actionType||a.kind||"").toLowerCase().trim();
+  const typeAliases={
+    sensor_status:"status",get_status:"status",report_status:"status",status_report:"status",
+    sensor_readout:"readout",analyze:"readout",analyse:"readout",analysis:"readout",read:"readout",
+    track:"track_start",tracking:"track_start",follow:"track_start",start_tracking:"track_start",
+    locate:"search",find:"search",search_signature:"search",
+    sensor_scan:"scan",sweep:"scan",scan_area:"scan",
+    monitor:"watch",alert_watch:"watch",
+    send:"transfer",handoff:"transfer",
+    diagnostics:"diagnostic",run_diagnostic:"diagnostic"
+  };
+  a.type=ACTION_TYPES.has(rawType)?rawType:(typeAliases[rawType]||rawType);
+
+  if(a.contactId==null)a.contactId=a.contact??a.targetContact??a.contact_id??null;
+  if(a.scanType==null)a.scanType=a.scan_type??a.rangeType??null;
+  if(a.searchType==null)a.searchType=a.search_type??a.signatureType??null;
+  if(a.readout==null)a.readout=a.reading??a.readoutType??a.analysisType??null;
+  if(a.scope==null)a.scope=a.targetScope??null;
+
+  if(a.type==="status"){
+    const scope=String(a.scope||"sensors").toLowerCase();
+    a.scope=({sensor:"sensors",sensors:"sensors",tracking:"tracking",contact:"contact",ship:"ship",nave:"ship"})[scope]||scope;
+  }
+  if(a.type==="scan"&&a.scanType){
+    const v=String(a.scanType).toLowerCase().replace(/[\s-]+/g,"_");
+    a.scanType=({long:"long_range",longrange:"long_range",short:"short_range",shortrange:"short_range",focus:"focused"})[v]||v;
+  }
+  if(a.type==="search"){
+    if(a.area==null&&a.target!=null)a.area=a.target;
+    const v=String(a.searchType||"").toLowerCase().replace(/[\s-]+/g,"_");
+    a.searchType=({
+      warp:"warp_signature",warp_signatures:"warp_signature",
+      subspace:"subspace_emission",subspace_signature:"subspace_emission",
+      transponder:"signal_transponder",life:"lifeform",lifeforms:"lifeform"
+    })[v]||v;
+  }
+  if(["track_start","track_priority","track_signature"].includes(a.type)){
+    const p=String(a.priority||"normal").toLowerCase();
+    a.priority=["high","alta","priority_high","prioritario","prioritaria"].includes(p)?"priority":p;
+  }
+  return a;
+}
+
+function normalizePlanShape(plan){
+  if(!plan||typeof plan!=="object")return plan;
+  const normalized={...plan};
+  if(normalized.version==null)normalized.version=CONTRACT_VERSION;
+  if(normalized.intentSummary==null)normalized.intentSummary="";
+  if(normalized.needsClarification==null)normalized.needsClarification=false;
+  if(normalized.clarificationQuestion===undefined)normalized.clarificationQuestion=null;
+  if(Array.isArray(normalized.actions))normalized.actions=normalized.actions.map(normalizeAction);
+  return normalized;
+}
+
 const CONFIG_SETTINGS=new Set(["sensitivity","default_resolution","sensor_power","sensor_array","band_frequency","update_rate","default_filters","default_priorities"]);
 const SEARCH_TYPES=new Set(["starship","shuttle","probe_beacon","lifeform","artificial_object","energy_source","warp_signature","subspace_emission","signal_transponder","radiation_particle","custom_signature"]);
 const INTERFERENCE_OPS=new Set(["automatic","manual","band","operation_power","reduce_resolution","extend_integration","recover_signal","restore"]);
@@ -124,6 +259,7 @@ export function validateCommandPlan(plan,profileId="picard"){
   const errors=[];
   const profile=COMPUTER_PROFILES[profileId]||COMPUTER_PROFILES.picard;
   if(!plan||typeof plan!=="object")return {ok:false,errors:["El intérprete no devolvió un objeto."]};
+  plan=normalizePlanShape(plan);
   if(plan.version&&plan.version!==CONTRACT_VERSION)errors.push("Versión de contrato no soportada: "+plan.version);
   if(plan.needsClarification){
     if(!String(plan.clarificationQuestion||"").trim())errors.push("Falta clarificationQuestion.");

@@ -23,6 +23,7 @@
     <span id="cloud-status" class="badge cloud-status">IA · CONECTANDO</span>
     <button id="cloud-config-button" class="top-config-button" type="button">CUENTA IA</button>
     <a href="../sensors/">v0.1 manual</a>
+    <a href="../sensors-v03/">v0.3 puente</a>
     <a href="../">← Holocubierta</a>
   </div>
 </header>
@@ -80,7 +81,12 @@
     <div id="quick-actions" class="quick-actions"></div>
 
     <section class="command-box">
-      <textarea id="command-input" rows="3" placeholder="Escribe una orden natural. Ej.: «Mantén a C-43 bajo seguimiento prioritario y avísame si cambia de rumbo.»"></textarea>
+      <div class="input-destination" aria-label="Destino de la comunicación">
+        <span>DESTINO</span>
+        <button id="destination-computer" class="destination-button active" type="button">COMPUTADORA</button>
+        <button id="destination-bridge" class="destination-button" type="button">OFICIAL AL MANDO</button>
+      </div>
+      <textarea id="command-input" rows="3" placeholder="Escribe una orden natural. Ej.: «Sigue C-43 y avísame si cambia de curso.»"></textarea>
       <div class="command-actions">
         <button id="voice-button" class="voice" title="Dictar orden">🎙 Voz</button>
         <button id="send-command" class="primary">Enviar a la computadora</button>
@@ -107,6 +113,23 @@
 <footer class="operator-log">
   <div class="log-actions">
     <button id="toggle-log" class="secondary dark">LOG DE OPERADOR</button>
+    <div class="world-test-launcher">
+      <span>PRUEBAS</span>
+      <select id="world-test-select" aria-label="Seleccionar prueba del World State">
+        <optgroup label="Pruebas base">
+          <option value="known">Contacto conocido</option>
+          <option value="unknown">Contacto desconocido</option>
+          <option value="klingon">Nave klingon prioritaria</option>
+        </optgroup>
+        <optgroup label="Serie vigilancia 24/7">
+          <option value="anomalous-loss">1/8 · Desaparición anómala</option>
+          <option value="warp-departure">2/8 · Salida normal a curvatura</option>
+          <option value="progressive-identification">3/8 · Identificación progresiva</option>
+          <option value="behavior-change" selected>4/8 · Cambio de comportamiento</option>
+        </optgroup>
+      </select>
+      <button id="world-test-run" class="secondary dark" type="button">EJECUTAR PRUEBA</button>
+    </div>
     <button id="copy-exercise-log" class="secondary dark" hidden>COPIAR LOG DEL EJERCICIO</button>
     <span id="copy-log-status"></span>
   </div>

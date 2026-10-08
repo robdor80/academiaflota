@@ -1,14 +1,15 @@
-import {initTeacherMode,emitTeacherEvent} from "./teacher_mode.js";
+const initTeacherMode=()=>{};
+const emitTeacherEvent=()=>{};
 import {
   createSimulation,knownContacts,getContact,getArray,trackingUsed,effectivePenalty,
   createOperation,resolveScan,resolveSearch,startTracking,stopTracking,updateTracking,
   readout,applyInterference,applyConfig,restoreStandard,loadProfile,saveProfile,deleteProfile,runDiagnostic,calibrateArray,
   requestEngineering,makePowerResponse,transferData,saveReading,compareReadings,passiveSurveillanceCycle,contactSpatialSolution
 } from "../sensors/sim_engine.js";
-import {COMPUTER_PROFILES,validateCommandPlan,planPreview} from "./computer_contract.js";
-import {interpretCommand,aiEndpoint,localInterpret} from "./ai_gateway.js";
-import {createVoiceController} from "./voice_input.js";
-import {composeComputerResponse} from "./response_composer.js";
+import {COMPUTER_PROFILES,validateCommandPlan,planPreview} from "../sensors-v02/computer_contract.js";
+import {interpretCommand,aiEndpoint,localInterpret} from "../sensors-v02/ai_gateway.js";
+import {createVoiceController} from "../sensors-v02/voice_input.js";
+import {composeComputerResponse} from "../sensors-v02/response_composer.js";
 
 const $=s=>document.querySelector(s);
 const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
@@ -17,7 +18,7 @@ const wait=ms=>new Promise(r=>setTimeout(r,ms));
 const state={
   scenarios:null,sim:null,profileId:"picard",selectedContactId:null,
   conversation:[],logs:[],lastDetails:[],watchers:[],busy:false,
-  attention:null,lastPlan:null,routingMode:"auto",inputDestination:"computer",
+  attention:null,lastPlan:null,routingMode:"auto",inputDestination:"computer",contactView:"active",
   aiRuntime:{provider:null,modelUsed:null,escalated:false},
   lastObservationBatch:null,
   routineWatch:{
@@ -144,41 +145,40 @@ function beginContactLossPresentation(contact,tone="routine"){
   },2800);
 }
 function renderContacts(){
-  const list=knownContacts(state.sim);
+  const all=knownContacts(state.sim);
   const unknownAttention=new Set(state.routineWatch.newUnknownIds||[]);
-  const active=list.filter(c=>c.status!=="lost"||c.lossFlashActive);
-  const lost=list.filter(c=>c.status==="lost"&&!c.lossFlashActive);
+  const active=all.filter(c=>c.status!=="lost"||c.lossFlashActive);
+  const lost=all.filter(c=>c.status==="lost"&&!c.lossFlashActive);
+  const list=state.contactView==="lost"?lost:state.contactView==="all"?all:active;
+
+  const counts=$("#contact-counts");
+  if(counts)counts.textContent=active.length+" activos · "+lost.length+" perdidos";
+  document.querySelectorAll("[data-contact-view]").forEach(b=>b.classList.toggle("active",b.dataset.contactView===state.contactView));
 
   const renderCard=c=>{
     const needsAttention=unknownAttention.has(c.id);
     const isPriority=c.operationalPriority==="high";
     const isLost=c.status==="lost";
     const flashClass=c.lossFlashActive?(c.lossFlashTone==="critical"?"loss-flash-critical":"loss-flash-routine"):"";
-    const cls=["contact-card",c.id===state.selectedContactId?"active":"",needsAttention?"routine-alert":"",isPriority&&!isLost?"priority-contact":"",isLost&&!c.lossFlashActive?"lost-contact":"",flashClass].filter(Boolean).join(" ");
+    const cls=["contact-card",c.id===state.selectedContactId?"active":"",needsAttention?"routine-alert":"",isPriority&&!isLost?"priority-contact":"",isLost?"lost-contact":"",flashClass].filter(Boolean).join(" ");
     const identity=c.transponderRecognized&&c.transponderLabel?c.transponderLabel:c.classification;
     const secondary=c.transponderRecognized&&c.transponderLabel&&c.classification&&c.classification!==identity
       ?'<span class="contact-classification">'+esc(c.classification)+'</span>'
       :'';
-    return '<div class="'+cls+'" data-contact="'+esc(c.id)+'">'+
+    return '<button class="'+cls+'" data-contact="'+esc(c.id)+'" type="button">'+
       '<div class="contact-top"><strong>'+esc(c.id)+'</strong><strong>'+(isLost?"ÚLT. ":"")+Math.round(c.confidence)+'%</strong></div>'+
-      '<span>'+esc(identity)+'</span>'+secondary+'<div class="contact-meta">'+
-      (isLost?'<span class="mini-tag lost-tag">'+(c.initiallyLost?"PÉRDIDA PREVIA":c.lossFlashActive?"SALIENDO DE SENSORES":"CONTACTO PERDIDO")+'</span>':'')+
+      '<span class="contact-identity">'+esc(identity)+'</span>'+secondary+'<div class="contact-meta">'+
+      (isLost?'<span class="mini-tag lost-tag">'+(c.initiallyLost?"PÉRDIDA PREVIA":"CONTACTO PERDIDO")+'</span>':'')+
       (needsAttention?'<span class="mini-tag alert-tag">NUEVO · DESCONOCIDO</span>':'')+
       (isPriority?'<span class="mini-tag priority-tag">PRIORITARIO</span>':'')+
       (c.affiliation?'<span class="mini-tag">'+esc(c.affiliation)+'</span>':'')+
-      (c.transponderRecognized?'<span class="mini-tag">transpondedor reconocido</span>':'')+
-      (!c.transponderRecognized&&(c.signatures||[]).includes("transponder")?'<span class="mini-tag">transpondedor detectado</span>':'')+
       (c.tracked?'<span class="mini-tag">seguimiento '+esc(c.trackingPriority)+'</span>':'')+
-      (c.marked?'<span class="mini-tag">marcado</span>':'')+
-      (c.signatures||[]).slice(0,2).map(x=>'<span class="mini-tag">'+esc(x)+'</span>').join("")+
-      '</div></div>';
+      '</div></button>';
   };
 
-  const activeHtml=active.map(renderCard).join("");
-  const lostHtml=lost.length
-    ?'<div class="contact-section-label">CONTACTOS PERDIDOS · '+lost.length+'</div>'+lost.map(renderCard).join("")
-    :"";
-  $("#contacts-list").innerHTML=activeHtml+lostHtml;
+  $("#contacts-list").innerHTML=list.length
+    ?list.map(renderCard).join("")
+    :'<div class="empty-state">'+(state.contactView==="lost"?"No hay contactos perdidos.":"No hay contactos en esta vista.")+'</div>';
 
   document.querySelectorAll("[data-contact]").forEach(el=>el.onclick=()=>{
     state.selectedContactId=el.dataset.contact;state.sim.selectedContactId=el.dataset.contact;
@@ -190,10 +190,10 @@ function renderContacts(){
 function renderConversation(){
   const box=$("#conversation");if(!box)return;
   const roleLabel=role=>role==="user"?"OFICIAL":role==="computer"?"COMPUTADORA":role==="bridge"?"OFICIAL AL MANDO":"SISTEMA";
-  const visible=state.conversation.slice(-5);
+  const visible=state.conversation.slice(-4);
   const hiddenCount=Math.max(0,state.conversation.length-visible.length);
   box.innerHTML=
-    (hiddenCount?'<div class="conversation-history-note">'+hiddenCount+' comunicaciones anteriores conservadas en historial</div>':'')+
+    (hiddenCount?'<div class="conversation-history-note">'+hiddenCount+' anteriores en registro</div>':'')+
     visible.map(m=>'<div class="message '+esc(m.role)+'"><small>'+esc(roleLabel(m.role))+(m.meta?" · "+esc(m.meta):"")+'</small>'+esc(m.text)+'</div>').join("");
 }
 function renderQuickActions(){
@@ -233,6 +233,58 @@ function motionLabel(v){
 function distanceLabel(v){
   if(v==null||Number.isNaN(Number(v)))return "Sin resolver";
   return Math.round(Number(v)).toLocaleString("es-ES")+" km";
+}
+function polarPoint(angleDeg,radius=34,cx=50,cy=50){
+  const a=Number(angleDeg||0)*Math.PI/180;
+  return {x:cx+Math.sin(a)*radius,y:cy-Math.cos(a)*radius};
+}
+function renderSpatialViewer(){
+  const c=selectedContact();
+  const top=$("#spatial-top"),side=$("#spatial-side"),summary=$("#spatial-summary");
+  if(!top||!side||!summary)return;
+  if(!c){
+    top.innerHTML='<div class="spatial-empty">Sin contacto seleccionado</div>';
+    side.innerHTML='<div class="spatial-empty">Sin contacto seleccionado</div>';
+    summary.textContent="Seleccione un contacto para resolver su posición espacial.";
+    return;
+  }
+  const s=contactSpatialSolution(c);
+  const bearing=Number.isFinite(Number(s.bearingDeg))?Number(s.bearingDeg):0;
+  const elevation=Number.isFinite(Number(s.elevationDeg))?Number(s.elevationDeg):0;
+  const p=polarPoint(bearing,35);
+  const q=s.courseBearingDeg!=null?polarPoint(Number(s.courseBearingDeg),12,p.x,p.y):null;
+  const sideY=Math.max(14,Math.min(86,50-(elevation*2.2)));
+  const identity=c.transponderRecognized&&c.transponderLabel?c.transponderLabel:(c.classification||c.id);
+  const tone=c.hostile===true?"critical":c.operationalPriority==="high"?"priority":c.status==="lost"?"lost":"normal";
+
+  top.innerHTML=
+    '<svg class="spatial-svg" viewBox="0 0 100 100" aria-label="Vista cenital">'+
+      '<circle class="range-ring" cx="50" cy="50" r="18"/><circle class="range-ring" cx="50" cy="50" r="35"/>'+
+      '<line class="axis" x1="50" y1="7" x2="50" y2="93"/><line class="axis" x1="7" y1="50" x2="93" y2="50"/>'+
+      '<text class="bearing-label" x="50" y="6">000°</text><text class="bearing-label" x="94" y="52">090°</text><text class="bearing-label" x="50" y="98">180°</text><text class="bearing-label" x="3" y="52">270°</text>'+
+      '<path class="ship-top" d="M50 35 L57 48 L63 51 L57 54 L54 67 L50 72 L46 67 L43 54 L37 51 L43 48 Z"/>'+
+      '<line class="contact-line" x1="50" y1="50" x2="'+p.x.toFixed(1)+'" y2="'+p.y.toFixed(1)+'"/>'+
+      '<circle class="contact-dot '+tone+'" cx="'+p.x.toFixed(1)+'" cy="'+p.y.toFixed(1)+'" r="2.8"/>'+
+      (q?'<line class="course-arrow" x1="'+p.x.toFixed(1)+'" y1="'+p.y.toFixed(1)+'" x2="'+q.x.toFixed(1)+'" y2="'+q.y.toFixed(1)+'" marker-end="url(#arrowhead)"/>':'')+
+      '<defs><marker id="arrowhead" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z"/></marker></defs>'+
+    '</svg>'+
+    '<div class="spatial-caption"><strong>Marcación '+angleLabel(s.bearingDeg)+'</strong><span>'+distanceLabel(c.distanceKm)+'</span></div>';
+
+  side.innerHTML=
+    '<svg class="spatial-svg" viewBox="0 0 100 100" aria-label="Vista lateral">'+
+      '<line class="reference-plane" x1="7" y1="50" x2="93" y2="50"/>'+
+      '<text class="bearing-label" x="8" y="47">0°</text>'+
+      '<path class="ship-side" d="M31 50 Q42 44 62 46 L77 50 L62 54 Q42 56 31 50 Z"/>'+
+      '<line class="contact-line" x1="50" y1="50" x2="78" y2="'+sideY.toFixed(1)+'"/>'+
+      '<circle class="contact-dot '+tone+'" cx="78" cy="'+sideY.toFixed(1)+'" r="2.8"/>'+
+    '</svg>'+
+    '<div class="spatial-caption"><strong>Elevación '+angleLabel(s.elevationDeg,{signed:true})+'</strong><span>plano relativo</span></div>';
+
+  summary.innerHTML=
+    '<strong>'+esc(c.id)+' · '+esc(identity)+'</strong>'+
+    '<span>Curso '+esc(courseLabel(c))+' · '+esc(c.velocity||"Sin resolver")+'</span>'+
+    '<span class="'+(s.relativeMotion==="approaching"?"warn":"")+'">'+esc(motionLabel(s.relativeMotion))+
+    (s.closestApproachKm!=null?' · CPA '+esc(distanceLabel(s.closestApproachKm)):'')+'</span>';
 }
 function lostContactRecordSummary(c){
   const s=contactSpatialSolution(c);
@@ -320,7 +372,7 @@ function setInputDestination(destination){
   $("#command-input")?.focus();
 }
 function render(){
-  renderComputer();renderContacts();renderConversation();renderQuickActions();renderStatus();renderAttention();renderDetails();renderInputDestination();
+  renderComputer();renderContacts();renderConversation();renderQuickActions();renderStatus();renderAttention();renderDetails();renderInputDestination();renderSpatialViewer();
   const c=selectedContact();$("#context-title").textContent=c?"Contexto · "+c.id+" · "+c.classification:"Esperando órdenes";
 }
 function setDetails(rows){state.lastDetails=rows;renderDetails()}
@@ -1695,7 +1747,7 @@ function scheduleKlingonLongRangeContactTest(){
 }
 
 function bind(){
-  $("#scenario-select").onchange=()=>{if($("#mode-select").value==="free")resetScenario("free:scenario-select",$("#scenario-select").value)};
+  $("#scenario-select").onchange=()=>resetScenario("v03:scenario-select",$("#scenario-select").value);
   $("#computer-select").onchange=()=>{state.profileId=$("#computer-select").value;addMessage("system","Computadora activa: "+profile().name);log("COMPUTER PROFILE "+state.profileId);render()};
   $("#model-route-select").onchange=()=>{state.routingMode=$("#model-route-select").value;localStorage.setItem("sensorAI.routingMode",state.routingMode);addMessage("system","Ruta Gemini: "+($("#model-route-select").selectedOptions[0]?.textContent||state.routingMode));log("MODEL ROUTE "+state.routingMode);render()};
   $("#reset-sim").onclick=()=>resetScenario("manual",state.sim.scenarioId);
@@ -1703,6 +1755,7 @@ function bind(){
   $("#command-input").addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&e.key==="Enter"){const v=e.currentTarget.value;e.currentTarget.value="";submitInput(v,"text")}});
   $("#destination-computer").onclick=()=>setInputDestination("computer");
   $("#destination-bridge").onclick=()=>setInputDestination("bridge");
+  document.querySelectorAll("[data-contact-view]").forEach(b=>b.onclick=()=>{state.contactView=b.dataset.contactView||"active";renderContacts()});
   $("#toggle-log").onclick=()=>{$("#log-panel").hidden=!$("#log-panel").hidden};
   $("#world-test-run").onclick=launchWorldTest;
   $("#copy-exercise-log").onclick=copyExerciseLog;
@@ -1725,7 +1778,7 @@ async function load(){
     onStatus:(text,listening)=>{$("#voice-status").textContent=text;$("#voice-button").classList.toggle("listening",!!listening);$("#voice-button").textContent=listening?"■ Escuchando":"🎙 Voz"}
   });
   $("#voice-button").onclick=()=>voice.start();
-  addMessage("computer","Computadora de Sensores disponible. Vigilancia pasiva automática 24/7 de corto y largo alcance activa. Puede dar una orden por texto o por voz.");
+  addMessage("computer","Estación de Sensores operativa. Vigilancia pasiva 24/7 de corto y largo alcance activa. Puede operar por texto o voz y comunicar directamente con el oficial al mando.");
   syncRoutineWatchBaseline();
   render();
   initTeacherMode({resetScenario,logTeacher:teacherLog});
