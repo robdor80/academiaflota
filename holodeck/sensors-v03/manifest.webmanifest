@@ -1,0 +1,29 @@
+{
+  "name": "Consola de Sensores · Starfleet",
+  "short_name": "Sensores",
+  "description": "Consola operativa de Sensores para el simulador de puente.",
+  "id": "/academiaflota/holodeck/sensors-v03/",
+  "start_url": "/academiaflota/holodeck/sensors-v03/",
+  "scope": "/academiaflota/holodeck/sensors-v03/",
+  "display": "fullscreen",
+  "display_override": ["fullscreen", "standalone"],
+  "orientation": "landscape",
+  "background_color": "#e8eef2",
+  "theme_color": "#07131d",
+  "prefer_related_applications": false,
+  "categories": ["games", "utilities"],
+  "icons": [
+    {
+      "src": "../../starfleet-app-icon.svg?v=0.6.2",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "../../starfleet-app-icon.svg?v=0.6.2",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}
