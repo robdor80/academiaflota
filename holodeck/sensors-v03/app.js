@@ -1,4 +1,5 @@
-const initTeacherMode=()=>{};\nconst emitTeacherEvent=()=>{};
+const initTeacherMode=()=>{};
+const emitTeacherEvent=()=>{};
 import {
   createSimulation,knownContacts,getContact,getArray,trackingUsed,effectivePenalty,
   createOperation,resolveScan,resolveSearch,startTracking,stopTracking,updateTracking,
@@ -1753,7 +1754,8 @@ function bind(){
   $("#send-command").onclick=()=>{const el=$("#command-input"),v=el.value;el.value="";submitInput(v,"text")};
   $("#command-input").addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&e.key==="Enter"){const v=e.currentTarget.value;e.currentTarget.value="";submitInput(v,"text")}});
   $("#destination-computer").onclick=()=>setInputDestination("computer");
-  $("#destination-bridge").onclick=()=>setInputDestination("bridge");\n  document.querySelectorAll("[data-contact-view]").forEach(b=>b.onclick=()=>{state.contactView=b.dataset.contactView||"active";renderContacts()});
+  $("#destination-bridge").onclick=()=>setInputDestination("bridge");
+  document.querySelectorAll("[data-contact-view]").forEach(b=>b.onclick=()=>{state.contactView=b.dataset.contactView||"active";renderContacts()});
   $("#toggle-log").onclick=()=>{$("#log-panel").hidden=!$("#log-panel").hidden};
   $("#world-test-run").onclick=launchWorldTest;
   $("#copy-exercise-log").onclick=copyExerciseLog;
