@@ -31,7 +31,8 @@ const state={
     baseline:null,
     newUnknownIds:[],
     lastCycle:null
-  }
+  },
+  worldTestTimers:[]
 };
 
 function log(msg){
@@ -80,6 +81,8 @@ function resetScenario(source="manual",scenarioId=null){
   state.sim=createSimulation(sc);
   state.selectedContactId=state.sim.selectedContactId;
   state.watchers=[];state.attention=null;state.lastDetails=[];state.lastPlan=null;state.lastObservationBatch=null;
+  for(const id of state.worldTestTimers)clearTimeout(id);
+  state.worldTestTimers=[];
   state.routineWatch.status="Sin novedades";state.routineWatch.alertCount=0;state.routineWatch.baseline=null;state.routineWatch.newUnknownIds=[];state.routineWatch.lastCycle=null;
   if($("#scenario-select"))$("#scenario-select").value=sc.id;
   addMessage("system","Escenario reiniciado · "+sc.title);
@@ -901,6 +904,58 @@ async function copyExerciseLog(){
   try{await navigator.clipboard.writeText(text);status.textContent="✓ Log copiado";setTimeout(()=>status.textContent="",1800)}catch{status.textContent="No se pudo copiar"}
 }
 
+function scheduleKnownLongRangeContactTest(){
+  if(!state.sim)return;
+  const existing=state.sim.contacts.find(c=>c.id==="C-T01");
+  if(existing){
+    state.sim.contacts=state.sim.contacts.filter(c=>c.id!=="C-T01");
+  }
+
+  const testContact={
+    id:"C-T01",
+    known:false,
+    status:"unidentified",
+    classification:"Nave científica de la Federación",
+    kind:"starship",
+    distanceKm:145000,
+    confidence:34,
+    signal:74,
+    signatures:["transponder","warp","em"],
+    marked:false,
+    vector:"203 / -02",
+    velocity:"0,08c",
+    mass:"2,4 ×10⁶ t ±10%",
+    dimensions:"165 × 74 × 41 m",
+    lifeforms:"142 compatibles",
+    band:"2,8 THz",
+    energy:"Patrón Federación estable",
+    subspace:"Warp estable",
+    patternMatch:94,
+    transponderRecognized:true,
+    transponderLabel:"USS Venture · NCC-71854",
+    worldPresent:true,
+    sensorVisible:true
+  };
+  state.sim.contacts.push(testContact);
+  syncRoutineWatchBaseline();
+
+  const button=$("#world-test-known");
+  if(button){button.disabled=true;button.textContent="PRUEBA PROGRAMADA · 15 s";}
+  log("WORLD TEST · C-T01 creado fuera de alcance a 145000 km · entrada prevista en 15 s");
+
+  const timer=setTimeout(()=>{
+    const c=state.sim?.contacts?.find(x=>x.id==="C-T01");
+    if(!c)return;
+    c.distanceKm=94000;
+    c.signal=76;
+    c.vector="201 / -02";
+    c.velocity="0,09c";
+    log("WORLD STATE · C-T01 entra en largo alcance a 94000 km");
+    if(button){button.disabled=false;button.textContent="PRUEBA · CONTACTO CONOCIDO";}
+  },15000);
+  state.worldTestTimers.push(timer);
+}
+
 function bind(){
   $("#scenario-select").onchange=()=>{if($("#mode-select").value==="free")resetScenario("free:scenario-select",$("#scenario-select").value)};
   $("#computer-select").onchange=()=>{state.profileId=$("#computer-select").value;addMessage("system","Computadora activa: "+profile().name);log("COMPUTER PROFILE "+state.profileId);render()};
@@ -909,6 +964,7 @@ function bind(){
   $("#send-command").onclick=()=>{const el=$("#command-input"),v=el.value;el.value="";submitCommand(v,"text")};
   $("#command-input").addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&e.key==="Enter"){const v=e.currentTarget.value;e.currentTarget.value="";submitCommand(v,"text")}});
   $("#toggle-log").onclick=()=>{$("#log-panel").hidden=!$("#log-panel").hidden};
+  $("#world-test-known").onclick=scheduleKnownLongRangeContactTest;
   $("#copy-exercise-log").onclick=copyExerciseLog;
 }
 async function load(){
