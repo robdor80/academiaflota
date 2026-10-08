@@ -112,14 +112,34 @@ function renderComputer(){
     $("#ai-badge").textContent=state.routingMode==="flash38"?"GEMINI 3.8":state.routingMode==="lite"?"GEMINI 3.5 LITE":"GEMINI AUTO";
   }
 }
+function contactLossTone(c){
+  if(!c)return "routine";
+  const threat=String(c.threatLevel||c.hostility||c.tacticalState||"").toLowerCase();
+  return c.hostile===true||["hostile","critical","confirmed_hostile"].includes(threat)?"critical":"routine";
+}
+function beginContactLossPresentation(contact,tone="routine"){
+  if(!contact||contact.initiallyLost)return;
+  contact.lossFlashActive=true;
+  contact.lossFlashTone=tone;
+  setTimeout(()=>{
+    const current=state.sim?.contacts?.find(x=>x.id===contact.id);
+    if(!current)return;
+    current.lossFlashActive=false;
+    renderContacts();
+  },2800);
+}
 function renderContacts(){
   const list=knownContacts(state.sim);
   const unknownAttention=new Set(state.routineWatch.newUnknownIds||[]);
-  $("#contacts-list").innerHTML=list.map(c=>{
+  const active=list.filter(c=>c.status!=="lost"||c.lossFlashActive);
+  const lost=list.filter(c=>c.status==="lost"&&!c.lossFlashActive);
+
+  const renderCard=c=>{
     const needsAttention=unknownAttention.has(c.id);
     const isPriority=c.operationalPriority==="high";
     const isLost=c.status==="lost";
-    const cls=["contact-card",c.id===state.selectedContactId?"active":"",needsAttention?"routine-alert":"",isPriority?"priority-contact":"",isLost?"lost-contact":""].filter(Boolean).join(" ");
+    const flashClass=c.lossFlashActive?(c.lossFlashTone==="critical"?"loss-flash-critical":"loss-flash-routine"):"";
+    const cls=["contact-card",c.id===state.selectedContactId?"active":"",needsAttention?"routine-alert":"",isPriority&&!isLost?"priority-contact":"",isLost&&!c.lossFlashActive?"lost-contact":"",flashClass].filter(Boolean).join(" ");
     const identity=c.transponderRecognized&&c.transponderLabel?c.transponderLabel:c.classification;
     const secondary=c.transponderRecognized&&c.transponderLabel&&c.classification&&c.classification!==identity
       ?'<span class="contact-classification">'+esc(c.classification)+'</span>'
@@ -127,7 +147,7 @@ function renderContacts(){
     return '<div class="'+cls+'" data-contact="'+esc(c.id)+'">'+
       '<div class="contact-top"><strong>'+esc(c.id)+'</strong><strong>'+(isLost?"ÚLT. ":"")+Math.round(c.confidence)+'%</strong></div>'+
       '<span>'+esc(identity)+'</span>'+secondary+'<div class="contact-meta">'+
-      (isLost?'<span class="mini-tag lost-tag">'+(c.initiallyLost?"PÉRDIDA PREVIA":"CONTACTO PERDIDO")+'</span>':'')+
+      (isLost?'<span class="mini-tag lost-tag">'+(c.initiallyLost?"PÉRDIDA PREVIA":c.lossFlashActive?"SALIENDO DE SENSORES":"CONTACTO PERDIDO")+'</span>':'')+
       (needsAttention?'<span class="mini-tag alert-tag">NUEVO · DESCONOCIDO</span>':'')+
       (isPriority?'<span class="mini-tag priority-tag">PRIORITARIO</span>':'')+
       (c.affiliation?'<span class="mini-tag">'+esc(c.affiliation)+'</span>':'')+
@@ -137,7 +157,14 @@ function renderContacts(){
       (c.marked?'<span class="mini-tag">marcado</span>':'')+
       (c.signatures||[]).slice(0,2).map(x=>'<span class="mini-tag">'+esc(x)+'</span>').join("")+
       '</div></div>';
-  }).join("");
+  };
+
+  const activeHtml=active.map(renderCard).join("");
+  const lostHtml=lost.length
+    ?'<div class="contact-section-label">CONTACTOS PERDIDOS · '+lost.length+'</div>'+lost.map(renderCard).join("")
+    :"";
+  $("#contacts-list").innerHTML=activeHtml+lostHtml;
+
   document.querySelectorAll("[data-contact]").forEach(el=>el.onclick=()=>{
     state.selectedContactId=el.dataset.contact;state.sim.selectedContactId=el.dataset.contact;
     state.routineWatch.newUnknownIds=(state.routineWatch.newUnknownIds||[]).filter(id=>id!==el.dataset.contact);
@@ -934,7 +961,11 @@ function routineWatchTick(){
     const highConfidence=Number(prev.confidence)>=60;
     const anomalous=highConfidence&&!loss.expected&&!reason;
 
-    if(contact)contact.status="lost";
+    if(contact){
+      contact.status="lost";
+      const hostileLoss=contactLossTone(contact)==="critical";
+      beginContactLossPresentation(contact,anomalous||hostileLoss?"critical":"routine");
+    }
 
     if(anomalous){
       state.routineWatch.newUnknownIds=state.routineWatch.newUnknownIds.filter(id=>id!==prev.id);
