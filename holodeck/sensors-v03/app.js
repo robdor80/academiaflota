@@ -282,7 +282,7 @@ function renderSpatialViewer(){
       '<text class="bearing-label" x="17.5" y="85">225°</text>'+
       '<text class="bearing-label major" x="5" y="51.5">270°</text>'+
       '<text class="bearing-label" x="17.3" y="17.5">315°</text>'+
-      '<image class="ship-blueprint ship-blueprint-top" href="./assets/zenital_ncc1701d.webp" x="38.5" y="31.5" width="23" height="37" preserveAspectRatio="xMidYMid meet"/>'+
+      '<image class="ship-blueprint ship-blueprint-top" href="./assets/zenital_ncc1701d.webp" x="34" y="20" width="32" height="60" preserveAspectRatio="xMidYMid meet"/>'+
       '<circle class="ownship-core" cx="50" cy="50" r="1.15"/>'+
       '<line class="contact-line '+(historic?"historic":"")+'" x1="50" y1="50" x2="'+p.x.toFixed(1)+'" y2="'+p.y.toFixed(1)+'"/>'+
       '<circle class="contact-halo '+tone+'" cx="'+p.x.toFixed(1)+'" cy="'+p.y.toFixed(1)+'" r="4.7"/>'+
@@ -309,7 +309,7 @@ function renderSpatialViewer(){
       '<text class="elevation-label negative" x="9" y="73">−10°</text>'+
       '<text class="elevation-polarity positive" x="95" y="15">+</text>'+
       '<text class="elevation-polarity negative" x="95" y="89">−</text>'+
-      '<image class="ship-blueprint ship-blueprint-side" href="./assets/perfil_ncc1701d.webp" x="27" y="37" width="46" height="26" preserveAspectRatio="xMidYMid meet"/>'+
+      '<image class="ship-blueprint ship-blueprint-side" href="./assets/perfil_ncc1701d.webp" x="19" y="35" width="62" height="30" preserveAspectRatio="xMidYMid meet"/>'+
       '<circle class="ownship-core" cx="50" cy="50" r="1.15"/>'+
       '<line class="contact-line '+(historic?"historic":"")+'" x1="50" y1="50" x2="80" y2="'+sideY.toFixed(1)+'"/>'+
       '<circle class="contact-halo '+tone+'" cx="80" cy="'+sideY.toFixed(1)+'" r="4.7"/>'+
