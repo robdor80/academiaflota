@@ -12,46 +12,6 @@
 </div>
 
 <div class="bridge-shell">
-  <header class="bridge-topbar">
-    <div class="station-title">
-      <small>USS · ESTACIÓN DE PUENTE</small>
-      <h1>SENSORES <span>v0.3</span></h1>
-      <p>Vigilancia, identificación y seguimiento</p>
-    </div>
-    <div class="top-controls">
-      <label>ESCENARIO<select id="scenario-select"></select></label>
-      <label>COMPUTADORA<select id="computer-select">
-        <option value="pike">Constitution 2259 · Pike</option>
-        <option value="kirk">Constitution 2266 · Kirk</option>
-        <option value="picard" selected>Galaxy 2364 · Picard</option>
-      </select></label>
-      <label>MODELO<select id="model-route-select">
-        <option value="auto" selected>Auto · 3.5 → 3.8 solo fallo técnico</option>
-        <option value="lite">3.5 Flash-Lite</option>
-        <option value="flash38">Forzar 3.8 Flash</option>
-      </select></label>
-      <span id="ai-badge" class="top-badge">INTÉRPRETE LOCAL</span>
-      <span id="cloud-status" class="top-badge cloud-status">IA · CONECTANDO</span>
-      <button id="cloud-config-button" class="top-button" type="button">CUENTA IA</button>
-      <a href="../sensors-v02/">v0.2</a>
-      <a href="../">← Consolas</a>
-    </div>
-  </header>
-
-  <section class="computer-strip">
-    <span class="computer-dot"></span>
-    <div class="computer-name">
-      <small>COMPUTADORA ACTIVA</small>
-      <strong id="computer-name">Galaxy 2364 · Picard</strong>
-      <span id="computer-description">—</span>
-    </div>
-    <div id="computer-caps" class="caps"></div>
-    <div class="watch-strip">
-      <strong>VIGILANCIA 24/7</strong>
-      <span>Corto + largo alcance</span>
-    </div>
-  </section>
-
   <main class="sensor-layout">
     <aside class="contacts-column panel">
       <div class="panel-head">
@@ -146,25 +106,76 @@
   <footer class="operator-log">
     <div class="log-actions">
       <button id="toggle-log" class="secondary dark" type="button">REGISTRO</button>
-      <div class="world-test-launcher">
-        <span>PRUEBAS DEV</span>
-        <select id="world-test-select" aria-label="Seleccionar prueba">
-          <optgroup label="Pruebas base">
-            <option value="known">Contacto conocido</option>
-            <option value="unknown">Contacto desconocido</option>
-            <option value="klingon">Nave klingon prioritaria</option>
-          </optgroup>
-          <optgroup label="Serie vigilancia 24/7">
-            <option value="anomalous-loss">1/8 · Desaparición anómala</option>
-            <option value="warp-departure">2/8 · Salida normal a curvatura</option>
-            <option value="progressive-identification">3/8 · Identificación progresiva</option>
-            <option value="behavior-change" selected>4/8 · Cambio de comportamiento</option>
-          </optgroup>
-        </select>
-        <button id="world-test-run" class="secondary dark" type="button">EJECUTAR</button>
-      </div>
-      <button id="copy-exercise-log" class="secondary dark" type="button" hidden>COPIAR LOG</button>
-      <span id="copy-log-status"></span>
+
+      <details class="developer-menu">
+        <summary class="secondary dark">DESARROLLADOR</summary>
+        <div class="developer-popover">
+          <div class="developer-popover-head">
+            <div class="station-title">
+              <small>USS · ESTACIÓN DE PUENTE</small>
+              <h1>SENSORES <span>v0.3</span></h1>
+              <p>Configuración y herramientas de desarrollo</p>
+            </div>
+            <div class="developer-state">
+              <span id="ai-badge" class="top-badge">INTÉRPRETE LOCAL</span>
+              <span id="cloud-status" class="top-badge cloud-status">IA · CONECTANDO</span>
+            </div>
+          </div>
+
+          <div class="developer-controls top-controls">
+            <label>ESCENARIO<select id="scenario-select"></select></label>
+            <label>COMPUTADORA<select id="computer-select">
+              <option value="pike">Constitution 2259 · Pike</option>
+              <option value="kirk">Constitution 2266 · Kirk</option>
+              <option value="picard" selected>Galaxy 2364 · Picard</option>
+            </select></label>
+            <label>MODELO<select id="model-route-select">
+              <option value="auto" selected>Auto · 3.5 → 3.8 solo fallo técnico</option>
+              <option value="lite">3.5 Flash-Lite</option>
+              <option value="flash38">Forzar 3.8 Flash</option>
+            </select></label>
+            <button id="cloud-config-button" class="top-button" type="button">CUENTA IA</button>
+            <a href="../sensors-v02/">v0.2</a>
+            <a href="../">← Consolas</a>
+          </div>
+
+          <section class="computer-strip developer-computer-strip">
+            <span class="computer-dot"></span>
+            <div class="computer-name">
+              <small>COMPUTADORA ACTIVA</small>
+              <strong id="computer-name">Galaxy 2364 · Picard</strong>
+              <span id="computer-description">—</span>
+            </div>
+            <div id="computer-caps" class="caps"></div>
+            <div class="watch-strip">
+              <strong>VIGILANCIA 24/7</strong>
+              <span>Corto + largo alcance</span>
+            </div>
+          </section>
+
+          <div class="developer-test-row">
+            <div class="world-test-launcher">
+              <span>PRUEBAS DEV</span>
+              <select id="world-test-select" aria-label="Seleccionar prueba">
+                <optgroup label="Pruebas base">
+                  <option value="known">Contacto conocido</option>
+                  <option value="unknown">Contacto desconocido</option>
+                  <option value="klingon">Nave klingon prioritaria</option>
+                </optgroup>
+                <optgroup label="Serie vigilancia 24/7">
+                  <option value="anomalous-loss">1/8 · Desaparición anómala</option>
+                  <option value="warp-departure">2/8 · Salida normal a curvatura</option>
+                  <option value="progressive-identification">3/8 · Identificación progresiva</option>
+                  <option value="behavior-change" selected>4/8 · Cambio de comportamiento</option>
+                </optgroup>
+              </select>
+              <button id="world-test-run" class="secondary dark" type="button">EJECUTAR</button>
+            </div>
+            <button id="copy-exercise-log" class="secondary dark" type="button" hidden>COPIAR LOG</button>
+            <span id="copy-log-status"></span>
+          </div>
+        </div>
+      </details>
     </div>
     <div id="log-panel" hidden><div id="log-list"></div></div>
   </footer>
