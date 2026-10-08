@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sensores v0.3 · Estación operativa</title>
+<link rel="stylesheet" href="./sensors-v03.css">
+</head>
+<body>
+<div id="device-blocker" class="device-blocker">
+  <div><strong>Consola no disponible en este formato</strong><p>Utiliza un PC o una tablet en horizontal.</p></div>
+</div>
+
+<div class="bridge-shell">
+  <header class="bridge-topbar">
+    <div class="station-title">
+      <small>USS · ESTACIÓN DE PUENTE</small>
+      <h1>SENSORES <span>v0.3</span></h1>
+      <p>Vigilancia, identificación y seguimiento</p>
+    </div>
+    <div class="top-controls">
+      <label>ESCENARIO<select id="scenario-select"></select></label>
+      <label>COMPUTADORA<select id="computer-select">
+        <option value="pike">Constitution 2259 · Pike</option>
+        <option value="kirk">Constitution 2266 · Kirk</option>
+        <option value="picard" selected>Galaxy 2364 · Picard</option>
+      </select></label>
+      <label>MODELO<select id="model-route-select">
+        <option value="auto" selected>Auto · 3.5 → 3.8 solo fallo técnico</option>
+        <option value="lite">3.5 Flash-Lite</option>
+        <option value="flash38">Forzar 3.8 Flash</option>
+      </select></label>
+      <span id="ai-badge" class="top-badge">INTÉRPRETE LOCAL</span>
+      <span id="cloud-status" class="top-badge cloud-status">IA · CONECTANDO</span>
+      <button id="cloud-config-button" class="top-button" type="button">CUENTA IA</button>
+      <a href="../sensors-v02/">v0.2</a>
+      <a href="../">← Consolas</a>
+    </div>
+  </header>
+
+  <section class="computer-strip">
+    <span class="computer-dot"></span>
+    <div class="computer-name">
+      <small>COMPUTADORA ACTIVA</small>
+      <strong id="computer-name">Galaxy 2364 · Picard</strong>
+      <span id="computer-description">—</span>
+    </div>
+    <div id="computer-caps" class="caps"></div>
+    <div class="watch-strip">
+      <strong>VIGILANCIA 24/7</strong>
+      <span>Corto + largo alcance</span>
+    </div>
+  </section>
+
+  <main class="sensor-layout">
+    <aside class="contacts-column panel">
+      <div class="panel-head">
+        <div><small>01</small><strong>CONTACTOS</strong></div>
+        <span id="contact-counts">—</span>
+      </div>
+      <div class="contact-tabs">
+        <button type="button" class="contact-tab active" data-contact-view="active">ACTIVOS</button>
+        <button type="button" class="contact-tab" data-contact-view="lost">PERDIDOS</button>
+        <button type="button" class="contact-tab" data-contact-view="all">TODOS</button>
+      </div>
+      <div id="contacts-list" class="contacts-list"></div>
+    </aside>
+
+    <section class="central-column">
+      <section class="spatial-workspace panel">
+        <div class="workspace-head">
+          <div>
+            <small>02 · SOLUCIÓN ESPACIAL</small>
+            <h2 id="context-title">Esperando contactos</h2>
+          </div>
+          <button id="reset-sim" class="secondary" type="button">Reiniciar escenario</button>
+        </div>
+
+        <div class="spatial-grid">
+          <article class="spatial-card">
+            <div class="spatial-title"><strong>VISTA CENITAL</strong><span>Marcación / curso</span></div>
+            <div id="spatial-top" class="spatial-view"><div class="spatial-empty">Sin contacto seleccionado</div></div>
+          </article>
+          <article class="spatial-card">
+            <div class="spatial-title"><strong>VISTA DE PERFIL</strong><span>Elevación relativa</span></div>
+            <div id="spatial-side" class="spatial-view"><div class="spatial-empty">Sin contacto seleccionado</div></div>
+          </article>
+        </div>
+        <div id="spatial-summary" class="spatial-summary">Seleccione un contacto para resolver su posición espacial.</div>
+      </section>
+
+      <section class="computer-workspace panel">
+        <div class="section-head">
+          <div><small>03</small><strong>COMPUTADORA / PUENTE</strong></div>
+          <span>Comunicaciones recientes</span>
+        </div>
+        <div id="conversation" class="conversation"></div>
+
+        <section id="operator-attention" class="attention" hidden>
+          <small>DECISIÓN DEL OFICIAL NECESARIA</small>
+          <strong id="attention-title"></strong>
+          <p id="attention-text"></p>
+        </section>
+
+        <div id="quick-actions" class="quick-actions"></div>
+      </section>
+
+      <section class="command-workspace panel">
+        <div class="command-top">
+          <div class="input-destination" aria-label="Destino de la comunicación">
+            <span>DESTINO</span>
+            <button id="destination-computer" class="destination-button active" type="button">COMPUTADORA</button>
+            <button id="destination-bridge" class="destination-button" type="button">OFICIAL AL MANDO</button>
+          </div>
+          <div class="command-hint">Texto / voz · el destino decide cómo se interpreta</div>
+        </div>
+        <section class="command-box">
+          <textarea id="command-input" rows="2" placeholder="Escribe una orden para la Computadora."></textarea>
+          <div class="command-actions">
+            <button id="voice-button" class="voice" type="button" title="Dictar">🎙 Voz</button>
+            <button id="send-command" class="primary" type="button">Enviar a la computadora</button>
+          </div>
+          <div id="voice-status" class="input-status"></div>
+        </section>
+
+        <details id="operation-details" class="operation-details">
+          <summary>Detalles técnicos de la última operación</summary>
+          <div id="operation-details-body"></div>
+        </details>
+      </section>
+    </section>
+
+    <aside class="situation-column panel">
+      <div class="panel-head">
+        <div><small>04</small><strong>SITUACIÓN</strong></div>
+        <span>Estado operativo</span>
+      </div>
+      <div class="situation-scroll">
+        <div id="ship-status"></div>
+        <div id="tracking-status"></div>
+        <div id="watch-status"></div>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="operator-log">
+    <div class="log-actions">
+      <button id="toggle-log" class="secondary dark" type="button">REGISTRO</button>
+      <div class="world-test-launcher">
+        <span>PRUEBAS DEV</span>
+        <select id="world-test-select" aria-label="Seleccionar prueba">
+          <optgroup label="Pruebas base">
+            <option value="known">Contacto conocido</option>
+            <option value="unknown">Contacto desconocido</option>
+            <option value="klingon">Nave klingon prioritaria</option>
+          </optgroup>
+          <optgroup label="Serie vigilancia 24/7">
+            <option value="anomalous-loss">1/8 · Desaparición anómala</option>
+            <option value="warp-departure">2/8 · Salida normal a curvatura</option>
+            <option value="progressive-identification">3/8 · Identificación progresiva</option>
+            <option value="behavior-change" selected>4/8 · Cambio de comportamiento</option>
+          </optgroup>
+        </select>
+        <button id="world-test-run" class="secondary dark" type="button">EJECUTAR</button>
+      </div>
+      <button id="copy-exercise-log" class="secondary dark" type="button" hidden>COPIAR LOG</button>
+      <span id="copy-log-status"></span>
+    </div>
+    <div id="log-panel" hidden><div id="log-list"></div></div>
+  </footer>
+</div>
+
+<dialog id="cloud-dialog" class="cloud-dialog">
+  <form method="dialog" class="cloud-dialog-head">
+    <div><small>STAR TREK · COMPUTADORA</small><h2>Cuenta y Gemini</h2></div>
+    <button class="dialog-close" aria-label="Cerrar">×</button>
+  </form>
+  <section id="cloud-signed-out" class="cloud-section">
+    <p>Inicia sesión con tu cuenta Google para recuperar la configuración privada de la Computadora.</p>
+    <button id="cloud-login" class="primary" type="button">Entrar con Google</button>
+  </section>
+  <section id="cloud-signed-in" class="cloud-section" hidden>
+    <div class="cloud-account"><span>CUENTA</span><strong id="cloud-user-text"></strong></div>
+    <p id="cloud-key-state" class="cloud-key-state"></p>
+    <label class="cloud-field">
+      <span>Clave API de Gemini</span>
+      <input id="cloud-api-key" type="password" autocomplete="off" placeholder="Clave de Google AI Studio">
+      <small>Si ya existe una clave guardada, deja este campo vacío para conservarla.</small>
+    </label>
+    <div class="cloud-model-grid">
+      <label class="cloud-field"><span>Modelo normal</span><input id="cloud-default-model" type="text" value="gemini-3.5-flash-lite"></label>
+      <label class="cloud-field"><span>Escalado</span><input id="cloud-escalation-model" type="text" value="gemini-3.8-flash"></label>
+    </div>
+    <p id="cloud-model-state" class="cloud-model-state"></p>
+    <div class="cloud-actions">
+      <button id="cloud-logout" class="secondary" type="button">Cerrar sesión</button>
+      <button id="cloud-save" class="primary" type="button">Guardar configuración</button>
+    </div>
+  </section>
+  <p id="cloud-message" class="cloud-message" aria-live="polite"></p>
+</dialog>
+
+<script type="module" src="./app.js"></script>
+</body>
+</html>
