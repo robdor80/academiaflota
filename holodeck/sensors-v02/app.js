@@ -991,7 +991,9 @@ function routineWatchTick(){
           ?"NUEVO CONTACTO · DESCONOCIDO"
           :event.type==="new_priority_contact"
             ?"ALERTA · CONTACTO PRIORITARIO"
-            :"VIGILANCIA AUTOMÁTICA";
+            :event.type==="identity_resolved"
+              ?"IDENTIDAD CONFIRMADA"
+              :"VIGILANCIA AUTOMÁTICA";
       addMessage("computer",event.text,meta);
       log("ROUTINE WATCH "+event.type+" · "+event.text);
     }
