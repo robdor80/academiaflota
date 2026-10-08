@@ -17,7 +17,7 @@ const wait=ms=>new Promise(r=>setTimeout(r,ms));
 const state={
   scenarios:null,sim:null,profileId:"picard",selectedContactId:null,
   conversation:[],logs:[],lastDetails:[],watchers:[],busy:false,
-  attention:null,lastPlan:null,routingMode:"auto",
+  attention:null,lastPlan:null,routingMode:"auto",inputDestination:"computer",
   aiRuntime:{provider:null,modelUsed:null,escalated:false},
   lastObservationBatch:null,
   routineWatch:{
@@ -56,6 +56,21 @@ function externalShipState(){
     if(typeof p.getState==="function")return p.getState();
     return p.state||null;
   }catch{return null}
+}
+function bridgeRecipient(){
+  const ship=externalShipState()||{};
+  const candidate=
+    ship?.bridge?.officerInCommand ??
+    ship?.bridge?.commandOfficer ??
+    ship?.currentBridgeCommandOfficer ??
+    ship?.officerInCommand ??
+    null;
+  if(typeof candidate==="string"&&candidate.trim())return candidate.trim();
+  if(candidate&&typeof candidate==="object"){
+    const name=candidate.name||candidate.displayName||candidate.callsign;
+    if(name)return String(name);
+  }
+  return state.routineWatch.reportTo||"Oficial al mando del puente";
 }
 function buildContext(){
   const sim=state.sim,c=selectedContact();
@@ -174,7 +189,8 @@ function renderContacts(){
 }
 function renderConversation(){
   const box=$("#conversation");if(!box)return;
-  box.innerHTML=state.conversation.map(m=>'<div class="message '+esc(m.role)+'"><small>'+esc(m.role==="user"?"OFICIAL":m.role==="computer"?"COMPUTADORA":"SISTEMA")+(m.meta?" · "+esc(m.meta):"")+'</small>'+esc(m.text)+'</div>').join("");
+  const roleLabel=role=>role==="user"?"OFICIAL":role==="computer"?"COMPUTADORA":role==="bridge"?"OFICIAL AL MANDO":"SISTEMA";
+  box.innerHTML=state.conversation.map(m=>'<div class="message '+esc(m.role)+'"><small>'+esc(roleLabel(m.role))+(m.meta?" · "+esc(m.meta):"")+'</small>'+esc(m.text)+'</div>').join("");
   box.scrollTop=box.scrollHeight;
 }
 function renderQuickActions(){
@@ -187,7 +203,7 @@ function renderQuickActions(){
     if(c.status==="lost"){
       actions.push(["Últimos datos "+c.id,"Analiza "+c.id]);
     }else{
-      actions.push(["Analizar "+c.id,"Analiza "+c.id],["Seguir "+c.id,"Mantén "+c.id+" bajo seguimiento prioritario"]);
+      actions.push(["Analizar "+c.id,"Analiza "+c.id],["Seguir "+c.id,"Inicia seguimiento normal de "+c.id]);
       if(p.id==="picard")actions.push(["Vigilar curso","Mantén "+c.id+" bajo seguimiento y avísame si cambia de curso"]);
     }
   }
@@ -279,8 +295,29 @@ function renderDetails(){
   const rows=state.lastDetails.length?state.lastDetails:[{label:"Estado",value:"Sin operación reciente"}];
   box.innerHTML=rows.map(x=>'<div class="tech-row"><span>'+esc(x.label)+'</span><strong>'+esc(x.value)+'</strong></div>').join("");
 }
+function renderInputDestination(){
+  const bridge=state.inputDestination==="bridge";
+  const box=document.querySelector(".command-box");
+  const computer=$("#destination-computer"),bridgeButton=$("#destination-bridge"),input=$("#command-input"),send=$("#send-command");
+  if(box)box.classList.toggle("bridge-destination",bridge);
+  if(computer)computer.classList.toggle("active",!bridge);
+  if(bridgeButton){
+    bridgeButton.classList.toggle("active",bridge);
+    bridgeButton.textContent=bridge?"✓ OFICIAL AL MANDO":"OFICIAL AL MANDO";
+  }
+  if(input)input.placeholder=bridge
+    ?"Habla al oficial al mando. Ej.: «Señor, contacto klingon identificado a 81.500 kilómetros.»"
+    :"Escribe una orden para la Computadora. Ej.: «Inicia seguimiento normal de C-43.»";
+  if(send)send.textContent=bridge?"Hablar al oficial al mando":"Enviar a la computadora";
+}
+function setInputDestination(destination){
+  if(state.busy)return;
+  state.inputDestination=destination==="bridge"?"bridge":"computer";
+  renderInputDestination();
+  $("#command-input")?.focus();
+}
 function render(){
-  renderComputer();renderContacts();renderConversation();renderQuickActions();renderStatus();renderAttention();renderDetails();
+  renderComputer();renderContacts();renderConversation();renderQuickActions();renderStatus();renderAttention();renderDetails();renderInputDestination();
   const c=selectedContact();$("#context-title").textContent=c?"Contexto · "+c.id+" · "+c.classification:"Esperando órdenes";
 }
 function setDetails(rows){state.lastDetails=rows;renderDetails()}
@@ -788,6 +825,51 @@ async function executePlan(plan){
     if(!r.ok)break;
   }
   return results;
+}
+
+async function submitBridgeMessage(text,inputMode="text"){
+  text=String(text||"").trim();if(!text||state.busy)return;
+  state.busy=true;
+  $("#send-command").disabled=true;$("#voice-button").disabled=true;
+  $("#destination-computer").disabled=true;$("#destination-bridge").disabled=true;
+  const recipient=bridgeRecipient();
+  addMessage("user",text,"A "+recipient.toUpperCase()+" · "+(inputMode==="voice"?"VOZ":"TEXTO"));
+  log("BRIDGE SPEECH → "+recipient+" · "+text);
+  setDetails([
+    detail("Canal","Voz directa en puente"),
+    detail("Destinatario",recipient),
+    detail("Estado","ENTREGADO")
+  ]);
+  try{
+    const provider=window.STARSHIP_BRIDGE_DIALOGUE_PROVIDER;
+    let reply=null;
+    if(typeof provider==="function"){
+      reply=await provider({text,inputMode,recipient,context:buildContext()});
+    }else if(provider&&typeof provider.handleMessage==="function"){
+      reply=await provider.handleMessage({text,inputMode,recipient,context:buildContext()});
+    }
+    if(reply&&typeof reply==="object")reply=reply.text||reply.message||reply.response||null;
+    if(String(reply||"").trim()){
+      addMessage("bridge",String(reply).trim(),recipient);
+      log("BRIDGE REPLY ← "+recipient+" · "+String(reply).trim());
+    }else{
+      addMessage("bridge","Entendido.",recipient);
+      log("BRIDGE ACK ← "+recipient);
+    }
+  }catch(e){
+    addMessage("system","El mensaje fue dirigido al oficial al mando, pero el módulo de respuesta del puente no está disponible.","CANAL DE PUENTE");
+    log("BRIDGE DIALOGUE ERROR · "+(e.message||String(e)));
+  }finally{
+    state.busy=false;
+    $("#send-command").disabled=false;$("#voice-button").disabled=false;
+    $("#destination-computer").disabled=false;$("#destination-bridge").disabled=false;
+    render();
+  }
+}
+function submitInput(text,inputMode="text"){
+  return state.inputDestination==="bridge"
+    ?submitBridgeMessage(text,inputMode)
+    :submitCommand(text,inputMode);
 }
 
 async function submitCommand(text,inputMode="text"){
@@ -1551,8 +1633,10 @@ function bind(){
   $("#computer-select").onchange=()=>{state.profileId=$("#computer-select").value;addMessage("system","Computadora activa: "+profile().name);log("COMPUTER PROFILE "+state.profileId);render()};
   $("#model-route-select").onchange=()=>{state.routingMode=$("#model-route-select").value;localStorage.setItem("sensorAI.routingMode",state.routingMode);addMessage("system","Ruta Gemini: "+($("#model-route-select").selectedOptions[0]?.textContent||state.routingMode));log("MODEL ROUTE "+state.routingMode);render()};
   $("#reset-sim").onclick=()=>resetScenario("manual",state.sim.scenarioId);
-  $("#send-command").onclick=()=>{const el=$("#command-input"),v=el.value;el.value="";submitCommand(v,"text")};
-  $("#command-input").addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&e.key==="Enter"){const v=e.currentTarget.value;e.currentTarget.value="";submitCommand(v,"text")}});
+  $("#send-command").onclick=()=>{const el=$("#command-input"),v=el.value;el.value="";submitInput(v,"text")};
+  $("#command-input").addEventListener("keydown",e=>{if((e.ctrlKey||e.metaKey)&&e.key==="Enter"){const v=e.currentTarget.value;e.currentTarget.value="";submitInput(v,"text")}});
+  $("#destination-computer").onclick=()=>setInputDestination("computer");
+  $("#destination-bridge").onclick=()=>setInputDestination("bridge");
   $("#toggle-log").onclick=()=>{$("#log-panel").hidden=!$("#log-panel").hidden};
   $("#world-test-run").onclick=launchWorldTest;
   $("#copy-exercise-log").onclick=copyExerciseLog;
@@ -1570,7 +1654,7 @@ async function load(){
   const voice=createVoiceController({
     onTranscript:(text,isFinal)=>{
       $("#command-input").value=text;
-      if(isFinal&&text){$("#voice-status").textContent="Orden de voz recibida";setTimeout(()=>{const v=$("#command-input").value;$("#command-input").value="";submitCommand(v,"voice")},220)}
+      if(isFinal&&text){$("#voice-status").textContent=state.inputDestination==="bridge"?"Mensaje de voz preparado":"Orden de voz recibida";setTimeout(()=>{const v=$("#command-input").value;$("#command-input").value="";submitInput(v,"voice")},220)}
     },
     onStatus:(text,listening)=>{$("#voice-status").textContent=text;$("#voice-button").classList.toggle("listening",!!listening);$("#voice-button").textContent=listening?"■ Escuchando":"🎙 Voz"}
   });
