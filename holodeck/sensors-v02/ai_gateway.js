@@ -1,4 +1,4 @@
-import {CONTRACT_VERSION,CONTRACT_SPEC,INTERPRETER_INSTRUCTIONS,COMPUTER_PROFILES,validateCommandPlan} from "./computer_contract.js";
+import {CONTRACT_VERSION,CONTRACT_SPEC,GEMINI_RESPONSE_SCHEMA,INTERPRETER_INSTRUCTIONS,COMPUTER_PROFILES,validateCommandPlan} from "./computer_contract.js";
 import {getComputerConfig} from "./computer_cloud.js";
 import {repairConditionalScanMark} from "./command_repair.js";
 
