@@ -319,8 +319,19 @@ export function startTracking(state,contactId,mode="normal",priority="normal",si
   const existing=state.tracking.assignments.find(a=>a.contactId===contactId);
   const need=trackingCost(mode,priority)-(existing?trackingCost(existing.mode,existing.priority):0);
   if(trackingUsed(state)+need>state.tracking.capacity)return {ok:false,reason:"Capacidad de seguimiento insuficiente"};
-  if(existing){existing.mode=mode;existing.priority=priority;existing.signature=signature||existing.signature;existing.updatedAt=now()}
-  else {const rateBonus=state.config.updateRate==="fast"?6:state.config.updateRate==="slow"?-4:0;state.tracking.assignments.push({contactId,mode,priority,signature,quality:clamp(c.confidence+10+rateBonus-effectivePenalty(state)*.12),updatedAt:now()})};
+  const rateBonus=state.config.updateRate==="fast"?6:state.config.updateRate==="slow"?-4:0;
+  const priorityBonus=priority==="priority"?10:0;
+  const modeBonus=mode==="signature"?5:0;
+  const quality=clamp(c.confidence+10+rateBonus+priorityBonus+modeBonus-effectivePenalty(state)*.12);
+  if(existing){
+    existing.mode=mode;
+    existing.priority=priority;
+    existing.signature=signature||existing.signature;
+    existing.quality=quality;
+    existing.updatedAt=now();
+  }else{
+    state.tracking.assignments.push({contactId,mode,priority,signature,quality,updatedAt:now()});
+  }
   c.tracked=true;c.trackingMode=mode;c.trackingPriority=priority;return {ok:true};
 }
 export function stopTracking(state,contactId){
