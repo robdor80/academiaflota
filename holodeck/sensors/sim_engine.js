@@ -149,6 +149,9 @@ export function passiveSurveillanceCycle(state,options={}){
       transponderPresent:recognition.transponderPresent,
       transponderRecognized:recognition.transponderRecognized,
       transponderLabel:recognition.transponderLabel,
+      affiliation:c.affiliation||null,
+      military:!!c.military,
+      operationalPriority:c.operationalPriority||"normal",
       identificationSource:recognition.identificationSource,
       score
     });
