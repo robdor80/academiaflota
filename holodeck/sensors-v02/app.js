@@ -628,6 +628,9 @@ async function executePlan(plan){
   const results=[];
   for(const action of plan.actions){
     const r=await executeAction(action);results.push(r);
+    if(action?.contactId){
+      state.routineWatch.newUnknownIds=(state.routineWatch.newUnknownIds||[]).filter(id=>id!==action.contactId);
+    }
     render();
     if(!r.ok)break;
   }
