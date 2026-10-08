@@ -70,3 +70,20 @@ button,input,select,textarea{font:inherit}.shell{min-width:1050px;min-height:100
 
 .contact-card.lost-contact{border-color:#963f3f;background:#fff0f0;box-shadow:0 0 0 2px rgba(150,63,63,.12)}
 .lost-tag{background:#f2cccc!important;color:#7a2626!important;font-weight:900!important}
+
+.contact-section-label{margin:7px 1px 1px;padding:7px 7px 4px;border-top:1px solid #c9d4dc;color:#6b7b87;font-size:.58rem;font-weight:900;letter-spacing:.08em}
+.contact-card.lost-contact{border-color:#b8c3cb;background:#f2f5f7;box-shadow:none}
+.contact-card.lost-contact.active{border-color:#7d909e;background:#e9eef2}
+.contact-card.lost-contact .lost-tag{background:#dde4e9!important;color:#52636f!important}
+@keyframes sensor-loss-routine-pulse{
+  0%,100%{background:#fff;border-color:#d5dfe6;box-shadow:0 0 0 0 rgba(195,154,60,0)}
+  50%{background:#fff2bf;border-color:#c39a3c;box-shadow:0 0 0 3px rgba(195,154,60,.24)}
+}
+@keyframes sensor-loss-critical-pulse{
+  0%,100%{background:#fff;border-color:#d5dfe6;box-shadow:0 0 0 0 rgba(150,63,63,0)}
+  50%{background:#ffdada;border-color:#963f3f;box-shadow:0 0 0 3px rgba(150,63,63,.24)}
+}
+.contact-card.loss-flash-routine{animation:sensor-loss-routine-pulse .9s ease-in-out 3}
+.contact-card.loss-flash-critical{animation:sensor-loss-critical-pulse .9s ease-in-out 3}
+.contact-card.loss-flash-routine .lost-tag{background:#f6e3a7!important;color:#765510!important;font-weight:900!important}
+.contact-card.loss-flash-critical .lost-tag{background:#f0c5c5!important;color:#742828!important;font-weight:900!important}
