@@ -158,6 +158,12 @@ export const GEMINI_RESPONSE_SCHEMA={
   }
 };
 
+export const GEMINI_GENERATION_CONFIG={
+  responseMimeType:"application/json",
+  responseSchema:GEMINI_RESPONSE_SCHEMA,
+  temperature:0.1
+};
+
 export const INTERPRETER_INSTRUCTIONS=`
 Eres la capa de interpretación de la Computadora de a bordo.
 NO ejecutas acciones ni inventas resultados. Solo conviertes lenguaje humano en un contrato JSON.
