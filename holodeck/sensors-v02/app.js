@@ -183,8 +183,14 @@ function renderQuickActions(){
     ["Estado de sensores","Dame un informe del estado de sensores"],
     ["Barrido sector","Barrido de largo alcance del sector "+String(state.sim.sector||"041").padStart(3,"0")+", prioridad subespacio"]
   ];
-  if(c)actions.push(["Analizar "+c.id,"Analiza "+c.id],["Seguir "+c.id,"Mantén "+c.id+" bajo seguimiento prioritario"]);
-  if(p.id==="picard"&&c)actions.push(["Vigilar curso","Mantén "+c.id+" bajo seguimiento y avísame si cambia de curso"]);
+  if(c){
+    if(c.status==="lost"){
+      actions.push(["Últimos datos "+c.id,"Analiza "+c.id]);
+    }else{
+      actions.push(["Analizar "+c.id,"Analiza "+c.id],["Seguir "+c.id,"Mantén "+c.id+" bajo seguimiento prioritario"]);
+      if(p.id==="picard")actions.push(["Vigilar curso","Mantén "+c.id+" bajo seguimiento y avísame si cambia de curso"]);
+    }
+  }
   if(p.id!=="pike"&&effectivePenalty(state.sim)>18)actions.push(["Compensar interferencia","Compensa automáticamente las interferencias"]);
   actions=actions.slice(0,p.id==="pike"?3:p.id==="kirk"?4:5);
   $("#quick-actions").innerHTML=actions.map(([label,cmd])=>'<button class="quick" data-quick="'+esc(cmd)+'">'+esc(label)+'</button>').join("");
@@ -245,15 +251,16 @@ function renderStatus(){
     (()=>{const c=selectedContact();if(!c)return "";
       const s=contactSpatialSolution(c);
       const identity=c.transponderRecognized&&c.transponderLabel?c.transponderLabel:c.classification;
-      return '<section class="status-card selected-contact-status"><h3>CONTACTO SELECCIONADO · '+esc(c.id)+'</h3>'+
+      const lost=c.status==="lost";
+      return '<section class="status-card selected-contact-status"><h3>'+(lost?"CONTACTO PERDIDO":"CONTACTO SELECCIONADO")+' · '+esc(c.id)+'</h3>'+
         line("Identidad",identity||"Sin resolver")+
-        line("Distancia",distanceLabel(c.distanceKm))+
-        line("Marcación",angleLabel(s.bearingDeg))+
-        line("Elevación",angleLabel(s.elevationDeg,{signed:true}))+
-        line("Curso",courseLabel(c))+
-        line("Velocidad",c.velocity||"Sin resolver")+
-        line("Movimiento relativo",motionLabel(s.relativeMotion),s.relativeMotion==="approaching"?"warn":"")+
-        line("Máxima aproximación prevista",s.closestApproachKm!=null?distanceLabel(s.closestApproachKm):"Sin resolver",s.closestApproachKm!=null&&s.closestApproachKm<15000?"warn":"")+
+        line(lost?"Última distancia":"Distancia",distanceLabel(c.distanceKm))+
+        line(lost?"Última marcación":"Marcación",angleLabel(s.bearingDeg))+
+        line(lost?"Última elevación":"Elevación",angleLabel(s.elevationDeg,{signed:true}))+
+        line(lost?"Último curso":"Curso",courseLabel(c))+
+        line(lost?"Última velocidad":"Velocidad",c.velocity||"Sin resolver")+
+        line(lost?"Último movimiento relativo":"Movimiento relativo",motionLabel(s.relativeMotion),s.relativeMotion==="approaching"?"warn":"")+
+        line(lost?"Última máxima aproximación prevista":"Máxima aproximación prevista",s.closestApproachKm!=null?distanceLabel(s.closestApproachKm):"Sin resolver",s.closestApproachKm!=null&&s.closestApproachKm<15000?"warn":"")+
         '</section>';
     })();
   const used=trackingUsed(sim);
@@ -279,14 +286,42 @@ function render(){
 function setDetails(rows){state.lastDetails=rows;renderDetails()}
 function needOperator(title,text){
   state.attention={title,text};renderAttention();addMessage("computer",text,"DECISIÓN NECESARIA");
-  return {ok:false,blocked:true,text};
+  return {ok:false,blocked:true,reported:true,text};
 }
 function clearAttention(){state.attention=null;renderAttention()}
 function detail(label,value){return {label,value:String(value??"—")}}
 function targetLabel(v){return String(v||"").startsWith("sector_")?"Sector "+String(v).split("_")[1]:v||"—"}
 
+function liveContactBlock(a,sim){
+  const cid=a?.contactId;
+  if(!cid)return null;
+  const c=getContact(sim,cid);
+  if(!c)return null;
+
+  const lost=c.status==="lost"||c.worldPresent===false||c.sensorVisible===false;
+  if(!lost)return null;
+
+  // Historical/data operations remain valid even after loss.
+  if(a.type==="readout"||a.type==="status"||a.type==="query"||a.type==="transfer"||a.type==="track_stop")return null;
+
+  // Reacquisition is the only active operation explicitly designed for a lost contact.
+  if(a.type==="track_update"&&a.operation==="reacquire")return null;
+  if(a.type==="interference"&&a.operation==="recover_signal")return null;
+
+  const identity=c.transponderLabel||c.classification||cid;
+  return {
+    ok:false,
+    blocked:true,
+    reported:false,
+    reason:"contact_lost",
+    text:cid+" ("+identity+") ya no está en la solución actual de sensores. No puedo ejecutar "+a.type+" sobre un contacto perdido. Puede consultar sus últimos datos registrados o intentar una readquisición/búsqueda si las condiciones lo permiten."
+  };
+}
+
 async function executeAction(a){
   const sim=state.sim;
+  const availabilityBlock=liveContactBlock(a,sim);
+  if(availabilityBlock)return availabilityBlock;
   if(a.type==="scan"){
     const cfg={
       scanType:a.scanType,mode:a.mode||"passive",targetValue:a.target||a.contactId||"surrounding",
@@ -848,6 +883,9 @@ async function submitCommand(text,inputMode="text"){
     if(ok){
       const response=composeComputerResponse({plan,results});
       addMessage("computer",response||"Operación completada.");
+    }else{
+      const failure=results.find(x=>x&&!x.ok);
+      if(failure?.text&&!failure.reported)addMessage("computer",failure.text,"OPERACIÓN NO DISPONIBLE");
     }
   }catch(e){
     needOperator("Error de interpretación o ejecución",e.message||String(e));
