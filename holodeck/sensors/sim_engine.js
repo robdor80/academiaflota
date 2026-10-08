@@ -123,6 +123,7 @@ export function passiveSurveillanceCycle(state,options={}){
     }
 
     const recognition=passiveRecognition(c);
+    if(recognition.transponderRecognized)c.transponderRecognized=true;
     if(!c.known){
       const confidence=clamp(Math.round((Number(c.confidence||0)*.55)+(score*.45)));
       revealContact(state,c,confidence,"passive_watch");
