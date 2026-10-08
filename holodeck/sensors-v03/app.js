@@ -10,6 +10,7 @@ import {COMPUTER_PROFILES,validateCommandPlan,planPreview} from "../sensors-v02/
 import {interpretCommand,aiEndpoint,localInterpret} from "../sensors-v02/ai_gateway.js";
 import {createVoiceController} from "../sensors-v02/voice_input.js";
 import {composeComputerResponse} from "../sensors-v02/response_composer.js";
+import {resolveContactActions} from "./contact_actions.js";
 
 const $=s=>document.querySelector(s);
 const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
@@ -197,24 +198,278 @@ function renderConversation(){
     visible.map(m=>'<div class="message '+esc(m.role)+'"><small>'+esc(roleLabel(m.role))+(m.meta?" · "+esc(m.meta):"")+'</small>'+esc(m.text)+'</div>').join("");
 }
 function renderQuickActions(){
-  const c=selectedContact(),p=profile();
+  const p=profile();
   let actions=[
     ["Estado de sensores","Dame un informe del estado de sensores"],
     ["Barrido sector","Barrido de largo alcance del sector "+String(state.sim.sector||"041").padStart(3,"0")+", prioridad subespacio"]
   ];
-  if(c){
-    if(c.status==="lost"){
-      actions.push(["Últimos datos "+c.id,"Analiza "+c.id]);
-    }else{
-      actions.push(["Analizar "+c.id,"Analiza "+c.id],["Seguir "+c.id,"Inicia seguimiento normal de "+c.id]);
-      if(p.id==="picard")actions.push(["Vigilar curso","Mantén "+c.id+" bajo seguimiento y avísame si cambia de curso"]);
-    }
-  }
   if(p.id!=="pike"&&effectivePenalty(state.sim)>18)actions.push(["Compensar interferencia","Compensa automáticamente las interferencias"]);
-  actions=actions.slice(0,p.id==="pike"?3:p.id==="kirk"?4:5);
+  actions=actions.slice(0,p.id==="pike"?2:3);
   $("#quick-actions").innerHTML=actions.map(([label,cmd])=>'<button class="quick" data-quick="'+esc(cmd)+'">'+esc(label)+'</button>').join("");
   document.querySelectorAll("[data-quick]").forEach(b=>b.onclick=()=>submitCommand(b.dataset.quick,"text"));
 }
+
+function contactActionContext(contact){
+  const focusedResults=(state.sim?.results||[]).filter(r=>r?.configuration?.contactId===contact?.id);
+  return {
+    watched:state.watchers.some(w=>w.contactId===contact?.id),
+    compareAvailable:focusedResults.length>=2
+  };
+}
+
+function currentContactActionModel(){
+  const contact=selectedContact();
+  return resolveContactActions(contact,contact?contactActionContext(contact):{});
+}
+
+function renderContactActions(){
+  const root=$("#contact-actions");
+  const grid=$("#contact-actions-grid");
+  const title=$("#contact-actions-title");
+  const context=$("#contact-actions-context");
+  if(!root||!grid||!title||!context)return;
+
+  const contact=selectedContact();
+  if(!contact){
+    root.classList.add("no-contact");
+    title.textContent="ACCIONES";
+    context.textContent="Seleccione un contacto";
+    grid.innerHTML='<div class="contact-actions-empty">Sin contacto seleccionado.</div>';
+    return;
+  }
+
+  root.classList.remove("no-contact");
+  const model=currentContactActionModel();
+  const identity=contact.transponderRecognized&&contact.transponderLabel
+    ?contact.transponderLabel
+    :(contact.classification||contact.id);
+
+  title.textContent="ACCIONES · "+contact.id;
+  context.textContent=model.label+" · "+identity;
+
+  const html=model.actions.map(item=>{
+    if(item.kind==="tracking-split"){
+      const disabled=state.busy?" disabled":"";
+      return '<div class="tracking-split '+esc(item.tone||"primary")+'" role="group" aria-label="Control de seguimiento">'+
+        '<button type="button" class="tracking-split-left" data-contact-action="'+esc(item.left.id)+'" title="'+esc(item.left.title||"")+'"'+disabled+'>'+esc(item.left.label)+'</button>'+
+        '<button type="button" class="tracking-split-right" data-contact-action="'+esc(item.right.id)+'" title="'+esc(item.right.title||"")+'"'+disabled+'>'+esc(item.right.label)+'</button>'+
+      '</div>';
+    }
+
+    const disabled=item.disabled||state.busy;
+    const titleText=item.disabled&&item.disabledReason
+      ?item.title+" · "+item.disabledReason
+      :item.title;
+    return '<button type="button" class="contact-action action-'+esc(item.tone||"normal")+'" data-contact-action="'+esc(item.id)+'" title="'+esc(titleText||"")+'"'+(disabled?" disabled":"")+'>'+
+      '<span>'+esc(item.label)+'</span>'+
+      (item.disabledReason?'<small>'+esc(item.disabledReason)+'</small>':'')+
+    '</button>';
+  }).join("");
+
+  grid.innerHTML=html||'<div class="contact-actions-empty">No hay acciones disponibles para este contacto.</div>';
+  grid.querySelectorAll("[data-contact-action]").forEach(button=>{
+    button.onclick=()=>runContactAction(button.dataset.contactAction);
+  });
+}
+
+function contactAnalysisRows(contact,{tactical=false}={}){
+  const identity=contact.transponderRecognized&&contact.transponderLabel
+    ?contact.transponderLabel
+    :(contact.classification||contact.id);
+  const rows=[
+    detail("Contacto",contact.id),
+    detail("Identidad",identity),
+    detail("Clasificación",contact.classification||"Sin resolver"),
+    detail("Afiliación",contact.affiliation||"Sin resolver"),
+    detail("Confianza",Math.round(Number(contact.confidence)||0)+" %"),
+    detail("Masa",contact.mass||"Sin resolver"),
+    detail("Dimensiones",contact.dimensions||"Sin resolver"),
+    detail("Formas de vida",contact.lifeforms||"Sin resolver"),
+    detail("Firma energética",contact.energy||"Sin resolver"),
+    detail("Firma subespacial",contact.subspace||"Sin resolver")
+  ];
+
+  if(tactical){
+    const tacticalData=contact.tactical||{};
+    rows.splice(4,0,
+      detail("Estado táctico",contact.hostile===true?"HOSTIL CONFIRMADO":contact.military===true?"MILITAR · HOSTILIDAD NO CONFIRMADA":"Sin hostilidad confirmada"),
+      detail("Escudos",tacticalData.shields??contact.shields??"Sin resolver"),
+      detail("Armamento",tacticalData.weapons??contact.weapons??"Sin resolver"),
+      detail("Propulsión",tacticalData.propulsion??contact.propulsion??"Sin resolver")
+    );
+  }
+  return rows;
+}
+
+function trajectoryRows(contact){
+  const s=contactSpatialSolution(contact);
+  return [
+    detail("Contacto",contact.id),
+    detail("Marcación",angleLabel(s.bearingDeg)),
+    detail("Elevación",angleLabel(s.elevationDeg,{signed:true})),
+    detail("Curso",courseLabel(contact)),
+    detail("Velocidad",contact.velocity||"Sin resolver"),
+    detail("Movimiento relativo",motionLabel(s.relativeMotion)),
+    detail("CPA",s.closestApproachKm!=null?distanceLabel(s.closestApproachKm):"Sin resolver"),
+    detail("TCPA",s.tcpaMinutes!=null?s.tcpaMinutes+" min":"Sin resolver")
+  ];
+}
+
+function contactResultPair(contactId){
+  return (state.sim?.results||[])
+    .filter(r=>r?.configuration?.contactId===contactId)
+    .slice(0,2);
+}
+
+async function executeContactControl(actionId,contact){
+  const id=contact.id;
+
+  if(actionId==="track-start")return executeAction({type:"track_start",contactId:id,priority:"normal"});
+  if(actionId==="track-intensify")return executeAction({type:"track_priority",contactId:id,priority:"priority"});
+  if(actionId==="track-standard")return executeAction({type:"track_priority",contactId:id,priority:"normal"});
+  if(actionId==="track-stop")return executeAction({type:"track_stop",contactId:id});
+
+  if(actionId==="identify"){
+    const result=await executeAction({
+      type:"scan",scanType:"focused",mode:"passive",contactId:id,target:id,
+      resolution:"high",priority:"none",duration:"extended",
+      filters:["transponder","warp","subspace","energy"]
+    });
+    if(!result.ok)return result;
+    const current=getContact(state.sim,id)||contact;
+    setDetails(contactAnalysisRows(current));
+    const resolved=current.transponderRecognized&&current.transponderLabel
+      ?current.transponderLabel
+      :(current.status==="identified"&&current.classification&&!/no identificado|desconocido/i.test(current.classification)
+        ?current.classification
+        :null);
+    return {
+      ok:true,
+      text:resolved
+        ?"Identificación actualizada de "+id+": "+resolved+". Confianza "+Math.round(current.confidence)+"%."
+        :"Correlación de identificación completada sobre "+id+". La identidad sigue sin resolver; confianza "+Math.round(current.confidence)+"%."
+    };
+  }
+
+  if(actionId==="analyze"){
+    const result=await executeAction({
+      type:"scan",scanType:"focused",mode:"active",contactId:id,target:id,
+      resolution:"high",priority:"none",duration:"extended",filters:["all"]
+    });
+    if(!result.ok)return result;
+    const current=getContact(state.sim,id)||contact;
+    setDetails(contactAnalysisRows(current));
+    return {ok:true,text:"Análisis focalizado de "+id+" completado. Lecturas disponibles actualizadas."};
+  }
+
+  if(actionId==="tactical-scan"){
+    const result=await executeAction({
+      type:"scan",scanType:"focused",mode:"active",contactId:id,target:id,
+      resolution:"high",priority:"energy",duration:"extended",
+      filters:["energy","warp","subspace"]
+    });
+    if(!result.ok)return result;
+    const current=getContact(state.sim,id)||contact;
+    setDetails(contactAnalysisRows(current,{tactical:true}));
+    const tacticalData=current.tactical||{};
+    const shields=tacticalData.shields??current.shields??"sin resolver";
+    const weapons=tacticalData.weapons??current.weapons??"sin resolver";
+    return {
+      ok:true,
+      text:"Escaneo táctico de "+id+" completado. Escudos: "+shields+". Armamento: "+weapons+
+        (current.hostile===true?". Hostilidad confirmada.":". Sin hostilidad confirmada.")
+    };
+  }
+
+  if(actionId==="trajectory"){
+    setDetails(trajectoryRows(contact));
+    const s=contactSpatialSolution(contact);
+    const cpa=s.closestApproachKm!=null?" CPA "+distanceLabel(s.closestApproachKm)+".":" CPA sin resolver.";
+    return {ok:true,text:"Solución de trayectoria de "+id+": curso "+courseLabel(contact)+", "+(contact.velocity||"velocidad sin resolver")+", "+motionLabel(s.relativeMotion)+"."+cpa};
+  }
+
+  if(actionId==="watch-start"){
+    const first=await executeAction({type:"watch",contactId:id,condition:"course_change"});
+    if(!first.ok)return first;
+    const second=await executeAction({type:"watch",contactId:id,condition:"contact_lost"});
+    if(!second.ok)return second;
+    setDetails([
+      detail("Contacto",id),
+      detail("Vigilancia","ACTIVA"),
+      detail("Condición 1","Cambio de curso"),
+      detail("Condición 2","Pérdida de contacto")
+    ]);
+    return {ok:true,text:"Vigilancia automática activada sobre "+id+": cambios de curso y pérdida de contacto."};
+  }
+
+  if(actionId==="watch-stop"){
+    state.watchers=state.watchers.filter(w=>w.contactId!==id);
+    setDetails([detail("Contacto",id),detail("Vigilancia","DETENIDA")]);
+    return {ok:true,text:"Vigilancia automática de "+id+" detenida."};
+  }
+
+  if(actionId==="mark")return executeAction({type:"mark",contactId:id,marked:true});
+  if(actionId==="unmark")return executeAction({type:"mark",contactId:id,marked:false});
+
+  if(actionId==="transfer-science")return executeAction({type:"transfer",contactId:id,target:"science"});
+  if(actionId==="transfer-tactical")return executeAction({type:"transfer",contactId:id,target:"tactical"});
+  if(actionId==="transfer-bridge")return executeAction({type:"transfer",contactId:id,target:"bridge"});
+  if(actionId==="transfer-engineering")return executeAction({type:"transfer",contactId:id,target:"engineering"});
+
+  if(actionId==="last-data")return executeAction({type:"readout",contactId:id,readout:"vector_velocity"});
+  if(actionId==="reacquire")return executeAction({type:"track_update",contactId:id,operation:"reacquire"});
+  if(actionId==="lifeforms")return executeAction({type:"readout",contactId:id,readout:"detectable_lifeforms"});
+
+  if(actionId==="compare"){
+    const pair=contactResultPair(id);
+    if(pair.length<2)return {ok:false,text:"Aún no hay dos lecturas focalizadas de "+id+" para comparar."};
+    return executeAction({type:"compare_results",a:pair[0].id,b:pair[1].id});
+  }
+
+  return {ok:false,text:"La acción "+actionId+" no está implementada para este contacto."};
+}
+
+async function runContactAction(actionId){
+  const contact=selectedContact();
+  if(!contact||state.busy)return;
+
+  const model=currentContactActionModel();
+  const descriptor=model.actions.find(item=>
+    item.id===actionId||
+    (item.kind==="tracking-split"&&(item.left?.id===actionId||item.right?.id===actionId))
+  );
+  if(!descriptor){
+    addMessage("computer","Esa acción ya no es válida para el estado actual de "+contact.id+".","CONTROL DE CONTACTO");
+    render();
+    return;
+  }
+
+  state.busy=true;
+  clearAttention();
+  $("#send-command").disabled=true;
+  $("#voice-button").disabled=true;
+  renderContactActions();
+  log("CONTACT CONTROL · "+contact.id+" · "+actionId);
+
+  try{
+    const result=await executeContactControl(actionId,contact);
+    if(result?.ok){
+      addMessage("computer",result.text||"Operación completada.","CONTROL DE CONTACTO");
+    }else if(result?.text&&!result.reported){
+      addMessage("computer",result.text,"OPERACIÓN NO DISPONIBLE");
+    }
+  }catch(e){
+    needOperator("Error de control de contacto",e.message||String(e));
+    log("CONTACT CONTROL ERROR · "+(e.stack||e.message||e));
+  }finally{
+    state.busy=false;
+    syncRoutineWatchBaseline();
+    $("#send-command").disabled=false;
+    $("#voice-button").disabled=false;
+    render();
+  }
+}
+
 function line(k,v,cls=""){return '<div class="status-line"><span>'+esc(k)+'</span><strong class="status-value '+cls+'">'+esc(v)+'</strong></div>'}
 function angleLabel(v,{signed=false}={}){
   if(v==null||Number.isNaN(Number(v)))return "Sin resolver";
@@ -453,7 +708,7 @@ function setInputDestination(destination){
   $("#command-input")?.focus();
 }
 function render(){
-  renderComputer();renderContacts();renderConversation();renderQuickActions();renderStatus();renderAttention();renderDetails();renderInputDestination();renderSpatialViewer();
+  renderComputer();renderContacts();renderConversation();renderQuickActions();renderStatus();renderAttention();renderDetails();renderInputDestination();renderSpatialViewer();renderContactActions();
   const c=selectedContact();$("#context-title").textContent=c?"Contexto · "+c.id+" · "+c.classification:"Esperando órdenes";
 }
 function setDetails(rows){state.lastDetails=rows;renderDetails()}
